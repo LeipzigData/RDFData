@@ -1,0 +1,345 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
+
+<http://leipzig-data.de/Data/Event/DTS.2012-08-06>
+    ld:contactPerson ldp:Schroth_Johannes ;
+    ld:hasTag ldtag:ZukunftsDiskurs ;
+    ld:hasURL "http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2012-08-06" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+    a ld:Event ;
+    rdfs:label "Postmoderne" ;
+    cal:dtstart "2012-08-06T19:00:00" ;
+    cal:location ldo:Cafe-Grundmann ;
+    cal:organizer <http://leipzig-data.de/Data/Traeger/Attac.Leipzig> .
+
+<http://leipzig-data.de/Data/Event/DTS.2012-09-03>
+    ld:contactPerson ldp:Schroth_Johannes ;
+    ld:hasTag ldtag:ZukunftsDiskurs ;
+    ld:hasURL "http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2012-09-03" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+    a ld:Event ;
+    rdfs:label "Religion" ;
+    cal:dtstart "2012-09-03T19:00:00" ;
+    cal:location ldo:Cafe-Grundmann ;
+    cal:organizer <http://leipzig-data.de/Data/Traeger/Attac.Leipzig> .
+
+<http://leipzig-data.de/Data/Event/IG.2012-09-21>
+    ld:Ortzusatz "Neuer Senatssaal" ;
+    ld:contactPerson ldp:Graebe_HansGert ;
+    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+    ld:hasURL "http://www.dorfwiki.org/wiki.cgi?HansGertGraebe/LeipzigerGespraeche/2012-09-21" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Netzprojekt.IG> ;
+    a ld:Event ;
+    rdfs:label "Interdisziplinäres Gespräch \"MINT - Zukunft schaffen. Kreativität und Technik\"." ;
+    cal:description "Mit diesem Dritten Interdisziplinären Gespräch wollen wir insbesondere das subtile Zusammenspiel von Kreativität, Förderung von Kreativität, technischer Innovation und Weiterentwicklung unserer kulturell-technischen Umwelt als der zweiten Natur der Menschen in einem offenen akademischen Gespräch zwischen Vertretern verschiedener Fachrichtungen an der Leipziger \"universitas litterarum\" und darüber hinaus thematisieren. " ;
+    cal:dtend "2012-09-21T15:00:00" ;
+    cal:dtstart "2012-09-21T10:00:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
+
+<http://leipzig-data.de/Data/Event/Kuni.2011-09-09>
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Wie beißen wir uns am besten durchs Leben? Von Wackelzähnen, Löchern und Co" ;
+    cal:description "Prof. Christian Hirsch erklärte viele interessante und wichtige Dinge zum Thema Zähne. Er erläuterte zum Beispiel, wie Löcher in den Zahn kommen, wie man dies verhindern kann und was man tun sollte, wenn man bei einem Unfall einen Zahn verliert." ;
+    cal:dtstart "2011-09-09T16:30:00" ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2011-09-16>
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Affen, Neandertaler und ich - Die Geschichte des Menschen" ;
+    cal:description "In der Vorlesung ging es um die Entwicklung des Menschen. Die Wissenschaft, die sich mit dem Menschen beschäftigt, heißt Anthropologie (griechisch „anthropos“ = der Mensch und „logos“ = Lehre, also die Lehre vom Menschen). Die Entwicklung von Lebewesen bezeichnet man als Evolution. Susanna Rankin vom Max Max-Planck-Institut für Evolutionäre Anthopologie wollte u.a. die Frage klären, wie stark Menschen, Affen und Neandertaler miteinander verwandt sind. Veranstaltung im Rahmen der Kinderuni der Medizinischen Fakultät." ;
+    cal:dtstart "2011-09-16T16:30:00" ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2011-09-23>
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Was geschah letzte Nacht? - Mit Forensik auf Spurensuche" ;
+    cal:description "Egal, was wir tun, immer hinterlassen wir Spuren: Fingerabdrücke, Haare, Speicheltropfen, Kleiderfusseln oder vergessene Gegenstände. Wenn eine Straftat geschehen ist, helfen diese Spuren, den Täter oder die Täterin zu überführen. Frau Dr. Edelmann vom Institut für Rechtsmedizin erklärte, wie diese Spuren gefunden und für die Suche nach dem Täter gesichert werden und wie man Informationen aus diesen Spuren erhält. Veranstaltung im Rahmen der Kinderuni der Medizinischen Fakultät." ;
+    cal:dtstart "2011-09-23T16:30:00" ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2011-10-07>
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Psychologie-Vorlesung mit Dr. Michael Kroll" ;
+    cal:description "Dr. Kroll von der Klinik und Poliklinik für Psychiatrie, Psychotherapie und Psychosomatik des Kindes- und Jugendalters ging mit euch auf die Suche nach den Gefühlen und zeigte, wozu Gefühle gut sind und wie man auf seine Seele aufpasst. Veranstaltung im Rahmen der Kinderuni der Medizinischen Fakultät." ;
+    cal:dtstart "2011-10-07T16:30:00" ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-03-09>
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Mit Mikroskop und Messer - Ein Blick in unseren Körper" ;
+    cal:description "Anatomie-Vorlesung mit PD Albert Ricken im Rahmen der Kinderuni der Medizinischen Fakultät" ;
+    cal:dtstart "2012-03-09T16:30:00" ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-03-16>
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Die 7.000 Sprachen der Welt - Woher kommen sie?" ;
+    cal:description "Sprachen-Vorlesung mit Prof. Martin Haspelmath im Rahmen der Kinderuni der Medizinischen Fakultät" ;
+    cal:dtstart "2012-03-16T16:30:00" ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-03-23>
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Was wir nicht sehen oder hören können - Die geheimnisvollen Sinne der Tiere" ;
+    cal:description "Tiersinne-Vorlesung mit Prof. Klaus Schildberger im Rahmen der Kinderuni der Medizinischen Fakultät" ;
+    cal:dtstart "2012-03-23T16:30:00" ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-03-30>
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Fest verwurzelt und doch mobil – Pflanzen auf Achse" ;
+    cal:description "Pflanzen-Vorlesung mit Prof. Christian Wirth im Rahmen der Kinderuni der Medizinischen Fakultät" ;
+    cal:dtstart "2012-03-30T16:30:00" ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-05-02>
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Verkehrssicherheits-Vorlesung mit Herrn Jan Mücke" ;
+    cal:description "Die  Veranstaltung wurde gemeinsam mit dem Weltverkehrsforum organisiert und stand ganz unter dem Zeichen der Verkehrssicherheit. Sie hielt nicht nur eine Vorlesung bereit, sondern bot den Kindern im Außenbereich viele zusätzliche Aktivitäten von DEKRA, ADAC und  Landesverkehrswacht zum selbst Austesten. Stargast war Jean Todt, Ex-Automobilrennfahrer, ehemaliger Formel-1-Teamchef, Ex-Chef von Ferrari und derzeitiger Präsident des Welt-Automobilverbands FIA.Verkehrssicherheits-Vorlesung mit Herrn Jan Mücke" ;
+    cal:dtstart "2012-05-02T16:30:00" ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-09-14>
+    ld:Ortzusatz "Großer Hörsaal des Instituts für Experimentelle Physik" ;
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Wippen, Schaukeln, Rutschen - Physik auf dem Spielplatz" ;
+    cal:description "Spielzeuge und Spielplätze machen Spaß, das weiß jeder. Aber vielleicht habt ihr euch schon immer mal gefragt, warum man mit dem Fahrrad umfällt, wenn es steht, aber nicht, wenn es fährt? Oder warum Papa immer auf der Wippe gegen euch gewinnt? Und warum treffe ich mit meiner Wasserpistole nicht, wenn ich im Karussell sitze? Klarer Fall, bei Spielplätzen und Spielzeug spielt Physik eine große Rolle. Mit Prof. Dr. Daniel Huster vom Institut für Medizinische Physik und Biophysik." ;
+    cal:dtstart "2012-09-14T16:30:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.ExPhysik> ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-09-21>
+    ld:Ortzusatz "Großer Hörsaal des Instituts für Experimentelle Physik" ;
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "ABC - Warum können wir eigentlich lesen und schreiben?" ;
+    cal:description "Von A wie Anton bis Z wie Zeppelin. Zum Schreiben und Lesen benutzen wir unser Alphabet mit 26 Buchstaben. Aber war das schon immer so? Wann hat der Mensch eigentlich angefangen zu schreiben und wie sehen die ältesten Schriftzeichen aus? Auf welchem Weg ist unser lateinisches Alphabet zu uns gelangt? Haben die Alten Ägypter auch schon ein Alphabet gehabt? Wieso gibt es eine Verbindung zwischen den ägyptischen Hieroglyphen und unserer Alphabetschrift? Prof. Dr. Hans-Werner Fischer-Elfert vom Ägyptologischen Institut geht mit euch auf die Suche nach dem Ursprung unseres heutigen Alphabetes und wird euch diese spannenden Fragen und noch vieles mehr erklären. " ;
+    cal:dtstart "2012-09-21T16:30:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.ExPhysik> ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-09-28>
+    ld:Ortzusatz "Großer Hörsaal des Instituts für Experimentelle Physik" ;
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Können wir unseren Augen trauen? Die Geheimnisse des Lichts" ;
+    cal:description "Wenn es regnet und gleichzeitig die Sonne scheint, kann man oft einen schönen bunten Regenbogen sehen. Doch wie kommen die vielen Farben in den Regenbogen? So wie der Regenbogen begleiten uns im Alltag viele Dinge aus dem Bereich der Optik, der Lehre vom Licht. Ohne Licht wäre ein Leben für Menschen und die meisten Pflanzen und Tiere nicht möglich. Aber gibt es auch Licht, das wir nicht sehen können? Welche Farbe hat das Licht und können Schatten vielleicht auch farbig sein? Was macht Licht, wenn es durch ein enges Loch kriechen muss und was hat das mit einem iPhone und einem Teleskop zu tun? Diese Geheimnisse der Optik wird Prof. Dr. Marius Grundmann vom Institut für Experimentelle Physik II gemeinsam mit euch enträtseln." ;
+    cal:dtstart "2012-09-28T16:30:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.ExPhysik> ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-10-05>
+    ld:Ortzusatz "Großer Hörsaal des Instituts für Experimentelle Physik" ;
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Tatort Mückenmafia - ein Wasserfloh ermittelt" ;
+    cal:description "Glaubt ihr, Krimis gibt’s nur im Fernsehen und Verbrechensbekämpfung sei ausschließlich Sache der Polizei? Weit gefehlt – die spannendsten Kriminalfälle schreibt nämlich die Natur! In dieser Vorlesung ermittelt ihr gegen die gemeine Hausmücke – ein gesuchter Verbrecher, der wegen Körperverletzung, Hausfriedensbruch und Virenschmuggel angeklagt ist. Leicht werden die Ermittlungen nicht, denn die Mücke ist ein ganz gerissener Gegner – klein, schnell und sehr gut organisiert. Wie kann man gegen diesen Gegner vorgehen und welche Verbündeten helfen den Forschern im Kampf gegen die Mückenmafia? Begleitet Iris Kröger vom Helmholtz-Zentrum für Umweltforschung, Department System-Ökotoxikologie auf einer spannenden Verfolgungsjagd durch Luft und Wasser bis tief hinein in die Welt des Kleinen, den Mikrokosmos. Seid dabei, wenn Transformers gegen Klone antreten, biologische Kampfstoffe zum Einsatz kommen und die finale Schlacht am Ende nur noch durch eine Zeitreise zur gewinnen ist!" ;
+    cal:dtstart "2012-10-05T16:30:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.ExPhysik> ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/Kuni.2012-10-12>
+    ld:Ortzusatz "Großer Hörsaal des Instituts für Experimentelle Physik" ;
+    ld:hasTag ldtag:Jugendbildung, ldtag:MINT ;
+    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/UniLeipzig.Kuni> ;
+    a ld:Event ;
+    rdfs:label "Biologische Zellen - Die Bausteine, aus denen wir gemacht sind" ;
+    cal:description "Wusstet ihr, dass ihr ganz viele Kraftwerke in euch habt? Haut, Gehirn, Muskeln – unser gesamter Körper besteht aus Zellen. Zellen sind die kleinsten Bausteine aller Lebewesen und arbeiten wie kleine Kraftwerke, damit unser Körper funktioniert. Allerdings sind sie so klein, dass sie nur unter dem Mikroskop zu erkennen sind. Wir Menschen gehören z.B. zu den Vielzellern. Ein Erwachsener besteht aus 100 Billionen (100.000.000.000.000!!!) einzelnen Zellen. Allein unser Gehirn enthält 20 Milliarden Nervenzellen. Dies ist ungefähr die Anzahl der Sterne am Himmel. In der Vorlesung von Prof. Dr. Josef Käs vom Institut für Experimentelle Physik I werdet ihr über Zellen viele spannende Dinge erfahren: Woraus bestehen Zellen? Was für verschiedene Zellen gibt es? Welche Aufgaben haben sie? Sind sie intelligent? Können Zellen miteinander reden? Was haben Zellen mit unserem Wachstum zu tun? Freut euch auf Antworten auf diese und viele weitere Fragen." ;
+    cal:dtstart "2012-10-12T16:30:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.ExPhysik> ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/LSGM.2012-09-19>
+    ld:Ortzusatz "Hs 5" ;
+    ld:contactPerson ldp:Graebe_HansGert ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasURL "http://lsgm.uni-leipzig.de/tiki-index.php?page=LSGM.2012-09-19" ;
+    a ld:Event ;
+    rdfs:label "LSGM-Eröffnungsveranstaltung" ;
+    cal:description "Auftaktveranstaltung zu den LSGM-Zirkeln im Schuljahr 2012/13. Mit einem mathematischen Vortrag von Herrn Prof. Dr. Bernd Kirchheim (Mathematisches Institut, Uni Leipzig) \"Von Gruppen, Würfeln und Perlenketten\"." ;
+    cal:dtstart "2012-09-19T16:30:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+    cal:organizer ldo:LSGM .
+
+<http://leipzig-data.de/Data/Event/SG.2012-06-10>
+    ld:hasTag ldtag:KapitalismusKritik, ldtag:ZukunftsDiskurs ;
+    ld:untertitel "Mit Joseph Vogl, Berlin" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/UniLeipzig.SonntagsGespraech> ;
+    a ld:Event ;
+    rdfs:label "Gespenst des Kapitals. Fortsetzung" ;
+    cal:dtstart "2012-06-10T12:00:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.SchollHaus> ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/SG.2012-07-01>
+    ld:hasTag ldtag:KapitalismusKritik, ldtag:ZukunftsDiskurs ;
+    ld:untertitel "Mit Heiner Flassbeck, Genf, Chefvolkswirt der UNCTAD" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/UniLeipzig.SonntagsGespraech> ;
+    a ld:Event ;
+    rdfs:label "Zehn Mythen der Krise" ;
+    cal:dtstart "2012-07-01T12:00:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.SchollHaus> ;
+    cal:organizer ldo:UniLeipzig .
+
+<http://leipzig-data.de/Data/Event/SKIL.2012-09-25>
+    ld:contactPerson ldp:Riechert_Thomas ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasURL "http://skil.informatik.uni-leipzig.de" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/UniLeipzig.FMI.SKIL> ;
+    a ld:Event ;
+    rdfs:label "Studentenkonferenz Informatik Leipzig (SKIL)" ;
+    cal:description "Die Studentenkonferenz Informatik Leipzig (SKIL) richtet sich an alle Studierende der Informatik sowie angrenzender Disziplinen mit Schwerpunkt Informatik. Die Konferenz setzt sich zum Ziel, den Studierenden eine Plattform zu bieten, ihre Projekte und Forschungsvorhaben vorzustellen. Im Mittelpunkt der Tagung stehen studentische Projekte aus Seminaren, Praktika, Abschlussarbeiten oder extracurricularen Aktivitäten. " ;
+    cal:dtend "2012-09-25T15:00:00" ;
+    cal:dtstart "2012-09-25T10:00:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.FMI> .
+
+<http://leipzig-data.de/Data/Event/UW.26359>
+    ld:Kosten "steht noch nicht fest" ;
+    ld:contactPerson ldp:Rehm_Axel ;
+    ld:hasTag ldtag:Umwelt ;
+    ld:hasUW_id "event/26359" ;
+    ld:untertitel "Veranstaltung zum Thema Umwelt" ;
+    a ld:Event ;
+    rdfs:label "Naturerlebnistage" ;
+    cal:description "Aus dem Bezirk Leipzig präsentieren sich Umwelteinrichtungen um einen Beitrag zur Umwelterziehung zu leisten. Bei Spiel und Spaß gibt es Informationen." ;
+    cal:dtend "2012-09-14" ;
+    cal:dtstart "2012-09-13T09:00:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Lehrgarten> ;
+    cal:organizer <http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Lehrgarten> .
+
+<http://leipzig-data.de/Data/Event/UW.26373>
+    ld:Kosten "pro Kürbis" ;
+    ld:contactPerson ldp:Rehm_Axel ;
+    ld:hasTag ldtag:Umwelt ;
+    ld:hasUW_id "event/26373" ;
+    ld:untertitel "Schnitzen von lustigen Kürbismasken" ;
+    a ld:Event ;
+    rdfs:label "Kürbisfest" ;
+    cal:description "Halloween im Schulbiologiezentrum. Es werden Halloweenmasken geschnitts und aus Zierkürbissen Tischdeko erstellt. Sie werden fachkundig beraten. Die Kleineren können in der Kinderecke basteln, spielen und malen. Für den Gaumen gibt es leckeres Essen. Unser Garten lädt zu einem Spaziergang ein." ;
+    cal:dtstart "2012-10-13T15:00:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Lehrgarten> ;
+    cal:organizer <http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Lehrgarten> .
+
+<http://leipzig-data.de/Data/Event/VHS.2012-09-11>
+    ld:Ortzusatz "Raum 410" ;
+    ld:contactPerson ldp:Graebe_HansGert ;
+    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+    ld:hasURL "http://leipzig-netz.de/index.php5/MINT.2012-09-11" ;
+    ld:untertitel "Mit Prof. A. Pretschner (HTWK Leipzig)" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/VHS.LeipzigImWandel> ;
+    a ld:Event ;
+    rdfs:label "Nachhaltige Energietechnik - Probleme und Fragen" ;
+    cal:description "Auftaktveranstaltung der Reihe \"MINT - Zukunft schaffen. Leipziger Diskurs zu nachhaltigen Energiekonzepten\" im Wintersemester 2012/13 an der VHS Leipzig" ;
+    cal:dtstart "2012-09-11T18:00:00" ;
+    cal:location ldo:Volkshochschule ;
+    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
+
+<http://leipzig-data.de/Data/Event/VHS.2012-10-09>
+    ld:contactPerson ldp:Graebe_HansGert ;
+    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+    ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
+    ld:untertitel "Mit Dr. M. Raue (VDE Bezirksvorstand Halle/Leipzig)" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/VHS.LeipzigImWandel> ;
+    a ld:Event ;
+    rdfs:label "Energieversorgung im Verteilnetz in der Region Leipzig" ;
+    cal:description "Außentermin in der Elektrotechnischen Sammlung des VDE im Umspannwerk Markkleeberg, Bildungs- und Begegnungsstätte zur Geschichte der Elektrotechnik des VDE-Bezirksvereins Leipzig/Halle e.V. <br/>  15-16:30 Uhr: Geführte Besichtigung der Elektrotechnischen Sammlung<br/> 16:30-18 Uhr: Vortrag und Diskussion zum Thema. " ;
+    cal:dtstart "2012-10-09T15:00:00" ;
+    cal:location <http://leipzig-data.de/Data/Ort/Umspannwerk> ;
+    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
+
+<http://leipzig-data.de/Data/Event/VHS.2012-11-13>
+    ld:Ortzusatz "Raum 410" ;
+    ld:contactPerson ldp:Graebe_HansGert ;
+    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+    ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
+    ld:untertitel "Mit M. Richter und A. Boblenz (BIP-Kreativitätsgymnasium Leipzig)" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/VHS.LeipzigImWandel> ;
+    a ld:Event ;
+    rdfs:label "Energie und Bildung" ;
+    cal:description "Lehrer und Schüler des BIP-Kreativitätsgymnasiums Leipzig stellen ein Projekt zum Thema \"alternative Energien\" vor." ;
+    cal:dtstart "2012-11-13T18:00:00" ;
+    cal:location ldo:Volkshochschule ;
+    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
+
+<http://leipzig-data.de/Data/Event/VHS.2012-12-11>
+    ld:Ortzusatz "Raum 410" ;
+    ld:contactPerson ldp:Graebe_HansGert ;
+    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+    ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
+    ld:untertitel "Mit Prof. K. Bastian (HTWK Leipzig)" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/VHS.LeipzigImWandel> ;
+    a ld:Event ;
+    rdfs:label "Energiekonzepte jenseits von Stromkonzepten" ;
+    cal:description "In den offiziellen Studien zur Energieversorgung der Zukunft sind Energiekonzepte fast ausschließlich Stromkonzepte. Im Vortrag werden Vorteile und Bedeutung des Energieträgers Gas genauer diskutiert, einschließlich der provokanten These, dass das Energiekonzept der Zukunft nicht strom- sondern gasgeführt sein wird." ;
+    cal:dtstart "2012-12-11T18:00:00" ;
+    cal:location ldo:Volkshochschule ;
+    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
+
+<http://leipzig-data.de/Data/Event/VHS.2013-01-08>
+    ld:Ortzusatz "Raum 410" ;
+    ld:contactPerson ldp:Graebe_HansGert ;
+    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+    ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
+    ld:untertitel "Mit Dr.-Ing. Gerd Arnold (Evermind, Leipzig)" ;
+    ld:zurReihe <http://leipzig-data.de/Data/Angebote/VHS.LeipzigImWandel> ;
+    a ld:Event ;
+    rdfs:label "Metanetze zur Optimierung von Energie- und Stoffströmen" ;
+    cal:description "Mit der Diskussion des Vorteils von Gas als Energieträger, fast verlustfrei über große Strecken übertragen werden zu können, rückt die Frage der Optimierungspotenziale einer integrierten Betrachtung von Energie- und Stoffströmen ins Blickfeld." ;
+    cal:dtstart "2013-01-08T18:00:00" ;
+    cal:location ldo:Volkshochschule ;
+    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
+
+<http://leipzig-data.de/Data/Events/>
+    a owl:Ontology ;
+    rdfs:label "LeipzigData - Aktuelle Events" ;
+    owl:imports <http://leipzig-data.de/Data/Angebote/>, <http://leipzig-data.de/Data/Orte/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Projekte/>,<http://leipzig-data.de/Data/Tags/>, <http://leipzig-data.de/Data/Traeger/> .
+
+ld:Event
+    a owl:Class ;
+    rdfs:label "Events" .

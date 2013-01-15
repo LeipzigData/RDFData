@@ -1,0 +1,334 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://leipzig-data.de/Data/Stadtbezirke/>
+    a owl:Ontology ;
+    rdfs:label "Stadtbezirke der Stadt Leipzig"  .
+
+ld:Stadtbezirk a owl:Class ;
+         rdfs:label "Stadtbezirk der Stadt Leipzig" .
+
+ld:hasStadtId a rdf:Property; 
+         rdfs:comment "Id in den Daten der Stadtverwaltung" .
+
+ld:hasAPIId a rdf:Property; 
+         rdfs:comment "Id in den Daten von API Leipzig" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum> a ld:Stadtbezirk ;
+	rdfs:label "Zentrum" ;
+	ld:hasStadtId "0" ;
+	ld:hasAPIId "district/districts/1" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Ost> a ld:Stadtbezirk ;
+	rdfs:label "Zentrum-Ost" ;
+	ld:hasStadtId "1" ;
+	ld:hasAPIId "district/districts/2" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Suedost> a ld:Stadtbezirk ;
+	rdfs:label "Zentrum-Südost" ;
+	ld:hasStadtId "2" ;
+	ld:hasAPIId "district/districts/3" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Sued> a ld:Stadtbezirk ;
+	rdfs:label "Zentrum-Süd" ;
+	ld:hasStadtId "3" ;
+	ld:hasAPIId "district/districts/4" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-West> a ld:Stadtbezirk ;
+	rdfs:label "Zentrum-West" ;
+	ld:hasStadtId "4" ;
+	ld:hasAPIId "district/districts/5" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Nordwest> a ld:Stadtbezirk ;
+	rdfs:label "Zentrum-Nordwest" ;
+	ld:hasStadtId "5" ;
+	ld:hasAPIId "district/districts/6" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Nord> a ld:Stadtbezirk ;
+	rdfs:label "Zentrum-Nord" ;
+	ld:hasStadtId "6" ;
+	ld:hasAPIId "district/districts/7" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Schoenefeld-Abtnaundorf> a ld:Stadtbezirk ;
+	rdfs:label "Schönefeld-Abtnaundorf" ;
+	ld:hasStadtId "10" ;
+	ld:hasAPIId "district/districts/8" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Schoenefeld-Ost> a ld:Stadtbezirk ;
+	rdfs:label "Schönefeld-Ost" ;
+	ld:hasStadtId "11" ;
+	ld:hasAPIId "district/districts/9" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Mockau-Sued> a ld:Stadtbezirk ;
+	rdfs:label "Mockau-Süd" ;
+	ld:hasStadtId "12" ;
+	ld:hasAPIId "district/districts/10" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Mockau-Nord> a ld:Stadtbezirk ;
+	rdfs:label "Mockau-Nord" ;
+	ld:hasStadtId "13" ;
+	ld:hasAPIId "district/districts/11" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Thekla> a ld:Stadtbezirk ;
+	rdfs:label "Thekla" ;
+	ld:hasStadtId "14" ;
+	ld:hasAPIId "district/districts/12" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Plaussig-Portitz> a ld:Stadtbezirk ;
+	rdfs:label "Plaußig-Portitz" ;
+	ld:hasStadtId "15" ;
+	ld:hasAPIId "district/districts/13" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Neustadt-Neuschoenefeld> a ld:Stadtbezirk ;
+	rdfs:label "Neustadt-Neuschönefeld" ;
+	ld:hasStadtId "20" ;
+	ld:hasAPIId "district/districts/14" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Volkmarsdorf> a ld:Stadtbezirk ;
+	rdfs:label "Volkmarsdorf" ;
+	ld:hasStadtId "21" ;
+	ld:hasAPIId "district/districts/15" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Anger-Crottendorf> a ld:Stadtbezirk ;
+	rdfs:label "Anger-Crottendorf" ;
+	ld:hasStadtId "22" ;
+	ld:hasAPIId "district/districts/16" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Sellerhausen-Stuenz> a ld:Stadtbezirk ;
+	rdfs:label "Sellerhausen-Stünz" ;
+	ld:hasStadtId "23" ;
+	ld:hasAPIId "district/districts/17" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Paunsdorf> a ld:Stadtbezirk ;
+	rdfs:label "Paunsdorf" ;
+	ld:hasStadtId "24" ;
+	ld:hasAPIId "district/districts/18" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Heiterblick> a ld:Stadtbezirk ;
+	rdfs:label "Heiterblick" ;
+	ld:hasStadtId "25" ;
+	ld:hasAPIId "district/districts/19" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Moelkau> a ld:Stadtbezirk ;
+	rdfs:label "Mölkau" ;
+	ld:hasStadtId "26" ;
+	ld:hasAPIId "district/districts/20" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Engelsdorf> a ld:Stadtbezirk ;
+	rdfs:label "Engelsdorf" ;
+	ld:hasStadtId "27" ;
+	ld:hasAPIId "district/districts/21" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Baalsdorf> a ld:Stadtbezirk ;
+	rdfs:label "Baalsdorf" ;
+	ld:hasStadtId "28" ;
+	ld:hasAPIId "district/districts/22" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Althen-Kleinpoesna> a ld:Stadtbezirk ;
+	rdfs:label "Althen-Kleinpösna" ;
+	ld:hasStadtId "29" ;
+	ld:hasAPIId "district/districts/23" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Reudnitz-Thonberg> a ld:Stadtbezirk ;
+	rdfs:label "Reudnitz-Thonberg" ;
+	ld:hasStadtId "30" ;
+	ld:hasAPIId "district/districts/24" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Stoetteritz> a ld:Stadtbezirk ;
+	rdfs:label "Stötteritz" ;
+	ld:hasStadtId "31" ;
+	ld:hasAPIId "district/districts/25" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Probstheida> a ld:Stadtbezirk ;
+	rdfs:label "Probstheida" ;
+	ld:hasStadtId "32" ;
+	ld:hasAPIId "district/districts/26" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Meusdorf> a ld:Stadtbezirk ;
+	rdfs:label "Meusdorf" ;
+	ld:hasStadtId "33" ;
+	ld:hasAPIId "district/districts/27" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Liebertwolkwitz> a ld:Stadtbezirk ;
+	rdfs:label "Liebertwolkwitz" ;
+	ld:hasStadtId "34" ;
+	ld:hasAPIId "district/districts/28" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Holzhausen> a ld:Stadtbezirk ;
+	rdfs:label "Holzhausen" ;
+	ld:hasStadtId "35" ;
+	ld:hasAPIId "district/districts/29" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Suedvorstadt> a ld:Stadtbezirk ;
+	rdfs:label "Südvorstadt" ;
+	ld:hasStadtId "40" ;
+	ld:hasAPIId "district/districts/30" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Connewitz> a ld:Stadtbezirk ;
+	rdfs:label "Connewitz" ;
+	ld:hasStadtId "41" ;
+	ld:hasAPIId "district/districts/31" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Marienbrunn> a ld:Stadtbezirk ;
+	rdfs:label "Marienbrunn" ;
+	ld:hasStadtId "42" ;
+	ld:hasAPIId "district/districts/32" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Loessnig> a ld:Stadtbezirk ;
+	rdfs:label "Lößnig" ;
+	ld:hasStadtId "43" ;
+	ld:hasAPIId "district/districts/33" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Doelitz-Doesen> a ld:Stadtbezirk ;
+	rdfs:label "Dölitz-Dösen" ;
+	ld:hasStadtId "44" ;
+	ld:hasAPIId "district/districts/34" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Schleussig> a ld:Stadtbezirk ;
+	rdfs:label "Schleußig" ;
+	ld:hasStadtId "50" ;
+	ld:hasAPIId "district/districts/35" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Plagwitz> a ld:Stadtbezirk ;
+	rdfs:label "Plagwitz" ;
+	ld:hasStadtId "51" ;
+	ld:hasAPIId "district/districts/36" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Kleinzschocher> a ld:Stadtbezirk ;
+	rdfs:label "Kleinzschocher" ;
+	ld:hasStadtId "52" ;
+	ld:hasAPIId "district/districts/37" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Grosszschocher> a ld:Stadtbezirk ;
+	rdfs:label "Großzschocher" ;
+	ld:hasStadtId "53" ;
+	ld:hasAPIId "district/districts/38" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Knautkleeberg-Knauthain> a ld:Stadtbezirk ;
+	rdfs:label "Knautkleeberg-Knauthain" ;
+	ld:hasStadtId "54" ;
+	ld:hasAPIId "district/districts/39" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Hartmannsdorf-Knautnaundorf> a ld:Stadtbezirk ;
+	rdfs:label "Hartmannsdorf-Knautnaundorf" ;
+	ld:hasStadtId "55" ;
+	ld:hasAPIId "district/districts/40" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Schoenau> a ld:Stadtbezirk ;
+	rdfs:label "Schönau" ;
+	ld:hasStadtId "60" ;
+	ld:hasAPIId "district/districts/41" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Ost> a ld:Stadtbezirk ;
+	rdfs:label "Grünau-Ost" ;
+	ld:hasStadtId "61" ;
+	ld:hasAPIId "district/districts/42" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Mitte> a ld:Stadtbezirk ;
+	rdfs:label "Grünau-Mitte" ;
+	ld:hasStadtId "62" ;
+	ld:hasAPIId "district/districts/43" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Siedlung> a ld:Stadtbezirk ;
+	rdfs:label "Grünau-Siedlung" ;
+	ld:hasStadtId "63" ;
+	ld:hasAPIId "district/districts/44" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Lausen-Gruenau> a ld:Stadtbezirk ;
+	rdfs:label "Lausen-Grünau" ;
+	ld:hasStadtId "64" ;
+	ld:hasAPIId "district/districts/45" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Nord> a ld:Stadtbezirk ;
+	rdfs:label "Grünau-Nord" ;
+	ld:hasStadtId "65" ;
+	ld:hasAPIId "district/districts/46" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Miltitz> a ld:Stadtbezirk ;
+	rdfs:label "Miltitz" ;
+	ld:hasStadtId "66" ;
+	ld:hasAPIId "district/districts/47" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Lindenau> a ld:Stadtbezirk ;
+	rdfs:label "Lindenau" ;
+	ld:hasStadtId "70" ;
+	ld:hasAPIId "district/districts/48" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Altlindenau> a ld:Stadtbezirk ;
+	rdfs:label "Altlindenau" ;
+	ld:hasStadtId "71" ;
+	ld:hasAPIId "district/districts/49" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Neulindenau> a ld:Stadtbezirk ;
+	rdfs:label "Neulindenau" ;
+	ld:hasStadtId "72" ;
+	ld:hasAPIId "district/districts/50" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Leutzsch> a ld:Stadtbezirk ;
+	rdfs:label "Leutzsch" ;
+	ld:hasStadtId "73" ;
+	ld:hasAPIId "district/districts/51" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Boehlitz-Ehrenberg> a ld:Stadtbezirk ;
+	rdfs:label "Böhlitz-Ehrenberg" ;
+	ld:hasStadtId "74" ;
+	ld:hasAPIId "district/districts/52" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Burghausen-Rueckmarsdorf> a ld:Stadtbezirk ;
+	rdfs:label "Burghausen-Rückmarsdorf" ;
+	ld:hasStadtId "75" ;
+	ld:hasAPIId "district/districts/53" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Moeckern> a ld:Stadtbezirk ;
+	rdfs:label "Möckern" ;
+	ld:hasStadtId "80" ;
+	ld:hasAPIId "district/districts/54" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Wahren> a ld:Stadtbezirk ;
+	rdfs:label "Wahren" ;
+	ld:hasStadtId "81" ;
+	ld:hasAPIId "district/districts/55" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Luetzschena-Stahmeln> a ld:Stadtbezirk ;
+	rdfs:label "Lützschena-Stahmeln" ;
+	ld:hasStadtId "82" ;
+	ld:hasAPIId "district/districts/56" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Lindenthal> a ld:Stadtbezirk ;
+	rdfs:label "Lindenthal" ;
+	ld:hasStadtId "83" ;
+	ld:hasAPIId "district/districts/57" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Sued> a ld:Stadtbezirk ;
+	rdfs:label "Gohlis-Süd" ;
+	ld:hasStadtId "90" ;
+	ld:hasAPIId "district/districts/58" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Mitte> a ld:Stadtbezirk ;
+	rdfs:label "Gohlis-Mitte" ;
+	ld:hasStadtId "91" ;
+	ld:hasAPIId "district/districts/59" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Nord> a ld:Stadtbezirk ;
+	rdfs:label "Gohlis-Nord" ;
+	ld:hasStadtId "92" ;
+	ld:hasAPIId "district/districts/60" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Eutritzsch> a ld:Stadtbezirk ;
+	rdfs:label "Eutritzsch" ;
+	ld:hasStadtId "93" ;
+	ld:hasAPIId "district/districts/61" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Seehausen> a ld:Stadtbezirk ;
+	rdfs:label "Seehausen" ;
+	ld:hasStadtId "94" ;
+	ld:hasAPIId "district/districts/62" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Wiederitzsch> a ld:Stadtbezirk ;
+	rdfs:label "Wiederitzsch" ;
+	ld:hasStadtId "95" ;
+	ld:hasAPIId "district/districts/63" .
+
+
