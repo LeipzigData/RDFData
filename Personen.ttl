@@ -5,249 +5,251 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
-@prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
 
 ld:NatuerlichePerson a owl:Class ;
                      rdfs:label "Person" .
 
-<http://leipzig-data.de/Data/Person/Ackermann_Arne> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Arne Ackermann" .
+ldp:Ackermann_Arne a ld:NatuerlichePerson ;
+                   rdfs:label "Arne Ackermann" .
 
-<http://leipzig-data.de/Data/Person/Baesler_Detlef> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Detlef Bäsler" ;
-                                                    rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" .
+ldp:Baesler_Detlef a ld:NatuerlichePerson ;
+                   rdfs:label "Detlef Bäsler" ;
+                   rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" .
 
-<http://leipzig-data.de/Data/Person/Bamberg_Stefanie> a ld:NatuerlichePerson ;
-                                                      rdfs:label "Stefanie Bamberg" ;
-                                                      ld:hasAPIId "Host.2" .
+ldp:Bamberg_Stefanie a ld:NatuerlichePerson ;
+                     rdfs:label "Stefanie Bamberg" ;
+                     ld:hasAPIId "Host.2" .
 
-<http://leipzig-data.de/Data/Person/Boran_Roland> a ld:NatuerlichePerson ;
-                                                  rdfs:label "Dr. Roland Boran" ;
-                                                  rdfs:comment "Projektleiter ASG-Schülerakademie" .
+ldp:Boran_Roland a ld:NatuerlichePerson ;
+                 rdfs:label "Dr. Roland Boran" ;
+                 rdfs:comment "Projektleiter ASG-Schülerakademie" .
 
-<http://leipzig-data.de/Data/Person/Buettner_Torsten> a ld:NatuerlichePerson ;
-                                                      rdfs:label "Torsten Büttner" .
+ldp:Buettner_Torsten a ld:NatuerlichePerson ;
+                     rdfs:label "Torsten Büttner" .
 
-<http://leipzig-data.de/Data/Person/Darlatt_Kathrin> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Kathrin Darlatt" .
+ldp:Darlatt_Kathrin a ld:NatuerlichePerson ;
+                    rdfs:label "Kathrin Darlatt" .
 
-<http://leipzig-data.de/Data/Person/Engel_Heike> a ld:NatuerlichePerson ;
-                                                 rdfs:label "Heike Engel" ;
-                                                 rdfs:comment "Geschäftsführerin Anker e.V." .
+ldp:Engel_Heike a ld:NatuerlichePerson ;
+                rdfs:label "Heike Engel" ;
+                rdfs:comment "Geschäftsführerin Anker e.V." .
 
-<http://leipzig-data.de/Data/Person/Graebe_HansGert> ld:hasAPIId "Host.28" .
+ldp:Graebe_HansGert a ld:NatuerlichePerson ;
+                    rdfs:label "Prof. Dr. Hans-Gert Gräbe" ;
+                    ld:hasAPIId "Host.28" .
 
-<http://leipzig-data.de/Data/Person/Graebe_HansGert> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Prof. Dr. Hans-Gert Gräbe" .
+ldp:Gregor_Jana a ld:NatuerlichePerson ;
+                rdfs:label "Jana Gregor" ;
+                rdfs:comment "MINT-Beauftragte des MPI MIS" .
 
-<http://leipzig-data.de/Data/Person/Gregor_Jana> a ld:NatuerlichePerson ;
-                                                 rdfs:label "Jana Gregor" ;
-                                                 rdfs:comment "MINT-Beauftragte des MPI MIS" .
+ldp:Grosser_Katja a ld:NatuerlichePerson ;
+                  rdfs:label "Katja Großer" ;
+                  ld:hasAPIId "Host.35", "Host.38" .
 
-<http://leipzig-data.de/Data/Person/Grosser_Katja> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Katja Großer" ;
-                                                   ld:hasAPIId "Host.35", "Host.38" .
+ldp:Haenisch_Wolfgang a ld:NatuerlichePerson ;
+                      rdfs:label "Wolfgang Hänisch" .
 
-<http://leipzig-data.de/Data/Person/Haenisch_Wolfgang> a ld:NatuerlichePerson ;
-                                                       rdfs:label "Wolfgang Hänisch" .
+ldp:Hahn_Michael a ld:NatuerlichePerson ;
+                 rdfs:label "Michael Hahn" ;
+                 rdfs:comment "Vereinsvorsitzender LJBW" .
 
-<http://leipzig-data.de/Data/Person/Hahn_Michael> a ld:NatuerlichePerson ;
-                                                  rdfs:label "Michael Hahn" ;
-                                                  rdfs:comment "Vereinsvorsitzender LJBW" .
+ldp:Hamel_Corinna a ld:NatuerlichePerson ;
+                  rdfs:label "Corinna Hamel" .
 
-<http://leipzig-data.de/Data/Person/Hamel_Corinna> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Corinna Hamel" .
+ldp:Hantschick_Ines a ld:NatuerlichePerson ;
+                    rdfs:label "Ines Hantschick" .
 
-<http://leipzig-data.de/Data/Person/Hantschick_Ines> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Ines Hantschick" .
+ldp:Hauptmann_Anke a ld:NatuerlichePerson ;
+                   rdfs:label "Anke Hauptmann" .
 
-<http://leipzig-data.de/Data/Person/Hauptmann_Anke> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Anke Hauptmann" .
+ldp:Herrmann_Anne a ld:NatuerlichePerson ;
+                  rdfs:label "Anne Herrmann" .
 
-<http://leipzig-data.de/Data/Person/Herrmann_Anne> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Anne Herrmann" .
+ldp:Hintze_Steffen a ld:NatuerlichePerson ;
+                   rdfs:label "Steffen Hintze" .
 
-<http://leipzig-data.de/Data/Person/Hintze_Steffen> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Steffen Hintze" .
+ldp:Hoernig_Karin a ld:NatuerlichePerson ;
+                  rdfs:label "Karin Hörnig" .
 
-<http://leipzig-data.de/Data/Person/Hoernig_Karin> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Karin Hörnig" .
+ldp:Holunder_Alma a ld:NatuerlichePerson ;
+                  rdfs:label "Alma Holunder" .
 
-<http://leipzig-data.de/Data/Person/Hoyer_Stephan> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Stephan Hoyer" ;
-                                                   ld:hasAPIId "Host.42" .
+ldp:Hoyer_Stephan a ld:NatuerlichePerson ;
+                  rdfs:label "Stephan Hoyer" ;
+                  ld:hasAPIId "Host.42" .
 
-<http://leipzig-data.de/Data/Person/Ihring_Lars> a ld:NatuerlichePerson ;
-                                                 rdfs:label "Lars Ihring" ;
-                                                 ld:hasAPIId "Host.29" .
+ldp:Ihring_Lars a ld:NatuerlichePerson ;
+                rdfs:label "Lars Ihring" ;
+                ld:hasAPIId "Host.29" .
 
-<http://leipzig-data.de/Data/Person/Klauer_AnnaKatharina> a ld:NatuerlichePerson ;
-                                                          rdfs:label "Anna-Katharina Klauer" .
+ldp:Klauer_AnnaKatharina a ld:NatuerlichePerson ;
+                         rdfs:label "Anna-Katharina Klauer" .
 
-<http://leipzig-data.de/Data/Person/Klimesch_Holger> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Holger Klimesch" ;
-                                                     rdfs:comment "Vereinsvorstand Inspirata e.V." .
+ldp:Klimesch_Holger a ld:NatuerlichePerson ;
+                    rdfs:label "Holger Klimesch" ;
+                    rdfs:comment "Vereinsvorstand Inspirata e.V." .
 
-<http://leipzig-data.de/Data/Person/Koenig_KarlFriedrich> a ld:NatuerlichePerson ;
-                                                          rdfs:label "Karl-Friedrich König" ;
-                                                          ld:hasAPIId "Host.22" .
+ldp:Koenig_KarlFriedrich a ld:NatuerlichePerson ;
+                         rdfs:label "Karl-Friedrich König" ;
+                         ld:hasAPIId "Host.22" .
 
-<http://leipzig-data.de/Data/Person/Koenig_Wolfgang> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Prof. Wolfgang König" ;
-                                                     rdfs:comment "Vereinsvorsitzender Inspirata e.V." .
+ldp:Koenig_Wolfgang a ld:NatuerlichePerson ;
+                    rdfs:label "Prof. Wolfgang König" ;
+                    rdfs:comment "Vereinsvorsitzender Inspirata e.V." .
 
-<http://leipzig-data.de/Data/Person/Koerner_Annette> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Annette Körner" ;
-                                                     rdfs:comment "Geschäftsführerin UIZ Förderverein" .
+ldp:Koerner_Annette a ld:NatuerlichePerson ;
+                    rdfs:label "Annette Körner" ;
+                    rdfs:comment "Geschäftsführerin UIZ Förderverein" .
 
-<http://leipzig-data.de/Data/Person/Krueger_Annett> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Dr. Annett Krüger" .
+ldp:Krueger_Annett a ld:NatuerlichePerson ;
+                   rdfs:label "Dr. Annett Krüger" .
 
-<http://leipzig-data.de/Data/Person/Kuechler_Romy> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Romy Küchler" .
+ldp:Kuechler_Romy a ld:NatuerlichePerson ;
+                  rdfs:label "Romy Küchler" .
 
-<http://leipzig-data.de/Data/Person/Lange_Torsten> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Dr. Torsten Lange" ;
-                                                   rdfs:comment "Leiter UFZ-Schülerlabor" .
+ldp:Lange_Torsten a ld:NatuerlichePerson ;
+                  rdfs:label "Dr. Torsten Lange" ;
+                  rdfs:comment "Leiter UFZ-Schülerlabor" .
 
-<http://leipzig-data.de/Data/Person/Maennig_Uwe> a ld:NatuerlichePerson ;
-                                                 rdfs:label "Uwe Männig" ;
-                                                 rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" .
+ldp:Maennig_Uwe a ld:NatuerlichePerson ;
+                rdfs:label "Uwe Männig" ;
+                rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" .
 
-<http://leipzig-data.de/Data/Person/Meiler_Monika> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Dr. Monika Meiler" .
+ldp:Meiler_Monika a ld:NatuerlichePerson ;
+                  rdfs:label "Dr. Monika Meiler" .
 
-<http://leipzig-data.de/Data/Person/Messerschmidt_Elk> a ld:NatuerlichePerson ;
-                                                       rdfs:label "Dr. Elk Messerschmidt" ;
-                                                       rdfs:comment "Leiter TÖP Rabutz" .
+ldp:Messerschmidt_Elk a ld:NatuerlichePerson ;
+                      rdfs:label "Dr. Elk Messerschmidt" ;
+                      rdfs:comment "Leiter TÖP Rabutz" .
 
-<http://leipzig-data.de/Data/Person/Meyer_Rene> a ld:NatuerlichePerson ;
-                                                rdfs:label "René Meyer" ;
-                                                ld:hasAPIId "Host.21" .
+ldp:Meyer_Rene a ld:NatuerlichePerson ;
+               rdfs:label "René Meyer" ;
+               ld:hasAPIId "Host.21" .
 
-<http://leipzig-data.de/Data/Person/Moeller_Juergen> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Jürgen Möller" ;
-                                                     ld:hasAPIId "Host.16" .
+ldp:Moeller_Juergen a ld:NatuerlichePerson ;
+                    rdfs:label "Jürgen Möller" ;
+                    ld:hasAPIId "Host.16" .
 
-<http://leipzig-data.de/Data/Person/Mueller_Doris> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Doris Müller" .
+ldp:Mueller_Doris a ld:NatuerlichePerson ;
+                  rdfs:label "Doris Müller" .
 
-<http://leipzig-data.de/Data/Person/Mueller_Florian> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Florian Müller" ;
-                                                     ld:hasAPIId "Host.23" .
+ldp:Mueller_Florian a ld:NatuerlichePerson ;
+                    rdfs:label "Florian Müller" ;
+                    ld:hasAPIId "Host.23" .
 
-<http://leipzig-data.de/Data/Person/Nagler_Petra> a ld:NatuerlichePerson ;
-                                                  rdfs:label "Petra Nagler" ;
-                                                  rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" .
+ldp:Nagler_Petra a ld:NatuerlichePerson ;
+                 rdfs:label "Petra Nagler" ;
+                 rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" .
 
-<http://leipzig-data.de/Data/Person/Pauli_Stev> a ld:NatuerlichePerson ;
-                                                rdfs:label "Stev Pauli" .
+ldp:Pauli_Stev a ld:NatuerlichePerson ;
+               rdfs:label "Stev Pauli" .
 
-<http://leipzig-data.de/Data/Person/Petschauer_Susanne> a ld:NatuerlichePerson ;
-                                                        rdfs:label "Susanne Petschauer" .
+ldp:Petschauer_Susanne a ld:NatuerlichePerson ;
+                       rdfs:label "Susanne Petschauer" .
 
-<http://leipzig-data.de/Data/Person/Petzold_Matthias> a ld:NatuerlichePerson ;
-                                                      rdfs:label "Matthias Petzold" ;
-                                                      ld:hasAPIId "Host.1" .
+ldp:Petzold_Matthias a ld:NatuerlichePerson ;
+                     rdfs:label "Matthias Petzold" ;
+                     ld:hasAPIId "Host.1" .
 
-<http://leipzig-data.de/Data/Person/Petzschler_Ines> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Ines Petzschler" ;
-                                                     rdfs:comment "Vereinsvorstand Inspirata e.V." .
+ldp:Petzschler_Ines a ld:NatuerlichePerson ;
+                    rdfs:label "Ines Petzschler" ;
+                    rdfs:comment "Vereinsvorstand Inspirata e.V." .
 
-<http://leipzig-data.de/Data/Person/Petzschler_Uwe> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Uwe Petzschler" .
+ldp:Petzschler_Uwe a ld:NatuerlichePerson ;
+                   rdfs:label "Uwe Petzschler" .
 
-<http://leipzig-data.de/Data/Person/Pieper_Katrin> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Katrin Pieper" .
+ldp:Pieper_Katrin a ld:NatuerlichePerson ;
+                  rdfs:label "Katrin Pieper" .
 
-<http://leipzig-data.de/Data/Person/Quapp_Wolfgang> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Dr. Wolfgang Quapp" .
+ldp:Quapp_Wolfgang a ld:NatuerlichePerson ;
+                   rdfs:label "Dr. Wolfgang Quapp" .
 
-<http://leipzig-data.de/Data/Person/Quester_Roland> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Roland Quester" ;
-                                                    rdfs:comment "Leiter Umweltbibliothek" .
+ldp:Quester_Roland a ld:NatuerlichePerson ;
+                   rdfs:label "Roland Quester" ;
+                   rdfs:comment "Leiter Umweltbibliothek" .
 
-<http://leipzig-data.de/Data/Person/Rademacher_HansBert> a ld:NatuerlichePerson ;
-                                                         rdfs:label "Prof. Dr. Hans-Bert Rademacher" .
+ldp:Rademacher_HansBert a ld:NatuerlichePerson ;
+                        rdfs:label "Prof. Dr. Hans-Bert Rademacher" .
 
-<http://leipzig-data.de/Data/Person/Raue_Manfred> a ld:NatuerlichePerson ;
-                                                  rdfs:label "Manfred Raue" ;
-                                                  rdfs:comment "Geschäftsführer VDE Leipzig/Halle" .
+ldp:Raue_Manfred a ld:NatuerlichePerson ;
+                 rdfs:label "Manfred Raue" ;
+                 rdfs:comment "Geschäftsführer VDE Leipzig/Halle" .
 
-<http://leipzig-data.de/Data/Person/Rehm_Axel> a ld:NatuerlichePerson ;
-                                               rdfs:label "Axel Rehm" ;
-                                               ld:email "rehm@schulbiologiezentrum-leipzig.de" .
+ldp:Rehm_Axel a ld:NatuerlichePerson ;
+              rdfs:label "Axel Rehm" ;
+              ld:email "rehm@schulbiologiezentrum-leipzig.de" .
 
-<http://leipzig-data.de/Data/Person/Reinhardt_Sylvi> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Sylvi Reinhardt" ;
-                                                     ld:hasAPIId "Host.40" .
+ldp:Reinhardt_Sylvi a ld:NatuerlichePerson ;
+                    rdfs:label "Sylvi Reinhardt" ;
+                    ld:hasAPIId "Host.40" .
 
-<http://leipzig-data.de/Data/Person/Reschke_Katrin> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Katrin Reschke" ;
-                                                    rdfs:comment "Leiterin Dölitzer Wassermühle" .
+ldp:Reschke_Katrin a ld:NatuerlichePerson ;
+                   rdfs:label "Katrin Reschke" ;
+                   rdfs:comment "Leiterin Dölitzer Wassermühle" .
 
-<http://leipzig-data.de/Data/Person/Reschke_Volker> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Volker Reschke" ;
-                                                    rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." .
+ldp:Reschke_Volker a ld:NatuerlichePerson ;
+                   rdfs:label "Volker Reschke" ;
+                   rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." .
 
-<http://leipzig-data.de/Data/Person/Rhinow_Solvejg> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Dr. Solvejg Rhinow" .
+ldp:Rhinow_Solvejg a ld:NatuerlichePerson ;
+                   rdfs:label "Dr. Solvejg Rhinow" .
 
-<http://leipzig-data.de/Data/Person/Schilling_Peter> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Peter Schilling" ;
-                                                     rdfs:comment "Leiter AZ Schkeuditz" .
+ldp:Schilling_Peter a ld:NatuerlichePerson ;
+                    rdfs:label "Peter Schilling" ;
+                    rdfs:comment "Leiter AZ Schkeuditz" .
 
-<http://leipzig-data.de/Data/Person/Schlupp_Peter> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Peter Schlupp" .
+ldp:Schlupp_Peter a ld:NatuerlichePerson ;
+                  rdfs:label "Peter Schlupp" .
 
-<http://leipzig-data.de/Data/Person/Schmidt_Rosemarie> a ld:NatuerlichePerson ;
-                                                       rdfs:label "Rosemarie Schmidt" ;
-                                                       rdfs:comment "Landesgeschäftsführerin MNU Sachsen" .
+ldp:Schmidt_Rosemarie a ld:NatuerlichePerson ;
+                      rdfs:label "Rosemarie Schmidt" ;
+                      rdfs:comment "Landesgeschäftsführerin MNU Sachsen" .
 
-<http://leipzig-data.de/Data/Person/Schneider_Carla> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Carla Schneider" .
+ldp:Schneider_Carla a ld:NatuerlichePerson ;
+                    rdfs:label "Carla Schneider" .
 
-<http://leipzig-data.de/Data/Person/Schroth_Johannes> a ld:NatuerlichePerson ;
-                                                      rdfs:label "Johannes Schroth" .
+ldp:Schroth_Johannes a ld:NatuerlichePerson ;
+                     rdfs:label "Johannes Schroth" .
 
-<http://leipzig-data.de/Data/Person/Schueler_Axel> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Dr. Axel Schüler" ;
-                                                   rdfs:comment "Vorsitzender LSGM" .
+ldp:Schueler_Axel a ld:NatuerlichePerson ;
+                  rdfs:label "Dr. Axel Schüler" ;
+                  rdfs:comment "Vorsitzender LSGM" .
 
-<http://leipzig-data.de/Data/Person/Schulze_Susanne> a ld:NatuerlichePerson ;
-                                                     rdfs:label "Susanne Schulze" ;
-                                                     rdfs:comment "MINT-Beauftrage der BA Leipzig" .
+ldp:Schulze_Susanne a ld:NatuerlichePerson ;
+                    rdfs:label "Susanne Schulze" ;
+                    rdfs:comment "MINT-Beauftrage der BA Leipzig" .
 
-<http://leipzig-data.de/Data/Person/Schwarze_Wolfgang> a ld:NatuerlichePerson ;
-                                                       rdfs:label "Wolfgang Schwarze" ;
-                                                       rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." .
+ldp:Schwarze_Wolfgang a ld:NatuerlichePerson ;
+                      rdfs:label "Wolfgang Schwarze" ;
+                      rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." .
 
-<http://leipzig-data.de/Data/Person/Schweikart_Rudolf> a ld:NatuerlichePerson ;
-                                                       rdfs:label "Rudolf Schweikart" .
+ldp:Schweikart_Rudolf a ld:NatuerlichePerson ;
+                      rdfs:label "Rudolf Schweikart" .
 
-<http://leipzig-data.de/Data/Person/Seidel_Franka> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Franka Seidel" ;
-                                                   rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" .
+ldp:Seidel_Franka a ld:NatuerlichePerson ;
+                  rdfs:label "Franka Seidel" ;
+                  rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" .
 
-<http://leipzig-data.de/Data/Person/Teutsch_Georg> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Prof. Dr. Georg Teutsch" ;
-                                                   rdfs:comment "Direktor UFZ (Stand 2010)" .
+ldp:Teutsch_Georg a ld:NatuerlichePerson ;
+                  rdfs:label "Prof. Dr. Georg Teutsch" ;
+                  rdfs:comment "Direktor UFZ (Stand 2010)" .
 
-<http://leipzig-data.de/Data/Person/Thate_Stefanie> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Stefanie Thate" .
+ldp:Thate_Stefanie a ld:NatuerlichePerson ;
+                   rdfs:label "Stefanie Thate" .
 
-<http://leipzig-data.de/Data/Person/TraegerNestler_Angelika> a ld:NatuerlichePerson ;
-                                                             rdfs:label "Dr. Angelika Träger-Nestler" ;
-                                                             rdfs:comment "Geschäftsführerin GaraGe gGmbH" .
+ldp:TraegerNestler_Angelika a ld:NatuerlichePerson ;
+                            rdfs:label "Dr. Angelika Träger-Nestler" ;
+                            rdfs:comment "Geschäftsführerin GaraGe gGmbH" .
 
-<http://leipzig-data.de/Data/Person/Wagner_Thomas> a ld:NatuerlichePerson ;
-                                                   rdfs:label "Thomas Wagner" ;
-                                                   ld:hasAPIId "Host.33", "Host.34", "Host.30", "Host.31", "Host.32" .
+ldp:Wagner_Thomas a ld:NatuerlichePerson ;
+                  rdfs:label "Thomas Wagner" ;
+                  ld:hasAPIId "Host.33", "Host.34", "Host.30", "Host.31", "Host.32" .
 
-<http://leipzig-data.de/Data/Person/Warkus_Hartmut> a ld:NatuerlichePerson ;
-                                                    rdfs:label "Prof. Dr. Hartmut Warkus" ;
-                                                    rdfs:comment "2012 verstorben", "Geschäftsführer der ComputerSpielSchule" .
+ldp:Warkus_Hartmut a ld:NatuerlichePerson ;
+                   rdfs:label "Prof. Dr. Hartmut Warkus" ;
+                   rdfs:comment "Geschäftsführer der ComputerSpielSchule", "2012 verstorben" .
 
 <> a owl:Ontology ;
    rdfs:label "LeipzigData - Natürliche Personen" .
