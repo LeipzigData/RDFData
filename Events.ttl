@@ -1,5 +1,8 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://leipzig-data.de/Data/Events/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
@@ -8,549 +11,378 @@
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.105>
-    ld:contactPerson ldp:Reinhardt_Sylvi ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.105> ;
-    ld:hasOwner "131" ;
-    a ld:Event ;
-    rdfs:label "Ausstellung \"Kollektion 13 - distale Liebe\"" ;
-    cal:description "Am 02.November 2012 beginnt der Relaunch der Designerin Sylvi Reinhardt mit der Modeperformance und Ausstellung zur neuen Kollektion 13. <br/> <br/> „distale Liebe“ <br/> <br/> Sie ist mehr als eine Liebe, Modedesign in Verbindung von Musik mit Malerei/Grafik hin zur Fotografie. <br/> <br/> In der Ausstellung sehen Sie die Fotoarbeiten von Hagen Wolf zur Kollektion. Da eine Kollektion nie wirklich zu Ende kommt, sind grafische Zeichnungen zum Thema „distale Liebe“ von der Designerin Sylvi Reinhardt exklusiv mitveröffentlicht. Wir freuen uns, Sie zur Schau mit einem Glas Sekt begrüßen zu dürfen. Tauchen Sie in die neue Ready-to-wear-Kollektionen „distale Liebe“ mit musikalischer Berieselung durch frequen-c. <br/> <br/> Karten für die Veranstaltung am 02.11.2012 können Sie direkt bei Reinhardt in der Ernst-Schneller-Str.7, 04107 Leipzig sowie im Kulturkaffee plan b erwerben. Kartenbestellungen per Mail sind unter info@syl-reinhardt.com möglich. <br/> <br/> Preis schlicht 22,00 Euro <br/> Preis drapiert 28,00 Euro (zuzüglich Versand bei Zusendung)" ;
-    cal:dtstart "2012-11-02" ;
-    cal:location ldo:Plan-B .
+<http://leipzig-data.de/Data/Event/APILeipzig.105> a ld:Event ;
+                                                   rdfs:label "Ausstellung \"Kollektion 13 - distale Liebe\"" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldp:Reinhardt_Sylvi ;
+                                                   cal:dtstart "2012-11-02" ;
+                                                   cal:location ldo:Plan-B ;
+                                                   cal:description "Am 02.November 2012 beginnt der Relaunch der Designerin Sylvi Reinhardt mit der Modeperformance und Ausstellung zur neuen Kollektion 13. <br/> <br/> „distale Liebe“ <br/> <br/> Sie ist mehr als eine Liebe, Modedesign in Verbindung von Musik mit Malerei/Grafik hin zur Fotografie. <br/> <br/> In der Ausstellung sehen Sie die Fotoarbeiten von Hagen Wolf zur Kollektion. Da eine Kollektion nie wirklich zu Ende kommt, sind grafische Zeichnungen zum Thema „distale Liebe“ von der Designerin Sylvi Reinhardt exklusiv mitveröffentlicht. Wir freuen uns, Sie zur Schau mit einem Glas Sekt begrüßen zu dürfen. Tauchen Sie in die neue Ready-to-wear-Kollektionen „distale Liebe“ mit musikalischer Berieselung durch frequen-c. <br/> <br/> Karten für die Veranstaltung am 02.11.2012 können Sie direkt bei Reinhardt in der Ernst-Schneller-Str.7, 04107 Leipzig sowie im Kulturkaffee plan b erwerben. Kartenbestellungen per Mail sind unter info@syl-reinhardt.com möglich. <br/> <br/> Preis schlicht 22,00 Euro <br/> Preis drapiert 28,00 Euro (zuzüglich Versand bei Zusendung)" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.105> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.115>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.115> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Foto-Donnerstag" ;
-    cal:description "Auch im November treffen wir uns am ersten Donnerstag wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal besucht uns der weltbekannte Fotograf Helmut Newton. <br/> Dies zwar nur auf der Leinwand, aber auch dort wird er uns sicher die nötige Erfahrung und Inspiration vermitteln können. <br/> <br/> Wir schauen \"Helmut Newton: Frames from the Edge\" <br/> <br/> Filmbeschreibung <br/> \"Starke Frauen in aufreizenden Posen, souverän, geheimnisvoll - in Helmut Newtons Fotografien verwischen die Grenzen zwischen Kunst und Pornografie. Ob Modefoto, Porträt oder Akt, voyeuristisch inszenierte Newton Geschichten, die auch ein Abbild der westlichen Gesellschaft sind. 1988 besuchte Adrian Maben den Starfotografen in seiner Wahlheimat Monte Carlo und begleitete ihn zu Fotosessions nach Los Angeles, Berlin und Paris. Dabei gewährte Newton rare Einblicke in sein Privatleben und seine Arbeit. Wie die Zusammenarbeit mit einem der begehrtesten Fotografen des 20. Jahrhunderts aussah, das berichten Stars wie Karl Lagerfeld und Catherine Deneuve.\" <br/> <br/> Wir treffen uns 18:45 Uhr im Hörsaal des Max-Planck-Institut - zum Haupteingang rein (vom Deutschen Platz aus), dann in die 2. Etage, dort links (Treppe oder Fahrstuhl) der Zugang zum Hörsaal ist behindertengerecht, es könnten also auch Rollstuhlfahrer teilnehmen. Um 19:00 Uhr beginnen wir dann pünktlich mit dem Film der 100 Minuten geht. Anschließend setzen wir uns in geselliger Runde im Shady zusammen und können über den Film sprechen." ;
-    cal:dtstart "2012-11-01T18:45:42+01:00" ;
-    cal:location <http://leipzig-data.de/Data/Ort/MPI.EVA> .
+<http://leipzig-data.de/Data/Event/APILeipzig.115> a ld:Event ;
+                                                   rdfs:label "FO.DO - Der Foto-Donnerstag" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2012-11-01T18:45:42+01:00" ;
+                                                   cal:location <http://leipzig-data.de/Data/Ort/MPI.EVA> ;
+                                                   cal:description "Auch im November treffen wir uns am ersten Donnerstag wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal besucht uns der weltbekannte Fotograf Helmut Newton. <br/> Dies zwar nur auf der Leinwand, aber auch dort wird er uns sicher die nötige Erfahrung und Inspiration vermitteln können. <br/> <br/> Wir schauen \"Helmut Newton: Frames from the Edge\" <br/> <br/> Filmbeschreibung <br/> \"Starke Frauen in aufreizenden Posen, souverän, geheimnisvoll - in Helmut Newtons Fotografien verwischen die Grenzen zwischen Kunst und Pornografie. Ob Modefoto, Porträt oder Akt, voyeuristisch inszenierte Newton Geschichten, die auch ein Abbild der westlichen Gesellschaft sind. 1988 besuchte Adrian Maben den Starfotografen in seiner Wahlheimat Monte Carlo und begleitete ihn zu Fotosessions nach Los Angeles, Berlin und Paris. Dabei gewährte Newton rare Einblicke in sein Privatleben und seine Arbeit. Wie die Zusammenarbeit mit einem der begehrtesten Fotografen des 20. Jahrhunderts aussah, das berichten Stars wie Karl Lagerfeld und Catherine Deneuve.\" <br/> <br/> Wir treffen uns 18:45 Uhr im Hörsaal des Max-Planck-Institut - zum Haupteingang rein (vom Deutschen Platz aus), dann in die 2. Etage, dort links (Treppe oder Fahrstuhl) der Zugang zum Hörsaal ist behindertengerecht, es könnten also auch Rollstuhlfahrer teilnehmen. Um 19:00 Uhr beginnen wir dann pünktlich mit dem Film der 100 Minuten geht. Anschließend setzen wir uns in geselliger Runde im Shady zusammen und können über den Film sprechen." ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.115> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.116>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.116> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "WebMontag zum Thema Onlinereputation" ;
-    cal:description "Am Montag den 05.11.2012 geht es um das Thema \"Onlinereputation\". Was ist das überhaupt, was bedeutet es für mich als Privatperson, als Freiberufler, als Arbeitsuchender, als Autor... <br/> <br/> Vorträge: <br/> Lorenz Schirmer, Chief Operating Officer von yasni wird über <br/> \"Online\"reputation sprechen. Wobei auch die Frage besprochen wird was \"Reputation\" heute bedeutet in Zeiten wo Personal Branding immer wichtiger wird? <br/> <br/> http://www.yasni.de/ <br/> https://www.facebook.com/www.yasni.de <br/> <br/> <br/> Thomas Wagner wird zeigen, warum Google so großen Wert auf den Author-Rank legt und was Ihr damit machen könnt <br/> <br/> http://www.mi-service.de/ <br/> https://www.facebook.com/ThomasWagnerLeipzig" ;
-    cal:dtstart "2012-11-05T19:00:42+01:00" ;
-    cal:location ldo:Plan-B .
+<http://leipzig-data.de/Data/Event/APILeipzig.116> a ld:Event ;
+                                                   rdfs:label "WebMontag zum Thema Onlinereputation" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2012-11-05T19:00:42+01:00" ;
+                                                   cal:location ldo:Plan-B ;
+                                                   cal:description "Am Montag den 05.11.2012 geht es um das Thema \"Onlinereputation\". Was ist das überhaupt, was bedeutet es für mich als Privatperson, als Freiberufler, als Arbeitsuchender, als Autor... <br/> <br/> Vorträge: <br/> Lorenz Schirmer, Chief Operating Officer von yasni wird über <br/> \"Online\"reputation sprechen. Wobei auch die Frage besprochen wird was \"Reputation\" heute bedeutet in Zeiten wo Personal Branding immer wichtiger wird? <br/> <br/> http://www.yasni.de/ <br/> https://www.facebook.com/www.yasni.de <br/> <br/> <br/> Thomas Wagner wird zeigen, warum Google so großen Wert auf den Author-Rank legt und was Ihr damit machen könnt <br/> <br/> http://www.mi-service.de/ <br/> https://www.facebook.com/ThomasWagnerLeipzig" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.116> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.117>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.117> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "popoolär!-Stammtisch" ;
-    cal:description "popoolär! ist die Musikinitiative des Kreativen Leipzig e. V. Beim Stammtisch informieren wir einerseits über die aktuellen Vorhaben und laden andererseits zum lockeren Plausch über die lokale Musikszene ein. Wer sich für Musik aus Leipzig interessiert, Gleichgesinnte treffen oder sich engagieren möchte - alle sind herzlich willkommen!" ;
-    cal:dtstart "2012-11-07T19:30:42+01:00" ;
-    cal:location ldo:SchaubuehneLindenfels .
+<http://leipzig-data.de/Data/Event/APILeipzig.117> a ld:Event ;
+                                                   rdfs:label "popoolär!-Stammtisch" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2012-11-07T19:30:42+01:00" ;
+                                                   cal:location ldo:SchaubuehneLindenfels ;
+                                                   cal:description "popoolär! ist die Musikinitiative des Kreativen Leipzig e. V. Beim Stammtisch informieren wir einerseits über die aktuellen Vorhaben und laden andererseits zum lockeren Plausch über die lokale Musikszene ein. Wer sich für Musik aus Leipzig interessiert, Gleichgesinnte treffen oder sich engagieren möchte - alle sind herzlich willkommen!" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.117> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.118>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.118> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "WISSENSWERT: ver.di" ;
-    cal:description "WISSENSWERT - unsere Informationsreihe für Dinge, die für Kreativschaffende von Interesse sind. Dieses mal zu Gast: Bärbel Winkler von der Dienstleistungsgewerkschaft ver.di <br/> <br/> Was viele nicht wissen: ver.di hat auch den Anspruch, die Selbständigen und damit auch viele Kreativschaffenden zu vertreten. So setzt sich ver.di unter anderem für gerechte Bezahlung selbständiger Arbeit sowie für eine sinnvolle Berücksichtigung in den Sozialversicherungssystemen ein. Hinzu kommen noch verschiedene Weiterbildungsangebote für Selbständige. Interessant, oder? Von Frau Winkler möchten wir uns erklären lassen, was genau dahinter steckt und unter welchen Umständen eine Mitgliedschaft bei ver.di sogar sinnvoll sein könnte. Wir sind gespannt.. Ihr auch? Dann kommt einfach hinzu und bringt eure Fragen mit! <br/> <br/> Die Teilnahme ist kostenlos." ;
-    cal:dtstart "2012-11-07T17:30:42+01:00" ;
-    cal:location ldo:Plan-B .
+<http://leipzig-data.de/Data/Event/APILeipzig.118> a ld:Event ;
+                                                   rdfs:label "WISSENSWERT: ver.di" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2012-11-07T17:30:42+01:00" ;
+                                                   cal:location ldo:Plan-B ;
+                                                   cal:description "WISSENSWERT - unsere Informationsreihe für Dinge, die für Kreativschaffende von Interesse sind. Dieses mal zu Gast: Bärbel Winkler von der Dienstleistungsgewerkschaft ver.di <br/> <br/> Was viele nicht wissen: ver.di hat auch den Anspruch, die Selbständigen und damit auch viele Kreativschaffenden zu vertreten. So setzt sich ver.di unter anderem für gerechte Bezahlung selbständiger Arbeit sowie für eine sinnvolle Berücksichtigung in den Sozialversicherungssystemen ein. Hinzu kommen noch verschiedene Weiterbildungsangebote für Selbständige. Interessant, oder? Von Frau Winkler möchten wir uns erklären lassen, was genau dahinter steckt und unter welchen Umständen eine Mitgliedschaft bei ver.di sogar sinnvoll sein könnte. Wir sind gespannt.. Ihr auch? Dann kommt einfach hinzu und bringt eure Fragen mit! <br/> <br/> Die Teilnahme ist kostenlos." ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.118> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.119>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.119> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FOKUS: Alle gegen alle? – Lösungen zur Selbstverwirklichung" ;
-    cal:description "Das Kompetenzzentrum Kultur- &amp; Kreativwirtschaft des Bundes und Kreatives Leipzig e. V. laden ein zu einer Podiumsdiskussion zum Thema Selbstverwirklichung für Freiberufler in der Kreativwirtschaft. <br/> <br/> Die FOKUS-Veranstaltung \"Allein gegen alle?\" rückt Möglichkeiten zur Selbstverwirklichung für freiberuflich Kreativschaffende in der „schönen neuen Arbeitswelt“ in den Fokus. Beispiele zur Vernetzung und zum Informationsaustausch der Freelancer sowie Lösungsansätze von Seiten der Verbände und Interessenvertretungen sollen aufgezeigt, Fragen zur gesellschaftlichen und politischen Akzeptanz der Branche und Wertschätzung kreativer Arbeit aufgeworfen und v. a. konkrete Angebote zu Beratung und Bildung vorgestellt werden. <br/> <br/> Veronika Mirschel (ver.di Die Freien), Christian Römer (Heinrich-Böll-Stiftung), Claudia Muntschick (Wir Gestalten Dresden e. V.), Andreas Maxbauer (AGD Allianz Deutscher Designer), Alexander Heyne (Bund der Übersetzer) sowie Martin Selbmann und Michael Raeck (Mucona Media) sprechen über konkrete Beispiele, Möglichkeiten und Schritte zur aktiven Selbstverwirklichung und Gestaltung der Arbeitssituation für Freiberufler innerhalb der Kultur- und Kreativwirtschaft. <br/> <br/> Die Teilnahme ist kostenfrei. <br/> <br/> Im Foyer des LOFFT wird am 12. November die Ausstellung BRENNE UND SEI DANKBAR (testset) gezeigt. Sie beleuchtet Einzelaspekte der kulturpolitischen und finanziellen Grundsituation sowie der Arbeits- und Lebensbedingungen von Freien Tanz- und Theaterschaffenden in Deutschland. Die Verschlechterung der Arbeits- und Lebensbedingungen für Künstlerinnen und Künstler steht paradigmatisch für die Flexibilisierung der Arbeitsmärkte und Entwicklungen auch in anderen Bereichen unserer Gesellschaft – der Kunst kommt hier eine fragwürdige Vorreiterrolle zu. " ;
-    cal:dtstart "2012-11-12T19:00:42+01:00" ;
-    cal:location ldo:LOFFT .
+<http://leipzig-data.de/Data/Event/APILeipzig.119> a ld:Event ;
+                                                   rdfs:label "FOKUS: Alle gegen alle? – Lösungen zur Selbstverwirklichung" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2012-11-12T19:00:42+01:00" ;
+                                                   cal:location ldo:LOFFT ;
+                                                   cal:description "Das Kompetenzzentrum Kultur- &amp; Kreativwirtschaft des Bundes und Kreatives Leipzig e. V. laden ein zu einer Podiumsdiskussion zum Thema Selbstverwirklichung für Freiberufler in der Kreativwirtschaft. <br/> <br/> Die FOKUS-Veranstaltung \"Allein gegen alle?\" rückt Möglichkeiten zur Selbstverwirklichung für freiberuflich Kreativschaffende in der „schönen neuen Arbeitswelt“ in den Fokus. Beispiele zur Vernetzung und zum Informationsaustausch der Freelancer sowie Lösungsansätze von Seiten der Verbände und Interessenvertretungen sollen aufgezeigt, Fragen zur gesellschaftlichen und politischen Akzeptanz der Branche und Wertschätzung kreativer Arbeit aufgeworfen und v. a. konkrete Angebote zu Beratung und Bildung vorgestellt werden. <br/> <br/> Veronika Mirschel (ver.di Die Freien), Christian Römer (Heinrich-Böll-Stiftung), Claudia Muntschick (Wir Gestalten Dresden e. V.), Andreas Maxbauer (AGD Allianz Deutscher Designer), Alexander Heyne (Bund der Übersetzer) sowie Martin Selbmann und Michael Raeck (Mucona Media) sprechen über konkrete Beispiele, Möglichkeiten und Schritte zur aktiven Selbstverwirklichung und Gestaltung der Arbeitssituation für Freiberufler innerhalb der Kultur- und Kreativwirtschaft. <br/> <br/> Die Teilnahme ist kostenfrei. <br/> <br/> Im Foyer des LOFFT wird am 12. November die Ausstellung BRENNE UND SEI DANKBAR (testset) gezeigt. Sie beleuchtet Einzelaspekte der kulturpolitischen und finanziellen Grundsituation sowie der Arbeits- und Lebensbedingungen von Freien Tanz- und Theaterschaffenden in Deutschland. Die Verschlechterung der Arbeits- und Lebensbedingungen für Künstlerinnen und Künstler steht paradigmatisch für die Flexibilisierung der Arbeitsmärkte und Entwicklungen auch in anderen Bereichen unserer Gesellschaft – der Kunst kommt hier eine fragwürdige Vorreiterrolle zu. " ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.119> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.120>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.120> ;
-    ld:hasOwner "8" ;
-    ld:hasURL "http://www.eexistence.de/posts/fablab-leipzig-opens-now" ;
-    a ld:Event ;
-    rdfs:label "FabLab Leipzig opens now!" ;
-    cal:description "Vom 05. bis 28.11. hat das FabLab Leipzig erstmalig (temporär) seine Türen für euch und eure Ideen weit geöffnet! " ;
-    cal:dtend "2012-11-28T16:00:00+01:00" ;
-    cal:dtstart "2012-11-05T10:00:00+01:00" ;
-    cal:location ldo:EssentialExistenceGallery .
+<http://leipzig-data.de/Data/Event/APILeipzig.120> a ld:Event ;
+                                                   rdfs:label "FabLab Leipzig opens now!" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/fablab-leipzig-opens-now> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   cal:dtstart "2012-11-05T10:00:00+01:00" ;
+                                                   cal:location ldo:EssentialExistenceGallery ;
+                                                   cal:description "Vom 05. bis 28.11. hat das FabLab Leipzig erstmalig (temporär) seine Türen für euch und eure Ideen weit geöffnet! " ;
+                                                   cal:dtend "2012-11-28T16:00:00+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.120> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.121>
-    ld:contactPerson ldp:Hoyer_Stephan ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.121> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://leipzigjs.github.com/" ;
-    a ld:Event ;
-    rdfs:label "LeipzigJS - 2. Treffen - Testing JavaScript" ;
-    cal:description "2. Treffen der JavaScript Usergroup Leipzig. <br/> <br/> Es sind drei Vorträge geplant: <br/> * Node.js testen mit Mocha - Mario Behrendt <br/> * Frontend testen mit Jasmine - ??? <br/> * Frontend testen mit Test'em - Stephan Hoyer" ;
-    cal:dtend "2012-11-30T23:00:42+01:00" ;
-    cal:dtstart "2012-11-30T20:00:42+01:00" ;
-    cal:location ldo:Villa .
+<http://leipzig-data.de/Data/Event/APILeipzig.121> a ld:Event ;
+                                                   rdfs:label "LeipzigJS - 2. Treffen - Testing JavaScript" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://leipzigjs.github.com/> ;
+                                                   ld:contactPerson ldp:Hoyer_Stephan ;
+                                                   cal:dtstart "2012-11-30T20:00:42+01:00" ;
+                                                   cal:location ldo:Villa ;
+                                                   cal:description "2. Treffen der JavaScript Usergroup Leipzig. <br/> <br/> Es sind drei Vorträge geplant: <br/> * Node.js testen mit Mocha - Mario Behrendt <br/> * Frontend testen mit Jasmine - ??? <br/> * Frontend testen mit Test'em - Stephan Hoyer" ;
+                                                   cal:dtend "2012-11-30T23:00:42+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.121> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.122>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.122> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "11.12.2012 WISSENSWERT: Existenzgründung aus ALG II (Nachholtermin)" ;
-    cal:description "WISSENSWERT - unsere Informationsreihe für Dinge, die für Kreativschaffende von Interesse sind. Dieses mal zu Gast: Malgorzata Schirmer &amp; Melanie Kühn, JobCenter Leipzig. <br/> <br/> Viele Selbständige in der Kreativwirtschaft starten ihre Unternehmen aus der Arbeitslosigkeit heraus. Bei unserer WISSENSWERT-Veranstaltung zeigen wir, wie das geht, welche Unterstützungsangebote es gibt und was beachtet werden muss. Alle Interessierten sind herzlich eingeladen und ihre Fragen mitzubringen." ;
-    cal:dtstart "2012-12-11T17:30:42+01:00" ;
-    cal:location ldo:Plan-B .
+<http://leipzig-data.de/Data/Event/APILeipzig.122> a ld:Event ;
+                                                   rdfs:label "11.12.2012 WISSENSWERT: Existenzgründung aus ALG II (Nachholtermin)" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2012-12-11T17:30:42+01:00" ;
+                                                   cal:location ldo:Plan-B ;
+                                                   cal:description "WISSENSWERT - unsere Informationsreihe für Dinge, die für Kreativschaffende von Interesse sind. Dieses mal zu Gast: Malgorzata Schirmer &amp; Melanie Kühn, JobCenter Leipzig. <br/> <br/> Viele Selbständige in der Kreativwirtschaft starten ihre Unternehmen aus der Arbeitslosigkeit heraus. Bei unserer WISSENSWERT-Veranstaltung zeigen wir, wie das geht, welche Unterstützungsangebote es gibt und was beachtet werden muss. Alle Interessierten sind herzlich eingeladen und ihre Fragen mitzubringen." ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.122> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.123>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.123> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Foto-Donnerstag" ;
-    cal:description "Auch im Dezember treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal wollen wir eine Bildbesprechung machen. Alle Teilnehmer bringen daher bitte 3 Bilder mit, über die wir dann KONSTRUKTIV sprechen. Das können die drei schönsten Bilder sein oder die drei wenigsten schönsten oder eine Mischung aus beidem :) <br/> Ihr müsst kein Profi sein um mit diskutieren zu können, auch die Meinung eines Laien kann sehr interessant sein und eine gute Grundlage für eine spannende Diskussion bieten. <br/> <br/> Damit das Format etwas einheitlich wird und nicht der Eine mit übergroßen Drucken und der andere mit Briefmarken kommt, sollten die Bilder alle eine Größe von ca. 20x30cm bzw. A4 haben. <br/> Wer nicht weiß wo er seine Bilder entwickeln lassen soll, dem empfehle ich www.pixelfoto-express.de, www.fotobuchexpress24.de/ oder www.bildpartner.de <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann, August-Bebel-Straße 2, 04275 Leipzig und sitzen im Separee." ;
-    cal:dtstart "2012-12-06T19:00:42+01:00" ;
-    cal:location ldo:Cafe-Grundmann .
+<http://leipzig-data.de/Data/Event/APILeipzig.123> a ld:Event ;
+                                                   rdfs:label "FO.DO - Der Foto-Donnerstag" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2012-12-06T19:00:42+01:00" ;
+                                                   cal:location ldo:Cafe-Grundmann ;
+                                                   cal:description "Auch im Dezember treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal wollen wir eine Bildbesprechung machen. Alle Teilnehmer bringen daher bitte 3 Bilder mit, über die wir dann KONSTRUKTIV sprechen. Das können die drei schönsten Bilder sein oder die drei wenigsten schönsten oder eine Mischung aus beidem :) <br/> Ihr müsst kein Profi sein um mit diskutieren zu können, auch die Meinung eines Laien kann sehr interessant sein und eine gute Grundlage für eine spannende Diskussion bieten. <br/> <br/> Damit das Format etwas einheitlich wird und nicht der Eine mit übergroßen Drucken und der andere mit Briefmarken kommt, sollten die Bilder alle eine Größe von ca. 20x30cm bzw. A4 haben. <br/> Wer nicht weiß wo er seine Bilder entwickeln lassen soll, dem empfehle ich www.pixelfoto-express.de, www.fotobuchexpress24.de/ oder www.bildpartner.de <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann, August-Bebel-Straße 2, 04275 Leipzig und sitzen im Separee." ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.123> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.124>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.124> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FOKUS: Kopf oder Zahl? Der Wert der Kreativwirtschaft" ;
-    cal:description " Veranstaltung zum Abschluss der FOKUS-Reihe im Rahmen des 3. Geburtstags von detektor.fm <br/> <br/> Zum Abschluss der FOKUS-Reihe werfen wir im Rahmen des dritten Geburtstages von detektor.fm einen Blick zurück und viele Blicke nach vorn und fragen nach dem Wert der Kreativwirtschaft. Seid herzlich eingeladen und nehmt euch mit uns Zeit und Raum für Diskurs zum Thema: <br/> <br/> „Kopf oder Zahl? Der Wert der Kreativwirtschaft“ <br/> <br/> Mit den Podiumsgästen: <br/> <br/> Burkhard Jung, Oberbürgermeister von Leipzig <br/> <br/> Michael Söndermann, geschäftsführender Vorsitzender des Arbeitskreises Kulturstatistik e.V. <br/> <br/> Tim Pritlove, Medienkünstler und Podcaster <br/> <br/> Peter Grafe, Referatsleiter Kulturwirtschaft beim Beauftragten der Bundesregierung für Kultur und Medien <br/> <br/> <br/> Die Veranstaltung findet statt mit freundlicher Unterstützung von <br/> Initiative Kultur- und Kreativwirtschaft der Bundesregierung / kultur-kreativ-wirtschaft.de <br/> detektor.fm <br/> ikk classic / ikk-classic.de <br/> Seaside Park Hotel Leipzig / parkhotelleipzig.de <br/> Vereinigte Leipziger Wohnungsgenossenschaft eG / vlw-eg.de" ;
-    cal:dtstart "2012-11-05T19:30:42+01:00" ;
-    cal:location ldo:GfZK .
+<http://leipzig-data.de/Data/Event/APILeipzig.124> a ld:Event ;
+                                                   rdfs:label "FOKUS: Kopf oder Zahl? Der Wert der Kreativwirtschaft" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2012-11-05T19:30:42+01:00" ;
+                                                   cal:location ldo:GfZK ;
+                                                   cal:description " Veranstaltung zum Abschluss der FOKUS-Reihe im Rahmen des 3. Geburtstags von detektor.fm <br/> <br/> Zum Abschluss der FOKUS-Reihe werfen wir im Rahmen des dritten Geburtstages von detektor.fm einen Blick zurück und viele Blicke nach vorn und fragen nach dem Wert der Kreativwirtschaft. Seid herzlich eingeladen und nehmt euch mit uns Zeit und Raum für Diskurs zum Thema: <br/> <br/> „Kopf oder Zahl? Der Wert der Kreativwirtschaft“ <br/> <br/> Mit den Podiumsgästen: <br/> <br/> Burkhard Jung, Oberbürgermeister von Leipzig <br/> <br/> Michael Söndermann, geschäftsführender Vorsitzender des Arbeitskreises Kulturstatistik e.V. <br/> <br/> Tim Pritlove, Medienkünstler und Podcaster <br/> <br/> Peter Grafe, Referatsleiter Kulturwirtschaft beim Beauftragten der Bundesregierung für Kultur und Medien <br/> <br/> <br/> Die Veranstaltung findet statt mit freundlicher Unterstützung von <br/> Initiative Kultur- und Kreativwirtschaft der Bundesregierung / kultur-kreativ-wirtschaft.de <br/> detektor.fm <br/> ikk classic / ikk-classic.de <br/> Seaside Park Hotel Leipzig / parkhotelleipzig.de <br/> Vereinigte Leipziger Wohnungsgenossenschaft eG / vlw-eg.de" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.124> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.125>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.125> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://www.open-innovation-conference.com/" ;
-    a ld:Event ;
-    rdfs:label "Open Innovation Conference" ;
-    cal:description "Die von der Stadt Leipzig veranstaltete internationale Konferenz findet im Rahmen der Abschlusskonferenz des EU-Projektes Creative Cities statt. Die Konferenz bringt europäische Experten aus Wissenschaft, Industrie und Verwaltung zusammen. Im Zentrum steht der Erfahrungsaustausch im Bereich Open Innovation in der Kreativwirtschaft. Es sollen Methoden und Werkzeuge der Open Innovation aufgezeigt und diskutiert werden, wo diese innerhalb der Kreativwirtschaft am Besten wirken können. Inhaltliche stehen die Begriffe \"Innovation\", \"Open Innovation\" und \"Kreativwirtschaft\" im Mittelpunkt der ersten Leipziger Innovationskonferenz. Die Veranstaltung dient auch dem Ausloten der Perspektive eines permanenten Innovationsforums in Leipzig. So könnte eine jährliche Konferenz jeweils unterschiedliche Branchen mit dem Thema Innovation in Diskurs bringen. <br/> Erwartet werden an den drei Tagen etwa 150 Teilnehmer. Eingeladen sind Vertreter der 11 Partner des EU-Projektes Creative Cities aus Deutschland, Polen, Slowenien, Ungarn und Italien, Vertreter des europäischen Städtenetzwerkes EuroCities mit seinen rund 140 Mitgliedstädten sowie des Projektes koopStadt. Außerdem: Vertreter der europäischen FabLab-Bewegung (u.a. Kitchen Budapest und FabLab Amersfoort), Wissenschaftler aus dem Innovationsmanagement und nationale sowie internationale Verantwortliche der Stadtentwicklung und der Wirtschaftsförderung. <br/> Im Rahmen der begleitenden Ausstellung wird sich neben dem Leipziger FabLab die Stadt Leipzig sowie die Unterstützer/Sponsoren der Veranstaltung präsentieren. Hierfür sind jeweils ausreichend Flächen geplant, um bspw. den multimedialen Präsentationsauftritt der Stadt Leipzig zu gewährleisten. Wünschenswert sind moderne mediale Präsentationsformen (Bildschirm/Projektion in Kombination mit Materialauslagen anstelle klassischer Messestände mit Hintersetzer und Tisch). Die Präsentationen sollten so in die FabLab Experience integriert werden, dass ein harmonisches Gesamtbild entsteht. <br/> Diese ganztägig parallel stattfindende FabLab Expierence wird über Bildschirme in den Konferenzräumlichkeiten wahrnehmbar. Die Verbindung von Konferenz-Inhalten in den Diskussionen und Sessions mit der FabLab Experience geschieht durch eine 5- bis 8-minütige Live-Schalte während der Eröffnungsrunde. Ein Mitglied des FabLab-Teams erklärt den Prozess von der Idee bis zum Prototyp anhand der ausgestellten Maschinen und Geräte. Vier Kameras bilden außerdem die wichtigsten Stationen des Innovationsprozesses ab und machen ihn somit nachvollziehbar. Sie werden im Veranstaltungssaal auf vier Plasma-Screens zu sehen sein. <br/> Die FabLab Experience fungiert als praktischer Rahmen der Konferenz. Es demonstriert Innovationsprozesse und zeigt an Beispielen den konkreten Ablauf von der Idee zum Produkt. Es gibt einen Workshopbereich für Ideenfindung und Konzeption, von dem ausgehend die Darstellung und Programmierung am Computer erfolgt und schlussendlich durch Herstellungsprozesse an verschiedenen Maschinen zu konkreten Produkten bzw. Prototypen führt. Folgende Maschinen stehen zur Verfügung: 3D-Drucker, Stickmaschine, Laser-Cutter, 3D-Scanner. Exemplarisch werden Teile eines 3D-Druckers im Vorfeld gefertigt und während des Veranstaltungstages zusammengebaut. <br/> Die Veranstaltung wird in ihren wesentlichen Teilen auf der Internetseite zu verfolgen sein. Zudem besteht die Möglichkeit, dass sich Interessierte per moderner Kommunikationsmittel (Facebook, Twitter) an Diskussionsteilen beteiligen können. <br/> Die Veranstaltung hat durch die Parallelität von Theorie und Praxis, die hohe Quantität von technischer Kommunikation und das Einbinden der Öffentlichkeit über moderne Kommunikationskanäle ein ungewöhnlich hohes Maß an experimentellen Elementen, die in dieser Kombination für viele Besucher einmalig sein dürfte." ;
-    cal:dtend "2012-11-30T16:30:42+01:00" ;
-    cal:dtstart "2012-11-29T09:30:42+01:00" ;
-    cal:location ldo:VillaIda .
+<http://leipzig-data.de/Data/Event/APILeipzig.125> a ld:Event ;
+                                                   rdfs:label "Open Innovation Conference" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.open-innovation-conference.com/> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                   cal:dtstart "2012-11-29T09:30:42+01:00" ;
+                                                   cal:location ldo:VillaIda ;
+                                                   cal:description "Die von der Stadt Leipzig veranstaltete internationale Konferenz findet im Rahmen der Abschlusskonferenz des EU-Projektes Creative Cities statt. Die Konferenz bringt europäische Experten aus Wissenschaft, Industrie und Verwaltung zusammen. Im Zentrum steht der Erfahrungsaustausch im Bereich Open Innovation in der Kreativwirtschaft. Es sollen Methoden und Werkzeuge der Open Innovation aufgezeigt und diskutiert werden, wo diese innerhalb der Kreativwirtschaft am Besten wirken können. Inhaltliche stehen die Begriffe \"Innovation\", \"Open Innovation\" und \"Kreativwirtschaft\" im Mittelpunkt der ersten Leipziger Innovationskonferenz. Die Veranstaltung dient auch dem Ausloten der Perspektive eines permanenten Innovationsforums in Leipzig. So könnte eine jährliche Konferenz jeweils unterschiedliche Branchen mit dem Thema Innovation in Diskurs bringen. <br/> Erwartet werden an den drei Tagen etwa 150 Teilnehmer. Eingeladen sind Vertreter der 11 Partner des EU-Projektes Creative Cities aus Deutschland, Polen, Slowenien, Ungarn und Italien, Vertreter des europäischen Städtenetzwerkes EuroCities mit seinen rund 140 Mitgliedstädten sowie des Projektes koopStadt. Außerdem: Vertreter der europäischen FabLab-Bewegung (u.a. Kitchen Budapest und FabLab Amersfoort), Wissenschaftler aus dem Innovationsmanagement und nationale sowie internationale Verantwortliche der Stadtentwicklung und der Wirtschaftsförderung. <br/> Im Rahmen der begleitenden Ausstellung wird sich neben dem Leipziger FabLab die Stadt Leipzig sowie die Unterstützer/Sponsoren der Veranstaltung präsentieren. Hierfür sind jeweils ausreichend Flächen geplant, um bspw. den multimedialen Präsentationsauftritt der Stadt Leipzig zu gewährleisten. Wünschenswert sind moderne mediale Präsentationsformen (Bildschirm/Projektion in Kombination mit Materialauslagen anstelle klassischer Messestände mit Hintersetzer und Tisch). Die Präsentationen sollten so in die FabLab Experience integriert werden, dass ein harmonisches Gesamtbild entsteht. <br/> Diese ganztägig parallel stattfindende FabLab Expierence wird über Bildschirme in den Konferenzräumlichkeiten wahrnehmbar. Die Verbindung von Konferenz-Inhalten in den Diskussionen und Sessions mit der FabLab Experience geschieht durch eine 5- bis 8-minütige Live-Schalte während der Eröffnungsrunde. Ein Mitglied des FabLab-Teams erklärt den Prozess von der Idee bis zum Prototyp anhand der ausgestellten Maschinen und Geräte. Vier Kameras bilden außerdem die wichtigsten Stationen des Innovationsprozesses ab und machen ihn somit nachvollziehbar. Sie werden im Veranstaltungssaal auf vier Plasma-Screens zu sehen sein. <br/> Die FabLab Experience fungiert als praktischer Rahmen der Konferenz. Es demonstriert Innovationsprozesse und zeigt an Beispielen den konkreten Ablauf von der Idee zum Produkt. Es gibt einen Workshopbereich für Ideenfindung und Konzeption, von dem ausgehend die Darstellung und Programmierung am Computer erfolgt und schlussendlich durch Herstellungsprozesse an verschiedenen Maschinen zu konkreten Produkten bzw. Prototypen führt. Folgende Maschinen stehen zur Verfügung: 3D-Drucker, Stickmaschine, Laser-Cutter, 3D-Scanner. Exemplarisch werden Teile eines 3D-Druckers im Vorfeld gefertigt und während des Veranstaltungstages zusammengebaut. <br/> Die Veranstaltung wird in ihren wesentlichen Teilen auf der Internetseite zu verfolgen sein. Zudem besteht die Möglichkeit, dass sich Interessierte per moderner Kommunikationsmittel (Facebook, Twitter) an Diskussionsteilen beteiligen können. <br/> Die Veranstaltung hat durch die Parallelität von Theorie und Praxis, die hohe Quantität von technischer Kommunikation und das Einbinden der Öffentlichkeit über moderne Kommunikationskanäle ein ungewöhnlich hohes Maß an experimentellen Elementen, die in dieser Kombination für viele Besucher einmalig sein dürfte." ;
+                                                   cal:dtend "2012-11-30T16:30:42+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.125> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.126>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.126> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Fotodonnerstag" ;
-    cal:description "Auch im Januar des neuen Jahres treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Unser Thema diesmal: Jahresplanung 2013 <br/> Wir wollen gemeinschaftlich für die weiteren Treffen über mögliche Themen sprechen. Jeder kann eigene Ideen und Vorstellungen einbringen, die wir dann in der Gruppe diskutieren. <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann und sitzen im Separee im hinteren Teil des Lokales. <br/> Wir freuen uns auch stets über neue Gesichter." ;
-    cal:dtstart "2013-01-03T19:00:42+01:00" ;
-    cal:location ldo:Cafe-Grundmann .
+<http://leipzig-data.de/Data/Event/APILeipzig.126> a ld:Event ;
+                                                   rdfs:label "FO.DO - Der Fotodonnerstag" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2013-01-03T19:00:42+01:00" ;
+                                                   cal:location ldo:Cafe-Grundmann ;
+                                                   cal:description "Auch im Januar des neuen Jahres treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Unser Thema diesmal: Jahresplanung 2013 <br/> Wir wollen gemeinschaftlich für die weiteren Treffen über mögliche Themen sprechen. Jeder kann eigene Ideen und Vorstellungen einbringen, die wir dann in der Gruppe diskutieren. <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann und sitzen im Separee im hinteren Teil des Lokales. <br/> Wir freuen uns auch stets über neue Gesichter." ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.126> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.127>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.127> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FLYING MUSIC CIRCUS - Das Festival" ;
-    cal:description "“Ihr müsst spielen, spielen und nochmals spielen.” <br/> <br/> Den Satz kennst Du, oder? Und Du weiß, dass das viel leichter gesagt ist als getan. Deswegen wird Flying Music Circus neben Workshops, Seminaren und einem Promo-Sampler auch Künstler auf Kurztour durch Sachsen schicken. <br/> <br/> DIE TOURDATEN <br/> <br/> Tour 1 I Salon <br/> mit Susann Großmann, CousCous, Nadine Maria Schmidt &amp; Frühmorgens am Meer <br/> 24.01.2013 Chemnitz, Weltecho <br/> 25.01.2013 Leipzig, Neues Schauspiel <br/> 27.01.2013 Dresden, Scheune <br/> <br/> Tour 2 I Backyard Rock <br/> mit 3apesband, Atlas Ahead, Elektrik Farm <br/> 24.01.2013 Dresden, Ostpol (zusätzlich mit Harry Bushh!!) <br/> 26.01.2013 Chemnitz, Weltecho <br/> 27.01.2013 Leipzig, Neues Schauspiel <br/> <br/> Tour 3 I Garage <br/> mit Daniel Orange, The Smokkings, Polis <br/> 24.01.2013 Leipzig, Neues Schauspiel <br/> 25.01.2013 Chemnitz, Weltecho <br/> 26.01.2013 Dresden, Bärenzwinger <br/> <br/> Tour 4 I Club <br/> mit Harry Bushh!!, Leo Hört Rauschen, Grafstrøm <br/> 25.01.2012 Dresden, Altes Wettbüro (ohne Harry Bushh!!, zusätzlich mit Lax-O-Mat) <br/> 26.01.2012 Leipzig, Neues Schauspiel (anschl. detektor.fm DJ Team) <br/> 27.01.2012 Chemnitz, Weltecho <br/> <br/> 4-Tages-Ticket (nur Vorverkauf): 15 Euro <br/> Abendkasse: 5 Euro <br/> <br/> Änderungen vorbehalten. Alles weitere unter http://flying-music-circus.de/fmc/tour" ;
-    cal:dtstart "2013-01-24" ;
-    cal:location ldo:NeuesSchauspielLeipzig .
+<http://leipzig-data.de/Data/Event/APILeipzig.127> a ld:Event ;
+                                                   rdfs:label "FLYING MUSIC CIRCUS - Das Festival" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   cal:dtstart "2013-01-24" ;
+                                                   cal:location ldo:NeuesSchauspielLeipzig ;
+                                                   cal:description "“Ihr müsst spielen, spielen und nochmals spielen.” <br/> <br/> Den Satz kennst Du, oder? Und Du weiß, dass das viel leichter gesagt ist als getan. Deswegen wird Flying Music Circus neben Workshops, Seminaren und einem Promo-Sampler auch Künstler auf Kurztour durch Sachsen schicken. <br/> <br/> DIE TOURDATEN <br/> <br/> Tour 1 I Salon <br/> mit Susann Großmann, CousCous, Nadine Maria Schmidt &amp; Frühmorgens am Meer <br/> 24.01.2013 Chemnitz, Weltecho <br/> 25.01.2013 Leipzig, Neues Schauspiel <br/> 27.01.2013 Dresden, Scheune <br/> <br/> Tour 2 I Backyard Rock <br/> mit 3apesband, Atlas Ahead, Elektrik Farm <br/> 24.01.2013 Dresden, Ostpol (zusätzlich mit Harry Bushh!!) <br/> 26.01.2013 Chemnitz, Weltecho <br/> 27.01.2013 Leipzig, Neues Schauspiel <br/> <br/> Tour 3 I Garage <br/> mit Daniel Orange, The Smokkings, Polis <br/> 24.01.2013 Leipzig, Neues Schauspiel <br/> 25.01.2013 Chemnitz, Weltecho <br/> 26.01.2013 Dresden, Bärenzwinger <br/> <br/> Tour 4 I Club <br/> mit Harry Bushh!!, Leo Hört Rauschen, Grafstrøm <br/> 25.01.2012 Dresden, Altes Wettbüro (ohne Harry Bushh!!, zusätzlich mit Lax-O-Mat) <br/> 26.01.2012 Leipzig, Neues Schauspiel (anschl. detektor.fm DJ Team) <br/> 27.01.2012 Chemnitz, Weltecho <br/> <br/> 4-Tages-Ticket (nur Vorverkauf): 15 Euro <br/> Abendkasse: 5 Euro <br/> <br/> Änderungen vorbehalten. Alles weitere unter http://flying-music-circus.de/fmc/tour" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.127> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.128>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.128> ;
-    ld:hasOwner "8" ;
-    ld:hasURL "http://www.eexistence.de/posts/workshop-kooperatives-lernen-in-grundschulen" ;
-    a ld:Event ;
-    rdfs:label "Workshop \"Kooperatives Lernen in Grundschulen\"" ;
-    cal:description "Das Team der AG open computer kids arbeitet gemeinsam mit den HELLO STUDIOS an einer interaktiven Exkursion durch das Klassenzimmer einer Leipziger 4.en Klasse" ;
-    cal:dtend "2012-12-19T11:30:00+01:00" ;
-    cal:dtstart "2012-12-18T08:45:00+01:00" ;
-    cal:location ldo:EssentialExistenceGallery .
+<http://leipzig-data.de/Data/Event/APILeipzig.128> a ld:Event ;
+                                                   rdfs:label "Workshop \"Kooperatives Lernen in Grundschulen\"" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/workshop-kooperatives-lernen-in-grundschulen> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   cal:dtstart "2012-12-18T08:45:00+01:00" ;
+                                                   cal:location ldo:EssentialExistenceGallery ;
+                                                   cal:description "Das Team der AG open computer kids arbeitet gemeinsam mit den HELLO STUDIOS an einer interaktiven Exkursion durch das Klassenzimmer einer Leipziger 4.en Klasse" ;
+                                                   cal:dtend "2012-12-19T11:30:00+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.128> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.129>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.129> ;
-    ld:hasOwner "8" ;
-    ld:hasURL "http://www.eexistence.de/posts/etna-auftaktveranstaltung-museumsfuehrung" ;
-    a ld:Event ;
-    rdfs:label "ETNA - Auftaktveranstaltung -> Museumsführung" ;
-    cal:description "Die EEG und die AG open computer kids laden 2013 Leipziger über 50 dazu ein mittels Neuen Medien zeitgenössische Kunst zu erleben" ;
-    cal:dtstart "2013-01-09T14:30:00+01:00" ;
-    cal:location ldo:EssentialExistenceGallery .
+<http://leipzig-data.de/Data/Event/APILeipzig.129> a ld:Event ;
+                                                   rdfs:label "ETNA - Auftaktveranstaltung -> Museumsführung" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/etna-auftaktveranstaltung-museumsfuehrung> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   cal:dtstart "2013-01-09T14:30:00+01:00" ;
+                                                   cal:location ldo:EssentialExistenceGallery ;
+                                                   cal:description "Die EEG und die AG open computer kids laden 2013 Leipziger über 50 dazu ein mittels Neuen Medien zeitgenössische Kunst zu erleben" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.129> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.130>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.130> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://www.smile.uni-leipzig.de/nc/smile-webseite/veranstaltungen/veranstaltungsuebersicht.html" ;
-    a ld:Event ;
-    rdfs:label "Seminar - Von der Idee zum Markt" ;
-    cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Von der Idee zum Markt <br/> 29. Januar 2013: 09.00 Uhr bis 15.00 Uhr, 31. Januar 2013: 09.00 Uhr bis 15.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    cal:dtend "2013-01-29T15:00:42+01:00" ;
-    cal:dtstart "2013-01-29T09:00:42+01:00" ;
-    cal:location ldo:AKAD-Hochschule .
+<http://leipzig-data.de/Data/Event/APILeipzig.130> a ld:Event ;
+                                                   rdfs:label "Seminar - Von der Idee zum Markt" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.smile.uni-leipzig.de/nc/smile-webseite/veranstaltungen/veranstaltungsuebersicht.html> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                   cal:dtstart "2013-01-29T09:00:42+01:00" ;
+                                                   cal:location ldo:AKAD-Hochschule ;
+                                                   cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Von der Idee zum Markt <br/> 29. Januar 2013: 09.00 Uhr bis 15.00 Uhr, 31. Januar 2013: 09.00 Uhr bis 15.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
+                                                   cal:dtend "2013-01-29T15:00:42+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.130> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.131>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.131> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA" ;
-    a ld:Event ;
-    rdfs:label "Seminar - Freiberuflich im künstlerischen und kreativen Bereich" ;
-    cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Freiberuflich im künstlerischen und kreativen Bereich <br/> 19. Februar 2013: 09.00 Uhr bis 17.00 Uhr, 21. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    cal:dtend "2013-02-19T17:00:42+01:00" ;
-    cal:dtstart "2013-02-19T09:00:42+01:00" ;
-    cal:location ldo:AKAD-Hochschule .
+<http://leipzig-data.de/Data/Event/APILeipzig.131> a ld:Event ;
+                                                   rdfs:label "Seminar - Freiberuflich im künstlerischen und kreativen Bereich" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                   cal:dtstart "2013-02-19T09:00:42+01:00" ;
+                                                   cal:location ldo:AKAD-Hochschule ;
+                                                   cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Freiberuflich im künstlerischen und kreativen Bereich <br/> 19. Februar 2013: 09.00 Uhr bis 17.00 Uhr, 21. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
+                                                   cal:dtend "2013-02-19T17:00:42+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.131> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.132>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.132> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA" ;
-    a ld:Event ;
-    rdfs:label "Seminar - Mut zur eigenen Persönlichkeit" ;
-    cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Mut zur eigenen Persönlichkeit <br/> 26. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    cal:dtend "2013-02-26T17:00:42+01:00" ;
-    cal:dtstart "2013-02-26T10:00:42+01:00" ;
-    cal:location ldo:AKAD-Hochschule .
+<http://leipzig-data.de/Data/Event/APILeipzig.132> a ld:Event ;
+                                                   rdfs:label "Seminar - Mut zur eigenen Persönlichkeit" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                   cal:dtstart "2013-02-26T10:00:42+01:00" ;
+                                                   cal:location ldo:AKAD-Hochschule ;
+                                                   cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Mut zur eigenen Persönlichkeit <br/> 26. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
+                                                   cal:dtend "2013-02-26T17:00:42+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.132> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.133>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.133> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA" ;
-    a ld:Event ;
-    rdfs:label "Seminar - Kreativ und frei – Kommunikation mit dem Kunden" ;
-    cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Kreativ und frei – Kommunikation mit dem Kunden <br/> 28. Februar 2013: 10.00 Uhr bis 14.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    cal:dtend "2013-02-28T17:00:42+01:00" ;
-    cal:dtstart "2013-02-28T09:00:42+01:00" ;
-    cal:location ldo:AKAD-Hochschule .
+<http://leipzig-data.de/Data/Event/APILeipzig.133> a ld:Event ;
+                                                   rdfs:label "Seminar - Kreativ und frei – Kommunikation mit dem Kunden" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                   cal:dtstart "2013-02-28T09:00:42+01:00" ;
+                                                   cal:location ldo:AKAD-Hochschule ;
+                                                   cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Kreativ und frei – Kommunikation mit dem Kunden <br/> 28. Februar 2013: 10.00 Uhr bis 14.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
+                                                   cal:dtend "2013-02-28T17:00:42+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.133> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.134>
-    ld:contactPerson ldp:Graebe_HansGert ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.134> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://leipzig-netz.de/index.php5/LD.OpenInnovation-12.IdeenBoerse" ;
-    a ld:Event ;
-    rdfs:label "Ideenbörse zur Nutzung Offener Daten " ;
-    cal:description "Mit unserer Ideenbörse wollen wir ausloten, welche Möglichkeiten Offene Daten bieten und was man davon im schnellen Zugriff eines Programmiersprints (12./13.1.) schon mal umsetzen kann. Wir haben aus den bisher zusammengetragenen Interessen (vorerst) drei Bündel geschnürt, die den Startpunkt markieren. <br/> <br/> Sie können sich auch auf den spannenden Vortrag über \"mobile erweiterte Realität\" von Frank Fuchs-Kittowski (HTW Berlin) freuen, der zeigen wird, was mit sinnvoll strukturierten Daten und mobilen Anwendungen heute schon so alles geht. <br/> " ;
-    cal:dtend "2013-01-11T17:00:42+01:00" ;
-    cal:dtstart "2013-01-11T09:00:42+01:00" ;
-    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> .
+<http://leipzig-data.de/Data/Event/APILeipzig.134> a ld:Event ;
+                                                   rdfs:label "Ideenbörse zur Nutzung Offener Daten " ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/LD.OpenInnovation-12.IdeenBoerse> ;
+                                                   ld:contactPerson ldp:Graebe_HansGert ;
+                                                   cal:dtstart "2013-01-11T09:00:42+01:00" ;
+                                                   cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+                                                   cal:description "Mit unserer Ideenbörse wollen wir ausloten, welche Möglichkeiten Offene Daten bieten und was man davon im schnellen Zugriff eines Programmiersprints (12./13.1.) schon mal umsetzen kann. Wir haben aus den bisher zusammengetragenen Interessen (vorerst) drei Bündel geschnürt, die den Startpunkt markieren. <br/> <br/> Sie können sich auch auf den spannenden Vortrag über \"mobile erweiterte Realität\" von Frank Fuchs-Kittowski (HTW Berlin) freuen, der zeigen wird, was mit sinnvoll strukturierten Daten und mobilen Anwendungen heute schon so alles geht. <br/> " ;
+                                                   cal:dtend "2013-01-11T17:00:42+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.134> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.135>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.135> ;
-    ld:hasOwner "8" ;
-    ld:hasURL "http://www.eexistence.de/posts/bockwurst-statt-bildung" ;
-    a ld:Event ;
-    rdfs:label "Bockwurst statt Bildung" ;
-    cal:description "Das Kulturamt Leipzig lehnt unsere (bereits sehr geringe quasi \"symbolische\") Projektförderung für 2013 ab." ;
-    cal:dtend "2013-12-31" ;
-    cal:dtstart "2013-01-01" ;
-    cal:location ldo:EssentialExistenceGallery .
+<http://leipzig-data.de/Data/Event/APILeipzig.135> a ld:Event ;
+                                                   rdfs:label "Bockwurst statt Bildung" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/bockwurst-statt-bildung> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   cal:dtstart "2013-01-01" ;
+                                                   cal:location ldo:EssentialExistenceGallery ;
+                                                   cal:description "Das Kulturamt Leipzig lehnt unsere (bereits sehr geringe quasi \"symbolische\") Projektförderung für 2013 ab." ;
+                                                   cal:dtend "2013-12-31" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.135> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.98>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.98> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://www.leipzig.de" ;
-    a ld:Event ;
-    rdfs:label "Get Together Innovationskonferenz" ;
-    cal:description "Test" ;
-    cal:dtstart "2012-11-28" ;
-    cal:location ldo:PILOT .
+<http://leipzig-data.de/Data/Event/APILeipzig.136> a ld:Event ;
+                                                   rdfs:label "Drupal User Group Leipzig" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://groups.drupal.org/node/277133> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/APIId/Host.43> ;
+                                                   cal:dtstart "2013-01-17T19:00:42+01:00" ;
+                                                   cal:location ldo:Villa ;
+                                                   cal:description "Treffen der Drupal User Group Leipzig." ;
+                                                   cal:dtend "2013-01-17T21:00:42+01:00" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.136> .
 
-<http://leipzig-data.de/Data/Event/VHS.2012-11-13>
-    ld:Ortzusatz "Raum 410" ;
-    ld:contactPerson ldp:Graebe_HansGert ;
-    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
-    ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
-    ld:untertitel "Mit M. Richter und A. Boblenz (BIP-Kreativitätsgymnasium Leipzig)" ;
-    ld:zurReihe <http://leipzig-data.de/Data/Angebote/VHS.LeipzigImWandel> ;
-    a ld:Event ;
-    rdfs:label "Energie und Bildung" ;
-    cal:description "Lehrer und Schüler des BIP-Kreativitätsgymnasiums Leipzig stellen ein Projekt zum Thema \"alternative Energien\" vor." ;
-    cal:dtstart "2012-11-13T18:00:00" ;
-    cal:location ldo:Volkshochschule ;
-    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
+<http://leipzig-data.de/Data/Event/APILeipzig.137> a ld:Event ;
+                                                   rdfs:label "PR-Seminar (3tägiger Intensivkurs), vergünstigte Tarife für Startups und Vereine" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.pr-seminare.com> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/APIId/Host.44> ;
+                                                   cal:dtstart "2013-03-15" ;
+                                                   cal:location <http://leipzig-data.de/Data/APIId/Venue.71> ;
+                                                   cal:description "Management von Kommunikationsprozessen - Grundlagen &amp; Instrumente der Öffentlichkeitsarbeit (30 Stunden) <br/> <br/> Inhalte: <br/> <br/> Themen des Seminars werden vor allem die Grundlagen praktischer Public Relations sein. Neben der systematischen Bearbeitung wissenschaftlicher Erkenntnisse zum Einfluss der PR auf die Medien sollen wesentliche Instrumente der Pressearbeit kennengelernt und praktisch angewendet werden. Die journalistische Perspektive, etwa das Nachrichtenschreiben, kommt in ihren basalen Grundzügen ebenso zum Tragen wie das Formulieren von Pressemitteilungen oder der Organisation einer Pressekonferenz. Mit Hilfe von zahlreichen Übungen und deren Korrektur durch den Betreuer werden die Inhalte direkt in der praktischen Übung angewendet und Fehler sofort ausgewertet. <br/> <br/> zusammengefasst: <br/> <br/> Grundlegende Einordnung der Aufgabenfelder eines Kommunikationsmanagers <br/> Erarbeitung wesentlicher Instrumente für die praktische Öffentlichkeitsarbeit <br/> Wissenschaftliche Einordnung und Erkenntnisse der Public Relations <br/> Umgang mit dem Mediensystem und dessen Akteuren <br/> <br/> <br/> Ziele: <br/> <br/> Das Ziel des Seminars besteht darin, TeilnehmerInnen mit geringen Vorkenntnissen an das Fachgebiet Public Relations heranzuführen und dabei die wichtigsten Fertigkeiten einführend zu vermitteln, daneben aber auch die wissenschaftliche Diskussion zum Thema beispielhaft vorzustellen. Die praktische Anwendbarkeit der Ergebnisse steht dabei im Vordergrund. Ziel der praktischen Anwendung ist es innerhalb des Seminars eine Pressemitteilung zu erstellen - spezifisch für jeden Teilnehmer. Somit kann jeder seine erste eigene Pressemitteilung direkt verwenden. <br/> <br/> zusammengefasst: <br/> <br/> Erlernung praktischer Fertigkeiten auf dem Gebiet der Public Relations <br/> Sicherer Umgang mit den Akteuren des Mediensystem <br/> wissenschaftliche Annäherung zum Thema <br/> <br/> <br/> Zielgruppe: <br/> <br/> Das Seminar richtet sich an TeilnehmerInnen mit geringen Vorkenntnissen im Bereich der Öffentlichkeitsarbeit. Angefangen von jungen Start-Up Unternehmern bis hin zu Presseakteuren aus Vereinen und Organisationen aber auch an Interessierte Personen, die im realen Leben auf den richtigen Umgang mit den Akteuren des Mediensystems angewiesen sind. <br/> <br/> zusammengefasst: <br/> <br/> Personen aus der Gründerszene (Start-Ups) <br/> (ehrenamtliche) Presseakteure aus Vereinen und Organisationen <br/> Selbstständige Unternehmen <br/> interessierte Quereinsteiger " ;
+                                                   cal:dtend "2013-03-17" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.137> .
 
-<http://leipzig-data.de/Data/Event/VHS.2012-12-11>
-    ld:Ortzusatz "Raum 410" ;
-    ld:contactPerson ldp:Graebe_HansGert ;
-    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
-    ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
-    ld:untertitel "Mit Prof. K. Bastian (HTWK Leipzig)" ;
-    ld:zurReihe <http://leipzig-data.de/Data/Angebote/VHS.LeipzigImWandel> ;
-    a ld:Event ;
-    rdfs:label "Energiekonzepte jenseits von Stromkonzepten" ;
-    cal:description "In den offiziellen Studien zur Energieversorgung der Zukunft sind Energiekonzepte fast ausschließlich Stromkonzepte. Im Vortrag werden Vorteile und Bedeutung des Energieträgers Gas genauer diskutiert, einschließlich der provokanten These, dass das Energiekonzept der Zukunft nicht strom- sondern gasgeführt sein wird." ;
-    cal:dtstart "2012-12-11T18:00:00" ;
-    cal:location ldo:Volkshochschule ;
-    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
+<http://leipzig-data.de/Data/Event/APILeipzig.98> a ld:Event ;
+                                                  rdfs:label "Get Together Innovationskonferenz" ;
+                                                  ld:hasTag ldtag:KreativesLeipzig ;
+                                                  ld:hasURL <http://www.leipzig.de> ;
+                                                  ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                  cal:dtstart "2012-11-28" ;
+                                                  cal:location ldo:PILOT ;
+                                                  cal:description "Test" ;
+                                                  ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.98> .
 
-<http://leipzig-data.de/Data/Event/VHS.2013-01-08>
-    ld:Ortzusatz "Raum 410" ;
-    ld:contactPerson ldp:Graebe_HansGert ;
-    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
-    ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
-    ld:untertitel "Mit Dr.-Ing. Gerd Arnold (Evermind, Leipzig)" ;
-    ld:zurReihe <http://leipzig-data.de/Data/Angebote/VHS.LeipzigImWandel> ;
-    a ld:Event ;
-    rdfs:label "Metanetze zur Optimierung von Energie- und Stoffströmen" ;
-    cal:description "Mit der Diskussion des Vorteils von Gas als Energieträger, fast verlustfrei über große Strecken übertragen werden zu können, rückt die Frage der Optimierungspotenziale einer integrierten Betrachtung von Energie- und Stoffströmen ins Blickfeld." ;
-    cal:dtstart "2013-01-08T18:00:00" ;
-    cal:location ldo:Volkshochschule ;
-    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
+<http://leipzig-data.de/Data/Event/ASG.2012-12-13> a ld:Event ;
+                                                   ld:Ortszusatz "Neuer Senatssaal" ;
+                                                   rdfs:label "Symposium anlässlich des 100. Geburtstags von Werner Holzmüller" ;
+                                                   ld:hasTag ldtag:ASG ;
+                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/ASG.2012-12-13> ;
+                                                   ld:description "Die Arnold-Sommerfeld-Gesellschaft lädt ein zu einem Symposium anlässlich des 100. Geburtstags des Physikers, Hochschullehrers und Ehrensenators der Universität Leipzig, des Freundes und Förderers der Arnold-Sommerfeld-Gesellschaft, Prof. Dr. phil. habil. Werner Holzmüller" ;
+                                                   cal:dtstart "2012-12-13T10:00:00+01:00" ;
+                                                   cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+                                                   cal:organizer ldo:ASG ;
+                                                   cal:dtend "2012-12-13T17:00:00+01:00" .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.105>
-    ld:contactPerson ldp:Reinhardt_Sylvi ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.105> ;
-    ld:hasOwner "131" ;
-    a ld:Event ;
-    rdfs:label "Ausstellung \"Kollektion 13 - distale Liebe\"" ;
-    cal:description "Am 02.November 2012 beginnt der Relaunch der Designerin Sylvi Reinhardt mit der Modeperformance und Ausstellung zur neuen Kollektion 13. <br/> <br/> „distale Liebe“ <br/> <br/> Sie ist mehr als eine Liebe, Modedesign in Verbindung von Musik mit Malerei/Grafik hin zur Fotografie. <br/> <br/> In der Ausstellung sehen Sie die Fotoarbeiten von Hagen Wolf zur Kollektion. Da eine Kollektion nie wirklich zu Ende kommt, sind grafische Zeichnungen zum Thema „distale Liebe“ von der Designerin Sylvi Reinhardt exklusiv mitveröffentlicht. Wir freuen uns, Sie zur Schau mit einem Glas Sekt begrüßen zu dürfen. Tauchen Sie in die neue Ready-to-wear-Kollektionen „distale Liebe“ mit musikalischer Berieselung durch frequen-c. <br/> <br/> Karten für die Veranstaltung am 02.11.2012 können Sie direkt bei Reinhardt in der Ernst-Schneller-Str.7, 04107 Leipzig sowie im Kulturkaffee plan b erwerben. Kartenbestellungen per Mail sind unter info@syl-reinhardt.com möglich. <br/> <br/> Preis schlicht 22,00 Euro <br/> Preis drapiert 28,00 Euro (zuzüglich Versand bei Zusendung)" ;
-    cal:dtstart "2012-11-02" ;
-    cal:location ldo:Plan-B .
+<http://leipzig-data.de/Data/Event/ASG.2013-01-29> a ld:Event ;
+                                                   ld:Ortszusatz "HfTL, Raum B-1.50" ;
+                                                   rdfs:label "Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag" ;
+                                                   ld:hasTag ldtag:ASG ;
+                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.Schuelerakademie.2013-01-29> ;
+                                                   ld:description "Die Leipziger Schülerakademie lädt interessierte Schülerinnen und Schüler der Oberstufe ein zu einem Vortrag zum Thema \"Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag\" mit Frau Dr. Claudia Birkemeyer" ;
+                                                   cal:dtstart "2013-01-29T16:00:00+01:00" ;
+                                                   cal:location ldo:HfTL ;
+                                                   cal:organizer ldo:ASG ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.115>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.115> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Foto-Donnerstag" ;
-    cal:description "Auch im November treffen wir uns am ersten Donnerstag wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal besucht uns der weltbekannte Fotograf Helmut Newton. <br/> Dies zwar nur auf der Leinwand, aber auch dort wird er uns sicher die nötige Erfahrung und Inspiration vermitteln können. <br/> <br/> Wir schauen \"Helmut Newton: Frames from the Edge\" <br/> <br/> Filmbeschreibung <br/> \"Starke Frauen in aufreizenden Posen, souverän, geheimnisvoll - in Helmut Newtons Fotografien verwischen die Grenzen zwischen Kunst und Pornografie. Ob Modefoto, Porträt oder Akt, voyeuristisch inszenierte Newton Geschichten, die auch ein Abbild der westlichen Gesellschaft sind. 1988 besuchte Adrian Maben den Starfotografen in seiner Wahlheimat Monte Carlo und begleitete ihn zu Fotosessions nach Los Angeles, Berlin und Paris. Dabei gewährte Newton rare Einblicke in sein Privatleben und seine Arbeit. Wie die Zusammenarbeit mit einem der begehrtesten Fotografen des 20. Jahrhunderts aussah, das berichten Stars wie Karl Lagerfeld und Catherine Deneuve.\" <br/> <br/> Wir treffen uns 18:45 Uhr im Hörsaal des Max-Planck-Institut - zum Haupteingang rein (vom Deutschen Platz aus), dann in die 2. Etage, dort links (Treppe oder Fahrstuhl) der Zugang zum Hörsaal ist behindertengerecht, es könnten also auch Rollstuhlfahrer teilnehmen. Um 19:00 Uhr beginnen wir dann pünktlich mit dem Film der 100 Minuten geht. Anschließend setzen wir uns in geselliger Runde im Shady zusammen und können über den Film sprechen." ;
-    cal:dtstart "2012-11-01T18:45:42+01:00" ;
-    cal:location <http://leipzig-data.de/Data/Ort/MPI.EVA> .
+<http://leipzig-data.de/Data/Event/ASG.2013-01-31> a ld:Event ;
+                                                   ld:Ortszusatz "Neuer Senatssaal" ;
+                                                   rdfs:label "Nobelpreise für Physik und Chemie 2012" ;
+                                                   ld:hasTag ldtag:ASG ;
+                                                   ld:hasURL <http://bj-kaiser.homepage.t-online.de/Seminar.html> ;
+                                                   ld:description "mit Dr. Bernd Lippold (Leipzig) und Dr. Stefan Fiedler (ASG)" ;
+                                                   cal:dtstart "2013-01-31T17:00:00+01:00" ;
+                                                   cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+                                                   cal:organizer ldo:ASG ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.116>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.116> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "WebMontag zum Thema Onlinereputation" ;
-    cal:description "Am Montag den 05.11.2012 geht es um das Thema \"Onlinereputation\". Was ist das überhaupt, was bedeutet es für mich als Privatperson, als Freiberufler, als Arbeitsuchender, als Autor... <br/> <br/> Vorträge: <br/> Lorenz Schirmer, Chief Operating Officer von yasni wird über <br/> \"Online\"reputation sprechen. Wobei auch die Frage besprochen wird was \"Reputation\" heute bedeutet in Zeiten wo Personal Branding immer wichtiger wird? <br/> <br/> http://www.yasni.de/ <br/> https://www.facebook.com/www.yasni.de <br/> <br/> <br/> Thomas Wagner wird zeigen, warum Google so großen Wert auf den Author-Rank legt und was Ihr damit machen könnt <br/> <br/> http://www.mi-service.de/ <br/> https://www.facebook.com/ThomasWagnerLeipzig" ;
-    cal:dtstart "2012-11-05T19:00:42+01:00" ;
-    cal:location ldo:Plan-B .
+<http://leipzig-data.de/Data/Event/DTS.2012-11-05> a ld:Event ;
+                                                   rdfs:label "Gemeingüter" ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2012-11-05> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   cal:dtstart "2012-11-05T19:00:00+01:00" ;
+                                                   cal:location ldo:Cafe-Grundmann ;
+                                                   cal:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.117>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.117> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "popoolär!-Stammtisch" ;
-    cal:description "popoolär! ist die Musikinitiative des Kreativen Leipzig e. V. Beim Stammtisch informieren wir einerseits über die aktuellen Vorhaben und laden andererseits zum lockeren Plausch über die lokale Musikszene ein. Wer sich für Musik aus Leipzig interessiert, Gleichgesinnte treffen oder sich engagieren möchte - alle sind herzlich willkommen!" ;
-    cal:dtstart "2012-11-07T19:30:42+01:00" ;
-    cal:location ldo:SchaubuehneLindenfels .
+<http://leipzig-data.de/Data/Event/DTS.2012-12-03> a ld:Event ;
+                                                   rdfs:label "Menschenbilder" ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2012-12-03> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   cal:dtstart "2012-12-03T19:00:00+01:00" ;
+                                                   cal:location ldo:KE-Leipzig ;
+                                                   cal:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.118>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.118> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "WISSENSWERT: ver.di" ;
-    cal:description "WISSENSWERT - unsere Informationsreihe für Dinge, die für Kreativschaffende von Interesse sind. Dieses mal zu Gast: Bärbel Winkler von der Dienstleistungsgewerkschaft ver.di <br/> <br/> Was viele nicht wissen: ver.di hat auch den Anspruch, die Selbständigen und damit auch viele Kreativschaffenden zu vertreten. So setzt sich ver.di unter anderem für gerechte Bezahlung selbständiger Arbeit sowie für eine sinnvolle Berücksichtigung in den Sozialversicherungssystemen ein. Hinzu kommen noch verschiedene Weiterbildungsangebote für Selbständige. Interessant, oder? Von Frau Winkler möchten wir uns erklären lassen, was genau dahinter steckt und unter welchen Umständen eine Mitgliedschaft bei ver.di sogar sinnvoll sein könnte. Wir sind gespannt.. Ihr auch? Dann kommt einfach hinzu und bringt eure Fragen mit! <br/> <br/> Die Teilnahme ist kostenlos." ;
-    cal:dtstart "2012-11-07T17:30:42+01:00" ;
-    cal:location ldo:Plan-B .
+<http://leipzig-data.de/Data/Event/DTS.2013-01-07> a ld:Event ;
+                                                   rdfs:label "Recht auf Faulheit vs. homo oeconomicus" ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2013-01-07> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   cal:dtstart "2013-01-07T19:00:00+01:00" ;
+                                                   cal:location ldo:Cafe-Grundmann ;
+                                                   cal:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.119>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.119> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FOKUS: Alle gegen alle? – Lösungen zur Selbstverwirklichung" ;
-    cal:description "Das Kompetenzzentrum Kultur- &amp; Kreativwirtschaft des Bundes und Kreatives Leipzig e. V. laden ein zu einer Podiumsdiskussion zum Thema Selbstverwirklichung für Freiberufler in der Kreativwirtschaft. <br/> <br/> Die FOKUS-Veranstaltung \"Allein gegen alle?\" rückt Möglichkeiten zur Selbstverwirklichung für freiberuflich Kreativschaffende in der „schönen neuen Arbeitswelt“ in den Fokus. Beispiele zur Vernetzung und zum Informationsaustausch der Freelancer sowie Lösungsansätze von Seiten der Verbände und Interessenvertretungen sollen aufgezeigt, Fragen zur gesellschaftlichen und politischen Akzeptanz der Branche und Wertschätzung kreativer Arbeit aufgeworfen und v. a. konkrete Angebote zu Beratung und Bildung vorgestellt werden. <br/> <br/> Veronika Mirschel (ver.di Die Freien), Christian Römer (Heinrich-Böll-Stiftung), Claudia Muntschick (Wir Gestalten Dresden e. V.), Andreas Maxbauer (AGD Allianz Deutscher Designer), Alexander Heyne (Bund der Übersetzer) sowie Martin Selbmann und Michael Raeck (Mucona Media) sprechen über konkrete Beispiele, Möglichkeiten und Schritte zur aktiven Selbstverwirklichung und Gestaltung der Arbeitssituation für Freiberufler innerhalb der Kultur- und Kreativwirtschaft. <br/> <br/> Die Teilnahme ist kostenfrei. <br/> <br/> Im Foyer des LOFFT wird am 12. November die Ausstellung BRENNE UND SEI DANKBAR (testset) gezeigt. Sie beleuchtet Einzelaspekte der kulturpolitischen und finanziellen Grundsituation sowie der Arbeits- und Lebensbedingungen von Freien Tanz- und Theaterschaffenden in Deutschland. Die Verschlechterung der Arbeits- und Lebensbedingungen für Künstlerinnen und Künstler steht paradigmatisch für die Flexibilisierung der Arbeitsmärkte und Entwicklungen auch in anderen Bereichen unserer Gesellschaft – der Kunst kommt hier eine fragwürdige Vorreiterrolle zu. " ;
-    cal:dtstart "2012-11-12T19:00:42+01:00" ;
-    cal:location ldo:LOFFT .
+<http://leipzig-data.de/Data/Event/DTS.2013-02-04> a ld:Event ;
+                                                   rdfs:label "Modelle und Wirklichkeit" ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2013-02-04> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   cal:dtstart "2013-02-04T19:00:00+01:00" ;
+                                                   cal:location ldo:Cafe-Grundmann ;
+                                                   cal:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.120>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.120> ;
-    ld:hasOwner "8" ;
-    ld:hasURL "http://www.eexistence.de/posts/fablab-leipzig-opens-now" ;
-    a ld:Event ;
-    rdfs:label "FabLab Leipzig opens now!" ;
-    cal:description "Vom 05. bis 28.11. hat das FabLab Leipzig erstmalig (temporär) seine Türen für euch und eure Ideen weit geöffnet! " ;
-    cal:dtend "2012-11-28T16:00:00+01:00" ;
-    cal:dtstart "2012-11-05T10:00:00+01:00" ;
-    cal:location ldo:EssentialExistenceGallery .
+<http://leipzig-data.de/Data/Event/LSM.2013-01-14> a ld:Event ;
+                                                   ld:Ortszusatz "Felix-Klein-Hörsaal, Paulinum am Augustusplatz (5. Etage)" ;
+                                                   rdfs:label "LSGM-Eröffnungsveranstaltung der Zirkel Klasse 5" ;
+                                                   ld:hasTag ldtag:LSGM ;
+                                                   ld:hasURL <http://lsgm.de> ;
+                                                   ld:description "Wir laden ein zur Eröffnungsveranstaltung unserer Schülerzirkeln und unserem Korrespondenzseminar für Klasse 5, die wir mit Jahresbeginn neu eröffnen. Wir werden an dieser Stelle unsere Aktivitäten und Angebote im Rahmen der LSGM genauer erläutern, die Zirkelleiter vorstellen und die Termine für die einzelnen Zirkel absprechen. " ;
+                                                   cal:dtstart "2013-01-14T16:30:00+01:00" ;
+                                                   cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+                                                   cal:organizer ldo:LSGM .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.121>
-    ld:contactPerson ldp:Hoyer_Stephan ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.121> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://leipzigjs.github.com/" ;
-    a ld:Event ;
-    rdfs:label "LeipzigJS - 2. Treffen - Testing JavaScript" ;
-    cal:description "2. Treffen der JavaScript Usergroup Leipzig. <br/> <br/> Es sind drei Vorträge geplant: <br/> * Node.js testen mit Mocha - Mario Behrendt <br/> * Frontend testen mit Jasmine - ??? <br/> * Frontend testen mit Test'em - Stephan Hoyer" ;
-    cal:dtend "2012-11-30T23:00:42+01:00" ;
-    cal:dtstart "2012-11-30T20:00:42+01:00" ;
-    cal:location ldo:Villa .
+<http://leipzig-data.de/Data/Event/VHS.2012-11-13> a ld:Event ;
+                                                   rdfs:label "Energie und Bildung" ;
+                                                   ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.2012-11-13> ;
+                                                   ld:contactPerson ldp:Graebe_HansGert ;
+                                                   cal:dtstart "2012-11-13T18:00:00" ;
+                                                   cal:location ldo:Volkshochschule ;
+                                                   cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
+                                                   cal:description "Mit M. Richter und A. Boblenz (BIP-Kreativitätsgymnasium Leipzig). Lehrer und Schüler des BIP-Kreativitätsgymnasiums Leipzig stellen ein Projekt zum Thema \"alternative Energien\" vor." ;
+                                                   ld:Ortzusatz "Raum 410" .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.122>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.122> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "11.12.2012 WISSENSWERT: Existenzgründung aus ALG II (Nachholtermin)" ;
-    cal:description "WISSENSWERT - unsere Informationsreihe für Dinge, die für Kreativschaffende von Interesse sind. Dieses mal zu Gast: Malgorzata Schirmer &amp; Melanie Kühn, JobCenter Leipzig. <br/> <br/> Viele Selbständige in der Kreativwirtschaft starten ihre Unternehmen aus der Arbeitslosigkeit heraus. Bei unserer WISSENSWERT-Veranstaltung zeigen wir, wie das geht, welche Unterstützungsangebote es gibt und was beachtet werden muss. Alle Interessierten sind herzlich eingeladen und ihre Fragen mitzubringen." ;
-    cal:dtstart "2012-12-11T17:30:42+01:00" ;
-    cal:location ldo:Plan-B .
+<http://leipzig-data.de/Data/Event/VHS.2012-12-11> a ld:Event ;
+                                                   rdfs:label "Energiekonzepte jenseits von Stromkonzepten" ;
+                                                   ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.2012-12-11> ;
+                                                   ld:contactPerson ldp:Graebe_HansGert ;
+                                                   cal:dtstart "2012-12-11T18:00:00" ;
+                                                   cal:location ldo:Volkshochschule ;
+                                                   cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
+                                                   cal:description "Mit Prof. K. Bastian (HTWK Leipzig). In den offiziellen Studien zur Energieversorgung der Zukunft sind Energiekonzepte fast ausschließlich Stromkonzepte. Im Vortrag werden Vorteile und Bedeutung des Energieträgers Gas genauer diskutiert, einschließlich der provokanten These, dass das Energiekonzept der Zukunft nicht strom- sondern gasgeführt sein wird." ;
+                                                   ld:Ortzusatz "Raum 410" .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.123>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.123> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Foto-Donnerstag" ;
-    cal:description "Auch im Dezember treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal wollen wir eine Bildbesprechung machen. Alle Teilnehmer bringen daher bitte 3 Bilder mit, über die wir dann KONSTRUKTIV sprechen. Das können die drei schönsten Bilder sein oder die drei wenigsten schönsten oder eine Mischung aus beidem :) <br/> Ihr müsst kein Profi sein um mit diskutieren zu können, auch die Meinung eines Laien kann sehr interessant sein und eine gute Grundlage für eine spannende Diskussion bieten. <br/> <br/> Damit das Format etwas einheitlich wird und nicht der Eine mit übergroßen Drucken und der andere mit Briefmarken kommt, sollten die Bilder alle eine Größe von ca. 20x30cm bzw. A4 haben. <br/> Wer nicht weiß wo er seine Bilder entwickeln lassen soll, dem empfehle ich www.pixelfoto-express.de, www.fotobuchexpress24.de/ oder www.bildpartner.de <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann, August-Bebel-Straße 2, 04275 Leipzig und sitzen im Separee." ;
-    cal:dtstart "2012-12-06T19:00:42+01:00" ;
-    cal:location ldo:Cafe-Grundmann .
+<http://leipzig-data.de/Data/Event/VHS.2013-01-08> a ld:Event ;
+                                                   rdfs:label "Metanetze zur Optimierung von Energie- und Stoffströmen" ;
+                                                   ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.2013-01-08> ;
+                                                   ld:contactPerson ldp:Graebe_HansGert ;
+                                                   cal:dtstart "2013-01-08T18:00:00" ;
+                                                   cal:location ldo:Volkshochschule ;
+                                                   cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
+                                                   cal:description "Mit Dr.-Ing. Gerd Arnold (Evermind, Leipzig). Mit der Diskussion des Vorteils von Gas als Energieträger, fast verlustfrei über große Strecken übertragen werden zu können, rückt die Frage der Optimierungspotenziale einer integrierten Betrachtung von Energie- und Stoffströmen ins Blickfeld." ;
+                                                   ld:Ortzusatz "Raum 410" .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.124>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.124> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FOKUS: Kopf oder Zahl? Der Wert der Kreativwirtschaft" ;
-    cal:description " Veranstaltung zum Abschluss der FOKUS-Reihe im Rahmen des 3. Geburtstags von detektor.fm <br/> <br/> Zum Abschluss der FOKUS-Reihe werfen wir im Rahmen des dritten Geburtstages von detektor.fm einen Blick zurück und viele Blicke nach vorn und fragen nach dem Wert der Kreativwirtschaft. Seid herzlich eingeladen und nehmt euch mit uns Zeit und Raum für Diskurs zum Thema: <br/> <br/> „Kopf oder Zahl? Der Wert der Kreativwirtschaft“ <br/> <br/> Mit den Podiumsgästen: <br/> <br/> Burkhard Jung, Oberbürgermeister von Leipzig <br/> <br/> Michael Söndermann, geschäftsführender Vorsitzender des Arbeitskreises Kulturstatistik e.V. <br/> <br/> Tim Pritlove, Medienkünstler und Podcaster <br/> <br/> Peter Grafe, Referatsleiter Kulturwirtschaft beim Beauftragten der Bundesregierung für Kultur und Medien <br/> <br/> <br/> Die Veranstaltung findet statt mit freundlicher Unterstützung von <br/> Initiative Kultur- und Kreativwirtschaft der Bundesregierung / kultur-kreativ-wirtschaft.de <br/> detektor.fm <br/> ikk classic / ikk-classic.de <br/> Seaside Park Hotel Leipzig / parkhotelleipzig.de <br/> Vereinigte Leipziger Wohnungsgenossenschaft eG / vlw-eg.de" ;
-    cal:dtstart "2012-11-05T19:30:42+01:00" ;
-    cal:location ldo:GfZK .
+<> a owl:Ontology ;
+   rdfs:label "LeipzigData - Events" .
 
-<http://leipzig-data.de/Data/Events/APILeipzig.125>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.125> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://www.open-innovation-conference.com/" ;
-    a ld:Event ;
-    rdfs:label "Open Innovation Conference" ;
-    cal:description "Die von der Stadt Leipzig veranstaltete internationale Konferenz findet im Rahmen der Abschlusskonferenz des EU-Projektes Creative Cities statt. Die Konferenz bringt europäische Experten aus Wissenschaft, Industrie und Verwaltung zusammen. Im Zentrum steht der Erfahrungsaustausch im Bereich Open Innovation in der Kreativwirtschaft. Es sollen Methoden und Werkzeuge der Open Innovation aufgezeigt und diskutiert werden, wo diese innerhalb der Kreativwirtschaft am Besten wirken können. Inhaltliche stehen die Begriffe \"Innovation\", \"Open Innovation\" und \"Kreativwirtschaft\" im Mittelpunkt der ersten Leipziger Innovationskonferenz. Die Veranstaltung dient auch dem Ausloten der Perspektive eines permanenten Innovationsforums in Leipzig. So könnte eine jährliche Konferenz jeweils unterschiedliche Branchen mit dem Thema Innovation in Diskurs bringen. <br/> Erwartet werden an den drei Tagen etwa 150 Teilnehmer. Eingeladen sind Vertreter der 11 Partner des EU-Projektes Creative Cities aus Deutschland, Polen, Slowenien, Ungarn und Italien, Vertreter des europäischen Städtenetzwerkes EuroCities mit seinen rund 140 Mitgliedstädten sowie des Projektes koopStadt. Außerdem: Vertreter der europäischen FabLab-Bewegung (u.a. Kitchen Budapest und FabLab Amersfoort), Wissenschaftler aus dem Innovationsmanagement und nationale sowie internationale Verantwortliche der Stadtentwicklung und der Wirtschaftsförderung. <br/> Im Rahmen der begleitenden Ausstellung wird sich neben dem Leipziger FabLab die Stadt Leipzig sowie die Unterstützer/Sponsoren der Veranstaltung präsentieren. Hierfür sind jeweils ausreichend Flächen geplant, um bspw. den multimedialen Präsentationsauftritt der Stadt Leipzig zu gewährleisten. Wünschenswert sind moderne mediale Präsentationsformen (Bildschirm/Projektion in Kombination mit Materialauslagen anstelle klassischer Messestände mit Hintersetzer und Tisch). Die Präsentationen sollten so in die FabLab Experience integriert werden, dass ein harmonisches Gesamtbild entsteht. <br/> Diese ganztägig parallel stattfindende FabLab Expierence wird über Bildschirme in den Konferenzräumlichkeiten wahrnehmbar. Die Verbindung von Konferenz-Inhalten in den Diskussionen und Sessions mit der FabLab Experience geschieht durch eine 5- bis 8-minütige Live-Schalte während der Eröffnungsrunde. Ein Mitglied des FabLab-Teams erklärt den Prozess von der Idee bis zum Prototyp anhand der ausgestellten Maschinen und Geräte. Vier Kameras bilden außerdem die wichtigsten Stationen des Innovationsprozesses ab und machen ihn somit nachvollziehbar. Sie werden im Veranstaltungssaal auf vier Plasma-Screens zu sehen sein. <br/> Die FabLab Experience fungiert als praktischer Rahmen der Konferenz. Es demonstriert Innovationsprozesse und zeigt an Beispielen den konkreten Ablauf von der Idee zum Produkt. Es gibt einen Workshopbereich für Ideenfindung und Konzeption, von dem ausgehend die Darstellung und Programmierung am Computer erfolgt und schlussendlich durch Herstellungsprozesse an verschiedenen Maschinen zu konkreten Produkten bzw. Prototypen führt. Folgende Maschinen stehen zur Verfügung: 3D-Drucker, Stickmaschine, Laser-Cutter, 3D-Scanner. Exemplarisch werden Teile eines 3D-Druckers im Vorfeld gefertigt und während des Veranstaltungstages zusammengebaut. <br/> Die Veranstaltung wird in ihren wesentlichen Teilen auf der Internetseite zu verfolgen sein. Zudem besteht die Möglichkeit, dass sich Interessierte per moderner Kommunikationsmittel (Facebook, Twitter) an Diskussionsteilen beteiligen können. <br/> Die Veranstaltung hat durch die Parallelität von Theorie und Praxis, die hohe Quantität von technischer Kommunikation und das Einbinden der Öffentlichkeit über moderne Kommunikationskanäle ein ungewöhnlich hohes Maß an experimentellen Elementen, die in dieser Kombination für viele Besucher einmalig sein dürfte." ;
-    cal:dtend "2012-11-30T16:30:42+01:00" ;
-    cal:dtstart "2012-11-29T09:30:42+01:00" ;
-    cal:location ldo:VillaIda .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.126>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.126> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Fotodonnerstag" ;
-    cal:description "Auch im Januar des neuen Jahres treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Unser Thema diesmal: Jahresplanung 2013 <br/> Wir wollen gemeinschaftlich für die weiteren Treffen über mögliche Themen sprechen. Jeder kann eigene Ideen und Vorstellungen einbringen, die wir dann in der Gruppe diskutieren. <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann und sitzen im Separee im hinteren Teil des Lokales. <br/> Wir freuen uns auch stets über neue Gesichter." ;
-    cal:dtstart "2013-01-03T19:00:42+01:00" ;
-    cal:location ldo:Cafe-Grundmann .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.127>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.127> ;
-    ld:hasOwner "132" ;
-    a ld:Event ;
-    rdfs:label "FLYING MUSIC CIRCUS - Das Festival" ;
-    cal:description "“Ihr müsst spielen, spielen und nochmals spielen.” <br/> <br/> Den Satz kennst Du, oder? Und Du weiß, dass das viel leichter gesagt ist als getan. Deswegen wird Flying Music Circus neben Workshops, Seminaren und einem Promo-Sampler auch Künstler auf Kurztour durch Sachsen schicken. <br/> <br/> DIE TOURDATEN <br/> <br/> Tour 1 I Salon <br/> mit Susann Großmann, CousCous, Nadine Maria Schmidt &amp; Frühmorgens am Meer <br/> 24.01.2013 Chemnitz, Weltecho <br/> 25.01.2013 Leipzig, Neues Schauspiel <br/> 27.01.2013 Dresden, Scheune <br/> <br/> Tour 2 I Backyard Rock <br/> mit 3apesband, Atlas Ahead, Elektrik Farm <br/> 24.01.2013 Dresden, Ostpol (zusätzlich mit Harry Bushh!!) <br/> 26.01.2013 Chemnitz, Weltecho <br/> 27.01.2013 Leipzig, Neues Schauspiel <br/> <br/> Tour 3 I Garage <br/> mit Daniel Orange, The Smokkings, Polis <br/> 24.01.2013 Leipzig, Neues Schauspiel <br/> 25.01.2013 Chemnitz, Weltecho <br/> 26.01.2013 Dresden, Bärenzwinger <br/> <br/> Tour 4 I Club <br/> mit Harry Bushh!!, Leo Hört Rauschen, Grafstrøm <br/> 25.01.2012 Dresden, Altes Wettbüro (ohne Harry Bushh!!, zusätzlich mit Lax-O-Mat) <br/> 26.01.2012 Leipzig, Neues Schauspiel (anschl. detektor.fm DJ Team) <br/> 27.01.2012 Chemnitz, Weltecho <br/> <br/> 4-Tages-Ticket (nur Vorverkauf): 15 Euro <br/> Abendkasse: 5 Euro <br/> <br/> Änderungen vorbehalten. Alles weitere unter http://flying-music-circus.de/fmc/tour" ;
-    cal:dtstart "2013-01-24" ;
-    cal:location ldo:NeuesSchauspielLeipzig .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.128>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.128> ;
-    ld:hasOwner "8" ;
-    ld:hasURL "http://www.eexistence.de/posts/workshop-kooperatives-lernen-in-grundschulen" ;
-    a ld:Event ;
-    rdfs:label "Workshop \"Kooperatives Lernen in Grundschulen\"" ;
-    cal:description "Das Team der AG open computer kids arbeitet gemeinsam mit den HELLO STUDIOS an einer interaktiven Exkursion durch das Klassenzimmer einer Leipziger 4.en Klasse" ;
-    cal:dtend "2012-12-19T11:30:00+01:00" ;
-    cal:dtstart "2012-12-18T08:45:00+01:00" ;
-    cal:location ldo:EssentialExistenceGallery .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.129>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.129> ;
-    ld:hasOwner "8" ;
-    ld:hasURL "http://www.eexistence.de/posts/etna-auftaktveranstaltung-museumsfuehrung" ;
-    a ld:Event ;
-    rdfs:label "ETNA - Auftaktveranstaltung -> Museumsführung" ;
-    cal:description "Die EEG und die AG open computer kids laden 2013 Leipziger über 50 dazu ein mittels Neuen Medien zeitgenössische Kunst zu erleben" ;
-    cal:dtstart "2013-01-09T14:30:00+01:00" ;
-    cal:location ldo:EssentialExistenceGallery .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.130>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.130> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://www.smile.uni-leipzig.de/nc/smile-webseite/veranstaltungen/veranstaltungsuebersicht.html" ;
-    a ld:Event ;
-    rdfs:label "Seminar - Von der Idee zum Markt" ;
-    cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Von der Idee zum Markt <br/> 29. Januar 2013: 09.00 Uhr bis 15.00 Uhr, 31. Januar 2013: 09.00 Uhr bis 15.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    cal:dtend "2013-01-29T15:00:42+01:00" ;
-    cal:dtstart "2013-01-29T09:00:42+01:00" ;
-    cal:location ldo:AKAD-Hochschule .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.131>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.131> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA" ;
-    a ld:Event ;
-    rdfs:label "Seminar - Freiberuflich im künstlerischen und kreativen Bereich" ;
-    cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Freiberuflich im künstlerischen und kreativen Bereich <br/> 19. Februar 2013: 09.00 Uhr bis 17.00 Uhr, 21. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    cal:dtend "2013-02-19T17:00:42+01:00" ;
-    cal:dtstart "2013-02-19T09:00:42+01:00" ;
-    cal:location ldo:AKAD-Hochschule .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.132>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.132> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA" ;
-    a ld:Event ;
-    rdfs:label "Seminar - Mut zur eigenen Persönlichkeit" ;
-    cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Mut zur eigenen Persönlichkeit <br/> 26. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    cal:dtend "2013-02-26T17:00:42+01:00" ;
-    cal:dtstart "2013-02-26T10:00:42+01:00" ;
-    cal:location ldo:AKAD-Hochschule .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.133>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.133> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA" ;
-    a ld:Event ;
-    rdfs:label "Seminar - Kreativ und frei – Kommunikation mit dem Kunden" ;
-    cal:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Kreativ und frei – Kommunikation mit dem Kunden <br/> 28. Februar 2013: 10.00 Uhr bis 14.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    cal:dtend "2013-02-28T17:00:42+01:00" ;
-    cal:dtstart "2013-02-28T09:00:42+01:00" ;
-    cal:location ldo:AKAD-Hochschule .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.134>
-    ld:contactPerson ldp:Graebe_HansGert ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.134> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://leipzig-netz.de/index.php5/LD.OpenInnovation-12.IdeenBoerse" ;
-    a ld:Event ;
-    rdfs:label "Ideenbörse zur Nutzung Offener Daten " ;
-    cal:description "Mit unserer Ideenbörse wollen wir ausloten, welche Möglichkeiten Offene Daten bieten und was man davon im schnellen Zugriff eines Programmiersprints (12./13.1.) schon mal umsetzen kann. Wir haben aus den bisher zusammengetragenen Interessen (vorerst) drei Bündel geschnürt, die den Startpunkt markieren. <br/> <br/> Sie können sich auch auf den spannenden Vortrag über \"mobile erweiterte Realität\" von Frank Fuchs-Kittowski (HTW Berlin) freuen, der zeigen wird, was mit sinnvoll strukturierten Daten und mobilen Anwendungen heute schon so alles geht. <br/> " ;
-    cal:dtend "2013-01-11T17:00:42+01:00" ;
-    cal:dtstart "2013-01-11T09:00:42+01:00" ;
-    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.135>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.135> ;
-    ld:hasOwner "8" ;
-    ld:hasURL "http://www.eexistence.de/posts/bockwurst-statt-bildung" ;
-    a ld:Event ;
-    rdfs:label "Bockwurst statt Bildung" ;
-    cal:description "Das Kulturamt Leipzig lehnt unsere (bereits sehr geringe quasi \"symbolische\") Projektförderung für 2013 ab." ;
-    cal:dtend "2013-12-31" ;
-    cal:dtstart "2013-01-01" ;
-    cal:location ldo:EssentialExistenceGallery .
-
-<http://leipzig-data.de/Data/Events/APILeipzig.98>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.98> ;
-    ld:hasOwner "131" ;
-    ld:hasURL "http://www.leipzig.de" ;
-    a ld:Event ;
-    rdfs:label "Get Together Innovationskonferenz" ;
-    cal:description "Test" ;
-    cal:dtstart "2012-11-28" ;
-    cal:location ldo:PILOT .
-
+ld:Event a owl:Class ;
+         rdfs:label "Events" .
