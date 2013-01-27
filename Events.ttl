@@ -263,7 +263,6 @@
                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.98> .
 
 <http://leipzig-data.de/Data/Event/ASG.2012-12-13> a ld:Event ;
-                                                   ld:Ortszusatz "Neuer Senatssaal" ;
                                                    rdfs:label "Symposium anlässlich des 100. Geburtstags von Werner Holzmüller" ;
                                                    ld:hasTag ldtag:ASG ;
                                                    ld:hasURL <http://www.leipzig-netz.de/index.php5/ASG.2012-12-13> ;
@@ -271,10 +270,10 @@
                                                    cal:dtstart "2012-12-13T10:00:00+01:00" ;
                                                    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
                                                    cal:organizer ldo:ASG ;
-                                                   cal:dtend "2012-12-13T17:00:00+01:00" .
+                                                   cal:dtend "2012-12-13T17:00:00+01:00" ;
+                                                   ld:hasAddressAddendum "Neuer Senatssaal" .
 
 <http://leipzig-data.de/Data/Event/ASG.2013-01-29> a ld:Event ;
-                                                   ld:Ortszusatz "HfTL, Raum B-1.50" ;
                                                    rdfs:label "Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag" ;
                                                    ld:hasTag ldtag:ASG ;
                                                    ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.Schuelerakademie.2013-01-29> ;
@@ -282,10 +281,10 @@
                                                    cal:dtstart "2013-01-29T16:00:00+01:00" ;
                                                    cal:location ldo:HfTL ;
                                                    cal:organizer ldo:ASG ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> .
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> ;
+                                                   ld:hasAddressAddendum "HfTL, Raum B-1.50" .
 
 <http://leipzig-data.de/Data/Event/ASG.2013-01-31> a ld:Event ;
-                                                   ld:Ortszusatz "Neuer Senatssaal" ;
                                                    rdfs:label "Nobelpreise für Physik und Chemie 2012" ;
                                                    ld:hasTag ldtag:ASG ;
                                                    ld:hasURL <http://bj-kaiser.homepage.t-online.de/Seminar.html> ;
@@ -293,12 +292,13 @@
                                                    cal:dtstart "2013-01-31T17:00:00+01:00" ;
                                                    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
                                                    cal:organizer ldo:ASG ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> .
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+                                                   ld:hasAddressAddendum "Neuer Senatssaal" .
 
 <http://leipzig-data.de/Data/Event/DTS.2012-11-05> a ld:Event ;
                                                    rdfs:label "Gemeingüter" ;
                                                    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2012-11-05> ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2012-11-05> ;
                                                    ld:contactPerson ldp:Schroth_Johannes ;
                                                    cal:dtstart "2012-11-05T19:00:00+01:00" ;
                                                    cal:location ldo:Cafe-Grundmann ;
@@ -308,7 +308,7 @@
 <http://leipzig-data.de/Data/Event/DTS.2012-12-03> a ld:Event ;
                                                    rdfs:label "Menschenbilder" ;
                                                    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2012-12-03> ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2012-12-03> ;
                                                    ld:contactPerson ldp:Schroth_Johannes ;
                                                    cal:dtstart "2012-12-03T19:00:00+01:00" ;
                                                    cal:location ldo:KE-Leipzig ;
@@ -318,7 +318,7 @@
 <http://leipzig-data.de/Data/Event/DTS.2013-01-07> a ld:Event ;
                                                    rdfs:label "Recht auf Faulheit vs. homo oeconomicus" ;
                                                    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2013-01-07> ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2013-01-07> ;
                                                    ld:contactPerson ldp:Schroth_Johannes ;
                                                    cal:dtstart "2013-01-07T19:00:00+01:00" ;
                                                    cal:location ldo:Cafe-Grundmann ;
@@ -328,7 +328,7 @@
 <http://leipzig-data.de/Data/Event/DTS.2013-02-04> a ld:Event ;
                                                    rdfs:label "Modelle und Wirklichkeit" ;
                                                    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle/2013-02-04> ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2013-02-04> ;
                                                    ld:contactPerson ldp:Schroth_Johannes ;
                                                    cal:dtstart "2013-02-04T19:00:00+01:00" ;
                                                    cal:location ldo:Cafe-Grundmann ;
@@ -336,14 +336,126 @@
                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> .
 
 <http://leipzig-data.de/Data/Event/LSM.2013-01-14> a ld:Event ;
-                                                   ld:Ortszusatz "Felix-Klein-Hörsaal, Paulinum am Augustusplatz (5. Etage)" ;
                                                    rdfs:label "LSGM-Eröffnungsveranstaltung der Zirkel Klasse 5" ;
                                                    ld:hasTag ldtag:LSGM ;
                                                    ld:hasURL <http://lsgm.de> ;
                                                    ld:description "Wir laden ein zur Eröffnungsveranstaltung unserer Schülerzirkeln und unserem Korrespondenzseminar für Klasse 5, die wir mit Jahresbeginn neu eröffnen. Wir werden an dieser Stelle unsere Aktivitäten und Angebote im Rahmen der LSGM genauer erläutern, die Zirkelleiter vorstellen und die Termine für die einzelnen Zirkel absprechen. " ;
                                                    cal:dtstart "2013-01-14T16:30:00+01:00" ;
                                                    cal:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                   cal:organizer ldo:LSGM .
+                                                   cal:organizer ldo:LSGM ;
+                                                   ld:hasAddressAddendum "Felix-Klein-Hörsaal, Paulinum am Augustusplatz (5. Etage)" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.123> a ld:Event ;
+                                                       rdfs:label "3:1 - Was man nicht im Kopf hat" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen ;
+                                                       cal:dtstart "2013-01-11T20:00:00+01:00" ;
+                                                       cal:location ldo:Theatrium ;
+                                                       cal:organizer ldo:Theatrium ;
+                                                       cal:description "Jugendtheaterprojekt / „Altenprojekt“ (P13)   !letztmalig! <br/> Liebe Freunde des Fußballsportes, liebe Fans, <br/>  Am 1. Juni startet endlich die neue Saison in der 2. Kreisklasse. Euer 1. FC Regionalexpress will auch dieses Jahr wieder versuchen anzugreifen und hat in der Sommerpause kräftig trainiert. Angestrebt wird ein Platz im oberen bis unteren Mittelfeld. Um dieses straffe Ziel zu erreichen benötigen besonders unsere starken Reservespieler Chrigel und Mischa, die in letzter Zeit viel besser geworden sind, eure Hilfe. Wer Lust und Zeit hat unseren 1. FC Regionalexpress zum 1. Punktspiel der Saison zu unterstützen ist herzlich willkommen! Ich werde natürlich auch da sein.  Euer Laurenz <br/>  Es spielen: Markus Reichenbach, Paul Becker, Philipp Nerlich  Projektleitung: Anne Rab" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.124> a ld:Event ;
+                                                       rdfs:label "Ist doch logisch!?" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-01-12T16:00:00+01:00" ;
+                                                       cal:location ldo:Theatrium ;
+                                                       cal:organizer ldo:Theatrium ;
+                                                       cal:description "Kindertheaterprojekt (P8) <br/> Ich heiße Polleke und bin 11 Jahre alt. Meine Geschwister und meine Freunde sind gern mit mir zusammen. Umgedreht ist es genauso. Wir treffen uns immer an einem alten Abrisshaus. Dort haben wir unsere Ruhe. Die Erwachsenen wissen hoffentlich nichts davon. Alles ist gut so, wie es ist. Bis eines Tages mein allerliebster Freund Mimun aus Marokko nicht mehr mit mir gehen darf. Und sich nicht mehr mit mir treffen darf. Kann man sich etwas Schlimmeres vorstellen? Ich schon! Mein Papa ist nämlich ein Junky. Das ist so eine Krankheit, und die kommt mit großen Schritten, wenn man zu viel von den Drogen nimmt. Genau deswegen darf Mimun sich nicht mehr mit mir treffen. Das mit meinem Papa weiß ich von meiner Schwester Hilletje. Sie weiß da bestens Bescheid. Bloß Ruben, mein Bruder, darf das mit unserem Drogen-Papa nicht erfahren. Er ist noch zu klein und würde das nicht verstehen. Ruben glaubt nämlich, dass unser Papa ein Dichter ist. Ist er ja auch. Aber wegen der blöden Drogen hat er überhaupt keine Zeit zum Dichten. Es kommt aber noch schlimmer. Seit gestern sitzt unser Papa im Knast. Nun bin ich 11 Jahre und habe mehr Probleme als manch Erwachsener. Ich bin bald durchgedreht. Aber Hilletje und Finn haben mir geholfen. Finn ist tiefbegabt und hat für alles eine Lösung. Auch meine anderen Freunde Caro, Tess, Roose aber auch Mimun werden mir helfen. Ich will aber noch nicht verraten wie. Denn wie wir leben und unsere Probleme lösen, das müsst ihr schon selbst herausfinden. <br/> Es spielen: Friedrich Brückner, Luzie Hahn, Johanna Kühn, Arthur Linke, Dario Selbmann, Emma Siegel, Sarah Winter und Jule Zimdahl <br/>   Projektleitung: Katrin Großmann Projektassistenz: Anne Rab" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.125> a ld:Event ;
+                                                       rdfs:label "Ist doch logisch!?" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-01-13T16:00:00+01:00" ;
+                                                       cal:location ldo:Theatrium ;
+                                                       cal:organizer ldo:Theatrium ;
+                                                       cal:description "Kindertheaterprojekt (P8) !letztmalig! <br/> Ich heiße Polleke und bin 11 Jahre alt. Meine Geschwister und meine Freunde sind gern mit mir zusammen. Umgedreht ist es genauso. Wir treffen uns immer an einem alten Abrisshaus. Dort haben wir unsere Ruhe. Die Erwachsenen wissen hoffentlich nichts davon. Alles ist gut so, wie es ist. Bis eines Tages mein allerliebster Freund Mimun aus Marokko nicht mehr mit mir gehen darf. Und sich nicht mehr mit mir treffen darf. Kann man sich etwas Schlimmeres vorstellen? Ich schon! Mein Papa ist nämlich ein Junky. Das ist so eine Krankheit, und die kommt mit großen Schritten, wenn man zu viel von den Drogen nimmt. Genau deswegen darf Mimun sich nicht mehr mit mir treffen. Das mit meinem Papa weiß ich von meiner Schwester Hilletje. Sie weiß da bestens Bescheid. Bloß Ruben, mein Bruder, darf das mit unserem Drogen-Papa nicht erfahren. Er ist noch zu klein und würde das nicht verstehen. Ruben glaubt nämlich, dass unser Papa ein Dichter ist. Ist er ja auch. Aber wegen der blöden Drogen hat er überhaupt keine Zeit zum Dichten. Es kommt aber noch schlimmer. Seit gestern sitzt unser Papa im Knast. Nun bin ich 11 Jahre und habe mehr Probleme als manch Erwachsener. Ich bin bald durchgedreht. Aber Hilletje und Finn haben mir geholfen. Finn ist tiefbegabt und hat für alles eine Lösung. Auch meine anderen Freunde Caro, Tess, Roose aber auch Mimun werden mir helfen. Ich will aber noch nicht verraten wie. Denn wie wir leben und unsere Probleme lösen, das müsst ihr schon selbst herausfinden. <br/> Es spielen: Friedrich Brückner, Luzie Hahn, Johanna Kühn, Arthur Linke, Dario Selbmann, Emma Siegel, Sarah Winter und Jule Zimdahl  <br/>  Projektleitung: Katrin Großmann Projektassistenz: Anne Rab" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.126> a ld:Event ;
+                                                       rdfs:label "Seelenheil" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-01-19T20:00:00+01:00" ;
+                                                       cal:location ldo:Theatrium ;
+                                                       cal:organizer ldo:Theatrium ;
+                                                       cal:description "Jugendtheaterprojekt / „Altenprojekt“ (P14) <br/> Die Welt geht unter. Das wussten schon die Maja. Überbevölkerung und Monopolismus gehen Hand in Hand und schmieden gemeinsam den Kollaps. Der einzige Ausweg scheint darin zu liegen, eine Revolution zu starten, eine alles umwälzende Entwicklung, von der in erster Linie derjenige profitiert, dem sie angedacht ist: der Mensch, als Individuum und Teil eines Ganzen. In ferner Zukunft wird es Wissenschaftlern gelingen, das Böse, das in der Seele der Menschen haust, auszurotten. Für immer Frieden und Koexistenz. Nur ein Problem bleibt da noch... <br/>  Es spielen: Paul Becker, Patrick Beer, Katja Fischer, Anne Rab, Virginia Mochmann, Lisa Oltsch, Melanie Petrack, Fabian Reichenbach, Benjamin Schümichen <br/>   Projektleitung: Peter Zahn" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.127> a ld:Event ;
+                                                       rdfs:label "Seelenheil" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-01-20T18:00:00+01:00" ;
+                                                       cal:location ldo:Theatrium ;
+                                                       cal:organizer ldo:Theatrium ;
+                                                       cal:description "Jugendtheaterprojekt / „Altenprojekt“ (P14) <br/> Die Welt geht unter. Das wussten schon die Maja. Überbevölkerung und Monopolismus gehen Hand in Hand und schmieden gemeinsam den Kollaps. Der einzige Ausweg scheint darin zu liegen, eine Revolution zu starten, eine alles umwälzende Entwicklung, von der in erster Linie derjenige profitiert, dem sie angedacht ist: der Mensch, als Individuum und Teil eines Ganzen. In ferner Zukunft wird es Wissenschaftlern gelingen, das Böse, das in der Seele der Menschen haust, auszurotten. Für immer Frieden und Koexistenz. Nur ein Problem bleibt da noch... <br/>  Es spielen: Paul Becker, Patrick Beer, Katja Fischer, Anne Rab, Virginia Mochmann, Lisa Oltsch, Melanie Petrack, Fabian Reichenbach, Benjamin Schümichen <br/>   Projektleitung: Peter Zahn" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.128> a ld:Event ;
+                                                       rdfs:label "wenn ich ... wie ich!!!" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-01-26T16:00:00+01:00" ;
+                                                       cal:location ldo:Theatrium ;
+                                                       cal:organizer ldo:Theatrium ;
+                                                       cal:description "Kindertheaterprojekt (P7) <br/> Ein Kind muß heutzutage in erster Linie „funktionieren“. Klein-Maximilian-Julius und Klein-Lisa-Sophie sollten spätestens im Alter von <br/>  1 Jahr: Laufen.… <br/>  2 Jahren: Sprechen.… <br/>  3 Jahren: Trocken sein.… <br/>  4 Jahren: Seepferdchen machen.…  <br/> 5 Jahren: ohne Stützräder fahren…  <br/> 6 Jahren: einschulfähig sein.…  <br/> 7 Jahren: den 1. Platz im Lesewettbewerb belegen.…  <br/> 8 Jahren: den ersten Aufsatz in Englisch verfassen.…  <br/> 9 Jahren: Französisch als zweite Fremdsprache belegen.…  <br/> 10 Jahren: die Gymnasialempfehlung erhalten.…  <br/> 11 Jahren: sich politisch engagieren (und zwar nicht für rechts!).… <br/>  12 Jahren: von Blockflöte auf Klavier, Harfe und Geige wechseln.…  <br/> 13 Jahren: ohne Anzeichen von Pubertät vernünftig und erwachsen werden. <br/> Und was ist, wenn nicht? Was, wenn ein Kind nicht die „Regelzeit“ für etwas braucht, sondern mehr? Wie viel Freiraum gibt es in unserer Zeit für Kinder? Träume und Wünsche verwirklichen – war da nicht was? <br/>  Zwölf Kinder zeigen auf der Bühne des Theatriums, dass das manchmal gar nicht so einfach ist, wenn man die meiste Zeit mit Funktionieren beschäftigt ist. Dass die Träume und Sehnsüchte aber deshalb nicht einfach weggehen. Sie locken, beschäftigen, beflügeln und platzen. Jeden Tag. Was für komische, traurige und verrückte Szenen dabei entstehen, könnt ihr bei \"wenn ich… wie ich!!!\" erleben. Nicht jeden Tag, aber dafür nur im Theatrium! <br/>  Es spielen: Justin Bertram, Renate Garbotz, Pauline Großmann, Nadine Harnisch, Maria-Elaine Herzberg, Janna Jonack, Melanie Petrack, Friederike Probst, Emilia Roch, Josefine Schöpe und Daniela Szameit  <br/>  Projektleitung: Sandra von Holn <br/>  Projektassistenz: Melanie Petrack " .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.129> a ld:Event ;
+                                                       rdfs:label "wenn ich ... wie ich!!!" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-01-27T16:00:00+01:00" ;
+                                                       cal:location ldo:Theatrium ;
+                                                       cal:organizer ldo:Theatrium ;
+                                                       cal:description "Kindertheaterprojekt (P7) <br/> Ein Kind muß heutzutage in erster Linie „funktionieren“. Klein-Maximilian-Julius und Klein-Lisa-Sophie sollten spätestens im Alter von <br/>  1 Jahr: Laufen.… <br/>  2 Jahren: Sprechen.… <br/>  3 Jahren: Trocken sein.… <br/>  4 Jahren: Seepferdchen machen.…  <br/> 5 Jahren: ohne Stützräder fahren…  <br/> 6 Jahren: einschulfähig sein.…  <br/> 7 Jahren: den 1. Platz im Lesewettbewerb belegen.…  <br/> 8 Jahren: den ersten Aufsatz in Englisch verfassen.…  <br/> 9 Jahren: Französisch als zweite Fremdsprache belegen.…  <br/> 10 Jahren: die Gymnasialempfehlung erhalten.…  <br/> 11 Jahren: sich politisch engagieren (und zwar nicht für rechts!).… <br/>  12 Jahren: von Blockflöte auf Klavier, Harfe und Geige wechseln.…  <br/> 13 Jahren: ohne Anzeichen von Pubertät vernünftig und erwachsen werden. <br/> Und was ist, wenn nicht? Was, wenn ein Kind nicht die „Regelzeit“ für etwas braucht, sondern mehr? Wie viel Freiraum gibt es in unserer Zeit für Kinder? Träume und Wünsche verwirklichen – war da nicht was? <br/>  Zwölf Kinder zeigen auf der Bühne des Theatriums, dass das manchmal gar nicht so einfach ist, wenn man die meiste Zeit mit Funktionieren beschäftigt ist. Dass die Träume und Sehnsüchte aber deshalb nicht einfach weggehen. Sie locken, beschäftigen, beflügeln und platzen. Jeden Tag. Was für komische, traurige und verrückte Szenen dabei entstehen, könnt ihr bei \"wenn ich… wie ich!!!\" erleben. Nicht jeden Tag, aber dafür nur im Theatrium! <br/>  Es spielen: Justin Bertram, Renate Garbotz, Pauline Großmann, Nadine Harnisch, Maria-Elaine Herzberg, Janna Jonack, Melanie Petrack, Friederike Probst, Emilia Roch, Josefine Schöpe und Daniela Szameit  <br/>  Projektleitung: Sandra von Holn <br/>  Projektassistenz: Melanie Petrack " .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.130> a ld:Event ;
+                                                       rdfs:label "Muttermord" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-02-15T20:00:00+01:00" ;
+                                                       cal:location ldo:Theatrium ;
+                                                       cal:organizer ldo:Theatrium ;
+                                                       cal:description "Jugendtheaterprojekt (P14) !letztmalig! <br/> Muttermord? Muttermord ist ein Verbrechen! Ein Grenzübertritt, der die Gemüter der ganzen Welt aufschreien lässt. García Lorca hat in seinem Bühnenstück »Bernarda Albas Haus« (1936 veröffentlicht) eine spanische Frauentragödie geschrieben, die es zulässt, sich mit dem Gedanken anzufreunden, zumindest im Geiste diese Bernarda, eine despotische Unterdrückerin ihrer fünf Töchter, unschädlich zu machen. Zwölf jugendliche Darstellerinnen bringen diesen Stoff auf die Bühne des Theatriums und entblättern eine Atmosphäre des gegenseitigen Ignorierens. Eifersucht, Neid und Hass bestimmen den Verlauf dieser beklemmenden Geschichte. Alles geschieht im Namen einer Sache, die viele Namen trägt: Religion, Politik, Ehre, Tradition und natürlich grausamerweise den schönsten: Die Liebe.<br/>Es spielen: Tina Orlovskij, Laura Dorenburg, Emily Porter, Lisa Oltsch, Julia Bergmann, Nina Schuhmann, Sharon Schultz, Daniela Winkler, Janis Herrmann, Laura Bryks, Jenni Thamm <br/> Projektleitung: Georg Herberger<br/> Projektassistenz: Paul Schwabe" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.131> a ld:Event ;
+                                                       rdfs:label "... LOS!" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-02-24T18:00:00+01:00" ;
+                                                       cal:location ldo:Theatrium ;
+                                                       cal:organizer ldo:Theatrium ;
+                                                       cal:description "Jugendtheaterprojekt (P13) !letztmalig! <br/> Ein Verbrechen lässt einen jungen Mann verstummen. Auf der Straße, in der Uni, im Café – überall Fragen. Auch die Heimlichliebende scheitert in ihrer ungelenken Hilfe. Die M’Muts, die sich entschieden haben abseits der modernen Gesellschaft und ohne Sprache zu leben, scheinen die einzig mögliche Zuflucht. Hier scheint das Geheimnis sicher, jeder Mund verschlossen. Doch die Gesandten des Gesetzes und die Schwester des Mannes kommen und kratzen an der Mauer des Schweigens. Wie lange werden die M’Muts und ihr Anführer, der mysteriöse Ohm, den Flüchtigen beschützen können? Und hat die zarte Liebe, die sich zwischen einer M’Muts und dem Assistenten der Justiz anbahnt, eine Chance?<br/>Es spielen: Melanie Christoph, Charlotte Glück, Lisa Hoegel, Charlotte Kremberg, Paula Kuhn, Maxi Leopold, Sophie Weber; Felix Guevara, Paul Hämmerling, Franz Manhenke, Pascal Müller, Ferdinand Probst <br/> Projektleitung: Almut Koch<br/> Projektassistenz: Philipp Wenke" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.148> a ld:Event ;
+                                                       rdfs:label "Kochen mit Anne - Essen mit Allen" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung, ldtag:Jugendhilfe, ldtag:Nachhilfe ;
+                                                       cal:dtstart "2013-01-16T16:00:00+01:00" ;
+                                                       cal:location <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       cal:organizer <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       cal:description "Mitkochen  mitessen für alle!!! Lecker, vegetarisch, wer spenden kann, der darf das gerne tun, Hauptsache Spaß an der Sache und satt werden." .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.149> a ld:Event ;
+                                                       rdfs:label "KOMM ins Familienzentrum: FamilienSpieleNachmittag" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung, ldtag:Jugendhilfe, ldtag:Nachhilfe ;
+                                                       cal:dtstart "2013-01-18T15:30:00+01:00" ;
+                                                       cal:location <http://leipzig-data.de/Data/Ort/Familienzentrum.Gruenau> ;
+                                                       cal:organizer <http://leipzig-data.de/Data/Ort/Familienzentrum.Gruenau> ;
+                                                       cal:description " <br/> Du suchst den perfekten Ausgleich nach einer stressigen Woche? Dann schnapp` dir deine Familie und komm! Es erwarten dich Spiel, Spaß und gute Laune - bei genügend Verpflegung versteht sich ;) Wir freuen uns auf euch!" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.150> a ld:Event ;
+                                                       rdfs:label "Dark Room : Kamera - Fotolabor - Keller" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-02-18T14:00:00+01:00" ;
+                                                       cal:location <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       cal:organizer <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       cal:description "In der Zeit vom 18. bis 22. Februar findet im KiJu ein Fotoprojekt statt und du bist herzlich eingeladen daran teilzunehmen! Wir zeigen euch wie Fotos im Labor entstehen. Schießt und entwickelt eure eigenen schwarz/weiß Fotos! Neugierig? Dann merke dir den Termin und schaue rechtzeitig mal bei uns vorbei. Alle Infos gibts auch bei den Mitarbeiterinnen im KiJu." ;
+                                                       cal:dtend "2013-02-22T18:00:00+01:00" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.151> a ld:Event ;
+                                                       rdfs:label "Kreativwerkstatt startet mit neuem Projekt: Streetart" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       cal:dtstart "2013-01-15T15:00:00+01:00" ;
+                                                       cal:location <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       cal:organizer <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       cal:description "In der Kreativwerkstatt des KiJu' kannst du ab jetzt alles über Streetart kennenlernen und viele Dinge ausprobieren. Schablonen Graffitio, Sticker, Installationen, guerilla Knitting und und und Die Kreativwerkstatt ist. Immer Dienstags und Donnerstag von 15 bis 18 Uhr für euch geöffnet und freut sich auf euren Besuch!!!" .
+
+<http://leipzig-data.de/Data/Event/PraesentationSinusstudie> a ld:Event ;
+                                                             rdfs:label "Präsentation der Sinusstudie" ;
+                                                             cal:dtstart "2013-01-31T14:00:00+01:00" ;
+                                                             cal:location <http://leipzig-data.de/Data/Ort/Caritas.Leipzig> ;
+                                                             cal:description "Präsentation der Sinusstudie zu Lebenwelten von Jugendlichen im Alter von 14-17 Jahren in Deutschland" ;
+                                                             cal:dtend "2013-01-31T17:00:00+01:00" .
 
 <http://leipzig-data.de/Data/Event/VHS.2012-11-13> a ld:Event ;
                                                    rdfs:label "Energie und Bildung" ;
@@ -355,7 +467,7 @@
                                                    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
                                                    ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
                                                    cal:description "Mit M. Richter und A. Boblenz (BIP-Kreativitätsgymnasium Leipzig). Lehrer und Schüler des BIP-Kreativitätsgymnasiums Leipzig stellen ein Projekt zum Thema \"alternative Energien\" vor." ;
-                                                   ld:Ortzusatz "Raum 410" .
+                                                   ld:hasAddressAddendum "Raum 410" .
 
 <http://leipzig-data.de/Data/Event/VHS.2012-12-11> a ld:Event ;
                                                    rdfs:label "Energiekonzepte jenseits von Stromkonzepten" ;
@@ -367,7 +479,7 @@
                                                    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
                                                    ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
                                                    cal:description "Mit Prof. K. Bastian (HTWK Leipzig). In den offiziellen Studien zur Energieversorgung der Zukunft sind Energiekonzepte fast ausschließlich Stromkonzepte. Im Vortrag werden Vorteile und Bedeutung des Energieträgers Gas genauer diskutiert, einschließlich der provokanten These, dass das Energiekonzept der Zukunft nicht strom- sondern gasgeführt sein wird." ;
-                                                   ld:Ortzusatz "Raum 410" .
+                                                   ld:hasAddressAddendum "Raum 410" .
 
 <http://leipzig-data.de/Data/Event/VHS.2013-01-08> a ld:Event ;
                                                    rdfs:label "Metanetze zur Optimierung von Energie- und Stoffströmen" ;
@@ -379,10 +491,34 @@
                                                    cal:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
                                                    ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
                                                    cal:description "Mit Dr.-Ing. Gerd Arnold (Evermind, Leipzig). Mit der Diskussion des Vorteils von Gas als Energieträger, fast verlustfrei über große Strecken übertragen werden zu können, rückt die Frage der Optimierungspotenziale einer integrierten Betrachtung von Energie- und Stoffströmen ins Blickfeld." ;
-                                                   ld:Ortzusatz "Raum 410" .
+                                                   ld:hasAddressAddendum "Raum 410" .
 
 <> a owl:Ontology ;
    rdfs:label "LeipzigData - Events" .
+
+<http://leipzig-data.de/Data/Events/6.FamilienSpieleFest> a ld:Event ;
+                                                          rdfs:label "6. FamilienSpieleFest" ;
+                                                          ld:hasURL <http://www.leipzig.de/de/buerger/aemterhome/jugendamt/spielefest/> ;
+                                                          cal:dtstart "2013-02-02T13:00:00+01:00" ;
+                                                          cal:location <http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus> ;
+                                                          cal:description "Im Neuen Rathaus kann man am 2. Februar von 13:00 bis 19:00 Uhr unbekannte Spiele entdecken, neue Spielpartner finden und einen Familienspielnachmittag in außergewöhnlicher Umgebung verbringen." ;
+                                                          cal:dtend "2013-02-02T19:00:00+01:00" .
+
+<http://leipzig-data.de/Data/Events/Hellerau-Ferienakademie-Kurse.1> a ld:Event ;
+                                                                     rdfs:label "Ferienakademie-Kurse im Bereich Homepage-Schmiede" ;
+                                                                     ld:hasURL <http://t-m-a.de/ferienakademie/homepage-schmiede-leipzig> ;
+                                                                     cal:dtstart "2013-02-04" ;
+                                                                     cal:location ldo:VillaIda ;
+                                                                     cal:description "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" ;
+                                                                     cal:dtend "2013-02-09" .
+
+<http://leipzig-data.de/Data/Events/Hellerau-Ferienakademie-Kurse.2> a ld:Event ;
+                                                                     rdfs:label "Ferienakademie-Kurse im Bereich Homepage-Schmiede" ;
+                                                                     ld:hasURL <http://t-m-a.de/ferienakademie/homepage-schmiede-leipzig> ;
+                                                                     cal:dtstart "2013-02-11" ;
+                                                                     cal:location ldo:VillaIda ;
+                                                                     cal:description "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" ;
+                                                                     cal:dtend "2013-02-16" .
 
 ld:Event a owl:Class ;
          rdfs:label "Events" .

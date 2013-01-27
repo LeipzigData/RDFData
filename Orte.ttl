@@ -19,6 +19,10 @@ ldo:AKAD-Hochschule a ld:Ort ;
                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Gutenbergplatz.1> ;
                     ld:hasAPIId "Venue.69" .
 
+<http://leipzig-data.de/Data/Ort/ASD.Gruenau> a ld:Ort ;
+                                              rdfs:label "Allgemeiner Sozialdienst Grünau" ;
+                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.KiewerStrasse.1-3> .
+
 ldo:ASG a ld:Ort ;
         rdfs:label "Arnold-Sommerfeld-Gesellschaft" .
 
@@ -262,6 +266,10 @@ ldo:Cafe-Grundmann a ld:Ort ;
                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Thomasgasse.2> ;
                                                  ld:hasAPIId "Venue.16" .
 
+<http://leipzig-data.de/Data/Ort/Caritas.Leipzig> a ld:Ort ;
+                                                  rdfs:label "Caritasverband Leipzig" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Strasse/Elsterstrasse.15> .
+
 ldo:Cinemabstruso a ld:Ort ;
                   rdfs:label "Cinemabstruso" ;
                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Siemeringstrasse.20> ;
@@ -387,7 +395,7 @@ ldo:EssentialExistenceGallery a ld:Ort ;
                                            rdfs:label "JZ ARENA" ;
                                            ld:hasTelefon "0341-4299745" ;
                                            ld:hasEmail "arena-leipzig@froebel-gruppe.de" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.4> ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.8> ;
                                            ld:hasStatus "aktiv" ;
                                            ld:hasURL "http://www.Froebel-gruppe.de" ;
                                            ld:hasSupplier <http://leipzig-data.de/Data/Traeger/FroebelGruppe> .
@@ -515,6 +523,10 @@ ldo:GfZK a ld:Ort ;
          ld:hasURL "http://www.gfzk.de" ;
          ld:hasAPIId "Venue.66" .
 
+<http://leipzig-data.de/Data/Ort/Grundschule.90> a ld:Ort ;
+                                                 rdfs:label "90. Grundschule" ;
+                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.19-21> .
+
 ldo:HTWK a ld:Ort ;
          rdfs:label "Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK)" ;
          ld:hasTelefon "0341-30766156" ;
@@ -614,6 +626,10 @@ ldo:HfTL a ld:Ort ;
          rdfs:label "Hochschule für Telekommunikation Leipzig" ;
          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Gustav-Freytag-Strasse.43-45> .
 
+<http://leipzig-data.de/Data/Ort/IB.Schulsozialarbeit.Gruenau> a ld:Ort ;
+                                                               rdfs:label "IB - Schulsozialarbeit" ;
+                                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.1> .
+
 ldo:Igelschutzzentrum a ld:Ort ;
                       rdfs:label "Igelschutzzentrum" ;
                       ld:hasTelefon "0341-4247662" ;
@@ -667,16 +683,9 @@ ldo:KE-Leipzig a ld:Ort ;
                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.5> ;
                ld:hasURL <http://www.ke-leipzig.de> .
 
-<http://leipzig-data.de/Data/Ort/KJT.Gruenau> a ld:Ort ;
-                                              rdfs:label "Kinder- u. Jugendtreff Grünau" ;
-                                              ld:hasTelefon "0341-4113196" ;
-                                              ld:hasEmail "kijuleipzig@gmx.de" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.HeilbronnerStrasse.16> ;
-                                              ld:hasStatus "aktiv" ;
-                                              ld:hasURL "http://www.kijuleipzig.de" ;
-                                              ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KJT.Gruenau> ;
-                                              ld:Kurzinformation "Schwerpunkte der Arbeit: offene Kinder- und Jugendarbeit, erlebnispädagogische Projekte, Medienarbeit, Jugendbildung, Nachwuchsförderung und Ferienangebote." ;
-                                              ld:contactPerson ldp:Roeser_Sascha .
+<http://leipzig-data.de/Data/Ort/KJND.Gruenau> a ld:Ort ;
+                                               rdfs:label "Kinder- und Jugendnotdienst Grünau" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Ringstrasse.4> .
 
 <http://leipzig-data.de/Data/Ort/KJZ.Probstheida> a ld:Ort ;
                                                   rdfs:label "Kinder- und Jugendfreizeitzentrum Probstheida" ;
@@ -707,6 +716,17 @@ ldo:Kapitaldruck a ld:Ort ;
                  rdfs:comment "Buchladen mit Cafe" ;
                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Rossplatz.11> ;
                  ld:hasAPIId "Venue.19" .
+
+<http://leipzig-data.de/Data/Ort/KiJu.Gruenau> a ld:Ort ;
+                                               rdfs:label "Kinder- u. Jugendtreff Grünau" ;
+                                               ld:hasTelefon "0341-4113196" ;
+                                               ld:hasEmail "kijuleipzig@gmx.de", "info-kijuleipzig@gmx.de" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.HeilbronnerStrasse.16> ;
+                                               ld:hasStatus "aktiv" ;
+                                               ld:hasURL <http://www.kijuleipzig.de> ;
+                                               ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KiJu.Gruenau> ;
+                                               ld:Kurzinformation "Schwerpunkte der Arbeit: offene Kinder- und Jugendarbeit, erlebnispädagogische Projekte, Medienarbeit, Jugendbildung, Nachwuchsförderung und Ferienangebote." ;
+                                               ld:contactPerson ldp:Roeser_Sascha .
 
 ldo:KinderBueroLeipzig a ld:Ort ;
                        rdfs:label "Leipziger Kinderbüro" ;
@@ -861,6 +881,14 @@ ldo:Medienwerkstatt a ld:Ort ;
                     ld:hasStatus "aktiv" ;
                     ld:hasURL "http://www.medienwerkstatt-leipzig.de" .
 
+<http://leipzig-data.de/Data/Ort/Mittelschule.84> a ld:Ort ;
+                                                  rdfs:label "84. Mittelschule" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.5> .
+
+<http://leipzig-data.de/Data/Ort/Mittelschule.94> a ld:Ort ;
+                                                  rdfs:label "94. Mittelschule" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.3> .
+
 ldo:ModernMusicSchool a ld:Ort ;
                       rdfs:label "Modern Music School" ;
                       ld:hasTelefon "0341-2603459" ;
@@ -937,6 +965,11 @@ ldo:Naturkundemuseum a ld:Ort ;
                      ld:hasStatus "aktiv" ;
                      ld:hasTag ldtag:Museum ;
                      ld:hasURL "http://www.leipzig.de/naturkundemuseum" .
+
+ldo:NetzwerkEnergieUmwelt a ld:Ort ;
+                          rdfs:label "Netzwerk Energie und Umwelt" ;
+                          ld:hasURL <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
+                          ld:contactPerson ldp:Keck_Lisa, ldp:Glowacki_Romann .
 
 ldo:NeuesSchauspielLeipzig a ld:Ort ;
                            rdfs:label "Neues Schauspiel Leipzig" ;
@@ -1054,6 +1087,14 @@ ldo:Plan-B a ld:Ort ;
                                                               ld:hasStatus "aktiv" ;
                                                               ld:hasSupplier <http://leipzig-data.de/Data/Traeger/ZV_Parthenaue> .
 
+<http://leipzig-data.de/Data/Ort/Polizeirevier.Gruenau> a ld:Ort ;
+                                                        rdfs:label "Polizeirevier Grünau" ;
+                                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.Ratzelstrasse.222> .
+
+<http://leipzig-data.de/Data/Ort/QM.Gruenau> a ld:Ort ;
+                                             rdfs:label "Quartiersmanagement Grünau" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.21> .
+
 <http://leipzig-data.de/Data/Ort/Rabutz.TOeP> a ld:Ort ;
                                               rdfs:label "Rennstall Rabutz" ;
                                               ld:hasTelefon "034207-73595" ;
@@ -1122,6 +1163,14 @@ ldo:SportforumLeipzig a ld:Ort ;
                       rdfs:label "Sportforum Leipzig" ;
                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.AmSportforum.3> ;
                       ld:hasAPIId "Venue.54", "Venue.53" .
+
+<http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus> a ld:Ort ;
+                                                            rdfs:label "Neues Rathaus" ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Martin-Luther-Ring.4> .
+
+ldo:StarkFuerGruenau a ld:Ort ;
+                     rdfs:label "Stark für Grünau" ;
+                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.63> .
 
 ldo:Theatrium a ld:Ort ;
               rdfs:label "Theatrium" ;
@@ -1321,6 +1370,17 @@ ldo:ZfI a ld:Ort ;
         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/ZfI> ;
         ld:contactPerson ldp:Mueller_Doris .
 
+ldo:Zukunftsakademie a ld:Ort ;
+                     rdfs:label "Zukunftsakademie Leipzig" ;
+                     ld:hasTelefon "0341-3065180" ;
+                     ld:hasEmail "info@zak-le.de" ;
+                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
+                     ld:hasURL <http://www.zukunftsakademie-leipzig.de/> ;
+                     ld:hasFax "0341-3065180" ;
+                     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Zukunftsakademie> ;
+                     ld:contactPerson ldp:Kramer_Anais ;
+                     ld:hasAddressAddendum "Haus der Demokratie, Raum 110" .
+
 ldo:ciT a ld:Ort ;
         rdfs:label "ciT – Consulting Innovation Training GmbH" ;
         ld:hasTelefon "0341-68707-0" ;
@@ -1346,10 +1406,10 @@ ldo:studiodelta a ld:Ort ;
                 ld:hasAPIId "Venue.27" .
 
 ldo:sublab a ld:Ort ;
-           ld:Ortszusatz "Tor B, 3. OG" ;
            rdfs:label "sublab e.V." ;
            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.93> ;
-           ld:hasAPIId "Venue.30" .
+           ld:hasAPIId "Venue.30" ;
+           ld:hasAddressAddendum "Tor B, 3. OG" .
 
 <> a owl:Ontology ;
    owl:imports <http://leipzig-data.de/Data/Tags/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Adressen/> ;
