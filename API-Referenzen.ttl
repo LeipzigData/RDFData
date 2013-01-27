@@ -7,7 +7,9 @@
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 
 <> a owl:Ontology ;
-   rdfs:label "LeipzigData - Referenzen zu API Leipzig" .
+   rdfs:label "LeipzigData - Referenzen zu API Leipzig" ;
+   <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   <http://creativecommons.org/ns#attributionURL> <http://leipzig-data.de> .
 
 <http://leipzig-data.de/Data/Ort/AKAD-Hochschule> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.69> .
 
@@ -41,7 +43,11 @@
 
 <http://leipzig-data.de/Data/Ort/Kollaborat> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.20> .
 
+<http://leipzig-data.de/Data/Ort/KreativesLeipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.20> .
+
 <http://leipzig-data.de/Data/Ort/LOFFT> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.28> .
+
+<http://leipzig-data.de/Data/Ort/LeipzigOnRails> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.24> .
 
 <http://leipzig-data.de/Data/Ort/LeipzigSchoolOfDesign> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.61> .
 
@@ -91,6 +97,8 @@
 
 <http://leipzig-data.de/Data/Person/Grosser_Katja> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.35>, <http://leipzig-data.de/Data/APIId/Host.38> .
 
+<http://leipzig-data.de/Data/Person/Holunder_Alma> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.26> .
+
 <http://leipzig-data.de/Data/Person/Hoyer_Stephan> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.42> .
 
 <http://leipzig-data.de/Data/Person/Ihring_Lars> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.29> .
@@ -108,3 +116,5 @@
 <http://leipzig-data.de/Data/Person/Reinhardt_Sylvi> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.40> .
 
 <http://leipzig-data.de/Data/Person/Wagner_Thomas> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.33>, <http://leipzig-data.de/Data/APIId/Host.34>, <http://leipzig-data.de/Data/APIId/Host.30>, <http://leipzig-data.de/Data/APIId/Host.31>, <http://leipzig-data.de/Data/APIId/Host.32> .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.37> .
