@@ -1,802 +1,989 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Traeger/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
+@prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
+@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+
+ld:Traeger
+    a owl:Class ;
+    rdfs:label "Träger" .
+
+ld:Unternehmen
+    a owl:Class ;
+    rdfs:label "Unternehmen" ;
+    rdfs:subClassOf ld:Traeger .
+
+ld:Verein
+    a owl:Class ;
+    rdfs:label "Verein" ;
+    rdfs:subClassOf ld:Traeger .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung>
+    ld:hasTelefon "0341-1235826" ;
+    a ld:Traeger ;
+    rdfs:label "Stadt Leipzig, Amt für Wirtschaftsförderung" .
+
+<http://leipzig-data.de/Data/Traeger/>
+    a owl:Ontology ;
+    rdfs:label "LeipzigData - Träger" ;
+    owl:imports <http://leipzig-data.de/Data/Personen/> .
+
+ldt:ASB
+    ld:hasSupplierNumber "003" ;
+    a ld:Traeger ;
+    rdfs:label "Arbeiter-Samariter-Bund RV Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/AWO.Leipzig>
+    ld:hasSupplierNumber "258" ;
+    ld:hasURL "http://www.awo-leipzig-stadt.de" ;
+    a ld:Traeger ;
+    rdfs:label "AWO Kita u. ambulante Dienste gGmbH" .
+
+<http://leipzig-data.de/Data/Traeger/AWO.LeipzigerLand>
+    ld:hasURL "http://www.awo-leipzigerland.de" ;
+    a ld:Traeger ;
+    rdfs:label "AWO Kita u. ambulante Dienste gGmbH" .
+
+ldt:Adventjugend
+    ld:hasSupplierNumber "077" ;
+    a ld:Traeger ;
+    rdfs:label "Adventjugend" .
+
+ldt:AidsHilfe
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Ossietzkystrasse.18> ;
+    ld:hasEmail "thomas.franke@Leipzig.aidshilfe.de" ;
+    ld:hasSupplierNumber "039" ;
+    ld:hasTelefon "0341-2323126" ;
+    ld:hasURL "http://www.leipzig.aidshilfe.de" ;
+    a ld:Traeger ;
+    rdfs:label "AIDS Hilfe Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/ArbeitLeben.Sachsen>
+    ld:hasSupplierNumber "148" ;
+    a ld:Traeger ;
+    rdfs:label "Arbeit und Leben Sachsen" .
+
+ldt:AriowitschHaus
+    ld:hasSupplierNumber "345" ;
+    a ld:Traeger ;
+    rdfs:label "Ariowitsch-Haus" .
+
+<http://leipzig-data.de/Data/Traeger/Attac.Leipzig>
+    a ld:Traeger ;
+    rdfs:label "Attac Leipzig" .
+
+ldt:Auwaldstation
+    ld:engagedPerson ldp:Baesler_Detlef, ldp:Seidel_Franka ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Schlossweg.11> ;
+    a ld:Traeger ;
+    rdfs:label "Auwaldstation Leipzig" .
+
+ldt:BA-Leipzig
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.SchoenauerStrasse.113> ;
+    ld:hasTelefon "0341 42743-404" ;
+    ld:hasURL "http://www.ba-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/BBW.Hoer>
+    ld:hasSupplierNumber "312" ;
+    a ld:Traeger ;
+    rdfs:label "Berufsbildungswerk für Hör- und Sprachgeschädigte gGmbH" .
+
+ldt:BUND
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
+    ld:hasEmail "bund.leipzig@gmx.de" ;
+    ld:hasTelefon "0341-3065395" ;
+    ld:hasURL "http://www.bund-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "BUND Regionalgruppe Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/BV.Bachviertel>
+    ld:contactPerson ldp:Hantschick_Ines ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Kaethe-Kollwitz-Strasse.107> ;
+    ld:hasEmail "ineshantschick@gmx.de" ;
+    ld:hasSupplierNumber "008" ;
+    ld:hasTelefon "0341-1257203" ;
+    a ld:Traeger ;
+    rdfs:label "Bürgerverein Bachviertel e.V." .
+
+<http://leipzig-data.de/Data/Traeger/BV.Messemagistrale>
+    ld:hasSupplierNumber "112" ;
+    a ld:Traeger ;
+    rdfs:label "Bürgerverein Messemagistrale" .
+
+<http://leipzig-data.de/Data/Traeger/BV.Probstheida>
+    ld:hasSupplierNumber "162" ;
+    a ld:Traeger ;
+    rdfs:label "Bürgerverein Probstheida" .
+
+ldt:Behindertenverband
+    ld:hasSupplierNumber "010" ;
+    a ld:Traeger ;
+    rdfs:label "Behindertenverband" .
+
+ldt:Billardakademie
+    ld:hasAddress "FIXME:Nonnenstr..19" ;
+    a ld:Traeger ;
+    rdfs:label "Billard Akademie Leipzig e.V., Naturwissenschaftliches Begabten- und Förderzentrum" .
+
+ldt:Buchkinder
+    ld:hasSupplierNumber "361" ;
+    a ld:Traeger ;
+    rdfs:label "Buchkinder Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/Buchkinder.Freundeskreis>
+    ld:hasSupplierNumber "366" ;
+    a ld:Traeger ;
+    rdfs:label "Freundeskreis Buchkinder" .
+
+ldt:BuntePlatte
+    ld:hasSupplierNumber "299" ;
+    a ld:Traeger ;
+    rdfs:label "Bunte Platte" .
+
+ldt:Burgarbeit
+    ld:hasSupplierNumber "226" ;
+    a ld:Traeger ;
+    rdfs:label "Burgarbeit" .
+
+ldt:CCLS
+    ld:hasSupplierNumber "270" ;
+    a ld:Traeger ;
+    rdfs:label "Computerclub Lützschena-Stahmeln" .
+
+ldt:CVJM
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.SchoenefelderAllee.23> ;
+    ld:hasEmail "info@cvjm-leipzig.de" ;
+    ld:hasSupplierNumber "078" ;
+    ld:hasTelefon "0341-26675540" ;
+    ld:hasURL "http://www.cvjm-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "CVJM e.V. - Christlicher Verein Junger Menschen" .
+
+<http://leipzig-data.de/Data/Traeger/Caritas.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/Strasse/Elsterstrasse.15> ;
+    ld:hasSupplierNumber "135" ;
+    a ld:Traeger ;
+    rdfs:label "Caritasverband Leipzig" .
+
+ldt:CityKids
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Roentgenstrasse.13> ;
+    ld:hasEmail "kontakt@city-kids.net" ;
+    ld:hasSupplierNumber "180" ;
+    ld:hasTelefon "0341-87099110" ;
+    ld:hasURL "http://www.city-kids.net" ;
+    a ld:Traeger ;
+    rdfs:label "CITY KIDS e.V." .
+
+ldt:Columbus
+    ld:hasSupplierNumber "011" ;
+    a ld:Traeger ;
+    rdfs:label "Columbus Junior" .
+
+ldt:ConneIsland
+    ld:hasSupplierNumber "012" ;
+    a ld:Traeger ;
+    rdfs:label "Conne Island" .
+
+<http://leipzig-data.de/Data/Traeger/DJO.Sachsen>
+    ld:hasSupplierNumber "356" ;
+    a ld:Traeger ;
+    rdfs:label "djo Deutsche Jugend in Europa LV Sachsen" .
+
+ldt:DNB
+    ld:hasAddress "FIXME:DeutscherPlatz.1" ;
+    ld:hasURL "http://www.d-nb.de" ;
+    a ld:Traeger ;
+    rdfs:label "Deutsche Nationalbibliothek Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/DRK.AkademischerKreisverband>
+    ld:hasAddress "FIXME:Birkenstrasse.26-30" ;
+    ld:hasEmail "drk-akt@t-online.de" ;
+    ld:hasTelefon "0341-4799464" ;
+    ld:hasURL "http://www.drk-akademischer-kv-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "DRK - Akademischer KV" .
+
+ldt:DTS
+    ld:hasAddress "FIXME:GraurheindorferStrasse.153" ;
+    ld:hasURL "http://www.telekom-stiftung.de" ;
+    a ld:Traeger ;
+    rdfs:label "Deutsche Telekom Stiftung" .
+
+<http://leipzig-data.de/Data/Traeger/DW.InnereMission>
+    ld:hasSupplierNumber "030" ;
+    ld:hasURL "http://www.diakonie-leipzig.de/" ;
+    a ld:Traeger ;
+    rdfs:label "Diakonisches Werk/Innere Mission" .
+
+ldt:Dekanatsjugendseelsorge
+    ld:hasSupplierNumber "079" ;
+    a ld:Traeger ;
+    rdfs:label "Dekanatsjugendseelsorge" .
+
+ldt:EBI
+    ld:hasSupplierNumber "157" ;
+    a ld:Traeger ;
+    rdfs:label "EBI" .
+
+ldt:EineWelt
+    ld:hasAddress "FIXME:BornaischeStrasse.18" ;
+    ld:hasEmail "miguel.ruiz@einewelt-sachsen.de" ;
+    ld:hasSupplierNumber "016" ;
+    ld:hasTelefon "0341-9940683" ;
+    ld:hasURL "http://www.einewelt-sachsen.de" ;
+    a ld:Traeger ;
+    rdfs:label "Eine Welt e.V." .
+
+ldt:EvFreiKirche
+    ld:hasSupplierNumber "140" ;
+    a ld:Traeger ;
+    rdfs:label "Ev.-Freikirchliche Gemeinde" .
+
+ldt:EvLuthJugend
+    ld:hasSupplierNumber "083" ;
+    a ld:Traeger ;
+    rdfs:label "Evangelisch-lutherische Jugend" .
+
+ldt:EvMethKirche
+    ld:hasSupplierNumber "123" ;
+    a ld:Traeger ;
+    rdfs:label "Evangelisch-methodistische Kirche" .
+
+ldt:EvRefKirche
+    ld:hasSupplierNumber "124" ;
+    a ld:Traeger ;
+    rdfs:label "Evangelisch-reformierte Kirche zu Leipzig" .
+
+ldt:FAIRBUND
+    ld:hasSupplierNumber "047" ;
+    a ld:Traeger ;
+    rdfs:label "FAIRBUND" .
+
+ldt:FED
+    ld:hasEmail "freizeit@fed-leipzig.de" ;
+    ld:hasTelefon "0341-4219419" ;
+    ld:hasURL "http://www.fed-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Familienentlastender Dienst" .
+
+<http://leipzig-data.de/Data/Traeger/FES.Leipzig>
+    ld:Kurzinformation "<p>Mit jährlich über einhundert Veranstaltungen leistet das Büro einen Beitrag zur politischen Bildungsarbeit in Leipzig und der Region. Als erster ostdeutscher Standort der Friedrich-Ebert-Stiftung hat es bereits Anfang 1990 seine Arbeit aufgenommen. Unsere Tagungen und Seminare, Podiumsdiskussionen, Gesprächskreise und Ausstellungen thematisieren wichtige Fragestellungen aus Politik und Gesellschaft und zielen damit auf die Förderung von Demokratie. </p> <p>Wir wollen die komplizierten Abläufe politischer Entscheidungsprozesse aufzeigen, darauf einwirkende Interessen verdeutlichen und die Menschen zum politischen Handeln und engagierten Mitwirken ermutigen und zusammenbringen.</p>" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Burgstrasse.25> ;
+    ld:hasURL "http://www.fes.de/Leipzig" ;
+    a ld:Traeger ;
+    rdfs:label "Friedrich-Ebert-Stiftung Leipzig" .
+
+ldt:FFS
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.AmRussischenGarten.2> ;
+    a ld:Traeger ;
+    rdfs:label "FRÜHES FORSCHEN Sachsen" .
+
+<http://leipzig-data.de/Data/Traeger/FZ.Paradise>
+    ld:hasAddress "FIXME:Kurt-Tucholski-Strasse.10" ;
+    ld:hasEmail "fzz-loessnig@kv-leipzig.de" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig> ;
+    ld:hasTelefon "0341-3391396" ;
+    a ld:Traeger ;
+    rdfs:label "KV Freizeittreff Paradise" .
+
+<http://leipzig-data.de/Data/Traeger/Familienverband.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Biedermannstrasse.42> ;
+    ld:hasEmail "Familienverband.Leipzig@gmx.de" ;
+    ld:hasTelefon "0341-3017152" ;
+    a ld:Traeger ;
+    rdfs:label "Deutscher Familienverband" .
+
+ldt:Filmschule
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Heinrichstrasse.6> ;
+    ld:hasEmail "Filmschuleleipzig@web.de" ;
+    ld:hasSupplierNumber "096" ;
+    ld:hasTelefon "0341-2119158" ;
+    ld:hasURL "http://www.filmschule-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Filmschule Leipzig e.V." .
+
+ldt:Frauenkultur
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Windscheidstrasse.51> ;
+    ld:hasEmail "hallo@frauenkultur.leipzig.w4w.net" ;
+    ld:hasTelefon "0341-2130030" ;
+    ld:hasURL "http://www.frauenkultur-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Frauenkultur e.V." .
+
+ldt:FroebelGruppe
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.4> ;
+    ld:hasEmail "arena-leipzig@froebel-gruppe.de" ;
+    ld:hasSupplierNumber "266" ;
+    ld:hasTelefon "0341-4299745" ;
+    ld:hasURL "http://www.Froebel-gruppe.de" ;
+    a ld:Traeger ;
+    rdfs:label "Fröbel Gruppe" .
+
+ldt:GAZ
+    ld:engagedPerson ldp:Reschke_Volker ;
+    ld:hasAddress "FIXME:Vollhardtstrasse.16" ;
+    ld:hasEmail "gaz-leipzig@t-online.de" ;
+    a ld:Traeger ;
+    rdfs:label "Grün-Alternatives Zentrum Leipzig e.V." .
+
+ldt:Garage
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.97> ;
+    ld:hasSupplierNumber "320" ;
+    a ld:Traeger ;
+    rdfs:label "GaraGe gGmbH" .
+
+ldt:Geyserhaus
+    ld:hasSupplierNumber "025" ;
+    a ld:Traeger ;
+    rdfs:label "Geyserhaus" .
+
+ldt:GrossStadtKinder
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.59> ;
+    ld:hasSupplierNumber "211" ;
+    a ld:Traeger ;
+    rdfs:label "großstadtKINDER e.V" .
+
+ldt:HTWK
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Karl-Liebknecht-Strasse.132> ;
+    ld:hasURL "http://www.htwk-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "HTWK Leipzig" .
+
+ldt:HWK
+    ld:hasURL "http://www.hwk-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Handwerkskammer Leipzig" .
+
+ldt:Halle5
+    ld:hasSupplierNumber "116" ;
+    a ld:Traeger ;
+    rdfs:label "HALLE 5" .
+
+ldt:HausSteinstrasse
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Steinstrasse.18> ;
+    ld:hasEmail "michael.rausch@haus-steinstrasse.de" ;
+    ld:hasSupplierNumber "026" ;
+    ld:hasTelefon "0341-3913219" ;
+    ld:hasURL "http://www.haus-steinstrasse.de" ;
+    a ld:Traeger ;
+    rdfs:label "Haus Steinstraße e.V." .
+
+ldt:Heilsarmee
+    ld:hasSupplierNumber "075" ;
+    a ld:Traeger ;
+    rdfs:label "Die Heilsarmee" .
+
+ldt:HfTL
+    ld:engagedPerson ldp:Messollen_Michael ;
+    ld:hasAddress "FIXME:Gustav-Freytag-Strasse.43-45" ;
+    ld:hasURL "http://www.hft-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Hochschule für Telekommunikation Leipzig" .
+
+ldt:HilfswerkAlexandra
+    ld:hasSupplierNumber "305" ;
+    a ld:Traeger ;
+    rdfs:label "Deutsch-Russisches Hilfswerk zur Heiligen Alexandra" .
+
+ldt:IHK
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goerdelerring.5> ;
+    ld:hasURL "http://www.leipzig.ihk.de" ;
+    a ld:Traeger ;
+    rdfs:label "IHK Leipzig, Geschäftsbereich Grundsatzfragen, Abteilung Bildung" .
+
+ldt:Inspirata
+    ld:engagedPerson ldp:Koenig_Wolfgang ;
+    ld:hasAddress "FIXME:Postfach.100920" ;
+    ld:hasEmail "kontakt@inspirata.de" ;
+    ld:hasTelefon "0341-1259757" ;
+    ld:hasURL <http://www.inspirata.de> ;
+    a ld:Traeger ;
+    rdfs:label "Inspirata" .
+
+ldt:Instag
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.1> ;
+    ld:hasEmail "info@instag-bildung.de" ;
+    ld:hasFax "0341-35591755" ;
+    ld:hasTelefon "0341-35591755" ;
+    ld:hasURL <http://instag-bildung.de> ;
+    a ld:Traeger ;
+    rdfs:label "Instag GmbH" .
+
+ldt:InternationalerBund
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04357.Rosenowstrasse.24> ;
+    ld:hasSupplierNumber "032" ;
+    a ld:Traeger ;
+    rdfs:label "Internationaler Bund e.V., Verbund Lpz." .
+
+ldt:IrrsinnigMenschlich
+    ld:hasSupplierNumber "357" ;
+    a ld:Traeger ;
+    rdfs:label "Irrsinnig Menschlich" .
+
+<http://leipzig-data.de/Data/Traeger/JAV.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.AnderKotsche.49> ;
+    ld:hasTelefon "0341-2675306" ;
+    a ld:Traeger ;
+    rdfs:label "Jugend- und Altenhilfeverein Grünau" .
+
+<http://leipzig-data.de/Data/Traeger/JAV.Paunsdorf>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04329.Goldsternstrasse.9> ;
+    ld:hasEmail "javpaunsdorf@primacom.net" ;
+    ld:hasTelefon "0341-2532287" ;
+    ld:hasURL "http://www.wbg-kontakt.de" ;
+    a ld:Traeger ;
+    rdfs:label "Jugend- und Altenhilfeverein Paunsdorf" .
+
+<http://leipzig-data.de/Data/Traeger/JC.Moelkau>
+    ld:hasSupplierNumber "308" ;
+    a ld:Traeger ;
+    rdfs:label "Jugendclub Mölkau" .
+
+ldt:JFKreativ
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04157.Luetzowstrasse.19> ;
+    ld:hasEmail "jfk_po@t-online.de" ;
+    ld:hasTelefon "0341-9129698" ;
+    ld:hasURL "http://www.Waldhaus-Kreativ.de" ;
+    a ld:Traeger ;
+    rdfs:label "Jugend und Familie Kreativ e.V." .
+
+ldt:JMGPraetorius
+    ld:hasSupplierNumber "122" ;
+    a ld:Traeger ;
+    rdfs:label "Jugendmusiziergruppe Michael Prätorius" .
+
+ldt:JaRiKo
+    ld:hasSupplierNumber "359" ;
+    a ld:Traeger ;
+    rdfs:label "JaRiKo - Sozialer Ring" .
+
+ldt:JohanniterJugend
+    ld:hasSupplierNumber "304" ;
+    a ld:Traeger ;
+    rdfs:label "Johanniter-Jugend Leipzig" .
+
+ldt:JuKuWe
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Riebeckstrasse.51> ;
+    ld:hasEmail "kontakt@jukuwe-leipzig.de" ;
+    ld:hasTelefon "0341-8775507" ;
+    ld:hasURL "http://www.jukuwe-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Kinder- und JugendKulturWerkstatt Südost" .
+
+ldt:Jugendbrass
+    ld:hasSupplierNumber "019" ;
+    a ld:Traeger ;
+    rdfs:label "Jugendbrass" .
+
+ldt:Jugendhaus
+    ld:hasSupplierNumber "036" ;
+    a ld:Traeger ;
+    rdfs:label "Jugendhaus" .
+
+<http://leipzig-data.de/Data/Traeger/Jugendpresse.Sachsen>
+    ld:hasSupplierNumber "198" ;
+    a ld:Traeger ;
+    rdfs:label "Jugendpresse Sachsen" .
+
+ldt:Jugendrotkreuz
+    ld:hasSupplierNumber "088" ;
+    a ld:Traeger ;
+    rdfs:label "Jugendrotkreuz" .
+
+ldt:KUZ
+    ld:hasAddress "FIXME:Kirchstrasse.42" ;
+    a ld:Traeger ;
+    rdfs:label "Kultur- und Umweltzentrum e.V." .
+
+<http://leipzig-data.de/Data/Traeger/KiJu.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.HeilbronnerStrasse.16> ;
+    ld:hasEmail "kijuleipzig@gmx.de" ;
+    ld:hasSupplierNumber "279" ;
+    ld:hasTelefon "0341-4113196" ;
+    ld:hasURL "http://www.kijuleipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Kinder- u. Jugendtreff Grünau e.V." .
+
+ldt:KinderBuero
+    ld:hasSupplierNumber "230" ;
+    a ld:Traeger ;
+    rdfs:label "Leipziger Kinderbüro" .
+
+<http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig>
+    ld:hasSupplierNumber "090", "163" ;
+    ld:hasURL "http://www.kv-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:comment "Beide Trägernummern in der JHA-Zuschussübersicht 2011" ;
+    rdfs:label "Kindervereinigung Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/Kinderhilfe.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Schulzeweg.11> ;
+    ld:hasEmail "kontakt@kinderhilfe-leipzig.de" ;
+    ld:hasSupplierNumber "035" ;
+    ld:hasTelefon "0341-4211740" ;
+    ld:hasURL "http://www.kinderhilfe-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Kinderhilfe Leipzig e.V." .
+
+ldt:Kinderschutzbund
+    ld:hasSupplierNumber "146" ;
+    a ld:Traeger ;
+    rdfs:label "Deutscher Kinderschutzbund" .
+
+ldt:KreativesSchaffen
+    ld:hasSupplierNumber "145" ;
+    a ld:Traeger ;
+    rdfs:label "KiJuWe Kreatives Schaffen" .
+
+ldt:KreativitaetsWerkstatt
+    ld:hasSupplierNumber "215" ;
+    a ld:Traeger ;
+    rdfs:label "Kreativitätswerkstatt Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/Kreativzentrum.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.17> ;
+    ld:hasEmail "Kreativzentrum@t-online.de" ;
+    ld:hasSupplierNumber "131" ;
+    ld:hasTelefon "0341-4225393" ;
+    ld:hasURL "http://www.Kreativzentrum-Gruenau.de" ;
+    a ld:Traeger ;
+    rdfs:label "Kreativzentrum Grünau e.V." .
+
+ldt:LANU
+    ld:contactPerson ldp:Klauer_AnnaKatharina ;
+    a ld:Traeger ;
+    rdfs:label "Sächsische Landesstiftung Natur und Umwelt" .
+
+ldt:LEmann
+    ld:hasSupplierNumber "321" ;
+    a ld:Traeger ;
+    rdfs:label "LEmann - Jungen- und Männernetzwerk Leipzig" .
+
+ldt:LGBA
+    ld:hasSupplierNumber "355" ;
+    a ld:Traeger ;
+    rdfs:label "Leipziger Gesellschaft für Bildung und Arbeit" .
+
+ldt:LJBW
+    ld:engagedPerson ldp:Hahn_Michael ;
+    ld:hasAddress "FIXME:CossebauderStr..5" ;
+    ld:hasFax "0351-4015902" ;
+    ld:hasURL "http://www.ljbw.de" ;
+    a ld:Traeger ;
+    rdfs:label "LJBW" .
+
+ldt:LSGM
+    ld:engagedPerson ldp:Schueler_Axel ;
+    ld:hasURL "http://www.lsgm.de" ;
+    a ld:Traeger ;
+    rdfs:label "Leipziger Schülergesellschaft für Mathematik e.V." .
+
+<http://leipzig-data.de/Data/Traeger/Landesfilmdienst.Sachsen>
+    ld:hasSupplierNumber "045" ;
+    a ld:Traeger ;
+    rdfs:label "Landesfilmdienst Sachsen" .
+
+ldt:LeISA
+    ld:hasSupplierNumber "324" ;
+    a ld:Traeger ;
+    rdfs:label "LeISA gGmbH" .
+
+ldt:LehmbauGesellschaft
+    ld:hasSupplierNumber "038" ;
+    a ld:Traeger ;
+    rdfs:label "Augsburger Gesellschaft für Lehmbau" .
+
+ldt:LeipzigCourage
+    ld:hasSupplierNumber "316" ;
+    a ld:Traeger ;
+    rdfs:label "Leipzig Courage zeigen" .
+
+<http://leipzig-data.de/Data/Traeger/MJA.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.3> ;
+    ld:hasURL "http://kuebelonline.de/" ;
+    a ld:Traeger ;
+    rdfs:label "Mobile Jugendarbeit Leipzig e.V." .
+
+ldt:MNU
+    ld:engagedPerson ldp:Schmidt_Rosemarie ;
+    ld:hasURL "http://www.mnu.de" ;
+    a ld:Traeger ;
+    rdfs:label "Deutscher Verein zur Förderung des mathematischen und naturwissenschaftlichen Unterrichts e.V. (MNU) / Geschäftsstelle Landesverband Sachsen" .
+
+ldt:MONAliesA
+    ld:hasSupplierNumber "091" ;
+    a ld:Traeger ;
+    rdfs:label "MONAliesA" .
+
+ldt:MPI-MIS
+    ld:engagedPerson ldp:Gregor_Jana ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Inselstrasse.22> ;
+    ld:hasURL "http://www.mis.mpg.de" ;
+    a ld:Traeger ;
+    rdfs:comment "Die interdisziplinäre Zusammenarbeit von Mathematik und Naturwissenschaften bildet den Kernpunkt der Arbeit des 1996 gegründeten Max-Planck-Instituts. Die Wissenschaftler beschäftigten sich mit einem breiten Spektrum an Fragestellungen der reinen und angewandten Mathematik und stellen sich den mathematischen Herausforderungen, die durch theoretische Fragestellungen in den Natur- und Ingenieurwissenschaften entstehen. Ziel ist es, mathematische Denkweisen und Methoden in neuartiger Weise in verschiedene Anwendungsbereiche in den Naturwissenschaften zu integrieren." ;
+    rdfs:label "MPI für Mathematik in den Naturwissenschaften" .
+
+ldt:Machtlos
+    ld:hasSupplierNumber "229" ;
+    a ld:Traeger ;
+    rdfs:label "Machtlos" .
+
+ldt:Medienpaedagogik
+    ld:contactPerson ldp:Warkus_Hartmut ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Emil-Fuchs-Strasse.1> ;
+    ld:hasEmail "info@computerspielschule.org" ;
+    ld:hasFax "0341-9735859" ;
+    ld:hasSupplierNumber "291" ;
+    ld:hasTelefon "0341-9735850" ;
+    a ld:Traeger ;
+    rdfs:label "Medienpädagogik e.V." .
+
+ldt:MobileJugendarbeit
+    ld:hasSupplierNumber "044" ;
+    a ld:Traeger ;
+    rdfs:label "Mobile Jugendarbeit" .
+
+ldt:Muehlstrasse
+    ld:contactPerson ldp:Hoernig_Karin ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Muehlstrasse.14> ;
+    ld:hasEmail "kontakt@muehlstrasse.de" ;
+    ld:hasFax "0341-9903602" ;
+    ld:hasSupplierNumber "050" ;
+    ld:hasTelefon "0341-9903600" ;
+    ld:hasURL "http://www.muehlstrasse.de" ;
+    a ld:Traeger ;
+    rdfs:label "Begegnungsstätte Mühlstraße e.V." .
+
+ldt:Muetterzentrum
+    ld:Kurzinformation "Der Mütterzentrum e.V. Leipzig setzt sich seit seiner Gründung 1990 für die Interessen von Familien in Leipzig ein. Er ist seit 1992 als freier Träger der Jugendhilfe anerkannt und auf dem Gebiet der Familienbildung tätig. Der Verein ist Träger von vier Familienzentren, zwei Kindergärten und einer Tagespflegevermittlung in Leipzig und in folgenden Stadtteilen vertreten: Paunsdorf, Plagwitz, Thekla und in Grünau." ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Potschkaustrasse.50> ;
+    ld:hasSupplierNumber "051" ;
+    ld:hasURL "http://www.mütterzentrum-leipzig.de/" ;
+    a ld:Traeger ;
+    rdfs:label "Mütterzentrum e.V." .
+
+ldt:NABU
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Zollikoferstrasse.21> ;
+    ld:hasEmail "kv.leipzig@nabu-sachsen.de" ;
+    ld:hasTelefon "0341-6884477" ;
+    ld:hasURL "http://www.nabu-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "NABU Regionalverband Leipzig e.V." .
+
+<http://leipzig-data.de/Data/Traeger/NABU.Parthenfroesche>
+    ld:hasSupplierNumber "227" ;
+    a ld:Traeger ;
+    rdfs:label "NABU Deutschland \"Parthenfrösche\"" .
+
+ldt:NeueMusikLeipzig
+    ld:hasSupplierNumber "363" ;
+    a ld:Traeger ;
+    rdfs:label "Neue Musik Leipzig" .
+
+ldt:Oekoloewe
+    ld:engagedPerson ldp:Quester_Roland ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
+    ld:hasFax "0341-3065-179" ;
+    ld:hasSupplierNumber "053" ;
+    a ld:Traeger ;
+    rdfs:label "Ökolöwe Umweltbund Leipzig e.V." .
+
+ldt:OrchesterHolzhausen
+    ld:hasSupplierNumber "328" ;
+    a ld:Traeger ;
+    rdfs:label "Orchester Holzhausen" .
+
+ldt:PfadfinderLeo
+    ld:hasSupplierNumber "076" ;
+    a ld:Traeger ;
+    rdfs:label "Bund der PfadfinderInnen, Stamm Leo" .
+
+ldt:PfadfinderWeltenbummler
+    ld:hasSupplierNumber "228" ;
+    a ld:Traeger ;
+    rdfs:label "Pfadfinder Weltenbummler" .
+
+ldt:Pikanta
+    ld:hasSupplierNumber "057" ;
+    a ld:Traeger ;
+    rdfs:label "Pikanta" .
+
+ldt:PlanL
+    ld:hasSupplierNumber "313" ;
+    a ld:Traeger ;
+    rdfs:label "PLAN L" .
+
+<http://leipzig-data.de/Data/Traeger/Polizeidirektion.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Dimitroffstrasse.1> ;
+    ld:hasTelefon "0341-966-0" ;
+    a ld:Traeger ;
+    rdfs:label "Polizeidirektion Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/RAA.Leipzig>
+    ld:hasSupplierNumber "175" ;
+    a ld:Traeger ;
+    rdfs:label "RAA Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/RAA.Sachsen>
+    ld:hasSupplierNumber "351" ;
+    a ld:Traeger ;
+    rdfs:label "RAA Sachsen" .
+
+<http://leipzig-data.de/Data/Traeger/Rabutz.TOeP>
+    ld:engagedPerson ldp:Messerschmidt_Elk ;
+    ld:hasAddress "FIXME:BageritzerWeg.1" ;
+    a ld:Traeger ;
+    rdfs:label "Technisch-Ökologisches Projektzentrum Rabutz e.V." .
+
+ldt:RadioBlau
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Paul-Gruner-Strasse.62> ;
+    ld:hasEmail "medienpaedagogik@radioblau.de" ;
+    ld:hasTelefon "0341-3010097" ;
+    ld:hasURL "http://www.radioblau.de" ;
+    a ld:Traeger ;
+    rdfs:label "Radio-Verein Lpz. e.V." .
+
+ldt:Radioverein
+    ld:hasSupplierNumber "054" ;
+    a ld:Traeger ;
+    rdfs:label "Radioverein" .
+
+ldt:Raduga
+    ld:hasSupplierNumber "335" ;
+    a ld:Traeger ;
+    rdfs:label "Raduga" .
+
+ldt:Richtungswechsel
+    ld:hasSupplierNumber "144" ;
+    a ld:Traeger ;
+    rdfs:label "Richtungswechsel" .
+
+ldt:SAEK-Leipzig
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Rosa-Luxemburg-Strasse.29> ;
+    ld:hasEmail "leipzig@saek.de" ;
+    ld:hasTelefon "0341-5194363" ;
+    ld:hasURL "http://www.saek.de" ;
+    a ld:Traeger ;
+    rdfs:label "SAEK-Projekt Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/SJD.Falken>
+    ld:hasSupplierNumber "293" ;
+    a ld:Traeger ;
+    rdfs:label "SJD Die Falken" .
+
+<http://leipzig-data.de/Data/Traeger/SV.Jugendweihe>
+    ld:hasSupplierNumber "240" ;
+    a ld:Traeger ;
+    rdfs:label "Sächs. Verband Jugendweihe" .
+
+ldt:SZL
+    ld:hasSupplierNumber "233" ;
+    a ld:Traeger ;
+    rdfs:label "SZL Suchtzentrum Leipzig gGmbH" .
+
+ldt:Sportmobil
+    ld:hasSupplierNumber "255" ;
+    a ld:Traeger ;
+    rdfs:label "Sportmobil, Springburg" .
+
+ldt:StadtLeipzig
+    ld:hasAddress "FIXME:Martin-Luther-Ring.4-6" ;
+    ld:hasURL "http://www.leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Stadt Leipzig, Stadtverwaltung" .
+
+<http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken>
+    ld:contactPerson ldp:Ackermann_Arne ;
+    ld:hasAddress "FIXME:PF.100.927" ;
+    ld:hasURL "http://www.leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Leipziger Städtische Bibliotheken" .
+
+<http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt>
+    ld:hasAddress "FIXME:Martin-Luther-Ring.4-6" ;
+    ld:hasURL "http://www.leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Stadt Leipzig - Amt für Jugend, Familie und Bildung" .
+
+ldt:Stadtjugendfeuerwehr
+    ld:hasSupplierNumber "087" ;
+    a ld:Traeger ;
+    rdfs:label "Stadtjugendfeuerwehr" .
+
+ldt:Stadtjugendring
+    ld:hasSupplierNumber "093" ;
+    a ld:Traeger ;
+    rdfs:label "Stadtjugendring" .
+
+ldt:Stadtsportbund
+    ld:hasSupplierNumber "205" ;
+    a ld:Traeger ;
+    rdfs:label "Stadtsportbund" .
+
+ldt:Tanztheater
+    ld:hasSupplierNumber "325" ;
+    a ld:Traeger ;
+    rdfs:label "Leipziger Tanztheater" .
+
+ldt:UFZ
+    ld:engagedPerson ldp:Teutsch_Georg ;
+    ld:hasAddress "FIXME:Permoserstrasse.15" ;
+    ld:hasURL "http://www.ufz.de" ;
+    a ld:Traeger ;
+    rdfs:label "UFZ" .
+
+ldt:UIZ
+    ld:engagedPerson ldp:Koerner_Annette ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.PragerStrasse.136> ;
+    ld:hasEmail "fvumweltinformationszentrum@web.de" ;
+    ld:hasFax "0341-1236835" ;
+    ld:hasTelefon "0341-1236830" ;
+    ld:hasURL "http://www.uiz-foerderverein.de" ;
+    a ld:Traeger ;
+    rdfs:label "Förderverein Umweltinformationszentrum Stadt Leipzig UIZ e.V." .
+
+ldt:UniLeipzig
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.26> ;
+    ld:hasURL "http://www.uni-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Uni Leipzig" .
+
+<http://leipzig-data.de/Data/Traeger/UniLeipzig.Geographie>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Johannisallee.19> ;
+    ld:hasFax "0341-9732799" ;
+    ld:hasTelefon "0341-9732790" ;
+    a ld:Traeger ;
+    rdfs:label "Institut für Geographie" .
+
+<http://leipzig-data.de/Data/Traeger/UniLeipzig.Studentenrat>
+    ld:hasURL "http://www.stura.uni-leipzig.de/" ;
+    a ld:Traeger ;
+    rdfs:label "Studentenrat der Uni Leipzig" .
+
+ldt:UrbanSouls
+    ld:hasSupplierNumber "364" ;
+    a ld:Traeger ;
+    rdfs:label "Urban Souls" .
+
+<http://leipzig-data.de/Data/Traeger/VDE.LeipzigHalle>
+    ld:engagedPerson ldp:Raue_Manfred ;
+    ld:hasAddress "FIXME:Friedrich-Ebert-Strasse.26" ;
+    ld:hasEmail "manfred.raue@vde-mitglied.de" ;
+    ld:hasTelefon "0341-1207496" ;
+    ld:hasURL "www.VDE-Leipzig-Halle.de" ;
+    a ld:Traeger ;
+    rdfs:label "VDE-BV Leipzig/Halle" .
+
+<http://leipzig-data.de/Data/Traeger/VS.LL_MTL>
+    ld:hasSupplierNumber "264" ;
+    a ld:Traeger ;
+    rdfs:label "Volkssolidarität Leipziger Land/Muldental" .
+
+<http://leipzig-data.de/Data/Traeger/Verein.FFJ>
+    ld:hasSupplierNumber "168" ;
+    a ld:Traeger ;
+    rdfs:label "Verein für Frauen, Familie und Jugend" .
+
+ldt:Villa
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Lessingstrasse.7> ;
+    ld:hasEmail "jugendarbeit@villa-leipzig.de" ;
+    ld:hasTelefon "0341-3552040" ;
+    ld:hasURL "http://www.villa-Leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" .
+
+ldt:WABE
+    ld:hasAddress "FIXME:AmKanal.28" ;
+    ld:hasEmail "S.Scherbaum@wabe-leipzig.de" ;
+    ld:hasSupplierNumber "043" ;
+    ld:hasTelefon "0341-4972415" ;
+    ld:hasURL "http://www.wabe-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Wabe e.V." .
+
+ldt:Werk2
+    ld:hasSupplierNumber "046" ;
+    a ld:Traeger ;
+    rdfs:label "WERK II" .
+
+ldt:ZV_Parthenaue
+    ld:hasURL "http://www.zv-parthenaue.de" ;
+    ld:hasUW_id "veranstalter/865" ;
+    a ld:Traeger ;
+    rdfs:label "Zweckverband Parthenaue" .
+
+ldt:ZfI
+    ld:contactPerson ldp:Mueller_Doris ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> ;
+    ld:hasEmail "doris.mueller@zfi-leipzig.de" ;
+    ld:hasFax "0341-4773703" ;
+    ld:hasSupplierNumber "190" ;
+    ld:hasTelefon "0341-4804311" ;
+    ld:hasURL "http://www.zfi-Leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Zentrum für Integration e.V." .
+
+ldt:ZooLeipzig
+    ld:hasAddress "FIXME:PfaffendorferStrasse.29" ;
+    ld:hasTelefon "0341-5933385" ;
+    ld:hasURL "http://www.zoo-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Zoo Leipzig" .
+
+ldt:Zukunftsnetz
+    ld:hasSupplierNumber "365" ;
+    a ld:Traeger ;
+    rdfs:label "Zukunftsnetz" .
+
+ldt:Zukunftswerkstatt
+    ld:hasSupplierNumber "153" ;
+    a ld:Traeger ;
+    rdfs:label "Zukunftswerkstatt" .
+
+ldt:ciT
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Lutherstrasse.10> ;
+    ld:hasTelefon "0341-68707-0" ;
+    a ld:Traeger ;
+    rdfs:label "ciT – Consulting Innovation Training GmbH" .
+
+<http://leipzig-data.de/Data/Verein/ANU-Bund>
+    ld:hasFax "069-31019229" ;
+    ld:hasTelefon "069-31019243" ;
+    ld:hasUW_id "veranstalter/1455" ;
+    a ld:Traeger ;
+    rdfs:label "ANU - Arbeitsgemeinschaft Natur- und Umweltbildung, Bundesverband e.V." .
+
+<http://leipzig-data.de/Data/Verein/ASG>
+    a ld:Traeger ;
+    rdfs:label "Arnold-Sommerfeld-Gesellschaft" .
+
+<http://leipzig-data.de/Data/Verein/Anker>
+    ld:hasAddress "FIXME:Renftstrasse.1" ;
+    ld:hasEmail "info@anker-leipzig.de" ;
+    ld:hasSupplierNumber "062" ;
+    ld:hasTelefon "0341-9128327" ;
+    ld:hasURL "http://www.anker-leipzig.de" ;
+    a ld:Traeger ;
+    rdfs:label "Der ANKER e.V." .
+
+<http://leipzig-data.de/Data/Verein/KreativesLeipzig>
+    a ld:Traeger, ld:Verein ;
+    rdfs:label "Kreatives Leipzig e.V." .
+
+<http://leipzig-data.de/Data/Verein/Zukunftsakademie>
+    ld:contactPerson ldp:Kramer_Anais ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
+    ld:hasAddressAddendum "Haus der Demokratie, Raum 110" ;
+    ld:hasEmail "info@zak-le.de" ;
+    ld:hasFax "0341-3065180" ;
+    ld:hasTelefon "0341-3065180" ;
+    ld:hasURL <http://www.zukunftsakademie-leipzig.de/> ;
+    a ld:Traeger, ld:Verein ;
+    rdfs:label "ZAK - ZukunftsAkademie - Leipzig e.V." .
 
-ld:Traeger a owl:Class ;
-           rdfs:label "Träger" .
-
-<> a owl:Ontology ;
-   owl:imports <http://leipzig-data.de/Data/Personen/> ;
-   rdfs:label "LeipzigData - Träger" .
-
-<ASB> a ld:Traeger ;
-      rdfs:label "Arbeiter-Samariter-Bund RV Leipzig" ;
-      ld:hasSupplierNumber "003" .
-
-<http://leipzig-data.de/Data/Traeger/AWO.Leipzig> a ld:Traeger ;
-                                                  rdfs:label "AWO Kita u. ambulante Dienste gGmbH" ;
-                                                  ld:hasURL "http://www.awo-leipzig-stadt.de" ;
-                                                  ld:hasSupplierNumber "258" .
-
-<http://leipzig-data.de/Data/Traeger/AWO.LeipzigerLand> a ld:Traeger ;
-                                                        rdfs:label "AWO Kita u. ambulante Dienste gGmbH" ;
-                                                        ld:hasURL "http://www.awo-leipzigerland.de" .
-
-<Adventjugend> a ld:Traeger ;
-               rdfs:label "Adventjugend" ;
-               ld:hasSupplierNumber "077" .
-
-<AidsHilfe> a ld:Traeger ;
-            rdfs:label "AIDS Hilfe Leipzig" ;
-            ld:hasTelefon "0341-2323126" ;
-            ld:hasEmail "thomas.franke@Leipzig.aidshilfe.de" ;
-            ld:hasURL "http://www.leipzig.aidshilfe.de" ;
-            ld:hasSupplierNumber "039" ;
-            ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04347.Ossietzkystrasse.18> .
-
-<http://leipzig-data.de/Data/Traeger/ArbeitLeben.Sachsen> a ld:Traeger ;
-                                                          rdfs:label "Arbeit und Leben Sachsen" ;
-                                                          ld:hasSupplierNumber "148" .
-
-<AriowitschHaus> a ld:Traeger ;
-                 rdfs:label "Ariowitsch-Haus" ;
-                 ld:hasSupplierNumber "345" .
-
-<http://leipzig-data.de/Data/Traeger/Attac.Leipzig> a ld:Traeger ;
-                                                    rdfs:label "Attac Leipzig" .
-
-<Auwaldstation> a ld:Traeger ;
-                rdfs:label "Auwaldstation Leipzig" ;
-                ld:engagedPerson ldp:Baesler_Detlef, ldp:Seidel_Franka ;
-                ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04159.Schlossweg.11> .
-
-<BA-Leipzig> a ld:Traeger ;
-             rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" ;
-             ld:hasTelefon "0341 42743-404" ;
-             ld:hasURL "http://www.ba-leipzig.de" ;
-             ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04207.SchoenauerStrasse.113> .
-
-<http://leipzig-data.de/Data/Traeger/BBW.Hoer> a ld:Traeger ;
-                                               rdfs:label "Berufsbildungswerk für Hör- und Sprachgeschädigte gGmbH" ;
-                                               ld:hasSupplierNumber "312" .
-
-<BUND> a ld:Traeger ;
-       rdfs:label "BUND Regionalgruppe Leipzig" ;
-       ld:hasTelefon "0341-3065395" ;
-       ld:hasEmail "bund.leipzig@gmx.de" ;
-       ld:hasURL "http://www.bund-leipzig.de" ;
-       ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> .
-
-<http://leipzig-data.de/Data/Traeger/BV.Bachviertel> a ld:Traeger ;
-                                                     rdfs:label "Bürgerverein Bachviertel e.V." ;
-                                                     ld:hasTelefon "0341-1257203" ;
-                                                     ld:hasEmail "ineshantschick@gmx.de" ;
-                                                     ld:contactPerson ldp:Hantschick_Ines ;
-                                                     ld:hasSupplierNumber "008" ;
-                                                     ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04109.Kaethe-Kollwitz-Strasse.107> .
-
-<http://leipzig-data.de/Data/Traeger/BV.Messemagistrale> a ld:Traeger ;
-                                                         rdfs:label "Bürgerverein Messemagistrale" ;
-                                                         ld:hasSupplierNumber "112" .
-
-<http://leipzig-data.de/Data/Traeger/BV.Probstheida> a ld:Traeger ;
-                                                     rdfs:label "Bürgerverein Probstheida" ;
-                                                     ld:hasSupplierNumber "162" .
-
-<Behindertenverband> a ld:Traeger ;
-                     rdfs:label "Behindertenverband" ;
-                     ld:hasSupplierNumber "010" .
-
-<Billardakademie> a ld:Traeger ;
-                  rdfs:label "Billard Akademie Leipzig e.V., Naturwissenschaftliches Begabten- und Förderzentrum" ;
-                  ld:hasAdresse "FIXME:Nonnenstr..19" .
-
-<Buchkinder> a ld:Traeger ;
-             rdfs:label "Buchkinder Leipzig" ;
-             ld:hasSupplierNumber "361" .
-
-<http://leipzig-data.de/Data/Traeger/Buchkinder.Freundeskreis> a ld:Traeger ;
-                                                               rdfs:label "Freundeskreis Buchkinder" ;
-                                                               ld:hasSupplierNumber "366" .
-
-<BuntePlatte> a ld:Traeger ;
-              rdfs:label "Bunte Platte" ;
-              ld:hasSupplierNumber "299" .
-
-<Burgarbeit> a ld:Traeger ;
-             rdfs:label "Burgarbeit" ;
-             ld:hasSupplierNumber "226" .
-
-<CCLS> a ld:Traeger ;
-       rdfs:label "Computerclub Lützschena-Stahmeln" ;
-       ld:hasSupplierNumber "270" .
-
-<CVJM> a ld:Traeger ;
-       rdfs:label "CVJM e.V. - Christlicher Verein Junger Menschen" ;
-       ld:hasTelefon "0341-26675540" ;
-       ld:hasEmail "info@cvjm-leipzig.de" ;
-       ld:hasURL "http://www.cvjm-leipzig.de" ;
-       ld:hasSupplierNumber "078" ;
-       ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04347.SchoenefelderAllee.23> .
-
-<http://leipzig-data.de/Data/Traeger/Caritas.Leipzig> a ld:Traeger ;
-                                                      rdfs:label "Caritasverband Leipzig" ;
-                                                      ld:hasSupplierNumber "135" .
-
-<CityKids> a ld:Traeger ;
-           rdfs:label "CITY KIDS e.V." ;
-           ld:hasTelefon "0341-87099110" ;
-           ld:hasEmail "kontakt@city-kids.net" ;
-           ld:hasURL "http://www.city-kids.net" ;
-           ld:hasSupplierNumber "180" ;
-           ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04177.Roentgenstrasse.13> .
-
-<Columbus> a ld:Traeger ;
-           rdfs:label "Columbus Junior" ;
-           ld:hasSupplierNumber "011" .
-
-<ConneIsland> a ld:Traeger ;
-              rdfs:label "Conne Island" ;
-              ld:hasSupplierNumber "012" .
-
-<http://leipzig-data.de/Data/Traeger/DJO.Sachsen> a ld:Traeger ;
-                                                  rdfs:label "djo Deutsche Jugend in Europa LV Sachsen" ;
-                                                  ld:hasSupplierNumber "356" .
-
-<DNB> a ld:Traeger ;
-      rdfs:label "Deutsche Nationalbibliothek Leipzig" ;
-      ld:hasURL "http://www.d-nb.de" ;
-      ld:hasAdresse "FIXME:DeutscherPlatz.1" .
-
-<http://leipzig-data.de/Data/Traeger/DRK.AkademischerKreisverband> a ld:Traeger ;
-                                                                   rdfs:label "DRK - Akademischer KV" ;
-                                                                   ld:hasTelefon "0341-4799464" ;
-                                                                   ld:hasEmail "drk-akt@t-online.de" ;
-                                                                   ld:hasURL "http://www.drk-akademischer-kv-leipzig.de" ;
-                                                                   ld:hasAdresse "FIXME:Birkenstrasse.26-30" .
-
-<DTS> a ld:Traeger ;
-      rdfs:label "Deutsche Telekom Stiftung" ;
-      ld:hasURL "http://www.telekom-stiftung.de" ;
-      ld:hasAdresse "FIXME:GraurheindorferStrasse.153" .
-
-<http://leipzig-data.de/Data/Traeger/DW.InnereMission> a ld:Traeger ;
-                                                       rdfs:label "Diakonisches Werk/Innere Mission" ;
-                                                       ld:hasURL "http://www.diakonie-leipzig.de/" ;
-                                                       ld:hasSupplierNumber "030" .
-
-<Dekanatsjugendseelsorge> a ld:Traeger ;
-                          rdfs:label "Dekanatsjugendseelsorge" ;
-                          ld:hasSupplierNumber "079" .
-
-<EBI> a ld:Traeger ;
-      rdfs:label "EBI" ;
-      ld:hasSupplierNumber "157" .
-
-<EineWelt> a ld:Traeger ;
-           rdfs:label "Eine Welt e.V." ;
-           ld:hasTelefon "0341-9940683" ;
-           ld:hasEmail "miguel.ruiz@einewelt-sachsen.de" ;
-           ld:hasURL "http://www.einewelt-sachsen.de" ;
-           ld:hasSupplierNumber "016" ;
-           ld:hasAdresse "FIXME:BornaischeStrasse.18" .
-
-<EvFreiKirche> a ld:Traeger ;
-               rdfs:label "Ev.-Freikirchliche Gemeinde" ;
-               ld:hasSupplierNumber "140" .
-
-<EvLuthJugend> a ld:Traeger ;
-               rdfs:label "Evangelisch-lutherische Jugend" ;
-               ld:hasSupplierNumber "083" .
-
-<EvMethKirche> a ld:Traeger ;
-               rdfs:label "Evangelisch-methodistische Kirche" ;
-               ld:hasSupplierNumber "123" .
-
-<EvRefKirche> a ld:Traeger ;
-              rdfs:label "Evangelisch-reformierte Kirche zu Leipzig" ;
-              ld:hasSupplierNumber "124" .
-
-<FAIRBUND> a ld:Traeger ;
-           rdfs:label "FAIRBUND" ;
-           ld:hasSupplierNumber "047" .
-
-<FED> a ld:Traeger ;
-      rdfs:label "Familienentlastender Dienst" ;
-      ld:hasTelefon "0341-4219419" ;
-      ld:hasEmail "freizeit@fed-leipzig.de" ;
-      ld:hasURL "http://www.fed-leipzig.de" .
-
-<http://leipzig-data.de/Data/Traeger/FES.Leipzig> a ld:Traeger ;
-                                                  rdfs:label "Friedrich-Ebert-Stiftung Leipzig" ;
-                                                  ld:hasURL "http://www.fes.de/Leipzig" ;
-                                                  ld:Kurzinformation "<p>Mit jährlich über einhundert Veranstaltungen leistet das Büro einen Beitrag zur politischen Bildungsarbeit in Leipzig und der Region. Als erster ostdeutscher Standort der Friedrich-Ebert-Stiftung hat es bereits Anfang 1990 seine Arbeit aufgenommen. Unsere Tagungen und Seminare, Podiumsdiskussionen, Gesprächskreise und Ausstellungen thematisieren wichtige Fragestellungen aus Politik und Gesellschaft und zielen damit auf die Förderung von Demokratie. </p> <p>Wir wollen die komplizierten Abläufe politischer Entscheidungsprozesse aufzeigen, darauf einwirkende Interessen verdeutlichen und die Menschen zum politischen Handeln und engagierten Mitwirken ermutigen und zusammenbringen.</p>" ;
-                                                  ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04109.Burgstrasse.25> .
-
-<FFS> a ld:Traeger ;
-      rdfs:label "FRÜHES FORSCHEN Sachsen" ;
-      ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04159.AmRussischenGarten.2> .
-
-<http://leipzig-data.de/Data/Traeger/FZ.Paradise> a ld:Traeger ;
-                                                  rdfs:label "KV Freizeittreff Paradise" ;
-                                                  ld:hasTelefon "0341-3391396" ;
-                                                  ld:hasEmail "fzz-loessnig@kv-leipzig.de" ;
-                                                  ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig> ;
-                                                  ld:hasAdresse "FIXME:Kurt-Tucholski-Strasse.10" .
-
-<http://leipzig-data.de/Data/Traeger/Familienverband.Leipzig> a ld:Traeger ;
-                                                              rdfs:label "Deutscher Familienverband" ;
-                                                              ld:hasTelefon "0341-3017152" ;
-                                                              ld:hasEmail "Familienverband.Leipzig@gmx.de" ;
-                                                              ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04277.Biedermannstrasse.42> .
-
-<Filmschule> a ld:Traeger ;
-             rdfs:label "Filmschule Leipzig e.V." ;
-             ld:hasTelefon "0341-2119158" ;
-             ld:hasEmail "Filmschuleleipzig@web.de" ;
-             ld:hasURL "http://www.filmschule-leipzig.de" ;
-             ld:hasSupplierNumber "096" ;
-             ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04317.Heinrichstrasse.6> .
-
-<Frauenkultur> a ld:Traeger ;
-               rdfs:label "Frauenkultur e.V." ;
-               ld:hasTelefon "0341-2130030" ;
-               ld:hasEmail "hallo@frauenkultur.leipzig.w4w.net" ;
-               ld:hasURL "http://www.frauenkultur-leipzig.de" ;
-               ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04277.Windscheidstrasse.51> .
-
-<FroebelGruppe> a ld:Traeger ;
-                rdfs:label "Fröbel Gruppe" ;
-                ld:hasTelefon "0341-4299745" ;
-                ld:hasEmail "arena-leipzig@froebel-gruppe.de" ;
-                ld:hasURL "http://www.Froebel-gruppe.de" ;
-                ld:hasSupplierNumber "266" ;
-                ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.4> .
-
-<GAZ> a ld:Traeger ;
-      rdfs:label "Grün-Alternatives Zentrum Leipzig e.V." ;
-      ld:hasEmail "gaz-leipzig@t-online.de" ;
-      ld:engagedPerson ldp:Reschke_Volker ;
-      ld:hasAdresse "FIXME:Vollhardtstrasse.16" .
-
-<Garage> a ld:Traeger ;
-         rdfs:label "GaraGe gGmbH" ;
-         ld:hasSupplierNumber "320" ;
-         ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.97> .
-
-<Geyserhaus> a ld:Traeger ;
-             rdfs:label "Geyserhaus" ;
-             ld:hasSupplierNumber "025" .
-
-<GrossStadtKinder> a ld:Traeger ;
-                   rdfs:label "großstadtKINDER e.V" ;
-                   ld:hasSupplierNumber "211" ;
-                   ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.59> .
-
-<HTWK> a ld:Traeger ;
-       rdfs:label "HTWK Leipzig" ;
-       ld:hasURL "http://www.htwk-leipzig.de" ;
-       ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04277.Karl-Liebknecht-Strasse.132> .
-
-<HWK> a ld:Traeger ;
-      rdfs:label "Handwerkskammer Leipzig" ;
-      ld:hasURL "http://www.hwk-leipzig.de" .
-
-<Halle5> a ld:Traeger ;
-         rdfs:label "HALLE 5" ;
-         ld:hasSupplierNumber "116" .
-
-<HausSteinstrasse> a ld:Traeger ;
-                   rdfs:label "Haus Steinstraße e.V." ;
-                   ld:hasTelefon "0341-3913219" ;
-                   ld:hasEmail "michael.rausch@haus-steinstrasse.de" ;
-                   ld:hasURL "http://www.haus-steinstrasse.de" ;
-                   ld:hasSupplierNumber "026" ;
-                   ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04275.Steinstrasse.18> .
-
-<Heilsarmee> a ld:Traeger ;
-             rdfs:label "Die Heilsarmee" ;
-             ld:hasSupplierNumber "075" .
-
-<HfTL> a ld:Traeger ;
-       rdfs:label "Hochschule für Telekommunikation Leipzig" ;
-       ld:engagedPerson ldp:Messollen_Michael ;
-       ld:hasURL "http://www.hft-leipzig.de" ;
-       ld:hasAdresse "FIXME:Gustav-Freytag-Strasse.43-45" .
-
-<HilfswerkAlexandra> a ld:Traeger ;
-                     rdfs:label "Deutsch-Russisches Hilfswerk zur Heiligen Alexandra" ;
-                     ld:hasSupplierNumber "305" .
-
-<IHK> a ld:Traeger ;
-      rdfs:label "IHK Leipzig, Geschäftsbereich Grundsatzfragen, Abteilung Bildung" ;
-      ld:hasURL "http://www.leipzig.ihk.de" ;
-      ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04109.Goerdelerring.5> .
-
-<Inspirata> a ld:Traeger ;
-            rdfs:label "Inspirata" ;
-            ld:hasTelefon "0341-1259757" ;
-            ld:hasEmail "kontakt@inspirata.de" ;
-            ld:engagedPerson ldp:Koenig_Wolfgang ;
-            ld:hasURL <http://www.inspirata.de> ;
-            ld:hasAdresse "FIXME:Postfach.100920" .
-
-<Instag> a ld:Traeger ;
-         rdfs:label "Instag GmbH" ;
-         ld:hasTelefon "0341-35591755" ;
-         ld:hasEmail "info@instag-bildung.de" ;
-         ld:hasURL <http://instag-bildung.de> ;
-         ld:hasFax "0341-35591755" ;
-         ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.1> .
-
-<InternationalerBund> a ld:Traeger ;
-                      rdfs:label "Internationaler Bund e.V., Verbund Lpz." ;
-                      ld:hasSupplierNumber "032" ;
-                      ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04357.Rosenowstrasse.24> .
-
-<IrrsinnigMenschlich> a ld:Traeger ;
-                      rdfs:label "Irrsinnig Menschlich" ;
-                      ld:hasSupplierNumber "357" .
-
-<http://leipzig-data.de/Data/Traeger/JAV.Gruenau> a ld:Traeger ;
-                                                  rdfs:label "Jugend- und Altenhilfeverein Grünau" ;
-                                                  ld:hasTelefon "0341-2675306" ;
-                                                  ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04207.AnderKotsche.49> .
-
-<http://leipzig-data.de/Data/Traeger/JAV.Paunsdorf> a ld:Traeger ;
-                                                    rdfs:label "Jugend- und Altenhilfeverein Paunsdorf" ;
-                                                    ld:hasTelefon "0341-2532287" ;
-                                                    ld:hasEmail "javpaunsdorf@primacom.net" ;
-                                                    ld:hasURL "http://www.wbg-kontakt.de" ;
-                                                    ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04329.Goldsternstrasse.9> .
-
-<http://leipzig-data.de/Data/Traeger/JC.Moelkau> a ld:Traeger ;
-                                                 rdfs:label "Jugendclub Mölkau" ;
-                                                 ld:hasSupplierNumber "308" .
-
-<JFKreativ> a ld:Traeger ;
-            rdfs:label "Jugend und Familie Kreativ e.V." ;
-            ld:hasTelefon "0341-9129698" ;
-            ld:hasEmail "jfk_po@t-online.de" ;
-            ld:hasURL "http://www.Waldhaus-Kreativ.de" ;
-            ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04157.Luetzowstrasse.19> .
-
-<JMGPraetorius> a ld:Traeger ;
-                rdfs:label "Jugendmusiziergruppe Michael Prätorius" ;
-                ld:hasSupplierNumber "122" .
-
-<JaRiKo> a ld:Traeger ;
-         rdfs:label "JaRiKo - Sozialer Ring" ;
-         ld:hasSupplierNumber "359" .
-
-<JohanniterJugend> a ld:Traeger ;
-                   rdfs:label "Johanniter-Jugend Leipzig" ;
-                   ld:hasSupplierNumber "304" .
-
-<JuKuWe> a ld:Traeger ;
-         rdfs:label "Kinder- und JugendKulturWerkstatt Südost" ;
-         ld:hasTelefon "0341-8775507" ;
-         ld:hasEmail "kontakt@jukuwe-leipzig.de" ;
-         ld:hasURL "http://www.jukuwe-leipzig.de" ;
-         ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04317.Riebeckstrasse.51> .
-
-<Jugendbrass> a ld:Traeger ;
-              rdfs:label "Jugendbrass" ;
-              ld:hasSupplierNumber "019" .
-
-<Jugendhaus> a ld:Traeger ;
-             rdfs:label "Jugendhaus" ;
-             ld:hasSupplierNumber "036" .
-
-<http://leipzig-data.de/Data/Traeger/Jugendpresse.Sachsen> a ld:Traeger ;
-                                                           rdfs:label "Jugendpresse Sachsen" ;
-                                                           ld:hasSupplierNumber "198" .
-
-<Jugendrotkreuz> a ld:Traeger ;
-                 rdfs:label "Jugendrotkreuz" ;
-                 ld:hasSupplierNumber "088" .
-
-<http://leipzig-data.de/Data/Traeger/KJT.Gruenau> a ld:Traeger ;
-                                                  rdfs:label "Kinder- u. Jugendtreff Grünau e.V." ;
-                                                  ld:hasTelefon "0341-4113196" ;
-                                                  ld:hasEmail "kijuleipzig@gmx.de" ;
-                                                  ld:hasURL "http://www.kijuleipzig.de" ;
-                                                  ld:hasSupplierNumber "279" ;
-                                                  ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04209.HeilbronnerStrasse.16> .
-
-<KUZ> a ld:Traeger ;
-      rdfs:label "Kultur- und Umweltzentrum e.V." ;
-      ld:hasAdresse "FIXME:Kirchstrasse.42" .
-
-<KinderBuero> a ld:Traeger ;
-              rdfs:label "Leipziger Kinderbüro" ;
-              ld:hasSupplierNumber "230" .
-
-<http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig> a ld:Traeger ;
-                                                                rdfs:label "Kindervereinigung Leipzig" ;
-                                                                rdfs:comment "Beide Trägernummern in der JHA-Zuschussübersicht 2011" ;
-                                                                ld:hasURL "http://www.kv-leipzig.de" ;
-                                                                ld:hasSupplierNumber "163", "090" .
-
-<http://leipzig-data.de/Data/Traeger/Kinderhilfe.Leipzig> a ld:Traeger ;
-                                                          rdfs:label "Kinderhilfe Leipzig e.V." ;
-                                                          ld:hasTelefon "0341-4211740" ;
-                                                          ld:hasEmail "kontakt@kinderhilfe-leipzig.de" ;
-                                                          ld:hasURL "http://www.kinderhilfe-leipzig.de" ;
-                                                          ld:hasSupplierNumber "035" ;
-                                                          ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04347.Schulzeweg.11> .
-
-<Kinderschutzbund> a ld:Traeger ;
-                   rdfs:label "Deutscher Kinderschutzbund" ;
-                   ld:hasSupplierNumber "146" .
-
-<KreativesSchaffen> a ld:Traeger ;
-                    rdfs:label "KiJuWe Kreatives Schaffen" ;
-                    ld:hasSupplierNumber "145" .
-
-<KreativitaetsWerkstatt> a ld:Traeger ;
-                         rdfs:label "Kreativitätswerkstatt Leipzig" ;
-                         ld:hasSupplierNumber "215" .
-
-<http://leipzig-data.de/Data/Traeger/Kreativzentrum.Gruenau> a ld:Traeger ;
-                                                             rdfs:label "Kreativzentrum Grünau e.V." ;
-                                                             ld:hasTelefon "0341-4225393" ;
-                                                             ld:hasEmail "Kreativzentrum@t-online.de" ;
-                                                             ld:hasURL "http://www.Kreativzentrum-Gruenau.de" ;
-                                                             ld:hasSupplierNumber "131" ;
-                                                             ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.17> .
-
-<LANU> a ld:Traeger ;
-       rdfs:label "Sächsische Landesstiftung Natur und Umwelt" ;
-       ld:contactPerson ldp:Klauer_AnnaKatharina .
-
-<LEmann> a ld:Traeger ;
-         rdfs:label "LEmann - Jungen- und Männernetzwerk Leipzig" ;
-         ld:hasSupplierNumber "321" .
-
-<LGBA> a ld:Traeger ;
-       rdfs:label "Leipziger Gesellschaft für Bildung und Arbeit" ;
-       ld:hasSupplierNumber "355" .
-
-<LJBW> a ld:Traeger ;
-       rdfs:label "LJBW" ;
-       ld:engagedPerson ldp:Hahn_Michael ;
-       ld:hasURL "http://www.ljbw.de" ;
-       ld:hasFax "0351-4015902" ;
-       ld:hasAdresse "FIXME:CossebauderStr..5" .
-
-<LSGM> a ld:Traeger ;
-       rdfs:label "Leipziger Schülergesellschaft für Mathematik e.V." ;
-       ld:engagedPerson ldp:Schueler_Axel ;
-       ld:hasURL "http://www.lsgm.de" ;
-       ld:hasAdresse "FIXME:UniversitaetLeipzig,PF.100920" .
-
-<http://leipzig-data.de/Data/Traeger/Landesfilmdienst.Sachsen> a ld:Traeger ;
-                                                               rdfs:label "Landesfilmdienst Sachsen" ;
-                                                               ld:hasSupplierNumber "045" .
-
-<LeISA> a ld:Traeger ;
-        rdfs:label "LeISA gGmbH" ;
-        ld:hasSupplierNumber "324" .
-
-<LehmbauGesellschaft> a ld:Traeger ;
-                      rdfs:label "Augsburger Gesellschaft für Lehmbau" ;
-                      ld:hasSupplierNumber "038" .
-
-<LeipzigCourage> a ld:Traeger ;
-                 rdfs:label "Leipzig Courage zeigen" ;
-                 ld:hasSupplierNumber "316" .
-
-<http://leipzig-data.de/Data/Traeger/MJA.Leipzig> a ld:Traeger ;
-                                                  rdfs:label "Mobile Jugendarbeit Leipzig e.V." ;
-                                                  ld:hasURL "http://kuebelonline.de/" ;
-                                                  ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.3> .
-
-<MNU> a ld:Traeger ;
-      rdfs:label "Deutscher Verein zur Förderung des mathematischen und naturwissenschaftlichen Unterrichts e.V. (MNU) / Geschäftsstelle Landesverband Sachsen" ;
-      ld:engagedPerson ldp:Schmidt_Rosemarie ;
-      ld:hasURL "http://www.mnu.de" .
-
-<MONAliesA> a ld:Traeger ;
-            rdfs:label "MONAliesA" ;
-            ld:hasSupplierNumber "091" .
-
-<MPI-MIS> a ld:Traeger ;
-          rdfs:label "MPI für Mathematik in den Naturwissenschaften" ;
-          rdfs:comment "Die interdisziplinäre Zusammenarbeit von Mathematik und Naturwissenschaften bildet den Kernpunkt der Arbeit des 1996 gegründeten Max-Planck-Instituts. Die Wissenschaftler beschäftigten sich mit einem breiten Spektrum an Fragestellungen der reinen und angewandten Mathematik und stellen sich den mathematischen Herausforderungen, die durch theoretische Fragestellungen in den Natur- und Ingenieurwissenschaften entstehen. Ziel ist es, mathematische Denkweisen und Methoden in neuartiger Weise in verschiedene Anwendungsbereiche in den Naturwissenschaften zu integrieren." ;
-          ld:engagedPerson ldp:Gregor_Jana ;
-          ld:hasURL "http://www.mis.mpg.de" ;
-          ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04103.Inselstrasse.22> .
-
-<Machtlos> a ld:Traeger ;
-           rdfs:label "Machtlos" ;
-           ld:hasSupplierNumber "229" .
-
-<Medienpaedagogik> a ld:Traeger ;
-                   rdfs:label "Medienpädagogik e.V." ;
-                   ld:hasTelefon "0341-9735850" ;
-                   ld:hasEmail "info@computerspielschule.org" ;
-                   ld:hasFax "0341-9735859" ;
-                   ld:contactPerson ldp:Warkus_Hartmut ;
-                   ld:hasSupplierNumber "291" ;
-                   ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04105.Emil-Fuchs-Strasse.1> .
-
-<MobileJugendarbeit> a ld:Traeger ;
-                     rdfs:label "Mobile Jugendarbeit" ;
-                     ld:hasSupplierNumber "044" .
-
-<Muehlstrasse> a ld:Traeger ;
-               rdfs:label "Begegnungsstätte Mühlstraße e.V." ;
-               ld:hasTelefon "0341-9903600" ;
-               ld:hasEmail "kontakt@muehlstrasse.de" ;
-               ld:hasURL "http://www.muehlstrasse.de" ;
-               ld:hasFax "0341-9903602" ;
-               ld:contactPerson ldp:Hoernig_Karin ;
-               ld:hasSupplierNumber "050" ;
-               ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04317.Muehlstrasse.14> .
-
-<Muetterzentrum> a ld:Traeger ;
-                 rdfs:label "Mütterzentrum e.V." ;
-                 ld:hasURL "http://www.mütterzentrum-leipzig.de/" ;
-                 ld:Kurzinformation "Der Mütterzentrum e.V. Leipzig setzt sich seit seiner Gründung 1990 für die Interessen von Familien in Leipzig ein. Er ist seit 1992 als freier Träger der Jugendhilfe anerkannt und auf dem Gebiet der Familienbildung tätig. Der Verein ist Träger von vier Familienzentren, zwei Kindergärten und einer Tagespflegevermittlung in Leipzig und in folgenden Stadtteilen vertreten: Paunsdorf, Plagwitz, Thekla und in Grünau." ;
-                 ld:hasSupplierNumber "051" ;
-                 ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04209.Potschkaustrasse.50> .
-
-<NABU> a ld:Traeger ;
-       rdfs:label "NABU Regionalverband Leipzig e.V." ;
-       ld:hasTelefon "0341-6884477" ;
-       ld:hasEmail "kv.leipzig@nabu-sachsen.de" ;
-       ld:hasURL "http://www.nabu-leipzig.de" ;
-       ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04315.Zollikoferstrasse.21> .
-
-<http://leipzig-data.de/Data/Traeger/NABU.Parthenfroesche> a ld:Traeger ;
-                                                           rdfs:label "NABU Deutschland \"Parthenfrösche\"" ;
-                                                           ld:hasSupplierNumber "227" .
-
-<NeueMusikLeipzig> a ld:Traeger ;
-                   rdfs:label "Neue Musik Leipzig" ;
-                   ld:hasSupplierNumber "363" .
-
-<Oekoloewe> a ld:Traeger ;
-            rdfs:label "Ökolöwe Umweltbund Leipzig e.V." ;
-            ld:engagedPerson ldp:Quester_Roland ;
-            ld:hasFax "0341-3065-179" ;
-            ld:hasSupplierNumber "053" ;
-            ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> .
-
-<OrchesterHolzhausen> a ld:Traeger ;
-                      rdfs:label "Orchester Holzhausen" ;
-                      ld:hasSupplierNumber "328" .
-
-<PfadfinderLeo> a ld:Traeger ;
-                rdfs:label "Bund der PfadfinderInnen, Stamm Leo" ;
-                ld:hasSupplierNumber "076" .
-
-<PfadfinderWeltenbummler> a ld:Traeger ;
-                          rdfs:label "Pfadfinder Weltenbummler" ;
-                          ld:hasSupplierNumber "228" .
-
-<Pikanta> a ld:Traeger ;
-          rdfs:label "Pikanta" ;
-          ld:hasSupplierNumber "057" .
-
-<PlanL> a ld:Traeger ;
-        rdfs:label "PLAN L" ;
-        ld:hasSupplierNumber "313" .
-
-<http://leipzig-data.de/Data/Traeger/Polizeidirektion.Leipzig> a ld:Traeger ;
-                                                               rdfs:label "Polizeidirektion Leipzig" ;
-                                                               ld:hasTelefon "0341-966-0" ;
-                                                               ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04107.Dimitroffstrasse.1> .
-
-<http://leipzig-data.de/Data/Traeger/RAA.Leipzig> a ld:Traeger ;
-                                                  rdfs:label "RAA Leipzig" ;
-                                                  ld:hasSupplierNumber "175" .
-
-<http://leipzig-data.de/Data/Traeger/RAA.Sachsen> a ld:Traeger ;
-                                                  rdfs:label "RAA Sachsen" ;
-                                                  ld:hasSupplierNumber "351" .
-
-<http://leipzig-data.de/Data/Traeger/Rabutz.TOeP> a ld:Traeger ;
-                                                  rdfs:label "Technisch-Ökologisches Projektzentrum Rabutz e.V." ;
-                                                  ld:engagedPerson ldp:Messerschmidt_Elk ;
-                                                  ld:hasAdresse "FIXME:BageritzerWeg.1" .
-
-<RadioBlau> a ld:Traeger ;
-            rdfs:label "Radio-Verein Lpz. e.V." ;
-            ld:hasTelefon "0341-3010097" ;
-            ld:hasEmail "medienpaedagogik@radioblau.de" ;
-            ld:hasURL "http://www.radioblau.de" ;
-            ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04107.Paul-Gruner-Strasse.62> .
-
-<Radioverein> a ld:Traeger ;
-              rdfs:label "Radioverein" ;
-              ld:hasSupplierNumber "054" .
-
-<Raduga> a ld:Traeger ;
-         rdfs:label "Raduga" ;
-         ld:hasSupplierNumber "335" .
-
-<Richtungswechsel> a ld:Traeger ;
-                   rdfs:label "Richtungswechsel" ;
-                   ld:hasSupplierNumber "144" .
-
-<SAEK-Leipzig> a ld:Traeger ;
-               rdfs:label "SAEK-Projekt Leipzig" ;
-               ld:hasTelefon "0341-5194363" ;
-               ld:hasEmail "leipzig@saek.de" ;
-               ld:hasURL "http://www.saek.de" ;
-               ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04103.Rosa-Luxemburg-Strasse.29> .
-
-<http://leipzig-data.de/Data/Traeger/SJD.Falken> a ld:Traeger ;
-                                                 rdfs:label "SJD Die Falken" ;
-                                                 ld:hasSupplierNumber "293" .
-
-<http://leipzig-data.de/Data/Traeger/SV.Jugendweihe> a ld:Traeger ;
-                                                     rdfs:label "Sächs. Verband Jugendweihe" ;
-                                                     ld:hasSupplierNumber "240" .
-
-<SZL> a ld:Traeger ;
-      rdfs:label "SZL Suchtzentrum Leipzig gGmbH" ;
-      ld:hasSupplierNumber "233" .
-
-<Sportmobil> a ld:Traeger ;
-             rdfs:label "Sportmobil, Springburg" ;
-             ld:hasSupplierNumber "255" .
-
-<StadtLeipzig> a ld:Traeger ;
-               rdfs:label "Stadt Leipzig, Stadtverwaltung" ;
-               ld:hasURL "http://www.leipzig.de" ;
-               ld:hasAdresse "FIXME:Martin-Luther-Ring.4-6" .
-
-<http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> a ld:Traeger ;
-                                                                rdfs:label "Leipziger Städtische Bibliotheken" ;
-                                                                ld:hasURL "http://www.leipzig.de" ;
-                                                                ld:contactPerson ldp:Ackermann_Arne ;
-                                                                ld:hasAdresse "FIXME:PF.100.927" .
-
-<http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> a ld:Traeger ;
-                                                             rdfs:label "Stadt Leipzig - Amt für Jugend, Familie und Bildung" ;
-                                                             ld:hasURL "http://www.leipzig.de" ;
-                                                             ld:hasAdresse "FIXME:Martin-Luther-Ring.4-6" .
-
-<Stadtjugendfeuerwehr> a ld:Traeger ;
-                       rdfs:label "Stadtjugendfeuerwehr" ;
-                       ld:hasSupplierNumber "087" .
-
-<Stadtjugendring> a ld:Traeger ;
-                  rdfs:label "Stadtjugendring" ;
-                  ld:hasSupplierNumber "093" .
-
-<Stadtsportbund> a ld:Traeger ;
-                 rdfs:label "Stadtsportbund" ;
-                 ld:hasSupplierNumber "205" .
-
-<Tanztheater> a ld:Traeger ;
-              rdfs:label "Leipziger Tanztheater" ;
-              ld:hasSupplierNumber "325" .
-
-<UFZ> a ld:Traeger ;
-      rdfs:label "UFZ" ;
-      ld:engagedPerson ldp:Teutsch_Georg ;
-      ld:hasURL "http://www.ufz.de" ;
-      ld:hasAdresse "FIXME:Permoserstrasse.15" .
-
-<UIZ> a ld:Traeger ;
-      rdfs:label "Förderverein Umweltinformationszentrum Stadt Leipzig UIZ e.V." ;
-      ld:hasTelefon "0341-1236830" ;
-      ld:hasEmail "fvumweltinformationszentrum@web.de" ;
-      ld:engagedPerson ldp:Koerner_Annette ;
-      ld:hasURL "http://www.uiz-foerderverein.de" ;
-      ld:hasFax "0341-1236835" ;
-      ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04317.PragerStrasse.136> .
-
-<UniLeipzig> a ld:Traeger ;
-             rdfs:label "Uni Leipzig" ;
-             ld:hasURL "http://www.uni-leipzig.de" ;
-             ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.26> .
-
-<http://leipzig-data.de/Data/Traeger/UniLeipzig.Geographie> a ld:Traeger ;
-                                                            rdfs:label "Institut für Geographie" ;
-                                                            ld:hasTelefon "0341-9732790" ;
-                                                            ld:hasFax "0341-9732799" ;
-                                                            ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04103.Johannisallee.19> .
-
-<http://leipzig-data.de/Data/Traeger/UniLeipzig.Studentenrat> a ld:Traeger ;
-                                                              rdfs:label "Studentenrat der Uni Leipzig" ;
-                                                              ld:hasURL "http://www.stura.uni-leipzig.de/" .
-
-<UrbanSouls> a ld:Traeger ;
-             rdfs:label "Urban Souls" ;
-             ld:hasSupplierNumber "364" .
-
-<http://leipzig-data.de/Data/Traeger/VDE.LeipzigHalle> a ld:Traeger ;
-                                                       rdfs:label "VDE-BV Leipzig/Halle" ;
-                                                       ld:hasTelefon "0341-1207496" ;
-                                                       ld:hasEmail "manfred.raue@vde-mitglied.de" ;
-                                                       ld:engagedPerson ldp:Raue_Manfred ;
-                                                       ld:hasURL "www.VDE-Leipzig-Halle.de" ;
-                                                       ld:hasAdresse "FIXME:Friedrich-Ebert-Strasse.26" .
-
-<http://leipzig-data.de/Data/Traeger/VS.LL_MTL> a ld:Traeger ;
-                                                rdfs:label "Volkssolidarität Leipziger Land/Muldental" ;
-                                                ld:hasSupplierNumber "264" .
-
-<http://leipzig-data.de/Data/Traeger/Verein.FFJ> a ld:Traeger ;
-                                                 rdfs:label "Verein für Frauen, Familie und Jugend" ;
-                                                 ld:hasSupplierNumber "168" .
-
-<Villa> a ld:Traeger ;
-        rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" ;
-        ld:hasTelefon "0341-3552040" ;
-        ld:hasEmail "jugendarbeit@villa-leipzig.de" ;
-        ld:hasURL "http://www.villa-Leipzig.de" ;
-        ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04109.Lessingstrasse.7> .
-
-<WABE> a ld:Traeger ;
-       rdfs:label "Wabe e.V." ;
-       ld:hasTelefon "0341-4972415" ;
-       ld:hasEmail "S.Scherbaum@wabe-leipzig.de" ;
-       ld:hasURL "http://www.wabe-leipzig.de" ;
-       ld:hasSupplierNumber "043" ;
-       ld:hasAdresse "FIXME:AmKanal.28" .
-
-<Werk2> a ld:Traeger ;
-        rdfs:label "WERK II" ;
-        ld:hasSupplierNumber "046" .
-
-<ZV_Parthenaue> a ld:Traeger ;
-                rdfs:label "Zweckverband Parthenaue" ;
-                ld:hasURL "http://www.zv-parthenaue.de" ;
-                ld:hasUW_id "veranstalter/865" .
-
-<ZfI> a ld:Traeger ;
-      rdfs:label "Zentrum für Integration e.V." ;
-      ld:hasTelefon "0341-4804311" ;
-      ld:hasEmail "doris.mueller@zfi-leipzig.de" ;
-      ld:hasURL "http://www.zfi-Leipzig.de" ;
-      ld:hasFax "0341-4773703" ;
-      ld:contactPerson ldp:Mueller_Doris ;
-      ld:hasSupplierNumber "190" ;
-      ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> .
-
-<ZooLeipzig> a ld:Traeger ;
-             rdfs:label "Zoo Leipzig" ;
-             ld:hasTelefon "0341-5933385" ;
-             ld:hasURL "http://www.zoo-leipzig.de" ;
-             ld:hasAdresse "FIXME:PfaffendorferStrasse.29" .
-
-<Zukunftsnetz> a ld:Traeger ;
-               rdfs:label "Zukunftsnetz" ;
-               ld:hasSupplierNumber "365" .
-
-<Zukunftswerkstatt> a ld:Traeger ;
-                    rdfs:label "Zukunftswerkstatt" ;
-                    ld:hasSupplierNumber "153" .
-
-<ciT> a ld:Traeger ;
-      rdfs:label "ciT – Consulting Innovation Training GmbH" ;
-      ld:hasTelefon "0341-68707-0" ;
-      ld:hasAdresse <http://leipzig-data.de/Data/Adresse/04315.Lutherstrasse.10> .
-
-<http://leipzig-data.de/Data/Verein/ANU-Bund> a ld:Traeger ;
-                                              rdfs:label "ANU - Arbeitsgemeinschaft Natur- und Umweltbildung, Bundesverband e.V." ;
-                                              ld:hasTelefon "069-31019243" ;
-                                              ld:hasFax "069-31019229" ;
-                                              ld:hasUW_id "veranstalter/1455" .
-
-<http://leipzig-data.de/Data/Verein/ASG> a ld:Traeger ;
-                                         rdfs:label "Arnold-Sommerfeld-Gesellschaft" .
-
-<http://leipzig-data.de/Data/Verein/Anker> a ld:Traeger ;
-                                           rdfs:label "Der ANKER e.V." ;
-                                           ld:hasTelefon "0341-9128327" ;
-                                           ld:hasEmail "info@anker-leipzig.de" ;
-                                           ld:hasURL "http://www.anker-leipzig.de" ;
-                                           ld:hasSupplierNumber "062" ;
-                                           ld:hasAdresse "FIXME:Renftstrasse.1" .

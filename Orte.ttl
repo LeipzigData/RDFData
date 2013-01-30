@@ -1,1345 +1,1597 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Orte/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
-@prefix lda: <http://leipzig-data.de/Data/AlteAdresse/> .
+@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 
-ld:Ort a owl:Class ;
-       rdfs:label "Ort" .
-
-ldo:AKAD-Hochschule a ld:Ort ;
-                    rdfs:label "AKAD Hochschule Leipzig" ;
-                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Gutenbergplatz.1> ;
-                    ld:hasAPIId "Venue.69" .
-
-ldo:AZ-Schkeuditz a ld:Ort ;
-                  rdfs:label "Astronomisches Zentrum Schkeuditz" ;
-                  ld:hasTelefon "034204-62616" ;
-                  ld:hasEmail "info@sternwarte-schkeuditz.de" ;
-                  ld:engagedPerson ldp:Schilling_Peter ;
-                  ld:hasStatus "aktiv" ;
-                  ld:hasTag ldtag:MINT ;
-                  ld:hasURL "http://sternwarte-schkeuditz.de" ;
-                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04435.Bergbreite.1> .
-
-ldo:Anker a ld:Ort ;
-          rdfs:label "Der Anker" ;
-          rdfs:comment "Im Angebot: Schauspiel, Theater, Kreativwerkstatt, Mediencenter, Modellbau, Fotolabor, Kinderfeste, offener Treff, Jugendclub, Ferienangebote, Jugendgesprächsrunde" ;
-          ld:hasTelefon "0341-9128327" ;
-          ld:hasEmail "info@anker-Leipzig.de" ;
-          ld:hasStatus "aktiv" ;
-          ld:hasURL "http://www.anker-Leipzig" ;
-          ld:Art "soziokulturelles Stadtteilzentrum" ;
-          ld:hasFax "0341-9123910" ;
-          ld:Kosten "teilweise" ;
-          ld:Zielgruppe "Kinder-und Jugendliche, Senioren" ;
-          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Anker> ;
-          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Renftstrasse.1> .
-
-<http://leipzig-data.de/Data/Ort/Attac.Leipzig> a ld:Ort ;
-                                                rdfs:label "Attac Leipzig" ;
-                                                ld:hasURL "http://www.attac-leipzig.de" ;
-                                                ld:Kurzinformation "Wir sind ca. 15-20 Aktive bei ca. 110 Leipziger attac Mitgliedern. Wir mobilisieren zu regionalen, bundesweiten sowie internationalen Aktionen bzw. Protesten und organisieren regelmäßige thematische Veranstaltungen, Filmabenden oder Podiumsdiskussionen. Mithilfe ist natürlich standig erwünscht. Reinschauen und mitreden ist immer möglich und völlig unabhängig von einer ATTAC-Mitgliedschaft! " .
-
-ldo:Auwaldstation a ld:Ort ;
-                  rdfs:label "Auwaldstation Leipzig" ;
-                  ld:hasTelefon "0341-4621895" ;
-                  ld:hasEmail "auwaldstation@t-online.de" ;
-                  ld:engagedPerson ldp:Seidel_Franka ;
-                  ld:hasStatus "aktiv" ;
-                  ld:hasTag ldtag:MINT ;
-                  ld:hasURL "http://www.auwaldstation.de" ;
-                  ld:hasFax "0341-2537753" ;
-                  ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Auwaldstation> ;
-                  ld:Finanzierung "Am 19.12.2011 wird ein Zuwendungsvertrag unterzeichnet, der dem Verein auf der Basis eines Stadtratsbeschlusses eine jährliche Unterstützung von 35.000 Euro zusichert." ;
-                  ld:Kurzinformation "Umweltbildungsprogramm rund um den Auwald", "Die Auwaldstation liegt unmittelbar am Naturschutzgebiet Burgaue im Leipziger Auwald. Als Bildungs- und Informationsstätte steht sie allen Besuchern täglich offen und bietet zahlreiche Informationen zum einzigartigen Leipziger Auwald sowie Anregungen zu praktischem Naturschutz. <br/> Interaktive Lernspiele laden Jung und Alt zum Testen ihrer Naturkenntnisse ein. Insbesondere für Kinder- und Jugendgruppen werden spannende Naturerlebnisprogramme angeboten. An den Wochenenden finden thematische Exkursionen, Vorträge und Schauvorführungen aus dem alten Handwerk statt. Weiterhin verfügt die Auwaldstation über eine kleine Galerie im Kaminzimmer, wo wechselnde Ausstellungen mit Bezug zur Natur präsentiert werden.", "Die Auwaldstation steht allen Besuchern offen und bietet zahlreiche Informationen zum einzigartigen Leipziger Auwald sowie zum Schlosspark Lützschena. Schulklassen wird ein lehrplannaher Erlebnisunterricht mitten in der Natur geboten. An den Wochenenden finden regelmäßig Natur- und Schlossparkexkursionen, Vorträge sowie Schauvorführungen aus dem alten Handwerk statt. " ;
-                  ld:Leistungsangebot "Beratung zu praktischem Natur- und Umweltschutz, Bestimmung von Tier- und Pflanzenarten", "Angebot thematischer Naturexkursionen an den Wochenenden", "Fortbildung für Erzieher und Lehrer", "Gestaltung und Durchführung von Naturerlebnisprogrammen für Bildungs- und Betreuungseinrichtungen", "Vermittlung fachlicher Inhalte in Kombination mit Abenteuer, Entdecken und Experimentieren", "Bereitstellung von Material zu Themen im Bereich Natur und Umwelt" ;
-                  ld:Oeffnungszeiten "Mo bis Fr 9:00-16:00 Uhr", "Wochenende und Feiertage 12:00-18:00 Uhr" ;
-                  ld:Zielstellung "Nach dem Prinzip „Lernen mit Herz, Hand und Verstand“ werden fachliche Inhalte mit Bezug zur Natur vermittelt. „Bewegend“ die Natur erleben bietet einen optimalen Ausgleich zum Schulalltag, fördert den Gemeinschaftssinn, Kreativität sowie Phantasie." ;
-                  ld:hasUW_id "veranstalter/1042" ;
-                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Schlossweg.11> .
-
-ldo:BA-Leipzig a ld:Ort ;
-               rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" ;
-               ld:hasTelefon "0341-42743-404" ;
-               ld:hasEmail "susanne.schulze@ba-leipzig.de" ;
-               ld:hasStatus "aktiv" ;
-               ld:hasTag ldtag:MINT ;
-               ld:hasURL "http://www.ba-leipzig.de" ;
-               ld:hasFax "0341-42743-331" ;
-               ld:hasSupplier <http://leipzig-data.de/Data/Traeger/BA-Leipzig> ;
-               ld:Kurzinformation "Die Staatliche Studienakademie Leipzig verknüpft mit ihrem Dualen Studium Theorie und Praxis. In 6 Semestern werden solide Fachkenntnisse und betriebspraktische Handlungskompetenz vermittelt. Jedes Semester besteht aus einem Halbsemester in der Studienakademie (Theorie) und einem Halbsemester im Unternehmen (Praxis). Die Staatliche Studienakademie Leipzig verbindet moderne Studieninhalte mit Praxisnähe und dem berufsbefähigenden Abschluss als Bachelor of Arts bzw. Bacherlor of Science. Die Vermittlungsquoten der Absolventen sind stetig auf hohem Niveau. Insgesamt nehmen durchschnittlich 95% der Absolventen ihre Tätigkeit in der Praxis auf.<br>Die Vorteile auf einen Blick: <ul><li> praxisintegriert und wissenschaftsgeleitet</li> <li>Vergütung durch den Praxispartner</li> <li>hohe Übernahme- und Vermittlungsrate</li> <li>keine bzw. sehr geringe Einarbeitungszeiten für Absolventen</li> </ul>" ;
-               ld:Oeffnungszeiten "Mo bis Do 7:30-17:00 Uhr; Fr 7:30-15:00 Uhr" ;
-               ld:contactPerson ldp:Schulze_Susanne ;
-               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.SchoenauerStrasse.113> .
-
-ldo:BAFF a ld:Ort ;
-         rdfs:label "BAFF - Jugendtreff Bachviertel" ;
-         rdfs:comment "offener Kinder- und Jugendtreff" ;
-         ld:hasTelefon "0341-9832814" ;
-         ld:hasEmail "baffnet@gmx.de" ;
-         ld:hasStatus "aktiv" ;
-         ld:hasURL "http://www.baffnet.de" ;
-         ld:Art "offener Kinder- und Jugendtreff" ;
-         ld:Zielgruppe "Kinder und Jugendliche" ;
-         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/BV.Bachviertel> ;
-         ld:contactPerson ldp:Pauli_Stev ;
-         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.AmElsterwehr.4> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Boehlitz-Ehrenberg> a ld:Ort ;
-                                                                rdfs:label "Bibliothek Böhlitz-Ehrenberg" ;
-                                                                ld:hasTelefon "0341-4957780" ;
-                                                                ld:hasStatus "aktiv" ;
-                                                                ld:hasTag ldtag:Bibliothek ;
-                                                                ld:hasFax "0341-49577833" ;
-                                                                ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Fahrbibliothek> a ld:Ort ;
-                                                            rdfs:label "Bibliothek Fahrbibliothek" ;
-                                                            ld:hasTelefon "0177-2507271", "0341-9420110" ;
-                                                            ld:hasStatus "aktiv" ;
-                                                            ld:hasTag ldtag:Bibliothek ;
-                                                            ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Gohlis> a ld:Ort ;
-                                                    rdfs:label "Bibliothek Gohlis" ;
-                                                    ld:hasTelefon "0341-9013764" ;
-                                                    ld:hasStatus "aktiv" ;
-                                                    ld:hasTag ldtag:Bibliothek ;
-                                                    ld:hasFax "0341-9102160" ;
-                                                    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Georg-Schumann-Strasse.105> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Mitte> a ld:Ort ;
-                                                           rdfs:label "Bibliothek Grünau-Mitte" ;
-                                                           ld:hasTelefon "0341-4111018" ;
-                                                           ld:hasStatus "aktiv" ;
-                                                           ld:hasTag ldtag:Bibliothek ;
-                                                           ld:hasFax "0341-4111018" ;
-                                                           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.15> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Nord> a ld:Ort ;
-                                                          rdfs:label "Bibliothek Grünau-Nord" ;
-                                                          ld:hasTelefon "0341-4110031" ;
-                                                          ld:hasStatus "aktiv" ;
-                                                          ld:hasTag ldtag:Bibliothek ;
-                                                          ld:hasFax "0341-4110031" ;
-                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.PlovdiverStrasse.40> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Sued> a ld:Ort ;
-                                                          rdfs:label "Bibliothek Grünau-Sued" ;
-                                                          ld:hasTelefon "0341-9420115" ;
-                                                          ld:hasStatus "aktiv" ;
-                                                          ld:hasTag ldtag:Bibliothek ;
-                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.AnderKotsche.11-13> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Holzhausen> a ld:Ort ;
-                                                        rdfs:label "Bibliothek Holzhausen" ;
-                                                        ld:hasTelefon "034297-45645" ;
-                                                        ld:hasStatus "aktiv" ;
-                                                        ld:hasTag ldtag:Bibliothek ;
-                                                        ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04288.Arthur-Polenz-Strasse.12> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Luetzschena-Stahmeln> a ld:Ort ;
-                                                                  rdfs:label "Bibliothek Lützschena-Stahmeln" ;
-                                                                  ld:hasTelefon "0341-123-5574" ;
-                                                                  ld:hasStatus "aktiv" ;
-                                                                  ld:hasTag ldtag:Bibliothek ;
-                                                                  ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.AmBrunnen.4> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Mockau> a ld:Ort ;
-                                                    rdfs:label "Bibliothek Mockau" ;
-                                                    ld:hasTelefon "0341-6021303" ;
-                                                    ld:hasStatus "aktiv" ;
-                                                    ld:hasTag ldtag:Bibliothek ;
-                                                    ld:hasFax "0341-6021303" ;
-                                                    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04357.EssenerStrasse.102> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Paunsdorf> a ld:Ort ;
-                                                       rdfs:label "Bibliothek Paunsdorf" ;
-                                                       ld:hasTelefon "0341-2515534" ;
-                                                       ld:hasStatus "aktiv" ;
-                                                       ld:hasTag ldtag:Bibliothek ;
-                                                       ld:hasFax "0341-2515534" ;
-                                                       ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04329.Platanenstrasse.37> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Plagwitz> a ld:Ort ;
-                                                      rdfs:label "Bibliothek Plagwitz" ;
-                                                      ld:hasTelefon "0341-4804375" ;
-                                                      ld:hasStatus "aktiv" ;
-                                                      ld:hasTag ldtag:Bibliothek ;
-                                                      ld:hasFax "0341-4804375" ;
-                                                      ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.ZschocherscheStrasse.14> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Reudnitz> a ld:Ort ;
-                                                      rdfs:label "Bibliothek Reudnitz" ;
-                                                      ld:hasTelefon "0341-9901121" ;
-                                                      ld:hasStatus "aktiv" ;
-                                                      ld:hasTag ldtag:Bibliothek ;
-                                                      ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.DresdnerStrasse.80> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Schoenefeld> a ld:Ort ;
-                                                         rdfs:label "Bibliothek Schönefeld" ;
-                                                         ld:hasTelefon "0341-2311392" ;
-                                                         ld:hasStatus "aktiv" ;
-                                                         ld:hasTag ldtag:Bibliothek ;
-                                                         ld:hasFax "0341-2311392" ;
-                                                         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Shukowstrasse.56> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Suedvorstadt> a ld:Ort ;
-                                                          rdfs:label "Bibliothek Südvorstadt" ;
-                                                          ld:hasTelefon "0341-3015473" ;
-                                                          ld:hasStatus "aktiv" ;
-                                                          ld:hasTag ldtag:Bibliothek ;
-                                                          ld:hasFax "0341-3015473" ;
-                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Steinstrasse.42> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Volkmarsdorf> a ld:Ort ;
-                                                          rdfs:label "Bibliothek Volkmarsdorf" ;
-                                                          ld:hasTelefon "0341-6802019" ;
-                                                          ld:hasStatus "aktiv" ;
-                                                          ld:hasTag ldtag:Bibliothek ;
-                                                          ld:hasFax "0341-6802021" ;
-                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.TorgauerPlatz.3> .
-
-<http://leipzig-data.de/Data/Ort/Bibliothek.Wiederitzsch> a ld:Ort ;
-                                                          rdfs:label "Bibliothek Wiederitzsch" ;
-                                                          ld:hasTelefon "0341-5212439" ;
-                                                          ld:hasStatus "aktiv" ;
-                                                          ld:hasTag ldtag:Bibliothek ;
-                                                          ld:hasFax "0341-5212443" ;
-                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04158.ZurSchule.10> .
-
-ldo:Billardakademie a ld:Ort ;
-                    rdfs:label "Billard-Akademie Leipzig" ;
-                    rdfs:comment "Seit Winterferien 2011 keine erkennbaren Aktivitäten mehr", "Preisträger des \"Innovationspreis Weiterbildung des Freistaates Sachsen 2009\"" ;
-                    ld:hasTelefon "0341-6044565" ;
-                    ld:hasEmail "info@ba-leipzig.org" ;
-                    ld:hasStatus "inaktiv" ;
-                    ld:hasTag ldtag:MINT ;
-                    ld:hasURL "www.ba-leipzig.org" ;
-                    ld:Art "Sommercamps, Ferienangebote, Angebote für Schulklassen, Projekte zur Förderung von Hochbegabungen sowie spezielle Hilfen für Teilnehmer mit Lernstörungen" ;
-                    ld:Kosten "ca. 4,00 bis 30,00 Euro / Teilnehmer" ;
-                    ld:Zielgruppe "Schülerinnen und Schüler ab Klassenstufe 5" ;
-                    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Billardakademie> ;
-                    ld:Finanzierung "gefördert aus Mitteln der EU und des Freistaates Sachsen <i>Investitionen in Ihre Zukunft</i>" ;
-                    ld:Zielstellung "Förderung individueller Lern- und Leistungspotenziale im mathematisch-naturwissenschaftlichen Bereich anhand des Billardspiels (physikalische und biologische Abläufe)" ;
-                    ld:Teilnahmebedingungen "keine" ;
-                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Nonnenstrasse.19> .
-
-ldo:Cafe-Grundmann a ld:Ort ;
-                   rdfs:label "Café Grundmann" ;
-                   ld:hasURL "http://www.cafe-grundmann.de" ;
-                   ld:hasAPIId "Venue.65" ;
-                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Lutherstrasse.10>, <http://leipzig-data.de/Data/Adresse/04275.August-Bebel-Strasse.2> .
-
-<http://leipzig-data.de/Data/Ort/Caffe.Pascucci> a ld:Ort ;
-                                                 rdfs:label "Caffe Pascucci Marktgalerie Leipzig" ;
-                                                 rdfs:comment "Cafe im Zentrum Leipzigs" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Thomasgasse.2> ;
-                                                 ld:hasAPIId "Venue.16" .
-
-ldo:Cinemabstruso a ld:Ort ;
-                  rdfs:label "Cinemabstruso" ;
-                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Siemeringstrasse.20> ;
-                  ld:hasAPIId "Venue.59" .
-
-<http://leipzig-data.de/Data/Ort/Cinemabstruso.Office> a ld:Ort ;
-                                                       rdfs:label "Cinemabstruso Office" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.ZschocherscheStrasse.61> ;
-                                                       ld:hasAPIId "Venue.25" .
-
-<http://leipzig-data.de/Data/Ort/Columbus.Umweltgarten> a ld:Ort ;
-                                                        rdfs:label "Columbus - Umweltgarten" ;
-                                                        ld:hasTelefon "0341-1491735" ;
-                                                        ld:hasEmail "kontakt@natur-leipzig.de" ;
-                                                        ld:hasStatus "aktiv" ;
-                                                        ld:hasTag ldtag:Umwelt ;
-                                                        ld:hasURL "http://www.natur-leipzig.de" ;
-                                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Marschnerstrasse.22> .
-
-ldo:ComputerSpielSchule a ld:Ort ;
-                        rdfs:label "ComputerSpielSchule Leipzig" ;
-                        rdfs:comment "Am 21. Juni 2011 fand die feierliche Wiedereröffnung der ComputerSpielSchule Leipzig statt. In ihren neuen Räumlichkeiten im Friedrich-Schiller-Gymnasium heißt es ab sofort wieder: Miteinander spielen! Gemeinsam entdecken! Voneinander lernen!" ;
-                        ld:hasTelefon "0341-9735887", "0341-9735892" ;
-                        ld:hasEmail "info@computerspielschule.org", "philipp@computerspielschule.org" ;
-                        ld:hasStatus "aktiv" ;
-                        ld:hasTag ldtag:MINT ;
-                        ld:hasURL "http://www.computerspielschule.org" ;
-                        ld:Art "Computerpool und Betreuung und Anleitung durch geschulte Pädagogen (innerhalb von Öffnungszeiten)" ;
-                        ld:Kosten "für Kinder u. Jugendliche 1 Euro/h, in Begleitung von Eltern, Großeltern usw. kostenfrei" ;
-                        ld:Zielgruppe "Eltern, Pädagogen, Kinder, Jugendliche" ;
-                        ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Medienpaedagogik> ;
-                        ld:Finanzierung "nein" ;
-                        ld:Kurzinformation "Die ComputerSpielSchule stellt eine feste Institution dar, die ganzjährig ein Ort der Begegnung und Beratung im Kontext von Computerspielen ist. Neben einer generationsübergreifenden Medienarbeit durch das Angebot des gemeinsamen Spielens innerhalb der Öffnungszeiten werden zielgruppenspezifische Workshops sowie Fortbildungen für Pädagogen und Multiplikatoren angeboten. Das Ziel ist es, Medienkompetenz zu vermitteln und die Diskrepanz zwischen den Generationen abzubauen." ;
-                        ld:Oeffnungszeiten "Mo, Di und Do 14:00-18:00 Uhr, gemäß Absprache: Fortbildungen, Workshops, Schülerprojekte. Zudem finden außerhalb der Öffnungszeiten spezielle Familien- und Ferienangebote statt." ;
-                        ld:Zielstellung "Kompetenter Umgang von Kindern, Jugendlichen, Eltern und Pädagogen mit der Computerspiel- und Unterhaltungskultur" ;
-                        ld:contactPerson ldp:Warkus_Hartmut ;
-                        ld:Teilnahmebedingungen "keine" ;
-                        ld:Hintergrund "Seit 2008 ist die ComputerSpielSchule Leipzig Ort der Begegnung, Beratung und des Lernens. Nach kurzer Umzugspause öffnete sie am 21. Juni 2011 wieder ihre Pforten. Die Betreuung vor Ort erfolgt durch geschulte Pädagoginnen und Pädagogen. Die ComputerSpielSchule Leipzig ist ein Kooperationsprojekt der Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK) und der Universität Leipzig mit Unterstützung der Leipziger Messe GmbH und der Stadt Leipzig." ;
-                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Elsbethstrasse.2-4> .
-
-ldo:ComputerclubXXXLuetzschena-Stahmeln a ld:Ort ;
-                                        rdfs:label "Computerclub Lützschena-Stahmeln" ;
-                                        ld:hasTelefon "0341-4619814" ;
-                                        ld:hasEmail "ccls@luetzschena-stahmeln.de" ;
-                                        ld:hasStatus "aktiv" ;
-                                        ld:hasTag ldtag:MINT ;
-                                        ld:hasURL "http://www.ccls-online.de" ;
-                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Oelhafenstrasse.7> .
-
-ldo:CreativApotheke a ld:Ort ;
-                    rdfs:label "Creativ Apotheke" ;
-                    ld:hasTelefon "0341-4243735" ;
-                    ld:hasEmail "creativapotheke-leipzig@email.de" ;
-                    ld:hasStatus "aktiv" ;
-                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Antonienstrasse.41> .
-
-<http://leipzig-data.de/Data/Ort/DNB.DBSM> a ld:Ort ;
-                                           rdfs:label "Deutsches Buch- und Schriftmuseum der Deutschen Nationalbibliothek" ;
-                                           ld:hasTelefon "0341-2271324" ;
-                                           ld:hasEmail "dbsm@d-nb.de" ;
-                                           ld:hasStatus "aktiv" ;
-                                           ld:hasTag ldtag:Museum ;
-                                           ld:hasURL "http://www.d-nb.de" ;
-                                           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/DNB> ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.1> .
-
-<http://leipzig-data.de/Data/Ort/DW.Garskestrasse> a ld:Ort ;
-                                                   rdfs:label "Förderzentrum der Diakonie Leipzig" ;
-                                                   ld:hasStatus "aktiv" ;
-                                                   ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
-                                                   ld:hasURL "http://www.diakonie-leipzig.de/kinder-jugend-evangelische-jugendhilfe.html" ;
-                                                   ld:hasSupplier <http://leipzig-data.de/Data/Traeger/DW.InnereMission> ;
-                                                   ld:contactPerson ldp:Retznick_Laura ;
-                                                   ld:Hintergrund "Schulsozialarbeit wird seit 1996 durch die Diakonie Leipzig an der 90. Grundschule angeboten. Damit war Schulsozialarbeit an einer Grundschule erstmals in Leipzig vertreten. Am Förderzentrum für Erziehungshilfe wird Schulsozialarbeit seit 1998 angeboten und gehört damit zu einem der langjährigen Kooperationspartnern der Schulen." ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.19-21> .
-
-ldo:Distillery a ld:Ort ;
-               rdfs:label "Distillery" ;
-               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Kurt-Eisner-Strasse.108> ;
-               ld:hasAPIId "Venue.18" .
-
-ldo:DoelitzerWassermuehle a ld:Ort ;
-                          rdfs:label "Dölitzer Wassermühle" ;
-                          rdfs:comment "Auslastung Mai-Juni 100%, August - April ca. 80%" ;
-                          ld:hasTelefon "0341-3389352" ;
-                          ld:engagedPerson ldp:Reschke_Volker ;
-                          ld:hasStatus "aktiv" ;
-                          ld:hasTag ldtag:MINT ;
-                          ld:hasURL "http://www.doelitzer-wassermuehle.de/" ;
-                          ld:Art "außerschulische und Lehrplan begleitende Angebote zu den Themen „WASSER und ENERGIE erleben“" ;
-                          ld:hasFax "0341-33399734" ;
-                          ld:Kosten "2,00 - 2,50 Euro pro Teilnehmer" ;
-                          ld:Zielgruppe "Kindergartenkinder, Grundschüler, Mittelschüler" ;
-                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/GAZ> ;
-                          ld:Finanzierung "Förderung durch SW Leipzig, 1 AGHE als pädagogische Betreuung" ;
-                          ld:Zielstellung "Erlebnisorientierte Form der Umweltpädagogik, experimentelles Erkunden und praktische Beispiele für ressourcenschonenden Umgang mit Wasser und Energie" ;
-                          ld:contactPerson ldp:Reschke_Katrin ;
-                          ld:Teilnahmebedingungen "keine" ;
-                          ld:Hintergrund "seit 2008" .
-
-<http://leipzig-data.de/Data/Ort/EineWelt.Arbeitsstelle> a ld:Ort ;
-                                                         rdfs:label "Eine Welt e.V. - Arbeitsstelle" ;
-                                                         ld:hasTelefon "0341-3010143" ;
-                                                         ld:hasEmail "juliane@einewelt-leipzig.de" ;
-                                                         ld:hasStatus "aktiv" ;
-                                                         ld:hasURL "http://www.einewelt-leipzig.de" ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Paul-List-Strasse.19> .
-
-ldo:Esse74 a ld:Ort ;
-           rdfs:label "EssE 74 Internationaler Bund e.V., Verbund Lpz." ;
-           ld:hasTelefon "0341-6015823" ;
-           ld:hasEmail "esse74@arcor.de" ;
-           ld:hasStatus "aktiv" ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04357.Rosenowstrasse.24> .
-
-ldo:EssentialExistenceGallery a ld:Ort ;
-                              rdfs:label "essential existence gallery" ;
-                              rdfs:comment "center for new media and interactiv art <br/> [open space]" ;
-                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.93> ;
-                              ld:hasAPIId "Venue.11" .
-
-<http://leipzig-data.de/Data/Ort/FZ.Arena> a ld:Ort ;
-                                           rdfs:label "JZ ARENA" ;
-                                           ld:hasTelefon "0341-4299745" ;
-                                           ld:hasEmail "arena-leipzig@froebel-gruppe.de" ;
-                                           ld:hasStatus "aktiv" ;
-                                           ld:hasURL "http://www.Froebel-gruppe.de" ;
-                                           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/FroebelGruppe> ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.4> .
-
-<http://leipzig-data.de/Data/Ort/FZ.Kanal28> a ld:Ort ;
-                                             rdfs:label "JZ am Kanal 28" ;
-                                             ld:hasTelefon "0341-4972415" ;
-                                             ld:hasEmail "S.Scherbaum@wabe-leipzig.de" ;
-                                             ld:hasStatus "aktiv" ;
-                                             ld:hasURL "http://www.wabe-leipzig.de" ;
-                                             ld:hasSupplier <http://leipzig-data.de/Data/Traeger/WABE> ;
-                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.AmKanal.28> .
-
-<http://leipzig-data.de/Data/Ort/FZ.Lichtblick> a ld:Ort ;
-                                                rdfs:label "Lichtblick e.V. - Familienzentrum Markkleeberg" ;
-                                                ld:hasTelefon "0341-3542848" ;
-                                                ld:hasEmail "familienzentrum-lichtblick@web.de" ;
-                                                ld:hasStatus "aktiv" ;
-                                                ld:hasURL "http://www.familienzentrum-lichtblick.de" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04288.Hauptstrasse.34> .
-
-<http://leipzig-data.de/Data/Ort/FZ.Oskar> a ld:Ort ;
-                                           rdfs:label "JKZ O.S.K.A.R" ;
-                                           ld:hasTelefon "0341-6865680" ;
-                                           ld:hasEmail "JKZ_OSKAR@t-online.de" ;
-                                           ld:hasStatus "aktiv" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Gabelsbergerstrasse.30> .
-
-<http://leipzig-data.de/Data/Ort/FZ.Voelle> a ld:Ort ;
-                                            rdfs:label "FZ Völkerfreundschaft" ;
-                                            ld:hasTelefon "0341-4115002" ;
-                                            ld:hasStatus "aktiv" ;
-                                            ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
-                                            ld:hasURL "http://www.fril.de/voelle/" ;
-                                            ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> ;
-                                            ld:Kurzinformation "Der Offene Treff \"Völle\" mit seinem Kinder- und Jugendcafè ist das Herzstück des Hauses und freut sich auf deinen/euren Besuch! " ;
-                                            ld:contactPerson ldp:Abidine_Zeinel ;
-                                            ld:Hintergrund "Zentral auf der Stuttgarter Allee gelegen befindet sich der Offene Freizeittreff \"Völkerfreundschaft\". Das Haus wurde 1983 zunächst als Kulturhaus \"Völkerfreundschaft\" eröffnet und im Jahr 1993 an das jetzige Amt für Jugend, Familie und Bildung übergeben." ;
-                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.9> .
-
-<http://leipzig-data.de/Data/Ort/Familienzentrum.Gruenau> a ld:Ort ;
-                                                          rdfs:label "Caritas Kinder-, Jugend- und Familienzentrum Grünau" ;
-                                                          ld:hasStatus "aktiv" ;
-                                                          ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
-                                                          ld:hasURL "http://www.caritas-leipzig.de/" ;
-                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Caritas.Leipzig> ;
-                                                          ld:Kurzinformation "Offenes Kinderhaus mit Bauspielplatz und Werkstätten für Kinder im Alter von 7-14 Jahren" ;
-                                                          ld:contactPerson ldp:Triphaus_Joachim ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.Liliensteinstrasse.1> .
-
-ldo:Filmschule a ld:Ort ;
-               rdfs:label "Filmschule Leipzig" ;
-               ld:hasTelefon "0341-2119158" ;
-               ld:hasEmail "Filmschuleleipzig@web.de" ;
-               ld:hasStatus "aktiv" ;
-               ld:hasURL "http://www.filmschule-leipzig.de" ;
-               ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Filmschule> ;
-               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Heinrichstrasse.6> .
-
-ldo:FotoschuleLeipzig a ld:Ort ;
-                      rdfs:label "Fotoschule Leipzig (Studio Golden Eyes)" ;
-                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/.Waldstrasse.35> ;
-                      ld:hasAPIId "Venue.42" .
-
-ldo:Frauenkultur a ld:Ort ;
-                 rdfs:label "Frauenkultur e.V." ;
-                 ld:hasTelefon "0341-2130030" ;
-                 ld:hasEmail "hallo@frauenkultur.leipzig.w4w.net" ;
-                 ld:hasStatus "aktiv" ;
-                 ld:hasURL "http://www.frauenkultur-leipzig.de" ;
-                 ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Frauenkultur> ;
-                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Windscheidstrasse.51> .
-
-ldo:FruehesForschenSachsen a ld:Ort ;
-                           rdfs:label "Frühes Forschen Sachsen" ;
-                           ld:hasTelefon "0341-6879080" ;
-                           ld:hasEmail "petra.nagler@fruehes-forschen.de" ;
-                           ld:hasStatus "aktiv" ;
-                           ld:hasTag ldtag:MINT ;
-                           ld:hasURL "http://www.fruehes-forschen-sachsen.de" ;
-                           ld:hasFax "0341-6879080" ;
-                           ld:Kosten "9,00 Euro pro Kurseinheit" ;
-                           ld:Zielgruppe "Kinder im Alter zwischen 4 und 10 Jahren" ;
-                           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/FFS> ;
-                           ld:Finanzierung "nein" ;
-                           ld:Kurzinformation "FRÜHES FORSCHEN möchte mit spannenden Experimenten Kindern erste Grundlagen in Chemie, Physik und Biologie vermitteln. Experimentieren, ausprobieren, den Spaß am Forschen und Entdecken ausleben und dabei spielerisch die Welt erfahren – bei uns können die kleinen Forscher spielerisch und altersgerecht die Welt von Wissenschaft und Technik kennenlernen." ;
-                           ld:Leistungsangebot "fortlaufende Kurse", "fächerübergreifender Unterricht und Projekttage", "Ganztagesangebote", "Angebote für Feste und Feiern", "spezielle Angebote für Kindertagesstätten (z. B. Experimentierführerschein) Studium", "Ferien- und Wochenendangebote", "Projektwochen für Grundschulen" ;
-                           ld:Oeffnungszeiten "Nach Vereinbarung" ;
-                           ld:Zielstellung "Spaß am Forschen und Entdecken bei Kindern von 4 bis 10 Jahren fördern und Ihnen dabei spielerisch die Welt erklären und Zugang zu naturwissenschaftlichen Themen bieten." ;
-                           ld:contactPerson ldp:Nagler_Petra ;
-                           ld:Teilnahmebedingungen "keine" ;
-                           ld:Hintergrund "seit 2009" ;
-                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.AmRussischenGarten.2> .
-
-ldo:GaraGe a ld:Ort ;
-           rdfs:label "GaraGe" ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.97> ;
-           ld:hasAPIId "Venue.51" .
-
-ldo:Garage a ld:Ort ;
-           rdfs:label "GaraGe - Technologiezentrum für Jugendliche" ;
-           ld:hasTelefon "0341-870860" ;
-           ld:hasEmail "kontakt@g-a-r-a-g-e.com" ;
-           ld:engagedPerson ldp:TraegerNestler_Angelika ;
-           ld:hasStatus "aktiv" ;
-           ld:hasTag ldtag:MINT ;
-           ld:hasURL "http://www.g-a-r-a-g-e.com" ;
-           ld:Art "Praxisorientierte Erlebniswelt (\"aktives Museum\"), Führungen, Kurse, Projekttage und Workshops" ;
-           ld:hasFax "0341-8708610" ;
-           ld:Kosten "zwischen 2,90 und 14,10 Euro" ;
-           ld:Zielgruppe "Kinder und Jugendliche im Alter zwischen 5 und 25 Jahren" ;
-           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Garage> ;
-           ld:Finanzierung "nein" ;
-           ld:Zielstellung "Kinder und Jugendliche für Wirtschaft und Technik begeistern, interdisziplinäre Herangehensweise" ;
-           ld:Teilnahmebedingungen "keine" ;
-           ld:Hintergrund "seit 2001" ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.97> .
-
-ldo:GfZK a ld:Ort ;
-         rdfs:label "Galerie für Zeitgenössische Kunst" ;
-         ld:hasTelefon "0341-1408118" ;
-         ld:hasEmail "foryou@gfzk.de" ;
-         ld:hasStatus "aktiv" ;
-         ld:hasURL "http://www.gfzk.de" ;
-         ld:hasAPIId "Venue.66" ;
-         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Karl-Tauchnitz-Strasse.11> .
-
-ldo:HTWK a ld:Ort ;
-         rdfs:label "Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK)" ;
-         ld:hasTelefon "0341-30766156" ;
-         ld:hasEmail "aherrmann@k.htwk-leipzig.de" ;
-         ld:hasStatus "aktiv" ;
-         ld:hasTag ldtag:Forschung, ldtag:MINT ;
-         ld:hasURL "http://www.htwk-leipzig.de" ;
-         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/HTWK> ;
-         ld:Kurzinformation "Die Hochschule für Technik, Wirtschaft und Kultur Leipzig wurde 1992 als Hochschule der angewandten Wissenschaften gegründet. Sie setzt damit eine lange Tradition der ingenieurtechnischen Bildungseinrichtungen und der Lehrstätten für Bibliothekare, Buchhändler und Museologen in Leipzig fort. Mit etwa 7000 Studierenden gehört sie zu den größten Fachhochschulen Deutschlands." ;
-         ld:Leistungsangebot "Projekttage", "Girls' Day", "Schülerpraktika", "Ferienhochschule" ;
-         ld:hasAPIId "Venue.24" ;
-         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Karl-Liebknecht-Strasse.132> .
-
-<http://leipzig-data.de/Data/Ort/HTWK.MET> a ld:Ort ;
-                                           rdfs:label "HTWK, Fakultät Maschinen- und Energietechnik" ;
-                                           rdfs:comment "Kontakt: HTWK Leipzig, Fakultät Maschinen- und Energietechnik, Frau A. Sommer, PF 301166, 04251 Leipzig" ;
-                                           ld:hasTelefon "0341-30764221" ;
-                                           ld:hasStatus "aktiv" ;
-                                           ld:hasTag ldtag:Forschung, ldtag:MINT ;
-                                           ld:hasURL "http://fbme.htwk-leipzig.de" ;
-                                           ld:hasFax "0341-30764202" ;
-                                           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/HTWK> ;
-                                           ld:hasUW_id "766" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.KoburgerStrasse.62> .
-
-<http://leipzig-data.de/Data/Ort/HWK.HausKleineForscher> a ld:Ort ;
-                                                         rdfs:label "Haus der kleinen Forscher" ;
-                                                         rdfs:comment "dauerhafte Fortsetzung geplant" ;
-                                                         ld:engagedPerson ldp:Maennig_Uwe ;
-                                                         ld:hasStatus "aktiv" ;
-                                                         ld:hasTag ldtag:MINT ;
-                                                         ld:hasURL "http://www.haus-der-kleinen-forscher.de" ;
-                                                         ld:Art "naturwissenschaftliche und pädagogische Aus- und Weiterbildung von Erzieherinnen und Erziehern, Materialien und Experimente" ;
-                                                         ld:Kosten "15,00 Euro" ;
-                                                         ld:Zielgruppe "Erzieherinnen aus Kita und Hort" ;
-                                                         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/HWK> ;
-                                                         ld:Finanzierung "nein" ;
-                                                         ld:Zielstellung "Fundierte Förderung von angewandter Naturwissenschaft in Kitas, eigenständiges Suchen und Antworten und Erläuterungen für die beobachteten Phänomene, gemeinsames experimentieren in Gruppen, Fördern der kindlichen Feinmotorik beim Experimentieren, verbalisieren von Beobachtungen und Schlussfolgerungen" ;
-                                                         ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
-                                                         ld:Hintergrund "seit 2009" ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04158.Steinweg.3> .
-
-ldo:Halle5 a ld:Ort ;
-           rdfs:label "Kinder- u. Jugendzentrum Halle 5 e.V." ;
-           ld:hasTelefon "0341-3055866", "0341-3055860" ;
-           ld:hasEmail "verein@halle5.de" ;
-           ld:hasStatus "aktiv" ;
-           ld:hasURL "http://www.halle5.de" ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Windscheidstrasse.51> .
-
-ldo:Handelshochschule a ld:Ort ;
-                      rdfs:label "Handelshochschule" ;
-                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Jahnallee.59> ;
-                      ld:hasAPIId "Venue.34" .
-
-ldo:Hauptfeuerwache a ld:Ort ;
-                    rdfs:label "Hauptfeuerwache" ;
-                    ld:hasTelefon "0341-1239512" ;
-                    ld:hasEmail "joachim.petrasch@leipzig.de" ;
-                    ld:hasStatus "aktiv" ;
-                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goerdelerring.7> .
-
-ldo:HausSteinstrasse a ld:Ort ;
-                     rdfs:label "Haus Steinstraße" ;
-                     ld:hasTelefon "0341-3913219" ;
-                     ld:hasEmail "michael.rausch@haus-steinstrasse.de" ;
-                     ld:hasStatus "aktiv" ;
-                     ld:hasURL "http://www.haus-steinstrasse.de" ;
-                     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/HausSteinstrasse> ;
-                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Steinstrasse.18> .
-
-ldo:HdD a ld:Ort ;
-        rdfs:label "Haus der Demokratie" ;
-        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
-        ld:hasAPIId "Venue.39", "Venue.40" .
-
-ldo:HdG a ld:Ort ;
-        rdfs:label "Zeitgeschichtliches Forum Leipzig" ;
-        ld:hasTelefon "0341-2220126" ;
-        ld:hasEmail "klein@hdg.de" ;
-        ld:hasStatus "aktiv" ;
-        ld:hasURL "http://www.hdg.de" ;
-        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.GrimmaischeStrasse.6> .
-
-<http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau> a ld:Ort ;
-                                                   rdfs:label "Heizhaus Leipzig" ;
-                                                   ld:hasEmail "info@heizhaus-leipzig.de" ;
-                                                   ld:hasStatus "aktiv" ;
-                                                   ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
-                                                   ld:hasURL "http://www.heizhaus-leipzig.de/" ;
-                                                   ld:hasSupplier <http://leipzig-data.de/Data/Traeger/UrbanSouls> ;
-                                                   ld:Kurzinformation "Skate- und Jugendzentrum" ;
-                                                   ld:contactPerson ldp:Bielig_Sven ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.63> .
-
-ldo:Igelschutzzentrum a ld:Ort ;
-                      rdfs:label "Igelschutzzentrum" ;
-                      ld:hasTelefon "0341-4247662" ;
-                      ld:hasEmail "info@igelschutzzentrum.de" ;
-                      ld:hasStatus "aktiv" ;
-                      ld:hasTag ldtag:Umwelt ;
-                      ld:hasURL "http://www.igelschutzzentrum.de" ;
-                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04249.Hornstrasse.9> .
-
-ldo:Inspirata a ld:Ort ;
-              rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" ;
-              rdfs:comment "Unterstützung durch Partner (Uni Leipzig, MPI MIS, SBA, HTWK Leipzig, Stadtverwaltung) und Sponsoren" ;
-              ld:hasTelefon "0341-1259757" ;
-              ld:hasEmail "kontakt@inspirata.de" ;
-              ld:engagedPerson ldp:Klimesch_Holger, ldp:Koenig_Wolfgang, ldp:Petzschler_Ines ;
-              ld:hasStatus "aktiv" ;
-              ld:hasTag ldtag:MINT ;
-              ld:hasURL "http://www.inspirata.de" ;
-              ld:Kosten "2,00 Euro je Kind", "3,00 Euro je Erwachsener", "8,00 Euro Familienticket" ;
-              ld:Zielgruppe "Schulklassen aller Schulformen und Alter (ab Grundschule), aber auch regelmäßig offen für jedermann" ;
-              ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Inspirata> ;
-              ld:Kurzinformation "Die INSPIRATA fördert die mathematisch-naturwissenschaftliche Bildung für jedermann, hauptsächlich für Schulklassen. Ihr Kern ist eine Sammlung von Exponaten, an Hand derer die Besucher Naturgesetze erfahren bzw. verinnerlichen können. Ferner werden lehrplanbezogene Workshops und spezielle Führungen angeboten. Charakteristisch ist ein intensives pädagogisches Betreuungssystem.", "Mathematisch-naturwissenschaftliches Bildungszentrum nach Vorbild des Gießeners Mathematikums, Exponate zum Experimentieren, Workshops, Lehrerfortbildungen" ;
-              ld:Leistungsangebot "Vorträge zu naturwissenschaftlichen und pädagogischen Inhalten", "Thematische Führungen", "Workshops zu mathematisch-naturwissenschaftlichen (Unterrichts-)Themen", "Thematische Weiterbildungen für Pädagogen", "Kindergeburtstagsbetreuungen mit Experimenten", "Mitmachmuseum mit mathematisch-naturwissenschaftlichen Exponaten und fachlicher Betreuung" ;
-              ld:Oeffnungszeiten "Einzelbesucher/Fam.: am 2. Samstag jedes Monats", "Ferien-Angebote und individuelle Besuchszeiten nach Abstimmung", "für Gruppen (nach Anmeldung): mo.-fr. 8:30, 10:30, 12:30, 14:30 Uhr" ;
-              ld:Zielstellung "Spielerische Kontakte mit Mathe und Physik für Kinder und Jugendliche und Interessierte aller Altersklassen unter Anleitung durch eingewiesene Lehramtsstudenten, Erarbeitung und Einrichtung von Workshops und anderen Unterrichtsangeboten zur Unterstützung des Lehramtsstudiums" ;
-              ld:contactPerson ldp:Petzschler_Ines ;
-              ld:Teilnahmebedingungen "keine" ;
-              ld:Hintergrund "Die INSPIRATA wurde im Herbst 2008 im Zusammenhang mit dem Jahr der Mathematik gegründet. Nach Zwischenstationen im Kinosaal des Schulmuseums und im Uni-Interim Brühl-Hochhaus finden Sie die INSPIRATA seit Januar 2010 auf dem Gelände der Alten Messe." ;
-              ld:Auszeichnungen "2011 als Idee für die Bildungsrepublik (Initiative Deutschland – Land der Ideen unter Schirmherrschaft von Bundesbildungsministerin Prof. Dr. A. Schavan)", "Familienfreundlichkeitspreis 2010", "Leipziger Agenda-Preis 2011" ;
-              ld:Langinformation <http://leipzig-data.de/Data/Orte/Inspirata.Lang> ;
-              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.4> .
-
-<http://leipzig-data.de/Data/Ort/Inspirata.Lang> a ld:InfoRecord ;
-                                                 rdfs:label "Standard Inspirata Langinformation" ;
-                                                 rdfs:comment "Inspirata-Eintrag bei Momotech http://www.motivation-technik-entdecken.de" ;
-                                                 ld:hasURL "file://HG-Repo/Momotech/Inspirata.html" .
-
-ldo:Instag a ld:Ort ;
-           rdfs:label "Instag - Institut für akademische Gesamtbildung" ;
-           ld:hasEmail "info@instag-bildung.de" ;
-           ld:hasStatus "aktiv" ;
-           ld:hasTag ldtag:MINT ;
-           ld:hasURL <http://instag-bildung.de> ;
-           ld:Art "Freier Weiterbildner" ;
-           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Instag> ;
-           ld:Hintergrund "Seit dem 1. Juli 2010 firmiert unser Unternehmen unter InstaG - Institut für akademische Gesamtbildung GmbH. Die InstaG GmbH - wie bisher schon die EuroGene GmbH - steht dabei für seriöse, qualitativ hochwertige, bedarfs- und kundenorientierte Aus- und Weiterbildung mit einer hohen Praxisrelevanz und einer gleichbleibend hohen Qualität der Bildung. <br/> Unser Unternehmen wurde im Jahr 2005 von Frau Univ.-Prof. Dr. med. habil. Ursula Froster und dem Arzt und Diplom-Verwaltungswirt Dr. med. Armin Baumgartner aus der Universität Leipzig ausgegründet. Als An-Institut konzipiert, folgte es den Vorgaben und Empfehlungen der Bildungs- und Wissenschaftspolitik und übernahm dabei Aufgaben der postgraduierten Weiterbildung auf den Gebieten der Biotechnologie, Molekularbiologie sowie Medizin. Es erfüllte somit Aufgaben der Erwachsenenbildung, die von den Universitäten nicht mehr erfüllt werden konnten. <br/> Zunächst durch einen Kooperationsvertrag mit der Universität Leipzig verbunden, geht das Institut seit Mitte 2010 nun neue und eigene Wege." ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.1> .
-
-<http://leipzig-data.de/Data/Ort/KJT.Gruenau> a ld:Ort ;
-                                              rdfs:label "Kinder- u. Jugendtreff Grünau" ;
-                                              ld:hasTelefon "0341-4113196" ;
-                                              ld:hasEmail "kijuleipzig@gmx.de" ;
-                                              ld:hasStatus "aktiv" ;
-                                              ld:hasURL "http://www.kijuleipzig.de" ;
-                                              ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KJT.Gruenau> ;
-                                              ld:Kurzinformation "Schwerpunkte der Arbeit: offene Kinder- und Jugendarbeit, erlebnispädagogische Projekte, Medienarbeit, Jugendbildung, Nachwuchsförderung und Ferienangebote." ;
-                                              ld:contactPerson ldp:Roeser_Sascha ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.HeilbronnerStrasse.16> .
-
-<http://leipzig-data.de/Data/Ort/KJZ.Probstheida> a ld:Ort ;
-                                                  rdfs:label "Kinder- und Jugendfreizeitzentrum Probstheida" ;
-                                                  ld:hasTelefon "0341-8614266" ;
-                                                  ld:hasEmail "KJFZZ@web.de" ;
-                                                  ld:hasStatus "aktiv" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04289.Franzosenallee.23> .
-
-ldo:KJZXXDieInsel a ld:Ort ;
-                  rdfs:label "Kinder- und Jugendzentrum Die Insel" ;
-                  ld:hasTelefon "0341-4290217" ;
-                  ld:hasEmail "die-insel@kv-leipzig.de" ;
-                  ld:hasStatus "aktiv" ;
-                  ld:hasURL "http://www.kv-leipzig.de" ;
-                  ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig> ;
-                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04249.Buttergasse.9> .
-
-ldo:KaosLeipzig a ld:Ort ;
-                rdfs:label "KV Kulturwerkstatt KAOS" ;
-                ld:hasTelefon "0341-4803841" ;
-                ld:hasEmail "info@kaos-leipzig.de" ;
-                ld:hasStatus "aktiv" ;
-                ld:hasURL "http://www.kaos-leipzig.de" ;
-                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Wasserstrasse.18> .
-
-ldo:Kapitaldruck a ld:Ort ;
-                 rdfs:label "Kapitaldruck" ;
-                 rdfs:comment "Buchladen mit Cafe" ;
-                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Rossplatz.11> ;
-                 ld:hasAPIId "Venue.19" .
-
-ldo:KinderBueroLeipzig a ld:Ort ;
-                       rdfs:label "Leipziger Kinderbüro" ;
-                       ld:hasTelefon "0341-3375666" ;
-                       ld:hasEmail "lehwald@leipziger-kinderbuero.de" ;
-                       ld:hasStatus "aktiv" ;
-                       ld:hasURL "http://www.leipziger-kinderbüro.de" ;
-                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Rietschelstrasse.2> .
-
-ldo:KinderExperimentierKabinett a ld:Ort ;
-                                rdfs:label "Kinder-Experimentier-Kabinett" ;
-                                ld:hasTelefon "0341-2334582" ;
-                                ld:hasEmail "fraenzle@debitel.net" ;
-                                ld:hasStatus "aktiv" ;
-                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Elsbethstrasse.1> .
-
-ldo:Kirsche a ld:Ort ;
-            rdfs:label "Kirsche - Offener Treff der Kinderhilfe e.V." ;
-            ld:hasTelefon "0341-4211740" ;
-            ld:hasEmail "kontakt@kinderhilfe-leipzig.de" ;
-            ld:hasStatus "aktiv" ;
-            ld:hasURL "http://www.kinderhilfe-leipzig.de" ;
-            ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Kinderhilfe.Leipzig> ;
-            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Schulzeweg.11> .
-
-<http://leipzig-data.de/Data/Ort/Kita.Forscherinsel> a ld:Ort ;
-                                                     rdfs:label "Kita Forscherinsel Seebenisch" ;
-                                                     ld:hasTelefon "034205-411383" ;
-                                                     ld:hasEmail "awo-kita-forscherinsel@web.de" ;
-                                                     ld:hasStatus "aktiv" ;
-                                                     ld:hasTag ldtag:MINT ;
-                                                     ld:hasURL "http://www.awo-leipzigerland.de/html/kita__forscherinsel__markranst.html", "http://kita-forscherinsel.npage.de/" ;
-                                                     ld:hasFax "034205-411382" ;
-                                                     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/AWO.LeipzigerLand> ;
-                                                     ld:Auszeichungen "2012 Haus der kleinen Forscher, LVZ 21.02.2012" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04420.AmaltenBahnhof.21> .
-
-ldo:KleineTraeumerei a ld:Ort ;
-                     rdfs:label "Kleine Träumerei" ;
-                     rdfs:comment "Eine kleine Kneipe in unserer Straße" ;
-                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Muenzgasse.12> ;
-                     ld:hasAPIId "Venue.10" .
-
-ldo:Kollaborat a ld:Ort ;
-               rdfs:label "Kollaborat" ;
-               rdfs:comment "Kollaborat ist ein kreativer und zuverlässiger Designpartner für Unternehmen, Organisationen und Privatpersonen mit den Schwerpunkten Corporate Design und Editorial Design" ;
-               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04299.Ferdinand-Jost-Strasse.31> ;
-               ld:hasAPIId "Venue.20" .
-
-ldo:KommHaus a ld:Ort ;
-             rdfs:label "KOMM-Haus Grünau" ;
-             ld:hasTelefon "0341-9419132" ;
-             ld:hasStatus "aktiv" ;
-             ld:hasURL "http://www.komm-haus.de" ;
-             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.SellinerStrasse.17> .
-
-ldo:KreativeSpinner a ld:Ort ;
-                    rdfs:label "Kreative Spinner - Halle 14" ;
-                    ld:hasTelefon "0341-4924202" ;
-                    ld:hasEmail "kreative-spinner@halle14.org" ;
-                    ld:hasStatus "aktiv" ;
-                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Spinnereistrasse.7> .
-
-<http://leipzig-data.de/Data/Ort/Kreativzentrum.Gruenau> a ld:Ort ;
-                                                         rdfs:label "Kreativzentrum Grünau" ;
-                                                         ld:hasTelefon "0341-4225393" ;
-                                                         ld:hasEmail "Kreativzentrum@t-online.de" ;
-                                                         ld:hasStatus "aktiv" ;
-                                                         ld:hasURL "http://www.Kreativzentrum-Gruenau.de" ;
-                                                         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Kreativzentrum.Gruenau> ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.17> .
-
-ldo:LOFFT a ld:Ort ;
-          rdfs:label "LOFFT" ;
-          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.AmLindenauerMarkt.21> ;
-          ld:hasAPIId "Venue.28" .
-
-ldo:LSGM a ld:Ort ;
-         rdfs:label "Leipziger Schülergesellschaft für Mathematik" ;
-         rdfs:comment "Mitglied im LJBW, Partner des SMK und der SBA-L im Bereich Förderung von MINT-Talenten" ;
-         ld:hasTelefon "0341-9732248" ;
-         ld:engagedPerson ldp:Graebe_HansGert, ldp:Schueler_Axel ;
-         ld:hasStatus "aktiv" ;
-         ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-         ld:hasURL "http://www.lsgm.de" ;
-         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/LSGM> ;
-         ld:Auszeichnungen "2005 Teubnerpreis" ;
-         ld:Langinformation <http://leipzig-data.de/Data/Orte/LSGM.Lang> ;
-         ld:hasAnschrift "c/o Math. Institut, Universität Leipzig, PF 100920, 04109 Leipzig" .
-
-<http://leipzig-data.de/Data/Ort/LSGM.Lang> a ld:InfoRecord ;
-                                            rdfs:label "Standard LSGM Langinformation" ;
-                                            rdfs:comment "LSGM-Eintrag bei Momotech http://www.motivation-technik-entdecken.de" ;
-                                            ld:hasURL "file://HG-Repo/Momotech/LSGM.html" .
-
-ldo:LeipzigSchoolOfDesign a ld:Ort ;
-                          rdfs:label "Leipzig School Of Design" ;
-                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.99> ;
-                          ld:hasAPIId "Venue.61" .
-
-<http://leipzig-data.de/Data/Ort/MGH.LeipzigMitte> a ld:Ort ;
-                                                   rdfs:label "Mehrgenerationenhaus Leipzig Mitte" ;
-                                                   ld:hasTelefon "0341-2255745" ;
-                                                   ld:hasEmail "irg-projekt@gmx.de" ;
-                                                   ld:hasStatus "aktiv" ;
-                                                   ld:hasURL "http://www.mehrgenerationenhaueser.de/Leipzig-mitte" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Hinrichsenstrasse.14> .
-
-<http://leipzig-data.de/Data/Ort/MJA.Leipzig> a ld:Ort ;
-                                              rdfs:label "Mobile Jugendarbeit Leipzig" ;
-                                              ld:hasStatus "aktiv" ;
-                                              ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
-                                              ld:hasURL "http://kuebelonline.de/" ;
-                                              ld:hasSupplier <http://leipzig-data.de/Data/Traeger/MJA.Leipzig> ;
-                                              ld:Kurzinformation "Beratung. Unterstützung. Begleitung. Vermittlung. Information." ;
-                                              ld:contactPerson ldp:Zschuckelt_Katrin ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.3> .
-
-ldo:MPI-MIS a ld:Ort ;
-            rdfs:label "Max-Planck-Institut für Mathematik in den Naturwissenschaften" ;
-            ld:hasTelefon "0341-9959650" ;
-            ld:hasEmail "jgregor@mis.mpg.de" ;
-            ld:hasStatus "aktiv" ;
-            ld:hasTag ldtag:Biologie, ldtag:Chemie, ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften, ldtag:Physik ;
-            ld:hasURL <http://www.mis.mpg.de> ;
-            ld:Art "Vorträge, Schülerprojekte" ;
-            ld:hasFax "0341-9959658" ;
-            ld:Kosten "in der Regel keine" ;
-            ld:Zielgruppe "Klassenstufe 9-12 Gymnasium" ;
-            ld:hasSupplier <http://leipzig-data.de/Data/Traeger/MPI-MIS> ;
-            ld:Kurzinformation "Leistungsangebot für Schulen und Schulklassen: Vorträge für Schülerinnen und Schüler an Gymnasien. Die Wissenschaftlerinnen und Wissenschaftler des Instituts geben dabei Einblicke in aktuelle mathematische und naturwissenschaftliche Forschungsthemen. Die Vorträge finden wahlweise am Institut oder an den Schulen statt.<br/> <br/> Weiterhin können Schülerprojekttage und Schülerpraktika nach individueller Absprache durchgeführt werden." ;
-            ld:contactPerson ldp:Gregor_Jana ;
-            ld:Teilnahmebedingungen "keine" ;
-            ld:Hintergrund "Das MPI ist auf diesem Gebiet schon viele Jahre aktiv und hat diese Angebote dauerhaft eingerichtet." ;
-            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Inselstrasse.22> .
-
-<http://leipzig-data.de/Data/Ort/MPI.EVA> a ld:Ort ;
-                                          rdfs:label "Max-Planck-Institut für evolutionäre Anthropologie" ;
-                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.6> ;
-                                          ld:hasAPIId "Venue.62" .
-
-ldo:MediaCityLeipzig a ld:Ort ;
-                     rdfs:label "media city leipzig" ;
-                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.AltenburgerStrasse.15> ;
-                     ld:hasAPIId "Venue.35" .
-
-ldo:Medienwerkstatt a ld:Ort ;
-                    rdfs:label "Medienwerkstatt Leipzig" ;
-                    ld:hasTelefon "0341-35520430" ;
-                    ld:hasEmail "kontakt@medienwerkstatt-leipzig.de" ;
-                    ld:hasStatus "aktiv" ;
-                    ld:hasURL "http://www.medienwerkstatt-leipzig.de" ;
-                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Lessingstrasse.7> .
-
-ldo:ModernMusicSchool a ld:Ort ;
-                      rdfs:label "Modern Music School" ;
-                      ld:hasTelefon "0341-2603459" ;
-                      ld:hasEmail "i.biedermann@modernmusicschool.com" ;
-                      ld:hasStatus "aktiv" ;
-                      ld:hasURL "http://www.modernmusicschool.com" ;
-                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Windmuehlenstrasse.26> .
-
-<http://leipzig-data.de/Data/Ort/Muehlstrasse.Begegnungsstaette> a ld:Ort ;
-                                                                 rdfs:label "Begegnungsstätte Mühlstraße" ;
-                                                                 ld:hasTelefon "0341-9903600" ;
-                                                                 ld:hasEmail "kontakt@muehlstrasse.de" ;
-                                                                 ld:hasStatus "aktiv" ;
-                                                                 ld:hasURL "http://www.muehlstrasse.de" ;
-                                                                 ld:Art "soziokulturelles Zentrum" ;
-                                                                 ld:hasFax "0341-9903602" ;
-                                                                 ld:Kosten "teilweise" ;
-                                                                 ld:Zielgruppe "Kinder, Jugendliche, Familien, Senioren" ;
-                                                                 ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Muehlstrasse> ;
-                                                                 ld:contactPerson ldp:Hoernig_Karin ;
-                                                                 ld:Arbeitsformen "Projekte, Workshops, Kurse, Veranstaltungen" ;
-                                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Muehlstrasse.14> .
-
-<http://leipzig-data.de/Data/Ort/Muetterzentrum.Gruenau> a ld:Ort ;
-                                                         rdfs:label "Müzel Familienzentrum Grünau" ;
-                                                         ld:hasStatus "aktiv" ;
-                                                         ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
-                                                         ld:hasURL "http://www.mütterzentrum-leipzig.de/" ;
-                                                         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Muetterzentrum> ;
-                                                         ld:Kurzinformation "Wir haben einen offenen Treff mit Spiel- und Kommunikationsraum, welchen wir als Zentrum eines sozialen, generationsübergreifenden Netzwerkes mit großfamilienähnlichen Strukturen im Stadtteil sehen. Dieses Kernangebot wird durch vielfältige Angebote, z.B. im Bereich der Familienbildung, der Gesundheitsförderung und der Kultur ergänzt. " ;
-                                                         ld:contactPerson ldp:Simon_Ute ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Potschkaustrasse.50> .
-
-<http://leipzig-data.de/Data/Ort/Museum.BildendeKuenste> a ld:Ort ;
-                                                         rdfs:label "Museum der bildenden Künste" ;
-                                                         ld:hasTelefon "0341-21699914" ;
-                                                         ld:hasEmail "mdbk@leipzig.de" ;
-                                                         ld:hasStatus "aktiv" ;
-                                                         ld:hasTag ldtag:Museum ;
-                                                         ld:hasURL "http://www.mdbk.de" ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Katharinenstrasse.10> .
-
-<http://leipzig-data.de/Data/Ort/Museum.Druckkunst> a ld:Ort ;
-                                                    rdfs:label "Museum für Druckkunst" ;
-                                                    ld:hasTelefon "0341-231620" ;
-                                                    ld:hasEmail "info@druckkunst-museum.de" ;
-                                                    ld:hasStatus "aktiv" ;
-                                                    ld:hasTag ldtag:Museum ;
-                                                    ld:hasURL "http://www.druckkunst-museum.de" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Nonnenstrasse.38> .
-
-<http://leipzig-data.de/Data/Ort/Museum.Grassi> a ld:Ort ;
-                                                rdfs:label "GRASSI Museum für angewandte Kunst" ;
-                                                ld:hasTelefon "0341-2229114" ;
-                                                ld:hasEmail "grassimuseum@leipzig.de" ;
-                                                ld:hasStatus "aktiv" ;
-                                                ld:hasTag ldtag:Museum ;
-                                                ld:hasURL "http://www.grassimuseum.de" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Johannisplatz.5-11> .
-
-<http://leipzig-data.de/Data/Ort/Museum.Lipsikus> a ld:Ort ;
-                                                  rdfs:label "Kinder- und Jugendmuseum LIPSIKUS" ;
-                                                  ld:hasTelefon "0341-9651340" ;
-                                                  ld:hasEmail "elke.schaar@leipzig.de" ;
-                                                  ld:hasStatus "aktiv" ;
-                                                  ld:hasTag ldtag:Museum ;
-                                                  ld:hasURL "http://www.stadtgeschichtliches-museum-leipzig.de" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Boettchergaesschen.3> .
-
-ldo:Naturkundemuseum a ld:Ort ;
-                     rdfs:label "Naturkundemuseum" ;
-                     ld:hasTelefon "0341-982210" ;
-                     ld:hasStatus "aktiv" ;
-                     ld:hasTag ldtag:Museum ;
-                     ld:hasURL "http://www.leipzig.de/naturkundemuseum" ;
-                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Lortzingstrasse.3> .
-
-ldo:NeuesSchauspielLeipzig a ld:Ort ;
-                           rdfs:label "Neues Schauspiel Leipzig" ;
-                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.LuetznerStrasse.29> ;
-                           ld:hasAPIId "Venue.68" .
-
-ldo:NochBesserLeben a ld:Ort ;
-                    rdfs:label "Noch Besser Leben" ;
-                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.MerseburgerStrasse.25> ;
-                    ld:hasAPIId "Venue.38" .
-
-<http://leipzig-data.de/Data/Ort/OFT.Bagger> a ld:Ort ;
-                                             rdfs:label "OFT Am Bagger" ;
-                                             ld:hasTelefon "0341-9211130" ;
-                                             ld:hasEmail "oft-bagger@web.de" ;
-                                             ld:hasStatus "aktiv" ;
-                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04349.KlingenthalerStrasse.14> .
-
-<http://leipzig-data.de/Data/Ort/OFT.Crazy> a ld:Ort ;
-                                            rdfs:label "OFT Crazy" ;
-                                            ld:hasTelefon "0341-2511424" ;
-                                            ld:hasStatus "aktiv" ;
-                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04329.ZumWaeldchen.6> .
-
-<http://leipzig-data.de/Data/Ort/OFT.Muehlholz> a ld:Ort ;
-                                                rdfs:label "OFT Am Mühlholz" ;
-                                                ld:hasTelefon "0341-3013004" ;
-                                                ld:hasStatus "aktiv" ;
-                                                ld:hasURL "http://www.oft-muehlholz.de" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Prinz-Eugen-Strasse.34> .
-
-<http://leipzig-data.de/Data/Ort/OFT.Rabet> a ld:Ort ;
-                                            rdfs:label "OFT Rabet" ;
-                                            ld:hasTelefon "0341-6995598" ;
-                                            ld:hasEmail "oft-rabet@web.de" ;
-                                            ld:hasStatus "aktiv" ;
-                                            ld:hasURL "http://www.oft-rabet.de" ;
-                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Eisenbahnstrasse.54> .
-
-<http://leipzig-data.de/Data/Ort/OFT.Sellershausen> a ld:Ort ;
-                                                    rdfs:label "OFT Club Sellerhausen" ;
-                                                    ld:hasTelefon "0341-2301023" ;
-                                                    ld:hasEmail "club-sellerhausen@gmx.de" ;
-                                                    ld:hasStatus "aktiv" ;
-                                                    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/InternationalerBund> ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04318.PuechauerStrasse.4> .
-
-<http://leipzig-data.de/Data/Ort/OFT.TanteHedwig> a ld:Ort ;
-                                                  rdfs:label "OFT Tante Hedwig" ;
-                                                  ld:hasTelefon "0341-688-46-96" ;
-                                                  ld:hasEmail "Tante-Hedwig.leipzig@internationaler-bund.de" ;
-                                                  ld:hasStatus "aktiv" ;
-                                                  ld:hasSupplier <http://leipzig-data.de/Data/Traeger/InternationalerBund> ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Hedwigstrasse.7> .
-
-<http://leipzig-data.de/Data/Ort/OFT.Zirkel> a ld:Ort ;
-                                             rdfs:label "OFT Zirkel" ;
-                                             ld:hasTelefon "0341-6881746" ;
-                                             ld:hasStatus "aktiv" ;
-                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.LangeStrasse.25> .
-
-<http://leipzig-data.de/Data/Ort/Oekoschule.Agrapark> a ld:Ort ;
-                                                      rdfs:label "agra-Park Ökoschule" ;
-                                                      ld:hasTelefon "0341-3504766" ;
-                                                      ld:hasEmail "ökoschule-markkleeberg@gmx.de" ;
-                                                      ld:hasStatus "aktiv" ;
-                                                      ld:hasTag ldtag:Umwelt ;
-                                                      ld:hasURL "http://www.kultur-und-umweltzentrum.de" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.AmFestanger.8> .
-
-<http://leipzig-data.de/Data/Ort/Oekoschule.Markkleeberg> a ld:Ort ;
-                                                          rdfs:label "Ökoschule Markkleeberg" ;
-                                                          ld:hasTelefon "0341-3381142" ;
-                                                          ld:hasEmail "http://oekoschule-markkleeberg@gmx.de" ;
-                                                          ld:engagedPerson ldp:Schwarze_Wolfgang ;
-                                                          ld:hasStatus "aktiv" ;
-                                                          ld:hasTag ldtag:MINT ;
-                                                          ld:hasURL "www.kultur-und-umweltzentrum.de" ;
-                                                          ld:Art "Ökoschule und grünes Klassenzimmer, Unterricht im Grünen, Projekttage, Schulfeste, Klassenfeste und Kindergeburtstage" ;
-                                                          ld:hasFax "0341-3381143" ;
-                                                          ld:Kosten "3,00 Euro pro Teilnehmer" ;
-                                                          ld:Zielgruppe "für alle Altersklassen, Schultypen, Berufsschüler und Familien" ;
-                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KUZ> ;
-                                                          ld:Finanzierung "SMUL, Jugendamt Landkreis Leipzig, Stadt Markkleeberg" ;
-                                                          ld:Zielstellung "aktive Auseinandersetzung mit der Natur und \"Unterricht im Grünen\" oder verschiedebe Projekttage" ;
-                                                          ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
-                                                          ld:Hintergrund "seit 2002" ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.Kirchstrasse.42> .
-
-ldo:PILOT a ld:Ort ;
-          rdfs:label "PILOT" ;
-          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Bosestrasse.1> ;
-          ld:hasAPIId "Venue.58" .
-
-ldo:Phyllodrom a ld:Ort ;
-               rdfs:label "Phyllodrom e.V. - Museum und Institut für Regenwaldökologie" ;
-               ld:hasTelefon "0341-5257757" ;
-               ld:hasEmail "info@Phyllodrom.de" ;
-               ld:hasStatus "aktiv" ;
-               ld:hasTag ldtag:Umwelt ;
-               ld:hasURL "http://wwww.Phyllodrom.de" ;
-               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04158.DelitzscherLandstrasse.38> .
-
-ldo:Plan-B a ld:Ort ;
-           rdfs:label "Plan B - Kulturkaffee" ;
-           rdfs:comment "Konzerte, Kino und Theater eine nette stylische Bar." ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Haertelstrasse.21> ;
-           ld:hasAPIId "Venue.12" .
-
-<http://leipzig-data.de/Data/Ort/Plaussig.NaturSchutzStation> a ld:Ort ;
-                                                              rdfs:label "Naturschutzstation Plaußig" ;
-                                                              ld:hasTelefon "034298-68665" ;
-                                                              ld:hasEmail "auwaldstation@t-online.de" ;
-                                                              ld:hasStatus "aktiv" ;
-                                                              ld:hasSupplier <http://leipzig-data.de/Data/Traeger/ZV_Parthenaue> ;
-                                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04349.PlaussigerDorfstrasse.23> .
-
-<http://leipzig-data.de/Data/Ort/Rabutz.TOeP> a ld:Ort ;
-                                              rdfs:label "Rennstall Rabutz" ;
-                                              ld:hasTelefon "034207-73595" ;
-                                              ld:hasEmail "info@rennstall-rabutz.de" ;
-                                              ld:engagedPerson ldp:Messerschmidt_Elk ;
-                                              ld:hasStatus "aktiv" ;
-                                              ld:hasTag ldtag:MINT ;
-                                              ld:hasURL "http://www.rennstall-rabutz.de" ;
-                                              ld:Art "Projektzentrum mit Angeboten zu Ökologie, Elektromobilität, Verkehrserziehung" ;
-                                              ld:hasFax "034207-73597" ;
-                                              ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Rabutz.TOeP> ;
-                                              ld:Zielstellung "Junge Leute erfahren hier, dass Themen wie Technik und Ökologie durchaus auch Spaß machen können." ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04509.BageritzerWeg.1> .
-
-ldo:Regenwaldzentrum a ld:Ort ;
-                     rdfs:label "Regenwaldzentrum" ;
-                     ld:hasTelefon "0341-3014025" ;
-                     ld:hasEmail "regenwaldzentrum@nabu-sachsen.de" ;
-                     ld:hasStatus "aktiv" ;
-                     ld:hasTag ldtag:Umwelt ;
-                     ld:hasURL "http://www.nabu-sachsen.de" ;
-                     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/NABU> ;
-                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.SchleussigerWeg.1> .
-
-ldo:Riquet a ld:Ort ;
-           rdfs:label "Riquet" ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Salzgaesschen.6> ;
-           ld:hasAPIId "Venue.31" .
-
-<http://leipzig-data.de/Data/Ort/SWL.GuD-Anlage> a ld:Ort ;
-                                                 rdfs:label "Stadtwerke Leipzig (GuD-Anlage)" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.EutritzscherStrasse.14> ;
-                                                 ld:hasAPIId "Venue.36" .
-
-ldo:SchaubuehneLindenfels a ld:Ort ;
-                          rdfs:label "Schaubühne Lindenfels" ;
-                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.50> ;
-                          ld:hasAPIId "Venue.63" .
-
-ldo:SchoolOfMedia a ld:Ort ;
-                  rdfs:label "Leipzig School of Media" ;
-                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Poetenweg.28> ;
-                  ld:hasAPIId "Venue.37" .
-
-<http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Freiluftschule> a ld:Ort ;
-                                                                      rdfs:label "Freiluftschule" ;
-                                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04289.Schwarzenbergweg.4> .
-
-<http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Lehrgarten> a ld:Ort ;
-                                                                  rdfs:label "Botanischer Lehrgarten" ;
-                                                                  ld:hasUW_id "1256" ;
-                                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.SchleussigerWeg.1> .
-
-<http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Zooschule> a ld:Ort ;
-                                                                 rdfs:label "Zooschule im Zoologischen Garten Leipzig" ;
-                                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.PfaffendorferStrasse.29> .
-
-ldo:SchulBiologiezentrum a ld:Ort ;
-                         rdfs:label "Schulbiologiezentrum der Stadt Leipzig" ;
-                         ld:hasStatus "aktiv" ;
-                         ld:hasTag ldtag:MINT ;
-                         ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
-                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Martin-Luther-Ring.4-6> .
-
-ldo:SportforumLeipzig a ld:Ort ;
-                      rdfs:label "Sportforum Leipzig" ;
-                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.AmSportforum.3> ;
-                      ld:hasAPIId "Venue.54", "Venue.53" .
-
-ldo:Theatrium a ld:Ort ;
-              rdfs:label "Theatrium" ;
-              ld:hasTelefon "0341-9413640" ;
-              ld:hasEmail "theatrium@gmx.de" ;
-              ld:hasStatus "aktiv" ;
-              ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
-              ld:hasURL "http://www.theatrium-leipzig.de" ;
-              ld:contactPerson ldp:Roch_Beate ;
-              ld:Hintergrund "Seit 1995 bieten wir in Leipzig-Grünau Theaterprojekte für Kinder und Jugendliche an. Ab 1996 wurde dafür die ehemalige Gaststätte \"Atrium\" in der Miltitzer Allee 52 von der Stadt Leipzig zur Verfügung gestellt und von den Vereinsgründern zum Theater \"Theatrium\" umgebaut. Nach jahrelanger Suche nach einem neuen, geeigneteren Domizil für unsere Theaterprojekte konnte, Dank der tatkräftigen Unterstützung durch die Stadt Leipzig und die Akteure des Stadtbezirks, im November 2010 das \"Neue Theatrium\" in der Alten Salzstraße 59 eröffnet werden und bietet nun beste Bedingungen, sowohl für die Arbeit in unseren Projekten, als auch für unsere Besucher. " ;
-              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.59> .
-
-<http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig> a ld:Ort ;
-                                                         rdfs:label "Transition Town Leipzig" ;
-                                                         ld:hasURL "http://www.transitiontown-leipzig.de" ;
-                                                         ld:Kurzinformation "<p>Die Transition-Town-Bewegung, der weltweit über 300 Städte angehören, setzt diese Ideen um und eröffnet neue Perspektiven. „Leipzig im Wandel“ kann durch uns Teil dieser sich rasch ausbreitenden Bewegung werden. Wir können dafür sorgen, dass so viele Produkte und Dienstleistungen wie möglich lokal erzeugt, erarbeitet und verbraucht werden: beim Einkauf, beim Essen, beim Urlaub, beim Bezug von Energie. Das macht uns unabhängiger vom Erdöl und auch von vielen negativen Auswirkungen auf den Finanzmärkten, den Veränderungen auf dem Arbeitsmarkt und der Verschlechterung unserer Umweltqualität Visionen, Träume, Fantasie, Kreativität, Technik, Musik, Wissen … helfen uns auf dem Weg zu einem nachhaltigen Leipzig.</p>" .
-
-ldo:UFZ a ld:Ort ;
-        rdfs:label "Helmholtz-Zentrum für Umweltforschung GmbH – UFZ" ;
-        ld:hasStatus "aktiv" ;
-        ld:hasTag ldtag:Forschung, ldtag:MINT ;
-        ld:hasSupplier <http://leipzig-data.de/Data/Traeger/UFZ> ;
-        ld:Kurzinformation "Das Helmholtz-Zentrum für Umweltforschung – UFZ wurde 1991 gegründet und beschäftigt an den Standorten Leipzig, Halle/Saale und Magdeburg ungefähr 1000 Mitarbeiter. Es erforscht die komplexen Wechselwirkungen zwischen Mensch und Umwelt in genutzten und gestörten Landschaften. Die Wissenschaftler des UFZ entwickeln Konzepte und Verfahren, die helfen sollen, die natürlichen Lebensgrundlagen für nachfolgende Generationen zu sichern." ;
-        ld:Leistungsangebot "Versuchstage für Schüler der Klassenstufe 10 bis 13 im Schülerlabor", "Lehrerfortbildungen zu Themen aus der Umweltforschung", "In den wissenschaftlichen Departments des UFZ können sich Schüler um Praktika, Facharbeiten und BELLs bewerben" ;
-        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Permoserstrasse.15> .
-
-<http://leipzig-data.de/Data/Ort/UFZ.KinderUmweltBus> a ld:Ort ;
-                                                      rdfs:label "UFZ KinderUmweltBus" ;
-                                                      ld:hasTelefon "0341-235-3630" ;
-                                                      ld:hasEmail "kinderumweltbus@ufz.de" ;
-                                                      ld:hasStatus "aktiv" ;
-                                                      ld:hasTag ldtag:MINT, ldtag:Umwelt ;
-                                                      ld:hasURL "http://www.kinderumweltbus.de" ;
-                                                      ld:hasFax "0341-235-3629" ;
-                                                      ld:Kosten "Bei ganzen Projekttagen fällt ggf. ein Personalkostenzuschuss an." ;
-                                                      ld:Zielgruppe "Lehrerweiterbildung", "Vor- und Grundschule" ;
-                                                      ld:hasSupplier <http://leipzig-data.de/Data/Traeger/UFZ> ;
-                                                      ld:Kurzinformation "Der KinderUmweltBus bietet zu den Themen Wasser, Lebensraum Boden und Energie Projektstunden von 60 bis 90 Minuten für Kinder im Vor- und Grundschulalter mit spielerisch-spannenden Experimenten und kreativer Naturforschung – auch im Rahmen Ihrer Projekttage und Projektwochen – und spezielle Fortbildungsangebote für Pädagogen (Lehrer, Erzieher sowie Umweltbildner) an.", "Unter dem Motto „Bestaunen, Begreifen, Beschützen“ werden experimentell und spielerisch elementare naturwissenschaftliche Zusammenhänge speziell zum Thema Wasser erläutert, die das Interesse an der Natur wecken und umweltbewusstes Handeln fördern sollen. Der KinderUmweltBus ermöglicht es, mit Kindern und Schülern vor Ort zu arbeiten, sowohl in den Räumen der Schule als auch direkt in der Natur. Die Themen nehmen einen engen Bezug auf den Lehrplan. Damit kann dieses Angebot den Lehrstoff z.B. im Fach Sachkunde sinnvoll ergänzen." ;
-                                                      ld:Oeffnungszeiten "Anmeldungen sind halbjährlich möglich. Anmeldeformular unter www.kinderumwelt-bus.de" ;
-                                                      ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Permoserstrasse.15> .
-
-<http://leipzig-data.de/Data/Ort/UFZ.Schuelerlabor> a ld:Ort ;
-                                                    rdfs:label "UFZ Schülerlabor" ;
-                                                    rdfs:comment "Teilnehmer ca. 50% weiblich (Schätzwert)" ;
-                                                    ld:hasTelefon "0341-235-1845" ;
-                                                    ld:hasEmail "schuelerlabor@ufz.de" ;
-                                                    ld:engagedPerson ldp:Lange_Torsten ;
-                                                    ld:hasStatus "aktiv" ;
-                                                    ld:hasTag ldtag:Biologie, ldtag:Chemie, ldtag:MINT, ldtag:Physik ;
-                                                    ld:hasURL "http://www.ufz-schuelerlabor.de" ;
-                                                    ld:hasFax "0341-235-1830" ;
-                                                    ld:Kosten "5,00 Euro pro Schüler" ;
-                                                    ld:Zielgruppe "Schülerinnen und Schüler ab Klassenstufe 10 der gymnasialen Oberstufe", "Lehrer und Referendare für Fortbildungen" ;
-                                                    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/UFZ> ;
-                                                    ld:Kurzinformation "Chemisch-biologische Experimente, auch Mathematik, Geologie, Hydrologie, Biotechnologie, Drogenprävention", "Das UFZ-Schülerlabor ist eine Einrichtung, die Schülern der Klassenstufen 10 bis 13 die Chance bietet, in einem authentischen Umfeld in die Rolle von Wissenschaftlern zu schlüpfen und deren Alltag zu erleben. Die Experimente im Schülerlabor sind aktuellen Forschungsprojekten des UFZ entliehen. Alle Schülerversuche lassen sich gut in den Unterricht integrieren, da sie in Anlehnung an den aktuellen Lehrplan ausgewählt worden sind." ;
-                                                    ld:Oeffnungszeiten "Versuche im Schülerlabor sind nur im Klassenverband als Schulveranstaltung ab Klassenstufe 10 möglich. Eine vorherige Terminabsprache ist notwendig." ;
-                                                    ld:Teilnahmebedingungen "keine" ;
-                                                    ld:Hintergrund "seit 2004" ;
-                                                    ld:behindertengerecht "Ein behindertengerechter Zugang ist vorhanden, dabei ist zu beachten: Im Labor gelten besondere Sicherheitsregeln, die vorab mit dem verantwortlichen Lehrer besprochen werden müssen." ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Permoserstrasse.15> .
-
-ldo:UIZ a ld:Ort ;
-        rdfs:label "Umweltinformationszentrum" ;
-        ld:hasTelefon "0341-1236711" ;
-        ld:hasEmail "UIZ@leipzig.de" ;
-        ld:hasStatus "aktiv" ;
-        ld:hasTag ldtag:MINT ;
-        ld:Art "Angebote in den Bereichen Ökologie, Umwelt- und Naturschutz" ;
-        ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig>, <http://leipzig-data.de/Data/Traeger/UIZ> ;
-        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.PragerStrasse.136> .
-
-ldo:Umspannwerk a ld:Ort ;
-                rdfs:label "Elektrotechnische Sammlung am Umspannwerk Markkleeberg" ;
-                ld:hasStatus "aktiv" ;
-                ld:hasTag ldtag:MINT ;
-                ld:Art "Technikmuseum" ;
-                ld:Kosten "keine" ;
-                ld:Zielgruppe "Oberstufe, Berufsschüler" ;
-                ld:hasSupplier <http://leipzig-data.de/Data/Traeger/VDE.LeipzigHalle> ;
-                ld:Finanzierung "Kostenfreie Raumnutzung bei enviaM, ARGE Leipzig, VDE Bezirksverband" ;
-                ld:Kurzinformation "Ziele des Projekts: Erhaltung von Zeitzeugen der elektrotechnischen Entwicklung aus der Region in einer Art Museum, Unterstützung der Aus- und Weiterbildung für elektrotechnische Berufe, Wecken des Interesses am Ergreifen von Berufen elektrotechnischer Richtungen, Schaffung von Betätigungsmöglichkeiten für nicht mehr im Berufsleben stehende Fachleute der Elektrotechnik, Gestaltung von sachgebiets- und themenbezogenen Ausstellungen zum Fachgebiet" ;
-                ld:Oeffnungszeiten "Jeden letzten Dienstag im Monat von 14 bis 16 Uhr. Außerhalb dieser Zeiten ist die Besichtigung mit Voranmeldung möglich." ;
-                ld:contactPerson ldp:Haenisch_Wolfgang, ldp:Raue_Manfred ;
-                ld:Teilnahmebedingungen "keine" ;
-                ld:Hintergrund "Seit dem Jahre 2001 arbeitet der Arbeitskreis Geschichte der Elektrotechnik beim VDE Bezirksverein Leipzig/Halle e.V. aktiv an diesem Projekt, zunächst am Standort Taucha, seit 2011 im neuen Domizil. Sowohl den alten Standort, das  Objekt im ehemaligen Hauptumspannwerk Taucha, als auch den neuen am Umspannwerk Markkleeberg stellte bzw. stellt die enviaM zur Verfügung." ;
-                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.Friedrich-Ebert-Strasse.26> .
-
-ldo:Umweltbibliothek a ld:Ort ;
-                     rdfs:label "Umweltbibliothek Leipzig" ;
-                     rdfs:comment "Die Umweltbibliothek Leipzig als unbeschränkt öffentlich zugängliche Spezialbibliothek versteht sich als ein zentraler Informationsdienstleister im Bereich Umweltschutz in der Stadt Leipzig und ihrem Umland. Sie bietet Studierenden, Lernenden, Lehrenden, im Umweltschutz Tätigen in Vereinen, Behörden und Planungsbüros sowie Privatpersonen Sach- und Fachmedien entsprechend ihrer Bedürfnisse zur Ausleihe, sowie Zugang zu elektronischen Informationen und die Vermittlung von Umweltberatungs- und Umweltbildungsangeboten. Sie bietet ihre Medien mittels Fernleihe auch im Regierungsbezirk Leipzig, dem Land Sachsen und der ganzen Bundesrepublik an. Die Umweltbibliothek kooperiert mit lokalen und besonders relevanten überregionalen Informationsanbietern und -verbreitern wie Behörden, Vereinen, Forschungseinrichtungen, Stadt- und Hochschulbibliotheken, um deren Informationen zur (regionalen) Umweltsituation und Umweltschutzmaßnahmen konzentriert zu sammeln, zu erschließen und anzubieten und um als qualifizierte Ergänzung zu deren Angeboten zu fungieren. Die Umweltbibliothek wurde 2005 als offizielles Projekt der UN-Weltdekade \"Bildung für nachhaltige Entwicklung\" ausgezeichnet." ;
-                     ld:hasTelefon "0341-3065-181, 0341-3065-180" ;
-                     ld:hasEmail "info@umweltbibliothek-leipzig.de" ;
-                     ld:engagedPerson ldp:Quester_Roland ;
-                     ld:hasStatus "aktiv" ;
-                     ld:hasTag ldtag:MINT ;
-                     ld:hasURL "http://www.umweltbibliothek-leipzig.de", "http://www.umweltbildung-leipzig.de" ;
-                     ld:Art "Umweltbibliothek" ;
-                     ld:Kosten "nein" ;
-                     ld:Zielgruppe "u.a. Schüler und Studenten (z.B. für Haus-, Studien-, Diplom-, Doktorarbeiten), Planer, Behördenmitarbeiter, Privatpersonen, Pädagogen" ;
-                     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Oekoloewe> ;
-                     ld:Finanzierung "institutionell gefördert durch das Amt für Umweltschutz der Stadt Leipzig, weitere Fördermittel von ESF, Land Sachsen, Bürgerstiftung Leipzig, Stadtwerke Leipzig" ;
-                     ld:Zielstellung "Über Umweltschutz informieren, qualifizierte Umweltinformationen erschließen und allgemein zugänglich machen" ;
-                     ld:Teilnahmebedingungen "nein" ;
-                     ld:Hintergrund "seit 1988" ;
-                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> .
-
-ldo:UniLeipzig a ld:Ort ;
-               rdfs:label "Zentrale Aktivitäten der Uni Leipzig" ;
-               ld:hasURL "http://www.uni-leipzig.de/" .
-
-<http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> a ld:Ort ;
-                                                           rdfs:label "Unikomplex Augustusplatz" ;
-                                                           ld:hasAPIId "Venue.57", "Venue.70", "Venue.60" ;
-                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> .
-
-<http://leipzig-data.de/Data/Ort/UniLeipzig.CampusJahnallee> a ld:Ort ;
-                                                             rdfs:label "Campus Jahnallee der Universität Leipzig" ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Jahnallee.59> ;
-                                                             ld:hasAPIId "Venue.56" .
-
-<http://leipzig-data.de/Data/Ort/UniLeipzig.ExPhysik> a ld:Ort ;
-                                                      rdfs:label "Universität Leipzig, Institut für Experimentelle Physik" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Linnestrasse.5> .
-
-<http://leipzig-data.de/Data/Ort/UniLeipzig.FMI> a ld:Ort ;
-                                                 rdfs:label "Universität Leipzig, Fakultät Mathematik/Informatik" ;
-                                                 ld:hasStatus "aktiv" ;
-                                                 ld:hasTag ldtag:Hochschule, ldtag:MINT ;
-                                                 ld:hasURL "http://www.fmi.uni-leipzig.de" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> .
-
-<http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> a ld:Ort ;
-                                                         rdfs:label "Netzprojekt am Institut für Informatik der Uni Leipzig" ;
-                                                         ld:hasURL "http://www.dorfwiki.org/wiki.cgi?HansGertGraebe/NetzProjekt" ;
-                                                         ld:Kurzinformation "Der Gegenstand der Untersuchungen und Aktivitäten, die durch dieses Projekt gebündelt werden, sind die theoretischen und praktischen Dimensionen der ablaufenden Transformationsprozesse in Richtung einer \"digitalen Gesellschaft\". " .
-
-<http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> a ld:Ort ;
-                                                           rdfs:label "Uni, Rektoratsgebäude" ;
-                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.26> .
-
-<http://leipzig-data.de/Data/Ort/UniLeipzig.SchollHaus> a ld:Ort ;
-                                                        rdfs:label "Uni, Geschwister-Scholl-Haus" ;
-                                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.8-10> .
-
-ldo:Villa a ld:Ort ;
-          rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" ;
-          ld:hasTelefon "0341-3552040" ;
-          ld:hasEmail "jugendarbeit@villa-leipzig.de" ;
-          ld:hasStatus "aktiv" ;
-          ld:hasURL "http://www.villa-Leipzig.de" ;
-          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Villa> ;
-          ld:hasAPIId "Venue.64" ;
-          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Lessingstrasse.7> .
-
-ldo:VillaIda a ld:Ort ;
-             rdfs:label "Mediencampus Villa Ida" ;
-             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Poetenweg.28> ;
-             ld:hasAPIId "Venue.67" .
-
-ldo:Volkshaus a ld:Ort ;
-              rdfs:label "Volkshaus" ;
-              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Karl-Liebknecht-Strasse.32> ;
-              ld:hasAPIId "Venue.52" .
-
-ldo:Volkshochschule a ld:Ort ;
-                    rdfs:label "Volkshochschule" ;
-                    ld:hasTelefon "0341-1236000" ;
-                    ld:hasEmail "vhs@leipzig.de" ;
-                    ld:hasStatus "aktiv" ;
-                    ld:hasURL "http://www.vhs-leipzig.de" ;
-                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Loehrstrasse.3-7> .
-
-ldo:Wamslergarten a ld:Ort ;
-                  rdfs:label "Wamslergarten im Westwerk" ;
-                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.99> ;
-                  ld:hasAPIId "Venue.41" .
-
-ldo:Werk-2 a ld:Ort ;
-           rdfs:label "Werk II - Kulturfabrik e. V." ;
-           ld:hasTelefon "0341-3080140" ;
-           ld:hasEmail "info@werk-2.de" ;
-           ld:hasStatus "aktiv" ;
-           ld:hasURL "http://www.werk-2.de" ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Kochstrasse.132> .
-
-ldo:ZfI a ld:Ort ;
-        rdfs:label "Zentrum für Integration" ;
-        ld:hasTelefon "0341-4804311" ;
-        ld:hasEmail "doris.mueller@zfi-leipzig.de" ;
-        ld:hasStatus "aktiv" ;
-        ld:hasURL "http://www.zfi-Leipzig.de" ;
-        ld:hasFax "0341-4773703" ;
-        ld:Kosten "teilweise" ;
-        ld:Zielgruppe "Kinder, Jugendliche, Erwachsene, Senioren" ;
-        ld:hasSupplier <http://leipzig-data.de/Data/Traeger/ZfI> ;
-        ld:contactPerson ldp:Mueller_Doris ;
-        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> .
-
-ldo:ciT a ld:Ort ;
-        rdfs:label "ciT – Consulting Innovation Training GmbH" ;
-        ld:hasTelefon "0341-68707-0" ;
-        ld:hasEmail "chamel@mint-individual.de" ;
-        ld:hasStatus "aktiv" ;
-        ld:hasTag ldtag:Berufsbildung, ldtag:MINT ;
-        ld:hasURL "http://www.mint-individual.de" ;
-        ld:hasFax "0341-68707-124" ;
-        ld:hasSupplier <http://leipzig-data.de/Data/Traeger/ciT> ;
-        ld:Kurzinformation "Wir sind ein führendes sächsisches Weiterbildungsunternehmen in den Bereichen Softwareentwicklung, Netzwerke, Datenbanken, IT-Sicherheit, Multimediaanwendungen, kaufmännische Qualifizierung, kaufmännische Anwendungssoftware sowie Lager und Handel. Unsere Stärke liegt in der modularen Einzel- und Kleingruppenausbildung. Sie können aus über 400 Modulen unseres gesamten Angebotsspektrums wählen. Die hohe Qualität der Aus- und Weiterbildung sichern wir mit unserem zertifizierten Qualitätsmanagement laut DIN ISO 9001." ;
-        ld:Oeffnungszeiten "Unser Büro ist an Wochentagen von 8:00 bis 16:00 Uhr besetzt. Die Anmeldung für das Projekt kann unter http://www.mintindividual.de/registrierung.php erfolgen." ;
-        ld:contactPerson ldp:Hamel_Corinna ;
-        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Lutherstrasse.10> .
-
-ldo:ipoque a ld:Ort ;
-           rdfs:label "ipoque" ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Neumarkt.29> ;
-           ld:hasAPIId "Venue.29" .
-
-ldo:studiodelta a ld:Ort ;
-                rdfs:label "studiodelta" ;
-                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Angerstrasse.40> ;
-                ld:hasAPIId "Venue.27" .
-
-ldo:sublab a ld:Ort ;
-           ld:Ortszusatz "Tor B, 3. OG" ;
-           rdfs:label "sublab e.V." ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.93> ;
-           ld:hasAPIId "Venue.30" .
-
-<> a owl:Ontology ;
-   owl:imports <http://leipzig-data.de/Data/Tags/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Adressen/> ;
-   rdfs:label "LeipzigData - Orte" ;
-   rdfs:comment "Alte Adressen komplett ersetzt" .
+ld:Ort
+    a owl:Class ;
+    rdfs:label "Ort" .
+
+ldo:AKAD-Hochschule
+    ld:hasAPIId "Venue.69" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Gutenbergplatz.1> ;
+    a ld:Ort ;
+    rdfs:label "AKAD Hochschule Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/ASD.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.KiewerStrasse.1-3> ;
+    a ld:Ort ;
+    rdfs:label "Allgemeiner Sozialdienst Grünau" .
+
+ldo:ASG
+    a ld:Ort ;
+    rdfs:label "Arnold-Sommerfeld-Gesellschaft" .
+
+ldo:AZ-Schkeuditz
+    ld:engagedPerson ldp:Schilling_Peter ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04435.Bergbreite.1> ;
+    ld:hasEmail "info@sternwarte-schkeuditz.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "034204-62616" ;
+    ld:hasURL "http://sternwarte-schkeuditz.de" ;
+    a ld:Ort ;
+    rdfs:label "Astronomisches Zentrum Schkeuditz" .
+
+ldo:Anker
+    ld:Art "soziokulturelles Stadtteilzentrum" ;
+    ld:Kosten "teilweise" ;
+    ld:Zielgruppe "Kinder-und Jugendliche, Senioren" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Renftstrasse.1> ;
+    ld:hasEmail "info@anker-Leipzig.de" ;
+    ld:hasFax "0341-9123910" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Anker ;
+    ld:hasTelefon "0341-9128327" ;
+    ld:hasURL "http://www.anker-Leipzig" ;
+    a ld:Ort ;
+    rdfs:comment "Im Angebot: Schauspiel, Theater, Kreativwerkstatt, Mediencenter, Modellbau, Fotolabor, Kinderfeste, offener Treff, Jugendclub, Ferienangebote, Jugendgesprächsrunde" ;
+    rdfs:label "Der Anker" .
+
+<http://leipzig-data.de/Data/Ort/Attac.Leipzig>
+    ld:Kurzinformation "Wir sind ca. 15-20 Aktive bei ca. 110 Leipziger attac Mitgliedern. Wir mobilisieren zu regionalen, bundesweiten sowie internationalen Aktionen bzw. Protesten und organisieren regelmäßige thematische Veranstaltungen, Filmabenden oder Podiumsdiskussionen. Mithilfe ist natürlich standig erwünscht. Reinschauen und mitreden ist immer möglich und völlig unabhängig von einer ATTAC-Mitgliedschaft! " ;
+    ld:hasURL "http://www.attac-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Attac Leipzig" .
+
+ldo:Auwaldstation
+    ld:Finanzierung "Am 19.12.2011 wird ein Zuwendungsvertrag unterzeichnet, der dem Verein auf der Basis eines Stadtratsbeschlusses eine jährliche Unterstützung von 35.000 Euro zusichert." ;
+    ld:Kurzinformation "Die Auwaldstation liegt unmittelbar am Naturschutzgebiet Burgaue im Leipziger Auwald. Als Bildungs- und Informationsstätte steht sie allen Besuchern täglich offen und bietet zahlreiche Informationen zum einzigartigen Leipziger Auwald sowie Anregungen zu praktischem Naturschutz. <br/> Interaktive Lernspiele laden Jung und Alt zum Testen ihrer Naturkenntnisse ein. Insbesondere für Kinder- und Jugendgruppen werden spannende Naturerlebnisprogramme angeboten. An den Wochenenden finden thematische Exkursionen, Vorträge und Schauvorführungen aus dem alten Handwerk statt. Weiterhin verfügt die Auwaldstation über eine kleine Galerie im Kaminzimmer, wo wechselnde Ausstellungen mit Bezug zur Natur präsentiert werden.", "Die Auwaldstation steht allen Besuchern offen und bietet zahlreiche Informationen zum einzigartigen Leipziger Auwald sowie zum Schlosspark Lützschena. Schulklassen wird ein lehrplannaher Erlebnisunterricht mitten in der Natur geboten. An den Wochenenden finden regelmäßig Natur- und Schlossparkexkursionen, Vorträge sowie Schauvorführungen aus dem alten Handwerk statt. ", "Umweltbildungsprogramm rund um den Auwald" ;
+    ld:Leistungsangebot "Angebot thematischer Naturexkursionen an den Wochenenden", "Beratung zu praktischem Natur- und Umweltschutz, Bestimmung von Tier- und Pflanzenarten", "Bereitstellung von Material zu Themen im Bereich Natur und Umwelt", "Fortbildung für Erzieher und Lehrer", "Gestaltung und Durchführung von Naturerlebnisprogrammen für Bildungs- und Betreuungseinrichtungen", "Vermittlung fachlicher Inhalte in Kombination mit Abenteuer, Entdecken und Experimentieren" ;
+    ld:Oeffnungszeiten "Mo bis Fr 9:00-16:00 Uhr", "Wochenende und Feiertage 12:00-18:00 Uhr" ;
+    ld:Zielstellung "Nach dem Prinzip „Lernen mit Herz, Hand und Verstand“ werden fachliche Inhalte mit Bezug zur Natur vermittelt. „Bewegend“ die Natur erleben bietet einen optimalen Ausgleich zum Schulalltag, fördert den Gemeinschaftssinn, Kreativität sowie Phantasie." ;
+    ld:engagedPerson ldp:Seidel_Franka ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Schlossweg.11> ;
+    ld:hasEmail "auwaldstation@t-online.de" ;
+    ld:hasFax "0341-2537753" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Auwaldstation ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-4621895" ;
+    ld:hasURL "http://www.auwaldstation.de" ;
+    ld:hasUW_id "veranstalter/1042" ;
+    a ld:Ort ;
+    rdfs:label "Auwaldstation Leipzig" .
+
+ldo:BA-Leipzig
+    ld:Kurzinformation "Die Staatliche Studienakademie Leipzig verknüpft mit ihrem Dualen Studium Theorie und Praxis. In 6 Semestern werden solide Fachkenntnisse und betriebspraktische Handlungskompetenz vermittelt. Jedes Semester besteht aus einem Halbsemester in der Studienakademie (Theorie) und einem Halbsemester im Unternehmen (Praxis). Die Staatliche Studienakademie Leipzig verbindet moderne Studieninhalte mit Praxisnähe und dem berufsbefähigenden Abschluss als Bachelor of Arts bzw. Bacherlor of Science. Die Vermittlungsquoten der Absolventen sind stetig auf hohem Niveau. Insgesamt nehmen durchschnittlich 95% der Absolventen ihre Tätigkeit in der Praxis auf.<br>Die Vorteile auf einen Blick: <ul><li> praxisintegriert und wissenschaftsgeleitet</li> <li>Vergütung durch den Praxispartner</li> <li>hohe Übernahme- und Vermittlungsrate</li> <li>keine bzw. sehr geringe Einarbeitungszeiten für Absolventen</li> </ul>" ;
+    ld:Oeffnungszeiten "Mo bis Do 7:30-17:00 Uhr; Fr 7:30-15:00 Uhr" ;
+    ld:contactPerson ldp:Schulze_Susanne ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.SchoenauerStrasse.113> ;
+    ld:hasEmail "susanne.schulze@ba-leipzig.de" ;
+    ld:hasFax "0341-42743-331" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:BA-Leipzig ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-42743-404" ;
+    ld:hasURL "http://www.ba-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" .
+
+ldo:BAFF
+    ld:Art "offener Kinder- und Jugendtreff" ;
+    ld:Zielgruppe "Kinder und Jugendliche" ;
+    ld:contactPerson ldp:Pauli_Stev ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.AmElsterwehr.4> ;
+    ld:hasEmail "baffnet@gmx.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/BV.Bachviertel> ;
+    ld:hasTelefon "0341-9832814" ;
+    ld:hasURL "http://www.baffnet.de" ;
+    a ld:Ort ;
+    rdfs:comment "offener Kinder- und Jugendtreff" ;
+    rdfs:label "BAFF - Jugendtreff Bachviertel" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Boehlitz-Ehrenberg>
+    ld:hasFax "0341-49577833" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-4957780" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Böhlitz-Ehrenberg" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Fahrbibliothek>
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0177-2507271", "0341-9420110" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Fahrbibliothek" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Gohlis>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Georg-Schumann-Strasse.105> ;
+    ld:hasFax "0341-9102160" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-9013764" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Gohlis" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Mitte>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.15> ;
+    ld:hasFax "0341-4111018" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-4111018" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Grünau-Mitte" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Nord>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.PlovdiverStrasse.40> ;
+    ld:hasFax "0341-4110031" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-4110031" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Grünau-Nord" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Sued>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.AnderKotsche.11-13> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-9420115" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Grünau-Sued" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Holzhausen>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04288.Arthur-Polenz-Strasse.12> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "034297-45645" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Holzhausen" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Luetzschena-Stahmeln>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.AmBrunnen.4> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-123-5574" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Lützschena-Stahmeln" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Mockau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04357.EssenerStrasse.102> ;
+    ld:hasFax "0341-6021303" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-6021303" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Mockau" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Paunsdorf>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04329.Platanenstrasse.37> ;
+    ld:hasFax "0341-2515534" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-2515534" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Paunsdorf" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Plagwitz>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.ZschocherscheStrasse.14> ;
+    ld:hasFax "0341-4804375" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-4804375" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Plagwitz" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Reudnitz>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.DresdnerStrasse.80> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-9901121" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Reudnitz" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Schoenefeld>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Shukowstrasse.56> ;
+    ld:hasFax "0341-2311392" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-2311392" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Schönefeld" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Suedvorstadt>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Steinstrasse.42> ;
+    ld:hasFax "0341-3015473" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-3015473" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Südvorstadt" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Volkmarsdorf>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.TorgauerPlatz.3> ;
+    ld:hasFax "0341-6802021" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-6802019" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Volkmarsdorf" .
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Wiederitzsch>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04158.ZurSchule.10> ;
+    ld:hasFax "0341-5212443" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    ld:hasTag ldtag:Bibliothek ;
+    ld:hasTelefon "0341-5212439" ;
+    a ld:Ort ;
+    rdfs:label "Bibliothek Wiederitzsch" .
+
+ldo:Billardakademie
+    ld:Art "Sommercamps, Ferienangebote, Angebote für Schulklassen, Projekte zur Förderung von Hochbegabungen sowie spezielle Hilfen für Teilnehmer mit Lernstörungen" ;
+    ld:Finanzierung "gefördert aus Mitteln der EU und des Freistaates Sachsen <i>Investitionen in Ihre Zukunft</i>" ;
+    ld:Kosten "ca. 4,00 bis 30,00 Euro / Teilnehmer" ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Schülerinnen und Schüler ab Klassenstufe 5" ;
+    ld:Zielstellung "Förderung individueller Lern- und Leistungspotenziale im mathematisch-naturwissenschaftlichen Bereich anhand des Billardspiels (physikalische und biologische Abläufe)" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Nonnenstrasse.19> ;
+    ld:hasEmail "info@ba-leipzig.org" ;
+    ld:hasStatus "inaktiv" ;
+    ld:hasSupplier ldt:Billardakademie ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-6044565" ;
+    ld:hasURL "www.ba-leipzig.org" ;
+    a ld:Ort ;
+    rdfs:comment "Preisträger des \"Innovationspreis Weiterbildung des Freistaates Sachsen 2009\"", "Seit Winterferien 2011 keine erkennbaren Aktivitäten mehr" ;
+    rdfs:label "Billard-Akademie Leipzig" .
+
+ldo:Cafe-Grundmann
+    ld:hasAPIId "Venue.65" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.August-Bebel-Strasse.2>, <http://leipzig-data.de/Data/Adresse/04315.Lutherstrasse.10> ;
+    ld:hasURL "http://www.cafe-grundmann.de" ;
+    a ld:Ort ;
+    rdfs:label "Café Grundmann" .
+
+<http://leipzig-data.de/Data/Ort/Caffe.Pascucci>
+    ld:hasAPIId "Venue.16" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Thomasgasse.2> ;
+    a ld:Ort ;
+    rdfs:comment "Cafe im Zentrum Leipzigs" ;
+    rdfs:label "Caffe Pascucci Marktgalerie Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/Caritas.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/Strasse/Elsterstrasse.15> ;
+    a ld:Ort ;
+    rdfs:label "Caritasverband Leipzig" .
+
+ldo:Cinemabstruso
+    ld:hasAPIId "Venue.59" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Siemeringstrasse.20> ;
+    a ld:Ort ;
+    rdfs:label "Cinemabstruso" .
+
+<http://leipzig-data.de/Data/Ort/Cinemabstruso.Office>
+    ld:hasAPIId "Venue.25" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.ZschocherscheStrasse.61> ;
+    a ld:Ort ;
+    rdfs:label "Cinemabstruso Office" .
+
+<http://leipzig-data.de/Data/Ort/Columbus.Umweltgarten>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Marschnerstrasse.22> ;
+    ld:hasEmail "kontakt@natur-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Umwelt ;
+    ld:hasTelefon "0341-1491735" ;
+    ld:hasURL "http://www.natur-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Columbus - Umweltgarten" .
+
+ldo:ComputerSpielSchule
+    ld:Art "Computerpool und Betreuung und Anleitung durch geschulte Pädagogen (innerhalb von Öffnungszeiten)" ;
+    ld:Finanzierung "nein" ;
+    ld:Hintergrund "Seit 2008 ist die ComputerSpielSchule Leipzig Ort der Begegnung, Beratung und des Lernens. Nach kurzer Umzugspause öffnete sie am 21. Juni 2011 wieder ihre Pforten. Die Betreuung vor Ort erfolgt durch geschulte Pädagoginnen und Pädagogen. Die ComputerSpielSchule Leipzig ist ein Kooperationsprojekt der Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK) und der Universität Leipzig mit Unterstützung der Leipziger Messe GmbH und der Stadt Leipzig." ;
+    ld:Kosten "für Kinder u. Jugendliche 1 Euro/h, in Begleitung von Eltern, Großeltern usw. kostenfrei" ;
+    ld:Kurzinformation "Die ComputerSpielSchule stellt eine feste Institution dar, die ganzjährig ein Ort der Begegnung und Beratung im Kontext von Computerspielen ist. Neben einer generationsübergreifenden Medienarbeit durch das Angebot des gemeinsamen Spielens innerhalb der Öffnungszeiten werden zielgruppenspezifische Workshops sowie Fortbildungen für Pädagogen und Multiplikatoren angeboten. Das Ziel ist es, Medienkompetenz zu vermitteln und die Diskrepanz zwischen den Generationen abzubauen." ;
+    ld:Oeffnungszeiten "Mo, Di und Do 14:00-18:00 Uhr, gemäß Absprache: Fortbildungen, Workshops, Schülerprojekte. Zudem finden außerhalb der Öffnungszeiten spezielle Familien- und Ferienangebote statt." ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Eltern, Pädagogen, Kinder, Jugendliche" ;
+    ld:Zielstellung "Kompetenter Umgang von Kindern, Jugendlichen, Eltern und Pädagogen mit der Computerspiel- und Unterhaltungskultur" ;
+    ld:contactPerson ldp:Warkus_Hartmut ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Elsbethstrasse.2-4> ;
+    ld:hasEmail "info@computerspielschule.org", "philipp@computerspielschule.org" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Medienpaedagogik ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-9735887", "0341-9735892" ;
+    ld:hasURL "http://www.computerspielschule.org" ;
+    a ld:Ort ;
+    rdfs:comment "Am 21. Juni 2011 fand die feierliche Wiedereröffnung der ComputerSpielSchule Leipzig statt. In ihren neuen Räumlichkeiten im Friedrich-Schiller-Gymnasium heißt es ab sofort wieder: Miteinander spielen! Gemeinsam entdecken! Voneinander lernen!" ;
+    rdfs:label "ComputerSpielSchule Leipzig" .
+
+ldo:ComputerclubXXXLuetzschena-Stahmeln
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Oelhafenstrasse.7> ;
+    ld:hasEmail "ccls@luetzschena-stahmeln.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-4619814" ;
+    ld:hasURL "http://www.ccls-online.de" ;
+    a ld:Ort ;
+    rdfs:label "Computerclub Lützschena-Stahmeln" .
+
+ldo:CreativApotheke
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Antonienstrasse.41> ;
+    ld:hasEmail "creativapotheke-leipzig@email.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-4243735" ;
+    a ld:Ort ;
+    rdfs:label "Creativ Apotheke" .
+
+<http://leipzig-data.de/Data/Ort/DNB.DBSM>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.1> ;
+    ld:hasEmail "dbsm@d-nb.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:DNB ;
+    ld:hasTag ldtag:Museum ;
+    ld:hasTelefon "0341-2271324" ;
+    ld:hasURL "http://www.d-nb.de" ;
+    a ld:Ort ;
+    rdfs:label "Deutsches Buch- und Schriftmuseum der Deutschen Nationalbibliothek" .
+
+<http://leipzig-data.de/Data/Ort/DW.Garskestrasse>
+    ld:Hintergrund "Schulsozialarbeit wird seit 1996 durch die Diakonie Leipzig an der 90. Grundschule angeboten. Damit war Schulsozialarbeit an einer Grundschule erstmals in Leipzig vertreten. Am Förderzentrum für Erziehungshilfe wird Schulsozialarbeit seit 1998 angeboten und gehört damit zu einem der langjährigen Kooperationspartnern der Schulen." ;
+    ld:contactPerson ldp:Retznick_Laura ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.19-21> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/DW.InnereMission> ;
+    ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
+    ld:hasURL "http://www.diakonie-leipzig.de/kinder-jugend-evangelische-jugendhilfe.html" ;
+    a ld:Ort ;
+    rdfs:label "Förderzentrum der Diakonie Leipzig" .
+
+ldo:Distillery
+    ld:hasAPIId "Venue.18" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Kurt-Eisner-Strasse.108> ;
+    a ld:Ort ;
+    rdfs:label "Distillery" .
+
+ldo:DoelitzerWassermuehle
+    ld:Art "außerschulische und Lehrplan begleitende Angebote zu den Themen „WASSER und ENERGIE erleben“" ;
+    ld:Finanzierung "Förderung durch SW Leipzig, 1 AGHE als pädagogische Betreuung" ;
+    ld:Hintergrund "seit 2008" ;
+    ld:Kosten "2,00 - 2,50 Euro pro Teilnehmer" ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Kindergartenkinder, Grundschüler, Mittelschüler" ;
+    ld:Zielstellung "Erlebnisorientierte Form der Umweltpädagogik, experimentelles Erkunden und praktische Beispiele für ressourcenschonenden Umgang mit Wasser und Energie" ;
+    ld:contactPerson ldp:Reschke_Katrin ;
+    ld:engagedPerson ldp:Reschke_Volker ;
+    ld:hasFax "0341-33399734" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:GAZ ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-3389352" ;
+    ld:hasURL "http://www.doelitzer-wassermuehle.de/" ;
+    a ld:Ort ;
+    rdfs:comment "Auslastung Mai-Juni 100%, August - April ca. 80%" ;
+    rdfs:label "Dölitzer Wassermühle" .
+
+<http://leipzig-data.de/Data/Ort/EineWelt.Arbeitsstelle>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Paul-List-Strasse.19> ;
+    ld:hasEmail "juliane@einewelt-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-3010143" ;
+    ld:hasURL "http://www.einewelt-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Eine Welt e.V. - Arbeitsstelle" .
+
+ldo:Esse74
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04357.Rosenowstrasse.24> ;
+    ld:hasEmail "esse74@arcor.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-6015823" ;
+    a ld:Ort ;
+    rdfs:label "EssE 74 Internationaler Bund e.V., Verbund Lpz." .
+
+ldo:EssentialExistenceGallery
+    ld:hasAPIId "Venue.11" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.93> ;
+    a ld:Ort ;
+    rdfs:comment "center for new media and interactiv art <br/> [open space]" ;
+    rdfs:label "essential existence gallery" .
+
+<http://leipzig-data.de/Data/Ort/FZ.Arena>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.8> ;
+    ld:hasEmail "arena-leipzig@froebel-gruppe.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:FroebelGruppe ;
+    ld:hasTelefon "0341-4299745" ;
+    ld:hasURL "http://www.Froebel-gruppe.de" ;
+    a ld:Ort ;
+    rdfs:label "JZ ARENA" .
+
+<http://leipzig-data.de/Data/Ort/FZ.Kanal28>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.AmKanal.28> ;
+    ld:hasEmail "S.Scherbaum@wabe-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:WABE ;
+    ld:hasTelefon "0341-4972415" ;
+    ld:hasURL "http://www.wabe-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "JZ am Kanal 28" .
+
+<http://leipzig-data.de/Data/Ort/FZ.Lichtblick>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04288.Hauptstrasse.34> ;
+    ld:hasEmail "familienzentrum-lichtblick@web.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-3542848" ;
+    ld:hasURL "http://www.familienzentrum-lichtblick.de" ;
+    a ld:Ort ;
+    rdfs:label "Lichtblick e.V. - Familienzentrum Markkleeberg" .
+
+<http://leipzig-data.de/Data/Ort/FZ.Oskar>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Gabelsbergerstrasse.30> ;
+    ld:hasEmail "JKZ_OSKAR@t-online.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-6865680" ;
+    a ld:Ort ;
+    rdfs:label "JKZ O.S.K.A.R" .
+
+<http://leipzig-data.de/Data/Ort/FZ.Voelle>
+    ld:Hintergrund "Zentral auf der Stuttgarter Allee gelegen befindet sich der Offene Freizeittreff \"Völkerfreundschaft\". Das Haus wurde 1983 zunächst als Kulturhaus \"Völkerfreundschaft\" eröffnet und im Jahr 1993 an das jetzige Amt für Jugend, Familie und Bildung übergeben." ;
+    ld:Kurzinformation "Der Offene Treff \"Völle\" mit seinem Kinder- und Jugendcafè ist das Herzstück des Hauses und freut sich auf deinen/euren Besuch! " ;
+    ld:contactPerson ldp:Abidine_Zeinel ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.9> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> ;
+    ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
+    ld:hasTelefon "0341-4115002" ;
+    ld:hasURL "http://www.fril.de/voelle/" ;
+    a ld:Ort ;
+    rdfs:label "FZ Völkerfreundschaft" .
+
+<http://leipzig-data.de/Data/Ort/Familienzentrum.Gruenau>
+    ld:Kurzinformation "Offenes Kinderhaus mit Bauspielplatz und Werkstätten für Kinder im Alter von 7-14 Jahren" ;
+    ld:contactPerson ldp:Triphaus_Joachim ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.Liliensteinstrasse.1> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Caritas.Leipzig> ;
+    ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
+    ld:hasURL "http://www.caritas-leipzig.de/" ;
+    a ld:Ort ;
+    rdfs:label "Caritas Kinder-, Jugend- und Familienzentrum Grünau" .
+
+ldo:Filmschule
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Heinrichstrasse.6> ;
+    ld:hasEmail "Filmschuleleipzig@web.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Filmschule ;
+    ld:hasTelefon "0341-2119158" ;
+    ld:hasURL "http://www.filmschule-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Filmschule Leipzig" .
+
+ldo:FotoschuleLeipzig
+    ld:hasAPIId "Venue.42" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/.Waldstrasse.35> ;
+    a ld:Ort ;
+    rdfs:label "Fotoschule Leipzig (Studio Golden Eyes)" .
+
+ldo:Frauenkultur
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Windscheidstrasse.51> ;
+    ld:hasEmail "hallo@frauenkultur.leipzig.w4w.net" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Frauenkultur ;
+    ld:hasTelefon "0341-2130030" ;
+    ld:hasURL "http://www.frauenkultur-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Frauenkultur e.V." .
+
+ldo:FruehesForschenSachsen
+    ld:Finanzierung "nein" ;
+    ld:Hintergrund "seit 2009" ;
+    ld:Kosten "9,00 Euro pro Kurseinheit" ;
+    ld:Kurzinformation "FRÜHES FORSCHEN möchte mit spannenden Experimenten Kindern erste Grundlagen in Chemie, Physik und Biologie vermitteln. Experimentieren, ausprobieren, den Spaß am Forschen und Entdecken ausleben und dabei spielerisch die Welt erfahren – bei uns können die kleinen Forscher spielerisch und altersgerecht die Welt von Wissenschaft und Technik kennenlernen." ;
+    ld:Leistungsangebot "Angebote für Feste und Feiern", "Ferien- und Wochenendangebote", "Ganztagesangebote", "Projektwochen für Grundschulen", "fortlaufende Kurse", "fächerübergreifender Unterricht und Projekttage", "spezielle Angebote für Kindertagesstätten (z. B. Experimentierführerschein) Studium" ;
+    ld:Oeffnungszeiten "Nach Vereinbarung" ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Kinder im Alter zwischen 4 und 10 Jahren" ;
+    ld:Zielstellung "Spaß am Forschen und Entdecken bei Kindern von 4 bis 10 Jahren fördern und Ihnen dabei spielerisch die Welt erklären und Zugang zu naturwissenschaftlichen Themen bieten." ;
+    ld:contactPerson ldp:Nagler_Petra ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.AmRussischenGarten.2> ;
+    ld:hasEmail "petra.nagler@fruehes-forschen.de" ;
+    ld:hasFax "0341-6879080" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:FFS ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-6879080" ;
+    ld:hasURL "http://www.fruehes-forschen-sachsen.de" ;
+    a ld:Ort ;
+    rdfs:label "Frühes Forschen Sachsen" .
+
+ldo:GaraGe
+    ld:hasAPIId "Venue.51" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.97> ;
+    a ld:Ort ;
+    rdfs:label "GaraGe" .
+
+ldo:Garage
+    ld:Art "Praxisorientierte Erlebniswelt (\"aktives Museum\"), Führungen, Kurse, Projekttage und Workshops" ;
+    ld:Finanzierung "nein" ;
+    ld:Hintergrund "seit 2001" ;
+    ld:Kosten "zwischen 2,90 und 14,10 Euro" ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Kinder und Jugendliche im Alter zwischen 5 und 25 Jahren" ;
+    ld:Zielstellung "Kinder und Jugendliche für Wirtschaft und Technik begeistern, interdisziplinäre Herangehensweise" ;
+    ld:engagedPerson ldp:TraegerNestler_Angelika ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.97> ;
+    ld:hasEmail "kontakt@g-a-r-a-g-e.com" ;
+    ld:hasFax "0341-8708610" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Garage ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-870860" ;
+    ld:hasURL "http://www.g-a-r-a-g-e.com" ;
+    a ld:Ort ;
+    rdfs:label "GaraGe - Technologiezentrum für Jugendliche" .
+
+ldo:GfZK
+    ld:hasAPIId "Venue.66" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Karl-Tauchnitz-Strasse.11> ;
+    ld:hasEmail "foryou@gfzk.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-1408118" ;
+    ld:hasURL "http://www.gfzk.de" ;
+    a ld:Ort ;
+    rdfs:label "Galerie für Zeitgenössische Kunst" .
+
+<http://leipzig-data.de/Data/Ort/Grundschule.90>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.19-21> ;
+    a ld:Ort ;
+    rdfs:label "90. Grundschule" .
+
+ldo:HTWK
+    ld:Kurzinformation "Die Hochschule für Technik, Wirtschaft und Kultur Leipzig wurde 1992 als Hochschule der angewandten Wissenschaften gegründet. Sie setzt damit eine lange Tradition der ingenieurtechnischen Bildungseinrichtungen und der Lehrstätten für Bibliothekare, Buchhändler und Museologen in Leipzig fort. Mit etwa 7000 Studierenden gehört sie zu den größten Fachhochschulen Deutschlands." ;
+    ld:Leistungsangebot "Ferienhochschule", "Girls' Day", "Projekttage", "Schülerpraktika" ;
+    ld:hasAPIId "Venue.24" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Karl-Liebknecht-Strasse.132> ;
+    ld:hasEmail "aherrmann@k.htwk-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:HTWK ;
+    ld:hasTag ldtag:Forschung, ldtag:MINT ;
+    ld:hasTelefon "0341-30766156" ;
+    ld:hasURL "http://www.htwk-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK)" .
+
+<http://leipzig-data.de/Data/Ort/HTWK.MET>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.KoburgerStrasse.62> ;
+    ld:hasFax "0341-30764202" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:HTWK ;
+    ld:hasTag ldtag:Forschung, ldtag:MINT ;
+    ld:hasTelefon "0341-30764221" ;
+    ld:hasURL "http://fbme.htwk-leipzig.de" ;
+    ld:hasUW_id "766" ;
+    a ld:Ort ;
+    rdfs:comment "Kontakt: HTWK Leipzig, Fakultät Maschinen- und Energietechnik, Frau A. Sommer, PF 301166, 04251 Leipzig" ;
+    rdfs:label "HTWK, Fakultät Maschinen- und Energietechnik" .
+
+<http://leipzig-data.de/Data/Ort/HWK.HausKleineForscher>
+    ld:Art "naturwissenschaftliche und pädagogische Aus- und Weiterbildung von Erzieherinnen und Erziehern, Materialien und Experimente" ;
+    ld:Finanzierung "nein" ;
+    ld:Hintergrund "seit 2009" ;
+    ld:Kosten "15,00 Euro" ;
+    ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
+    ld:Zielgruppe "Erzieherinnen aus Kita und Hort" ;
+    ld:Zielstellung "Fundierte Förderung von angewandter Naturwissenschaft in Kitas, eigenständiges Suchen und Antworten und Erläuterungen für die beobachteten Phänomene, gemeinsames experimentieren in Gruppen, Fördern der kindlichen Feinmotorik beim Experimentieren, verbalisieren von Beobachtungen und Schlussfolgerungen" ;
+    ld:engagedPerson ldp:Maennig_Uwe ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04158.Steinweg.3> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:HWK ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasURL "http://www.haus-der-kleinen-forscher.de" ;
+    a ld:Ort ;
+    rdfs:comment "dauerhafte Fortsetzung geplant" ;
+    rdfs:label "Haus der kleinen Forscher" .
+
+ldo:Halle5
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Windscheidstrasse.51> ;
+    ld:hasEmail "verein@halle5.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-3055860", "0341-3055866" ;
+    ld:hasURL "http://www.halle5.de" ;
+    a ld:Ort ;
+    rdfs:label "Kinder- u. Jugendzentrum Halle 5 e.V." .
+
+ldo:Handelshochschule
+    ld:hasAPIId "Venue.34" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Jahnallee.59> ;
+    a ld:Ort ;
+    rdfs:label "Handelshochschule" .
+
+ldo:Hauptfeuerwache
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goerdelerring.7> ;
+    ld:hasEmail "joachim.petrasch@leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-1239512" ;
+    a ld:Ort ;
+    rdfs:label "Hauptfeuerwache" .
+
+ldo:HausSteinstrasse
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Steinstrasse.18> ;
+    ld:hasEmail "michael.rausch@haus-steinstrasse.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:HausSteinstrasse ;
+    ld:hasTelefon "0341-3913219" ;
+    ld:hasURL "http://www.haus-steinstrasse.de" ;
+    a ld:Ort ;
+    rdfs:label "Haus Steinstraße" .
+
+ldo:HdD
+    ld:hasAPIId "Venue.39", "Venue.40" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
+    a ld:Ort ;
+    rdfs:label "Haus der Demokratie" .
+
+ldo:HdG
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.GrimmaischeStrasse.6> ;
+    ld:hasEmail "klein@hdg.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-2220126" ;
+    ld:hasURL "http://www.hdg.de" ;
+    a ld:Ort ;
+    rdfs:label "Zeitgeschichtliches Forum Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau>
+    ld:Kurzinformation "Skate- und Jugendzentrum" ;
+    ld:contactPerson ldp:Bielig_Sven ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.63> ;
+    ld:hasEmail "info@heizhaus-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:UrbanSouls ;
+    ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
+    ld:hasURL "http://www.heizhaus-leipzig.de/" ;
+    a ld:Ort ;
+    rdfs:label "Heizhaus Leipzig" .
+
+ldo:HfTL
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Gustav-Freytag-Strasse.43-45> ;
+    a ld:Ort ;
+    rdfs:label "Hochschule für Telekommunikation Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/IB.Schulsozialarbeit.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.1> ;
+    a ld:Ort ;
+    rdfs:label "IB - Schulsozialarbeit" .
+
+ldo:Igelschutzzentrum
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04249.Hornstrasse.9> ;
+    ld:hasEmail "info@igelschutzzentrum.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Umwelt ;
+    ld:hasTelefon "0341-4247662" ;
+    ld:hasURL "http://www.igelschutzzentrum.de" ;
+    a ld:Ort ;
+    rdfs:label "Igelschutzzentrum" .
+
+ldo:Inspirata
+    ld:Auszeichnungen "2011 als Idee für die Bildungsrepublik (Initiative Deutschland – Land der Ideen unter Schirmherrschaft von Bundesbildungsministerin Prof. Dr. A. Schavan)", "Familienfreundlichkeitspreis 2010", "Leipziger Agenda-Preis 2011" ;
+    ld:Hintergrund "Die INSPIRATA wurde im Herbst 2008 im Zusammenhang mit dem Jahr der Mathematik gegründet. Nach Zwischenstationen im Kinosaal des Schulmuseums und im Uni-Interim Brühl-Hochhaus finden Sie die INSPIRATA seit Januar 2010 auf dem Gelände der Alten Messe." ;
+    ld:Kosten "2,00 Euro je Kind", "3,00 Euro je Erwachsener", "8,00 Euro Familienticket" ;
+    ld:Kurzinformation "Die INSPIRATA fördert die mathematisch-naturwissenschaftliche Bildung für jedermann, hauptsächlich für Schulklassen. Ihr Kern ist eine Sammlung von Exponaten, an Hand derer die Besucher Naturgesetze erfahren bzw. verinnerlichen können. Ferner werden lehrplanbezogene Workshops und spezielle Führungen angeboten. Charakteristisch ist ein intensives pädagogisches Betreuungssystem.", "Mathematisch-naturwissenschaftliches Bildungszentrum nach Vorbild des Gießeners Mathematikums, Exponate zum Experimentieren, Workshops, Lehrerfortbildungen" ;
+    ld:Langinformation <http://leipzig-data.de/Data/Orte/Inspirata.Lang> ;
+    ld:Leistungsangebot "Kindergeburtstagsbetreuungen mit Experimenten", "Mitmachmuseum mit mathematisch-naturwissenschaftlichen Exponaten und fachlicher Betreuung", "Thematische Führungen", "Thematische Weiterbildungen für Pädagogen", "Vorträge zu naturwissenschaftlichen und pädagogischen Inhalten", "Workshops zu mathematisch-naturwissenschaftlichen (Unterrichts-)Themen" ;
+    ld:Oeffnungszeiten "Einzelbesucher/Fam.: am 2. Samstag jedes Monats", "Ferien-Angebote und individuelle Besuchszeiten nach Abstimmung", "für Gruppen (nach Anmeldung): mo.-fr. 8:30, 10:30, 12:30, 14:30 Uhr" ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Schulklassen aller Schulformen und Alter (ab Grundschule), aber auch regelmäßig offen für jedermann" ;
+    ld:Zielstellung "Spielerische Kontakte mit Mathe und Physik für Kinder und Jugendliche und Interessierte aller Altersklassen unter Anleitung durch eingewiesene Lehramtsstudenten, Erarbeitung und Einrichtung von Workshops und anderen Unterrichtsangeboten zur Unterstützung des Lehramtsstudiums" ;
+    ld:contactPerson ldp:Petzschler_Ines ;
+    ld:engagedPerson ldp:Klimesch_Holger, ldp:Koenig_Wolfgang, ldp:Petzschler_Ines ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.4> ;
+    ld:hasEmail "kontakt@inspirata.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Inspirata ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-1259757" ;
+    ld:hasURL "http://www.inspirata.de" ;
+    a ld:Ort ;
+    rdfs:comment "Unterstützung durch Partner (Uni Leipzig, MPI MIS, SBA, HTWK Leipzig, Stadtverwaltung) und Sponsoren" ;
+    rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" .
+
+<http://leipzig-data.de/Data/Ort/Inspirata.Lang>
+    ld:hasURL "file://HG-Repo/Momotech/Inspirata.html" ;
+    a ld:InfoRecord ;
+    rdfs:comment "Inspirata-Eintrag bei Momotech http://www.motivation-technik-entdecken.de" ;
+    rdfs:label "Standard Inspirata Langinformation" .
+
+ldo:Instag
+    ld:Art "Freier Weiterbildner" ;
+    ld:Hintergrund "Seit dem 1. Juli 2010 firmiert unser Unternehmen unter InstaG - Institut für akademische Gesamtbildung GmbH. Die InstaG GmbH - wie bisher schon die EuroGene GmbH - steht dabei für seriöse, qualitativ hochwertige, bedarfs- und kundenorientierte Aus- und Weiterbildung mit einer hohen Praxisrelevanz und einer gleichbleibend hohen Qualität der Bildung. <br/> Unser Unternehmen wurde im Jahr 2005 von Frau Univ.-Prof. Dr. med. habil. Ursula Froster und dem Arzt und Diplom-Verwaltungswirt Dr. med. Armin Baumgartner aus der Universität Leipzig ausgegründet. Als An-Institut konzipiert, folgte es den Vorgaben und Empfehlungen der Bildungs- und Wissenschaftspolitik und übernahm dabei Aufgaben der postgraduierten Weiterbildung auf den Gebieten der Biotechnologie, Molekularbiologie sowie Medizin. Es erfüllte somit Aufgaben der Erwachsenenbildung, die von den Universitäten nicht mehr erfüllt werden konnten. <br/> Zunächst durch einen Kooperationsvertrag mit der Universität Leipzig verbunden, geht das Institut seit Mitte 2010 nun neue und eigene Wege." ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.1> ;
+    ld:hasEmail "info@instag-bildung.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Instag ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasURL <http://instag-bildung.de> ;
+    a ld:Ort ;
+    rdfs:label "Instag - Institut für akademische Gesamtbildung" .
+
+ldo:KE-Leipzig
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.5> ;
+    ld:hasURL <http://www.ke-leipzig.de> ;
+    a ld:Ort ;
+    rdfs:label "Kirchliche Erwerbsloseninitiative Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/KJND.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Ringstrasse.4> ;
+    a ld:Ort ;
+    rdfs:label "Kinder- und Jugendnotdienst Grünau" .
+
+<http://leipzig-data.de/Data/Ort/KJZ.Probstheida>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04289.Franzosenallee.23> ;
+    ld:hasEmail "KJFZZ@web.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-8614266" ;
+    a ld:Ort ;
+    rdfs:label "Kinder- und Jugendfreizeitzentrum Probstheida" .
+
+ldo:KJZXXDieInsel
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04249.Buttergasse.9> ;
+    ld:hasEmail "die-insel@kv-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig> ;
+    ld:hasTelefon "0341-4290217" ;
+    ld:hasURL "http://www.kv-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Kinder- und Jugendzentrum Die Insel" .
+
+ldo:KaosLeipzig
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Wasserstrasse.18> ;
+    ld:hasEmail "info@kaos-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-4803841" ;
+    ld:hasURL "http://www.kaos-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "KV Kulturwerkstatt KAOS" .
+
+ldo:Kapitaldruck
+    ld:hasAPIId "Venue.19" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Rossplatz.11> ;
+    a ld:Ort ;
+    rdfs:comment "Buchladen mit Cafe" ;
+    rdfs:label "Kapitaldruck" .
+
+<http://leipzig-data.de/Data/Ort/KiJu.Gruenau>
+    ld:Kurzinformation "Schwerpunkte der Arbeit: offene Kinder- und Jugendarbeit, erlebnispädagogische Projekte, Medienarbeit, Jugendbildung, Nachwuchsförderung und Ferienangebote." ;
+    ld:contactPerson ldp:Roeser_Sascha ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.HeilbronnerStrasse.16> ;
+    ld:hasEmail "info-kijuleipzig@gmx.de", "kijuleipzig@gmx.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KiJu.Gruenau> ;
+    ld:hasTelefon "0341-4113196" ;
+    ld:hasURL <http://www.kijuleipzig.de> ;
+    a ld:Ort ;
+    rdfs:label "Kinder- u. Jugendtreff Grünau" .
+
+ldo:KinderBueroLeipzig
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Rietschelstrasse.2> ;
+    ld:hasEmail "lehwald@leipziger-kinderbuero.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-3375666" ;
+    ld:hasURL "http://www.leipziger-kinderbüro.de" ;
+    a ld:Ort ;
+    rdfs:label "Leipziger Kinderbüro" .
+
+ldo:KinderExperimentierKabinett
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Elsbethstrasse.1> ;
+    ld:hasEmail "fraenzle@debitel.net" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-2334582" ;
+    a ld:Ort ;
+    rdfs:label "Kinder-Experimentier-Kabinett" .
+
+ldo:Kirsche
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Schulzeweg.11> ;
+    ld:hasEmail "kontakt@kinderhilfe-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Kinderhilfe.Leipzig> ;
+    ld:hasTelefon "0341-4211740" ;
+    ld:hasURL "http://www.kinderhilfe-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Kirsche - Offener Treff der Kinderhilfe e.V." .
+
+<http://leipzig-data.de/Data/Ort/Kita.Forscherinsel>
+    ld:Auszeichungen "2012 Haus der kleinen Forscher, LVZ 21.02.2012" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04420.AmaltenBahnhof.21> ;
+    ld:hasEmail "awo-kita-forscherinsel@web.de" ;
+    ld:hasFax "034205-411382" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/AWO.LeipzigerLand> ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "034205-411383" ;
+    ld:hasURL "http://kita-forscherinsel.npage.de/", "http://www.awo-leipzigerland.de/html/kita__forscherinsel__markranst.html" ;
+    a ld:Ort ;
+    rdfs:label "Kita Forscherinsel Seebenisch" .
+
+ldo:KleineTraeumerei
+    ld:hasAPIId "Venue.10" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Muenzgasse.12> ;
+    a ld:Ort ;
+    rdfs:comment "Eine kleine Kneipe in unserer Straße" ;
+    rdfs:label "Kleine Träumerei" .
+
+ldo:Kollaborat
+    ld:hasAPIId "Venue.20" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04299.Ferdinand-Jost-Strasse.31> ;
+    a ld:Ort ;
+    rdfs:comment "Kollaborat ist ein kreativer und zuverlässiger Designpartner für Unternehmen, Organisationen und Privatpersonen mit den Schwerpunkten Corporate Design und Editorial Design" ;
+    rdfs:label "Kollaborat" .
+
+ldo:KommHaus
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.SellinerStrasse.17> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-9419132" ;
+    ld:hasURL "http://www.komm-haus.de" ;
+    a ld:Ort ;
+    rdfs:label "KOMM-Haus Grünau" .
+
+ldo:KreativeSpinner
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Spinnereistrasse.7> ;
+    ld:hasEmail "kreative-spinner@halle14.org" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-4924202" ;
+    a ld:Ort ;
+    rdfs:label "Kreative Spinner - Halle 14" .
+
+ldo:KreativesLeipzig
+    a ld:Ort ;
+    rdfs:label "Kreatives Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/Kreativzentrum.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.17> ;
+    ld:hasEmail "Kreativzentrum@t-online.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Kreativzentrum.Gruenau> ;
+    ld:hasTelefon "0341-4225393" ;
+    ld:hasURL "http://www.Kreativzentrum-Gruenau.de" ;
+    a ld:Ort ;
+    rdfs:label "Kreativzentrum Grünau" .
+
+ldo:LOFFT
+    ld:hasAPIId "Venue.28" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.AmLindenauerMarkt.21> ;
+    a ld:Ort ;
+    rdfs:label "LOFFT" .
+
+ldo:LSGM
+    ld:Auszeichnungen "2005 Teubnerpreis" ;
+    ld:Langinformation <http://leipzig-data.de/Data/Orte/LSGM.Lang> ;
+    ld:engagedPerson ldp:Graebe_HansGert, ldp:Schueler_Axel ;
+    ld:hasAnschrift "c/o Math. Institut, Universität Leipzig, PF 100920, 04109 Leipzig" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:LSGM ;
+    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
+    ld:hasTelefon "0341-9732248" ;
+    ld:hasURL "http://www.lsgm.de" ;
+    a ld:Ort ;
+    rdfs:comment "Mitglied im LJBW, Partner des SMK und der SBA-L im Bereich Förderung von MINT-Talenten" ;
+    rdfs:label "Leipziger Schülergesellschaft für Mathematik" .
+
+<http://leipzig-data.de/Data/Ort/LSGM.Lang>
+    ld:hasURL "file://HG-Repo/Momotech/LSGM.html" ;
+    a ld:InfoRecord ;
+    rdfs:comment "LSGM-Eintrag bei Momotech http://www.motivation-technik-entdecken.de" ;
+    rdfs:label "Standard LSGM Langinformation" .
+
+ldo:LeipzigOnRails
+    a ld:Ort ;
+    rdfs:label "Leipzig on Rails" .
+
+ldo:LeipzigSchoolOfDesign
+    ld:hasAPIId "Venue.61" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.99> ;
+    a ld:Ort ;
+    rdfs:label "Leipzig School Of Design" .
+
+<http://leipzig-data.de/Data/Ort/MGH.LeipzigMitte>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Hinrichsenstrasse.14> ;
+    ld:hasEmail "irg-projekt@gmx.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-2255745" ;
+    ld:hasURL "http://www.mehrgenerationenhaueser.de/Leipzig-mitte" ;
+    a ld:Ort ;
+    rdfs:label "Mehrgenerationenhaus Leipzig Mitte" .
+
+<http://leipzig-data.de/Data/Ort/MJA.Leipzig>
+    ld:Kurzinformation "Beratung. Unterstützung. Begleitung. Vermittlung. Information." ;
+    ld:contactPerson ldp:Zschuckelt_Katrin ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.3> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/MJA.Leipzig> ;
+    ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
+    ld:hasURL "http://kuebelonline.de/" ;
+    a ld:Ort ;
+    rdfs:label "Mobile Jugendarbeit Leipzig" .
+
+ldo:MPI-MIS
+    ld:Art "Vorträge, Schülerprojekte" ;
+    ld:Hintergrund "Das MPI ist auf diesem Gebiet schon viele Jahre aktiv und hat diese Angebote dauerhaft eingerichtet." ;
+    ld:Kosten "in der Regel keine" ;
+    ld:Kurzinformation "Leistungsangebot für Schulen und Schulklassen: Vorträge für Schülerinnen und Schüler an Gymnasien. Die Wissenschaftlerinnen und Wissenschaftler des Instituts geben dabei Einblicke in aktuelle mathematische und naturwissenschaftliche Forschungsthemen. Die Vorträge finden wahlweise am Institut oder an den Schulen statt.<br/> <br/> Weiterhin können Schülerprojekttage und Schülerpraktika nach individueller Absprache durchgeführt werden." ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Klassenstufe 9-12 Gymnasium" ;
+    ld:contactPerson ldp:Gregor_Jana ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Inselstrasse.22> ;
+    ld:hasEmail "jgregor@mis.mpg.de" ;
+    ld:hasFax "0341-9959658" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:MPI-MIS ;
+    ld:hasTag ldtag:Biologie, ldtag:Chemie, ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften, ldtag:Physik ;
+    ld:hasTelefon "0341-9959650" ;
+    ld:hasURL <http://www.mis.mpg.de> ;
+    a ld:Ort ;
+    rdfs:label "Max-Planck-Institut für Mathematik in den Naturwissenschaften" .
+
+<http://leipzig-data.de/Data/Ort/MPI.EVA>
+    ld:hasAPIId "Venue.62" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.6> ;
+    a ld:Ort ;
+    rdfs:label "Max-Planck-Institut für evolutionäre Anthropologie" .
+
+ldo:MediaCityLeipzig
+    ld:hasAPIId "Venue.35" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.AltenburgerStrasse.15> ;
+    a ld:Ort ;
+    rdfs:label "media city leipzig" .
+
+ldo:Medienwerkstatt
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Lessingstrasse.7> ;
+    ld:hasEmail "kontakt@medienwerkstatt-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-35520430" ;
+    ld:hasURL "http://www.medienwerkstatt-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Medienwerkstatt Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/Mittelschule.84>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.5> ;
+    a ld:Ort ;
+    rdfs:label "84. Mittelschule" .
+
+<http://leipzig-data.de/Data/Ort/Mittelschule.94>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.3> ;
+    a ld:Ort ;
+    rdfs:label "94. Mittelschule" .
+
+ldo:ModernMusicSchool
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Windmuehlenstrasse.26> ;
+    ld:hasEmail "i.biedermann@modernmusicschool.com" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-2603459" ;
+    ld:hasURL "http://www.modernmusicschool.com" ;
+    a ld:Ort ;
+    rdfs:label "Modern Music School" .
+
+<http://leipzig-data.de/Data/Ort/Muehlstrasse.Begegnungsstaette>
+    ld:Arbeitsformen "Projekte, Workshops, Kurse, Veranstaltungen" ;
+    ld:Art "soziokulturelles Zentrum" ;
+    ld:Kosten "teilweise" ;
+    ld:Zielgruppe "Kinder, Jugendliche, Familien, Senioren" ;
+    ld:contactPerson ldp:Hoernig_Karin ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Muehlstrasse.14> ;
+    ld:hasEmail "kontakt@muehlstrasse.de" ;
+    ld:hasFax "0341-9903602" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Muehlstrasse ;
+    ld:hasTelefon "0341-9903600" ;
+    ld:hasURL "http://www.muehlstrasse.de" ;
+    a ld:Ort ;
+    rdfs:label "Begegnungsstätte Mühlstraße" .
+
+<http://leipzig-data.de/Data/Ort/Muetterzentrum.Gruenau>
+    ld:Kurzinformation "Wir haben einen offenen Treff mit Spiel- und Kommunikationsraum, welchen wir als Zentrum eines sozialen, generationsübergreifenden Netzwerkes mit großfamilienähnlichen Strukturen im Stadtteil sehen. Dieses Kernangebot wird durch vielfältige Angebote, z.B. im Bereich der Familienbildung, der Gesundheitsförderung und der Kultur ergänzt. " ;
+    ld:contactPerson ldp:Simon_Ute ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Potschkaustrasse.50> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Muetterzentrum ;
+    ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
+    ld:hasURL "http://www.mütterzentrum-leipzig.de/" ;
+    a ld:Ort ;
+    rdfs:label "Müzel Familienzentrum Grünau" .
+
+<http://leipzig-data.de/Data/Ort/Museum.BildendeKuenste>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Katharinenstrasse.10> ;
+    ld:hasEmail "mdbk@leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Museum ;
+    ld:hasTelefon "0341-21699914" ;
+    ld:hasURL "http://www.mdbk.de" ;
+    a ld:Ort ;
+    rdfs:label "Museum der bildenden Künste" .
+
+<http://leipzig-data.de/Data/Ort/Museum.Druckkunst>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Nonnenstrasse.38> ;
+    ld:hasEmail "info@druckkunst-museum.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Museum ;
+    ld:hasTelefon "0341-231620" ;
+    ld:hasURL "http://www.druckkunst-museum.de" ;
+    a ld:Ort ;
+    rdfs:label "Museum für Druckkunst" .
+
+<http://leipzig-data.de/Data/Ort/Museum.Grassi>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Johannisplatz.5-11> ;
+    ld:hasEmail "grassimuseum@leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Museum ;
+    ld:hasTelefon "0341-2229114" ;
+    ld:hasURL "http://www.grassimuseum.de" ;
+    a ld:Ort ;
+    rdfs:label "GRASSI Museum für angewandte Kunst" .
+
+<http://leipzig-data.de/Data/Ort/Museum.Lipsikus>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Boettchergaesschen.3> ;
+    ld:hasEmail "elke.schaar@leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Museum ;
+    ld:hasTelefon "0341-9651340" ;
+    ld:hasURL "http://www.stadtgeschichtliches-museum-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Kinder- und Jugendmuseum LIPSIKUS" .
+
+ldo:Naturkundemuseum
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Lortzingstrasse.3> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Museum ;
+    ld:hasTelefon "0341-982210" ;
+    ld:hasURL "http://www.leipzig.de/naturkundemuseum" ;
+    a ld:Ort ;
+    rdfs:label "Naturkundemuseum" .
+
+ldo:NetzwerkEnergieUmwelt
+    ld:contactPerson ldp:Glowacki_Romann, ldp:Keck_Lisa ;
+    ld:hasURL <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
+    a ld:Ort ;
+    rdfs:label "Netzwerk Energie und Umwelt" .
+
+ldo:NeuesSchauspielLeipzig
+    ld:hasAPIId "Venue.68" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.LuetznerStrasse.29> ;
+    a ld:Ort ;
+    rdfs:label "Neues Schauspiel Leipzig" .
+
+ldo:NochBesserLeben
+    ld:hasAPIId "Venue.38" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.MerseburgerStrasse.25> ;
+    a ld:Ort ;
+    rdfs:label "Noch Besser Leben" .
+
+<http://leipzig-data.de/Data/Ort/OFT.Bagger>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04349.KlingenthalerStrasse.14> ;
+    ld:hasEmail "oft-bagger@web.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-9211130" ;
+    a ld:Ort ;
+    rdfs:label "OFT Am Bagger" .
+
+<http://leipzig-data.de/Data/Ort/OFT.Crazy>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04329.ZumWaeldchen.6> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-2511424" ;
+    a ld:Ort ;
+    rdfs:label "OFT Crazy" .
+
+<http://leipzig-data.de/Data/Ort/OFT.Muehlholz>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Prinz-Eugen-Strasse.34> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-3013004" ;
+    ld:hasURL "http://www.oft-muehlholz.de" ;
+    a ld:Ort ;
+    rdfs:label "OFT Am Mühlholz" .
+
+<http://leipzig-data.de/Data/Ort/OFT.Rabet>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Eisenbahnstrasse.54> ;
+    ld:hasEmail "oft-rabet@web.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-6995598" ;
+    ld:hasURL "http://www.oft-rabet.de" ;
+    a ld:Ort ;
+    rdfs:label "OFT Rabet" .
+
+<http://leipzig-data.de/Data/Ort/OFT.Sellershausen>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04318.PuechauerStrasse.4> ;
+    ld:hasEmail "club-sellerhausen@gmx.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:InternationalerBund ;
+    ld:hasTelefon "0341-2301023" ;
+    a ld:Ort ;
+    rdfs:label "OFT Club Sellerhausen" .
+
+<http://leipzig-data.de/Data/Ort/OFT.TanteHedwig>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Hedwigstrasse.7> ;
+    ld:hasEmail "Tante-Hedwig.leipzig@internationaler-bund.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:InternationalerBund ;
+    ld:hasTelefon "0341-688-46-96" ;
+    a ld:Ort ;
+    rdfs:label "OFT Tante Hedwig" .
+
+<http://leipzig-data.de/Data/Ort/OFT.Zirkel>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.LangeStrasse.25> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-6881746" ;
+    a ld:Ort ;
+    rdfs:label "OFT Zirkel" .
+
+<http://leipzig-data.de/Data/Ort/Oekoschule.Agrapark>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.AmFestanger.8> ;
+    ld:hasEmail "ökoschule-markkleeberg@gmx.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Umwelt ;
+    ld:hasTelefon "0341-3504766" ;
+    ld:hasURL "http://www.kultur-und-umweltzentrum.de" ;
+    a ld:Ort ;
+    rdfs:label "agra-Park Ökoschule" .
+
+<http://leipzig-data.de/Data/Ort/Oekoschule.Markkleeberg>
+    ld:Art "Ökoschule und grünes Klassenzimmer, Unterricht im Grünen, Projekttage, Schulfeste, Klassenfeste und Kindergeburtstage" ;
+    ld:Finanzierung "SMUL, Jugendamt Landkreis Leipzig, Stadt Markkleeberg" ;
+    ld:Hintergrund "seit 2002" ;
+    ld:Kosten "3,00 Euro pro Teilnehmer" ;
+    ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
+    ld:Zielgruppe "für alle Altersklassen, Schultypen, Berufsschüler und Familien" ;
+    ld:Zielstellung "aktive Auseinandersetzung mit der Natur und \"Unterricht im Grünen\" oder verschiedebe Projekttage" ;
+    ld:engagedPerson ldp:Schwarze_Wolfgang ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.Kirchstrasse.42> ;
+    ld:hasEmail "http://oekoschule-markkleeberg@gmx.de" ;
+    ld:hasFax "0341-3381143" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:KUZ ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-3381142" ;
+    ld:hasURL "www.kultur-und-umweltzentrum.de" ;
+    a ld:Ort ;
+    rdfs:label "Ökoschule Markkleeberg" .
+
+ldo:PILOT
+    ld:hasAPIId "Venue.58" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Bosestrasse.1> ;
+    a ld:Ort ;
+    rdfs:label "PILOT" .
+
+ldo:Phyllodrom
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04158.DelitzscherLandstrasse.38> ;
+    ld:hasEmail "info@Phyllodrom.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Umwelt ;
+    ld:hasTelefon "0341-5257757" ;
+    ld:hasURL "http://wwww.Phyllodrom.de" ;
+    a ld:Ort ;
+    rdfs:label "Phyllodrom e.V. - Museum und Institut für Regenwaldökologie" .
+
+ldo:Plan-B
+    ld:hasAPIId "Venue.12" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Haertelstrasse.21> ;
+    a ld:Ort ;
+    rdfs:comment "Konzerte, Kino und Theater eine nette stylische Bar." ;
+    rdfs:label "Plan B - Kulturkaffee" .
+
+<http://leipzig-data.de/Data/Ort/Plaussig.NaturSchutzStation>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04349.PlaussigerDorfstrasse.23> ;
+    ld:hasEmail "auwaldstation@t-online.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:ZV_Parthenaue ;
+    ld:hasTelefon "034298-68665" ;
+    a ld:Ort ;
+    rdfs:label "Naturschutzstation Plaußig" .
+
+<http://leipzig-data.de/Data/Ort/Polizeirevier.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.Ratzelstrasse.222> ;
+    a ld:Ort ;
+    rdfs:label "Polizeirevier Grünau" .
+
+<http://leipzig-data.de/Data/Ort/QM.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.21> ;
+    a ld:Ort ;
+    rdfs:label "Quartiersmanagement Grünau" .
+
+<http://leipzig-data.de/Data/Ort/Rabutz.TOeP>
+    ld:Art "Projektzentrum mit Angeboten zu Ökologie, Elektromobilität, Verkehrserziehung" ;
+    ld:Zielstellung "Junge Leute erfahren hier, dass Themen wie Technik und Ökologie durchaus auch Spaß machen können." ;
+    ld:engagedPerson ldp:Messerschmidt_Elk ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04509.BageritzerWeg.1> ;
+    ld:hasEmail "info@rennstall-rabutz.de" ;
+    ld:hasFax "034207-73597" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Rabutz.TOeP> ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "034207-73595" ;
+    ld:hasURL "http://www.rennstall-rabutz.de" ;
+    a ld:Ort ;
+    rdfs:label "Rennstall Rabutz" .
+
+ldo:Regenwaldzentrum
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.SchleussigerWeg.1> ;
+    ld:hasEmail "regenwaldzentrum@nabu-sachsen.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:NABU ;
+    ld:hasTag ldtag:Umwelt ;
+    ld:hasTelefon "0341-3014025" ;
+    ld:hasURL "http://www.nabu-sachsen.de" ;
+    a ld:Ort ;
+    rdfs:label "Regenwaldzentrum" .
+
+ldo:Riquet
+    ld:hasAPIId "Venue.31" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Salzgaesschen.6> ;
+    a ld:Ort ;
+    rdfs:label "Riquet" .
+
+<http://leipzig-data.de/Data/Ort/SWL.GuD-Anlage>
+    ld:hasAPIId "Venue.36" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.EutritzscherStrasse.14> ;
+    a ld:Ort ;
+    rdfs:label "Stadtwerke Leipzig (GuD-Anlage)" .
+
+ldo:SchaubuehneLindenfels
+    ld:hasAPIId "Venue.63" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.50> ;
+    a ld:Ort ;
+    rdfs:label "Schaubühne Lindenfels" .
+
+ldo:SchlossSchoenefeld
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Zeumerstrasse.1> ;
+    a ld:Ort ;
+    rdfs:label "Schloss Schönefeld" .
+
+ldo:SchoolOfMedia
+    ld:hasAPIId "Venue.37" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Poetenweg.28> ;
+    a ld:Ort ;
+    rdfs:label "Leipzig School of Media" .
+
+<http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Freiluftschule>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04289.Schwarzenbergweg.4> ;
+    a ld:Ort ;
+    rdfs:label "Freiluftschule" .
+
+<http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Lehrgarten>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.SchleussigerWeg.1> ;
+    ld:hasUW_id "1256" ;
+    a ld:Ort ;
+    rdfs:label "Botanischer Lehrgarten" .
+
+<http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Zooschule>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.PfaffendorferStrasse.29> ;
+    a ld:Ort ;
+    rdfs:label "Zooschule im Zoologischen Garten Leipzig" .
+
+ldo:SchulBiologiezentrum
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Martin-Luther-Ring.4-6> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Schulbiologiezentrum der Stadt Leipzig" .
+
+ldo:SportforumLeipzig
+    ld:hasAPIId "Venue.53", "Venue.54" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.AmSportforum.3> ;
+    a ld:Ort ;
+    rdfs:label "Sportforum Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Martin-Luther-Ring.4> ;
+    a ld:Ort ;
+    rdfs:label "Neues Rathaus" .
+
+ldo:StarkFuerGruenau
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.63> ;
+    a ld:Ort ;
+    rdfs:label "Stark für Grünau" .
+
+ldo:Theatrium
+    ld:Hintergrund "Seit 1995 bieten wir in Leipzig-Grünau Theaterprojekte für Kinder und Jugendliche an. Ab 1996 wurde dafür die ehemalige Gaststätte \"Atrium\" in der Miltitzer Allee 52 von der Stadt Leipzig zur Verfügung gestellt und von den Vereinsgründern zum Theater \"Theatrium\" umgebaut. Nach jahrelanger Suche nach einem neuen, geeigneteren Domizil für unsere Theaterprojekte konnte, Dank der tatkräftigen Unterstützung durch die Stadt Leipzig und die Akteure des Stadtbezirks, im November 2010 das \"Neue Theatrium\" in der Alten Salzstraße 59 eröffnet werden und bietet nun beste Bedingungen, sowohl für die Arbeit in unseren Projekten, als auch für unsere Besucher. " ;
+    ld:contactPerson ldp:Roch_Beate ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.59> ;
+    ld:hasEmail "theatrium@gmx.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
+    ld:hasTelefon "0341-9413640" ;
+    ld:hasURL "http://www.theatrium-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Theatrium" .
+
+<http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig>
+    ld:Kurzinformation "<p>Die Transition-Town-Bewegung, der weltweit über 300 Städte angehören, setzt diese Ideen um und eröffnet neue Perspektiven. „Leipzig im Wandel“ kann durch uns Teil dieser sich rasch ausbreitenden Bewegung werden. Wir können dafür sorgen, dass so viele Produkte und Dienstleistungen wie möglich lokal erzeugt, erarbeitet und verbraucht werden: beim Einkauf, beim Essen, beim Urlaub, beim Bezug von Energie. Das macht uns unabhängiger vom Erdöl und auch von vielen negativen Auswirkungen auf den Finanzmärkten, den Veränderungen auf dem Arbeitsmarkt und der Verschlechterung unserer Umweltqualität Visionen, Träume, Fantasie, Kreativität, Technik, Musik, Wissen … helfen uns auf dem Weg zu einem nachhaltigen Leipzig.</p>" ;
+    ld:hasURL "http://www.transitiontown-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Transition Town Leipzig" .
+
+ldo:UFZ
+    ld:Kurzinformation "Das Helmholtz-Zentrum für Umweltforschung – UFZ wurde 1991 gegründet und beschäftigt an den Standorten Leipzig, Halle/Saale und Magdeburg ungefähr 1000 Mitarbeiter. Es erforscht die komplexen Wechselwirkungen zwischen Mensch und Umwelt in genutzten und gestörten Landschaften. Die Wissenschaftler des UFZ entwickeln Konzepte und Verfahren, die helfen sollen, die natürlichen Lebensgrundlagen für nachfolgende Generationen zu sichern." ;
+    ld:Leistungsangebot "In den wissenschaftlichen Departments des UFZ können sich Schüler um Praktika, Facharbeiten und BELLs bewerben", "Lehrerfortbildungen zu Themen aus der Umweltforschung", "Versuchstage für Schüler der Klassenstufe 10 bis 13 im Schülerlabor" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Permoserstrasse.15> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:UFZ ;
+    ld:hasTag ldtag:Forschung, ldtag:MINT ;
+    a ld:Ort ;
+    rdfs:label "Helmholtz-Zentrum für Umweltforschung GmbH – UFZ" .
+
+<http://leipzig-data.de/Data/Ort/UFZ.KinderUmweltBus>
+    ld:Kosten "Bei ganzen Projekttagen fällt ggf. ein Personalkostenzuschuss an." ;
+    ld:Kurzinformation "Der KinderUmweltBus bietet zu den Themen Wasser, Lebensraum Boden und Energie Projektstunden von 60 bis 90 Minuten für Kinder im Vor- und Grundschulalter mit spielerisch-spannenden Experimenten und kreativer Naturforschung – auch im Rahmen Ihrer Projekttage und Projektwochen – und spezielle Fortbildungsangebote für Pädagogen (Lehrer, Erzieher sowie Umweltbildner) an.", "Unter dem Motto „Bestaunen, Begreifen, Beschützen“ werden experimentell und spielerisch elementare naturwissenschaftliche Zusammenhänge speziell zum Thema Wasser erläutert, die das Interesse an der Natur wecken und umweltbewusstes Handeln fördern sollen. Der KinderUmweltBus ermöglicht es, mit Kindern und Schülern vor Ort zu arbeiten, sowohl in den Räumen der Schule als auch direkt in der Natur. Die Themen nehmen einen engen Bezug auf den Lehrplan. Damit kann dieses Angebot den Lehrstoff z.B. im Fach Sachkunde sinnvoll ergänzen." ;
+    ld:Oeffnungszeiten "Anmeldungen sind halbjährlich möglich. Anmeldeformular unter www.kinderumwelt-bus.de" ;
+    ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
+    ld:Zielgruppe "Lehrerweiterbildung", "Vor- und Grundschule" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Permoserstrasse.15> ;
+    ld:hasEmail "kinderumweltbus@ufz.de" ;
+    ld:hasFax "0341-235-3629" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:UFZ ;
+    ld:hasTag ldtag:MINT, ldtag:Umwelt ;
+    ld:hasTelefon "0341-235-3630" ;
+    ld:hasURL "http://www.kinderumweltbus.de" ;
+    a ld:Ort ;
+    rdfs:label "UFZ KinderUmweltBus" .
+
+<http://leipzig-data.de/Data/Ort/UFZ.Schuelerlabor>
+    ld:Hintergrund "seit 2004" ;
+    ld:Kosten "5,00 Euro pro Schüler" ;
+    ld:Kurzinformation "Chemisch-biologische Experimente, auch Mathematik, Geologie, Hydrologie, Biotechnologie, Drogenprävention", "Das UFZ-Schülerlabor ist eine Einrichtung, die Schülern der Klassenstufen 10 bis 13 die Chance bietet, in einem authentischen Umfeld in die Rolle von Wissenschaftlern zu schlüpfen und deren Alltag zu erleben. Die Experimente im Schülerlabor sind aktuellen Forschungsprojekten des UFZ entliehen. Alle Schülerversuche lassen sich gut in den Unterricht integrieren, da sie in Anlehnung an den aktuellen Lehrplan ausgewählt worden sind." ;
+    ld:Oeffnungszeiten "Versuche im Schülerlabor sind nur im Klassenverband als Schulveranstaltung ab Klassenstufe 10 möglich. Eine vorherige Terminabsprache ist notwendig." ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Lehrer und Referendare für Fortbildungen", "Schülerinnen und Schüler ab Klassenstufe 10 der gymnasialen Oberstufe" ;
+    ld:behindertengerecht "Ein behindertengerechter Zugang ist vorhanden, dabei ist zu beachten: Im Labor gelten besondere Sicherheitsregeln, die vorab mit dem verantwortlichen Lehrer besprochen werden müssen." ;
+    ld:engagedPerson ldp:Lange_Torsten ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Permoserstrasse.15> ;
+    ld:hasEmail "schuelerlabor@ufz.de" ;
+    ld:hasFax "0341-235-1830" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:UFZ ;
+    ld:hasTag ldtag:Biologie, ldtag:Chemie, ldtag:MINT, ldtag:Physik ;
+    ld:hasTelefon "0341-235-1845" ;
+    ld:hasURL "http://www.ufz-schuelerlabor.de" ;
+    a ld:Ort ;
+    rdfs:comment "Teilnehmer ca. 50% weiblich (Schätzwert)" ;
+    rdfs:label "UFZ Schülerlabor" .
+
+ldo:UIZ
+    ld:Art "Angebote in den Bereichen Ökologie, Umwelt- und Naturschutz" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.PragerStrasse.136> ;
+    ld:hasEmail "UIZ@leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:StadtLeipzig, ldt:UIZ ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-1236711" ;
+    a ld:Ort ;
+    rdfs:label "Umweltinformationszentrum" .
+
+ldo:Umspannwerk
+    ld:Art "Technikmuseum" ;
+    ld:Finanzierung "Kostenfreie Raumnutzung bei enviaM, ARGE Leipzig, VDE Bezirksverband" ;
+    ld:Hintergrund "Seit dem Jahre 2001 arbeitet der Arbeitskreis Geschichte der Elektrotechnik beim VDE Bezirksverein Leipzig/Halle e.V. aktiv an diesem Projekt, zunächst am Standort Taucha, seit 2011 im neuen Domizil. Sowohl den alten Standort, das  Objekt im ehemaligen Hauptumspannwerk Taucha, als auch den neuen am Umspannwerk Markkleeberg stellte bzw. stellt die enviaM zur Verfügung." ;
+    ld:Kosten "keine" ;
+    ld:Kurzinformation "Ziele des Projekts: Erhaltung von Zeitzeugen der elektrotechnischen Entwicklung aus der Region in einer Art Museum, Unterstützung der Aus- und Weiterbildung für elektrotechnische Berufe, Wecken des Interesses am Ergreifen von Berufen elektrotechnischer Richtungen, Schaffung von Betätigungsmöglichkeiten für nicht mehr im Berufsleben stehende Fachleute der Elektrotechnik, Gestaltung von sachgebiets- und themenbezogenen Ausstellungen zum Fachgebiet" ;
+    ld:Oeffnungszeiten "Jeden letzten Dienstag im Monat von 14 bis 16 Uhr. Außerhalb dieser Zeiten ist die Besichtigung mit Voranmeldung möglich." ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Oberstufe, Berufsschüler" ;
+    ld:contactPerson ldp:Haenisch_Wolfgang, ldp:Raue_Manfred ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.Friedrich-Ebert-Strasse.26> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/VDE.LeipzigHalle> ;
+    ld:hasTag ldtag:MINT ;
+    a ld:Ort ;
+    rdfs:label "Elektrotechnische Sammlung am Umspannwerk Markkleeberg" .
+
+ldo:Umweltbibliothek
+    ld:Art "Umweltbibliothek" ;
+    ld:Finanzierung "institutionell gefördert durch das Amt für Umweltschutz der Stadt Leipzig, weitere Fördermittel von ESF, Land Sachsen, Bürgerstiftung Leipzig, Stadtwerke Leipzig" ;
+    ld:Hintergrund "seit 1988" ;
+    ld:Kosten "nein" ;
+    ld:Teilnahmebedingungen "nein" ;
+    ld:Zielgruppe "u.a. Schüler und Studenten (z.B. für Haus-, Studien-, Diplom-, Doktorarbeiten), Planer, Behördenmitarbeiter, Privatpersonen, Pädagogen" ;
+    ld:Zielstellung "Über Umweltschutz informieren, qualifizierte Umweltinformationen erschließen und allgemein zugänglich machen" ;
+    ld:engagedPerson ldp:Quester_Roland ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
+    ld:hasEmail "info@umweltbibliothek-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Oekoloewe ;
+    ld:hasTag ldtag:MINT ;
+    ld:hasTelefon "0341-3065-181, 0341-3065-180" ;
+    ld:hasURL "http://www.umweltbibliothek-leipzig.de", "http://www.umweltbildung-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:comment "Die Umweltbibliothek Leipzig als unbeschränkt öffentlich zugängliche Spezialbibliothek versteht sich als ein zentraler Informationsdienstleister im Bereich Umweltschutz in der Stadt Leipzig und ihrem Umland. Sie bietet Studierenden, Lernenden, Lehrenden, im Umweltschutz Tätigen in Vereinen, Behörden und Planungsbüros sowie Privatpersonen Sach- und Fachmedien entsprechend ihrer Bedürfnisse zur Ausleihe, sowie Zugang zu elektronischen Informationen und die Vermittlung von Umweltberatungs- und Umweltbildungsangeboten. Sie bietet ihre Medien mittels Fernleihe auch im Regierungsbezirk Leipzig, dem Land Sachsen und der ganzen Bundesrepublik an. Die Umweltbibliothek kooperiert mit lokalen und besonders relevanten überregionalen Informationsanbietern und -verbreitern wie Behörden, Vereinen, Forschungseinrichtungen, Stadt- und Hochschulbibliotheken, um deren Informationen zur (regionalen) Umweltsituation und Umweltschutzmaßnahmen konzentriert zu sammeln, zu erschließen und anzubieten und um als qualifizierte Ergänzung zu deren Angeboten zu fungieren. Die Umweltbibliothek wurde 2005 als offizielles Projekt der UN-Weltdekade \"Bildung für nachhaltige Entwicklung\" ausgezeichnet." ;
+    rdfs:label "Umweltbibliothek Leipzig" .
+
+ldo:UniLeipzig
+    ld:hasURL "http://www.uni-leipzig.de/" ;
+    a ld:Ort ;
+    rdfs:label "Zentrale Aktivitäten der Uni Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz>
+    ld:hasAPIId "Venue.57", "Venue.60", "Venue.70" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+    a ld:Ort ;
+    rdfs:label "Unikomplex Augustusplatz" .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.CampusJahnallee>
+    ld:hasAPIId "Venue.56" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Jahnallee.59> ;
+    a ld:Ort ;
+    rdfs:label "Campus Jahnallee der Universität Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.ExPhysik>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Linnestrasse.5> ;
+    a ld:Ort ;
+    rdfs:label "Universität Leipzig, Institut für Experimentelle Physik" .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.FMI>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:Hochschule, ldtag:MINT ;
+    ld:hasURL "http://www.fmi.uni-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Universität Leipzig, Fakultät Mathematik/Informatik" .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt>
+    ld:Kurzinformation "Der Gegenstand der Untersuchungen und Aktivitäten, die durch dieses Projekt gebündelt werden, sind die theoretischen und praktischen Dimensionen der ablaufenden Transformationsprozesse in Richtung einer \"digitalen Gesellschaft\". " ;
+    ld:hasURL "http://www.dorfwiki.org/wiki.cgi?HansGertGraebe/NetzProjekt" ;
+    a ld:Ort ;
+    rdfs:label "Netzprojekt am Institut für Informatik der Uni Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.26> ;
+    a ld:Ort ;
+    rdfs:label "Uni, Rektoratsgebäude" .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.SchollHaus>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.8-10> ;
+    a ld:Ort ;
+    rdfs:label "Uni, Geschwister-Scholl-Haus" .
+
+ldo:Villa
+    ld:hasAPIId "Venue.64" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Lessingstrasse.7> ;
+    ld:hasEmail "jugendarbeit@villa-leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:Villa ;
+    ld:hasTelefon "0341-3552040" ;
+    ld:hasURL "http://www.villa-Leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" .
+
+ldo:VillaIda
+    ld:hasAPIId "Venue.67" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Poetenweg.28> ;
+    a ld:Ort ;
+    rdfs:label "Mediencampus Villa Ida" .
+
+ldo:Volkshaus
+    ld:hasAPIId "Venue.52" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Karl-Liebknecht-Strasse.32> ;
+    a ld:Ort ;
+    rdfs:label "Volkshaus" .
+
+ldo:Volkshochschule
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Loehrstrasse.3-7> ;
+    ld:hasEmail "vhs@leipzig.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-1236000" ;
+    ld:hasURL "http://www.vhs-leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Volkshochschule" .
+
+ldo:Wamslergarten
+    ld:hasAPIId "Venue.41" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.99> ;
+    a ld:Ort ;
+    rdfs:label "Wamslergarten im Westwerk" .
+
+ldo:Werk-2
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Kochstrasse.132> ;
+    ld:hasEmail "info@werk-2.de" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTelefon "0341-3080140" ;
+    ld:hasURL "http://www.werk-2.de" ;
+    a ld:Ort ;
+    rdfs:label "Werk II - Kulturfabrik e. V." .
+
+ldo:ZfI
+    ld:Kosten "teilweise" ;
+    ld:Zielgruppe "Kinder, Jugendliche, Erwachsene, Senioren" ;
+    ld:contactPerson ldp:Mueller_Doris ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> ;
+    ld:hasEmail "doris.mueller@zfi-leipzig.de" ;
+    ld:hasFax "0341-4773703" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:ZfI ;
+    ld:hasTelefon "0341-4804311" ;
+    ld:hasURL "http://www.zfi-Leipzig.de" ;
+    a ld:Ort ;
+    rdfs:label "Zentrum für Integration" .
+
+ldo:Zukunftsakademie
+    ld:contactPerson ldp:Kramer_Anais ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
+    ld:hasAddressAddendum "Haus der Demokratie, Raum 110" ;
+    ld:hasEmail "info@zak-le.de" ;
+    ld:hasFax "0341-3065180" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Zukunftsakademie> ;
+    ld:hasTelefon "0341-3065180" ;
+    ld:hasURL <http://www.zukunftsakademie-leipzig.de/> ;
+    a ld:Ort ;
+    rdfs:label "Zukunftsakademie Leipzig" .
+
+ldo:ciT
+    ld:Kurzinformation "Wir sind ein führendes sächsisches Weiterbildungsunternehmen in den Bereichen Softwareentwicklung, Netzwerke, Datenbanken, IT-Sicherheit, Multimediaanwendungen, kaufmännische Qualifizierung, kaufmännische Anwendungssoftware sowie Lager und Handel. Unsere Stärke liegt in der modularen Einzel- und Kleingruppenausbildung. Sie können aus über 400 Modulen unseres gesamten Angebotsspektrums wählen. Die hohe Qualität der Aus- und Weiterbildung sichern wir mit unserem zertifizierten Qualitätsmanagement laut DIN ISO 9001." ;
+    ld:Oeffnungszeiten "Unser Büro ist an Wochentagen von 8:00 bis 16:00 Uhr besetzt. Die Anmeldung für das Projekt kann unter http://www.mintindividual.de/registrierung.php erfolgen." ;
+    ld:contactPerson ldp:Hamel_Corinna ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Lutherstrasse.10> ;
+    ld:hasEmail "chamel@mint-individual.de" ;
+    ld:hasFax "0341-68707-124" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier ldt:ciT ;
+    ld:hasTag ldtag:Berufsbildung, ldtag:MINT ;
+    ld:hasTelefon "0341-68707-0" ;
+    ld:hasURL "http://www.mint-individual.de" ;
+    a ld:Ort ;
+    rdfs:label "ciT – Consulting Innovation Training GmbH" .
+
+ldo:ipoque
+    ld:hasAPIId "Venue.29" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Neumarkt.29> ;
+    a ld:Ort ;
+    rdfs:label "ipoque" .
+
+ldo:studiodelta
+    ld:hasAPIId "Venue.27" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Angerstrasse.40> ;
+    a ld:Ort ;
+    rdfs:label "studiodelta" .
+
+ldo:sublab
+    ld:hasAPIId "Venue.30" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.93> ;
+    ld:hasAddressAddendum "Tor B, 3. OG" ;
+    a ld:Ort ;
+    rdfs:label "sublab e.V." .
+
+<http://leipzig-data.de/Data/Orte/>
+    a owl:Ontology ;
+    rdfs:comment "Alte Adressen komplett ersetzt" ;
+    rdfs:label "LeipzigData - Orte" ;
+    owl:imports <http://leipzig-data.de/Data/Adressen/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Tags/> .
+

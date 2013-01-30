@@ -1,255 +1,354 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Personen/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
+@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+
+ld:NatuerlichePerson
+    a owl:Class ;
+    rdfs:label "Person" .
+
+ldp:Ackermann_Arne
+    a ld:NatuerlichePerson ;
+    rdfs:label "Arne Ackermann" .
+
+ldp:Baesler_Detlef
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" ;
+    rdfs:label "Detlef Bäsler" .
+
+ldp:Bamberg_Stefanie
+    ld:hasAPIId "Host.2" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Stefanie Bamberg" .
+
+ldp:Boran_Roland
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Projektleiter ASG-Schülerakademie" ;
+    rdfs:label "Dr. Roland Boran" .
+
+ldp:Buettner_Torsten
+    a ld:NatuerlichePerson ;
+    rdfs:label "Torsten Büttner" .
+
+ldp:Darlatt_Kathrin
+    a ld:NatuerlichePerson ;
+    rdfs:label "Kathrin Darlatt" .
+
+ldp:Engel_Heike
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Geschäftsführerin Anker e.V." ;
+    rdfs:label "Heike Engel" .
+
+ldp:Glowacki_Romann
+    a ld:NatuerlichePerson ;
+    rdfs:label "Romann Glowacki" .
+
+ldp:Graebe_HansGert
+    ld:hasAPIId "Host.28" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Prof. Dr. Hans-Gert Gräbe" .
+
+ldp:Gregor_Jana
+    a ld:NatuerlichePerson ;
+    rdfs:comment "MINT-Beauftragte des MPI MIS" ;
+    rdfs:label "Jana Gregor" .
+
+ldp:Grosser_Katja
+    ld:hasAPIId "Host.35", "Host.38" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Katja Großer" .
+
+ldp:Haenisch_Wolfgang
+    a ld:NatuerlichePerson ;
+    rdfs:label "Wolfgang Hänisch" .
+
+ldp:Haensgen_Christoph
+    ld:hasTelefon "0341-35582828" ;
+    ld:hasURL "http://www.happy-robots.de" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Christoph Hänsgen" .
+
+ldp:Hahn_Michael
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Vereinsvorsitzender LJBW" ;
+    rdfs:label "Michael Hahn" .
+
+ldp:Hamel_Corinna
+    a ld:NatuerlichePerson ;
+    rdfs:label "Corinna Hamel" .
+
+ldp:Hantschick_Ines
+    a ld:NatuerlichePerson ;
+    rdfs:label "Ines Hantschick" .
+
+ldp:Hauptmann_Anke
+    a ld:NatuerlichePerson ;
+    rdfs:label "Anke Hauptmann" .
+
+ldp:Herrmann_Anne
+    a ld:NatuerlichePerson ;
+    rdfs:label "Anne Herrmann" .
+
+ldp:Hintze_Steffen
+    a ld:NatuerlichePerson ;
+    rdfs:label "Steffen Hintze" .
+
+ldp:Hoernig_Karin
+    a ld:NatuerlichePerson ;
+    rdfs:label "Karin Hörnig" .
+
+ldp:Holunder_Alma
+    a ld:NatuerlichePerson ;
+    rdfs:label "Alma Holunder" .
+
+ldp:Hoyer_Stephan
+    ld:hasAPIId "Host.42" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Stephan Hoyer" .
+
+ldp:Ihring_Lars
+    ld:hasAPIId "Host.29" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Lars Ihring" .
+
+ldp:Keck_Lisa
+    a ld:NatuerlichePerson ;
+    rdfs:comment "GF des Netzwerks \"Energie und Umwelt\"" ;
+    rdfs:label "Lisa Keck" .
+
+ldp:Klauer_AnnaKatharina
+    a ld:NatuerlichePerson ;
+    rdfs:label "Anna-Katharina Klauer" .
+
+ldp:Klimesch_Holger
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Vereinsvorstand Inspirata e.V." ;
+    rdfs:label "Holger Klimesch" .
+
+ldp:Koenig_KarlFriedrich
+    ld:hasAPIId "Host.22" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Karl-Friedrich König" .
+
+ldp:Koenig_Wolfgang
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Vereinsvorsitzender Inspirata e.V." ;
+    rdfs:label "Prof. Wolfgang König" .
+
+ldp:Koerner_Annette
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Geschäftsführerin UIZ Förderverein" ;
+    rdfs:label "Annette Körner" .
+
+ldp:Kramer_Anais
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Leiterin der GS der Zukunftsakademie" ;
+    rdfs:label "Anais Kramer" .
+
+ldp:Krueger_Annett
+    a ld:NatuerlichePerson ;
+    rdfs:label "Dr. Annett Krüger" .
+
+ldp:Kuechler_Romy
+    a ld:NatuerlichePerson ;
+    rdfs:label "Romy Küchler" .
+
+ldp:Lange_Torsten
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Leiter UFZ-Schülerlabor" ;
+    rdfs:label "Dr. Torsten Lange" .
+
+ldp:Maennig_Uwe
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" ;
+    rdfs:label "Uwe Männig" .
+
+ldp:Meiler_Monika
+    a ld:NatuerlichePerson ;
+    rdfs:label "Dr. Monika Meiler" .
+
+ldp:Messerschmidt_Elk
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Leiter TÖP Rabutz" ;
+    rdfs:label "Dr. Elk Messerschmidt" .
+
+ldp:Meyer_Rene
+    ld:hasAPIId "Host.21" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "René Meyer" .
+
+ldp:Moeller_Juergen
+    ld:hasAPIId "Host.16" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Jürgen Möller" .
+
+ldp:Mueller_Doris
+    a ld:NatuerlichePerson ;
+    rdfs:label "Doris Müller" .
+
+ldp:Mueller_Florian
+    ld:hasAPIId "Host.23" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Florian Müller" .
+
+ldp:Nagler_Petra
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" ;
+    rdfs:label "Petra Nagler" .
+
+ldp:Pauli_Stev
+    a ld:NatuerlichePerson ;
+    rdfs:label "Stev Pauli" .
+
+ldp:Petschauer_Susanne
+    a ld:NatuerlichePerson ;
+    rdfs:label "Susanne Petschauer" .
+
+ldp:Petzold_Matthias
+    ld:hasAPIId "Host.1" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Matthias Petzold" .
+
+ldp:Petzschler_Ines
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Vereinsvorstand Inspirata e.V." ;
+    rdfs:label "Ines Petzschler" .
+
+ldp:Petzschler_Uwe
+    a ld:NatuerlichePerson ;
+    rdfs:label "Uwe Petzschler" .
+
+ldp:Pieper_Katrin
+    a ld:NatuerlichePerson ;
+    rdfs:label "Katrin Pieper" .
+
+ldp:Quapp_Wolfgang
+    a ld:NatuerlichePerson ;
+    rdfs:label "Dr. Wolfgang Quapp" .
+
+ldp:Quester_Roland
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Leiter Umweltbibliothek" ;
+    rdfs:label "Roland Quester" .
+
+ldp:Rademacher_HansBert
+    a ld:NatuerlichePerson ;
+    rdfs:label "Prof. Dr. Hans-Bert Rademacher" .
+
+ldp:Raue_Manfred
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Geschäftsführer VDE Leipzig/Halle" ;
+    rdfs:label "Manfred Raue" .
+
+ldp:Rehm_Axel
+    ld:email "rehm@schulbiologiezentrum-leipzig.de" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Axel Rehm" .
+
+ldp:Reinhardt_Sylvi
+    ld:hasAPIId "Host.40" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Sylvi Reinhardt" .
+
+ldp:Reschke_Katrin
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Leiterin Dölitzer Wassermühle" ;
+    rdfs:label "Katrin Reschke" .
+
+ldp:Reschke_Volker
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." ;
+    rdfs:label "Volker Reschke" .
+
+ldp:Rhinow_Solvejg
+    a ld:NatuerlichePerson ;
+    rdfs:label "Dr. Solvejg Rhinow" .
+
+ldp:Roeser_Sascha
+    a ld:NatuerlichePerson ;
+    rdfs:label "Sascha Roeser" .
+
+ldp:Schilling_Peter
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Leiter AZ Schkeuditz" ;
+    rdfs:label "Peter Schilling" .
+
+ldp:Schlupp_Peter
+    a ld:NatuerlichePerson ;
+    rdfs:label "Peter Schlupp" .
+
+ldp:Schmidt_Rosemarie
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Landesgeschäftsführerin MNU Sachsen" ;
+    rdfs:label "Rosemarie Schmidt" .
+
+ldp:Schneider_Carla
+    a ld:NatuerlichePerson ;
+    rdfs:label "Carla Schneider" .
+
+ldp:Schroth_Johannes
+    a ld:NatuerlichePerson ;
+    rdfs:label "Johannes Schroth" .
+
+ldp:Schueler_Axel
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Vorsitzender LSGM" ;
+    rdfs:label "Dr. Axel Schüler" .
+
+ldp:Schulze_Susanne
+    a ld:NatuerlichePerson ;
+    rdfs:comment "MINT-Beauftrage der BA Leipzig" ;
+    rdfs:label "Susanne Schulze" .
+
+ldp:Schwarze_Wolfgang
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." ;
+    rdfs:label "Wolfgang Schwarze" .
+
+ldp:Schweikart_Rudolf
+    a ld:NatuerlichePerson ;
+    rdfs:label "Rudolf Schweikart" .
+
+ldp:Seidel_Franka
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" ;
+    rdfs:label "Franka Seidel" .
+
+ldp:Teutsch_Georg
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Direktor UFZ (Stand 2010)" ;
+    rdfs:label "Prof. Dr. Georg Teutsch" .
+
+ldp:Thate_Stefanie
+    a ld:NatuerlichePerson ;
+    rdfs:label "Stefanie Thate" .
+
+ldp:TraegerNestler_Angelika
+    a ld:NatuerlichePerson ;
+    rdfs:comment "Geschäftsführerin GaraGe gGmbH" ;
+    rdfs:label "Dr. Angelika Träger-Nestler" .
+
+ldp:Wagner_Thomas
+    ld:hasAPIId "Host.30", "Host.31", "Host.32", "Host.33", "Host.34" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Thomas Wagner" .
+
+ldp:Warkus_Hartmut
+    a ld:NatuerlichePerson ;
+    rdfs:comment "2012 verstorben", "Geschäftsführer der ComputerSpielSchule" ;
+    rdfs:label "Prof. Dr. Hartmut Warkus" .
+
+ldp:Weise_Joerg
+    ld:hasURL "http://www.public-confidence.de" ;
+    a ld:NatuerlichePerson ;
+    rdfs:label "Jörg Weise" .
+
+<http://leipzig-data.de/Data/Personen/>
+    a owl:Ontology ;
+    rdfs:label "LeipzigData - Natürliche Personen" .
 
-ld:NatuerlichePerson a owl:Class ;
-                     rdfs:label "Person" .
-
-ldp:Ackermann_Arne a ld:NatuerlichePerson ;
-                   rdfs:label "Arne Ackermann" .
-
-ldp:Baesler_Detlef a ld:NatuerlichePerson ;
-                   rdfs:label "Detlef Bäsler" ;
-                   rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" .
-
-ldp:Bamberg_Stefanie a ld:NatuerlichePerson ;
-                     rdfs:label "Stefanie Bamberg" ;
-                     ld:hasAPIId "Host.2" .
-
-ldp:Boran_Roland a ld:NatuerlichePerson ;
-                 rdfs:label "Dr. Roland Boran" ;
-                 rdfs:comment "Projektleiter ASG-Schülerakademie" .
-
-ldp:Buettner_Torsten a ld:NatuerlichePerson ;
-                     rdfs:label "Torsten Büttner" .
-
-ldp:Darlatt_Kathrin a ld:NatuerlichePerson ;
-                    rdfs:label "Kathrin Darlatt" .
-
-ldp:Engel_Heike a ld:NatuerlichePerson ;
-                rdfs:label "Heike Engel" ;
-                rdfs:comment "Geschäftsführerin Anker e.V." .
-
-ldp:Graebe_HansGert a ld:NatuerlichePerson ;
-                    rdfs:label "Prof. Dr. Hans-Gert Gräbe" ;
-                    ld:hasAPIId "Host.28" .
-
-ldp:Gregor_Jana a ld:NatuerlichePerson ;
-                rdfs:label "Jana Gregor" ;
-                rdfs:comment "MINT-Beauftragte des MPI MIS" .
-
-ldp:Grosser_Katja a ld:NatuerlichePerson ;
-                  rdfs:label "Katja Großer" ;
-                  ld:hasAPIId "Host.35", "Host.38" .
-
-ldp:Haenisch_Wolfgang a ld:NatuerlichePerson ;
-                      rdfs:label "Wolfgang Hänisch" .
-
-ldp:Hahn_Michael a ld:NatuerlichePerson ;
-                 rdfs:label "Michael Hahn" ;
-                 rdfs:comment "Vereinsvorsitzender LJBW" .
-
-ldp:Hamel_Corinna a ld:NatuerlichePerson ;
-                  rdfs:label "Corinna Hamel" .
-
-ldp:Hantschick_Ines a ld:NatuerlichePerson ;
-                    rdfs:label "Ines Hantschick" .
-
-ldp:Hauptmann_Anke a ld:NatuerlichePerson ;
-                   rdfs:label "Anke Hauptmann" .
-
-ldp:Herrmann_Anne a ld:NatuerlichePerson ;
-                  rdfs:label "Anne Herrmann" .
-
-ldp:Hintze_Steffen a ld:NatuerlichePerson ;
-                   rdfs:label "Steffen Hintze" .
-
-ldp:Hoernig_Karin a ld:NatuerlichePerson ;
-                  rdfs:label "Karin Hörnig" .
-
-ldp:Holunder_Alma a ld:NatuerlichePerson ;
-                  rdfs:label "Alma Holunder" .
-
-ldp:Hoyer_Stephan a ld:NatuerlichePerson ;
-                  rdfs:label "Stephan Hoyer" ;
-                  ld:hasAPIId "Host.42" .
-
-ldp:Ihring_Lars a ld:NatuerlichePerson ;
-                rdfs:label "Lars Ihring" ;
-                ld:hasAPIId "Host.29" .
-
-ldp:Klauer_AnnaKatharina a ld:NatuerlichePerson ;
-                         rdfs:label "Anna-Katharina Klauer" .
-
-ldp:Klimesch_Holger a ld:NatuerlichePerson ;
-                    rdfs:label "Holger Klimesch" ;
-                    rdfs:comment "Vereinsvorstand Inspirata e.V." .
-
-ldp:Koenig_KarlFriedrich a ld:NatuerlichePerson ;
-                         rdfs:label "Karl-Friedrich König" ;
-                         ld:hasAPIId "Host.22" .
-
-ldp:Koenig_Wolfgang a ld:NatuerlichePerson ;
-                    rdfs:label "Prof. Wolfgang König" ;
-                    rdfs:comment "Vereinsvorsitzender Inspirata e.V." .
-
-ldp:Koerner_Annette a ld:NatuerlichePerson ;
-                    rdfs:label "Annette Körner" ;
-                    rdfs:comment "Geschäftsführerin UIZ Förderverein" .
-
-ldp:Krueger_Annett a ld:NatuerlichePerson ;
-                   rdfs:label "Dr. Annett Krüger" .
-
-ldp:Kuechler_Romy a ld:NatuerlichePerson ;
-                  rdfs:label "Romy Küchler" .
-
-ldp:Lange_Torsten a ld:NatuerlichePerson ;
-                  rdfs:label "Dr. Torsten Lange" ;
-                  rdfs:comment "Leiter UFZ-Schülerlabor" .
-
-ldp:Maennig_Uwe a ld:NatuerlichePerson ;
-                rdfs:label "Uwe Männig" ;
-                rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" .
-
-ldp:Meiler_Monika a ld:NatuerlichePerson ;
-                  rdfs:label "Dr. Monika Meiler" .
-
-ldp:Messerschmidt_Elk a ld:NatuerlichePerson ;
-                      rdfs:label "Dr. Elk Messerschmidt" ;
-                      rdfs:comment "Leiter TÖP Rabutz" .
-
-ldp:Meyer_Rene a ld:NatuerlichePerson ;
-               rdfs:label "René Meyer" ;
-               ld:hasAPIId "Host.21" .
-
-ldp:Moeller_Juergen a ld:NatuerlichePerson ;
-                    rdfs:label "Jürgen Möller" ;
-                    ld:hasAPIId "Host.16" .
-
-ldp:Mueller_Doris a ld:NatuerlichePerson ;
-                  rdfs:label "Doris Müller" .
-
-ldp:Mueller_Florian a ld:NatuerlichePerson ;
-                    rdfs:label "Florian Müller" ;
-                    ld:hasAPIId "Host.23" .
-
-ldp:Nagler_Petra a ld:NatuerlichePerson ;
-                 rdfs:label "Petra Nagler" ;
-                 rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" .
-
-ldp:Pauli_Stev a ld:NatuerlichePerson ;
-               rdfs:label "Stev Pauli" .
-
-ldp:Petschauer_Susanne a ld:NatuerlichePerson ;
-                       rdfs:label "Susanne Petschauer" .
-
-ldp:Petzold_Matthias a ld:NatuerlichePerson ;
-                     rdfs:label "Matthias Petzold" ;
-                     ld:hasAPIId "Host.1" .
-
-ldp:Petzschler_Ines a ld:NatuerlichePerson ;
-                    rdfs:label "Ines Petzschler" ;
-                    rdfs:comment "Vereinsvorstand Inspirata e.V." .
-
-ldp:Petzschler_Uwe a ld:NatuerlichePerson ;
-                   rdfs:label "Uwe Petzschler" .
-
-ldp:Pieper_Katrin a ld:NatuerlichePerson ;
-                  rdfs:label "Katrin Pieper" .
-
-ldp:Quapp_Wolfgang a ld:NatuerlichePerson ;
-                   rdfs:label "Dr. Wolfgang Quapp" .
-
-ldp:Quester_Roland a ld:NatuerlichePerson ;
-                   rdfs:label "Roland Quester" ;
-                   rdfs:comment "Leiter Umweltbibliothek" .
-
-ldp:Rademacher_HansBert a ld:NatuerlichePerson ;
-                        rdfs:label "Prof. Dr. Hans-Bert Rademacher" .
-
-ldp:Raue_Manfred a ld:NatuerlichePerson ;
-                 rdfs:label "Manfred Raue" ;
-                 rdfs:comment "Geschäftsführer VDE Leipzig/Halle" .
-
-ldp:Rehm_Axel a ld:NatuerlichePerson ;
-              rdfs:label "Axel Rehm" ;
-              ld:email "rehm@schulbiologiezentrum-leipzig.de" .
-
-ldp:Reinhardt_Sylvi a ld:NatuerlichePerson ;
-                    rdfs:label "Sylvi Reinhardt" ;
-                    ld:hasAPIId "Host.40" .
-
-ldp:Reschke_Katrin a ld:NatuerlichePerson ;
-                   rdfs:label "Katrin Reschke" ;
-                   rdfs:comment "Leiterin Dölitzer Wassermühle" .
-
-ldp:Reschke_Volker a ld:NatuerlichePerson ;
-                   rdfs:label "Volker Reschke" ;
-                   rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." .
-
-ldp:Rhinow_Solvejg a ld:NatuerlichePerson ;
-                   rdfs:label "Dr. Solvejg Rhinow" .
-
-ldp:Schilling_Peter a ld:NatuerlichePerson ;
-                    rdfs:label "Peter Schilling" ;
-                    rdfs:comment "Leiter AZ Schkeuditz" .
-
-ldp:Schlupp_Peter a ld:NatuerlichePerson ;
-                  rdfs:label "Peter Schlupp" .
-
-ldp:Schmidt_Rosemarie a ld:NatuerlichePerson ;
-                      rdfs:label "Rosemarie Schmidt" ;
-                      rdfs:comment "Landesgeschäftsführerin MNU Sachsen" .
-
-ldp:Schneider_Carla a ld:NatuerlichePerson ;
-                    rdfs:label "Carla Schneider" .
-
-ldp:Schroth_Johannes a ld:NatuerlichePerson ;
-                     rdfs:label "Johannes Schroth" .
-
-ldp:Schueler_Axel a ld:NatuerlichePerson ;
-                  rdfs:label "Dr. Axel Schüler" ;
-                  rdfs:comment "Vorsitzender LSGM" .
-
-ldp:Schulze_Susanne a ld:NatuerlichePerson ;
-                    rdfs:label "Susanne Schulze" ;
-                    rdfs:comment "MINT-Beauftrage der BA Leipzig" .
-
-ldp:Schwarze_Wolfgang a ld:NatuerlichePerson ;
-                      rdfs:label "Wolfgang Schwarze" ;
-                      rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." .
-
-ldp:Schweikart_Rudolf a ld:NatuerlichePerson ;
-                      rdfs:label "Rudolf Schweikart" .
-
-ldp:Seidel_Franka a ld:NatuerlichePerson ;
-                  rdfs:label "Franka Seidel" ;
-                  rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" .
-
-ldp:Teutsch_Georg a ld:NatuerlichePerson ;
-                  rdfs:label "Prof. Dr. Georg Teutsch" ;
-                  rdfs:comment "Direktor UFZ (Stand 2010)" .
-
-ldp:Thate_Stefanie a ld:NatuerlichePerson ;
-                   rdfs:label "Stefanie Thate" .
-
-ldp:TraegerNestler_Angelika a ld:NatuerlichePerson ;
-                            rdfs:label "Dr. Angelika Träger-Nestler" ;
-                            rdfs:comment "Geschäftsführerin GaraGe gGmbH" .
-
-ldp:Wagner_Thomas a ld:NatuerlichePerson ;
-                  rdfs:label "Thomas Wagner" ;
-                  ld:hasAPIId "Host.33", "Host.34", "Host.30", "Host.31", "Host.32" .
-
-ldp:Warkus_Hartmut a ld:NatuerlichePerson ;
-                   rdfs:label "Prof. Dr. Hartmut Warkus" ;
-                   rdfs:comment "Geschäftsführer der ComputerSpielSchule", "2012 verstorben" .
-
-<> a owl:Ontology ;
-   rdfs:label "LeipzigData - Natürliche Personen" .
