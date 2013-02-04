@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://leipzig-data.de/Data/Tags/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+>>>>>>> origin/master
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -49,6 +56,7 @@ ldtag:Forschung
     a ld:Tag ;
     rdfs:label "Forschung" .
 
+<<<<<<< HEAD
 ldtag:Freizeit
     a ld:Tag ;
     rdfs:label "Freizeit" .
@@ -84,11 +92,44 @@ ldtag:KapitalismusKritik
 ldtag:KreativesLeipzig
     a ld:Tag ;
     rdfs:label "Kreatives Leipzig" .
+=======
+ld:Tag a owl:Class ;
+       rdfs:label "Tag" ;
+       rdfs:comment "Genormtes Schlagwort zur Klassifizierung" .
+
+ldtag:ASG a ld:Tag ;
+          rdfs:label "Arnold-Sommerfeld-Gesellschaft" .
+
+ldtag:Berufsbildung a ld:Tag ;
+                    rdfs:label "Berufsbildung" .
+
+ldtag:Berufsorientierung a ld:Tag ;
+                         rdfs:label "Berufsorientierung" .
+
+ldtag:Bibliothek a ld:Tag ;
+                 rdfs:label "Bibliothek" .
+
+ldtag:Biologie a ld:Tag ;
+               rdfs:label "Bereich Biologie" .
+
+ldtag:Chemie a ld:Tag ;
+             rdfs:label "Bereich Chemie" .
+
+ldtag:DenkTankStelle a ld:Tag ;
+                     rdfs:label "Attac-Denktankstelle" .
+
+ldtag:Forschung a ld:Tag ;
+                rdfs:label "Forschung" .
+
+ldtag:GTA a ld:Tag ;
+          rdfs:label "Kann als Ganztagsangebot genutzt werden" .
+>>>>>>> origin/master
 
 ldtag:LSGM
     a ld:Tag ;
     rdfs:label "LSGM" .
 
+<<<<<<< HEAD
 ldtag:MINT
     a ld:Tag ;
     rdfs:label "Bereich MINT" .
@@ -133,3 +174,49 @@ ldtag:ZukunftsDiskurs
     a owl:Ontology ;
     rdfs:label "LeipzigData - Tags" .
 
+=======
+ldtag:Hochschule a ld:Tag ;
+                 rdfs:label "Hochschulbereich" .
+
+ldtag:Informatik a ld:Tag ;
+                 rdfs:label "Bereich Informatik" .
+
+ldtag:Jugendbildung a ld:Tag ;
+                    rdfs:label "Jugendbildung" .
+
+ldtag:KapitalismusKritik a ld:Tag ;
+                         rdfs:label "Kapitalismus-Kritik" .
+
+ldtag:KreativesLeipzig a ld:Tag ;
+                       rdfs:label "Kreatives Leipzig" .
+
+ldtag:LSGM a ld:Tag ;
+           rdfs:label "LSGM" .
+
+ldtag:MINT a ld:Tag ;
+           rdfs:label "Bereich MINT" .
+
+ldtag:Mathematik a ld:Tag ;
+                 rdfs:label "Bereich Mathematik" .
+
+ldtag:Museum a ld:Tag ;
+             rdfs:label "Museum" .
+
+ldtag:Naturwissenschaften a ld:Tag ;
+                          rdfs:label "Bereich Naturwissenschaften" .
+
+ldtag:Physik a ld:Tag ;
+             rdfs:label "Bereich Physik" .
+
+ldtag:Technik a ld:Tag ;
+              rdfs:label "Bereich Technik" .
+
+ldtag:Umwelt a ld:Tag ;
+             rdfs:label "Umwelt" .
+
+ldtag:ZukunftsDiskurs a ld:Tag ;
+                      rdfs:label "Zukunfts-Diskurs" .
+
+<> a owl:Ontology ;
+   rdfs:label "LeipzigData - Tags" .
+>>>>>>> origin/master

@@ -2,6 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+<<<<<<< HEAD
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
@@ -366,3 +367,290 @@ ld:Stadtbezirk
     a owl:Ontology ;
     rdfs:label "LeipzigData - Stadtbezirke" .
 
+=======
+@prefix ldp: <http://leipzig-data.de/Data/Planungsraum/> .
+@prefix lds: <http://leipzig-data.de/Data/Stadtbezirk/> .
+
+ld:PlanungsRaum a owl:Class ;
+                rdfs:label "Planungsraum der Stadt Leipzig" ;
+                rdfs:comment "Die Jugendhilfeplanung teilt die 63 Stadtbezirke der Stadt Leipzig in 7 Planungsräume ein" .
+
+ld:Stadtbezirk a owl:Class ;
+               rdfs:label "Stadtbezirk der Stadt Leipzig" .
+
+ldp:Gruenau a ld:PlanungsRaum ;
+            rdfs:label "Planungsraum Grünau" .
+
+ldp:InnererOsten a ld:PlanungsRaum ;
+                 rdfs:label "Planungsraum Innerer Osten" .
+
+ldp:MitteSued a ld:PlanungsRaum ;
+              rdfs:label "Planungsraum Mitte/Süd" .
+
+ldp:Nord a ld:PlanungsRaum ;
+         rdfs:label "Planungsraum Nord" .
+
+ldp:NordOst a ld:PlanungsRaum ;
+            rdfs:label "Planungsraum Nordost" .
+
+ldp:OstSuedost a ld:PlanungsRaum ;
+               rdfs:label "Planungsraum Ost/Südost" .
+
+ldp:West a ld:PlanungsRaum ;
+         rdfs:label "Planungsraum West" .
+
+lds:Althen-Kleinpoesna a ld:Stadtbezirk ;
+                       rdfs:label "Althen-Kleinpösna" ;
+                       ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Altlindenau a ld:Stadtbezirk ;
+                rdfs:label "Altlindenau" ;
+                ld:zuPlanungsRaum ldp:West .
+
+lds:Anger-Crottendorf a ld:Stadtbezirk ;
+                      rdfs:label "Anger-Crottendorf" ;
+                      ld:zuPlanungsRaum ldp:InnererOsten .
+
+lds:Baalsdorf a ld:Stadtbezirk ;
+              rdfs:label "Baalsdorf" ;
+              ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Boehlitz-Ehrenberg a ld:Stadtbezirk ;
+                       rdfs:label "Böhlitz-Ehrenberg" ;
+                       ld:zuPlanungsRaum ldp:West .
+
+lds:Burghausen-Rueckmarsdorf a ld:Stadtbezirk ;
+                             rdfs:label "Burghausen-Rückmarsdorf" ;
+                             ld:zuPlanungsRaum ldp:West .
+
+lds:Connewitz a ld:Stadtbezirk ;
+              rdfs:label "Connewitz" ;
+              ld:zuPlanungsRaum ldp:MitteSued .
+
+lds:Doelitz-Doesen a ld:Stadtbezirk ;
+                   rdfs:label "Dölitz-Dösen" ;
+                   ld:zuPlanungsRaum ldp:MitteSued .
+
+lds:Engelsdorf a ld:Stadtbezirk ;
+               rdfs:label "Engelsdorf" ;
+               ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Eutritzsch a ld:Stadtbezirk ;
+               rdfs:label "Eutritzsch" ;
+               ld:zuPlanungsRaum ldp:Nord .
+
+lds:Gohlis-Mitte a ld:Stadtbezirk ;
+                 rdfs:label "Gohlis-Mitte" ;
+                 ld:zuPlanungsRaum ldp:Nord .
+
+lds:Gohlis-Nord a ld:Stadtbezirk ;
+                rdfs:label "Gohlis-Nord" ;
+                ld:zuPlanungsRaum ldp:Nord .
+
+lds:Gohlis-Sued a ld:Stadtbezirk ;
+                rdfs:label "Gohlis-Süd" ;
+                ld:zuPlanungsRaum ldp:Nord .
+
+lds:Grosszschocher a ld:Stadtbezirk ;
+                   rdfs:label "Großzschocher" ;
+                   ld:zuPlanungsRaum ldp:West .
+
+lds:Gruenau-Mitte a ld:Stadtbezirk ;
+                  rdfs:label "Grünau-Mitte" ;
+                  ld:zuPlanungsRaum ldp:Gruenau .
+
+lds:Gruenau-Nord a ld:Stadtbezirk ;
+                 rdfs:label "Grünau-Nord" ;
+                 ld:zuPlanungsRaum ldp:Gruenau .
+
+lds:Gruenau-Ost a ld:Stadtbezirk ;
+                rdfs:label "Grünau-Ost" ;
+                ld:zuPlanungsRaum ldp:Gruenau .
+
+lds:Gruenau-Siedlung a ld:Stadtbezirk ;
+                     rdfs:label "Grünau-Siedlung" ;
+                     ld:zuPlanungsRaum ldp:Gruenau .
+
+lds:Hartmannsdorf-Knautnaundorf a ld:Stadtbezirk ;
+                                rdfs:label "Hartmannsdorf-Knautnaundorf" ;
+                                ld:zuPlanungsRaum ldp:West .
+
+lds:Heiterblick a ld:Stadtbezirk ;
+                rdfs:label "Heiterblick" ;
+                ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Holzhausen a ld:Stadtbezirk ;
+               rdfs:label "Holzhausen" ;
+               ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Kleinzschocher a ld:Stadtbezirk ;
+                   rdfs:label "Kleinzschocher" ;
+                   ld:zuPlanungsRaum ldp:West .
+
+lds:Knautkleeberg-Knauthain a ld:Stadtbezirk ;
+                            rdfs:label "Knautkleeberg-Knauthain" ;
+                            ld:zuPlanungsRaum ldp:West .
+
+lds:Lausen-Gruenau a ld:Stadtbezirk ;
+                   rdfs:label "Lausen-Grünau" ;
+                   ld:zuPlanungsRaum ldp:Gruenau .
+
+lds:Leutzsch a ld:Stadtbezirk ;
+             rdfs:label "Leutzsch" ;
+             ld:zuPlanungsRaum ldp:West .
+
+lds:Liebertwolkwitz a ld:Stadtbezirk ;
+                    rdfs:label "Liebertwolkwitz" ;
+                    ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Lindenau a ld:Stadtbezirk ;
+             rdfs:label "Lindenau" ;
+             ld:zuPlanungsRaum ldp:West .
+
+lds:Lindenthal a ld:Stadtbezirk ;
+               rdfs:label "Lindenthal" ;
+               ld:zuPlanungsRaum ldp:Nord .
+
+lds:Loessnig a ld:Stadtbezirk ;
+             rdfs:label "Lößnig" ;
+             ld:zuPlanungsRaum ldp:MitteSued .
+
+lds:Luetzschena-Stahmeln a ld:Stadtbezirk ;
+                         rdfs:label "Lützschena-Stahmeln" ;
+                         ld:zuPlanungsRaum ldp:Nord .
+
+lds:Marienbrunn a ld:Stadtbezirk ;
+                rdfs:label "Marienbrunn" ;
+                ld:zuPlanungsRaum ldp:MitteSued .
+
+lds:Meusdorf a ld:Stadtbezirk ;
+             rdfs:label "Meusdorf" ;
+             ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Miltitz a ld:Stadtbezirk ;
+            rdfs:label "Miltitz" ;
+            ld:zuPlanungsRaum ldp:Gruenau .
+
+lds:Mockau-Nord a ld:Stadtbezirk ;
+                rdfs:label "Mockau-Nord" ;
+                ld:zuPlanungsRaum ldp:NordOst .
+
+lds:Mockau-Sued a ld:Stadtbezirk ;
+                rdfs:label "Mockau-Süd" ;
+                ld:zuPlanungsRaum ldp:NordOst .
+
+lds:Moeckern a ld:Stadtbezirk ;
+             rdfs:label "Möckern" ;
+             ld:zuPlanungsRaum ldp:Nord .
+
+lds:Moelkau a ld:Stadtbezirk ;
+            rdfs:label "Mölkau" ;
+            ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Neulindenau a ld:Stadtbezirk ;
+                rdfs:label "Neulindenau" ;
+                ld:zuPlanungsRaum ldp:West .
+
+lds:Neustadt-Neuschoenefeld a ld:Stadtbezirk ;
+                            rdfs:label "Neustadt-Neuschönefeld" ;
+                            ld:zuPlanungsRaum ldp:InnererOsten .
+
+lds:Paunsdorf a ld:Stadtbezirk ;
+              rdfs:label "Paunsdorf" ;
+              ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Plagwitz a ld:Stadtbezirk ;
+             rdfs:label "Plagwitz" ;
+             ld:zuPlanungsRaum ldp:West .
+
+lds:Plaussig-Portitz a ld:Stadtbezirk ;
+                     rdfs:label "Plaußig-Portitz" ;
+                     ld:zuPlanungsRaum ldp:NordOst .
+
+lds:Probstheida a ld:Stadtbezirk ;
+                rdfs:label "Probstheida" ;
+                ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Reudnitz-Thonberg a ld:Stadtbezirk ;
+                      rdfs:label "Reudnitz-Thonberg" ;
+                      ld:zuPlanungsRaum ldp:InnererOsten .
+
+lds:Schleussig a ld:Stadtbezirk ;
+               rdfs:label "Schleußig" ;
+               ld:zuPlanungsRaum ldp:West .
+
+lds:Schoenau a ld:Stadtbezirk ;
+             rdfs:label "Schönau" ;
+             ld:zuPlanungsRaum ldp:Gruenau .
+
+lds:Schoenefeld-Abtnaundorf a ld:Stadtbezirk ;
+                            rdfs:label "Schönefeld-Abtnaundorf" ;
+                            ld:zuPlanungsRaum ldp:InnererOsten .
+
+lds:Schoenefeld-Ost a ld:Stadtbezirk ;
+                    rdfs:label "Schönefeld-Ost" ;
+                    ld:zuPlanungsRaum ldp:InnererOsten .
+
+lds:Seehausen a ld:Stadtbezirk ;
+              rdfs:label "Seehausen" ;
+              ld:zuPlanungsRaum ldp:NordOst .
+
+lds:Sellerhausen-Stuenz a ld:Stadtbezirk ;
+                        rdfs:label "Sellerhausen-Stünz" ;
+                        ld:zuPlanungsRaum ldp:InnererOsten .
+
+lds:Stoetteritz a ld:Stadtbezirk ;
+                rdfs:label "Stötteritz" ;
+                ld:zuPlanungsRaum ldp:OstSuedost .
+
+lds:Suedvorstadt a ld:Stadtbezirk ;
+                 rdfs:label "Südvorstadt" ;
+                 ld:zuPlanungsRaum ldp:MitteSued .
+
+lds:Thekla a ld:Stadtbezirk ;
+           rdfs:label "Thekla" ;
+           ld:zuPlanungsRaum ldp:NordOst .
+
+lds:Volkmarsdorf a ld:Stadtbezirk ;
+                 rdfs:label "Volkmarsdorf" ;
+                 ld:zuPlanungsRaum ldp:InnererOsten .
+
+lds:Wahren a ld:Stadtbezirk ;
+           rdfs:label "Wahren" ;
+           ld:zuPlanungsRaum ldp:Nord .
+
+lds:Wiederitzsch a ld:Stadtbezirk ;
+                 rdfs:label "Wiederitzsch" ;
+                 ld:zuPlanungsRaum ldp:Nord .
+
+lds:Zentrum a ld:Stadtbezirk ;
+            rdfs:label "Zentrum" ;
+            ld:zuPlanungsRaum ldp:MitteSued .
+
+lds:Zentrum-Nord a ld:Stadtbezirk ;
+                 rdfs:label "Zentrum-Nord" ;
+                 ld:zuPlanungsRaum ldp:Nord .
+
+lds:Zentrum-Nordwest a ld:Stadtbezirk ;
+                     rdfs:label "Zentrum-Nordwest" ;
+                     ld:zuPlanungsRaum ldp:MitteSued .
+
+lds:Zentrum-Ost a ld:Stadtbezirk ;
+                rdfs:label "Zentrum-Ost" ;
+                ld:zuPlanungsRaum ldp:InnererOsten .
+
+lds:Zentrum-Sued a ld:Stadtbezirk ;
+                 rdfs:label "Zentrum-Süd" ;
+                 ld:zuPlanungsRaum ldp:MitteSued .
+
+lds:Zentrum-Suedost a ld:Stadtbezirk ;
+                    rdfs:label "Zentrum-Südost" ;
+                    ld:zuPlanungsRaum ldp:MitteSued .
+
+lds:Zentrum-West a ld:Stadtbezirk ;
+                 rdfs:label "Zentrum-West" ;
+                 ld:zuPlanungsRaum ldp:MitteSued .
+
+<> a owl:Ontology ;
+   rdfs:label "LeipzigData - Stadtbezirke" .
+>>>>>>> origin/master
