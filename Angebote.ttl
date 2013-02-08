@@ -3,10 +3,17 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
-@prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+
+<http://leipzig-data.de/Data/Adresse/04318.Permoserstrasse.15>
+    ld:hasHouseNumber "15" ;
+    ld:hasPostCode "04318" ;
+    ld:inStreet <http://leipzig-data.de/Data/Strasse/Permoserstrasse> ;
+    a ld:Adresse ;
+    rdfs:label "Permoserstraße 15" .
 
 <http://leipzig-data.de/Data/Angebot/ASG.Schuelerakademie>
     ld:Art "Veranstaltungsreihe (Vorträge und Experimente)" ;
@@ -25,15 +32,24 @@
     rdfs:label "Leipziger Schülerakademie" .
 
 <http://leipzig-data.de/Data/Angebot/Attac.DenkTankStelle>
-    ld:Hintergrund "Monatliche Diskussionsrunde seit Juli 2006" ;
     ld:Kosten "nein" ;
     ld:Kurzinformation "Die DenkTankStellen (DTS) von Attac Leipzig sind offene und öffentliche Diskussionen und Reflexionsversuche über aktuelle politische und philosophisch/psychologische Probleme. Sie finden in der Regel an einem Montag im Monat 19:00 h im Café Grundmann statt. Dabei geht es nicht um Wissenszuwachs durch Vorträge u.ä., sondern um Denken und Diskutieren vom Anfang an. Und es soll Spaß machen! " ;
-    ld:hasAddress "FIXME:August-Bebel-Strasse.2" ;
     ld:hasStatus "aktiv" ;
-    ld:hasURL "http://leipzig-netz.de/index.php5/Attac.DenkTankStelle" ;
+    ld:hasTag ldtag:AttacLeipzig, ldtag:ZukunftsDiskurs ;
+    ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle> ;
     ld:relatedBundle <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
     a ld:Angebot ;
     rdfs:label "Attac Denktankstelle" .
+
+<http://leipzig-data.de/Data/Angebot/Attac.Mittwochsattacke>
+    ld:Kosten "nein" ;
+    ld:Kurzinformation "Seit Herbst 2004 organisiert Attac Leipzig diese Veranstaltungsreihe, die - wie der Name sagt - an jedem letzten Mittwoch im Monat stattfindet. Zu Gast sind Referenten aus verschiedenen sozialen Bewegungen und Diskurszusammenhängen, die wichtige Fragen der heutigen Zeit thematisieren. Die Planung der Reihe erfolgt auf den Attac-Plena." ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:AttacLeipzig, ldtag:ZukunftsDiskurs ;
+    ld:hasURL <http://www.attac-leipzig.de/mittwoch/index.html> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+    a ld:Angebot ;
+    rdfs:label "Attac Mittwochsattacke" .
 
 <http://leipzig-data.de/Data/Angebot/DTS.SchuleInteraktiv>
     ld:Art "Schulentwicklung zur Verbesserung der Medienkompetenz (technische Ausstattung, Unterrichtskonzepte)" ;
@@ -79,7 +95,7 @@
     ld:Zielgruppe "Mädchen der 10. bis 12. Klasse" ;
     ld:Zielstellung "Mädchen der 10. bis 12. Klasse lernen den Studienalltag kennen (Hörsaal, Seminarraum, Labor) und können sich davon überzeugen, wie spannend ein technisches Studium sein kann" ;
     ld:contactPerson ldp:Herrmann_Anne ;
-    ld:hasAddress "FIXME:Eichendorffstr..2" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Eichendorffstrasse.2> ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Hochschule ;
     ld:hasURL "http://www.htwk-leipzig.de/ferienhochschule" ;
@@ -96,7 +112,7 @@
     ld:Zielgruppe "Klassenstufe 10 bis 12" ;
     ld:Zielstellung "Vermittlung von Fachinhalten zur Telekommunikation, Physik, Mathematik, Informatik, Schülerinnen und Schülern einen Einblick in den Ablauf eines Studiums an der HfTL bieten" ;
     ld:contactPerson ldp:Buettner_Torsten ;
-    ld:hasAddress "FIXME:Gustav-Freytag-Strasse.43-45" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Gustav-Freytag-Strasse.43-45> ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Hochschule ;
     ld:relatedBundle ldo:HfTL ;
@@ -424,7 +440,7 @@ Diese Struktur kann dann mit mathematischen Methoden auf universelle und spezifi
     ld:Hintergrund "Reihe an der Uni Leipzig im Sommersemester 2012, organisiert von verschiedenen Fachschaftsräten in Zusammenarbeit mit der Rosa-Luxemburg-Stiftung" ;
     ld:Kosten "nein" ;
     ld:Kurzinformation "<div>Was im Jahr 2007 als Krise des US-Immobilienmarktes begann, hat sich bis heute zu einer handfesten Weltwirtschafts- und Fiskalkrise ausgeweitet, so dass mittlerweile die Zukunft der europäischen Währungsunion auf dem Spiel steht. Unter deutsch-französischer Führung sollen die Haushaltsprobleme mittels radikaler Sparpolitik auf Kosten der LohnarbeiterInnen, vor allem in der europäischen Peripherie, gelöst werden. In Griechenland kommt es daher zur Zeit zu massiven sozialen Protesten. </div> <div> Schon Karl Marx setzte sich in seinem gut 140 Jahre alten Kapital mit ökonomischen Krisen, Staatsverschuldung, Ausbeutung und Arbeitskämpfen auseinander. Dabei versucht er zu ergründen, warum solche Phänomene im Kapitalismus notwendigerweise auftreten. Was liegt also näher, als sich einmal genauer mit dem zu beschäftigen, was man von Marx für das 21. Jahrhundert lernen könnte? Wir haben daher neun kritische Sozialwissenschaftler eingeladen, um einen Einblick in die Marxsche Gesellschaftstheorie zu erhalten und davon ausgehend mit euch diese aktuellen Phänomene diskutieren zu können. Ziel ist, sich mit so scheinbar selbstverständlichen Phänomenen wie Kapitalismus, Staat, Arbeit und Moral aus einer etwas anderen Perspektive auseinanderzusetzen. </div>" ;
-    ld:hasAddress "FIXME:Augustusplatz.10/11" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
     ld:hasStatus "Projekt" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/UniLeipzig.Studentenrat> ;
     ld:hasURL "http://marxexpedition.de" ;
@@ -445,7 +461,7 @@ Diese Struktur kann dann mit mathematischen Methoden auf universelle und spezifi
     ld:Art "Botanikschule" ;
     ld:Telefon "0341-97-36857" ;
     ld:Zielgruppe "Unterricht in Sachkunde und Biologie bis Klasse 7" ;
-    ld:hasAddress "FIXME:Linnstrasse.1" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Linnestrasse.1> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier ldt:StadtLeipzig, ldt:UniLeipzig ;
     ld:hasTag ldtag:MINT ;
@@ -502,7 +518,7 @@ Ansprechpartner: Frau Patzschke, Frau Zaumseil""" ;
 <http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Zooschule>
     ld:Art "Zooschule" ;
     ld:Telefon "0341-5933396" ;
-    ld:hasAddress "FIXME:PfaffendorferStr..29" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.PfaffendorferStrasse.29> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier ldt:ZooLeipzig ;
     ld:hasTag ldtag:MINT ;
@@ -538,7 +554,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
     ld:Art "Weiterbildung für Erzieherinnen und Erzieher im frühkindlichen Bereich" ;
     ld:Zielstellung "Mit dem Projekt „Natur-Wissen schaffen“ unterstützt die Deutsche Telekom Stiftung Erzieherinnen und Erzieher dabei, die Bildungsbereiche Mathematik, Naturwissenschaften, Technik und Medien in ihrer täglichen pädagogischen Arbeit umzusetzen." ;
     ld:contactPerson ldp:Schneider_Carla ;
-    ld:hasAddress "FIXME:NaumburgerStr..26" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.NaumburgerStrasse.26> ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:MINT ;
     ld:hasURL "http://www.leipzig.de/de/buerger/aemterhome/jugendamt/projekte", "http://www.natur-wissen-schaffen.de" ;
@@ -551,7 +567,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
     ld:Hintergrund "Reihe an der Uni Leipzig im Frühjahr 2012" ;
     ld:Kosten "nein" ;
     ld:Kurzinformation "Zu sieben Terminen haben wir renommierte Experten gewinnen können, die darlegen, welche Chancen für eine lokale und nachhaltige Lebensweise bestehen und welche Möglichkeiten gesellschaftlicher Teilhabe damit entstehen. Alle Interessierten sind herzlich eingeladen." ;
-    ld:hasAddress "FIXME:Augustusplatz.10/11" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
     ld:hasStatus "Projekt" ;
     ld:hasURL "http://www.transitiontown-leipzig.de/aktuell:vortragsreihe_2012" ;
     ld:relatedBundle <http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig> ;
@@ -566,7 +582,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
     ld:Zielgruppe "Kinder im Vor- und Grundschulalter" ;
     ld:Zielstellung "Experimentelle und spielerische Annäherung an elementare naturwissenschaftliche Zusammenhänge, Arbeit mit Kindern und Schülern vor Ort" ;
     ld:contactPerson ldp:Klauer_AnnaKatharina ;
-    ld:hasAddress "FIXME:Permoserstrasse.15" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04318.Permoserstrasse.15> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier ldt:LANU, ldt:UFZ ;
     ld:hasTag ldtag:Hochschule ;
@@ -593,7 +609,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
     ld:Zielgruppe "Hochschulen und Schulen: Wissenschaftler, Mathematiklehrkräfte und Schülerinnen und Schüler" ;
     ld:Zielstellung "Mehr junge Menschen für das Fach Mathematik begeistern und Lehrkräften didaktische Impulse für einen spannenden, forschenden Mathematikuntericht geben." ;
     ld:contactPerson ldp:Rademacher_HansBert ;
-    ld:hasAddress "FIXME:Augustusplatz.10-11" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
     ld:hasStatus "abgeschlossen" ;
     ld:hasTag ldtag:Hochschule ;
     ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.FMI> ;
@@ -617,7 +633,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
     ld:Zielgruppe "Jugendliche der Klassen 9 bis 12" ;
     ld:Zielstellung "Förderung von an Informatik interessierten Schülern durch Angebot eines zweiwöchigen Betriebspraktikums (9./10. Klasse) sowie Arbeiten an einem wissenschaftlichen Thema (11. Klasse), dessen Ergebnis u.U. als Jahresarbeit oder BeLL eingereicht werden kann." ;
     ld:contactPerson ldp:Meiler_Monika, ldp:Quapp_Wolfgang ;
-    ld:hasAddress "FIXME:Augustusplatz.10-11" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:MINT ;
     ld:hasURL "http://www.informatik.uni-leipzig.de/~meiler/Schuelerseiten.dir/" ;
@@ -697,7 +713,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
     ld:Hintergrund "Gesprächsreihe, organisiert von Prof. Ulrich Brieler." ;
     ld:Kosten "nein" ;
     ld:Kurzinformation "Das <i>Sonntagsgespräch</i> ist eine öffentliche Veranstaltung der Universität und der Stadt Leipzig. Es lädt regelmäßig renommierte Wissenschaftler und Intellektuelle dazu ein, ihre Einsichten zu gesellschaftlichen Problemen der Gegenwart darzulegen, und das Leipziger Publikum dazu, sich konstruktiv mit diesen auseinander zu setzen. Was wir wollen ist, einen Raum für unabhängiges und kritisches Denken zu schaffen, und so einen Beitrag zur intellektuellen Kultur in Leipzig zu leisten." ;
-    ld:hasAddress "FIXME:Ritterstrasse.8-10" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.8-10> ;
     ld:hasStatus "Projekt" ;
     ld:hasURL "http://www.zv.uni-leipzig.de/service/veranstaltungen/sonntagsgespraech.html" ;
     ld:relatedBundle ldo:UniLeipzig ;

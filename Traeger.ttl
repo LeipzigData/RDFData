@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
-@prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
@@ -30,7 +30,7 @@ ld:Verein
 <http://leipzig-data.de/Data/Traeger/>
     a owl:Ontology ;
     rdfs:label "LeipzigData - Träger" ;
-    owl:imports <http://leipzig-data.de/Data/Personen/> .
+    owl:imports <http://leipzig-data.de/Data/Adressen/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Tags/> .
 
 ldt:ASB
     ld:hasSupplierNumber "003" ;
@@ -127,7 +127,7 @@ ldt:Behindertenverband
     rdfs:label "Behindertenverband" .
 
 ldt:Billardakademie
-    ld:hasAddress "FIXME:Nonnenstr..19" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Nonnenstrasse.19> ;
     a ld:Traeger ;
     rdfs:label "Billard Akademie Leipzig e.V., Naturwissenschaftliches Begabten- und Förderzentrum" .
 
@@ -196,13 +196,13 @@ ldt:ConneIsland
     rdfs:label "djo Deutsche Jugend in Europa LV Sachsen" .
 
 ldt:DNB
-    ld:hasAddress "FIXME:DeutscherPlatz.1" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.1> ;
     ld:hasURL "http://www.d-nb.de" ;
     a ld:Traeger ;
     rdfs:label "Deutsche Nationalbibliothek Leipzig" .
 
 <http://leipzig-data.de/Data/Traeger/DRK.AkademischerKreisverband>
-    ld:hasAddress "FIXME:Birkenstrasse.26-30" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Birkenstrasse.26-30> ;
     ld:hasEmail "drk-akt@t-online.de" ;
     ld:hasTelefon "0341-4799464" ;
     ld:hasURL "http://www.drk-akademischer-kv-leipzig.de" ;
@@ -232,7 +232,7 @@ ldt:EBI
     rdfs:label "EBI" .
 
 ldt:EineWelt
-    ld:hasAddress "FIXME:BornaischeStrasse.18" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.BornaischeStrasse.18> ;
     ld:hasEmail "miguel.ruiz@einewelt-sachsen.de" ;
     ld:hasSupplierNumber "016" ;
     ld:hasTelefon "0341-9940683" ;
@@ -285,7 +285,7 @@ ldt:FFS
     rdfs:label "FRÜHES FORSCHEN Sachsen" .
 
 <http://leipzig-data.de/Data/Traeger/FZ.Paradise>
-    ld:hasAddress "FIXME:Kurt-Tucholski-Strasse.10" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04279.Kurt-Tucholsky-Strasse.10> ;
     ld:hasEmail "fzz-loessnig@kv-leipzig.de" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig> ;
     ld:hasTelefon "0341-3391396" ;
@@ -327,7 +327,7 @@ ldt:FroebelGruppe
 
 ldt:GAZ
     ld:engagedPerson ldp:Reschke_Volker ;
-    ld:hasAddress "FIXME:Vollhardtstrasse.16" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04279.Vollhardtstrasse.16> ;
     ld:hasEmail "gaz-leipzig@t-online.de" ;
     a ld:Traeger ;
     rdfs:label "Grün-Alternatives Zentrum Leipzig e.V." .
@@ -381,7 +381,7 @@ ldt:Heilsarmee
 
 ldt:HfTL
     ld:engagedPerson ldp:Messollen_Michael ;
-    ld:hasAddress "FIXME:Gustav-Freytag-Strasse.43-45" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Gustav-Freytag-Strasse.43-45> ;
     ld:hasURL "http://www.hft-leipzig.de" ;
     a ld:Traeger ;
     rdfs:label "Hochschule für Telekommunikation Leipzig" .
@@ -399,7 +399,8 @@ ldt:IHK
 
 ldt:Inspirata
     ld:engagedPerson ldp:Koenig_Wolfgang ;
-    ld:hasAddress "FIXME:Postfach.100920" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.4> ;
+    ld:hasAddressAddendum "Eingang G (3. Etage)" ;
     ld:hasEmail "kontakt@inspirata.de" ;
     ld:hasTelefon "0341-1259757" ;
     ld:hasURL <http://www.inspirata.de> ;
@@ -793,7 +794,7 @@ ldt:Sportmobil
     rdfs:label "Sportmobil, Springburg" .
 
 ldt:StadtLeipzig
-    ld:hasAddress "FIXME:Martin-Luther-Ring.4-6" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Martin-Luther-Ring.4-6> ;
     ld:hasURL "http://www.leipzig.de" ;
     a ld:Traeger ;
     rdfs:label "Stadt Leipzig, Stadtverwaltung" .
@@ -806,7 +807,7 @@ ldt:StadtLeipzig
     rdfs:label "Leipziger Städtische Bibliotheken" .
 
 <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt>
-    ld:hasAddress "FIXME:Martin-Luther-Ring.4-6" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Martin-Luther-Ring.4-6> ;
     ld:hasURL "http://www.leipzig.de" ;
     a ld:Traeger ;
     rdfs:label "Stadt Leipzig - Amt für Jugend, Familie und Bildung" .
@@ -817,7 +818,12 @@ ldt:Stadtjugendfeuerwehr
     rdfs:label "Stadtjugendfeuerwehr" .
 
 ldt:Stadtjugendring
+    ld:engagedPerson ldp:Graf_Corinna, ldp:vonJan_Teresa ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.DresdnerStrasse.82> ;
+    ld:hasFax "0341-6889334" ;
     ld:hasSupplierNumber "093" ;
+    ld:hasTelefon "0152-34260674", "0341-6894859" ;
+    ld:hasURL <http://www.stadtjugendring-leipzig.de> ;
     a ld:Traeger ;
     rdfs:label "Stadtjugendring" .
 
@@ -833,7 +839,7 @@ ldt:Tanztheater
 
 ldt:UFZ
     ld:engagedPerson ldp:Teutsch_Georg ;
-    ld:hasAddress "FIXME:Permoserstrasse.15" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Permoserstrasse.15> ;
     ld:hasURL "http://www.ufz.de" ;
     a ld:Traeger ;
     rdfs:label "UFZ" .
@@ -873,7 +879,7 @@ ldt:UrbanSouls
 
 <http://leipzig-data.de/Data/Traeger/VDE.LeipzigHalle>
     ld:engagedPerson ldp:Raue_Manfred ;
-    ld:hasAddress "FIXME:Friedrich-Ebert-Strasse.26" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Friedrich-Ebert-Strasse.26> ;
     ld:hasEmail "manfred.raue@vde-mitglied.de" ;
     ld:hasTelefon "0341-1207496" ;
     ld:hasURL "www.VDE-Leipzig-Halle.de" ;
@@ -899,7 +905,7 @@ ldt:Villa
     rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" .
 
 ldt:WABE
-    ld:hasAddress "FIXME:AmKanal.28" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.AmKanal.28> ;
     ld:hasEmail "S.Scherbaum@wabe-leipzig.de" ;
     ld:hasSupplierNumber "043" ;
     ld:hasTelefon "0341-4972415" ;
@@ -930,7 +936,7 @@ ldt:ZfI
     rdfs:label "Zentrum für Integration e.V." .
 
 ldt:ZooLeipzig
-    ld:hasAddress "FIXME:PfaffendorferStrasse.29" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.PfaffendorferStrasse.29> ;
     ld:hasTelefon "0341-5933385" ;
     ld:hasURL "http://www.zoo-leipzig.de" ;
     a ld:Traeger ;
@@ -964,7 +970,7 @@ ldt:ciT
     rdfs:label "Arnold-Sommerfeld-Gesellschaft" .
 
 <http://leipzig-data.de/Data/Verein/Anker>
-    ld:hasAddress "FIXME:Renftstrasse.1" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Renftstrasse.1> ;
     ld:hasEmail "info@anker-leipzig.de" ;
     ld:hasSupplierNumber "062" ;
     ld:hasTelefon "0341-9128327" ;

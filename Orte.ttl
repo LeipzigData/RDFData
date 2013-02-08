@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
-@prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
@@ -359,6 +359,12 @@ ldo:CreativApotheke
     a ld:Ort ;
     rdfs:label "Creativ Apotheke" .
 
+ldo:Culturtraeger
+    ld:hasAPIId "Venue.74" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Kohlgartenstrasse.24> ;
+    a ld:Ort ;
+    rdfs:label "Culturtraeger" .
+
 <http://leipzig-data.de/Data/Ort/DNB.DBSM>
     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.1> ;
     ld:hasEmail "dbsm@d-nb.de" ;
@@ -566,6 +572,13 @@ ldo:Garage
     a ld:Ort ;
     rdfs:label "GaraGe - Technologiezentrum für Jugendliche" .
 
+ldo:Gesamtelternrat
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.NaumburgerStrasse.26> ;
+    ld:hasURL <http://gesamtelternrat-leipzig.de> ;
+    a ld:Ort ;
+    rdfs:comment "Vertritt die städtische Seite der Bildungslandschaft, also Horte und Kindertageseinrichtungen" ;
+    rdfs:label "Gesamtelternrat" .
+
 ldo:GfZK
     ld:hasAPIId "Venue.66" ;
     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Karl-Tauchnitz-Strasse.11> ;
@@ -580,6 +593,14 @@ ldo:GfZK
     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.19-21> ;
     a ld:Ort ;
     rdfs:label "90. Grundschule" .
+
+<http://leipzig-data.de/Data/Ort/Gymnasium.Grimma>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04668.Klosterstrasse.1> ;
+    ld:hasFax "03437-911312" ;
+    ld:hasTelefon "03437-911309" ;
+    ld:hasURL <http://staugustin.de> ;
+    a ld:Ort ;
+    rdfs:label "Gymnasium St. Augustin Grimma" .
 
 ldo:HTWK
     ld:Kurzinformation "Die Hochschule für Technik, Wirtschaft und Kultur Leipzig wurde 1992 als Hochschule der angewandten Wissenschaften gegründet. Sie setzt damit eine lange Tradition der ingenieurtechnischen Bildungseinrichtungen und der Lehrstätten für Bibliothekare, Buchhändler und Museologen in Leipzig fort. Mit etwa 7000 Studierenden gehört sie zu den größten Fachhochschulen Deutschlands." ;
@@ -1316,6 +1337,18 @@ ldo:SportforumLeipzig
     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Martin-Luther-Ring.4> ;
     a ld:Ort ;
     rdfs:label "Neues Rathaus" .
+
+ldo:Stadtelternrat
+    ld:engagedPerson ldp:Duschinger_Robert, ldp:Fleckenstein_Heike, ldp:Geisler_Andreas ;
+    a ld:Ort ;
+    rdfs:comment "Neuwahl der Leitung am 5.1.2013 (Quelle: Newsletter LvO 02/2013)" ;
+    rdfs:label "Stadtelternrat" .
+
+<http://leipzig-data.de/Data/Ort/Stadtteilladen.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.19> ;
+    a ld:Ort ;
+    rdfs:comment "Neue Zweigstelle zur Bildungsberatung öffnet im März 2013 (Quelle: Newsletter LvO 02/2013)" ;
+    rdfs:label "Stadtteilladen Grünau" .
 
 ldo:StarkFuerGruenau
     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.63> ;
