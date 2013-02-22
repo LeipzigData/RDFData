@@ -1,9 +1,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
@@ -399,6 +401,17 @@
     ical:organizer ldo:ASG ;
     ical:summary "Mit Prof. Dr.-Ing. Norbert Bernhard (Hochschule Anhalt, Köthen)" .
 
+<http://leipzig-data.de/Data/Event/Attac.2013-02-16>
+    ld:hasTag ldtag:AttacLeipzig ;
+    a ld:Event ;
+    rdfs:label "Attac Jahrestreffen" ;
+    ical:description "Wir wollen gemeinsam das vergangene Jahr Revue passieren lassen und über Pläne für das Jahr 2013 sprechen. <br/> Um 9:30 geht es mit einem gemeinsamen Frühstück los, und für Mittagessen und Kaffee ist auch gesorgt.<br/> Ansonsten wollen wir vormittags die Aktionen und Ereignisse des vergangenen Jahres besprechen und nachmittags auswerten. Am späteren Nachmittag wollen wir dann Ideen für neue Aktionen zusammentragen, und den Abend nach einem Abendessen gemeinsam ausklingen lassen." ;
+    ical:dtend "2013-02-16T20:30:00+01:00" ;
+    ical:dtstart "2013-02-16T09:30:00+01:00" ;
+    ical:location ldo:Durchblick ;
+    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+    ical:summary "Attac Jahrestreffen" .
+
 <http://leipzig-data.de/Data/Event/Attac.2013-04-27>
     ld:hasTag ldtag:AttacLeipzig, ldtag:ZukunftsDiskurs ;
     ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.Mittwochsattacke> ;
@@ -677,6 +690,9 @@
     ical:summary "Mit Dr.-Ing. Gerd Arnold (Evermind, Leipzig). Mit der Diskussion des Vorteils von Gas als Energieträger, fast verlustfrei über große Strecken übertragen werden zu können, rückt die Frage der Optimierungspotenziale einer integrierten Betrachtung von Energie- und Stoffströmen ins Blickfeld." .
 
 <http://leipzig-data.de/Data/Events/>
+    <http://creativecommons.org/ns#attributionName> "The Leipzig Open Data Project" ;
+    <http://creativecommons.org/ns#attributionURL> <http://leipzig-data.de> ;
+    <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:label "LeipzigData Events" .
 

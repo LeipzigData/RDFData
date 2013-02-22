@@ -1,9 +1,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
@@ -28,6 +30,9 @@ ld:Verein
     rdfs:label "Stadt Leipzig, Amt für Wirtschaftsförderung" .
 
 <http://leipzig-data.de/Data/Traeger/>
+    <http://creativecommons.org/ns#attributionName> "The Leipzig Open Data Project" ;
+    <http://creativecommons.org/ns#attributionURL> <http://leipzig-data.de> ;
+    <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:label "LeipzigData - Träger" ;
     owl:imports <http://leipzig-data.de/Data/Adressen/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Tags/> .
@@ -225,6 +230,14 @@ ldt:Dekanatsjugendseelsorge
     ld:hasSupplierNumber "079" ;
     a ld:Traeger ;
     rdfs:label "Dekanatsjugendseelsorge" .
+
+ldt:Durchblick
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.MainzerStrasse.7> ;
+    ld:hasEmail "verein@durchblick-ev.de" ;
+    ld:hasTelefon "0341-1406140" ;
+    ld:hasURL <http://www.durchblick-ev.de> ;
+    a ld:Traeger, ld:Verein ;
+    rdfs:label "Interessengemeinschaft für psychiatrisch Betroffene \"Durchblick e.V.\"" .
 
 ldt:EBI
     ld:hasSupplierNumber "157" ;
