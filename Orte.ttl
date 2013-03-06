@@ -9,6 +9,7 @@
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix cc: <http://creativecommons.org/ns#> .
 
 ld:Ort
     a owl:Class ;
@@ -31,7 +32,7 @@ ldo:ASG
 
 ldo:AZ-Schkeuditz
     ld:engagedPerson ldp:Schilling_Peter ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04435.Bergbreite.1> ;
+    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04435.Schkeuditz.Bergbreite.1> ;
     ld:hasEmail "info@sternwarte-schkeuditz.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:MINT ;
@@ -533,7 +534,7 @@ ldo:Durchblick
     ld:hasTelefon "0341-1406140" ;
     ld:hasURL <http://www.durchblick-ev.de> ;
     a ld:Ort ;
-    rdfs:label "Durchblick" .
+    rdfs:label "Durchblick", "Durchblick e.V." .
 
 <http://leipzig-data.de/Data/Ort/EineWelt.Arbeitsstelle>
     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Paul-List-Strasse.19> ;
@@ -734,7 +735,7 @@ ldo:GfZK
     rdfs:label "90. Grundschule" .
 
 <http://leipzig-data.de/Data/Ort/Gymnasium.Grimma>
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04668.Klosterstrasse.1> ;
+    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04668.Grimma.Klosterstrasse.1> ;
     ld:hasFax "03437-911312" ;
     ld:hasTelefon "03437-911309" ;
     ld:hasURL <http://staugustin.de> ;
@@ -763,7 +764,7 @@ ldo:HTWK
     rdfs:label "Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK)" .
 
 <http://leipzig-data.de/Data/Ort/HTWK.MET>
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.KoburgerStrasse.62> ;
+    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.KoburgerStrasse.62> ;
     ld:hasFax "0341-30764202" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier ldt:HTWK ;
@@ -893,7 +894,6 @@ ldo:Inspirata
     ld:Hintergrund "Die INSPIRATA wurde im Herbst 2008 im Zusammenhang mit dem Jahr der Mathematik gegründet. Nach Zwischenstationen im Kinosaal des Schulmuseums und im Uni-Interim Brühl-Hochhaus finden Sie die INSPIRATA seit Januar 2010 auf dem Gelände der Alten Messe." ;
     ld:Kosten "2,00 Euro je Kind", "3,00 Euro je Erwachsener", "8,00 Euro Familienticket" ;
     ld:Kurzinformation "Die INSPIRATA fördert die mathematisch-naturwissenschaftliche Bildung für jedermann, hauptsächlich für Schulklassen. Ihr Kern ist eine Sammlung von Exponaten, an Hand derer die Besucher Naturgesetze erfahren bzw. verinnerlichen können. Ferner werden lehrplanbezogene Workshops und spezielle Führungen angeboten. Charakteristisch ist ein intensives pädagogisches Betreuungssystem.", "Mathematisch-naturwissenschaftliches Bildungszentrum nach Vorbild des Gießeners Mathematikums, Exponate zum Experimentieren, Workshops, Lehrerfortbildungen" ;
-    ld:Langinformation <http://leipzig-data.de/Data/Orte/Inspirata.Lang> ;
     ld:Leistungsangebot "Kindergeburtstagsbetreuungen mit Experimenten", "Mitmachmuseum mit mathematisch-naturwissenschaftlichen Exponaten und fachlicher Betreuung", "Thematische Führungen", "Thematische Weiterbildungen für Pädagogen", "Vorträge zu naturwissenschaftlichen und pädagogischen Inhalten", "Workshops zu mathematisch-naturwissenschaftlichen (Unterrichts-)Themen" ;
     ld:Oeffnungszeiten "Einzelbesucher/Fam.: am 2. Samstag jedes Monats", "Ferien-Angebote und individuelle Besuchszeiten nach Abstimmung", "für Gruppen (nach Anmeldung): mo.-fr. 8:30, 10:30, 12:30, 14:30 Uhr" ;
     ld:Teilnahmebedingungen "keine" ;
@@ -1030,14 +1030,14 @@ ldo:Kirsche
 
 <http://leipzig-data.de/Data/Ort/Kita.Forscherinsel>
     ld:Auszeichungen "2012 Haus der kleinen Forscher, LVZ 21.02.2012" ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04420.AmaltenBahnhof.21> ;
+    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04420.Markranstaedt.AmAltenBahnhof.21a> ;
     ld:hasEmail "awo-kita-forscherinsel@web.de" ;
     ld:hasFax "034205-411382" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/AWO.LeipzigerLand> ;
     ld:hasTag ldtag:MINT ;
     ld:hasTelefon "034205-411383" ;
-    ld:hasURL "http://kita-forscherinsel.npage.de/", "http://www.awo-leipzigerland.de/html/kita__forscherinsel__markranst.html" ;
+    ld:hasURL <http://kita-forscherinsel.npage.de>, <http://www.awo-leipzigerland.de/html/kita__forscherinsel__markranst.html> ;
     a ld:Ort ;
     rdfs:label "Kita Forscherinsel Seebenisch" .
 
@@ -1099,7 +1099,6 @@ ldo:LOFFT
 
 ldo:LSGM
     ld:Auszeichnungen "2005 Teubnerpreis" ;
-    ld:Langinformation <http://leipzig-data.de/Data/Orte/LSGM.Lang> ;
     ld:engagedPerson ldp:Graebe_HansGert, ldp:Schueler_Axel ;
     ld:hasAnschrift "c/o Math. Institut, Universität Leipzig, PF 100920, 04109 Leipzig" ;
     ld:hasStatus "aktiv" ;
@@ -1309,6 +1308,17 @@ ldo:Moritzbastei
     a ld:Ort ;
     rdfs:label "Kinder- und Jugendmuseum LIPSIKUS" .
 
+ldo:MuseumImTrafohaus
+    ld:Kurzinformation "Elektrotechnik zum Anfassen. Über tausend Exponate dokumentieren in unserem kleinen Museum die Geschichte der Elektromaschinen. Eine umfangreiche Sammlung elektrotechnischer Geräte aus den Bereichen Industrie, Handwerk, Haushalt und Landwirtschaft zeigt Ihnen die rasante Entwicklung in den vergangenen 150 Jahren. Viele Exponate können wir in Betrieb nehmen und manches können Sie selbst ausprobieren. <br/> Wie vibriert mein Handy? Wie funktioniert ein Rasierapparat? Wie verstellen sich die Autoscheinwerfer? Wir zeigen es Ihnen! Erleben Sie interessante und kuriose Experimente mit Spannung, Strom und Widerstand." ;
+    ld:Oeffnungszeiten "Besichtigung nur nach Voranmeldung" ;
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Plautstrasse.16> ;
+    ld:hasAddressAddendum "Eingang Morgensternstraße" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/IG.HEMB> ;
+    ld:hasTag ldtag:MINT ;
+    a ld:Ort ;
+    rdfs:label "Museum im Trafohaus" .
+
 ldo:Naturkundemuseum
     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Lortzingstrasse.3> ;
     ld:hasStatus "aktiv" ;
@@ -1404,12 +1414,12 @@ ldo:NochBesserLeben
     rdfs:label "OFT Zirkel" .
 
 <http://leipzig-data.de/Data/Ort/Oekoschule.Agrapark>
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.AmFestanger.8> ;
+    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.AmFestanger.8> ;
     ld:hasEmail "ökoschule-markkleeberg@gmx.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Umwelt ;
     ld:hasTelefon "0341-3504766" ;
-    ld:hasURL "http://www.kultur-und-umweltzentrum.de" ;
+    ld:hasURL <http://www.kultur-und-umweltzentrum.de> ;
     a ld:Ort ;
     rdfs:label "agra-Park Ökoschule" .
 
@@ -1422,14 +1432,14 @@ ldo:NochBesserLeben
     ld:Zielgruppe "für alle Altersklassen, Schultypen, Berufsschüler und Familien" ;
     ld:Zielstellung "aktive Auseinandersetzung mit der Natur und \"Unterricht im Grünen\" oder verschiedebe Projekttage" ;
     ld:engagedPerson ldp:Schwarze_Wolfgang ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.Kirchstrasse.42> ;
-    ld:hasEmail "http://oekoschule-markkleeberg@gmx.de" ;
+    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Kirchstrasse.42> ;
+    ld:hasEmail "oekoschule-markkleeberg@gmx.de" ;
     ld:hasFax "0341-3381143" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier ldt:KUZ ;
     ld:hasTag ldtag:MINT ;
     ld:hasTelefon "0341-3381142" ;
-    ld:hasURL "www.kultur-und-umweltzentrum.de" ;
+    ld:hasURL <http://www.kultur-und-umweltzentrum.de> ;
     a ld:Ort ;
     rdfs:label "Ökoschule Markkleeberg" .
 
@@ -1453,7 +1463,7 @@ ldo:PassageKinos
     ld:hasEmail "info@passage-kinos.de" ;
     ld:hasFax "341.2173870" ;
     ld:hasTelefon "341-2173862" ;
-    ld:hasURL <http://leipzig-data.de/Data/Orte/www.passage-kinos.de/> ;
+    ld:hasURL <http://www.passage-kinos.de/> ;
     a ld:Cinema, ld:Ort ;
     rdfs:label "Passage Kinos" .
 
@@ -1497,7 +1507,7 @@ ldo:Plan-B
     ld:Art "Projektzentrum mit Angeboten zu Ökologie, Elektromobilität, Verkehrserziehung" ;
     ld:Zielstellung "Junge Leute erfahren hier, dass Themen wie Technik und Ökologie durchaus auch Spaß machen können." ;
     ld:engagedPerson ldp:Messerschmidt_Elk ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04509.BageritzerWeg.1> ;
+    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04509.Rabutz.BageritzerWeg.1> ;
     ld:hasEmail "info@rennstall-rabutz.de" ;
     ld:hasFax "034207-73597" ;
     ld:hasStatus "aktiv" ;
@@ -1606,6 +1616,62 @@ ldo:SchulmuseumLeipzig
     ld:hasURL <http://www.schulmuseum-leipzig.de/> ;
     a ld:Museum, ld:Ort ;
     rdfs:label "Schulmuseum Leipzig" .
+
+<http://leipzig-data.de/Data/Ort/Seniorenbuero.AltWest>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.SaalfelderStrasse.12> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/VS.Leipzig> ;
+    a ld:Ort ;
+    rdfs:comment "Einrichtung nach Stadtratsbeschluss 11/2012" ;
+    rdfs:label "Seniorenbüro Alt-West" .
+
+<http://leipzig-data.de/Data/Ort/Seniorenbuero.Mitte>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Johannisplatz.2> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Caritas.Leipzig> ;
+    a ld:Ort ;
+    rdfs:comment "Einrichtung nach Stadtratsbeschluss 11/2012" ;
+    rdfs:label "Seniorenbüro Mitte" .
+
+<http://leipzig-data.de/Data/Ort/Seniorenbuero.NordOst>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04357.KielerStrasse.63-65> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/VS.Leipzig> ;
+    a ld:Ort ;
+    rdfs:comment "Einrichtung nach Stadtratsbeschluss 11/2012" ;
+    rdfs:label "Seniorenbüro Nordost" .
+
+<http://leipzig-data.de/Data/Ort/Seniorenbuero.NordWest>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Horst-Heilmann-Strasse.4> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/VS.Leipzig> ;
+    a ld:Ort ;
+    rdfs:comment "Einrichtung nach Stadtratsbeschluss 11/2012" ;
+    rdfs:label "Seniorenbüro Nordwest" .
+
+<http://leipzig-data.de/Data/Ort/Seniorenbuero.Sued>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Prinz-Eugen-Strasse.1> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/VS.Leipzig> ;
+    a ld:Ort ;
+    rdfs:comment "Einrichtung nach Stadtratsbeschluss 11/2012" ;
+    rdfs:label "Seniorenbüro Süd" .
+
+<http://leipzig-data.de/Data/Ort/Seniorenbuero.SuedOst>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.StoetteritzerStrasse.28> ;
+    ld:hasSupplier ldt:ASB ;
+    a ld:Ort ;
+    rdfs:comment "Einrichtung nach Stadtratsbeschluss 11/2012" ;
+    rdfs:label "Seniorenbüro Südost" .
+
+<http://leipzig-data.de/Data/Ort/Seniorenbuero.SuedWest>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04249.Dieskaustrasse.190A> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/BGL.Nachbarschaftshilfeverein> ;
+    a ld:Ort ;
+    rdfs:comment "Einrichtung nach Stadtratsbeschluss 11/2012" ;
+    rdfs:label "Seniorenbüro Südwest" .
+
+<http://leipzig-data.de/Data/Ort/Seniorenbuero.West>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.18> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/AWO.Leipzig> ;
+    a ld:Ort ;
+    rdfs:comment "Einrichtung nach Stadtratsbeschluss 11/2012" ;
+    rdfs:label "Seniorenbüro " .
 
 ldo:Sixtina
     ld:hasAdress <http://leipzig-data.de/Data/Adresse/04109.Katharinenstrasse.11> ;
@@ -1777,7 +1843,7 @@ ldo:Umspannwerk
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Oberstufe, Berufsschüler" ;
     ld:contactPerson ldp:Haenisch_Wolfgang, ldp:Raue_Manfred ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.Friedrich-Ebert-Strasse.26> ;
+    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Friedrich-Ebert-Strasse.26> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/VDE.LeipzigHalle> ;
     ld:hasTag ldtag:MINT ;
@@ -1985,16 +2051,11 @@ ldo:sublab
     rdfs:label "sublab e.V." .
 
 <http://leipzig-data.de/Data/Orte/>
-    <http://creativecommons.org/ns#attributionName> "The Leipzig Open Data Project" ;
-    <http://creativecommons.org/ns#attributionURL> <http://leipzig-data.de> ;
-    <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:comment "Alte Adressen komplett ersetzt" ;
     rdfs:label "LeipzigData - Orte" ;
     owl:imports <http://leipzig-data.de/Data/Adressen/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Tags/> .
-
-<http://leipzig-data.de/Data/Orte/Durchblick>
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.MainzerStrasse.7> ;
-    a ld:Ort ;
-    rdfs:label "Durchblick e.V." .
 

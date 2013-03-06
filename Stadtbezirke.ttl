@@ -9,6 +9,7 @@
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix cc: <http://creativecommons.org/ns#> .
 
 ld:PlanungsRaum
     a owl:Class ;
@@ -363,9 +364,9 @@ ld:Stadtbezirk
     rdfs:label "Zentrum-West" .
 
 <http://leipzig-data.de/Data/Stadtbezirke/>
-    <http://creativecommons.org/ns#attributionName> "The Leipzig Open Data Project" ;
-    <http://creativecommons.org/ns#attributionURL> <http://leipzig-data.de> ;
-    <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:label "LeipzigData - Stadtbezirke" .
 

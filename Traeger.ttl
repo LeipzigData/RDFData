@@ -9,6 +9,7 @@
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix cc: <http://creativecommons.org/ns#> .
 
 ld:Traeger
     a owl:Class ;
@@ -30,9 +31,9 @@ ld:Verein
     rdfs:label "Stadt Leipzig, Amt für Wirtschaftsförderung" .
 
 <http://leipzig-data.de/Data/Traeger/>
-    <http://creativecommons.org/ns#attributionName> "The Leipzig Open Data Project" ;
-    <http://creativecommons.org/ns#attributionURL> <http://leipzig-data.de> ;
-    <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:label "LeipzigData - Träger" ;
     owl:imports <http://leipzig-data.de/Data/Adressen/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Tags/> .
@@ -44,9 +45,9 @@ ldt:ASB
 
 <http://leipzig-data.de/Data/Traeger/AWO.Leipzig>
     ld:hasSupplierNumber "258" ;
-    ld:hasURL "http://www.awo-leipzig-stadt.de" ;
+    ld:hasURL <http://www.awo-leipzig-stadt.de> ;
     a ld:Traeger ;
-    rdfs:label "AWO Kita u. ambulante Dienste gGmbH" .
+    rdfs:label "AWO Kreisverband Leipzig-Stadt" .
 
 <http://leipzig-data.de/Data/Traeger/AWO.LeipzigerLand>
     ld:hasURL "http://www.awo-leipzigerland.de" ;
@@ -98,6 +99,10 @@ ldt:BA-Leipzig
     ld:hasSupplierNumber "312" ;
     a ld:Traeger ;
     rdfs:label "Berufsbildungswerk für Hör- und Sprachgeschädigte gGmbH" .
+
+<http://leipzig-data.de/Data/Traeger/BGL.Nachbarschaftshilfeverein>
+    a ld:Traeger ;
+    rdfs:label "BGL Nachbarschaftshilfeverein" .
 
 ldt:BUND
     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
@@ -403,6 +408,13 @@ ldt:HilfswerkAlexandra
     ld:hasSupplierNumber "305" ;
     a ld:Traeger ;
     rdfs:label "Deutsch-Russisches Hilfswerk zur Heiligen Alexandra" .
+
+<http://leipzig-data.de/Data/Traeger/IG.HEMB>
+    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Plautstrasse.16> ;
+    ld:hasAddressAddendum "Eingang Morgensternstraße" ;
+    ld:hasEmail "info@historischer-elektromaschinenbau.de" ;
+    ld:hasURL <http://www.historischer-elektromaschinenbau.de> ;
+    rdfs:label "IG Historischer Elektromaschinenbau" .
 
 ldt:IHK
     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goerdelerring.5> ;
@@ -903,6 +915,10 @@ ldt:UrbanSouls
     ld:hasSupplierNumber "264" ;
     a ld:Traeger ;
     rdfs:label "Volkssolidarität Leipziger Land/Muldental" .
+
+<http://leipzig-data.de/Data/Traeger/VS.Leipzig>
+    a ld:Traeger ;
+    rdfs:label "Volkssolidarität Stadtverband Leipzig" .
 
 <http://leipzig-data.de/Data/Traeger/Verein.FFJ>
     ld:hasSupplierNumber "168" ;

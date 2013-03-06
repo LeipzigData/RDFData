@@ -9,13 +9,7 @@
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
-
-<http://leipzig-data.de/Data/Adresse/04318.Permoserstrasse.15>
-    ld:hasHouseNumber "15" ;
-    ld:hasPostCode "04318" ;
-    ld:inStreet <http://leipzig-data.de/Data/Strasse/Permoserstrasse> ;
-    a ld:Adresse ;
-    rdfs:label "Permoserstraße 15" .
+@prefix cc: <http://creativecommons.org/ns#> .
 
 <http://leipzig-data.de/Data/Angebot/ASG.Schuelerakademie>
     ld:Art "Veranstaltungsreihe (Vorträge und Experimente)" ;
@@ -537,6 +531,14 @@ Besonders geeignet ist hierfür der lehrplangerechte \"Projektunterricht\".
 Ansprechpartner: Herr Dr. Kästner""" ;
     rdfs:label "Zooschule Leipzig" .
 
+<http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL>
+    ld:Kurzinformation "Das Forum Bürgerstadt Leipzig setzt die Arbeit des „AK Lokale Demokratiebilanz“ fort, der sich seit 2002 um die Etabilierung partizipativer Politikformen in Leipzig bemühte. Mit dem Neustart im Mai 2008 setzen wir uns zum Ziel, den Trialog zwischen Stadtverwaltung, Politik und der aktiven Bürgerschaft zu befördern und diesem ein Podium zu bieten. <br/> Die Aktivitäten des Forums wurden mit dem Innovationspreis Weiterbildung 2011  ausgezeichnet.<br/> Unsere Hauptarbeitsformen sind das Plenum sowie Projektgruppen zu einzelnen Themen." ;
+    ld:hasStatus "aktiv" ;
+    ld:hasTag ldtag:ZukunftsDiskurs ;
+    ld:hasURL <http://www.forum-buergerstadt-leipzig.de/> ;
+    a ld:Angebot ;
+    rdfs:label "Forum Bürgerstadt Leipzig" .
+
 <http://leipzig-data.de/Data/Angebot/StadtLeipzig.GirlsDay>
     ld:Art "Berufsorientierungsinitiative für Mädchen mit Schwerpunkt auf Berufen, in denen Frauen unterrepräsentiert sind" ;
     ld:Finanzierung "nein" ;
@@ -775,9 +777,9 @@ Ansprechpartner: Herr Dr. Kästner""" ;
     rdfs:label "MINT-Individual" .
 
 <http://leipzig-data.de/Data/Angebote/>
-    <http://creativecommons.org/ns#attributionName> "The Leipzig Open Data Project" ;
-    <http://creativecommons.org/ns#attributionURL> <http://leipzig-data.de> ;
-    <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:label "LeipzigData - Angebote" ;
     owl:imports <http://leipzig-data.de/Data/Orte/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Tags/>, <http://leipzig-data.de/Data/Traeger/> .

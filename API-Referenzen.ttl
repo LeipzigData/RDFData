@@ -9,11 +9,12 @@
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix cc: <http://creativecommons.org/ns#> .
 
 <http://leipzig-data.de/Data/API-Referenzen/>
-    <http://creativecommons.org/ns#attributionName> "The Leipzig Open Data Project" ;
-    <http://creativecommons.org/ns#attributionURL> <http://leipzig-data.de> ;
-    <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:label "LeipzigData - Referenzen zu API Leipzig" .
 
