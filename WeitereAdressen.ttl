@@ -11,19 +11,16 @@
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-<http://leipzig-data.de/Data/Adresse/04318.Permoserstrasse.15>
-    ld:hasHouseNumber "15" ;
-    ld:hasPostCode "04318" ;
-    ld:inStreet <http://leipzig-data.de/Data/Strasse/Permoserstrasse> ;
-    a ld:Adresse ;
-    rdfs:label "Permoserstraße 15" .
+ld:ExterneAdresse
+    a owl:Class ;
+    rdfs:label "Weitere Adresse" .
 
 <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.AmFestanger.8>
     ld:hasCity "Markkleeberg" ;
     ld:hasHouseNumber "8" ;
     ld:hasPostCode "04416" ;
     ld:hasStreet "Am Festanger" ;
-    a ld:Adresse ;
+    a ld:ExterneAdresse ;
     rdfs:label "Am Festanger 8, Markkleeberg" .
 
 <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Friedrich-Ebert-Strasse.26>
@@ -31,7 +28,7 @@
     ld:hasHouseNumber "26" ;
     ld:hasPostCode "04416" ;
     ld:hasStreet "Friedrich-Ebert-Straße" ;
-    a ld:Adresse ;
+    a ld:ExterneAdresse ;
     rdfs:label "Friedrich-Ebert-Straße 26, Markkleeberg" .
 
 <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Kirchstrasse.42>
@@ -39,7 +36,7 @@
     ld:hasHouseNumber "42" ;
     ld:hasPostCode "04416" ;
     ld:hasStreet "Kirchstraße" ;
-    a ld:Adresse ;
+    a ld:ExterneAdresse ;
     rdfs:label "Kirchstraße 42, Markkleeberg" .
 
 <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.KoburgerStrasse.62>
@@ -47,7 +44,7 @@
     ld:hasHouseNumber "62" ;
     ld:hasPostCode "04416" ;
     ld:hasStreet "Koburger Straße" ;
-    a ld:Adresse ;
+    a ld:ExterneAdresse ;
     rdfs:label "Koburger Straße 62, Markkleeberg" .
 
 <http://leipzig-data.de/Data/ExterneAdresse/04420.Markranstaedt.AmAltenBahnhof.21a>
@@ -55,7 +52,7 @@
     ld:hasHouseNumber "21 a" ;
     ld:hasPostCode "04420" ;
     ld:hasStreet "Am Alten Bahnhof" ;
-    a ld:Adresse ;
+    a ld:ExterneAdresse ;
     rdfs:label "Am Alten Bahnhof 21 a, Markranstädt" .
 
 <http://leipzig-data.de/Data/ExterneAdresse/04435.Schkeuditz.Bergbreite.1>
@@ -63,7 +60,7 @@
     ld:hasHouseNumber "1" ;
     ld:hasPostCode "04435" ;
     ld:hasStreet "Bergbreite" ;
-    a ld:Adresse ;
+    a ld:ExterneAdresse ;
     rdfs:label "Bergbreite 1, Schkeuditz" .
 
 <http://leipzig-data.de/Data/ExterneAdresse/04509.Rabutz.BageritzerWeg.1>
@@ -71,7 +68,7 @@
     ld:hasHouseNumber "1" ;
     ld:hasPostCode "04509" ;
     ld:hasStreet "Bageritzer Weg" ;
-    a ld:Adresse ;
+    a ld:ExterneAdresse ;
     rdfs:label "Bageritzer Weg 1, Rabutz" .
 
 <http://leipzig-data.de/Data/ExterneAdresse/04668.Grimma.Klosterstrasse.1>
@@ -79,7 +76,7 @@
     ld:hasHouseNumber "1" ;
     ld:hasPostCode "04668" ;
     ld:hasStreet "Klosterstraße" ;
-    a ld:Adresse ;
+    a ld:ExterneAdresse ;
     rdfs:label "Klosterstraße 1, Grimma" .
 
 <http://leipzig-data.de/Data/WeitereAdressen/>
@@ -87,5 +84,5 @@
     cc:attributionURL <http://leipzig-data.de> ;
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
-    rdfs:label "LeipzigData - Weitere Adressen" .
+    rdfs:label "Weitere Adressen" .
 
