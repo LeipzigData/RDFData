@@ -11,42 +11,9 @@
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-ld:PlanungsRaum
-    a owl:Class ;
-    rdfs:comment "Die Jugendhilfeplanung teilt die 63 Stadtbezirke der Stadt Leipzig in 7 Planungsräume ein" ;
-    rdfs:label "Planungsraum der Stadt Leipzig" .
-
 ld:Stadtbezirk
     a owl:Class ;
     rdfs:label "Stadtbezirk der Stadt Leipzig" .
-
-<http://leipzig-data.de/Data/Planungsraum/Gruenau>
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Grünau" .
-
-<http://leipzig-data.de/Data/Planungsraum/InnererOsten>
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Innerer Osten" .
-
-<http://leipzig-data.de/Data/Planungsraum/MitteSued>
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Mitte/Süd" .
-
-<http://leipzig-data.de/Data/Planungsraum/Nord>
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Nord" .
-
-<http://leipzig-data.de/Data/Planungsraum/NordOst>
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Nordost" .
-
-<http://leipzig-data.de/Data/Planungsraum/OstSuedost>
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Ost/Südost" .
-
-<http://leipzig-data.de/Data/Planungsraum/West>
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum West" .
 
 <http://leipzig-data.de/Data/Stadtbezirk/Althen-Kleinpoesna>
     ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;

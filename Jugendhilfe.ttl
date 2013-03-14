@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
+@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+ld:PlanungsRaum
+    a owl:Class ;
+    rdfs:comment "Die Jugendhilfeplanung teilt die 63 Stadtbezirke der Stadt Leipzig in 7 Planungsräume ein" ;
+    rdfs:label "Planungsraum der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Planungsraum/Gruenau>
+    a ld:PlanungsRaum ;
+    ld:hasCoordinator ldp:Diebler_Peggy;    
+    rdfs:label "Planungsraum Grünau" .
+
+<http://leipzig-data.de/Data/Planungsraum/InnererOsten>
+    a ld:PlanungsRaum ;
+    ld:hasCoordinator ldp:Moritz_Anja;    
+    rdfs:label "Planungsraum Innerer Osten" .
+
+<http://leipzig-data.de/Data/Planungsraum/MitteSued>
+    a ld:PlanungsRaum ;
+    ld:hasCoordinator ldp:Steudel_Claudia;    
+    rdfs:label "Planungsraum Mitte/Süd" .
+
+<http://leipzig-data.de/Data/Planungsraum/Nord>
+    a ld:PlanungsRaum ;
+    ld:hasCoordinator ldp:Haensch_Solveig;
+    rdfs:label "Planungsraum Nord" .
+
+<http://leipzig-data.de/Data/Planungsraum/NordOst>
+    a ld:PlanungsRaum ;
+    ld:hasCoordinator ldp:Jaeger_Alexander;
+    rdfs:label "Planungsraum Nordost" .
+
+<http://leipzig-data.de/Data/Planungsraum/OstSuedost>
+    a ld:PlanungsRaum ;
+    ld:hasCoordinator ldp:Uhlmann_Matthias;
+    rdfs:label "Planungsraum Ost/Südost" .
+
+<http://leipzig-data.de/Data/Planungsraum/West>
+    a ld:PlanungsRaum ;
+    ld:hasCoordinator ldp:Metschies_Juliane;
+    rdfs:label "Planungsraum West" .
+
+<http://leipzig-data.de/Data/StadtbezirkeJugendhilfe/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ; rdfs:comment "Quellenangaben: Planungsraumverantwortliche - Newaletter Bildungsmanagement 20, März 2013"; 
+    rdfs:label "Daten der Jugendhilfe" .
+
