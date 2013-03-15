@@ -1,385 +1,339 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://leipzig-data.de/Data/Personen/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 
-ldp:Ackermann_Arne
-    a foaf:Person ;
-    foaf:name "Arne Ackermann" .
-
-ldp:Baesler_Detlef
-    a foaf:Person ;
-    rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" ;
-    foaf:name "Detlef Bäsler" .
-
-ldp:Bamberg_Stefanie
-    ld:hasAPIId "Host.2" ;
-    a foaf:Person ;
-    foaf:name "Stefanie Bamberg" .
-
-ldp:Boran_Roland
-    a foaf:Person ;
-    rdfs:comment "Projektleiter ASG-Schülerakademie" ;
-    foaf:name "Dr. Roland Boran" .
-
-ldp:Buettner_Torsten
-    a foaf:Person ;
-    foaf:name "Torsten Büttner" .
-
-ldp:Darlatt_Kathrin
-    a foaf:Person ;
-    foaf:name "Kathrin Darlatt" .
-
-ldp:Duschinger_Robert
-    a foaf:Person ;
-    rdfs:comment "stellv. Vorsitzender des Stadtelternrats (2013 gewählt)" ;
-    foaf:name "Robert Duschinger" .
-
-ldp:Engel_Heike
-    a foaf:Person ;
-    rdfs:comment "Geschäftsführerin Anker e.V." ;
-    foaf:name "Heike Engel" .
-
-ldp:Fleckenstein_Heike
-    a foaf:Person ;
-    rdfs:comment "stellv. Vorsitzende des Stadtelternrats (2013 gewählt)" ;
-    foaf:name "Heike Fleckenstein" .
-
-ldp:Geisler_Andreas
-    a foaf:Person ;
-    rdfs:comment "Vorsitzender des Stadtelternrats (2013 gewählt)" ;
-    foaf:name "Andreas Geisler" .
-
-ldp:Glowacki_Romann
-    a foaf:Person ;
-    foaf:name "Romann Glowacki" .
-
-ldp:Graebe_HansGert
-    ld:hasAPIId "Host.28" ;
-    a foaf:Person ;
-    foaf:name "Prof. Dr. Hans-Gert Gräbe" .
-
-ldp:Graf_Corinna
-    a foaf:Person ;
-    rdfs:comment "GF des Stadtjugendrings" ;
-    foaf:name "Corinna Graf" .
-
-ldp:Gregor_Jana
-    a foaf:Person ;
-    rdfs:comment "MINT-Beauftragte des MPI MIS" ;
-    foaf:name "Jana Gregor" .
-
-ldp:Grosser_Katja
-    ld:hasAPIId "Host.35", "Host.38" ;
-    a foaf:Person ;
-    foaf:name "Katja Großer" .
-
-ldp:Haenisch_Wolfgang
-    a foaf:Person ;
-    foaf:name "Wolfgang Hänisch" .
-
-ldp:Haensgen_Christoph
-    ld:hasTelefon "0341-35582828" ;
-    ld:hasURL "http://www.happy-robots.de" ;
-    a foaf:Person ;
-    foaf:name "Christoph Hänsgen" .
-
-ldp:Hahn_Michael
-    a foaf:Person ;
-    rdfs:comment "Vereinsvorsitzender LJBW" ;
-    foaf:name "Michael Hahn" .
-
-ldp:Hamel_Corinna
-    a foaf:Person ;
-    foaf:name "Corinna Hamel" .
-
-ldp:Hantschick_Ines
-    a foaf:Person ;
-    foaf:name "Ines Hantschick" .
-
-ldp:Hauptmann_Anke
-    a foaf:Person ;
-    foaf:name "Anke Hauptmann" .
-
-ldp:Herrmann_Anne
-    a foaf:Person ;
-    foaf:name "Anne Herrmann" .
-
-ldp:Hintze_Steffen
-    a foaf:Person ;
-    foaf:name "Steffen Hintze" .
-
-ldp:Hoernig_Karin
-    a foaf:Person ;
-    foaf:name "Karin Hörnig" .
-
-ldp:Holunder_Alma
-    a foaf:Person ;
-    foaf:name "Alma Holunder" .
-
-ldp:Hoyer_Stephan
-    ld:hasAPIId "Host.42" ;
-    a foaf:Person ;
-    foaf:name "Stephan Hoyer" .
-
-ldp:Ihring_Lars
-    ld:hasAPIId "Host.29" ;
-    a foaf:Person ;
-    foaf:name "Lars Ihring" .
-
-ldp:Keck_Lisa
-    a foaf:Person ;
-    rdfs:comment "GF des Netzwerks \"Energie und Umwelt\"" ;
-    foaf:name "Lisa Keck" .
-
-ldp:Klauer_AnnaKatharina
-    a foaf:Person ;
-    foaf:name "Anna-Katharina Klauer" .
-
-ldp:Klimesch_Holger
-    a foaf:Person ;
-    rdfs:comment "Vereinsvorstand Inspirata e.V." ;
-    foaf:name "Holger Klimesch" .
-
-ldp:Koenig_KarlFriedrich
-    ld:hasAPIId "Host.22" ;
-    a foaf:Person ;
-    foaf:name "Karl-Friedrich König" .
-
-ldp:Koenig_Wolfgang
-    a foaf:Person ;
-    rdfs:comment "Vereinsvorsitzender Inspirata e.V." ;
-    foaf:name "Prof. Wolfgang König" .
-
-ldp:Koerner_Annette
-    a foaf:Person ;
-    rdfs:comment "Geschäftsführerin UIZ Förderverein" ;
-    foaf:name "Annette Körner" .
-
-ldp:Kramer_Anais
-    a foaf:Person ;
-    rdfs:comment "Leiterin der GS der Zukunftsakademie" ;
-    foaf:name "Anais Kramer" .
-
-ldp:Krueger_Annett
-    a foaf:Person ;
-    foaf:name "Dr. Annett Krüger" .
-
-ldp:Kuechler_Romy
-    a foaf:Person ;
-    foaf:name "Romy Küchler" .
-
-ldp:Lange_Torsten
-    a foaf:Person ;
-    rdfs:comment "Leiter UFZ-Schülerlabor" ;
-    foaf:name "Dr. Torsten Lange" .
-
-ldp:Maennig_Uwe
-    a foaf:Person ;
-    rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" ;
-    foaf:name "Uwe Männig" .
-
-ldp:Meiler_Monika
-    a foaf:Person ;
-    foaf:name "Dr. Monika Meiler" .
-
-ldp:Messerschmidt_Elk
-    a foaf:Person ;
-    rdfs:comment "Leiter TÖP Rabutz" ;
-    foaf:name "Dr. Elk Messerschmidt" .
-
-ldp:Meyer_Rene
-    ld:hasAPIId "Host.21" ;
-    a foaf:Person ;
-    foaf:name "René Meyer" .
-
-ldp:Moeller_Juergen
-    ld:hasAPIId "Host.16" ;
-    a foaf:Person ;
-    foaf:name "Jürgen Möller" .
-
-ldp:Mueller_Doris
-    a foaf:Person ;
-    foaf:name "Doris Müller" .
-
-ldp:Mueller_Florian
-    ld:hasAPIId "Host.23" ;
-    a foaf:Person ;
-    foaf:name "Florian Müller" .
-
-ldp:Nagler_Petra
-    a foaf:Person ;
-    rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" ;
-    foaf:name "Petra Nagler" .
-
-ldp:Pauli_Stev
-    a foaf:Person ;
-    foaf:name "Stev Pauli" .
-
-ldp:Petschauer_Susanne
-    a foaf:Person ;
-    foaf:name "Susanne Petschauer" .
-
-ldp:Petzold_Matthias
-    ld:hasAPIId "Host.1" ;
-    a foaf:Person ;
-    foaf:name "Matthias Petzold" .
-
-ldp:Petzschler_Ines
-    a foaf:Person ;
-    rdfs:comment "Vereinsvorstand Inspirata e.V." ;
-    foaf:name "Ines Petzschler" .
-
-ldp:Petzschler_Uwe
-    a foaf:Person ;
-    foaf:name "Uwe Petzschler" .
-
-ldp:Pieper_Katrin
-    a foaf:Person ;
-    foaf:name "Katrin Pieper" .
-
-ldp:Quapp_Wolfgang
-    a foaf:Person ;
-    foaf:name "Dr. Wolfgang Quapp" .
-
-ldp:Quester_Roland
-    a foaf:Person ;
-    rdfs:comment "Leiter Umweltbibliothek" ;
-    foaf:name "Roland Quester" .
-
-ldp:Rademacher_HansBert
-    a foaf:Person ;
-    foaf:name "Prof. Dr. Hans-Bert Rademacher" .
-
-ldp:Raue_Manfred
-    a foaf:Person ;
-    rdfs:comment "Geschäftsführer VDE Leipzig/Halle" ;
-    foaf:name "Manfred Raue" .
-
-ldp:Rehm_Axel
-    ld:email "rehm@schulbiologiezentrum-leipzig.de" ;
-    a foaf:Person ;
-    foaf:name "Axel Rehm" .
-
-ldp:Reinhardt_Sylvi
-    ld:hasAPIId "Host.40" ;
-    a foaf:Person ;
-    foaf:name "Sylvi Reinhardt" .
-
-ldp:Reschke_Katrin
-    a foaf:Person ;
-    rdfs:comment "Leiterin Dölitzer Wassermühle" ;
-    foaf:name "Katrin Reschke" .
-
-ldp:Reschke_Volker
-    a foaf:Person ;
-    rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." ;
-    foaf:name "Volker Reschke" .
-
-ldp:Rhinow_Solvejg
-    a foaf:Person ;
-    foaf:name "Dr. Solvejg Rhinow" .
-
-ldp:Roeser_Sascha
-    a foaf:Person ;
-    foaf:name "Sascha Roeser" .
-
-ldp:Schilling_Peter
-    a foaf:Person ;
-    rdfs:comment "Leiter AZ Schkeuditz" ;
-    foaf:name "Peter Schilling" .
-
-ldp:Schlupp_Peter
-    a foaf:Person ;
-    foaf:name "Peter Schlupp" .
-
-ldp:Schmidt_Rosemarie
-    a foaf:Person ;
-    rdfs:comment "Landesgeschäftsführerin MNU Sachsen" ;
-    foaf:name "Rosemarie Schmidt" .
-
-ldp:Schneider_Carla
-    a foaf:Person ;
-    foaf:name "Carla Schneider" .
-
-ldp:Schroth_Johannes
-    a foaf:Person ;
-    foaf:name "Johannes Schroth" .
-
-ldp:Schueler_Axel
-    a foaf:Person ;
-    rdfs:comment "Vorsitzender LSGM" ;
-    foaf:name "Dr. Axel Schüler" .
-
-ldp:Schulze_Susanne
-    a foaf:Person ;
-    rdfs:comment "MINT-Beauftrage der BA Leipzig" ;
-    foaf:name "Susanne Schulze" .
-
-ldp:Schwarze_Wolfgang
-    a foaf:Person ;
-    rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." ;
-    foaf:name "Wolfgang Schwarze" .
-
-ldp:Schweikart_Rudolf
-    a foaf:Person ;
-    foaf:name "Rudolf Schweikart" .
-
-ldp:Seidel_Franka
-    a foaf:Person ;
-    rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" ;
-    foaf:name "Franka Seidel" .
-
-ldp:Teutsch_Georg
-    a foaf:Person ;
-    rdfs:comment "Direktor UFZ (Stand 2010)" ;
-    foaf:name "Prof. Dr. Georg Teutsch" .
-
-ldp:Thate_Stefanie
-    a foaf:Person ;
-    foaf:name "Stefanie Thate" .
-
-ldp:TraegerNestler_Angelika
-    a foaf:Person ;
-    rdfs:comment "Geschäftsführerin GaraGe gGmbH" ;
-    foaf:name "Dr. Angelika Träger-Nestler" .
-
-ldp:Wagner_Thomas
-    ld:hasAPIId "Host.30", "Host.31", "Host.32", "Host.33", "Host.34" ;
-    a foaf:Person ;
-    foaf:name "Thomas Wagner" .
-
-ldp:Warkus_Hartmut
-    a foaf:Person ;
-    rdfs:comment "2012 verstorben", "Geschäftsführer der ComputerSpielSchule" ;
-    foaf:name "Prof. Dr. Hartmut Warkus" .
-
-ldp:Weise_Joerg
-    ld:hasURL "http://www.public-confidence.de" ;
-    a foaf:Person ;
-    foaf:name "Jörg Weise" .
-
-ldp:vonJan_Teresa
-    a foaf:Person ;
-    rdfs:comment "Mitarbeiterin des Stadtjugendrings" ;
-    foaf:name "Teresa von Jan" .
-
-<http://leipzig-data.de/Data/Personen/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "LeipzigData - Natürliche Personen" .
-
-foaf:Person
-    a owl:Class ;
-    rdfs:label "Person" .
+ldp:Ackermann_Arne a foaf:Person ;
+                   foaf:name "Arne Ackermann" .
 
+ldp:Baesler_Detlef a foaf:Person ;
+                   rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" ;
+                   foaf:name "Detlef Bäsler" .
+
+ldp:Bamberg_Stefanie a foaf:Person ;
+                     foaf:name "Stefanie Bamberg" ;
+                     ld:hasAPIId "Host.2" .
+
+ldp:Boran_Roland a foaf:Person ;
+                 rdfs:comment "Projektleiter ASG-Schülerakademie" ;
+                 foaf:name "Dr. Roland Boran" .
+
+ldp:Buettner_Torsten a foaf:Person ;
+                     foaf:name "Torsten Büttner" .
+
+ldp:Darlatt_Kathrin a foaf:Person ;
+                    foaf:name "Kathrin Darlatt" .
+
+ldp:Diebler_Peggy a foaf:Person ;
+                  rdfs:comment "JHA-Koordinator Planungsraum" ;
+                  foaf:name "Peggy Diebler" .
+
+ldp:Duschinger_Robert a foaf:Person ;
+                      rdfs:comment "stellv. Vorsitzender des Stadtelternrats (2013 gewählt)" ;
+                      foaf:name "Robert Duschinger" .
+
+ldp:Elsaesser_Ralf a foaf:Person ;
+                   foaf:name "Ralf Elsässer" .
+
+ldp:Engel_Heike a foaf:Person ;
+                rdfs:comment "Geschäftsführerin Anker e.V." ;
+                foaf:name "Heike Engel" .
+
+ldp:Fleckenstein_Heike a foaf:Person ;
+                       rdfs:comment "stellv. Vorsitzende des Stadtelternrats (2013 gewählt)" ;
+                       foaf:name "Heike Fleckenstein" .
+
+ldp:Geisler_Andreas a foaf:Person ;
+                    rdfs:comment "Vorsitzender des Stadtelternrats (2013 gewählt)" ;
+                    foaf:name "Andreas Geisler" .
+
+ldp:Glowacki_Romann a foaf:Person ;
+                    foaf:name "Romann Glowacki" .
+
+ldp:Graebe_HansGert a foaf:Person ;
+                    foaf:name "Prof. Dr. Hans-Gert Gräbe" ;
+                    ld:hasAPIId "Host.28" .
+
+ldp:Graf_Corinna a foaf:Person ;
+                 rdfs:comment "GF des Stadtjugendrings" ;
+                 foaf:name "Corinna Graf" .
+
+ldp:Gregor_Jana a foaf:Person ;
+                rdfs:comment "MINT-Beauftragte des MPI MIS" ;
+                foaf:name "Jana Gregor" .
+
+ldp:Grosser_Katja a foaf:Person ;
+                  foaf:name "Katja Großer" ;
+                  ld:hasAPIId "Host.35", "Host.38" .
+
+ldp:Haenisch_Wolfgang a foaf:Person ;
+                      foaf:name "Wolfgang Hänisch" .
+
+ldp:Haensch_Solveig a foaf:Person ;
+                    rdfs:comment "JHA-Koordinator Planungsraum" ;
+                    foaf:name "Solveig Hänsch" .
+
+ldp:Haensgen_Christoph a foaf:Person ;
+                       foaf:name "Christoph Hänsgen" ;
+                       ld:hasURL <http://www.happy-robots.de> ;
+                       foaf:phone "0341-35582828" .
+
+ldp:Hahn_Michael a foaf:Person ;
+                 rdfs:comment "Vereinsvorsitzender LJBW" ;
+                 foaf:name "Michael Hahn" .
+
+ldp:Hamel_Corinna a foaf:Person ;
+                  foaf:name "Corinna Hamel" .
+
+ldp:Hantschick_Ines a foaf:Person ;
+                    foaf:name "Ines Hantschick" .
+
+ldp:Hauptmann_Anke a foaf:Person ;
+                   foaf:name "Anke Hauptmann" .
+
+ldp:Herrmann_Anne a foaf:Person ;
+                  foaf:name "Anne Herrmann" .
+
+ldp:Hintze_Steffen a foaf:Person ;
+                   foaf:name "Steffen Hintze" .
+
+ldp:Hoernig_Karin a foaf:Person ;
+                  foaf:name "Karin Hörnig" .
+
+ldp:Holunder_Alma a foaf:Person ;
+                  foaf:name "Alma Holunder" .
+
+ldp:Hoyer_Stephan a foaf:Person ;
+                  foaf:name "Stephan Hoyer" ;
+                  ld:hasAPIId "Host.42" .
+
+ldp:Ihring_Lars a foaf:Person ;
+                foaf:name "Lars Ihring" ;
+                ld:hasAPIId "Host.29" .
+
+ldp:Keck_Lisa a foaf:Person ;
+              rdfs:comment "GF des Netzwerks \"Energie und Umwelt\"" ;
+              foaf:name "Lisa Keck" .
+
+ldp:Klauer_AnnaKatharina a foaf:Person ;
+                         foaf:name "Anna-Katharina Klauer" .
+
+ldp:Klimesch_Holger a foaf:Person ;
+                    rdfs:comment "Vereinsvorstand Inspirata e.V." ;
+                    foaf:name "Holger Klimesch" .
+
+ldp:Koenig_KarlFriedrich a foaf:Person ;
+                         foaf:name "Karl-Friedrich König" ;
+                         ld:hasAPIId "Host.22" .
+
+ldp:Koenig_Wolfgang a foaf:Person ;
+                    rdfs:comment "Vereinsvorsitzender Inspirata e.V." ;
+                    foaf:name "Prof. Wolfgang König" .
+
+ldp:Koerner_Annette a foaf:Person ;
+                    rdfs:comment "Geschäftsführerin UIZ Förderverein" ;
+                    foaf:name "Annette Körner" .
+
+ldp:Kramer_Anais a foaf:Person ;
+                 rdfs:comment "Leiterin der GS der Zukunftsakademie" ;
+                 foaf:name "Anais Kramer" .
+
+ldp:Krueger_Annett a foaf:Person ;
+                   foaf:name "Dr. Annett Krüger" .
+
+ldp:Kuechler_Romy a foaf:Person ;
+                  foaf:name "Romy Küchler" .
+
+ldp:Lange_Torsten a foaf:Person ;
+                  rdfs:comment "Leiter UFZ-Schülerlabor" ;
+                  foaf:name "Dr. Torsten Lange" .
+
+ldp:Maennig_Uwe a foaf:Person ;
+                rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" ;
+                foaf:name "Uwe Männig" .
+
+ldp:Meiler_Monika a foaf:Person ;
+                  foaf:name "Dr. Monika Meiler" .
+
+ldp:Messerschmidt_Elk a foaf:Person ;
+                      rdfs:comment "Leiter TÖP Rabutz" ;
+                      foaf:name "Dr. Elk Messerschmidt" .
+
+ldp:Metschies_Juliane a foaf:Person ;
+                      rdfs:comment "JHA-Koordinator Planungsraum" ;
+                      foaf:name "Juliane Metschies" .
+
+ldp:Meyer_Rene a foaf:Person ;
+               foaf:name "René Meyer" ;
+               ld:hasAPIId "Host.21" .
+
+ldp:Moeller_Juergen a foaf:Person ;
+                    foaf:name "Jürgen Möller" ;
+                    ld:hasAPIId "Host.16" .
+
+ldp:Moritz_Anja a foaf:Person ;
+                rdfs:comment "JHA-Koordinator Planungsraum" ;
+                foaf:name "Anja Moritz" .
+
+ldp:Mueller_Doris a foaf:Person ;
+                  foaf:name "Doris Müller" .
+
+ldp:Mueller_Florian a foaf:Person ;
+                    foaf:name "Florian Müller" ;
+                    ld:hasAPIId "Host.23" .
+
+ldp:Nagler_Petra a foaf:Person ;
+                 rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" ;
+                 foaf:name "Petra Nagler" .
+
+ldp:Pauli_Stev a foaf:Person ;
+               foaf:name "Stev Pauli" .
+
+ldp:Petschauer_Susanne a foaf:Person ;
+                       foaf:name "Susanne Petschauer" .
+
+ldp:Petzold_Matthias a foaf:Person ;
+                     foaf:name "Matthias Petzold" ;
+                     ld:hasAPIId "Host.1" .
+
+ldp:Petzschler_Ines a foaf:Person ;
+                    rdfs:comment "Vereinsvorstand Inspirata e.V." ;
+                    foaf:name "Ines Petzschler" .
+
+ldp:Petzschler_Uwe a foaf:Person ;
+                   foaf:name "Uwe Petzschler" .
+
+ldp:Pieper_Katrin a foaf:Person ;
+                  foaf:name "Katrin Pieper" .
+
+ldp:Plaenitz_Sven a foaf:Person ;
+                  foaf:name "Sven Plänitz" ;
+                  foaf:mbox "sven.plaenitz@energieforen.de" ;
+                  foaf:phone "+49 341 1245582" .
+
+ldp:Quapp_Wolfgang a foaf:Person ;
+                   foaf:name "Dr. Wolfgang Quapp" .
+
+ldp:Quester_Roland a foaf:Person ;
+                   rdfs:comment "Leiter Umweltbibliothek" ;
+                   foaf:name "Roland Quester" .
+
+ldp:Rademacher_HansBert a foaf:Person ;
+                        foaf:name "Prof. Dr. Hans-Bert Rademacher" .
+
+ldp:Raue_Manfred a foaf:Person ;
+                 rdfs:comment "Geschäftsführer VDE Leipzig/Halle" ;
+                 foaf:name "Manfred Raue" .
+
+ldp:Rehm_Axel a foaf:Person ;
+              foaf:name "Axel Rehm" ;
+              foaf:mbox "rehm@schulbiologiezentrum-leipzig.de" .
+
+ldp:Reinhardt_Sylvi a foaf:Person ;
+                    foaf:name "Sylvi Reinhardt" ;
+                    ld:hasAPIId "Host.40" .
+
+ldp:Reschke_Katrin a foaf:Person ;
+                   rdfs:comment "Leiterin Dölitzer Wassermühle" ;
+                   foaf:name "Katrin Reschke" .
+
+ldp:Reschke_Volker a foaf:Person ;
+                   rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." ;
+                   foaf:name "Volker Reschke" .
+
+ldp:Rhinow_Solvejg a foaf:Person ;
+                   foaf:name "Dr. Solvejg Rhinow" .
+
+ldp:Roeser_Sascha a foaf:Person ;
+                  foaf:name "Sascha Roeser" .
+
+ldp:Schilling_Peter a foaf:Person ;
+                    rdfs:comment "Leiter AZ Schkeuditz" ;
+                    foaf:name "Peter Schilling" .
+
+ldp:Schlupp_Peter a foaf:Person ;
+                  foaf:name "Peter Schlupp" .
+
+ldp:Schmidt_Rosemarie a foaf:Person ;
+                      rdfs:comment "Landesgeschäftsführerin MNU Sachsen" ;
+                      foaf:name "Rosemarie Schmidt" .
+
+ldp:Schneider_Carla a foaf:Person ;
+                    foaf:name "Carla Schneider" .
+
+ldp:Schroth_Johannes a foaf:Person ;
+                     foaf:name "Johannes Schroth" .
+
+ldp:Schueler_Axel a foaf:Person ;
+                  rdfs:comment "Vorsitzender LSGM" ;
+                  foaf:name "Dr. Axel Schüler" .
+
+ldp:Schulze_Susanne a foaf:Person ;
+                    rdfs:comment "MINT-Beauftrage der BA Leipzig" ;
+                    foaf:name "Susanne Schulze" .
+
+ldp:Schwarze_Wolfgang a foaf:Person ;
+                      rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." ;
+                      foaf:name "Wolfgang Schwarze" .
+
+ldp:Schweikart_Rudolf a foaf:Person ;
+                      foaf:name "Rudolf Schweikart" .
+
+ldp:Seidel_Franka a foaf:Person ;
+                  rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" ;
+                  foaf:name "Franka Seidel" .
+
+ldp:Steudel_Claudia a foaf:Person ;
+                    rdfs:comment "JHA-Koordinator Planungsraum" ;
+                    foaf:name "Claudia Steudel" .
+
+ldp:Teutsch_Georg a foaf:Person ;
+                  rdfs:comment "Direktor UFZ (Stand 2010)" ;
+                  foaf:name "Prof. Dr. Georg Teutsch" .
+
+ldp:Thate_Stefanie a foaf:Person ;
+                   foaf:name "Stefanie Thate" .
+
+ldp:TraegerNestler_Angelika a foaf:Person ;
+                            rdfs:comment "Geschäftsführerin GaraGe gGmbH" ;
+                            foaf:name "Dr. Angelika Träger-Nestler" .
+
+ldp:Uhlmann_Matthias a foaf:Person ;
+                     rdfs:comment "JHA-Koordinator Planungsraum" ;
+                     foaf:name "Matthias Uhlmann" .
+
+ldp:Wagner_Thomas a foaf:Person ;
+                  foaf:name "Thomas Wagner" ;
+                  ld:hasAPIId "Host.33", "Host.34", "Host.30", "Host.31", "Host.32" .
+
+ldp:Warkus_Hartmut a foaf:Person ;
+                   rdfs:comment "Geschäftsführer der ComputerSpielSchule", "2012 verstorben" ;
+                   foaf:name "Prof. Dr. Hartmut Warkus" .
+
+ldp:Weise_Joerg a foaf:Person ;
+                foaf:name "Jörg Weise" ;
+                ld:hasURL "http://www.public-confidence.de" .
+
+ldp:vonJan_Teresa a foaf:Person ;
+                  rdfs:comment "Mitarbeiterin des Stadtjugendrings" ;
+                  foaf:name "Teresa von Jan" .
+
+<> a owl:Ontology ;
+   rdfs:label "Personen" ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" .
+
+foaf:Person a owl:Class ;
+            rdfs:label "Person" .

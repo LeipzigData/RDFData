@@ -1,712 +1,697 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://leipzig-data.de/Data/Events/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.105>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.105> ;
-    ical:summary "Modeperformance und Austellung zur Kollektion 13 von Sylvi Reinhardt" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.115>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.115> ;
-    ical:summary "Treffen in geselliger Runde zum Austausch über das Thema Fotografie" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.116>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.116> ;
-    ical:summary "WebMontag zum Thema Onlinereputation" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.117>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.117> ;
-    ical:summary "Stammtisch der Musikinitiative popoolär! des Kreativen Leipzig e.V." .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.118>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.118> ;
-    ical:summary "WISSENSWERT - Informationsreihe für Dinge, die für Kreativschaffende von Interesse sind." .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.119>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.119> ;
-    ical:summary "FOKUS: Alle gegen alle? – Lösungen zur Selbstverwirklichung" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.120>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.120> ;
-    ical:dtend "2012-11-28T16:00:00+01:00" ;
-    ical:summary "Vom 05. bis 28.11. hat das FabLab Leipzig erstmalig (temporär) seine Türen für euch und eure Ideen weit geöffnet! " .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.121>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.121> ;
-    ical:dtend "2012-11-30T23:00:42+01:00" ;
-    ical:summary "2. Treffen der JavaScript Usergroup Leipzig" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.122>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.122> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    a ld:Event ;
-    rdfs:label "WISSENSWERT: Existenzgründung aus ALG II (Nachholtermin)" ;
-    ical:description "WISSENSWERT - unsere Informationsreihe für Dinge, die für Kreativschaffende von Interesse sind. Dieses mal zu Gast: Malgorzata Schirmer &amp; Melanie Kühn, JobCenter Leipzig. <br/> <br/> Viele Selbständige in der Kreativwirtschaft starten ihre Unternehmen aus der Arbeitslosigkeit heraus. Bei unserer WISSENSWERT-Veranstaltung zeigen wir, wie das geht, welche Unterstützungsangebote es gibt und was beachtet werden muss. Alle Interessierten sind herzlich eingeladen und ihre Fragen mitzubringen." ;
-    ical:dtstart "2012-12-11T17:30:42+01:00" ;
-    ical:location ldo:Plan-B ;
-    ical:summary "11.12.2012 WISSENSWERT: Existenzgründung aus ALG II (Nachholtermin)", "WISSENSWERT: Existenzgründung aus ALG II (Nachholtermin)" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.123>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.123> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Foto-Donnerstag" ;
-    ical:description "Auch im Dezember treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal wollen wir eine Bildbesprechung machen. Alle Teilnehmer bringen daher bitte 3 Bilder mit, über die wir dann KONSTRUKTIV sprechen. Das können die drei schönsten Bilder sein oder die drei wenigsten schönsten oder eine Mischung aus beidem :) <br/> Ihr müsst kein Profi sein um mit diskutieren zu können, auch die Meinung eines Laien kann sehr interessant sein und eine gute Grundlage für eine spannende Diskussion bieten. <br/> <br/> Damit das Format etwas einheitlich wird und nicht der Eine mit übergroßen Drucken und der andere mit Briefmarken kommt, sollten die Bilder alle eine Größe von ca. 20x30cm bzw. A4 haben. <br/> Wer nicht weiß wo er seine Bilder entwickeln lassen soll, dem empfehle ich www.pixelfoto-express.de, www.fotobuchexpress24.de/ oder www.bildpartner.de <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann, August-Bebel-Straße 2, 04275 Leipzig und sitzen im Separee." ;
-    ical:dtstart "2012-12-06T19:00:42+01:00" ;
-    ical:location ldo:Cafe-Grundmann ;
-    ical:summary "Treffen in geselliger Runde zum Austausch über das Thema Fotografie" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.124>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.124> ;
-    ical:summary "FOKUS: Kopf oder Zahl? Der Wert der Kreativwirtschaft" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.125>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.125> ;
-    ical:dtend "2012-11-30T16:30:42+01:00" ;
-    ical:summary "Open Innovation Conference, im Rahmen von Creative Cities. Im Zentrum steht der Erfahrungsaustausch im Bereich Open Innovation in der Kreativwirtschaft." .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.126>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.126> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Fotodonnerstag" ;
-    ical:description "Auch im Januar des neuen Jahres treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Unser Thema diesmal: Jahresplanung 2013 <br/> Wir wollen gemeinschaftlich für die weiteren Treffen über mögliche Themen sprechen. Jeder kann eigene Ideen und Vorstellungen einbringen, die wir dann in der Gruppe diskutieren. <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann und sitzen im Separee im hinteren Teil des Lokales. <br/> Wir freuen uns auch stets über neue Gesichter." ;
-    ical:dtstart "2013-01-03T19:00:42+01:00" ;
-    ical:location ldo:Cafe-Grundmann ;
-    ical:summary "Treffen in geselliger Runde zum Austausch über das Thema Fotografie" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.127>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.127> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    a ld:Event ;
-    rdfs:label "FLYING MUSIC CIRCUS - Das Festival" ;
-    ical:description "“Ihr müsst spielen, spielen und nochmals spielen.” <br/> <br/> Den Satz kennst Du, oder? Und Du weiß, dass das viel leichter gesagt ist als getan. Deswegen wird Flying Music Circus neben Workshops, Seminaren und einem Promo-Sampler auch Künstler auf Kurztour durch Sachsen schicken. <br/> <br/> DIE TOURDATEN <br/> <br/> Tour 1 I Salon <br/> mit Susann Großmann, CousCous, Nadine Maria Schmidt &amp; Frühmorgens am Meer <br/> 24.01.2013 Chemnitz, Weltecho <br/> 25.01.2013 Leipzig, Neues Schauspiel <br/> 27.01.2013 Dresden, Scheune <br/> <br/> Tour 2 I Backyard Rock <br/> mit 3apesband, Atlas Ahead, Elektrik Farm <br/> 24.01.2013 Dresden, Ostpol (zusätzlich mit Harry Bushh!!) <br/> 26.01.2013 Chemnitz, Weltecho <br/> 27.01.2013 Leipzig, Neues Schauspiel <br/> <br/> Tour 3 I Garage <br/> mit Daniel Orange, The Smokkings, Polis <br/> 24.01.2013 Leipzig, Neues Schauspiel <br/> 25.01.2013 Chemnitz, Weltecho <br/> 26.01.2013 Dresden, Bärenzwinger <br/> <br/> Tour 4 I Club <br/> mit Harry Bushh!!, Leo Hört Rauschen, Grafstrøm <br/> 25.01.2012 Dresden, Altes Wettbüro (ohne Harry Bushh!!, zusätzlich mit Lax-O-Mat) <br/> 26.01.2012 Leipzig, Neues Schauspiel (anschl. detektor.fm DJ Team) <br/> 27.01.2012 Chemnitz, Weltecho <br/> <br/> 4-Tages-Ticket (nur Vorverkauf): 15 Euro <br/> Abendkasse: 5 Euro <br/> <br/> Änderungen vorbehalten. Alles weitere unter http://flying-music-circus.de/fmc/tour" ;
-    ical:dtstart "2013-01-24" ;
-    ical:location ldo:NeuesSchauspielLeipzig ;
-    ical:summary "FLYING MUSIC CIRCUS - Das Festival" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.128>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.128> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.eexistence.de/posts/workshop-kooperatives-lernen-in-grundschulen> ;
-    a ld:Event ;
-    rdfs:label "Workshop \"Kooperatives Lernen in Grundschulen\"" ;
-    ical:description "Das Team der AG open computer kids arbeitet gemeinsam mit den HELLO STUDIOS an einer interaktiven Exkursion durch das Klassenzimmer einer Leipziger 4.en Klasse" ;
-    ical:dtend "2012-12-19T11:30:00+01:00" ;
-    ical:dtstart "2012-12-18T08:45:00+01:00" ;
-    ical:location ldo:EssentialExistenceGallery ;
-    ical:summary "Workshop \"Kooperatives Lernen in Grundschulen\"" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.129>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.129> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.eexistence.de/posts/etna-auftaktveranstaltung-museumsfuehrung> ;
-    a ld:Event ;
-    rdfs:label "ETNA - Auftaktveranstaltung -> Museumsführung" ;
-    ical:description "Die EEG und die AG open computer kids laden 2013 Leipziger über 50 dazu ein mittels Neuen Medien zeitgenössische Kunst zu erleben" ;
-    ical:dtstart "2013-01-09T14:30:00+01:00" ;
-    ical:location ldo:EssentialExistenceGallery ;
-    ical:summary "Die EEG und die AG open computer kids laden 2013 Leipziger über 50 dazu ein mittels Neuen Medien zeitgenössische Kunst zu erleben" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.130>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.130> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.smile.uni-leipzig.de/nc/smile-webseite/veranstaltungen/veranstaltungsuebersicht.html> ;
-    a ld:Event ;
-    rdfs:label "Seminar - Von der Idee zum Markt" ;
-    ical:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Von der Idee zum Markt <br/> 29. Januar 2013: 09.00 Uhr bis 15.00 Uhr, 31. Januar 2013: 09.00 Uhr bis 15.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    ical:dtend "2013-01-29T15:00:42+01:00" ;
-    ical:dtstart "2013-01-29T09:00:42+01:00" ;
-    ical:location ldo:AKAD-Hochschule ;
-    ical:summary "Workshops für Unternehmer der Kultur- und Kreativbranchen" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.131>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.131> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA> ;
-    a ld:Event ;
-    rdfs:label "Seminar - Freiberuflich im künstlerischen und kreativen Bereich" ;
-    ical:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Freiberuflich im künstlerischen und kreativen Bereich <br/> 19. Februar 2013: 09.00 Uhr bis 17.00 Uhr, 21. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    ical:dtend "2013-02-19T17:00:42+01:00" ;
-    ical:dtstart "2013-02-19T09:00:42+01:00" ;
-    ical:location ldo:AKAD-Hochschule ;
-    ical:summary "Seminar - Freiberuflich im künstlerischen und kreativen Bereich" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.132>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.132> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA> ;
-    a ld:Event ;
-    rdfs:label "Seminar - Mut zur eigenen Persönlichkeit" ;
-    ical:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Mut zur eigenen Persönlichkeit <br/> 26. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    ical:dtend "2013-02-26T17:00:42+01:00" ;
-    ical:dtstart "2013-02-26T10:00:42+01:00" ;
-    ical:location ldo:AKAD-Hochschule ;
-    ical:summary "Seminar - Mut zur eigenen Persönlichkeit" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.133>
-    ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.133> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA> ;
-    a ld:Event ;
-    rdfs:label "Seminar - Kreativ und frei – Kommunikation mit dem Kunden" ;
-    ical:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Kreativ und frei – Kommunikation mit dem Kunden <br/> 28. Februar 2013: 10.00 Uhr bis 14.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
-    ical:dtend "2013-02-28T17:00:42+01:00" ;
-    ical:dtstart "2013-02-28T09:00:42+01:00" ;
-    ical:location ldo:AKAD-Hochschule ;
-    ical:summary "Seminar - Kreativ und frei – Kommunikation mit dem Kunden" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.134>
-    ld:contactPerson ldp:Graebe_HansGert ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.134> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://leipzig-netz.de/index.php5/LD.OpenInnovation-12.IdeenBoerse> ;
-    a ld:Event ;
-    rdfs:label "Ideenbörse zur Nutzung Offener Daten " ;
-    ical:description "Mit unserer Ideenbörse wollen wir ausloten, welche Möglichkeiten Offene Daten bieten und was man davon im schnellen Zugriff eines Programmiersprints (12./13.1.) schon mal umsetzen kann. Wir haben aus den bisher zusammengetragenen Interessen (vorerst) drei Bündel geschnürt, die den Startpunkt markieren. <br/> <br/> Sie können sich auch auf den spannenden Vortrag über \"mobile erweiterte Realität\" von Frank Fuchs-Kittowski (HTW Berlin) freuen, der zeigen wird, was mit sinnvoll strukturierten Daten und mobilen Anwendungen heute schon so alles geht. <br/> " ;
-    ical:dtend "2013-01-11T17:00:42+01:00" ;
-    ical:dtstart "2013-01-11T09:00:42+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-    ical:summary "Welche Möglichkeiten bieten Offene Daten und was davon kann man im schnellen Zugriff eines Programmiersprints (12./13.1.) umsetzen." .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.135>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.135> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.eexistence.de/posts/bockwurst-statt-bildung> ;
-    a ld:Event ;
-    rdfs:label "Bockwurst statt Bildung" ;
-    ical:description "Das Kulturamt Leipzig lehnt unsere (bereits sehr geringe quasi \"symbolische\") Projektförderung für 2013 ab." ;
-    ical:dtend "2013-12-31" ;
-    ical:dtstart "2013-01-01" ;
-    ical:location ldo:EssentialExistenceGallery ;
-    ical:summary "Das Kulturamt Leipzig lehnt unsere (bereits sehr geringe quasi \"symbolische\") Projektförderung für 2013 ab." .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.136>
-    ld:contactPerson <http://leipzig-data.de/Data/APIId/Host.43> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.136> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://groups.drupal.org/node/277133> ;
-    a ld:Event ;
-    rdfs:label "Drupal User Group Leipzig" ;
-    ical:description "Treffen der Drupal User Group Leipzig." ;
-    ical:dtend "2013-01-17T21:00:42+01:00" ;
-    ical:dtstart "2013-01-17T19:00:42+01:00" ;
-    ical:location ldo:Villa ;
-    ical:summary "Treffen der Drupal User Group Leipzig." .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.137>
-    ld:contactPerson <http://leipzig-data.de/Data/APIId/Host.44> ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.137> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.pr-seminare.com> ;
-    a ld:Event ;
-    rdfs:label "PR-Seminar (3tägiger Intensivkurs), vergünstigte Tarife für Startups und Vereine" ;
-    ical:description "Management von Kommunikationsprozessen - Grundlagen &amp; Instrumente der Öffentlichkeitsarbeit (30 Stunden) <br/> <br/> Inhalte: <br/> <br/> Themen des Seminars werden vor allem die Grundlagen praktischer Public Relations sein. Neben der systematischen Bearbeitung wissenschaftlicher Erkenntnisse zum Einfluss der PR auf die Medien sollen wesentliche Instrumente der Pressearbeit kennengelernt und praktisch angewendet werden. Die journalistische Perspektive, etwa das Nachrichtenschreiben, kommt in ihren basalen Grundzügen ebenso zum Tragen wie das Formulieren von Pressemitteilungen oder der Organisation einer Pressekonferenz. Mit Hilfe von zahlreichen Übungen und deren Korrektur durch den Betreuer werden die Inhalte direkt in der praktischen Übung angewendet und Fehler sofort ausgewertet. <br/> <br/> zusammengefasst: <br/> <br/> Grundlegende Einordnung der Aufgabenfelder eines Kommunikationsmanagers <br/> Erarbeitung wesentlicher Instrumente für die praktische Öffentlichkeitsarbeit <br/> Wissenschaftliche Einordnung und Erkenntnisse der Public Relations <br/> Umgang mit dem Mediensystem und dessen Akteuren <br/> <br/> <br/> Ziele: <br/> <br/> Das Ziel des Seminars besteht darin, TeilnehmerInnen mit geringen Vorkenntnissen an das Fachgebiet Public Relations heranzuführen und dabei die wichtigsten Fertigkeiten einführend zu vermitteln, daneben aber auch die wissenschaftliche Diskussion zum Thema beispielhaft vorzustellen. Die praktische Anwendbarkeit der Ergebnisse steht dabei im Vordergrund. Ziel der praktischen Anwendung ist es innerhalb des Seminars eine Pressemitteilung zu erstellen - spezifisch für jeden Teilnehmer. Somit kann jeder seine erste eigene Pressemitteilung direkt verwenden. <br/> <br/> zusammengefasst: <br/> <br/> Erlernung praktischer Fertigkeiten auf dem Gebiet der Public Relations <br/> Sicherer Umgang mit den Akteuren des Mediensystem <br/> wissenschaftliche Annäherung zum Thema <br/> <br/> <br/> Zielgruppe: <br/> <br/> Das Seminar richtet sich an TeilnehmerInnen mit geringen Vorkenntnissen im Bereich der Öffentlichkeitsarbeit. Angefangen von jungen Start-Up Unternehmern bis hin zu Presseakteuren aus Vereinen und Organisationen aber auch an Interessierte Personen, die im realen Leben auf den richtigen Umgang mit den Akteuren des Mediensystems angewiesen sind. <br/> <br/> zusammengefasst: <br/> <br/> Personen aus der Gründerszene (Start-Ups) <br/> (ehrenamtliche) Presseakteure aus Vereinen und Organisationen <br/> Selbstständige Unternehmen <br/> interessierte Quereinsteiger " ;
-    ical:dtend "2013-03-17" ;
-    ical:dtstart "2013-03-15" ;
-    ical:location ldo:SchlossSchoenefeld ;
-    ical:summary "PR-Seminar (3tägiger Intensivkurs), vergünstigte Tarife für Startups und Vereine" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.138>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.138> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <https://www.facebook.com/LichtbilderGerdLehmann> ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Fotodonnerstag" ;
-    ical:description "Auch im Februar treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde, um über alle möglichen Themen der Fotografie zu sprechen. Diesmal wird uns der alte Hase der Fotografie Gerd Lehmann besuchen, der etwas über 40 Jahre seines Lebens als Fotograf und seine Sichtweise über die Fotografie erzählen wird. <br/> \"1945 geboren hat Gerd Lehmann früh zu der Fotografie gefunden. Bereits im Kindesalter erhielt er ein dickes Buch mit Bildern. <br/> Trotz der anfänglichen Affinität zu Fotos begann er zunächst ein Geografiestudium, um festzustellen, dass er lieber fotografiert. <br/> Zunächst als Modell für DDR-Modeproduktionen, störten ihn schon früh die immer wiederkehrende, in seinen Augen langweile Bildgestaltung. Also schickte er sich an, bei den Auftraggebern sich als Fotograf bekannt zu machen. Seine neue, unverbrauchte und lebendige Bildsprache half ihn, einer der berühmtesten Fashion-Fotografen der Deutschen Demokratischen Republik zu werden, obwohl sein Einstieg in die professionelle Fotografie wegen seiner \"Westverwandschaft\" erheblich erschwert wurde. <br/> 1987, bei einem Kondulenzaufenthalt in Westberlin ist er dann einfach mal geblieben. Wieder bei Null anzufangen war zwar schwer, doch hat er es geschafft, in den ersten Jahren Aufträge unter anderem vom Starfriseur Udo Walz zu erhalten. <br/> In den 90er Jahren zog es ihn wieder nach Leipzig, wo er sich ins Nachtleben stürzte und mit Höchstempfindlichen Film ohne Blitz Reportagen fotografierte. Dabei lernte er auch die Gothic-Szene kennen und schätzen. \" <br/>  Da Gerd derzeit nur von einer seiner Rente lebt, schlage ich eine Teilnahmegebühr von 5 Euro pro Person vor. <br/> Nach einer Örtlichkeit suchen wir noch, da Gerd starker Raucher ist :) <br/> Hat vielleicht jemand eine Idee in welcher Kneipe man eine Art Separee hat, in dem wir alleine sein können und man rauchen kann?" ;
-    ical:dtstart "2013-02-07T19:00:42+01:00" ;
-    ical:organizer ldo:KreativesLeipzig ;
-    ical:summary "Treffen in geselliger Runde zum Austausch über das Thema Fotografie" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.139>
-    ld:contactPerson ldp:Koenig_KarlFriedrich ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.139> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.cinemabstruso.de/> ;
-    a ld:Event ;
-    rdfs:label "Filmgruppe Cinemabstruso" ;
-    ical:description "KURZFILMWORKSHOP (2.Februar) <br/> Ideenfindung/Drehbuch: häufige Fehler, die wichtigsten Tipps <br/> visuelle Umsetzung: Auflösung, Shot-List, Filmstile <br/> Arbeit am Filmset: Bildregie, Arbeit im Team, , Drehorte <br/> Schauspieler: Schauspielführung, Improvisation <br/> <br/> DOKFILM-WORKSHOP (23. Februar) <br/> DOK-Filmproduktion praxisorientiert! - Ideenfindung und Konzeption <br/> Dreharbeiten: Interviews und Protagonisten, welche Kamera, Umgang mit Licht und Ton <br/> Finanzierungstipps, Schnitt und Auswertung des Films <br/> Für Einsteiger, die wissen wollen, wie ein DOK-Film entsteht oder einen DOK-Film planen. <br/> <br/> SCHNITTWORKSHOP (9. 3.) <br/> Praktische Einführung ins Schnittprogramms <br/> Schneiden mit Originalmaterial und Schnittbeispiele aus Spielfilmen <br/> Techniken und Dramaturgie des Filmschnitts <br/> Audioschnitt und Soundbearbeitung, Titelerstellung und Effekte <br/> <br/> Alle Workshops finden in der Siemeringstraße 20 in Leipzig West statt. <br/> Anmeldung unter: kontakt@cinemabstruso.de <br/> weiter Infos unter: www.cinemabstruso.de <br/> Teilnahmebeitrag: jeweils 40 € <br/> <br/> Die Dozenten der Workshops: Filmemacher mit jahrelanger Filmerfahrung (Kurz- und Langspielfilme, Dokfilme mit Preisen auf nationalen und internationalen Filmfestivals" ;
-    ical:dtend "2013-03-09T16:00:42+01:00" ;
-    ical:dtstart "2013-02-02T10:00:42+01:00" ;
-    ical:location ldo:Cinemabstruso ;
-    ical:organizer ldp:Koenig_KarlFriedrich ;
-    ical:summary "Kurzfilmworkshop: häufige Fehler, visuelle Umsetzung, verschiedene Filmstile" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.140>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.140> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.facebook.com/events/455536024512944/> ;
-    a ld:Event ;
-    rdfs:label "WebMontag - GoogleKalender für Projekte und Unternehmen nutzen" ;
-    ical:description "Michael Lindner (https://www.facebook.com/signifikanten) und Thomas Wagner (https://www.facebook.com/ThomasWagnerLeipzig) werden Euch in einer knappen Stunde die wichtigsten Punkte rund um den Einsatz von Google Kalender für kleine Unternehmen und Projekte zeigen und erklären. <br/> <br/> Wer also jetzt schon Fragen hat, immer her damit! <br/> <br/> Und da der WebMontag zum Netzwerken da ist, freuen wir uns über jeden, der zu diesem Thema noch praktischen Erfahrungen beitragen kann. " ;
-    ical:dtstart "2013-02-11T19:00:42+01:00" ;
-    ical:location ldo:Culturtraeger ;
-    ical:organizer ldo:KreativesLeipzig ;
-    ical:summary "Michael Lindner und Thomas Wagner zeigen in einer knappen Stunde die wichtigsten Punkte rund um den Einsatz von Google Kalender für kleine Unternehmen und Projekte" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.141>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.141> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.eexistence.de/posts/kuenstlergespraech-etna> ;
-    a ld:Event ;
-    rdfs:label "Künstlergespräch ETNA" ;
-    ical:description "Vorbereitungsworkshop ETNA 2013 in der Gfzk Leipzig mit der Künstlerin Mandy Gehrt" ;
-    ical:dtstart "2013-02-27T14:30:00+01:00" ;
-    ical:location ldo:EssentialExistenceGallery ;
-    ical:organizer ldp:Petzold_Matthias ;
-    ical:summary "Künstlergespräch ETNA" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.142>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.142> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.eexistence.de/posts/workshop-hidden-signals> ;
-    a ld:Event ;
-    rdfs:label "Workshop HIDDEN SIGNALS" ;
-    ical:description "BABEL ist ein Verweis auf die verschiedenen Schichten elektromagnetischer / mechanischer Wellen, die in Umgebungen von Geräten hervorgerufen werden, die überhalb / unterhalb unseres Hörbereichs sind." ;
-    ical:dtend "2013-03-03T17:30:00+01:00" ;
-    ical:dtstart "2013-03-02T12:00:00+01:00" ;
-    ical:location ldo:EssentialExistenceGallery ;
-    ical:organizer ldp:Petzold_Matthias ;
-    ical:summary "Workshop HIDDEN SIGNALS" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.143>
-    ld:contactPerson ldp:Petzold_Matthias ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.143>, <http://leipzig-data.de/Data/APIId/Event.144> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    ld:hasURL <http://www.eexistence.de/posts/workshop-kooperatives-lernen-in-grundschulen--2> ;
-    a ld:Event ;
-    rdfs:label "Workshop \"Kooperatives Lernen in Grundschulen\"" ;
-    ical:description "Das Team der AG open computer kids arbeitet gemeinsam mit der Klasse 4c der Schule am Auwald unter Anleitung der Designerin Kerstin Mende an einem Schatten- und Scherenschnittfilm" ;
-    ical:dtend "2013-02-27" ;
-    ical:dtstart "2013-02-26" ;
-    ical:location ldo:EssentialExistenceGallery ;
-    ical:organizer ldp:Petzold_Matthias ;
-    ical:summary "Workshop \"Kooperatives Lernen in Grundschulen\"" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.145>
-    ld:contactPerson ldo:KreativesLeipzig ;
-    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.145> ;
-    ld:hasAddressAddendum "Hörsaal des Max-Planck-Institut. Vom Haupteingang Deutscher Platz aus in die 2. Etage, dort links (Treppe oder Fahrstuhl)" ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    a ld:Event ;
-    rdfs:label "FO.DO - Der Foto-Donnerstag" ;
-    ical:description "Auch im März treffen wir uns wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal am zweiten Donnerstag im Monat! <br/> <br/> Auf vielfachen Wunsch schauen wir den Film über den bekannten Leipziger Akt- und Modefotografen Günter Rössler \"Die Genialität des Augenblicks\". <br/> <br/> Filmbeschreibung: <br/> \"Günter Rössler gilt als einer der bedeutendsten Fotografen Ostdeutschlands. Seine Aktbilder im „Magazin“ machten ihn berühmt. In der „Sibylle“ lichtete er Stil und Geschmack der Zeit ab und setzte nicht nur schöne, sondern auch selbstbewusste Frauen in Szene – sein Beitrag zur Emanzipation der Frau aus einem Blickwinkel, der heute außergewöhnlich scheint. Im „geschlossenen System DDR“ konnte Rössler kein internationaler Star werden, wie er es verdient gehabt hätte. Heute aber sind seine Fotografien in zahlreichen Kunstsammlungen und Museen vertreten. Dieser Film stellt den heute 86-jährigen, immer noch arbeitenden Günter Rössler vor, so, wie seine Fotos ihre Zeit abbilden: schlicht, treffend und stilsicher.\" <br/> <br/> Trailer: www.youtube.com/watch?v=icsz1NFcZN4 <br/> <br/> Wir treffen uns 18:45 Uhr im Hörsaal des Max-Planck-Institut. Zum Haupteingang rein (vom Deutschen Platz aus), dann in die 2. Etage, dort links (Treppe oder Fahrstuhl) der Zugang zum Hörsaal ist behindertengerecht, es könnten also auch Rollstuhlfahrer teilnehmen.) Um 19:00 Uhr beginnen wir dann pünktlich mit dem Film, der 93 Minuten geht. Anschließend setzen wir uns in geselliger Runde in einem Café zusammen und können bei einem Getränk noch gemütlich schnacken." ;
-    ical:dtstart "2013-03-14T19:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/MPI.EVA> ;
-    ical:organizer ldo:KreativesLeipzig ;
-    ical:summary "FO.DO - Der Foto-Donnerstag" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.98>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.98> ;
-    ical:summary "Get Together Innovationskonferenz" .
-
-<http://leipzig-data.de/Data/Event/ASG.2012-12-13>
-    ld:description "Die Arnold-Sommerfeld-Gesellschaft lädt ein zu einem Symposium anlässlich des 100. Geburtstags des Physikers, Hochschullehrers und Ehrensenators der Universität Leipzig, des Freundes und Förderers der Arnold-Sommerfeld-Gesellschaft, Prof. Dr. phil. habil. Werner Holzmüller" ;
-    ld:hasAddressAddendum "Neuer Senatssaal" ;
-    ld:hasTag ldtag:ASG ;
-    ld:hasURL <http://www.leipzig-netz.de/index.php5/ASG.2012-12-13> ;
-    a ld:Event ;
-    rdfs:label "Symposium anlässlich des 100. Geburtstags von Werner Holzmüller" ;
-    ical:dtend "2012-12-13T17:00:00+01:00" ;
-    ical:dtstart "2012-12-13T10:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer ldo:ASG ;
-    ical:summary "Symposium anlässlich des 100. Geburtstags von Werner Holzmüller" .
-
-<http://leipzig-data.de/Data/Event/ASG.2013-01-29>
-    ld:description "Die Leipziger Schülerakademie lädt interessierte Schülerinnen und Schüler der Oberstufe ein zu einem Vortrag zum Thema \"Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag\" mit Frau Dr. Claudia Birkemeyer" ;
-    ld:hasAddressAddendum "HfTL, Raum B-1.50" ;
-    ld:hasTag ldtag:ASG ;
-    ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.Schuelerakademie.2013-01-29> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> ;
-    a ld:Event ;
-    rdfs:label "Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag" ;
-    ical:dtstart "2013-01-29T16:00:00+01:00" ;
-    ical:location ldo:HfTL ;
-    ical:organizer ldo:ASG ;
-    ical:summary "Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag" .
-
-<http://leipzig-data.de/Data/Event/ASG.2013-01-31>
-    ld:description "mit Dr. Bernd Lippold (Leipzig) und Dr. Stefan Fiedler (ASG)" ;
-    ld:hasAddressAddendum "Neuer Senatssaal" ;
-    ld:hasTag ldtag:ASG ;
-    ld:hasURL <http://bj-kaiser.homepage.t-online.de/Seminar.html> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
-    a ld:Event ;
-    rdfs:label "Nobelpreise für Physik und Chemie 2012" ;
-    ical:dtstart "2013-01-31T17:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer ldo:ASG ;
-    ical:summary "Nobelpreise für Physik und Chemie 2012" .
-
-<http://leipzig-data.de/Data/Event/ASG.2013-02-21>
-    ld:hasAddressAddendum "Neuer Senatssaal" ;
-    ld:hasTag ldtag:ASG ;
-    ld:hasURL <http://bj-kaiser.homepage.t-online.de/Seminar.html> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
-    a ld:Event ;
-    rdfs:label "Moderne Technologien der Photovoltaik" ;
-    ical:dtstart "2013-02-21T17:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer ldo:ASG ;
-    ical:summary "Mit Prof. Dr.-Ing. Norbert Bernhard (Hochschule Anhalt, Köthen)" .
-
-<http://leipzig-data.de/Data/Event/ASG.2013-03-21>
-    ld:description "mit Dr. rer. nat. habil. Rüdiger Thiele (Halle/S.)" ;
-    ld:hasAddressAddendum "Neuer Senatssaal" ;
-    ld:hasTag ldtag:ASG ;
-    ld:hasURL <http://bj-kaiser.homepage.t-online.de/Einladung_13_03_.pdf> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
-    a ld:Event ;
-    rdfs:label "Ist die Natur sparsam? Zur Geschichte des Prinzips der kleinsten Aktion" ;
-    ical:dtstart "2013-03-21T17:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer ldo:ASG ;
-    ical:summary "Ist die Natur sparsam? Zur Geschichte des Prinzips der kleinsten Aktion" .
-
-<http://leipzig-data.de/Data/Event/Attac.2013-01-30>
-    ld:hasTag ldtag:AttacLeipzig, ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://www.attac-leipzig.de/allg/material/2013/flyer-2013-01-30.pdf> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.Mittwochsattacke> ;
-    a ld:Event ;
-    rdfs:label "Politischer Streik" ;
-    ical:description "Das Streikrecht der Bundesrepublik ist in Europa mit das rückständigste und restriktivste. Nur in England, Österreich und Deutschland ist der politische Streik illegal - ein Verbot indes nirgendwo festgeschrieben. <br/> Die Illegalisierung erfolgt über vielfältige Inanspruchnahme auslegbarer Gesetze sowie durch sonstige Einengungen und Einschränkungen und steht im krassen Widerspruch zur allgemeinen Erklärung der Menschenrechte der UNO, sowie den Übereinkommen der Internationalen Arbeitsorganisation (ILO) und der Europäischen Menschenrechts- und Sozialcharta.<br/> Die Arbeitgeber- und Unternehmerverbände, einzelne Arbeitgeber und wesentliche Teile der Politik versuchen die wenigen Streikrechte immer weiter einzuschränken. Große Teile der Massenmedien berichten zumeist tendenziell gegen Streiks. <br/> Die Tarifpolitik kann eine verfehlte und neoliberale Politik nicht ausgleichen. Dadurch haben es die Gewerkschaften immer schwerer, den politisch verursachten existenzbedrohenden Verschlechterungen zu entgegnen. <br/>Eine gesellschaftspolitische Debatte – angeführt von den Gewerkschaften, unter Einbeziehung aller fortschrittlichen Parteien, Verbände, Vereine, Stiftungen und Einzelpersonen - ist dringend erforderlich. (Text auf der Basis des „Wiesbadener Apells“ der Gewerkschaften)" ;
-    ical:dtstart "2013-01-30T18:00:00+01:00" ;
-    ical:location ldo:SchaubuehneLindenfels ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-    ical:summary "Politischer Streik; mit Veit Wilhelmi, Wiesbaden" .
-
-<http://leipzig-data.de/Data/Event/Attac.2013-02-16>
-    ld:hasTag ldtag:AttacLeipzig ;
-    a ld:Event ;
-    rdfs:label "Attac Jahrestreffen" ;
-    ical:description "Wir wollen gemeinsam das vergangene Jahr Revue passieren lassen und über Pläne für das Jahr 2013 sprechen. <br/> Um 9:30 geht es mit einem gemeinsamen Frühstück los, und für Mittagessen und Kaffee ist auch gesorgt.<br/> Ansonsten wollen wir vormittags die Aktionen und Ereignisse des vergangenen Jahres besprechen und nachmittags auswerten. Am späteren Nachmittag wollen wir dann Ideen für neue Aktionen zusammentragen, und den Abend nach einem Abendessen gemeinsam ausklingen lassen." ;
-    ical:dtend "2013-02-16T20:30:00+01:00" ;
-    ical:dtstart "2013-02-16T09:30:00+01:00" ;
-    ical:location ldo:Durchblick ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-    ical:summary "Attac Jahrestreffen" .
-
-<http://leipzig-data.de/Data/Event/Attac.2013-02-27>
-    ld:hasTag ldtag:AttacLeipzig, ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://www.attac-leipzig.de/allg/material/2013/flyer-2013-02-27.pdf> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.Mittwochsattacke> ;
-    a ld:Event ;
-    rdfs:label "Ziviler Ungehorsam" ;
-    ical:description "Ziviler Ungehorsam als bewusster gewaltfreier Verstoß gegen herrschaftssichernde Regeln und Gesetze hat eine lange Tradition. Er wendet sich gegen vermeintliche oder tatsächliche Rechtsbrüche und tritt an, gestörtes Recht wiederherzustellen. <br/> Ziviler Ungehorsam nimmt dabei eigenes ungesetzliches Handeln und mögliche Bestrafung in Kauf – Sokrates, Gandhi, Martin Luther King, Mandela und die mit ihnen verbundenen Bewegungen, nicht zuletzt die Demonstrationen zum Ende der DDR sind Beispiele dafür. <br/> Wo solche Aktionen weit weg oder lange genug Geschichte sind, gibt es kaum Probleme mit der Akzeptanz in der BRD. Was aber ist mit denen, die sich auf Gleise gegen Castor-Transporte setzen, die sich Transporten von Rüstungsgut in Diktaturen entgegenstellen; was mit denen, die sich gegen Rüstungsproduktion überhaupt wenden? Oder mit Sitzblockaden gegen Neonazis? Was ist mit Hausbesetzungen? <br/> Wie ist die rechtliche Situation? Wo gilt es, zivilen Ungehorsam anzuwenden?" ;
-    ical:dtstart "2013-02-27T18:00:00+01:00" ;
-    ical:location ldo:SchaubuehneLindenfels ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-    ical:summary "mit Prof. Peter Grottian, Attac Deutschland" .
-
-<http://leipzig-data.de/Data/Event/DTS.2012-11-05>
-    ical:summary "DenkTankStelle: Gemeingüter" .
-
-<http://leipzig-data.de/Data/Event/DTS.2012-12-03>
-    ical:summary "DenkTankStelle: Menschenbilder" .
-
-<http://leipzig-data.de/Data/Event/DTS.2013-01-07>
-    ld:contactPerson ldp:Schroth_Johannes ;
-    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2013-01-07> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-    a ld:Event ;
-    rdfs:label "Recht auf Faulheit vs. homo oeconomicus" ;
-    ical:dtstart "2013-01-07T19:00:00+01:00" ;
-    ical:location ldo:Cafe-Grundmann ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-    ical:summary "DenkTankStelle: Recht auf Faulheit vs. homo oeconomicus" .
-
-<http://leipzig-data.de/Data/Event/DTS.2013-02-04>
-    ld:contactPerson ldp:Schroth_Johannes ;
-    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2013-02-04> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-    a ld:Event ;
-    rdfs:label "Modelle und Wirklichkeit" ;
-    ical:description "Als Thema hatten wir uns „Denken in Modellen“ ausgewählt. Ich muss gestehen, dass ich mich mit einem gedanklichen Einwurf schwer tue. Ich weiß nicht mehr, wer den Vorschlag eingebracht hatte, aber ich würde diesen bitten, einen kurzen Einstieg vorzubereiten. Und wenn wir merken, dass das nicht ergiebig genug wird, dann driften wir einfach dorthin ab, wohin uns unser „Denken ganz ohne Modelle“ führt. Eine Weile werden wir uns wohl generell bei dem Begriff aufhalten: Denken. Und vielleicht lässt der eine oder die andere von uns von einer Suche bei Wikipedia inspirieren. Eine Sorge, dass die Debatte zu abgehoben geraten könnte, habe ich nicht. Denn schließlich ist jede Ideologie und Idee ein Modell, und damit bekommen wir die nötige Bodenhaftung." ;
-    ical:dtstart "2013-02-04T19:00:00+01:00" ;
-    ical:location ldo:Cafe-Grundmann ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-    ical:summary "DenkTankStelle: Modelle und Wirklichkeit" .
-
-<http://leipzig-data.de/Data/Event/DTS.2013-03-04>
-    ld:contactPerson ldp:Schroth_Johannes ;
-    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2013-03-04> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-    a ld:Event ;
-    rdfs:label "Utopie und Wirklichkeit" ;
-    ical:description "Als Thema wurde ausgewählt „Utopie und Wirklichkeit“ und es soll - im Geiste - hauptsächlich Ernst Bloch mit am Tisch sitzen und uns seine Vorstellungen dazu nahebringen. Damit er sich nicht ob unseres Unwissens - im Geiste - die Haare rauft oder die Pfeife ausgehen lässt, werden vorher noch Hinweise zu einem Crash-Kurs rumgeschickt. Und wenn's um Hoffnungen und Utopien geht, versteht ja jeder was davon - auch ohne Bloch." ;
-    ical:dtstart "2013-03-04T19:00:00+01:00" ;
-    ical:location ldo:Cafe-Grundmann ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-    ical:summary "Utopie und Wirklichkeit" .
-
-<http://leipzig-data.de/Data/Event/LSGM.2013-02>
-    ld:description "Eingeladen sind mathematisch interessierte Schülerinnen und Schüler der 8. bis 12. Klasse aus ganz Sachsen und darüber hinaus. Wir werden uns täglich etwa 3 Doppelstunden mit interessanten mathematischen Themen beschäftigen." ;
-    ld:hasTag ldtag:LSGM ;
-    ld:hasURL <http://lsgm.de/tiki-index.php?page=Seminare.2013-02> ;
-    a ld:Event ;
-    rdfs:label "Mathematische Winterschule der LSGM in Grimma" ;
-    ical:dtend "2013-02-08" ;
-    ical:dtstart "2013-02-03" ;
-    ical:location <http://leipzig-data.de/Data/Ort/Gymnasium.Grimma> ;
-    ical:organizer ldo:LSGM ;
-    ical:summary "Mathematische Winterschule der LSGM in Grimma" .
-
-<http://leipzig-data.de/Data/Event/LSM.2013-01-14>
-    ld:description "Wir laden ein zur Eröffnungsveranstaltung unserer Schülerzirkeln und unserem Korrespondenzseminar für Klasse 5, die wir mit Jahresbeginn neu eröffnen. Wir werden an dieser Stelle unsere Aktivitäten und Angebote im Rahmen der LSGM genauer erläutern, die Zirkelleiter vorstellen und die Termine für die einzelnen Zirkel absprechen. " ;
-    ld:hasAddressAddendum "Felix-Klein-Hörsaal, Paulinum am Augustusplatz (5. Etage)" ;
-    ld:hasTag ldtag:LSGM ;
-    ld:hasURL <http://lsgm.de> ;
-    a ld:Event ;
-    rdfs:label "LSGM-Eröffnungsveranstaltung der Zirkel Klasse 5" ;
-    ical:dtstart "2013-01-14T16:30:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-    ical:organizer ldo:LSGM ;
-    ical:summary "LSGM-Eröffnungsveranstaltung der Zirkel Klasse 5" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.123>
-    ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "3:1 - Was man nicht im Kopf hat" ;
-    ical:description "Jugendtheaterprojekt / „Altenprojekt“ (P13)   !letztmalig! <br/> Liebe Freunde des Fußballsportes, liebe Fans, <br/>  Am 1. Juni startet endlich die neue Saison in der 2. Kreisklasse. Euer 1. FC Regionalexpress will auch dieses Jahr wieder versuchen anzugreifen und hat in der Sommerpause kräftig trainiert. Angestrebt wird ein Platz im oberen bis unteren Mittelfeld. Um dieses straffe Ziel zu erreichen benötigen besonders unsere starken Reservespieler Chrigel und Mischa, die in letzter Zeit viel besser geworden sind, eure Hilfe. Wer Lust und Zeit hat unseren 1. FC Regionalexpress zum 1. Punktspiel der Saison zu unterstützen ist herzlich willkommen! Ich werde natürlich auch da sein.  Euer Laurenz <br/>  Es spielen: Markus Reichenbach, Paul Becker, Philipp Nerlich  Projektleitung: Anne Rab" ;
-    ical:dtstart "2013-01-11T20:00:00+01:00" ;
-    ical:location ldo:Theatrium ;
-    ical:organizer ldo:Theatrium ;
-    ical:summary "Jugendtheaterprojekt - 3:1 - Was man nicht im Kopf hat" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.124>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "Ist doch logisch!?" ;
-    ical:description "Kindertheaterprojekt (P8) <br/> Ich heiße Polleke und bin 11 Jahre alt. Meine Geschwister und meine Freunde sind gern mit mir zusammen. Umgedreht ist es genauso. Wir treffen uns immer an einem alten Abrisshaus. Dort haben wir unsere Ruhe. Die Erwachsenen wissen hoffentlich nichts davon. Alles ist gut so, wie es ist. Bis eines Tages mein allerliebster Freund Mimun aus Marokko nicht mehr mit mir gehen darf. Und sich nicht mehr mit mir treffen darf. Kann man sich etwas Schlimmeres vorstellen? Ich schon! Mein Papa ist nämlich ein Junky. Das ist so eine Krankheit, und die kommt mit großen Schritten, wenn man zu viel von den Drogen nimmt. Genau deswegen darf Mimun sich nicht mehr mit mir treffen. Das mit meinem Papa weiß ich von meiner Schwester Hilletje. Sie weiß da bestens Bescheid. Bloß Ruben, mein Bruder, darf das mit unserem Drogen-Papa nicht erfahren. Er ist noch zu klein und würde das nicht verstehen. Ruben glaubt nämlich, dass unser Papa ein Dichter ist. Ist er ja auch. Aber wegen der blöden Drogen hat er überhaupt keine Zeit zum Dichten. Es kommt aber noch schlimmer. Seit gestern sitzt unser Papa im Knast. Nun bin ich 11 Jahre und habe mehr Probleme als manch Erwachsener. Ich bin bald durchgedreht. Aber Hilletje und Finn haben mir geholfen. Finn ist tiefbegabt und hat für alles eine Lösung. Auch meine anderen Freunde Caro, Tess, Roose aber auch Mimun werden mir helfen. Ich will aber noch nicht verraten wie. Denn wie wir leben und unsere Probleme lösen, das müsst ihr schon selbst herausfinden. <br/> Es spielen: Friedrich Brückner, Luzie Hahn, Johanna Kühn, Arthur Linke, Dario Selbmann, Emma Siegel, Sarah Winter und Jule Zimdahl <br/>   Projektleitung: Katrin Großmann Projektassistenz: Anne Rab" ;
-    ical:dtstart "2013-01-12T16:00:00+01:00" ;
-    ical:location ldo:Theatrium ;
-    ical:organizer ldo:Theatrium ;
-    ical:summary "Kindertheaterprojekt - Ist doch logisch!?" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.125>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "Ist doch logisch!?" ;
-    ical:description "Kindertheaterprojekt (P8) !letztmalig! <br/> Ich heiße Polleke und bin 11 Jahre alt. Meine Geschwister und meine Freunde sind gern mit mir zusammen. Umgedreht ist es genauso. Wir treffen uns immer an einem alten Abrisshaus. Dort haben wir unsere Ruhe. Die Erwachsenen wissen hoffentlich nichts davon. Alles ist gut so, wie es ist. Bis eines Tages mein allerliebster Freund Mimun aus Marokko nicht mehr mit mir gehen darf. Und sich nicht mehr mit mir treffen darf. Kann man sich etwas Schlimmeres vorstellen? Ich schon! Mein Papa ist nämlich ein Junky. Das ist so eine Krankheit, und die kommt mit großen Schritten, wenn man zu viel von den Drogen nimmt. Genau deswegen darf Mimun sich nicht mehr mit mir treffen. Das mit meinem Papa weiß ich von meiner Schwester Hilletje. Sie weiß da bestens Bescheid. Bloß Ruben, mein Bruder, darf das mit unserem Drogen-Papa nicht erfahren. Er ist noch zu klein und würde das nicht verstehen. Ruben glaubt nämlich, dass unser Papa ein Dichter ist. Ist er ja auch. Aber wegen der blöden Drogen hat er überhaupt keine Zeit zum Dichten. Es kommt aber noch schlimmer. Seit gestern sitzt unser Papa im Knast. Nun bin ich 11 Jahre und habe mehr Probleme als manch Erwachsener. Ich bin bald durchgedreht. Aber Hilletje und Finn haben mir geholfen. Finn ist tiefbegabt und hat für alles eine Lösung. Auch meine anderen Freunde Caro, Tess, Roose aber auch Mimun werden mir helfen. Ich will aber noch nicht verraten wie. Denn wie wir leben und unsere Probleme lösen, das müsst ihr schon selbst herausfinden. <br/> Es spielen: Friedrich Brückner, Luzie Hahn, Johanna Kühn, Arthur Linke, Dario Selbmann, Emma Siegel, Sarah Winter und Jule Zimdahl  <br/>  Projektleitung: Katrin Großmann Projektassistenz: Anne Rab" ;
-    ical:dtstart "2013-01-13T16:00:00+01:00" ;
-    ical:location ldo:Theatrium ;
-    ical:organizer ldo:Theatrium ;
-    ical:summary "Kindertheaterprojekt - Ist doch logisch!?" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.126>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "Seelenheil" ;
-    ical:description "Jugendtheaterprojekt / „Altenprojekt“ (P14) <br/> Die Welt geht unter. Das wussten schon die Maja. Überbevölkerung und Monopolismus gehen Hand in Hand und schmieden gemeinsam den Kollaps. Der einzige Ausweg scheint darin zu liegen, eine Revolution zu starten, eine alles umwälzende Entwicklung, von der in erster Linie derjenige profitiert, dem sie angedacht ist: der Mensch, als Individuum und Teil eines Ganzen. In ferner Zukunft wird es Wissenschaftlern gelingen, das Böse, das in der Seele der Menschen haust, auszurotten. Für immer Frieden und Koexistenz. Nur ein Problem bleibt da noch... <br/>  Es spielen: Paul Becker, Patrick Beer, Katja Fischer, Anne Rab, Virginia Mochmann, Lisa Oltsch, Melanie Petrack, Fabian Reichenbach, Benjamin Schümichen <br/>   Projektleitung: Peter Zahn" ;
-    ical:dtstart "2013-01-19T20:00:00+01:00" ;
-    ical:location ldo:Theatrium ;
-    ical:organizer ldo:Theatrium ;
-    ical:summary "Jugendtheaterprojekt - Seelenheil" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.127>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "Seelenheil" ;
-    ical:description "Jugendtheaterprojekt / „Altenprojekt“ (P14) <br/> Die Welt geht unter. Das wussten schon die Maja. Überbevölkerung und Monopolismus gehen Hand in Hand und schmieden gemeinsam den Kollaps. Der einzige Ausweg scheint darin zu liegen, eine Revolution zu starten, eine alles umwälzende Entwicklung, von der in erster Linie derjenige profitiert, dem sie angedacht ist: der Mensch, als Individuum und Teil eines Ganzen. In ferner Zukunft wird es Wissenschaftlern gelingen, das Böse, das in der Seele der Menschen haust, auszurotten. Für immer Frieden und Koexistenz. Nur ein Problem bleibt da noch... <br/>  Es spielen: Paul Becker, Patrick Beer, Katja Fischer, Anne Rab, Virginia Mochmann, Lisa Oltsch, Melanie Petrack, Fabian Reichenbach, Benjamin Schümichen <br/>   Projektleitung: Peter Zahn" ;
-    ical:dtstart "2013-01-20T18:00:00+01:00" ;
-    ical:location ldo:Theatrium ;
-    ical:organizer ldo:Theatrium ;
-    ical:summary "Jugendtheaterprojekt - Seelenheil" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.128>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "wenn ich ... wie ich!!!" ;
-    ical:description "Kindertheaterprojekt (P7) <br/> Ein Kind muß heutzutage in erster Linie „funktionieren“. Klein-Maximilian-Julius und Klein-Lisa-Sophie sollten spätestens im Alter von <br/>  1 Jahr: Laufen.… <br/>  2 Jahren: Sprechen.… <br/>  3 Jahren: Trocken sein.… <br/>  4 Jahren: Seepferdchen machen.…  <br/> 5 Jahren: ohne Stützräder fahren…  <br/> 6 Jahren: einschulfähig sein.…  <br/> 7 Jahren: den 1. Platz im Lesewettbewerb belegen.…  <br/> 8 Jahren: den ersten Aufsatz in Englisch verfassen.…  <br/> 9 Jahren: Französisch als zweite Fremdsprache belegen.…  <br/> 10 Jahren: die Gymnasialempfehlung erhalten.…  <br/> 11 Jahren: sich politisch engagieren (und zwar nicht für rechts!).… <br/>  12 Jahren: von Blockflöte auf Klavier, Harfe und Geige wechseln.…  <br/> 13 Jahren: ohne Anzeichen von Pubertät vernünftig und erwachsen werden. <br/> Und was ist, wenn nicht? Was, wenn ein Kind nicht die „Regelzeit“ für etwas braucht, sondern mehr? Wie viel Freiraum gibt es in unserer Zeit für Kinder? Träume und Wünsche verwirklichen – war da nicht was? <br/>  Zwölf Kinder zeigen auf der Bühne des Theatriums, dass das manchmal gar nicht so einfach ist, wenn man die meiste Zeit mit Funktionieren beschäftigt ist. Dass die Träume und Sehnsüchte aber deshalb nicht einfach weggehen. Sie locken, beschäftigen, beflügeln und platzen. Jeden Tag. Was für komische, traurige und verrückte Szenen dabei entstehen, könnt ihr bei \"wenn ich… wie ich!!!\" erleben. Nicht jeden Tag, aber dafür nur im Theatrium! <br/>  Es spielen: Justin Bertram, Renate Garbotz, Pauline Großmann, Nadine Harnisch, Maria-Elaine Herzberg, Janna Jonack, Melanie Petrack, Friederike Probst, Emilia Roch, Josefine Schöpe und Daniela Szameit  <br/>  Projektleitung: Sandra von Holn <br/>  Projektassistenz: Melanie Petrack " ;
-    ical:dtstart "2013-01-26T16:00:00+01:00" ;
-    ical:location ldo:Theatrium ;
-    ical:organizer ldo:Theatrium ;
-    ical:summary "Kindertheaterprojekt: wenn ich ... wie ich!!!" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.129>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "wenn ich ... wie ich!!!" ;
-    ical:description "Kindertheaterprojekt (P7) <br/> Ein Kind muß heutzutage in erster Linie „funktionieren“. Klein-Maximilian-Julius und Klein-Lisa-Sophie sollten spätestens im Alter von <br/>  1 Jahr: Laufen.… <br/>  2 Jahren: Sprechen.… <br/>  3 Jahren: Trocken sein.… <br/>  4 Jahren: Seepferdchen machen.…  <br/> 5 Jahren: ohne Stützräder fahren…  <br/> 6 Jahren: einschulfähig sein.…  <br/> 7 Jahren: den 1. Platz im Lesewettbewerb belegen.…  <br/> 8 Jahren: den ersten Aufsatz in Englisch verfassen.…  <br/> 9 Jahren: Französisch als zweite Fremdsprache belegen.…  <br/> 10 Jahren: die Gymnasialempfehlung erhalten.…  <br/> 11 Jahren: sich politisch engagieren (und zwar nicht für rechts!).… <br/>  12 Jahren: von Blockflöte auf Klavier, Harfe und Geige wechseln.…  <br/> 13 Jahren: ohne Anzeichen von Pubertät vernünftig und erwachsen werden. <br/> Und was ist, wenn nicht? Was, wenn ein Kind nicht die „Regelzeit“ für etwas braucht, sondern mehr? Wie viel Freiraum gibt es in unserer Zeit für Kinder? Träume und Wünsche verwirklichen – war da nicht was? <br/>  Zwölf Kinder zeigen auf der Bühne des Theatriums, dass das manchmal gar nicht so einfach ist, wenn man die meiste Zeit mit Funktionieren beschäftigt ist. Dass die Träume und Sehnsüchte aber deshalb nicht einfach weggehen. Sie locken, beschäftigen, beflügeln und platzen. Jeden Tag. Was für komische, traurige und verrückte Szenen dabei entstehen, könnt ihr bei \"wenn ich… wie ich!!!\" erleben. Nicht jeden Tag, aber dafür nur im Theatrium! <br/>  Es spielen: Justin Bertram, Renate Garbotz, Pauline Großmann, Nadine Harnisch, Maria-Elaine Herzberg, Janna Jonack, Melanie Petrack, Friederike Probst, Emilia Roch, Josefine Schöpe und Daniela Szameit  <br/>  Projektleitung: Sandra von Holn <br/>  Projektassistenz: Melanie Petrack " ;
-    ical:dtstart "2013-01-27T16:00:00+01:00" ;
-    ical:location ldo:Theatrium ;
-    ical:organizer ldo:Theatrium ;
-    ical:summary "Kindertheaterprojekt: wenn ich ... wie ich!!!" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.130>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "Muttermord" ;
-    ical:description "Jugendtheaterprojekt (P14) !letztmalig! <br/> Muttermord? Muttermord ist ein Verbrechen! Ein Grenzübertritt, der die Gemüter der ganzen Welt aufschreien lässt. García Lorca hat in seinem Bühnenstück »Bernarda Albas Haus« (1936 veröffentlicht) eine spanische Frauentragödie geschrieben, die es zulässt, sich mit dem Gedanken anzufreunden, zumindest im Geiste diese Bernarda, eine despotische Unterdrückerin ihrer fünf Töchter, unschädlich zu machen. Zwölf jugendliche Darstellerinnen bringen diesen Stoff auf die Bühne des Theatriums und entblättern eine Atmosphäre des gegenseitigen Ignorierens. Eifersucht, Neid und Hass bestimmen den Verlauf dieser beklemmenden Geschichte. Alles geschieht im Namen einer Sache, die viele Namen trägt: Religion, Politik, Ehre, Tradition und natürlich grausamerweise den schönsten: Die Liebe.<br/>Es spielen: Tina Orlovskij, Laura Dorenburg, Emily Porter, Lisa Oltsch, Julia Bergmann, Nina Schuhmann, Sharon Schultz, Daniela Winkler, Janis Herrmann, Laura Bryks, Jenni Thamm <br/> Projektleitung: Georg Herberger<br/> Projektassistenz: Paul Schwabe" ;
-    ical:dtstart "2013-02-15T20:00:00+01:00" ;
-    ical:location ldo:Theatrium ;
-    ical:organizer ldo:Theatrium ;
-    ical:summary "Jugendtheaterprojekt: Muttermord" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.131>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "... LOS!" ;
-    ical:description "Jugendtheaterprojekt (P13) !letztmalig! <br/> Ein Verbrechen lässt einen jungen Mann verstummen. Auf der Straße, in der Uni, im Café – überall Fragen. Auch die Heimlichliebende scheitert in ihrer ungelenken Hilfe. Die M’Muts, die sich entschieden haben abseits der modernen Gesellschaft und ohne Sprache zu leben, scheinen die einzig mögliche Zuflucht. Hier scheint das Geheimnis sicher, jeder Mund verschlossen. Doch die Gesandten des Gesetzes und die Schwester des Mannes kommen und kratzen an der Mauer des Schweigens. Wie lange werden die M’Muts und ihr Anführer, der mysteriöse Ohm, den Flüchtigen beschützen können? Und hat die zarte Liebe, die sich zwischen einer M’Muts und dem Assistenten der Justiz anbahnt, eine Chance?<br/>Es spielen: Melanie Christoph, Charlotte Glück, Lisa Hoegel, Charlotte Kremberg, Paula Kuhn, Maxi Leopold, Sophie Weber; Felix Guevara, Paul Hämmerling, Franz Manhenke, Pascal Müller, Ferdinand Probst <br/> Projektleitung: Almut Koch<br/> Projektassistenz: Philipp Wenke" ;
-    ical:dtstart "2013-02-24T18:00:00+01:00" ;
-    ical:location ldo:Theatrium ;
-    ical:organizer ldo:Theatrium ;
-    ical:summary "Jugendtheatherprojekt: ... LOS!" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.148>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:Jugendhilfe, ldtag:MehrAlsChillen, ldtag:Nachhilfe ;
-    a ld:Event ;
-    rdfs:label "Kochen mit Anne - Essen mit Allen" ;
-    ical:description "Mitkochen  mitessen für alle!!! Lecker, vegetarisch, wer spenden kann, der darf das gerne tun, Hauptsache Spaß an der Sache und satt werden." ;
-    ical:dtstart "2013-01-16T16:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
-    ical:summary "Kochen mit Anne - Essen mit Allen" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.149>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:Jugendhilfe, ldtag:MehrAlsChillen, ldtag:Nachhilfe ;
-    a ld:Event ;
-    rdfs:label "KOMM ins Familienzentrum: FamilienSpieleNachmittag" ;
-    ical:description " <br/> Du suchst den perfekten Ausgleich nach einer stressigen Woche? Dann schnapp` dir deine Familie und komm! Es erwarten dich Spiel, Spaß und gute Laune - bei genügend Verpflegung versteht sich ;) Wir freuen uns auf euch!" ;
-    ical:dtstart "2013-01-18T15:30:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/Familienzentrum.Gruenau> ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/Familienzentrum.Gruenau> ;
-    ical:summary "Spiel, Spaß und gute Laune - bei genügend Verpflegung" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.150>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "Dark Room : Kamera - Fotolabor - Keller" ;
-    ical:description "In der Zeit vom 18. bis 22. Februar findet im KiJu ein Fotoprojekt statt und du bist herzlich eingeladen daran teilzunehmen! Wir zeigen euch wie Fotos im Labor entstehen. Schießt und entwickelt eure eigenen schwarz/weiß Fotos! Neugierig? Dann merke dir den Termin und schaue rechtzeitig mal bei uns vorbei. Alle Infos gibts auch bei den Mitarbeiterinnen im KiJu." ;
-    ical:dtend "2013-02-22T18:00:00+01:00" ;
-    ical:dtstart "2013-02-18T14:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
-    ical:summary "Fotoprojekt im KiJu. Wie entstehen Fotos im Labor?" .
-
-<http://leipzig-data.de/Data/Event/MehrAlsChillen.151>
-    ld:hasTag ldtag:Bildung, ldtag:Freizeit, ldtag:MehrAlsChillen ;
-    a ld:Event ;
-    rdfs:label "Kreativwerkstatt startet mit neuem Projekt: Streetart" ;
-    ical:description "In der Kreativwerkstatt des KiJu' kannst du ab jetzt alles über Streetart kennenlernen und viele Dinge ausprobieren. Schablonen Graffitio, Sticker, Installationen, guerilla Knitting und und und Die Kreativwerkstatt ist. Immer Dienstags und Donnerstag von 15 bis 18 Uhr für euch geöffnet und freut sich auf euren Besuch!!!" ;
-    ical:dtstart "2013-01-15T15:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
-    ical:summary "Kreativwerkstatt startet mit neuem Projekt: Streetart" .
-
-<http://leipzig-data.de/Data/Event/PraesentationSinusstudie>
-    a ld:Event ;
-    rdfs:label "Präsentation der Sinusstudie" ;
-    ical:description "Präsentation der Sinusstudie zu Lebenwelten von Jugendlichen im Alter von 14-17 Jahren in Deutschland" ;
-    ical:dtend "2013-01-31T17:00:00+01:00" ;
-    ical:dtstart "2013-01-31T14:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/Caritas.Leipzig> ;
-    ical:summary "Präsentation der Sinusstudie zu Lebenwelten von Jugendlichen im Alter von 14-17 Jahren in Deutschland" .
-
-<http://leipzig-data.de/Data/Event/VHS.2012-11-13>
-    ld:hasAddressAddendum "Raum 410" ;
-    ical:summary "Lehrer und Schüler des BIP-Kreativitätsgymnasiums Leipzig stellen ein Projekt zum Thema \"alternative Energien\" vor." .
-
-<http://leipzig-data.de/Data/Event/VHS.2012-12-11>
-    ld:contactPerson ldp:Graebe_HansGert ;
-    ld:hasAddressAddendum "Raum 410" ;
-    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.2012-12-11> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
-    a ld:Event ;
-    rdfs:label "Energiekonzepte jenseits von Stromkonzepten" ;
-    ical:description "Mit Prof. K. Bastian (HTWK Leipzig). In den offiziellen Studien zur Energieversorgung der Zukunft sind Energiekonzepte fast ausschließlich Stromkonzepte. Im Vortrag werden Vorteile und Bedeutung des Energieträgers Gas genauer diskutiert, einschließlich der provokanten These, dass das Energiekonzept der Zukunft nicht strom- sondern gasgeführt sein wird." ;
-    ical:dtstart "2012-12-11T18:00:00" ;
-    ical:location ldo:Volkshochschule ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
-    ical:summary "Mit Prof. K. Bastian (HTWK Leipzig). In den offiziellen Studien zur Energieversorgung der Zukunft sind Energiekonzepte fast ausschließlich Stromkonzepte. Im Vortrag werden Vorteile und Bedeutung des Energieträgers Gas genauer diskutiert, einschließlich der provokanten These, dass das Energiekonzept der Zukunft nicht strom- sondern gasgeführt sein wird." .
-
-<http://leipzig-data.de/Data/Event/VHS.2013-01-08>
-    ld:contactPerson ldp:Graebe_HansGert ;
-    ld:hasAddressAddendum "Raum 410" ;
-    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.2013-01-08> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
-    a ld:Event ;
-    rdfs:label "Metanetze zur Optimierung von Energie- und Stoffströmen" ;
-    ical:description "Mit Dr.-Ing. Gerd Arnold (Evermind, Leipzig). Mit der Diskussion des Vorteils von Gas als Energieträger, fast verlustfrei über große Strecken übertragen werden zu können, rückt die Frage der Optimierungspotenziale einer integrierten Betrachtung von Energie- und Stoffströmen ins Blickfeld." ;
-    ical:dtstart "2013-01-08T18:00:00" ;
-    ical:location ldo:Volkshochschule ;
-    ical:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
-    ical:summary "Mit Dr.-Ing. Gerd Arnold (Evermind, Leipzig). Mit der Diskussion des Vorteils von Gas als Energieträger, fast verlustfrei über große Strecken übertragen werden zu können, rückt die Frage der Optimierungspotenziale einer integrierten Betrachtung von Energie- und Stoffströmen ins Blickfeld." .
-
-<http://leipzig-data.de/Data/Events/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology .
-
-<http://leipzig-data.de/Data/Events/6.FamilienSpieleFest>
-    ld:hasURL <http://www.leipzig.de/de/buerger/aemterhome/jugendamt/spielefest/> ;
-    a ld:Event ;
-    rdfs:label "6. FamilienSpieleFest" ;
-    ical:description "Im Neuen Rathaus kann man am 2. Februar von 13:00 bis 19:00 Uhr unbekannte Spiele entdecken, neue Spielpartner finden und einen Familienspielnachmittag in außergewöhnlicher Umgebung verbringen." ;
-    ical:dtend "2013-02-02T19:00:00+01:00" ;
-    ical:dtstart "2013-02-02T13:00:00+01:00" ;
-    ical:location <http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus> ;
-    ical:summary "Im Neuen Rathaus kann man am 2. Februar von 13:00 bis 19:00 Uhr unbekannte Spiele entdecken, neue Spielpartner finden und einen Familienspielnachmittag in außergewöhnlicher Umgebung verbringen." .
-
-<http://leipzig-data.de/Data/Events/FBL.2013-03-18>
-    ld:hasTag ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://leipzig-netz.de/index.php5/FBL.2013-03-18> ;
-    ld:zurReihe <http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL> ;
-    a ld:Event ;
-    rdfs:label "Forum Bürgerstadt Leipzig" ;
-    ical:description "Themen: <ul> <li> „Gründerzeitviertel in Parkplatznot“ <br/> Ausgehend von Schleußig wird das Thema aufgegriffen und erörtert für Lösungswege, die auch für andere Stadtteile von Nutzen sein können. </li> <li> „Parkbogen Ost“ <br/> Die Idee geht von der Initiative der Bürger aus. Das Konzept ist, die Innenstadt zu verknüpfen mit verstreut liegenden Wohngebieten, Parkanlagen, Gartenkolonien, Naherholungsgebieten und Baudenkmälern entlang eines Aktivbandes, das bogenförmig den Leipziger Osten zum Teil auf ehemaligen Gleisanlagen durchziehen soll. Diese langfristige Planung braucht Unterstützter und ein verzahntes Arbeiten aller Beteiligten. </li> </ul> " ;
-    ical:dtstart "2013-03-18T16:30:00+01:00" ;
-    ical:location ldo:Volkshochschule ;
-    ical:summary "Plenum des Forums Bürgerstadt Leipzig" .
-
-<http://leipzig-data.de/Data/Events/Hellerau-Ferienakademie-Kurse.1>
-    ld:hasURL <http://t-m-a.de/ferienakademie/homepage-schmiede-leipzig> ;
-    a ld:Event ;
-    rdfs:label "Ferienakademie-Kurse im Bereich Homepage-Schmiede" ;
-    ical:description "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" ;
-    ical:dtend "2013-02-09" ;
-    ical:dtstart "2013-02-04" ;
-    ical:location ldo:VillaIda ;
-    ical:summary "Ferienakademie-Kurse im Bereich Homepage-Schmiede" .
-
-<http://leipzig-data.de/Data/Events/Hellerau-Ferienakademie-Kurse.2>
-    ld:hasURL <http://t-m-a.de/ferienakademie/homepage-schmiede-leipzig> ;
-    a ld:Event ;
-    rdfs:label "Ferienakademie-Kurse im Bereich Homepage-Schmiede" ;
-    ical:description "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" ;
-    ical:dtend "2013-02-16" ;
-    ical:dtstart "2013-02-11" ;
-    ical:location ldo:VillaIda ;
-    ical:summary "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" .
-
+<http://leipzig-data.de/Data/Event/APILeipzig.122> a ld:Event ;
+                                                   rdfs:label "WISSENSWERT: Existenzgründung aus ALG II (Nachholtermin)" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2012-12-11T17:30:42+01:00" ;
+                                                   ical:location ldo:Plan-B ;
+                                                   ical:description "WISSENSWERT - unsere Informationsreihe für Dinge, die für Kreativschaffende von Interesse sind. Dieses mal zu Gast: Malgorzata Schirmer &amp; Melanie Kühn, JobCenter Leipzig. <br/> <br/> Viele Selbständige in der Kreativwirtschaft starten ihre Unternehmen aus der Arbeitslosigkeit heraus. Bei unserer WISSENSWERT-Veranstaltung zeigen wir, wie das geht, welche Unterstützungsangebote es gibt und was beachtet werden muss. Alle Interessierten sind herzlich eingeladen und ihre Fragen mitzubringen." ;
+                                                   ical:summary "WISSENSWERT: Existenzgründung aus ALG II (Nachholtermin)" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.122> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.123> a ld:Event ;
+                                                   rdfs:label "FO.DO - Der Foto-Donnerstag" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2012-12-06T19:00:42+01:00" ;
+                                                   ical:location ldo:Cafe-Grundmann ;
+                                                   ical:description "Auch im Dezember treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal wollen wir eine Bildbesprechung machen. Alle Teilnehmer bringen daher bitte 3 Bilder mit, über die wir dann KONSTRUKTIV sprechen. Das können die drei schönsten Bilder sein oder die drei wenigsten schönsten oder eine Mischung aus beidem :) <br/> Ihr müsst kein Profi sein um mit diskutieren zu können, auch die Meinung eines Laien kann sehr interessant sein und eine gute Grundlage für eine spannende Diskussion bieten. <br/> <br/> Damit das Format etwas einheitlich wird und nicht der Eine mit übergroßen Drucken und der andere mit Briefmarken kommt, sollten die Bilder alle eine Größe von ca. 20x30cm bzw. A4 haben. <br/> Wer nicht weiß wo er seine Bilder entwickeln lassen soll, dem empfehle ich www.pixelfoto-express.de, www.fotobuchexpress24.de/ oder www.bildpartner.de <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann, August-Bebel-Straße 2, 04275 Leipzig und sitzen im Separee." ;
+                                                   ical:summary "Treffen in geselliger Runde zum Austausch über das Thema Fotografie" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.123> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.126> a ld:Event ;
+                                                   rdfs:label "FO.DO - Der Fotodonnerstag" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2013-01-03T19:00:42+01:00" ;
+                                                   ical:location ldo:Cafe-Grundmann ;
+                                                   ical:description "Auch im Januar des neuen Jahres treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Unser Thema diesmal: Jahresplanung 2013 <br/> Wir wollen gemeinschaftlich für die weiteren Treffen über mögliche Themen sprechen. Jeder kann eigene Ideen und Vorstellungen einbringen, die wir dann in der Gruppe diskutieren. <br/> <br/> Wir treffen uns 19 Uhr im Cafe Grundmann und sitzen im Separee im hinteren Teil des Lokales. <br/> Wir freuen uns auch stets über neue Gesichter." ;
+                                                   ical:summary "Treffen in geselliger Runde zum Austausch über das Thema Fotografie" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.126> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.127> a ld:Event ;
+                                                   rdfs:label "FLYING MUSIC CIRCUS - Das Festival" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2013-01-24" ;
+                                                   ical:location ldo:NeuesSchauspielLeipzig ;
+                                                   ical:description "“Ihr müsst spielen, spielen und nochmals spielen.” <br/> <br/> Den Satz kennst Du, oder? Und Du weiß, dass das viel leichter gesagt ist als getan. Deswegen wird Flying Music Circus neben Workshops, Seminaren und einem Promo-Sampler auch Künstler auf Kurztour durch Sachsen schicken. <br/> <br/> DIE TOURDATEN <br/> <br/> Tour 1 I Salon <br/> mit Susann Großmann, CousCous, Nadine Maria Schmidt &amp; Frühmorgens am Meer <br/> 24.01.2013 Chemnitz, Weltecho <br/> 25.01.2013 Leipzig, Neues Schauspiel <br/> 27.01.2013 Dresden, Scheune <br/> <br/> Tour 2 I Backyard Rock <br/> mit 3apesband, Atlas Ahead, Elektrik Farm <br/> 24.01.2013 Dresden, Ostpol (zusätzlich mit Harry Bushh!!) <br/> 26.01.2013 Chemnitz, Weltecho <br/> 27.01.2013 Leipzig, Neues Schauspiel <br/> <br/> Tour 3 I Garage <br/> mit Daniel Orange, The Smokkings, Polis <br/> 24.01.2013 Leipzig, Neues Schauspiel <br/> 25.01.2013 Chemnitz, Weltecho <br/> 26.01.2013 Dresden, Bärenzwinger <br/> <br/> Tour 4 I Club <br/> mit Harry Bushh!!, Leo Hört Rauschen, Grafstrøm <br/> 25.01.2012 Dresden, Altes Wettbüro (ohne Harry Bushh!!, zusätzlich mit Lax-O-Mat) <br/> 26.01.2012 Leipzig, Neues Schauspiel (anschl. detektor.fm DJ Team) <br/> 27.01.2012 Chemnitz, Weltecho <br/> <br/> 4-Tages-Ticket (nur Vorverkauf): 15 Euro <br/> Abendkasse: 5 Euro <br/> <br/> Änderungen vorbehalten. Alles weitere unter http://flying-music-circus.de/fmc/tour" ;
+                                                   ical:summary "FLYING MUSIC CIRCUS - Das Festival" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.127> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.128> a ld:Event ;
+                                                   rdfs:label "Workshop \"Kooperatives Lernen in Grundschulen\"" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/workshop-kooperatives-lernen-in-grundschulen> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   ical:dtstart "2012-12-18T08:45:00+01:00" ;
+                                                   ical:location ldo:EssentialExistenceGallery ;
+                                                   ical:description "Das Team der AG open computer kids arbeitet gemeinsam mit den HELLO STUDIOS an einer interaktiven Exkursion durch das Klassenzimmer einer Leipziger 4.en Klasse" ;
+                                                   ical:dtend "2012-12-19T11:30:00+01:00" ;
+                                                   ical:summary "Workshop \"Kooperatives Lernen in Grundschulen\"" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.128> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.129> a ld:Event ;
+                                                   rdfs:label "ETNA - Auftaktveranstaltung -> Museumsführung" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/etna-auftaktveranstaltung-museumsfuehrung> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   ical:dtstart "2013-01-09T14:30:00+01:00" ;
+                                                   ical:location ldo:EssentialExistenceGallery ;
+                                                   ical:description "Die EEG und die AG open computer kids laden 2013 Leipziger über 50 dazu ein mittels Neuen Medien zeitgenössische Kunst zu erleben" ;
+                                                   ical:summary "Die EEG und die AG open computer kids laden 2013 Leipziger über 50 dazu ein mittels Neuen Medien zeitgenössische Kunst zu erleben" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.129> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.130> a ld:Event ;
+                                                   rdfs:label "Seminar - Von der Idee zum Markt" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.smile.uni-leipzig.de/nc/smile-webseite/veranstaltungen/veranstaltungsuebersicht.html> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                   ical:dtstart "2013-01-29T09:00:42+01:00" ;
+                                                   ical:location ldo:AKAD-Hochschule ;
+                                                   ical:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Von der Idee zum Markt <br/> 29. Januar 2013: 09.00 Uhr bis 15.00 Uhr, 31. Januar 2013: 09.00 Uhr bis 15.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
+                                                   ical:dtend "2013-01-29T15:00:42+01:00" ;
+                                                   ical:summary "Workshops für Unternehmer der Kultur- und Kreativbranchen" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.130> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.131> a ld:Event ;
+                                                   rdfs:label "Seminar - Freiberuflich im künstlerischen und kreativen Bereich" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                   ical:dtstart "2013-02-19T09:00:42+01:00" ;
+                                                   ical:location ldo:AKAD-Hochschule ;
+                                                   ical:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Freiberuflich im künstlerischen und kreativen Bereich <br/> 19. Februar 2013: 09.00 Uhr bis 17.00 Uhr, 21. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
+                                                   ical:dtend "2013-02-19T17:00:42+01:00" ;
+                                                   ical:summary "Seminar - Freiberuflich im künstlerischen und kreativen Bereich" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.131> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.132> a ld:Event ;
+                                                   rdfs:label "Seminar - Mut zur eigenen Persönlichkeit" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                   ical:dtstart "2013-02-26T10:00:42+01:00" ;
+                                                   ical:location ldo:AKAD-Hochschule ;
+                                                   ical:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Mut zur eigenen Persönlichkeit <br/> 26. Februar 2013: 09.00 Uhr bis 17.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
+                                                   ical:dtend "2013-02-26T17:00:42+01:00" ;
+                                                   ical:summary "Seminar - Mut zur eigenen Persönlichkeit" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.132> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.133> a ld:Event ;
+                                                   rdfs:label "Seminar - Kreativ und frei – Kommunikation mit dem Kunden" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <https://www.akad.de/informationen/akad-hochschulen/hochschule-leipzig/?wkz=9010AA> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+                                                   ical:dtstart "2013-02-28T09:00:42+01:00" ;
+                                                   ical:location ldo:AKAD-Hochschule ;
+                                                   ical:description "Workshops für Unternehmer der Kultur- und Kreativbranchen <br/> <br/> Die Projektpartnerschaft zwischen dem Amt für Wirtschaftsförderung und der Selbstmanagement Initiative der Leipziger Hochschulen und Forschungseinrichtungen – SMILE (aus dem Jahr 2011/12) wird auch 2013 fortgeführt. <br/> <br/> Angehende und bereits etablierte Unternehmer der Kultur- und Kreativbranchen können ab dem 29. Januar in verschiedenen Workshops und Seminaren ihr Wissen auffrischen, ausbauen, ihre bisherige Arbeit reflektieren sowie am eigenen Unternehmens- und Vermarktungskonzept feilen. <br/> <br/> Kreativ und frei – Kommunikation mit dem Kunden <br/> 28. Februar 2013: 10.00 Uhr bis 14.00 Uhr <br/> <br/> Alle Termine finden in den Seminarräumen des SMILE-Büros der AKAD Hochschule Leipzig, Gutenbergplatz 1E, 5. Etage, 04103 Leipzig, statt. Die Seminare sind für die Teilnehmer kostenfrei. <br/> <br/> Die Teilnehmerzahl für Gründer und junge Unternehmer aus dem nicht akademischen Bereich ist auf maximal acht Personen je Themenschwerpunkt mit zugehörigem Seminar beschränkt. <br/> Anmeldung online unter http://www.leipzig.de/de/business. <br/> <br/> Angeregt wurde das neue Angebot durch Ergebnisse der Studie „Medien- und Kreativwirtschaft Leipzig 2010/11“. Erste Angebote im Rahmen einer Fortbildungsreihe wurden im Auftrag des Amtes für Wirtschaftsförderung von Dezember 2011 bis April 2012 erfolgreich durchgeführt. <br/> <br/> Ansprechpartner für Gründer und junge Bestandsunternehmen: <br/> Uta Johannes, Amt für Wirtschaftsförderung, Tel.: 0341 123-5835, E-Mail: uta.johannes@leipzig.de <br/> <br/> Ansprechpartner für Studierende, Absolventen, Gründer aus dem Hochschulbereich: <br/> Friederike Kislinger, SMILE-Büro, AKAD Hochschule Leipzig, Tel.: 0341 226-1941, E-Mail: kislinger@smile.uni-leipzig.de" ;
+                                                   ical:dtend "2013-02-28T17:00:42+01:00" ;
+                                                   ical:summary "Seminar - Kreativ und frei – Kommunikation mit dem Kunden" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.133> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.134> a ld:Event ;
+                                                   rdfs:label "Ideenbörse zur Nutzung Offener Daten " ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/LD.OpenInnovation-12.IdeenBoerse> ;
+                                                   ld:contactPerson ldp:Graebe_HansGert ;
+                                                   ical:dtstart "2013-01-11T09:00:42+01:00" ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+                                                   ical:description "Mit unserer Ideenbörse wollen wir ausloten, welche Möglichkeiten Offene Daten bieten und was man davon im schnellen Zugriff eines Programmiersprints (12./13.1.) schon mal umsetzen kann. Wir haben aus den bisher zusammengetragenen Interessen (vorerst) drei Bündel geschnürt, die den Startpunkt markieren. <br/> <br/> Sie können sich auch auf den spannenden Vortrag über \"mobile erweiterte Realität\" von Frank Fuchs-Kittowski (HTW Berlin) freuen, der zeigen wird, was mit sinnvoll strukturierten Daten und mobilen Anwendungen heute schon so alles geht. <br/> " ;
+                                                   ical:dtend "2013-01-11T17:00:42+01:00" ;
+                                                   ical:summary "Welche Möglichkeiten bieten Offene Daten und was davon kann man im schnellen Zugriff eines Programmiersprints (12./13.1.) umsetzen." ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.134> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.135> a ld:Event ;
+                                                   rdfs:label "Bockwurst statt Bildung" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/bockwurst-statt-bildung> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   ical:dtstart "2013-01-01" ;
+                                                   ical:location ldo:EssentialExistenceGallery ;
+                                                   ical:description "Das Kulturamt Leipzig lehnt unsere (bereits sehr geringe quasi \"symbolische\") Projektförderung für 2013 ab." ;
+                                                   ical:dtend "2013-12-31" ;
+                                                   ical:summary "Das Kulturamt Leipzig lehnt unsere (bereits sehr geringe quasi \"symbolische\") Projektförderung für 2013 ab." ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.135> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.136> a ld:Event ;
+                                                   rdfs:label "Drupal User Group Leipzig" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://groups.drupal.org/node/277133> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/APIId/Host.43> ;
+                                                   ical:dtstart "2013-01-17T19:00:42+01:00" ;
+                                                   ical:location ldo:Villa ;
+                                                   ical:description "Treffen der Drupal User Group Leipzig." ;
+                                                   ical:dtend "2013-01-17T21:00:42+01:00" ;
+                                                   ical:summary "Treffen der Drupal User Group Leipzig." ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.136> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.137> a ld:Event ;
+                                                   rdfs:label "PR-Seminar (3tägiger Intensivkurs), vergünstigte Tarife für Startups und Vereine" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.pr-seminare.com> ;
+                                                   ld:contactPerson <http://leipzig-data.de/Data/APIId/Host.44> ;
+                                                   ical:dtstart "2013-03-15" ;
+                                                   ical:location ldo:SchlossSchoenefeld ;
+                                                   ical:description "Management von Kommunikationsprozessen - Grundlagen &amp; Instrumente der Öffentlichkeitsarbeit (30 Stunden) <br/> <br/> Inhalte: <br/> <br/> Themen des Seminars werden vor allem die Grundlagen praktischer Public Relations sein. Neben der systematischen Bearbeitung wissenschaftlicher Erkenntnisse zum Einfluss der PR auf die Medien sollen wesentliche Instrumente der Pressearbeit kennengelernt und praktisch angewendet werden. Die journalistische Perspektive, etwa das Nachrichtenschreiben, kommt in ihren basalen Grundzügen ebenso zum Tragen wie das Formulieren von Pressemitteilungen oder der Organisation einer Pressekonferenz. Mit Hilfe von zahlreichen Übungen und deren Korrektur durch den Betreuer werden die Inhalte direkt in der praktischen Übung angewendet und Fehler sofort ausgewertet. <br/> <br/> zusammengefasst: <br/> <br/> Grundlegende Einordnung der Aufgabenfelder eines Kommunikationsmanagers <br/> Erarbeitung wesentlicher Instrumente für die praktische Öffentlichkeitsarbeit <br/> Wissenschaftliche Einordnung und Erkenntnisse der Public Relations <br/> Umgang mit dem Mediensystem und dessen Akteuren <br/> <br/> <br/> Ziele: <br/> <br/> Das Ziel des Seminars besteht darin, TeilnehmerInnen mit geringen Vorkenntnissen an das Fachgebiet Public Relations heranzuführen und dabei die wichtigsten Fertigkeiten einführend zu vermitteln, daneben aber auch die wissenschaftliche Diskussion zum Thema beispielhaft vorzustellen. Die praktische Anwendbarkeit der Ergebnisse steht dabei im Vordergrund. Ziel der praktischen Anwendung ist es innerhalb des Seminars eine Pressemitteilung zu erstellen - spezifisch für jeden Teilnehmer. Somit kann jeder seine erste eigene Pressemitteilung direkt verwenden. <br/> <br/> zusammengefasst: <br/> <br/> Erlernung praktischer Fertigkeiten auf dem Gebiet der Public Relations <br/> Sicherer Umgang mit den Akteuren des Mediensystem <br/> wissenschaftliche Annäherung zum Thema <br/> <br/> <br/> Zielgruppe: <br/> <br/> Das Seminar richtet sich an TeilnehmerInnen mit geringen Vorkenntnissen im Bereich der Öffentlichkeitsarbeit. Angefangen von jungen Start-Up Unternehmern bis hin zu Presseakteuren aus Vereinen und Organisationen aber auch an Interessierte Personen, die im realen Leben auf den richtigen Umgang mit den Akteuren des Mediensystems angewiesen sind. <br/> <br/> zusammengefasst: <br/> <br/> Personen aus der Gründerszene (Start-Ups) <br/> (ehrenamtliche) Presseakteure aus Vereinen und Organisationen <br/> Selbstständige Unternehmen <br/> interessierte Quereinsteiger " ;
+                                                   ical:dtend "2013-03-17" ;
+                                                   ical:summary "PR-Seminar (3tägiger Intensivkurs), vergünstigte Tarife für Startups und Vereine" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.137> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.138> a ld:Event ;
+                                                   rdfs:label "FO.DO - Der Fotodonnerstag" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <https://www.facebook.com/LichtbilderGerdLehmann> ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2013-02-07T19:00:42+01:00" ;
+                                                   ical:organizer ldo:KreativesLeipzig ;
+                                                   ical:description "Auch im Februar treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde, um über alle möglichen Themen der Fotografie zu sprechen. Diesmal wird uns der alte Hase der Fotografie Gerd Lehmann besuchen, der etwas über 40 Jahre seines Lebens als Fotograf und seine Sichtweise über die Fotografie erzählen wird. <br/> \"1945 geboren hat Gerd Lehmann früh zu der Fotografie gefunden. Bereits im Kindesalter erhielt er ein dickes Buch mit Bildern. <br/> Trotz der anfänglichen Affinität zu Fotos begann er zunächst ein Geografiestudium, um festzustellen, dass er lieber fotografiert. <br/> Zunächst als Modell für DDR-Modeproduktionen, störten ihn schon früh die immer wiederkehrende, in seinen Augen langweile Bildgestaltung. Also schickte er sich an, bei den Auftraggebern sich als Fotograf bekannt zu machen. Seine neue, unverbrauchte und lebendige Bildsprache half ihn, einer der berühmtesten Fashion-Fotografen der Deutschen Demokratischen Republik zu werden, obwohl sein Einstieg in die professionelle Fotografie wegen seiner \"Westverwandschaft\" erheblich erschwert wurde. <br/> 1987, bei einem Kondulenzaufenthalt in Westberlin ist er dann einfach mal geblieben. Wieder bei Null anzufangen war zwar schwer, doch hat er es geschafft, in den ersten Jahren Aufträge unter anderem vom Starfriseur Udo Walz zu erhalten. <br/> In den 90er Jahren zog es ihn wieder nach Leipzig, wo er sich ins Nachtleben stürzte und mit Höchstempfindlichen Film ohne Blitz Reportagen fotografierte. Dabei lernte er auch die Gothic-Szene kennen und schätzen. \" <br/>  Da Gerd derzeit nur von einer seiner Rente lebt, schlage ich eine Teilnahmegebühr von 5 Euro pro Person vor. <br/> Nach einer Örtlichkeit suchen wir noch, da Gerd starker Raucher ist :) <br/> Hat vielleicht jemand eine Idee in welcher Kneipe man eine Art Separee hat, in dem wir alleine sein können und man rauchen kann?" ;
+                                                   ical:summary "Treffen in geselliger Runde zum Austausch über das Thema Fotografie" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.138> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.139> a ld:Event ;
+                                                   rdfs:label "Filmgruppe Cinemabstruso" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.cinemabstruso.de/> ;
+                                                   ld:contactPerson ldp:Koenig_KarlFriedrich ;
+                                                   ical:dtstart "2013-02-02T10:00:42+01:00" ;
+                                                   ical:location ldo:Cinemabstruso ;
+                                                   ical:organizer ldp:Koenig_KarlFriedrich ;
+                                                   ical:description "KURZFILMWORKSHOP (2.Februar) <br/> Ideenfindung/Drehbuch: häufige Fehler, die wichtigsten Tipps <br/> visuelle Umsetzung: Auflösung, Shot-List, Filmstile <br/> Arbeit am Filmset: Bildregie, Arbeit im Team, , Drehorte <br/> Schauspieler: Schauspielführung, Improvisation <br/> <br/> DOKFILM-WORKSHOP (23. Februar) <br/> DOK-Filmproduktion praxisorientiert! - Ideenfindung und Konzeption <br/> Dreharbeiten: Interviews und Protagonisten, welche Kamera, Umgang mit Licht und Ton <br/> Finanzierungstipps, Schnitt und Auswertung des Films <br/> Für Einsteiger, die wissen wollen, wie ein DOK-Film entsteht oder einen DOK-Film planen. <br/> <br/> SCHNITTWORKSHOP (9. 3.) <br/> Praktische Einführung ins Schnittprogramms <br/> Schneiden mit Originalmaterial und Schnittbeispiele aus Spielfilmen <br/> Techniken und Dramaturgie des Filmschnitts <br/> Audioschnitt und Soundbearbeitung, Titelerstellung und Effekte <br/> <br/> Alle Workshops finden in der Siemeringstraße 20 in Leipzig West statt. <br/> Anmeldung unter: kontakt@cinemabstruso.de <br/> weiter Infos unter: www.cinemabstruso.de <br/> Teilnahmebeitrag: jeweils 40 € <br/> <br/> Die Dozenten der Workshops: Filmemacher mit jahrelanger Filmerfahrung (Kurz- und Langspielfilme, Dokfilme mit Preisen auf nationalen und internationalen Filmfestivals" ;
+                                                   ical:dtend "2013-03-09T16:00:42+01:00" ;
+                                                   ical:summary "Kurzfilmworkshop: häufige Fehler, visuelle Umsetzung, verschiedene Filmstile" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.139> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.140> a ld:Event ;
+                                                   rdfs:label "WebMontag - GoogleKalender für Projekte und Unternehmen nutzen" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.facebook.com/events/455536024512944/> ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2013-02-11T19:00:42+01:00" ;
+                                                   ical:location ldo:Culturtraeger ;
+                                                   ical:organizer ldo:KreativesLeipzig ;
+                                                   ical:description "Michael Lindner (https://www.facebook.com/signifikanten) und Thomas Wagner (https://www.facebook.com/ThomasWagnerLeipzig) werden Euch in einer knappen Stunde die wichtigsten Punkte rund um den Einsatz von Google Kalender für kleine Unternehmen und Projekte zeigen und erklären. <br/> <br/> Wer also jetzt schon Fragen hat, immer her damit! <br/> <br/> Und da der WebMontag zum Netzwerken da ist, freuen wir uns über jeden, der zu diesem Thema noch praktischen Erfahrungen beitragen kann. " ;
+                                                   ical:summary "Michael Lindner und Thomas Wagner zeigen in einer knappen Stunde die wichtigsten Punkte rund um den Einsatz von Google Kalender für kleine Unternehmen und Projekte" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APILeipzig/Event.140> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.141> a ld:Event ;
+                                                   rdfs:label "Künstlergespräch ETNA" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/kuenstlergespraech-etna> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   ical:dtstart "2013-02-27T14:30:00+01:00" ;
+                                                   ical:location ldo:EssentialExistenceGallery ;
+                                                   ical:organizer ldp:Petzold_Matthias ;
+                                                   ical:description "Vorbereitungsworkshop ETNA 2013 in der Gfzk Leipzig mit der Künstlerin Mandy Gehrt" ;
+                                                   ical:summary "Künstlergespräch ETNA" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.141> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.142> a ld:Event ;
+                                                   rdfs:label "Workshop HIDDEN SIGNALS" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/workshop-hidden-signals> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   ical:dtstart "2013-03-02T12:00:00+01:00" ;
+                                                   ical:location ldo:EssentialExistenceGallery ;
+                                                   ical:organizer ldp:Petzold_Matthias ;
+                                                   ical:description "BABEL ist ein Verweis auf die verschiedenen Schichten elektromagnetischer / mechanischer Wellen, die in Umgebungen von Geräten hervorgerufen werden, die überhalb / unterhalb unseres Hörbereichs sind." ;
+                                                   ical:dtend "2013-03-03T17:30:00+01:00" ;
+                                                   ical:summary "Workshop HIDDEN SIGNALS" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.142> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.143> a ld:Event ;
+                                                   rdfs:label "Workshop \"Kooperatives Lernen in Grundschulen\"" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.eexistence.de/posts/workshop-kooperatives-lernen-in-grundschulen--2> ;
+                                                   ld:contactPerson ldp:Petzold_Matthias ;
+                                                   ical:dtstart "2013-02-26" ;
+                                                   ical:location ldo:EssentialExistenceGallery ;
+                                                   ical:organizer ldp:Petzold_Matthias ;
+                                                   ical:description "Das Team der AG open computer kids arbeitet gemeinsam mit der Klasse 4c der Schule am Auwald unter Anleitung der Designerin Kerstin Mende an einem Schatten- und Scherenschnittfilm" ;
+                                                   ical:dtend "2013-02-27" ;
+                                                   ical:summary "Workshop \"Kooperatives Lernen in Grundschulen\"" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.144>, <http://leipzig-data.de/Data/APIId/Event.143> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.145> a ld:Event ;
+                                                   rdfs:label "FO.DO - Der Foto-Donnerstag" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2013-03-14T19:00:00+01:00" ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/MPI.EVA> ;
+                                                   ical:organizer ldo:KreativesLeipzig ;
+                                                   ical:description "Auch im März treffen wir uns wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal am zweiten Donnerstag im Monat! <br/> <br/> Auf vielfachen Wunsch schauen wir den Film über den bekannten Leipziger Akt- und Modefotografen Günter Rössler \"Die Genialität des Augenblicks\". <br/> <br/> Filmbeschreibung: <br/> \"Günter Rössler gilt als einer der bedeutendsten Fotografen Ostdeutschlands. Seine Aktbilder im „Magazin“ machten ihn berühmt. In der „Sibylle“ lichtete er Stil und Geschmack der Zeit ab und setzte nicht nur schöne, sondern auch selbstbewusste Frauen in Szene – sein Beitrag zur Emanzipation der Frau aus einem Blickwinkel, der heute außergewöhnlich scheint. Im „geschlossenen System DDR“ konnte Rössler kein internationaler Star werden, wie er es verdient gehabt hätte. Heute aber sind seine Fotografien in zahlreichen Kunstsammlungen und Museen vertreten. Dieser Film stellt den heute 86-jährigen, immer noch arbeitenden Günter Rössler vor, so, wie seine Fotos ihre Zeit abbilden: schlicht, treffend und stilsicher.\" <br/> <br/> Trailer: www.youtube.com/watch?v=icsz1NFcZN4 <br/> <br/> Wir treffen uns 18:45 Uhr im Hörsaal des Max-Planck-Institut. Zum Haupteingang rein (vom Deutschen Platz aus), dann in die 2. Etage, dort links (Treppe oder Fahrstuhl) der Zugang zum Hörsaal ist behindertengerecht, es könnten also auch Rollstuhlfahrer teilnehmen.) Um 19:00 Uhr beginnen wir dann pünktlich mit dem Film, der 93 Minuten geht. Anschließend setzen wir uns in geselliger Runde in einem Café zusammen und können bei einem Getränk noch gemütlich schnacken." ;
+                                                   ld:hasAddressAddendum "Hörsaal des Max-Planck-Institut. Vom Haupteingang Deutscher Platz aus in die 2. Etage, dort links (Treppe oder Fahrstuhl)" ;
+                                                   ical:summary "FO.DO - Der Foto-Donnerstag" ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.145> .
+
+<http://leipzig-data.de/Data/Event/ASG.2012-12-13> a ld:Event ;
+                                                   rdfs:label "Symposium anlässlich des 100. Geburtstags von Werner Holzmüller" ;
+                                                   ld:hasTag ldtag:ASG ;
+                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/ASG.2012-12-13> ;
+                                                   ld:description "Die Arnold-Sommerfeld-Gesellschaft lädt ein zu einem Symposium anlässlich des 100. Geburtstags des Physikers, Hochschullehrers und Ehrensenators der Universität Leipzig, des Freundes und Förderers der Arnold-Sommerfeld-Gesellschaft, Prof. Dr. phil. habil. Werner Holzmüller" ;
+                                                   ical:dtstart "2012-12-13T10:00:00+01:00" ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+                                                   ical:organizer ldo:ASG ;
+                                                   ical:dtend "2012-12-13T17:00:00+01:00" ;
+                                                   ld:hasAddressAddendum "Neuer Senatssaal" ;
+                                                   ical:summary "Symposium anlässlich des 100. Geburtstags von Werner Holzmüller" .
+
+<http://leipzig-data.de/Data/Event/ASG.2013-01-29> a ld:Event ;
+                                                   rdfs:label "Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag" ;
+                                                   ld:hasTag ldtag:ASG ;
+                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.Schuelerakademie.2013-01-29> ;
+                                                   ld:description "Die Leipziger Schülerakademie lädt interessierte Schülerinnen und Schüler der Oberstufe ein zu einem Vortrag zum Thema \"Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag\" mit Frau Dr. Claudia Birkemeyer" ;
+                                                   ical:dtstart "2013-01-29T16:00:00+01:00" ;
+                                                   ical:location ldo:HfTL ;
+                                                   ical:organizer ldo:ASG ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> ;
+                                                   ld:hasAddressAddendum "HfTL, Raum B-1.50" ;
+                                                   ical:summary "Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag" .
+
+<http://leipzig-data.de/Data/Event/ASG.2013-01-31> a ld:Event ;
+                                                   rdfs:label "Nobelpreise für Physik und Chemie 2012" ;
+                                                   ld:hasTag ldtag:ASG ;
+                                                   ld:hasURL <http://bj-kaiser.homepage.t-online.de/Seminar.html> ;
+                                                   ld:description "mit Dr. Bernd Lippold (Leipzig) und Dr. Stefan Fiedler (ASG)" ;
+                                                   ical:dtstart "2013-01-31T17:00:00+01:00" ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+                                                   ical:organizer ldo:ASG ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+                                                   ld:hasAddressAddendum "Neuer Senatssaal" ;
+                                                   ical:summary "Nobelpreise für Physik und Chemie 2012" .
+
+<http://leipzig-data.de/Data/Event/ASG.2013-02-21> a ld:Event ;
+                                                   rdfs:label "Moderne Technologien der Photovoltaik" ;
+                                                   ld:hasTag ldtag:ASG ;
+                                                   ld:hasURL <http://bj-kaiser.homepage.t-online.de/Seminar.html> ;
+                                                   ical:dtstart "2013-02-21T17:00:00+01:00" ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+                                                   ical:organizer ldo:ASG ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+                                                   ld:hasAddressAddendum "Neuer Senatssaal" ;
+                                                   ical:summary "Mit Prof. Dr.-Ing. Norbert Bernhard (Hochschule Anhalt, Köthen)" .
+
+<http://leipzig-data.de/Data/Event/ASG.2013-03-21> a ld:Event ;
+                                                   rdfs:label "Ist die Natur sparsam? Zur Geschichte des Prinzips der kleinsten Aktion" ;
+                                                   ld:hasTag ldtag:ASG ;
+                                                   ld:hasURL <http://bj-kaiser.homepage.t-online.de/Einladung_13_03_.pdf> ;
+                                                   ld:description "mit Dr. rer. nat. habil. Rüdiger Thiele (Halle/S.)" ;
+                                                   ical:dtstart "2013-03-21T17:00:00+01:00" ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+                                                   ical:organizer ldo:ASG ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+                                                   ld:hasAddressAddendum "Neuer Senatssaal" ;
+                                                   ical:summary "Ist die Natur sparsam? Zur Geschichte des Prinzips der kleinsten Aktion" .
+
+<http://leipzig-data.de/Data/Event/Agenda.2013-03-14> a ld:Event ;
+                                                      rdfs:label "Nachhaltige Entwicklung in Kommunen - Aufgaben, Möglichkeiten und die Position Leipzigs" ;
+                                                      ld:hasTag ldtag:Umwelt ;
+                                                      ld:hasURL <http://www.umweltbibliothek-leipzig.de/tl_files/umweltbib/pdf/Einladung%206.%20Umweltstammtisch.pdf> ;
+                                                      ld:contactPerson ldp:Elsaesser_Ralf ;
+                                                      ical:dtstart "2013-03-14T17:00:00+01:00" ;
+                                                      ical:location ldo:UFZ ;
+                                                      ical:organizer ldo:UFZ, ldo:UIZ, ldo:Umweltbibliothek, ldt:LANU ;
+                                                      ld:zurReihe <http://leipzig-data.de/Data/Projekt/Umweltstammtisch> ;
+                                                      ical:description "Zum 6. Leipziger Umweltstammtisch kommt Dr. Günther Bachmann (Generalsekretär des Rates für Nachhaltige Entwicklung beim Bundeskanzleramt) nach Leipzig und referiert und diskutiert mit Bürgermeister Heiko Rosenthal zum Thema \"Nachhaltige Entwicklung in Kommunen - Aufgaben, Möglichkeiten und die Position Leipzigs\". Die Veranstaltung ist eine Gemeinschaftsveranstaltung des UFZ, der Sächsischen Landesstiftung Natur und Umwelt, der Leipziger Umweltbibliothek und des Fördervereins des UiZ. Aufgrund begrenzter Platzkapazität wird um vorherige Anmeldung gebeten" ;
+                                                      ld:hasAddressAddendum "Kubus" ;
+                                                      ical:summary "6. Leipziger Umweltstammtisch: Nachhaltige Entwicklung in Kommunen - Aufgaben, Möglichkeiten und die Position Leipzigs" .
+
+<http://leipzig-data.de/Data/Event/Agenda.2013-03-21> a ld:Event ;
+                                                      rdfs:label "Interkommunaler Erfahrungsaustausch zur Energieberatung für einkommensschwache Haushalte" ;
+                                                      ld:hasTag ldtag:Energie, ldtag:Umwelt ;
+                                                      ld:contactPerson ldp:Elsaesser_Ralf ;
+                                                      ical:dtstart "2013-03-21T14:00:00+01:00" ;
+                                                      ical:location <http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus> ;
+                                                      ical:organizer ldo:LeipzigerAgenda21 ;
+                                                      ical:description "Es kommen Referenten aus den Städten Bremen und Nürnberg sowie von der Verbraucherzentrale NRW, um sich gemeinsam mit den Leipziger Akteuren auszutauschen, wie vorhandene Angebote effektiver gestaltet und dauerhaft finanziert werden können. Der Workshop wird durch die Leipziger Arbeitsgruppe von Caritas, Verbraucherzentrale, Sozialamt, Stadtwerken und Agenda-Büro organisiert und aus dem Projekt koopstadt unterstützt. <br/> Vorherige Anmeldung erbeten an post@leipzigeragenda21.de" ;
+                                                      ical:dtend "2013-03-21T18:00:00+01:00" ;
+                                                      ld:hasAddressAddendum "Zi. 495" ;
+                                                      ical:summary "Fachworkshop zu den Erfahrungen bei der Energieberatung für einkommenschwache Haushalte" .
+
+<http://leipzig-data.de/Data/Event/Agenda.2013-05-13> a ld:Event ;
+                                                      rdfs:label "Die Verleihung des Leipziger Agenda-Preises" ;
+                                                      ld:hasTag ldtag:ZukunftsDiskurs ;
+                                                      ld:contactPerson ldp:Elsaesser_Ralf ;
+                                                      ical:dtstart "2013-05-13T17:00:00+01:00" ;
+                                                      ical:location ldo:AlteHandelsboerse ;
+                                                      ical:organizer ldo:LeipzigerAgenda21 ;
+                                                      ical:description "Verleihung des Leipziger Agenda-Preises" ;
+                                                      ical:summary "Verleihung des Leipziger Agenda-Preises" .
+
+<http://leipzig-data.de/Data/Event/Attac.2013-01-30> a ld:Event ;
+                                                     rdfs:label "Politischer Streik" ;
+                                                     ld:hasTag ldtag:ZukunftsDiskurs, ldtag:AttacLeipzig ;
+                                                     ld:hasURL <http://www.attac-leipzig.de/allg/material/2013/flyer-2013-01-30.pdf> ;
+                                                     ical:dtstart "2013-01-30T18:00:00+01:00" ;
+                                                     ical:location ldo:SchaubuehneLindenfels ;
+                                                     ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.Mittwochsattacke> ;
+                                                     ical:description "Das Streikrecht der Bundesrepublik ist in Europa mit das rückständigste und restriktivste. Nur in England, Österreich und Deutschland ist der politische Streik illegal - ein Verbot indes nirgendwo festgeschrieben. <br/> Die Illegalisierung erfolgt über vielfältige Inanspruchnahme auslegbarer Gesetze sowie durch sonstige Einengungen und Einschränkungen und steht im krassen Widerspruch zur allgemeinen Erklärung der Menschenrechte der UNO, sowie den Übereinkommen der Internationalen Arbeitsorganisation (ILO) und der Europäischen Menschenrechts- und Sozialcharta.<br/> Die Arbeitgeber- und Unternehmerverbände, einzelne Arbeitgeber und wesentliche Teile der Politik versuchen die wenigen Streikrechte immer weiter einzuschränken. Große Teile der Massenmedien berichten zumeist tendenziell gegen Streiks. <br/> Die Tarifpolitik kann eine verfehlte und neoliberale Politik nicht ausgleichen. Dadurch haben es die Gewerkschaften immer schwerer, den politisch verursachten existenzbedrohenden Verschlechterungen zu entgegnen. <br/>Eine gesellschaftspolitische Debatte – angeführt von den Gewerkschaften, unter Einbeziehung aller fortschrittlichen Parteien, Verbände, Vereine, Stiftungen und Einzelpersonen - ist dringend erforderlich. (Text auf der Basis des „Wiesbadener Apells“ der Gewerkschaften)" ;
+                                                     ical:summary "Politischer Streik; mit Veit Wilhelmi, Wiesbaden" .
+
+<http://leipzig-data.de/Data/Event/Attac.2013-02-16> a ld:Event ;
+                                                     rdfs:label "Attac Jahrestreffen" ;
+                                                     ld:hasTag ldtag:AttacLeipzig ;
+                                                     ical:dtstart "2013-02-16T09:30:00+01:00" ;
+                                                     ical:location ldo:Durchblick ;
+                                                     ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                     ical:description "Wir wollen gemeinsam das vergangene Jahr Revue passieren lassen und über Pläne für das Jahr 2013 sprechen. <br/> Um 9:30 geht es mit einem gemeinsamen Frühstück los, und für Mittagessen und Kaffee ist auch gesorgt.<br/> Ansonsten wollen wir vormittags die Aktionen und Ereignisse des vergangenen Jahres besprechen und nachmittags auswerten. Am späteren Nachmittag wollen wir dann Ideen für neue Aktionen zusammentragen, und den Abend nach einem Abendessen gemeinsam ausklingen lassen." ;
+                                                     ical:dtend "2013-02-16T20:30:00+01:00" ;
+                                                     ical:summary "Attac Jahrestreffen" .
+
+<http://leipzig-data.de/Data/Event/Attac.2013-02-27> a ld:Event ;
+                                                     rdfs:label "Ziviler Ungehorsam" ;
+                                                     ld:hasTag ldtag:ZukunftsDiskurs, ldtag:AttacLeipzig ;
+                                                     ld:hasURL <http://www.attac-leipzig.de/allg/material/2013/flyer-2013-02-27.pdf> ;
+                                                     ical:dtstart "2013-02-27T18:00:00+01:00" ;
+                                                     ical:location ldo:SchaubuehneLindenfels ;
+                                                     ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.Mittwochsattacke> ;
+                                                     ical:description "Ziviler Ungehorsam als bewusster gewaltfreier Verstoß gegen herrschaftssichernde Regeln und Gesetze hat eine lange Tradition. Er wendet sich gegen vermeintliche oder tatsächliche Rechtsbrüche und tritt an, gestörtes Recht wiederherzustellen. <br/> Ziviler Ungehorsam nimmt dabei eigenes ungesetzliches Handeln und mögliche Bestrafung in Kauf – Sokrates, Gandhi, Martin Luther King, Mandela und die mit ihnen verbundenen Bewegungen, nicht zuletzt die Demonstrationen zum Ende der DDR sind Beispiele dafür. <br/> Wo solche Aktionen weit weg oder lange genug Geschichte sind, gibt es kaum Probleme mit der Akzeptanz in der BRD. Was aber ist mit denen, die sich auf Gleise gegen Castor-Transporte setzen, die sich Transporten von Rüstungsgut in Diktaturen entgegenstellen; was mit denen, die sich gegen Rüstungsproduktion überhaupt wenden? Oder mit Sitzblockaden gegen Neonazis? Was ist mit Hausbesetzungen? <br/> Wie ist die rechtliche Situation? Wo gilt es, zivilen Ungehorsam anzuwenden?" ;
+                                                     ical:summary "mit Prof. Peter Grottian, Attac Deutschland" .
+
+<http://leipzig-data.de/Data/Event/DTS.2013-01-07> a ld:Event ;
+                                                   rdfs:label "Recht auf Faulheit vs. homo oeconomicus" ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2013-01-07> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   ical:dtstart "2013-01-07T19:00:00+01:00" ;
+                                                   ical:location ldo:Cafe-Grundmann ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+                                                   ical:summary "DenkTankStelle: Recht auf Faulheit vs. homo oeconomicus" .
+
+<http://leipzig-data.de/Data/Event/DTS.2013-02-04> a ld:Event ;
+                                                   rdfs:label "Modelle und Wirklichkeit" ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2013-02-04> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   ical:dtstart "2013-02-04T19:00:00+01:00" ;
+                                                   ical:location ldo:Cafe-Grundmann ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+                                                   ical:description "Als Thema hatten wir uns „Denken in Modellen“ ausgewählt. Ich muss gestehen, dass ich mich mit einem gedanklichen Einwurf schwer tue. Ich weiß nicht mehr, wer den Vorschlag eingebracht hatte, aber ich würde diesen bitten, einen kurzen Einstieg vorzubereiten. Und wenn wir merken, dass das nicht ergiebig genug wird, dann driften wir einfach dorthin ab, wohin uns unser „Denken ganz ohne Modelle“ führt. Eine Weile werden wir uns wohl generell bei dem Begriff aufhalten: Denken. Und vielleicht lässt der eine oder die andere von uns von einer Suche bei Wikipedia inspirieren. Eine Sorge, dass die Debatte zu abgehoben geraten könnte, habe ich nicht. Denn schließlich ist jede Ideologie und Idee ein Modell, und damit bekommen wir die nötige Bodenhaftung." ;
+                                                   ical:summary "DenkTankStelle: Modelle und Wirklichkeit" .
+
+<http://leipzig-data.de/Data/Event/DTS.2013-03-04> a ld:Event ;
+                                                   rdfs:label "Utopie und Wirklichkeit" ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2013-03-04> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   ical:dtstart "2013-03-04T19:00:00+01:00" ;
+                                                   ical:location ldo:Cafe-Grundmann ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+                                                   ical:description "Als Thema wurde ausgewählt „Utopie und Wirklichkeit“ und es soll - im Geiste - hauptsächlich Ernst Bloch mit am Tisch sitzen und uns seine Vorstellungen dazu nahebringen. Damit er sich nicht ob unseres Unwissens - im Geiste - die Haare rauft oder die Pfeife ausgehen lässt, werden vorher noch Hinweise zu einem Crash-Kurs rumgeschickt. Und wenn's um Hoffnungen und Utopien geht, versteht ja jeder was davon - auch ohne Bloch." ;
+                                                   ical:summary "Utopie und Wirklichkeit" .
+
+<http://leipzig-data.de/Data/Event/LSGM.2013-02> a ld:Event ;
+                                                 rdfs:label "Mathematische Winterschule der LSGM in Grimma" ;
+                                                 ld:hasTag ldtag:LSGM ;
+                                                 ld:hasURL <http://lsgm.de/tiki-index.php?page=Seminare.2013-02> ;
+                                                 ld:description "Eingeladen sind mathematisch interessierte Schülerinnen und Schüler der 8. bis 12. Klasse aus ganz Sachsen und darüber hinaus. Wir werden uns täglich etwa 3 Doppelstunden mit interessanten mathematischen Themen beschäftigen." ;
+                                                 ical:dtstart "2013-02-03" ;
+                                                 ical:location <http://leipzig-data.de/Data/Ort/Gymnasium.Grimma> ;
+                                                 ical:organizer ldo:LSGM ;
+                                                 ical:dtend "2013-02-08" ;
+                                                 ical:summary "Mathematische Winterschule der LSGM in Grimma" .
+
+<http://leipzig-data.de/Data/Event/LSM.2013-01-14> a ld:Event ;
+                                                   rdfs:label "LSGM-Eröffnungsveranstaltung der Zirkel Klasse 5" ;
+                                                   ld:hasTag ldtag:LSGM ;
+                                                   ld:hasURL <http://lsgm.de> ;
+                                                   ld:description "Wir laden ein zur Eröffnungsveranstaltung unserer Schülerzirkeln und unserem Korrespondenzseminar für Klasse 5, die wir mit Jahresbeginn neu eröffnen. Wir werden an dieser Stelle unsere Aktivitäten und Angebote im Rahmen der LSGM genauer erläutern, die Zirkelleiter vorstellen und die Termine für die einzelnen Zirkel absprechen. " ;
+                                                   ical:dtstart "2013-01-14T16:30:00+01:00" ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+                                                   ical:organizer ldo:LSGM ;
+                                                   ld:hasAddressAddendum "Felix-Klein-Hörsaal, Paulinum am Augustusplatz (5. Etage)" ;
+                                                   ical:summary "LSGM-Eröffnungsveranstaltung der Zirkel Klasse 5" .
+
+<http://leipzig-data.de/Data/Event/LWD.2013-03-26> a ld:Event ;
+                                                   rdfs:label "Leipzig weiter denken zieht Bilanz" ;
+                                                   ld:hasTag ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://weiterdenken.leipzig.de> ;
+                                                   ld:contactPerson ldp:Elsaesser_Ralf ;
+                                                   ical:dtstart "2013-03-26T18:30:00+01:00" ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/Bibliothek.Stadtbibliothek> ;
+                                                   ical:organizer ldt:StadtLeipzig ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/LeipzigWeiterDenken> ;
+                                                   ical:description "Es werden Zwischenergebnisse und konkrete Projekte vorgestellt, die in den vergangenen Monaten gemeinsam von Bürgerinnen und Bürgern, lokalen Akteuren und der Verwaltung in Foren und Workshops entwickelt wurden.  Dabei standen folgende Themen im Fokus: <ul> <li> Wie wollen wir uns im Leipzig von morgen bewegen? </li> <li> Was macht die Stadt mit Ihrem Geld? </li> <li> Neue Energie für alte Häuser: Was bedeutet die Energiewende für unsere historische Bausubstanz? und </li> <li> Leben und Wohnen in jedem Alter: Wie werden die Leipziger zukünftig in ihren Stadtteilen zusammenleben?</li> </ul> Diskutieren Sie gemeinsam mit Oberbürgermeister Burkhard Jung und weiteren Gästen über die ersten Ergebnisse und deren Weiterführung nach Ende der Projektförderung." ;
+                                                   ld:hasAddressAddendum "Oberlichtsaal der Stadtbibliothek" ;
+                                                   ical:summary "Vorstellung von Zwischenergebnissen und konkreten Projekten, die in den vergangenen Monaten gemeinsam von Bürgerinnen und Bürgern, lokalen Akteuren und der Verwaltung in Foren und Workshops entwickelt wurden." .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.123> a ld:Event ;
+                                                       rdfs:label "3:1 - Was man nicht im Kopf hat" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen ;
+                                                       ical:dtstart "2013-01-11T20:00:00+01:00" ;
+                                                       ical:location ldo:Theatrium ;
+                                                       ical:organizer ldo:Theatrium ;
+                                                       ical:description "Jugendtheaterprojekt / „Altenprojekt“ (P13)   !letztmalig! <br/> Liebe Freunde des Fußballsportes, liebe Fans, <br/>  Am 1. Juni startet endlich die neue Saison in der 2. Kreisklasse. Euer 1. FC Regionalexpress will auch dieses Jahr wieder versuchen anzugreifen und hat in der Sommerpause kräftig trainiert. Angestrebt wird ein Platz im oberen bis unteren Mittelfeld. Um dieses straffe Ziel zu erreichen benötigen besonders unsere starken Reservespieler Chrigel und Mischa, die in letzter Zeit viel besser geworden sind, eure Hilfe. Wer Lust und Zeit hat unseren 1. FC Regionalexpress zum 1. Punktspiel der Saison zu unterstützen ist herzlich willkommen! Ich werde natürlich auch da sein.  Euer Laurenz <br/>  Es spielen: Markus Reichenbach, Paul Becker, Philipp Nerlich  Projektleitung: Anne Rab" ;
+                                                       ical:summary "Jugendtheaterprojekt - 3:1 - Was man nicht im Kopf hat" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.124> a ld:Event ;
+                                                       rdfs:label "Ist doch logisch!?" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-01-12T16:00:00+01:00" ;
+                                                       ical:location ldo:Theatrium ;
+                                                       ical:organizer ldo:Theatrium ;
+                                                       ical:description "Kindertheaterprojekt (P8) <br/> Ich heiße Polleke und bin 11 Jahre alt. Meine Geschwister und meine Freunde sind gern mit mir zusammen. Umgedreht ist es genauso. Wir treffen uns immer an einem alten Abrisshaus. Dort haben wir unsere Ruhe. Die Erwachsenen wissen hoffentlich nichts davon. Alles ist gut so, wie es ist. Bis eines Tages mein allerliebster Freund Mimun aus Marokko nicht mehr mit mir gehen darf. Und sich nicht mehr mit mir treffen darf. Kann man sich etwas Schlimmeres vorstellen? Ich schon! Mein Papa ist nämlich ein Junky. Das ist so eine Krankheit, und die kommt mit großen Schritten, wenn man zu viel von den Drogen nimmt. Genau deswegen darf Mimun sich nicht mehr mit mir treffen. Das mit meinem Papa weiß ich von meiner Schwester Hilletje. Sie weiß da bestens Bescheid. Bloß Ruben, mein Bruder, darf das mit unserem Drogen-Papa nicht erfahren. Er ist noch zu klein und würde das nicht verstehen. Ruben glaubt nämlich, dass unser Papa ein Dichter ist. Ist er ja auch. Aber wegen der blöden Drogen hat er überhaupt keine Zeit zum Dichten. Es kommt aber noch schlimmer. Seit gestern sitzt unser Papa im Knast. Nun bin ich 11 Jahre und habe mehr Probleme als manch Erwachsener. Ich bin bald durchgedreht. Aber Hilletje und Finn haben mir geholfen. Finn ist tiefbegabt und hat für alles eine Lösung. Auch meine anderen Freunde Caro, Tess, Roose aber auch Mimun werden mir helfen. Ich will aber noch nicht verraten wie. Denn wie wir leben und unsere Probleme lösen, das müsst ihr schon selbst herausfinden. <br/> Es spielen: Friedrich Brückner, Luzie Hahn, Johanna Kühn, Arthur Linke, Dario Selbmann, Emma Siegel, Sarah Winter und Jule Zimdahl <br/>   Projektleitung: Katrin Großmann Projektassistenz: Anne Rab" ;
+                                                       ical:summary "Kindertheaterprojekt - Ist doch logisch!?" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.125> a ld:Event ;
+                                                       rdfs:label "Ist doch logisch!?" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-01-13T16:00:00+01:00" ;
+                                                       ical:location ldo:Theatrium ;
+                                                       ical:organizer ldo:Theatrium ;
+                                                       ical:description "Kindertheaterprojekt (P8) !letztmalig! <br/> Ich heiße Polleke und bin 11 Jahre alt. Meine Geschwister und meine Freunde sind gern mit mir zusammen. Umgedreht ist es genauso. Wir treffen uns immer an einem alten Abrisshaus. Dort haben wir unsere Ruhe. Die Erwachsenen wissen hoffentlich nichts davon. Alles ist gut so, wie es ist. Bis eines Tages mein allerliebster Freund Mimun aus Marokko nicht mehr mit mir gehen darf. Und sich nicht mehr mit mir treffen darf. Kann man sich etwas Schlimmeres vorstellen? Ich schon! Mein Papa ist nämlich ein Junky. Das ist so eine Krankheit, und die kommt mit großen Schritten, wenn man zu viel von den Drogen nimmt. Genau deswegen darf Mimun sich nicht mehr mit mir treffen. Das mit meinem Papa weiß ich von meiner Schwester Hilletje. Sie weiß da bestens Bescheid. Bloß Ruben, mein Bruder, darf das mit unserem Drogen-Papa nicht erfahren. Er ist noch zu klein und würde das nicht verstehen. Ruben glaubt nämlich, dass unser Papa ein Dichter ist. Ist er ja auch. Aber wegen der blöden Drogen hat er überhaupt keine Zeit zum Dichten. Es kommt aber noch schlimmer. Seit gestern sitzt unser Papa im Knast. Nun bin ich 11 Jahre und habe mehr Probleme als manch Erwachsener. Ich bin bald durchgedreht. Aber Hilletje und Finn haben mir geholfen. Finn ist tiefbegabt und hat für alles eine Lösung. Auch meine anderen Freunde Caro, Tess, Roose aber auch Mimun werden mir helfen. Ich will aber noch nicht verraten wie. Denn wie wir leben und unsere Probleme lösen, das müsst ihr schon selbst herausfinden. <br/> Es spielen: Friedrich Brückner, Luzie Hahn, Johanna Kühn, Arthur Linke, Dario Selbmann, Emma Siegel, Sarah Winter und Jule Zimdahl  <br/>  Projektleitung: Katrin Großmann Projektassistenz: Anne Rab" ;
+                                                       ical:summary "Kindertheaterprojekt - Ist doch logisch!?" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.126> a ld:Event ;
+                                                       rdfs:label "Seelenheil" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-01-19T20:00:00+01:00" ;
+                                                       ical:location ldo:Theatrium ;
+                                                       ical:organizer ldo:Theatrium ;
+                                                       ical:description "Jugendtheaterprojekt / „Altenprojekt“ (P14) <br/> Die Welt geht unter. Das wussten schon die Maja. Überbevölkerung und Monopolismus gehen Hand in Hand und schmieden gemeinsam den Kollaps. Der einzige Ausweg scheint darin zu liegen, eine Revolution zu starten, eine alles umwälzende Entwicklung, von der in erster Linie derjenige profitiert, dem sie angedacht ist: der Mensch, als Individuum und Teil eines Ganzen. In ferner Zukunft wird es Wissenschaftlern gelingen, das Böse, das in der Seele der Menschen haust, auszurotten. Für immer Frieden und Koexistenz. Nur ein Problem bleibt da noch... <br/>  Es spielen: Paul Becker, Patrick Beer, Katja Fischer, Anne Rab, Virginia Mochmann, Lisa Oltsch, Melanie Petrack, Fabian Reichenbach, Benjamin Schümichen <br/>   Projektleitung: Peter Zahn" ;
+                                                       ical:summary "Jugendtheaterprojekt - Seelenheil" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.127> a ld:Event ;
+                                                       rdfs:label "Seelenheil" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-01-20T18:00:00+01:00" ;
+                                                       ical:location ldo:Theatrium ;
+                                                       ical:organizer ldo:Theatrium ;
+                                                       ical:description "Jugendtheaterprojekt / „Altenprojekt“ (P14) <br/> Die Welt geht unter. Das wussten schon die Maja. Überbevölkerung und Monopolismus gehen Hand in Hand und schmieden gemeinsam den Kollaps. Der einzige Ausweg scheint darin zu liegen, eine Revolution zu starten, eine alles umwälzende Entwicklung, von der in erster Linie derjenige profitiert, dem sie angedacht ist: der Mensch, als Individuum und Teil eines Ganzen. In ferner Zukunft wird es Wissenschaftlern gelingen, das Böse, das in der Seele der Menschen haust, auszurotten. Für immer Frieden und Koexistenz. Nur ein Problem bleibt da noch... <br/>  Es spielen: Paul Becker, Patrick Beer, Katja Fischer, Anne Rab, Virginia Mochmann, Lisa Oltsch, Melanie Petrack, Fabian Reichenbach, Benjamin Schümichen <br/>   Projektleitung: Peter Zahn" ;
+                                                       ical:summary "Jugendtheaterprojekt - Seelenheil" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.128> a ld:Event ;
+                                                       rdfs:label "wenn ich ... wie ich!!!" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-01-26T16:00:00+01:00" ;
+                                                       ical:location ldo:Theatrium ;
+                                                       ical:organizer ldo:Theatrium ;
+                                                       ical:description "Kindertheaterprojekt (P7) <br/> Ein Kind muß heutzutage in erster Linie „funktionieren“. Klein-Maximilian-Julius und Klein-Lisa-Sophie sollten spätestens im Alter von <br/>  1 Jahr: Laufen.… <br/>  2 Jahren: Sprechen.… <br/>  3 Jahren: Trocken sein.… <br/>  4 Jahren: Seepferdchen machen.…  <br/> 5 Jahren: ohne Stützräder fahren…  <br/> 6 Jahren: einschulfähig sein.…  <br/> 7 Jahren: den 1. Platz im Lesewettbewerb belegen.…  <br/> 8 Jahren: den ersten Aufsatz in Englisch verfassen.…  <br/> 9 Jahren: Französisch als zweite Fremdsprache belegen.…  <br/> 10 Jahren: die Gymnasialempfehlung erhalten.…  <br/> 11 Jahren: sich politisch engagieren (und zwar nicht für rechts!).… <br/>  12 Jahren: von Blockflöte auf Klavier, Harfe und Geige wechseln.…  <br/> 13 Jahren: ohne Anzeichen von Pubertät vernünftig und erwachsen werden. <br/> Und was ist, wenn nicht? Was, wenn ein Kind nicht die „Regelzeit“ für etwas braucht, sondern mehr? Wie viel Freiraum gibt es in unserer Zeit für Kinder? Träume und Wünsche verwirklichen – war da nicht was? <br/>  Zwölf Kinder zeigen auf der Bühne des Theatriums, dass das manchmal gar nicht so einfach ist, wenn man die meiste Zeit mit Funktionieren beschäftigt ist. Dass die Träume und Sehnsüchte aber deshalb nicht einfach weggehen. Sie locken, beschäftigen, beflügeln und platzen. Jeden Tag. Was für komische, traurige und verrückte Szenen dabei entstehen, könnt ihr bei \"wenn ich… wie ich!!!\" erleben. Nicht jeden Tag, aber dafür nur im Theatrium! <br/>  Es spielen: Justin Bertram, Renate Garbotz, Pauline Großmann, Nadine Harnisch, Maria-Elaine Herzberg, Janna Jonack, Melanie Petrack, Friederike Probst, Emilia Roch, Josefine Schöpe und Daniela Szameit  <br/>  Projektleitung: Sandra von Holn <br/>  Projektassistenz: Melanie Petrack " ;
+                                                       ical:summary "Kindertheaterprojekt: wenn ich ... wie ich!!!" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.129> a ld:Event ;
+                                                       rdfs:label "wenn ich ... wie ich!!!" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-01-27T16:00:00+01:00" ;
+                                                       ical:location ldo:Theatrium ;
+                                                       ical:organizer ldo:Theatrium ;
+                                                       ical:description "Kindertheaterprojekt (P7) <br/> Ein Kind muß heutzutage in erster Linie „funktionieren“. Klein-Maximilian-Julius und Klein-Lisa-Sophie sollten spätestens im Alter von <br/>  1 Jahr: Laufen.… <br/>  2 Jahren: Sprechen.… <br/>  3 Jahren: Trocken sein.… <br/>  4 Jahren: Seepferdchen machen.…  <br/> 5 Jahren: ohne Stützräder fahren…  <br/> 6 Jahren: einschulfähig sein.…  <br/> 7 Jahren: den 1. Platz im Lesewettbewerb belegen.…  <br/> 8 Jahren: den ersten Aufsatz in Englisch verfassen.…  <br/> 9 Jahren: Französisch als zweite Fremdsprache belegen.…  <br/> 10 Jahren: die Gymnasialempfehlung erhalten.…  <br/> 11 Jahren: sich politisch engagieren (und zwar nicht für rechts!).… <br/>  12 Jahren: von Blockflöte auf Klavier, Harfe und Geige wechseln.…  <br/> 13 Jahren: ohne Anzeichen von Pubertät vernünftig und erwachsen werden. <br/> Und was ist, wenn nicht? Was, wenn ein Kind nicht die „Regelzeit“ für etwas braucht, sondern mehr? Wie viel Freiraum gibt es in unserer Zeit für Kinder? Träume und Wünsche verwirklichen – war da nicht was? <br/>  Zwölf Kinder zeigen auf der Bühne des Theatriums, dass das manchmal gar nicht so einfach ist, wenn man die meiste Zeit mit Funktionieren beschäftigt ist. Dass die Träume und Sehnsüchte aber deshalb nicht einfach weggehen. Sie locken, beschäftigen, beflügeln und platzen. Jeden Tag. Was für komische, traurige und verrückte Szenen dabei entstehen, könnt ihr bei \"wenn ich… wie ich!!!\" erleben. Nicht jeden Tag, aber dafür nur im Theatrium! <br/>  Es spielen: Justin Bertram, Renate Garbotz, Pauline Großmann, Nadine Harnisch, Maria-Elaine Herzberg, Janna Jonack, Melanie Petrack, Friederike Probst, Emilia Roch, Josefine Schöpe und Daniela Szameit  <br/>  Projektleitung: Sandra von Holn <br/>  Projektassistenz: Melanie Petrack " ;
+                                                       ical:summary "Kindertheaterprojekt: wenn ich ... wie ich!!!" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.130> a ld:Event ;
+                                                       rdfs:label "Muttermord" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-02-15T20:00:00+01:00" ;
+                                                       ical:location ldo:Theatrium ;
+                                                       ical:organizer ldo:Theatrium ;
+                                                       ical:description "Jugendtheaterprojekt (P14) !letztmalig! <br/> Muttermord? Muttermord ist ein Verbrechen! Ein Grenzübertritt, der die Gemüter der ganzen Welt aufschreien lässt. García Lorca hat in seinem Bühnenstück »Bernarda Albas Haus« (1936 veröffentlicht) eine spanische Frauentragödie geschrieben, die es zulässt, sich mit dem Gedanken anzufreunden, zumindest im Geiste diese Bernarda, eine despotische Unterdrückerin ihrer fünf Töchter, unschädlich zu machen. Zwölf jugendliche Darstellerinnen bringen diesen Stoff auf die Bühne des Theatriums und entblättern eine Atmosphäre des gegenseitigen Ignorierens. Eifersucht, Neid und Hass bestimmen den Verlauf dieser beklemmenden Geschichte. Alles geschieht im Namen einer Sache, die viele Namen trägt: Religion, Politik, Ehre, Tradition und natürlich grausamerweise den schönsten: Die Liebe.<br/>Es spielen: Tina Orlovskij, Laura Dorenburg, Emily Porter, Lisa Oltsch, Julia Bergmann, Nina Schuhmann, Sharon Schultz, Daniela Winkler, Janis Herrmann, Laura Bryks, Jenni Thamm <br/> Projektleitung: Georg Herberger<br/> Projektassistenz: Paul Schwabe" ;
+                                                       ical:summary "Jugendtheaterprojekt: Muttermord" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.131> a ld:Event ;
+                                                       rdfs:label "... LOS!" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-02-24T18:00:00+01:00" ;
+                                                       ical:location ldo:Theatrium ;
+                                                       ical:organizer ldo:Theatrium ;
+                                                       ical:description "Jugendtheaterprojekt (P13) !letztmalig! <br/> Ein Verbrechen lässt einen jungen Mann verstummen. Auf der Straße, in der Uni, im Café – überall Fragen. Auch die Heimlichliebende scheitert in ihrer ungelenken Hilfe. Die M’Muts, die sich entschieden haben abseits der modernen Gesellschaft und ohne Sprache zu leben, scheinen die einzig mögliche Zuflucht. Hier scheint das Geheimnis sicher, jeder Mund verschlossen. Doch die Gesandten des Gesetzes und die Schwester des Mannes kommen und kratzen an der Mauer des Schweigens. Wie lange werden die M’Muts und ihr Anführer, der mysteriöse Ohm, den Flüchtigen beschützen können? Und hat die zarte Liebe, die sich zwischen einer M’Muts und dem Assistenten der Justiz anbahnt, eine Chance?<br/>Es spielen: Melanie Christoph, Charlotte Glück, Lisa Hoegel, Charlotte Kremberg, Paula Kuhn, Maxi Leopold, Sophie Weber; Felix Guevara, Paul Hämmerling, Franz Manhenke, Pascal Müller, Ferdinand Probst <br/> Projektleitung: Almut Koch<br/> Projektassistenz: Philipp Wenke" ;
+                                                       ical:summary "Jugendtheatherprojekt: ... LOS!" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.148> a ld:Event ;
+                                                       rdfs:label "Kochen mit Anne - Essen mit Allen" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung, ldtag:Jugendhilfe, ldtag:Nachhilfe ;
+                                                       ical:dtstart "2013-01-16T16:00:00+01:00" ;
+                                                       ical:location <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       ical:organizer <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       ical:description "Mitkochen  mitessen für alle!!! Lecker, vegetarisch, wer spenden kann, der darf das gerne tun, Hauptsache Spaß an der Sache und satt werden." ;
+                                                       ical:summary "Kochen mit Anne - Essen mit Allen" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.149> a ld:Event ;
+                                                       rdfs:label "KOMM ins Familienzentrum: FamilienSpieleNachmittag" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung, ldtag:Jugendhilfe, ldtag:Nachhilfe ;
+                                                       ical:dtstart "2013-01-18T15:30:00+01:00" ;
+                                                       ical:location <http://leipzig-data.de/Data/Ort/Familienzentrum.Gruenau> ;
+                                                       ical:organizer <http://leipzig-data.de/Data/Ort/Familienzentrum.Gruenau> ;
+                                                       ical:description " <br/> Du suchst den perfekten Ausgleich nach einer stressigen Woche? Dann schnapp` dir deine Familie und komm! Es erwarten dich Spiel, Spaß und gute Laune - bei genügend Verpflegung versteht sich ;) Wir freuen uns auf euch!" ;
+                                                       ical:summary "Spiel, Spaß und gute Laune - bei genügend Verpflegung" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.150> a ld:Event ;
+                                                       rdfs:label "Dark Room : Kamera - Fotolabor - Keller" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-02-18T14:00:00+01:00" ;
+                                                       ical:location <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       ical:organizer <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       ical:description "In der Zeit vom 18. bis 22. Februar findet im KiJu ein Fotoprojekt statt und du bist herzlich eingeladen daran teilzunehmen! Wir zeigen euch wie Fotos im Labor entstehen. Schießt und entwickelt eure eigenen schwarz/weiß Fotos! Neugierig? Dann merke dir den Termin und schaue rechtzeitig mal bei uns vorbei. Alle Infos gibts auch bei den Mitarbeiterinnen im KiJu." ;
+                                                       ical:dtend "2013-02-22T18:00:00+01:00" ;
+                                                       ical:summary "Fotoprojekt im KiJu. Wie entstehen Fotos im Labor?" .
+
+<http://leipzig-data.de/Data/Event/MehrAlsChillen.151> a ld:Event ;
+                                                       rdfs:label "Kreativwerkstatt startet mit neuem Projekt: Streetart" ;
+                                                       ld:hasTag ldtag:Freizeit, ldtag:MehrAlsChillen, ldtag:Bildung ;
+                                                       ical:dtstart "2013-01-15T15:00:00+01:00" ;
+                                                       ical:location <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       ical:organizer <http://leipzig-data.de/Data/Ort/KiJu.Gruenau> ;
+                                                       ical:description "In der Kreativwerkstatt des KiJu' kannst du ab jetzt alles über Streetart kennenlernen und viele Dinge ausprobieren. Schablonen Graffitio, Sticker, Installationen, guerilla Knitting und und und Die Kreativwerkstatt ist. Immer Dienstags und Donnerstag von 15 bis 18 Uhr für euch geöffnet und freut sich auf euren Besuch!!!" ;
+                                                       ical:summary "Kreativwerkstatt startet mit neuem Projekt: Streetart" .
+
+<http://leipzig-data.de/Data/Event/NEU.100> a ld:Event ;
+                                            rdfs:label "4. Arbeitstreffen UserGroup „Produktmanagement und Kommunikation in der Energiewirtschaft“" ;
+                                            ld:hasTag ldtag:Energie ;
+                                            ld:hasURL <http://www.energieforen.de/goto/pm> ;
+                                            ld:contactPerson ldp:Plaenitz_Sven ;
+                                            ical:dtstart "2013-02-19" ;
+                                            ical:location <http://leipzig-data.de/Data/Ort/Marriott.Leipzig> ;
+                                            ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                            ical:description "Zielgruppe der User Group sind Führungskräfte und Mitarbeiter der Bereiche Produktmanagement, Marketing, Vertrieb, und Kunden Service in Energieversorgungsunternehmen. Des Weiteren sind auch Technologie- und Beratungsunternehmen herzlich willkommen.<br/>Die User Group richtet sich an den Interessen und Bedürfnisses der Teilnehmer aus, folgende Themen werden zum 3. Arbeitstreffen diskutiert:<ul><li> Diskussionsrunde zu den Themen: Flatrate und Sponsoring</li><li> Praxisbeispiel: Produktportfolio (Baukasten, Breite/Fixpreismodell)</li><li> Akzeptanz von Preismodellen beim Kunden (Fixpreisprodukte)</li><li> Wettbewerb: Fremdaktionen im eigenen Marktgebiet erkennen und abwehren</li><li> Offlinevertriebspartnerschaften mit externen Nicht-EVU-Partnern</li><li> Vermarktung Online-Services (Erfolgsfaktoren Nutzung)</li><li> Bürgerbeteiligung</li><li> Produktreporting, Vertriebssteuerung</li></ul>" ;
+                                            ical:dtend "2013-02-21" ;
+                                            ical:summary "Energiemetropole: Energieforen Leipzig GmbH: 4. Arbeitstreffen UserGroup „Produktmanagement und Kommunikation in der Energiewirtschaft“" .
+
+<http://leipzig-data.de/Data/Event/NEU.101> a ld:Event ;
+                                            rdfs:label "HHL: 9. EmPower-Anwenderkurs" ;
+                                            ld:hasTag ldtag:Energie ;
+                                            ical:dtstart "2013-02-19T09:00:00+01:00" ;
+                                            ical:location ldo:Handelshochschule ;
+                                            ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                            ical:description "Dieses Mal findet der Anwenderkurs wieder im Format eines Workshops statt. Das Thema lautet: „Von der neuen technischen Idee zum erfolgreichen Geschäftsmodell“.<br/>Themenschwerpunkte<ul><li> Einführung zu Start-Ups, Markt-Vorbewertung</li><li> 6 Schritte zur Marktbewertung</li><li> Erstellung und Struktur eines Business Plans</li><li> Erstellung von Präsentationen</li><li> Finanzierung, Diskussion und Veranstaltungsabschluss</li></ul> Die Veranstaltung ist wie immer kostenfrei<br/>Die Anmeldung erfolgt ausschließlich online unter diesem Link. Dort finden Sie auch ein ausführliches Programm zur Veranstaltung." ;
+                                            ical:dtend "2013-02-19T18:00:00+01:00" ;
+                                            ical:summary "Energiemetropole: HHL: 9. EmPower-Anwenderkurs" ;
+                                            ld:hasAddessAddendum "Schmalenbachgebäude" .
+
+<http://leipzig-data.de/Data/Event/NEU.102> a ld:Event ;
+                                            rdfs:label "HOT SPOTS DER STADTENTWICKLUNG: ExWoSt-Forschungsvorhaben „Anforderungen an energieeffiziente und klimaneutrale Quartiere“" ;
+                                            ld:hasTag ldtag:Energie ;
+                                            ical:dtstart "2013-02-19T19:00:00" ;
+                                            ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.WiFa> ;
+                                            ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                            ical:description "Im Zuge der Klimaschutz- und Energieziele der Bundesregierung stellt sich Aufgabe, die Energieeffizienz im Gebäudebestand und im Verkehrzu erhöhen und zunehmend regenerative Energiequellen zu nutzen. Energieeinsparung, Energieeffizienz und die Nutzung erneuerbarer Energien müssen vor allem innerhalb der vorhandenen städtischen Strukturen erfolgen. Ziel des ExWoSt-Projektes „Anforderungen an energieeffiziente und klimaneutrale Quartiere“ (EQ) ist es, in sechs Städten (Weißenfels, Stade, Rosenheim, Leipzig, Marburg) und Gemeinden Quartiere und deren Energiekonzepte zu untersuchen und auf dieser Basis das mögliche Steuerungsinstrument des energetischen Quartierskonzeptes zu bewerten. Aufgrund seiner heterogenen Eigentümer- und Gebäudestrukturen wurde das Sanierungsgebiet Leipzig-Connewitz in das Forschungsprojekt mit aufgenommen. Ein zentraler Aspekt des Projektes ist die Erstellung einer handhabbaren Mess- und Erhebungsmethodik, welche die Quantifizierung des Energieverbrauchs und der CO_2-Emissionen auf der Analyseebene Quartier ermöglicht.<br/>Vortrag von Mike Reichmuth (Amt für Stadterneuerung und Wohnungsbauförderung, Stadt Leipzig)" ;
+                                            ical:dtend "2013-02-19T20:30:00" ;
+                                            ical:summary "Energiemetropole: HOT SPOTS DER STADTENTWICKLUNG: „ExWoSt-Forschungsvorhaben »Anforderungen an energieeffiziente und klimaneutrale Quartiere« – Vorstellung der Untersuchungsergebnisse für das Modellquartier Sanierungsgebiet Connewitz“" ;
+                                            ld:hasAddessAddendum "1. Etage, SR 01" .
+
+<http://leipzig-data.de/Data/Event/PraesentationSinusstudie> a ld:Event ;
+                                                             rdfs:label "Präsentation der Sinusstudie" ;
+                                                             ical:dtstart "2013-01-31T14:00:00+01:00" ;
+                                                             ical:location <http://leipzig-data.de/Data/Ort/Caritas.Leipzig> ;
+                                                             ical:description "Präsentation der Sinusstudie zu Lebenwelten von Jugendlichen im Alter von 14-17 Jahren in Deutschland" ;
+                                                             ical:dtend "2013-01-31T17:00:00+01:00" ;
+                                                             ical:summary "Präsentation der Sinusstudie zu Lebenwelten von Jugendlichen im Alter von 14-17 Jahren in Deutschland" .
+
+<http://leipzig-data.de/Data/Event/VHS.2012-12-11> a ld:Event ;
+                                                   rdfs:label "Energiekonzepte jenseits von Stromkonzepten" ;
+                                                   ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.2012-12-11> ;
+                                                   ld:contactPerson ldp:Graebe_HansGert ;
+                                                   ical:dtstart "2012-12-11T18:00:00" ;
+                                                   ical:location ldo:Volkshochschule ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
+                                                   ical:description "Mit Prof. K. Bastian (HTWK Leipzig). In den offiziellen Studien zur Energieversorgung der Zukunft sind Energiekonzepte fast ausschließlich Stromkonzepte. Im Vortrag werden Vorteile und Bedeutung des Energieträgers Gas genauer diskutiert, einschließlich der provokanten These, dass das Energiekonzept der Zukunft nicht strom- sondern gasgeführt sein wird." ;
+                                                   ld:hasAddressAddendum "Raum 410" ;
+                                                   ical:summary "Mit Prof. K. Bastian (HTWK Leipzig). In den offiziellen Studien zur Energieversorgung der Zukunft sind Energiekonzepte fast ausschließlich Stromkonzepte. Im Vortrag werden Vorteile und Bedeutung des Energieträgers Gas genauer diskutiert, einschließlich der provokanten These, dass das Energiekonzept der Zukunft nicht strom- sondern gasgeführt sein wird." .
+
+<http://leipzig-data.de/Data/Event/VHS.2013-01-08> a ld:Event ;
+                                                   rdfs:label "Metanetze zur Optimierung von Energie- und Stoffströmen" ;
+                                                   ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.2013-01-08> ;
+                                                   ld:contactPerson ldp:Graebe_HansGert ;
+                                                   ical:dtstart "2013-01-08T18:00:00" ;
+                                                   ical:location ldo:Volkshochschule ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> ;
+                                                   ical:description "Mit Dr.-Ing. Gerd Arnold (Evermind, Leipzig). Mit der Diskussion des Vorteils von Gas als Energieträger, fast verlustfrei über große Strecken übertragen werden zu können, rückt die Frage der Optimierungspotenziale einer integrierten Betrachtung von Energie- und Stoffströmen ins Blickfeld." ;
+                                                   ld:hasAddressAddendum "Raum 410" ;
+                                                   ical:summary "Mit Dr.-Ing. Gerd Arnold (Evermind, Leipzig). Mit der Diskussion des Vorteils von Gas als Energieträger, fast verlustfrei über große Strecken übertragen werden zu können, rückt die Frage der Optimierungspotenziale einer integrierten Betrachtung von Energie- und Stoffströmen ins Blickfeld." .
+
+<http://leipzig-data.de/Data/Event/ZAK.2013-03-21> a ld:Event ;
+                                                   rdfs:label "Peak Oil - Herausforderung für Sachsen" ;
+                                                   ld:hasTag ldtag:Umwelt, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://zukunftsakademie-leipzig.de/index.php/zak-projekte/peak-oil> ;
+                                                   ld:contactPerson ldp:Elsaesser_Ralf ;
+                                                   ical:dtstart "2013-03-21T17:00:00+01:00" ;
+                                                   ical:location ldo:HornsErben ;
+                                                   ical:organizer ldo:Zukunftsakademie ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ZAK.Erdoelfrei> ;
+                                                   ical:description "Netzwerkveranstaltung für Interessierte und Akteure im Bereich der Bildung für Nachhaltige Entwicklung. Als Gastreferent wird Norbert Rost, Wirtschaftinformatiker aus Dresden, Auszüge aus seiner Studie zu den wirtschaftlichen und sozialen Konsequenzen einer perspektivisch abnehmenden Ölfördermenge vorstellen. Daneben wird die Veranstaltungsreihe \"Erd|öl|frei! Clever im Alltag\" vorgestellt. " ;
+                                                   ical:summary "Netzwerkveranstaltung für Interessierte und Akteure im Bereich der Bildung für Nachhaltige Entwicklung mit Norbert Rost, Wirtschaftinformatiker aus Dresden" .
+
+<> a owl:Ontology ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" .
+
+<http://leipzig-data.de/Data/Events/6.FamilienSpieleFest> a ld:Event ;
+                                                          rdfs:label "6. FamilienSpieleFest" ;
+                                                          ld:hasURL <http://www.leipzig.de/de/buerger/aemterhome/jugendamt/spielefest/> ;
+                                                          ical:dtstart "2013-02-02T13:00:00+01:00" ;
+                                                          ical:location <http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus> ;
+                                                          ical:description "Im Neuen Rathaus kann man am 2. Februar von 13:00 bis 19:00 Uhr unbekannte Spiele entdecken, neue Spielpartner finden und einen Familienspielnachmittag in außergewöhnlicher Umgebung verbringen." ;
+                                                          ical:dtend "2013-02-02T19:00:00+01:00" ;
+                                                          ical:summary "Im Neuen Rathaus kann man am 2. Februar von 13:00 bis 19:00 Uhr unbekannte Spiele entdecken, neue Spielpartner finden und einen Familienspielnachmittag in außergewöhnlicher Umgebung verbringen." .
+
+<http://leipzig-data.de/Data/Events/FBL.2013-03-18> a ld:Event ;
+                                                    rdfs:label "Forum Bürgerstadt Leipzig" ;
+                                                    ld:hasTag ldtag:ZukunftsDiskurs ;
+                                                    ld:hasURL <http://leipzig-netz.de/index.php5/FBL.2013-03-18> ;
+                                                    ical:dtstart "2013-03-18T16:30:00+01:00" ;
+                                                    ical:location ldo:Volkshochschule ;
+                                                    ld:zurReihe <http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL> ;
+                                                    ical:description "Themen: <ul> <li> „Gründerzeitviertel in Parkplatznot“ <br/> Ausgehend von Schleußig wird das Thema aufgegriffen und erörtert für Lösungswege, die auch für andere Stadtteile von Nutzen sein können. </li> <li> „Parkbogen Ost“ <br/> Die Idee geht von der Initiative der Bürger aus. Das Konzept ist, die Innenstadt zu verknüpfen mit verstreut liegenden Wohngebieten, Parkanlagen, Gartenkolonien, Naherholungsgebieten und Baudenkmälern entlang eines Aktivbandes, das bogenförmig den Leipziger Osten zum Teil auf ehemaligen Gleisanlagen durchziehen soll. Diese langfristige Planung braucht Unterstützter und ein verzahntes Arbeiten aller Beteiligten. </li> </ul> " ;
+                                                    ical:summary "Plenum des Forums Bürgerstadt Leipzig" .
+
+<http://leipzig-data.de/Data/Events/Hellerau-Ferienakademie-Kurse.1> a ld:Event ;
+                                                                     rdfs:label "Ferienakademie-Kurse im Bereich Homepage-Schmiede" ;
+                                                                     ld:hasURL <http://t-m-a.de/ferienakademie/homepage-schmiede-leipzig> ;
+                                                                     ical:dtstart "2013-02-04" ;
+                                                                     ical:location ldo:VillaIda ;
+                                                                     ical:description "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" ;
+                                                                     ical:dtend "2013-02-09" ;
+                                                                     ical:summary "Ferienakademie-Kurse im Bereich Homepage-Schmiede" .
+
+<http://leipzig-data.de/Data/Events/Hellerau-Ferienakademie-Kurse.2> a ld:Event ;
+                                                                     rdfs:label "Ferienakademie-Kurse im Bereich Homepage-Schmiede" ;
+                                                                     ld:hasURL <http://t-m-a.de/ferienakademie/homepage-schmiede-leipzig> ;
+                                                                     ical:dtstart "2013-02-11" ;
+                                                                     ical:location ldo:VillaIda ;
+                                                                     ical:description "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" ;
+                                                                     ical:dtend "2013-02-16" ;
+                                                                     ical:summary "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" .
+
+ld:Event a owl:Class ;
+         rdfs:label "Event" .
