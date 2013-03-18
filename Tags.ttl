@@ -1,112 +1,154 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Tags/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
+@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
-ld:Tag a owl:Class ;
-       rdfs:label "Tag" ;
-       rdfs:comment "Genormtes Schlagwort zur Klassifizierung" .
+ld:Tag
+    a owl:Class ;
+    rdfs:comment "Genormtes Schlagwort zur Klassifizierung" ;
+    rdfs:label "Tag" .
 
-ldtag:ASG a ld:Tag ;
-          rdfs:label "Arnold-Sommerfeld-Gesellschaft" .
+ldtag:ASG
+    a ld:Tag ;
+    rdfs:label "Arnold-Sommerfeld-Gesellschaft" .
 
-ldtag:AttacLeipzig a ld:Tag ;
-                   rdfs:label "Attac Leipzig" .
+ldtag:AULA
+    a ld:Tag ;
+    rdfs:label "Leipziger Auwald" .
 
-ldtag:Berufsbildung a ld:Tag ;
-                    rdfs:label "Berufsbildung" .
+ldtag:AttacLeipzig
+    a ld:Tag ;
+    rdfs:label "Attac Leipzig" .
 
-ldtag:Berufsorientierung a ld:Tag ;
-                         rdfs:label "Berufsorientierung" .
+ldtag:Berufsbildung
+    a ld:Tag ;
+    rdfs:label "Berufsbildung" .
 
-ldtag:Bibliothek a ld:Tag ;
-                 rdfs:label "Bibliothek" .
+ldtag:Berufsorientierung
+    a ld:Tag ;
+    rdfs:label "Berufsorientierung" .
 
-ldtag:Bildung a ld:Tag ;
-              rdfs:label "Bildung" .
+ldtag:Bibliothek
+    a ld:Tag ;
+    rdfs:label "Bibliothek" .
 
-ldtag:Biologie a ld:Tag ;
-               rdfs:label "Bereich Biologie" .
+ldtag:Bildung
+    a ld:Tag ;
+    rdfs:label "Bildung" .
 
-ldtag:Chemie a ld:Tag ;
-             rdfs:label "Bereich Chemie" .
+ldtag:Biologie
+    a ld:Tag ;
+    rdfs:label "Bereich Biologie" .
 
-ldtag:DenkTankStelle a ld:Tag ;
-                     rdfs:label "Attac-Denktankstelle" .
+ldtag:Chemie
+    a ld:Tag ;
+    rdfs:label "Bereich Chemie" .
 
-ldtag:Energie a ld:Tag ;
-              rdfs:label "Energiethema" .
+ldtag:DenkTankStelle
+    a ld:Tag ;
+    rdfs:label "Attac-Denktankstelle" .
 
-ldtag:Forschung a ld:Tag ;
-                rdfs:label "Forschung" .
+ldtag:Energie
+    a ld:Tag ;
+    rdfs:label "Energiethema" .
 
-ldtag:Freizeit a ld:Tag ;
-               rdfs:label "Freizeit" .
+ldtag:Forschung
+    a ld:Tag ;
+    rdfs:label "Forschung" .
 
-ldtag:GTA a ld:Tag ;
-          rdfs:label "Kann als Ganztagsangebot genutzt werden" .
+ldtag:Freizeit
+    a ld:Tag ;
+    rdfs:label "Freizeit" .
 
-<http://leipzig-data.de/Data/Tag/Gruenau.MehrAlsChillen> a ld:Tag ;
-                                                         rdfs:label "Projekt 'Mehr als Chillen' Grünau" .
+ldtag:GTA
+    a ld:Tag ;
+    rdfs:label "Kann als Ganztagsangebot genutzt werden" .
 
-ldtag:Hochschule a ld:Tag ;
-                 rdfs:label "Hochschulbereich" .
+<http://leipzig-data.de/Data/Tag/Gruenau.MehrAlsChillen>
+    a ld:Tag ;
+    rdfs:label "Projekt 'Mehr als Chillen' Grünau" .
 
-ldtag:Informatik a ld:Tag ;
-                 rdfs:label "Bereich Informatik" .
+ldtag:Hochschule
+    a ld:Tag ;
+    rdfs:label "Hochschulbereich" .
 
-ldtag:Jugendbildung a ld:Tag ;
-                    rdfs:label "Jugendbildung" .
+ldtag:Informatik
+    a ld:Tag ;
+    rdfs:label "Bereich Informatik" .
 
-ldtag:Jugendhilfe a ld:Tag ;
-                  rdfs:label "Jugendhilfe" .
+ldtag:Jugendbildung
+    a ld:Tag ;
+    rdfs:label "Jugendbildung" .
 
-ldtag:KapitalismusKritik a ld:Tag ;
-                         rdfs:label "Kapitalismus-Kritik" .
+ldtag:Jugendhilfe
+    a ld:Tag ;
+    rdfs:label "Jugendhilfe" .
 
-ldtag:KreativesLeipzig a ld:Tag ;
-                       rdfs:label "Kreatives Leipzig" .
+ldtag:KapitalismusKritik
+    a ld:Tag ;
+    rdfs:label "Kapitalismus-Kritik" .
 
-ldtag:LSGM a ld:Tag ;
-           rdfs:label "LSGM" .
+ldtag:KreativesLeipzig
+    a ld:Tag ;
+    rdfs:label "Kreatives Leipzig" .
 
-ldtag:MINT a ld:Tag ;
-           rdfs:label "Bereich MINT" .
+ldtag:LSGM
+    a ld:Tag ;
+    rdfs:label "LSGM" .
 
-ldtag:Mathematik a ld:Tag ;
-                 rdfs:label "Bereich Mathematik" .
+ldtag:MINT
+    a ld:Tag ;
+    rdfs:label "Bereich MINT" .
 
-ldtag:MehrAlsChillen a ld:Tag ;
-                     rdfs:label "Mehr als Chillen - Grünau" .
+ldtag:Mathematik
+    a ld:Tag ;
+    rdfs:label "Bereich Mathematik" .
 
-ldtag:Museum a ld:Tag ;
-             rdfs:label "Museum" .
+ldtag:MehrAlsChillen
+    a ld:Tag ;
+    rdfs:label "Mehr als Chillen - Grünau" .
 
-ldtag:Nachhilfe a ld:Tag ;
-                rdfs:label "Nachhilfe" .
+ldtag:Museum
+    a ld:Tag ;
+    rdfs:label "Museum" .
 
-ldtag:Naturwissenschaften a ld:Tag ;
-                          rdfs:label "Bereich Naturwissenschaften" .
+ldtag:Nachhilfe
+    a ld:Tag ;
+    rdfs:label "Nachhilfe" .
 
-ldtag:Physik a ld:Tag ;
-             rdfs:label "Bereich Physik" .
+ldtag:Naturwissenschaften
+    a ld:Tag ;
+    rdfs:label "Bereich Naturwissenschaften" .
 
-ldtag:Technik a ld:Tag ;
-              rdfs:label "Bereich Technik" .
+ldtag:Physik
+    a ld:Tag ;
+    rdfs:label "Bereich Physik" .
 
-ldtag:Umwelt a ld:Tag ;
-             rdfs:label "Umwelt" .
+ldtag:Technik
+    a ld:Tag ;
+    rdfs:label "Bereich Technik" .
 
-ldtag:ZukunftsDiskurs a ld:Tag ;
-                      rdfs:label "Zukunfts-Diskurs" .
+ldtag:Umwelt
+    a ld:Tag ;
+    rdfs:label "Umwelt" .
 
-<> a owl:Ontology ;
-   rdfs:label "LeipzigData - Tags" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" .
+ldtag:ZukunftsDiskurs
+    a ld:Tag ;
+    rdfs:label "Zukunfts-Diskurs" .
+
+<http://leipzig-data.de/Data/Tags/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "LeipzigData - Tags" .
+

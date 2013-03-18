@@ -1,276 +1,340 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Stadtbezirke/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+ld:Stadtbezirk
+    a owl:Class ;
+    rdfs:label "Stadtbezirk der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Althen-Kleinpoesna>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Althen-Kleinpösna" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Altlindenau>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Altlindenau" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Anger-Crottendorf>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Anger-Crottendorf" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Baalsdorf>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Baalsdorf" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Boehlitz-Ehrenberg>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Böhlitz-Ehrenberg" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Burghausen-Rueckmarsdorf>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Burghausen-Rückmarsdorf" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Connewitz>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Connewitz" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Doelitz-Doesen>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Dölitz-Dösen" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Engelsdorf>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Engelsdorf" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Eutritzsch>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Eutritzsch" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Mitte>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Gohlis-Mitte" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Nord>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Gohlis-Nord" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Sued>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Gohlis-Süd" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Grosszschocher>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Großzschocher" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Mitte>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Grünau-Mitte" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Nord>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Grünau-Nord" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Ost>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Grünau-Ost" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Siedlung>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Grünau-Siedlung" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Hartmannsdorf-Knautnaundorf>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Hartmannsdorf-Knautnaundorf" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Heiterblick>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Heiterblick" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Holzhausen>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Holzhausen" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Kleinzschocher>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Kleinzschocher" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Knautkleeberg-Knauthain>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Knautkleeberg-Knauthain" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Lausen-Gruenau>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Lausen-Grünau" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Leutzsch>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Leutzsch" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Liebertwolkwitz>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Liebertwolkwitz" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Lindenau>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Lindenau" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Lindenthal>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Lindenthal" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Loessnig>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Lößnig" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Luetzschena-Stahmeln>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Lützschena-Stahmeln" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Marienbrunn>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Marienbrunn" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Meusdorf>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Meusdorf" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Miltitz>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Miltitz" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Mockau-Nord>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Mockau-Nord" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Mockau-Sued>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Mockau-Süd" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Moeckern>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Möckern" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Moelkau>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Mölkau" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Neulindenau>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Neulindenau" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Neustadt-Neuschoenefeld>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Neustadt-Neuschönefeld" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Paunsdorf>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Paunsdorf" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Plagwitz>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Plagwitz" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Plaussig-Portitz>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Plaußig-Portitz" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Probstheida>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Probstheida" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Reudnitz-Thonberg>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Reudnitz-Thonberg" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Schleussig>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Schleußig" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Schoenau>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Schönau" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Schoenefeld-Abtnaundorf>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Schönefeld-Abtnaundorf" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Schoenefeld-Ost>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Schönefeld-Ost" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Seehausen>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Seehausen" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Sellerhausen-Stuenz>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Sellerhausen-Stünz" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Stoetteritz>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Stötteritz" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Suedvorstadt>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Südvorstadt" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Thekla>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Thekla" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Volkmarsdorf>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Volkmarsdorf" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Wahren>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Wahren" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Wiederitzsch>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Wiederitzsch" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Zentrum" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Nord>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Zentrum-Nord" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Nordwest>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Zentrum-Nordwest" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Ost>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Zentrum-Ost" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Sued>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Zentrum-Süd" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Suedost>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Zentrum-Südost" .
+
+<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-West>
+    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> ;
+    a ld:Stadtbezirk ;
+    rdfs:label "Zentrum-West" .
+
+<http://leipzig-data.de/Data/Stadtbezirke/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Stadtbezirke" .
 
-ld:Stadtbezirk a owl:Class ;
-               rdfs:label "Stadtbezirk der Stadt Leipzig" .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Althen-Kleinpoesna> a ld:Stadtbezirk ;
-                                                             rdfs:label "Althen-Kleinpösna" ;
-                                                             ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Altlindenau> a ld:Stadtbezirk ;
-                                                      rdfs:label "Altlindenau" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Anger-Crottendorf> a ld:Stadtbezirk ;
-                                                            rdfs:label "Anger-Crottendorf" ;
-                                                            ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Baalsdorf> a ld:Stadtbezirk ;
-                                                    rdfs:label "Baalsdorf" ;
-                                                    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Boehlitz-Ehrenberg> a ld:Stadtbezirk ;
-                                                             rdfs:label "Böhlitz-Ehrenberg" ;
-                                                             ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Burghausen-Rueckmarsdorf> a ld:Stadtbezirk ;
-                                                                   rdfs:label "Burghausen-Rückmarsdorf" ;
-                                                                   ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Connewitz> a ld:Stadtbezirk ;
-                                                    rdfs:label "Connewitz" ;
-                                                    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Doelitz-Doesen> a ld:Stadtbezirk ;
-                                                         rdfs:label "Dölitz-Dösen" ;
-                                                         ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Engelsdorf> a ld:Stadtbezirk ;
-                                                     rdfs:label "Engelsdorf" ;
-                                                     ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Eutritzsch> a ld:Stadtbezirk ;
-                                                     rdfs:label "Eutritzsch" ;
-                                                     ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Mitte> a ld:Stadtbezirk ;
-                                                       rdfs:label "Gohlis-Mitte" ;
-                                                       ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Nord> a ld:Stadtbezirk ;
-                                                      rdfs:label "Gohlis-Nord" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Sued> a ld:Stadtbezirk ;
-                                                      rdfs:label "Gohlis-Süd" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Grosszschocher> a ld:Stadtbezirk ;
-                                                         rdfs:label "Großzschocher" ;
-                                                         ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Mitte> a ld:Stadtbezirk ;
-                                                        rdfs:label "Grünau-Mitte" ;
-                                                        ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Nord> a ld:Stadtbezirk ;
-                                                       rdfs:label "Grünau-Nord" ;
-                                                       ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Ost> a ld:Stadtbezirk ;
-                                                      rdfs:label "Grünau-Ost" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Siedlung> a ld:Stadtbezirk ;
-                                                           rdfs:label "Grünau-Siedlung" ;
-                                                           ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Hartmannsdorf-Knautnaundorf> a ld:Stadtbezirk ;
-                                                                      rdfs:label "Hartmannsdorf-Knautnaundorf" ;
-                                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Heiterblick> a ld:Stadtbezirk ;
-                                                      rdfs:label "Heiterblick" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Holzhausen> a ld:Stadtbezirk ;
-                                                     rdfs:label "Holzhausen" ;
-                                                     ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Kleinzschocher> a ld:Stadtbezirk ;
-                                                         rdfs:label "Kleinzschocher" ;
-                                                         ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Knautkleeberg-Knauthain> a ld:Stadtbezirk ;
-                                                                  rdfs:label "Knautkleeberg-Knauthain" ;
-                                                                  ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Lausen-Gruenau> a ld:Stadtbezirk ;
-                                                         rdfs:label "Lausen-Grünau" ;
-                                                         ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Leutzsch> a ld:Stadtbezirk ;
-                                                   rdfs:label "Leutzsch" ;
-                                                   ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Liebertwolkwitz> a ld:Stadtbezirk ;
-                                                          rdfs:label "Liebertwolkwitz" ;
-                                                          ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Lindenau> a ld:Stadtbezirk ;
-                                                   rdfs:label "Lindenau" ;
-                                                   ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Lindenthal> a ld:Stadtbezirk ;
-                                                     rdfs:label "Lindenthal" ;
-                                                     ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Loessnig> a ld:Stadtbezirk ;
-                                                   rdfs:label "Lößnig" ;
-                                                   ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Luetzschena-Stahmeln> a ld:Stadtbezirk ;
-                                                               rdfs:label "Lützschena-Stahmeln" ;
-                                                               ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Marienbrunn> a ld:Stadtbezirk ;
-                                                      rdfs:label "Marienbrunn" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Meusdorf> a ld:Stadtbezirk ;
-                                                   rdfs:label "Meusdorf" ;
-                                                   ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Miltitz> a ld:Stadtbezirk ;
-                                                  rdfs:label "Miltitz" ;
-                                                  ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Mockau-Nord> a ld:Stadtbezirk ;
-                                                      rdfs:label "Mockau-Nord" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Mockau-Sued> a ld:Stadtbezirk ;
-                                                      rdfs:label "Mockau-Süd" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Moeckern> a ld:Stadtbezirk ;
-                                                   rdfs:label "Möckern" ;
-                                                   ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Moelkau> a ld:Stadtbezirk ;
-                                                  rdfs:label "Mölkau" ;
-                                                  ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Neulindenau> a ld:Stadtbezirk ;
-                                                      rdfs:label "Neulindenau" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Neustadt-Neuschoenefeld> a ld:Stadtbezirk ;
-                                                                  rdfs:label "Neustadt-Neuschönefeld" ;
-                                                                  ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Paunsdorf> a ld:Stadtbezirk ;
-                                                    rdfs:label "Paunsdorf" ;
-                                                    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Plagwitz> a ld:Stadtbezirk ;
-                                                   rdfs:label "Plagwitz" ;
-                                                   ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Plaussig-Portitz> a ld:Stadtbezirk ;
-                                                           rdfs:label "Plaußig-Portitz" ;
-                                                           ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Probstheida> a ld:Stadtbezirk ;
-                                                      rdfs:label "Probstheida" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Reudnitz-Thonberg> a ld:Stadtbezirk ;
-                                                            rdfs:label "Reudnitz-Thonberg" ;
-                                                            ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Schleussig> a ld:Stadtbezirk ;
-                                                     rdfs:label "Schleußig" ;
-                                                     ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/West> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Schoenau> a ld:Stadtbezirk ;
-                                                   rdfs:label "Schönau" ;
-                                                   ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Gruenau> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Schoenefeld-Abtnaundorf> a ld:Stadtbezirk ;
-                                                                  rdfs:label "Schönefeld-Abtnaundorf" ;
-                                                                  ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Schoenefeld-Ost> a ld:Stadtbezirk ;
-                                                          rdfs:label "Schönefeld-Ost" ;
-                                                          ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Seehausen> a ld:Stadtbezirk ;
-                                                    rdfs:label "Seehausen" ;
-                                                    ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Sellerhausen-Stuenz> a ld:Stadtbezirk ;
-                                                              rdfs:label "Sellerhausen-Stünz" ;
-                                                              ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Stoetteritz> a ld:Stadtbezirk ;
-                                                      rdfs:label "Stötteritz" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/OstSuedost> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Suedvorstadt> a ld:Stadtbezirk ;
-                                                       rdfs:label "Südvorstadt" ;
-                                                       ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Thekla> a ld:Stadtbezirk ;
-                                                 rdfs:label "Thekla" ;
-                                                 ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/NordOst> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Volkmarsdorf> a ld:Stadtbezirk ;
-                                                       rdfs:label "Volkmarsdorf" ;
-                                                       ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Wahren> a ld:Stadtbezirk ;
-                                                 rdfs:label "Wahren" ;
-                                                 ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Wiederitzsch> a ld:Stadtbezirk ;
-                                                       rdfs:label "Wiederitzsch" ;
-                                                       ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Zentrum> a ld:Stadtbezirk ;
-                                                  rdfs:label "Zentrum" ;
-                                                  ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Nord> a ld:Stadtbezirk ;
-                                                       rdfs:label "Zentrum-Nord" ;
-                                                       ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/Nord> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Nordwest> a ld:Stadtbezirk ;
-                                                           rdfs:label "Zentrum-Nordwest" ;
-                                                           ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Ost> a ld:Stadtbezirk ;
-                                                      rdfs:label "Zentrum-Ost" ;
-                                                      ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/InnererOsten> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Sued> a ld:Stadtbezirk ;
-                                                       rdfs:label "Zentrum-Süd" ;
-                                                       ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Suedost> a ld:Stadtbezirk ;
-                                                          rdfs:label "Zentrum-Südost" ;
-                                                          ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<http://leipzig-data.de/Data/Stadtbezirk/Zentrum-West> a ld:Stadtbezirk ;
-                                                       rdfs:label "Zentrum-West" ;
-                                                       ld:zuPlanungsRaum <http://leipzig-data.de/Data/Planungsraum/MitteSued> .
-
-<> a owl:Ontology ;
-   rdfs:label "Stadtbezirke" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" .

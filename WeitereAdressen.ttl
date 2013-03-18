@@ -1,94 +1,113 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/WeitereAdressen/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
-<http://leipzig-data.de/Data/ExterneAdresse/01587.Riesa.Haupstrasse.70> a ld:ExterneAdresse ;
-                                                                        ld:hasCity "Riesa" ;
-                                                                        ld:hasStreet "Haupstraße" ;
-                                                                        rdfs:label "Hauptstraße 70, 01587 Riesa" ;
-                                                                        ld:hasPostCode "01587" ;
-                                                                        ld:hasHouseNumber "70" .
+<http://leipzig-data.de/Data/ExterneAdresse/01587.Riesa.Haupstrasse.70>
+    ld:hasCity "Riesa" ;
+    ld:hasHouseNumber "70" ;
+    ld:hasPostCode "01587" ;
+    ld:hasStreet "Haupstraße" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Hauptstraße 70, 01587 Riesa" .
 
-<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.AmFestanger.8> a ld:ExterneAdresse ;
-                                                                              ld:hasCity "Markkleeberg" ;
-                                                                              ld:hasStreet "Am Festanger" ;
-                                                                              rdfs:label "Am Festanger 8, Markkleeberg" ;
-                                                                              ld:hasPostCode "04416" ;
-                                                                              ld:hasHouseNumber "8" .
+<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.AmFestanger.8>
+    ld:hasCity "Markkleeberg" ;
+    ld:hasHouseNumber "8" ;
+    ld:hasPostCode "04416" ;
+    ld:hasStreet "Am Festanger" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Am Festanger 8, Markkleeberg" .
 
-<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Friedrich-Ebert-Strasse.26> a ld:ExterneAdresse ;
-                                                                                           ld:hasCity "Markkleeberg" ;
-                                                                                           ld:hasStreet "Friedrich-Ebert-Straße" ;
-                                                                                           rdfs:label "Friedrich-Ebert-Straße 26, Markkleeberg" ;
-                                                                                           ld:hasPostCode "04416" ;
-                                                                                           ld:hasHouseNumber "26" .
+<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Friedrich-Ebert-Strasse.26>
+    ld:hasCity "Markkleeberg" ;
+    ld:hasHouseNumber "26" ;
+    ld:hasPostCode "04416" ;
+    ld:hasStreet "Friedrich-Ebert-Straße" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Friedrich-Ebert-Straße 26, Markkleeberg" .
 
-<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Kirchstrasse.42> a ld:ExterneAdresse ;
-                                                                                ld:hasCity "Markkleeberg" ;
-                                                                                ld:hasStreet "Kirchstraße" ;
-                                                                                rdfs:label "Kirchstraße 42, Markkleeberg" ;
-                                                                                ld:hasPostCode "04416" ;
-                                                                                ld:hasHouseNumber "42" .
+<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Kirchstrasse.42>
+    ld:hasCity "Markkleeberg" ;
+    ld:hasHouseNumber "42" ;
+    ld:hasPostCode "04416" ;
+    ld:hasStreet "Kirchstraße" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Kirchstraße 42, Markkleeberg" .
 
-<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.KoburgerStrasse.33> a ld:ExterneAdresse ;
-                                                                                   ld:hasCity "Markkleeberg" ;
-                                                                                   ld:hasStreet "Koburger Straße" ;
-                                                                                   rdfs:label "Koburger Straße 33, Markkleeberg" ;
-                                                                                   ld:hasPostCode "04416" ;
-                                                                                   ld:hasHouseNumber "33" .
+<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.KoburgerStrasse.33>
+    ld:hasCity "Markkleeberg" ;
+    ld:hasHouseNumber "33" ;
+    ld:hasPostCode "04416" ;
+    ld:hasStreet "Koburger Straße" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Koburger Straße 33, Markkleeberg" .
 
-<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.KoburgerStrasse.62> a ld:ExterneAdresse ;
-                                                                                   ld:hasCity "Markkleeberg" ;
-                                                                                   ld:hasStreet "Koburger Straße" ;
-                                                                                   rdfs:label "Koburger Straße 62, Markkleeberg" ;
-                                                                                   ld:hasPostCode "04416" ;
-                                                                                   ld:hasHouseNumber "62" .
+<http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.KoburgerStrasse.62>
+    ld:hasCity "Markkleeberg" ;
+    ld:hasHouseNumber "62" ;
+    ld:hasPostCode "04416" ;
+    ld:hasStreet "Koburger Straße" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Koburger Straße 62, Markkleeberg" .
 
-<http://leipzig-data.de/Data/ExterneAdresse/04420.Markranstaedt.AmAltenBahnhof.21a> a ld:ExterneAdresse ;
-                                                                                    ld:hasCity "Markranstädt" ;
-                                                                                    ld:hasStreet "Am Alten Bahnhof" ;
-                                                                                    rdfs:label "Am Alten Bahnhof 21 a, Markranstädt" ;
-                                                                                    ld:hasPostCode "04420" ;
-                                                                                    ld:hasHouseNumber "21 a" .
+<http://leipzig-data.de/Data/ExterneAdresse/04420.Markranstaedt.AmAltenBahnhof.21a>
+    ld:hasCity "Markranstädt" ;
+    ld:hasHouseNumber "21 a" ;
+    ld:hasPostCode "04420" ;
+    ld:hasStreet "Am Alten Bahnhof" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Am Alten Bahnhof 21 a, Markranstädt" .
 
-<http://leipzig-data.de/Data/ExterneAdresse/04435.Schkeuditz.Bergbreite.1> a ld:ExterneAdresse ;
-                                                                           ld:hasCity "Schkeuditz" ;
-                                                                           ld:hasStreet "Bergbreite" ;
-                                                                           rdfs:label "Bergbreite 1, Schkeuditz" ;
-                                                                           ld:hasPostCode "04435" ;
-                                                                           ld:hasHouseNumber "1" .
+<http://leipzig-data.de/Data/ExterneAdresse/04435.Schkeuditz.Bergbreite.1>
+    ld:hasCity "Schkeuditz" ;
+    ld:hasHouseNumber "1" ;
+    ld:hasPostCode "04435" ;
+    ld:hasStreet "Bergbreite" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Bergbreite 1, Schkeuditz" .
 
-<http://leipzig-data.de/Data/ExterneAdresse/04509.Rabutz.BageritzerWeg.1> a ld:ExterneAdresse ;
-                                                                          ld:hasCity "Rabutz" ;
-                                                                          ld:hasStreet "Bageritzer Weg" ;
-                                                                          rdfs:label "Bageritzer Weg 1, Rabutz" ;
-                                                                          ld:hasPostCode "04509" ;
-                                                                          ld:hasHouseNumber "1" .
+<http://leipzig-data.de/Data/ExterneAdresse/04509.Rabutz.BageritzerWeg.1>
+    ld:hasCity "Rabutz" ;
+    ld:hasHouseNumber "1" ;
+    ld:hasPostCode "04509" ;
+    ld:hasStreet "Bageritzer Weg" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Bageritzer Weg 1, Rabutz" .
 
-<http://leipzig-data.de/Data/ExterneAdresse/04668.Grimma.Klosterstrasse.1> a ld:ExterneAdresse ;
-                                                                           ld:hasCity "Grimma" ;
-                                                                           ld:hasStreet "Klosterstraße" ;
-                                                                           rdfs:label "Klosterstraße 1, Grimma" ;
-                                                                           ld:hasPostCode "04668" ;
-                                                                           ld:hasHouseNumber "1" .
+<http://leipzig-data.de/Data/ExterneAdresse/04668.Grimma.Klosterstrasse.1>
+    ld:hasCity "Grimma" ;
+    ld:hasHouseNumber "1" ;
+    ld:hasPostCode "04668" ;
+    ld:hasStreet "Klosterstraße" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Klosterstraße 1, Grimma" .
 
-ld:ExterneAdresse a owl:Class ;
-                  rdfs:label "Weitere Adresse" .
+<http://leipzig-data.de/Data/ExterneAdresse/09111.Chemnitz.AnnabergerStrasse.24>
+    ld:hasCity "Chemnitz" ;
+    ld:hasHouseNumber "24" ;
+    ld:hasPostCode "09111" ;
+    ld:hasStreet "Annaberger Straße" ;
+    a ld:ExterneAdresse ;
+    rdfs:label "Annaberger Straße 24, 09111 Chemnitz" .
 
-<> a owl:Ontology ;
-   rdfs:label "Weitere Adressen" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" .
+ld:ExterneAdresse
+    a owl:Class ;
+    rdfs:label "Weitere Adresse" .
+
+<http://leipzig-data.de/Data/WeitereAdressen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Weitere Adressen" .
+
