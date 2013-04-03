@@ -5,6 +5,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
@@ -293,6 +294,18 @@
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
                                                    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.148> .
 
+<http://leipzig-data.de/Data/Event/APILeipzig.149> a ld:Event ;
+                                                   rdfs:label "FO.DO - Der Fotodonnerstag im April" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2013-04-04T19:00:00+01:00" ;
+                                                   ical:location ldo:Volkshaus ;
+                                                   ical:organizer ldo:KreativesLeipzig ;
+                                                   ical:description "Auch im April treffen wir uns am ersten Donnerstag im Monat wieder in geselliger Runde um über alle möglichen Themen der Fotografie zu sprechen. <br/> <br/> Diesmal wollen wir über Fotografen sprechen, die uns begeistern und bewegen. Jeder kann ein Bild, ein Poster, einen Kalender, ein Buch oder etwas vergleichbares von einem Fotografen oder einer Fotografin mitbringen, der/die ihn sehr inspiriert und kann diesen/diese mit ein paar Sätzen vorstellen und etwas dazu sagen, was so besonders an ihm/ihr ist. <br/> <br/> Dabei sitzen wir wieder gemütlich bei etwas zu Essen und zu trinken. <br/> Die Gruppe ist neuen Gesichtern stets aufgeschlossen." ;
+                                                   ical:summary "FO.DO - Der Fotodonnerstag im April" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.149> .
+
 <http://leipzig-data.de/Data/Event/ASG.2013-01-29> a ld:Event ;
                                                    rdfs:label "Was kann Analytische Chemie? - Beispiele aus Forschung und Alltag" ;
                                                    ld:hasTag ldtag:ASG ;
@@ -452,6 +465,17 @@
                                                    ical:description "Themen: <ul> <li> „Gründerzeitviertel in Parkplatznot“ <br/> Ausgehend von Schleußig wird das Thema aufgegriffen und erörtert für Lösungswege, die auch für andere Stadtteile von Nutzen sein können. </li> <li> „Parkbogen Ost“ <br/> Die Idee geht von der Initiative der Bürger aus. Das Konzept ist, die Innenstadt zu verknüpfen mit verstreut liegenden Wohngebieten, Parkanlagen, Gartenkolonien, Naherholungsgebieten und Baudenkmälern entlang eines Aktivbandes, das bogenförmig den Leipziger Osten zum Teil auf ehemaligen Gleisanlagen durchziehen soll. Diese langfristige Planung braucht Unterstützter und ein verzahntes Arbeiten aller Beteiligten. </li> </ul> " ;
                                                    ical:summary "Plenum des Forums Bürgerstadt Leipzig" .
 
+<http://leipzig-data.de/Data/Event/FBL.2013-05-27> a ld:Event ;
+                                                   rdfs:label "Forum Bürgerstadt Leipzig" ;
+                                                   ld:hasTag ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/FBL.2013-05-27> ;
+                                                   ical:dtstart "2013-05-17T16:30:00+01:00" ;
+                                                   ical:location ldo:Volkshochschule ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL> ;
+                                                   ical:description "Thema wird noch bekanntgegeben" ;
+                                                   ical:dtend "2013-05-17T18:00:00+01:00" ;
+                                                   ical:summary "Plenum des Forums Bürgerstadt Leipzig" .
+
 <http://leipzig-data.de/Data/Event/Hellerau-Ferienakademie-Kurse.1> a ld:Event ;
                                                                     rdfs:label "Ferienakademie-Kurse im Bereich Homepage-Schmiede" ;
                                                                     ld:hasURL <http://t-m-a.de/ferienakademie/homepage-schmiede-leipzig> ;
@@ -469,6 +493,16 @@
                                                                     ical:description "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" ;
                                                                     ical:dtend "2013-02-16" ;
                                                                     ical:summary "Die Trans-Media-Akademie Hellerau veranstaltet in diesem Jahr auch für Schüler/innen in Leipzig Ferienakademie-Kurse im Bereich Homepage-Schmiede – Schule morgen (Für die Winterferien können sich Schüler/innen der 8.-12. Klasse kostenfrei für folgende einwöchige Ferienkurse anmelden)" .
+
+<http://leipzig-data.de/Data/Event/IG.2013-04-19> a ld:Event ;
+                                                  rdfs:label "MINT - Zukunft schaffen. Nachhaltige Informationsgesellschaft" ;
+                                                  ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
+                                                  ld:hasURL <http://mint-leipzig.de/2013-04-19.html> ;
+                                                  ical:dtstart "2013-04-19T10:00:00+01:00", "2013-04-19T15:00:00+01:00" ;
+                                                  ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+                                                  ical:description "Mit diesem interdisziplinären akademischen Gespräch wird die im Herbst 2011 begonnene Reihe akademischer Reflexionen über die Umbrüche unserer Zeit fortgeführt. Mit dem aktuellen Gespräch greifen wir eine spezielle Facette der Durchdringung technischer und sozialer Aspekte auf, die uns in der üblichen Nachhaltigkeitsdebatte unterbelichtet erscheinen.  Wir knüpfen dabei an Überlegungen aus dem „Memorandum Nachhaltige Informationsgesellschaft“ (2004) an. Die Basis des Gesprächs bilden weitere online verfügbare Texte, die die eingangs in zwei Impulsbeiträgen junger Nachwuchswissenschaftler kritisch reflektiert werden." ;
+                                                  ld:hasAddressAddendum "Neues Augusteum, Raum A-520" ;
+                                                  ical:summary "Viertes Interdisziplinäres Gespräch: „MINT - Zukunft schaffen. Nachhaltige Informationsgesellschaft“. " .
 
 <http://leipzig-data.de/Data/Event/Kuni.2013-03-01> a ld:Event ;
                                                     rdfs:label "Alarm für Kobra 11 - Ermittlungen im Schlangenmilieu" ;
@@ -708,7 +742,8 @@
                                                    ical:description "Zielgruppe der User Group sind vor allem IT-Führungskräfte und IT-Experten aus Stadtwerken und Unternehmen der Energieversorgung sowie Netzbetreibern. Des Weiteren sind auch Technologie- und Beratungsunternehmen mit Schwerpunkt in der Energiebranche herzlich willkommen.<br/>Die User Group richtet sich an den Interessen und Bedürfnisses ihrer Teilnehmer aus, folgende Themen werden zum 1. Arbeitstreffen diskutiert:<br/>- Regulatorische Entwicklung<br/>- Neue Geschäftsfelder und IT-Unterstützung<br/>- Professionalisierung der IT, End to End Prozesse<br/>- Marktkommunikation (aktueller Status der Unternehmen und zukünftige Tendenzen)<br/>- Projekterfahrungen aus den teilnehmenden Unternehmen<br/>- Konvergenz von Business, IT und Recht<br/>- Applikationsmanagement<br/>Weitere Informationen zur Veranstaltung erhalten Sie unter:<br/>www.energieforen.de/goto/itoperation" ;
                                                    ical:dtend "2013-02-27" ;
                                                    ical:summary "Energiemetropole: Energieforen Leipzig GmbH: 1. Arbeitstreffen User Group „IT Operations in der Energiewirtschaft“" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "2VBYMJU3YKimlyvGQV+v+g" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-02-26> a ld:Event ;
                                                    rdfs:label "9. Leipziger Deponiefachtagung" ;
@@ -721,17 +756,36 @@
                                                    ical:dtend "2013-02-28T15:30:00+01:00" ;
                                                    ld:hasAddressAddendum "Audimax (Raum G329)" ;
                                                    ical:summary "Energiemetropole: 9. Leipziger Deponiefachtagung" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "twLbhLaYzul03raecSwLHg" .
+
+<http://leipzig-data.de/Data/Event/NEU.2013-02-27> a ld:Event ;
+                                                   rdfs:label "6. Arbeitstreffen User Group „Dialogmarketing in der Energiewirtschaft“" ;
+                                                   ld:hasTag ldtag:Energie ;
+                                                   ld:hasURL <http://www.energieforen.de/goto/dialogmarketing> ;
+                                                   ld:contactPerson ldp:Plaenitz_Sven ;
+                                                   ical:dtstart "2013-02-27" ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/Marriott.Leipzig> ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig>, ldo:NetzwerkEnergieUmwelt ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Angebot/Energieforen.dialogmarketing> ;
+                                                   ical:description "Zielgruppe der User Group sind Fach- und Führungskräfte der Bereiche Marketing/Vertrieb, Unternehmenskommunikation sowie angrenzender Bereiche von Unternehmen der Energiewirtschaft.<br/>Die User Group richtet sich an den Interessen und Bedürfnisses ihrer Teilnehmer aus, folgende Wunschthemen werden zum 6. Arbeitstreffen diskutiert: <br/>- Externe Steuerung von Vertriebspartnerschaften<br/>- Cross-/ Up-Selling (Beispiele, Strategien)<br/>- Monitoring von Kampagnen<br/>- Beschwerdemanagement als Grundlage für Dialogmarketing<br/>- Beispiele für funktionierenden Self-Service<br/>- EVU Erfahrungsbericht: Social Media Aktivitäten." ;
+                                                   ical:dtend "2013-03-01" ;
+                                                   ical:summary "Energiemetropole: Energieforen Leipzig GmbH: 6. Arbeitstreffen User Group „Dialogmarketing in der Energiewirtschaft“" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "EMyQAuA6Yw3YLG2XoFAHqQ" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-02-28> a ld:Event ;
                                                    rdfs:label "2. Workshop - Clusterteam Erneuerbare Energien" ;
                                                    ld:hasTag ldtag:Energie ;
+                                                   ld:contactPerson ldp:Lindner_Lothar ;
                                                    ical:dtstart "2013-02-28T17:30:00" ;
+                                                   ical:location ldo:ForsthausRaschwitz ;
                                                    ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Die Teilnahme am Workshop ist kostenlos (evtl. Speisen und Getränke sind selbst zu zahlen). Weitere Informationen zum Workshop entnehmen Sie bitte dem beiliegenden PDF-Dokument.<br/><br/><br/>Bitte melden Sie sich verbindlich unter elke.huebner@leipzig.de oder 0341/123-5683 an.<br/><br/>Ort: <br/>Forsthaus Raschwitz<br/>Koburger Straße 33<br/>04416 Markkleeberg.<br/><br/><br/>Kontakt:<br/>Planungsbüro für Energie und Umwelt<br/>Dipl.-Ing. Lothar Lindner<br/>Tel.: 0341 3385520<br/>E-Mail: iblindner@t-online.de.<br/><br/>Weitere Informationen:" ;
+                                                   ical:description "Die Teilnahme am Workshop ist kostenlos (evtl. Speisen und Getränke sind selbst zu zahlen). <br/>Bitte melden Sie sich verbindlich unter elke.huebner@leipzig.de oder 0341/123-5683 an." ;
                                                    ical:dtend "2013-02-28T19:00:00" ;
                                                    ical:summary "Energiemetropole: 2. Workshop - Clusterteam Erneuerbare Energien" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "g59PUyze2cMVxuCTfkjBfQ" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-03-06> a ld:Event ;
                                                    rdfs:label "ZTS GmbH: „hySmart – Wasserstoff für Industrie und dezentrale Energieerzeugung“" ;
@@ -744,7 +798,8 @@
                                                    ical:dtend "2013-03-08" ;
                                                    ical:summary "Energiemetropole: ZTS GmbH: „hySmart – Wasserstoff für Industrie und dezentrale Energieerzeugung“" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Frau Falk, Tel.: 035265 51-0, E-Mail: falk@hysmart.de" .
+                                                   ical:contact "Frau Falk, Tel.: 035265 51-0, E-Mail: falk@hysmart.de" ;
+                                                   ld:hasMD5Sum "BLF2tzQZ9p9LtOlVh4s0CA" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-03-07> a ld:Event ;
                                                    rdfs:label "1. Clustertreffen 2013 des Clusters „E-Mobilität" ;
@@ -756,7 +811,34 @@
                                                    ical:description "1. Clustertreffen 2013 des Clusters „E-Mobilität“.<br/><br/>Auf der Tagesordnung stehen folgende Themen:<br/><br/>„HYPOS Hydrogen Power Storage and Solutions – Grüner Wasserstoff aus Mitteldeutschland“, Jörn-Heinrich Tobaben; Geschäftsführer der Wirtschaftsinitiative Mitteldeutschland<br/>WorldSkills Leipzig 2013: Neue Berufe im Zeichen der Energiewende<br/>Aktuelle Infos aus dem Cluster und den laufenden Projekten<br/><br/>Um eine Anmeldung zur Teilnahme an der Veranstaltung wird gebeten.<br/>" ;
                                                    ical:dtend "2013-03-07T18:00:00" ;
                                                    ical:summary "Energiemetropole: 1. Clustertreffen 2013 des Clusters „E-Mobilität" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "JVgiUCts45FLeBBXerucaQ" .
+
+<http://leipzig-data.de/Data/Event/NEU.2013-03-19> a ld:Event ;
+                                                   rdfs:label "Podiumsdiskussion „Herausforderungen der polnischen Energiepolitik“" ;
+                                                   ld:hasTag ldtag:Energie ;
+                                                   ld:contactPerson ldp:BrendAmAmour_Nicola, ldp:Karwen_Bernd ;
+                                                   ical:dtstart "2013-03-19T19:00:00" ;
+                                                   ical:location <http://leipzig-data.de/Data/Adresse/04109.Neumarkt.9-19> ;
+                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                   ical:description "Das Polnische Institut Berlin – Filiale Leipzig, das Honorarkonsulat der Republik Polen für Sachsen und das Fraunhofer MOEZ veranstalten am 19. März 2013 um 19.00 Uhr gemeinsam die Podiumsdiskussion „Herausforderungen der polnischen Energiepolitik“ in den Räumen des Fraunhofer MOEZ. Thematisiert werden die Prioritäten, die Polen im Bereich der Energiepolitik setzt sowie Fragen der Versorgungssicherheit, Wirtschaftlichkeit und nicht zuletzt der Umweltverträglichkeit.<br/>Die Podiumsdiskussion ist zugleich Auftakt der Reihe „Polen – Gesellschaft, Wissenschaft, Wirtschaft und Politik“ des Polnischen Instituts Berlin – Filiale Leipzig. Die Veranstaltungsreihe soll – jeweweils an verschiedenen Orten in Sachsen, Sachsen-Anhalt und Thüringen – über aktuelle Themen informieren und Gelegenheit zur Diskussion bieten.<br/>Zur ersten Podiumsdiskussion am 19. März 2013 referieren und diskutieren: Katarzyna Kacperczyk, Direktorin der Abteilung für wirtschaftliche Zusammenarbeit im Ministerium für Auswärtige Angelegenheiten der Republik Polen, Malgorzata Szymanska, Direktorin der Abteilung für Erdöl und Gas, Wirtschaftsministerium der Republik Polen, Prof. Dr. Thomas Bruckner, Fraunhofer MOEZ und Inhaber der Vattenfall Europe-Professur für Energiemanagement und Nachhaltigkeit an der Universität Leipzig und Thomas Prauße, Geschäftsführer Stadtwerke Leipzig.<br/>Moderation: Dr. Karolina Jankowska, Gastwissenschaftlerin am Fraunhofer MOEZ<br/>Die Veranstaltung wird gedolmetscht, der Eintritt ist frei. Um Anmeldung bis zum 15. März wird gebeten unter Telefon: 0341-70261-0, Fax: 0341-70261-27 oder per E-Mail: lipsk@instytutpolski.org." ;
+                                                   ld:hasAddressAddendum "Aufgang B, 4. OG, rechts" ;
+                                                   ical:summary "Podiumsdiskussion: Herausforderungen der polnischen Energiepolitik" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "yl0tuZHIHH2UJBpkkco7IA" .
+
+<http://leipzig-data.de/Data/Event/NEU.2013-03-20> a ld:Event ;
+                                                   rdfs:label "3. Workshop Clusterteam 'Erneuerbare Energien'" ;
+                                                   ld:hasTag ldtag:Energie ;
+                                                   ld:contactPerson ldp:Lindner_Lothar ;
+                                                   ical:dtstart "2013-03-20T17:30:00" ;
+                                                   ical:location ldo:ForsthausRaschwitz ;
+                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                   ical:description "Clusterteam 'Erneuerbare Energien'" ;
+                                                   ical:dtend "2013-03-20T19:00:00" ;
+                                                   ical:summary "Energiemetropole-Leipzig: 3. Workshop Clusterteam 'Erneuerbare Energien'" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "dm1QaaQH2nAOSKN5DcTb/A" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-04-06> a ld:Event ;
                                                    rdfs:label "Energiespartag Landkreis Leipzig" ;
@@ -768,7 +850,8 @@
                                                    ical:description "Am 6. April laden die Handwerkskammer und die Kreishandwerkerschaft Landkreis Leipzig mit Unterstützung der BayWa AG Baustoffe, der Lotter Metall GmbH &amp; Co. KG sowie der VR Bank Leipziger Land eG zwischen 10 und 15 Uhr ins Berufliche Schulzentrum Leipziger Land, Röthaer Straße 44, 04564 Böhlen, zum Energiespartag ein." ;
                                                    ical:dtend "2013-04-06T15:00:00+01:00" ;
                                                    ical:summary "Energiespartag Landkreis Leipzig" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "3PoUxRy+2wC/CQwdZN55Kw" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-04-11> a ld:Event ;
                                                    rdfs:label "Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
@@ -781,7 +864,8 @@
                                                    ical:dtend "2013-04-11T18:00:00+01:00" ;
                                                    ld:hasAddressAddendum "2. OG rechts" ;
                                                    ical:summary "Energiemetropole: Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "ZGHk9ZVfahOIkvD64HGlaw" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-04-17> a ld:Event ;
                                                    rdfs:label "Fortbildungs- und Vernetzungstreffen zum Kommunalen Klimaschutz" ;
@@ -793,7 +877,22 @@
                                                    ical:description "Vernetzung für den Klimaschutz: Partner vor Ort gewinnen. Die alltäglichen (und weniger alltäglichen) Herausforderungen an Klimaschutzmanager und Klimaschutzmanagerinnen sind vielfältig und anspruchsvoll. Der gegenseitige Austausch sowie die fachlich-methodische Unterstützung stehen im Zentrum der Fortbildungs- und Vernetzungsreihe „…nur mal kurz die Welt retten!“." ;
                                                    ical:dtend "2013-04-17T17:00:00+01:00" ;
                                                    ical:summary "Fortbildungs- und Vernetzungstreffen zum Kommunalen Klimaschutz" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "e7lFKviJdKgUggKqS2Xfcg" .
+
+<http://leipzig-data.de/Data/Event/NEU.2013-04-17.1> a ld:Event ;
+                                                     rdfs:label "Energiemetropole-Leipzig: 10. EmPower-Anwenderkurs 'Elektromobiliät'" ;
+                                                     ld:hasTag ldtag:Energie ;
+                                                     ld:contactPerson ldp:Lindner_Bjoern ;
+                                                     ical:dtstart "2013-04-17T09:00:00" ;
+                                                     ical:location ldo:Handelshochschule ;
+                                                     ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                     ical:description "Im Rahmen des EU-Projektes EmPower findet am Mittwoch, 17. April 2013 von 9:00 - 17:00 Uhr der 10. EmPower-Anwenderkurs zum Thema Elektromobilität in der Handelshochschule Leipzig statt.<br/>Ob Elektroauto, Pedelec oder Elektroroller, „Elektromobilität“ ist für die Zukunft der Fortbewegung von entscheidender Wichtigkeit. Sowohl aus ökologischer wie auch aus volkswirtschaftlicher Sicht bietet diese Technologie Vorteile und Potenziale. Neben einer offensichtlichen Entlastung der Umwelt, durch Verminderung oder gar Beseitigung des Schadstoffausstoßes bei Fahrzeugen, ist durch einen langfristig orientierten Energiemix aus erneuerbaren Energien eine Schaffung von Arbeitsplätzen in diesem Bereich zu erwarten. Und nicht zuletzt ist die zu beobachtende Entwicklung neuer Formen der Fortbewegung äußerst spannend.<br/>Der Anwenderkurs „Elektromobilität“ will sich mit den unterschiedlichen Facetten dieses interessanten Themenfeldes beschäftigen. In der ersten Veranstaltungshälfte wird die aktuelle Situation der Elektromobilität in Deutschland vorgesellt um dann in der zweiten Hälfte innovative Lösungen aufzuzeigen.<br/>Die Veranstaltung ist kostenfrei. Das Vortragsprogramm sowie die Anmeldeformalitäten und weitere Informationen entnehmen Sie bitte der EmPower-Webpräsenz und dem unten bereitgestellten Flyer." ;
+                                                     ical:dtend "2013-04-17T17:00:00" ;
+                                                     ld:hasAddressAddendum "Schmalenbachgebäude" ;
+                                                     ical:summary "Energiemetropole-Leipzig: 10. EmPower-Anwenderkurs 'Elektromobiliät'" ;
+                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                     ld:hasMD5Sum "QzTQT66ByQpQJbjL3yy6Vw" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-04-18> a ld:Event ;
                                                    rdfs:label "Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
@@ -806,7 +905,8 @@
                                                    ical:dtend "2013-04-18T17:00:00+01:00" ;
                                                    ld:hasAddressAddendum "2. OG rechts" ;
                                                    ical:summary "Energiemetropole: Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "V3E48vUL/j6JvfAbkghJyg" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-04-18.1> a ld:Event ;
                                                      rdfs:label "Fachseminar „Klimaschutz in Industrie- und Gewerbegebieten“" ;
@@ -818,7 +918,23 @@
                                                      ical:description "Das Fachseminar gibt einen Überblick, welche Handlungsmöglichkeiten für Kommunen und Unternehmen bereit stehen, um Klimaschutz und Wirtschaftsentwicklung in Einklang zu bringen, und stellt Beispiele aus der kommunalen Praxis vor." ;
                                                      ical:dtend "2013-04-18T16:00:00+01:00" ;
                                                      ical:summary "Fachseminar „Klimaschutz in Industrie- und Gewerbegebieten“" ;
-                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                     ld:hasMD5Sum "MK8fgVQaikBLGOF6/RXMjg" .
+
+<http://leipzig-data.de/Data/Event/NEU.2013-04-18.2> a ld:Event ;
+                                                     rdfs:label "18. Leipziger Umweltrechtliche Symposion: Versorgungssicherheit in der Energiewende" ;
+                                                     ld:hasTag ldtag:Energie ;
+                                                     ld:hasURL <https://conference.ufz.de/frontend/index.php?sub=64> ;
+                                                     ld:contactPerson ldp:Krause_Tanja ;
+                                                     ical:dtstart "20130418" ;
+                                                     ical:location <http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus> ;
+                                                     ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                     ical:description "Die Energiewende in Deutschland zählt zu den ambitioniertesten Projekten der Bundesregierung. Erfolgreich im Sinne einer nachhaltigen Energieversorgung kann dieses Projekt aber nur sein, wenn die Umsteuerung auf klimaverträgliche erneuerbare Energien einhergeht mit Versorgungssicherheit, Kostenverträglichkeit und Umweltverträglichkeit. Die gleichzeitige Abschaltung von acht Kernkraftwerken, die noch defizitären Speicherkapazitäten erneuerbarer Energie und die Um- und Ausbauprobleme des Energienetzes geben der Frage nach der Versorgungssicherheit eine neue Aktualität, die eine rechtliche Gestaltung des Übergangs notwendig macht.<br/><br/>Eine Veranstaltung des Instituts für Umwelt- und Planungsrecht der Universität Leipzig und dem Helmholtz-Zentrum für Umweltforschung – UFZ.<br/><br/> Anmeldungen werden bis 01.04.2013 erbeten." ;
+                                                     ical:dtend "20130420" ;
+                                                     ld:hasAddressAddendum "Plenarsaal des Neuen Rathauses" ;
+                                                     ical:summary "18. Leipziger Umweltrechtliche Symposion: Versorgungssicherheit in der Energiewende" ;
+                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                     ld:hasMD5Sum "DwgBjd9mJyImIhy7yb1X0Q" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-04-24> a ld:Event ;
                                                    rdfs:label "6. Arbeitstreffen User Group „Dezentrale Energieversorgung – Smart Grids“" ;
@@ -831,7 +947,8 @@
                                                    ical:dtend "2013-04-26" ;
                                                    ical:summary "Energiemetropole: Energieforen Leipzig GmbH: 6. Arbeitstreffen User Group „Dezentrale Energieversorgung – Smart Grids“" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:organzier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> .
+                                                   ical:organzier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
+                                                   ld:hasMD5Sum "lmxIlTp+VC8qf7ezGsZf1w" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-04-25> a ld:Event ;
                                                    rdfs:label "Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
@@ -844,7 +961,8 @@
                                                    ical:dtend "2013-04-25T18:00:00+01:00" ;
                                                    ld:hasAddressAddendum "2. OG rechts" ;
                                                    ical:summary "Energiemetropole: Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "ExX20xqMP+QScMUJp9jzhA" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-04-27> a ld:Event ;
                                                    rdfs:label "Event Erneuerbare Energien" ;
@@ -853,7 +971,8 @@
                                                    ical:description "Am Samstag, 27. April 2013 ist der dritte Event Erneuerbare Energien von 10 bis 18 Uhr auf dem Nikolaikirchhof in der Leipziger Innenstadt geplant.<br/><br/>Der Leipziger Event Erneuerbare Energien wird im Rahmen des 18. bundesweiten Aktionstages der Erneuerbaren Energien durchgeführt. Ihren Teilnahmewunsch und Ihre individuellen Präsentationsvorstellungen können Sie gern an u. g. Ansprechpartner übermitteln.<br/><br/>Die Anmeldungeformulare und das Rahmenprogramm erhalten Sie Anfang Februar 2013.<br/><br/>Ansprechpartner:AUREL MARKETING<br/>Frau Kerstin Weißgerber<br/>Tel.: 0341 / 25 20 421<br/>Mobil 0173 / 35 50 090<br/>www.aurel-marketing.de" ;
                                                    ical:dtend "2013-04-27T18:00:00" ;
                                                    ical:summary "Energiemetropole: Event Erneuerbare Energien" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "V48a1ICK+H/n3T8BFeTRHQ" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-04-29> a ld:Event ;
                                                    rdfs:label "Energiemetropole: Ostdeutsches Energieforum" ;
@@ -863,7 +982,8 @@
                                                    ical:description "Die Landesarbeitsgemeinschaften der Industrie- und Handelskammern Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen und Berlin sowie die Interessengemeinschaft der Unternehmerverbände Ostdeutschlands und Berlin laden zum 2. Ostdeutschen Energieforum ein. <br/>Mit einem breiten Themenspektrum sollen besonders Entscheider aus Politik, Wirtschaft und Wissenschaft angesprochen werden.<br/>Weitere Informationen unter: www.ostdeutsches-energieforum.de" ;
                                                    ical:dtend "2013-05-01" ;
                                                    ical:summary "Energiemetropole: Ostdeutsches Energieforum" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "GSHbvM4QLCSQ/oLi/LNZvA" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-05-13> a ld:Event ;
                                                    rdfs:label "5. Arbeitstreffen User Group „Risikomanagement in der Energiewirtschaft“" ;
@@ -875,7 +995,8 @@
                                                    ical:description "Zielgruppe der User Group sind Fach- und Führungskräfte des Risikomanagements und Risikocontrollings aus Stadtwerken und Unternehmen der Energieversorgung sowie des Energiehandels. Die User Group richtet sich an den Interessen und Bedürfnisses ihrer Teilnehmer aus, folgende Wunschthemen werden zum 5. Arbeitstreffen diskutiert:<br/>- Workshop mit Fallbeispiel - insbesondere Kraftwerk / Portfolios<br/>- Risikoreporting: Risikoarten, IT-Umsetzung, Kennzahlen<br/>- Regulierung: aktuelle Entwicklungen und Auswirkungen auf interne Prozesse<br/>- Kommunikation und Kultur im Risikomanagement- Internes Kontroll-System – Praxisbericht<br/>- Liquiditätsrisiken: Reporting, Liquiditätsplanung<br/>Ansprechpartner<br/>Lars Bachmann<br/>Energieforen Leipzig GmbH<br/>Telefon: +49 (0)341 / 124 55-81<br/>E-Mail: lars.bachmann@energieforen.de <br/>Weitere Informationen zur Veranstaltung erhalten Sie unter:<br/>www.energieforen.de/goto/riskmanagement" ;
                                                    ical:dtend "2013-05-15" ;
                                                    ical:summary "Energiemetropole: Energieforen Leipzig GmbH: 5. Arbeitstreffen User Group „Risikomanagement in der Energiewirtschaft“" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "WTfMcvvhFYiU/W4X90Tq3g" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-06-05> a ld:Event ;
                                                    rdfs:label "4. International Biomass Conference 2013 in Leipzig" ;
@@ -887,7 +1008,8 @@
                                                    ical:description "Unter dem Titel „Erfahrungen mit Bioenergie in Brasilien und Deutschland“ veranstaltet das Deutsche Biomasseforschungszentrum vom 5. bis 7. Juni 2013 die „International Biomass Conference“ IBC 2013 in Leipzig.<br/><br/>Ziel der Konferenz ist es, den Austausch zwischen Vertretern aus Wissenschaft, Industrie und Verwaltung beider Länder zu fördern, um im Bereich der angewandten Forschung gemeinsame Konzepte für eine nachhaltige Bioenergiebereitstellung entwickeln und umsetzen zu können.<br/><br/>Ansprechpartner:<br/>Jens Giersdorf <br/>jens.giersdorf@dbfz.de<br/><br/>Antje Sauerland<br/>antje.sauerland@dbfz.de<br/>" ;
                                                    ical:dtend "2013-06-08" ;
                                                    ical:summary "Energiemetropole: 4. International Biomass Conference 2013 in Leipzig" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "8WBdvZkfkUY2XiKaOlL1zg" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-07-02> a ld:Event ;
                                                    rdfs:label "WorldSkills Leipzig 2013: Das Weltevent der beruflichen Bildung" ;
@@ -897,7 +1019,21 @@
                                                    ical:description "Hier werden Weltmeister gemacht: Bei den WorldSkills Leipzig 2013 treten die besten Auszubildenden und jungen Fachkräfte aus der ganzen Welt an, um Champion zu werden. Alle zwei Jahre kämpfen Teilnehmerinnen und Teilnehmer unter 23 Jahren bei der WM der Berufe um die Titel. Gastgeber ist jedes Mal ein anderes Land: 2009 fanden die WorldSkills in Kanada, 2011 in Großbritannien statt.<br/><br/>Die spannenden Wettkämpfe machen Lust auf Ausbildung – ob in traditionellen Berufen oder jungen Disziplinen, ob als Koch, Mechatroniker, Webdesigner. Bei dem gigantischen Event treffen sich internationale Fachleute aus Berufsbildung, Wirtschaft und Politik. Ihr Ziel: die Standards beruflicher Bildung immer weiter zu verbessern. Dafür setzen sie sich ein und tauschen ihre Erfahrungen aus. <br/><br/>Hinter der WM der Berufe steht WorldSkills International mit einem Netzwerk, dem derzeit 61 Länder und Regionen angehören.<br/><br/>Zwischen Werkbank und WLAN: Die WM der Berufe in Leipzig.<br/>Hier zählen die elegantesten Schweißnähte und die exaktesten Spaltmaße: Vom 2. bis 7. Juli 2013 findet die WM der Berufe in Leipzig statt. Bei der ersten Weltmeisterschaft in Deutschland seit 40 Jahren ringen die besten Nachwuchskräfte unter 23 Jahren in 45 offiziellen Disziplinen um die Medaillen. Über 1.000 Wettkämpfer machen die WorldSkills Leipzig 2013 zum größten internationalen Berufewettbewerb aller Zeiten.<br/><br/>In Leipzig erwartet die Besucher ein Fest der beruflichen Bildung: Für Jugendliche ist es eine einzigartige Möglichkeit, sich selbst an Werkbank oder Computer zu versuchen. Außerdem können sie sich zur Berufswahl beraten lassen und ihre Karriere planen.<br/><br/>Und auch für das Fachpublikum sind die WorldSkills Leipzig 2013 ein einzigartiges Angebot: Bei Konferenzen, Seminaren und Fachtagungen debattieren Experten über die Zukunft der beruflichen Bildung, während Unternehmen den Wirtschaftstreff nutzen, um ihr Know-how zu präsentieren und Geschäftskontakte zu knüpfen.<br/><br/>Alle Informationen zu den WorldSkills Leipzig 2013 finden Sie unter www.worldskillsleipzig2013.com" ;
                                                    ical:dtend "2013-07-08" ;
                                                    ical:summary "Energiemetropole: WorldSkills Leipzig 2013: Das Weltevent der beruflichen Bildung" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "k6grT/XJ9Xx1v06dFMGpzQ" .
+
+<http://leipzig-data.de/Data/Event/NEU.2013-08-31> a ld:Event ;
+                                                   rdfs:label "Energiemetropole-Leipzig: 1. Tag der Industriekultur Leipzig" ;
+                                                   ld:hasTag ldtag:Energie ;
+                                                   ld:hasURL <http://www.industriekulturtag-leipzig.de> ;
+                                                   ld:contactPerson ldp:Jaehnig_HeinrichMoritz ;
+                                                   ical:dtstart "2013-08-31" ;
+                                                   ical:organizer ldt:IndustriekulturLeipzig, ldo:NetzwerkEnergieUmwelt ;
+                                                   ical:description "Der Verein für Industriekultur Leipzig e.V. hat für den 31. August 2013 zu einem Tag der Industriekultur eingeladen. Es ist das erste Mal, dass eine solche, in anderen Kommunen teils schon seit den 80er Jahren übliche Veranstaltung in Leipzig durchgeführt.<br/><br/>Der Verein hat in Abstimmung mit dem Dezernat für Wirtschaft und Arbeit alle relevanten Akteure eingeladen, sich mit Programmangeboten zu beteiligen. Das Spektrum der Mitwirkenden reicht von Einzelinitiativen bekannter Sammler, Studenten und Künstler über Vereine und Verbände, Leipziger Museen, der Hochschule für Technik, Wirtschaft und Kultur Leipzig, Immobilienunternehmen, die industriekulturelle Gebäude nutzen und vermarkten, bis zur Leipziger Wirtschaft.<br/><br/>Es überrascht nicht, dass der Tag der Industriekultur in einer Bürgerstadt wie Leipzig natürlich ein lupenreines Graswurzelprojekt ist. Alle seine Teilnehmer agieren selbstständig. Die Vorbereitung und Durchführung erfolgt rein ehrenamtlich und ohne Fördergelder. Entstehende Kosten werden durch Spenden betragen.<br/><br/>Ziel ist es, die einzigartige Leipziger Industriekultur mit solchen sie prägenden Unternehmerpersönlichkeiten wie Karl Heine, den Gebrüdern Bleichert oder Rudolph Sack einer breiten Öffentlichkeit sichtbar zu machen. Leipzig dokumentiert mit dem Tag der Industriekultur, dass es neben seinem berechtigten Selbstverständnis als Musik- und Medienstadt ein Wirtschaftsstandort mit Tradition ist, der für sich weit mehr als die Messe anführen kann. In Leipzig wurden und werden Industrieprodukte entwickelt, produziert und weltweit vermarktet.<br/><br/>Die geplante Veranstaltung im August, zu der sich bereits mehr als 40 Teilnehmer gemeldet haben, wird auf einen weiteren Aspekt aufmerksam machen: Leipziger Industriekultur zeichnet sich unter den anderen bedeutenden sächsischen Traditionskernen durch die nur hier eingegangene Symbiose mit Kunst und Kreativwirtschaft aus. Baumwollspinnerei oder Tapetenwerk sind zu nennen, aber auch Initiativen der jungen Kunstszene, die sich die Zeugnisse der Industriekultur auf ihre Weise aneignen und zum Beispiel mit temporären Ausstellungen und eindrucksvollen Performances touristische Highlight für eine junge Gästeklientel schaffen. Die Kreativwirtschaft ist einer der größten Arbeitgeber in der Stadt. " ;
+                                                   ical:dtend "2013-09-01" ;
+                                                   ical:summary "Energiemetropole-Leipzig: 1.Tag der Industriekultur Leipzig" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "hTLOsk8j7qdkSdi5tT+5Qw" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-09-12> a ld:Event ;
                                                    rdfs:label "Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
@@ -910,7 +1046,8 @@
                                                    ical:dtend "2013-09-12T18:00:00+01:00" ;
                                                    ld:hasAddressAddendum "2. OG rechts" ;
                                                    ical:summary "Energiemetropole: Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "88nP6pdPAkLFfidKcA5PpQ" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-09-19> a ld:Event ;
                                                    rdfs:label "Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
@@ -923,7 +1060,8 @@
                                                    ical:dtend "2013-09-19T17:00:00+01:00" ;
                                                    ld:hasAddressAddendum "2. OG rechts" ;
                                                    ical:summary "Energiemetropole: Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "jvS4OJBr3c9qXj2W2t/wpQ" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-09-26> a ld:Event ;
                                                    rdfs:label "Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
@@ -936,7 +1074,8 @@
                                                    ical:dtend "2013-09-26T18:00:00+01:00" ;
                                                    ld:hasAddressAddendum "2. OG rechts" ;
                                                    ical:summary "Energiemetropole: Hausanschluss- und Nahwärmesysteme: Grundlagen - Planung - Dimensionierung - Betrieb" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "izT3mXDyZQxsiU7fJ/5yfg" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-10-16> a ld:Event ;
                                                    rdfs:label "efa – Fachmesse für Gebäude- und Elektrotechnik, Klima und Automation" ;
@@ -947,7 +1086,8 @@
                                                    ical:description "Seit 1990 ist die efa die wichtigste Fachmesse für Elektro- und Gebäudetechnik, Klima und Automation in Mitteldeutschland und den angrenzenden Regionen. Zur vergangenen Veranstaltung vom 12. bis 14. Oktober 2011 informierten sich auf der efa 19.200 Besucher über das Angebot von 219 Ausstellern." ;
                                                    ical:dtend "2013-10-19" ;
                                                    ical:summary "Energiemetropole: efa – Fachmesse für Gebäude- und Elektrotechnik, Klima und Automation" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "CzLZItA+Rr/2BeHKwPZ+gg" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-10-16.1> a ld:Event ;
                                                      rdfs:label "Energiemetropole: SHKG – Messe für Sanitär, Heizung, Klima und Gebäudeautomation" ;
@@ -958,7 +1098,8 @@
                                                      ical:description "Die SHKG - Messe für Sanitär, Heizung, Klima und Gebäudeautomation in Leipzig ist der SHK-Branchentreff in Ostdeutschland für Hersteller, Anbieter, Verarbeiter und Anwender. Mit der parallel stattfindenden efa - Fachmesse für Gebäude- und Elektrotechnik, Klima und Automation und dem Mitteldeutschen Bauforum stellt sich in Leipzig die gesamte Bandbreite der Baubranche, insbesondere der Gebäude- und Energietechnik, unter einem Dach vor." ;
                                                      ical:dtend "2013-10-19" ;
                                                      ical:summary "Energiemetropole: SHKG – Messe für Sanitär, Heizung, Klima und Gebäudeautomation" ;
-                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                     ld:hasMD5Sum "Fjnf3uyIPpxFAtSqWSgo2Q" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-11-07> a ld:Event ;
                                                    rdfs:label "Gebäude- und Anlagentechnik im Industriestandard: Grundlagen - Planung - Dimensionierung" ;
@@ -971,7 +1112,8 @@
                                                    ical:dtend "2013-11-07T18:00:00+01:00" ;
                                                    ld:hasAddressAddendum "2. OG rechts" ;
                                                    ical:summary "Energiemetropole: Gebäude- und Anlagentechnik im Industriestandard: Grundlagen - Planung - Dimensionierung" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "tfVVlu5htRxNqQy84PUbIQ" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-11-14> a ld:Event ;
                                                    rdfs:label "Gebäude- und Anlagentechnik im Industriestandard: Grundlagen - Planung - Dimensionierung" ;
@@ -985,7 +1127,8 @@
                                                    ld:hasAddressAddendum "2. OG rechts" ;
                                                    ical:summary "Energiemetropole: Gebäude- und Anlagentechnik im Industriestandard: Grundlagen - Planung - Dimensionierung" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Telefon: 0341-4943920, Fax: 0341-4943921, E-Mail: beckert@dretec.de" .
+                                                   ical:contact "Telefon: 0341-4943920, Fax: 0341-4943921, E-Mail: beckert@dretec.de" ;
+                                                   ld:hasMD5Sum "Io0479RSDAbOMDpb5GNhlA" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-12-02> a ld:Event ;
                                                    rdfs:label "Expertentreffen Energiemetropole Leipzig" ;
@@ -996,7 +1139,8 @@
                                                    ical:organizer ldo:NetzwerkEnergieUmwelt ;
                                                    ical:description "Nähere Informationen folgen in Kürze!" ;
                                                    ical:summary "Expertentreffen Energiemetropole Leipzig" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "ZDneQrwX9U11wJZBz8Jruw" .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2013-01-31> a ld:Event ;
                                                      rdfs:label "Stephan König Trio mit Martin Petzold „Bach in Jazz“" ;

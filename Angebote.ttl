@@ -1,517 +1,478 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://leipzig-data.de/Data/Angebote/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
-@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
+@prefix lda: <http://leipzig-data.de/Data/AlteAdresse/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
-<http://leipzig-data.de/Data/Angebot/ASG.Schuelerakademie>
-    ld:Art "Veranstaltungsreihe (Vorträge und Experimente)" ;
-    ld:Hintergrund "seit Febr. 2010" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Schülerinnen und Schüler der Klassen 9. bis 12." ;
-    ld:Zielstellung "Ziel der Veranstaltungsreihe ist es, interessierte Schüler mit Themen vertraut zu machen, welche naturgemäß im Unterricht nicht oder nur sehr kurz behandelt werden." ;
-    ld:contactPerson ldp:Boran_Roland ;
-    ld:email "akademie@skanewind.de" ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://www.leipzig-netz.de/index.php5/MINT.Schuelerakademie" ;
-    ld:relatedBundle ldo:ASG ;
-    a ld:Angebot ;
-    rdfs:label "Leipziger Schülerakademie" .
+<http://leipzig-data.de/Data/Angebot/ASG.Schuelerakademie> a ld:Angebot ;
+                                                           rdfs:label "Leipziger Schülerakademie" ;
+                                                           ld:hasStatus "aktiv" ;
+                                                           ld:hasTag ldtag:MINT ;
+                                                           ld:hasURL "http://www.leipzig-netz.de/index.php5/MINT.Schuelerakademie" ;
+                                                           ld:Art "Veranstaltungsreihe (Vorträge und Experimente)" ;
+                                                           ld:Kosten "nein" ;
+                                                           ld:Zielgruppe "Schülerinnen und Schüler der Klassen 9. bis 12." ;
+                                                           ld:Zielstellung "Ziel der Veranstaltungsreihe ist es, interessierte Schüler mit Themen vertraut zu machen, welche naturgemäß im Unterricht nicht oder nur sehr kurz behandelt werden." ;
+                                                           ld:contactPerson ldp:Boran_Roland ;
+                                                           ld:Teilnahmebedingungen "keine" ;
+                                                           ld:Hintergrund "seit Febr. 2010" ;
+                                                           ld:relatedBundle ldo:ASG ;
+                                                           ld:email "akademie@skanewind.de" .
 
-<http://leipzig-data.de/Data/Angebot/Attac.DenkTankStelle>
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Die DenkTankStellen (DTS) von Attac Leipzig sind offene und öffentliche Diskussionen und Reflexionsversuche über aktuelle politische und philosophisch/psychologische Probleme. Sie finden in der Regel an einem Montag im Monat 19:00 h im Café Grundmann statt. Dabei geht es nicht um Wissenszuwachs durch Vorträge u.ä., sondern um Denken und Diskutieren vom Anfang an. Und es soll Spaß machen! " ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:AttacLeipzig, ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle> ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-    a ld:Angebot ;
-    rdfs:label "Attac Denktankstelle" .
+<http://leipzig-data.de/Data/Angebot/Attac.DenkTankStelle> a ld:Angebot ;
+                                                           rdfs:label "Attac Denktankstelle" ;
+                                                           ld:hasStatus "aktiv" ;
+                                                           ld:hasTag ldtag:ZukunftsDiskurs, ldtag:AttacLeipzig ;
+                                                           ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle> ;
+                                                           ld:Kosten "nein" ;
+                                                           ld:Kurzinformation "Die DenkTankStellen (DTS) von Attac Leipzig sind offene und öffentliche Diskussionen und Reflexionsversuche über aktuelle politische und philosophisch/psychologische Probleme. Sie finden in der Regel an einem Montag im Monat 19:00 h im Café Grundmann statt. Dabei geht es nicht um Wissenszuwachs durch Vorträge u.ä., sondern um Denken und Diskutieren vom Anfang an. Und es soll Spaß machen! " ;
+                                                           ld:relatedBundle <http://leipzig-data.de/Data/Ort/Attac.Leipzig> .
 
-<http://leipzig-data.de/Data/Angebot/Attac.Mittwochsattacke>
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Seit Herbst 2004 organisiert Attac Leipzig diese Veranstaltungsreihe, die - wie der Name sagt - an jedem letzten Mittwoch im Monat stattfindet. Zu Gast sind Referenten aus verschiedenen sozialen Bewegungen und Diskurszusammenhängen, die wichtige Fragen der heutigen Zeit thematisieren. Die Planung der Reihe erfolgt auf den Attac-Plena." ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:AttacLeipzig, ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://www.attac-leipzig.de/mittwoch/index.html> ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-    a ld:Angebot ;
-    rdfs:label "Attac Mittwochsattacke" .
+<http://leipzig-data.de/Data/Angebot/Attac.Mittwochsattacke> a ld:Angebot ;
+                                                             rdfs:label "Attac Mittwochsattacke" ;
+                                                             ld:hasStatus "aktiv" ;
+                                                             ld:hasTag ldtag:ZukunftsDiskurs, ldtag:AttacLeipzig ;
+                                                             ld:hasURL <http://www.attac-leipzig.de/mittwoch/index.html> ;
+                                                             ld:Kosten "nein" ;
+                                                             ld:Kurzinformation "Seit Herbst 2004 organisiert Attac Leipzig diese Veranstaltungsreihe, die - wie der Name sagt - an jedem letzten Mittwoch im Monat stattfindet. Zu Gast sind Referenten aus verschiedenen sozialen Bewegungen und Diskurszusammenhängen, die wichtige Fragen der heutigen Zeit thematisieren. Die Planung der Reihe erfolgt auf den Attac-Plena." ;
+                                                             ld:relatedBundle <http://leipzig-data.de/Data/Ort/Attac.Leipzig> .
 
-<http://leipzig-data.de/Data/Angebot/DTS.SchuleInteraktiv>
-    ld:Art "Schulentwicklung zur Verbesserung der Medienkompetenz (technische Ausstattung, Unterrichtskonzepte)" ;
-    ld:Fax "02151-3660-6177" ;
-    ld:Finanzierung "ja" ;
-    ld:Hintergrund "seit 2005" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Schüler an teilnehmenden weiterführenden Mittelschulen und Gymnasien" ;
-    ld:Zielstellung "Lehr- und Lernkultur durch den verstärkten Einsatz neuer Medien verbessern" ;
-    ld:contactPerson ldp:Thate_Stefanie ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:relatedBundle ldo:DTS ;
-    a ld:Angebot ;
-    rdfs:comment "Teilnehmerzahl = Gesamtschülerzahl der beteiligten Schulen" ;
-    rdfs:label "Schule interaktiv" .
+<http://leipzig-data.de/Data/Angebot/DTS.SchuleInteraktiv> a ld:Angebot ;
+                                                           rdfs:label "Schule interaktiv" ;
+                                                           rdfs:comment "Teilnehmerzahl = Gesamtschülerzahl der beteiligten Schulen" ;
+                                                           ld:hasStatus "aktiv" ;
+                                                           ld:hasTag ldtag:MINT ;
+                                                           ld:Art "Schulentwicklung zur Verbesserung der Medienkompetenz (technische Ausstattung, Unterrichtskonzepte)" ;
+                                                           ld:Kosten "nein" ;
+                                                           ld:Zielgruppe "Schüler an teilnehmenden weiterführenden Mittelschulen und Gymnasien" ;
+                                                           ld:Finanzierung "ja" ;
+                                                           ld:Zielstellung "Lehr- und Lernkultur durch den verstärkten Einsatz neuer Medien verbessern" ;
+                                                           ld:contactPerson ldp:Thate_Stefanie ;
+                                                           ld:Teilnahmebedingungen "keine" ;
+                                                           ld:Hintergrund "seit 2005" ;
+                                                           ld:relatedBundle ldo:DTS ;
+                                                           ld:Fax "02151-3660-6177" .
 
-<http://leipzig-data.de/Data/Angebot/Energieforen.itoperation>
-    ld:contactPerson ldp:Haenel_Andreas ;
-    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
-    ld:hasTag ldtag:Energie ;
-    ld:hasURL <http://www.energieforen.de/goto/itoperation> ;
-    a ld:Angebot ;
-    rdfs:label "Energieforen User Group „IT Operations in der Energiewirtschaft“" .
+<http://leipzig-data.de/Data/Angebot/Energieforen.dialogmarketing> a ld:Angebot ;
+                                                                   rdfs:label "Energieforen User Group „Dialogmarketing in der Energiewirtschaft“" ;
+                                                                   ld:hasTag ldtag:Energie ;
+                                                                   ld:hasURL <http://www.energieforen.de/goto/dialogmarketing> ;
+                                                                   ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
+                                                                   ld:contactPerson ldp:Plaenitz_Sven .
 
-<http://leipzig-data.de/Data/Angebot/Energieforen.pm>
-    ld:contactPerson ldp:Plaenitz_Sven ;
-    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
-    ld:hasTag ldtag:Energie ;
-    ld:hasURL <http://www.energieforen.de/goto/pm> ;
-    a ld:Angebot ;
-    rdfs:label "Energieforen User Group „Produktmanagement und Kommunikation in der Energiewirtschaft“" .
+<http://leipzig-data.de/Data/Angebot/Energieforen.itoperation> a ld:Angebot ;
+                                                               rdfs:label "Energieforen User Group „IT Operations in der Energiewirtschaft“" ;
+                                                               ld:hasTag ldtag:Energie ;
+                                                               ld:hasURL <http://www.energieforen.de/goto/itoperation> ;
+                                                               ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
+                                                               ld:contactPerson ldp:Haenel_Andreas .
 
-<http://leipzig-data.de/Data/Angebot/Energieforen.riskmanagement>
-    ld:contactPerson ldp:Bachmann_Lars ;
-    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
-    ld:hasTag ldtag:Energie ;
-    ld:hasURL <http://www.energieforen.de/goto/riskmanagement> ;
-    a ld:Angebot ;
-    rdfs:label "Energieforen User Group „Risikomanagement in der Energiewirtschaft“" .
+<http://leipzig-data.de/Data/Angebot/Energieforen.pm> a ld:Angebot ;
+                                                      rdfs:label "Energieforen User Group „Produktmanagement und Kommunikation in der Energiewirtschaft“" ;
+                                                      ld:hasTag ldtag:Energie ;
+                                                      ld:hasURL <http://www.energieforen.de/goto/pm> ;
+                                                      ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
+                                                      ld:contactPerson ldp:Plaenitz_Sven .
 
-<http://leipzig-data.de/Data/Angebot/Energieforen.smartgrid>
-    ld:contactPerson ldp:Wohlfahrt_Fabian ;
-    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
-    ld:hasTag ldtag:Energie ;
-    ld:hasURL <http://www.energieforen.de/goto/smartgrid> ;
-    a ld:Angebot ;
-    rdfs:label "Energieforen User Group „Dezentrale Energieversorgung – Smart Grids“" .
+<http://leipzig-data.de/Data/Angebot/Energieforen.riskmanagement> a ld:Angebot ;
+                                                                  rdfs:label "Energieforen User Group „Risikomanagement in der Energiewirtschaft“" ;
+                                                                  ld:hasTag ldtag:Energie ;
+                                                                  ld:hasURL <http://www.energieforen.de/goto/riskmanagement> ;
+                                                                  ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
+                                                                  ld:contactPerson ldp:Bachmann_Lars .
 
-<http://leipzig-data.de/Data/Angebot/HTWK.ELISA>
-    ld:Art "einjähriges Mentoringprogramm für Studentinnen natur- und ingenieurswissenschaftlicher Fächer mit überdurchschnittlichen Studienleistungen" ;
-    ld:Finanzierung "ja (BMBF und SMWK, Mittel des Hochschul- und Wissenschaftsprogramms HWP)" ;
-    ld:Hintergrund "Laufzeit 2004-2009" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "Mindestens Vordiplom, überdurchschnittliche Leistungen in der eigenen Fachrichtung, persönliche Eignung, Motivation" ;
-    ld:Zielgruppe "weibliche Studierende der naturwissenschaftlich-technischen Studiengänge der HTWK Leipzig" ;
-    ld:Zielstellung "Förderung und Vernetzung weiblicher Eliten aus natur- und ingenieurswissenschaftlichen Studiengängen an sächsischen Universitäten und Fachhochschulen" ;
-    ld:contactPerson ldp:Schweikart_Rudolf ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Karl-Liebknecht-Strasse.132> ;
-    ld:hasStatus "beendet" ;
-    ld:hasTag ldtag:Hochschule ;
-    ld:hasURL "http://www.sozwes.htwk-leipzig.de/" ;
-    ld:relatedBundle ldo:HTWK ;
-    a ld:Angebot ;
-    rdfs:comment "Projekt ELISA war in 2009 bereits ausgelaufen und es fanden daher im Jahr 2009 keine Angebote statt." ;
-    rdfs:label "ELISA - Elitenförderung Sachsen" .
+<http://leipzig-data.de/Data/Angebot/Energieforen.smartgrid> a ld:Angebot ;
+                                                             rdfs:label "Energieforen User Group „Dezentrale Energieversorgung – Smart Grids“" ;
+                                                             ld:hasTag ldtag:Energie ;
+                                                             ld:hasURL <http://www.energieforen.de/goto/smartgrid> ;
+                                                             ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Energieforen.Leipzig> ;
+                                                             ld:contactPerson ldp:Wohlfahrt_Fabian .
 
-<http://leipzig-data.de/Data/Angebot/HTWK.FerienHochschule>
-    ld:Art "Ferienuni" ;
-    ld:Finanzierung "Hochschulpakt 2020" ;
-    ld:Hintergrund "seit 2008" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Mädchen der 10. bis 12. Klasse" ;
-    ld:Zielstellung "Mädchen der 10. bis 12. Klasse lernen den Studienalltag kennen (Hörsaal, Seminarraum, Labor) und können sich davon überzeugen, wie spannend ein technisches Studium sein kann" ;
-    ld:contactPerson ldp:Herrmann_Anne ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Eichendorffstrasse.2> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:Hochschule ;
-    ld:hasURL "http://www.htwk-leipzig.de/ferienhochschule" ;
-    ld:relatedBundle ldo:HTWK ;
-    a ld:Angebot ;
-    rdfs:label "Ferienhochschule der HTWK" .
+<http://leipzig-data.de/Data/Angebot/HTWK.ELISA> a ld:Angebot ;
+                                                 rdfs:label "ELISA - Elitenförderung Sachsen" ;
+                                                 rdfs:comment "Projekt ELISA war in 2009 bereits ausgelaufen und es fanden daher im Jahr 2009 keine Angebote statt." ;
+                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Karl-Liebknecht-Strasse.132> ;
+                                                 ld:hasStatus "beendet" ;
+                                                 ld:hasTag ldtag:Hochschule ;
+                                                 ld:hasURL "http://www.sozwes.htwk-leipzig.de/" ;
+                                                 ld:Art "einjähriges Mentoringprogramm für Studentinnen natur- und ingenieurswissenschaftlicher Fächer mit überdurchschnittlichen Studienleistungen" ;
+                                                 ld:Kosten "nein" ;
+                                                 ld:Zielgruppe "weibliche Studierende der naturwissenschaftlich-technischen Studiengänge der HTWK Leipzig" ;
+                                                 ld:Finanzierung "ja (BMBF und SMWK, Mittel des Hochschul- und Wissenschaftsprogramms HWP)" ;
+                                                 ld:Zielstellung "Förderung und Vernetzung weiblicher Eliten aus natur- und ingenieurswissenschaftlichen Studiengängen an sächsischen Universitäten und Fachhochschulen" ;
+                                                 ld:contactPerson ldp:Schweikart_Rudolf ;
+                                                 ld:Teilnahmebedingungen "Mindestens Vordiplom, überdurchschnittliche Leistungen in der eigenen Fachrichtung, persönliche Eignung, Motivation" ;
+                                                 ld:Hintergrund "Laufzeit 2004-2009" ;
+                                                 ld:relatedBundle ldo:HTWK .
 
-<http://leipzig-data.de/Data/Angebot/HfTL.MINT-Camp>
-    ld:Art "4-tägige Veranstaltung mit Kursen, Projektarbeit und Einblick in Studieninhalte" ;
-    ld:Finanzierung "nein" ;
-    ld:Hintergrund "seit 2007" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "Schüler von MINT-EC Schulen" ;
-    ld:Zielgruppe "Klassenstufe 10 bis 12" ;
-    ld:Zielstellung "Vermittlung von Fachinhalten zur Telekommunikation, Physik, Mathematik, Informatik, Schülerinnen und Schülern einen Einblick in den Ablauf eines Studiums an der HfTL bieten" ;
-    ld:contactPerson ldp:Buettner_Torsten ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Gustav-Freytag-Strasse.43-45> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:Hochschule ;
-    ld:relatedBundle ldo:HfTL ;
-    a ld:Angebot ;
-    rdfs:comment "Kommentar Hr Büttner: Warum hat kein Schüler vom Ostwald-Gymnasium teilgenommen? Die Frage habe ich mir auch gestellt – es scheint aber so zu sein, dass die Information die Schüler nicht oder nur unzureichend erreicht hat. 2008 war das Verhältnis deutlich besser. Aber das ist wie gesagt nur meine Vermutung. Gemeinsam mit dem MINT-Verein haben und werden wir die Kommunikation deutlich schärfen und noch früher informieren." ;
-    rdfs:label "MINT-Camp Leipzig" .
+<http://leipzig-data.de/Data/Angebot/HTWK.FerienHochschule> a ld:Angebot ;
+                                                            rdfs:label "Ferienhochschule der HTWK" ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Eichendorffstrasse.2> ;
+                                                            ld:hasStatus "aktiv" ;
+                                                            ld:hasTag ldtag:Hochschule ;
+                                                            ld:hasURL "http://www.htwk-leipzig.de/ferienhochschule" ;
+                                                            ld:Art "Ferienuni" ;
+                                                            ld:Kosten "nein" ;
+                                                            ld:Zielgruppe "Mädchen der 10. bis 12. Klasse" ;
+                                                            ld:Finanzierung "Hochschulpakt 2020" ;
+                                                            ld:Zielstellung "Mädchen der 10. bis 12. Klasse lernen den Studienalltag kennen (Hörsaal, Seminarraum, Labor) und können sich davon überzeugen, wie spannend ein technisches Studium sein kann" ;
+                                                            ld:contactPerson ldp:Herrmann_Anne ;
+                                                            ld:Teilnahmebedingungen "keine" ;
+                                                            ld:Hintergrund "seit 2008" ;
+                                                            ld:relatedBundle ldo:HTWK .
 
-<http://leipzig-data.de/Data/Angebot/HfTL.PhysikKindergarten>
-    ld:Art "Experimente" ;
-    ld:Finanzierung "nein" ;
-    ld:Hintergrund "seit 2008" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Kinder im Vor- und Grundschulalter" ;
-    ld:Zielstellung "Kindern im Vor- und Grundschulalter frühzeitig den Zugang zur Physik ermöglichen" ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:Hochschule ;
-    ld:relatedBundle ldo:HfTL ;
-    a ld:Angebot ;
-    rdfs:comment "Teilnehmer in 2009: ca. 30 Kindergartenkinder, ca. 8 Schüler" ;
-    rdfs:label "Physik in Kindergarten und Grundschule" .
+<http://leipzig-data.de/Data/Angebot/HfTL.MINT-Camp> a ld:Angebot ;
+                                                     rdfs:label "MINT-Camp Leipzig" ;
+                                                     rdfs:comment "Kommentar Hr Büttner: Warum hat kein Schüler vom Ostwald-Gymnasium teilgenommen? Die Frage habe ich mir auch gestellt – es scheint aber so zu sein, dass die Information die Schüler nicht oder nur unzureichend erreicht hat. 2008 war das Verhältnis deutlich besser. Aber das ist wie gesagt nur meine Vermutung. Gemeinsam mit dem MINT-Verein haben und werden wir die Kommunikation deutlich schärfen und noch früher informieren." ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Gustav-Freytag-Strasse.43-45> ;
+                                                     ld:hasStatus "aktiv" ;
+                                                     ld:hasTag ldtag:Hochschule ;
+                                                     ld:Art "4-tägige Veranstaltung mit Kursen, Projektarbeit und Einblick in Studieninhalte" ;
+                                                     ld:Kosten "nein" ;
+                                                     ld:Zielgruppe "Klassenstufe 10 bis 12" ;
+                                                     ld:Finanzierung "nein" ;
+                                                     ld:Zielstellung "Vermittlung von Fachinhalten zur Telekommunikation, Physik, Mathematik, Informatik, Schülerinnen und Schülern einen Einblick in den Ablauf eines Studiums an der HfTL bieten" ;
+                                                     ld:contactPerson ldp:Buettner_Torsten ;
+                                                     ld:Teilnahmebedingungen "Schüler von MINT-EC Schulen" ;
+                                                     ld:Hintergrund "seit 2007" ;
+                                                     ld:relatedBundle ldo:HfTL .
 
-<http://leipzig-data.de/Data/Angebot/IHK.MINT-Berufetag>
-    ld:Art "Berufsorientierungstag" ;
-    ld:Finanzierung "nein" ;
-    ld:Hintergrund "seit 2009" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Telefon "0341-1267-1354" ;
-    ld:Zielgruppe "Jugendliche und Eltern" ;
-    ld:Zielstellung "Information für Ausbildungssuchende über MINT-Berufe, Beratung, experimentieren, ausprobieren" ;
-    ld:contactPerson ldp:Kuechler_Romy ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:relatedBundle ldo:IHK ;
-    a ld:Angebot ;
-    rdfs:label "MINT-Berufetag" .
+<http://leipzig-data.de/Data/Angebot/HfTL.PhysikKindergarten> a ld:Angebot ;
+                                                              rdfs:label "Physik in Kindergarten und Grundschule" ;
+                                                              rdfs:comment "Teilnehmer in 2009: ca. 30 Kindergartenkinder, ca. 8 Schüler" ;
+                                                              ld:hasStatus "aktiv" ;
+                                                              ld:hasTag ldtag:Hochschule ;
+                                                              ld:Art "Experimente" ;
+                                                              ld:Kosten "nein" ;
+                                                              ld:Zielgruppe "Kinder im Vor- und Grundschulalter" ;
+                                                              ld:Finanzierung "nein" ;
+                                                              ld:Zielstellung "Kindern im Vor- und Grundschulalter frühzeitig den Zugang zur Physik ermöglichen" ;
+                                                              ld:Teilnahmebedingungen "keine" ;
+                                                              ld:Hintergrund "seit 2008" ;
+                                                              ld:relatedBundle ldo:HfTL .
 
-<http://leipzig-data.de/Data/Angebot/IHK.Technopedia>
-    ld:Art "Bundesweites Technik-Portal der IHKs mit Verknüpfungen zu regionalen Technikangeboten wie bspw. Unternehmens- und Laborbesuche" ;
-    ld:Finanzierung "nein" ;
-    ld:Hintergrund "seit 2009" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Akteure im MINT-Bereich, Schüler, Lehrer und MINT-Interessierte" ;
-    ld:Zielstellung "Lehrern helfen, ihren Unterricht in MINT praxisnah und interessant zu gestalten (Experimente, regionale Technikangebote, Karrieretipps, Veranstaltungskalender)" ;
-    ld:contactPerson ldp:Kuechler_Romy ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://www.ihk-tecnopedia.de/leipzig" ;
-    ld:relatedBundle ldo:IHK ;
-    a ld:Angebot ;
-    rdfs:label "Tecnopedia" .
+<http://leipzig-data.de/Data/Angebot/IHK.MINT-Berufetag> a ld:Angebot ;
+                                                         rdfs:label "MINT-Berufetag" ;
+                                                         ld:hasStatus "aktiv" ;
+                                                         ld:hasTag ldtag:MINT ;
+                                                         ld:Art "Berufsorientierungstag" ;
+                                                         ld:Kosten "nein" ;
+                                                         ld:Zielgruppe "Jugendliche und Eltern" ;
+                                                         ld:Finanzierung "nein" ;
+                                                         ld:Zielstellung "Information für Ausbildungssuchende über MINT-Berufe, Beratung, experimentieren, ausprobieren" ;
+                                                         ld:contactPerson ldp:Kuechler_Romy ;
+                                                         ld:Teilnahmebedingungen "keine" ;
+                                                         ld:Hintergrund "seit 2009" ;
+                                                         ld:relatedBundle ldo:IHK ;
+                                                         ld:Telefon "0341-1267-1354" .
 
-<http://leipzig-data.de/Data/Angebot/Inspirata.Ausstellung>
-    ld:Art "Mitmachmuseum mit mathematisch-naturwissenschaftlichen Exponaten und fachlicher Betreuung" ;
-    ld:Kosten "2.50 bis 4.00 Euro pro Schüler" ;
-    ld:Kurzinformation "Der Kern und Ursprung der INSPIRATA ist unsere Ausstellung. Über 100 Exponate und Spiele laden ein zum Experimentieren, Erforschen, Staunen. Eigenhändig ausgeführte Experimente unter persönlicher Anleitung vermitteln einen direkten Zugang zu verschiedenen Themen der Mathematik und Naturwissenschaften." ;
-    ld:Zielgruppe "Hort, Kita, Grund-, Mittel-, Förderschule, Gymnasium, Berufsbildung, Vereine" ;
-    ld:contactPerson ldp:Petzschler_Ines ;
-    ld:hasProperty ldtag:GTA ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften, ldtag:Technik ;
-    ld:relatedBundle ldo:Inspirata ;
-    a ld:Angebot ;
-    rdfs:label "Betreuter Ausstellungsbesuch" .
+<http://leipzig-data.de/Data/Angebot/IHK.Technopedia> a ld:Angebot ;
+                                                      rdfs:label "Tecnopedia" ;
+                                                      ld:hasStatus "aktiv" ;
+                                                      ld:hasTag ldtag:MINT ;
+                                                      ld:hasURL "http://www.ihk-tecnopedia.de/leipzig" ;
+                                                      ld:Art "Bundesweites Technik-Portal der IHKs mit Verknüpfungen zu regionalen Technikangeboten wie bspw. Unternehmens- und Laborbesuche" ;
+                                                      ld:Kosten "nein" ;
+                                                      ld:Zielgruppe "Akteure im MINT-Bereich, Schüler, Lehrer und MINT-Interessierte" ;
+                                                      ld:Finanzierung "nein" ;
+                                                      ld:Zielstellung "Lehrern helfen, ihren Unterricht in MINT praxisnah und interessant zu gestalten (Experimente, regionale Technikangebote, Karrieretipps, Veranstaltungskalender)" ;
+                                                      ld:contactPerson ldp:Kuechler_Romy ;
+                                                      ld:Teilnahmebedingungen "keine" ;
+                                                      ld:Hintergrund "seit 2009" ;
+                                                      ld:relatedBundle ldo:IHK .
 
-<http://leipzig-data.de/Data/Angebot/Inspirata.Fuehrungen>
-    ld:Art "Thematische Spezialführungen" ;
-    ld:Kosten "zusätzlich zum Unkostenbeitrag für den Ausstellungsbesuch 0,50 Euro pro Person" ;
-    ld:Kurzinformation "Führungen zu den Ausstellungsexponaten durch die INSPIRATA-Betreuer in kleineren (ggf. geteilten) Gruppen, um in jedem Ausstellungsraum ausgewählte Exponate vorzustellen und noch Anregungen für andere Exponate im jeweiligen Raum zu geben." ;
-    ld:Zielgruppe "Hort, Kita, Grund-, Mittel-, Förderschule, Gymnasium, Berufsbildung, Vereine" ;
-    ld:contactPerson ldp:Petzschler_Ines ;
-    ld:hasProperty ldtag:GTA ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
-    ld:relatedBundle ldo:Inspirata ;
-    a ld:Angebot ;
-    rdfs:label "Thematische Führungen" .
+<http://leipzig-data.de/Data/Angebot/Inspirata.Ausstellung> a ld:Angebot ;
+                                                            rdfs:label "Betreuter Ausstellungsbesuch" ;
+                                                            ld:hasStatus "aktiv" ;
+                                                            ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften, ldtag:Technik ;
+                                                            ld:Art "Mitmachmuseum mit mathematisch-naturwissenschaftlichen Exponaten und fachlicher Betreuung" ;
+                                                            ld:Kosten "2.50 bis 4.00 Euro pro Schüler" ;
+                                                            ld:Zielgruppe "Hort, Kita, Grund-, Mittel-, Förderschule, Gymnasium, Berufsbildung, Vereine" ;
+                                                            ld:Kurzinformation "Der Kern und Ursprung der INSPIRATA ist unsere Ausstellung. Über 100 Exponate und Spiele laden ein zum Experimentieren, Erforschen, Staunen. Eigenhändig ausgeführte Experimente unter persönlicher Anleitung vermitteln einen direkten Zugang zu verschiedenen Themen der Mathematik und Naturwissenschaften." ;
+                                                            ld:contactPerson ldp:Petzschler_Ines ;
+                                                            ld:relatedBundle ldo:Inspirata ;
+                                                            ld:hasProperty ldtag:GTA .
 
-<http://leipzig-data.de/Data/Angebot/Inspirata.Kindergeburtstag>
-    ld:Art "Kindergeburtstag" ;
-    ld:Kosten "ab 50 Euro, je nach Aufwand und Absprache" ;
-    ld:Zielgruppe "Kinder ab 5 Jahre" ;
-    ld:Zielstellung "Betreuungen mit anregenden Experimenten und mathematischen Spielen für Feste mit kleinen Gruppen." ;
-    ld:contactPerson ldp:Petzschler_Ines ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
-    ld:relatedBundle ldo:Inspirata ;
-    a ld:Angebot ;
-    rdfs:label "Kindergeburtstage" .
+<http://leipzig-data.de/Data/Angebot/Inspirata.Fuehrungen> a ld:Angebot ;
+                                                           rdfs:label "Thematische Führungen" ;
+                                                           ld:hasStatus "aktiv" ;
+                                                           ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
+                                                           ld:Art "Thematische Spezialführungen" ;
+                                                           ld:Kosten "zusätzlich zum Unkostenbeitrag für den Ausstellungsbesuch 0,50 Euro pro Person" ;
+                                                           ld:Zielgruppe "Hort, Kita, Grund-, Mittel-, Förderschule, Gymnasium, Berufsbildung, Vereine" ;
+                                                           ld:Kurzinformation "Führungen zu den Ausstellungsexponaten durch die INSPIRATA-Betreuer in kleineren (ggf. geteilten) Gruppen, um in jedem Ausstellungsraum ausgewählte Exponate vorzustellen und noch Anregungen für andere Exponate im jeweiligen Raum zu geben." ;
+                                                           ld:contactPerson ldp:Petzschler_Ines ;
+                                                           ld:relatedBundle ldo:Inspirata ;
+                                                           ld:hasProperty ldtag:GTA .
 
-<http://leipzig-data.de/Data/Angebot/Inspirata.LFB>
-    ld:Art "Thematische Weiterbildungen für Pädagogen" ;
-    ld:Kosten "Kostenfrei bzw. je nach Angebot bzw. individuellen Wünschen und Absprachen" ;
-    ld:Kurzinformation """Behandlung didaktischer und lehrplanrelevanter Themen, besonders in den Fächern Mathematik und Physik/ Naturwissenschaften für alle Schularten und Kindergärten. 
+<http://leipzig-data.de/Data/Angebot/Inspirata.Kindergeburtstag> a ld:Angebot ;
+                                                                 rdfs:label "Kindergeburtstage" ;
+                                                                 ld:hasStatus "aktiv" ;
+                                                                 ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
+                                                                 ld:Art "Kindergeburtstag" ;
+                                                                 ld:Kosten "ab 50 Euro, je nach Aufwand und Absprache" ;
+                                                                 ld:Zielgruppe "Kinder ab 5 Jahre" ;
+                                                                 ld:Zielstellung "Betreuungen mit anregenden Experimenten und mathematischen Spielen für Feste mit kleinen Gruppen." ;
+                                                                 ld:contactPerson ldp:Petzschler_Ines ;
+                                                                 ld:relatedBundle ldo:Inspirata .
+
+<http://leipzig-data.de/Data/Angebot/Inspirata.LFB> a ld:Angebot ;
+                                                    rdfs:label "Lehrerfortbildungen" ;
+                                                    ld:hasStatus "aktiv" ;
+                                                    ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
+                                                    ld:Art "Thematische Weiterbildungen für Pädagogen" ;
+                                                    ld:Kosten "Kostenfrei bzw. je nach Angebot bzw. individuellen Wünschen und Absprachen" ;
+                                                    ld:Zielgruppe "Lehrer(innen), Erzieher(innen)" ;
+                                                    ld:Kurzinformation """Behandlung didaktischer und lehrplanrelevanter Themen, besonders in den Fächern Mathematik und Physik/ Naturwissenschaften für alle Schularten und Kindergärten. 
 Nutzbar als Weiterbildung, SCHILF, Pädagogischer Tag  u.a.; andere Angebote gern auf Anfrage. Kapazitätsgrenze: 35 Teilnehmer.""" ;
-    ld:Zielgruppe "Lehrer(innen), Erzieher(innen)" ;
-    ld:contactPerson ldp:Petzschler_Ines ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
-    ld:relatedBundle ldo:Inspirata ;
-    a ld:Angebot ;
-    rdfs:label "Lehrerfortbildungen" .
+                                                    ld:contactPerson ldp:Petzschler_Ines ;
+                                                    ld:relatedBundle ldo:Inspirata .
 
-<http://leipzig-data.de/Data/Angebot/Inspirata.Vortraege>
-    ld:Art "Thematische Vorträge  zu naturwissenschaftlichen und pädagogischen Inhalten" ;
-    ld:Kosten "nach Absprache" ;
-    ld:Kurzinformation "In der INSPIRATA werden Vorträge zu vielfältigen, von Mathematik bzw. Naturwissenschaften oder Pädagogik inspirierten Themen angeboten bzw. sind in Planung, die sich an die verschiedensten Alters- und Zielgruppen richten." ;
-    ld:Zielgruppe "Hort, Kita, Grund-, Mittel-, Förderschule, Gymnasium, Berufsbildung, Vereine" ;
-    ld:contactPerson ldp:Petzschler_Ines ;
-    ld:hasProperty ldtag:GTA ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
-    ld:relatedBundle ldo:Inspirata ;
-    a ld:Angebot ;
-    rdfs:label "Thematische Vorträge" .
+<http://leipzig-data.de/Data/Angebot/Inspirata.Vortraege> a ld:Angebot ;
+                                                          rdfs:label "Thematische Vorträge" ;
+                                                          ld:hasStatus "aktiv" ;
+                                                          ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
+                                                          ld:Art "Thematische Vorträge  zu naturwissenschaftlichen und pädagogischen Inhalten" ;
+                                                          ld:Kosten "nach Absprache" ;
+                                                          ld:Zielgruppe "Hort, Kita, Grund-, Mittel-, Förderschule, Gymnasium, Berufsbildung, Vereine" ;
+                                                          ld:Kurzinformation "In der INSPIRATA werden Vorträge zu vielfältigen, von Mathematik bzw. Naturwissenschaften oder Pädagogik inspirierten Themen angeboten bzw. sind in Planung, die sich an die verschiedensten Alters- und Zielgruppen richten." ;
+                                                          ld:contactPerson ldp:Petzschler_Ines ;
+                                                          ld:relatedBundle ldo:Inspirata ;
+                                                          ld:hasProperty ldtag:GTA .
 
-<http://leipzig-data.de/Data/Angebot/Inspirata.Workshops>
-    ld:Art "Workshops zu mathematisch-naturwissenschaftlichen (Unterrichts-)Themen" ;
-    ld:Kosten "3.50 Euro pro Kind" ;
-    ld:Kurzinformation "Workshops zu verschiedenen Themen für Gruppen bzw. Schulklassen (mind. 15 Teilnehmer), angepasst an die Wünsche und Voraussetzungen der Teilnehmer" ;
-    ld:Zielgruppe "Schulklassen verschiedener Alterstufen" ;
-    ld:hasProperty ldtag:GTA ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
-    ld:relatedBundle ldo:Inspirata ;
-    a ld:Angebot ;
-    rdfs:label "Workshops" .
+<http://leipzig-data.de/Data/Angebot/Inspirata.Workshops> a ld:Angebot ;
+                                                          rdfs:label "Workshops" ;
+                                                          ld:hasStatus "aktiv" ;
+                                                          ld:hasTag ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften ;
+                                                          ld:Art "Workshops zu mathematisch-naturwissenschaftlichen (Unterrichts-)Themen" ;
+                                                          ld:Kosten "3.50 Euro pro Kind" ;
+                                                          ld:Zielgruppe "Schulklassen verschiedener Alterstufen" ;
+                                                          ld:Kurzinformation "Workshops zu verschiedenen Themen für Gruppen bzw. Schulklassen (mind. 15 Teilnehmer), angepasst an die Wünsche und Voraussetzungen der Teilnehmer" ;
+                                                          ld:relatedBundle ldo:Inspirata ;
+                                                          ld:hasProperty ldtag:GTA .
 
-<http://leipzig-data.de/Data/Angebot/Instag.Ferienakademie>
-    ld:Art "Ferienakademie" ;
-    ld:Finanzierung "In Zusammenarbeit mit dem Europäischen Sozialfonds und dem Freistaat Sachsen" ;
-    ld:Hintergrund "Sommer 2011" ;
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Interessierte Schüler und Schülerinnen ab der 9. Klasse können in einer unserer 5 Ferienakademien in den Sommerferien 2011 in einem modernen Biotechnologie-Labor erste wissenschaftliche und praktische Erfahrungen in der Molekularbiologie sammeln. In den einwöchigen Kursen werden den teilnehmenden Schülerinnen und Schülern die medizinische Biotechnologie durch praktische Experimente näher gebracht. Diese Ferienakademien eignen sich hervorragend, um erste Orientierungen in einem spannenden naturwissenschaftlichen Arbeitsfeld zu bekommen." ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Klassenstufe 9 bis 12" ;
-    ld:Zielstellung "Ferienakademie für Schüler in den Sommerferien 2011 in der BioCity Leipzig" ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.1> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://instag-bildung.de/nachrichtendetails/items/ferienakademien-bei-der-instag-gmbh-biocity-leipzig-60.html" ;
-    ld:relatedBundle ldo:Instag ;
-    a ld:Angebot ;
-    rdfs:label "Instag Ferienakademie" .
+<http://leipzig-data.de/Data/Angebot/Instag.Ferienakademie> a ld:Angebot ;
+                                                            rdfs:label "Instag Ferienakademie" ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.1> ;
+                                                            ld:hasStatus "aktiv" ;
+                                                            ld:hasTag ldtag:MINT ;
+                                                            ld:hasURL "http://instag-bildung.de/nachrichtendetails/items/ferienakademien-bei-der-instag-gmbh-biocity-leipzig-60.html" ;
+                                                            ld:Art "Ferienakademie" ;
+                                                            ld:Kosten "nein" ;
+                                                            ld:Zielgruppe "Klassenstufe 9 bis 12" ;
+                                                            ld:Finanzierung "In Zusammenarbeit mit dem Europäischen Sozialfonds und dem Freistaat Sachsen" ;
+                                                            ld:Kurzinformation "Interessierte Schüler und Schülerinnen ab der 9. Klasse können in einer unserer 5 Ferienakademien in den Sommerferien 2011 in einem modernen Biotechnologie-Labor erste wissenschaftliche und praktische Erfahrungen in der Molekularbiologie sammeln. In den einwöchigen Kursen werden den teilnehmenden Schülerinnen und Schülern die medizinische Biotechnologie durch praktische Experimente näher gebracht. Diese Ferienakademien eignen sich hervorragend, um erste Orientierungen in einem spannenden naturwissenschaftlichen Arbeitsfeld zu bekommen." ;
+                                                            ld:Zielstellung "Ferienakademie für Schüler in den Sommerferien 2011 in der BioCity Leipzig" ;
+                                                            ld:Teilnahmebedingungen "keine" ;
+                                                            ld:Hintergrund "Sommer 2011" ;
+                                                            ld:relatedBundle ldo:Instag .
 
-<http://leipzig-data.de/Data/Angebot/LJBW.Wimo>
-    ld:Art "Angebote für Kinder und Jugendliche in Freizeiteinrichtungen, Schulen, Kitas und mit Fortbildungsangeboten für Pädagogoen" ;
-    ld:Finanzierung "nein" ;
-    ld:Hintergrund "seit 1998" ;
-    ld:Kosten "ja - auf Anfrage" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Kinder und Jugendliche ab Vorschulalter, Sozialpädagogen, Lehrer, Erzieher" ;
-    ld:Zielstellung "Aktives Erleben von Umwelt, Natur, Technik und Gesellschaft" ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:relatedBundle ldo:LJBW ;
-    a ld:Angebot ;
-    rdfs:comment "Kosten auf Anfrage: richten sich nach Zeit, Entfernungs-km, Anzahl TN; Schulen können einen Einsatz mit dem GTA-Programm koordinieren" ;
-    rdfs:label "Wissenschaftsmobil WIMO" .
+<http://leipzig-data.de/Data/Angebot/LJBW.Wimo> a ld:Angebot ;
+                                                rdfs:label "Wissenschaftsmobil WIMO" ;
+                                                rdfs:comment "Kosten auf Anfrage: richten sich nach Zeit, Entfernungs-km, Anzahl TN; Schulen können einen Einsatz mit dem GTA-Programm koordinieren" ;
+                                                ld:hasStatus "aktiv" ;
+                                                ld:hasTag ldtag:MINT ;
+                                                ld:Art "Angebote für Kinder und Jugendliche in Freizeiteinrichtungen, Schulen, Kitas und mit Fortbildungsangeboten für Pädagogoen" ;
+                                                ld:Kosten "ja - auf Anfrage" ;
+                                                ld:Zielgruppe "Kinder und Jugendliche ab Vorschulalter, Sozialpädagogen, Lehrer, Erzieher" ;
+                                                ld:Finanzierung "nein" ;
+                                                ld:Zielstellung "Aktives Erleben von Umwelt, Natur, Technik und Gesellschaft" ;
+                                                ld:Teilnahmebedingungen "keine" ;
+                                                ld:Hintergrund "seit 1998" ;
+                                                ld:relatedBundle ldo:LJBW .
 
-<http://leipzig-data.de/Data/Angebot/LSGM.AdM>
-    ld:Art "Regionaler Aufgabenwettbewerb" ;
-    ld:Hintergrund "Die Aufgabe des Monats haben wir 2010 in dieser neuen Form wieder in unser Angebot aufgenommen, nachdem diese bereits 1997 bis 2004 als auf Einzelteilnehmer ausgerichtetes Online-Angebot existierte." ;
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Über etablierte Kontaktlehrer wird eine Aufgabe des Monats verschickt, die Schülerlösungen eingesammelt, zentral korrigiert und über die Kontaktlehrer zurückgegeben. Damit wollen wir bei den Schülern Interesse an der Beschäftigung mit Mathematik wecken und zugleich Kontakte zu den Gymnasien etablieren." ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Klassen 5 - 6 Gymnasium in der Region Leipzig" ;
-    ld:contactPerson ldp:Hintze_Steffen, ldp:Schlupp_Peter ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-    ld:hasURL "http://www.lsgm.de/AdM" ;
-    ld:relatedBundle ldo:LSGM ;
-    a ld:Angebot ;
-    rdfs:label "Aufgabe des Monats LSGM" .
+<http://leipzig-data.de/Data/Angebot/LSGM.AdM> a ld:Angebot ;
+                                               rdfs:label "Aufgabe des Monats LSGM" ;
+                                               ld:hasStatus "aktiv" ;
+                                               ld:hasTag ldtag:MINT, ldtag:Mathematik ;
+                                               ld:hasURL "http://www.lsgm.de/AdM" ;
+                                               ld:Art "Regionaler Aufgabenwettbewerb" ;
+                                               ld:Kosten "nein" ;
+                                               ld:Zielgruppe "Klassen 5 - 6 Gymnasium in der Region Leipzig" ;
+                                               ld:Kurzinformation "Über etablierte Kontaktlehrer wird eine Aufgabe des Monats verschickt, die Schülerlösungen eingesammelt, zentral korrigiert und über die Kontaktlehrer zurückgegeben. Damit wollen wir bei den Schülern Interesse an der Beschäftigung mit Mathematik wecken und zugleich Kontakte zu den Gymnasien etablieren." ;
+                                               ld:contactPerson ldp:Hintze_Steffen, ldp:Schlupp_Peter ;
+                                               ld:Teilnahmebedingungen "keine" ;
+                                               ld:Hintergrund "Die Aufgabe des Monats haben wir 2010 in dieser neuen Form wieder in unser Angebot aufgenommen, nachdem diese bereits 1997 bis 2004 als auf Einzelteilnehmer ausgerichtetes Online-Angebot existierte." ;
+                                               ld:relatedBundle ldo:LSGM .
 
-<http://leipzig-data.de/Data/Angebot/LSGM.KoZi>
-    ld:Art "Korrespondenzzirkel" ;
-    ld:Hintergrund "Unsere Korrespondenzzirkel bestehen mindestens seit 1998, die Leipziger Tradition auf diesem Gebiet geht bis in die 1960er Jahre zurück." ;
-    ld:Kosten "30 Euro pro Teilnehmer und Schuljahr" ;
-    ld:Kurzinformation "Die Teilnehmer bekommen monatlich Aufgabenserien zur Bearbeitung. Die Lösungen werden eingesandt, korrigiert und zusammen mit Musterlösungen zurückgeschickt. In jedem Quartal gibt es an einem Samstag Vormittag ein Arbeitstreffen in Leipzig. Damit wird die Beschäftigung mit Mathematik angeregt und Kontakte zu anderen mathematisch interessierten Jugendlichen vermittelt." ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Schüler/innen der Klassen 5 bis 12 " ;
-    ld:contactPerson ldp:Schueler_Axel ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-    ld:relatedBundle ldo:LSGM ;
-    a ld:Angebot ;
-    rdfs:label "Korrespondenz-Seminare LSGM" .
+<http://leipzig-data.de/Data/Angebot/LSGM.KoZi> a ld:Angebot ;
+                                                rdfs:label "Korrespondenz-Seminare LSGM" ;
+                                                ld:hasStatus "aktiv" ;
+                                                ld:hasTag ldtag:MINT, ldtag:Mathematik ;
+                                                ld:Art "Korrespondenzzirkel" ;
+                                                ld:Kosten "30 Euro pro Teilnehmer und Schuljahr" ;
+                                                ld:Zielgruppe "Schüler/innen der Klassen 5 bis 12 " ;
+                                                ld:Kurzinformation "Die Teilnehmer bekommen monatlich Aufgabenserien zur Bearbeitung. Die Lösungen werden eingesandt, korrigiert und zusammen mit Musterlösungen zurückgeschickt. In jedem Quartal gibt es an einem Samstag Vormittag ein Arbeitstreffen in Leipzig. Damit wird die Beschäftigung mit Mathematik angeregt und Kontakte zu anderen mathematisch interessierten Jugendlichen vermittelt." ;
+                                                ld:contactPerson ldp:Schueler_Axel ;
+                                                ld:Teilnahmebedingungen "keine" ;
+                                                ld:Hintergrund "Unsere Korrespondenzzirkel bestehen mindestens seit 1998, die Leipziger Tradition auf diesem Gebiet geht bis in die 1960er Jahre zurück." ;
+                                                ld:relatedBundle ldo:LSGM .
 
-<http://leipzig-data.de/Data/Angebot/LSGM.Mathecamp>
-    ld:Art "Mathematische Ferienfreizeit" ;
-    ld:Finanzierung "Unterstützung durch SMK und Thüringisches Kultusministerium in Höhe von ca. 15% der Gesamtkosten" ;
-    ld:Hintergrund "In der heutigen Form und Trägerschaft wird das Mathecamp seit 2005 bzw. seit 1994 durchgeführt. Jährliche Mathecamps finden im Leipziger Raum seit 1965 statt." ;
-    ld:Kosten "Etwa 300 Euro pro Teilnehmer" ;
-    ld:Kurzinformation "Dieses Angebot richtet sich an mathematisch interessierte Kinder und Jugendliche, sich 10 Tage lang in den Sommerferien im Rahmen einer Ferienfreizeit (auch) mit Mathematik zu beschäftigen. Wir bieten euch spielerische Kontakte mit Mathematik und gemeinsame Abenteuer mit anderen Mathematik-Interessierten in der entspannten Atmosphäre einer (thematischen) Ferienfreizeit" ;
-    ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
-    ld:Zielgruppe "Mathematisch interessierte Jugendliche der Klassen 5. - 12. vorwiegend aus Sachsen und Thüringen" ;
-    ld:contactPerson ldp:Schueler_Axel ;
-    ld:email "mathecamp@lsgm.de" ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-    ld:hasURL "http://www.lsgm.de/mathecamp" ;
-    ld:relatedBundle ldo:LSGM ;
-    a ld:Angebot ;
-    rdfs:label "LSGM Mathecamp" .
+<http://leipzig-data.de/Data/Angebot/LSGM.Mathecamp> a ld:Angebot ;
+                                                     rdfs:label "LSGM Mathecamp" ;
+                                                     ld:hasStatus "aktiv" ;
+                                                     ld:hasTag ldtag:MINT, ldtag:Mathematik ;
+                                                     ld:hasURL "http://www.lsgm.de/mathecamp" ;
+                                                     ld:Art "Mathematische Ferienfreizeit" ;
+                                                     ld:Kosten "Etwa 300 Euro pro Teilnehmer" ;
+                                                     ld:Zielgruppe "Mathematisch interessierte Jugendliche der Klassen 5. - 12. vorwiegend aus Sachsen und Thüringen" ;
+                                                     ld:Finanzierung "Unterstützung durch SMK und Thüringisches Kultusministerium in Höhe von ca. 15% der Gesamtkosten" ;
+                                                     ld:Kurzinformation "Dieses Angebot richtet sich an mathematisch interessierte Kinder und Jugendliche, sich 10 Tage lang in den Sommerferien im Rahmen einer Ferienfreizeit (auch) mit Mathematik zu beschäftigen. Wir bieten euch spielerische Kontakte mit Mathematik und gemeinsame Abenteuer mit anderen Mathematik-Interessierten in der entspannten Atmosphäre einer (thematischen) Ferienfreizeit" ;
+                                                     ld:contactPerson ldp:Schueler_Axel ;
+                                                     ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
+                                                     ld:Hintergrund "In der heutigen Form und Trägerschaft wird das Mathecamp seit 2005 bzw. seit 1994 durchgeführt. Jährliche Mathecamps finden im Leipziger Raum seit 1965 statt." ;
+                                                     ld:relatedBundle ldo:LSGM ;
+                                                     ld:email "mathecamp@lsgm.de" .
 
-<http://leipzig-data.de/Data/Angebot/LSGM.Seminare>
-    ld:Art "Herbst- und Winterschule" ;
-    ld:Finanzierung "Das Wochenendseminar wird vom BOK unterstützt, Teilfinanzierung von etwa 30% der Gesamtkosten" ;
-    ld:Hintergrund "Seit 1998 führen wir jährlich eine Herbstschule als Wochenendseminar und eine einwöchige Winterschule durch." ;
-    ld:Kosten "30 bis 150 Euro pro Teilnehmer und Seminar" ;
-    ld:Kurzinformation "Die Teilnehmer fahren für ein Wochenende (Herbst) bzw. eine Woche (Winterferien) in eine Jugendeinrichtung (Schullandheim oder Jugendherberge), um sich mit Mathematik zu beschäftigen und andere mathematisch interessierte Jugendliche zu treffen." ;
-    ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
-    ld:Zielgruppe "Klassen 9 bis 12 " ;
-    ld:contactPerson ldp:Schueler_Axel ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-    ld:relatedBundle ldo:LSGM ;
-    a ld:Angebot ;
-    rdfs:label "Schüler-Seminare der LSGM" .
+<http://leipzig-data.de/Data/Angebot/LSGM.Seminare> a ld:Angebot ;
+                                                    rdfs:label "Schüler-Seminare der LSGM" ;
+                                                    ld:hasStatus "aktiv" ;
+                                                    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
+                                                    ld:Art "Herbst- und Winterschule" ;
+                                                    ld:Kosten "30 bis 150 Euro pro Teilnehmer und Seminar" ;
+                                                    ld:Zielgruppe "Klassen 9 bis 12 " ;
+                                                    ld:Finanzierung "Das Wochenendseminar wird vom BOK unterstützt, Teilfinanzierung von etwa 30% der Gesamtkosten" ;
+                                                    ld:Kurzinformation "Die Teilnehmer fahren für ein Wochenende (Herbst) bzw. eine Woche (Winterferien) in eine Jugendeinrichtung (Schullandheim oder Jugendherberge), um sich mit Mathematik zu beschäftigen und andere mathematisch interessierte Jugendliche zu treffen." ;
+                                                    ld:contactPerson ldp:Schueler_Axel ;
+                                                    ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
+                                                    ld:Hintergrund "Seit 1998 führen wir jährlich eine Herbstschule als Wochenendseminar und eine einwöchige Winterschule durch." ;
+                                                    ld:relatedBundle ldo:LSGM .
 
-<http://leipzig-data.de/Data/Angebot/LSGM.Stadtrallye>
-    ld:Art "Mathematische Stadtrallye" ;
-    ld:Hintergrund "Die erste große Stadtrallyestaffel organisierten wir im Wissenschaftssommer 2008, an der mehr als 3.000 Schüler beteiligt waren. Das Angebot haben wir in unser reguläres Aktivitätsportfolio übernommen. Jährlich wird das Angebot von über 30 Schulklassen genutzt." ;
-    ld:Kosten "3,00 Euro pro Teilnehmer" ;
-    ld:Kurzinformation "Das Angebot richtet sich an Schulklassen und Jugendgruppen. Mit praktischen Aufgaben zum Schätzen, Messen, Knobeln, Rechnen und Vergleichen erkunden Teams von 5 bis 7 Schülern die Leipziger Innenstadt. Der spielerische Kontakte mit Mathematik schärft den Blick für Lösungsansätze und zeigt, wie gut man in der Lage ist, eigene Kenntnisse in komplexem Zusammenhang praktisch anzuwenden. Start und Ziel ist das Leibnizdenkmal im Uni-Innenhof." ;
-    ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
-    ld:Zielgruppe "Schulklassen aller Schulen und Alter mit Schwerpunkt auf den Klassen 3. - 7." ;
-    ld:contactPerson ldp:Graebe_HansGert, ldp:Hauptmann_Anke ;
-    ld:email "stadtrallye@lsgm.de" ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-    ld:hasURL "http://www.lsgm.de/stadtrallye" ;
-    ld:relatedBundle ldo:LSGM ;
-    a ld:Angebot ;
-    rdfs:comment "Schulklassen außerhalb von Leipzig kamen aus Markkleeberg, Grimma, Wurzen, Groitzsch usw." ;
-    rdfs:label "Stadtrallye" .
+<http://leipzig-data.de/Data/Angebot/LSGM.Stadtrallye> a ld:Angebot ;
+                                                       rdfs:label "Stadtrallye" ;
+                                                       rdfs:comment "Schulklassen außerhalb von Leipzig kamen aus Markkleeberg, Grimma, Wurzen, Groitzsch usw." ;
+                                                       ld:hasStatus "aktiv" ;
+                                                       ld:hasTag ldtag:MINT, ldtag:Mathematik ;
+                                                       ld:hasURL "http://www.lsgm.de/stadtrallye" ;
+                                                       ld:Art "Mathematische Stadtrallye" ;
+                                                       ld:Kosten "3,00 Euro pro Teilnehmer" ;
+                                                       ld:Zielgruppe "Schulklassen aller Schulen und Alter mit Schwerpunkt auf den Klassen 3. - 7." ;
+                                                       ld:Kurzinformation "Das Angebot richtet sich an Schulklassen und Jugendgruppen. Mit praktischen Aufgaben zum Schätzen, Messen, Knobeln, Rechnen und Vergleichen erkunden Teams von 5 bis 7 Schülern die Leipziger Innenstadt. Der spielerische Kontakte mit Mathematik schärft den Blick für Lösungsansätze und zeigt, wie gut man in der Lage ist, eigene Kenntnisse in komplexem Zusammenhang praktisch anzuwenden. Start und Ziel ist das Leibnizdenkmal im Uni-Innenhof." ;
+                                                       ld:contactPerson ldp:Graebe_HansGert, ldp:Hauptmann_Anke ;
+                                                       ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
+                                                       ld:Hintergrund "Die erste große Stadtrallyestaffel organisierten wir im Wissenschaftssommer 2008, an der mehr als 3.000 Schüler beteiligt waren. Das Angebot haben wir in unser reguläres Aktivitätsportfolio übernommen. Jährlich wird das Angebot von über 30 Schulklassen genutzt." ;
+                                                       ld:relatedBundle ldo:LSGM ;
+                                                       ld:email "stadtrallye@lsgm.de" .
 
-<http://leipzig-data.de/Data/Angebot/LSGM.Zirkel>
-    ld:Art "14-tägiger Mathezirkel für Schüler, angeboten von Vereinsmitgliedern (vorwiegend Studenten)" ;
-    ld:Finanzierung "nein" ;
-    ld:Hintergrund "seit 1994" ;
-    ld:Kosten "50 Euro pro Teilnehmer und Schuljahr" ;
-    ld:Teilnahmebedingungen "Interesse an Mathematik (Anmeldung)" ;
-    ld:Zielgruppe "Klassen 2 bis 12." ;
-    ld:Zielstellung "Durch regelmäßige Beschäftigung mit mathematischen Themen werden die mathematischen Kenntnisse und Fertigkeiten der Teilnehmer entwickelt." ;
-    ld:contactPerson ldp:Schueler_Axel ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:relatedBundle ldo:LSGM ;
-    a ld:Angebot ;
-    rdfs:label "Schülerzirkel LSGM" .
+<http://leipzig-data.de/Data/Angebot/LSGM.Zirkel> a ld:Angebot ;
+                                                  rdfs:label "Schülerzirkel LSGM" ;
+                                                  ld:hasStatus "aktiv" ;
+                                                  ld:hasTag ldtag:MINT ;
+                                                  ld:Art "14-tägiger Mathezirkel für Schüler, angeboten von Vereinsmitgliedern (vorwiegend Studenten)" ;
+                                                  ld:Kosten "50 Euro pro Teilnehmer und Schuljahr" ;
+                                                  ld:Zielgruppe "Klassen 2 bis 12." ;
+                                                  ld:Finanzierung "nein" ;
+                                                  ld:Zielstellung "Durch regelmäßige Beschäftigung mit mathematischen Themen werden die mathematischen Kenntnisse und Fertigkeiten der Teilnehmer entwickelt." ;
+                                                  ld:contactPerson ldp:Schueler_Axel ;
+                                                  ld:Teilnahmebedingungen "Interesse an Mathematik (Anmeldung)" ;
+                                                  ld:Hintergrund "seit 1994" ;
+                                                  ld:relatedBundle ldo:LSGM .
 
-<http://leipzig-data.de/Data/Angebot/MNU.Fortbildungstag>
-    ld:Art "Fortbildungsveranstaltung für Lehrkräfte der mathematisch-naturwissenschaftlichen Fächergruppe aller Schulformen und Jahrgangsstufen" ;
-    ld:Hintergrund "seit 2008" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine (Anmeldung); anerkannte Lehrerfortbildung des SMK" ;
-    ld:Zielgruppe "Lehrkräfte der mathematisch-naturwissenschaftlichen Fächergruppe aller Schulformen und Jahrgangsstufen" ;
-    ld:Zielstellung "Lehrkräften didaktische Impulse für einen spannenden, forschenden MINT-Unterricht geben." ;
-    ld:contactPerson ldp:Schmidt_Rosemarie ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:relatedBundle ldo:MNU ;
-    a ld:Angebot ;
-    rdfs:comment "Im Jahr 2009 fand der MNU Fortbildungstag in Dresden statt. Der MNU Fortbildungstag 2010 findet am 16.09.10 In Leipzig statt." ;
-    rdfs:label "MNU Fortbildungstag LV Sachsen" .
+<http://leipzig-data.de/Data/Angebot/MNU.Fortbildungstag> a ld:Angebot ;
+                                                          rdfs:label "MNU Fortbildungstag LV Sachsen" ;
+                                                          rdfs:comment "Im Jahr 2009 fand der MNU Fortbildungstag in Dresden statt. Der MNU Fortbildungstag 2010 findet am 16.09.10 In Leipzig statt." ;
+                                                          ld:hasStatus "aktiv" ;
+                                                          ld:hasTag ldtag:MINT ;
+                                                          ld:Art "Fortbildungsveranstaltung für Lehrkräfte der mathematisch-naturwissenschaftlichen Fächergruppe aller Schulformen und Jahrgangsstufen" ;
+                                                          ld:Kosten "nein" ;
+                                                          ld:Zielgruppe "Lehrkräfte der mathematisch-naturwissenschaftlichen Fächergruppe aller Schulformen und Jahrgangsstufen" ;
+                                                          ld:Zielstellung "Lehrkräften didaktische Impulse für einen spannenden, forschenden MINT-Unterricht geben." ;
+                                                          ld:contactPerson ldp:Schmidt_Rosemarie ;
+                                                          ld:Teilnahmebedingungen "keine (Anmeldung); anerkannte Lehrerfortbildung des SMK" ;
+                                                          ld:Hintergrund "seit 2008" ;
+                                                          ld:relatedBundle ldo:MNU .
 
-<http://leipzig-data.de/Data/Angebot/MPI-MIS.Vortrag.Geometrie>
-    ld:Art "Vortragsangebot für Schulen" ;
-    ld:Kosten "keine" ;
-    ld:Kurzinformation "Im Fokus dieses Vortrags stehen kürzeste Verbindungen. Den Ausgangspunkt bildet ein Hindernisproblem: Personen A und B stehen vor bzw. hinter dem Teich - entlang welchen Weges kommt A am schnellsten zu B? Des Weiteren werden kürzeste Verbindungen auf der Kugeloberfläche behandelt - auch dort gibt es Dreiecke, deren Winkelsumme aber nicht 180 Grad ist. Schließlich geht es um Dreiecke auf Flächen mit Kanten und Ecken. Der Vortrag schafft einen experimentellen, mit Modellen und Gummibändern visualisierten Zugang zur Differentialgeometrie." ;
-    ld:Zielgruppe "Klasse 10-12 Gymnasien" ;
-    ld:contactPerson ldp:Gregor_Jana ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-    ld:relatedBundle ldo:MPI-MIS ;
-    a ld:Angebot ;
-    rdfs:comment "Veranstaltungsort MPI oder Ihre Schule" ;
-    rdfs:label "Warum fliegt man von Frankfurt nach Los Angeles nahe am Nordpol vorbei?" .
+<http://leipzig-data.de/Data/Angebot/MPI-MIS.Vortrag.Geometrie> a ld:Angebot ;
+                                                                rdfs:label "Warum fliegt man von Frankfurt nach Los Angeles nahe am Nordpol vorbei?" ;
+                                                                rdfs:comment "Veranstaltungsort MPI oder Ihre Schule" ;
+                                                                ld:hasStatus "aktiv" ;
+                                                                ld:hasTag ldtag:MINT, ldtag:Mathematik ;
+                                                                ld:Art "Vortragsangebot für Schulen" ;
+                                                                ld:Kosten "keine" ;
+                                                                ld:Zielgruppe "Klasse 10-12 Gymnasien" ;
+                                                                ld:Kurzinformation "Im Fokus dieses Vortrags stehen kürzeste Verbindungen. Den Ausgangspunkt bildet ein Hindernisproblem: Personen A und B stehen vor bzw. hinter dem Teich - entlang welchen Weges kommt A am schnellsten zu B? Des Weiteren werden kürzeste Verbindungen auf der Kugeloberfläche behandelt - auch dort gibt es Dreiecke, deren Winkelsumme aber nicht 180 Grad ist. Schließlich geht es um Dreiecke auf Flächen mit Kanten und Ecken. Der Vortrag schafft einen experimentellen, mit Modellen und Gummibändern visualisierten Zugang zur Differentialgeometrie." ;
+                                                                ld:contactPerson ldp:Gregor_Jana ;
+                                                                ld:relatedBundle ldo:MPI-MIS .
 
-<http://leipzig-data.de/Data/Angebot/MPI-MIS.Vortrag.Landkarten>
-    ld:Art "Vortragsangebot für Schulen" ;
-    ld:Kosten "keine" ;
-    ld:Kurzinformation "Das menschliche Gehirn speichert nicht nur Information über die Außenwelt, sondern auch wichtige Daten über den menschlichen Körper. Daher finden sich dort auch Abbilder von Armen, Händen, Beinen usw. Erstaunlich hierbei ist, dass diese Abbildungen in bestimmten Nachbarschaftsbeziehungen zu einander stehen. So liegt z. B. das Abbild des Arms räumlich nah dem der Hand. Diese Ordnung erinnert stark an den Aufbau von Landkarten. Im Rahmen künstlicher neuronaler Netze wurden Modelle entwickelt, die das Entstehen solcher Karten im Gehirn illustrieren. Die Arbeitsweise eines solchen Modells wird im Vortrag beschrieben und anhand von Computersimulationen demonstriert." ;
-    ld:Zielgruppe "Klasse 10-12 Gymnasien" ;
-    ld:contactPerson ldp:Gregor_Jana ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Naturwissenschaften ;
-    ld:relatedBundle ldo:MPI-MIS ;
-    a ld:Angebot ;
-    rdfs:comment "Veranstaltungsort MPI oder Ihre Schule" ;
-    rdfs:label "Landkarten im Gehirn" .
+<http://leipzig-data.de/Data/Angebot/MPI-MIS.Vortrag.Landkarten> a ld:Angebot ;
+                                                                 rdfs:label "Landkarten im Gehirn" ;
+                                                                 rdfs:comment "Veranstaltungsort MPI oder Ihre Schule" ;
+                                                                 ld:hasStatus "aktiv" ;
+                                                                 ld:hasTag ldtag:MINT, ldtag:Naturwissenschaften ;
+                                                                 ld:Art "Vortragsangebot für Schulen" ;
+                                                                 ld:Kosten "keine" ;
+                                                                 ld:Zielgruppe "Klasse 10-12 Gymnasien" ;
+                                                                 ld:Kurzinformation "Das menschliche Gehirn speichert nicht nur Information über die Außenwelt, sondern auch wichtige Daten über den menschlichen Körper. Daher finden sich dort auch Abbilder von Armen, Händen, Beinen usw. Erstaunlich hierbei ist, dass diese Abbildungen in bestimmten Nachbarschaftsbeziehungen zu einander stehen. So liegt z. B. das Abbild des Arms räumlich nah dem der Hand. Diese Ordnung erinnert stark an den Aufbau von Landkarten. Im Rahmen künstlicher neuronaler Netze wurden Modelle entwickelt, die das Entstehen solcher Karten im Gehirn illustrieren. Die Arbeitsweise eines solchen Modells wird im Vortrag beschrieben und anhand von Computersimulationen demonstriert." ;
+                                                                 ld:contactPerson ldp:Gregor_Jana ;
+                                                                 ld:relatedBundle ldo:MPI-MIS .
 
-<http://leipzig-data.de/Data/Angebot/MPI-MIS.Vortrag.Netzwerke>
-    ld:Art "Vortragsangebot für Schulen" ;
-    ld:Kosten "keine" ;
-    ld:Kurzinformation """Immer wenn es um paarweise Wechselwirkungen zwischen gleichartigen Elementen geht, bietet sich eine Modellierung mittels des mathematischen Konzeptes des Graphen an. Ganz unterschiedliche Inhalte, sich gegenseitig regulierende Gene in einer Zelle, Signale austauschende Gehirnzellen, durch Flüge verbundene Städte, miteinander verlinkte Webseiten oder Emails austauschende Gruppen führen zu einer ähnlichen formalen Struktur. 
+<http://leipzig-data.de/Data/Angebot/MPI-MIS.Vortrag.Netzwerke> a ld:Angebot ;
+                                                                rdfs:label "Netzwerke" ;
+                                                                rdfs:comment "Veranstaltungsort MPI oder Ihre Schule" ;
+                                                                ld:hasStatus "aktiv" ;
+                                                                ld:hasTag ldtag:MINT, ldtag:Mathematik ;
+                                                                ld:Art "Vortragsangebot für Schulen" ;
+                                                                ld:Kosten "keine" ;
+                                                                ld:Zielgruppe "Klasse 11-12 Gymnasien" ;
+                                                                ld:Kurzinformation """Immer wenn es um paarweise Wechselwirkungen zwischen gleichartigen Elementen geht, bietet sich eine Modellierung mittels des mathematischen Konzeptes des Graphen an. Ganz unterschiedliche Inhalte, sich gegenseitig regulierende Gene in einer Zelle, Signale austauschende Gehirnzellen, durch Flüge verbundene Städte, miteinander verlinkte Webseiten oder Emails austauschende Gruppen führen zu einer ähnlichen formalen Struktur. 
 Diese Struktur kann dann mit mathematischen Methoden auf universelle und spezifische Eigenschaften hin untersucht werden. Auf diese Weise sind in den letzten Jahren wichtige Gesetzmäßigkeiten hinsichtlich der Herausbildung stabiler Netzwerkstrukturen gefunden worden. Die Anwendungen reichen von der Biologie über die Infrastruktur und Technik bis in die Sozialwissenschaften.""" ;
-    ld:Zielgruppe "Klasse 11-12 Gymnasien" ;
-    ld:contactPerson ldp:Gregor_Jana ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-    ld:relatedBundle ldo:MPI-MIS ;
-    a ld:Angebot ;
-    rdfs:comment "Veranstaltungsort MPI oder Ihre Schule" ;
-    rdfs:label "Netzwerke" .
+                                                                ld:contactPerson ldp:Gregor_Jana ;
+                                                                ld:relatedBundle ldo:MPI-MIS .
 
-<http://leipzig-data.de/Data/Angebot/MPI-MIS.Vortrag.Unendlichkeit>
-    ld:Art "Vortragsangebot für Schulen" ;
-    ld:Kosten "keine" ;
-    ld:Kurzinformation "Was hat ein Wettlauf gegen eine Schnecke im alten Griechenland mit der Unendlichkeit zu tun? Diese und andere Fragen zur scheinbaren Paradoxie der Unendlichkeit werden als Einführung für streng mathematische Begriffe wie Konvergenz und Divergenz von Folgen und Reihen beantwortet. Dabei wird der Zusammenhang zwischen dem unendlich Kleinen und dem unendlich Grossen besonders herausgearbeitet. Mittels der spielerischen Art der Präsentation können sogar elementare Bereiche der Logik berührt werden." ;
-    ld:Zielgruppe "Klasse 11-12 Gymnasien" ;
-    ld:contactPerson ldp:Gregor_Jana ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-    ld:relatedBundle ldo:MPI-MIS ;
-    a ld:Angebot ;
-    rdfs:comment "Veranstaltungsort MPI oder Ihre Schule" ;
-    rdfs:label "Ein Blick in die Unendlichkeit" .
+<http://leipzig-data.de/Data/Angebot/MPI-MIS.Vortrag.Unendlichkeit> a ld:Angebot ;
+                                                                    rdfs:label "Ein Blick in die Unendlichkeit" ;
+                                                                    rdfs:comment "Veranstaltungsort MPI oder Ihre Schule" ;
+                                                                    ld:hasStatus "aktiv" ;
+                                                                    ld:hasTag ldtag:MINT, ldtag:Mathematik ;
+                                                                    ld:Art "Vortragsangebot für Schulen" ;
+                                                                    ld:Kosten "keine" ;
+                                                                    ld:Zielgruppe "Klasse 11-12 Gymnasien" ;
+                                                                    ld:Kurzinformation "Was hat ein Wettlauf gegen eine Schnecke im alten Griechenland mit der Unendlichkeit zu tun? Diese und andere Fragen zur scheinbaren Paradoxie der Unendlichkeit werden als Einführung für streng mathematische Begriffe wie Konvergenz und Divergenz von Folgen und Reihen beantwortet. Dabei wird der Zusammenhang zwischen dem unendlich Kleinen und dem unendlich Grossen besonders herausgearbeitet. Mittels der spielerischen Art der Präsentation können sogar elementare Bereiche der Logik berührt werden." ;
+                                                                    ld:contactPerson ldp:Gregor_Jana ;
+                                                                    ld:relatedBundle ldo:MPI-MIS .
 
-<http://leipzig-data.de/Data/Angebot/Marxexpedition.2012>
-    ld:Hintergrund "Reihe an der Uni Leipzig im Sommersemester 2012, organisiert von verschiedenen Fachschaftsräten in Zusammenarbeit mit der Rosa-Luxemburg-Stiftung" ;
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "<div>Was im Jahr 2007 als Krise des US-Immobilienmarktes begann, hat sich bis heute zu einer handfesten Weltwirtschafts- und Fiskalkrise ausgeweitet, so dass mittlerweile die Zukunft der europäischen Währungsunion auf dem Spiel steht. Unter deutsch-französischer Führung sollen die Haushaltsprobleme mittels radikaler Sparpolitik auf Kosten der LohnarbeiterInnen, vor allem in der europäischen Peripherie, gelöst werden. In Griechenland kommt es daher zur Zeit zu massiven sozialen Protesten. </div> <div> Schon Karl Marx setzte sich in seinem gut 140 Jahre alten Kapital mit ökonomischen Krisen, Staatsverschuldung, Ausbeutung und Arbeitskämpfen auseinander. Dabei versucht er zu ergründen, warum solche Phänomene im Kapitalismus notwendigerweise auftreten. Was liegt also näher, als sich einmal genauer mit dem zu beschäftigen, was man von Marx für das 21. Jahrhundert lernen könnte? Wir haben daher neun kritische Sozialwissenschaftler eingeladen, um einen Einblick in die Marxsche Gesellschaftstheorie zu erhalten und davon ausgehend mit euch diese aktuellen Phänomene diskutieren zu können. Ziel ist, sich mit so scheinbar selbstverständlichen Phänomenen wie Kapitalismus, Staat, Arbeit und Moral aus einer etwas anderen Perspektive auseinanderzusetzen. </div>" ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
-    ld:hasStatus "Projekt" ;
-    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/UniLeipzig.Studentenrat> ;
-    ld:hasURL "http://marxexpedition.de" ;
-    a ld:Angebot ;
-    rdfs:label "Vortragsreihe Marxexpedition 2012. Orientierung im Kapitalismus" .
+<http://leipzig-data.de/Data/Angebot/Marxexpedition.2012> a ld:Angebot ;
+                                                          rdfs:label "Vortragsreihe Marxexpedition 2012. Orientierung im Kapitalismus" ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+                                                          ld:hasStatus "Projekt" ;
+                                                          ld:hasURL "http://marxexpedition.de" ;
+                                                          ld:Kosten "nein" ;
+                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/UniLeipzig.Studentenrat> ;
+                                                          ld:Kurzinformation "<div>Was im Jahr 2007 als Krise des US-Immobilienmarktes begann, hat sich bis heute zu einer handfesten Weltwirtschafts- und Fiskalkrise ausgeweitet, so dass mittlerweile die Zukunft der europäischen Währungsunion auf dem Spiel steht. Unter deutsch-französischer Führung sollen die Haushaltsprobleme mittels radikaler Sparpolitik auf Kosten der LohnarbeiterInnen, vor allem in der europäischen Peripherie, gelöst werden. In Griechenland kommt es daher zur Zeit zu massiven sozialen Protesten. </div> <div> Schon Karl Marx setzte sich in seinem gut 140 Jahre alten Kapital mit ökonomischen Krisen, Staatsverschuldung, Ausbeutung und Arbeitskämpfen auseinander. Dabei versucht er zu ergründen, warum solche Phänomene im Kapitalismus notwendigerweise auftreten. Was liegt also näher, als sich einmal genauer mit dem zu beschäftigen, was man von Marx für das 21. Jahrhundert lernen könnte? Wir haben daher neun kritische Sozialwissenschaftler eingeladen, um einen Einblick in die Marxsche Gesellschaftstheorie zu erhalten und davon ausgehend mit euch diese aktuellen Phänomene diskutieren zu können. Ziel ist, sich mit so scheinbar selbstverständlichen Phänomenen wie Kapitalismus, Staat, Arbeit und Moral aus einer etwas anderen Perspektive auseinanderzusetzen. </div>" ;
+                                                          ld:Hintergrund "Reihe an der Uni Leipzig im Sommersemester 2012, organisiert von verschiedenen Fachschaftsräten in Zusammenarbeit mit der Rosa-Luxemburg-Stiftung" .
 
-<http://leipzig-data.de/Data/Angebot/OFT.Muehlholz.Spielezentrum>
-    ld:Telefon "0341-3013004" ;
-    ld:email "ludothek-muehlholz@web.de" ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Prinz-Eugen-Strasse.34> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasURL "http://www.oft-muehlholz.de" ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/OFT.Muehlholz> ;
-    a ld:Angebot ;
-    rdfs:label "Sächsisches Spielezentrum" .
+<http://leipzig-data.de/Data/Angebot/OFT.Muehlholz.Spielezentrum> a ld:Angebot ;
+                                                                  rdfs:label "Sächsisches Spielezentrum" ;
+                                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Prinz-Eugen-Strasse.34> ;
+                                                                  ld:hasStatus "aktiv" ;
+                                                                  ld:hasURL "http://www.oft-muehlholz.de" ;
+                                                                  ld:relatedBundle <http://leipzig-data.de/Data/Ort/OFT.Muehlholz> ;
+                                                                  ld:Telefon "0341-3013004" ;
+                                                                  ld:email "ludothek-muehlholz@web.de" .
 
-<http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Botanikschule>
-    ld:Art "Botanikschule" ;
-    ld:Telefon "0341-97-36857" ;
-    ld:Zielgruppe "Unterricht in Sachkunde und Biologie bis Klasse 7" ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Linnestrasse.1> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasSupplier ldt:StadtLeipzig, ldt:UniLeipzig ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
-    ld:relatedBundle ldo:SchulBiologieZentrum ;
-    a ld:Angebot ;
-    rdfs:comment "Das Angebot der Botanikschule umfasst ausgewählte Stoffeinheiten für den Unterricht in Sachkunde und Biologie. Dabei handelt es sich bis zur Klasse 7 um Themen der neuen Lehrpläne in Sachsen. Zusätzlich können Themen für den fachübergreifenden bzw. fächerverbindenden Unterricht ausgewählt werden. <br/> Darüber hinaus ist es möglich, gemeinsam verschiedene Projekte zu planen und zu gestalten. Für alle Themen stehen die neu eröffneten Gewächshäuser und das Freiland des Botanischen Gartens ganzjährig kostenfrei zur Verfügung. <br/> Für Projekte, in denen Material verbraucht wird bzw. gemeinsam gegessen wird, wird in Absprache ein kleiner Unkostenbeitrag erhoben, der die Einkaufskosten deckt. <br/> Der Besuch des tropischen Schmetterlingshauses kostet für angemeldete Schülergruppen pro Schüler 1 Euro (Begleitpersonen kostenfrei)." ;
-    rdfs:label "Botanikschule" .
+<http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Botanikschule> a ld:Angebot ;
+                                                                         rdfs:label "Botanikschule" ;
+                                                                         rdfs:comment "Das Angebot der Botanikschule umfasst ausgewählte Stoffeinheiten für den Unterricht in Sachkunde und Biologie. Dabei handelt es sich bis zur Klasse 7 um Themen der neuen Lehrpläne in Sachsen. Zusätzlich können Themen für den fachübergreifenden bzw. fächerverbindenden Unterricht ausgewählt werden. <br/> Darüber hinaus ist es möglich, gemeinsam verschiedene Projekte zu planen und zu gestalten. Für alle Themen stehen die neu eröffneten Gewächshäuser und das Freiland des Botanischen Gartens ganzjährig kostenfrei zur Verfügung. <br/> Für Projekte, in denen Material verbraucht wird bzw. gemeinsam gegessen wird, wird in Absprache ein kleiner Unkostenbeitrag erhoben, der die Einkaufskosten deckt. <br/> Der Besuch des tropischen Schmetterlingshauses kostet für angemeldete Schülergruppen pro Schüler 1 Euro (Begleitpersonen kostenfrei)." ;
+                                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Linnestrasse.1> ;
+                                                                         ld:hasStatus "aktiv" ;
+                                                                         ld:hasTag ldtag:MINT ;
+                                                                         ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
+                                                                         ld:Art "Botanikschule" ;
+                                                                         ld:Zielgruppe "Unterricht in Sachkunde und Biologie bis Klasse 7" ;
+                                                                         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig>, <http://leipzig-data.de/Data/Traeger/UniLeipzig> ;
+                                                                         ld:relatedBundle ldo:SchulBiologieZentrum ;
+                                                                         ld:Telefon "0341-97-36857" .
 
-<http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Freiluftschule>
-    ld:Art "Freiluftschule" ;
-    ld:Fax "0341-6881184" ;
-    ld:Telefon "0341-6881184" ;
-    ld:Zielgruppe "Grund- und Förderschulklassen" ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04289.Schwarzenbergweg.4> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
-    ld:relatedBundle ldo:SchulBiologieZentrum ;
-    a ld:Angebot ;
-    rdfs:comment """Die Freiluftschule bietet für Grund- und Förderschulklassen die Möglichkeit,
+<http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Freiluftschule> a ld:Angebot ;
+                                                                          rdfs:label "Freiluftschule an der Heinrich-Mann-Grundschule" ;
+                                                                          rdfs:comment """Die Freiluftschule bietet für Grund- und Förderschulklassen die Möglichkeit,
 ganzheitliches Lernen im Grünen zu erleben.
 
 Auf dem 3 ha großen Gelände sind alle Voraussetzungen gegeben, ganzjährig
@@ -527,34 +488,33 @@ befindet sich inmitten des Siedlungsgebietes Meusdorf an der südöstlichen
 Stadtgrenze.  
 
 Ansprechpartner: Frau Patzschke, Frau Zaumseil""" ;
-    rdfs:label "Freiluftschule an der Heinrich-Mann-Grundschule" .
+                                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04289.Schwarzenbergweg.4> ;
+                                                                          ld:hasStatus "aktiv" ;
+                                                                          ld:hasTag ldtag:MINT ;
+                                                                          ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
+                                                                          ld:Art "Freiluftschule" ;
+                                                                          ld:Zielgruppe "Grund- und Förderschulklassen" ;
+                                                                          ld:relatedBundle ldo:SchulBiologieZentrum ;
+                                                                          ld:Fax "0341-6881184" ;
+                                                                          ld:Telefon "0341-6881184" .
 
-<http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Lehrgarten>
-    ld:Art "Botanischer Lehrgarten" ;
-    ld:Fax "0341-2253768", "0341-3915102" ;
-    ld:Telefon "0341-2253767", "0341-3915102" ;
-    ld:contactPerson ldp:Rehm_Axel ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.SchleussigerWeg.1> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
-    ld:hasUW_id "1256" ;
-    ld:relatedBundle ldo:SchulBiologieZentrum ;
-    a ld:Angebot ;
-    rdfs:comment "Das ca. 1,5 Hektar große Gelände befindet sich am Schleußiger Weg 1, gegenüber der Rennbahn, im Südwesten von Leipzig. Der Eintritt ist kostenfrei. Ansprechpartner: Herr Rehm (Leiter, e-mail: rehm@schulbiologiezentrum-leipzig.de), Frau Bringezu (Fachlehrerin, e-mail: bringezu@schulbiologiezentrum-leipzig.de" ;
-    rdfs:label "Botanischer Lehrgarten" .
+<http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Lehrgarten> a ld:Angebot ;
+                                                                      rdfs:label "Botanischer Lehrgarten" ;
+                                                                      rdfs:comment "Das ca. 1,5 Hektar große Gelände befindet sich am Schleußiger Weg 1, gegenüber der Rennbahn, im Südwesten von Leipzig. Der Eintritt ist kostenfrei. Ansprechpartner: Herr Rehm (Leiter, e-mail: rehm@schulbiologiezentrum-leipzig.de), Frau Bringezu (Fachlehrerin, e-mail: bringezu@schulbiologiezentrum-leipzig.de" ;
+                                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.SchleussigerWeg.1> ;
+                                                                      ld:hasStatus "aktiv" ;
+                                                                      ld:hasTag ldtag:MINT ;
+                                                                      ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
+                                                                      ld:Art "Botanischer Lehrgarten" ;
+                                                                      ld:hasUW_id "1256" ;
+                                                                      ld:contactPerson ldp:Rehm_Axel ;
+                                                                      ld:relatedBundle ldo:SchulBiologieZentrum ;
+                                                                      ld:Fax "0341-2253768", "0341-3915102" ;
+                                                                      ld:Telefon "0341-2253767", "0341-3915102" .
 
-<http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Zooschule>
-    ld:Art "Zooschule" ;
-    ld:Telefon "0341-5933396" ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.PfaffendorferStrasse.29> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasSupplier ldt:ZooLeipzig ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
-    ld:relatedBundle ldo:SchulBiologieZentrum ;
-    a ld:Angebot ;
-    rdfs:comment """Das Unterrichtsangebot der Zooschule soll dazu beitragen, dass die Schüler
+<http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Zooschule> a ld:Angebot ;
+                                                                     rdfs:label "Zooschule Leipzig" ;
+                                                                     rdfs:comment """Das Unterrichtsangebot der Zooschule soll dazu beitragen, dass die Schüler
 Erfahrungen mit der Vielfalt und Einzigartigkeit der Natur sammeln und ein
 Bewusstsein für die Notwendigkeit des Schutzes und des verantwortungsvollen
 Umgangs mit der Umwelt entwickeln.
@@ -562,262 +522,248 @@ Umgangs mit der Umwelt entwickeln.
 Besonders geeignet ist hierfür der lehrplangerechte \"Projektunterricht\". 
 
 Ansprechpartner: Herr Dr. Kästner""" ;
-    rdfs:label "Zooschule Leipzig" .
+                                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.PfaffendorferStrasse.29> ;
+                                                                     ld:hasStatus "aktiv" ;
+                                                                     ld:hasTag ldtag:MINT ;
+                                                                     ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
+                                                                     ld:Art "Zooschule" ;
+                                                                     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/ZooLeipzig> ;
+                                                                     ld:relatedBundle ldo:SchulBiologieZentrum ;
+                                                                     ld:Telefon "0341-5933396" .
 
-<http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL>
-    ld:Kurzinformation "Das Forum Bürgerstadt Leipzig setzt die Arbeit des „AK Lokale Demokratiebilanz“ fort, der sich seit 2002 um die Etabilierung partizipativer Politikformen in Leipzig bemühte. Mit dem Neustart im Mai 2008 setzen wir uns zum Ziel, den Trialog zwischen Stadtverwaltung, Politik und der aktiven Bürgerschaft zu befördern und diesem ein Podium zu bieten. <br/> Die Aktivitäten des Forums wurden mit dem Innovationspreis Weiterbildung 2011  ausgezeichnet.<br/> Unsere Hauptarbeitsformen sind das Plenum sowie Projektgruppen zu einzelnen Themen." ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:ZukunftsDiskurs ;
-    ld:hasURL <http://www.forum-buergerstadt-leipzig.de/> ;
-    a ld:Angebot ;
-    rdfs:label "Forum Bürgerstadt Leipzig" .
+<http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL> a ld:Angebot ;
+                                                       rdfs:label "Forum Bürgerstadt Leipzig" ;
+                                                       ld:hasStatus "aktiv" ;
+                                                       ld:hasTag ldtag:ZukunftsDiskurs ;
+                                                       ld:hasURL <http://www.forum-buergerstadt-leipzig.de/> ;
+                                                       ld:Kurzinformation "Das Forum Bürgerstadt Leipzig setzt die Arbeit des „AK Lokale Demokratiebilanz“ fort, der sich seit 2002 um die Etabilierung partizipativer Politikformen in Leipzig bemühte. Mit dem Neustart im Mai 2008 setzen wir uns zum Ziel, den Trialog zwischen Stadtverwaltung, Politik und der aktiven Bürgerschaft zu befördern und diesem ein Podium zu bieten. <br/> Die Aktivitäten des Forums wurden mit dem Innovationspreis Weiterbildung 2011  ausgezeichnet.<br/> Unsere Hauptarbeitsformen sind das Plenum sowie Projektgruppen zu einzelnen Themen." .
 
-<http://leipzig-data.de/Data/Angebot/StadtLeipzig.GirlsDay>
-    ld:Art "Berufsorientierungsinitiative für Mädchen mit Schwerpunkt auf Berufen, in denen Frauen unterrepräsentiert sind" ;
-    ld:Finanzierung "nein" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Schülerinnen ab Klasse 5." ;
-    ld:Zielstellung "Arbeitswelt in zukunftsorientierten technischen Berufen, im Handwerk, in Ingenieur- und Naturwissenschaften erleben" ;
-    ld:contactPerson ldp:Darlatt_Kathrin ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Burgplatz.1> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:Berufsorientierung ;
-    ld:relatedBundle ldo:StadtLeipzig ;
-    a ld:Angebot ;
-    rdfs:label "Girls' Day Leipzig" .
+<http://leipzig-data.de/Data/Angebot/StadtLeipzig.GirlsDay> a ld:Angebot ;
+                                                            rdfs:label "Girls' Day Leipzig" ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Burgplatz.1> ;
+                                                            ld:hasStatus "aktiv" ;
+                                                            ld:hasTag ldtag:Berufsorientierung ;
+                                                            ld:Art "Berufsorientierungsinitiative für Mädchen mit Schwerpunkt auf Berufen, in denen Frauen unterrepräsentiert sind" ;
+                                                            ld:Kosten "nein" ;
+                                                            ld:Zielgruppe "Schülerinnen ab Klasse 5." ;
+                                                            ld:Finanzierung "nein" ;
+                                                            ld:Zielstellung "Arbeitswelt in zukunftsorientierten technischen Berufen, im Handwerk, in Ingenieur- und Naturwissenschaften erleben" ;
+                                                            ld:contactPerson ldp:Darlatt_Kathrin ;
+                                                            ld:Teilnahmebedingungen "keine" ;
+                                                            ld:relatedBundle ldo:StadtLeipzig .
 
-<http://leipzig-data.de/Data/Angebot/StadtLeipzig.NaturWissenSchaffen>
-    ld:Art "Weiterbildung für Erzieherinnen und Erzieher im frühkindlichen Bereich" ;
-    ld:Zielstellung "Mit dem Projekt „Natur-Wissen schaffen“ unterstützt die Deutsche Telekom Stiftung Erzieherinnen und Erzieher dabei, die Bildungsbereiche Mathematik, Naturwissenschaften, Technik und Medien in ihrer täglichen pädagogischen Arbeit umzusetzen." ;
-    ld:contactPerson ldp:Schneider_Carla ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.NaumburgerStrasse.26> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://www.leipzig.de/de/buerger/aemterhome/jugendamt/projekte", "http://www.natur-wissen-schaffen.de" ;
-    ld:relatedBundle ldo:StadtLeipzig ;
-    ld:seit "2010 (Implementierung der Ergebnisse des Projektes ab 2010 geplant)" ;
-    a ld:Angebot ;
-    rdfs:label "Natur-Wissen Schaffen" .
+<http://leipzig-data.de/Data/Angebot/StadtLeipzig.NaturWissenSchaffen> a ld:Angebot ;
+                                                                       rdfs:label "Natur-Wissen Schaffen" ;
+                                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.NaumburgerStrasse.26> ;
+                                                                       ld:hasStatus "aktiv" ;
+                                                                       ld:hasTag ldtag:MINT ;
+                                                                       ld:hasURL "http://www.leipzig.de/de/buerger/aemterhome/jugendamt/projekte", "http://www.natur-wissen-schaffen.de" ;
+                                                                       ld:Art "Weiterbildung für Erzieherinnen und Erzieher im frühkindlichen Bereich" ;
+                                                                       ld:Zielstellung "Mit dem Projekt „Natur-Wissen schaffen“ unterstützt die Deutsche Telekom Stiftung Erzieherinnen und Erzieher dabei, die Bildungsbereiche Mathematik, Naturwissenschaften, Technik und Medien in ihrer täglichen pädagogischen Arbeit umzusetzen." ;
+                                                                       ld:contactPerson ldp:Schneider_Carla ;
+                                                                       ld:relatedBundle ldo:StadtLeipzig ;
+                                                                       ld:seit "2010 (Implementierung der Ergebnisse des Projektes ab 2010 geplant)" .
 
-<http://leipzig-data.de/Data/Angebot/TransitionTown.Leipzig.Wandel>
-    ld:Hintergrund "Reihe an der Uni Leipzig im Frühjahr 2012" ;
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Zu sieben Terminen haben wir renommierte Experten gewinnen können, die darlegen, welche Chancen für eine lokale und nachhaltige Lebensweise bestehen und welche Möglichkeiten gesellschaftlicher Teilhabe damit entstehen. Alle Interessierten sind herzlich eingeladen." ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
-    ld:hasStatus "Projekt" ;
-    ld:hasURL "http://www.transitiontown-leipzig.de/aktuell:vortragsreihe_2012" ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig> ;
-    a ld:Angebot ;
-    rdfs:label "Vortragsreihe \"No Future\" war gestern" .
+<http://leipzig-data.de/Data/Angebot/TransitionTown.Leipzig.Wandel> a ld:Angebot ;
+                                                                    rdfs:label "Vortragsreihe \"No Future\" war gestern" ;
+                                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+                                                                    ld:hasStatus "Projekt" ;
+                                                                    ld:hasURL "http://www.transitiontown-leipzig.de/aktuell:vortragsreihe_2012" ;
+                                                                    ld:Kosten "nein" ;
+                                                                    ld:Kurzinformation "Zu sieben Terminen haben wir renommierte Experten gewinnen können, die darlegen, welche Chancen für eine lokale und nachhaltige Lebensweise bestehen und welche Möglichkeiten gesellschaftlicher Teilhabe damit entstehen. Alle Interessierten sind herzlich eingeladen." ;
+                                                                    ld:Hintergrund "Reihe an der Uni Leipzig im Frühjahr 2012" ;
+                                                                    ld:relatedBundle <http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig> .
 
-<http://leipzig-data.de/Data/Angebot/UFZ.KinderUmweltBus>
-    ld:Art "Mobiles Umweltbildungsfahrzeug. Projektstunden zu Wasser und Energie, Projekttage, Projektwochen, Experimente, spezielle Fortbildungsangebote für Pädagogen" ;
-    ld:Fax "0341-235-1468" ;
-    ld:Finanzierung "Unterstützt durch SW Leipzig" ;
-    ld:Telefon "0341-235-3630" ;
-    ld:Zielgruppe "Kinder im Vor- und Grundschulalter" ;
-    ld:Zielstellung "Experimentelle und spielerische Annäherung an elementare naturwissenschaftliche Zusammenhänge, Arbeit mit Kindern und Schülern vor Ort" ;
-    ld:contactPerson ldp:Klauer_AnnaKatharina ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04318.Permoserstrasse.15> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasSupplier ldt:LANU, ldt:UFZ ;
-    ld:hasTag ldtag:Hochschule ;
-    ld:hasURL "http://www.kinderumweltbus.de", "http://www.lanu.de/de/Leipzig/KinderUmweltBus.html" ;
-    ld:relatedBundle ldo:UFZ ;
-    a ld:Angebot ;
-    rdfs:label "KinderUmweltBus" .
+<http://leipzig-data.de/Data/Angebot/UFZ.KinderUmweltBus> a ld:Angebot ;
+                                                          rdfs:label "KinderUmweltBus" ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04318.Permoserstrasse.15> ;
+                                                          ld:hasStatus "aktiv" ;
+                                                          ld:hasTag ldtag:Hochschule ;
+                                                          ld:hasURL "http://www.kinderumweltbus.de", "http://www.lanu.de/de/Leipzig/KinderUmweltBus.html" ;
+                                                          ld:Art "Mobiles Umweltbildungsfahrzeug. Projektstunden zu Wasser und Energie, Projekttage, Projektwochen, Experimente, spezielle Fortbildungsangebote für Pädagogen" ;
+                                                          ld:Zielgruppe "Kinder im Vor- und Grundschulalter" ;
+                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/UFZ>, <http://leipzig-data.de/Data/Traeger/LANU> ;
+                                                          ld:Finanzierung "Unterstützt durch SW Leipzig" ;
+                                                          ld:Zielstellung "Experimentelle und spielerische Annäherung an elementare naturwissenschaftliche Zusammenhänge, Arbeit mit Kindern und Schülern vor Ort" ;
+                                                          ld:contactPerson ldp:Klauer_AnnaKatharina ;
+                                                          ld:relatedBundle ldo:UFZ ;
+                                                          ld:Fax "0341-235-1468" ;
+                                                          ld:Telefon "0341-235-3630" .
 
-<http://leipzig-data.de/Data/Angebot/UIZ.GTA>
-    ld:Art "Ganztagesangebote in den Bereichen Ökologie, Umwelt- und Naturschutz" ;
-    ld:Zielgruppe "Klassen 1 bis 6" ;
-    ld:contactPerson ldp:Koerner_Annette ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:relatedBundle ldo:UIZ ;
-    a ld:Angebot ;
-    rdfs:label "GTA-Angebote 'Gaben der Natur'" .
+<http://leipzig-data.de/Data/Angebot/UIZ.GTA> a ld:Angebot ;
+                                              rdfs:label "GTA-Angebote 'Gaben der Natur'" ;
+                                              ld:hasStatus "aktiv" ;
+                                              ld:hasTag ldtag:MINT ;
+                                              ld:Art "Ganztagesangebote in den Bereichen Ökologie, Umwelt- und Naturschutz" ;
+                                              ld:Zielgruppe "Klassen 1 bis 6" ;
+                                              ld:contactPerson ldp:Koerner_Annette ;
+                                              ld:relatedBundle ldo:UIZ .
 
-<http://leipzig-data.de/Data/Angebot/UniLeipzig.FMI.MatheVernetze>
-    ld:Art "Schaffung regionaler Netzwerke aus Universitäten und Schule; regelmäßiger Informationsaustausch zwischen Wissenschaftlern, Mathematiklehrkräften und Schülerinnen und Schülern" ;
-    ld:Fax "0341 97-32198" ;
-    ld:Funktion "Lokaler Ansprechpartner Leipzig der DMV - Deutsche Mathematiker Vereinigung" ;
-    ld:Hintergrund "seit 2008" ;
-    ld:Zielgruppe "Hochschulen und Schulen: Wissenschaftler, Mathematiklehrkräfte und Schülerinnen und Schüler" ;
-    ld:Zielstellung "Mehr junge Menschen für das Fach Mathematik begeistern und Lehrkräften didaktische Impulse für einen spannenden, forschenden Mathematikuntericht geben." ;
-    ld:contactPerson ldp:Rademacher_HansBert ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
-    ld:hasStatus "abgeschlossen" ;
-    ld:hasTag ldtag:Hochschule ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.FMI> ;
-    a ld:Angebot ;
-    rdfs:label "Mathematik vernetzen" .
+<http://leipzig-data.de/Data/Angebot/UniLeipzig.FMI.MatheVernetze> a ld:Angebot ;
+                                                                   rdfs:label "Mathematik vernetzen" ;
+                                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+                                                                   ld:hasStatus "abgeschlossen" ;
+                                                                   ld:hasTag ldtag:Hochschule ;
+                                                                   ld:Art "Schaffung regionaler Netzwerke aus Universitäten und Schule; regelmäßiger Informationsaustausch zwischen Wissenschaftlern, Mathematiklehrkräften und Schülerinnen und Schülern" ;
+                                                                   ld:Zielgruppe "Hochschulen und Schulen: Wissenschaftler, Mathematiklehrkräfte und Schülerinnen und Schüler" ;
+                                                                   ld:Zielstellung "Mehr junge Menschen für das Fach Mathematik begeistern und Lehrkräften didaktische Impulse für einen spannenden, forschenden Mathematikuntericht geben." ;
+                                                                   ld:contactPerson ldp:Rademacher_HansBert ;
+                                                                   ld:Hintergrund "seit 2008" ;
+                                                                   ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.FMI> ;
+                                                                   ld:Fax "0341 97-32198" ;
+                                                                   ld:Funktion "Lokaler Ansprechpartner Leipzig der DMV - Deutsche Mathematiker Vereinigung" .
 
-<http://leipzig-data.de/Data/Angebot/UniLeipzig.FMI.SKIL>
-    ld:Kurzinformation "Die Studentenkonferenz Informatik Leipzig (SKIL) richtet sich an alle Studierende der Informatik sowie angrenzender Disziplinen mit Schwerpunkt Informatik. Die Konferenz setzt sich zum Ziel, den Studierenden eine Plattform zu bieten, ihre Projekte und Forschungsvorhaben vorzustellen. Im Mittelpunkt der Tagung stehen studentische Projekte aus Seminaren, Praktika, Abschlussarbeiten oder extracurricularen Aktivitäten. " ;
-    ld:hasStatus "aktiv" ;
-    ld:hasURL "http://skil.informatik.uni-leipzig.de" ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.FMI> ;
-    a ld:Angebot ;
-    rdfs:label "Studentenkonferenz Informatik Leipzig (SKIL)" .
+<http://leipzig-data.de/Data/Angebot/UniLeipzig.FMI.SKIL> a ld:Angebot ;
+                                                          rdfs:label "Studentenkonferenz Informatik Leipzig (SKIL)" ;
+                                                          ld:hasStatus "aktiv" ;
+                                                          ld:hasURL "http://skil.informatik.uni-leipzig.de" ;
+                                                          ld:Kurzinformation "Die Studentenkonferenz Informatik Leipzig (SKIL) richtet sich an alle Studierende der Informatik sowie angrenzender Disziplinen mit Schwerpunkt Informatik. Die Konferenz setzt sich zum Ziel, den Studierenden eine Plattform zu bieten, ihre Projekte und Forschungsvorhaben vorzustellen. Im Mittelpunkt der Tagung stehen studentische Projekte aus Seminaren, Praktika, Abschlussarbeiten oder extracurricularen Aktivitäten. " ;
+                                                          ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.FMI> .
 
-<http://leipzig-data.de/Data/Angebot/UniLeipzig.FMI.Schuelerarbeiten>
-    ld:Art "Betreuung von WPA (Wissenschaftlich-praktische Arbeit) / BeLL (Besondere Lernleistung) und Praktika" ;
-    ld:Finanzierung "nein" ;
-    ld:Hintergrund "seit 1999" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "gute schulische Leistungen, Bewerbung" ;
-    ld:Zielgruppe "Jugendliche der Klassen 9 bis 12" ;
-    ld:Zielstellung "Förderung von an Informatik interessierten Schülern durch Angebot eines zweiwöchigen Betriebspraktikums (9./10. Klasse) sowie Arbeiten an einem wissenschaftlichen Thema (11. Klasse), dessen Ergebnis u.U. als Jahresarbeit oder BeLL eingereicht werden kann." ;
-    ld:contactPerson ldp:Meiler_Monika, ldp:Quapp_Wolfgang ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://www.informatik.uni-leipzig.de/~meiler/Schuelerseiten.dir/" ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.FMI> ;
-    a ld:Angebot ;
-    rdfs:comment "Die Wissenschaftlich-Praktische Arbeit (WPA) war eine besondere Unterrichtsform im 11. und 12. Schuljahr an der Erweiterten Oberschule (EOS) in der DDR. Sie fand regelmäßig vierzehntäglich bzw. wöchentlich statt. Im Rahmen dieser Arbeit erhielten Schüler oder kleine Schülergruppen Aufgaben, die sie selbstständig lösen sollten. Der Ort, an dem die wissenschaftlich praktische Arbeit durchgeführt wurde, konnte sich auch außerhalb der Schule befinden. Aufgaben wurden zum Beispiel von Betrieben vergeben. Auch nach der Wiedervereinigung wird die Wissenschaftlich-Praktische Arbeit an einigen Schulen u.a. am Wilhelm-Ostwald-Gymnasium in Leipzig fortgeführt." ;
-    rdfs:label "Schülerseiten der Fakultät Mathe/Informatik der Universität Leipzig" .
+<http://leipzig-data.de/Data/Angebot/UniLeipzig.FMI.Schuelerarbeiten> a ld:Angebot ;
+                                                                      rdfs:label "Schülerseiten der Fakultät Mathe/Informatik der Universität Leipzig" ;
+                                                                      rdfs:comment "Die Wissenschaftlich-Praktische Arbeit (WPA) war eine besondere Unterrichtsform im 11. und 12. Schuljahr an der Erweiterten Oberschule (EOS) in der DDR. Sie fand regelmäßig vierzehntäglich bzw. wöchentlich statt. Im Rahmen dieser Arbeit erhielten Schüler oder kleine Schülergruppen Aufgaben, die sie selbstständig lösen sollten. Der Ort, an dem die wissenschaftlich praktische Arbeit durchgeführt wurde, konnte sich auch außerhalb der Schule befinden. Aufgaben wurden zum Beispiel von Betrieben vergeben. Auch nach der Wiedervereinigung wird die Wissenschaftlich-Praktische Arbeit an einigen Schulen u.a. am Wilhelm-Ostwald-Gymnasium in Leipzig fortgeführt." ;
+                                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+                                                                      ld:hasStatus "aktiv" ;
+                                                                      ld:hasTag ldtag:MINT ;
+                                                                      ld:hasURL "http://www.informatik.uni-leipzig.de/~meiler/Schuelerseiten.dir/" ;
+                                                                      ld:Art "Betreuung von WPA (Wissenschaftlich-praktische Arbeit) / BeLL (Besondere Lernleistung) und Praktika" ;
+                                                                      ld:Kosten "nein" ;
+                                                                      ld:Zielgruppe "Jugendliche der Klassen 9 bis 12" ;
+                                                                      ld:Finanzierung "nein" ;
+                                                                      ld:Zielstellung "Förderung von an Informatik interessierten Schülern durch Angebot eines zweiwöchigen Betriebspraktikums (9./10. Klasse) sowie Arbeiten an einem wissenschaftlichen Thema (11. Klasse), dessen Ergebnis u.U. als Jahresarbeit oder BeLL eingereicht werden kann." ;
+                                                                      ld:contactPerson ldp:Meiler_Monika, ldp:Quapp_Wolfgang ;
+                                                                      ld:Teilnahmebedingungen "gute schulische Leistungen, Bewerbung" ;
+                                                                      ld:Hintergrund "seit 1999" ;
+                                                                      ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.FMI> .
 
-<http://leipzig-data.de/Data/Angebot/UniLeipzig.Geographie.AuwaldExkursion>
-    ld:Arbeitsformen "Projektnachmittage, Projekttage, Wandertage, Exkursionen mit Gruppen im Leipziger Auewald; Ansprache und Untersuchungen von Böden, Wasseranalytik, Vegetationsaufnahme" ;
-    ld:Art "Geowissenschaften" ;
-    ld:Kosten "keine" ;
-    ld:Zielgruppe "Vor- und Grundschüler" ;
-    ld:Zielstellung "Verständnis für Natur und Umwelt entwickeln" ;
-    ld:contactPerson ldp:Krueger_Annett ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:Umwelt ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.Geographie> ;
-    a ld:Angebot ;
-    rdfs:comment "Rund um die Schule nach Vereinbarung und auf Wunsch im Leipziger Auewald." ;
-    rdfs:label "Auwald-Exkursion" .
+<http://leipzig-data.de/Data/Angebot/UniLeipzig.Geographie.AuwaldExkursion> a ld:Angebot ;
+                                                                            rdfs:label "Auwald-Exkursion" ;
+                                                                            rdfs:comment "Rund um die Schule nach Vereinbarung und auf Wunsch im Leipziger Auewald." ;
+                                                                            ld:hasStatus "aktiv" ;
+                                                                            ld:hasTag ldtag:Umwelt ;
+                                                                            ld:Art "Geowissenschaften" ;
+                                                                            ld:Kosten "keine" ;
+                                                                            ld:Zielgruppe "Vor- und Grundschüler" ;
+                                                                            ld:Zielstellung "Verständnis für Natur und Umwelt entwickeln" ;
+                                                                            ld:contactPerson ldp:Krueger_Annett ;
+                                                                            ld:Arbeitsformen "Projektnachmittage, Projekttage, Wandertage, Exkursionen mit Gruppen im Leipziger Auewald; Ansprache und Untersuchungen von Böden, Wasseranalytik, Vegetationsaufnahme" ;
+                                                                            ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.Geographie> .
 
-<http://leipzig-data.de/Data/Angebot/UniLeipzig.Kuni>
-    ld:Art "kindgerechte Vorlesungen" ;
-    ld:Finanzierung "nein" ;
-    ld:Hintergrund "Fand 2005-2009 statt, letztmalig im Kintext der 600-Jahr-Feier der Universität. Wurde von Frau Both organisiert, so lange sie an der Universität war. Seit Sept. 2011 organisiert von der Medizinischen Fakultät, der Anstoß dazu kam von Prof. Torsten Schöneberg (Prodekan Medizin)." ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Kinder im Alter zwischen 8 und 11 Jahren" ;
-    ld:Zielstellung "KUNI setzt sich mit typischen Themen und Fragestellungen auseinander, die Kinder im frühen und mittleren Schulalter beschäftigen. " ;
-    ld:hasStatus "Seit Sept/Okt 2011 in Regie der Medizinischen Fakultät" ;
-    ld:hasTag ldtag:Jugendbildung ;
-    ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
-    ld:relatedBundle ldo:UniLeipzig ;
-    a ld:Angebot ;
-    rdfs:comment "Antwortschreiben vom 08. Juli 2010 von Prorektor Prof. Fach, dass Weiterführung der KUNI derzeit ungeklärt, für WS 2010/11 vorerst keine Veranstaltungen vorgesehen, Teilnehmerzahlen über 2009 liegen nicht vor.", "Frau Both organisiert jährlich eine gut besuchte Kuni während der großen Logistik-Konferenz, aber das hat wenig mit der Uni zu tun" ;
-    rdfs:label "Kinderuniversität KUNI" .
+<http://leipzig-data.de/Data/Angebot/UniLeipzig.Kuni> a ld:Angebot ;
+                                                      rdfs:label "Kinderuniversität KUNI" ;
+                                                      rdfs:comment "Frau Both organisiert jährlich eine gut besuchte Kuni während der großen Logistik-Konferenz, aber das hat wenig mit der Uni zu tun", "Antwortschreiben vom 08. Juli 2010 von Prorektor Prof. Fach, dass Weiterführung der KUNI derzeit ungeklärt, für WS 2010/11 vorerst keine Veranstaltungen vorgesehen, Teilnehmerzahlen über 2009 liegen nicht vor." ;
+                                                      ld:engagedPerson ldp:Both_Jana, ldp:Gutschale_Anke, ldp:Pohl_Anja ;
+                                                      ld:hasStatus "Seit Sept/Okt 2011 in Regie der Medizinischen Fakultät" ;
+                                                      ld:hasTag ldtag:Jugendbildung ;
+                                                      ld:hasURL "http://www.uni-leipzig.de/kinderuni" ;
+                                                      ld:Art "kindgerechte Vorlesungen" ;
+                                                      ld:Kosten "nein" ;
+                                                      ld:Zielgruppe "Kinder im Alter zwischen 8 und 11 Jahren" ;
+                                                      ld:Finanzierung "Aktivität der Universität" ;
+                                                      ld:Zielstellung "KUNI setzt sich mit typischen Themen und Fragestellungen auseinander, die Kinder im frühen und mittleren Schulalter beschäftigen. " ;
+                                                      ld:Teilnahmebedingungen "keine" ;
+                                                      ld:Hintergrund "Seit Sept. 2011 organisiert von der Medizinischen Fakultät, der Anstoß dazu kam von Prof. Torsten Schöneberg (Prodekan Medizin).", "2005-2009 in Regie des Zentrums für Lehrerbildung, letztmalig im Kontext der 600-Jahr-Feier der Universität. Wurde von Frau Both organisiert, so lange sie an der Universität war." ;
+                                                      ld:relatedBundle ldo:UniLeipzig .
 
-<http://leipzig-data.de/Data/Angebot/UniLeipzig.MINTOring>
-    ld:Finanzierung "Stiftung der Deutschen Wirtschaft e.V." ;
-    ld:Hintergrund "in Leipzig seit 2009" ;
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Studierende begleiten Schülerinnen und Schüler, Beratungsangebote, gemeinsame Projektarbeit, Coaching im 1. Studienjahr. Damit sollen mehr Studienanfänger im MINT-Bereich gewonnen werden." ;
-    ld:Teilnahmebedingungen "Schule muss beteiligte Projektschule sein" ;
-    ld:Zielgruppe "Schülerinnen und Schüler der Sekundarstufe II der beteiligten Projektschulen" ;
-    ld:contactPerson ldp:Rhinow_Solvejg ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.6> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:Hochschule ;
-    ld:relatedBundle ldo:UniLeipzig ;
-    ld:relatedProgram <http://leipzig-data.de/Data/Angebot/Prog.MINToring> ;
-    a ld:Angebot ;
-    rdfs:comment "Auslastung Sachsen (Leipzig+Dresden) gesamt: 113,3%, für Leipzig 52,9% (30 Plätze, 34 Teilnehmer, davon 25 TN aus Dresden und Umgebung)" ;
-    rdfs:label "MINToring" .
+<http://leipzig-data.de/Data/Angebot/UniLeipzig.MINTOring> a ld:Angebot ;
+                                                           rdfs:label "MINToring" ;
+                                                           rdfs:comment "Auslastung Sachsen (Leipzig+Dresden) gesamt: 113,3%, für Leipzig 52,9% (30 Plätze, 34 Teilnehmer, davon 25 TN aus Dresden und Umgebung)" ;
+                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.6> ;
+                                                           ld:hasStatus "aktiv" ;
+                                                           ld:hasTag ldtag:Hochschule ;
+                                                           ld:Kosten "nein" ;
+                                                           ld:Zielgruppe "Schülerinnen und Schüler der Sekundarstufe II der beteiligten Projektschulen" ;
+                                                           ld:Finanzierung "Stiftung der Deutschen Wirtschaft e.V." ;
+                                                           ld:Kurzinformation "Studierende begleiten Schülerinnen und Schüler, Beratungsangebote, gemeinsame Projektarbeit, Coaching im 1. Studienjahr. Damit sollen mehr Studienanfänger im MINT-Bereich gewonnen werden." ;
+                                                           ld:contactPerson ldp:Rhinow_Solvejg ;
+                                                           ld:Teilnahmebedingungen "Schule muss beteiligte Projektschule sein" ;
+                                                           ld:Hintergrund "in Leipzig seit 2009" ;
+                                                           ld:relatedBundle ldo:UniLeipzig ;
+                                                           ld:relatedProgram <http://leipzig-data.de/Data/Angebot/Prog.MINToring> .
 
-<http://leipzig-data.de/Data/Angebot/UniLeipzig.Netzprojekt.IG>
-    ld:Hintergrund "Mit der Interdisziplinären Gesprächsreihe im Rhythmus einer eintägigen Veranstaltung pro Semester soll der Separierung des Denkens der alten Philosophischen Fakultät in Geistes- und Naturwissenschaften durch einen vorsichtigen gegenteiligen Ansatz begegnet werden und ein Ort des Diskurses über die Wandlungsprozesse der heutigen Zeit geschaffen werden." ;
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Für ein tieferes Verständnis der Wandlungsprozesse hin zu einer \"digitalen Gesellschaft\" ist das Zusammendenken und Zusammen-Denken bisher getrennt vorgetragener Argumente und Begründungszusammenhänge an einem gemeinsamen Ort unabdingbar. Mit dieser Veranstaltungsreihe soll ein solcher Ort der Synergie der reflektierenden Begleitung dieser Wandlungsprozesse in der Leipziger Region geschaffen werden." ;
-    ld:hasStatus "aktiv" ;
-    ld:hasURL "http://www.dorfwiki.org/wiki.cgi?HansGertGraebe/InterdisziplinaeresGespraech" ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
-    a ld:Angebot ;
-    rdfs:label "Interdisziplinäre Gesprächsreihe \"MINT - Zukunft schaffen\"." .
+<http://leipzig-data.de/Data/Angebot/UniLeipzig.Netzprojekt.IG> a ld:Angebot ;
+                                                                rdfs:label "Interdisziplinäre Gesprächsreihe \"MINT - Zukunft schaffen\"." ;
+                                                                ld:hasStatus "aktiv" ;
+                                                                ld:hasURL "http://www.dorfwiki.org/wiki.cgi?HansGertGraebe/InterdisziplinaeresGespraech" ;
+                                                                ld:Kosten "nein" ;
+                                                                ld:Kurzinformation "Für ein tieferes Verständnis der Wandlungsprozesse hin zu einer \"digitalen Gesellschaft\" ist das Zusammendenken und Zusammen-Denken bisher getrennt vorgetragener Argumente und Begründungszusammenhänge an einem gemeinsamen Ort unabdingbar. Mit dieser Veranstaltungsreihe soll ein solcher Ort der Synergie der reflektierenden Begleitung dieser Wandlungsprozesse in der Leipziger Region geschaffen werden." ;
+                                                                ld:Hintergrund "Mit der Interdisziplinären Gesprächsreihe im Rhythmus einer eintägigen Veranstaltung pro Semester soll der Separierung des Denkens der alten Philosophischen Fakultät in Geistes- und Naturwissenschaften durch einen vorsichtigen gegenteiligen Ansatz begegnet werden und ein Ort des Diskurses über die Wandlungsprozesse der heutigen Zeit geschaffen werden." ;
+                                                                ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
 
-<http://leipzig-data.de/Data/Angebot/UniLeipzig.Netzprojekt.LG>
-    ld:Hintergrund "Monatliche Diskussionsrunde Januar 2011 - Juli 2012" ;
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Für ein tieferes Verständnis der Wandlungsprozesse hin zu einer \"digitalen Gesellschaft\" ist das Zusammendenken und Zusammen-Denken bisher getrennt vorgetragener Argumente und Begründungszusammenhänge an einem gemeinsamen Ort unabdingbar. Mit unserer Veranstaltungsreihe \"Leipziger Gespräche\" soll ein solcher Ort der Synergie der reflektierenden Begleitung dieser Wandlungsprozesse in der Leipziger Region geschaffen werden." ;
-    ld:hasStatus "beendet" ;
-    ld:hasURL "http://www.dorfwiki.org/wiki.cgi?HansGertGraebe/LeipzigerGespraeche" ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> ;
-    a ld:Angebot ;
-    rdfs:label "Leipziger Gespräche zum digitalen Wandel" .
+<http://leipzig-data.de/Data/Angebot/UniLeipzig.Netzprojekt.LG> a ld:Angebot ;
+                                                                rdfs:label "Leipziger Gespräche zum digitalen Wandel" ;
+                                                                ld:hasStatus "beendet" ;
+                                                                ld:hasURL "http://www.dorfwiki.org/wiki.cgi?HansGertGraebe/LeipzigerGespraeche" ;
+                                                                ld:Kosten "nein" ;
+                                                                ld:Kurzinformation "Für ein tieferes Verständnis der Wandlungsprozesse hin zu einer \"digitalen Gesellschaft\" ist das Zusammendenken und Zusammen-Denken bisher getrennt vorgetragener Argumente und Begründungszusammenhänge an einem gemeinsamen Ort unabdingbar. Mit unserer Veranstaltungsreihe \"Leipziger Gespräche\" soll ein solcher Ort der Synergie der reflektierenden Begleitung dieser Wandlungsprozesse in der Leipziger Region geschaffen werden." ;
+                                                                ld:Hintergrund "Monatliche Diskussionsrunde Januar 2011 - Juli 2012" ;
+                                                                ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig.Netzprojekt> .
 
-<http://leipzig-data.de/Data/Angebot/UniLeipzig.SonntagsGespraech>
-    ld:Hintergrund "Gesprächsreihe, organisiert von Prof. Ulrich Brieler." ;
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Das <i>Sonntagsgespräch</i> ist eine öffentliche Veranstaltung der Universität und der Stadt Leipzig. Es lädt regelmäßig renommierte Wissenschaftler und Intellektuelle dazu ein, ihre Einsichten zu gesellschaftlichen Problemen der Gegenwart darzulegen, und das Leipziger Publikum dazu, sich konstruktiv mit diesen auseinander zu setzen. Was wir wollen ist, einen Raum für unabhängiges und kritisches Denken zu schaffen, und so einen Beitrag zur intellektuellen Kultur in Leipzig zu leisten." ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.8-10> ;
-    ld:hasStatus "Projekt" ;
-    ld:hasURL "http://www.zv.uni-leipzig.de/service/veranstaltungen/sonntagsgespraech.html" ;
-    ld:relatedBundle ldo:UniLeipzig ;
-    a ld:Angebot ;
-    rdfs:label "Sonntagsgespräch an der Leipziger Universität" .
+<http://leipzig-data.de/Data/Angebot/UniLeipzig.SonntagsGespraech> a ld:Angebot ;
+                                                                   rdfs:label "Sonntagsgespräch an der Leipziger Universität" ;
+                                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.8-10> ;
+                                                                   ld:hasStatus "Projekt" ;
+                                                                   ld:hasURL "http://www.zv.uni-leipzig.de/service/veranstaltungen/sonntagsgespraech.html" ;
+                                                                   ld:Kosten "nein" ;
+                                                                   ld:Kurzinformation "Das <i>Sonntagsgespräch</i> ist eine öffentliche Veranstaltung der Universität und der Stadt Leipzig. Es lädt regelmäßig renommierte Wissenschaftler und Intellektuelle dazu ein, ihre Einsichten zu gesellschaftlichen Problemen der Gegenwart darzulegen, und das Leipziger Publikum dazu, sich konstruktiv mit diesen auseinander zu setzen. Was wir wollen ist, einen Raum für unabhängiges und kritisches Denken zu schaffen, und so einen Beitrag zur intellektuellen Kultur in Leipzig zu leisten." ;
+                                                                   ld:Hintergrund "Gesprächsreihe, organisiert von Prof. Ulrich Brieler." ;
+                                                                   ld:relatedBundle ldo:UniLeipzig .
 
-<http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel>
-    ld:Hintergrund "Veranstaltungsreihe des MINT-Netzwerks an der VHS" ;
-    ld:Kosten "nein" ;
-    ld:Kurzinformation "Einer großen Stadt wie Leipzig mit ihrem umfassenden MINT-Potenzial kommt in der nachhaltigen Reproduktion der Leistungsfähigkeit einer solchen Infrastruktur eine besondere Bedeutung zu. Mit dem Vortragszyklus MINT - Zukunft schaffen. Leipzig im Wandel, einem Gemeinschaftsprojekt der Volkshochschule Leipzig, dem MINT-Netzwerk Leipzig und dem Netzprojekt an der Universität Leipzig, soll der Diskurs in der Stadtgesellschaft zu diesen wichtigen Zukunftsfragen befördert und dabei zwei Akzente besonders betont werden: <ol><li>der Diskurs soll stärker technische Aspekte von Zukunftsfragen im Spannungsfeld von MINT und Nachhaltigkeit thematisieren und</li> <li> der Diskurs soll sich stärker an einem bürgerschaftlichen Beteiligungskonzept orientieren, in dem sachverständige Leipzigerinnen und Leipziger mit interessierten mündigen Bürgern über soziale und politische Rahmenbedingungen technischer Wandlungsprozesse in ihrer Heimatstadt und deren Umfeld ins Gespräch kommen.</li></ol> " ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Loehrstrasse.3-7> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
-    ld:relatedBundle ldo:Volkshochschule ;
-    a ld:Angebot ;
-    rdfs:label "MINT - Zukunft schaffen. Leipzig im Wandel" .
+<http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> a ld:Angebot ;
+                                                          rdfs:label "MINT - Zukunft schaffen. Leipzig im Wandel" ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Loehrstrasse.3-7> ;
+                                                          ld:hasStatus "aktiv" ;
+                                                          ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
+                                                          ld:Kosten "nein" ;
+                                                          ld:Kurzinformation "Einer großen Stadt wie Leipzig mit ihrem umfassenden MINT-Potenzial kommt in der nachhaltigen Reproduktion der Leistungsfähigkeit einer solchen Infrastruktur eine besondere Bedeutung zu. Mit dem Vortragszyklus MINT - Zukunft schaffen. Leipzig im Wandel, einem Gemeinschaftsprojekt der Volkshochschule Leipzig, dem MINT-Netzwerk Leipzig und dem Netzprojekt an der Universität Leipzig, soll der Diskurs in der Stadtgesellschaft zu diesen wichtigen Zukunftsfragen befördert und dabei zwei Akzente besonders betont werden: <ol><li>der Diskurs soll stärker technische Aspekte von Zukunftsfragen im Spannungsfeld von MINT und Nachhaltigkeit thematisieren und</li> <li> der Diskurs soll sich stärker an einem bürgerschaftlichen Beteiligungskonzept orientieren, in dem sachverständige Leipzigerinnen und Leipziger mit interessierten mündigen Bürgern über soziale und politische Rahmenbedingungen technischer Wandlungsprozesse in ihrer Heimatstadt und deren Umfeld ins Gespräch kommen.</li></ol> " ;
+                                                          ld:Hintergrund "Veranstaltungsreihe des MINT-Netzwerks an der VHS" ;
+                                                          ld:relatedBundle ldo:Volkshochschule .
 
-<http://leipzig-data.de/Data/Angebot/ZfI.Drahtseil>
-    ld:Fax "0341-3199770" ;
-    ld:Telefon "0341-4955690" ;
-    ld:Zielgruppe "Kinder-und Jugendliche" ;
-    ld:Zielstellung "Sucht-und Gewaltprävention" ;
-    ld:email "drahtseil@zfi-Leipzig.de" ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> ;
-    ld:hasStatus "aktiv" ;
-    ld:relatedBundle ldo:ZfI ;
-    a ld:Angebot ;
-    rdfs:label "Drahtseil" .
+<http://leipzig-data.de/Data/Angebot/ZfI.Drahtseil> a ld:Angebot ;
+                                                    rdfs:label "Drahtseil" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> ;
+                                                    ld:hasStatus "aktiv" ;
+                                                    ld:Zielgruppe "Kinder-und Jugendliche" ;
+                                                    ld:Zielstellung "Sucht-und Gewaltprävention" ;
+                                                    ld:relatedBundle ldo:ZfI ;
+                                                    ld:Fax "0341-3199770" ;
+                                                    ld:Telefon "0341-4955690" ;
+                                                    ld:email "drahtseil@zfi-Leipzig.de" .
 
-<http://leipzig-data.de/Data/Angebot/ZfI.Freeyourmind>
-    ld:Fax "0341-4928973" ;
-    ld:Telefon "0341-4924782" ;
-    ld:Zielgruppe "Kinder und Jugendliche, Lehrer, Eltern" ;
-    ld:contactPerson ldp:Pieper_Katrin ;
-    ld:email "freeyourmindleipzig@yahoo.com.de" ;
-    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> ;
-    ld:hasStatus "aktiv" ;
-    ld:relatedBundle ldo:ZfI ;
-    a ld:Angebot ;
-    rdfs:label "Freeyourmind" .
+<http://leipzig-data.de/Data/Angebot/ZfI.Freeyourmind> a ld:Angebot ;
+                                                       rdfs:label "Freeyourmind" ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> ;
+                                                       ld:hasStatus "aktiv" ;
+                                                       ld:Zielgruppe "Kinder und Jugendliche, Lehrer, Eltern" ;
+                                                       ld:contactPerson ldp:Pieper_Katrin ;
+                                                       ld:relatedBundle ldo:ZfI ;
+                                                       ld:Fax "0341-4928973" ;
+                                                       ld:Telefon "0341-4924782" ;
+                                                       ld:email "freeyourmindleipzig@yahoo.com.de" .
 
-<http://leipzig-data.de/Data/Angebot/ciT.MINT-Individual>
-    ld:Art "Modulares Angebot (Workshops, Unternehmensbesichtigungen, Messebesuche, individuelle Beratung)" ;
-    ld:Finanzierung "ja" ;
-    ld:Hintergrund "seit 2008" ;
-    ld:Kosten "nein" ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Gymnasiastinnen und Gymnasiasten Klassen 9. - 11." ;
-    ld:Zielstellung "langfristiges Studienorientierungsprojekt zur Förderung von MINT-Studiengängen" ;
-    ld:contactPerson ldp:Hamel_Corinna ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:MINT ;
-    ld:hasURL "http://www.mint-individual.de" ;
-    ld:relatedBundle ldo:ciT ;
-    a ld:Angebot ;
-    rdfs:comment "Teilnehmerzahlen liegen für den Berichtszeitraum 06.04.2009 bis 29.04.2010 vor. Umrechnung auf den Berichtszeitraum 2009: 9/13 (Annahme: lineare Verteilung auf die 13 Monate)" ;
-    rdfs:label "MINT-Individual" .
+<http://leipzig-data.de/Data/Angebot/ciT.MINT-Individual> a ld:Angebot ;
+                                                          rdfs:label "MINT-Individual" ;
+                                                          rdfs:comment "Teilnehmerzahlen liegen für den Berichtszeitraum 06.04.2009 bis 29.04.2010 vor. Umrechnung auf den Berichtszeitraum 2009: 9/13 (Annahme: lineare Verteilung auf die 13 Monate)" ;
+                                                          ld:hasStatus "aktiv" ;
+                                                          ld:hasTag ldtag:MINT ;
+                                                          ld:hasURL "http://www.mint-individual.de" ;
+                                                          ld:Art "Modulares Angebot (Workshops, Unternehmensbesichtigungen, Messebesuche, individuelle Beratung)" ;
+                                                          ld:Kosten "nein" ;
+                                                          ld:Zielgruppe "Gymnasiastinnen und Gymnasiasten Klassen 9. - 11." ;
+                                                          ld:Finanzierung "ja" ;
+                                                          ld:Zielstellung "langfristiges Studienorientierungsprojekt zur Förderung von MINT-Studiengängen" ;
+                                                          ld:contactPerson ldp:Hamel_Corinna ;
+                                                          ld:Teilnahmebedingungen "keine" ;
+                                                          ld:Hintergrund "seit 2008" ;
+                                                          ld:relatedBundle ldo:ciT .
 
-<http://leipzig-data.de/Data/Angebote/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "LeipzigData - Angebote" ;
-    owl:imports <http://leipzig-data.de/Data/Orte/>, <http://leipzig-data.de/Data/Personen/>, <http://leipzig-data.de/Data/Tags/>, <http://leipzig-data.de/Data/Traeger/> .
+<> a owl:Ontology ;
+   owl:imports <http://leipzig-data.de/Data/Orte/>, <http://leipzig-data.de/Data/Traeger/>, <http://leipzig-data.de/Data/Tags/>, <http://leipzig-data.de/Data/Personen/> ;
+   rdfs:label "Angebote" ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" .
 
-ld:Angebot
-    a owl:Class ;
-    rdfs:label "Angebot" .
-
+ld:Angebot a owl:Class ;
+           rdfs:label "Angebot" .
