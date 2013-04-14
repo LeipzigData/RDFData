@@ -24,6 +24,14 @@
                                                ld:hasURL <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
                                                ld:relatedTo ldo:NetzwerkEnergieUmwelt .
 
+<http://leipzig-data.de/Data/Firma/Enterasys.Networks> a foaf:Organization ;
+                                                       foaf:name "Enterasys Networks Germany GmbH, Niederlassung Leipzig" ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04356.Walter-Koehn-Strasse.1D> .
+
+<http://leipzig-data.de/Data/Firma/Softwareforen.Leipzig> a foaf:Organization ;
+                                                          foaf:name "Softwareforen Leipzig GmbH" ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Querstrasse.16> .
+
 ld:Traeger a owl:Class ;
            rdfs:label "Träger" .
 
@@ -365,6 +373,11 @@ ld:Verein a owl:Class ;
       ld:engagedPerson ldp:Reschke_Volker ;
       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04279.Vollhardtstrasse.16> .
 
+<http://leipzig-data.de/Data/Traeger/GI.RG-Leipzig> a foaf:Agent ;
+                                                    foaf:name "Regionalgruppe Leipzig der GI - Gesellschaft für Informatik" ;
+                                                    ld:hasURL <http://rg-leipzig.gi.de> ;
+                                                    ld:contactPerson ldp:Wieland_Sabine .
+
 <Garage> a ld:Traeger ;
          rdfs:label "GaraGe gGmbH" ;
          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.97> ;
@@ -674,11 +687,13 @@ ld:Verein a owl:Class ;
                    rdfs:label "Neue Musik Leipzig" ;
                    ld:hasSupplierNumber "363" .
 
-<NuKLA> a ld:Traeger ;
-        rdfs:label "Naturschutz und Kunst Leipziger Auwald (NuKLA) e. V." ;
+<NuKLA> a ld:Traeger, foaf:Agent ;
+        foaf:name "Naturschutz und Kunst Leipziger Auwald (NuKLA) e. V." ;
         ld:engagedPerson ldp:Stoiber_WolfgangEA, ldp:Maruhn_Olaf ;
         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04157.Otto-Adam-Strasse.14> ;
-        ld:hasURL <http://www.klassischekartoffelkonzerte.de> .
+        ld:hasURL <http://www.nukla.de> ;
+        foaf:mbox "stoiber@nukla.de" ;
+        foaf:phone "0341-3503421", "0178-6662454" .
 
 <Oekoloewe> a ld:Traeger ;
             rdfs:label "Ökolöwe Umweltbund Leipzig e.V." ;
@@ -686,6 +701,9 @@ ld:Verein a owl:Class ;
             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Bernhard-Goering-Strasse.152> ;
             ld:hasFax "0341-3065-179" ;
             ld:hasSupplierNumber "053" .
+
+<Oikos> a ld:Traeger ;
+        rdfs:label "Studierendeninitiative „oikos“" .
 
 <OrchesterHolzhausen> a ld:Traeger ;
                       rdfs:label "Orchester Holzhausen" ;
@@ -720,10 +738,15 @@ ld:Verein a owl:Class ;
                                                   rdfs:label "RAA Sachsen" ;
                                                   ld:hasSupplierNumber "351" .
 
+<RLSachsen> a ld:Traeger ;
+            rdfs:label "Rosa-Luxemburg Stiftung Sachsen" ;
+            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Harkortstrasse.10> ;
+            ld:hasURL <http://www.rosa-luxemburg-stiftung-sachsen.de> .
+
 <http://leipzig-data.de/Data/Traeger/Rabutz.TOeP> a ld:Traeger ;
-                                                  rdfs:label "Technisch-Ökologisches Projektzentrum Rabutz e.V." ;
+                                                  rdfs:label "Förderverein „Technisch-Ökologisches Projektzentrum Rabutz“ e.V." ;
                                                   ld:engagedPerson ldp:Messerschmidt_Elk ;
-                                                  ld:hasAddress "FIXME:BageritzerWeg.1" .
+                                                  ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04509.Rabutz.BageritzerWeg.1> .
 
 <RadioBlau> a ld:Traeger ;
             rdfs:label "Radio-Verein Lpz. e.V." ;
@@ -799,6 +822,10 @@ ld:Verein a owl:Class ;
 <Stadtsportbund> a ld:Traeger ;
                  rdfs:label "Stadtsportbund" ;
                  ld:hasSupplierNumber "205" .
+
+<StaedtischesKaufhaus> a foaf:Organization ;
+                       rdfs:label "Städtisches Kaufhaus Leipzig GmbH" ;
+                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Neumarkt.9> .
 
 <Tanztheater> a ld:Traeger ;
               rdfs:label "Leipziger Tanztheater" ;
@@ -914,6 +941,14 @@ ld:Verein a owl:Class ;
       rdfs:label "ciT – Consulting Innovation Training GmbH" ;
       ld:hasTelefon "0341-68707-0" ;
       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Lutherstrasse.10> .
+
+<http://leipzig-data.de/Data/Unternehmen/Boerse.Dresden> a foaf:Organization, ld:Traeger ;
+                                                         foaf:name "Börse Dresden" ;
+                                                         ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/01067.Dresden.Messering.6> ;
+                                                         ld:hasURL <http://energiesa.de> ;
+                                                         foaf:fax "0351-26661477" ;
+                                                         foaf:mbox " office@energiesa.de" ;
+                                                         foaf:phone "0351-6557640" .
 
 <http://leipzig-data.de/Data/Verein/ANU-Bund> a ld:Traeger ;
                                               rdfs:label "ANU - Arbeitsgemeinschaft Natur- und Umweltbildung, Bundesverband e.V." ;

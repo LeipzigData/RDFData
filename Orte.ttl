@@ -1,6 +1,7 @@
 # Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
 
 @base <http://leipzig-data.de/Data/Orte/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1398,7 +1399,7 @@ ldo:PolnischesInstitut a ld:Ort ;
                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.21> .
 
 <http://leipzig-data.de/Data/Ort/Rabutz.TOeP> a ld:Ort ;
-                                              rdfs:label "Rennstall Rabutz" ;
+                                              rdfs:label "Technisch ökologisches Jugendprojektzentrum Rabutz" ;
                                               ld:hasTelefon "034207-73595" ;
                                               ld:hasEmail "info@rennstall-rabutz.de" ;
                                               ld:engagedPerson ldp:Messerschmidt_Elk ;
@@ -1578,6 +1579,11 @@ ldo:Stadtelternrat a ld:Ort ;
                                                          rdfs:label "Stadtteilladen Grünau" ;
                                                          rdfs:comment "Neue Zweigstelle zur Bildungsberatung öffnet im März 2013 (Quelle: Newsletter LvO 02/2013)" ;
                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.19> .
+
+ldo:StaedtischesKaufhaus a ld:Ort ;
+                         rdfs:label "Städtisches Kaufhaus" ;
+                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Neumarkt.9> ;
+                         ld:hasSupplier ldt:StaedtischesKaufhaus .
 
 ldo:StarkFuerGruenau a ld:Ort ;
                      rdfs:label "Stark für Grünau" ;

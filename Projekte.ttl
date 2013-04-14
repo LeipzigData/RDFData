@@ -1,80 +1,71 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://leipzig-data.de/Data/Projekte/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
-@prefix cc: <http://creativecommons.org/ns#> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ns0: <http://creativecommons.org/ns#> .
 
-ld:Projekt
-    a owl:Class ;
-    rdfs:label "Projekt" .
+ld:Projekt a owl:Class ;
+           rdfs:label "Projekt" .
 
-<http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie>
-    a ld:Projekt ;
-    rdfs:label "Schülerakademie der ASG" .
+<http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> a ld:Projekt ;
+                                                           rdfs:label "Schülerakademie der ASG" .
 
-<http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar>
-    a ld:Projekt ;
-    rdfs:label "Sommerfeldseminar der ASG" .
+<http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> a ld:Projekt ;
+                                                            rdfs:label "Sommerfeldseminar der ASG" .
 
-<http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle>
-    a ld:Projekt ;
-    rdfs:label "Attac Denktankstelle" .
+<http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> a ld:Projekt ;
+                                                           rdfs:label "Attac Denktankstelle" .
 
-<http://leipzig-data.de/Data/Projekt/LeipzigWeiterDenken>
-    ld:hasURL <http://weiterdenken.leipzig.de> ;
-    ld:relatedBundle ldt:StadtLeipzig ;
-    a ld:Projekt ;
-    rdfs:label "Veranstaltungsreihe \"Leipzig Weiter Denken\"" .
+<http://leipzig-data.de/Data/Projekt/InitiativeSchleussig> a ld:Traeger ;
+                                                           rdfs:label "Initiative Schleußig" ;
+                                                           ld:engagedPerson ldp:Hoenemann_Tobias .
 
-<http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert>
-    ld:contactPerson ldp:Stoiber_WolfgangEA ;
-    ld:hasURL <http://www.klassischekartoffelkonzerte.de> ;
-    ld:relatedBundle ldt:NuKLA ;
-    a ld:Projekt ;
-    rdfs:label "Klassische Kartoffelkonzerte zu Gunsten des Leipziger Auwalds" .
+<http://leipzig-data.de/Data/Projekt/LeipzigWeiterDenken> a ld:Projekt ;
+                                                          rdfs:label "Veranstaltungsreihe \"Leipzig Weiter Denken\"" ;
+                                                          ld:hasURL <http://weiterdenken.leipzig.de> ;
+                                                          ld:relatedBundle ldt:StadtLeipzig .
 
-<http://leipzig-data.de/Data/Projekt/PeakOil>
-    ld:Hintergrund "Projekt wird vom BMBF mit 35.000 Euro gefördert. Laufzeit bis 30.09.2013 (LVZ, 22.01.2013)" ;
-    ld:contactPerson ldp:Kramer_Anais ;
-    ld:relatedBundle ldo:NetzwerkEnergieUmwelt, <http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig>, ldo:Zukunftsakademie ;
-    a ld:Projekt ;
-    rdfs:label "Projekt Peak Oil" .
+<http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> a ld:Projekt ;
+                                                             rdfs:label "Klassische Kartoffelkonzerte zu Gunsten des Leipziger Auwalds" ;
+                                                             ld:hasURL <http://www.klassischekartoffelkonzerte.de> ;
+                                                             ld:contactPerson ldp:Stoiber_WolfgangEA ;
+                                                             ld:relatedBundle ldt:NuKLA .
 
-<http://leipzig-data.de/Data/Projekt/Umweltstammtisch>
-    ld:relatedBundle ldo:UFZ, ldo:UIZ, ldo:Umweltbibliothek, ldt:LANU ;
-    a ld:Projekt ;
-    rdfs:label "Umweltstammtisch" .
+<http://leipzig-data.de/Data/Projekt/PeakOil> a ld:Projekt ;
+                                              rdfs:label "Projekt Peak Oil" ;
+                                              ld:contactPerson ldp:Kramer_Anais ;
+                                              ld:Hintergrund "Projekt wird vom BMBF mit 35.000 Euro gefördert. Laufzeit bis 30.09.2013 (LVZ, 22.01.2013)" ;
+                                              ld:relatedBundle <http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig>, ldo:NetzwerkEnergieUmwelt, ldo:Zukunftsakademie .
 
-<http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni>
-    a ld:Projekt ;
-    rdfs:label "Kinder-Uni" .
+<http://leipzig-data.de/Data/Projekt/Umweltstammtisch> a ld:Projekt ;
+                                                       rdfs:label "Umweltstammtisch" ;
+                                                       ld:Kurzinformation """Die vier an FOKUS Umwelt beteiligten Institutionen greifen seit 2006 in gemeinsamen Veranstaltungen aktuelle Umweltthemen auf, um sie mit und in der interessierten Öffentlichkeit zu diskutieren. Sie möchten Denkanstöße geben und neue Sichtweisen erschließen, aber
+auch die Vernetzung der Akteure im Umweltbereich in der Region Leipzig befördern. <br/> Mit dem Umweltstammtisch hat FOKUS Umwelt ein bekanntes Veranstaltungsformat wiederbelebt. Zwei- bis dreimal im Jahr soll der Stammtisch den Austausch zwischen mit Umweltthemen befassten Behördenvertretern, Wissenschaftlern, Planern, Umweltschützern und Unternehmensmitarbeitern der Region Leipzig fördern.<br/> Einstieg und Hauptteil der jeweiligen Veranstaltung bilden Vorträge oder Podiumsgespräche, um aktuelle, spannende oder kontroverse Themen und Sichtweisen in diesen Kreis einzubringen. Sie sollen auch den Blick auf die Region, die Disziplinen und die eigenen Denkmuster erweitern helfen. Danach besteht bei einen Imbiss und Getränken – danke an die Firma Sodexo – die Möglichkeit zum individuellen Austausch und zur Netzwerkarbeit. Sie können dazu gerne eigene Poster und Info-Materialien zur Auslage mitbringen. Wir freuen uns auf Ihre lebhafte Beteiligung!""" ;
+                                                       ld:relatedBundle ldo:UFZ, ldo:UIZ, ldo:Umweltbibliothek, ldt:LANU .
 
-<http://leipzig-data.de/Data/Projekt/UniLeipzig.Netzprojekt>
-    a ld:Projekt ;
-    rdfs:label "Netzprojekt HGG" .
+<http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> a ld:Projekt ;
+                                                      rdfs:label "Kinder-Uni" .
 
-<http://leipzig-data.de/Data/Projekt/UniLeipzig.Netzprojekt.IG>
-    a ld:Projekt ;
-    rdfs:label "Interdisziplinäre Gespräche zum digitalen Wandel" .
+<http://leipzig-data.de/Data/Projekt/UniLeipzig.Netzprojekt> a ld:Projekt ;
+                                                             rdfs:label "Netzprojekt HGG" .
 
-<http://leipzig-data.de/Data/Projekt/ZAK.Erdoelfrei>
-    ld:hasURL <http://zukunftsakademie-leipzig.de/index.php/zak-projekte/peak-oil> ;
-    ld:relatedBundle ldo:Zukunftsakademie ;
-    a ld:Projekt ;
-    rdfs:label "Veranstaltungsreihe \"Erd|öl|frei! Clever im Alltag\"" .
+<http://leipzig-data.de/Data/Projekt/UniLeipzig.Netzprojekt.IG> a ld:Projekt ;
+                                                                rdfs:label "Interdisziplinäre Gespräche zum digitalen Wandel" .
 
-<http://leipzig-data.de/Data/Projekte/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "LeipzigData - Projekte" .
+<http://leipzig-data.de/Data/Projekt/ZAK.Erdoelfrei> a ld:Projekt ;
+                                                     rdfs:label "Veranstaltungsreihe \"Erd|öl|frei! Clever im Alltag\"" ;
+                                                     ld:hasURL <http://zukunftsakademie-leipzig.de/index.php/zak-projekte/peak-oil> ;
+                                                     ld:relatedBundle ldo:Zukunftsakademie .
 
+<> a owl:Ontology ;
+   rdfs:label "Projekte" ;
+   ns0:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   ns0:attributionURL <http://leipzig-data.de> ;
+   ns0:attributionName "The Leipzig Open Data Project" .
