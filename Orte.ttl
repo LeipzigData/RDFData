@@ -1,6 +1,7 @@
 # Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
 
 @base <http://leipzig-data.de/Data/Orte/> .
+@prefix sysont: <http://ns.ontowiki.net/SysOnt/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,6 +12,7 @@
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 
 ld:Ort a owl:Class ;
        rdfs:label "Ort" .
@@ -417,6 +419,10 @@ ldo:ComputerclubXXXLuetzschena-Stahmeln a ld:Ort ;
                                         ld:hasTag ldtag:MINT ;
                                         ld:hasURL "http://www.ccls-online.de" .
 
+ldo:CongressCenterLeipzig a ld:Ort ;
+                          rdfs:label "Congress Center Leipzig" ;
+                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04356.Messe-Allee.1> .
+
 ldo:CreativApotheke a ld:Ort ;
                     rdfs:label "Creativ Apotheke" ;
                     ld:hasTelefon "0341-4243735" ;
@@ -729,6 +735,12 @@ ldo:HTWK a ld:Ort ;
                                            ld:hasFax "0341-30764202" ;
                                            ld:hasSupplier ldt:HTWK ;
                                            ld:hasUW_id "766" .
+
+<http://leipzig-data.de/Data/Ort/HTWK.MET.2> a ld:Ort ;
+                                             rdfs:label "HTWK, Fakultät Maschinen- und Energietechnik" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Riquetstrasse.8> ;
+                                             ld:hasTag ldtag:Forschung, ldtag:MINT ;
+                                             ld:hasSupplier ldt:HTWK .
 
 <http://leipzig-data.de/Data/Ort/HWK.HausKleineForscher> a ld:Ort ;
                                                          rdfs:label "Haus der kleinen Forscher" ;
