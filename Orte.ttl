@@ -19,8 +19,7 @@ ld:Ort a owl:Class ;
 
 ldo:AKAD-Hochschule a ld:Ort ;
                     rdfs:label "AKAD Hochschule Leipzig" ;
-                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Gutenbergplatz.1> ;
-                    ld:hasAPIId "Venue.69" .
+                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Gutenbergplatz.1> .
 
 <http://leipzig-data.de/Data/Ort/ASD.Gruenau> a ld:Ort ;
                                               rdfs:label "Allgemeiner Sozialdienst Grünau" ;
@@ -146,9 +145,21 @@ ldo:BAFF a ld:Ort ;
          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/BV.Bachviertel> ;
          ld:contactPerson ldp:Pauli_Stev .
 
+<http://leipzig-data.de/Data/Ort/BDZ.Abwasser> a ld:Ort ;
+                                               rdfs:label "Bildungs- und Demonstrationszentrum für dezentrale Abwasserbehandlung" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04178.AnderLuppe.2> .
+
+ldo:BIC a ld:Ort ;
+        rdfs:label "BIC Leipzig" ;
+        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.99> .
+
 ldo:BMFZ a ld:Ort ;
          rdfs:label "Deutsches Biomasseforschungszentrum" ;
          ld:hasURL <http://dbfz.de> .
+
+<http://leipzig-data.de/Data/Ort/BSZ.LeipzigerLand> a ld:Ort ;
+                                                    rdfs:label "Berufliches Schulzentrum Leipziger Land" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04564.Boehlen.RoethaerStrasse.44> .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Boehlitz-Ehrenberg> a ld:Ort ;
                                                                 rdfs:label "Bibliothek Böhlitz-Ehrenberg" ;
@@ -320,8 +331,7 @@ ldo:Bruno-Plache-Stadion a ld:Ort, ld:Stadium ;
 ldo:Cafe-Grundmann a ld:Ort ;
                    rdfs:label "Café Grundmann" ;
                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Lutherstrasse.10>, <http://leipzig-data.de/Data/Adresse/04275.August-Bebel-Strasse.2> ;
-                   ld:hasURL "http://www.cafe-grundmann.de" ;
-                   ld:hasAPIId "Venue.65" .
+                   ld:hasURL <http://www.cafe-grundmann.de> .
 
 ldo:CafeWaldi a ld:Ort, ld:Cafe ;
               rdfs:label "Café Waldi" ;
@@ -432,8 +442,7 @@ ldo:CreativApotheke a ld:Ort ;
 
 ldo:Culturtraeger a ld:Ort ;
                   rdfs:label "Culturtraeger" ;
-                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Kohlgartenstrasse.24> ;
-                  ld:hasAPIId "Venue.74" .
+                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Kohlgartenstrasse.24> .
 
 <http://leipzig-data.de/Data/Ort/DNB.DBSM> a ld:Ort ;
                                            rdfs:label "Deutsches Buch- und Schriftmuseum der Deutschen Nationalbibliothek" ;
@@ -531,6 +540,11 @@ ldo:EssentialExistenceGallery a ld:Ort ;
                               rdfs:comment "center for new media and interactiv art <br/> [open space]" ;
                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.93> ;
                               ld:hasAPIId "Venue.11" .
+
+ldo:FOM a ld:Ort ;
+        rdfs:label "FOM Hochschule Leipzig" ;
+        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Katharinenstrasse.17> ;
+        ld:hasURL <http://www.fom.de> .
 
 <http://leipzig-data.de/Data/Ort/FZ.Arena> a ld:Ort ;
                                            rdfs:label "JZ ARENA" ;
@@ -649,11 +663,6 @@ ldo:FruehesForschenSachsen a ld:Ort ;
                            ld:Teilnahmebedingungen "keine" ;
                            ld:Hintergrund "seit 2009" .
 
-ldo:GaraGe a ld:Ort ;
-           rdfs:label "GaraGe" ;
-           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.97> ;
-           ld:hasAPIId "Venue.51" .
-
 ldo:Garage a ld:Ort ;
            rdfs:label "GaraGe - Technologiezentrum für Jugendliche" ;
            ld:hasTelefon "0341-870860" ;
@@ -691,8 +700,7 @@ ldo:GfZK a ld:Ort ;
          ld:hasEmail "foryou@gfzk.de" ;
          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Karl-Tauchnitz-Strasse.11> ;
          ld:hasStatus "aktiv" ;
-         ld:hasURL "http://www.gfzk.de" ;
-         ld:hasAPIId "Venue.66" .
+         ld:hasURL <http://www.gfzk.de> .
 
 <http://leipzig-data.de/Data/Ort/Grundschule.90> a ld:Ort ;
                                                  rdfs:label "90. Grundschule" ;
@@ -1251,6 +1259,10 @@ ldo:Musikinstrumentenmuseum a ld:Ort, ld:Museum ;
                             ld:hasURL <http://mfm.uni-leipzig.de> ;
                             ld:hasFax "0341-9730759" .
 
+ldo:Musikpavillon a ld:Ort ;
+                  rdfs:label "Musikpavillon im Clara-Zetkin-Park" ;
+                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Anton-Bruckner-Allee.11> .
+
 ldo:Naturkundemuseum a ld:Ort ;
                      rdfs:label "Naturkundemuseum" ;
                      ld:hasTelefon "0341-982210" ;
@@ -1264,10 +1276,14 @@ ldo:NetzwerkEnergieUmwelt a ld:Ort ;
                           ld:hasURL <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
                           ld:contactPerson ldp:Keck_Lisa, ldp:Glowacki_Romann .
 
+ldo:NeueMesse a ld:Ort ;
+              rdfs:label "Neue Leipziger Messe" ;
+              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04356.Messe-Allee.1> ;
+              ld:hasURL <http://www.leipziger-messe.de/> .
+
 ldo:NeuesSchauspielLeipzig a ld:Ort ;
                            rdfs:label "Neues Schauspiel Leipzig" ;
-                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.LuetznerStrasse.29> ;
-                           ld:hasAPIId "Venue.68" .
+                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.LuetznerStrasse.29> .
 
 ldo:Nikolaikirche a ld:Ort, ld:Church ;
                   rdfs:label "Nikolaikirche" ;
@@ -1277,6 +1293,10 @@ ldo:Nikolaikirche a ld:Ort, ld:Church ;
                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Nikolaikirchhof.3> ;
                   ld:hasURL <http://www.nikolaikirche-leipzig.de/> ;
                   ld:hasFax "341-1245380-29" .
+
+ldo:Nikolaikirchhof a ld:Ort ;
+                    rdfs:label "Nikolaikirchhof" ;
+                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Nikolaikirchhof.2> .
 
 ldo:NochBesserLeben a ld:Ort ;
                     rdfs:label "Noch Besser Leben" ;
@@ -1456,6 +1476,10 @@ ldo:Riquet a ld:Ort ;
            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Salzgaesschen.6> ;
            ld:hasAPIId "Venue.31" .
 
+ldo:RittergutMoeckern a ld:Ort ;
+                      rdfs:label "Rittergut Möckern" ;
+                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Bucksdorffstrasse.43> .
+
 ldo:RussischeGedaechtniskirche a ld:Ort, ld:Church ;
                                rdfs:label "Russische Gedächtniskirche" ;
                                ld:hasTelefon "341-8781453" ;
@@ -1511,6 +1535,10 @@ ldo:SchulBiologiezentrum a ld:Ort ;
                          ld:hasStatus "aktiv" ;
                          ld:hasTag ldtag:MINT ;
                          ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" .
+
+<http://leipzig-data.de/Data/Ort/Schule.S04> a ld:Ort ;
+                                             rdfs:label "Gustav-Hertz-Schule" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04329.Dachsstrasse.1> .
 
 ldo:SchulmuseumLeipzig a ld:Ort, ld:Museum ;
                        rdfs:label "Schulmuseum Leipzig" ;
@@ -1817,8 +1845,7 @@ ldo:Villa a ld:Ort ;
 
 ldo:VillaIda a ld:Ort ;
              rdfs:label "Mediencampus Villa Ida" ;
-             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Poetenweg.28> ;
-             ld:hasAPIId "Venue.67" .
+             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Poetenweg.28> .
 
 ldo:Voelkerschlachtdenkmal a ld:Ort, ld:Museum ;
                            rdfs:label "Völkerschlachtdenkmal" ;
