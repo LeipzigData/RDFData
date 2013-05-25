@@ -698,13 +698,34 @@ ldo:GfZK a ld:Ort ;
          rdfs:label "Galerie für Zeitgenössische Kunst" ;
          ld:hasTelefon "0341-1408118" ;
          ld:hasEmail "foryou@gfzk.de" ;
+         ld:engagedPerson ldp:Friedrich_Alexandra, ldp:Seik_Lena ;
          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Karl-Tauchnitz-Strasse.11> ;
          ld:hasStatus "aktiv" ;
          ld:hasURL <http://www.gfzk.de> .
 
+<http://leipzig-data.de/Data/Ort/Grundschule.85> a ld:Ort ;
+                                                 rdfs:label "85. Schule – Grundschule" ;
+                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.3> ;
+                                                 ld:hasSupplier ldt:StadtLeipzig .
+
 <http://leipzig-data.de/Data/Ort/Grundschule.90> a ld:Ort ;
                                                  rdfs:label "90. Grundschule" ;
                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Garskestrasse.19-21> .
+
+<http://leipzig-data.de/Data/Ort/Grundschule.91> a ld:Ort ;
+                                                 rdfs:label "91. Schule – Grundschule" ;
+                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Uranusstrasse.1> ;
+                                                 ld:hasSupplier ldt:StadtLeipzig .
+
+<http://leipzig-data.de/Data/Ort/Grundschule.Froebel> a ld:Ort ;
+                                                      rdfs:label "Friedrich-Fröbel-Schule – Grundschule" ;
+                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.MannheimerStrasse.128C> ;
+                                                      ld:hasSupplier ldt:StadtLeipzig .
+
+<http://leipzig-data.de/Data/Ort/Grundschule.Ringelnatz> a ld:Ort ;
+                                                         rdfs:label "Joachim-Ringelnatz-Schule – Grundschule" ;
+                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.GruenauerAllee.35> ;
+                                                         ld:hasSupplier ldt:StadtLeipzig .
 
 <http://leipzig-data.de/Data/Ort/Gymnasium.Grimma> a ld:Ort ;
                                                    rdfs:label "Gymnasium St. Augustin Grimma" ;
@@ -712,6 +733,11 @@ ldo:GfZK a ld:Ort ;
                                                    ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04668.Grimma.Klosterstrasse.1> ;
                                                    ld:hasURL <http://staugustin.de> ;
                                                    ld:hasFax "03437-911312" .
+
+<http://leipzig-data.de/Data/Ort/Gymnasium.Klinger> a ld:Ort ;
+                                                    rdfs:label "Max-Klinger-Schule – Gymnasium" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.4> ;
+                                                    ld:hasSupplier ldt:StadtLeipzig .
 
 ldo:HGBLeipzig a ld:Ort, ld:Academy ;
                rdfs:label "HGB", "Hochschule für Grafik und Buchkunst", "Academy of Visual Arts Leipzig" ;
@@ -984,6 +1010,16 @@ ldo:Kirsche a ld:Ort ;
             ld:hasURL "http://www.kinderhilfe-leipzig.de" ;
             ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Kinderhilfe.Leipzig> .
 
+<http://leipzig-data.de/Data/Ort/Kita.AmKirschberg> a ld:Ort ;
+                                                    rdfs:label "Integrative Kindertagesstätte „Am Kirschberg“" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AmKirschberg.39> ;
+                                                    ld:hasSupplier ldt:Outlaw .
+
+<http://leipzig-data.de/Data/Ort/Kita.AmKulkwitzerSee> a ld:Ort ;
+                                                       rdfs:label "Integrationskindergarten „Am Kulkwitzer See“" ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.ZingsterStrasse.2A> ;
+                                                       ld:hasSupplier ldt:FroebelGruppe .
+
 <http://leipzig-data.de/Data/Ort/Kita.Forscherinsel> a ld:Ort ;
                                                      rdfs:label "Kita Forscherinsel Seebenisch" ;
                                                      ld:hasTelefon "034205-411383" ;
@@ -995,6 +1031,36 @@ ldo:Kirsche a ld:Ort ;
                                                      ld:hasFax "034205-411382" ;
                                                      ld:hasSupplier <http://leipzig-data.de/Data/Traeger/AWO.LeipzigerLand> ;
                                                      ld:Auszeichungen "2012 Haus der kleinen Forscher, LVZ 21.02.2012" .
+
+<http://leipzig-data.de/Data/Ort/Kita.Haeschengrube> a ld:Ort ;
+                                                     rdfs:label "Kindertagesstätte „Häschengrube“" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Breisgaustrasse.21A> ;
+                                                     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig> .
+
+<http://leipzig-data.de/Data/Ort/Kita.Pusteblume> a ld:Ort ;
+                                                  rdfs:label "Kindertageseinrichtung „Pusteblume“" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Dahlienstrasse.75A> ;
+                                                  ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> .
+
+<http://leipzig-data.de/Data/Ort/Kita.Rasselbande> a ld:Ort ;
+                                                   rdfs:label "Kindertageseinrichtung „Rasselbande“" ;
+                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Ringstrasse.213> ;
+                                                   ld:hasSupplier <http://leipzig-data.de/Data/Traeger/VS.Leipzig> .
+
+<http://leipzig-data.de/Data/Ort/Kita.Raxlifaxli> a ld:Ort ;
+                                                  rdfs:label "Kindertagesstätte „Raxlifaxli“" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04207.Koenigsteinstrasse.70> ;
+                                                  ld:hasSupplier ldt:Humanitas .
+
+<http://leipzig-data.de/Data/Ort/Kita.StMartin> a ld:Ort ;
+                                                rdfs:label "Christliche Kindertagesstätte „St. Martin“" ;
+                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AmKirschberg.37> ;
+                                                ld:hasSupplier ldt:StMartin .
+
+<http://leipzig-data.de/Data/Ort/Kita.Sternschnuppe> a ld:Ort ;
+                                                     rdfs:label "Integrative Kindertageseinrichtung „Sternschnuppe“" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Jupiterstrasse.37> ;
+                                                     ld:hasSupplier <http://leipzig-data.de/Data/Traeger/DRK.AkademischerKreisverband> .
 
 ldo:KleineTraeumerei a ld:Ort ;
                      rdfs:label "Kleine Träumerei" ;
@@ -1101,6 +1167,21 @@ ldo:LeipzigerPfeffermuehle a ld:Ort, ld:Kabarett ;
                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Katharinenstrasse.17> ;
                            ld:hasURL <http://www.kabarett-leipziger-pfeffermuehle.de/> .
 
+<http://leipzig-data.de/Data/Ort/Lernfoerderschule.Gruenau> a ld:Ort ;
+                                                            rdfs:label "Schule Grünau – Lernförderschule" ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.1> ;
+                                                            ld:hasSupplier ldt:StadtLeipzig .
+
+<http://leipzig-data.de/Data/Ort/Lernfoerderschule.Martin> a ld:Ort ;
+                                                           rdfs:label "Martin-Schule – Allgemeinbildende Förderschule für geistig Behinderte" ;
+                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.Neptunweg.31> ;
+                                                           ld:hasSupplier ldt:StadtLeipzig .
+
+<http://leipzig-data.de/Data/Ort/Lernfoerderschule.Rosenweg> a ld:Ort ;
+                                                             rdfs:label "Schule Rosenweg – Allgemeinbildende Förderschule für geistig Behinderte" ;
+                                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Rosenweg.59> ;
+                                                             ld:hasSupplier ldt:StadtLeipzig .
+
 <http://leipzig-data.de/Data/Ort/MGH.LeipzigMitte> a ld:Ort ;
                                                    rdfs:label "Mehrgenerationenhaus Leipzig Mitte" ;
                                                    ld:hasTelefon "0341-2255745" ;
@@ -1141,6 +1222,10 @@ ldo:MPI-MIS a ld:Ort ;
                                           rdfs:label "Max-Planck-Institut für evolutionäre Anthropologie" ;
                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DeutscherPlatz.6> ;
                                           ld:hasAPIId "Venue.62" .
+
+ldo:MandalaSpieleck a ld:Ort ;
+                    rdfs:label "Mandala Spieleck" ;
+                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Eisenbahnstrasse.147> .
 
 <http://leipzig-data.de/Data/Ort/Marriott.Leipzig> a ld:Ort ;
                                                    rdfs:label "Marriott Hotel Leipzig" ;
@@ -1260,7 +1345,7 @@ ldo:Musikinstrumentenmuseum a ld:Ort, ld:Museum ;
                             ld:hasFax "0341-9730759" .
 
 ldo:Musikpavillon a ld:Ort ;
-                  rdfs:label "Musikpavillon im Clara-Zetkin-Park" ;
+                  rdfs:label "Musikpavillon im Clara-Zetkin-Park", "Musikpavillon Leipzig" ;
                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Anton-Bruckner-Allee.11> .
 
 ldo:Naturkundemuseum a ld:Ort ;
@@ -1352,6 +1437,11 @@ ldo:NochBesserLeben a ld:Ort ;
                                              ld:hasTelefon "0341-6881746" ;
                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.LangeStrasse.25> ;
                                              ld:hasStatus "aktiv" .
+
+<http://leipzig-data.de/Data/Ort/Oberschule.94> a ld:Ort ;
+                                                rdfs:label "94. Schule – Mittelschule" ;
+                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04205.MiltitzerWeg.3> ;
+                                                ld:hasSupplier ldt:StadtLeipzig .
 
 <http://leipzig-data.de/Data/Ort/Oekoschule.Agrapark> a ld:Ort ;
                                                       rdfs:label "agra-Park Ökoschule" ;
@@ -1552,6 +1642,14 @@ ldo:SchulmuseumLeipzig a ld:Ort, ld:Museum ;
                                                                   ld:hasTelefon "0341-494390" ;
                                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04329.Mommsenstrasse.4> ;
                                                                   ld:hasFax "0341-4943921" .
+
+<http://leipzig-data.de/Data/Ort/Schulzentrum.FreieSchule> a ld:Ort ;
+                                                           rdfs:label "Freie Schule Leipzig" ;
+                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.67> .
+
+<http://leipzig-data.de/Data/Ort/Schulzentrum.Montessori> a ld:Ort ;
+                                                          rdfs:label "Bischöfliches Maria-Montessori-Schulzentrum" ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.AlteSalzstrasse.61> .
 
 <http://leipzig-data.de/Data/Ort/Seniorenbuero.AltWest> a ld:Ort ;
                                                         rdfs:label "Seniorenbüro Alt-West" ;
@@ -1754,7 +1852,11 @@ ldo:UTConnewitz a ld:Ort, ld:Cinema ;
 
 ldo:Umspannwerk a ld:Ort ;
                 rdfs:label "Elektrotechnische Sammlung am Umspannwerk Markkleeberg" ;
-                ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Friedrich-Ebert-Strasse.26> ;
+                ld:hasTelefon """0341-35022265
+""" ;
+                ld:hasEmail """vde-leipzig-halle@vde-online.de
+""" ;
+                ld:hasAddress <http://leipzig-data.de/Data/ExterneAdresse/04416.Markkleeberg.Moenchereistrasse.2> ;
                 ld:hasStatus "aktiv" ;
                 ld:hasTag ldtag:MINT ;
                 ld:Art "Technikmuseum" ;
