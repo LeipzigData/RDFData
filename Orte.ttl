@@ -154,8 +154,12 @@ ldo:BIC a ld:Ort ;
         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.99> .
 
 ldo:BMFZ a ld:Ort ;
-         rdfs:label "Deutsches Biomasseforschungszentrum" ;
-         ld:hasURL <http://dbfz.de> .
+         rdfs:label "Deutsches Biomasseforschungszentrum gGmbH" ;
+         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.TorgauerStrasse.116> ;
+         ld:hasURL <http://dbfz.de> ;
+         foaf:fax "0341-2434-133" ;
+         foaf:mbox "info@dbfz.de" ;
+         foaf:phone "0341-2434-112" .
 
 <http://leipzig-data.de/Data/Ort/BSZ.LeipzigerLand> a ld:Ort ;
                                                     rdfs:label "Berufliches Schulzentrum Leipziger Land" ;
@@ -330,7 +334,7 @@ ldo:Bruno-Plache-Stadion a ld:Ort, ld:Stadium ;
 
 ldo:Cafe-Grundmann a ld:Ort ;
                    rdfs:label "Café Grundmann" ;
-                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.Lutherstrasse.10>, <http://leipzig-data.de/Data/Adresse/04275.August-Bebel-Strasse.2> ;
+                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.August-Bebel-Strasse.2> ;
                    ld:hasURL <http://www.cafe-grundmann.de> .
 
 ldo:CafeWaldi a ld:Ort, ld:Cafe ;
@@ -460,7 +464,7 @@ ldo:Culturtraeger a ld:Ort ;
                                                    ld:hasStatus "aktiv" ;
                                                    ld:hasTag <http://leipzig-data.de/Data/Tags/Gruenau.MehrAlsChillen> ;
                                                    ld:hasURL "http://www.diakonie-leipzig.de/kinder-jugend-evangelische-jugendhilfe.html" ;
-                                                   ld:hasSupplier <http://leipzig-data.de/Data/Traeger/DW.InnereMission> ;
+                                                   ld:hasSupplier ldt:DiakonischesWerk ;
                                                    ld:contactPerson ldp:Retznick_Laura ;
                                                    ld:Hintergrund "Schulsozialarbeit wird seit 1996 durch die Diakonie Leipzig an der 90. Grundschule angeboten. Damit war Schulsozialarbeit an einer Grundschule erstmals in Leipzig vertreten. Am Förderzentrum für Erziehungshilfe wird Schulsozialarbeit seit 1998 angeboten und gehört damit zu einem der langjährigen Kooperationspartnern der Schulen." .
 
@@ -870,6 +874,17 @@ ldo:IHK a ld:Ort ;
         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goerdelerring.5> ;
         ld:hasURL <http://www.leipzig.ihk.de> ;
         ld:hasSupplier ldt:IHK .
+
+ldo:ISEI a ld:Ort ;
+         rdfs:label "International Space Education Institute" ;
+         ld:hasTelefon "0172-7949375" ;
+         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04315.WurznerStrasse.4> ;
+         ld:hasStatus "aktiv" ;
+         ld:hasTag ldtag:MINT ;
+         ld:hasURL <http://www.spaceeducation.de/> ;
+         ld:hasSupplier ldt:ISEI ;
+         ld:Kurzinformation "Verein zur Förderung von Berufs- und Studienorientierung für MINT- und STEM-Disziplinen in Verbindung mit praktischen Anwendungen aus dem Handwerk, sowie der Luft- und Raumfahrt. Interessenten können ein Betriebsparktikum im Verein und dessen angeschlossenen Unternehmen an konkreten Projekten absolvieren. Mitglieder und Interessenten mit besonderen Leistungen können an internationalen Wettbewerben teilnehmen, um die eigenen Bewerbungschancen für Studium und Beruf durch Skills und Referenzen zu verbessern." ;
+         ld:contactPerson ldp:Heckel_Ralf .
 
 ldo:Igelschutzzentrum a ld:Ort ;
                       rdfs:label "Igelschutzzentrum" ;
@@ -1748,6 +1763,10 @@ ldo:Staubsauger a ld:Ort, ld:Club ;
                 ld:hasTelefon "0341-4626865" ;
                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Karl-Liebknecht-Strasse.95> ;
                 ld:hasURL <http://www.staub-sauger.de/> .
+
+<http://leipzig-data.de/Data/Ort/Steigenberger.Handelshof> a ld:Ort ;
+                                                           rdfs:label "Steigenberger Grandhotel Handelshof Leipzig" ;
+                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Salzgaesschen.6> .
 
 ldo:SuedfriedhofLeipzig a ld:Ort, ld:Cemetery ;
                         rdfs:label "Südfriedhof Leipzig" ;
