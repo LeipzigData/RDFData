@@ -153,6 +153,11 @@ ldo:BAFF a ld:Ort ;
                                                rdfs:label "Bildungs- und Demonstrationszentrum für dezentrale Abwasserbehandlung" ;
                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04178.AnderLuppe.2> .
 
+ldo:BFW a ld:Ort ;
+        rdfs:label "BFW - Berufsförderungswerk Leipzig" ;
+        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Georg-Schumann-Strasse.148> ;
+        ld:hasSupplier ldt:BFW .
+
 ldo:BIC a ld:Ort ;
         rdfs:label "BIC Leipzig" ;
         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.99> .
@@ -1133,6 +1138,11 @@ ldo:KrystallpalastVariete a ld:Ort, ld:Theater ;
                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Magazingasse.4> ;
                           ld:hasURL <http://www.krystallpalast.de/> .
 
+ldo:Kubus a ld:Ort ;
+          rdfs:label "Leipziger KUBUS (Helmholtz-Zentrum für Umweltforschung GmbH - UFZ)" ;
+          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Permoserstrasse.15> ;
+          ld:hasSupplier ldt:UFZ .
+
 ldo:LOFFT a ld:Ort ;
           rdfs:label "LOFFT" ;
           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.LindenauerMarkt.21> ;
@@ -1981,6 +1991,17 @@ ldo:UniLeipzig a ld:Ort ;
 <http://leipzig-data.de/Data/Ort/UniLeipzig.WiFa> a ld:Ort ;
                                                   rdfs:label "Universität Leipzig, Wirtschaftswissenschaftliche Fakultät" ;
                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.GrimmaischeStrasse.12> .
+
+ldo:Unikatum a ld:Ort ;
+             rdfs:label "Unikatum Kindermuseum" ;
+             ld:hasTelefon "0341-3061986" ;
+             ld:hasEmail "info@kindermuseum-unikatum.de" ;
+             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.ZschocherscheStrasse.26> ;
+             ld:hasStatus "aktiv" ;
+             ld:hasTag ldtag:MINT ;
+             ld:hasURL <http://www.kindermuseum-unikatum.de> ;
+             ld:hasSupplier ldt:Unikatum ;
+             ld:contactPerson ldp:Haensel_Annegret .
 
 ldo:VictorsResidenz a ld:Ort ;
                     rdfs:label "Victor's Residenz-Hotel Leipzig" ;

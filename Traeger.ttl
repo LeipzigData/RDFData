@@ -6,10 +6,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
-@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
-@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
 <http://leipzig-data.de/Data/Agent/APILeipzig> a foaf:Agent ;
@@ -24,7 +22,7 @@
 <http://leipzig-data.de/Data/Agent/NEU.Events> a foaf:Agent ;
                                                foaf:name "Eventkalender des Netzwerks \"Energie und Umwelt\"" ;
                                                ld:hasURL <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
-                                               ld:relatedTo ldo:NetzwerkEnergieUmwelt .
+                                               ld:relatedTo <http://leipzig-data.de/Data/Ort/NetzwerkEnergieUmwelt> .
 
 <http://leipzig-data.de/Data/Firma/Enterasys.Networks> a foaf:Organization ;
                                                        foaf:name "Enterasys Networks Germany GmbH, Niederlassung Leipzig" ;
@@ -33,6 +31,12 @@
 <http://leipzig-data.de/Data/Firma/Softwareforen.Leipzig> a foaf:Organization ;
                                                           foaf:name "Softwareforen Leipzig GmbH" ;
                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Querstrasse.16> .
+
+<http://leipzig-data.de/Data/Firma/evermind> a foaf:Organization, ld:Traeger ;
+                                             foaf:name "evermind GmbH" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Schorlemmerstrasse.1> ;
+                                             foaf:fax "0341-2539661" ;
+                                             foaf:phone "0341-2539660" .
 
 ld:Traeger a owl:Class ;
            rdfs:label "Träger" .
@@ -49,8 +53,12 @@ ld:Verein a owl:Class ;
                                            rdfs:label "HTWK, Fakultät Elektrotechnik und Informationstechnik" ;
                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Waechterstrasse.13> ;
                                            ld:hasStatus "aktiv" ;
-                                           ld:hasTag ldtag:Forschung, ldtag:MINT ;
+                                           ld:hasTag <http://leipzig-data.de/Data/Tag/Forschung>, <http://leipzig-data.de/Data/Tag/MINT> ;
                                            ld:hasSupplier ldt:HTWK .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> a ld:Traeger ;
+                                                         rdfs:label "Stadt Leipzig, Referat Kommunikation im Geschäftsbereich des Oberbürgermeisters" ;
+                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Katharinenstrasse.2> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> a ld:Traeger ;
                                                                  rdfs:label "Stadt Leipzig, Amt für Wirtschaftsförderung" ;
@@ -118,6 +126,10 @@ ldt:BA-Leipzig a ld:Traeger ;
 ldt:BBW a ld:Traeger ;
         rdfs:label "Berufsbildungswerk für Hör- und Sprachgeschädigte gGmbH" ;
         ld:hasSupplierNumber "312" .
+
+ldt:BFW a ld:Traeger ;
+        rdfs:label "BFW - Berufsförderungswerk Leipzig" ;
+        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Georg-Schumann-Strasse.148> .
 
 <http://leipzig-data.de/Data/Traeger/BGL.Nachbarschaftshilfeverein> a ld:Traeger ;
                                                                     rdfs:label "BGL Nachbarschaftshilfeverein" .
@@ -907,6 +919,13 @@ ldt:UniLeipzig a ld:Traeger ;
 <http://leipzig-data.de/Data/Traeger/UniLeipzig.Studentenrat> a ld:Traeger ;
                                                               rdfs:label "Studentenrat der Uni Leipzig" ;
                                                               ld:hasURL "http://www.stura.uni-leipzig.de/" .
+
+ldt:Unikatum a ld:Traeger ;
+             rdfs:label "Unikatum Kindermuseum gGmbH" ;
+             ld:hasTelefon "0341-3061986" ;
+             ld:hasEmail "info@kindermuseum-unikatum.de" ;
+             ld:engagedPerson ldp:Haensel_Annegret ;
+             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.ZschocherscheStrasse.26> .
 
 ldt:UrbanSouls a ld:Traeger ;
                rdfs:label "Urban Souls" ;
