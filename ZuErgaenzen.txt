@@ -1,0 +1,74 @@
+select distinct ?s 
+from <http://leipzig-data.de/Data/Personen/>
+where {
+ ?s a foaf:Person
+}
+
+ldp:Berg_Dennis rdfs:comment "Kassenprüfer SJR" .
+
+ldp:Faehse_Robby rdfs:comment "Kassenprüfer SJR" .
+
+ldp:Fritzsche_Nicole
+rdfs:comment "Vorstand SJR, Jugendbeteiligung, neue stellv. Vorsitzende" . 
+
+ldp:Heinze_Sven rdfs:comment "Vorstand SJR, Gremienarbeit und Finanzen" .
+
+ldp:Meier_Katja rdfs:comment "Vorstand SJR, Öffentlichkeitsarbeit" .
+
+ldp:Roth_Dorit  rdfs:comment 
+"Vorstand SJR, alte und neue Vorsitzende, JuLeiCa und FSJ Politik" .
+
+--------------
+
+ldp:Berg_Dennis a foaf:Person; foaf:name "Dennis Berg" .
+
+ldp:Bielig_Sven ld:relatedTo ldt:UrbanSouls,
+<http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau> .
+
+ldp:BuechelBernhard_Aaron a foaf:Person;
+foaf:name "Aaron Büchel-Bernhard" ;
+ld:relatedTo ldt:CVJM .
+
+ldp:Faehse_Robby a foaf:Person;
+foaf:name "Robby Faehse" ;
+ld:relatedTo ldt:Stadtjugendfeuerwehr .
+
+ldp:Fritzsche_Nicole a foaf:Person;
+foaf:name "Nicole Fritzsche" ;
+ld:relatedTo 
+<http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig> .
+
+ldp:Heinrich_Torsten a foaf:Person;
+foaf:name "Torsten Heinrich" ;
+rdfs:comment "Vertreter des SJR im JHA"; 
+ld:relatedTo ldt:EvLuthJugend .
+
+ldp:Kuehne_Peter  a foaf:Person;
+foaf:name "Peter Kühne" ;
+rdfs:comment "GF der Lecos" .
+
+ldp:Nuernberger_Tabea a foaf:Person;
+foaf:name "Tabea Nürnberger" ;
+rdfs:comment "TMF Planungsraum" ;
+ld:relatedTo ldt:CVJM .
+
+ldp:PeeckPreimuss_Attila a foaf:Person;
+foaf:name "Attila Peeck-Preimus" ;
+ld:relatedTo ldt:DGBJugend .
+
+ldp:Pretsch_Irina a foaf:Person;
+foaf:name "Irina Pretsch" ;
+ld:relatedTo ldt:BBW .
+
+ldp:Treschok_Katja a foaf:Person;
+foaf:name "Katja Treschok" .
+
+ldp:Ulrich_Ruediger a foaf:Person;
+foaf:name "Rüdiger Ulrich" ;
+rdfs:comment "stellv. Vorsitzender JHA" .
+
+ldp:Wolfram_Franziska a foaf:Person;
+foaf:name "Franziska Wolfram" ;
+ld:relatedTo ldt:EvRefKirche .
+
+Förderverein pro Knicklicht ist insolvent.
