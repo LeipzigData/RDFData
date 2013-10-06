@@ -25,30 +25,82 @@ ld:PlanungsRaum a owl:Class ;
                 rdfs:label "Planungsraum der Stadt Leipzig" ;
                 rdfs:comment "Die Jugendhilfeplanung teilt die 63 Stadtbezirke der Stadt Leipzig in 7 Planungsräume ein" .
 
+ldp:Berg_Dennis rdfs:comment "Kassenprüfer SJR" .
+
+ldp:Bielig_Sven rdfs:comment "Am 18.6.2013 in den Vorstand des SJR gewählt" .
+
+ldp:Diebler_Peggy rdfs:comment "JHA-Koordinator Planungsraum" .
+
+ldp:Faehse_Robby rdfs:comment "Kassenprüfer SJR" .
+
+ldp:Fritzsche_Nicole rdfs:comment "Am 18.6.2013 in den Vorstand des SJR gewählt, Jugendbeteiligung, neue stellv. Vorsitzende" .
+
+ldp:Georgi_Gunnar rdfs:comment "Mitarbeiter Geschäftsstelle im SJR" .
+
+ldp:Graf_Corinna rdfs:comment "GF des Stadtjugendrings" .
+
+ldp:Haensch_Solveig rdfs:comment "JHA-Koordinator Planungsraum" .
+
+ldp:Heinrich_Torsten rdfs:comment "Vertreter des SJR im JHA" .
+
+ldp:Heinze_Sven rdfs:comment "Am 18.6.2013 in den Vorstand des SJR gewählt, Gremienarbeit und Finanzen" .
+
+ldp:Klimesch_Holger rdfs:comment "Vereinsvorstand Inspirata e.V." .
+
+ldp:Koenig_Wolfgang rdfs:comment "Vereinsvorsitzender Inspirata e.V." .
+
+ldp:Meier_Katja rdfs:comment "Am 18.6.2013 in den Vorstand des SJR gewählt, Öffentlichkeitsarbeit" .
+
+ldp:Metschies_Juliane rdfs:comment "JHA-Koordinator Planungsraum" .
+
+ldp:Moritz_Anja rdfs:comment "JHA-Koordinator Planungsraum" .
+
+ldp:Nuernberger_Tabea rdfs:comment "TMF Planungsraum" .
+
+ldp:Petzschler_Ines rdfs:comment "Vereinsvorstand Inspirata e.V." .
+
+ldp:Roth_Dorit rdfs:comment "Am 18.6.2013 in den Vorstand des SJR gewählt, alte und neue Vorsitzende, JuLeiCa und FSJ Politik" .
+
+ldp:Schueler_Jana rdfs:comment "Am 18.6.2013 in den Vorstand des SJR gewählt" .
+
+ldp:Steudel_Claudia rdfs:comment "JHA-Koordinator Planungsraum" .
+
+ldp:Uhlmann_Matthias rdfs:comment "JHA-Koordinator Planungsraum" .
+
+ldp:vonJan_Teresa rdfs:comment "Mitarbeiterin des Stadtjugendrings, Projekt Jugendbeteiligung im SJR" .
+
 <http://leipzig-data.de/Data/Planungsraum/Gruenau> a ld:PlanungsRaum ;
                                                    rdfs:label "Planungsraum Grünau" ;
-                                                   ld:hasCoordinator ldp:Diebler_Peggy .
+                                                   ld:hasCoordinator ldp:Diebler_Peggy ;
+                                                   ld:containsStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Schoenau>, <http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Ost>, <http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Mitte>, <http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Siedlung>, <http://leipzig-data.de/Data/Stadtbezirk/Lausen-Gruenau>, <http://leipzig-data.de/Data/Stadtbezirk/Gruenau-Nord>, <http://leipzig-data.de/Data/Stadtbezirk/Miltitz> .
 
 <http://leipzig-data.de/Data/Planungsraum/InnererOsten> a ld:PlanungsRaum ;
                                                         rdfs:label "Planungsraum Innerer Osten" ;
-                                                        ld:hasCoordinator ldp:Moritz_Anja .
+                                                        ld:hasCoordinator ldp:Moritz_Anja ;
+                                                        ld:containsStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Ost>, <http://leipzig-data.de/Data/Stadtbezirk/Schoenefeld-Abtnaundorf>, <http://leipzig-data.de/Data/Stadtbezirk/Schoenefeld-Ost>, <http://leipzig-data.de/Data/Stadtbezirk/Neustadt-Neuschoenefeld>, <http://leipzig-data.de/Data/Stadtbezirk/Volkmarsdorf>, <http://leipzig-data.de/Data/Stadtbezirk/Anger-Crottendorf>, <http://leipzig-data.de/Data/Stadtbezirk/Sellerhausen-Stuenz>, <http://leipzig-data.de/Data/Stadtbezirk/Reudnitz-Thonberg> .
 
 <http://leipzig-data.de/Data/Planungsraum/MitteSued> a ld:PlanungsRaum ;
                                                      rdfs:label "Planungsraum Mitte/Süd" ;
-                                                     ld:hasCoordinator ldp:Steudel_Claudia .
+                                                     ld:hasCoordinator ldp:Steudel_Claudia, ldp:Gleichmann_Tina ;
+                                                     ld:engagedPerson ldp:Petzschler_Ines, ldp:Graf_Corinna, ldp:Knospe_Uta, ldp:Tutar_Katrin, ldp:Zippe_Annett, ldp:Benedix_Katrin, ldp:Wuerzberger_Nadine, ldp:Reiner_Oliver, ldp:Boehr_Annett, ldp:Fries_Kerstin ;
+                                                     ld:containsStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Zentrum>, <http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Suedost>, <http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Sued>, <http://leipzig-data.de/Data/Stadtbezirk/Zentrum-West>, <http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Nordwest>, <http://leipzig-data.de/Data/Stadtbezirk/Suedvorstadt>, <http://leipzig-data.de/Data/Stadtbezirk/Connewitz>, <http://leipzig-data.de/Data/Stadtbezirk/Marienbrunn>, <http://leipzig-data.de/Data/Stadtbezirk/Loessnig>, <http://leipzig-data.de/Data/Stadtbezirk/Doelitz-Doesen> .
 
 <http://leipzig-data.de/Data/Planungsraum/Nord> a ld:PlanungsRaum ;
                                                 rdfs:label "Planungsraum Nord" ;
-                                                ld:hasCoordinator ldp:Haensch_Solveig .
+                                                ld:hasCoordinator ldp:Haensch_Solveig ;
+                                                ld:containsStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Zentrum-Nord>, <http://leipzig-data.de/Data/Stadtbezirk/Moeckern>, <http://leipzig-data.de/Data/Stadtbezirk/Wahren>, <http://leipzig-data.de/Data/Stadtbezirk/Luetzschena-Stahmeln>, <http://leipzig-data.de/Data/Stadtbezirk/Lindenthal>, <http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Sued>, <http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Mitte>, <http://leipzig-data.de/Data/Stadtbezirk/Gohlis-Nord>, <http://leipzig-data.de/Data/Stadtbezirk/Eutritzsch>, <http://leipzig-data.de/Data/Stadtbezirk/Wiederitzsch> .
 
 <http://leipzig-data.de/Data/Planungsraum/NordOst> a ld:PlanungsRaum ;
                                                    rdfs:label "Planungsraum Nordost" ;
-                                                   ld:hasCoordinator ldp:Jaeger_Alexander .
+                                                   ld:hasCoordinator ldp:Jaeger_Alexander ;
+                                                   ld:containsStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Mockau-Sued>, <http://leipzig-data.de/Data/Stadtbezirk/Mockau-Nord>, <http://leipzig-data.de/Data/Stadtbezirk/Thekla>, <http://leipzig-data.de/Data/Stadtbezirk/Plaussig-Portitz>, <http://leipzig-data.de/Data/Stadtbezirk/Seehausen> .
 
 <http://leipzig-data.de/Data/Planungsraum/OstSuedost> a ld:PlanungsRaum ;
                                                       rdfs:label "Planungsraum Ost/Südost" ;
-                                                      ld:hasCoordinator ldp:Uhlmann_Matthias .
+                                                      ld:hasCoordinator ldp:Uhlmann_Matthias ;
+                                                      ld:containsStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Paunsdorf>, <http://leipzig-data.de/Data/Stadtbezirk/Heiterblick>, <http://leipzig-data.de/Data/Stadtbezirk/Moelkau>, <http://leipzig-data.de/Data/Stadtbezirk/Engelsdorf>, <http://leipzig-data.de/Data/Stadtbezirk/Baalsdorf>, <http://leipzig-data.de/Data/Stadtbezirk/Althen-Kleinpoesna>, <http://leipzig-data.de/Data/Stadtbezirk/Stoetteritz>, <http://leipzig-data.de/Data/Stadtbezirk/Probstheida>, <http://leipzig-data.de/Data/Stadtbezirk/Meusdorf>, <http://leipzig-data.de/Data/Stadtbezirk/Liebertwolkwitz>, <http://leipzig-data.de/Data/Stadtbezirk/Holzhausen> .
 
 <http://leipzig-data.de/Data/Planungsraum/West> a ld:PlanungsRaum ;
                                                 rdfs:label "Planungsraum West" ;
-                                                ld:hasCoordinator ldp:Metschies_Juliane .
+                                                ld:hasCoordinator ldp:Metschies_Juliane ;
+                                                ld:containsStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Schleussig>, <http://leipzig-data.de/Data/Stadtbezirk/Plagwitz>, <http://leipzig-data.de/Data/Stadtbezirk/Kleinzschocher>, <http://leipzig-data.de/Data/Stadtbezirk/Grosszschocher>, <http://leipzig-data.de/Data/Stadtbezirk/Knautkleeberg-Knauthain>, <http://leipzig-data.de/Data/Stadtbezirk/Hartmannsdorf-Knautnaundorf>, <http://leipzig-data.de/Data/Stadtbezirk/Lindenau>, <http://leipzig-data.de/Data/Stadtbezirk/Altlindenau>, <http://leipzig-data.de/Data/Stadtbezirk/Neulindenau>, <http://leipzig-data.de/Data/Stadtbezirk/Leutzsch>, <http://leipzig-data.de/Data/Stadtbezirk/Boehlitz-Ehrenberg>, <http://leipzig-data.de/Data/Stadtbezirk/Burghausen-Rueckmarsdorf> .
