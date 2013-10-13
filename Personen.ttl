@@ -1,740 +1,899 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Personen/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-
-ldp:Ackermann_Arne a foaf:Person ;
-                   foaf:name "Arne Ackermann" .
-
-ldp:Albert_Katrin a foaf:Person ;
-                  foaf:name "Katrin Albert" ;
-                  foaf:mbox "albert@bi-web.de" ;
-                  foaf:phone "0341-303383-30" ;
-                  ld:relatedTo ldt:BusinessIntelligence .
-
-ldp:Bachmann_Lars a foaf:Person ;
-                  foaf:name "Lars Bachmann" ;
-                  foaf:mbox "lars.bachmann@energieforen.de" ;
-                  foaf:phone "0341-1245581" .
-
-ldp:Baesler_Detlef a foaf:Person ;
-                   rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" ;
-                   foaf:name "Detlef Bäsler" .
-
-ldp:Bamberg_Stefanie a foaf:Person ;
-                     foaf:name "Stefanie Bamberg" ;
-                     ld:hasAPIId "Host.2" .
-
-ldp:Benedix_Katrin a foaf:Person ;
-                   rdfs:comment "SSA Schumann-Mittelschule" ;
-                   foaf:name "Katrin Benedix" ;
-                   ld:relatedTo ldt:DiakonischesWerk .
-
-ldp:Berg_Dennis a foaf:Person ;
-                foaf:name "Dennis Berg" .
-
-ldp:Bergmann_Thommy a foaf:Person ;
-                    foaf:name "Thommy Bergmann" ;
-                    ld:hasURL <http://www.mandalari.de> ;
-                    ld:relatedTo ldo:MandalaSpieleck .
-
-ldp:Bernard_Ulrike a foaf:Person ;
-                   foaf:name "Ulrike Bernard" ;
-                   ld:relatedTo ldo:HausSteinstrasse .
-
-ldp:Bielig_Sven a foaf:Person ;
-                foaf:name "Sven Bielig" ;
-                ld:relatedTo <http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau>, ldt:UrbanSouls, ldt:Stadtjugendring .
-
-ldp:Boehr_Annett a foaf:Person ;
-                 rdfs:comment "SSA Petri-Mittelschule" ;
-                 foaf:name "Annett Böhr" ;
-                 foaf:mbox "a.boehr@raa-leipzig.de" ;
-                 ld:relatedTo <http://leipzig-data.de/Data/Traeger/RAA.Leipzig> .
-
-ldp:Boran_Roland a foaf:Person ;
-                 rdfs:comment "Projektleiter ASG-Schülerakademie" ;
-                 foaf:name "Dr. Roland Boran" .
-
-ldp:Both_Jana a foaf:Person ;
-              rdfs:comment "Organisierte bis 2009 die Kinderuni. Inzwischen aus Leipzig weggezogen." ;
-              foaf:name "Jana Both" .
-
-ldp:BrendAmour_Nicola a foaf:Person ;
-                      foaf:name "Nicola Bren d‘Amour" ;
-                      foaf:mbox "nicola.brendamour@moez.fraunhofer.de" ;
-                      foaf:phone "0341-231039126" .
-
-ldp:BuechelBernhard_Aaron a foaf:Person ;
-                          foaf:name "Aaron Büchel-Bernhard" ;
-                          ld:relatedTo ldt:CVJM .
-
-ldp:Buettner_Torsten a foaf:Person ;
-                     foaf:name "Torsten Büttner" .
-
-ldp:Burger_Petra a foaf:Person ;
-                 foaf:name "Petra Burger" ;
-                 foaf:mbox "petra.burger@leipzig.de" ;
-                 ld:relatedTo <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> .
-
-ldp:Darlatt_Kathrin a foaf:Person ;
-                    foaf:name "Kathrin Darlatt" .
-
-ldp:Diebler_Peggy a foaf:Person ;
-                  foaf:name "Peggy Diebler" ;
-                  foaf:mbox "peggy.diebler@leipzig.de" ;
-                  foaf:phone "01522-2989115" ;
-                  ld:relatedTo <http://leipzig-data.de/Data/Ort/Stadtteilladen.Gruenau> .
-
-ldp:Duschinger_Robert a foaf:Person ;
-                      rdfs:comment "stellv. Vorsitzender des Stadtelternrats (2013 gewählt)" ;
-                      foaf:name "Robert Duschinger" .
-
-ldp:Elsaesser_Ralf a foaf:Person ;
-                   foaf:name "Ralf Elsässer" .
-
-ldp:Engel_Heike a foaf:Person ;
-                rdfs:comment "Geschäftsführerin Anker e.V." ;
-                foaf:name "Heike Engel" .
-
-ldp:Faehse_Robby a foaf:Person ;
-                 foaf:name "Robby Faehse" ;
-                 ld:relatedTo ldt:Stadtjugendfeuerwehr .
-
-ldp:Fleckenstein_Heike a foaf:Person ;
-                       rdfs:comment "stellv. Vorsitzende des Stadtelternrats (2013 gewählt)" ;
-                       foaf:name "Heike Fleckenstein" .
-
-ldp:Friedrich_Alexandra a foaf:Person ;
-                        rdfs:comment "Leitung Kunstvermittlung der GfZK" ;
-                        foaf:name "Alexandra Friedrich" ;
-                        foaf:mbox "foryou@gfzk.de" ;
-                        ld:relatedTo ldo:GfZK .
-
-ldp:Friedrich_Marga a foaf:Person ;
-                    foaf:name "Marga Friedrich" .
-
-ldp:Fries_Kerstin a foaf:Person ;
-                  foaf:name "Kerstin Fries" ;
-                  foaf:mbox "info@neue-muenze.de" ;
-                  ld:relatedTo <http://leipzig-data.de/Data/Traeger/Verein.FFJ> .
-
-ldp:Fritzsche_Nicole a foaf:Person ;
-                     foaf:name "Nicole Fritzsche" ;
-                     ld:relatedTo <http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig>, ldt:Stadtjugendring .
-
-ldp:Geffken_Michael a foaf:Person ;
-                    foaf:name "Michael Geffken" ;
-                    foaf:mbox "geffken@leipzigschoolofmedia.de" ;
-                    foaf:phone "0341-56296701" ;
-                    ld:relatedTo ldo:SchoolOfMedia .
-
-ldp:Geisler_Andreas a foaf:Person ;
-                    rdfs:comment "Vorsitzender des Stadtelternrats (2013 gewählt)" ;
-                    foaf:name "Andreas Geisler" .
-
-ldp:Geng_Tobias a foaf:Person ;
-                foaf:name "Tobias Geng" ;
-                foaf:mbox "tobias.geng@leipzig.de" ;
-                ld:relatedTo <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> .
-
-ldp:Georgi_Gunnar a foaf:Person ;
-                  foaf:name "Gunnar Georgi" ;
-                  ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/80-gunnar> ;
-                  ld:relatedTo ldt:Stadtjugendring .
-
-ldp:Giersdorf_Jens a foaf:Person ;
-                   foaf:name "Jens Giersdorf" ;
-                   foaf:mbox "jens.giersdorf@dbfz.de" .
-
-ldp:Gleichmann_Tina a foaf:Person ;
-                    foaf:name "Tina Gleichmann" ;
-                    foaf:mbox "tina.gleichmann@haus-steinstrasse.de" ;
-                    foaf:phone "0341-30328824" ;
-                    ld:relatedTo ldo:HausSteinstrasse .
-
-ldp:Glowacki_Romann a foaf:Person ;
-                    foaf:name "Romann Glowacki" .
-
-ldp:Graebe_HansGert a foaf:Person ;
-                    foaf:name "Prof. Dr. Hans-Gert Gräbe" ;
-                    ld:hasAPIId "Host.28" .
-
-ldp:Graf_Corinna a foaf:Person ;
-                 rdfs:comment "GF des Stadtjugendrings" ;
-                 foaf:name "Corinna Graf" ;
-                 ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/78-corinna> ;
-                 ld:relatedTo ldt:Stadtjugendring .
-
-ldp:Gregor_Jana a foaf:Person ;
-                rdfs:comment "MINT-Beauftragte des MPI MIS" ;
-                foaf:name "Jana Gregor" .
-
-ldp:Grosser_Katja a foaf:Person ;
-                  foaf:name "Katja Großer" ;
-                  ld:hasAPIId "Host.35", "Host.38" .
-
-ldp:Gruener_Andre a foaf:Person ;
-                  rdfs:comment "IHK zu Leipzig" ;
-                  foaf:name "André Grüner" ;
-                  foaf:mbox "gruener@leipzig.ihk.de" ;
-                  foaf:phone "0341-12671259" .
-
-ldp:Gutschale_Anke a foaf:Person ;
-                   rdfs:comment "Organisation der Kinderuni" ;
-                   foaf:name "Anke Gutschale" .
-
-ldp:Haenel_Andreas a foaf:Person ;
-                   foaf:name "Andreas Hänel" ;
-                   foaf:mbox "andreas.haenel@energieforen.de" ;
-                   foaf:phone "0341-1245585" .
-
-ldp:Haenisch_Wolfgang a foaf:Person ;
-                      foaf:name "Wolfgang Hänisch" .
-
-ldp:Haensch_Solveig a foaf:Person ;
-                    foaf:name "Solveig Hänsch" ;
-                    foaf:mbox "solveig.haensch@leipzig.de" ;
-                    foaf:phone "0341-1234362" .
-
-ldp:Haensel_Annegret a foaf:Person ;
-                     rdfs:comment "Geschäftsführerin Unikatum gGmbH" ;
-                     foaf:name "Annegret Hänsel" ;
-                     ld:relatedTo ldo:Unikatum, ldt:Unikatum .
-
-ldp:Haensgen_Christoph a foaf:Person ;
-                       foaf:name "Christoph Hänsgen" ;
-                       ld:hasURL <http://www.happy-robots.de> ;
-                       foaf:phone "0341-35582828" .
-
-ldp:Hahn_Michael a foaf:Person ;
-                 rdfs:comment "Vereinsvorsitzender LJBW" ;
-                 foaf:name "Michael Hahn" .
-
-ldp:Hamel_Corinna a foaf:Person ;
-                  foaf:name "Corinna Hamel" .
-
-ldp:Hantschick_Ines a foaf:Person ;
-                    foaf:name "Ines Hantschick" .
-
-ldp:Hauptmann_Anke a foaf:Person ;
-                   foaf:name "Anke Hauptmann" .
-
-ldp:Heckel_Ralf a foaf:Person ;
-                foaf:name "Ralf Heckel" ;
-                foaf:mbox "ralf.heckel@nasa-moonbuggy.eu" ;
-                foaf:phone "0172-7949375" .
-
-ldp:Heinrich_Torsten a foaf:Person ;
-                     rdfs:comment "Vertreter des SJR im JHA" ;
-                     foaf:name "Torsten Heinrich" ;
-                     ld:relatedTo ldt:EvLuthJugend .
-
-ldp:Heinze_Sven a foaf:Person ;
-                foaf:name "Sven Heinze" ;
-                ld:relatedTo ldt:Sportjugend, ldt:Stadtjugendring .
-
-ldp:Herold_Corrina a foaf:Person ;
-                   foaf:name "Corrina Herold" ;
-                   ld:hasURL "http://www.fom.de" ;
-                   foaf:mbox "corrina.herold@fom.de" ;
-                   foaf:title "Dr." ;
-                   foaf:phone "0341-870967-91" ;
-                   ld:relatedTo ldo:FOM .
-
-ldp:Herrmann_Anne a foaf:Person ;
-                  foaf:name "Anne Herrmann" .
-
-ldp:Hintze_Steffen a foaf:Person ;
-                   foaf:name "Steffen Hintze" .
-
-ldp:Hoenemann_Tobias a foaf:Person ;
-                     foaf:name "Tobias Hönemann" .
-
-ldp:Hoernig_Karin a foaf:Person ;
-                  foaf:name "Karin Hörnig" .
-
-ldp:Holunder_Alma a foaf:Person ;
-                  foaf:name "Alma Holunder" .
-
-ldp:Hoyer_Stephan a foaf:Person ;
-                  foaf:name "Stephan Hoyer" ;
-                  ld:hasAPIId "Host.42" .
-
-ldp:Huebner_Elke a foaf:Person ;
-                 foaf:name "Elke Hübner" ;
-                 foaf:mbox "elke.huebner@leipzig.de" ;
-                 foaf:phone "0341-123-5683" .
-
-ldp:Hufenreuter_Henry a foaf:Person ;
-                      foaf:name "Henry Hufenreuter" .
-
-ldp:Ihring_Lars a foaf:Person ;
-                foaf:name "Lars Ihring" ;
-                ld:hasAPIId "Host.29" .
-
-ldp:Jaeger_Alexander a foaf:Person ;
-                     foaf:name "Alexander Jäger" ;
-                     foaf:mbox "alexander.jaeger@leipzig.de" ;
-                     foaf:phone "0341-123-4694" ;
-                     ld:relatedTo <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> .
-
-ldp:Jaehnig_HeinrichMoritz a foaf:Person ;
-                           foaf:name "Heinrich Moritz Jähnig" ;
-                           foaf:mbox "info@industriekulturtag-leipzig.de" .
-
-ldp:Johannes_Uta a foaf:Person ;
-                 rdfs:comment "Sachbearbeiterin Medien- und Kreativwirtschaft im Amt für Wirtschaftsförderung" ;
-                 foaf:name "Uta Johannes" ;
-                 foaf:mbox "uta.johannes@leipzig.de" ;
-                 foaf:phone "0341-123585" ;
-                 ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> .
-
-ldp:Karwen_Bernd a foaf:Person ;
-                 foaf:name "Bernd Karwen" ;
-                 foaf:mbox "Bernd.Karwen@instytutpolski.org" ;
-                 foaf:phone "0341-7026113" .
-
-ldp:Keck_Lisa a foaf:Person ;
-              rdfs:comment "Geschäftsstellenleiterin des Netzwerks \"Energie und Umwelt\" e.V." ;
-              foaf:name "Lisa Keck" ;
-              foaf:mbox "NEU@energiemetropole-leipzig.de" ;
-              foaf:phone "0341-1213317" .
-
-ldp:Keppler_Ralph a foaf:Person ;
-                  foaf:name "Ralph Keppler" ;
-                  foaf:mbox "ralph.keppler@leipzig.de" ;
-                  foaf:phone "0341-1232097" ;
-                  ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> .
-
-ldp:Kilchert_Manfred a foaf:Person ;
-                     foaf:name "Prof. Dipl.-Ing. Manfred Kilchert" ;
-                     foaf:mbox "manfred.kilchert@fb.htwk-leipzig.de" ;
-                     foaf:phone "0341-3076-6223" .
-
-ldp:Klauer_AnnaKatharina a foaf:Person ;
-                         foaf:name "Anna-Katharina Klauer" .
-
-ldp:Kleshch_Irina a foaf:Person ;
-                  foaf:name "Irina Kleshch" ;
-                  foaf:mbox "ik@evermind.de" ;
-                  foaf:phone "0341-2539660" ;
-                  ld:relatedTo <http://leipzig-data.de/Data/Firma/evermind> .
-
-ldp:Klimesch_Holger a foaf:Person ;
-                    foaf:name "Holger Klimesch" .
-
-ldp:Knospe_Uta a foaf:Person ;
-               foaf:name "Uta Knospe" ;
-               ld:relatedTo <http://leipzig-data.de/Data/Traeger/BV.Messemagistrale> .
-
-ldp:Koenig_KarlFriedrich a foaf:Person ;
-                         foaf:name "Karl-Friedrich König" ;
-                         ld:hasAPIId "Host.22" .
-
-ldp:Koenig_Wolfgang a foaf:Person ;
-                    foaf:name "Prof. Wolfgang König" .
-
-ldp:Koerner_Annette a foaf:Person ;
-                    rdfs:comment "Geschäftsführerin UIZ Förderverein" ;
-                    foaf:name "Annette Körner" .
-
-ldp:Kohl_Ralf a foaf:Person ;
-              foaf:name "Ralf Kohl" .
-
-ldp:Kramer_Anais a foaf:Person ;
-                 rdfs:comment "Leiterin der GS der Zukunftsakademie" ;
-                 foaf:name "Anais Kramer" ;
-                 ld:relatedTo ldo:Zukunftsakademie .
-
-ldp:Krause_Tanja a foaf:Person ;
-                 rdfs:comment "UFZ Department Umwelt- und Planungsrecht" ;
-                 foaf:name "Tanja Krause" ;
-                 foaf:mbox "tanja.krause@ufz.de" ;
-                 foaf:phone "0341-2351257" .
-
-ldp:Krueger_Annett a foaf:Person ;
-                   foaf:name "Dr. Annett Krüger" .
-
-ldp:Kuechler_Romy a foaf:Person ;
-                  foaf:name "Romy Küchler" .
-
-ldp:Kuehne_Peter a foaf:Person ;
-                 rdfs:comment "GF der Lecos" ;
-                 foaf:name "Peter Kühne" .
-
-ldp:Lange_Torsten a foaf:Person ;
-                  rdfs:comment "Leiter UFZ-Schülerlabor" ;
-                  foaf:name "Dr. Torsten Lange" .
-
-ldp:Lehmann_Olaf a foaf:Person ;
-                 rdfs:comment "IHK zu Leipzig" ;
-                 foaf:name "Olaf Lehmann" ;
-                 foaf:mbox "lehmann@leipzig.ihk.de" ;
-                 foaf:phone "0341-1267-1262" .
-
-ldp:Lindner_Bjoern a foaf:Person ;
-                   foaf:name "Björn Lindner" ;
-                   foaf:mbox "bjoern.lindner@empower-eu.net" ;
-                   foaf:phone "0341-9851844" .
-
-ldp:Lindner_Lothar a foaf:Person ;
-                   rdfs:comment "Planungsbüro für Energie und Umwelt" ;
-                   foaf:name "Dipl.-Ing. Lothar Lindner" ;
-                   foaf:mbox "iblindner@t-online.de" ;
-                   foaf:phone "0341-3385520" .
-
-ldp:Lingk_Thomas a foaf:Person ;
-                 rdfs:comment "Abteilungsleiter und stellv. Vorsitzender des Netzwerk Energie und Umwelt e.V." ;
-                 foaf:name "Thomas Lingk" ;
-                 foaf:mbox "thomas.lingk@leipzig.de" ;
-                 foaf:phone "0341-123-5851" .
-
-ldp:Maennig_Uwe a foaf:Person ;
-                rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" ;
-                foaf:name "Uwe Männig" .
-
-ldp:Maruhn_Olaf a foaf:Person ;
-                foaf:name "Olaf Maruhn" .
-
-ldp:Meier_Katja a foaf:Person ;
-                foaf:name "Katja Meier" ;
-                ld:relatedTo ldt:InternationalerBund, ldt:Stadtjugendring .
-
-ldp:Meiler_Monika a foaf:Person ;
-                  foaf:name "Dr. Monika Meiler" .
-
-ldp:Messerschmidt_Elk a foaf:Person ;
-                      rdfs:comment "Leiter TÖP Rabutz" ;
-                      foaf:name "Dr. Elk Messerschmidt" .
-
-ldp:Metschies_Juliane a foaf:Person ;
-                      foaf:name "Juliane Metschies" ;
-                      foaf:mbox "juliane.metschies2@leipzig.de" ;
-                      foaf:phone "0341-33756034" .
-
-ldp:Metz_Susanne a foaf:Person ;
-                 rdfs:comment "Amtsleiterin der städtischen Bibliotheken (Amtsblatt, 29.06.2013)" ;
-                 foaf:name "Susanne Metz" ;
-                 ld:relatedTo <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> .
-
-ldp:Meyer_Rene a foaf:Person ;
-               foaf:name "René Meyer" ;
-               ld:hasAPIId "Host.21" .
-
-ldp:Moeller_Juergen a foaf:Person ;
-                    foaf:name "Jürgen Möller" ;
-                    ld:hasAPIId "Host.16" .
-
-ldp:Moritz_Anja a foaf:Person ;
-                foaf:name "Anja Moritz" ;
-                foaf:mbox "anja.morit@leipzig.de" ;
-                foaf:phone "01522-2989124" .
-
-ldp:Mueller_Doris a foaf:Person ;
-                  foaf:name "Doris Müller" .
-
-ldp:Mueller_Florian a foaf:Person ;
-                    foaf:name "Florian Müller" ;
-                    ld:hasAPIId "Host.23" .
-
-ldp:Nagler_Petra a foaf:Person ;
-                 rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" ;
-                 foaf:name "Petra Nagler" .
-
-ldp:Nuernberger_Tabea a foaf:Person ;
-                      foaf:name "Tabea Nürnberger" ;
-                      ld:relatedTo ldt:CVJM .
-
-ldp:Pauli_Stev a foaf:Person ;
-               foaf:name "Stev Pauli" .
-
-ldp:PeeckPreimuss_Attila a foaf:Person ;
-                         foaf:name "Attila Peeck-Preimus" ;
-                         ld:relatedTo ldt:DGBJugend .
-
-ldp:Petschauer_Susanne a foaf:Person ;
-                       foaf:name "Susanne Petschauer" .
-
-ldp:Petzold_Matthias a foaf:Person ;
-                     foaf:name "Matthias Petzold" ;
-                     ld:hasAPIId "Host.1" .
-
-ldp:Petzschler_Ines a foaf:Person ;
-                    foaf:name "Ines Petzschler" .
-
-ldp:Petzschler_Uwe a foaf:Person ;
-                   foaf:name "Uwe Petzschler" .
-
-ldp:PhuongThaoDinhVan a foaf:Person ;
-                      foaf:name "Phuong Thao Dinh Van" ;
-                      ld:hasURL <http://www.leipzig.ihk.de/desktopdefault.aspx/tabid-248/14_read-5985/date-23723/> ;
-                      foaf:phone "0341-12671332" ;
-                      ld:relatedTo ldo:IHK .
-
-ldp:Pieper_Katrin a foaf:Person ;
-                  foaf:name "Katrin Pieper" .
-
-ldp:Plaenitz_Sven a foaf:Person ;
-                  foaf:name "Sven Plänitz" ;
-                  foaf:mbox "sven.plaenitz@energieforen.de" ;
-                  foaf:phone "+49 341 1245582" .
-
-ldp:Pohl_Anja a foaf:Person ;
-              rdfs:comment "Organisation der Kinderuni" ;
-              foaf:name "Anja Pohl" .
-
-ldp:Pretsch_Irina a foaf:Person ;
-                  foaf:name "Irina Pretsch" ;
-                  ld:relatedTo ldt:BBW .
-
-ldp:Quapp_Wolfgang a foaf:Person ;
-                   foaf:name "Dr. Wolfgang Quapp" .
-
-ldp:Quester_Roland a foaf:Person ;
-                   rdfs:comment "Leiter Umweltbibliothek" ;
-                   foaf:name "Roland Quester" .
-
-ldp:Rademacher_HansBert a foaf:Person ;
-                        foaf:name "Prof. Dr. Hans-Bert Rademacher" .
-
-ldp:Raschke_Roman a foaf:Person ;
-                  rdfs:comment "BürgerVerein Leutzsch e.V." ;
-                  foaf:name "Roman Raschke" .
-
-ldp:Raue_Manfred a foaf:Person ;
-                 rdfs:comment "Geschäftsführer VDE Leipzig/Halle" ;
-                 foaf:name "Manfred Raue" .
-
-ldp:Rehm_Axel a foaf:Person ;
-              foaf:name "Axel Rehm" ;
-              foaf:mbox "rehm@schulbiologiezentrum-leipzig.de" .
-
-ldp:Reiner_Oliver a foaf:Person ;
-                  foaf:name "Oliver Reiner" ;
-                  foaf:mbox "oliver.reiner@villa-leipzig.de" ;
-                  ld:relatedTo ldo:Villa, ldt:LeISA .
-
-ldp:Reinhardt_Sylvi a foaf:Person ;
-                    foaf:name "Sylvi Reinhardt" ;
-                    ld:hasAPIId "Host.40" .
-
-ldp:Reschke_Katrin a foaf:Person ;
-                   rdfs:comment "Leiterin Dölitzer Wassermühle" ;
-                   foaf:name "Katrin Reschke" .
-
-ldp:Reschke_Volker a foaf:Person ;
-                   rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." ;
-                   foaf:name "Volker Reschke" .
-
-ldp:Retznick_Laura a foaf:Person ;
-                   foaf:name "Laura Retznick" ;
-                   ld:relatedTo ldt:DiakonischesWerk .
-
-ldp:Rhinow_Solvejg a foaf:Person ;
-                   foaf:name "Dr. Solvejg Rhinow" .
-
-ldp:Roeser_Sascha a foaf:Person ;
-                  foaf:name "Sascha Roeser" .
-
-ldp:Roth_Dorit a foaf:Person ;
-               foaf:name "Dorit Roth" ;
-               ld:relatedTo ldt:CVJM, ldt:Stadtjugendring .
-
-ldp:Sauerland_Antje a foaf:Person ;
-                    foaf:name "Antje Sauerland" ;
-                    foaf:mbox "antje.sauerland@dbfz.de" .
-
-ldp:Schaetzl_Matthias a foaf:Person ;
-                      foaf:name "Matthias Schätzl" .
-
-ldp:Schilling_Peter a foaf:Person ;
-                    rdfs:comment "Leiter AZ Schkeuditz" ;
-                    foaf:name "Peter Schilling" .
-
-ldp:Schlupp_Peter a foaf:Person ;
-                  foaf:name "Peter Schlupp" .
-
-ldp:Schmidt_Rosemarie a foaf:Person ;
-                      rdfs:comment "Landesgeschäftsführerin MNU Sachsen" ;
-                      foaf:name "Rosemarie Schmidt" .
-
-ldp:Schneider_Carla a foaf:Person ;
-                    foaf:name "Carla Schneider" .
-
-ldp:Schroth_Johannes a foaf:Person ;
-                     foaf:name "Johannes Schroth" .
-
-ldp:Schueler_Axel a foaf:Person ;
-                  rdfs:comment "Vorsitzender LSGM" ;
-                  foaf:name "Dr. Axel Schüler" .
-
-ldp:Schueler_Jana a foaf:Person ;
-                  foaf:name "Jana Schüler" ;
-                  foaf:mbox "schueler.jana@bbw-leipzig.de" ;
-                  ld:relatedTo ldt:Stadtjugendring, ldt:BBW .
-
-ldp:Schulze_Susanne a foaf:Person ;
-                    rdfs:comment "MINT-Beauftrage der BA Leipzig" ;
-                    foaf:name "Susanne Schulze" .
-
-ldp:Schulze_Tristan a foaf:Person ;
-                    rdfs:comment "Webdesigner für die GfZK" ;
-                    foaf:name "Tristan Schulze" ;
-                    ld:relatedTo ldo:GfZK .
-
-ldp:Schwarze_Wolfgang a foaf:Person ;
-                      rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." ;
-                      foaf:name "Wolfgang Schwarze" .
-
-ldp:Schweikart_Rudolf a foaf:Person ;
-                      foaf:name "Rudolf Schweikart" .
-
-ldp:Seidel_Franka a foaf:Person ;
-                  rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" ;
-                  foaf:name "Franka Seidel" .
-
-ldp:Seik_Lena a foaf:Person ;
-              rdfs:comment "Leitung Kunstvermittlung der GfZK" ;
-              foaf:name "Lena Seik" ;
-              foaf:mbox "foryou@gfzk.de" ;
-              ld:relatedTo ldo:GfZK .
-
-ldp:Stadler_Peter a foaf:Person ;
-                  rdfs:comment "Professor für Bioinformatik an der Uni Leipzig" ;
-                  foaf:name "Prof. Peter F. Stadler" ;
-                  ld:hasURL <http://www.bioinf.uni-leipzig.de/> .
-
-ldp:Steudel_Claudia a foaf:Person ;
-                    foaf:name "Claudia Steudel" ;
-                    foaf:mbox "claudia.steudel@leipzig.de" ;
-                    foaf:phone "0341-1234378" .
-
-ldp:Stoiber_WolfgangEA a foaf:Person ;
-                       rdfs:comment "Vorsitzender des NuKLA e. V." ;
-                       foaf:name "Wolfgang E.A. Stoiber" .
-
-ldp:Teutsch_Georg a foaf:Person ;
-                  rdfs:comment "Direktor UFZ (Stand 2010)" ;
-                  foaf:name "Prof. Dr. Georg Teutsch" .
-
-ldp:Thate_Stefanie a foaf:Person ;
-                   foaf:name "Stefanie Thate" .
-
-ldp:Thielemann_Lutz a foaf:Person ;
-                    rdfs:comment "Geschäftsführer der WRL ab 15.08.2013 (Amtsblatt, 29.06.2013)" ;
-                    foaf:name "Lutz Thielemann" ;
-                    ld:relatedTo ldt:WRL .
-
-ldp:Tobaben_JoernHeinrich a foaf:Person ;
-                          rdfs:comment "Geschäftsführer der Wirtschaftsinitiative Mitteldeutschland" ;
-                          foaf:name "Jörn-Heinrich Tobaben" .
-
-ldp:TraegerNestler_Angelika a foaf:Person ;
-                            rdfs:comment "Geschäftsführerin GaraGe gGmbH" ;
-                            foaf:name "Dr. Angelika Träger-Nestler" .
-
-ldp:Treschok_Katja a foaf:Person ;
-                   foaf:name "Katja Treschok" .
-
-ldp:Tutar_Katrin a foaf:Person ;
-                 foaf:name "Katrin Tutar" ;
-                 foaf:mbox "tutar@caktus.de" ;
-                 ld:relatedTo ldt:Caktus .
-
-ldp:Uhlmann_Matthias a foaf:Person ;
-                     foaf:name "Matthias Uhlmann" ;
-                     foaf:mbox "matthias.uhlmann@leipzig.de" ;
-                     foaf:phone "0341-1234361" .
-
-ldp:Ulrich_Ruediger a foaf:Person ;
-                    rdfs:comment "stellv. Vorsitzender JHA" ;
-                    foaf:name "Rüdiger Ulrich" .
-
-ldp:Vetterlein_Guenter a foaf:Person ;
-                       foaf:name "Günter Vetterlein" .
-
-ldp:Wagner_Thomas a foaf:Person ;
-                  foaf:name "Thomas Wagner" ;
-                  ld:hasAPIId "Host.33", "Host.34", "Host.30", "Host.31", "Host.32" .
-
-ldp:Waldmann_Johannes a foaf:Person ;
-                      rdfs:comment "Professor für Informatik an der HTKW Leipzig" ;
-                      foaf:name "Prof. Johannes Waldmann" ;
-                      ld:hasURL <http://www.imn.htwk-leipzig.de/~waldmann/> .
-
-ldp:Warkus_Hartmut a foaf:Person ;
-                   rdfs:comment "Geschäftsführer der ComputerSpielSchule", "2012 verstorben" ;
-                   foaf:name "Prof. Dr. Hartmut Warkus" .
-
-ldp:Weise_Joerg a foaf:Person ;
-                foaf:name "Jörg Weise" ;
-                ld:hasURL "http://www.public-confidence.de" .
-
-ldp:Weissgerber_Kerstin a foaf:Person ;
-                        rdfs:comment "Aurel Marketing" ;
-                        foaf:name "Kerstin Weißgerber" ;
-                        ld:hasURL <http://www.aurel-marketing.de> ;
-                        foaf:phone "0341-2520421", "0173-3550090" .
-
-ldp:Wieland_Sabine a foaf:Person ;
-                   rdfs:comment "Sprecherin der Regionalgruppe Leipzig der GI und des MINT-Netzwerks Leipzig " ;
-                   foaf:name "Prof. Dr. Sabine Wieland" .
-
-ldp:Wohlfahrt_Fabian a foaf:Person ;
-                     foaf:name "Fabian Wohlfahrt" ;
-                     foaf:mbox "fabian.wohlfart@energieforen.de" ;
-                     foaf:phone "0341-1245584" .
-
-ldp:Wolfram_Franziska a foaf:Person ;
-                      foaf:name "Franziska Wolfram" ;
-                      ld:relatedTo ldt:EvRefKirche .
-
-ldp:Wozniak_Klaus a foaf:Person ;
-                  rdfs:comment "Fakultät Maschinenbau und Energietechnik der HTWK Leipzig" ;
-                  foaf:name "Klaus Wozniak" ;
-                  foaf:mbox "wozniak@me.htwk-leipzig.de" ;
-                  foaf:title "Prof. Dr.-Ing. habil." ;
-                  foaf:phone "0341-30764135" .
-
-ldp:Wuerzberger_Nadine a foaf:Person ;
-                       foaf:name "Nadine Würzberger" ;
-                       foaf:mbox "nadine.wuerzberger@verein-fairbund.de" ;
-                       ld:relatedTo ldt:FAIRBUND .
-
-ldp:Wunderlich_Sabine a foaf:Person ;
-                      foaf:name "Sabine Wunderlich" .
-
-ldp:Zippe_Annett a foaf:Person ;
-                 foaf:name "Annett Zippe" ;
-                 ld:relatedTo ldt:Kinderschutzbund .
-
-ldp:vonJan_Teresa a foaf:Person ;
-                  foaf:name "Teresa von Jan" ;
-                  ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/365-teresa> ;
-                  ld:relatedTo ldt:Stadtjugendring .
-
-ldp:vonNessler_Georg a foaf:Person ;
-                     foaf:name "Georg von Nessler" ;
-                     foaf:mbox "Nessler@IP-Dialog.de" ;
-                     foaf:phone "0341-3928198-10" .
-
-<> a owl:Ontology ;
-   rdfs:label "Personen" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" .
-
-foaf:Person a owl:Class ;
-            rdfs:label "Person" .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+
+ldp:Ackermann_Arne
+    a foaf:Person ;
+    foaf:name "Arne Ackermann" .
+
+ldp:Albert_Katrin
+    ld:relatedTo ldt:BusinessIntelligence ;
+    a foaf:Person ;
+    foaf:mbox "albert@bi-web.de" ;
+    foaf:name "Katrin Albert" ;
+    foaf:phone "0341-303383-30" .
+
+ldp:Bachmann_Lars
+    a foaf:Person ;
+    foaf:mbox "lars.bachmann@energieforen.de" ;
+    foaf:name "Lars Bachmann" ;
+    foaf:phone "0341-1245581" .
+
+ldp:Baesler_Detlef
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" ;
+    foaf:name "Detlef Bäsler" .
+
+ldp:Bamberg_Stefanie
+    a foaf:Person ;
+    foaf:name "Stefanie Bamberg" .
+
+ldp:Benedix_Katrin
+    ld:relatedTo ldt:DiakonischesWerk ;
+    a foaf:Person ;
+    rdfs:comment "SSA Schumann-Mittelschule" ;
+    foaf:name "Katrin Benedix" .
+
+ldp:Berg_Dennis
+    a foaf:Person ;
+    foaf:name "Dennis Berg" .
+
+ldp:Bergmann_Thommy
+    ld:hasURL <http://www.mandalari.de> ;
+    ld:relatedTo ldo:MandalaSpieleck ;
+    a foaf:Person ;
+    foaf:name "Thommy Bergmann" .
+
+ldp:Bernard_Ulrike
+    ld:relatedTo ldo:HausSteinstrasse ;
+    a foaf:Person ;
+    foaf:name "Ulrike Bernard" .
+
+ldp:Bielig_Sven
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau>, ldt:Stadtjugendring, ldt:UrbanSouls ;
+    a foaf:Person ;
+    foaf:name "Sven Bielig" .
+
+ldp:Boehr_Annett
+    ld:relatedTo <http://leipzig-data.de/Data/Traeger/RAA.Leipzig> ;
+    a foaf:Person ;
+    rdfs:comment "SSA Petri-Mittelschule" ;
+    foaf:mbox "a.boehr@raa-leipzig.de" ;
+    foaf:name "Annett Böhr" .
+
+ldp:Boran_Roland
+    a foaf:Person ;
+    rdfs:comment "Projektleiter ASG-Schülerakademie" ;
+    foaf:name "Dr. Roland Boran" .
+
+ldp:Both_Jana
+    a foaf:Person ;
+    rdfs:comment "Organisierte bis 2009 die Kinderuni. Inzwischen aus Leipzig weggezogen." ;
+    foaf:name "Jana Both" .
+
+ldp:BrendAmour_Nicola
+    a foaf:Person ;
+    foaf:mbox "nicola.brendamour@moez.fraunhofer.de" ;
+    foaf:name "Nicola Bren d‘Amour" ;
+    foaf:phone "0341-231039126" .
+
+ldp:BuechelBernhard_Aaron
+    ld:relatedTo ldt:CVJM ;
+    a foaf:Person ;
+    foaf:name "Aaron Büchel-Bernhard" .
+
+ldp:Buettner_Torsten
+    a foaf:Person ;
+    foaf:name "Torsten Büttner" .
+
+ldp:Burger_Petra
+    ld:relatedTo <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> ;
+    a foaf:Person ;
+    foaf:mbox "petra.burger@leipzig.de" ;
+    foaf:name "Petra Burger" .
+
+ldp:Darlatt_Kathrin
+    a foaf:Person ;
+    foaf:name "Kathrin Darlatt" .
+
+ldp:Diebler_Peggy
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/Stadtteilladen.Gruenau> ;
+    a foaf:Person ;
+    foaf:mbox "peggy.diebler@leipzig.de" ;
+    foaf:name "Peggy Diebler" ;
+    foaf:phone "01522-2989115" .
+
+ldp:Duschinger_Robert
+    a foaf:Person ;
+    rdfs:comment "stellv. Vorsitzender des Stadtelternrats (2013 gewählt)" ;
+    foaf:name "Robert Duschinger" .
+
+ldp:Elsaesser_Ralf
+    a foaf:Person ;
+    foaf:name "Ralf Elsässer" .
+
+ldp:Engel_Heike
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin Anker e.V." ;
+    foaf:name "Heike Engel" .
+
+ldp:Faehse_Robby
+    ld:relatedTo ldt:Stadtjugendfeuerwehr ;
+    a foaf:Person ;
+    foaf:name "Robby Faehse" .
+
+ldp:Fleckenstein_Heike
+    a foaf:Person ;
+    rdfs:comment "stellv. Vorsitzende des Stadtelternrats (2013 gewählt)" ;
+    foaf:name "Heike Fleckenstein" .
+
+ldp:Friedrich_Alexandra
+    ld:relatedTo ldo:GfZK ;
+    a foaf:Person ;
+    rdfs:comment "Leitung Kunstvermittlung der GfZK" ;
+    foaf:mbox "foryou@gfzk.de" ;
+    foaf:name "Alexandra Friedrich" .
+
+ldp:Friedrich_Marga
+    a foaf:Person ;
+    foaf:name "Marga Friedrich" .
+
+ldp:Fries_Kerstin
+    ld:relatedTo <http://leipzig-data.de/Data/Traeger/Verein.FFJ> ;
+    a foaf:Person ;
+    foaf:mbox "info@neue-muenze.de" ;
+    foaf:name "Kerstin Fries" .
+
+ldp:Fritzsche_Nicole
+    ld:relatedTo <http://leipzig-data.de/Data/Traeger/KinderVereinigung.Leipzig>, ldt:Stadtjugendring ;
+    a foaf:Person ;
+    foaf:name "Nicole Fritzsche" .
+
+ldp:Geffken_Michael
+    ld:relatedTo ldo:SchoolOfMedia ;
+    a foaf:Person ;
+    foaf:mbox "geffken@leipzigschoolofmedia.de" ;
+    foaf:name "Michael Geffken" ;
+    foaf:phone "0341-56296701" .
+
+ldp:Geisler_Andreas
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender des Stadtelternrats (2013 gewählt)" ;
+    foaf:name "Andreas Geisler" .
+
+ldp:Geng_Tobias
+    ld:relatedTo <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> ;
+    a foaf:Person ;
+    foaf:mbox "tobias.geng@leipzig.de" ;
+    foaf:name "Tobias Geng" .
+
+ldp:Georgi_Gunnar
+    ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/80-gunnar> ;
+    ld:relatedTo ldt:Stadtjugendring ;
+    a foaf:Person ;
+    foaf:name "Gunnar Georgi" .
+
+ldp:Giersdorf_Jens
+    a foaf:Person ;
+    foaf:mbox "jens.giersdorf@dbfz.de" ;
+    foaf:name "Jens Giersdorf" .
+
+ldp:Gleichmann_Tina
+    ld:relatedTo ldo:HausSteinstrasse ;
+    a foaf:Person ;
+    foaf:mbox "tina.gleichmann@haus-steinstrasse.de" ;
+    foaf:name "Tina Gleichmann" ;
+    foaf:phone "0341-30328824" .
+
+ldp:Glowacki_Romann
+    a foaf:Person ;
+    foaf:name "Romann Glowacki" .
+
+ldp:Graebe_HansGert
+    a foaf:Person ;
+    foaf:name "Prof. Dr. Hans-Gert Gräbe" .
+
+ldp:Graf_Corinna
+    ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/78-corinna> ;
+    ld:relatedTo ldt:Stadtjugendring ;
+    a foaf:Person ;
+    rdfs:comment "GF des Stadtjugendrings" ;
+    foaf:name "Corinna Graf" .
+
+ldp:Gregor_Jana
+    a foaf:Person ;
+    rdfs:comment "MINT-Beauftragte des MPI MIS" ;
+    foaf:name "Jana Gregor" .
+
+ldp:Grosser_Katja
+    a foaf:Person ;
+    foaf:name "Katja Großer" .
+
+ldp:Gruener_Andre
+    a foaf:Person ;
+    rdfs:comment "IHK zu Leipzig" ;
+    foaf:mbox "gruener@leipzig.ihk.de" ;
+    foaf:name "André Grüner" ;
+    foaf:phone "0341-12671259" .
+
+ldp:Gutschale_Anke
+    a foaf:Person ;
+    rdfs:comment "Organisation der Kinderuni" ;
+    foaf:name "Anke Gutschale" .
+
+ldp:Haenel_Andreas
+    a foaf:Person ;
+    foaf:mbox "andreas.haenel@energieforen.de" ;
+    foaf:name "Andreas Hänel" ;
+    foaf:phone "0341-1245585" .
+
+ldp:Haenisch_Wolfgang
+    a foaf:Person ;
+    foaf:name "Wolfgang Hänisch" .
+
+ldp:Haensch_Solveig
+    a foaf:Person ;
+    foaf:mbox "solveig.haensch@leipzig.de" ;
+    foaf:name "Solveig Hänsch" ;
+    foaf:phone "0341-1234362" .
+
+ldp:Haensel_Annegret
+    ld:relatedTo ldo:Unikatum, ldt:Unikatum ;
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin Unikatum gGmbH" ;
+    foaf:name "Annegret Hänsel" .
+
+ldp:Haensgen_Christoph
+    ld:hasURL <http://www.happy-robots.de> ;
+    a foaf:Person ;
+    foaf:name "Christoph Hänsgen" ;
+    foaf:phone "0341-35582828" .
+
+ldp:Hahn_Michael
+    a foaf:Person ;
+    rdfs:comment "Vereinsvorsitzender LJBW" ;
+    foaf:name "Michael Hahn" .
+
+ldp:Hamel_Corinna
+    a foaf:Person ;
+    foaf:name "Corinna Hamel" .
+
+ldp:Hantschick_Ines
+    a foaf:Person ;
+    foaf:name "Ines Hantschick" .
+
+ldp:Hauptmann_Anke
+    a foaf:Person ;
+    foaf:name "Anke Hauptmann" .
+
+ldp:Heckel_Ralf
+    a foaf:Person ;
+    foaf:mbox "ralf.heckel@nasa-moonbuggy.eu" ;
+    foaf:name "Ralf Heckel" ;
+    foaf:phone "0172-7949375" .
+
+ldp:Heinrich_Torsten
+    ld:relatedTo ldt:EvLuthJugend ;
+    a foaf:Person ;
+    rdfs:comment "Vertreter des SJR im JHA" ;
+    foaf:name "Torsten Heinrich" .
+
+ldp:Heinze_Sven
+    ld:relatedTo ldt:Sportjugend, ldt:Stadtjugendring ;
+    a foaf:Person ;
+    foaf:name "Sven Heinze" .
+
+ldp:Herold_Corrina
+    ld:hasURL "http://www.fom.de" ;
+    ld:relatedTo ldo:FOM ;
+    a foaf:Person ;
+    foaf:mbox "corrina.herold@fom.de" ;
+    foaf:name "Corrina Herold" ;
+    foaf:phone "0341-870967-91" ;
+    foaf:title "Dr." .
+
+ldp:Herrmann_Anne
+    a foaf:Person ;
+    foaf:name "Anne Herrmann" .
+
+ldp:Hintze_Steffen
+    a foaf:Person ;
+    foaf:name "Steffen Hintze" .
+
+ldp:Hoenemann_Tobias
+    a foaf:Person ;
+    foaf:name "Tobias Hönemann" .
+
+ldp:Hoernig_Karin
+    a foaf:Person ;
+    foaf:name "Karin Hörnig" .
+
+ldp:Holunder_Alma
+    a foaf:Person ;
+    foaf:name "Alma Holunder" .
+
+ldp:Hoyer_Stephan
+    a foaf:Person ;
+    foaf:name "Stephan Hoyer" .
+
+ldp:Huebner_Elke
+    a foaf:Person ;
+    foaf:mbox "elke.huebner@leipzig.de" ;
+    foaf:name "Elke Hübner" ;
+    foaf:phone "0341-123-5683" .
+
+ldp:Hufenreuter_Henry
+    a foaf:Person ;
+    foaf:name "Henry Hufenreuter" .
+
+ldp:Ihring_Lars
+    a foaf:Person ;
+    foaf:name "Lars Ihring" .
+
+ldp:Jaeger_Alexander
+    ld:relatedTo <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Jugendamt> ;
+    a foaf:Person ;
+    foaf:mbox "alexander.jaeger@leipzig.de" ;
+    foaf:name "Alexander Jäger" ;
+    foaf:phone "0341-123-4694" .
+
+ldp:Jaehnig_HeinrichMoritz
+    a foaf:Person ;
+    foaf:mbox "info@industriekulturtag-leipzig.de" ;
+    foaf:name "Heinrich Moritz Jähnig" .
+
+ldp:Johannes_Uta
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+    a foaf:Person ;
+    rdfs:comment "Sachbearbeiterin Medien- und Kreativwirtschaft im Amt für Wirtschaftsförderung" ;
+    foaf:mbox "uta.johannes@leipzig.de" ;
+    foaf:name "Uta Johannes" ;
+    foaf:phone "0341-123585" .
+
+ldp:Karwen_Bernd
+    a foaf:Person ;
+    foaf:mbox "Bernd.Karwen@instytutpolski.org" ;
+    foaf:name "Bernd Karwen" ;
+    foaf:phone "0341-7026113" .
+
+ldp:Keck_Lisa
+    a foaf:Person ;
+    rdfs:comment "Geschäftsstellenleiterin des Netzwerks \"Energie und Umwelt\" e.V." ;
+    foaf:mbox "NEU@energiemetropole-leipzig.de" ;
+    foaf:name "Lisa Keck" ;
+    foaf:phone "0341-1213317" .
+
+ldp:Keppler_Ralph
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> ;
+    a foaf:Person ;
+    foaf:mbox "ralph.keppler@leipzig.de" ;
+    foaf:name "Ralph Keppler" ;
+    foaf:phone "0341-1232097" .
+
+ldp:Kilchert_Manfred
+    a foaf:Person ;
+    foaf:mbox "manfred.kilchert@fb.htwk-leipzig.de" ;
+    foaf:name "Prof. Dipl.-Ing. Manfred Kilchert" ;
+    foaf:phone "0341-3076-6223" .
+
+ldp:Klauer_AnnaKatharina
+    a foaf:Person ;
+    foaf:name "Anna-Katharina Klauer" .
+
+ldp:Kleshch_Irina
+    ld:relatedTo <http://leipzig-data.de/Data/Firma/evermind> ;
+    a foaf:Person ;
+    foaf:mbox "ik@evermind.de" ;
+    foaf:name "Irina Kleshch" ;
+    foaf:phone "0341-2539660" .
+
+ldp:Klimesch_Holger
+    a foaf:Person ;
+    foaf:name "Holger Klimesch" .
+
+ldp:Knospe_Uta
+    ld:relatedTo <http://leipzig-data.de/Data/Traeger/BV.Messemagistrale> ;
+    a foaf:Person ;
+    foaf:name "Uta Knospe" .
+
+ldp:Koenig_KarlFriedrich
+    a foaf:Person ;
+    foaf:name "Karl-Friedrich König" .
+
+ldp:Koenig_Wolfgang
+    a foaf:Person ;
+    foaf:name "Prof. Wolfgang König" .
+
+ldp:Koerner_Annette
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin UIZ Förderverein" ;
+    foaf:name "Annette Körner" .
+
+ldp:Kohl_Ralf
+    a foaf:Person ;
+    foaf:name "Ralf Kohl" .
+
+ldp:Kramer_Anais
+    ld:relatedTo ldo:Zukunftsakademie ;
+    a foaf:Person ;
+    rdfs:comment "Leiterin der GS der Zukunftsakademie" ;
+    foaf:name "Anais Kramer" .
+
+ldp:Krause_Tanja
+    a foaf:Person ;
+    rdfs:comment "UFZ Department Umwelt- und Planungsrecht" ;
+    foaf:mbox "tanja.krause@ufz.de" ;
+    foaf:name "Tanja Krause" ;
+    foaf:phone "0341-2351257" .
+
+ldp:Krueger_Annett
+    a foaf:Person ;
+    foaf:name "Dr. Annett Krüger" .
+
+ldp:Kuechler_Romy
+    a foaf:Person ;
+    foaf:name "Romy Küchler" .
+
+ldp:Kuehne_Peter
+    a foaf:Person ;
+    rdfs:comment "GF der Lecos" ;
+    foaf:name "Peter Kühne" .
+
+ldp:Lange_Torsten
+    a foaf:Person ;
+    rdfs:comment "Leiter UFZ-Schülerlabor" ;
+    foaf:name "Dr. Torsten Lange" .
+
+ldp:Lehmann_Olaf
+    a foaf:Person ;
+    rdfs:comment "IHK zu Leipzig" ;
+    foaf:mbox "lehmann@leipzig.ihk.de" ;
+    foaf:name "Olaf Lehmann" ;
+    foaf:phone "0341-1267-1262" .
+
+ldp:Lindner_Bjoern
+    a foaf:Person ;
+    foaf:mbox "bjoern.lindner@empower-eu.net" ;
+    foaf:name "Björn Lindner" ;
+    foaf:phone "0341-9851844" .
+
+ldp:Lindner_Lothar
+    a foaf:Person ;
+    rdfs:comment "Planungsbüro für Energie und Umwelt" ;
+    foaf:mbox "iblindner@t-online.de" ;
+    foaf:name "Dipl.-Ing. Lothar Lindner" ;
+    foaf:phone "0341-3385520" .
+
+ldp:Lingk_Thomas
+    a foaf:Person ;
+    rdfs:comment "Abteilungsleiter und stellv. Vorsitzender des Netzwerk Energie und Umwelt e.V." ;
+    foaf:mbox "thomas.lingk@leipzig.de" ;
+    foaf:name "Thomas Lingk" ;
+    foaf:phone "0341-123-5851" .
+
+ldp:Maennig_Uwe
+    a foaf:Person ;
+    rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" ;
+    foaf:name "Uwe Männig" .
+
+ldp:Maruhn_Olaf
+    a foaf:Person ;
+    foaf:name "Olaf Maruhn" .
+
+ldp:Meier_Katja
+    ld:relatedTo ldt:InternationalerBund, ldt:Stadtjugendring ;
+    a foaf:Person ;
+    foaf:name "Katja Meier" .
+
+ldp:Meiler_Monika
+    a foaf:Person ;
+    foaf:name "Dr. Monika Meiler" .
+
+ldp:Messerschmidt_Elk
+    a foaf:Person ;
+    rdfs:comment "Leiter TÖP Rabutz" ;
+    foaf:name "Dr. Elk Messerschmidt" .
+
+ldp:Metschies_Juliane
+    a foaf:Person ;
+    foaf:mbox "juliane.metschies2@leipzig.de" ;
+    foaf:name "Juliane Metschies" ;
+    foaf:phone "0341-33756034" .
+
+ldp:Metz_Susanne
+    ld:relatedTo <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> ;
+    a foaf:Person ;
+    rdfs:comment "Amtsleiterin der städtischen Bibliotheken (Amtsblatt, 29.06.2013)" ;
+    foaf:name "Susanne Metz" .
+
+ldp:Meyer_Rene
+    a foaf:Person ;
+    foaf:name "René Meyer" .
+
+ldp:Moeller_Juergen
+    a foaf:Person ;
+    foaf:name "Jürgen Möller" .
+
+ldp:Moritz_Anja
+    a foaf:Person ;
+    foaf:mbox "anja.morit@leipzig.de" ;
+    foaf:name "Anja Moritz" ;
+    foaf:phone "01522-2989124" .
+
+ldp:Mueller_Doris
+    a foaf:Person ;
+    foaf:name "Doris Müller" .
+
+ldp:Mueller_Florian
+    a foaf:Person ;
+    foaf:name "Florian Müller" .
+
+ldp:Nagler_Petra
+    a foaf:Person ;
+    rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" ;
+    foaf:name "Petra Nagler" .
+
+ldp:Nuernberger_Tabea
+    ld:relatedTo ldt:CVJM ;
+    a foaf:Person ;
+    foaf:name "Tabea Nürnberger" .
+
+ldp:Pauli_Stev
+    a foaf:Person ;
+    foaf:name "Stev Pauli" .
+
+ldp:PeeckPreimuss_Attila
+    ld:relatedTo ldt:DGBJugend ;
+    a foaf:Person ;
+    foaf:name "Attila Peeck-Preimus" .
+
+ldp:Petschauer_Susanne
+    a foaf:Person ;
+    foaf:name "Susanne Petschauer" .
+
+ldp:Petzold_Matthias
+    a foaf:Person ;
+    foaf:name "Matthias Petzold" .
+
+ldp:Petzschler_Ines
+    a foaf:Person ;
+    foaf:name "Ines Petzschler" .
+
+ldp:Petzschler_Uwe
+    a foaf:Person ;
+    foaf:name "Uwe Petzschler" .
+
+ldp:PhuongThaoDinhVan
+    ld:hasURL <http://www.leipzig.ihk.de/desktopdefault.aspx/tabid-248/14_read-5985/date-23723/> ;
+    ld:relatedTo ldo:IHK ;
+    a foaf:Person ;
+    foaf:name "Phuong Thao Dinh Van" ;
+    foaf:phone "0341-12671332" .
+
+ldp:Pieper_Katrin
+    a foaf:Person ;
+    foaf:name "Katrin Pieper" .
+
+ldp:Plaenitz_Sven
+    a foaf:Person ;
+    foaf:mbox "sven.plaenitz@energieforen.de" ;
+    foaf:name "Sven Plänitz" ;
+    foaf:phone "+49 341 1245582" .
+
+ldp:Pohl_Anja
+    a foaf:Person ;
+    rdfs:comment "Organisation der Kinderuni" ;
+    foaf:name "Anja Pohl" .
+
+ldp:Pretsch_Irina
+    ld:relatedTo ldt:BBW ;
+    a foaf:Person ;
+    foaf:name "Irina Pretsch" .
+
+ldp:Quapp_Wolfgang
+    a foaf:Person ;
+    foaf:name "Dr. Wolfgang Quapp" .
+
+ldp:Quester_Roland
+    a foaf:Person ;
+    rdfs:comment "Leiter Umweltbibliothek" ;
+    foaf:name "Roland Quester" .
+
+ldp:Rademacher_HansBert
+    a foaf:Person ;
+    foaf:name "Prof. Dr. Hans-Bert Rademacher" .
+
+ldp:Raschke_Roman
+    a foaf:Person ;
+    rdfs:comment "BürgerVerein Leutzsch e.V." ;
+    foaf:name "Roman Raschke" .
+
+ldp:Raue_Manfred
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführer VDE Leipzig/Halle" ;
+    foaf:name "Manfred Raue" .
+
+ldp:Rehm_Axel
+    a foaf:Person ;
+    foaf:mbox "rehm@schulbiologiezentrum-leipzig.de" ;
+    foaf:name "Axel Rehm" .
+
+ldp:Reiner_Oliver
+    ld:relatedTo ldo:Villa, ldt:LeISA ;
+    a foaf:Person ;
+    foaf:mbox "oliver.reiner@villa-leipzig.de" ;
+    foaf:name "Oliver Reiner" .
+
+ldp:Reinhardt_Sylvi
+    a foaf:Person ;
+    foaf:name "Sylvi Reinhardt" .
+
+ldp:Reschke_Katrin
+    a foaf:Person ;
+    rdfs:comment "Leiterin Dölitzer Wassermühle" ;
+    foaf:name "Katrin Reschke" .
+
+ldp:Reschke_Volker
+    a foaf:Person ;
+    rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." ;
+    foaf:name "Volker Reschke" .
+
+ldp:Retznick_Laura
+    ld:relatedTo ldt:DiakonischesWerk ;
+    a foaf:Person ;
+    foaf:name "Laura Retznick" .
+
+ldp:Rhinow_Solvejg
+    a foaf:Person ;
+    foaf:name "Dr. Solvejg Rhinow" .
+
+ldp:Roeser_Sascha
+    a foaf:Person ;
+    foaf:name "Sascha Roeser" .
+
+ldp:Roth_Dorit
+    ld:relatedTo ldt:CVJM, ldt:Stadtjugendring ;
+    a foaf:Person ;
+    foaf:name "Dorit Roth" .
+
+ldp:Sauerland_Antje
+    a foaf:Person ;
+    foaf:mbox "antje.sauerland@dbfz.de" ;
+    foaf:name "Antje Sauerland" .
+
+ldp:Schaetzl_Matthias
+    a foaf:Person ;
+    foaf:name "Matthias Schätzl" .
+
+ldp:Schilling_Peter
+    a foaf:Person ;
+    rdfs:comment "Leiter AZ Schkeuditz" ;
+    foaf:name "Peter Schilling" .
+
+ldp:Schlupp_Peter
+    a foaf:Person ;
+    foaf:name "Peter Schlupp" .
+
+ldp:Schmidt_Rosemarie
+    a foaf:Person ;
+    rdfs:comment "Landesgeschäftsführerin MNU Sachsen" ;
+    foaf:name "Rosemarie Schmidt" .
+
+ldp:Schneider_Carla
+    a foaf:Person ;
+    foaf:name "Carla Schneider" .
+
+ldp:Schroth_Johannes
+    a foaf:Person ;
+    foaf:name "Johannes Schroth" .
+
+ldp:Schueler_Axel
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender LSGM" ;
+    foaf:name "Dr. Axel Schüler" .
+
+ldp:Schueler_Jana
+    ld:relatedTo ldt:BBW, ldt:Stadtjugendring ;
+    a foaf:Person ;
+    foaf:mbox "schueler.jana@bbw-leipzig.de" ;
+    foaf:name "Jana Schüler" .
+
+ldp:Schulze_Susanne
+    a foaf:Person ;
+    rdfs:comment "MINT-Beauftrage der BA Leipzig" ;
+    foaf:name "Susanne Schulze" .
+
+ldp:Schulze_Tristan
+    ld:relatedTo ldo:GfZK ;
+    a foaf:Person ;
+    rdfs:comment "Webdesigner für die GfZK" ;
+    foaf:name "Tristan Schulze" .
+
+ldp:Schwarze_Wolfgang
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." ;
+    foaf:name "Wolfgang Schwarze" .
+
+ldp:Schweikart_Rudolf
+    a foaf:Person ;
+    foaf:name "Rudolf Schweikart" .
+
+ldp:Seidel_Franka
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" ;
+    foaf:name "Franka Seidel" .
+
+ldp:Seik_Lena
+    ld:relatedTo ldo:GfZK ;
+    a foaf:Person ;
+    rdfs:comment "Leitung Kunstvermittlung der GfZK" ;
+    foaf:mbox "foryou@gfzk.de" ;
+    foaf:name "Lena Seik" .
+
+ldp:Stadler_Peter
+    ld:hasURL <http://www.bioinf.uni-leipzig.de/> ;
+    a foaf:Person ;
+    rdfs:comment "Professor für Bioinformatik an der Uni Leipzig" ;
+    foaf:name "Prof. Peter F. Stadler" .
+
+ldp:Steudel_Claudia
+    a foaf:Person ;
+    foaf:mbox "claudia.steudel@leipzig.de" ;
+    foaf:name "Claudia Steudel" ;
+    foaf:phone "0341-1234378" .
+
+ldp:Stoiber_WolfgangEA
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender des NuKLA e. V." ;
+    foaf:name "Wolfgang E.A. Stoiber" .
+
+ldp:Teutsch_Georg
+    a foaf:Person ;
+    rdfs:comment "Direktor UFZ (Stand 2010)" ;
+    foaf:name "Prof. Dr. Georg Teutsch" .
+
+ldp:Thate_Stefanie
+    a foaf:Person ;
+    foaf:name "Stefanie Thate" .
+
+ldp:Thielemann_Lutz
+    ld:relatedTo ldt:WRL ;
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführer der WRL ab 15.08.2013 (Amtsblatt, 29.06.2013)" ;
+    foaf:name "Lutz Thielemann" .
+
+ldp:Tobaben_JoernHeinrich
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführer der Wirtschaftsinitiative Mitteldeutschland" ;
+    foaf:name "Jörn-Heinrich Tobaben" .
+
+ldp:TraegerNestler_Angelika
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin GaraGe gGmbH" ;
+    foaf:name "Dr. Angelika Träger-Nestler" .
+
+ldp:Treschok_Katja
+    a foaf:Person ;
+    foaf:name "Katja Treschok" .
+
+ldp:Tutar_Katrin
+    ld:relatedTo ldt:Caktus ;
+    a foaf:Person ;
+    foaf:mbox "tutar@caktus.de" ;
+    foaf:name "Katrin Tutar" .
+
+ldp:Uhlmann_Matthias
+    a foaf:Person ;
+    foaf:mbox "matthias.uhlmann@leipzig.de" ;
+    foaf:name "Matthias Uhlmann" ;
+    foaf:phone "0341-1234361" .
+
+ldp:Ulrich_Ruediger
+    a foaf:Person ;
+    rdfs:comment "stellv. Vorsitzender JHA" ;
+    foaf:name "Rüdiger Ulrich" .
+
+ldp:Vetterlein_Guenter
+    a foaf:Person ;
+    foaf:name "Günter Vetterlein" .
+
+ldp:Wagner_Thomas
+    a foaf:Person ;
+    foaf:name "Thomas Wagner" .
+
+ldp:Waldmann_Johannes
+    ld:hasURL <http://www.imn.htwk-leipzig.de/~waldmann/> ;
+    a foaf:Person ;
+    rdfs:comment "Professor für Informatik an der HTKW Leipzig" ;
+    foaf:name "Prof. Johannes Waldmann" .
+
+ldp:Warkus_Hartmut
+    a foaf:Person ;
+    rdfs:comment "2012 verstorben", "Geschäftsführer der ComputerSpielSchule" ;
+    foaf:name "Prof. Dr. Hartmut Warkus" .
+
+ldp:Weise_Joerg
+    ld:hasURL "http://www.public-confidence.de" ;
+    a foaf:Person ;
+    foaf:name "Jörg Weise" .
+
+ldp:Weissgerber_Kerstin
+    ld:hasURL <http://www.aurel-marketing.de> ;
+    a foaf:Person ;
+    rdfs:comment "Aurel Marketing" ;
+    foaf:name "Kerstin Weißgerber" ;
+    foaf:phone "0173-3550090", "0341-2520421" .
+
+ldp:Wieland_Sabine
+    a foaf:Person ;
+    rdfs:comment "Sprecherin der Regionalgruppe Leipzig der GI und des MINT-Netzwerks Leipzig " ;
+    foaf:name "Prof. Dr. Sabine Wieland" .
+
+ldp:Wohlfahrt_Fabian
+    a foaf:Person ;
+    foaf:mbox "fabian.wohlfart@energieforen.de" ;
+    foaf:name "Fabian Wohlfahrt" ;
+    foaf:phone "0341-1245584" .
+
+ldp:Wolfram_Franziska
+    ld:relatedTo ldt:EvRefKirche ;
+    a foaf:Person ;
+    foaf:name "Franziska Wolfram" .
+
+ldp:Wozniak_Klaus
+    a foaf:Person ;
+    rdfs:comment "Fakultät Maschinenbau und Energietechnik der HTWK Leipzig" ;
+    foaf:mbox "wozniak@me.htwk-leipzig.de" ;
+    foaf:name "Klaus Wozniak" ;
+    foaf:phone "0341-30764135" ;
+    foaf:title "Prof. Dr.-Ing. habil." .
+
+ldp:Wuerzberger_Nadine
+    ld:relatedTo ldt:FAIRBUND ;
+    a foaf:Person ;
+    foaf:mbox "nadine.wuerzberger@verein-fairbund.de" ;
+    foaf:name "Nadine Würzberger" .
+
+ldp:Wunderlich_Sabine
+    a foaf:Person ;
+    foaf:name "Sabine Wunderlich" .
+
+ldp:Zippe_Annett
+    ld:relatedTo ldt:Kinderschutzbund ;
+    a foaf:Person ;
+    foaf:name "Annett Zippe" .
+
+ldp:vonJan_Teresa
+    ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/365-teresa> ;
+    ld:relatedTo ldt:Stadtjugendring ;
+    a foaf:Person ;
+    foaf:name "Teresa von Jan" .
+
+ldp:vonNessler_Georg
+    a foaf:Person ;
+    foaf:mbox "Nessler@IP-Dialog.de" ;
+    foaf:name "Georg von Nessler" ;
+    foaf:phone "0341-3928198-10" .
+
+<http://leipzig-data.de/Data/Personen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Personen" .
+
+foaf:Person
+    a owl:Class ;
+    rdfs:label "Person" .
+
