@@ -1,4 +1,3 @@
-RDFData
-=======
+Publicly available Data of the Leipzig Data Project
 
-Publicly (under the CC-0 license) available Data of the Project 
+http://leipzig-data.de 

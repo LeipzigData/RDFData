@@ -1,0 +1,36 @@
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://leipzig-data.de/Data/WeitereGeoDaten/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<http://leipzig-data.de/Data/Adresse/04103.Gutenbergplatz.1> rdfs:comment "Nicht vorhanden in OSM, naeherungsweise durch Klick" ;
+                                                             geo:lat "51.3365863979909"^^xsd:decimal ;
+                                                             geo:long "12.3933315021138"^^xsd:decimal .
+
+<http://leipzig-data.de/Data/Adresse/04105.Loehrstrasse.3-7> rdfs:comment "Volkshochschule" ;
+                                                             geo:lat "51.34526902439298"^^xsd:decimal ;
+                                                             geo:long "12.373279307516936"^^xsd:decimal .
+
+<http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> rdfs:comment "Das ist das Paulinum" ;
+                                                                geo:lat "51.33902949543749"^^xsd:decimal ;
+                                                                geo:long "12.379217718276642"^^xsd:decimal .
+
+<http://leipzig-data.de/Data/Adresse/04347.Zeumerstrasse.1> rdfs:comment "Schloss Schoenefeld; Nominatim kennt die Zeumerstrasse nicht, obwohl sie auf der OSM-Karte angezeigt wird" ;
+                                                            geo:lat "51.35936012947351"^^xsd:decimal ;
+                                                            geo:long "12.405996893081268"^^xsd:decimal .
+
+<http://leipzig-data.de/Data/ExterneAdresse/04668.Grimma.Klosterstrasse.1> rdfs:comment "Adresse in Grimma" ;
+                                                                           geo:lat "51.235880706666336"^^xsd:decimal ;
+                                                                           geo:long "12.730925057560626"^^xsd:decimal .
+
+<> a owl:Ontology ;
+   rdfs:label "Weitere Geo-Koordinaten" ;
+   rdfs:comment "Separat gesammelte Geo-Koordinaten, separiert vom werkzeuggestützten Updateprozess über Nominatim" ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" .
