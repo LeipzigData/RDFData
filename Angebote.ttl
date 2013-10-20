@@ -1,13 +1,13 @@
 # Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
 
 @base <http://leipzig-data.de/Data/Angebote/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
-@prefix lda: <http://leipzig-data.de/Data/AlteAdresse/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
@@ -98,7 +98,7 @@
 <http://leipzig-data.de/Data/Angebot/HTWK.ELISA> a ld:Angebot ;
                                                  rdfs:label "ELISA - Elitenförderung Sachsen" ;
                                                  rdfs:comment "Projekt ELISA war in 2009 bereits ausgelaufen und es fanden daher im Jahr 2009 keine Angebote statt." ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Karl-Liebknecht-Strasse.132> ;
+                                                 ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Karl-Liebknecht-Strasse.132> ;
                                                  ld:hasStatus "beendet" ;
                                                  ld:hasTag ldtag:Hochschule ;
                                                  ld:hasURL "http://www.sozwes.htwk-leipzig.de/" ;
@@ -114,7 +114,7 @@
 
 <http://leipzig-data.de/Data/Angebot/HTWK.FerienHochschule> a ld:Angebot ;
                                                             rdfs:label "Ferienhochschule der HTWK" ;
-                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Eichendorffstrasse.2> ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Eichendorffstrasse.2> ;
                                                             ld:hasStatus "aktiv" ;
                                                             ld:hasTag ldtag:Hochschule ;
                                                             ld:hasURL "http://www.htwk-leipzig.de/ferienhochschule" ;
@@ -131,7 +131,7 @@
 <http://leipzig-data.de/Data/Angebot/HfTL.MINT-Camp> a ld:Angebot ;
                                                      rdfs:label "MINT-Camp Leipzig" ;
                                                      rdfs:comment "Kommentar Hr Büttner: Warum hat kein Schüler vom Ostwald-Gymnasium teilgenommen? Die Frage habe ich mir auch gestellt – es scheint aber so zu sein, dass die Information die Schüler nicht oder nur unzureichend erreicht hat. 2008 war das Verhältnis deutlich besser. Aber das ist wie gesagt nur meine Vermutung. Gemeinsam mit dem MINT-Verein haben und werden wir die Kommunikation deutlich schärfen und noch früher informieren." ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Gustav-Freytag-Strasse.43-45> ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.43-45> ;
                                                      ld:hasStatus "aktiv" ;
                                                      ld:hasTag ldtag:Hochschule ;
                                                      ld:Art "4-tägige Veranstaltung mit Kursen, Projektarbeit und Einblick in Studieninhalte" ;
@@ -260,7 +260,7 @@ Nutzbar als Weiterbildung, SCHILF, Pädagogischer Tag  u.a.; andere Angebote ger
 
 <http://leipzig-data.de/Data/Angebot/Instag.Ferienakademie> a ld:Angebot ;
                                                             rdfs:label "Instag Ferienakademie" ;
-                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.1> ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goethestrasse.1> ;
                                                             ld:hasStatus "aktiv" ;
                                                             ld:hasTag ldtag:MINT ;
                                                             ld:hasURL "http://instag-bildung.de/nachrichtendetails/items/ferienakademien-bei-der-instag-gmbh-biocity-leipzig-60.html" ;
@@ -440,7 +440,7 @@ Diese Struktur kann dann mit mathematischen Methoden auf universelle und spezifi
 
 <http://leipzig-data.de/Data/Angebot/Marxexpedition.2012> a ld:Angebot ;
                                                           rdfs:label "Vortragsreihe Marxexpedition 2012. Orientierung im Kapitalismus" ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10-11> ;
                                                           ld:hasStatus "Projekt" ;
                                                           ld:hasURL "http://marxexpedition.de" ;
                                                           ld:Kosten "nein" ;
@@ -450,7 +450,7 @@ Diese Struktur kann dann mit mathematischen Methoden auf universelle und spezifi
 
 <http://leipzig-data.de/Data/Angebot/Marxexpedition.2013> a ld:Angebot ;
                                                           rdfs:label "Vortragsreihe Marxexpedition 2013" ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10-11> ;
                                                           ld:hasStatus "Projekt" ;
                                                           ld:Kosten "nein" ;
                                                           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/RLSachsen> ;
@@ -459,7 +459,7 @@ Diese Struktur kann dann mit mathematischen Methoden auf universelle und spezifi
 
 <http://leipzig-data.de/Data/Angebot/OFT.Muehlholz.Spielezentrum> a ld:Angebot ;
                                                                   rdfs:label "Sächsisches Spielezentrum" ;
-                                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Prinz-Eugen-Strasse.34> ;
+                                                                  ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Prinz-Eugen-Strasse.34> ;
                                                                   ld:hasStatus "aktiv" ;
                                                                   ld:hasURL "http://www.oft-muehlholz.de" ;
                                                                   ld:relatedBundle <http://leipzig-data.de/Data/Ort/OFT.Muehlholz> ;
@@ -469,7 +469,7 @@ Diese Struktur kann dann mit mathematischen Methoden auf universelle und spezifi
 <http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Botanikschule> a ld:Angebot ;
                                                                          rdfs:label "Botanikschule" ;
                                                                          rdfs:comment "Das Angebot der Botanikschule umfasst ausgewählte Stoffeinheiten für den Unterricht in Sachkunde und Biologie. Dabei handelt es sich bis zur Klasse 7 um Themen der neuen Lehrpläne in Sachsen. Zusätzlich können Themen für den fachübergreifenden bzw. fächerverbindenden Unterricht ausgewählt werden. <br/> Darüber hinaus ist es möglich, gemeinsam verschiedene Projekte zu planen und zu gestalten. Für alle Themen stehen die neu eröffneten Gewächshäuser und das Freiland des Botanischen Gartens ganzjährig kostenfrei zur Verfügung. <br/> Für Projekte, in denen Material verbraucht wird bzw. gemeinsam gegessen wird, wird in Absprache ein kleiner Unkostenbeitrag erhoben, der die Einkaufskosten deckt. <br/> Der Besuch des tropischen Schmetterlingshauses kostet für angemeldete Schülergruppen pro Schüler 1 Euro (Begleitpersonen kostenfrei)." ;
-                                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Linnestrasse.1> ;
+                                                                         ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Linnestrasse.1> ;
                                                                          ld:hasStatus "aktiv" ;
                                                                          ld:hasTag ldtag:MINT ;
                                                                          ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
@@ -497,7 +497,7 @@ befindet sich inmitten des Siedlungsgebietes Meusdorf an der südöstlichen
 Stadtgrenze.  
 
 Ansprechpartner: Frau Patzschke, Frau Zaumseil""" ;
-                                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04289.Schwarzenbergweg.4> ;
+                                                                          ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Schwarzenbergweg.4> ;
                                                                           ld:hasStatus "aktiv" ;
                                                                           ld:hasTag ldtag:MINT ;
                                                                           ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
@@ -510,7 +510,7 @@ Ansprechpartner: Frau Patzschke, Frau Zaumseil""" ;
 <http://leipzig-data.de/Data/Angebot/SchulBiologieZentrum.Lehrgarten> a ld:Angebot ;
                                                                       rdfs:label "Botanischer Lehrgarten" ;
                                                                       rdfs:comment "Das ca. 1,5 Hektar große Gelände befindet sich am Schleußiger Weg 1, gegenüber der Rennbahn, im Südwesten von Leipzig. Der Eintritt ist kostenfrei. Ansprechpartner: Herr Rehm (Leiter, e-mail: rehm@schulbiologiezentrum-leipzig.de), Frau Bringezu (Fachlehrerin, e-mail: bringezu@schulbiologiezentrum-leipzig.de" ;
-                                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.SchleussigerWeg.1> ;
+                                                                      ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.SchleussigerWeg.1> ;
                                                                       ld:hasStatus "aktiv" ;
                                                                       ld:hasTag ldtag:MINT ;
                                                                       ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
@@ -531,7 +531,7 @@ Umgangs mit der Umwelt entwickeln.
 Besonders geeignet ist hierfür der lehrplangerechte \"Projektunterricht\". 
 
 Ansprechpartner: Herr Dr. Kästner""" ;
-                                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.PfaffendorferStrasse.29> ;
+                                                                     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
                                                                      ld:hasStatus "aktiv" ;
                                                                      ld:hasTag ldtag:MINT ;
                                                                      ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" ;
@@ -549,7 +549,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
 
 <http://leipzig-data.de/Data/Angebot/StadtLeipzig.GirlsDay> a ld:Angebot ;
                                                             rdfs:label "Girls' Day Leipzig" ;
-                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Burgplatz.1> ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Burgplatz.1> ;
                                                             ld:hasStatus "aktiv" ;
                                                             ld:hasTag ldtag:Berufsorientierung ;
                                                             ld:Art "Berufsorientierungsinitiative für Mädchen mit Schwerpunkt auf Berufen, in denen Frauen unterrepräsentiert sind" ;
@@ -563,7 +563,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
 
 <http://leipzig-data.de/Data/Angebot/StadtLeipzig.NaturWissenSchaffen> a ld:Angebot ;
                                                                        rdfs:label "Natur-Wissen Schaffen" ;
-                                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.NaumburgerStrasse.26> ;
+                                                                       ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.26> ;
                                                                        ld:hasStatus "aktiv" ;
                                                                        ld:hasTag ldtag:MINT ;
                                                                        ld:hasURL "http://www.leipzig.de/de/buerger/aemterhome/jugendamt/projekte", "http://www.natur-wissen-schaffen.de" ;
@@ -575,7 +575,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
 
 <http://leipzig-data.de/Data/Angebot/TransitionTown.Leipzig.Wandel> a ld:Angebot ;
                                                                     rdfs:label "Vortragsreihe \"No Future\" war gestern" ;
-                                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+                                                                    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10-11> ;
                                                                     ld:hasStatus "Projekt" ;
                                                                     ld:hasURL "http://www.transitiontown-leipzig.de/aktuell:vortragsreihe_2012" ;
                                                                     ld:Kosten "nein" ;
@@ -585,7 +585,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
 
 <http://leipzig-data.de/Data/Angebot/UFZ.KinderUmweltBus> a ld:Angebot ;
                                                           rdfs:label "KinderUmweltBus" ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04318.Permoserstrasse.15> ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
                                                           ld:hasStatus "aktiv" ;
                                                           ld:hasTag ldtag:Hochschule ;
                                                           ld:hasURL "http://www.kinderumweltbus.de", "http://www.lanu.de/de/Leipzig/KinderUmweltBus.html" ;
@@ -610,7 +610,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
 
 <http://leipzig-data.de/Data/Angebot/UniLeipzig.FMI.MatheVernetze> a ld:Angebot ;
                                                                    rdfs:label "Mathematik vernetzen" ;
-                                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+                                                                   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10-11> ;
                                                                    ld:hasStatus "abgeschlossen" ;
                                                                    ld:hasTag ldtag:Hochschule ;
                                                                    ld:Art "Schaffung regionaler Netzwerke aus Universitäten und Schule; regelmäßiger Informationsaustausch zwischen Wissenschaftlern, Mathematiklehrkräften und Schülerinnen und Schülern" ;
@@ -632,7 +632,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
 <http://leipzig-data.de/Data/Angebot/UniLeipzig.FMI.Schuelerarbeiten> a ld:Angebot ;
                                                                       rdfs:label "Schülerseiten der Fakultät Mathe/Informatik der Universität Leipzig" ;
                                                                       rdfs:comment "Die Wissenschaftlich-Praktische Arbeit (WPA) war eine besondere Unterrichtsform im 11. und 12. Schuljahr an der Erweiterten Oberschule (EOS) in der DDR. Sie fand regelmäßig vierzehntäglich bzw. wöchentlich statt. Im Rahmen dieser Arbeit erhielten Schüler oder kleine Schülergruppen Aufgaben, die sie selbstständig lösen sollten. Der Ort, an dem die wissenschaftlich praktische Arbeit durchgeführt wurde, konnte sich auch außerhalb der Schule befinden. Aufgaben wurden zum Beispiel von Betrieben vergeben. Auch nach der Wiedervereinigung wird die Wissenschaftlich-Praktische Arbeit an einigen Schulen u.a. am Wilhelm-Ostwald-Gymnasium in Leipzig fortgeführt." ;
-                                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.10-11> ;
+                                                                      ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10-11> ;
                                                                       ld:hasStatus "aktiv" ;
                                                                       ld:hasTag ldtag:MINT ;
                                                                       ld:hasURL "http://www.informatik.uni-leipzig.de/~meiler/Schuelerseiten.dir/" ;
@@ -678,7 +678,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
 <http://leipzig-data.de/Data/Angebot/UniLeipzig.MINTOring> a ld:Angebot ;
                                                            rdfs:label "MINToring" ;
                                                            rdfs:comment "Auslastung Sachsen (Leipzig+Dresden) gesamt: 113,3%, für Leipzig 52,9% (30 Plätze, 34 Teilnehmer, davon 25 TN aus Dresden und Umgebung)" ;
-                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.6> ;
+                                                           ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goethestrasse.6> ;
                                                            ld:hasStatus "aktiv" ;
                                                            ld:hasTag ldtag:Hochschule ;
                                                            ld:Kosten "nein" ;
@@ -711,7 +711,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
 
 <http://leipzig-data.de/Data/Angebot/UniLeipzig.SonntagsGespraech> a ld:Angebot ;
                                                                    rdfs:label "Sonntagsgespräch an der Leipziger Universität" ;
-                                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Ritterstrasse.8-10> ;
+                                                                   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.8-10> ;
                                                                    ld:hasStatus "Projekt" ;
                                                                    ld:hasURL "http://www.zv.uni-leipzig.de/service/veranstaltungen/sonntagsgespraech.html" ;
                                                                    ld:Kosten "nein" ;
@@ -721,7 +721,7 @@ Ansprechpartner: Herr Dr. Kästner""" ;
 
 <http://leipzig-data.de/Data/Angebot/VHS.LeipzigImWandel> a ld:Angebot ;
                                                           rdfs:label "MINT - Zukunft schaffen. Leipzig im Wandel" ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Loehrstrasse.3-7> ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Loehrstrasse.3-7> ;
                                                           ld:hasStatus "aktiv" ;
                                                           ld:hasURL "http://leipzig-netz.de/index.php5/ZAK.LeipzigerDiskurs" ;
                                                           ld:Kosten "nein" ;
@@ -738,7 +738,7 @@ Lebensbereichen auf ihn angewiesen. <br/> Wie alle Rohstoffe auf unserem Planete
 
 <http://leipzig-data.de/Data/Angebot/ZfI.Drahtseil> a ld:Angebot ;
                                                     rdfs:label "Drahtseil" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Demmeringstrasse.115> ;
                                                     ld:hasStatus "aktiv" ;
                                                     ld:Zielgruppe "Kinder-und Jugendliche" ;
                                                     ld:Zielstellung "Sucht-und Gewaltprävention" ;
@@ -749,7 +749,7 @@ Lebensbereichen auf ihn angewiesen. <br/> Wie alle Rohstoffe auf unserem Planete
 
 <http://leipzig-data.de/Data/Angebot/ZfI.Freeyourmind> a ld:Angebot ;
                                                        rdfs:label "Freeyourmind" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Demmeringstrasse.115> ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Demmeringstrasse.115> ;
                                                        ld:hasStatus "aktiv" ;
                                                        ld:Zielgruppe "Kinder und Jugendliche, Lehrer, Eltern" ;
                                                        ld:contactPerson ldp:Pieper_Katrin ;
