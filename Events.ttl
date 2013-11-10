@@ -1,7 +1,6 @@
 # Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
 
 @base <http://leipzig-data.de/Data/Events/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,9 +11,7 @@
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix org: <http://www.w3.org/ns/org#> .
 
 <http://leipzig-data.de/Data/Event/APILeipzig.169> a ld:Event ;
                                                    rdfs:label "Kreatives Leipzig Stammtisch" ;
@@ -185,6 +182,44 @@
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
                                                    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.182> .
 
+<http://leipzig-data.de/Data/Event/APILeipzig.183> a ld:Event ;
+                                                   rdfs:label "Business Speed Dating (branchenoffen)" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.kreatives-leipzig.de/projekte/business-speed-dating> ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2013-11-19T19:00:00+02:00" ;
+                                                   ical:location ldo:AlteSchlosserei ;
+                                                   ical:organizer ldo:KreativesLeipzig ;
+                                                   ical:description "0"^^xsd:integer ;
+                                                   ical:summary "Business Speed Dating (branchenoffen)" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.183> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.184> a ld:Event ;
+                                                   rdfs:label "Bildpräsentation und -besprechung - Titel „Eine Habe“" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:contactPerson ldp:Niggemeyer_Joachim ;
+                                                   ical:dtstart "2013-11-16T19:00:00+02:00" ;
+                                                   ical:location ldo:AtelierNiggemeyer ;
+                                                   ical:organizer ldp:Niggemeyer_Joachim ;
+                                                   ical:description "Liebe Freundinnen und Freunde der Malerei, hiermit lade ich Sie, nebst Begleitung, zur II. Bildpräsentation und -besprechung ein. <br/> <br/> ANMELDUNG bitte bis 10.11.2013 per Telefon (0341/33151671) oder E-Mail (joachim@niggemeyer-art.de) beim Veranstalter <br/> PROGRAMM <br/> 19 Uhr Begrüßung <br/> 20 Uhr Teil 1 - Bildpräsentation - Titel „Eine Habe“ (150 x 170 x 2 mm; Öl auf Leinwand) <br/> im Anschluss: Teil 2 - Bildbesprechung und Diskussion <br/> ab ca. 21 Uhr: lockeres Beisammensein <br/> <br/> HINWEISE <br/> Dresscode: keiner <br/> Unkostenbeitrag: 5 Euro (inklusive Freigetränk)" ;
+                                                   ical:summary "Bildpräsentation und -besprechung - Titel „Eine Habe“" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.184> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.185> a ld:Event ;
+                                                   rdfs:label "popoolär-Abend zur Auswertung der Herbsttour des Flying Music Circus" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://flying-music-circus.de/> ;
+                                                   ld:contactPerson ldo:KreativesLeipzig ;
+                                                   ical:dtstart "2013-11-28T20:30:42+02:00" ;
+                                                   ical:location ldo:Plan-B ;
+                                                   ical:organizer ldo:KreativesLeipzig ;
+                                                   ical:description "Die Herbsttour des Flying Music Circus ist vorbei. Gemeinsam mit dem beteiligten Artists, dem Orga-Team und Besuchenden der Konzerte möchten wir gern auswerten, was gut lief und was bei einer eventuellen 3. Tour-Runde im Jahr 2014 verändert bzw. verbessert werden müsste. <br/> <br/> PS: Am selben Tag gibt es ab 17.30 Uhr ein Treffen zum gleichen Thema im „Alten Wettbüro“ nahe dem Neustädter Bahnhof." ;
+                                                   ical:summary "popoolär-Abend zur Auswertung der Herbsttour des Flying Music Circus" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.185> .
+
 <http://leipzig-data.de/Data/Event/ASG.2013-09-10> a ld:Event ;
                                                    rdfs:label "Angewandte Geometrie" ;
                                                    ld:hasTag ldtag:ASG ;
@@ -290,44 +325,48 @@
 <http://leipzig-data.de/Data/Event/Kuni.2013-11-08> a ld:Event ;
                                                     rdfs:label "macht nüschd. HDGDL <3 - Sprache in den neuen Medien" ;
                                                     ld:hasTag ldtag:Kinderuni ;
-                                                    ical:dtstart "2013-11-08T16:30:00+01:00"^^xsd:datetime; ical:dtend "2013-11-08T18:00:00+01:00"^^xsd:datetime ;
+                                                    ical:dtstart "2013-11-08T16:30:00+01:00"^^xsd:datetime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:organizer ldt:UniLeipzig ;
                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
                                                     ical:description "Mit den 'neuen Medien' sind neue Formen aufgekommen, wie man miteinander kommunizieren kann: in Chat, Facebook, und per SMS kann man einander schreiben und fast sofort antworten. Durch diese neue Form einander zu schreiben ist der Sprachgebrauch anders, als man es in der Schule lernt oder als es in Zeitungen zu finden ist. Prof. Siebenhaar wird erklären, was speziell an diesem Sprachgebrauch ist, und es wird nach einer Antwort auf die Frage gesucht, ob damit die deutsche Sprache verludere, wie das von manchen behauptet wird. Mit Prof. Dr. Beat Siebenhaar, Institut für Germanistik" ;
+                                                    ical:dtend "2013-11-08T18:00:00+01:00"^^xsd:datetime ;
                                                     ld:hasAddressAddendum "Auditorium Maximum" ;
                                                     ical:summary "macht nüschd. HDGDL <3 - Sprache in den neuen Medien - Veranstaltung in der Reihe „Kinderuni Leipzig“ mit Prof. Dr. Beat Siebenhaar, Institut für Germanistik" .
 
 <http://leipzig-data.de/Data/Event/Kuni.2013-11-15> a ld:Event ;
                                                     rdfs:label "Elektrizität - Stromereien mit Ladungen" ;
                                                     ld:hasTag ldtag:Kinderuni ;
-                                                    ical:dtstart "2013-11-15T16:30:00+01:00"^^xsd:datetime; ical:dtend "2013-11-15T18:00:00+01:00"^^xsd:datetime ;
+                                                    ical:dtstart "2013-11-15T16:30:00+01:00"^^xsd:datetime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:organizer ldt:UniLeipzig ;
                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
                                                     ical:description "Elektrizität ist überall. Ohne sie fährt kein Auto, der Fernseher bleibt dunkel, keiner ruft an und das Essen wird nicht warm. Ohne Elektrizität kann man aber auch nicht denken, sehen, sich bewegen und unser Herz würde aufhören zu schlagen. Was ist Elektrizität aber eigentlich? Wo kommt sie her? Kann man Elektrizität sehen und wie bewegen sich Dinge durch Elektrizität? Prof. Cichos wird euch dies und mehr in seiner Vorlesung beantworten. Mit Prof. Dr. Frank Cichos, Institut für Experimentelle Physik I" ;
+                                                    ical:dtend "2013-11-15T18:00:00+01:00"^^xsd:datetime ;
                                                     ld:hasAddressAddendum "Auditorium Maximum" ;
                                                     ical:summary "Elektrizität - Stromereien mit Ladungen - Veranstaltung in der Reihe „Kinderuni Leipzig“ mit Prof. Dr. Frank Cichos, Institut für Experimentelle Physik I" .
 
 <http://leipzig-data.de/Data/Event/Kuni.2013-11-22> a ld:Event ;
                                                     rdfs:label "Wo kommen die musikalischen Ideen her?" ;
                                                     ld:hasTag ldtag:Kinderuni ;
-                                                    ical:dtstart "2013-11-22T16:30:00+01:00"^^xsd:datetime; ical:dtend "2013-11-22T18:00:00+01:00"^^xsd:datetime ;
+                                                    ical:dtstart "2013-11-22T16:30:00+01:00"^^xsd:datetime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:organizer ldt:UniLeipzig ;
                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
                                                     ical:description "Haben die großen Komponisten wie Bach, Beethoven oder Mozart beim Komponieren alles ganz neu erfunden? Kann man das überhaupt? Wie wird das heute gemacht? Herr Timm hat sich schon als Kind mit Musik beschäftigt. Heute ist er Leiter der Leipziger Universitätsmusik und leitet auch den Chor der Uni Leipzig. Er erklärt Euch, wie Musikstücke entstehen. Viele davon kennt Ihr bestimmt und Ihr könnt Euch überraschen lassen, wie sie entstanden sind. Mit David Timm, Leipziger Universitätsmusikdirektor und Leiter des Leipziger Universitätschores" ;
+                                                    ical:dtend "2013-11-22T18:00:00+01:00"^^xsd:datetime ;
                                                     ld:hasAddressAddendum "Auditorium Maximum" ;
                                                     ical:summary "Wo kommen die musikalischen Ideen her? - Veranstaltung in der Reihe „Kinderuni Leipzig“ mit David Timm, Leipziger Universitätsmusikdirektor und Leiter des Leipziger Universitätschores" .
 
 <http://leipzig-data.de/Data/Event/Kuni.2013-11-29> a ld:Event ;
                                                     rdfs:label "Besondere Patienten - Wie heilt man kranke Vögel und Patienten" ;
                                                     ld:hasTag ldtag:Kinderuni ;
-                                                    ical:dtstart "2013-11-29T18:00:00+01:00"^^xsd:datetime; ical:dtend "2013-11-29T16:30:00+01:00"^^xsd:datetime ;
+                                                    ical:dtstart "2013-11-29T18:00:00+01:00"^^xsd:datetime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:organizer ldt:UniLeipzig ;
                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
                                                     ical:description "Vögel und Reptilien sind schon sehr spezielle Tiere – nicht nur in der Haltung, sondern auch, wenn sie mal zum Arzt müssen. Schließlich hören die wenigsten auf „Sitz!“ und dann haben sie auch noch ganz spezielle Erkrankungen… <br/> Die Vorlesung zeigt durch viele Beispiele von kranken Vogel- und Reptilienpatienten, wo die Herausforderungen für den Tierarzt liegen und was man aus medizinischer Sicht machen kann. Mit Prof. Dr. Maria-Elisabeth Krautwald-Junghanns und PD Dr. Michael Pees, Klinik für Vögel und Reptilien" ;
+                                                    ical:dtend "2013-11-29T16:30:00+01:00"^^xsd:datetime ;
                                                     ld:hasAddressAddendum "Auditorium Maximum" ;
                                                     ical:summary "Besondere Patienten - Wie heilt man kranke Vögel und Patienten - Veranstaltung in der Reihe „Kinderuni Leipzig“ mit Prof. Dr. Maria-Elisabeth Krautwald-Junghanns und PD Dr. Michael Pees, Klinik für Vögel und Reptilien" .
 
@@ -464,42 +503,6 @@
                                                     ical:summary "MINT-Berufetag der IHK in der INSPIRATA" ;
                                                     ical:contact "Frank Tanzmann, Tel. 0341-1267-1354, mailto:tanzmann@leipzig.ihk.de." .
 
-<http://leipzig-data.de/Data/Event/Marxexpedition.2013-07-25> a ld:Event ;
-                                                              rdfs:label "Christian Schmidt: Mensch-Natur-Verhältnis" ;
-                                                              ld:hasTag ldtag:Marx ;
-                                                              ical:dtstart "2013-07-25T19:00:00+02:00"^^xsd:datetime ;
-                                                              ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                              ld:zurReihe <http://leipzig-data.de/Data/Angebot/Marxexpedition.2013> ;
-                                                              ical:description "Die Marx-Expedition geht weiter" ;
-                                                              ld:hasAddressAddendum "Hörsaalgebäude, Aushang beachten" ;
-                                                              ical:summary "Christian Schmidt: Mensch-Natur-Verhältnis" .
-
-<http://leipzig-data.de/Data/Event/NEU.2013-07-23> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Energiemanagement KOMPAKT" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ld:hasURL <http://ip-seminars.de/6038/23-07-2013-seminar-din-iso-50001-novellierung-des-energie-und-stromsteuergesetzes/> ;
-                                                   ical:dtstart "2013-07-23T09:00:00+02:00"^^xsd:datetime ;
-                                                   ical:location ldo:BIC ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Kompakter halbtägiger praxisgerechter Streifzug durch alle Bereiche, die für eine erfolgreiche Umsetzung eines Energiemanagementsystems notwendig sind. (gesetzliche Grundlagen, Energiesteuern, Zertifizierungsverfahren, DIN EN ISO 50001, DIN 16247, Energieeinsparpotentiale, Praxisbeispiele)<br/> Zielgruppe: Führungskräfte und Personen, die mit der Einführung oder Umsetzung involviert sind. Referent:Herr Dipl.-Ing. Ingo Therburg, Geschäftsführer der EmSol Energiemanagement GmbH. Ihr Kostenanteil an den Seminargebühren: Frühbucher: 195,– € (inkl. 31,13 € 19% MwSt.) Normalbucher: 245,– € (inkl. 39,12 € 19% MwSt.). Im Preis sind Pausengetränke und Snacks ebenfalls inbegriffen. Die Bezahlung Ihrer Seminargebühren ist u. a. über Kreditkarte, PayPal, Lastschrift, Rechnung etc. möglich. Informieren Sie sich auf der Seite ip-seminars.de über weitere Veranstaltungen des Anbieters oder melden Sie sich einfach direkt über Online-Ticket Service Amiando an." ;
-                                                   ical:dtend "2013-07-23T14:00:00+02:00"^^xsd:datetime ;
-                                                   ical:summary "Energiemetropole-Leipzig: Energiemanagement KOMPAKT" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "wS3nKJ3E+eZ3gsNqd3o2ew", "kc3G+eEpY+nU7O7w8/SG4w" .
-
-<http://leipzig-data.de/Data/Event/NEU.2013-07-25> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Projektgruppe Solares Marketing" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2013-07-25T12:30:00+02:00"^^xsd:datetime ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/Postbank.Egelstrasse> ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Einladung zu einem Arbeitstreffen der Projektgruppe 'Solares Marketing' im Solarclusterder Stadt Leipzig. Leitung und Moderation: Kerstin Weißgerber" ;
-                                                   ical:dtend "2013-07-25T14:00:00+02:00"^^xsd:datetime ;
-                                                   ld:hasAddressAddendum "Beratungsraum" ;
-                                                   ical:summary "Energiemetropole-Leipzig: Projektgruppe Solares Marketing" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "gbSwiFXNZlNP8jO31aO28Q" .
-
 <http://leipzig-data.de/Data/Event/NEU.2013-08-20> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Praxisorientierte Einführung eines Energiemanagementsystems nach DIN EN ISO 50 001" ;
                                                    ld:hasTag ldtag:Energie ;
@@ -542,10 +545,11 @@
                                                    rdfs:label "Energiemetropole-Leipzig: Auftaktveranstaltung Mari:e Leipzig" ;
                                                    ld:hasTag ldtag:Energie ;
                                                    ld:hasURL <http://www.marie.streks.org/meldung/bundesumweltminister-altmaier-bei-auftakt-zu-marie-leipzig-am-6913.html> ;
-                                                   ical:dtend "2013-09-06T13:00:00+02:00"^^xsd:datetime; ical:dtstart "2013-09-06T08:30:00+02:00"^^xsd:datetime ;
+                                                   ical:dtstart "2013-09-06T08:30:00+02:00"^^xsd:datetime ;
                                                    ical:location ldo:AlteNikolaiSchule ;
                                                    ical:organizer ldo:NetzwerkEnergieUmwelt ;
                                                    ical:description "Am 6. September wird Umweltminister Peter Altmaier in Leipzig den Auftakt zum Energieeffizienzmodell „Mari:e Leipzig“ verkünden. Dann heisst es für kleine und mittlere Unternehmen aus dem produzierenden Gewerbe der Region Leipzig „Geld zurück für verbrauchte Energie“. Wie funktioniert das? Um auch zukünftig Entlastungen von der Strom- und Energiesteuer durch den sogenannten Spitzenausgleich zu erhalten, wird von den Unternehmen zukünftig ein jährlicher Nachweis, ein sogenanntes Energieaudit, verlangt. Für Teilnehmer des Effizienzmodells Mari:e wird dieses Energieaudit erstellt und auf dessen Grundlage der Energieverbrauch gesenkt. Das Bundesministerium für Umwelt, Naturschutz und Reaktorsicherheit (BMU) fördert das Effizienzmodell Mari:e mit Mitteln aus der Klimaschutzinitiative der Bundesregierung.<br/>„Auf Grund der öffentlichen Förderung ist dieses Projekt für Unternehmen aus der Region Leipzig die günstigste Möglichkeit die gesetzlichen Anforderungen zu erfüllen. Dabei erhalten die Teilnehmer Beratung von ausgewiesenen Effizienzexperten für den Mittelstand“, sagt Professor Eberhard Jochem, Leiter des Projektes Mari:e. Die einfache und unbürokratische Arbeitsweise von Mari:e entspricht dabei der Vorgehensweise nach DIN EN 16247-1 Energieaudit, die als Nachweis zum Antrag auf Spitzenausgleich nach dem Energie- bzw. Stromgesetz gilt.<br/>Am 6. September sind alle kleinen und mittelständischen Betriebe des produzierenden Gewerbes der Region Leipzig eingeladen, sich für die Informationsveranstaltung mit Bundesumweltminister Altmaier in der Alten Nikolaischule anzumelden. Die Teilnahmezahl ist jedoch begrenzt. Für das Projekt selbst sind noch offene Plätze vorhanden.<br/>Weitere Informationen zu ®LEEN und zum Projekt Mari:e – Mach's richtig: Energieeffizient finden Sie unter http://www.leen-system.de und http://www.streks.org. Informationen zur Veranstaltung und zur Anmeldung erhalten Sie von Frank Kägebein, f.kaegebein@enbw.com oder loesungsanbieter.kmu@enbw.com" ;
+                                                   ical:dtend "2013-09-06T13:00:00+02:00"^^xsd:datetime ;
                                                    ical:summary "Energiemetropole-Leipzig: Auftaktveranstaltung Mari:e Leipzig" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ld:hasMD5Sum "9iJc3ubCwFyyfezLzZ57Mw" .
@@ -899,6 +903,20 @@
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ld:hasMD5Sum "a80jmpff1yzDJ8vdgCemuA" .
 
+<http://leipzig-data.de/Data/Event/NEU.2013-11-13> a ld:Event ;
+                                                   rdfs:label "7. Leipziger Energiepreistag: Innovative Produkte, neueste Vermarktungsstrategien und effiziente Geschäftsmodelle in der Energiewirtschaft" ;
+                                                   ld:hasTag ldtag:Energie ;
+                                                   ld:hasURL <http://www.get-ag.com/index.php?id=315> ;
+                                                   ical:dtstart "2013-11-13T09:00:00+01:00"^^xsd:datetime ;
+                                                   ical:location ldo:PanoramaTower ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Firma/GetAG> ;
+                                                   ical:description "Die GET AG lädt zum 7. Leipziger Energiepreistag in das City-Hochhaus Leipzig. Ein Schwerpunkthema in diesem Jahr ist „Business Process Outsourcing“, bekannt unter dem Kürzel BPO: Kostendruck und Effizienzüberlegungen sind meistens die Treiber bei der Entscheidung für die Auslagerung einzelner oder mehrerer Geschäftsprozesse. Doch reicht die reine Wirtschaftlichkeitsbetrachtung aus? Welche Überlegungen sollten noch angestellt werden? Das Wissen und die Erfahrungen der Referenten bringen hier Licht ins Dunkel. Um Rückmeldung bis spätestens 29. Oktober 2013 wird gebeten, da die Teilnehmerzahl begrenzt ist. " ;
+                                                   ical:dtend "2013-11-13T16:00:00+01:00"^^xsd:datetime ;
+                                                   ical:summary "Energiemetropole-Leipzig: 7. Leipziger Energiepreistag: Innovative Produkte, neueste Vermarktungsstrategien und effiziente Geschäftsmodelle in der Energiewirtschaft" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ical:contact "Alexandra Matthieß, Telefon: 0341.98980811, Fax 0341.98980801, E-Mail: alexandra.matthiess@aliado-online.de" ;
+                                                   ld:hasMD5Sum "fRERbw2Mdi6UcvhzRtMd+w" .
+
 <http://leipzig-data.de/Data/Event/NEU.2013-11-14> a ld:Event ;
                                                    rdfs:label "Gebäude- und Anlagentechnik im Industriestandard: Grundlagen - Planung - Dimensionierung" ;
                                                    ld:hasTag ldtag:Energie ;
@@ -913,6 +931,20 @@
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ical:contact "Telefon: 0341-4943920, Fax: 0341-4943921, E-Mail: beckert@dretec.de" ;
                                                    ld:hasMD5Sum "A5H0VKJBzJP2018LYfEXFQ" .
+
+<http://leipzig-data.de/Data/Event/NEU.2013-11-14.1> a ld:Event ;
+                                                     rdfs:label "Energieeffizienz im Unternehmen - Spitzenausgleich 2013 sichern" ;
+                                                     ld:hasTag ldtag:Energie ;
+                                                     ld:hasURL <http://www.hwk-leipzig.de/3,653,evedetail.html?eve=311> ;
+                                                     ical:dtstart "2013-11-14T17:00:00+01:00"^^xsd:datetime ;
+                                                     ical:location <http://leipzig-data.de/Data/Ort/HWK.HausDesHandwerks> ;
+                                                     ical:organizer ldt:HWK ;
+                                                     ical:description "Mit der neuen Spitzenausgleich-Effizienzsystemverordnung wurde für Unternehmen des produzierenden Gewerbes der Spitzenausgleich für die Strom- und Energiesteuer neu geregelt. Die Gewährung des Spitzenausgleichs ist an die Einführung eines Systems zur Verbesserung der Energieeffizienz geknüpft, was durch Nachweise bis spätestens 31. Dezember 2013 zu belegen ist. Betroffene Handwerksbetriebe müssen also noch in diesem Jahr aktiv werden, um den Spitzenausgleich im Jahr 2014 erhalten zu können.<br/>Anmeldung bis 7. November 2013. In einer kostenfreien Veranstaltung am 14. November 2013, 17 Uhr, im Konferenzsaal der Handwerkskammer zu Leipzig, Dresdner Straße 11/13, 04103 Leipzig, wird über die neuen gesetzlichen Regelungen zur Strom- und Energiesteuer, sowie die notwendigen Schritte und Anforderungen im Rahmen der Beantragung des Spitzenausgleichs informiert. Weiterhin werden Energiemanagementsysteme für Handwerksbetriebe sowie Fördermöglichkeiten zu deren Einführung vorgestellt. " ;
+                                                     ical:dtend "2013-11-14T19:00:00+01:00"^^xsd:datetime ;
+                                                     ical:summary "Energiemetropole-Leipzig: Energieeffizienz im Unternehmen - Spitzenausgleich 2013 sichern" ;
+                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                     ical:contact "Christiane Hoffmann, HWK zu Leipzig, Beraterin Umwelt,  Tel. 034383-61225, Fax 034383-61220, E-Mail: hoffmann.c@hwk-leipzig.de" ;
+                                                     ld:hasMD5Sum "K/5aFI1pbVjPVVvbUeZBNg" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-11-19> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Praxisorientierte Einführung eines Energiemanagementsystems nach DIN EN ISO 50 001" ;
@@ -956,17 +988,44 @@
                                                    ical:contact "Irina Kleshch, Netzwerk Intelligente LED-Beleuchtungstechnik, c/o evermind GmbH · Schorlemmerstraße 1 · 04155 Leipzig · Tel.: +49 341 2539660 · Fax: +49 341 2539661 · E-Mail: ik@evermind.de" ;
                                                    ld:hasMD5Sum "ZS2c3YzbzVBR2x9cmdvXMA" .
 
+<http://leipzig-data.de/Data/Event/NEU.2013-11-28.1> a ld:Event ;
+                                                     rdfs:label "Energiemetropole-Leipzig: 2. IT-Branchentreff" ;
+                                                     ld:hasTag ldtag:Energie ;
+                                                     ical:dtstart "2013-11-28T18:30:00+02:00"^^xsd:datetime ;
+                                                     ical:location ldt:Perdata ;
+                                                     ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                     ical:description "Der Cluster IT Mitteldeutschland lädt in Kooperation mit dem NEU e. V. und dem Amt für Wirtschaftsförderung der Stadt Leipzig zum 2. IT-Branchentreff in Leipzig ein. Beleuchtet werden aktuelle Themen an der Schnittstelle von IT und Energie.<br/>Eine Anmeldung ist nur mit einer entsprechenden Faxantwort aufgrund begrenzter Raumkapazitäten möglich." ;
+                                                     ical:dtend "2013-11-28T21:30:00+02:00"^^xsd:datetime ;
+                                                     ld:hasAddressAddendum "Erdgeschoss" ;
+                                                     ical:summary "Energiemetropole-Leipzig: 2. IT-Branchentreff" ;
+                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                     ical:contact "andre.soudah@it-mitteldeutschland.de" ;
+                                                     ld:hasMD5Sum "HNny7WitLUyMdKuipI/LqQ" .
+
 <http://leipzig-data.de/Data/Event/NEU.2013-12-02> a ld:Event ;
                                                    rdfs:label "Expertentreffen Energiemetropole Leipzig" ;
                                                    ld:hasTag ldtag:Energie ;
                                                    ld:hasURL <http://www.energiemetropole-leipzig.de/index.php/eventleser/events/expertentreffen-energiemetropole-leipzig-942.html> ;
-                                                   ical:dtstart "2013-12-02"^^xsd:date ;
+                                                   ical:dtstart "2013-12-02"^^xsd:date, "2013-12-02T09:30:00+01:00"^^xsd:datetime ;
                                                    ical:location ldo:BFW ;
                                                    ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Nähere Informationen folgen in Kürze!" ;
-                                                   ical:summary "Expertentreffen Energiemetropole Leipzig" ;
+                                                   ical:description "Nähere Informationen folgen in Kürze!", "Der Verein Netzwerk Energie & Umwelt e. V. und das Amt für Wirtschaftsförderung der Stadt Leipzig veranstalten am Montag, dem 2. Dezember 2013, im Berufsförderungswerk in Leipzig gemeinsam das alljährliche Expertentreffen Energiemetropole Leipzig.Unter dem Motto „Leipzig fährt STROMaufwärts“ werden in diesem Jahr die Themenbereiche Elektromobilität und energetische Projekte in der Region Schwerpunkte der Veranstaltung sein." ;
+                                                   ical:dtend "2013-12-02T09:30:00+01:00"^^xsd:datetime ;
+                                                   ical:summary "Expertentreffen Energiemetropole Leipzig", "Energiemetropole-Leipzig: Expertentreffen Energiemetropole Leipzig" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "5xyec+mTZ3fX60Zr8HHUoA" .
+                                                   ld:hasMD5Sum "5xyec+mTZ3fX60Zr8HHUoA", "dGLoNSc47ukLQpjSD73Elw" .
+
+<http://leipzig-data.de/Data/Event/NEU.2013-12-05> a ld:Event ;
+                                                   rdfs:label "Workshop 'Rapid Business Transformation'" ;
+                                                   ld:hasTag ldtag:Energie ;
+                                                   ical:dtstart "2013-12-05T16:00:00+01:00"^^xsd:datetime ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/Fraunhofer.MOEZ> ;
+                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                   ical:description "Das vom Fraunhofer MOEZ in Kooperation mit der Orange Hills GmbH entwickelte Managementkonzept 'Rapid Business Transformation' unterstützt Unternehmen und Organisationen dabei, die aktuelle Geschäftspraxis gemäß deen Anforderungen am Markt in sehr kurzer Zeit zu reflektieren, Geschäftsszenarien mit unterschiedlichen Fachexperten innerhalb und außerhalb der Organisation zu entwickeln und in sehr kurzen Entwicklungszyklen umzusetzen.<br/>Ziel der kreativen und praxisorientierten Veranstaltung ist ein gezielter Wissensaufbau und erfolgreicher Wissensaustausch. <br/>Mitgliedern des Netzwerk Energie & Umwelt e. V. wird abweichend von den Angaben im Flyer unanabhängig vom Zeitpunkt der Buchung die Teilnahme zum Frühucherpreis von 80 € angeboten." ;
+                                                   ical:dtend "2013-12-05T20:00:00+01:00"^^xsd:datetime ;
+                                                   ical:summary "Energiemetropole-Leipzig: Workshop 'Rapid Business Transformation'" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasMD5Sum "WwtKgfScLYICZDu3mgt0kw" .
 
 <http://leipzig-data.de/Data/Event/NEU.2013-12-10> a ld:Event ;
                                                    rdfs:label "Kraftakt Energiewende – Chancen und Risiken der Transformation" ;
@@ -995,6 +1054,17 @@
                                                    ical:summary "Energiemetropole-Leipzig: Ringvorlesung  an der Universität Leipzig: „Kraftakt Energiewende – Chancen und Risiken der Transformation“" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ld:hasMD5Sum "fvOrQZupPhdMRoUKPswiCQ" .
+
+<http://leipzig-data.de/Data/Event/NEU.2014-01-30.198> a ld:Event ;
+                                                       rdfs:label "Energiemetropole-Leipzig: Erdgas Umwelt Zukunft" ;
+                                                       ld:hasTag ldtag:Energie ;
+                                                       ical:dtstart "2014-01-30"^^xsd:date ;
+                                                       ical:location ldo:CongressCenterLeipzig ;
+                                                       ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                       ical:description "Die Tagungsinhalte sind in diesem Jahr:<br/><br/>Energiewende – deutscher Alleingang oder europäische Systemlösung als Impulsvortrag mit anschließender Podiumsdiskussion<br/>EnEV 2014 – Neuerungen und Anwendungs- und Umsetzungskriterien im Bestand und Neubau<br/>Erdgastechnologien als Kernelemente effizienter Energieverwendung<br/>Brennstoffzellentechnologie – Auswertung von Feldtests und Betrachtung des technischen Systems<br/>Strom- und Energiespeicherung aus KWK-Anlagen." ;
+                                                       ical:summary "Energiemetropole-Leipzig: Erdgas Umwelt Zukunft" ;
+                                                       ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                       ld:hasMD5Sum "WPx8oxJoH9xICyJnrj3PxA" .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2013-09-26> a ld:Event ;
                                                      rdfs:label "9. Klassisches Kartoffel Konzert" ;
