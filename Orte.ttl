@@ -293,7 +293,7 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
 <http://leipzig-data.de/Data/Ort/Bibliothek.Stadtbibliothek> a ld:Ort ;
                                                              rdfs:label "Stadtbibliothek" ;
                                                              ld:hasTelefon "0341-123-5343" ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Wilhelm-Leuschner-Platz.10-11> ;
+                                                             ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Wilhelm-Leuschner-Platz.10> ;
                                                              ld:hasStatus "aktiv" ;
                                                              ld:hasTag <http://leipzig-data.de/Data/Tag/Bibliothek> ;
                                                              ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> .
@@ -652,7 +652,7 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
 
 <http://leipzig-data.de/Data/Ort/Fraunhofer.MOEZ> a ld:Ort ;
                                                   rdfs:label "Fraunhofer MOEZ - Mittel- und Osteuropa-Zentrum" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Neumarkt.9-19> ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Neumarkt.9> ;
                                                   ld:contactPerson <http://leipzig-data.de/Data/Person/BrendAmAmour_Nicola> .
 
 <http://leipzig-data.de/Data/Ort/FruehesForschenSachsen> a ld:Ort ;
@@ -795,7 +795,7 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
 
 <http://leipzig-data.de/Data/Ort/HWK.HausDesHandwerks> a ld:Ort ;
                                                        rdfs:label "Haus des Handwerks" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DresdnerStrasse.11> ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Leipzig.DresdnerStrasse.11> ;
                                                        ld:hasSupplier <http://leipzig-data.de/Data/Traeger/HWK> .
 
 <http://leipzig-data.de/Data/Ort/HWK.HausKleineForscher> a ld:Ort ;
@@ -875,7 +875,7 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
 
 <http://leipzig-data.de/Data/Ort/HfTL> a ld:Ort ;
                                        rdfs:label "Hochschule für Telekommunikation Leipzig" ;
-                                       ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.43-45> .
+                                       ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.43> .
 
 <http://leipzig-data.de/Data/Ort/HornsErben> a ld:Ort ;
                                              rdfs:label "Horns Erben" ;
@@ -1219,7 +1219,7 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
 
 <http://leipzig-data.de/Data/Ort/MDR> a ld:Ort ;
                                       rdfs:label "MDR" ;
-                                      ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kantstrasse.71-73> ;
+                                      ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kantstrasse.71> ;
                                       ld:hasURL <http://www.mdr.de> .
 
 <http://leipzig-data.de/Data/Ort/MGH.LeipzigMitte> a ld:Ort ;
@@ -1668,10 +1668,10 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
 
 <http://leipzig-data.de/Data/Ort/SchulBiologiezentrum> a ld:Ort ;
                                                        rdfs:label "Schulbiologiezentrum der Stadt Leipzig" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4-6> ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
                                                        ld:hasStatus "aktiv" ;
                                                        ld:hasTag <http://leipzig-data.de/Data/Tag/MINT> ;
-                                                       ld:hasURL "http://www.schulbiologiezentrum-leipzig.de" .
+                                                       ld:hasURL <http://www.schulbiologiezentrum-leipzig.de> .
 
 <http://leipzig-data.de/Data/Ort/Schule.S04> a ld:Ort ;
                                              rdfs:label "Gustav-Hertz-Schule" ;
@@ -1762,7 +1762,11 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
 
 <http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus> a ld:Ort ;
                                                             rdfs:label "Neues Rathaus" ;
-                                                            ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4-6> .
+                                                            ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> .
+
+<http://leipzig-data.de/Data/Ort/StadtLeipzig.TechnischesRathaus> a ld:Ort ;
+                                                                  rdfs:label "Technisches Rathaus" ;
+                                                                  ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.118> .
 
 <http://leipzig-data.de/Data/Ort/Stadtelternrat> a ld:Ort ;
                                                  rdfs:label "Stadtelternrat" ;
@@ -2069,7 +2073,6 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
                                       ld:hasEmail "doris.mueller@zfi-leipzig.de" ;
                                       ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Demmeringstrasse.115> ;
                                       ld:hasStatus "Schließt zum Jahresende 2013" ;
-                                      ld:hasURL "http://www.zfi-Leipzig.de" ;
                                       ld:hasFax "0341-4773703" ;
                                       ld:Kosten "teilweise" ;
                                       ld:Zielgruppe "Kinder, Jugendliche, Erwachsene, Senioren" ;
