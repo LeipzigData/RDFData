@@ -1,0 +1,388 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+@prefix lds: <http://leipzig-data.de/Data/Stadtbezirk/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<http://leipzig-data.de/Data/AdministrativeGliederung/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Stadtbezirke und Ortsteile" .
+
+ld:Ortsteil
+    a owl:Class ;
+    rdfs:label "Ortsteil der Stadt Leipzig" .
+
+ld:Stadtbezirk
+    a owl:Class ;
+    rdfs:label "Stadtbezirk der Stadt Leipzig" .
+
+ldot:Althen-Kleinpoesna
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.29> ;
+    a ld:Ortsteil ;
+    rdfs:label "Althen-Kleinpösna" .
+
+ldot:Altlindenau
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.71> ;
+    a ld:Ortsteil ;
+    rdfs:label "Altlindenau" .
+
+ldot:Anger-Crottendorf
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.22> ;
+    a ld:Ortsteil ;
+    rdfs:label "Anger-Crottendorf" .
+
+ldot:Baalsdorf
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.28> ;
+    a ld:Ortsteil ;
+    rdfs:label "Baalsdorf" .
+
+ldot:Boehlitz-Ehrenberg
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.74> ;
+    a ld:Ortsteil ;
+    rdfs:label "Böhlitz-Ehrenberg" .
+
+ldot:Burghausen-Rueckmarsdorf
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.75> ;
+    a ld:Ortsteil ;
+    rdfs:label "Burghausen-Rückmarsdorf" .
+
+ldot:Connewitz
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.41> ;
+    a ld:Ortsteil ;
+    rdfs:label "Connewitz" .
+
+ldot:Doelitz-Doesen
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.44> ;
+    a ld:Ortsteil ;
+    rdfs:label "Dölitz-Dösen" .
+
+ldot:Engelsdorf
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.27> ;
+    a ld:Ortsteil ;
+    rdfs:label "Engelsdorf" .
+
+ldot:Eutritzsch
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.93> ;
+    a ld:Ortsteil ;
+    rdfs:label "Eutritzsch" .
+
+ldot:Gohlis-Mitte
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.91> ;
+    a ld:Ortsteil ;
+    rdfs:label "Gohlis-Mitte" .
+
+ldot:Gohlis-Nord
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.92> ;
+    a ld:Ortsteil ;
+    rdfs:label "Gohlis-Nord" .
+
+ldot:Gohlis-Sued
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.90> ;
+    a ld:Ortsteil ;
+    rdfs:label "Gohlis-Süd" .
+
+ldot:Grosszschocher
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.53> ;
+    a ld:Ortsteil ;
+    rdfs:label "Großzschocher" .
+
+ldot:Gruenau-Mitte
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.62> ;
+    a ld:Ortsteil ;
+    rdfs:label "Grünau-Mitte" .
+
+ldot:Gruenau-Nord
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.65> ;
+    a ld:Ortsteil ;
+    rdfs:label "Grünau-Nord" .
+
+ldot:Gruenau-Ost
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.61> ;
+    a ld:Ortsteil ;
+    rdfs:label "Grünau-Ost" .
+
+ldot:Gruenau-Siedlung
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.63> ;
+    a ld:Ortsteil ;
+    rdfs:label "Grünau-Siedlung" .
+
+ldot:Hartmannsdorf-Knautnaundorf
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.55> ;
+    a ld:Ortsteil ;
+    rdfs:label "Hartmannsdorf-Knautnaundorf" .
+
+ldot:Heiterblick
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.25> ;
+    a ld:Ortsteil ;
+    rdfs:label "Heiterblick" .
+
+ldot:Holzhausen
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.35> ;
+    a ld:Ortsteil ;
+    rdfs:label "Holzhausen" .
+
+ldot:Kleinzschocher
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.52> ;
+    a ld:Ortsteil ;
+    rdfs:label "Kleinzschocher" .
+
+ldot:Knautkleeberg-Knauthain
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.54> ;
+    a ld:Ortsteil ;
+    rdfs:label "Knautkleeberg-Knauthain" .
+
+ldot:Lausen-Gruenau
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.64> ;
+    a ld:Ortsteil ;
+    rdfs:label "Lausen-Grünau" .
+
+ldot:Leutzsch
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.73> ;
+    a ld:Ortsteil ;
+    rdfs:label "Leutzsch" .
+
+ldot:Liebertwolkwitz
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.34> ;
+    a ld:Ortsteil ;
+    rdfs:label "Liebertwolkwitz" .
+
+ldot:Lindenau
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.70> ;
+    a ld:Ortsteil ;
+    rdfs:label "Lindenau" .
+
+ldot:Lindenthal
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.83> ;
+    a ld:Ortsteil ;
+    rdfs:label "Lindenthal" .
+
+ldot:Loessnig
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.43> ;
+    a ld:Ortsteil ;
+    rdfs:label "Lößnig" .
+
+ldot:Luetzschena-Stahmeln
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.82> ;
+    a ld:Ortsteil ;
+    rdfs:label "Lützschena-Stahmeln" .
+
+ldot:Marienbrunn
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.42> ;
+    a ld:Ortsteil ;
+    rdfs:label "Marienbrunn" .
+
+ldot:Meusdorf
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.33> ;
+    a ld:Ortsteil ;
+    rdfs:label "Meusdorf" .
+
+ldot:Miltitz
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.66> ;
+    a ld:Ortsteil ;
+    rdfs:label "Miltitz" .
+
+ldot:Mockau-Nord
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.13> ;
+    a ld:Ortsteil ;
+    rdfs:label "Mockau-Nord" .
+
+ldot:Mockau-Sued
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.12> ;
+    a ld:Ortsteil ;
+    rdfs:label "Mockau-Süd" .
+
+ldot:Moeckern
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.80> ;
+    a ld:Ortsteil ;
+    rdfs:label "Möckern" .
+
+ldot:Moelkau
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.26> ;
+    a ld:Ortsteil ;
+    rdfs:label "Mölkau" .
+
+ldot:Neulindenau
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.72> ;
+    a ld:Ortsteil ;
+    rdfs:label "Neulindenau" .
+
+ldot:Neustadt-Neuschoenefeld
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.20> ;
+    a ld:Ortsteil ;
+    rdfs:label "Neustadt-Neuschönefeld" .
+
+ldot:Paunsdorf
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.24> ;
+    a ld:Ortsteil ;
+    rdfs:label "Paunsdorf" .
+
+ldot:Plagwitz
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.51> ;
+    a ld:Ortsteil ;
+    rdfs:label "Plagwitz" .
+
+ldot:Plaussig-Portitz
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.15> ;
+    a ld:Ortsteil ;
+    rdfs:label "Plaußig-Portitz" .
+
+ldot:Probstheida
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.32> ;
+    a ld:Ortsteil ;
+    rdfs:label "Probstheida" .
+
+ldot:Reudnitz-Thonberg
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.30> ;
+    a ld:Ortsteil ;
+    rdfs:label "Reudnitz-Thonberg" .
+
+ldot:Schleussig
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.50> ;
+    a ld:Ortsteil ;
+    rdfs:label "Schleußig" .
+
+ldot:Schoenau
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.60> ;
+    a ld:Ortsteil ;
+    rdfs:label "Schönau" .
+
+ldot:Schoenefeld-Abtnaundorf
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.10> ;
+    a ld:Ortsteil ;
+    rdfs:label "Schönefeld-Abtnaundorf" .
+
+ldot:Schoenefeld-Ost
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.11> ;
+    a ld:Ortsteil ;
+    rdfs:label "Schönefeld-Ost" .
+
+ldot:Seehausen
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.94> ;
+    a ld:Ortsteil ;
+    rdfs:label "Seehausen" .
+
+ldot:Sellerhausen-Stuenz
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.23> ;
+    a ld:Ortsteil ;
+    rdfs:label "Sellerhausen-Stünz" .
+
+ldot:Stoetteritz
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.31> ;
+    a ld:Ortsteil ;
+    rdfs:label "Stötteritz" .
+
+ldot:Suedvorstadt
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.40> ;
+    a ld:Ortsteil ;
+    rdfs:label "Südvorstadt" .
+
+ldot:Thekla
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.14> ;
+    a ld:Ortsteil ;
+    rdfs:label "Thekla" .
+
+ldot:Volkmarsdorf
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.21> ;
+    a ld:Ortsteil ;
+    rdfs:label "Volkmarsdorf" .
+
+ldot:Wahren
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.81> ;
+    a ld:Ortsteil ;
+    rdfs:label "Wahren" .
+
+ldot:Wiederitzsch
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.95> ;
+    a ld:Ortsteil ;
+    rdfs:label "Wiederitzsch" .
+
+ldot:Zentrum
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.00> ;
+    a ld:Ortsteil ;
+    rdfs:label "Zentrum" .
+
+ldot:Zentrum-Nord
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.06> ;
+    a ld:Ortsteil ;
+    rdfs:label "Zentrum-Nord" .
+
+ldot:Zentrum-Nordwest
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.05> ;
+    a ld:Ortsteil ;
+    rdfs:label "Zentrum-Nordwest" .
+
+ldot:Zentrum-Ost
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.01> ;
+    a ld:Ortsteil ;
+    rdfs:label "Zentrum-Ost" .
+
+ldot:Zentrum-Sued
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.03> ;
+    a ld:Ortsteil ;
+    rdfs:label "Zentrum-Süd" .
+
+ldot:Zentrum-Suedost
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.02> ;
+    a ld:Ortsteil ;
+    rdfs:label "Zentrum-Südost" .
+
+ldot:Zentrum-West
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Ortsteil.04> ;
+    a ld:Ortsteil ;
+    rdfs:label "Zentrum-West" .
+
+
+lds:Mitte rdfs:label "Stadtbezirk Mitte"; a ld:Stadtbezirk ;
+    ld:containsOrtsteil ldot:Zentrum, ldot:Zentrum-Nordwest,
+    ldot:Zentrum-Sued, ldot:Zentrum-Suedost, ldot:Zentrum-West,
+    ldot:Zentrum-Ost, ldot:Zentrum-Nord .
+
+lds:NordOst rdfs:label "Stadtbezirk Nord-Ost"; a ld:Stadtbezirk ;
+    ld:containsOrtsteil ldot:Schoenefeld-Abtnaundorf,
+    ldot:Schoenefeld-Ost, ldot:Mockau-Nord, ldot:Mockau-Sued,
+    ldot:Plaussig-Portitz, ldot:Thekla .
+
+lds:Ost rdfs:label "Stadtbezirk Ost"; a ld:Stadtbezirk ;
+    ld:containsOrtsteil ldot:Althen-Kleinpoesna, ldot:Baalsdorf,
+    ldot:Anger-Crottendorf, ldot:Engelsdorf, ldot:Heiterblick,
+    ldot:Neustadt-Neuschoenefeld, ldot:Sellerhausen-Stuenz, ldot:Moelkau,
+    ldot:Paunsdorf, ldot:Volkmarsdorf .
+
+lds:SuedOst rdfs:label "Stadtbezirk Süd-Ost"; a ld:Stadtbezirk ;
+    ld:containsOrtsteil ldot:Reudnitz-Thonberg, ldot:Holzhausen,
+    ldot:Liebertwolkwitz, ldot:Meusdorf, ldot:Probstheida, ldot:Stoetteritz .
+
+lds:Sued  rdfs:label "Stadtbezirk Süd"; a ld:Stadtbezirk ;
+   ld:containsOrtsteil ldot:Connewitz, ldot:Doelitz-Doesen,
+    ldot:Loessnig, ldot:Marienbrunn, ldot:Suedvorstadt.
+
+lds:SuedWest rdfs:label "Stadtbezirk Süd-West"; a ld:Stadtbezirk ;
+    rdfs:label "Stadtbezirk Mitte"; a ld:Stadtbezirk ;
+    ld:containsOrtsteil ldot:Grosszschocher,
+    ldot:Hartmannsdorf-Knautnaundorf, ldot:Kleinzschocher,
+    ldot:Knautkleeberg-Knauthain, ldot:Plagwitz, ldot:Schleussig .
+ 
+lds:West  rdfs:label "Stadtbezirk West"; a ld:Stadtbezirk ;
+   ld:containsOrtsteil ldot:Gruenau-Mitte, ldot:Gruenau-Nord,
+    ldot:Gruenau-Ost, ldot:Gruenau-Siedlung, ldot:Lausen-Gruenau,
+    ldot:Miltitz, ldot:Schoenau .
+ 
+lds:AltWest rdfs:label "Stadtbezirk Alt-West"; a ld:Stadtbezirk ;
+    ld:containsOrtsteil ldot:Altlindenau, ldot:Boehlitz-Ehrenberg,
+    ldot:Burghausen-Rueckmarsdorf, ldot:Leutzsch, ldot:Lindenau,
+    ldot:Neulindenau .
+ 
+lds:NordWest rdfs:label "Stadtbezirk Nord-West"; a ld:Stadtbezirk ;
+    ld:containsOrtsteil ldot:Lindenthal, ldot:Luetzschena-Stahmeln,
+    ldot:Moeckern, ldot:Wahren .
+
+
+lds:Nord  rdfs:label "Stadtbezirk Nord"; a ld:Stadtbezirk ;
+   ld:containsOrtsteil ldot:Eutritzsch, ldot:Gohlis-Mitte,
+   ldot:Gohlis-Nord, ldot:Gohlis-Sued, ldot:Wiederitzsch, ldot:Seehausen .
+
