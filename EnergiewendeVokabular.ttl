@@ -1,0 +1,133 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://leipzig-data.de/Data/EnergiewendeVokabular/>
+    dct:contributor "Lars Eidam" ;
+    dct:creator "Praktikumsgruppe Energiewendeprojekt 2013" ;
+    a owl:Ontology ;
+    rdfs:comment "Diese Ontologie enthält alle notwendigen Beschreibungen für die Modellierung und Abbildung von Energieanlagen." ;
+    rdfs:label "Energiewende Projekt Vokabular"@de ;
+    owl:versionInfo "0.1.1.0003" .
+
+ld:Anlage
+    a owl:Class ;
+    rdfs:label "Energieanlage"@de .
+
+ld:Biomasse
+    a ld:Energietraeger ;
+    rdfs:comment "Erzeugung der elektrischen Energie durch Biomasse" ;
+    rdfs:label "Bioenergie" .
+
+ld:Einspeisungsebene
+    a owl:Class, owl:DatatypeProperty ;
+    rdfs:comment "Über welche Einspeisungsebene wird der Strom der Anlage eingespeist" ;
+    rdfs:domain ld:Anlage ;
+    rdfs:label "Einspeisungsebene"@de ;
+    rdfs:range ld:Einspeisungsebene .
+
+ld:Energietraeger
+    a owl:Class, owl:DatatypeProperty ;
+    rdfs:comment "Durch welchen Energieträger ereugt die Anlage Strom" ;
+    rdfs:domain ld:Anlage ;
+    rdfs:label "Energieträger"@de ;
+    rdfs:range ld:Energietraeger .
+
+ld:HS
+    a ld:Einspeisungsebene ;
+    rdfs:comment "60 kV bis 150 kV" ;
+    rdfs:label "Hochspannung" .
+
+ld:Inbetriebnahmedatum
+    a owl:DatatypeProperty ;
+    rdfs:comment "Ein Literal bestehend aus dem Datum der Inbetriebnahme" ;
+    rdfs:domain ld:Anlage ;
+    rdfs:label "Inbetriebnahmedatum"@de ;
+    rdfs:range xsd:date .
+
+ld:MS
+    a ld:Einspeisungsebene ;
+    rdfs:comment "1 kV bis 30 kV" ;
+    rdfs:label "Mittelspannung" .
+
+ld:NS
+    a ld:Einspeisungsebene ;
+    rdfs:comment "230 V bis 690 V" ;
+    rdfs:label "Niederspannung" .
+
+ld:Netzbetreiber
+    a owl:DatatypeProperty ;
+    rdfs:comment "Ein Literal bestehend aus dem Namen der Betreibergesellschaft der Anlage" ;
+    rdfs:domain ld:Anlage ;
+    rdfs:label "Netzbetreiber"@de ;
+    rdfs:range rdfs:Literal .
+
+ld:Ort
+    a owl:DatatypeProperty ;
+    rdfs:comment "Ein Literal bestehend aus dem Namen des Ortes" ;
+    rdfs:domain ld:Anlage ;
+    rdfs:label "Ort"@de ;
+    rdfs:range rdfs:Literal .
+
+ld:PLZ
+    a owl:DatatypeProperty ;
+    rdfs:comment "Ein Literal bestehend aus der Postleitzahl des Standortes" ;
+    rdfs:domain ld:Anlage ;
+    rdfs:label "Postleitzahl"@de ;
+    rdfs:range rdfs:Literal .
+
+ld:Solar
+    a ld:Energietraeger ;
+    rdfs:comment "Erzeugung der elektrischen Energie durch die Sonne" ;
+    rdfs:label "Sonnenenergie" .
+
+ld:Wasser
+    a ld:Energietraeger ;
+    rdfs:comment "Erzeugung der elektrischen Energie durch Wasserkraft" ;
+    rdfs:label "Wasserkraft" .
+
+ld:Wind
+    a ld:Energietraeger ;
+    rdfs:comment ">Erzeugung der elektrischen Energie durch Windkraft" ;
+    rdfs:label "Windenergie" .
+
+ld:hasENR
+    a owl:DatatypeProperty ;
+    rdfs:comment "Ein Literal bestehend aus einer der Zeichenketten beginnent mit einem Buchstaben gefolt von 32 Ziffern" ;
+    rdfs:domain ld:Anlage ;
+    rdfs:label "Anlagenschlüssel"@de ;
+    rdfs:range rdfs:Literal .
+
+ld:hatAdresse
+    a owl:ObjectProperty ;
+    rdfs:comment "Stellt die Beziehung zu einer Adress-Resource dar." ;
+    rdfs:domain ld:Anlage ;
+    rdfs:label "hat Adresse"@de ;
+    rdfs:range ld:Adresse .
+
+ld:installierteLeistung
+    a owl:DatatypeProperty ;
+    rdfs:comment "Ein Integer bestehend aus der Leistungsangabe der Anlage in kW" ;
+    rdfs:domain ld:Anlage ;
+    rdfs:label "Leistung (in kW)"@de ;
+    rdfs:range xsd:integer .
+
+
+<http://leipzig-data.de/Data/Unternehmen/50Hertz> a org:Organization ; 
+  skos:prefLabel "50 Hertz" . 
+
+<http://leipzig-data.de/Data/Unternehmen/NetzLeipzigGmbH> a org:Organization ; 
+    ld:NetzbetreiberBetriebsnummer "10001882" ;
+  skos:prefLabel "Netz Leipzig GmbH" . 
+
+<http://leipzig-data.de/Data/Unternehmen/MitNetzStromGmbH> a org:Organization ; 
+    ld:NetzbetreiberBetriebsnummer "10001645" ;
+  skos:prefLabel "Mitteldeutsche Netzgesellschaft Strom mbH" . 
+
+<http://dbpedia.org/resource/Saxony>
+  skos:prefLabel "Bundesland Sachsen" . 
