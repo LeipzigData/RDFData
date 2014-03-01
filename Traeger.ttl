@@ -2,10 +2,16 @@
 
 @base <http://leipzig-data.de/Data/Traeger/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 
 <http://leipzig-data.de/Data/Agent/APILeipzig> a foaf:Agent ;
                                                foaf:name "Projekt API Leipzig" ;
@@ -52,14 +58,14 @@
                                              foaf:fax "0341-2539661" ;
                                              foaf:phone "0341-2539660" .
 
-ld:Traeger a <http://www.w3.org/2002/07/owl#Class> ;
+ld:Traeger a owl:Class ;
            rdfs:label "Träger" .
 
-ld:Unternehmen a <http://www.w3.org/2002/07/owl#Class> ;
+ld:Unternehmen a owl:Class ;
                rdfs:label "Unternehmen" ;
                rdfs:subClassOf ld:Traeger .
 
-ld:Verein a <http://www.w3.org/2002/07/owl#Class> ;
+ld:Verein a owl:Class ;
           rdfs:label "Verein" ;
           rdfs:subClassOf ld:Traeger .
 
@@ -67,7 +73,7 @@ ld:Verein a <http://www.w3.org/2002/07/owl#Class> ;
                                            rdfs:label "HTWK, Fakultät Elektrotechnik und Informationstechnik" ;
                                            ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Waechterstrasse.13> ;
                                            ld:hasStatus "aktiv" ;
-                                           ld:hasTag <http://leipzig-data.de/Data/Tag/Forschung>, <http://leipzig-data.de/Data/Tag/MINT> ;
+                                           ld:hasTag ldtag:Forschung, ldtag:MINT ;
                                            ld:hasSupplier <HTWK> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> a ld:Traeger ;
@@ -78,7 +84,7 @@ ld:Verein a <http://www.w3.org/2002/07/owl#Class> ;
                                                                  rdfs:label "Stadt Leipzig, Amt für Wirtschaftsförderung" ;
                                                                  ld:hasTelefon "0341-1235826" .
 
-<> a <http://www.w3.org/2002/07/owl#Ontology> ;
+<> a owl:Ontology ;
    rdfs:label "Träger" ;
    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    cc:attributionURL <http://leipzig-data.de> ;
@@ -1070,6 +1076,10 @@ ld:Verein a <http://www.w3.org/2002/07/owl#Class> ;
                                            ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Renftstrasse.1> ;
                                            ld:hasURL "http://www.anker-leipzig.de" ;
                                            ld:hasSupplierNumber "062" .
+
+<http://leipzig-data.de/Data/Verein/InfAI> a org:Organization ;
+                                           skos:prefLabel "InfAI - Institut für Angewandte Informatik e.V. an der Universität Leipzig" ;
+                                           foaf:homepage <http://infai.org> .
 
 <http://leipzig-data.de/Data/Verein/KreativesLeipzig> a ld:Traeger, ld:Verein ;
                                                       rdfs:label "Kreatives Leipzig e.V." .
