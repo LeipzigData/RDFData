@@ -25,17 +25,25 @@ ld:Biomasse
     rdfs:label "Bioenergie" .
 
 ld:Einspeisungsebene
-    a owl:Class, owl:DatatypeProperty ;
+    a owl:Class;
+    rdfs:label "Einspeisungsebene"@de .
+
+ld:hatEinspeisungsebene
+    a owl:DatatypeProperty ;
     rdfs:comment "Über welche Einspeisungsebene wird der Strom der Anlage eingespeist" ;
     rdfs:domain ld:Anlage ;
-    rdfs:label "Einspeisungsebene"@de ;
+    rdfs:label "hat Einspeisungsebene"@de ;
     rdfs:range ld:Einspeisungsebene .
 
 ld:Energietraeger
-    a owl:Class, owl:DatatypeProperty ;
+    a owl:Class ;
+    rdfs:label "Energieträger"@de ;
+
+ld:hatEnergietraeger
+    a owl:DatatypeProperty ;
     rdfs:comment "Durch welchen Energieträger ereugt die Anlage Strom" ;
     rdfs:domain ld:Anlage ;
-    rdfs:label "Energieträger"@de ;
+    rdfs:label "hat Energieträger"@de ;
     rdfs:range ld:Energietraeger .
 
 ld:HS
