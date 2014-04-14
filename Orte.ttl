@@ -2,12 +2,13 @@
 
 @base <http://leipzig-data.de/Data/Orte/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
+ld:Ort a owl:Class ;
        rdfs:label "Ort" .
 
 <http://leipzig-data.de/Data/Ort/AKAD-Hochschule> a ld:Ort ;
@@ -100,6 +101,10 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
                                                   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.2-4> ;
                                                   ld:hasURL <http://www.auerbachs-keller-leipzig.de/> ;
                                                   ld:hasFax "341-21610-11" .
+
+<http://leipzig-data.de/Data/Ort/Augustusplatz> a ld:Ort ;
+                                                rdfs:label "Augustusplatz" ;
+                                                ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.1> .
 
 <http://leipzig-data.de/Data/Ort/Auwaldstation> a ld:Ort ;
                                                 rdfs:label "Auwaldstation Leipzig" ;
@@ -325,27 +330,19 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
                                                           ld:hasFax "0341-5212443" ;
                                                           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> .
 
-<http://leipzig-data.de/Data/Ort/Billardakademie> a ld:Ort ;
-                                                  rdfs:label "Billard-Akademie Leipzig" ;
-                                                  rdfs:comment "Seit Winterferien 2011 keine erkennbaren Aktivitäten mehr", "Preisträger des \"Innovationspreis Weiterbildung des Freistaates Sachsen 2009\"" ;
-                                                  ld:hasTelefon "0341-6044565" ;
-                                                  ld:hasEmail "info@ba-leipzig.org" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Nonnenstrasse.19> ;
-                                                  ld:hasStatus "inaktiv" ;
-                                                  ld:hasTag <http://leipzig-data.de/Data/Tag/MINT> ;
-                                                  ld:hasURL "www.ba-leipzig.org" ;
-                                                  ld:Art "Sommercamps, Ferienangebote, Angebote für Schulklassen, Projekte zur Förderung von Hochbegabungen sowie spezielle Hilfen für Teilnehmer mit Lernstörungen" ;
-                                                  ld:Kosten "ca. 4,00 bis 30,00 Euro / Teilnehmer" ;
-                                                  ld:Zielgruppe "Schülerinnen und Schüler ab Klassenstufe 5" ;
-                                                  ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Billardakademie> ;
-                                                  ld:Finanzierung "gefördert aus Mitteln der EU und des Freistaates Sachsen <i>Investitionen in Ihre Zukunft</i>" ;
-                                                  ld:Zielstellung "Förderung individueller Lern- und Leistungspotenziale im mathematisch-naturwissenschaftlichen Bereich anhand des Billardspiels (physikalische und biologische Abläufe)" ;
-                                                  ld:Teilnahmebedingungen "keine" .
-
 <http://leipzig-data.de/Data/Ort/Bruno-Plache-Stadion> a ld:Ort, ld:Stadium ;
                                                        rdfs:label "Bruno-Plache-Stadion" ;
                                                        ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.ConnewitzerStrasse.21> ;
                                                        ld:hasURL <http://www.bruno-plache-stadion.de/> .
+
+<http://leipzig-data.de/Data/Ort/CCLS> a ld:Ort ;
+                                       rdfs:label "Computerclub Lützschena-Stahmeln" ;
+                                       ld:hasTelefon "0341-4619814" ;
+                                       ld:hasEmail "ccls@luetzschena-stahmeln.de" ;
+                                       ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Oelhafenstrasse.7> ;
+                                       ld:hasStatus "aktiv" ;
+                                       ld:hasTag <http://leipzig-data.de/Data/Tag/MINT> ;
+                                       ld:hasURL "http://www.ccls-online.de" .
 
 <http://leipzig-data.de/Data/Ort/Cafe-Grundmann> a ld:Ort ;
                                                  rdfs:label "Café Grundmann" ;
@@ -435,15 +432,6 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
                                                       ld:contactPerson <http://leipzig-data.de/Data/Person/Warkus_Hartmut> ;
                                                       ld:Teilnahmebedingungen "keine" ;
                                                       ld:Hintergrund "Seit 2008 ist die ComputerSpielSchule Leipzig Ort der Begegnung, Beratung und des Lernens. Nach kurzer Umzugspause öffnete sie am 21. Juni 2011 wieder ihre Pforten. Die Betreuung vor Ort erfolgt durch geschulte Pädagoginnen und Pädagogen. Die ComputerSpielSchule Leipzig ist ein Kooperationsprojekt der Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK) und der Universität Leipzig mit Unterstützung der Leipziger Messe GmbH und der Stadt Leipzig." .
-
-<http://leipzig-data.de/Data/Ort/ComputerclubXXXLuetzschena-Stahmeln> a ld:Ort ;
-                                                                      rdfs:label "Computerclub Lützschena-Stahmeln" ;
-                                                                      ld:hasTelefon "0341-4619814" ;
-                                                                      ld:hasEmail "ccls@luetzschena-stahmeln.de" ;
-                                                                      ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Oelhafenstrasse.7> ;
-                                                                      ld:hasStatus "aktiv" ;
-                                                                      ld:hasTag <http://leipzig-data.de/Data/Tag/MINT> ;
-                                                                      ld:hasURL "http://www.ccls-online.de" .
 
 <http://leipzig-data.de/Data/Ort/CongressCenterLeipzig> a ld:Ort ;
                                                         rdfs:label "Congress Center Leipzig" ;
@@ -2146,7 +2134,7 @@ ld:Ort a <http://www.w3.org/2002/07/owl#Class> ;
                                          ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.93> ;
                                          ld:hasAddressAddendum "Tor B, 3. OG" .
 
-<> a <http://www.w3.org/2002/07/owl#Ontology> ;
+<> a owl:Ontology ;
    rdfs:label "Orte" ;
    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    cc:attributionURL <http://leipzig-data.de> ;
