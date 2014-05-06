@@ -8,10 +8,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
-@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix org: <http://www.w3.org/ns/org#> .
 
 <http://leipzig-data.de/Data/Agent/APILeipzig> a foaf:Agent ;
                                                foaf:name "Projekt API Leipzig" ;
@@ -73,7 +70,7 @@ ld:Verein a owl:Class ;
                                            rdfs:label "HTWK, Fakultät Elektrotechnik und Informationstechnik" ;
                                            ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Waechterstrasse.13> ;
                                            ld:hasStatus "aktiv" ;
-                                           ld:hasTag ldtag:Forschung, ldtag:MINT ;
+                                           ld:hasTag <http://leipzig-data.de/Data/Tag/Forschung>, <http://leipzig-data.de/Data/Tag/MINT> ;
                                            ld:hasSupplier <HTWK> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> a ld:Traeger ;
@@ -623,6 +620,7 @@ ld:Verein a owl:Class ;
 
 <http://leipzig-data.de/Data/Traeger/Kinderhilfe.Leipzig> a ld:Traeger ;
                                                           rdfs:label "Kinderhilfe Leipzig e.V." ;
+                                                          rdfs:comment "gegründet 1990, seit 2000 OFT in Schönefeld" ;
                                                           ld:hasTelefon "0341-4211740" ;
                                                           ld:hasEmail "kontakt@kinderhilfe-leipzig.de" ;
                                                           ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Schulzeweg.11> ;
@@ -706,7 +704,8 @@ ld:Verein a owl:Class ;
       ld:hasURL "http://www.mnu.de" .
 
 <MONAliesA> a ld:Traeger ;
-            rdfs:label "MONAliesA" ;
+            rdfs:label "MONALiesa" ;
+            rdfs:comment "Info SJR 2014-03-04: Verein insolvent, wird aufgelöst" ;
             ld:hasSupplierNumber "091" .
 
 <MPI-MIS> a ld:Traeger ;
@@ -1052,7 +1051,7 @@ ld:Verein a owl:Class ;
 <http://leipzig-data.de/Data/UniLeipzig/IIR> a ld:Traeger ;
                                              rdfs:label "Institut für Infrastruktur und Ressourcenmanagement der Universität Leipzig" .
 
-<http://leipzig-data.de/Data/Unternehmen/BMW-Leipzig> a org:Organization ;
+<http://leipzig-data.de/Data/Unternehmen/BMW-Leipzig> a <http://www.w3.org/ns/org#Organization> ;
                                                       skos:prefLabel "BMW Werk Leipzig" ;
                                                       ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.BMW-Allee.1> ;
                                                       foaf:homepage <http://www.bmw-werk-leipzig.de> .
@@ -1065,12 +1064,12 @@ ld:Verein a owl:Class ;
                                                          foaf:mbox " office@energiesa.de" ;
                                                          foaf:phone "0351-6557640" .
 
-<http://leipzig-data.de/Data/Unternehmen/GCI> a org:Organization ;
+<http://leipzig-data.de/Data/Unternehmen/GCI> a <http://www.w3.org/ns/org#Organization> ;
                                               skos:prefLabel "GCI-Dr. Schindler Geo Consult International" ;
                                               ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Marienbrunnenstrasse.4> ;
                                               foaf:homepage <http://www.gc-i.de/> .
 
-<http://leipzig-data.de/Data/Unternehmen/SternburgBrauerei> a org:Organization ;
+<http://leipzig-data.de/Data/Unternehmen/SternburgBrauerei> a <http://www.w3.org/ns/org#Organization> ;
                                                             skos:prefLabel "Sternburg Brauerei GmbH. Ein Unternehmen der Radeberger Gruppe" ;
                                                             ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.13> ;
                                                             foaf:homepage <http://www.sternburg-bier.de/> .
@@ -1092,7 +1091,7 @@ ld:Verein a owl:Class ;
                                            ld:hasURL "http://www.anker-leipzig.de" ;
                                            ld:hasSupplierNumber "062" .
 
-<http://leipzig-data.de/Data/Verein/InfAI> a org:Organization ;
+<http://leipzig-data.de/Data/Verein/InfAI> a <http://www.w3.org/ns/org#Organization> ;
                                            skos:prefLabel "InfAI - Institut für Angewandte Informatik e.V. an der Universität Leipzig" ;
                                            foaf:homepage <http://infai.org> .
 
