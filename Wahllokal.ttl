@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+ld:Wahllokal a owl:Class ;
+	rdfs:label "Wahllokal in Leipzig" .
+	
+ld:WahllokalStadtratswahl2014 a ld:Wahllokal ;
+               rdfs:label "Wahllokal für Stadtratswahl 2014" .
+               
+<http://leipzig-data.de/Data/Wahllokal/04318.Leipzig.PortitzerStraße.1> a ld:Wahllokal, ld:WahllokalStadtratswahl2014 ;
+                                                             rdfs:label "Wahllokal Portitzer Straße 1" ;
+                                                             ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2330>, <http://leipzig-data.de/Data/Wahlbezirk/2340> ;
+                                                             ld:isBarrierefrei true ;
+                                                             ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.PortitzerStraße.1> .
+                                                             
+                                                             
+<http://leipzig-data.de/Data/Wahllokal/04277.Leipzig.ZwenkauerStraße.35>  a ld:Wahllokal, ld:WahllokalStadtratswahl2014 ;
+                                                             rdfs:label "Wahllokal Portitzer Straße 1" ;
+                                                             ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4131>, <http://leipzig-data.de/Data/Wahlbezirk/4132>, <http://leipzig-data.de/Data/Wahlbezirk/4141>, <http://leipzig-data.de/Data/Wahlbezirk/4149>, <http://leipzig-data.de/Data/Wahlbezirk/4159> ;
+                                                             ld:isBarrierefrei false ;
+                                                             ld:relatedTo <http://leipzig-data.de/Data/Schule/Connewitz-GS> ;
+                                                             ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.PortitzerStraße.1> .
