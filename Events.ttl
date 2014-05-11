@@ -13,17 +13,6 @@
 @prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.190> a ld:Event ;
-                                                   rdfs:label "FO.DO - Der Foto-Donnerstag im Februar" ;
-                                                   ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ld:contactPerson ldo:KreativesLeipzig ;
-                                                   ical:dtstart "2014-02-06T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:SansvoixModernArt ;
-                                                   ical:organizer ldo:KreativesLeipzig ;
-                                                   ical:summary "FO.DO - Der Foto-Donnerstag im Februar" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.190> .
-
 <http://leipzig-data.de/Data/Event/APILeipzig.191> a ld:Event ;
                                                    rdfs:label "FO.DO Sonderveranstaltung Fotografie und Recht" ;
                                                    ld:hasTag ldtag:KreativesLeipzig ;
@@ -141,29 +130,44 @@
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
                                                    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.201>, <http://leipzig-data.de/Data/APIId/Event.202> .
 
-<http://leipzig-data.de/Data/Event/ASG.2014-01-23> a ld:Event ;
-                                                   rdfs:label "Nobelpreise für Physik und Chemie 2013" ;
-                                                   ld:hasTag ldtag:ASG ;
-                                                   ld:hasURL <http://bj-kaiser.homepage.t-online.de/Seminar.html> ;
-                                                   ical:dtstart "2014-01-23T17:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-                                                   ical:organizer ldo:ASG ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
-                                                   ical:description "ASG.Sommerfeldseminar: Nobelpreise für Physik und Chemie 2013. Mit Dr. Bernd Lippold und Dr. Stefan Fiedler (Leipzig)", "ASG.Sommerfeldseminar: Dr. rer. nat. Bernd Lippold (Leipzig) und Dr. rer. nat. Stefan Fiedler (Leipzig) stellen die Nobelpreise für Physik und Chemie 2013 vor" ;
-                                                   ld:hasAddressAddendum "Neuer Senatssaal" ;
-                                                   ical:summary "Nobelpreise für Physik und Chemie 2013. Mit Dr. Bernd Lippold und Dr. Stefan Fiedler (Leipzig)", "Nobelpreise für Physik und Chemie 2013. Mit Dr. rer. nat. Bernd Lippold und Dr. rer. nat. Stefan Fiedler" .
+<http://leipzig-data.de/Data/Event/APILeipzig.203> a ld:Event ;
+                                                   rdfs:label "Online handeln...Mehr Nachfrage, mehr Kunden, mehr Wert? Elektronische Märkte als Vertriebsstrategie für Unternehmen." ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.ebusiness-lotse-mitteldeutschland.de/veranstaltungen/veranstaltung/-790aa42a66/> ;
+                                                   ical:dtstart "2014-06-17T18:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+                                                   ical:organizer ldp:Praetor_Sandra ;
+                                                   ical:description "Kostenfreie Veranstaltung des eBusiness-Lotse Mitteldeutschland. <br/> Neue Kunden dank Internet? Elektronische Märkte als Vertriebstrategie für Unternehmen - muss das denn sein? Markus Meyer, Inhaber der TROWA Music Distribution, Halle, beleuchtet Internet-Marktplätze aus der Sichtweise eines Verkäufers und gibt dabei praktische Tips aus seiner täglichen Vertriebserfahrung. <br/> Die Anmeldung ist kostenfrei und erfolgt über die Webseite des eBusiness-Lotse Mitteldeutschland. Für Getränke und einen kleinen Imbis ist gesorgt." ;
+                                                   ical:dtend "2014-06-17T19:30:42+02:00"^^xsd:dateTime ;
+                                                   ical:summary "Online handeln...Mehr Nachfrage, mehr Kunden, mehr Wert? Elektronische Märkte als Vertriebsstrategie für Unternehmen." ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.203> .
 
-<http://leipzig-data.de/Data/Event/ASG.2014-02-11> a ld:Event ;
-                                                   rdfs:label "Konstruktion regelmäßiger Vielecke" ;
-                                                   ld:hasTag ldtag:ASG ;
-                                                   ld:hasURL <http://www.leipzig-netz.de/index.php5/MINT.Schuelerakademie.2014-02-11> ;
-                                                   ical:dtstart "2014-02-11T16:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:HfTL ;
-                                                   ical:organizer ldo:ASG ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> ;
-                                                   ical:description "Herr Dr. Manfred Braune, Mathematiker, wird eine Veranstaltung zur angewandten Geometrie durchführen. Der Referent wird gemeinsam mit den Schülern regelmäßige Vielecke zeichnerisch konstruieren.  <br> Bitte zu dieser Veranstaltung Zeichenpapier, Bleistift und Zirkel mitbringen!<br> Wegen begrenzter Raumkapazität bitten wir um Anmeldung unter leipziger-schuelerakademie@t-online.de" ;
-                                                   ld:hasAddressAddendum "HfTL, Raum B-1.50" ;
-                                                   ical:summary "Konstruktion regelmäßiger Vielecke. Mit Dr. Manfred Braune, Mathematiker" .
+<http://leipzig-data.de/Data/Event/APILeipzig.204> a ld:Event ;
+                                                   rdfs:label "Facebook und Co. mal anders: Neue Perspektiven für Unternehmen" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.ebusiness-lotse-mitteldeutschland.de/veranstaltungen/veranstaltung/facebook-und-co-mal-anders-perspektiven-fuer-unternehmen/> ;
+                                                   ical:dtstart "2014-07-01T18:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+                                                   ical:organizer ldp:Praetor_Sandra ;
+                                                   ical:description "Zum kostenfreien Themenabend Social Media des eBusiness-Lotsen Mitteldeutschland erwarten Euch 4 spannende Vorträge rund um Facebook und Co.: <br/> - Facebook und Co: Wie Kundengewinnung und Kundenbindung auch für Sie zum Kinderspiel wird. <br/> - Praxisbeispiel: Bioeisladen TONIS (Leipzig), Information und Erfahrungen aus erster Hand <br/> - Die Top 5 der arbeitsrechtlichen Herausforderungen mit Social Media <br/> - Social Media Marketing - so funktioniert Erfolgsmessung bei Facebook und Co. <br/> <br/> Für einen kleinen Imbis und Getränke ist wie immer gesorgt. Die Anmeldung ist kostenlos und erfolgt über unsere Webseite. Wir freuen uns auf Euer Kommen!" ;
+                                                   ical:dtend "2014-07-01T20:30:42+02:00"^^xsd:dateTime ;
+                                                   ical:summary "Facebook und Co. mal anders: Neue Perspektiven für Unternehmen" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.204> .
+
+<http://leipzig-data.de/Data/Event/APILeipzig.205> a ld:Event ;
+                                                   rdfs:label "„Eine Stadt für alle? Was braucht die Kreativ- und Kulturwirtschaft in Leipzig?“" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasURL <http://www.fes.de/oas/portal/pls/portal/filefunctions.download/PLAKON/VERANSTALTUNG/182486/F786087080/0508Prog%20Kreativwirtschaft.pdf> ;
+                                                   ical:dtstart "2014-05-14T19:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:D21_Kunstraum ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Traeger/FES.Leipzig> ;
+                                                   ical:description "Unter dem Titel: „Eine Stadt für alle? Was braucht die Kreativ- und Kulturwirtschaft in Leipzig?“ findet am Mittwoch, dem 14. Mai 2014, von 19 bis 21 Uhr, im D21 Kunstraum (Demmeringstraße 21, 04177 Leipzig) eine Veranstaltung der Friedrich Ebert-Stiftung statt. <br/> <br/> Einen Impuls zum Thema, wird der stellv. Vorstandsvorsitzende des Vereins „Kreatives Leipzig“, Christian Rost, geben. <br/> <br/> Und darum geht es: <br/> <br/> Die Kultur- und Kreativwirtschaft ist eine der Wachstumsbranchen in Leipzig. Sie gilt als innovativ und als Impulsgeberin für andere Wirtschaftsbereiche und Teile der Gesellschaft. In ihr werden heute schon zukünftige Lebens- und Arbeitsmodelle erprobt. Die Branche ist sehr heterogen. Temporäre, projektorientierte Kooperationen innerhalb kreativer Szenen bilden die Grundlagen des Arbeitens. Die Kreativen arbeiten freiberuflich oder einzelunternehmerisch und das prägt auch die Suche nach Finanzierungsmodellen und Räumen, was sich jedoch oft schwierig gestaltet. <br/> Leipzig profitiert durch ein positives Image über die Grenzen der Stadt hinaus. Die Verknüpfungen mit anderen Branchen sowie das urbane und kreative Umfeld gelten als interessante Standortfaktoren. Aber wie geht es mit Leipzigs Kreativ- und Kulturwirtschaft weiter? Kann Leipzig von anderen Städten lernen? <br/> Der Abend bietet Wissensvermittlung über alternative Raumkonzepte und Nutzungsmodelle, Klärung der verschiedenen Bedarfe der jeweiligen Akteurinnen und Akteure und Gelegenheit zur Vernetzung. <br/> <br/> Der Eintritt ist frei. Anmeldung unter: sachsen@fes.de oder Telefon: 0341960 21 60 oder 0341 960 24 31. <br/> <br/> Impulsvortrag: Christian Rost, Dipl. Geograph, stellv. Vorsitzender Kreatives Leipzig e.V. <br/> <br/> Gesprächsrunde: <br/> Katja Engemann, Bandcommunity Leipzig e.V. <br/> Eva Brackelmann, Stadtbezirksbeirätin Leipzig-Altwest <br/> Nils Burchartz,Volume 11 e.V., Dresden <br/> Christian Rost <br/> <br/> Moderation: Georg Teichert, Leipzig." ;
+                                                   ical:dtend "2014-05-14T21:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:summary "„Eine Stadt für alle? Was braucht die Kreativ- und Kulturwirtschaft in Leipzig?“" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.205> .
 
 <http://leipzig-data.de/Data/Event/ASG.2014-02-20> a ld:Event ;
                                                    rdfs:label "Neue Kosmologie - Das Universum ohne Urknall" ;
@@ -214,17 +218,16 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ld:hasAddressAddendum "Neuer Senatssaal" ;
                                                    ical:summary "Carl Friedrich von Weizsäcker (1912-2007) und seine Beziehungen zur DDR. Mit Prof. Dr. Dieter Hoffmann (MPI für Wissenschaftsgeschichte, Berlin)." .
 
-<http://leipzig-data.de/Data/Event/DTS.2014-02-10> a ld:Event ;
-                                                   rdfs:label "Die Idee Europa" ;
-                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2014-02-10> ;
-                                                   ld:contactPerson ldp:Schroth_Johannes ;
-                                                   ical:dtstart "2014-02-10T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Cafe-Grundmann ;
-                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-                                                   ical:description "0"^^xsd:integer ;
-                                                   ical:summary "Attac DenkTankStelle: Die Idee Europa" .
+<http://leipzig-data.de/Data/Event/ASG.2014-05-22> a ld:Event ;
+                                                   rdfs:label "Neue Geldsysteme" ;
+                                                   ld:hasTag ldtag:ASG ;
+                                                   ld:hasURL <http://bj-kaiser.homepage.t-online.de/Seminar.html>, <http://bj-kaiser.homepage.t-online.de/Einladung_14_05_.pdf> ;
+                                                   ical:dtstart "2014-05-22T17:00:00+01:00"^^xsd:dateTime ;
+                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+                                                   ical:organizer ldo:ASG ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+                                                   ical:description "Hat unser Geldsystem einen Fehler? Ist unser Geld- und Zinssystem verantwortlich für Umweltzerstörung, Elend und Kriege? Mit Steffen Henke, GF Neues Geld gGmbH Leipzig" ;
+                                                   ical:summary "Hat unser Geldsystem einen Fehler? Ist unser Geld- und Zinssystem verantwortlich für Umweltzerstörung, Elend und Kriege? Mit Steffen Henke, GF Neues Geld gGmbH Leipzig" .
 
 <http://leipzig-data.de/Data/Event/DTS.2014-03-03> a ld:Event ;
                                                    rdfs:label "Krieg und Frieden" ;
@@ -249,6 +252,18 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
                                                    ical:description "Bei unserer letzten munteren Diskussion über Krieg und Frieden kam auch immer wieder das Thema „Psychoanalyse“ zur Sprache und wir waren uns nicht sicher, welchen Wert diese psychologische „Wissenschaft“ - da geht's schon los, wurde ihr doch Wissenschaftlichkeit nicht von allen Seiten zuerkannt - in der Diskussion heutzutage spielt. Einvernehmen schien es mir aber zu geben, dass unterbewusste Prozesse eine so große Rolle im Leben der Individuen und damit auch ihrer Gesellschaften spielen, dass es richtig ist, darüber zu reden. Unsere nächste DenkTankStelle hat deshalb das Thema „Die dunkle Seite der Vernunft“ erhalten. " ;
                                                    ical:summary "Attac DenkTankStelle: Die dunkle Seite der Vernunft " .
+
+<http://leipzig-data.de/Data/Event/DTS.2014-05-05> a ld:Event ;
+                                                   rdfs:label "Sprache" ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2014-05-05> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   ical:dtstart "2014-05-05T19:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Cafe-Grundmann ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+                                                   ical:description "Der das letzte Mal von einem aus unserer Gruppe mit leichter Zunge geäußerte Vorschlag, doch einmal über Sprache zu disputieren, fand schnell Zustimmung. Ob er oder wir uns in diesem Moment klar waren, dass wir uns da nicht nur ein dickes Brett zu bohren vorgenommen haben, sondern einen ganzen Baumstamm von beachtlicher Dicke und Härte? Aber vielleicht bohren wir gar nicht, sondern versuchen lediglich den Stamm zu erfassen, zu umfassen, zu staunen darüber, was alles dazu gehört und was das mit uns macht? Wir müssen uns also bescheiden – wie immer – und versuchen, die richtigen Worte zu finden, die Sprache nun einmal ausmachen. http://de.wikipedia.org/wiki/Sprachphilosophie. Neue Neugierige sind wie immer herzlich willkommen. " ;
+                                                   ical:summary "Attac DenkTankStelle: Sprache" .
 
 <http://leipzig-data.de/Data/Event/FBL.2014-04-07> a ld:Event ;
                                                    rdfs:label "Plenum des Forums Bürgerstadt Leipzig" ;
@@ -287,16 +302,6 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:description "<p>Am 12. April 2014 von 12:00 bis 18:00 Uhr findet in der INSPIRATA Leipzig auf der Alten Messe der <strong>Zweite Leipziger Mineralientag für die ganze Familie</strong> statt. Er wird veranstaltet von der Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig mit Unterstützung der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA <p>Es sind wieder tolle Sonderaktionen geplant:</p> <ul> <li>jedes Kind bekommt ein Mineral geschenkt!</li> <li>Mineralienbörse/-verkauf</li> <li>Tombola ohne Nieten</li> <li>Mineralien schleifen</li> <li>kostenlose Bestimmung eurer Mineralien durch erfahrene Sammler</li> <li>Zeichnen von Mineralien mit dem Leipziger Künstler Martin Haubenreißer</li> <li>Basteln von (geometrischen) Kristallformen mit den INSPIRATA-Betreuern</li> <li>Fotobox</li> <li>Vorstellung der &#8220;Leipziger Steinbeißer&#8221;, Jugendgruppe für Mineralogie</li> <li>Sonderausstellung &#8220;Achate aus den Kiesgruben um Leipzig&#8221;</li> <li>Kuchenbasar der &#8220;Leipziger Steinbeißer&#8221;</li> <li>Informationen über das Naturkundemuseum Leipzig durch dessen Förderverein</li> <li>Informationen über den INSPIRATA e.V. durch das Team der INSPIRATA</li> <li>INSPIRATA-Mitmach-Ausstellung mit über 150 naturwissenschaftlichen Exponaten</li> </ul> <p>Eintrittskosten für diese umfangreichen Angebote (die Erlöse kamen zum Teil den Jungen Mineralogen zugute):<br /> 3,00 Euro je Kind / 5,00 Euro je Erwachsener (ermäßigt 3,50 Euro)/<br /> 14,00 Euro je Familie (Eltern mit bis zu 3 eigenen Kindern)</p> " ;
                                                    ical:dtend "2014-04-12T18:00:00+02:00"^^xsd:dateTime ;
                                                    ical:summary "Die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig, die Fachgruppe für Geologie, Mineralogie und Paläontologie und das Team der INSPIRATA laden ein zum „Zweiten Leipziger Mineralientag“ für die ganze Familie. " .
-
-<http://leipzig-data.de/Data/Event/Inspirata.6398> a ld:Event ;
-                                                   rdfs:label "Sonderausstellung „Die Magie der mathematischen Formel”" ;
-                                                   ld:hasTag ldtag:MINT, ldtag:Inspirata ;
-                                                   ld:hasURL <http://www.inspirata.de/?p=6398> ;
-                                                   ical:dtstart "2014-01-30"^^xsd:date ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:description "<h2>LORRAINE GARCHERY in der INSPIRATA LEIPZIG</h2> <p>Vom 30. Januar bis zum 3. Mai 2014 gibt es in der INSPIRATA eine außergewöhnliche Sonderausstellung der Künstlerin Lorraine Garchery.</p> <p>Lorraine Garchery wurde 1987 in Frankreich geboren. Sie studierte Geschichte, Latein und Grafik-Design in Paris und Lyon. Ab 2010 führte sie ihr Studium an der Hochschule für Grafik und Buchkunst Leipzig weiter. In ihrer theoretischen Diplomarbeit mit dem Titel &#8220;Die Magie der mathematischen Formel&#8221; beschäftigte sie sich mit der Kraft von Formeln, an die sich vermutlich jeder erinnert, aber heute nicht mehr genau in Worte fassen kann. Ihre künstlerische Bearbeitung dieses Themas präsentierte sie im Juli 2013 in einer Ausstellung mit dem Titel &#8220;Formel&#8221; im Volte Studio in der Spinnerei Leipzig. Dazu bearbeitete sie zehn Formeln, die jedem aus der Schulzeit bekannt sind. Das Ziel war, neu zu verstehen und der Angst vor der Formel entgegenzutreten. Denn wenn die Furcht weg ist, lernt es sich leichter. Kann jeder seinen eigenen Weg zur Mathematik finden?</p> <p>In der INSPIRATA sind zwei Arbeiten von Lorraine Garchery zu sehen, die für die Ausstellungssituation angepasst wurden.</p> <p>Die Fenster zeigen eine Serie von Zeichnungen: &#8220;Die Entdeckung von Pi&#8221;.<br /> Wie ist man auf Pi gekommen? War Pi schon da, als man eine Formel zur Berechnung des Kreisumfangs gesucht hat?<br /> Simple und schematische Zeichnungen inszenieren die Konstante, die so Viele wahnsinnig macht und gemacht hat.</p> <p>Auf Bildschirmen wird der Film &#8220;Pythagoras&#8221; (20 Minuten, HD, ohne Ton) gezeigt. Parallel, in zwei unterschiedlichen Momenten, verfolgt der Betrachter die Versuche der Künstlerin, den Satz des Pythagoras mit Hilfe von Papier, Schere und Spielzeugen nachzuvollziehen.<br /> &#8220;Ich kann nur verstehen, was ich sehe.&#8221;</p> <p>Nebenan sind die Mitmach-Exponate der INSPIRATA zu finden, die allen Besuchern selber eine aktive Beschäftigung mit dem Satz des Pythagoras sowie vielen weiteren mathematisch-naturwissenschaftlichen Phänomenen ermöglichen.</p> <p>Mathe und Kunst &#8230; lasst euch inspirieren!</p> " ;
-                                                   ical:dtend "2014-05-03"^^xsd:date ;
-                                                   ical:summary "LORRAINE GARCHERY in der INSPIRATA LEIPZIG. Vom 30. Januar bis zum 3. Mai 2014 gibt es in der INSPIRATA eine außergewöhnliche Sonderausstellung der Künstlerin Lorraine Garchery. Lorraine Garchery studierte Geschichte, Latein und Grafik-Design in Paris und Lyon und ab 2010 an der Hochschule für Grafik und Buchkunst Leipzig weiter. In ihrer Diplomarbeit mit dem Titel &#8220;Die Magie der mathematischen Formel&#8221; beschäftigte sie sich mit der Kraft von Formeln, an die sich vermutlich jeder erinnert. Dazu bearbeitete sie zehn Formeln, die jedem aus der Schulzeit bekannt sind. Das Ziel war, neu zu verstehen und der Angst vor der Formel entgegenzutreten. " .
 
 <http://leipzig-data.de/Data/Event/Inspirata.6509> a ld:Event ;
                                                    rdfs:label "Frühlings-Basteln zur Familienöffnungszeit" ;
@@ -397,6 +402,20 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                     ld:hasAddressAddendum "Auditorium Maximum" ;
                                                     ical:summary "Von Nordlichern, Sternschnuppen und leuchtenden Wolken - Eine Reise in den erdnahen Weltraum - Veranstaltung in der Reihe „Kinderuni Leipzig“ mit Prof. Dr. Christoph Jacobi, Institut für Metereologie" .
 
+<http://leipzig-data.de/Data/Event/LD.2014-04-28> a ld:Event ;
+                                                  rdfs:label "einundleipzig - ein studentisches Projekt" ;
+                                                  ld:hasTag ldtag:LeipzigData ;
+                                                  ld:hasURL <http://www.leipzig-data.de/ld-2014-04-28/> ;
+                                                  ld:contactPerson ldp:Schroth_Johannes ;
+                                                  ical:dtstart "2014-04-28T15:15:00+02:00"^^xsd:dateTime ;
+                                                  ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Seminargebaeude> ;
+                                                  ical:organizer <http://leipzig-data.de/Data/Projekt/LD> ;
+                                                  ld:zurReihe <http://leipzig-data.de/Data/Projekt/LD.Seminar> ;
+                                                  ical:description "Auch in Leipzig werden die ablaufenden Gentrifizierungsprozesse als Teil von Stadtgestaltung intensiv beobachtet. Insbesondere gibt es bereits auch eine Reihe von Datenerhebungen zu diesem Thema. einundleipzig ist ein studentisches Projekt, mit dem diese Entwicklungen in einem partizipativen Prozess genauer beleuchtet werden sollen, wie im Blog http://www.einundleipzig.de/ genauer erläutert wird. Die Initiatoren werden das Projekt genauer vorstellen." ;
+                                                  ical:dtend "2014-04-28T16:45:00+02:00"^^xsd:dateTime ;
+                                                  ld:hasAddressAddendum "Raum SG 3-10" ;
+                                                  ical:summary "Leipzig Data Seminar: einundleipzig - ein studentisches Projekt. Mit Wolfgang Amann u.a." .
+
 <http://leipzig-data.de/Data/Event/MIN.2014-05-16> a ld:Event ;
                                                    rdfs:label "Sechstes Interdisziplinäres Gespräch \"Open Innovation, Open Culture und kooperative Vernunft\"" ;
                                                    ld:hasTag ldtag:MINT, ldtag:ZukunftsDiskurs ;
@@ -408,70 +427,6 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:description "\"Open Innovation\" ist ein schillernder Begriff, unter dessen Banner versucht wird, spannende Erfahrungen mit kooperativen Vernunftformen umfassender betriebswirtschaftlich produktiv zu machen. Neben den \"Methodenkoffer-Ansätzen\" der Mainstream-Publikationen wird dabei immer deutlicher, dass subtile kulturelle Voraussetzungen viel eher Garanten des Erfolgs sind als ausgefeilte \"Innovations-Techniken\". Eine solche spezielle Verbindung von \"Open Innovation\" und \"Open Culture\", die im Open Source und Open Access Bereich bereits seit Längerem diskutiert wird, ist Gegenstand des Sechsten Interdisziplinären Gesprächs. " ;
                                                    ld:hasAddressAddendum "Augusteum, A-520" ;
                                                    ical:summary "Sechstes Interdisziplinäres Gespräch \"Open Innovation, Open Culture und kooperative Vernunft\"" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-01-30> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Erdgas Umwelt Zukunft" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2014-01-30"^^xsd:date ;
-                                                   ical:location ldo:CongressCenterLeipzig ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Die Tagungsinhalte sind in diesem Jahr:<br/><br/>Energiewende – deutscher Alleingang oder europäische Systemlösung als Impulsvortrag mit anschließender Podiumsdiskussion<br/>EnEV 2014 – Neuerungen und Anwendungs- und Umsetzungskriterien im Bestand und Neubau<br/>Erdgastechnologien als Kernelemente effizienter Energieverwendung<br/>Brennstoffzellentechnologie – Auswertung von Feldtests und Betrachtung des technischen Systems<br/>Strom- und Energiespeicherung aus KWK-Anlagen." ;
-                                                   ical:summary "Energiemetropole-Leipzig: Erdgas Umwelt Zukunft" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "WPx8oxJoH9xICyJnrj3PxA" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-01-30.1> a ld:Event ;
-                                                     rdfs:label "Energiemetropole-Leipzig: 1. Workshop des Clusterteams 'Erneuerbare Energien'" ;
-                                                     ld:hasTag ldtag:Energie ;
-                                                     ical:dtstart "2014-01-30T17:30:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:ForsthausRaschwitz ;
-                                                     ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                     ical:description "Clusterteam Erneuerbare Energien" ;
-                                                     ical:dtend "2014-01-30T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:summary "Energiemetropole-Leipzig: 1. Workshop des Clusterteams 'Erneuerbare Energien'" ;
-                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                     ical:contact "Dipl.-Ing. Lothar Lindner, E-Mail: iblindner@me.com / Tel: 0172-3611418" ;
-                                                     ld:hasMD5Sum "cnIfQ5GGUZ5dcSG5LZuJpw" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-02-04> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Clusterteam Solar" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2014-02-04T17:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:IHK ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Sitzung des Clusterteams Solar" ;
-                                                   ical:dtend "2014-02-04T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ld:hasAddressAddendum "Beratungsraum 604" ;
-                                                   ical:summary "Energiemetropole-Leipzig: Clusterteam Solar" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Hr. Felgentreff, solarberatung@bernd-felgentreff.de" ;
-                                                   ld:hasMD5Sum "pDejPTtb1PGkOu1KSZK4DQ" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-02-04.1> a ld:Event ;
-                                                     rdfs:label "Think Big: Winterspiele in Sotschi 2014" ;
-                                                     ld:hasTag ldtag:Energie ;
-                                                     ical:dtstart "2014-02-04T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location <http://leipzig-data.de/Data/Ort/Museum.Grassi> ;
-                                                     ical:organizer ldt:GeografischeGesellschaftLeipzig ;
-                                                     ical:description "Der Vortrag stellt die Pläne für den Umbau Sotschis vor und geht der Frage nach, wie Macht und Öffentlichkeit miteinander verwoben sind. Für den russischen Staat stellen die Winterspiele 2014 eine einzigartige Gelegenheitdar, sich auf der internationalen Weltbühne zu präsentieren; sie bilden aber auch ein hervorragendes Anschauungsbeispiel für die russische Spielart des Regierens.<br/>Referent:<br/>Prof. Martin Müller (Zürich)<br/>Kosten:<br/>5 Euro für Nicht-Mitglieder der Geografische Gesellschaft Leipzig" ;
-                                                     ld:hasAddressAddendum "Filmsaal" ;
-                                                     ical:summary "Think Big: Winterspiele in Sotschi 2014" ;
-                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                     ical:contact "Prof. Dr. Otti Margraf" ;
-                                                     ld:hasMD5Sum "qr8feJehy2W8CFNA9hnnIA" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-02-11> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Geo-En: Planer- und Anwenderforum" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ld:hasURL <http://geo-en.de/forum/Infoblatt_Leipzig_11_02_2014.pdf> ;
-                                                   ical:dtstart "2014-02-11"^^xsd:date ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/ZAW.Bogislawstrasse> ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Neben Fachvorträgen zur Technik informieren die Referenten darüberr, welche Gebäude- und Umweltstandards die Geothermie erfüllt und wie sich die Anlagen rechnen." ;
-                                                   ical:dtend "2014-02-11"^^xsd:date ;
-                                                   ical:summary "Energiemetropole-Leipzig: Geo-En: Planer- und Anwenderforum" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "3lvfbiNdEiqagRf6ZI9Ojg" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-02-13> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Investitionen fördern-Kosten teilen: Wie kann man die Energiewende fair gestalten?" ;
@@ -824,6 +779,19 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ld:hasMD5Sum "aSgKK0vB9U2glTRzhKON8w" .
 
+<http://leipzig-data.de/Data/Event/NEU.2014-05-06.248> a ld:Event ;
+                                                       rdfs:label "Regionale Ökonomie Mitteldeutschlands - ein Vortrag von Joachim Ragnitz (stellv. Leiter des ifo-Instituts in Dresden)" ;
+                                                       ld:hasTag ldtag:Energie ;
+                                                       ical:dtstart "2014-05-06T19:00:00+02:00"^^xsd:dateTime ;
+                                                       ical:location <http://leipzig-data.de/Data/Ort/Museum.Grassi> ;
+                                                       ical:organizer ldt:GeografischeGesellschaftLeipzig ;
+                                                       ical:description "Vortrag der Geographischen Gesellschaft zu Leipzig<br/>Eintritt für Mitglieder frei, Nichtmitglieder 5 Euro<br/>Mitteldeutschland, in der Abgrenzung der drei Bundesländer Sachsen, Sachsen-Anhalt und Thüringen, stellte einmal das Kernland der deutschen Industrie dar. Heute hingegen sind alle drei Bundesländer nach wie vor durch die Nachwirkungen der zweifachen Deindustrialisierung nach dem 2. Weltkrieg und der deutschen Vereinigung betroffen. 25 Jahre nach der „Wende“ liegt Mitteldeutschland immer noch um 30 Prozent unter dem Niveau der westdeutschen Bundesländer, gemessen am Bruttoinlandsprodukt je Einwohner als gebräuchlicher Wohlfahrtsindikator. Weshalb es nicht zu den versprochenen „blühenden Landschaften“ gekommen ist und welche wirtschaftlichen Perspektiven sich für die kommenden Jahre und Jahrzehnte ergeben ist Thema dieses Vortrags. Kernthese dabei ist, dass aufgrund von siedlungsstrukturellen Gegebenheiten, nachwendeinduzierter Wirtschaftsstruktur und demographischer Entwicklung eine Angleichung der wirtschaftlichen Leistung an westdeutsches Niveau auch in Zukunft kaum zu erwarten ist. Denkbar ist bestenfalls eine Angleichung an strukturell ähnlich aufgestellte Regionen in Westdeutschland, wie Hunsrück oder Eifel. Ob die Politik hieran viel ändern kann, ist eine Frage, die mit Fug und Recht bezweifelt werden kann. Auch die genannten Vergleichsregionen in Westdeutschland haben sich trotz aller wirtschaftspolitischen Anstrengungen nicht aus ihrer wirtschaftlichen Rücckständigkeit befreien können. Hinzu kommt, dass auch die mitteldeutschen Agglomerationszentren aus unterschiedlichen Gründen sich bislang nicht zu echten „Wachstumspolen“ entwickeln konnten, die Ausstrahleffekte in ihr jeweiliges Umland auslösen konnten." ;
+                                                       ld:hasAddressAddendum "Filmsaal Grassimuseum" ;
+                                                       ical:summary "Energiemetropole-Leipzig: Regionale Ökonomie Mitteldeutschlands - ein Vortrag von Joachim Ragnitz (stellv. Leiter des ifo-Instituts in Dresden)" ;
+                                                       ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                       ical:contact "Prof. Otti Margraf [ottima48@gmail.com]" ;
+                                                       ld:hasMD5Sum "xnC2NZalaVGtwQ4EO7TJFw" .
+
 <http://leipzig-data.de/Data/Event/NEU.2014-05-13> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Zukünftige Energiepolitik" ;
                                                    ld:hasTag ldtag:Energie ;
@@ -846,6 +814,19 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                      ical:description "Wirtschaftliche Energieabrechnung von großflächig verteilten Verbrauchern (Stadtbeleuchtungen, Verkehrstelematik, E-Mobility)" ;
                                                      ical:summary "9. Fachgespräch \"Energiesysteme der Zukunft\" - Wirtschaftliche Energieabrechnung von großflächig verteilten Verbrauchern" ;
                                                      ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> .
+
+<http://leipzig-data.de/Data/Event/NEU.2014-05-15.255> a ld:Event ;
+                                                       rdfs:label "2. Dialogforum zur Energiewende: 'Gefangen im Netz? Wie kommt die Energie zu uns?  Von Sicherheit, Zuverlässigkeit und Bezahlbarkeit'" ;
+                                                       ld:hasTag ldtag:Energie ;
+                                                       ical:dtstart "2014-05-15T16:00:00+02:00"^^xsd:dateTime ;
+                                                       ical:location ldo:City-HochhausLeipzig ;
+                                                       ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                       ical:description "Wie gestalten wir die Energiewende konkret?<br/>In drei Diskussionsforen des Politischen Bildungsforums Sachsen der Konrad-Adenauer-Stiftung und der Sächsischen Landesstiftung Natur und Umwelt will die Veranstaltung informieren und Orientierung vermitteln. Dabei soll der Austausch zwischen Bürgern, Wissenschaft und Wirtschaft im Fokus stehen. Diskutiert wird aus den unterschiedlichsten und vielfältigen Perspektiven.  Die Reihe steht unter der Schirmherrschaft des sächsischen Ministerpräsidenten, Stanislaw Tillich. <br/>16 Uhr  Begrüßung  Dr. Joachim Klose, Landesbeauftragter der Konrad-Adenauer-Stiftung e.V. für den Freistaat Sachsen <br/>  16.10 Uhr  Grußwort.  Markt und Europa als Erfolgsfaktoren für die Energiewende.  Peter Reitz, Vorstandsvorsitzender European Energy Exchange AG <br/>  16.30 Uhr  Blackout – Was passiert, wenn der Strom ausfällt?  Ein Beitrag aus Plan E – Auf dem Weg zur Energiewende  (Ein Projekt der Journalisten-Akademie der Konrad- Adenauer-Stiftung e.V.) <br/>  16.40 Uhr  Vortrag  Energienetze in der Energiewende,  Herausforderungen und Notwendigkeiten.  Dr. Henning Medert, Fachgebietsleiter Energienetze und Regulierung, Bundesverband der Energie- und Wasserwirtschaft e.V. (BDEW) <br/>  17.15 Uhr  Pause mit Imbiss <br/>  17.45 Uhr  Vortrag  Vom Ausbau erneuerbarer Energien und den Auswirkungen auf Strompreise sowie Netz und Speicherausbaubedarf.  Prof. Dr. Dominik Möst, TU Dresden, Lehrstuhl für Energiewirtschaft <br/>  18.20 Uhr  Vortrag  Im Einklang!?  Warum sich Natur- und Landschaftsschutz und moderne Energieversorgung nicht ausschließen?!  Joachim Schruth, Abteilungsleiter Naturschutzrecht LV Sachsen des Naturschutzbundes Deutschland (NABU) <br/>  19 Uhr  Podiumsdiskussion.  Scheitert die Energiewende am Netzausbau? <br/> Matthias Pietsch, Energiegenossenschaft Leipzig,  Thomas Schäfer, Stromnetz Berlin GmbH,  Prof. Martin Schulte, TU Dresden, Lehrstuhl Öffentliches Recht, Umwelt- und Technikrecht<br/>   20 Uhr  Schlusswort  Dr. Hans-Joachim Gericke, Akademieleiter Sächsische Landesstiftung Natur und Umwelt. Der Besuch der Veranstaltung ist kostenfrei. Es wird um Anmeldung gebeten." ;
+                                                       ical:dtend "2014-05-15T20:00:00+02:00"^^xsd:dateTime ;
+                                                       ical:summary "Energiemetropole-Leipzig: 2. Dialogforum zur Energiewende: 'Gefangen im Netz? Wie kommt die Energie zu uns?  Von Sicherheit, Zuverlässigkeit und Bezahlbarkeit'" ;
+                                                       ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                       ical:contact "Frau Ulrike Büchel [Ulrike.Buechel@kas.de]" ;
+                                                       ld:hasMD5Sum "CLN69l2gsqo3iYuXE46IOQ" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-05-27> a ld:Event ;
                                                    rdfs:label "Preisverleihung des Leipziger Agenda Preises" ;
@@ -898,6 +879,19 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ical:contact "Hr. Felgentreff, solarberatung@bernd-felgentreff.de" ;
                                                    ld:hasMD5Sum "xjSpZXDmvu82Y8UYuburSQ", "wXIIgFwGt8LXtJgQP9TMMQ" .
+
+<http://leipzig-data.de/Data/Event/NEU.2014-06-03.270> a ld:Event ;
+                                                       rdfs:label "Fachgespräche-TGA an der Fakultät Maschinenbau und Energietechnik" ;
+                                                       ld:hasTag ldtag:Energie ;
+                                                       ical:dtstart "2014-06-03T13:00:00+02:00"^^xsd:dateTime ;
+                                                       ical:location <http://leipzig-data.de/Data/Ort/HTWK.MET> ;
+                                                       ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                       ical:description "Die EnEV 2014 tritt zum 01.05.2014 in Kraft und wird aus energetischer Sicht in jede neue Planung eingreifen. Im Geltungsbereich dieser Verordnung sind sowohl weiter verschärfte Berechnungswerte für Bauelemente und als auch höhere Anforderungen an Anlagen der Technischen Ausrüstung in Gebäuden zu beachten. Mit der Senkung des Energieverbrauchs und der gleichzeitigen Erhöhung der Energieeffizienz sollen unter Beachtung einer wirtschaftlichen Vertretbarkeit die energiepolitischen Ziele der Bundesregierung, insbesondere ein nahezu klimaneutraler Gebäudebestand, erreicht werden.Das Kolloquium stellt ausgewählte wesentliche Auswirkungen dieser neuen Energieeinsparverordnung auf energieintensive Anlagen der Raumluft- und Kältetechnik in den Mittelpunkt der Vorträge.Für eine gemeinsame Diskussion der Anforderungen und der Vorträge laden die Veranstalter herzlich ein. Die Fachveranstaltung und die begleitende Ausstellung wird dafür ausreichend Zeit bieten. Weitere Informationen zum Programm der Veranstaltung können der beigefügten Anlage entnommen werden." ;
+                                                       ld:hasAddressAddendum "Haus 2, Hörsaal 009" ;
+                                                       ical:summary "Energiemetropole-Leipzig: Fachgespräche-TGA an der Fakultät Maschinenbau und Energietechnik" ;
+                                                       ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                       ical:contact "Frau Nitsche, info@knoll-img.de" ;
+                                                       ld:hasMD5Sum "edFQ2utCc0YWImNwja/aMA" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-06-04> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Treffen des Clusterteam Umwelt und Wasser" ;
@@ -1084,17 +1078,6 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ical:contact "Hr. Felgentreff, solarberatung@bernd-felgentreff.de" ;
                                                    ld:hasMD5Sum "6QFHMttGHt3fQoBWp5OQhg", "Eb2FPnX51VlW4H/3IO9MGA" .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2014-01-30> a ld:Event ;
-                                                     rdfs:label "11. Klassisches Kartoffel Konzert" ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     ld:hasURL <http://www.klassischekartoffelkonzerte.de> ;
-                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ical:dtstart "2014-01-30T19:30:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:AlteHandelsboerse ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
-                                                     ical:description "Klassisches Kartoffelkonzert zu Gunsten des Leipziger Auwalds.Klavier-& Liederabend mit Alexandra Röseler & Maria Angelika Eysermans" ;
-                                                     ical:summary "Klavier-& Liederabend mit Alexandra Röseler & Maria Angelika Eysermans - im Klassischen Kartoffelkonzert" .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2014-03-06> a ld:Event ;
                                                      rdfs:label "Eröffnungsveranstaltung „Das AULA-Projekt 2030“" ;

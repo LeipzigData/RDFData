@@ -5,6 +5,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
@@ -447,6 +448,10 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/Culturtraeger> a ld:Ort ;
                                                 rdfs:label "Culturtraeger" ;
                                                 ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Kohlgartenstrasse.24> .
+
+<http://leipzig-data.de/Data/Ort/D21_Kunstraum> a ld:Ort ;
+                                                rdfs:label "D21 Kunstraum Leipzig" ;
+                                                ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Demmeringstrasse.21> .
 
 <http://leipzig-data.de/Data/Ort/DNB.DBSM> a ld:Ort ;
                                            rdfs:label "Deutsches Buch- und Schriftmuseum der Deutschen Nationalbibliothek" ;
@@ -1028,7 +1033,7 @@ ld:Ort a owl:Class ;
                                                               ld:hasStatus "aktiv" .
 
 <http://leipzig-data.de/Data/Ort/Kirsche> a ld:Ort ;
-                                          rdfs:label "Kirsche - Offener Treff der Kinderhilfe e.V." ;
+                                          rdfs:label "OFT Kirsche" ;
                                           ld:hasTelefon "0341-4211740" ;
                                           ld:hasEmail "kontakt@kinderhilfe-leipzig.de" ;
                                           ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Schulzeweg.11> ;
@@ -1151,7 +1156,9 @@ ld:Ort a owl:Class ;
                                        ld:hasTag <http://leipzig-data.de/Data/Tag/MINT>, <http://leipzig-data.de/Data/Tag/Mathematik> ;
                                        ld:hasURL "http://www.lsgm.de" ;
                                        ld:hasSupplier <http://leipzig-data.de/Data/Traeger/LSGM> ;
-                                       ld:Auszeichnungen "2005 Teubnerpreis" ;
+                                       ld:Kurzinformation "Die Leipziger Schülergesellschaft für Mathematik (LSGM) ist ein Zusammenschluss engagierter Einzelpersonen zur Förderung mathematischer Nachwuchstalente. Wir geben Schülerinnen und Schülern der Klassen 5 bis 12, denen Mathematik Spaß bereitet, die Möglichkeit, mit Gleichgesinnten und unter Anleitung erfahrener Fachleute auf Entdeckungsreise in die Gefilden der \"Mutter aller Wissenschaften\" zu gehen und ihre mathematischen Kenntnisse zu vertiefen." ;
+                                       ld:Leistungsangebot "Präsenz- und Korrespondenzzirkel, Wochenendseminare und Winterschulen, jährlich ein Mathecamp in den Sommerferien, Stadtrallyes und eine \"Aufgabe des Monats\"" ;
+                                       ld:Auszeichnungen "2005 Teubnerpreis", "2008 Mathe erleben im Wissenschaftssommer" ;
                                        ld:hasAnschrift "c/o Math. Institut, Universität Leipzig, PF 100920, 04109 Leipzig" .
 
 <http://leipzig-data.de/Data/Ort/LSGM.Lang> a ld:InfoRecord ;
@@ -1989,6 +1996,10 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/UniLeipzig.SchollHaus> a ld:Ort ;
                                                         rdfs:label "Uni, Geschwister-Scholl-Haus" ;
                                                         ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.8-10> .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.Seminargebaeude> a ld:Ort ;
+                                                             rdfs:label "Unikomplex Augustusplatz, Seminargebäude" ;
+                                                             ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Universitaetsstrasse.5> .
 
 <http://leipzig-data.de/Data/Ort/UniLeipzig.WiFa> a ld:Ort ;
                                                   rdfs:label "Universität Leipzig, Wirtschaftswissenschaftliche Fakultät" ;

@@ -1,12 +1,14 @@
 # Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
 
 @base <http://leipzig-data.de/Data/API-Referenzen/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-<> a <http://www.w3.org/2002/07/owl#Ontology> ;
+<> a owl:Ontology ;
    rdfs:label "Referenzen zu API Leipzig" ;
    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    cc:attributionURL <http://leipzig-data.de> ;
@@ -31,6 +33,8 @@
 <http://leipzig-data.de/Data/Ort/Cinemabstruso.Office> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.25> .
 
 <http://leipzig-data.de/Data/Ort/Culturtraeger> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.74> .
+
+<http://leipzig-data.de/Data/Ort/D21_Kunstraum> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.92> .
 
 <http://leipzig-data.de/Data/Ort/Distillery> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.18> .
 
@@ -165,3 +169,5 @@
 <http://leipzig-data.de/Data/Person/Weise_Joerg> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.44> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.37> .
+
+<http://leipzig-data.de/Data/Traeger/FES.Leipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.54> .
