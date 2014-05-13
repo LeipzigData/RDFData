@@ -1,0 +1,292 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix mint2012: <http://leipzig-data.de/Data/MINT-2012/> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
+@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<http://leipzig-data.de/Data/MINTBroschuere2012/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:comment "Erweiterte Version der Beschreibung von MINT-Orten aus der MINT-Broschüre 2012 des Projekts „Lernen vor Ort“ der Stadt Leipzig" ;
+    rdfs:label "MINT-Broschüre 2012" .
+
+mint2012:Auwaldstation
+    mint2012:Finanzierung "Am 19.12.2011 wird ein Zuwendungsvertrag unterzeichnet, der dem Verein auf der Basis eines Stadtratsbeschlusses eine jährliche Unterstützung von 35.000 Euro zusichert." ;
+    mint2012:Kurzinformation "Die Auwaldstation liegt unmittelbar am Naturschutzgebiet Burgaue im Leipziger Auwald. Als Bildungs- und Informationsstätte steht sie allen Besuchern täglich offen und bietet zahlreiche Informationen zum einzigartigen Leipziger Auwald sowie Anregungen zu praktischem Naturschutz. <br/> Interaktive Lernspiele laden Jung und Alt zum Testen ihrer Naturkenntnisse ein. Insbesondere für Kinder- und Jugendgruppen werden spannende Naturerlebnisprogramme angeboten. An den Wochenenden finden thematische Exkursionen, Vorträge und Schauvorführungen aus dem alten Handwerk statt. Weiterhin verfügt die Auwaldstation über eine kleine Galerie im Kaminzimmer, wo wechselnde Ausstellungen mit Bezug zur Natur präsentiert werden.", "Die Auwaldstation steht allen Besuchern offen und bietet zahlreiche Informationen zum einzigartigen Leipziger Auwald sowie zum Schlosspark Lützschena. Schulklassen wird ein lehrplannaher Erlebnisunterricht mitten in der Natur geboten. An den Wochenenden finden regelmäßig Natur- und Schlossparkexkursionen, Vorträge sowie Schauvorführungen aus dem alten Handwerk statt. ", "Umweltbildungsprogramm rund um den Auwald" ;
+    mint2012:Leistungsangebot "Angebot thematischer Naturexkursionen an den Wochenenden", "Beratung zu praktischem Natur- und Umweltschutz, Bestimmung von Tier- und Pflanzenarten", "Bereitstellung von Material zu Themen im Bereich Natur und Umwelt", "Fortbildung für Erzieher und Lehrer", "Gestaltung und Durchführung von Naturerlebnisprogrammen für Bildungs- und Betreuungseinrichtungen", "Vermittlung fachlicher Inhalte in Kombination mit Abenteuer, Entdecken und Experimentieren" ;
+    mint2012:Oeffnungszeiten "Mo bis Fr 9:00-16:00 Uhr", "Wochenende und Feiertage 12:00-18:00 Uhr" ;
+    mint2012:Zielstellung "Nach dem Prinzip „Lernen mit Herz, Hand und Verstand“ werden fachliche Inhalte mit Bezug zur Natur vermittelt. „Bewegend“ die Natur erleben bietet einen optimalen Ausgleich zum Schulalltag, fördert den Gemeinschaftssinn, Kreativität sowie Phantasie." ;
+    mint2012:describes ldo:Auwaldstation ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Auwaldstation Leipzig" .
+
+mint2012:BA-Leipzig
+    mint2012:Kurzinformation "Die Staatliche Studienakademie Leipzig verknüpft mit ihrem Dualen Studium Theorie und Praxis. In 6 Semestern werden solide Fachkenntnisse und betriebspraktische Handlungskompetenz vermittelt. Jedes Semester besteht aus einem Halbsemester in der Studienakademie (Theorie) und einem Halbsemester im Unternehmen (Praxis). Die Staatliche Studienakademie Leipzig verbindet moderne Studieninhalte mit Praxisnähe und dem berufsbefähigenden Abschluss als Bachelor of Arts bzw. Bacherlor of Science. Die Vermittlungsquoten der Absolventen sind stetig auf hohem Niveau. Insgesamt nehmen durchschnittlich 95% der Absolventen ihre Tätigkeit in der Praxis auf.<br>Die Vorteile auf einen Blick: <ul><li> praxisintegriert und wissenschaftsgeleitet</li> <li>Vergütung durch den Praxispartner</li> <li>hohe Übernahme- und Vermittlungsrate</li> <li>keine bzw. sehr geringe Einarbeitungszeiten für Absolventen</li> </ul>" ;
+    mint2012:Oeffnungszeiten "Mo bis Do 7:30-17:00 Uhr; Fr 7:30-15:00 Uhr" ;
+    mint2012:contactPerson ldp:Schulze_Susanne ;
+    mint2012:describes ldo:BA-Leipzig ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" .
+
+mint2012:ComputerSpielSchule
+    mint2012:Art "Computerpool und Betreuung und Anleitung durch geschulte Pädagogen (innerhalb von Öffnungszeiten)" ;
+    mint2012:Finanzierung "nein" ;
+    mint2012:Hintergrund "Seit 2008 ist die ComputerSpielSchule Leipzig Ort der Begegnung, Beratung und des Lernens. Nach kurzer Umzugspause öffnete sie am 21. Juni 2011 wieder ihre Pforten. Die Betreuung vor Ort erfolgt durch geschulte Pädagoginnen und Pädagogen. Die ComputerSpielSchule Leipzig ist ein Kooperationsprojekt der Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK) und der Universität Leipzig mit Unterstützung der Leipziger Messe GmbH und der Stadt Leipzig." ;
+    mint2012:Kosten "für Kinder u. Jugendliche 1 Euro/h, in Begleitung von Eltern, Großeltern usw. kostenfrei" ;
+    mint2012:Kurzinformation "Die ComputerSpielSchule stellt eine feste Institution dar, die ganzjährig ein Ort der Begegnung und Beratung im Kontext von Computerspielen ist. Neben einer generationsübergreifenden Medienarbeit durch das Angebot des gemeinsamen Spielens innerhalb der Öffnungszeiten werden zielgruppenspezifische Workshops sowie Fortbildungen für Pädagogen und Multiplikatoren angeboten. Das Ziel ist es, Medienkompetenz zu vermitteln und die Diskrepanz zwischen den Generationen abzubauen." ;
+    mint2012:Oeffnungszeiten "Mo, Di und Do 14:00-18:00 Uhr, gemäß Absprache: Fortbildungen, Workshops, Schülerprojekte. Zudem finden außerhalb der Öffnungszeiten spezielle Familien- und Ferienangebote statt." ;
+    mint2012:Teilnahmebedingungen "keine" ;
+    mint2012:Zielgruppe "Eltern, Pädagogen, Kinder, Jugendliche" ;
+    mint2012:Zielstellung "Kompetenter Umgang von Kindern, Jugendlichen, Eltern und Pädagogen mit der Computerspiel- und Unterhaltungskultur" ;
+    mint2012:contactPerson ldp:Warkus_Hartmut ;
+    mint2012:describes ldo:ComputerSpielSchule ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:comment "Am 21. Juni 2011 fand die feierliche Wiedereröffnung der ComputerSpielSchule Leipzig statt. In ihren neuen Räumlichkeiten im Friedrich-Schiller-Gymnasium heißt es ab sofort wieder: Miteinander spielen! Gemeinsam entdecken! Voneinander lernen!" ;
+    rdfs:label "ComputerSpielSchule Leipzig" .
+
+mint2012:DoelitzerWassermuehle
+    mint2012:Art "außerschulische und Lehrplan begleitende Angebote zu den Themen „WASSER und ENERGIE erleben“" ;
+    mint2012:Finanzierung "Förderung durch SW Leipzig, 1 AGHE als pädagogische Betreuung" ;
+    mint2012:Hintergrund "seit 2008" ;
+    mint2012:Kosten "2,00 - 2,50 Euro pro Teilnehmer" ;
+    mint2012:Teilnahmebedingungen "keine" ;
+    mint2012:Zielgruppe "Kindergartenkinder, Grundschüler, Mittelschüler" ;
+    mint2012:Zielstellung "Erlebnisorientierte Form der Umweltpädagogik, experimentelles Erkunden und praktische Beispiele für ressourcenschonenden Umgang mit Wasser und Energie" ;
+    mint2012:contactPerson ldp:Reschke_Katrin, ldp:Reschke_Volker ;
+    mint2012:describes ldo:DoelitzerWassermuehle ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:comment "Auslastung Mai-Juni 100%, August - April ca. 80%" ;
+    rdfs:label "Dölitzer Wassermühle" .
+
+mint2012:FruehesForschenSachsen
+    mint2012:Finanzierung "nein" ;
+    mint2012:Hintergrund "seit 2009" ;
+    mint2012:Kosten "9,00 Euro pro Kurseinheit" ;
+    mint2012:Kurzinformation "FRÜHES FORSCHEN möchte mit spannenden Experimenten Kindern erste Grundlagen in Chemie, Physik und Biologie vermitteln. Experimentieren, ausprobieren, den Spaß am Forschen und Entdecken ausleben und dabei spielerisch die Welt erfahren – bei uns können die kleinen Forscher spielerisch und altersgerecht die Welt von Wissenschaft und Technik kennenlernen." ;
+    mint2012:Leistungsangebot "Angebote für Feste und Feiern", "Ferien- und Wochenendangebote", "Ganztagesangebote", "Projektwochen für Grundschulen", "fortlaufende Kurse", "fächerübergreifender Unterricht und Projekttage", "spezielle Angebote für Kindertagesstätten (z. B. Experimentierführerschein) Studium" ;
+    mint2012:Oeffnungszeiten "Nach Vereinbarung" ;
+    mint2012:Teilnahmebedingungen "keine" ;
+    mint2012:Zielgruppe "Kinder im Alter zwischen 4 und 10 Jahren" ;
+    mint2012:Zielstellung "Spaß am Forschen und Entdecken bei Kindern von 4 bis 10 Jahren fördern und Ihnen dabei spielerisch die Welt erklären und Zugang zu naturwissenschaftlichen Themen bieten." ;
+    mint2012:contactPerson ldp:Nagler_Petra ;
+    mint2012:describes ldo:FruehesForschenSachsen ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Frühes Forschen Sachsen" .
+
+mint2012:Garage
+    mint2012:Art "Praxisorientierte Erlebniswelt („aktives Museum“), Führungen, Kurse, Projekttage und Workshops" ;
+    mint2012:Finanzierung "nein" ;
+    mint2012:Hintergrund "seit 2001" ;
+    mint2012:Kosten "zwischen 2,90 und 14,10 Euro" ;
+    mint2012:Teilnahmebedingungen "keine" ;
+    mint2012:Zielgruppe "Kinder und Jugendliche im Alter zwischen 5 und 25 Jahren" ;
+    mint2012:Zielstellung "Kinder und Jugendliche für Wirtschaft und Technik begeistern, interdisziplinäre Herangehensweise" ;
+    mint2012:describes ldo:Garage ;
+    mint2012:engagedPerson ldp:TraegerNestler_Angelika ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "GaraGe - Technologiezentrum für Jugendliche" .
+
+mint2012:HTWK
+    mint2012:Kurzinformation "Die Hochschule für Technik, Wirtschaft und Kultur Leipzig wurde 1992 als Hochschule der angewandten Wissenschaften gegründet. Sie setzt damit eine lange Tradition der ingenieurtechnischen Bildungseinrichtungen und der Lehrstätten für Bibliothekare, Buchhändler und Museologen in Leipzig fort. Mit etwa 7000 Studierenden gehört sie zu den größten Fachhochschulen Deutschlands." ;
+    mint2012:Leistungsangebot "Ferienhochschule", "Girls' Day", "Projekttage", "Schülerpraktika" ;
+    mint2012:describes ldo:HTWK ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK)" .
+
+<http://leipzig-data.de/Data/Ortsbeschreibung/HWK.HausKleineForscher>
+    mint2012:Art "naturwissenschaftliche und pädagogische Aus- und Weiterbildung von Erzieherinnen und Erziehern, Materialien und Experimente" ;
+    mint2012:Finanzierung "nein" ;
+    mint2012:Hintergrund "seit 2009" ;
+    mint2012:Kosten "15,00 Euro" ;
+    mint2012:Teilnahmebedingungen "Anmeldung erforderlich" ;
+    mint2012:Zielgruppe "Erzieherinnen aus Kita und Hort" ;
+    mint2012:Zielstellung "Fundierte Förderung von angewandter Naturwissenschaft in Kitas, eigenständiges Suchen und Antworten und Erläuterungen für die beobachteten Phänomene, gemeinsames experimentieren in Gruppen, Fördern der kindlichen Feinmotorik beim Experimentieren, verbalisieren von Beobachtungen und Schlussfolgerungen" ;
+    mint2012:describes <http://leipzig-data.de/Data/Ort/HWK.HausKleineForscher> ;
+    mint2012:engagedPerson ldp:Maennig_Uwe ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:comment "dauerhafte Fortsetzung geplant" ;
+    rdfs:label "Haus der kleinen Forscher" .
+
+mint2012:ISEI
+    mint2012:Kurzinformation "Verein zur Förderung von Berufs- und Studienorientierung für MINT- und STEM-Disziplinen in Verbindung mit praktischen Anwendungen aus dem Handwerk, sowie der Luft- und Raumfahrt. Interessenten können ein Betriebsparktikum im Verein und dessen angeschlossenen Unternehmen an konkreten Projekten absolvieren. Mitglieder und Interessenten mit besonderen Leistungen können an internationalen Wettbewerben teilnehmen, um die eigenen Bewerbungschancen für Studium und Beruf durch Skills und Referenzen zu verbessern." ;
+    mint2012:contactPerson ldp:Heckel_Ralf ;
+    mint2012:describes ldo:ISEI ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "International Space Education Institute" .
+
+mint2012:Inspirata
+    mint2012:Auszeichnungen "2011 als Idee für die Bildungsrepublik (Initiative Deutschland – Land der Ideen unter Schirmherrschaft von Bundesbildungsministerin Prof. Dr. A. Schavan)", "Familienfreundlichkeitspreis 2010", "Leipziger Agenda-Preis 2011" ;
+    mint2012:Hintergrund "Die INSPIRATA wurde im Herbst 2008 im Zusammenhang mit dem Jahr der Mathematik gegründet. Nach Zwischenstationen im Kinosaal des Schulmuseums und im Uni-Interim Brühl-Hochhaus finden Sie die INSPIRATA seit Januar 2010 auf dem Gelände der Alten Messe." ;
+    mint2012:Kosten "2,00 Euro je Kind", "3,00 Euro je Erwachsener", "8,00 Euro Familienticket" ;
+    mint2012:Kurzinformation "Die INSPIRATA fördert die mathematisch-naturwissenschaftliche Bildung für jedermann, hauptsächlich für Schulklassen. Ihr Kern ist eine Sammlung von Exponaten, an Hand derer die Besucher Naturgesetze erfahren bzw. verinnerlichen können. Ferner werden lehrplanbezogene Workshops und spezielle Führungen angeboten. Charakteristisch ist ein intensives pädagogisches Betreuungssystem.", "Mathematisch-naturwissenschaftliches Bildungszentrum nach Vorbild des Gießeners Mathematikums, Exponate zum Experimentieren, Workshops, Lehrerfortbildungen" ;
+    mint2012:Leistungsangebot "Kindergeburtstagsbetreuungen mit Experimenten", "Mitmachmuseum mit mathematisch-naturwissenschaftlichen Exponaten und fachlicher Betreuung", "Thematische Führungen", "Thematische Weiterbildungen für Pädagogen", "Vorträge zu naturwissenschaftlichen und pädagogischen Inhalten", "Workshops zu mathematisch-naturwissenschaftlichen (Unterrichts-)Themen" ;
+    mint2012:Oeffnungszeiten "Einzelbesucher/Fam.: am 2. Samstag jedes Monats", "Ferien-Angebote und individuelle Besuchszeiten nach Abstimmung", "für Gruppen (nach Anmeldung): mo.-fr. 8:30, 10:30, 12:30, 14:30 Uhr" ;
+    mint2012:Teilnahmebedingungen "keine" ;
+    mint2012:Zielgruppe "Schulklassen aller Schulformen und Alter (ab Grundschule), aber auch regelmäßig offen für jedermann" ;
+    mint2012:Zielstellung "Spielerische Kontakte mit Mathe und Physik für Kinder und Jugendliche und Interessierte aller Altersklassen unter Anleitung durch eingewiesene Lehramtsstudenten, Erarbeitung und Einrichtung von Workshops und anderen Unterrichtsangeboten zur Unterstützung des Lehramtsstudiums" ;
+    mint2012:contactPerson ldp:Petzschler_Ines ;
+    mint2012:describes ldo:Inspirata ;
+    mint2012:engagedPerson ldp:Klimesch_Holger, ldp:Koenig_Wolfgang, ldp:Petzschler_Ines ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:comment "Unterstützung durch Partner (Uni Leipzig, MPI MIS, SBA, HTWK Leipzig, Stadtverwaltung) und Sponsoren" ;
+    rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" .
+
+mint2012:Instag
+    mint2012:Art "Freier Weiterbildner" ;
+    mint2012:Hintergrund "Seit dem 1. Juli 2010 firmiert unser Unternehmen unter InstaG - Institut für akademische Gesamtbildung GmbH. Die InstaG GmbH - wie bisher schon die EuroGene GmbH - steht dabei für seriöse, qualitativ hochwertige, bedarfs- und kundenorientierte Aus- und Weiterbildung mit einer hohen Praxisrelevanz und einer gleichbleibend hohen Qualität der Bildung. <br/> Unser Unternehmen wurde im Jahr 2005 von Frau Univ.-Prof. Dr. med. habil. Ursula Froster und dem Arzt und Diplom-Verwaltungswirt Dr. med. Armin Baumgartner aus der Universität Leipzig ausgegründet. Als An-Institut konzipiert, folgte es den Vorgaben und Empfehlungen der Bildungs- und Wissenschaftspolitik und übernahm dabei Aufgaben der postgraduierten Weiterbildung auf den Gebieten der Biotechnologie, Molekularbiologie sowie Medizin. Es erfüllte somit Aufgaben der Erwachsenenbildung, die von den Universitäten nicht mehr erfüllt werden konnten. <br/> Zunächst durch einen Kooperationsvertrag mit der Universität Leipzig verbunden, geht das Institut seit Mitte 2010 nun neue und eigene Wege." ;
+    mint2012:describes ldo:Instag ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Instag - Institut für akademische Gesamtbildung" .
+
+mint2012:LSGM
+    mint2012:Auszeichnungen "2005 Teubnerpreis" ;
+    mint2012:describes ldo:LSGM ;
+    mint2012:engagedPerson ldp:Graebe_HansGert, ldp:Schueler_Axel ;
+    mint2012:hasAnschrift "c/o Math. Institut, Universität Leipzig, PF 100920, 04109 Leipzig" ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:comment "Mitglied im LJBW, Partner des SMK und der SBA-L im Bereich Förderung von MINT-Talenten" ;
+    rdfs:label "Leipziger Schülergesellschaft für Mathematik" .
+
+mint2012:MPI-MIS
+    mint2012:Art "Vorträge, Schülerprojekte" ;
+    mint2012:Hintergrund "Das MPI ist auf diesem Gebiet schon viele Jahre aktiv und hat diese Angebote dauerhaft eingerichtet." ;
+    mint2012:Kosten "in der Regel keine" ;
+    mint2012:Kurzinformation "Leistungsangebot für Schulen und Schulklassen: Vorträge für Schülerinnen und Schüler an Gymnasien. Die Wissenschaftlerinnen und Wissenschaftler des Instituts geben dabei Einblicke in aktuelle mathematische und naturwissenschaftliche Forschungsthemen. Die Vorträge finden wahlweise am Institut oder an den Schulen statt.<br/> Weiterhin können Schülerprojekttage und Schülerpraktika nach individueller Absprache durchgeführt werden." ;
+    mint2012:Teilnahmebedingungen "keine" ;
+    mint2012:Zielgruppe "Klassenstufe 9-12 Gymnasium" ;
+    mint2012:contactPerson ldp:Gregor_Jana ;
+    mint2012:describes ldo:MPI-MIS ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Max-Planck-Institut für Mathematik in den Naturwissenschaften" .
+
+mint2012:MuseumImTrafohaus
+    mint2012:Kurzinformation "Elektrotechnik zum Anfassen. Über tausend Exponate dokumentieren in unserem kleinen Museum die Geschichte der Elektromaschinen. Eine umfangreiche Sammlung elektrotechnischer Geräte aus den Bereichen Industrie, Handwerk, Haushalt und Landwirtschaft zeigt Ihnen die rasante Entwicklung in den vergangenen 150 Jahren. Viele Exponate können wir in Betrieb nehmen und manches können Sie selbst ausprobieren. <br/> Wie vibriert mein Handy? Wie funktioniert ein Rasierapparat? Wie verstellen sich die Autoscheinwerfer? Wir zeigen es Ihnen! Erleben Sie interessante und kuriose Experimente mit Spannung, Strom und Widerstand." ;
+    mint2012:Oeffnungszeiten "Besichtigung nur nach Voranmeldung" ;
+    mint2012:describes ldo:MuseumImTrafohaus ;
+    mint2012:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Plautstrasse.16> ;
+    mint2012:hasAddressAddendum "Eingang Morgensternstraße" ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Museum im Trafohaus" .
+
+<http://leipzig-data.de/Data/Ortsbeschreibung/Oekoschule.Markkleeberg>
+    mint2012:Art "Ökoschule und grünes Klassenzimmer, Unterricht im Grünen, Projekttage, Schulfeste, Klassenfeste und Kindergeburtstage" ;
+    mint2012:Finanzierung "SMUL, Jugendamt Landkreis Leipzig, Stadt Markkleeberg" ;
+    mint2012:Hintergrund "seit 2002" ;
+    mint2012:Kosten "3,00 Euro pro Teilnehmer" ;
+    mint2012:Teilnahmebedingungen "Anmeldung erforderlich" ;
+    mint2012:Zielgruppe "für alle Altersklassen, Schultypen, Berufsschüler und Familien" ;
+    mint2012:Zielstellung "aktive Auseinandersetzung mit der Natur und „Unterricht im Grünen“ oder verschiedebe Projekttage" ;
+    mint2012:describes <http://leipzig-data.de/Data/Ort/Oekoschule.Markkleeberg> ;
+    mint2012:engagedPerson ldp:Schwarze_Wolfgang ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Ökoschule Markkleeberg" .
+
+<http://leipzig-data.de/Data/Ortsbeschreibung/Rabutz.TOeP>
+    mint2012:Art "Projektzentrum mit Angeboten zu Ökologie, Elektromobilität, Verkehrserziehung" ;
+    mint2012:Zielstellung "Junge Leute erfahren hier, dass Themen wie Technik und Ökologie durchaus auch Spaß machen können." ;
+    mint2012:describes <http://leipzig-data.de/Data/Ort/Rabutz.TOeP> ;
+    mint2012:engagedPerson ldp:Messerschmidt_Elk ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Technisch ökologisches Jugendprojektzentrum Rabutz" .
+
+mint2012:UFZ
+    mint2012:Kurzinformation "Das Helmholtz-Zentrum für Umweltforschung – UFZ wurde 1991 gegründet und beschäftigt an den Standorten Leipzig, Halle/Saale und Magdeburg ungefähr 1000 Mitarbeiter. Es erforscht die komplexen Wechselwirkungen zwischen Mensch und Umwelt in genutzten und gestörten Landschaften. Die Wissenschaftler des UFZ entwickeln Konzepte und Verfahren, die helfen sollen, die natürlichen Lebensgrundlagen für nachfolgende Generationen zu sichern." ;
+    mint2012:Leistungsangebot "In den wissenschaftlichen Departments des UFZ können sich Schüler um Praktika, Facharbeiten und BELLs bewerben", "Lehrerfortbildungen zu Themen aus der Umweltforschung", "Versuchstage für Schüler der Klassenstufe 10 bis 13 im Schülerlabor" ;
+    mint2012:describes ldo:UFZ ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Helmholtz-Zentrum für Umweltforschung GmbH – UFZ" .
+
+<http://leipzig-data.de/Data/Ortsbeschreibung/UFZ.KinderUmweltBus>
+    mint2012:Kosten "Bei ganzen Projekttagen fällt ggf. ein Personalkostenzuschuss an." ;
+    mint2012:Kurzinformation "Der KinderUmweltBus bietet zu den Themen Wasser, Lebensraum Boden und Energie Projektstunden von 60 bis 90 Minuten für Kinder im Vor- und Grundschulalter mit spielerisch-spannenden Experimenten und kreativer Naturforschung – auch im Rahmen Ihrer Projekttage und Projektwochen – und spezielle Fortbildungsangebote für Pädagogen (Lehrer, Erzieher sowie Umweltbildner) an.", "Unter dem Motto „Bestaunen, Begreifen, Beschützen“ werden experimentell und spielerisch elementare naturwissenschaftliche Zusammenhänge speziell zum Thema Wasser erläutert, die das Interesse an der Natur wecken und umweltbewusstes Handeln fördern sollen. Der KinderUmweltBus ermöglicht es, mit Kindern und Schülern vor Ort zu arbeiten, sowohl in den Räumen der Schule als auch direkt in der Natur. Die Themen nehmen einen engen Bezug auf den Lehrplan. Damit kann dieses Angebot den Lehrstoff z.B. im Fach Sachkunde sinnvoll ergänzen." ;
+    mint2012:Oeffnungszeiten "Anmeldungen sind halbjährlich möglich. Anmeldeformular unter www.kinderumwelt-bus.de" ;
+    mint2012:Teilnahmebedingungen "Anmeldung erforderlich" ;
+    mint2012:Zielgruppe "Lehrerweiterbildung", "Vor- und Grundschule" ;
+    mint2012:describes <http://leipzig-data.de/Data/Ort/UFZ.KinderUmweltBus> ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "UFZ KinderUmweltBus" .
+
+<http://leipzig-data.de/Data/Ortsbeschreibung/UFZ.Schuelerlabor>
+    mint2012:Hintergrund "seit 2004" ;
+    mint2012:Kosten "5,00 Euro pro Schüler" ;
+    mint2012:Kurzinformation "Chemisch-biologische Experimente, auch Mathematik, Geologie, Hydrologie, Biotechnologie, Drogenprävention", "Das UFZ-Schülerlabor ist eine Einrichtung, die Schülern der Klassenstufen 10 bis 13 die Chance bietet, in einem authentischen Umfeld in die Rolle von Wissenschaftlern zu schlüpfen und deren Alltag zu erleben. Die Experimente im Schülerlabor sind aktuellen Forschungsprojekten des UFZ entliehen. Alle Schülerversuche lassen sich gut in den Unterricht integrieren, da sie in Anlehnung an den aktuellen Lehrplan ausgewählt worden sind." ;
+    mint2012:Oeffnungszeiten "Versuche im Schülerlabor sind nur im Klassenverband als Schulveranstaltung ab Klassenstufe 10 möglich. Eine vorherige Terminabsprache ist notwendig." ;
+    mint2012:Teilnahmebedingungen "keine" ;
+    mint2012:Zielgruppe "Lehrer und Referendare für Fortbildungen", "Schülerinnen und Schüler ab Klassenstufe 10 der gymnasialen Oberstufe" ;
+    mint2012:behindertengerecht "Ein behindertengerechter Zugang ist vorhanden, dabei ist zu beachten: Im Labor gelten besondere Sicherheitsregeln, die vorab mit dem verantwortlichen Lehrer besprochen werden müssen." ;
+    mint2012:describes <http://leipzig-data.de/Data/Ort/UFZ.Schuelerlabor> ;
+    mint2012:engagedPerson ldp:Lange_Torsten ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:comment "Teilnehmer ca. 50% weiblich (Schätzwert)" ;
+    rdfs:label "UFZ Schülerlabor" .
+
+mint2012:Umspannwerk
+    mint2012:Art "Technikmuseum" ;
+    mint2012:Finanzierung "Kostenfreie Raumnutzung bei enviaM, ARGE Leipzig, VDE Bezirksverband" ;
+    mint2012:Hintergrund "Seit dem Jahre 2001 arbeitet der Arbeitskreis Geschichte der Elektrotechnik beim VDE Bezirksverein Leipzig/Halle e.V. aktiv an diesem Projekt, zunächst am Standort Taucha, seit 2011 im neuen Domizil. Sowohl den alten Standort, das  Objekt im ehemaligen Hauptumspannwerk Taucha, als auch den neuen am Umspannwerk Markkleeberg stellte bzw. stellt die enviaM zur Verfügung." ;
+    mint2012:Kosten "keine" ;
+    mint2012:Kurzinformation "Ziele des Projekts: Erhaltung von Zeitzeugen der elektrotechnischen Entwicklung aus der Region in einer Art Museum, Unterstützung der Aus- und Weiterbildung für elektrotechnische Berufe, Wecken des Interesses am Ergreifen von Berufen elektrotechnischer Richtungen, Schaffung von Betätigungsmöglichkeiten für nicht mehr im Berufsleben stehende Fachleute der Elektrotechnik, Gestaltung von sachgebiets- und themenbezogenen Ausstellungen zum Fachgebiet" ;
+    mint2012:Oeffnungszeiten "Jeden letzten Dienstag im Monat von 14 bis 16 Uhr. Außerhalb dieser Zeiten ist die Besichtigung mit Voranmeldung möglich." ;
+    mint2012:Teilnahmebedingungen "keine" ;
+    mint2012:Zielgruppe "Oberstufe, Berufsschüler" ;
+    mint2012:contactPerson ldp:Haenisch_Wolfgang, ldp:Raue_Manfred ;
+    mint2012:describes ldo:Umspannwerk ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Elektrotechnische Sammlung am Umspannwerk Markkleeberg" .
+
+mint2012:Umweltbibliothek
+    mint2012:Art "Umweltbibliothek" ;
+    mint2012:Finanzierung "institutionell gefördert durch das Amt für Umweltschutz der Stadt Leipzig, weitere Fördermittel von ESF, Land Sachsen, Bürgerstiftung Leipzig, Stadtwerke Leipzig" ;
+    mint2012:Hintergrund "seit 1988" ;
+    mint2012:Kosten "nein" ;
+    mint2012:Teilnahmebedingungen "nein" ;
+    mint2012:Zielgruppe "u.a. Schüler und Studenten (z.B. für Haus-, Studien-, Diplom-, Doktorarbeiten), Planer, Behördenmitarbeiter, Privatpersonen, Pädagogen" ;
+    mint2012:Zielstellung "Über Umweltschutz informieren, qualifizierte Umweltinformationen erschließen und allgemein zugänglich machen" ;
+    mint2012:describes ldo:Umweltbibliothek ;
+    mint2012:engagedPerson ldp:Quester_Roland ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:comment "Die Umweltbibliothek Leipzig als unbeschränkt öffentlich zugängliche Spezialbibliothek versteht sich als ein zentraler Informationsdienstleister im Bereich Umweltschutz in der Stadt Leipzig und ihrem Umland. Sie bietet Studierenden, Lernenden, Lehrenden, im Umweltschutz Tätigen in Vereinen, Behörden und Planungsbüros sowie Privatpersonen Sach- und Fachmedien entsprechend ihrer Bedürfnisse zur Ausleihe, sowie Zugang zu elektronischen Informationen und die Vermittlung von Umweltberatungs- und Umweltbildungsangeboten. Sie bietet ihre Medien mittels Fernleihe auch im Regierungsbezirk Leipzig, dem Land Sachsen und der ganzen Bundesrepublik an. Die Umweltbibliothek kooperiert mit lokalen und besonders relevanten überregionalen Informationsanbietern und -verbreitern wie Behörden, Vereinen, Forschungseinrichtungen, Stadt- und Hochschulbibliotheken, um deren Informationen zur (regionalen) Umweltsituation und Umweltschutzmaßnahmen konzentriert zu sammeln, zu erschließen und anzubieten und um als qualifizierte Ergänzung zu deren Angeboten zu fungieren. Die Umweltbibliothek wurde 2005 als offizielles Projekt der UN-Weltdekade „Bildung für nachhaltige Entwicklung“ ausgezeichnet." ;
+    rdfs:label "Umweltbibliothek Leipzig" .
+
+mint2012:Unikatum
+    mint2012:contactPerson ldp:Haensel_Annegret ;
+    mint2012:describes ldo:Unikatum ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "Unikatum Kindermuseum" .
+
+mint2012:ciT
+    mint2012:Kurzinformation "Wir sind ein führendes sächsisches Weiterbildungsunternehmen in den Bereichen Softwareentwicklung, Netzwerke, Datenbanken, IT-Sicherheit, Multimediaanwendungen, kaufmännische Qualifizierung, kaufmännische Anwendungssoftware sowie Lager und Handel. Unsere Stärke liegt in der modularen Einzel- und Kleingruppenausbildung. Sie können aus über 400 Modulen unseres gesamten Angebotsspektrums wählen. Die hohe Qualität der Aus- und Weiterbildung sichern wir mit unserem zertifizierten Qualitätsmanagement laut DIN ISO 9001." ;
+    mint2012:Oeffnungszeiten "Unser Büro ist an Wochentagen von 8:00 bis 16:00 Uhr besetzt. Die Anmeldung für das Projekt kann unter http://www.mintindividual.de/registrierung.php erfolgen." ;
+    mint2012:contactPerson ldp:Hamel_Corinna ;
+    mint2012:describes ldo:ciT ;
+    mint2012:hasStatus "aktiv" ;
+    a mint2012:Ortsbeschreibung ;
+    rdfs:label "ciT – Consulting Innovation Training GmbH" .
+
