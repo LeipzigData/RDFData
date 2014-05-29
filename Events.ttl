@@ -13,18 +13,6 @@
 @prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.191> a ld:Event ;
-                                                   rdfs:label "FO.DO Sonderveranstaltung Fotografie und Recht" ;
-                                                   ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ld:hasURL <http://tinyurl.com/pdpdq5y> ;
-                                                   ical:dtstart "2014-02-27T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:SansvoixModernArt ;
-                                                   ical:organizer ldo:KreativesLeipzig ;
-                                                   ical:description "0"^^xsd:integer ;
-                                                   ical:summary "FO.DO Sonderveranstaltung Fotografie und Recht" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.191> .
-
 <http://leipzig-data.de/Data/Event/APILeipzig.193> a ld:Event ;
                                                    rdfs:label "FO.DO - Der Foto-Donnerstag im März" ;
                                                    ld:hasTag ldtag:KreativesLeipzig ;
@@ -181,6 +169,17 @@
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
                                                    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.208>, <http://leipzig-data.de/Data/APIId/Event.209> .
 
+<http://leipzig-data.de/Data/Event/APILeipzig.210> a ld:Event ;
+                                                   rdfs:label "FO.DO x FLYING MUSIC CIRCUS - Fotos &amp; Musik" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ical:dtstart "2014-06-05T19:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:SansvoixModernArt ;
+                                                   ical:organizer ldo:KreativesLeipzig ;
+                                                   ical:description "Am 5. Juni 2014 bringen die Verantwortlichen von Kreatives Leipzig eV die Teilnehmenden der FO.DO - Foto-Donnerstage sowie der Workshops der Musikinitiative FLYING MUSIC CIRCUS für einen Abend zusammen. Wenn Fotografierende und Musikschaffende zusammentreffen, geht es natürlich um Fotos zur Musik. <br/> <br/> Wie kann die Stimmung eines Konzertes in Bildern festgehalten werden? Wie kann schon mit der Wahl des Motives den Betrachtenden die musikalische Energie gezeigt werden? Worauf kommt es bei einem Bewerbungsfoto für einen Gig bzw. einem Pressefoto an? Diese und andere Fragen möchten wir mit Musikschaffenden und Fotografierenden einem Abend lang diskutieren. <br/> <br/> Wie beim FO.DO üblich, wird die Runde mit einer gemeinsamen Bildbesprechung eröffnet. Wer hier eine Kritik des eigenen fotografischen Schaffens erhalten möchte, bringt bitte einen großformatigen Ausdruck (ideal: 20x30 cm) mit. Willkommen sind natürlich auch alle, die für ihre Promofoto oder ihre Konzertfotografie einfach ein paar Anregungen erhalten möchten. <br/> <br/> Wir freuen uns auf eine spannende interdisziplinäre Diskussion!" ;
+                                                   ical:summary "FO.DO x FLYING MUSIC CIRCUS - Fotos &amp; Musik" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.210> .
+
 <http://leipzig-data.de/Data/Event/ASG.2014-03-20> a ld:Event ;
                                                    rdfs:label "Die Zukunft und das Ende der Menschheit, der Erde und der Welt" ;
                                                    ld:hasTag ldtag:ASG ;
@@ -265,6 +264,18 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:description "Der das letzte Mal von einem aus unserer Gruppe mit leichter Zunge geäußerte Vorschlag, doch einmal über Sprache zu disputieren, fand schnell Zustimmung. Ob er oder wir uns in diesem Moment klar waren, dass wir uns da nicht nur ein dickes Brett zu bohren vorgenommen haben, sondern einen ganzen Baumstamm von beachtlicher Dicke und Härte? Aber vielleicht bohren wir gar nicht, sondern versuchen lediglich den Stamm zu erfassen, zu umfassen, zu staunen darüber, was alles dazu gehört und was das mit uns macht? Wir müssen uns also bescheiden – wie immer – und versuchen, die richtigen Worte zu finden, die Sprache nun einmal ausmachen. http://de.wikipedia.org/wiki/Sprachphilosophie. Neue Neugierige sind wie immer herzlich willkommen. " ;
                                                    ical:summary "Attac DenkTankStelle: Sprache" .
 
+<http://leipzig-data.de/Data/Event/DTS.2014-06-02> a ld:Event ;
+                                                   rdfs:label "Architektur" ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:hasURL <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2014-06-02> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   ical:dtstart "2014-06-02T19:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Cafe-Grundmann ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+                                                   ical:description "Da der Moderator zufällig ein Architekt ist, haben wir uns am 5.5. auf das Thema Architektur geeinigt. Keine Sorge, das wird kein Gespräch über Häuser, Formen, Baustile, sondern, wenn es gut läuft, eines über die gesellschaftlichen, kulturellen, philosophischen Hintergründe von Erscheinungen. Durch ihr hybrides Wesen, sowohl Kunst als auch Wissenschaft und Technik, Kultur aber auch nüchterner Zweck sein zu müssen, hochrationelle wie auch transzendente Züge aufzuweisen, ist Architektur bestens zu ausgiebigen Disputen geeignet. <br/> Einige Fragen: Was ist das eigentlich - Architektur, und weshalb gibt es so viele Definitionen? Woher kommt die nicht seltene Diskrepanz zwischen den Urteilen von Fachleuten und den normalen Nutzern und Betrachtern von Architektur? Brauchen wir prestigeträchtige Bauwerke, die oft dann auch teuer sind, oder müssen wir uns von sozialen Prioritäten leiten lassen? (\"Dafür hamm'se Geld, aber für die Sanierung der Schulen ...\") Und woher kommt es, dass einer Gesellschaft im Laufe der Zeit mitleidlos das ihr zugehörende Gesicht in Form des Gebauten wächst, obwohl sie sich vielleicht ganz anders sehen möchte? " ;
+                                                   ical:summary "Attac DenkTankStelle: Architektur" .
+
 <http://leipzig-data.de/Data/Event/FBL.2014-04-07> a ld:Event ;
                                                    rdfs:label "Plenum des Forums Bürgerstadt Leipzig" ;
                                                    ld:hasTag ldtag:ZukunftsDiskurs ;
@@ -273,6 +284,16 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:organizer <http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL> ;
                                                    ld:zurReihe <http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL> ;
                                                    ical:description "Mit folgenden Themen: <ul> <li> Leipzig weiter denken <br/> \"Leipzig weiter denken\" ist die Dachmarke für Bürgerbeteiligung in Leipzig und wurde im Forum vom 23.09.2013 von Frau Haas vorgestellt. Es wird die Jahresplanung von Lwd für 2014 erläutert. In der gemeinsamen Diskussion überlegen wir uns die Möglichkeiten der zukünftigen Zusammenarbeit. </li><li> Forumsthemen für 2014<br/>Es geht um den aktuellen Stand der im letzten Forum gesammelten Themen und wir besprechen das weitere Vorgehen für 2014. </li><li> NuKLA  <br/> Der Verein Naturschutz und Kunst Leipziger Auwald (NuKLA) stellt seine Arbeit mit den beteiligten Arbeitsgruppen und den ehrenamtlichen Akteuren vor. Im Vordergrund steht der Schutz des Leipziger Auwaldsystems und wie dieses gegenüber der zukünftigen Nutzungen bewahrt werden kann. Unterstützer werden gesucht.</li></ul> " ;
+                                                   ical:summary "Plenum des Forums Bürgerstadt Leipzig" .
+
+<http://leipzig-data.de/Data/Event/FBL.2014-06-16> a ld:Event ;
+                                                   rdfs:label "Plenum des Forums Bürgerstadt Leipzig" ;
+                                                   ld:hasTag ldtag:ZukunftsDiskurs ;
+                                                   ical:dtstart "2014-06-16T16:30:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Volkshochschule ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Angebot/StadtLeipzig.FBL> ;
+                                                   ical:description "Im Mittelpunkt steht dieses Mal das aktuelle Bürgergutachten des Freiwilligen-Agentur e.V. und der Agenda 21. Es ist ein Empfehlungskatalog zur Förderung des ehrenamtlichen Engagements und der Stabilisierung der Leipziger Vereinslandschaft entstanden. Er bietet Lösungsansätze für eine effektive Zusammenarbeit von Vereinen, Kommune und Unternehmen sowie zur Verbesserung der alltäglichen Vereinsarbeit. <br/> Der Ablauf des Verfahrens zur Erarbeitung des Bürgergutachtens und dessen Ergebnisse werden vorgestellt, sodass wir diese gemeinsam diskutieren und für uns auswerten können.<br/> Darüber hinaus wird es wie immer genügend Raum für all Ihre Engagement- und Bürgerbeteiligungsthemen geben, die wir zusammen mit Verwaltung und Politik diskutieren und voranbringen wollen. " ;
                                                    ical:summary "Plenum des Forums Bürgerstadt Leipzig" .
 
 <http://leipzig-data.de/Data/Event/Inspirata.4305> a ld:Event ;
@@ -354,6 +375,39 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:summary "Im Rahmen des Studium universale an der Universität Leipzig hält Uwe Petzschler (Lehrer und Fachberater für Physik sowie Mitinitiator, Mitbegründer, Vereins- und Vorstandsmitglied des INSPIRATA e.V.) eine Vorlesung zum Thema „Optische Täuschungen“." ;
                                                    ical:dtstamp "2014-04-15T12:09:57+02:00"^^xsd:dateTime .
 
+<http://leipzig-data.de/Data/Event/Inspirata.6622> a ld:Event ;
+                                                   rdfs:label "“Maus”-Türöffner-Tag – 03.10.2014" ;
+                                                   ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                   ld:hasURL <http://www.inspirata.de/?p=6622> ;
+                                                   ical:dtstart "2014-10-03T12:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Inspirata ;
+                                                   ical:description "<p>Die &#8220;Sendung mit der Maus&#8221; hat für den Feiertag am 3. Oktober 2014 wieder einen &#8220;Türöffner-Tag&#8221; angeregt. Gemeinsam mit dem Max-Planck-Institut für Mathematik in den Naturwissenschaften wird sich die INSPIRATA daran beteiligen.</p> <p>Konkrete Informationen folgen &#8230;</p> " ;
+                                                   ical:dtend "2014-10-03T18:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:summary "Die &#8220;Sendung mit der Maus&#8221; hat für den Feiertag am 3. Oktober 2014 wieder einen &#8220;Türöffner-Tag&#8221; angeregt. Gemeinsam mit dem Max-Planck-Institut für Mathematik in den Naturwissenschaften wird sich die INSPIRATA daran beteiligen." ;
+                                                   ical:dtstamp "2014-05-06T12:15:23+02:00"^^xsd:dateTime .
+
+<http://leipzig-data.de/Data/Event/Inspirata.6654> a ld:Event ;
+                                                   rdfs:label "Fußball und Mathematik" ;
+                                                   ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                   ld:hasURL <http://www.inspirata.de/?p=6654> ;
+                                                   ical:dtstart "2014-07-12T12:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Inspirata ;
+                                                   ical:description "<p>Anlässlich der aktuell stattfindenden Fußball-Weltmeisterschaft wollen wir uns während der Öffnungszeit für Familien und Einzelbesucher am Samstag, dem 12. Juli 2014, damit beschäftigen, was Fußball mit Mathematik zu tun hat!?! Rätsel, Spannung, Aha-Effekte, Unterhaltung und Spaß sind geplant!</p> " ;
+                                                   ical:dtend "2014-07-12T18:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:summary "Anlässlich der Fußball-Weltmeisterschaft werden wir uns während der Öffnungszeit für Familien und Einzelbesucher am Samstag, dem 12. Juli 2014, damit beschäftigen, was Fußball mit Mathematik zu tun hat." ;
+                                                   ical:dtstamp "2014-05-20T14:31:33+02:00"^^xsd:dateTime .
+
+<http://leipzig-data.de/Data/Event/Inspirata.6665> a ld:Event ;
+                                                   rdfs:label "Tag der offenen Tür für Erzieher/innen" ;
+                                                   ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                   ld:hasURL <http://www.inspirata.de/?p=6665> ;
+                                                   ical:dtstart "2014-06-18T10:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Inspirata ;
+                                                   ical:description "<p>Nach erfolgreichen Veranstaltungen im vergangenen Jahr findet am <strong>18. Juni 2014</strong> im Zeitraum <strong>zwischen 10 bis 16 Uhr</strong> ein neuer Tag der offenen Tür für Erzieher/innen in der INSPIRATA statt.</p> <p>Nutzen Sie die Möglichkeit und entdecken Sie unsere Ausstellungsbereiche, informieren Sie sich über unsere <strong>Angebote für Kita-Gruppen</strong>!</p> <p>Bei einer Tasse Kaffee können Sie mit uns ins Gespräch kommen, wie wir Sie bei der naturwissenschaftlichen und mathematischen Bildung Ihrer Kita- und Vorschulkinder unterstützen können.</p> <p>Bitte melden Sie sich bis zum 16.06. an per Telefon (0341-1259757) oder E-Mail (kontakt@inspirata.de)</p> <p>Wir freuen uns auf Ihren Besuch!<br /> Lassen Sie sich inspirieren!</p> " ;
+                                                   ical:dtend "2014-06-18T16:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:summary "Nach erfolgreichen Veranstaltungen im vergangenen Jahr findet am 18. Juni 2014 im Zeitraum zwischen 10 bis 16 Uhr ein neuer Tag der offenen Tür für Erzieher/innen in der INSPIRATA statt. Nutzen Sie die Möglichkeit und entdecken Sie unsere Ausstellungsbereiche, informieren Sie sich über unsere Angebote für Kita-Gruppen!" ;
+                                                   ical:dtstamp "2014-05-27T12:08:54+02:00"^^xsd:dateTime .
+
 <http://leipzig-data.de/Data/Event/Kuni.2014-03-14> a ld:Event ;
                                                     rdfs:label "Von Schlafmohn und Schlangenbissen - die Giftküche in der Natur" ;
                                                     ld:hasTag ldtag:Kinderuni ;
@@ -427,32 +481,6 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:description "\"Open Innovation\" ist ein schillernder Begriff, unter dessen Banner versucht wird, spannende Erfahrungen mit kooperativen Vernunftformen umfassender betriebswirtschaftlich produktiv zu machen. Neben den \"Methodenkoffer-Ansätzen\" der Mainstream-Publikationen wird dabei immer deutlicher, dass subtile kulturelle Voraussetzungen viel eher Garanten des Erfolgs sind als ausgefeilte \"Innovations-Techniken\". Eine solche spezielle Verbindung von \"Open Innovation\" und \"Open Culture\", die im Open Source und Open Access Bereich bereits seit Längerem diskutiert wird, ist Gegenstand des Sechsten Interdisziplinären Gesprächs. " ;
                                                    ld:hasAddressAddendum "Augusteum, A-520" ;
                                                    ical:summary "Sechstes Interdisziplinäres Gespräch \"Open Innovation, Open Culture und kooperative Vernunft\"" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-02-26> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: 8. Fachgespräch Energieversorgungssysteme der Zukunft" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2014-02-26"^^xsd:date ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/NEU.Energiefachgespraeche> ;
-                                                   ical:description "Energy-Data-Services - Mehrwertdienste auf der Basis von Energy-Data-Management<br/>Inhalt:<br/>Heiko Mevert, GETEC net AG: Mehrwertdiente auf Basis von Energiedaten - Sicht eines MSB/DL<br/>René Böringer, Cuculus GmbH: Mehrwertdiente auf Basis von Energiedaten - Sicht eines IT-Dienstleisters<br/>Heiko Sander, Wohnen Service Leipzig GmbH: Mehrwertdiente auf Basis von Energiedaten - Sicht eines Anwenders" ;
-                                                   ical:summary "Energiemetropole-Leipzig: 8. Fachgespräche \"Energieversorgungssysteme der Zukunft\". Energy-Data-Services - Mehrwertdienste auf der Basis von Energy-Data-Management." ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "vkKsC85JbQSS9H1Mts3ifQ", "kho0gCbeU5umht4pGFAeKg" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-02-27> a ld:Event ;
-                                                   rdfs:label "2. Workshop des Clusterteams 'Erneuerbare Energien'" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2014-02-27T17:30:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:ForsthausRaschwitz ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/NEU.Cluster-Lindner> ;
-                                                   ical:description "Arbeitsthemen im Bereich 'Energie' der IHK zu Leipzig.", "Das Clusterteam \"Erneuerbare Energien und Energieeffizienz\" lädt zu einem Workshop der besonderen Art.<br/>Programm:<br/>1. Teil: Arbeitsthemen im Bereich 'Energie' der IHK zu Leipzig.<br/>2. Teil: Informationen zum Mittelstandsförderprogramm der Stadt Leipzig.<br/>3. Teil: Vernissage sowie Ausstellung zu Kunst und Wein.<br/>Um vorherige Anmeldung wird dringend gebeten." ;
-                                                   ical:dtend "2014-02-27T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:summary "2. Workshop des Clusterteams 'Erneuerbare Energien'" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Clusterteamleiter Lothar Lindner, iblindner@me.com" ;
-                                                   ld:hasMD5Sum "hwm/yDDQs66HRyXZfIMBHw", "9JNv5vuSsR7xJFPEZVxLGQ" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-03-11> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Fachkonferenz »Energieeffizienz – Chancen für Energieversorger«" ;
@@ -804,6 +832,19 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:contact "Frau Ulrike Büchel [Ulrike.Buechel@kas.de]" ;
                                                    ld:hasMD5Sum "CLN69l2gsqo3iYuXE46IOQ" .
 
+<http://leipzig-data.de/Data/Event/NEU.2014-05-22> a ld:Event ;
+                                                   rdfs:label "Leipzig-Lyon: 4. deutsch-französischer Wirtschaftsdialog am 22. Mai mit Podiumsdiskussion zum Thema Mobilität" ;
+                                                   ld:hasTag ldtag:Energie ;
+                                                   ical:dtstart "2014-05-22T19:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:VillaIda ;
+                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                   ical:description "Nach einer erfolgreichen Veranstaltungsreihe anlässlich des 50. Jahrestages der Unterzeichnung des Elyséevertrages im Jahr 2013, freuen sich die Städte Leipzig und Lyon, die Industrie- und Handelskammer zu Leipzig und das Institut français á Leipzig über die Fortsetzung der Veranstaltungsreihe im Mai und Oktober 2014, wozu Sie herzlich eingeladen sind." ;
+                                                   ical:dtend "2014-05-22T19:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:summary "Energiemetropole-Leipzig: Leipzig-Lyon: 4. deutsch-französischer Wirtschaftsdialog am 22. Mai mit Podiumsdiskussion zum Thema Mobilität" ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ical:contact "Elke Hübner bzw. Matthias Schwab, Amt für Wirtschaftsförderung der Stadt Leipzig,. Tel. 123-5683 bzw. 123-5834, elke.huebner@leipzig.de bzw. matthias.schwab@leipzig.de" ;
+                                                   ld:hasMD5Sum "yEI5RpZ4wT/Ohn7ln/BDyw" .
+
 <http://leipzig-data.de/Data/Event/NEU.2014-05-27> a ld:Event ;
                                                    rdfs:label "Preisverleihung des Leipziger Agenda Preises" ;
                                                    ld:hasTag ldtag:Energie ;
@@ -857,18 +898,33 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ld:hasMD5Sum "Qlgn5WufKLG3Ub3iKf334Q" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-06-03> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Clusterteam Solar", "Fachgespräche-TGA an der Fakultät Maschinenbau und Energietechnik" ;
+                                                   rdfs:label "Energiemetropole-Leipzig: Clusterteam Solar", "Fachgespräche-TGA an der Fakultät Maschinenbau und Energietechnik", "Energiemetropole-Leipzig: Treffen Clusterteam Solar" ;
                                                    ld:hasTag ldtag:Energie ;
                                                    ical:dtstart "2014-06-03T13:00:00+02:00"^^xsd:dateTime, "2014-06-03T17:00:00+02:00"^^xsd:dateTime ;
                                                    ical:location <http://leipzig-data.de/Data/Ort/HTWK.MET>, ldo:IHK ;
                                                    ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Sitzung des Clusterteams Solar<br/>Die Energie der Sonne ist eine beinahe unerschöpfliche Energiequelle mit einem enormen Potential. Rein theoretisch könnte man die gesamte Erdbevölkerung mit solarer Energie versorgen. Doch immer wieder sorgen energiepolitische Rahmenbedingungen oder technische Grenzen für eine Begrenzung des Enthusiasmus.<br/>Im Clusterteam Solar diskutieren insbesondere Vertreter der ansässigen Solarbranche die Chancen und Risiken des Marktes. Zudem werden regelmäßig Projekte, Veranstaltungen und Neuheiten der Branche vorgestellt.<br/>Wenn Sie Interesse an der Teilnahme am Clusterteamtreffen des Clusterteams Solar haben, so können Sie sich bei Herrn Bernd Felgentreff (Clusterteamleiter Team Solar) melden. ", "Die EnEV 2014 tritt zum 01.05.2014 in Kraft und wird aus energetischer Sicht in jede neue Planung eingreifen. Im Geltungsbereich dieser Verordnung sind sowohl weiter verschärfte Berechnungswerte für Bauelemente und als auch höhere Anforderungen an Anlagen der Technischen Ausrüstung in Gebäuden zu beachten. Mit der Senkung des Energieverbrauchs und der gleichzeitigen Erhöhung der Energieeffizienz sollen unter Beachtung einer wirtschaftlichen Vertretbarkeit die energiepolitischen Ziele der Bundesregierung, insbesondere ein nahezu klimaneutraler Gebäudebestand, erreicht werden.Das Kolloquium stellt ausgewählte wesentliche Auswirkungen dieser neuen Energieeinsparverordnung auf energieintensive Anlagen der Raumluft- und Kältetechnik in den Mittelpunkt der Vorträge.Für eine gemeinsame Diskussion der Anforderungen und der Vorträge laden die Veranstalter herzlich ein. Die Fachveranstaltung und die begleitende Ausstellung wird dafür ausreichend Zeit bieten. Weitere Informationen zum Programm der Veranstaltung können der beigefügten Anlage entnommen werden." ;
+                                                   ical:description "Sitzung des Clusterteams Solar<br/>Die Energie der Sonne ist eine beinahe unerschöpfliche Energiequelle mit einem enormen Potential. Rein theoretisch könnte man die gesamte Erdbevölkerung mit solarer Energie versorgen. Doch immer wieder sorgen energiepolitische Rahmenbedingungen oder technische Grenzen für eine Begrenzung des Enthusiasmus.<br/>Im Clusterteam Solar diskutieren insbesondere Vertreter der ansässigen Solarbranche die Chancen und Risiken des Marktes. Zudem werden regelmäßig Projekte, Veranstaltungen und Neuheiten der Branche vorgestellt.<br/>Wenn Sie Interesse an der Teilnahme am Clusterteamtreffen des Clusterteams Solar haben, so können Sie sich bei Herrn Bernd Felgentreff (Clusterteamleiter Team Solar) melden. ", "Die EnEV 2014 tritt zum 01.05.2014 in Kraft und wird aus energetischer Sicht in jede neue Planung eingreifen. Im Geltungsbereich dieser Verordnung sind sowohl weiter verschärfte Berechnungswerte für Bauelemente und als auch höhere Anforderungen an Anlagen der Technischen Ausrüstung in Gebäuden zu beachten. Mit der Senkung des Energieverbrauchs und der gleichzeitigen Erhöhung der Energieeffizienz sollen unter Beachtung einer wirtschaftlichen Vertretbarkeit die energiepolitischen Ziele der Bundesregierung, insbesondere ein nahezu klimaneutraler Gebäudebestand, erreicht werden.Das Kolloquium stellt ausgewählte wesentliche Auswirkungen dieser neuen Energieeinsparverordnung auf energieintensive Anlagen der Raumluft- und Kältetechnik in den Mittelpunkt der Vorträge.Für eine gemeinsame Diskussion der Anforderungen und der Vorträge laden die Veranstalter herzlich ein. Die Fachveranstaltung und die begleitende Ausstellung wird dafür ausreichend Zeit bieten. Weitere Informationen zum Programm der Veranstaltung können der beigefügten Anlage entnommen werden.", "Sitzung des Clusterteams Solar<br/>Die Energie der Sonne ist eine beinahe unerschöpfliche Energiequelle mit einem enormen Potential. Rein theoretisch könnte man die gesamte Erdbevölkerung mit solarer Energie versorgen. Doch immer wieder sorgen energiepolitische Rahmenbedingungen oder technische Grenzen für eine Begrenzung des Enthusiasmus.<br/>Im Clusterteam Solar diskutieren insbesondere Vertreter der ansässigen Solarbranche die Chancen und Risiken des Marktes. Zudem werden regelmäßig Projekte, Veranstaltungen und Neuheiten der Branche vorgestellt.<br/>Wenn Sie Interesse an der Teilnahme am Clusterteamtreffen des Clusterteams Solar haben, so können Sie sich bei Herrn Bernd Felgentreff (Clusterteamleiter Team Solar) melden. <br/>Geplante Themen:<br/><br/>Begrüßung / Stand der Projektgruppenarbeit<br/>Windenergie in Sachsen - Hürden und Entwicklungspotentiale Referent:  Andreas Arens, Geschäftsführer der Zopf GmbH - Umweltgerechte Energieanlagen, Leipzig<br/>Leipzig – die Klimaschutzkommune, European Energy Award Chancen und Möglichkeiten für Leipziger Akteure Referent: Reiner Fritzsche, Stadt Leipzig, Amt für Umweltschutz<br/><br/>Bitte melden Sie sich per E-Mail unter elke.huebner@leipzig.de oder 0341/123-5683 an. " ;
                                                    ical:dtend "2014-06-03T19:00:00+02:00"^^xsd:dateTime ;
                                                    ld:hasAddressAddendum "Haus 2, Hörsaal 009", "Beratungsraum 604" ;
-                                                   ical:summary "Energiemetropole-Leipzig: Clusterteam Solar", "Energiemetropole-Leipzig: Fachgespräche-TGA an der Fakultät Maschinenbau und Energietechnik" ;
+                                                   ical:summary "Energiemetropole-Leipzig: Clusterteam Solar", "Energiemetropole-Leipzig: Fachgespräche-TGA an der Fakultät Maschinenbau und Energietechnik", "Energiemetropole-Leipzig: Treffen Clusterteam Solar" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ical:contact "Hr. Felgentreff, solarberatung@bernd-felgentreff.de", "Frau Nitsche, info@knoll-img.de" ;
-                                                   ld:hasMD5Sum "xjSpZXDmvu82Y8UYuburSQ", "wXIIgFwGt8LXtJgQP9TMMQ", "edFQ2utCc0YWImNwja/aMA" .
+                                                   ld:hasMD5Sum "xjSpZXDmvu82Y8UYuburSQ", "wXIIgFwGt8LXtJgQP9TMMQ", "edFQ2utCc0YWImNwja/aMA", "Hp24D4bhGDxz6+Fcpokvyw" .
+
+<http://leipzig-data.de/Data/Event/NEU.2014-06-03.1> a ld:Event ;
+                                                     rdfs:label "11. Fachgespräch: Energieversorgungssysteme der Zukunft" ;
+                                                     ld:hasTag ldtag:Energie ;
+                                                     ical:dtstart "2014-06-03T15:00:00+02:00"^^xsd:dateTime ;
+                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
+                                                     ical:organizer ldo:NetzwerkEnergieUmwelt ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NEU.Energiefachgespraeche> ;
+                                                     ical:description "Die Universität Leipzig und das metaStream-Netzwerk laden alle Interessenten zu einem Fachgespräch zum Thema „Energiemarkt kontra Systemstabilität?“ ein.<br/>Kraftwerke und große Energieverbraucher erhalten vom Energiemarkt einerseits und vom Netz andererseits zunehmend inkohärente, teils gegenläufige Signale. Das beinhaltet einerseits, dass es keine ausreichenden wirtschaftlichen Anreize für eine netzstabilisierende Fahrweise von Kraftwerken und Verbrauchern gibt, andererseits dass eine rein marktwirtschaftlich optimierte Betriebsführung die Systemstabilität deutlich gefährden könnte.<br/>Auf dem 11. Fachgespräch sollen daraus ergebende Fragestellungen und Lösungsansätze vorgestellt und diskutiert werden. <br/>Referenten des 11. Fachgespräches: Dr. Jan Richter, European Energy Exchange AG (EEX) Leipzig <br/>„Auswirkungen nationaler Kapazitätsmechanismen und eines steigenden Anteils der Direktvermarktung Erneuerbarer Energien auf den europäischen Stromhandel“ <br/>Lisann Krautzberger, NEXT Kraftwerke GmbH   <br/>„Praxisbeispiel Virtuelles Kraftwerk: Flexibilität aus erneuerbaren Energien und Industrieprozessen“<br/>Dr. Winfried Damm, Stadtwerke Leipzig <br/>„Kapazitätsmarktdiskussion: Welche Modelle gibt es und wie sieht der Favorit der Energiewirtschaft aus“<br/>Prof. Dr. Thomas Bruckner, Universität Leipzig <br/>„Marktszenarien für eine erfolgreiche und nachhaltige Energiewende“<br/> <br/>Die Anmeldung ist bis zum 02.06.2014 via Mail an Herrn Christoph Weidner (cw@evermind.de) möglich.<br/> " ;
+                                                     ical:dtend "2014-06-03T18:30:00+02:00"^^xsd:dateTime ;
+                                                     ld:hasAddressAddendum "Paulinum, Raum P-502" ;
+                                                     ical:summary "Energiemetropole-Leipzig: 11. Fachgespräch: Energieversorgungssysteme der Zukunft" ;
+                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                     ical:contact "Christoph Weidner cw@evermind.de" ;
+                                                     ld:hasMD5Sum "PUSF+qepzbyIjjOpfUlElg" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-06-04> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Treffen des Clusterteam Umwelt und Wasser" ;
@@ -876,12 +932,12 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:dtstart "2014-06-04T17:00:00+02:00"^^xsd:dateTime ;
                                                    ical:location <http://leipzig-data.de/Data/Unternehmen/GCI> ;
                                                    ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Treffen des Clusterteams Umwelt und Wasser <br/>Die Gegenseitigkeiten Einflüsse, die Energie und Umwelt auf sich haben, sind enorm. Genau mit diesen Fragestellungen beschäftigt sich das Clusterteam Umwelt und Wasser. Ein Schwerpunkt liegt auf Wasser- und Abwasserthemen, was auf die Expertise von Dr. Jürgen Wummel zurückzuführen ist, der als Geschäftsführer der Sachsen Wasser GmbH und als Clusterteamleiter für das Team tätig ist. Bei Teilnahmeinteresse können Sie sich bei Frau Ute Liebelt melden.<br/>Geplantes Programm:<br/>1. Fachthema: noch offen<br/>2. Projekte   <br/> a. Liste der (potentiellen) Clusterteilnehmer <br/> b. Projektskizze(n) der Teilnehmer <br/>  c. Event während der Terra Tec 2015 <br/>3. Sonstiges" ;
+                                                   ical:description "Treffen des Clusterteams Umwelt und Wasser <br/>Die Gegenseitigkeiten Einflüsse, die Energie und Umwelt auf sich haben, sind enorm. Genau mit diesen Fragestellungen beschäftigt sich das Clusterteam Umwelt und Wasser. Ein Schwerpunkt liegt auf Wasser- und Abwasserthemen, was auf die Expertise von Dr. Jürgen Wummel zurückzuführen ist, der als Geschäftsführer der Sachsen Wasser GmbH und als Clusterteamleiter für das Team tätig ist. Bei Teilnahmeinteresse können Sie sich bei Frau Ute Liebelt melden.<br/>Geplantes Programm:<br/>1. Fachthema: noch offen<br/>2. Projekte   <br/> a. Liste der (potentiellen) Clusterteilnehmer <br/> b. Projektskizze(n) der Teilnehmer <br/>  c. Event während der Terra Tec 2015 <br/>3. Sonstiges", "Treffen des Clusterteams Umwelt und Wasser <br/>Die Gegenseitigkeiten Einflüsse die Energie und Umwelt auf sich haben sind enorm. Genau mit diesen Fragestellungen beschäftigt sich das Clusterteam Umwelt / Wasser. Ein Schwerpunkt liegt auf Wasser – und Abwasserthemen, was auf die Expertise von Dr. Jürgen Wummel zurück zu führen ist, der als Geschäftsführer der Sachsen Wasser GmbH und als Clusterteamleiter für das Team tätig ist. Bei Teilnahmeinteresse können Sie sich bei Frau Ute Liebelt melden.<br/>Geplantes Programm:<br/>1. Begrüßung: Referent: Herr Dr. Wummel, Sachsen Wasser GmbH<br/>2. Protokollkontrolle / offene Punkte: Referent: Herr Dr. Wummel, Sachsen Wasser GmbH<br/>3. Vorbereitung TerraTec 2015 (Messestand und Symposium) Referenten: Ute Liebelt, Amt für Wirtschaftsförderung und Dr. Wummel,Sachsen Wasser GmbH<br/>4. Vorstellung der BUNG Ingenieure AG durch Dipl.-Ing. Andreas Apelt <br/>5. Sonstiges<br/>Teilnahmebestätigung bis spätestens 2. Juni 2014" ;
                                                    ical:dtend "2014-06-04T18:30:00+02:00"^^xsd:dateTime ;
                                                    ical:summary "Energiemetropole-Leipzig: Treffen des Clusterteam Umwelt und Wasser" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ical:contact "Dr. Jürgen Wummel, Ute Liebelt [ute.liebelt@leipzig.de]" ;
-                                                   ld:hasMD5Sum "Bq6erU/ZQRsT6AA3KD8HFA", "sTTSeZVw4kwY2KOHFWsjnA", "89UG40wnkaLri1i+IGBneg" .
+                                                   ld:hasMD5Sum "Bq6erU/ZQRsT6AA3KD8HFA", "sTTSeZVw4kwY2KOHFWsjnA", "89UG40wnkaLri1i+IGBneg", "vc9z6wMVmXp4O9mQXT9F/A" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-06-06> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: lipsia-e-motion" ;
@@ -911,16 +967,18 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ld:hasMD5Sum "pSeTsXWvsaE68NIZ6X8XhA", "9+i4dq46qMieZ0Wc7EGgcQ" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-07-07> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Energiecluster trifft Wissenschaft" ;
+                                                   rdfs:label "Energiemetropole-Leipzig: Energiecluster trifft Wissenschaft", "Energiecluster trifft Wissenschaft" ;
                                                    ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2014-07-07"^^xsd:date ;
-                                                   ical:location ldo:NN ;
+                                                   ical:dtstart "2014-07-07"^^xsd:date, "2014-07-07T14:30:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Handelshochschule, ldo:NN ;
                                                    ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "In Planung. Details folgen in Kürze." ;
+                                                   ical:description "In Planung. Details folgen in Kürze.", "Experten aus Wissenschaft, Forschung und Wirtschaft diskutieren Produkt- und Prozessinnovationen sowie marktfähige Ideen der Leipziger Hochschulen und Forschungseinrichtungen. Ziel der Veranstaltung ist es, die Akteure aus der Wirtschaft mit denen aus der Wissenschaft und Forschung zu vernetzen, sodass aus innovativen Ideen marktfähige Produkte werden. So entsteht neue Wertschöpfung für die Region Leipzig.<br/>Die diesjährige Veranstaltung steht unter dem Motto 'Innovations- und Technologietransfer'. Dazu werden Vertreter ausgewählter Leipziger Hochschulen und Forschungseinrichtungen vor einem Plenum aus interessierten Personen, Studenten und Unternehmensvertretern ihre aktuelle Forschung in diesem Bereich vorstellen.<br/>Vertretene Insitutionen in diesem Jahr:<br/><br/>Deutsches Biomasseforschungszentrum (DBFZ)<br/>UFZ-Helmholtz-Zentrum für Umweltforschung<br/>HHL-Leipzig Graduate School of Management<br/>HTWK-Hochschule für Technik, Wirtschaft und Kultur Leipzig<br/>Universität Leipzig<br/><br/>Die Teilnahme an der Veranstaltung ist kostenfrei. Für Speisen und Getränke ist gesorgt. <br/>Am Tag der Veranstaltung wird der Einlass ab 14:30 Uhr erfolgen, ab 15:00 beginnt die eigentliche Veranstaltung.<br/>Zeitnah wird Ihnen auf der Energiemetropole-Website ein Anmeldeformular zur Verfügung gestellt.<br/> " ;
+                                                   ical:dtend "2014-07-07T17:15:00+02:00"^^xsd:dateTime ;
+                                                   ld:hasAddressAddendum "Hörsaal 110, Handelshochschule Leipzig" ;
                                                    ical:summary "Energiemetropole-Leipzig: Energiecluster trifft Wissenschaft" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Herr Daniel Reißmann" ;
-                                                   ld:hasMD5Sum "k/0TcWGhGb23ErN90O11Cw" .
+                                                   ical:contact "Herr Daniel Reißmann", "Herr Daniel Reißmann, reissmann@energiemetropole-leipzig.de" ;
+                                                   ld:hasMD5Sum "k/0TcWGhGb23ErN90O11Cw", "ODsbuckmrzAul/KSjfNGMA" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-08-05> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Clusterteam Solar" ;
