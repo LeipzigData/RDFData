@@ -2,8 +2,10 @@
 
 @base <http://leipzig-data.de/Data/Personen/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -430,6 +432,9 @@ ldp:Metz_Susanne a foaf:Person ;
 ldp:Meyer_Rene a foaf:Person ;
                foaf:name "René Meyer" .
 
+ldp:Moeckel_Christian a foaf:Person ;
+                      foaf:name "Arne Ackermann" .
+
 ldp:Moeller_Juergen a foaf:Person ;
                     foaf:name "Jürgen Möller" .
 
@@ -701,6 +706,9 @@ ldp:Wieland_Sabine a foaf:Person ;
                    rdfs:comment "Sprecherin der Regionalgruppe Leipzig der GI und des MINT-Netzwerks Leipzig " ;
                    foaf:name "Prof. Dr. Sabine Wieland" .
 
+ldp:Willkomm_Jan a foaf:Person ;
+                 foaf:name "Jan Willkomm" .
+
 ldp:Wohlfahrt_Fabian a foaf:Person ;
                      foaf:name "Fabian Wohlfahrt" ;
                      foaf:mbox "fabian.wohlfart@energieforen.de" ;
@@ -739,11 +747,11 @@ ldp:vonNessler_Georg a foaf:Person ;
                      foaf:mbox "Nessler@IP-Dialog.de" ;
                      foaf:phone "0341-3928198-10" .
 
-<> a <http://www.w3.org/2002/07/owl#Ontology> ;
+<> a owl:Ontology ;
    rdfs:label "Personen" ;
    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    cc:attributionURL <http://leipzig-data.de> ;
    cc:attributionName "The Leipzig Open Data Project" .
 
-foaf:Person a <http://www.w3.org/2002/07/owl#Class> ;
+foaf:Person a owl:Class ;
             rdfs:label "Person" .

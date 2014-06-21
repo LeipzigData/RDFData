@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+
+<http://leipzig-data.de/Data/Buergervereine/> a owl:Ontology ;
+   rdfs:label "Bürgervereine" ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" .
+
+
+<http://leipzig-data.de/Data/Buergerverein/Bachviertel>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Kaethe-Kollwitz-Strasse.107> ;
+    ld:hasSupplierNumber "008" ;
+    a ld:Buergerverein, org:Organization ;
+    rdfs:comment "Im Insolvenzverfahren wegen KK-Beiträgen für eine Mitarbeiterin, will danach weitermachen (LVZ, 18.06.2014)" ;
+    skos:prefLabel "Bürgerverein Bachviertel e.V." ;
+    org:hasMember ldp:Hantschick_Ines ;
+    foaf:mbox "ineshantschick@gmx.de" ;
+    foaf:phone "0341-1257203" .
+
+<http://leipzig-data.de/Data/Buergerverein/Gohlis>
+    a ld:Buergerverein, org:Organization ;
+    rdfs:comment "Hat seine Auflösung beschlossen (LVZ, 18.06.2014)" ;
+    skos:prefLabel "Bürgerverein Gohlis" .
+
+<http://leipzig-data.de/Data/Buergerverein/Kolonnadenviertel>
+    ld:hasURL <http://www.awo-leipzig-stadt.de> ;
+    a ld:Buergerverein, org:Organization ;
+    skos:prefLabel "Bürgerverein Kolonnadenviertel e.V." ;
+    org:memberOf ldp:Schaetzl_Matthias, ldp:Vetterlein_Guenter .
+
+<http://leipzig-data.de/Data/Buergerverein/Leutzsch>
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.121> ; 
+    ld:hasURL <http://www.blickpunkt-leutzsch.de> ;
+    a ld:Buergerverein, org:Organization ;
+    skos:prefLabel "Bürgerverein Leutzsch e.V." ;
+    rdfs:comment "Gegründet 1994 (LVZ, 22.06.2014) "; 
+    org:memberOf ldp:Raschke_Roman, ldp:Moeckel_Christian .
+
+<http://leipzig-data.de/Data/Buergerverein/Messemagistrale>
+    ld:hasSupplierNumber "112" ;
+    ld:hasURL <http://www.awo-leipzig-stadt.de> ;
+    a ld:Buergerverein, org:Organization ;
+    skos:prefLabel "Bürgerverein Messemagistrale e.V." ;
+    foaf:mbox "messemagistrale@googlemail.com" .
+
+<http://leipzig-data.de/Data/Buergerverein/NeustaedterMarkt>
+    ld:hasURL <http://www.neustaedtermarkt-leipzig.de> ;
+    a ld:Buergerverein, org:Organization ;
+    skos:prefLabel "Bürgerverein Neustädter Markt e.V." ;
+    org:memberOf ldp:Hufenreuter_Henry .
+
+<http://leipzig-data.de/Data/Buergerverein/Ostvorstadt>
+    ld:hasURL <http://www.bvostvorstadt.de> ;
+    a ld:Buergerverein, org:Organization ;
+    skos:prefLabel "Bürgerverein Leipziger Ostvorstadt e.V." ;
+    org:memberOf ldp:Friedrich_Marga, ldp:Wunderlich_Sabine .
+
+<http://leipzig-data.de/Data/Buergerverein/Probstheida>
+    ld:hasSupplierNumber "162" ;
+    a ld:Buergerverein, org:Organization ;
+    skos:prefLabel "Bürgerverein Probstheida" .
+
+<http://leipzig-data.de/Data/Buergerverein/Waldstrassenviertel>
+    a ld:Buergerverein, org:Organization ;
+    rdfs:comment "300 Mitglieder. Vorstandsvorsitzender Jan Willkomm (LVZ, 18.06.2014)" ;
+    skos:prefLabel "Bürgerverein Waldstraßenviertel" .
+
+ldp:Moeckel_Christian org:headOf
+<http://leipzig-data.de/Data/Buergerverein/Leutzsch>.
+
+ldp:Willkomm_Jan org:headOf
+<http://leipzig-data.de/Data/Buergerverein/Waldstrassenviertel>.
