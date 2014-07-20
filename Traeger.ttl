@@ -9,6 +9,7 @@
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 
 <http://leipzig-data.de/Data/Agent/APILeipzig> a foaf:Agent ;
                                                foaf:name "Projekt API Leipzig" ;
@@ -1013,10 +1014,15 @@ ld:Verein a owl:Class ;
 <http://leipzig-data.de/Data/UniLeipzig/IIR> a ld:Traeger ;
                                              rdfs:label "Institut für Infrastruktur und Ressourcenmanagement der Universität Leipzig" .
 
-<http://leipzig-data.de/Data/Unternehmen/BMW-Leipzig> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Unternehmen/BMW-Leipzig> a org:Organization ;
                                                       skos:prefLabel "BMW Werk Leipzig" ;
                                                       ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.BMW-Allee.1> ;
                                                       foaf:homepage <http://www.bmw-werk-leipzig.de> .
+
+<http://leipzig-data.de/Data/Unternehmen/BSE-Engineering> a org:Organization ;
+                                                          skos:prefLabel "BSE Engineering" ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Mottelerstrasse.8> ;
+                                                          foaf:homepage <http://www.bse-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Unternehmen/Boerse.Dresden> a foaf:Organization, ld:Traeger ;
                                                          foaf:name "Börse Dresden" ;
@@ -1026,12 +1032,12 @@ ld:Verein a owl:Class ;
                                                          foaf:mbox " office@energiesa.de" ;
                                                          foaf:phone "0351-6557640" .
 
-<http://leipzig-data.de/Data/Unternehmen/GCI> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Unternehmen/GCI> a org:Organization ;
                                               skos:prefLabel "GCI-Dr. Schindler Geo Consult International" ;
                                               ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Marienbrunnenstrasse.4> ;
                                               foaf:homepage <http://www.gc-i.de/> .
 
-<http://leipzig-data.de/Data/Unternehmen/SternburgBrauerei> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Unternehmen/SternburgBrauerei> a org:Organization ;
                                                             skos:prefLabel "Sternburg Brauerei GmbH. Ein Unternehmen der Radeberger Gruppe" ;
                                                             ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.13> ;
                                                             foaf:homepage <http://www.sternburg-bier.de/> .
@@ -1053,7 +1059,7 @@ ld:Verein a owl:Class ;
                                            ld:hasURL "http://www.anker-leipzig.de" ;
                                            ld:hasSupplierNumber "062" .
 
-<http://leipzig-data.de/Data/Verein/InfAI> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Verein/InfAI> a org:Organization ;
                                            skos:prefLabel "InfAI - Institut für Angewandte Informatik e.V. an der Universität Leipzig" ;
                                            foaf:homepage <http://infai.org> .
 
