@@ -10,7 +10,13 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 
 ld:Grundschule a owl:Class ;
-               rdfs:label "Grundschule" .
+               rdfs:label "Grundschule in Leipzig" .
+
+ld:FreierTraeger a owl:Class ;
+               rdfs:label "Schule in freier Trägerschaft" .
+
+ld:Gemeinschaftsschule a owl:Class ;
+               rdfs:label "Gemeinschaftsschule in Leipzig" .
 
 ld:Gymnasium a owl:Class ;
              rdfs:label "Gymnasium in Leipzig" .
@@ -133,7 +139,7 @@ ld:Schule a owl:Class ;
                                                   rdfs:label "Schule am Adler" ;
                                                   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Antonienstrasse.24> .
 
-<http://leipzig-data.de/Data/Schule/AktiveSchule-GS> a ld:Schule, ld:Grundschule ;
+<http://leipzig-data.de/Data/Schule/AktiveSchule-GS> a ld:Schule, ld:Grundschule, ld:FreierTraeger ;
                                                      rdfs:label "Aktive Schule Leipzig" ;
                                                      ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.EisenacherStrasse.40> .
 
@@ -145,7 +151,7 @@ ld:Schule a owl:Class ;
                                                rdfs:label "Schule am Auwald" ;
                                                ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Roedelstrasse.6> .
 
-<http://leipzig-data.de/Data/Schule/BIP-Schule> a ld:Schule, ld:Grundschule, ld:Gymnasium ;
+<http://leipzig-data.de/Data/Schule/BIP-Schule> a ld:Schule, ld:Grundschule, ld:Gymnasium, ld:FreierTraeger ;
                                                 rdfs:label "BIP-Kreativitätsgrundschule und -gymnasium" ;
                                                 ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TorgauerStrasse.114> .
 
@@ -173,7 +179,7 @@ ld:Schule a owl:Class ;
                                                     rdfs:label "Gymnasium Engelsdorf" ;
                                                     ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.Arthur-Winkler-Strasse.6> .
 
-<http://leipzig-data.de/Data/Schule/EvangelischesSchulzentrum> a ld:Schule, ld:Grundschule, ld:Gymnasium, ld:Oberschule ;
+<http://leipzig-data.de/Data/Schule/EvangelischesSchulzentrum> a ld:Schule, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:FreierTraeger ;
                                                                rdfs:label "Evangelisches Schulzentrum" ;
                                                                ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.7> .
 
@@ -181,11 +187,11 @@ ld:Schule a owl:Class ;
                                                    rdfs:label "Schule am Floßplatz" ;
                                                    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.45> .
 
-<http://leipzig-data.de/Data/Schule/FreieSchule> a ld:Schule, ld:Grundschule ;
+<http://leipzig-data.de/Data/Schule/FreieSchule> a ld:Schule, ld:Grundschule, ld:FreierTraeger ;
                                                  rdfs:label "Freie Schule Leipzig e.V." ;
                                                  ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.67> .
 
-<http://leipzig-data.de/Data/Schule/FreieWaldorfschule> a ld:Schule, ld:Grundschule ;
+<http://leipzig-data.de/Data/Schule/FreieWaldorfschule> a ld:Schule, ld:Grundschule, ld:FreierTraeger ;
                                                         rdfs:label "Freie Waldorfschule Leipzig" ;
                                                         ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Berthastrasse.15> .
 
@@ -201,7 +207,7 @@ ld:Schule a owl:Class ;
                                                        rdfs:label "Georg-Schumann-Schule" ;
                                                        ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Glockenstrasse.6> .
 
-<http://leipzig-data.de/Data/Schule/Gohlis-OS> a ld:Schule, ld:Oberschule ;
+<http://leipzig-data.de/Data/Schule/Gohlis-OS> a ld:Schule, ld:Oberschule, ld:FreierTraeger ;
                                                rdfs:label "Oberschule Gohlis" ;
                                                ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Luetzowstrasse.8> .
 
@@ -257,7 +263,7 @@ ld:Schule a owl:Class ;
                                                  rdfs:label "Leibnizschule" ;
                                                  ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Nordplatz.13> .
 
-<http://leipzig-data.de/Data/Schule/LeipzigInternationalSchool> a ld:Schule, ld:Grundschule ;
+<http://leipzig-data.de/Data/Schule/LeipzigInternationalSchool> a ld:Schule, ld:Grundschule, ld:FreierTraeger ;
                                                                 rdfs:label "Leipzig International School e.V." ;
                                                                 ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.47> .
 
@@ -301,7 +307,7 @@ ld:Schule a owl:Class ;
                                                     rdfs:label "Schule Mölkau" ;
                                                     ld:hasAddress <http://leipzig-data.de/Data/04316.Leipzig.Schulstrasse.6> .
 
-<http://leipzig-data.de/Data/Schule/Montessori-Schulzentrum> a ld:Schule, ld:Grundschule, ld:Oberschule ;
+<http://leipzig-data.de/Data/Schule/Montessori-Schulzentrum> a ld:Schule, ld:Grundschule, ld:Oberschule, ld:Gymnasium, ld:FreierTraeger ;
                                                              rdfs:label "Bischöfliches Maria-Montessori-Schulzentrum Leipzig" ;
                                                              ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.61> .
 
@@ -339,13 +345,13 @@ ld:Schule a owl:Class ;
 
 <http://leipzig-data.de/Data/Schule/Portitz-Schule> a ld:Schule, ld:Grundschule, ld:Oberschule ;
                                                     rdfs:label "Schule Portitz" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.GoebschelwitzerWeg.1> .
+                                                    ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.Licidestrasse.12> .
 
 <http://leipzig-data.de/Data/Schule/Rabet-GS> a ld:Schule, ld:Grundschule ;
                                               rdfs:label "Schule am Rabet" ;
                                               ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.50> .
 
-<http://leipzig-data.de/Data/Schule/Rahn-OS> a ld:Schule, ld:Oberschule ;
+<http://leipzig-data.de/Data/Schule/Rahn-OS> a ld:Schule, ld:Oberschule, ld:FreierTraeger ;
                                              rdfs:label "Freie Oberschule Dr. P. Rahn & Partner" ;
                                              ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kochstrasse.28A> .
 
@@ -353,7 +359,7 @@ ld:Schule a owl:Class ;
                                                 rdfs:label "Anton-Philipp-Reclam-Schule" ;
                                                 ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Tarostrasse.4> .
 
-<http://leipzig-data.de/Data/Schule/Regenbogen-GS> a ld:Schule, ld:Grundschule ;
+<http://leipzig-data.de/Data/Schule/Regenbogen-GS> a ld:Schule, ld:Grundschule, ld:FreierTraeger ;
                                                    rdfs:label "Freie Grundschule \"Regenbogen\"" ;
                                                    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15> .
 
@@ -385,11 +391,11 @@ ld:Schule a owl:Class ;
                                                                rdfs:label "Geschwister-Scholl-Schule Liebertwolkwitz" ;
                                                                ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.AmAngerteich.2> .
 
-<http://leipzig-data.de/Data/Schule/Schubert-GS> a ld:Schule, ld:Grundschule ;
+<http://leipzig-data.de/Data/Schule/Schubert-GS> a ld:Schule, ld:Grundschule, ld:FreierTraeger ;
                                                  rdfs:label "Karl-Schubert-Schule" ;
                                                  ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.4> .
 
-<http://leipzig-data.de/Data/Schule/Schumann-GS> a ld:Schule, ld:Grundschule ;
+<http://leipzig-data.de/Data/Schule/Schumann-GS> a ld:Schule, ld:Grundschule, ld:FreierTraeger ;
                                                  rdfs:label "Freie Grundschule \"Clara Schumann\" Leipzig" ;
                                                  ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.18> .
 
@@ -409,7 +415,7 @@ ld:Schule a owl:Class ;
                                                  rdfs:label "Schule Stahmeln" ;
                                                  ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.StahmelnerHoehe.1> .
 
-<http://leipzig-data.de/Data/Schule/TUEV-OS> a ld:Schule, ld:Oberschule ;
+<http://leipzig-data.de/Data/Schule/TUEV-OS> a ld:Schule, ld:Oberschule, ld:FreierTraeger ;
                                              rdfs:label "TÜV Oberschule Leipzig" ;
                                              ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.59> .
 
@@ -435,6 +441,63 @@ ld:Schule a owl:Class ;
 
 <> a owl:Ontology ;
    rdfs:label "Schulen der Stadt Leipzig" ;
+   rdfs:comment "ohne beruflische Schulen und Förderschulen. 2014-07-20: Abgleich mit den Stadtseiten." ; 
    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    cc:attributionURL <http://leipzig-data.de> ;
    cc:attributionName "The Leipzig Open Data Project" .
+
+<http://leipzig-data.de/Data/Schule/AHF-GS> a ld:Schule, ld:Grundschule, ld:FreierTraeger ;
+rdfs:label "August-Hermann-Francke Grundschule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Puschstrasse.9> .
+
+<http://leipzig-data.de/Data/Schule/ErnstPinkert-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "Ernst-Pinkert-Schule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Martinstrasse.7> .
+
+<http://leipzig-data.de/Data/Schule/Auguste-GS> a ld:Schule, ld:Grundschule, ld:FreierTraeger;
+rdfs:label "Grundschule Auguste" ;
+ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.GrueneGasse.21B> .
+
+<http://leipzig-data.de/Data/Schule/ForumThomanum-GS> a ld:Schule, ld:Grundschule, ld:FreierTraeger;
+rdfs:label "Grundschule forum thomanum" ;
+ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Joergen-Schmidtchen-Weg.8> .
+
+<http://leipzig-data.de/Data/Schule/3-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "3. Schule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Bernhard-Goering-Strasse.107> .
+
+<http://leipzig-data.de/Data/Schule/39-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "39. Schule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Gustav-Kuehn-Strasse.1> .
+
+<http://leipzig-data.de/Data/Schule/74-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "74. Schule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Friedrich-Dittes-Strasse.23> .
+
+<http://leipzig-data.de/Data/Schule/90-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "90. Schule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.21> .
+
+<http://leipzig-data.de/Data/Schule/Andersen-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "Hans-Christian-Andersen-Schule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Louis-Fuernberg-Strasse.2> .
+
+<http://leipzig-data.de/Data/Schule/Kroch-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "Hans-Kroch-Schule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Joergen-Schmidtchen-Weg.8> .
+
+<http://leipzig-data.de/Data/Schule/Liebknecht-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "Karl-Liebknecht-Schule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Heinrich-Mann-Strasse.1> .
+
+<http://leipzig-data.de/Data/Schule/5-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "Schule 5 im Stadtbezirk Mitte" ;
+ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Eitingonstrasse.5> .
+
+<http://leipzig-data.de/Data/Schule/Busch-GS> a ld:Schule, ld:Grundschule;
+rdfs:label "Wilhelm-Busch-Schule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.43> .
+
+<http://leipzig-data.de/Data/Schule/NaSch> a ld:Schule, ld:Gemeinschaftsschule, ld:Grundschule, ld:Oberschule ;
+rdfs:label "Nachbarschaftsschule" ;
+ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Gemeindeamtsstrasse.8> .
