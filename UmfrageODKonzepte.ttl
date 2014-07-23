@@ -1,0 +1,289 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://leipzig-data.de/Data/UmfrageODKonzepte/> a owl:Ontology ;
+   rdfs:label "Umfrage OD Konzepte" ;
+   rdfs:comment "Ergebnisse einer Umfrage der Stadt Leipzig unter bundesdeutschen Kommunen zu Überlegungen und dem Stand der Umsetzung einer OpenData/OpenGovernment-Strategie. Von 31 angeschriebenen Kommunen (einschl. KGSt) haben 16 geantwortet." ;
+   dcterms:creator <http://leipzig-data.de/Data/Traeger/StadtLeipzig>;
+   dcterms:title "Städtevergleich OpenData / OpenGovernment";
+   dcterms:identifier "Drucksache V/DS-3615 Anlage 2";
+   dcterms:created "2013-05-29";
+   cc:attributionURL <http://notes.leipzig.de/appl/laura/wp5/kais02.nsf/docid/B9F0508BE42227B7C1257C7F002F23F9/$FILE/V-ds-3615-anlage-2.pdf> .
+
+<http://leipzig-data.de/Data/ODKonzept/Aachen> 
+  rdfs:label "Aachen" ;
+  ld:hasContact "Wolfgang.zimmermann@mail.aachen.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Berlin> 
+  rdfs:label "Berlin" ;
+  ld:hasContact "Martin.Jammer@senfin.berlin.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Bielefeld> 
+  rdfs:label "Bielefeld" ;
+  ld:hasContact "heike.schlueter@bielefeld.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Bonn> 
+  rdfs:label "Bonn" ;
+  ld:hasContact "andreas.leinhaas@bonn.de"; 
+  ld:hasContact "Herr Hense (11-10)"; 
+  ld:Einsatzplanung "geplant für 2013; Abstimmungsprozess ist vorauss. im Herbst 2013 abgeschlossen"; 
+  ld:key3U "Technische Umsetzung noch nicht begonnen"; 
+  ld:key3M "Befindet sich mit den Städten Bonn, Köln und Linz (Österreich) in einer Machbarkeitsstudie"; 
+  ld:key3L "Derzeit CC, Nutzung Datenlizenz Dtl. im Regelbetrieb vorgesehen"; 
+  ld:key3P "Umsetzung entsprechend Govdata.de geplant"; 
+  ld:key6 "GovData"; 
+  ld:key7 "ja"; 
+  ld:key8 "Eigenes Datenportal"; 
+  ld:keyBemerkung "Wünschenswert ist kommunale Abstimmung über eine einheitliche Lizenzverwendung.  Die unterschiedlichen Empfehlungen. BMI (Dtl.Lizenz) und BMJ (CC) führen zu rechtlichen Unsicherheiten bei den Datenbereitstellern.  Auch aus Anwendersicht ist ein evtl.  Flickenteppich unterschiedlicher Lizenzen für einen Datensatztyp (z.B. Statistikdaten) für die Weiterentwicklung von OpenData nicht förderlich.  Es ist kaum zuzumuten, dass Anwender alle unterschiedlichen Lizenztypen der einzelnen Datenbereitsteller für z.B. eine bundesweite Anwendung berücksichtigen können. Bonn ist an einer Klärung sehr interessiert."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Braunschweig> 
+  rdfs:label "Braunschweig" ;
+  ld:hasContact "henning.sack@braunschweig.de"; 
+  ld:hasContact "Roland Behrens"; 
+  ld:Einsatzplanung "nein"; 
+  ld:key8 "Landesinitiative"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Chemnitz> 
+  rdfs:label "Chemnitz" ;
+  ld:hasContact "kathy.koehler@stadtchemnitz.de"; 
+  ld:Einsatzplanung "nein"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Dortmund> 
+  rdfs:label "Dortmund" ;
+  ld:hasContact "dirk.mueller@stadtdo.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Dresden> 
+  rdfs:label "Dresden" ;
+  ld:hasContact "BBusch@dresden.de"; 
+  ld:hasContact "Friedemann Höller"; 
+  ld:Einsatzplanung "geplant 2013-15"; 
+  ld:key3U "Derzeit beginnen die Vorbereitungen für dieses Thema in Zusammenarbeit mit der Abteilung Öffentlichkeitsarbeit im Bürgermeisteramt der Landeshauptstadt Dresden."; 
+  ld:keyKommentar "Die inhaltliche und technische Ausgestaltung stehen momentan noch nicht fest."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Duisburg> 
+  rdfs:label "Duisburg" ;
+  ld:hasContact "w.schauf@stadt-duisburg.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Duesseldorf> 
+  rdfs:label "Düsseldorf" ;
+  rdfs:comment "Keine Rückmeldung" ; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/KGSt> 
+  rdfs:label "KGSt" ;
+  ld:hasContact "dirk.greskowiak@kgst.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Erfurt> 
+  rdfs:label "Erfurt" ;
+  ld:hasContact "monika.ludwig@erfurt.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Essen> 
+  rdfs:label "Essen" ;
+  ld:hasContact "michael.kamberg@orgapersonal.essen.de"; 
+  ld:hasContact "Herr Gritzan <rainer.gritzan@orgapersonal.essen.de"; 
+  ld:Einsatzplanung "nein. Noch nicht konkret geplant. Z.Zt. Sammlung der Erfahrungen anderer für die eigene Meinungsfindung."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Gelsenkirchen> 
+  rdfs:label "Gelsenkirchen" ;
+  ld:hasContact "manfred.rogowski@gelsenkirchen.de"; 
+  ld:hasContact "Herr Zyweck"; 
+  ld:Einsatzplanung "nein"; 
+  ld:key9 "Die eGov. Strategie ist insbesondere darauf ausgerichtet, Geschäftsprozesse durch modernen Technikeinsatz zu optimieren und die Bürgerfreundlichkeit durch Schaffung weiterer Portalzugänge zu steigern. Daneben sollen die Aktivitäten gleichsam einen Beitrag zur Haushaltskonsolidierung leisten."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Hagen> 
+  rdfs:label "Hagen" ;
+  ld:hasContact "Mechthild.Fischer@stadthagen.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Halle> 
+  rdfs:label "Halle" ;
+  ld:hasContact "martina.goetschel@halle.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Hannover> 
+  rdfs:label "Hannover" ;
+  ld:hasContact "heidrun.heldt@hannoverstadt.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Karlsruhe> 
+  rdfs:label "Karlsruhe" ;
+  ld:hasContact "wolfgang.jung@poa.karlsruhe.de"; 
+  ld:hasContact "juergen.fody@poa.karlsruhe.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Kiel> 
+  rdfs:label "Kiel" ;
+  ld:hasContact "Helga.Rausch@kiel.de"; 
+  ld:hasContact "Herr Müller, Johannes. (Personal-/Org .amt; Abt. Informationstechnik)"; 
+  ld:Einsatzplanung "nein. "; 
+  ld:key7 "nein."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Köln> 
+  rdfs:label "Köln" ;
+  ld:hasContact "uwe.strecker@stadtkoeln.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Krefeld> 
+  rdfs:label "Krefeld" ;
+  ld:hasContact "theo.neyer@krefeld.de"; 
+  ld:hasContact "Herr Schlicht (Fachbereich 10) <reiner.schlicht@krefeld.de"; 
+  ld:Einsatzplanung "nein. Geplant, hierzu ist noch keine Entscheidung getroffen worden."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Magdeburg> 
+  rdfs:label "Magdeburg" ;
+  ld:hasContact "gisela.jeanvre@ha.magdeburg.de"; 
+  ld:hasContact "Frau Saal (IuK-Planung)"; 
+  ld:Einsatzplanung "geplant 2013-15"; 
+  ld:key3U "Planung 2013, Pilotierung vorauss. 2014"; 
+  ld:key9 "Kosten des Portalbetriebs; verschiedenen rechtlichen Aspekte der Lizenzierung; Landesaktivitäten sind bislang noch offen"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Mannheim> 
+  rdfs:label "Mannheim" ;
+  ld:hasContact "matthias.schuermeier@mannheim.de"; 
+  ld:Einsatzplanung "nein"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Mönchengladbach> 
+  rdfs:label "Mönchengladbach" ;
+  ld:hasContact "Reinhard.Brieske@Moenchengladbach.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Muenchen> 
+  rdfs:label "München" ;
+  ld:hasContact "anton.steininger@muenchen.de"; 
+  ld:hasContact "Wolfgang Glock"; 
+  ld:Einsatzplanung "ja, geplant 2013-15. Aktuell im Aufbau eines umfassenden Vorhabens zum Thema E-/OpenGovernment (Laufzeit 2.HJ 2013/Ende 2014), so dass in nächster Zeit sich einige Änderungen ergeben können"; 
+  ld:key3U "Für die bereits bereitgestellten, offenen Daten wurde mehrere Monate zur Umsetzung benötigt, wobei der Großteil der Lfz. für Abstimmungen und Freigaben benötigt wurde.  Ztr. 2.Hj 2013 bis Ende 2014 ist ein Vorhaben geplant, innerhalb dessen auch das Thema OpenData intensiv betrachtet wird und entsprechende Angebote der Öffentlichkeit zur Verfügung gestellt werden sollen.  Detaillierte Informationen zu Lfz. und Aufwand können erst im Zusammenhang mit diesen Aktivitäten bzw. nach Abschluss gegeben werden."; 
+  ld:key3B "Teile der offenen Daten werden auf dem Standard CMS der LHM („Magnolia“, Open Source CMS) bereitgestellt.  Dieses ist aus unserer Sicht keine klassische Plattform für Open Data mit Katalogfunktionen, Suche etc. Daneben über Open Data-Portale der öffentlichen Hand einzelne Datensätze der LHM bereitgestellt (z.B.  des Statistischen Amtes).  Ztr. 2.HJ 2013 bis Ende 2014: OpenData intensiv betrachtet und es sollen Angebote der Öffentlichkeit zur Verfügung gestellt werden. Im Zuge dieser Maßnahmen werden bisherige Angebote konsolidiert, erweitert, eine Open Data/Open-Gov. Plattform ausgewählt und dort unterschiedliche Angebote der LHM pilotiert."; 
+  ld:key3M "Ztr. 2.Hj 2013 bis Ende 2014: Im Zuge des Vorhabens Konzeptionen und die Auswahl der Umsetzungsart und Lösungsplattform.  Momentan sind daher keine weitere Angaben möglich."; 
+  ld:key3L "Ztr. 2.Hj 2013 bis Ende 2014: Konzeptionen => Auswahl des Lizenzmodells; Festlegungen im Umgang. Die Nutzung der Creativ Commons Lizenzen (CCx) ist dabei ein wichtiges, mögliche Lizenzmodell, das wir bereits konkret prüfen."; 
+  ld:OrgRegelung "geplant, DA. Ztr. 2.Hj. 2013 bis Ende 2014: Ziel ist dabei den einheitlichen, stadtweiten Umgang mit offenen Daten zu regeln, die notwendigen Prozesse in der Verwaltung zu definieren und dies in geeigneter Form schriftlich festzuhalten.  Bestehende Regelungen werden in diesem Zusammenhang überarbeitet."; 
+  ld:key6 "Ztr. 2.Hj. 2013 bis Ende 2014: * verschiedene Alternativen geprüft * fundierte Auswahl – auch verschiedene Optionen parallel – erfolgt i.R.d.  Vorhabens. Hierbei werden auch die notwendigen Prozesse in der LHM und Freigaberegelungen festgelegt. Die o.g.  Initiativen stellen sicher interessante Lösungen dar, die eine mögliche eigene Plattform sinnvoll ergänzen können. "; 
+  ld:key9 "Ztr. 2.Hj. 2013 bis Ende 2014: Eine fundierte Aussage und Entscheidung kann erst im Laufe dieses Vorhabens erfolgen.  Grundsätzlich sind ein wichtiger Aspekt gegen eine eigene OpenDataPlattform die initialen Kosten (SW+HW), bzw. der Aufwand zur Systempflege. Dafür spricht eine größere Flexibilität, aber auch die möglicherweise automatische, einfachere, enge Verzahnung mit den möglichen Systemen als Datenquellen."; 
+  ld:keyBemerkung "Situation LHM; Thema OpenData bzw. OpenGovernment: Die LHM engagiert sich bereits seit einigen Jahren im Bereich OpenData.  D.h. in einzelnen Bereichen gibt es OpenData-Angebote.  Diese werden aber nicht in einem gemeinsamen OpenDataPortal bereitgestellt, sondern vielmehr im Internetauftritt eines Referats (z.B. Daten des statistischen Amtes „Zentrale Informationsmanagement- und Analysesystem (ZIMAS)“ unter muenchen.de oder auf einer öffentlichen Plattform Dritter (Portal: offenedaten.de). Aktuell sollen diese verteilten Angebote i.R.e. stadtweiten Vorhabens vereinheitlicht werden.  Dazu ist eine umfassende Initiative im Bereich E-/Open-Government – als Teilaspekt dort auch OpenData – in Vorbereitung. Diese umfasst im Kern den Ztr.  2.HJ/2013 bis Ende 2014. I.R.d. Vorhabens stellt die LHM gerne entsprechende Erfahrungen und Informationen auch anderen Kommunen bzw. der öffentlichen Verwaltung allgemein zur Verfügung. In der Konzeption und Umsetzung werden auch verschiedene, in den Fragen dieser Umfrage genannte Lösungen betrachtet werden.  An einem grundsätzlichen Informationsaustausch und Weiterentwicklung des Themas sind wir sehr interessiert."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Münster> 
+  rdfs:label "Münster" ;
+  ld:hasContact "Georg.Heggemann@stadtmuenster.de>, Herr Heggemann, 0251/4921010"; 
+  ld:Einsatzplanung "nein."; 
+  ld:key6 "Bund GovData"; 
+  ld:key7 "ja"; 
+  ld:key9 "strategische Zielstellung ist als Datenbereitsteller für zentrale OpenData-Portale zu fungieren Bund/Land"; 
+  ld:keyBemerkung "Mit Inbetriebnahme von GovData wurden bereits Daten zu Zuständigkeiten und Verwaltungsleistungen im Portal bereit gestellt.  Die Prüfung weiterer Datenlieferung erfolgt i.R.d. Aufbaus eines Informationsportals für den Verwaltungsvorstand mit steuerungs-relevanten Kennzahlen und Berichten."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Nürnberg> 
+  rdfs:label "Nürnberg" ;
+  ld:hasContact "Stefan.Sembritzki@stadt.nuernberg.de"; 
+  ld:hasContact "Herr Robert Hackner"; 
+  ld:Einsatzplanung "geplant ja, ohne Zeitangabe"; 
+  ld:key3U "Planungs- und Konzeptphase ca. 12 Monate, Pilotprojektphase (mit Open Source Business Foundation & Microsoft Acure Cloud) 6 Monate"; 
+  ld:key3B "Imperia"; 
+  ld:key3M "* Es gibt Überlegungen zum Einsatz von CKAN * Pilotprojekt läuft auf Microsoft Acure Cloud i.R.d. Open Government Data Initiative (OGDI) der Firma Microsoft * Ggf. wird der Katalog über das bestehende CMS Imperia abgebildet, noch keine Entscheidung getroffen (erst Mai 2014)"; 
+  ld:key3L "Noch offen; unklar ob Deutschland-Lizenz oder Creative Common"; 
+  ld:key6 "derzeit nein; Bundesweite Portale sind derzeit noch sehr unstrukturiert (trotz wenig teilnehmender Einrichtungen ist das Auffinden von Datensätzen schon sehr schwierig) und auch noch nicht akzeptiert."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Rostock> 
+  rdfs:label "Rostock" ;
+  ld:hasContact "cornelia.leverenz@rostock.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Stuttgart> 
+  rdfs:label "Stuttgart" ;
+  ld:hasContact "susanne.blattessler@stuttgart.de"; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Wuppertal> 
+  rdfs:label "Wuppertal" ;
+  ld:hasContact "Uwe.Sperling@Stadt.Wuppertal.de"; 
+  ld:hasContact "Herr Dr. Weisemann"; 
+  ld:Einsatzplanung "geplant 2013-15"; 
+  ld:key3U "Im ersten Schritt Link im CMS auf Haushaltsdaten. Alles Weitere muss noch geplant werden."; 
+  ld:key3B "Fa. Sitepark"; 
+  ld:key3M "keiner"; 
+  ld:key3P "ausschließlich Kategorie Haushalt"; 
+  ld:key6 "Nein, bisher nicht.  "; 
+  ld:key7 "Ist vorstellbar, aber noch nicht geplant. "; 
+  ld:key8 "Bisher keine konkrete Planung. Ggf. als Link."; 
+ a ld:UmfrageDatensatz .
+
+<http://leipzig-data.de/Data/ODKonzept/Wiesbaden> 
+  rdfs:label "Wiesbaden" ;
+  ld:hasContact "carsten.suepner@wiesbaden.de"; 
+ a ld:UmfrageDatensatz .
+
+ld:UmfrageDatensatz a owl:Class; rdfs:label "Ein Datensatz der Umfrage" . 
+
+ld:hasContact a rdf:Property; rdfs:label "Kontakt-Adresse"; 
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:Einsatzplanung a rdf:Property; rdfs:label "OpenData-Plattform geplant oder im Einsatz?";
+rdfs:comment "Frage 1+2. Auswahl: ja, geplant 2013-15, geplant nach 2015, nein, Anmerkungen";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:key3U a rdf:Property; rdfs:label "Zeitraum der Umsetzung";
+rdfs:comment "Frage 3, Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:key3B a rdf:Property; rdfs:label "Basisinfrastruktur";
+rdfs:comment "Frage 3, welche Software kommt als CMS zum Einsatz? Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:key3M a rdf:Property; rdfs:label "Metadatenverwaltung";
+rdfs:comment "Frage 3, welche Software kommt zur Verwaltung der Metadaten zum Einsatz? Auswahl: CKAN, Eigenentwicklung, keine, Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:key3L a rdf:Property; rdfs:label "Lizenzmodell";
+rdfs:comment "Frage 3, welches Lizenzmodell kommt zur Anwendung? Auswahl: Deutschlandlizenz, CC, Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:key3P a rdf:Property; rdfs:label "Portalkategorie";
+rdfs:comment "Frage 3, welche OpenData-Portalkategorie wird eingesetzt? Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:OrgRegelung a rdf:Property; rdfs:label "Organisatorische Regelung";
+rdfs:comment "Frage 4+5. Organisatorische Regelung? Auswahl: nein, geplant, DA, DV, RahmenV, Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:key6 a rdf:Property; rdfs:label "zentrale Datenportale";
+rdfs:comment "Frage 6, Datenbereitsteller für zentrale Datenportale. Auswahl: nein, Bund GovData, Land, Sonstige, Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:key7 a rdf:Property; rdfs:label "GovData";
+rdfs:comment "Frage 7, Datenbereitsteller für GovData Datenportal. Auswahl: ja, geplant 2013-2015, geplant ab 2015, Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:key8 a rdf:Property; rdfs:label "alternative Datenbereitstellung";
+rdfs:comment "Frage 8, Alternativen der Datenbereitstellung. Auswahl: Webformular, REST, Harvesting, Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:key9 a rdf:Property; rdfs:label "Keine Plattform";
+rdfs:comment "Frage 9, Gründe, keine eigene OpenData-Plattform einzusetzen. Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
+
+ld:keyBemerkung a rdf:Property; rdfs:label "Sonstige Bemerkung";
+rdfs:comment "Sonstige Bemerkung. Freitext";
+rdfs:domain ld:UmfrageDatensatz; rdfs:range rdfs:Literal .
