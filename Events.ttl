@@ -68,8 +68,8 @@
                                                    ld:hasTag ldtag:KreativesLeipzig ;
                                                    ld:hasURL <http://leipzig.startupweekend.org/> ;
                                                    ical:dtstart "2014-05-30T18:30:42+02:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/APIId/Venue.93> ;
-                                                   ical:organizer <http://leipzig-data.de/Data/APIId/Host.55> ;
+                                                   ical:location ldo:Halle14 ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Projekt/StartupWeekend> ;
                                                    ical:description "Das Startup Weekend Leipzig ist eine dreitägige Veranstaltung, die in 54 Stunden die Basis für ein Unternehmen oder den Launch eines Produktes schafft. <br/> <br/> Ideengeber präsentieren am Freitagabend in kurzen Pitches ihren Gründungsgedanken und gewinnen so andere Gründungsinteressierte für ihr Team. Die darauffolgenden Stunden nutzen die Teams, um aus der innovativen Geschäftsidee ein erfolgreiches Konzept zu entwickeln. Dazu stehen ihnen Coaches und Mentoren aus verschiedenen Branchen beratend zur Seite. Am Sonntagabend kürt eine hochkarätige Jury schließlich die besten Teams. <br/> <br/> Das Gewinnerteam erhält den Startup Weekend Pokal. Außerdem werden die besten Gründungsideen mit tollen Sachpreisen prämiert, die die Teilnehmer bei der weiteren Umsetzung ihrer Idee unterstützen sollen. Ein weiteres Sahnehäubchen: In Anwesenheit von potenziellen Investoren, Sponsoren und Gleichgesinnten können sich die Teilnehmer in ungezwungener Atmosphäre über eine zukünftige Zusammenarbeit austauschen. <br/> <br/> Die Teilnahme am Startup Weekend Leipzig lohnt sich, ob mit oder ohne eigene Idee!" ;
                                                    ical:summary "Startup Weekend Leipzig" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
@@ -131,19 +131,6 @@
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
                                                    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.214>, <http://leipzig-data.de/Data/APIId/Event.215> ;
                                                    ical:url <https://www.facebook.com/events/345746198916178/?source=1> .
-
-<http://leipzig-data.de/Data/Event/ASG.2014-04-24> a ld:Event ;
-                                                   rdfs:label "Carl Friedrich von Weizsäcker (1912-2007) und seine Beziehungen zur DDR" ;
-                                                   ld:hasTag ldtag:ASG ;
-                                                   ld:hasURL <http://bj-kaiser.homepage.t-online.de/Seminar.html>, <http://bj-kaiser.homepage.t-online.de/Einladung_14_04_.pdf> ;
-                                                   ical:dtstart "2014-04-24T17:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-                                                   ical:organizer ldo:ASG ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
-                                                   ical:description """Der Vortrag wird einen Überblick zu Leben und Werk Carl Friedrich von Weizsäckers geben, das ihn als einen der letzten Universalgelehrten des zwanzigsten Jahrhunderts und Citoyen kennzeichnet. Dabei war für sein Wirken charakteristisch, dass er Zeit seines Lebens Grenzen infrage gestellt und überschritten hat: in der wissenschaftlichen Erkenntnisgewinnung mit fundamentalen Entdeckungen in der Kernphysik, als Grenzgänger zwischen den Kulturen von Natur- und Geisteswissenschaften sowie in seinem gesellschaftspolitischen Engagement. Ein Grenzgänger war er auch in seinen Beziehungen zur DDR, das einen Schwerpunkt des Vortrags ausmachen wird. <br/> Dieter Hoffmann (geb. 1948) hat an der Humboldt-Universität zu Berlin Physik studiert und dort in Wissenschaftsgeschichte promoviert und habilitiert. Nach wissenschaftshistorischer Forschungstätigkeit an der AdW der DDR und einigen Zwischenstationen ist er seit 1995 Mitarbeiter des MPI für
-Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universität zu Berlin. Zahlreiche Publikationen zur Physik- und Wissenschaftsgeschichte des 19. und 20. Jahrhunderts, insbesondere zu Personen und Institutionen. """ ;
-                                                   ld:hasAddressAddendum "Neuer Senatssaal" ;
-                                                   ical:summary "Carl Friedrich von Weizsäcker (1912-2007) und seine Beziehungen zur DDR. Mit Prof. Dr. Dieter Hoffmann (MPI für Wissenschaftsgeschichte, Berlin)." .
 
 <http://leipzig-data.de/Data/Event/ASG.2014-05-22> a ld:Event ;
                                                    rdfs:label "Neue Geldsysteme" ;
@@ -235,6 +222,196 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:description "Im Mittelpunkt steht dieses Mal die Initiative Bürgerbahnhof Plagwitz. ein Projekt das zeigt, mit welchem Engagement Leipzigerinnen und Leipziger an der Gestaltung der Lebensqualität ihrer Stadt mitwirken. Ich freue mich auf unseren sehr, sehr interessanten Erfahrungsaustausch. <br/> Darüber hinaus wird es wie immer genügend Raum für all Ihre Engagement- und Bürgerbeteiligungsthemen geben, die wir zusammen mit Verwaltung und Politik diskutieren und voranbringen wollen." ;
                                                    ical:summary "Plenum des Forums Bürgerstadt Leipzig" .
 
+<http://leipzig-data.de/Data/Event/Inspirata.2014-07-19> a ld:Event ;
+                                                         rdfs:label "2014-07-19: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-07-19T12:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-07-19T18:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-07-22> a ld:Event ;
+                                                         rdfs:label "2014-07-22: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-07-22T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-07-22T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-07-24> a ld:Event ;
+                                                         rdfs:label "2014-07-24: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-07-24T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-07-24T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-07-26> a ld:Event ;
+                                                         rdfs:label "2014-07-26: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-07-26T12:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-07-26T18:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-07-29> a ld:Event ;
+                                                         rdfs:label "2014-07-29: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-07-29T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-07-29T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-07-31> a ld:Event ;
+                                                         rdfs:label "2014-07-31: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-07-31T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-07-31T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-02> a ld:Event ;
+                                                         rdfs:label "2014-08-02: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-02T12:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-02T18:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-05> a ld:Event ;
+                                                         rdfs:label "2014-08-05: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-05T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-05T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-07> a ld:Event ;
+                                                         rdfs:label "2014-08-07: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-07T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-07T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-09> a ld:Event ;
+                                                         rdfs:label "2014-08-09: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-09T12:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-09T18:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-12> a ld:Event ;
+                                                         rdfs:label "2014-08-12: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-12T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-12T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-14> a ld:Event ;
+                                                         rdfs:label "2014-08-14: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-14T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-14T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-16> a ld:Event ;
+                                                         rdfs:label "2014-08-16: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-16T12:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-16T18:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-19> a ld:Event ;
+                                                         rdfs:label "2014-08-19: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-19T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-19T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-21> a ld:Event ;
+                                                         rdfs:label "2014-08-21: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-21T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-21T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-23> a ld:Event ;
+                                                         rdfs:label "2014-08-23: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-23T12:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-23T18:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-26> a ld:Event ;
+                                                         rdfs:label "2014-08-26: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-26T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-26T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-28> a ld:Event ;
+                                                         rdfs:label "2014-08-28: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-28T10:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-28T17:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
+<http://leipzig-data.de/Data/Event/Inspirata.2014-08-30> a ld:Event ;
+                                                         rdfs:label "2014-08-30: Ferienangebot in der Inspirata" ;
+                                                         ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+                                                         ld:hasURL <http://www.inspirata.de> ;
+                                                         ical:dtstart "2014-08-30T12:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:location ldo:Inspirata ;
+                                                         ical:description "In der Ferienzeit hat die Inspirata ihre Öffnungszeiten für den allgemeinen Publikumsverkehr erweitert und hält verschiedene Überraschungen für Kinder mit und ohne Ferienpass bereit." ;
+                                                         ical:dtend "2014-08-30T18:00:00+02:00"^^xsd:dateTime ;
+                                                         ical:summary "Ferienangebot in der Inspirata" .
+
 <http://leipzig-data.de/Data/Event/Inspirata.4305> a ld:Event ;
                                                    rdfs:label "Lange Nacht der Wissenschaften – 27.06.2014" ;
                                                    ld:hasTag ldtag:MINT, ldtag:Inspirata ;
@@ -323,46 +500,6 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ld:hasAddressAddendum "Augusteum, A-520" ;
                                                    ical:summary "Sechstes Interdisziplinäres Gespräch \"Open Innovation, Open Culture und kooperative Vernunft\"" .
 
-<http://leipzig-data.de/Data/Event/NEU.2014-04-24> a ld:Event ;
-                                                   rdfs:label "4. Workshop des Clusterteams 'Erneuerbare Energien und Energieeffizienz'" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2014-04-24T17:30:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:ForsthausRaschwitz ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/NEU.Cluster-Lindner> ;
-                                                   ical:description "Sitzung des Clusterteams Erneuerbare Energien<br/>Die Themen im Bereich der erneuerbaren Energien und der Energieeffizienz sind sehr vielfältig, zudem sind die Schwerpunktproblematiken der Branche einem ständigen Wandel unterlegen. Im Clusterteam für erneuerbare Energien und Energieeffizienz diskutieren daher regelmäßig interessierte Akteure aus Leipzig und Umgebung Probleme, Projekte und Veranstaltungen im Bereich der erneuerbaren Energien. Unter den Teilnehmern finden sich vor allem Vertreter von Klein- und mittelständischen Unternehmen, aber auch Privatpersonen und Vertreter der Wissenschaft und Forschung. Nehmen Sie also bei einem der zahlreichen Treffen des Clusterteams im Forsthaus Raschwitz teil. Anmelden können Sie sich bei Herrn Lothar Lindner (Clusterteamleiter Team Erneuerbare Energien). <br/>Programm:<br/>1. Vortrag durch Herrn Schmiedel von der Firma Kermi zum 'Kermi Wärmesystem x-optimiert'.<br/>2. Kulturbeitrag durch Herrn Peter Uhrbach: Urlaub genießen 'wie Goethe'.<br/>3. Im Anschluss Diskussion aktueller Projekte, Themen, Interessen und Anregungen. " ;
-                                                   ical:dtend "2014-04-24T19:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Energiemetropole-Leipzig: 4. Workshop des Clusterteam Erneuerbare Energien und Energieeffizienz" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Lothar Lindner, iblindner@me.com" ;
-                                                   ld:hasMD5Sum "MkCosue9RZflbVnFwvs/LQ", "omEXbPDYaDpFSXujrF2mbw", "8EvMWiq52Hv0OpTn2Nob7w" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-04-24.1> a ld:Event ;
-                                                     rdfs:label "9. Fachgespräch: Energiesysteme der Zukunft" ;
-                                                     ld:hasTag ldtag:Energie ;
-                                                     ical:dtstart "2014-04-24T15:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                     ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NEU.Energiefachgespraeche> ;
-                                                     ical:description "Versorgungssicherheit und Zuverlässigkeit der Energieversorgung<br/>Inhalt:<br/>Dr. Helge Schäfer (H. Kleinknecht GmbH & Co. KG): Spannungsqualität zur Sicherstellung industrieller Prozesse<br/>Dr. Thomas Heck (Steinbeis Transferzentrum Energie und EMV): Energieeffizienz versus Netzqualität<br/>Manfred Haase (Enertek GmbH): Versorgungssicherheit und Spannungsqualität in teilautonomen Subnetzen<br/>Anmeldung bis zum 22.04.2014 unter christoph.weidner@evermind.de möglich." ;
-                                                     ical:dtend "2014-04-24T18:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:hasAddressAddendum "Paulinum, Raum P-801" ;
-                                                     ical:summary "9. Fachgespräch \"Energiesysteme der Zukunft\" - Versorgungssicherheit und Zuverlässigkeit der Energieversorgung", "Energiemetropole-Leipzig: 9. Fachgespräch: Energieversorgungssysteme der Zukunft" ;
-                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                     ical:contact "Herr Christoph Weidner, christoph.weidner@evermind.de" ;
-                                                     ld:hasMD5Sum "SPRXNkGTinPv9nZDHPTWxg" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-04-29> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Fachgespräche: Energiesysteme der Zukunft" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2014-04-29"^^xsd:date ;
-                                                   ical:location ldo:UniLeipzig ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Versorgungssicherheit und Zuverlässigkeit der EnergieversorgungInhalt:<br/><br/>Dr. Helge Schäfer (H. Kleinknecht GmbH & Co. KG)<br/>Spannungsqualität zur Sicherstellung industrieller Prozesse<br/>Dr. Thomas Heck (Daimler AG)<br/>Thomas Gesing (Verband der industriellen Energie- und Kraftwirtschaft e. V. (VIK))" ;
-                                                   ical:summary "Energiemetropole-Leipzig: Fachgespräche: Energiesysteme der Zukunft" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "QtBPDa7zWu1f6DBd9ZBHmw" .
-
 <http://leipzig-data.de/Data/Event/NEU.2014-04-29.1> a ld:Event ;
                                                      rdfs:label "15. Italien-Stammtisch - Produktion und Nutzung von erneuerbaren Energien in der gewerblichen Wirtschaft" ;
                                                      ld:hasTag ldtag:Energie ;
@@ -390,17 +527,6 @@ Wissenschaftsgeschichte; seit 2004 zudem apl. Professor der Humboldt-Universitä
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ical:contact "Frau Katrin Schumacher" ;
                                                    ld:hasMD5Sum "THK0PV3iFUxpUPb9Mt9d+w" .
-
-<http://leipzig-data.de/Data/Event/NEU.2014-05-05> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: 4. Mitteldeutsche Energiegespräche" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2014-05-05"^^xsd:date ;
-                                                   ical:location ldo:NN ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Die Agenda zu den 4. Mitteldeutschen Energiegesprächen befindet sich derzeitig in der Planung. Wir werden Sie auf dem Laufenden halten." ;
-                                                   ical:summary "Energiemetropole-Leipzig: 4. Mitteldeutsche Energiegespräche" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "aSgKK0vB9U2glTRzhKON8w" .
 
 <http://leipzig-data.de/Data/Event/NEU.2014-05-06> a ld:Event ;
                                                    rdfs:label "Regionale Ökonomie Mitteldeutschlands - ein Vortrag von Joachim Ragnitz (stellv. Leiter des ifo-Instituts in Dresden)" ;

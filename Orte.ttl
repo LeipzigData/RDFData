@@ -167,9 +167,11 @@ ld:Ort a owl:Class ;
 
 <http://leipzig-data.de/Data/Ort/BMFZ> a ld:Ort ;
                                        rdfs:label "Deutsches Biomasseforschungszentrum gGmbH" ;
+                                       rdfs:comment "URI deprecated" ;
                                        ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TorgauerStrasse.116> ;
                                        ld:hasURL <http://dbfz.de> ;
                                        foaf:fax "0341-2434-133" ;
+                                       rdfs:seeAlso <http://leipzig-data.de/Data/Ort/DBFZ> ;
                                        foaf:mbox "info@dbfz.de" ;
                                        foaf:phone "0341-2434-112" .
 
@@ -457,6 +459,14 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/D21_Kunstraum> a ld:Ort ;
                                                 rdfs:label "D21 Kunstraum Leipzig" ;
                                                 ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Demmeringstrasse.21> .
+
+<http://leipzig-data.de/Data/Ort/DBFZ> a ld:Ort ;
+                                       rdfs:label "Deutsches Biomasseforschungszentrum gGmbH" ;
+                                       ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TorgauerStrasse.116> ;
+                                       ld:hasURL <http://dbfz.de> ;
+                                       foaf:fax "0341-2434-133" ;
+                                       foaf:mbox "info@dbfz.de" ;
+                                       foaf:phone "0341-2434-112" .
 
 <http://leipzig-data.de/Data/Ort/DNB.DBSM> a ld:Ort ;
                                            rdfs:label "Deutsches Buch- und Schriftmuseum der Deutschen Nationalbibliothek" ;
@@ -813,6 +823,12 @@ ld:Ort a owl:Class ;
                                                          ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
                                                          ld:Hintergrund "seit 2009" .
 
+<http://leipzig-data.de/Data/Ort/Halle14> a ld:Ort ;
+                                          rdfs:label "Halle 14 - Zentrum für zeitgenössische Kunst" ;
+                                          ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
+                                          ld:hasStatus "aktiv" ;
+                                          ld:hasURL <http://www.halle14.org> .
+
 <http://leipzig-data.de/Data/Ort/Halle5> a ld:Ort ;
                                          rdfs:label "Kinder- u. Jugendzentrum Halle 5 e.V." ;
                                          ld:hasTelefon "0341-3055866", "0341-3055860" ;
@@ -885,7 +901,7 @@ ld:Ort a owl:Class ;
 
 <http://leipzig-data.de/Data/Ort/HoteldePologne> a ld:Ort ;
                                                  rdfs:label "Hotel de Pologne Leipzig" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Hainstrasse.16> .
+                                                 ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.16> .
 
 <http://leipzig-data.de/Data/Ort/IB.Schulsozialarbeit.Gruenau> a ld:Ort ;
                                                                rdfs:label "IB - Schulsozialarbeit" ;
@@ -1114,13 +1130,6 @@ ld:Ort a owl:Class ;
                                            ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SellinerStrasse.17> ;
                                            ld:hasStatus "aktiv" ;
                                            ld:hasURL "http://www.komm-haus.de" .
-
-<http://leipzig-data.de/Data/Ort/KreativeSpinner> a ld:Ort ;
-                                                  rdfs:label "Kreative Spinner - Halle 14" ;
-                                                  ld:hasTelefon "0341-4924202" ;
-                                                  ld:hasEmail "kreative-spinner@halle14.org" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
-                                                  ld:hasStatus "aktiv" .
 
 <http://leipzig-data.de/Data/Ort/KreativesLeipzig> a ld:Ort ;
                                                    rdfs:label "Kreatives Leipzig" .
@@ -1363,7 +1372,7 @@ ld:Ort a owl:Class ;
                                                 rdfs:label "GRASSI Museum für angewandte Kunst" ;
                                                 ld:hasTelefon "0341-2229114" ;
                                                 ld:hasEmail "grassimuseum@leipzig.de" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisplatz.5-11> ;
+                                                ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisplatz.5> ;
                                                 ld:hasStatus "aktiv" ;
                                                 ld:hasTag <http://leipzig-data.de/Data/Tag/Museum> ;
                                                 ld:hasURL "http://www.grassimuseum.de" .
@@ -1984,6 +1993,10 @@ ld:Ort a owl:Class ;
                                                  ld:hasStatus "aktiv" ;
                                                  ld:hasTag <http://leipzig-data.de/Data/Tag/Hochschule>, <http://leipzig-data.de/Data/Tag/MINT> ;
                                                  ld:hasURL "http://www.fmi.uni-leipzig.de" .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.Leibniz> a ld:Ort ;
+                                                     rdfs:label "Leibnizdenkmal Uni-Innenhof Augustusplatz" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> .
 
 <http://leipzig-data.de/Data/Ort/UniLeipzig.Liebigstrasse.27b> a ld:Ort ;
                                                                rdfs:label "Universität Leipzig, Medizinische Fakultät" ;
