@@ -9,6 +9,7 @@
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix ns0: <http://www.w3.org/ns/org#> .
 
 ldp:Ackermann_Arne a foaf:Person ;
                    foaf:name "Arne Ackermann" .
@@ -177,7 +178,8 @@ ldp:Gleichmann_Tina a foaf:Person ;
                     ld:relatedTo <http://leipzig-data.de/Data/Ort/HausSteinstrasse> .
 
 ldp:Glowacki_Romann a foaf:Person ;
-                    foaf:name "Romann Glowacki" .
+                    foaf:name "Romann Glowacki" ;
+                    foaf:mbox "romann.glowacki@dbfz.de" .
 
 ldp:Graebe_HansGert a foaf:Person ;
                     foaf:name "Prof. Dr. Hans-Gert Gräbe" .
@@ -284,7 +286,7 @@ ldp:Hoyer_Stephan a foaf:Person ;
 ldp:Huebner_Elke a foaf:Person ;
                  foaf:name "Elke Hübner" ;
                  foaf:mbox "elke.huebner@leipzig.de" ;
-                 foaf:phone "0341-123-5683" .
+                 foaf:phone "0341-123-5683", "0341-1235683" .
 
 ldp:Hufenreuter_Henry a foaf:Person ;
                       foaf:name "Henry Hufenreuter" .
@@ -399,6 +401,10 @@ ldp:Lehmann_Olaf a foaf:Person ;
                  foaf:name "Olaf Lehmann" ;
                  foaf:mbox "lehmann@leipzig.ihk.de" ;
                  foaf:phone "0341-1267-1262" .
+
+ldp:Liebelt_Ute a foaf:Person ;
+                foaf:name "Ute Liebelt" ;
+                foaf:mbox "ute.liebelt@leipzig.de" .
 
 ldp:Lindner_Bjoern a foaf:Person ;
                    foaf:name "Björn Lindner" ;
@@ -533,6 +539,10 @@ ldp:Quester_Roland a foaf:Person ;
                    rdfs:comment "Leiter Umweltbibliothek" ;
                    foaf:name "Roland Quester" .
 
+ldp:Quiring_Lars a foaf:Person ;
+                 foaf:name "Lars Quiring" ;
+                 foaf:mbox "lars.quiring@get-ag.com" .
+
 ldp:Rademacher_HansBert a foaf:Person ;
                         foaf:name "Prof. Dr. Hans-Bert Rademacher" .
 
@@ -555,6 +565,10 @@ ldp:Reiner_Oliver a foaf:Person ;
 
 ldp:Reinhardt_Sylvi a foaf:Person ;
                     foaf:name "Sylvi Reinhardt" .
+
+ldp:Reissmann_Daniel a foaf:Person ;
+                     foaf:name "Daniel Reißmann" ;
+                     foaf:mbox "reissmann@energiemetropole-leipzig.de" .
 
 ldp:Reschke_Katrin a foaf:Person ;
                    rdfs:comment "Leiterin Dölitzer Wassermühle" ;
@@ -593,6 +607,10 @@ ldp:Schilling_Peter a foaf:Person ;
                     rdfs:comment "Leiter AZ Schkeuditz" ;
                     foaf:name "Peter Schilling" .
 
+ldp:Schirmer_Matthias a foaf:Person ;
+                      foaf:name "Matthias Schirmer" ;
+                      foaf:mbox "info@zak-le.de" .
+
 ldp:Schlupp_Peter a foaf:Person ;
                   foaf:name "Peter Schlupp" .
 
@@ -606,6 +624,12 @@ ldp:Schneider_Carla a foaf:Person ;
 ldp:Schoeneberg_Torsten a foaf:Person ;
                         foaf:name "Torsten Schöneberg" ;
                         foaf:title "Prof. Dr." .
+
+ldp:Schoetter_Andrea a foaf:Person ;
+                     foaf:name "Andrea Schötter" ;
+                     foaf:mbox "schoetter@leipzig.ihk.de" ;
+                     foaf:phone "0341-12671236" ;
+                     ld:relatedTo <http://leipzig-data.de/Data/Traeger/IHK> .
 
 ldp:Schroth_Johannes a foaf:Person ;
                      foaf:name "Johannes Schroth" .
@@ -705,6 +729,12 @@ ldp:Ulrich_Ruediger a foaf:Person ;
                     rdfs:comment "stellv. Vorsitzender JHA" ;
                     foaf:name "Rüdiger Ulrich" .
 
+ldp:Unckell_Kornelius a foaf:Person ;
+                      foaf:name "Kornelius Unckell" ;
+                      foaf:mbox "korneliusunckell@t-online.de" ;
+                      foaf:phone "0341-3069996" ;
+                      ld:relatedTo <http://leipzig-data.de/Data/Verein/KreativesLeipzig> .
+
 ldp:Vetterlein_Guenter a foaf:Person ;
                        foaf:name "Günter Vetterlein" .
 
@@ -761,6 +791,10 @@ ldp:Wuerzberger_Nadine a foaf:Person ;
                        foaf:name "Nadine Würzberger" ;
                        foaf:mbox "nadine.wuerzberger@verein-fairbund.de" ;
                        ld:relatedTo <http://leipzig-data.de/Data/Traeger/FAIRBUND> .
+
+ldp:Wummel_Juergen a foaf:Person ;
+                   foaf:name "Jürgen Wummel" ;
+                   foaf:title "Dr." .
 
 ldp:Wunderlich_Sabine a foaf:Person ;
                       foaf:name "Sabine Wunderlich" .
