@@ -1,0 +1,636 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{a4wide,hyperref,ngerman}
+\usepackage[utf8]{inputenc}
+
+\parindent0pt
+\parskip3pt
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+\newenvironment{code}{\tt \begin{tabbing}
+\hskip12pt\=\hskip12pt\=\hskip12pt\=\hskip12pt\=\hskip5cm\=\hskip5cm\=\kill}
+{\end{tabbing}}
+\def\ppw{{\char94\char94}}
+
+\author{Marius Brunnert} 
+\title{{\Huge\bf Bericht zum Projekt\\[1em] \emph{Gentrifizierungsprozesse in
+    Leipzig}}\\[2em] Uni Leipzig, Sommersemester 2014}
+\date{22. September 2014}
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\tableofcontents
+\clearpage
+
+\section{Einleitung}
+
+Im Projekt „Gentrifizierungsprozesse in Leipzig“, das im Rahmen des Moduls
+„Kreativität und Technik“ unter Leitung von Prof. Dr. Gräbe und in
+Zusammenarbeit mit den Verantworlichen von \texttt{einundleipzig.de} (eine
+Webseite, die sich mit diesem Thema auseinander setzt) statt gefunden hat,
+haben wir uns in einer Gruppe von sechs Kursteilnehmern mit den
+Gentrifizierungsprozessen in Leipzig befasst und uns zum Ziel gesetzt, eine
+interaktive Karte zu erstellen, auf der diese visualisiert werden. Beim ersten
+Treffen haben wir über unsere Vorkenntnisse und Erwartungen gesprochen, Ideen
+gesammelt und schließlich das grundlegende Vorgehen geklärt. Um das Ziel zu
+erreichen, haben wir uns an der Scrum-Methodik aus der Informatik orientiert,
+allerdings „weekly“ statt „daily scrums“ geplant, und das Projekt in drei
+Sprints gegliedert.
+
+Ziel des ersten Sprints war zum einen, zu analysieren, welche Informationen
+für unser Thema relevant sein könnten und mögliche Quellen zusammenzutragen,
+die entsprechende Daten liefern können. Zum anderen sollten die Teammitglieder
+sich kennen lernen, so dass im zweiten Sprint jeder eine konkrete Aufgabe, die
+zu seinen Qualifikationen passt, übernehmen und ein funktionierender Workflow
+etabliert werden konnte.
+
+Im zweiten Sprint sollten dann die relevanten Daten aus den entsprechenden
+Quellen gesammelt, in ein einheitliches Format gebracht und ins OntoWiki
+transferiert werden. Außerdem sollte ein erster Prototyp der Karte erstellt
+werden.
+
+Der dritte und letzte Sprint hatte schließlich das Ziel, das zuvor Erarbeitete
+zu einem „runden“ Gesamtergebnis zusammenzufassen, also die Daten, die sich
+besonders für eine grafische Darstellung in einer Karte eignen, auf dieser
+darzustellen.
+
+Nach Abschluss des Projekts werden die Ergebnisse im Rahmen von
+\texttt{einundleipzig.de} weiter genutzt. Außerdem habe ich mit den Daten noch
+weitergearbeitet -- siehe Abschnitt \ref{Cube}.
+
+\section{Meine Aufgaben}
+
+\subsection{Erster Sprint}
+
+Im ersten Sprint habe ich Kontakt mit Roman Grabolle und dem HausHalten
+e.V. aufgenommen, um Informationen über Hausprojekte und alternative
+Strukturen in Leipzig zu sammeln. Nach einigen kleineren Hürden habe ich auch
+von beiden Rückmeldung bekommen und eine erste Übersicht über die verfügbaren
+Informationen in der Gruppe vorgestellt. Da bei diesen Daten allerdings nie
+ein Anspruch auf Vollständigkeit erhoben werden kann und die verschiedenen
+Projekte in ihrer Bedeutung für die Gentrifizierung in Leipzig recht divergent
+sind, haben wir uns letztlich entschlossen, diese Daten im Rahmen des Projekts
+nicht zu verwenden. 
+
+\subsection{Zweiter und dritter Sprint}
+
+Im zweiten und dritten Sprint war ich zum einen die „Schnittstelle“
+zwischen den Rohdaten und der Karte, das heißt, ich habe die Daten gesichtet,
+geordnet, miteinander verknüpft (z.B. aus den Wohnungen pro Stadtteil und der
+Größe des Stadtteils die Wohnungsdichte berechnet), sie ins .csv-Format
+gebracht, falls sie nicht bereits in diesem vorlagen, und die .csv-Dateien
+schließlich über das Repository zur Verfügung gestellt. Zum anderen habe ich
+im OntoWiki entsprechende Ontologien erstellt und die Daten mit Hilfe von
+.ttl-Dateien in das OntoWiki transferiert.  
+
+\subsection{Nach dem Projekt}
+
+Nach Abschluss des eigentlichen Projekts habe ich mich noch mit der Frage
+beschäftigt, wie man die Daten des Leipzig-Informationssystems (LIS), die wir
+zum Teil auch für unser Projekt genutzt haben, als \emph{RDF Data Cube}
+darstellen kann, und schließlich einen solchen Data Cube mit Beispieldaten
+erstellt.
+
+\section{Darstellung der Daten im RDF}
+
+\subsection{Allgemeine Form}
+
+Die grundlegende Form unserer .ttl-Dateien sieht wie folgt aus:
+\begin{code}
+<prefixes>\\
+<ldot:<ortsteil> gm:<attribut><yy> {\dq}<wert>{\dq}{\ppw}xsd:<datatype> .>*
+\end{code}
+Die \texttt{<prefixes>} sind in jeder .ttl-Datei identisch und definieren
+Namensraum-Präfixe:
+\begin{code}
+@prefix owl:  <http://www.w3.org/2002/07/owl\#> .\\
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> .\\
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema\#> .\\
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema\#> .\\
+@prefix gm:   <http://leipzig-data.de/Data/Gentri-14/model/> .\\
+@prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+\end{code}
+Für \texttt{<ortsteil>} wird der entsprechende Leipziger Ortsteil -- ohne
+Umlaute -- eingetragen. Zum Beispiel „Zentrum-Ost“, „Schleussig“,
+„Gruenau-Nord“ und so weiter.
+
+Für \texttt{<attribut>} wird die gemessene Beobachtung benannt. Zum Beispiel
+„Alter“, „Miete“, „IsAbwanderung“ und so weiter.
+
+Für \texttt{<yy>} wird die auf zwei Ziffern abgekürzte Jahreszahl eingetragen.
+Zum Beispiel „00“, „01“ und so weiter.
+
+Für \texttt{<wert>} wird der beobachtete Wert angegeben, wobei
+Nachkommastellen durch einen Punkt abgetrennt werden. Zum Beispiel „40“,
+„6.23“, und so weiter.
+
+Für \texttt{<datatype>} wird, je nach Beobachtung, entweder \texttt{decimal}
+(mit Nachkommastellen) oder \texttt{integer} (ohne Nachkommastellen) gewählt.
+
+Dieser Teil kann theoretisch beliebig oft mit unterschiedlich gewählten
+Attributen vorkommen. In der Praxis sind es allerding $63 \cdot y$ Zeilen,
+wobei 63 die Anzahl der Leipziger Ortsteile ist und $y$ für die Anzahl der
+Jahre steht, für die Daten vorliegen.
+
+\subsection{Ein konkretes Beispiel}
+
+\begin{code}
+@prefix owl:  <http://www.w3.org/2002/07/owl\#> .\\
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> .\\
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema\#> .\\
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema\#> .\\
+@prefix gm:   <http://leipzig-data.de/Data/Gentri-14/model/> .\\
+@prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .\\[6pt]
+
+ldot:Zentrum gm:alter00 {\dq}49.1{\dq}{\ppw}xsd:decimal .\\
+ldot:Zentrum-Ost gm:alter00 {\dq}45.2{\dq}{\ppw}xsd:decimal .\\
+ldot:Zentrum-Suedost gm:alter00 {\dq}45.1{\dq}{\ppw}xsd:decimal .\\
+ldot:Zentrum-Sued gm:alter00 {\dq}45.5{\dq}{\ppw}xsd:decimal .\\
+usw.
+\end{code}
+
+\section{Die Matrix} \label{matrix}
+
+\subsection  {Allgemeines}
+Da wir unsere Karte nach Ortsteilen gegliedert haben, einige uns vorliegende
+Daten (Informationen zu Wohnorten Leipziger Studenten) allerdings nach
+Postleitzahlen gruppiert waren, war eine Umrechnung nötig, für die ich eine
+Matrix erstellt habe. Leider kann mit dieser Matrix nur eine näherungsweise
+Umrechnung erfolgen, da es mehrere Ungenauigkeiten gibt: 
+\begin{enumerate}
+\item Wenn ein Postleitzahlbereich mehrere Ortsteile (ganz oder zum Teil)
+  abdeckt, was relativ häufig vorkommt, gibt es keine konkreten Informationen
+  darüber, wie viele Einwohner, die unter dieser Postleitzahl gemeldet sind, in
+  Ortsteil A und wie viele in Ortsteil B (und ggf.\ in Ortsteil C) leben.  Hier
+  kann die Umrechnung also über einen zu bestimmenden \emph{Anteilsfaktor} nur
+  näherungsweise erfolgen.
+
+\item Zur Bestimmung eines solchen Anteilsfaktors bin ich wie folgt
+  vorgegangen: Grundlage waren zwei
+  Karten\footnote{\url{http://www.infos-sachsen.de/Orte/Stadt-L.php}}
+  (Gliederung der Stadt nach PLZ bzw.\ nach Ortsteilen), aus denen die
+  Zuordnung von Ortsteilen zu Postleitzahlbereichen abgelesen bzw.\ ein
+  flächenmäßiger Anteil geschätzt wurde.  Diese Zahlen wurden mit den
+  Bevölkerungszahlen der Stadtteile (Stand 2013) multipliziert und daraus die
+  Anteilsfaktoren bestimmt.
+\end{enumerate}
+Das Ergebnis ist eine Matrix mit 34 Zeilen (entspricht den
+Postleitzahlbereichen) und 63 Spalten (entspricht den Ortsteilen). In jeder
+Position dieser Matrix ist angegeben, mit welchem Anteilsfaktor der Wert aus
+einem Postleitzahlbereich $Y$ zu multiplizieren ist, um den Anteil dieses Werts
+zu bestimmen, der auf den Stadtteil $X$ entfällt. Da sich ein
+Postleitzahlbereich über maximal drei Ortsteile erstreckt, enthalten die
+meisten Positionen eine null.  Nach Konstruktion summieren die Anteilsfaktoren
+jeder Zeile zu eins.
+
+\subsection{Beispielrechnungen}
+\begin{enumerate}
+\item Die Postleitzahl 04103 deckt die Ortsteile 01 und 02 zu jeweils 100\%
+  ab.  Ortsteil 01 hatte (im Jahr 2013) 3\,980 Einwohner, Ortsteil 02 hatte
+  11\,515 Einwohner.  Dies ergibt eine Gesamtzahl von 15\,495 Einwohnern, die
+  unter der Postleitzahl 04103 zusammengefasst werden. Daran hat Ortsteil 01
+  einen Anteil von $\frac{3980}{15495}\approx 25.7\%$ und Ortsteil 02 einen
+  Anteil von $\frac{11515}{15495}\approx 74,3\%$. Die Anteilsfaktoren sind
+  also 0.257 bzw.\ 0.743.
+
+\item Die Postleitzahl 04159 deckt die Ortsteile 80 und 81 zu jeweils 100\%,
+  sowie den Ortsteil 82 zu etwa 50\% ab. Ortsteil 80 hatte 13\,172 Einwohner,
+  Ortsteil 81 hatte 6\,536 Einwohner, Ortsteil 82 hatte 3\,945 Einwohner -- da
+  dieser allerdings nur zur Hälfte in der Postleitzahl 04159 enthalten ist,
+  rechnen wir auch nur mit der halben Einwohnerzahl: 1\,972.5. Insgesamt deckt
+  die Postleitzahl somit 21\,680.5 Einwohner ab. Daran hat Ortsteil 80 einen
+  Anteil von $\frac{13172}{21680.5}\approx 60.8\%$, Ortsteil 81 einen Anteil
+  von $\frac{6536}{21680.5}\approx 30.1\%$ und Ortsteil 82 einen Anteil von
+  $\frac{6536}{21680.5}\approx 9.1\%$. Die Anteilsfaktoren sind also 0.608,
+  0.301 und 0.091.
+\end{enumerate}
+
+\section{Darstellung der Daten als RDF Data Cube}\label{Cube}
+
+\subsection{Die Prefixes} \label{Prefixes}
+ 
+\begin{code}
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> .\\
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema\#> .\\
+@prefix owl:            <http://www.w3.org/2002/07/owl\#> .\\
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema\#> .\\
+@prefix dct:             <http://purl.org/dc/terms/> .\\
+@prefix qb:             <http://purl.org/linked-data/cube\#> .\\
+@prefix sdmx:           <http://purl.org/linked-data/sdmx\#> .\\
+@prefix sdmx-concept:   <http://purl.org/linked-data/sdmx/2009/concept\#> .\\
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension\#> .\\
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute\#> .\\
+@prefix sdmx-measure:   <http://purl.org/linked-data/sdmx/2009/measure\#> .\\
+@prefix gcube:          <http://leipzig-data.de/Data/Gentri-14/cube/> .\\
+@prefix ldot:           <http://leipzig-data.de/Data/Ortsteil/> .
+\end{code}
+
+\subsection{Das DataSet}
+
+\begin{code}
+gcube:GentriLeipzig a qb:DataSet ;\+\\
+    rdfs:label {\dq}Gentrifizierung in Leipzig{\dq} ;\\
+    dct:source <http://statistik.leipzig.de/statdist/index.aspx> ;\\
+    qb:structure gcube:GentriDSD .
+\end{code}
+          
+\subsection{Die DataStructureDefinition} \label{DSS}
+
+\subsubsection{Allgemein}
+\begin{code}
+gcube:GentriDSD a qb:DataStructureDefinition ;\+\\
+    qb:component \+\\{}
+        [ qb:dimension gcube:district; ],\\{}
+        [ qb:dimension gcube:year; ],\\{}
+        [ qb:dimension qb:measureType; ],\\{}
+        [ qb:attribute sdmx-attribute:unitMeasure; ],\\{}
+        [ qb:measure gcube:<measure>; ]* .
+\end{code}
+        
+Für \texttt{[qb:measure gcube:<measure>; ]*} müssen die verwendeten
+\texttt{Measure}s eingesetzt werden. Es muss mindestens eine \texttt{Measure}
+geben.
+\subsubsection{Beispiel}
+\begin{code}
+\>\>  [ qb:measure gcube:extImmigrants; ],\\{}
+\>\>  [ qb:measure gcube:meanRent; ],\\{}
+        usw.
+\end{code}
+
+\subsection{Die Dimension(Propertie)s}
+
+\begin{code}
+gcube:district a rdf:Property, qb:DimensionProperty ;\+\\
+    rdfs:label {\dq}Ortsteil{\dq}@de ;\\
+    rdfs:subPropertyOf sdmx-dimension:refArea ;\\
+    qb:concept sdmx-concept:refArea .
+\end{code}
+\begin{code}
+gcube:year a rdf:Property, qb:DimensionProperty ;\+\\
+    rdfs:label {\dq}Jahr{\dq}@de ;\\
+    rdfs:subPropertyOf sdmx-dimension:refPeriod ;\\
+    qb:concept sdmx-concept:refPeriod .\\
+\end{code}
+
+\subsection{Die Measure(Propertie)s} \label{Measures}
+
+\subsubsection{Allgemein}
+\begin{code}           
+gcube:<measure> a rdf:Property, qb:MeasureProperty ;\+\\
+    rdfs:label {\dq}<measureLabel>{\dq}@de ;\\
+    rdfs:subPropertyOf sdmx-measure:obsValue ;\\
+    dct:source <source> ;\\
+    rdfs:range xsd:<range> .
+\end{code}
+
+Für \texttt{<measure>} wird der Name der \texttt{MeasureProperty} angegeben,
+für \texttt{<measureLabel>} eine genauere Bezeichnung (auf Deutsch), für
+\texttt{<source>} ein Verweis auf die Quelle (in den folgenden Beispielen
+weggelassen), aus der die Daten stammen, und für \texttt{<range>} der erlaubte
+Wertebereich (hier: \texttt{integer} oder \texttt{decimal}).
+
+\subsubsection{Beispiel}
+\begin{code}
+gcube:extEmigrants a rdf:Property, qb:MeasureProperty ;\+\\
+    rdfs:label {\dq}Wegzüge nach Außerhalb{\dq}@de ;\\
+    rdfs:subPropertyOf sdmx-measure:obsValue ;\\
+    rdfs:range xsd:integer .
+\end{code}
+\begin{code}
+gcube:meanAge a rdf:Property, qb:MeasureProperty ;\+\\
+    rdfs:label {\dq}Durchschnittsalter{\dq}@de ;\\
+    rdfs:subPropertyOf sdmx-measure:obsValue ;\\
+    rdfs:range xsd:decimal .
+\end{code}
+
+\subsection{Die Attribute(Propertie)s} 
+\label{Attributes}
+
+\subsubsection{Allgemein}
+\begin{code}
+gcube:<attribute> a rdf:Property, qb:AttributeProperty ;\+\\
+    rdfs:label {\dq}<attributeLabel>{\dq}@de .
+\end{code}
+
+Für \texttt{<attribute>} wird der Name der \texttt{AttributeProperty}
+angegeben, für \texttt{<attributeLabel>} eine genauere Bezeichnung (auf
+Deutsch).
+
+\subsubsection{Beispiel}
+\begin{code}
+gcube:people a rdf:Property, qb:AttributeProperty ;\+\\
+    rdfs:label {\dq}Menschen{\dq}@de .
+\end{code}
+\begin{code}
+gcube:euro a rdf:Property, qb:AttributeProperty ;\+\\
+    rdfs:label {\dq}Euro{\dq}@de .
+\end{code}
+
+\subsection{Die Observations} \label{Observations}
+
+\subsubsection{Allgemein}
+\begin{code}
+gcube:O<year>-<dnum>-GR<ln> gcube:<measure> {\dq}<amount>{\dq}{\ppw}xsd:<datatype> ;\+\\
+    qb:measureType gcube:<measure> ;\\
+    gcube:district ldot:<dname> ;\\
+    gcube:year {\dq}<year>{\dq}{\ppw}xsd:gYear ;\\
+    sdmx-attribute:unitMeasure gcube:<attribute> ;\\
+    a qb:Observation ;\\
+    qb:dataset gcube:GentriLeipzig .
+\end{code}
+Für \texttt{<year>} wird das Jahr, auf das sich die Daten der Observation
+beziehen, angegeben, für \texttt{<dname>} der Name (ohne Umlaute, „ss“ statt
+„ß“, „ae“ statt „ä“ usw.) des entsprechenden Ortsteils, für \texttt{<ln>} eine
+laufende Nummer über den unterschiedlichen Arten von \texttt{Observations}
+bzw. \texttt{MeasureProperties} (\texttt{extimmigrants} hat Nummer 0,
+\texttt{extemigrants} die Nummer 1, \texttt{locimmigrants} die Nummer 2,
+usw.\ -- eine genaue Auf"|listung ist im Abschnitt \ref{Daten}) zu finden, für
+\texttt{<measure>} der Name der entsprechenden \texttt{MeasureProperty} (also
+die Art der \texttt{Observation}), für \texttt{<amount>} der beobachtete Wert,
+für \texttt{<datatype>} der erlaubte Datentyp (hier entweder \texttt{integer}
+oder \texttt{decimal}) und für \texttt{<attribute>} die entsprechende
+\texttt{AttributeProperty} (also die Angabe, in welcher Einheit die Observation
+„gezählt“ wird, z.B. „people“, „years“, oder „euro“).
+
+\subsubsection{Beispiel}
+\begin{code}
+gcube:O2000-00-GR0 gcube:extImmigrants {\dq}208{\dq}{\ppw}xsd:integer ;\+\\
+    qb:measureType gcube:extImmigrants ;\\
+    gcube:district gcube:district00 ;\\
+    gcube:year {\dq}2000{\dq}{\ppw}xsd:gYear ;\\
+    sdmx-attribute:unitMeasure gcube:people ;\\
+    a qb:Observation ;\\
+    qb:dataset gcube:GentriLeipzig .
+\end{code}
+\begin{code}
+gcube:O2000-01-GR0 gcube:extImmigrants {\dq}274{\dq}{\ppw}xsd:integer ;\+\\
+    qb:measureType gcube:extImmigrants ;\\
+    gcube:district gcube:district01 ;\\
+    gcube:year {\dq}2000{\dq}{\ppw}xsd:gYear ;\\
+    sdmx-attribute:unitMeasure gcube:people ;\\
+    a qb:Observation ;\\
+    qb:dataset gcube:GentriLeipzig .
+\end{code}
+
+\subsection {Bisher vorhandene Daten} \label {Daten}
+\begin{description}
+\setlength{\itemsep}{0pt}
+\item[GR0:] Zuzüge in Ortsteil $x$ von außerhalb Leipzigs\\
+  (\texttt{qb:measureType} \texttt{gcube:extImmigrants})
+\item[GR1:] Wegzüge aus Ortsteil $x$ nach außerhalb Leipzigs\\
+  (\texttt{qb:measureType} \texttt{gcube:extEmigrants})
+\item[GR2:] Zuzüge in Ortsteil $x$ aus einem anderen Ortsteil\\
+  (\texttt{qb:measureType} \texttt{gcube:locImmigrants})
+\item[GR3:] Wegzüge aus Ortsteil $x$ in einen anderen Ortsteil\\
+  (\texttt{qb:measureType} \texttt{gcube:locEmigrants})
+\item[GR4:] Durchschnittsalter in Ortsteil $x$ (\texttt{qb:measureType}
+  \texttt{gcube:meanAge})
+\item[GR5:] Studentenanteil in Ortsteil $x$ (\texttt{qb:measureType}
+  \texttt{gcube:studPercent})
+\item[GR6:] Durchschnittsmiete in Ortsteil $x$ (\texttt{qb:measureType}
+  \texttt{gcube:meanRent})
+\item[GR7:] Wohnungsdichte in Ortsteil $x$ (\texttt{qb:measureType}
+  \texttt{gcube:aptDensity})
+\item[GR8:] Arbeitslose in Ortsteil $x$ (\texttt{qb:measureType}
+  \texttt{gcube:unemployeds})
+\end{description}
+\subsection{Probleme} 
+\label{fehler}
+
+\paragraph{Language-Tags:} 
+Wenn die .ttl-Dateien Language-Tags (\texttt{@de}) enthalten, kommt es im
+OntoWiki aus bisher nicht nachvollziehbaren Gründen zu Fehlermeldungen.  Ein
+Beispiel hierfür ist in der Datei \texttt{SPARQL\_ERROR.txt} zusammengestellt.
+
+\paragraph{qb-components:} 
+Wenn man die \texttt{qb-components} als Blank Nodes definiert, gehen beim
+Transfer ins OntoWiki die Meta- und Kontextinformationen der Komponenten
+verloren. Um das zu vermeiden, wurde auch eine Variante ohne Blank Nodes
+erstellt. (Siehe Abschnitt \ref{noblank})
+
+\section{Weitere Schritte}
+
+\subsection{Automatisierung der Umwandlung von .csv zu .ttl}
+\label{Umwandlung}
+\subsubsection{Allgemeines}
+
+Da die Daten im LIS recht einheitlich im .csv-Format vorliegen, erscheint es
+sinnvoll, die Übertragung der weiteren LIS-Daten in den Data-Cube so weit wie
+möglich zu automatisieren. Ausgehend von einer entsprechenden .csv-Datei lässt
+sich eine weitgehend automatische Umwandlung in eine
+„Ergänzungs-.ttl-Datei“ in folgenden 8 Teilschritten umsetzen: 
+\begin{enumerate}
+\item Erstellen der Prefixes. Die Prefixes sind (in diesem Cube) immer
+  identisch, müssen aber in jeder RDF-Datei, wie unter \ref{Prefixes}
+  beschrieben, angegeben werden. 
+\item Am \texttt{DataSet} ändert sich nichts, dieses muss also bei Ergänzungen
+  nicht noch einmal aufgeführt werden.
+\item In der \texttt{DataStructureDefinition muss} die neue \texttt{Measure}
+  mit Namen als solche definiert und als \texttt{qb:component} angeben
+  werden.  \label{newmeasure}
+\item An den \texttt{DimensionProperties} ändert sich nichts, diese müssen
+  also bei Ergänzungen nicht noch einmal aufgeführt werden.
+\item Die neue \texttt{Measure} muss, wie unter \ref{Measures} angegeben, als
+  \texttt{MeasureProperty} definiert werden. Die \texttt{<source>}-Angabe kann
+  dabei nicht direkt aus der .csv-Datei bestimmt werden.
+\item Entweder muss der neuen \texttt{Measure} eine passende
+  \texttt{AttributeProperty} zugeordnet werden (in Schritt \ref{newobs}) oder,
+  wie unter \ref{Attributes} angegeben, eine neue erstellt werden. Dieser
+  Schritt kann nicht voll automatisch erfolgen.
+\item An den \texttt{Districts} ändert sich nichts, diese müssen also bei
+  Ergänzungen nicht noch einmal aufgeführt werden.
+\item Für jede Zelle in der .csv-Datei muss eine \texttt{Observation}, wie
+  unter \ref{Observations} angegeben, erstellt werden.\label{newobs}
+\end{enumerate}
+
+\subsubsection {Daten aktualisieren}
+Um aktuellere Versionen der Daten einzupflegen, zu denen es bereits
+\texttt{Measure}s gibt, muss man lediglich neue \texttt{Observation}s mit den
+passenden Parametern erstellen.
+
+\subsubsection{Besonderheiten}
+
+In einigen .csv-Dateien des LIS fehlen Angaben für einige Ortsteile, bzw. sind
+z.\,T.\ die Angaben für mehrere Ortsteile in einem Ortsteil zusammengefasst.
+In der .csv-Datei tauchen in den fehlenden oder zusammengefassten Zellen nur
+\dq.\dq-Zeichen auf. (Zum Beispiel werden beim Wohnungsbestand vor 2010 die
+Ortsteile 27, 28 und 29, sowie die Ortsteile 54 und 55 zusammengefasst.)
+Sollten solche Zeichen in der .csv-Datei vorkommen, ist es also wieder nötig,
+manuell einzugreifen und direkt ins LIS zu schauen, wo durch Annotationen
+darauf hingewiesen wird, welcher Zusammenhang konkret besteht. Fehlende
+Informationen für einzelne Zellen habe ich bisher mit dem Wert „-1“
+gekennzeichnet.  Sollte in anderen Statistiken auch mit negativen Werten
+gearbeitet werden, müsste man da nach Alternativen suchen.
+
+\subsection{Beispiel-Turtle-Datei zur Erweiterung des bestehenden Cubes}
+
+\begin{code}
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> .\\
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema\#> .\\
+@prefix owl:            <http://www.w3.org/2002/07/owl\#> .\\
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema\#> .\\
+@prefix dct:             <http://purl.org/dc/terms/> .\\
+@prefix qb:             <http://purl.org/linked-data/cube\#> .\\
+@prefix sdmx:           <http://purl.org/linked-data/sdmx\#> .\\
+@prefix sdmx-concept:   <http://purl.org/linked-data/sdmx/2009/concept\#> .\\
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension\#> .\\
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute\#> .\\
+@prefix sdmx-measure:   <http://purl.org/linked-data/sdmx/2009/measure\#> .\\
+@prefix gcube:          <http://leipzig-data.de/Data/Gentri-14/cube/> .\\[6pt]
+
+gcube:DataSetDef qb:component [ qb:measure gcube:aptDensity ] .\\[6pt]
+
+gcube:aptDensity a rdf:Property, qb:MeasureProperty ;\+\\
+    rdfs:label {\dq}Wohnungsdichte{\dq}@de ;\\
+    rdfs:subPropertyOf sdmx-measure:obsValue ;\\
+    rdfs:range xsd:integer .\-\\[6pt]
+
+gcube:aptsPerKm a rdf:Property, qb:AttributeProperty ;\+\\
+    rdfs:label {\dq}Wohnungen pro Quadratkilometer{\dq}@de .\-\\[6pt]
+
+gcube:O2000-00-GR2 gcube:aptDensity {\dq}2209{\dq}{\ppw}xsd:integer ;\+\\
+    qb:measureType gcube:aptDensity ;\\
+    gcube:district gcube:district00 ;\\
+    gcube:year {\dq}2000{\dq}{\ppw}xsd:gYear ;\\
+    sdmx-attribute:unitMeasure gcube:aptsPerKm ;\\
+    a qb:Observation ;\\
+    qb:dataset gcube:GentriLeipzig .\-\\[6pt]
+
+gcube:O2000-01-GR2 gcube:aptDensity {\dq}1462{\dq}{\ppw}xsd:integer ;\+\\
+    qb:measureType gcube:aptDensity ;\\
+    gcube:district gcube:district01 ;\\
+    gcube:year {\dq}2000{\dq}{\ppw}xsd:gYear ;\\
+    sdmx-attribute:unitMeasure gcube:aptsPerKm ;\\
+    a qb:Observation ;\\
+    qb:dataset gcube:GentriLeipzig .\-\\[6pt]
+
+usw.
+\end{code}
+
+\section{Anhang}
+
+\subsection{Cube-Variante ohne Blank Nodes}\label{noblank}
+
+\subsubsection{Der Cube}
+
+Am \texttt{Cube} selbst muss lediglich in der \texttt{DataStructureDefinition}
+geändert werden, wie die Komponenten angegeben werden. Statt die Komponenten
+wie unter \ref{DSS} angegeben als Blank Nodes zu definieren, wird jeder
+benötigten Komponente eine konkrete URI zugewiesen, die dann separat definiert
+werden muss.
+
+\begin{code}
+gcube:datasetdef a qb:DataStructureDefinition ;\+\\
+    qb:component\+\\
+        gcube:districtDim,
+        gcube:yearDim,
+        gcube:measureDim,\\
+        gcube:attributeComp,
+        gcube:measureExtImm,
+        gcube:measureExtEm,
+        <\ldots> .\-\-\\[6pt]
+                 
+gcube:districtDim      qb:dimension gcube:district .\\
+gcube:yearDim          qb:dimension gcube:year .\\
+gcube:measureDim       qb:dimension qb:measureType .\\
+gcube:attributeComp    qb:attribute sdmx-attribute:unitMeasure .\\
+gcube:measureExtImm    qb:measure   gcube:extImmigrants .\\
+gcube:measureExtEm     qb:measure   gcube:extEmigrants .
+<\ldots> .
+\end{code}
+
+Für \texttt{<\ldots>} würden weitere Measures benannt und definiert werden.
+
+Ansonsten ändert sich am Cube nichts.
+
+\subsubsection{Die Erweiterung}
+
+Auch bei der Erweiterung des Cubes muss das selbstverständlich entsprechend
+beachtet werden. In Schritt \ref{newmeasure} der Umwandlung (\ref{Umwandlung})
+muss die neue \texttt{Measure} zunächst in der
+\texttt{DataStruc\-ture\-Definition} mit einer URI benannt und dann separat
+definiert werden.
+
+\begin{code}
+gcube:datasetdef qb:component gcube:measure\_aptdens .\\
+gcube:measure\_aptdens  qb:measure gcube:aptdensity .
+\end{code}
+
+\subsection{Dateien}
+
+\subsubsection{RDF-Daten für die GentriMap}
+
+Verzeichnis \texttt{SimpleRDF}:
+\begin{itemize}
+\setlength{\itemsep}{-2pt}
+\item \texttt{alter00\_13.ttl} -- Durchschnittsalter in den Ortsteilen von 2000
+  bis 2013.
+\item \texttt{anteilarbeitslose00\_13.ttl} -- Arbeitslosenanteil in den
+  Ortsteilen von 2000 bis 2013
+\item \texttt{aszuwanderung00\_13.ttl} -- Zuwanderung von außerhalb Leipzig in
+  die Ortsteile von 2000 bis 2013
+\item \texttt{isabwanderung00\_13.ttl} -- Abwanderung von den Ortsteilen in
+  einen anderen Ortsteil von 2000 bis 2013
+\item \texttt{iszuwanderung00\_13.ttl} -- Zuwanderung in die Ortsteile aus
+  einem anderen Ortsteil von 2000 bis 2013
+\item \texttt{kinderarmut07+09+11.ttl} -- Prozentuale Kinderarmut in den
+  Ortsteilen in 2007, 2009 und 2011 (Nicht exakt!)
+\item \texttt{studentenanteilot13.ttl} -- Studentenanteil in den Ortsteilen in
+  2013\footnote{Wie viel Prozent der Einwohner des Ortsteils sind Studenten?}
+\item \texttt{studentenanteilst13.ttl} -- prozentualer Anteil an Leipziger
+  Studenten in den Ortsteilen in 2013\footnote{Wie viel Prozent der Studenten
+    Leipzigs leben im Ortsteil?}
+\item \texttt{wohnungsdichte00\_11.ttl} -- Wohnungen pro km$^2$ in den
+  Ortsteilen von 2000 bis 2011
+\end{itemize}
+
+\subsubsection{Der RDF Data Cube}
+
+Diese Daten sind im Verzeichnis \texttt{CUBE} zu finden.
+
+DataSet, DataStructureDefinition, Dimension-, Measure- und
+AttributeProperties:
+\begin{itemize}
+\setlength{\itemsep}{-2pt}
+\item \texttt{cubeBaseBlank.ttl} -- mit BlankNodes, ohne LanguageTags
+\item \texttt{cubeBaseBlankLT.ttl} -- mit BlankNodes, mit LanguageTags
+\item \texttt{cubeBaseNoBlank.ttl} -- ohne BlankNodes, ohne LanguageTags
+\item \texttt{cubeBaseNoBlankLT.ttl} -- ohne BlankNodes, mit LanguageTags
+\end{itemize}
+
+Die 63 Leipziger Ortsteile als \texttt{gcube:district}:
+\begin{itemize}
+\setlength{\itemsep}{-2pt}
+\item \texttt{districts.ttl} -- ohne LanguageTags
+\item \texttt{districtsLT.ttl} -- mit LanguageTags
+\end{itemize}
+
+Die Observations (aufgeschlüsselt nach Ortsteilen):
+\begin{itemize}
+\setlength{\itemsep}{-2pt}
+\item \texttt{observations/obsaszz.ttl} -- GR0: Zuzüge nach Leipzig
+\item \texttt{observations/obsaswz.ttl} -- GR1: Wegzüge aus Leipzig 
+\item \texttt{observations/obsiszz.ttl} -- GR2: Zuzüge innerhalb Leipzigs
+\item \texttt{observations/obsiswz.ttl} -- GR3: Wegzüge innerhalb Leipzigs 
+\item \texttt{observations/obsage.ttl} -- GR4:  Durchschnittsalter
+\item \texttt{observations/obsstuda.ttl} -- GR5: Studentenanteil
+\item \texttt{observations/obsrent.ttl} -- GR6: Durchschnittsmiete
+\item \texttt{observations/obsapt.ttl} -- GR7: Wohnungsdichte
+\item \texttt{observations/obsunemp.ttl} -- GR8: Arbeitslose
+\end{itemize}
+
+\subsubsection{Sonstiges}
+
+\begin{itemize}
+\setlength{\itemsep}{-2pt}
+\item \texttt{/matrixPLZtoORTSTEIL.csv} -- Die unter \ref{matrix} beschriebene
+  Matrix mit einer zusätzlichen Spalte (Angabe der PLZ) und einer zusätzlichen
+  Zeile (Angabe des Ortsteils).
+\item \texttt{/SPARQL\_ Error.txt} -- Ein Beispiel für die im Abschnitt
+  \ref{fehler} genannten SPARQL-Fehler\-meldungen.
+\item \texttt{/Projektbericht.tex} -- Dieser Projektbericht als \LaTeX-Datei.
+\end{itemize}
+
+\end{document}

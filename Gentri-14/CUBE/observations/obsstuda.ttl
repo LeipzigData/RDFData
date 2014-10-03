@@ -1,0 +1,530 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct:       <http://purl.org/dc/terms/> .
+
+@prefix qb: <http://purl.org/linked-data/cube#> .
+
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+
+@prefix gcube: <http://leipzig-data.de/Data/Gentri-14/cube/> .
+@prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+
+<http://leipzig-data.de/Data/Gentri-14/CUBE/observations/obsstuda/> a owl:Ontology ;
+   rdfs:label "RDF Cube - Observations: Anteil Studenten im Ortsteil" ;
+   dct:creator "Marius Brunnert";
+   dct:source <http://statistik.leipzig.de/statdist/index.aspx> ;
+   dct:abstract "Dieses Material wurde im Rahmen eines Projektpraktikums im Sommersemester 2014 an der Universität Leipzig zusammengetragen.";
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" .
+
+gcube:o2013-00-GR5 gcube:studPercent "5.12"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Zentrum ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-01-GR5 gcube:studPercent "11.18"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Zentrum-Ost ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-02-GR5 gcube:studPercent "11.18"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Zentrum-Suedost ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-03-GR5 gcube:studPercent "6.25"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Zentrum-Sued ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-04-GR5 gcube:studPercent "5.14"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Zentrum-West ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-05-GR5 gcube:studPercent "3.66"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Zentrum-Nordwest ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-06-GR5 gcube:studPercent "3.65"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Zentrum-Nord ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-10-GR5 gcube:studPercent "1.10"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Schoenefeld-Abtnaundorf ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-11-GR5 gcube:studPercent "1.09"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Schoenefeld-Ost ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-12-GR5 gcube:studPercent "0.65"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Mockau-Sued ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-13-GR5 gcube:studPercent "0.45"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Mockau-Nord ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-14-GR5 gcube:studPercent "0.43"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Thekla ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-15-GR5 gcube:studPercent "0.43"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Plaussig-Portitz ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-20-GR5 gcube:studPercent "4.56"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Neustadt-Neuschoenefeld ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-21-GR5 gcube:studPercent "4.56"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Volksmarsdorf ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-22-GR5 gcube:studPercent "2.80"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Anger-Crottendorf ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-23-GR5 gcube:studPercent "2.22"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Sellerhausen-Stuenz ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-24-GR5 gcube:studPercent "0.51"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Paunsdorf ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-25-GR5 gcube:studPercent "0.54"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Heiterblick ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-26-GR5 gcube:studPercent "0.46"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Moelkau ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-27-GR5 gcube:studPercent "0.51"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Engelsdorf ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-28-GR5 gcube:studPercent "0.46"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Baalsdorf ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-29-GR5 gcube:studPercent "0.51"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Althen-Kleinpoesna ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-30-GR5 gcube:studPercent "7.63"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Reudnitz-Thonberg ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-31-GR5 gcube:studPercent "2.43"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Stoetteritz ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-32-GR5 gcube:studPercent "0.54"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Probstheida ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-33-GR5 gcube:studPercent "0.54"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Meusdorf ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-34-GR5 gcube:studPercent "0.29"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Liebertwolkwitz ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-35-GR5 gcube:studPercent "0.29"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Holzhausen ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-40-GR5 gcube:studPercent "5.93"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Suedvorstadt ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-41-GR5 gcube:studPercent "3.26"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Connewitz ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-42-GR5 gcube:studPercent "3.25"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Marienbrunn ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-43-GR5 gcube:studPercent "2.32"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Loessnig ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-44-GR5 gcube:studPercent "2.33"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Doelitz-Doesen ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-50-GR5 gcube:studPercent "3.59"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Schleussig ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-51-GR5 gcube:studPercent "3.60"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Plagwitz ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-52-GR5 gcube:studPercent "2.79"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Kleinzschocher ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-53-GR5 gcube:studPercent "0.41"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Grosszschocher ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-54-GR5 gcube:studPercent "0.41"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Knautkleeberg-Knauthain ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-55-GR5 gcube:studPercent "0.41"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Hartmannsdorf-Knautnaundorf ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-60-GR5 gcube:studPercent "0.74"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Schoenau ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-61-GR5 gcube:studPercent "0.90"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Gruenau-Ost ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-62-GR5 gcube:studPercent "0.90"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Gruenau-Mitte ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-63-GR5 gcube:studPercent "0.37"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Gruenau-Siedlung ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-64-GR5 gcube:studPercent "0.37"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Lausen-Gruenau ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-65-GR5 gcube:studPercent "0.74"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Gruenau-Nord ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-66-GR5 gcube:studPercent "0.74"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Miltitz ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-70-GR5 gcube:studPercent "4.25"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Lindenau ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-71-GR5 gcube:studPercent "4.25"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Altlindenau ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-72-GR5 gcube:studPercent "0.97"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Neulindenau ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-73-GR5 gcube:studPercent "0.97"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Leutzsch ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-74-GR5 gcube:studPercent "0.44"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Boehlitz-Ehrenberg ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-75-GR5 gcube:studPercent "0.44"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Burghausen-Rueckmarsdorf ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-80-GR5 gcube:studPercent "0.65"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Moeckern ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-81-GR5 gcube:studPercent "0.65"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Wahren ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-82-GR5 gcube:studPercent "0.58"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Luetzschena-Stahmeln ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-83-GR5 gcube:studPercent "0.49"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Lindenthal ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-90-GR5 gcube:studPercent "2.20"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Gohlis-Sued ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-91-GR5 gcube:studPercent "1.13"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Gohlis-Mitte ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-92-GR5 gcube:studPercent "1.13"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Gohlis-Nord ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-93-GR5 gcube:studPercent "1.20"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Eutritzsch ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-94-GR5 gcube:studPercent "0.04"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Seehausen ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .
+
+gcube:o2013-95-GR5 gcube:studPercent "0.26"^^xsd:decimal ;
+qb:measureType gcube:studPercent ;
+gcube:district ldot:Wiederitzsch ;
+gcube:year "2013"^^xsd:gYear ;
+sdmx-attribute:unitMeasure gcube:studQuota ;
+a qb:Observation ;
+qb:dataset gcube:GentriLeipzig .

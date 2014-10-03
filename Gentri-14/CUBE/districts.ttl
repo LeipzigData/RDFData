@@ -1,0 +1,339 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix cc: 	  <http://creativecommons.org/ns#> .
+@prefix qb: 	  <http://purl.org/linked-data/cube#> .
+
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+
+@prefix gcube: <http://leipzig-data.de/Data/Gentri-14/cube/> .
+
+<http://leipzig-data.de/Data/Gentri-14/CUBE/districts/> a owl:Ontology ;
+   rdfs:label "RDF Cube - Leipziger Ortsteile" ;
+   dct:creator "Marius Brunnert";
+   rdfs:comment "Leipziger Ortsteile als Teil eines RDF Data Cube. Version ohne language tags";
+   dct:abstract "Dieses Material wurde im Rahmen eines Projektpraktikums im Sommersemester 2014 an der Universität Leipzig zusammengetragen.";
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" .
+
+gcube:District00 gcube:hasKeyNumber "0"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Zentrum" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Zentrum> .
+
+gcube:District01 gcube:hasKeyNumber "1"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Zentrum-Ost" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Zentrum-Ost> .
+
+gcube:District02 gcube:hasKeyNumber "2"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Zentrum-Südost" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Zentrum-Suedost> .
+
+gcube:District03 gcube:hasKeyNumber "3"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Zentrum-Süd" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Zentrum-Sued> .
+
+gcube:District04 gcube:hasKeyNumber "4"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Zentrum-West" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Zentrum-West> .
+
+gcube:District05 gcube:hasKeyNumber "5"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Zentrum-Nordwest" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Zentrum-Nordwest> .
+
+gcube:District06 gcube:hasKeyNumber "6"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Zentrum-Nord" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Zentrum-Nord> .
+
+gcube:District10 gcube:hasKeyNumber "10"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Schönefeld-Abtnaundorf" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Schoenefeld-Abtnaundorf> .
+
+gcube:District11 gcube:hasKeyNumber "11"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Schönefeld-Ost" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Schoenefeld-Ost> .
+
+gcube:District12 gcube:hasKeyNumber "12"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Mockau-Süd" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Mockau-Sued> .
+
+gcube:District13 gcube:hasKeyNumber "13"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Mockau-Nord" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Mockau-Nord> .
+
+gcube:District14 gcube:hasKeyNumber "14"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Thekla" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Thekla> .
+
+gcube:District15 gcube:hasKeyNumber "15"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Plaußig-Portitz" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Plaussig-Portitz> .
+
+gcube:District20 gcube:hasKeyNumber "20"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Neustadt-Neuschönefeld" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Neustadt-Neuschoenefeld> .
+
+gcube:District21 gcube:hasKeyNumber "21"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Volksmarsdorf" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Volksmarsdorf> .
+
+gcube:District22 gcube:hasKeyNumber "22"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Anger-Crottendorf" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Anger-Crottendorf> .
+
+gcube:District23 gcube:hasKeyNumber "23"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Sellerhausen-Stünz" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Sellerhausen-Stuenz> .
+
+gcube:District24 gcube:hasKeyNumber "24"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Paunsdorf" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Paunsdorf> .
+
+gcube:District25 gcube:hasKeyNumber "25"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Heiterblick" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Heiterblick> .
+
+gcube:District26 gcube:hasKeyNumber "26"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Mölkau" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Moelkau> .
+
+gcube:District27 gcube:hasKeyNumber "27"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Engelsdorf" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Engelsdorf> .
+
+gcube:District28 gcube:hasKeyNumber "28"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Baalsdorf" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Baalsdorf> .
+
+gcube:District29 gcube:hasKeyNumber "29"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Althen-Kleinpösna" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Althen-Kleinpoesna> .
+
+gcube:District30 gcube:hasKeyNumber "30"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Reudnitz-Thonberg" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Reudnitz-Thonberg> .
+
+gcube:District31 gcube:hasKeyNumber "31"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Stötteritz" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Stoetteritz> .
+
+gcube:District32 gcube:hasKeyNumber "32"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Probstheida" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Probstheida> .
+
+gcube:District33 gcube:hasKeyNumber "33"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Meusdorf" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Meusdorf> .
+
+gcube:District34 gcube:hasKeyNumber "34"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Liebertwolkwitz" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Liebertwolkwitz> .
+
+gcube:District35 gcube:hasKeyNumber "35"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Holzhausen" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Holzhausen> .
+
+gcube:District40 gcube:hasKeyNumber "40"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Südvorstadt" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Suedvorstadt> .
+
+gcube:District41 gcube:hasKeyNumber "41"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Connewitz" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Connewitz> .
+
+gcube:District42 gcube:hasKeyNumber "42"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Marienbrunn" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Marienbrunn> .
+
+gcube:District43 gcube:hasKeyNumber "43"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Lößnig" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Loessnig> .
+
+gcube:District44 gcube:hasKeyNumber "44"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Dölitz-Dösen" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Doelitz-Doesen> .
+
+gcube:District50 gcube:hasKeyNumber "50"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Schleußig" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Schleussig> .
+
+gcube:District51 gcube:hasKeyNumber "51"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Plagwitz" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Plagwitz> .
+
+gcube:District52 gcube:hasKeyNumber "52"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Kleinzschocher" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Kleinzschocher> .
+
+gcube:District53 gcube:hasKeyNumber "53"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Großzschocher" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Grosszschocher> .
+
+gcube:District54 gcube:hasKeyNumber "54"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Knautkleeberg-Knauthain" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Knautkleeberg-Knauthain> .
+
+gcube:District55 gcube:hasKeyNumber "55"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Hartmannsdorf-Knautnaundorf" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Hartmannsdorf-Knautnaundorf> .
+
+gcube:District60 gcube:hasKeyNumber "60"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Schönau" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Schoenau> .
+
+gcube:District61 gcube:hasKeyNumber "61"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Grünau-Ost" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Gruenau-Ost> .
+
+gcube:District62 gcube:hasKeyNumber "62"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Grünau-Mitte" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Gruenau-Mitte> .
+
+gcube:District63 gcube:hasKeyNumber "63"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Grünau-Siedlung" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Gruenau-Siedlung> .
+
+gcube:District64 gcube:hasKeyNumber "64"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Lausen-Grünau" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Lausen-Gruenau> .
+
+gcube:District65 gcube:hasKeyNumber "65"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Grünau-Nord" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Gruenau-Nord> .
+
+gcube:District66 gcube:hasKeyNumber "66"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Miltitz" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Miltitz> .
+
+gcube:District70 gcube:hasKeyNumber "70"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Lindenau" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Lindenau> .
+
+gcube:District71 gcube:hasKeyNumber "71"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Altlindenau" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Altlindenau> .
+
+gcube:District72 gcube:hasKeyNumber "72"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Neulindenau" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Neulindenau> .
+
+gcube:District73 gcube:hasKeyNumber "73"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Leutzsch" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Leutzsch> .
+
+gcube:District74 gcube:hasKeyNumber "74"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Böhlitz-Ehrenberg" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Boehlitz-Ehrenberg> .
+
+gcube:District75 gcube:hasKeyNumber "75"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Burghausen-Rückmarsdorf" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Burghausen-Rueckmarsdorf> .
+
+gcube:District80 gcube:hasKeyNumber "80"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Möckern" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Moeckern> .
+
+gcube:District81 gcube:hasKeyNumber "81"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Wahren" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Wahren> .
+
+gcube:District82 gcube:hasKeyNumber "82"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Lützschena-Stahmeln" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Luetzschena-Stahmeln> .
+
+gcube:District83 gcube:hasKeyNumber "83"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Lindenthal" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Lindenthal> .
+
+gcube:District90 gcube:hasKeyNumber "90"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Gohlis-Süd" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Gohlis-Sued> .
+
+gcube:District91 gcube:hasKeyNumber "91"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Gohlis-Mitte" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Gohlis-Mitte> .
+
+gcube:District92 gcube:hasKeyNumber "92"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Gohlis-Nord" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Gohlis-Nord> .
+
+gcube:District93 gcube:hasKeyNumber "93"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Eutritzsch" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Eutritzsch> .
+
+gcube:District94 gcube:hasKeyNumber "94"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Seehausen" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Seehausen> .
+
+gcube:District95 gcube:hasKeyNumber "95"^^xsd:nonNegativeInteger ;
+a gcube:District ;
+rdfs:label "Wiederitzsch" ;
+rdfs:seeAlso <http://leipzig-data.de/Data/Ortsteil/Wiederitzsch> .

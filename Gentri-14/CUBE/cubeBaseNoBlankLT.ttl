@@ -1,0 +1,137 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:       <http://purl.org/dc/terms/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+
+@prefix gcube: <http://leipzig-data.de/Data/Gentri-14/cube/> .
+
+<http://leipzig-data.de/Data/Gentri-14/CUBE/cubeBaseNoBlankLT/> a owl:Ontology ;
+   rdfs:label "RDF Cube - Dimensionsdefinitionen" ;
+   dct:creator "Marius Brunnert";
+   rdfs:comment "Version ohne blank nodes und mit language tags";
+   dct:abstract "Dieses Material wurde im Rahmen eines Projektpraktikums im Sommersemester 2014 an der Universität Leipzig zusammengetragen.";
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" .
+
+gcube:GentriLeipzig a qb:DataSet ;
+                    rdfs:label "Gentrifizierung in Leipzig"@de ;
+                    rdfs:comment "Daten zur Gentrifizierung in Leipzig - abgeleitet aus dem LIS"@de ;
+                    dct:source <http://statistik.leipzig.de/statdist/index.aspx> ;
+                    qb:structure gcube:GentriDSD .
+                     
+gcube:GentriDSD a qb:DataStructureDefinition ;
+    qb:component 
+        gcube:districtDim,
+        gcube:yearDim,
+        gcube:measureDim,
+        gcube:attributeComp,
+        gcube:measureExtImm,
+        gcube:measurExtEm,
+        gcube:measureIntImm,
+        gcube:measureIntEm,
+        gcube:measureMeanAge,
+        gcube:measureStudPerc,
+        gcube:measureMeanRent,
+        gcube:measureAptDens,
+        gcube:measureUnemp .
+                 
+gcube:districtDim      qb:dimension gcube:district .
+gcube:yearDim          qb:dimension gcube:year .
+gcube:measureDim       qb:dimension qb:measureType .
+gcube:attributeComp    qb:attribute sdmx-attribute:unitMeasure .
+gcube:measureExtImm    qb:measure   gcube:extImmigrants .
+gcube:measureExtEm     qb:measure   gcube:extEmigrants .
+gcube:measureIntImm    qb:measure   gcube:locImmigrants .
+gcube:measureIntEm     qb:measure   gcube:locEmigrants .
+gcube:measureMeanAge   qb:measure   gcube:meanAge .
+gcube:measureStudPerc  qb:measure   gcube:studPercent .
+gcube:measureMeanRent  qb:measure   gcube:meanRent .
+gcube:measureAptDens   qb:measure   gcube:aptDensity .
+gcube:measureUnemp     qb:measure   gcube:unemployeds .
+
+gcube:district a rdf:Property, qb:DimensionProperty ;
+                 rdfs:label "Ortsteil"@de ;
+                 rdfs:subPropertyOf sdmx-dimension:refArea ;
+                 qb:concept sdmx-concept:refArea .
+                     
+gcube:year a rdf:Property, qb:DimensionProperty ;
+           rdfs:label "Jahr"@de ;
+           rdfs:subPropertyOf sdmx-dimension:refPeriod ;
+           qb:concept sdmx-concept:refPeriod .
+           
+gcube:extImmigrants a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Zuzüge von Außerhalb"@de ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    dct:source <http://statistik.leipzig.de/statdist/table.aspx?cat=3&rub=2&obj=0> ;
+    rdfs:range xsd:integer .                     
+
+gcube:extEmigrants a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Wegzüge nach Außerhalb"@de ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    dct:source <http://statistik.leipzig.de/statdist/table.aspx?cat=3&rub=2&obj=0> ;
+    rdfs:range xsd:integer .
+    
+gcube:locImmigrants a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Zuzüge Innerstädtisch"@de ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    dct:source <http://statistik.leipzig.de/statdist/table.aspx?cat=3&rub=2&obj=0> ;
+    rdfs:range xsd:integer .
+    
+gcube:locEmigrants a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Wegzüge Innerstädtisch"@de ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    dct:source <http://statistik.leipzig.de/statdist/table.aspx?cat=3&rub=2&obj=0> ;
+    rdfs:range xsd:integer .
+    
+gcube:meanAge a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Durchschnittsalter"@de ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    dct:source <http://statistik.leipzig.de/statdist/table.aspx?cat=2&rub=2&obj=0> ;
+    rdfs:range xsd:decimal .
+    
+gcube:studPercent a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Studentenanteil"@de ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    rdfs:range xsd:decimal .
+    
+gcube:meanRent a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Durchschnittsmiete"@de ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    rdfs:range xsd:decimal .
+    
+gcube:aptDensity a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Wohnungsdichte"@de ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    dct:source <http://statistik.leipzig.de/statdist/table.aspx?cat=6&rub=4&obj=0> ;
+    rdfs:range xsd:integer .
+    
+gcube:unemployeds a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Arbeitslose"@de ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    dct:source <http://statistik.leipzig.de/statdist/table.aspx?cat=7&rub=2&obj=0> ;
+    rdfs:range xsd:integer .
+
+gcube:people a rdf:Property, qb:AttributeProperty ;
+           rdfs:label "Menschen"@de .
+           
+gcube:years a rdf:Property, qb:AttributeProperty ;
+           rdfs:label "Jahre"@de .
+
+gcube:studQuota a rdf:Property, qb:AttributeProperty ;
+           rdfs:label "Studenten pro 100 Einwohner"@de .
+           
+gcube:euro a rdf:Property, qb:AttributeProperty ;
+           rdfs:label "Euro"@de .
+
+gcube:aptsPerKm a rdf:Property, qb:AttributeProperty ;
+           rdfs:label "Wohnungen pro Quadratkilometer"@de .
