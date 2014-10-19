@@ -68,13 +68,6 @@ ld:Verein a owl:Class ;
           rdfs:label "Verein" ;
           rdfs:subClassOf ld:Traeger .
 
-<http://leipzig-data.de/Data/Ort/HTWK.EIT> a ld:Ort ;
-                                           rdfs:label "HTWK, Fakultät Elektrotechnik und Informationstechnik" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Waechterstrasse.13> ;
-                                           ld:hasStatus "aktiv" ;
-                                           ld:hasTag <http://leipzig-data.de/Data/Tag/Forschung>, <http://leipzig-data.de/Data/Tag/MINT> ;
-                                           ld:hasSupplier <HTWK> .
-
 <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> a ld:Traeger ;
                                                          rdfs:label "Stadt Leipzig, Referat Kommunikation im Geschäftsbereich des Oberbürgermeisters" ;
                                                          ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.2> .
@@ -1041,6 +1034,11 @@ ld:Verein a owl:Class ;
                                               ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Marienbrunnenstrasse.4> ;
                                               foaf:homepage <http://www.gc-i.de/> .
 
+<http://leipzig-data.de/Data/Unternehmen/SachsenWasser> a org:Organization ;
+                                                        rdfs:label "Sachsen Wasser GmbH" ;
+                                                        skos:prefLabel "Sachsen Wasser GmbH" ;
+                                                        ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Stephanstrasse.4> .
+
 <http://leipzig-data.de/Data/Unternehmen/SternburgBrauerei> a org:Organization ;
                                                             rdfs:label "Sternburg Brauerei GmbH. Ein Unternehmen der Radeberger Gruppe" ;
                                                             skos:prefLabel "Sternburg Brauerei GmbH. Ein Unternehmen der Radeberger Gruppe" ;
@@ -1072,6 +1070,11 @@ ld:Verein a owl:Class ;
 
 <http://leipzig-data.de/Data/Verein/KreativesLeipzig> a ld:Traeger, ld:Verein ;
                                                       rdfs:label "Kreatives Leipzig e.V." .
+
+<http://leipzig-data.de/Data/Verein/LebenLernenLeipzig> a ld:Traeger, ld:Verein ;
+                                                        rdfs:label "Leben.Lernen.Leipzig e.V." ;
+                                                        ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.102> ;
+                                                        ld:hasURL <http://lebenlernenleipzig.de>, <http://www.facebook.com/LebenLernenLeipzig> .
 
 <http://leipzig-data.de/Data/Verein/WirtschaftsinitiativeMitteldeutschland> a foaf:Agent, ld:Verein ;
                                                                             foaf:name "Wirtschaftsinitiative für Mitteldeutschland e.V." .
