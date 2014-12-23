@@ -8,6 +8,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix ns0: <http://leipzig-data.de/Data/MINT-2012/> .
 
 ld:Ort a owl:Class ;
        rdfs:label "Ort" .
@@ -15,6 +16,10 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/AKAD-Hochschule> a ld:Ort ;
                                                   rdfs:label "AKAD Hochschule Leipzig" ;
                                                   ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gutenbergplatz.1> .
+
+<http://leipzig-data.de/Data/Ort/ALEX> a ld:Ort ;
+                                       rdfs:label "ALEX" ;
+                                       ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Naschmarkt.3> .
 
 <http://leipzig-data.de/Data/Ort/ASD.Gruenau> a ld:Ort ;
                                               rdfs:label "Allgemeiner Sozialdienst Grünau" ;
@@ -84,6 +89,10 @@ ld:Ort a owl:Class ;
                                                ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.AmSportforum.2> ;
                                                ld:hasURL <http://www.sportforum-leipzig.com/> ;
                                                ld:hasFax "341-2341111" .
+
+<http://leipzig-data.de/Data/Ort/AtelierMatthiasMeyer> a ld:Ort ;
+                                                       rdfs:label "Atelier Matthias Meyer" ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Stieglitzstrasse.20> .
 
 <http://leipzig-data.de/Data/Ort/AtelierNiggemeyer> a ld:Ort ;
                                                     rdfs:label "Atelier Joachim R. Niggemeyer" ;
@@ -342,6 +351,11 @@ ld:Ort a owl:Class ;
                                                        rdfs:label "Bruno-Plache-Stadion" ;
                                                        ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.ConnewitzerStrasse.21> ;
                                                        ld:hasURL <http://www.bruno-plache-stadion.de/> .
+
+<http://leipzig-data.de/Data/Ort/CCL> a ld:Ort ;
+                                      rdfs:label "Congress Center Leipzig" ;
+                                      ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.Messe-Allee.1> ;
+                                      ld:hasURL <http://www.ccl-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Ort/CCLS> a ld:Ort ;
                                        rdfs:label "Computerclub Lützschena-Stahmeln" ;
@@ -2070,6 +2084,10 @@ ld:Ort a owl:Class ;
                                            ld:hasURL <http://www.kindermuseum-unikatum.de> ;
                                            ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Unikatum> ;
                                            ld:contactPerson <http://leipzig-data.de/Data/Person/Haensel_Annegret> .
+
+<http://leipzig-data.de/Data/Ort/UptownCafe> a ld:Ort ;
+                                             rdfs:label "Uptown Coffee Bar" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Riemannstrasse.44> .
 
 <http://leipzig-data.de/Data/Ort/VictorsResidenz> a ld:Ort ;
                                                   rdfs:label "Victor's Residenz-Hotel Leipzig" ;
