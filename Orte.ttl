@@ -2,16 +2,24 @@
 
 @base <http://leipzig-data.de/Data/Orte/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix sioct: <http://rdfs.org/sioc/types#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix jsp: <http://leipzig-data.de/Data/Jugendstadtplan/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix ns0: <http://leipzig-data.de/Data/MINT-2012/> .
 
 ld:Ort a owl:Class ;
        rdfs:label "Ort" .
+
+<http://leipzig-data.de/Data/Ort/4rooms> a ld:Ort ;
+                                         rdfs:label "4rooms" ;
+                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Taeubchenweg.26> .
 
 <http://leipzig-data.de/Data/Ort/AKAD-Hochschule> a ld:Ort ;
                                                   rdfs:label "AKAD Hochschule Leipzig" ;
@@ -20,6 +28,10 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/ALEX> a ld:Ort ;
                                        rdfs:label "ALEX" ;
                                        ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Naschmarkt.3> .
+
+<http://leipzig-data.de/Data/Ort/AO_Hostel> a ld:Ort ;
+                                            rdfs:label "A&O Hostel" ;
+                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.BrandenburgerStrasse.2> .
 
 <http://leipzig-data.de/Data/Ort/ASD.Gruenau> a ld:Ort ;
                                               rdfs:label "Allgemeiner Sozialdienst Grünau" ;
@@ -38,11 +50,23 @@ ld:Ort a owl:Class ;
                                                 ld:hasTag <http://leipzig-data.de/Data/Tag/MINT> ;
                                                 ld:hasURL "http://sternwarte-schkeuditz.de" .
 
+<http://leipzig-data.de/Data/Ort/Absturz> a ld:Ort ;
+                                          rdfs:label "Absturz" ;
+                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Karl-Liebknecht-Strasse.36> .
+
 <http://leipzig-data.de/Data/Ort/Academixer> a ld:Ort, ld:Kabarett ;
                                              rdfs:label "Academixer" ;
                                              ld:hasTelefon "0431-9602000" ;
                                              ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Kupfergasse.2> ;
                                              ld:hasURL <http://www.academixer.com/> .
+
+<http://leipzig-data.de/Data/Ort/AegyptischesMuseum> a ld:Ort ;
+                                                     rdfs:label "Ägyptisches Museum" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Goethestrasse.2> .
+
+<http://leipzig-data.de/Data/Ort/AlRahman_Moschee> a ld:Ort ;
+                                                   rdfs:label "Al-Rahman Moschee" ;
+                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Roscherstrasse.33> .
 
 <http://leipzig-data.de/Data/Ort/AlpenmaxLeipzig> a ld:Ort, ld:Club ;
                                                   rdfs:label "Alpenmax Leipzig" ;
@@ -67,6 +91,18 @@ ld:Ort a owl:Class ;
                                                   rdfs:label "Alte Schlosserei" ;
                                                   ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kurt-Eisner-Strasse.66> .
 
+<http://leipzig-data.de/Data/Ort/Alte_Damenhandschuhfabrik> a ld:Ort ;
+                                                            rdfs:label "Alte Damenhandschuhfabrik" ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Klingenstrasse.20> .
+
+<http://leipzig-data.de/Data/Ort/Alter_Johannisfriedhof> a ld:Ort ;
+                                                         rdfs:label "Alter Johannisfriedhof" ;
+                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Johannisfriedhof> .
+
+<http://leipzig-data.de/Data/Ort/Altes_Rathaus> a ld:Ort ;
+                                                rdfs:label "Altes Rathaus" ;
+                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Markt.1> .
+
 <http://leipzig-data.de/Data/Ort/Anker> a ld:Ort ;
                                         rdfs:label "Der Anker" ;
                                         rdfs:comment "Im Angebot: Schauspiel, Theater, Kreativwerkstatt, Mediencenter, Modellbau, Fotolabor, Kinderfeste, offener Treff, Jugendclub, Ferienangebote, Jugendgesprächsrunde" ;
@@ -80,6 +116,14 @@ ld:Ort a owl:Class ;
                                         ld:Kosten "teilweise" ;
                                         ld:Zielgruppe "Kinder-und Jugendliche, Senioren" ;
                                         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Anker> .
+
+<http://leipzig-data.de/Data/Ort/Antikenmuseum> a ld:Ort ;
+                                                rdfs:label "Antikenmuseum" ;
+                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Nikolaikirchhof.2> .
+
+<http://leipzig-data.de/Data/Ort/Apothekenmuseum> a ld:Ort ;
+                                                  rdfs:label "Apothekenmuseum" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Thomaskirchhof.12> .
 
 <http://leipzig-data.de/Data/Ort/ArenaLeipzig> a ld:Ort, ld:ConcertHall ;
                                                rdfs:label "Red Bull Arena", "Arena Leipzig" ;
@@ -192,6 +236,26 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/BSZ.LeipzigerLand> a ld:Ort ;
                                                     rdfs:label "Berufliches Schulzentrum Leipziger Land" ;
                                                     ld:hasAddress <http://leipzig-data.de/Data/04564.Boehlen.RoethaerStrasse.44> .
+
+<http://leipzig-data.de/Data/Ort/BachMuseum> a ld:Ort ;
+                                             rdfs:label "Bach-Museum" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Thomaskirchhof.15> .
+
+<http://leipzig-data.de/Data/Ort/Bandhaus_Bandcommunity_eV> a ld:Ort ;
+                                                            rdfs:label "Bandhaus Bandcommunity e.V." ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.SaarlaenderStrasse.17> .
+
+<http://leipzig-data.de/Data/Ort/Bar_Fusz> a ld:Ort ;
+                                           rdfs:label "Bar Fusz" ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Barfussgaesschen.6-8> .
+
+<http://leipzig-data.de/Data/Ort/Barthels_Hof> a ld:Ort ;
+                                               rdfs:label "Barthels Hof" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Hainstrasse.1> .
+
+<http://leipzig-data.de/Data/Ort/Basamo> a ld:Ort ;
+                                         rdfs:label "Basamo" ;
+                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.NuernbergerStrasse.11> .
 
 <http://leipzig-data.de/Data/Ort/BayerischerBahnhof> a ld:Ort ;
                                                      rdfs:label "Gasthaus und Gosebrauerei Bayerischer Bahnhof" ;
@@ -342,15 +406,51 @@ ld:Ort a owl:Class ;
                                                           ld:hasFax "0341-5212443" ;
                                                           ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig.Bibliotheken> .
 
+<http://leipzig-data.de/Data/Ort/BillHart> a ld:Ort ;
+                                           rdfs:label "BillHart" ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Wolfgang-Heinze-Strasse.15> .
+
 <http://leipzig-data.de/Data/Ort/BioCity> a ld:Ort ;
                                           rdfs:label "BioCity Leipzig" ;
                                           ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.5A> ;
                                           ld:hasURL <http://bio-city-leipzig.de> .
 
+<http://leipzig-data.de/Data/Ort/Bootsverleih_Herold> a ld:Ort ;
+                                                      rdfs:label "Bootsverleih Herold" ;
+                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Antonienstrasse.2> .
+
+<http://leipzig-data.de/Data/Ort/Bootsverleih_Klingerweg> a ld:Ort ;
+                                                          rdfs:label "Bootsverleih Klingerweg" ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Klingerweg.2> .
+
+<http://leipzig-data.de/Data/Ort/Bootsverleih_am_Leipziger_Eck> a ld:Ort ;
+                                                                rdfs:label "Bootsverleih am Leipziger Eck" ;
+                                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.SchleussigerWeg.2A> .
+
+<http://leipzig-data.de/Data/Ort/Bootsverleih_am_Wildpark> a ld:Ort ;
+                                                           rdfs:label "Bootsverleih am Wildpark" ;
+                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.KoburgerStrasse.17> .
+
+<http://leipzig-data.de/Data/Ort/Bosehaus> a ld:Ort ;
+                                           rdfs:label "Bosehaus" ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Thomaskirchhof.16> .
+
+<http://leipzig-data.de/Data/Ort/Botanischer_Garten> a ld:Ort ;
+                                                     rdfs:label "Botanischer Garten" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Linnestrasse.1> .
+
+<http://leipzig-data.de/Data/Ort/Bruehl_Arkade> a ld:Ort ;
+                                                rdfs:label "Brühl Arkade" ;
+                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Bruehl.33> .
+
 <http://leipzig-data.de/Data/Ort/Bruno-Plache-Stadion> a ld:Ort, ld:Stadium ;
                                                        rdfs:label "Bruno-Plache-Stadion" ;
                                                        ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.ConnewitzerStrasse.21> ;
                                                        ld:hasURL <http://www.bruno-plache-stadion.de/> .
+
+<http://leipzig-data.de/Data/Ort/Bundesverwaltungsgericht> a ld:Ort ;
+                                                           rdfs:label "Bundesverwaltungsgericht" ;
+                                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Simsonplatz.1> .
 
 <http://leipzig-data.de/Data/Ort/CCL> a ld:Ort ;
                                       rdfs:label "Congress Center Leipzig" ;
@@ -410,6 +510,10 @@ ld:Ort a owl:Class ;
                                            ld:hasTelefon "341-3366300" ;
                                            ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Petersstrasse.44> ;
                                            ld:hasURL <http://www.cinestar.de/de/kino/leipzig-cinestar/> .
+
+<http://leipzig-data.de/Data/Ort/Cineding> a ld:Ort ;
+                                           rdfs:label "Cineding" ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.83> .
 
 <http://leipzig-data.de/Data/Ort/Cinemabstruso> a ld:Ort ;
                                                 rdfs:label "Cinemabstruso" ;
@@ -565,6 +669,10 @@ ld:Ort a owl:Class ;
                                                         ld:Teilnahmebedingungen "keine" ;
                                                         ld:Hintergrund "seit 2008" .
 
+<http://leipzig-data.de/Data/Ort/Duke> a ld:Ort ;
+                                       rdfs:label "Duke" ;
+                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Riemannstrasse.3> .
+
 <http://leipzig-data.de/Data/Ort/Durchblick> a ld:Ort ;
                                              rdfs:label "Durchblick e.V.", "Durchblick" ;
                                              ld:hasTelefon "0341-1406140" ;
@@ -643,6 +751,14 @@ ld:Ort a owl:Class ;
                                             ld:contactPerson <http://leipzig-data.de/Data/Person/Abidine_Zeinel> ;
                                             ld:Hintergrund "Zentral auf der Stuttgarter Allee gelegen befindet sich der Offene Freizeittreff \"Völkerfreundschaft\". Das Haus wurde 1983 zunächst als Kulturhaus \"Völkerfreundschaft\" eröffnet und im Jahr 1993 an das jetzige Amt für Jugend, Familie und Bildung übergeben." .
 
+<http://leipzig-data.de/Data/Ort/Fa_Dietmar_Becker> a ld:Ort ;
+                                                    rdfs:label "Fa. Dietmar Becker" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04416.Hafenstrasse.23> .
+
+<http://leipzig-data.de/Data/Ort/Fahrradladen_Sattelfest> a ld:Ort ;
+                                                          rdfs:label "Fahrradladen Sattelfest" ;
+                                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Kolonnadenstrasse.18> .
+
 <http://leipzig-data.de/Data/Ort/Familienzentrum.Gruenau> a ld:Ort ;
                                                           rdfs:label "Caritas Kinder-, Jugend- und Familienzentrum Grünau" ;
                                                           ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.Liliensteinstrasse.1> ;
@@ -670,6 +786,10 @@ ld:Ort a owl:Class ;
                                              ld:hasStatus "aktiv" ;
                                              ld:hasURL "http://www.filmschule-leipzig.de" ;
                                              ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Filmschule> .
+
+<http://leipzig-data.de/Data/Ort/Flowerpower> a ld:Ort ;
+                                              rdfs:label "Flowerpower" ;
+                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Riemannstrasse.42> .
 
 <http://leipzig-data.de/Data/Ort/ForsthausRaschwitz> a ld:Ort ;
                                                      rdfs:label "Forsthaus Raschwitz" ;
@@ -714,6 +834,14 @@ ld:Ort a owl:Class ;
                                                          ld:Teilnahmebedingungen "keine" ;
                                                          ld:Hintergrund "seit 2009" .
 
+<http://leipzig-data.de/Data/Ort/Galerie_Koenitz> a ld:Ort ;
+                                                  rdfs:label "Galerie Koenitz" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Dittrichring.16> .
+
+<http://leipzig-data.de/Data/Ort/Galerie_Potemka> a ld:Ort ;
+                                                  rdfs:label "Galerie Potemka" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Aurelienstrasse.41> .
+
 <http://leipzig-data.de/Data/Ort/Garage> a ld:Ort ;
                                          rdfs:label "GaraGe - Technologiezentrum für Jugendliche" ;
                                          ld:hasTelefon "0341-870860" ;
@@ -754,6 +882,18 @@ ld:Ort a owl:Class ;
                                        ld:hasStatus "aktiv" ;
                                        ld:hasURL <http://www.gfzk.de> .
 
+<http://leipzig-data.de/Data/Ort/Gohliser_Schloesschen> a ld:Ort ;
+                                                        rdfs:label "Gohliser Schlösschen" ;
+                                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Menckestrasse.23> .
+
+<http://leipzig-data.de/Data/Ort/Grassimuseum> a ld:Ort ;
+                                               rdfs:label "Grassimuseum" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Johannisplatz.5-11> .
+
+<http://leipzig-data.de/Data/Ort/Gruenauer_Welle> a ld:Ort ;
+                                                  rdfs:label "Grünauer Welle" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.StuttgarterAllee.7> .
+
 <http://leipzig-data.de/Data/Ort/Grundschule.85> a ld:Ort ;
                                                  rdfs:label "85. Schule – Grundschule" ;
                                                  ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.3> ;
@@ -777,6 +917,10 @@ ld:Ort a owl:Class ;
                                                          rdfs:label "Joachim-Ringelnatz-Schule – Grundschule" ;
                                                          ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.GruenauerAllee.35> ;
                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig> .
+
+<http://leipzig-data.de/Data/Ort/Grupetto> a ld:Ort ;
+                                           rdfs:label "Grupetto" ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Waldstrasse.13> .
 
 <http://leipzig-data.de/Data/Ort/Gymnasium.Grimma> a ld:Ort ;
                                                    rdfs:label "Gymnasium St. Augustin Grimma" ;
@@ -878,6 +1022,14 @@ ld:Ort a owl:Class ;
                                                     rdfs:label "Handelshochschule" ;
                                                     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Jahnallee.59> .
 
+<http://leipzig-data.de/Data/Ort/Handwerkspassage> a ld:Ort ;
+                                                   rdfs:label "Handwerkspassage" ;
+                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Klostergasse.16> .
+
+<http://leipzig-data.de/Data/Ort/Hansa_Haus> a ld:Ort ;
+                                             rdfs:label "Hansa Haus" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.GrimmaischeStrasse.13> .
+
 <http://leipzig-data.de/Data/Ort/Hauptfeuerwache> a ld:Ort ;
                                                   rdfs:label "Hauptfeuerwache" ;
                                                   ld:hasTelefon "0341-1239512" ;
@@ -893,6 +1045,10 @@ ld:Ort a owl:Class ;
                                                    ld:hasStatus "aktiv" ;
                                                    ld:hasURL "http://www.haus-steinstrasse.de" ;
                                                    ld:hasSupplier <http://leipzig-data.de/Data/Traeger/HausSteinstrasse> .
+
+<http://leipzig-data.de/Data/Ort/Haus_Auensee> a ld:Ort ;
+                                               rdfs:label "Haus Auensee" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04159.Gustav-Esche-Strasse.4> .
 
 <http://leipzig-data.de/Data/Ort/HdD> a ld:Ort ;
                                       rdfs:label "Haus der Demokratie" ;
@@ -927,6 +1083,10 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/HfTL> a ld:Ort ;
                                        rdfs:label "Hochschule für Telekommunikation Leipzig" ;
                                        ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.43> .
+
+<http://leipzig-data.de/Data/Ort/Hoefe_am_Bruehl> a ld:Ort ;
+                                                  rdfs:label "Höfe am Brühl" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Bruehl.1> .
 
 <http://leipzig-data.de/Data/Ort/HornsErben> a ld:Ort ;
                                              rdfs:label "Horns Erben" ;
@@ -1014,6 +1174,10 @@ ld:Ort a owl:Class ;
                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Instag> ;
                                          ld:Hintergrund "Seit dem 1. Juli 2010 firmiert unser Unternehmen unter InstaG - Institut für akademische Gesamtbildung GmbH. Die InstaG GmbH - wie bisher schon die EuroGene GmbH - steht dabei für seriöse, qualitativ hochwertige, bedarfs- und kundenorientierte Aus- und Weiterbildung mit einer hohen Praxisrelevanz und einer gleichbleibend hohen Qualität der Bildung. <br/> Unser Unternehmen wurde im Jahr 2005 von Frau Univ.-Prof. Dr. med. habil. Ursula Froster und dem Arzt und Diplom-Verwaltungswirt Dr. med. Armin Baumgartner aus der Universität Leipzig ausgegründet. Als An-Institut konzipiert, folgte es den Vorgaben und Empfehlungen der Bildungs- und Wissenschaftspolitik und übernahm dabei Aufgaben der postgraduierten Weiterbildung auf den Gebieten der Biotechnologie, Molekularbiologie sowie Medizin. Es erfüllte somit Aufgaben der Erwachsenenbildung, die von den Universitäten nicht mehr erfüllt werden konnten. <br/> Zunächst durch einen Kooperationsvertrag mit der Universität Leipzig verbunden, geht das Institut seit Mitte 2010 nun neue und eigene Wege." .
 
+<http://leipzig-data.de/Data/Ort/InterDaf_eV> a ld:Ort ;
+                                              rdfs:label "InterDaf e.V" ;
+                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Lumumbastrasse.4> .
+
 <http://leipzig-data.de/Data/Ort/KE-Leipzig> a ld:Ort ;
                                              rdfs:label "Kirchliche Erwerbsloseninitiative Leipzig" ;
                                              ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.5> ;
@@ -1051,6 +1215,14 @@ ld:Ort a owl:Class ;
                                                    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.2> ;
                                                    ld:hasURL <http://www.kabarett-theater-sanftwut.de/> .
 
+<http://leipzig-data.de/Data/Ort/Kameramuseum> a ld:Ort ;
+                                               rdfs:label "Kameramuseum" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04316.Gottschalkstrasse.9> .
+
+<http://leipzig-data.de/Data/Ort/Kanuverleih_am_Rennbahnsteg> a ld:Ort ;
+                                                              rdfs:label "Kanuverleih am Rennbahnsteg" ;
+                                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Rennbahnweg.2A> .
+
 <http://leipzig-data.de/Data/Ort/KaosLeipzig> a ld:Ort ;
                                               rdfs:label "KV Kulturwerkstatt KAOS" ;
                                               ld:hasTelefon "0341-4803841" ;
@@ -1074,6 +1246,10 @@ ld:Ort a owl:Class ;
                                                ld:hasSupplier <http://leipzig-data.de/Data/Traeger/KiJu.Gruenau> ;
                                                ld:Kurzinformation "Schwerpunkte der Arbeit: offene Kinder- und Jugendarbeit, erlebnispädagogische Projekte, Medienarbeit, Jugendbildung, Nachwuchsförderung und Ferienangebote." ;
                                                ld:contactPerson <http://leipzig-data.de/Data/Person/Roeser_Sascha> .
+
+<http://leipzig-data.de/Data/Ort/Kickers_In> a ld:Ort ;
+                                             rdfs:label "Kicker's In" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Karl-Liebknecht-Strasse.81> .
 
 <http://leipzig-data.de/Data/Ort/KinderBueroLeipzig> a ld:Ort ;
                                                      rdfs:label "Leipziger Kinderbüro" ;
@@ -1156,6 +1332,22 @@ ld:Ort a owl:Class ;
                                                    rdfs:comment "Eine kleine Kneipe in unserer Straße" ;
                                                    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Muenzgasse.12> .
 
+<http://leipzig-data.de/Data/Ort/Kletterhalle_No_Limit> a ld:Ort ;
+                                                        rdfs:label "Kletterhalle No Limit" ;
+                                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04129.DessauerStrasse.2> .
+
+<http://leipzig-data.de/Data/Ort/Kletterturm_Mockau> a ld:Ort ;
+                                                     rdfs:label "Kletterturm Mockau" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04357.TauchaerStrasse.14> .
+
+<http://leipzig-data.de/Data/Ort/Koenig_Albert_Haus> a ld:Ort ;
+                                                     rdfs:label "König-Albert-Haus" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Markt.9> .
+
+<http://leipzig-data.de/Data/Ort/Koenigshauspassage> a ld:Ort ;
+                                                     rdfs:label "Königshauspassage" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Markt.17> .
+
 <http://leipzig-data.de/Data/Ort/Kollaborat> a ld:Ort ;
                                              rdfs:label "Kollaborat" ;
                                              rdfs:comment "Kollaborat ist ein kreativer und zuverlässiger Designpartner für Unternehmen, Organisationen und Privatpersonen mit den Schwerpunkten Corporate Design und Editorial Design" ;
@@ -1180,6 +1372,14 @@ ld:Ort a owl:Class ;
                                                          ld:hasURL "http://www.Kreativzentrum-Gruenau.de" ;
                                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Kreativzentrum.Gruenau> .
 
+<http://leipzig-data.de/Data/Ort/Kretschmanns_Hof> a ld:Ort ;
+                                                   rdfs:label "Kretschmanns Hof" ;
+                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Katharinenstrasse.17> .
+
+<http://leipzig-data.de/Data/Ort/KrishnaTempel_ISKCON> a ld:Ort ;
+                                                       rdfs:label "Krishna-Tempel (ISKCON)" ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.Stoeckelstrasse.60> .
+
 <http://leipzig-data.de/Data/Ort/KrystallpalastVariete> a ld:Ort, ld:Theater ;
                                                         rdfs:label "Krystallpalast Varieté" ;
                                                         ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Magazingasse.4> ;
@@ -1190,9 +1390,17 @@ ld:Ort a owl:Class ;
                                         ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Permoserstrasse.15> ;
                                         ld:hasSupplier <http://leipzig-data.de/Data/Traeger/UFZ> .
 
+<http://leipzig-data.de/Data/Ort/Kuehnis_Fahrradhaus> a ld:Ort ;
+                                                      rdfs:label "Kühnis Fahrradhaus" ;
+                                                      ld:hasAddress <http://leipzig-data.de/Data/Adresse/04249.Dieskaustrasse.459> .
+
 <http://leipzig-data.de/Data/Ort/KulturhausStoetteritz> a ld:Ort ;
                                                         rdfs:label "Kulturhaus Stötteritz" ;
                                                         ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.LangeReihe.6> .
+
+<http://leipzig-data.de/Data/Ort/L1> a ld:Ort ;
+                                     rdfs:label "L1" ;
+                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Markt.17> .
 
 <http://leipzig-data.de/Data/Ort/LOFFT> a ld:Ort ;
                                         rdfs:label "LOFFT" ;
@@ -1271,6 +1479,18 @@ ld:Ort a owl:Class ;
                                                              ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Rosenweg.59> ;
                                                              ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig> .
 
+<http://leipzig-data.de/Data/Ort/Liebfrauen_LeipzigLindenau> a ld:Ort ;
+                                                             rdfs:label "Liebfrauen Leipzig-Lindenau" ;
+                                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.110> .
+
+<http://leipzig-data.de/Data/Ort/Lindenfels_Westfluegel> a ld:Ort ;
+                                                         rdfs:label "Lindenfels Westflügel" ;
+                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04177.Haehnelstrasse.27> .
+
+<http://leipzig-data.de/Data/Ort/LuruKino> a ld:Ort ;
+                                           rdfs:label "Luru-Kino" ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Spinnereistrasse.7> .
+
 <http://leipzig-data.de/Data/Ort/MDR> a ld:Ort ;
                                       rdfs:label "MDR" ;
                                       ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kantstrasse.71> ;
@@ -1321,13 +1541,29 @@ ld:Ort a owl:Class ;
                                                rdfs:comment "(28.02.2012, bild.de) Kurz vor dem zehnten Jahr des Leerstandes hat die Stadt endlich einen Käufer für die Mädler-Villa in Leutzsch gefunden. Die Leipziger Zopf GmbH will das Haus für 1,1 Mio. Euro kaufen und dann sanieren." ;
                                                ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Hans-Driesch-Strasse.2> .
 
+<http://leipzig-data.de/Data/Ort/Maedlerpassage> a ld:Ort ;
+                                                 rdfs:label "Mädlerpassage" ;
+                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.GrimmaischeStrasse.2> .
+
 <http://leipzig-data.de/Data/Ort/MandalaSpieleck> a ld:Ort ;
                                                   rdfs:label "Mandala Spieleck" ;
                                                   ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.147> .
 
+<http://leipzig-data.de/Data/Ort/Markt> a ld:Ort ;
+                                        rdfs:label "Markt" ;
+                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Markt.1> .
+
+<http://leipzig-data.de/Data/Ort/Marktgalerie> a ld:Ort ;
+                                               rdfs:label "Marktgalerie" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Markt.11> .
+
 <http://leipzig-data.de/Data/Ort/Marriott.Leipzig> a ld:Ort ;
                                                    rdfs:label "Marriott Hotel Leipzig" ;
                                                    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.AmHallischenTor.1> .
+
+<http://leipzig-data.de/Data/Ort/McCormacks> a ld:Ort ;
+                                             rdfs:label "McCormacks" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Karl-Liebknecht-Strasse.75> .
 
 <http://leipzig-data.de/Data/Ort/MediaCityLeipzig> a ld:Ort ;
                                                    rdfs:label "media city leipzig" ;
@@ -1340,6 +1576,14 @@ ld:Ort a owl:Class ;
                                                   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lessingstrasse.7> ;
                                                   ld:hasStatus "aktiv" ;
                                                   ld:hasURL "http://www.medienwerkstatt-leipzig.de" .
+
+<http://leipzig-data.de/Data/Ort/Mendelssohnhaus> a ld:Ort ;
+                                                  rdfs:label "Mendelssohnhaus" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Goldschmidtstrasse.12> .
+
+<http://leipzig-data.de/Data/Ort/Messehofpassage> a ld:Ort ;
+                                                  rdfs:label "Messehofpassage" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Petersstrasse.15> .
 
 <http://leipzig-data.de/Data/Ort/Mittelschule.84> a ld:Ort ;
                                                   rdfs:label "84. Mittelschule" ;
@@ -1448,6 +1692,10 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/NN> a ld:Ort ;
                                      rdfs:label "Ort nicht bestimmt" .
 
+<http://leipzig-data.de/Data/Ort/Nachtcafe> a ld:Ort ;
+                                            rdfs:label "Nachtcafé" ;
+                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Petersstrasse.39> .
+
 <http://leipzig-data.de/Data/Ort/Naturkundemuseum> a ld:Ort ;
                                                    rdfs:label "Naturkundemuseum" ;
                                                    ld:hasTelefon "0341-982210" ;
@@ -1470,6 +1718,10 @@ ld:Ort a owl:Class ;
                                                          rdfs:label "Neues Schauspiel Leipzig" ;
                                                          ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.29> .
 
+<http://leipzig-data.de/Data/Ort/Nextbike> a ld:Ort ;
+                                           rdfs:label "nextbike" ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Thomasiusstrasse.16> .
+
 <http://leipzig-data.de/Data/Ort/Nikolaikirche> a ld:Ort, ld:Church ;
                                                 rdfs:label "Nikolaikirche" ;
                                                 rdfs:comment "Evangelisch-Lutherisch" ;
@@ -1486,6 +1738,10 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/NochBesserLeben> a ld:Ort ;
                                                   rdfs:label "Noch Besser Leben" ;
                                                   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.MerseburgerStrasse.25> .
+
+<http://leipzig-data.de/Data/Ort/Notenspur> a ld:Ort ;
+                                            rdfs:label "Notenspur" ;
+                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Augustusplatz.8> .
 
 <http://leipzig-data.de/Data/Ort/OFT.Bagger> a ld:Ort ;
                                              rdfs:label "OFT Am Bagger" ;
@@ -1542,6 +1798,10 @@ ld:Ort a owl:Class ;
                                                 ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.3> ;
                                                 ld:hasSupplier <http://leipzig-data.de/Data/Traeger/StadtLeipzig> .
 
+<http://leipzig-data.de/Data/Ort/Oekobad_Lindenthal> a ld:Ort ;
+                                                     rdfs:label "Ökobad Lindenthal" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04158.AmFreibad.3> .
+
 <http://leipzig-data.de/Data/Ort/Oekoschule.Agrapark> a ld:Ort ;
                                                       rdfs:label "agra-Park Ökoschule" ;
                                                       ld:hasTelefon "0341-3504766" ;
@@ -1574,6 +1834,10 @@ ld:Ort a owl:Class ;
                                         rdfs:label "PILOT" ;
                                         ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bosestrasse.1> .
 
+<http://leipzig-data.de/Data/Ort/Panometer_Leipzig> a ld:Ort ;
+                                                    rdfs:label "Panometer Leipzig" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04275.Richard-Lehmann-Strasse.114> .
+
 <http://leipzig-data.de/Data/Ort/PanoramaTower> a ld:Ort, ld:Restaurant ;
                                                 rdfs:label "Panorama Tower" ;
                                                 ld:hasTelefon "0341-7100590" ;
@@ -1594,6 +1858,18 @@ ld:Ort a owl:Class ;
                                                        rdfs:label "Paul-Gerhardt-Kirche" ;
                                                        ld:hasAddress <http://leipzig-data.de/Data/Orte/04277.Leipzig.Selneckerstrasse.7> ;
                                                        ld:hasURL <http://www.kirche-leipzig.de/connewitz-loessnig/paulgerhardtkirche.htm> .
+
+<http://leipzig-data.de/Data/Ort/Petersbogen> a ld:Ort ;
+                                              rdfs:label "Petersbogen" ;
+                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Petersstrasse.36> .
+
+<http://leipzig-data.de/Data/Ort/Petershof> a ld:Ort ;
+                                            rdfs:label "Petershof" ;
+                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Petersstrasse.20> .
+
+<http://leipzig-data.de/Data/Ort/Peterskirche> a ld:Ort ;
+                                               rdfs:label "Peterskirche" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Schletterstrasse.5> .
 
 <http://leipzig-data.de/Data/Ort/Phyllodrom> a ld:Ort ;
                                              rdfs:label "Phyllodrom e.V. - Museum und Institut für Regenwaldökologie" ;
@@ -1650,6 +1926,10 @@ ld:Ort a owl:Class ;
                                               ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Rabutz.TOeP> ;
                                               ld:Zielstellung "Junge Leute erfahren hier, dass Themen wie Technik und Ökologie durchaus auch Spaß machen können." .
 
+<http://leipzig-data.de/Data/Ort/Rathausturm> a ld:Ort ;
+                                              rdfs:label "Rathausturm" ;
+                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Martin-Luther-Ring.4-6> .
+
 <http://leipzig-data.de/Data/Ort/Regenwaldzentrum> a ld:Ort ;
                                                    rdfs:label "Regenwaldzentrum" ;
                                                    ld:hasTelefon "0341-3014025" ;
@@ -1675,11 +1955,23 @@ ld:Ort a owl:Class ;
                                                     rdfs:label "Rittergut Möckern" ;
                                                     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Bucksdorffstrasse.43> .
 
+<http://leipzig-data.de/Data/Ort/Rosental> a ld:Ort ;
+                                           rdfs:label "Rosental" ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Zoellnerweg.6> .
+
+<http://leipzig-data.de/Data/Ort/Rosentalturm> a ld:Ort ;
+                                               rdfs:label "Rosentalturm" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Zoellnerweg.6> .
+
 <http://leipzig-data.de/Data/Ort/RussischeGedaechtniskirche> a ld:Ort, ld:Church ;
                                                              rdfs:label "Russische Gedächtniskirche" ;
                                                              ld:hasTelefon "341-8781453" ;
                                                              ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Philipp-Rosenthal-Strasse.51A> ;
                                                              ld:hasURL <http://www.russische-kirche-l.de/> .
+
+<http://leipzig-data.de/Data/Ort/Russische_Gedaechtniskirche> a ld:Ort ;
+                                                              rdfs:label "russische Gedächtniskirche" ;
+                                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Philipp-Rosenthal-Strasse.51a> .
 
 <http://leipzig-data.de/Data/Ort/SWL.EuZ> a ld:Ort ;
                                           rdfs:label "Energie- und Umweltzentrum der Stadtwerke Leipzig GmbH" ;
@@ -1708,6 +2000,10 @@ ld:Ort a owl:Class ;
                                                    ld:hasURL <http://www.kino-am-adler.de/> ;
                                                    ld:hasFax "0341-477-37-24" .
 
+<http://leipzig-data.de/Data/Ort/Schillerhaus> a ld:Ort ;
+                                               rdfs:label "Schillerhaus" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Menckestrasse.42> .
+
 <http://leipzig-data.de/Data/Ort/SchlossSchoenefeld> a ld:Ort ;
                                                      rdfs:label "Schloss Schönefeld" ;
                                                      ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Zeumerstrasse.1> .
@@ -1715,6 +2011,10 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/SchoolOfMedia> a ld:Ort ;
                                                 rdfs:label "Leipzig School of Media" ;
                                                 ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Poetenweg.28> .
+
+<http://leipzig-data.de/Data/Ort/Schreberbad> a ld:Ort ;
+                                              rdfs:label "schreberbad" ;
+                                              ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Schreberstrasse.15> .
 
 <http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Freiluftschule> a ld:Ort ;
                                                                       rdfs:label "Freiluftschule" ;
@@ -1760,6 +2060,30 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/Schulzentrum.Montessori> a ld:Ort ;
                                                           rdfs:label "Bischöfliches Maria-Montessori-Schulzentrum" ;
                                                           ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.61> .
+
+<http://leipzig-data.de/Data/Ort/Schwimmhalle_Mitte> a ld:Ort ;
+                                                     rdfs:label "Schwimmhalle Mitte" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04155.Kirschbergstrasse.84> .
+
+<http://leipzig-data.de/Data/Ort/Schwimmhalle_Nord> a ld:Ort ;
+                                                    rdfs:label "Schwimmhalle Nord" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04157.Kleiststrasse.54> .
+
+<http://leipzig-data.de/Data/Ort/Schwimmhalle_Nordost> a ld:Ort ;
+                                                       rdfs:label "Schwimmhalle Nordost" ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04347.SchoenefelderAllee.26> .
+
+<http://leipzig-data.de/Data/Ort/Schwimmhalle_Sued> a ld:Ort ;
+                                                    rdfs:label "schwimmhalle Süd" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Tarostrasse.10> .
+
+<http://leipzig-data.de/Data/Ort/Schwimmhalle_Suedost> a ld:Ort ;
+                                                       rdfs:label "Schwimmhalle Südost" ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04299.Kolmstrasse.35> .
+
+<http://leipzig-data.de/Data/Ort/Schwimmhalle_West> a ld:Ort ;
+                                                    rdfs:label "Schwimmhalle West" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Hans-Driesch-Strasse.52A> .
 
 <http://leipzig-data.de/Data/Ort/Seniorenbuero.AltWest> a ld:Ort ;
                                                         rdfs:label "Seniorenbüro Alt-West" ;
@@ -1815,13 +2139,41 @@ ld:Ort a owl:Class ;
                                           ld:hasURL <http://www.sixtina.de/> ;
                                           ld:hasAdress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.11> .
 
+<http://leipzig-data.de/Data/Ort/Sleepy_Lion_Hostel> a ld:Ort ;
+                                                     rdfs:label "Sleepy Lion Hostel" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Jacobstrasse.8> .
+
+<http://leipzig-data.de/Data/Ort/Sommerbad_Kleinzschorcher> a ld:Ort ;
+                                                            rdfs:label "Sommerbad Kleinzschorcher" ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Kuechenholzallee.75> .
+
+<http://leipzig-data.de/Data/Ort/Sommerbad_Suedost> a ld:Ort ;
+                                                    rdfs:label "Sommerbad Südost" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/Adresse/04317.Oststrasse.73> .
+
 <http://leipzig-data.de/Data/Ort/Sparkasse.Meissen> a ld:Ort ;
                                                     rdfs:label "Sparkasse Meißen" ;
                                                     ld:hasAddress <http://leipzig-data.de/Data/01587.Riesa.Haupstrasse.70> .
 
+<http://leipzig-data.de/Data/Ort/Specks_Hof> a ld:Ort ;
+                                             rdfs:label "Speck's Hof" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Reichsstrasse.4> .
+
+<http://leipzig-data.de/Data/Ort/Spizz> a ld:Ort ;
+                                        rdfs:label "Spizz" ;
+                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Markt.9> .
+
+<http://leipzig-data.de/Data/Ort/Sportbad_an_der_Elster> a ld:Ort ;
+                                                         rdfs:label "Sportbad an der Elster" ;
+                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Antonienstrasse.8> .
+
 <http://leipzig-data.de/Data/Ort/SportforumLeipzig> a ld:Ort ;
                                                     rdfs:label "Sportforum Leipzig" ;
                                                     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.AmSportforum.3> .
+
+<http://leipzig-data.de/Data/Ort/St_Martin> a ld:Ort ;
+                                            rdfs:label "St. Martin" ;
+                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04209.Kolpingweg.1> .
 
 <http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus> a ld:Ort ;
                                                             rdfs:label "Neues Rathaus" ;
@@ -1835,6 +2187,10 @@ ld:Ort a owl:Class ;
                                                  rdfs:label "Stadtelternrat" ;
                                                  rdfs:comment "Neuwahl der Leitung am 5.1.2013 (Quelle: Newsletter LvO 02/2013)" ;
                                                  ld:engagedPerson <http://leipzig-data.de/Data/Person/Geisler_Andreas>, <http://leipzig-data.de/Data/Person/Fleckenstein_Heike>, <http://leipzig-data.de/Data/Person/Duschinger_Robert> .
+
+<http://leipzig-data.de/Data/Ort/StadtgeschichtlichesMuseum> a ld:Ort ;
+                                                             rdfs:label "Stadtgeschichtliches Museum" ;
+                                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Markt.1> .
 
 <http://leipzig-data.de/Data/Ort/Stadtteilladen.Gruenau> a ld:Ort ;
                                                          rdfs:label "Stadtteilladen Grünau" ;
@@ -1859,6 +2215,10 @@ ld:Ort a owl:Class ;
                                                     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.Diezmannstrasse.5> ;
                                                     ld:hasURL <http://www.starlight-bowling.de/> .
 
+<http://leipzig-data.de/Data/Ort/Stasimuseum_Runde_Ecke> a ld:Ort ;
+                                                         rdfs:label "Stasimuseum Runde Ecke" ;
+                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Dittrichring.24> .
+
 <http://leipzig-data.de/Data/Ort/Staubsauger> a ld:Ort, ld:Club ;
                                               rdfs:label "Staubsauger" ;
                                               ld:hasTelefon "0341-4626865" ;
@@ -1869,10 +2229,34 @@ ld:Ort a owl:Class ;
                                                            rdfs:label "Steigenberger Grandhotel Handelshof Leipzig" ;
                                                            ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Salzgaesschen.6> .
 
+<http://leipzig-data.de/Data/Ort/Stenzlers_Hof> a ld:Ort ;
+                                                rdfs:label "Stenzlers Hof" ;
+                                                ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Peterskirchhof.1> .
+
+<http://leipzig-data.de/Data/Ort/Strohsackpassage> a ld:Ort ;
+                                                   rdfs:label "Strohsackpassage" ;
+                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Nikolaistrasse.6-10> .
+
+<http://leipzig-data.de/Data/Ort/StuK> a ld:Ort ;
+                                       rdfs:label "StuK e.V." ;
+                                       ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Nuernberger.Strasse.42> .
+
 <http://leipzig-data.de/Data/Ort/SuedfriedhofLeipzig> a ld:Ort, ld:Cemetery ;
                                                       rdfs:label "Südfriedhof Leipzig" ;
                                                       ld:hasTelefon "341-1235700" ;
                                                       ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Friedhofsweg.3> .
+
+<http://leipzig-data.de/Data/Ort/Sweat> a ld:Ort ;
+                                        rdfs:label "SWEAT!" ;
+                                        ld:hasAddress <http://leipzig-data.de/Data/Adresse/04107.Peterssteinweg.17> .
+
+<http://leipzig-data.de/Data/Ort/Synagoge_und_Begegnungszentrum> a ld:Ort ;
+                                                                 rdfs:label "Synagoge und Begegnungszentrum" ;
+                                                                 ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Querstrasse.16> .
+
+<http://leipzig-data.de/Data/Ort/Synagogengedenkstaette> a ld:Ort ;
+                                                         rdfs:label "Synagogengedenkstätte" ;
+                                                         ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Gottschedstrasse.7> .
 
 <http://leipzig-data.de/Data/Ort/TUEV.Thueringen> a ld:Ort ;
                                                   rdfs:label "TÜV Thüringen, Kunden-Center Leipzig" ;
@@ -1881,6 +2265,10 @@ ld:Ort a owl:Class ;
 <http://leipzig-data.de/Data/Ort/TagungsLounge> a ld:Ort ;
                                                 rdfs:label "die tagungslounge" ;
                                                 ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.6> .
+
+<http://leipzig-data.de/Data/Ort/Technologiezentrum_GARAGE> a ld:Ort ;
+                                                            rdfs:label "Technologiezentrum G-A-R-A-G-E" ;
+                                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.9> .
 
 <http://leipzig-data.de/Data/Ort/Telegraph> a ld:Ort ;
                                             rdfs:label "Café und Restaurant Telegraph" ;
@@ -1919,6 +2307,10 @@ ld:Ort a owl:Class ;
                                                          rdfs:label "Transition Town Leipzig" ;
                                                          ld:hasURL "http://www.transitiontown-leipzig.de" ;
                                                          ld:Kurzinformation "<p>Die Transition-Town-Bewegung, der weltweit über 300 Städte angehören, setzt diese Ideen um und eröffnet neue Perspektiven. „Leipzig im Wandel“ kann durch uns Teil dieser sich rasch ausbreitenden Bewegung werden. Wir können dafür sorgen, dass so viele Produkte und Dienstleistungen wie möglich lokal erzeugt, erarbeitet und verbraucht werden: beim Einkauf, beim Essen, beim Urlaub, beim Bezug von Energie. Das macht uns unabhängiger vom Erdöl und auch von vielen negativen Auswirkungen auf den Finanzmärkten, den Veränderungen auf dem Arbeitsmarkt und der Verschlechterung unserer Umweltqualität Visionen, Träume, Fantasie, Kreativität, Technik, Musik, Wissen … helfen uns auf dem Weg zu einem nachhaltigen Leipzig.</p>" .
+
+<http://leipzig-data.de/Data/Ort/TwentyOne> a ld:Ort ;
+                                            rdfs:label "Twenty One" ;
+                                            ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Gottschedstrasse.2> .
 
 <http://leipzig-data.de/Data/Ort/UFZ> a ld:Ort ;
                                       rdfs:label "Helmholtz-Zentrum für Umweltforschung GmbH – UFZ" ;
@@ -2106,6 +2498,10 @@ ld:Ort a owl:Class ;
                                            rdfs:label "Mediencampus Villa Ida" ;
                                            ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Poetenweg.28> .
 
+<http://leipzig-data.de/Data/Ort/Villa_Hasenholz> a ld:Ort ;
+                                                  rdfs:label "Villa Hasenholz" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04179.Gustav-Esche-Strasse.1> .
+
 <http://leipzig-data.de/Data/Ort/Voelkerschlachtdenkmal> a ld:Ort, ld:Museum ;
                                                          rdfs:label "Völkerschlachtdenkmal" ;
                                                          ld:hasTelefon "0341-2416870" ;
@@ -2123,9 +2519,17 @@ ld:Ort a owl:Class ;
                                                   ld:hasStatus "aktiv" ;
                                                   ld:hasURL "http://www.vhs-leipzig.de" .
 
+<http://leipzig-data.de/Data/Ort/Waermehalle_Sued> a ld:Ort ;
+                                                   rdfs:label "Wärmehalle Süd" ;
+                                                   ld:hasAddress <http://leipzig-data.de/Data/Adresse/04277.Eichendorffstrasse.7> .
+
 <http://leipzig-data.de/Data/Ort/Wamslergarten> a ld:Ort ;
                                                 rdfs:label "Wamslergarten im Westwerk" ;
                                                 ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.99> .
+
+<http://leipzig-data.de/Data/Ort/Webers_Hof> a ld:Ort ;
+                                             rdfs:label "Webers Hof" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/Adresse/04109.Hainstrasse.1> .
 
 <http://leipzig-data.de/Data/Ort/Werk-2> a ld:Ort ;
                                          rdfs:label "Werk II - Kulturfabrik e. V." ;
@@ -2134,6 +2538,10 @@ ld:Ort a owl:Class ;
                                          ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Kochstrasse.132> ;
                                          ld:hasStatus "aktiv" ;
                                          ld:hasURL "http://www.werk-2.de" .
+
+<http://leipzig-data.de/Data/Ort/Westwerk> a ld:Ort ;
+                                           rdfs:label "Westwerk" ;
+                                           ld:hasAddress <http://leipzig-data.de/Data/Adresse/04229.Karl-Heine-Strasse.93> .
 
 <http://leipzig-data.de/Data/Ort/Wiedebachpassagen> a ld:Ort ;
                                                     rdfs:label "Wiedebachpassagen" ;
@@ -2172,6 +2580,10 @@ ld:Ort a owl:Class ;
                                              ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
                                              ld:hasURL <http://www.zoo-leipzig.de> .
 
+<http://leipzig-data.de/Data/Ort/Zooschaufenster> a ld:Ort ;
+                                                  rdfs:label "Zooschaufenster" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04105.Zoellnerweg.6> .
+
 <http://leipzig-data.de/Data/Ort/Zukunftsakademie> a ld:Ort ;
                                                    rdfs:label "Zukunftsakademie Leipzig" ;
                                                    ld:hasTelefon "0341-3065180" ;
@@ -2182,6 +2594,10 @@ ld:Ort a owl:Class ;
                                                    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Zukunftsakademie> ;
                                                    ld:contactPerson <http://leipzig-data.de/Data/Person/Kramer_Anais> ;
                                                    ld:hasAddressAddendum "Haus der Demokratie, Raum 110" .
+
+<http://leipzig-data.de/Data/Ort/Zweirad_Eckhard> a ld:Ort ;
+                                                  rdfs:label "Zweirad Eckhardt" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.Kurt-Schumacher-Strasse.4> .
 
 <http://leipzig-data.de/Data/Ort/ciT> a ld:Ort ;
                                       rdfs:label "ciT – Consulting Innovation Training GmbH" ;
@@ -2205,7 +2621,7 @@ ld:Ort a owl:Class ;
                                          rdfs:label "ipoque" ;
                                          ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Neumarkt.29> .
 
-<http://leipzig-data.de/Data/Ort/naTo> a ld:Ort ;
+<http://leipzig-data.de/Data/Ort/nato> a ld:Ort ;
                                        rdfs:label "naTo Leipzig", "die naTo" ;
                                        ld:hasTelefon "341-3014397", "341-3014398" ;
                                        ld:hasEmail "info@nato-leipzig.de" ;
