@@ -11,21 +11,6 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 
-
-<http://leipzig-data.de/Data/Firma/KanuverleihRennbahnweg> a org:Organization ;
-rdfs:label "Kanuverleih am Rennbahnsteg" ;
-skos:prefLabel "Kanuverleih am Rennbahnsteg" ;
-ld:hasURL <http://www.kanuverleih-leipzig.de/index.php/standorte/kanuverleih-am-rennbahnsteg> ; 
-ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Rennbahnweg.2A> .
-
-<http://leipzig-data.de/Data/Firma/BootsverleihKanal28> a org:Organization ;
-rdfs:label "Bootsverleih Am Kanal 28" ;
-skos:prefLabel "Bootsverleih Am Kanal 28" ;
-ld:hasURL <http://www.freizeit-abenteuer.com/bootsverleih.php> ; 
-ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.AmKanal.28> .
-
-
-
 <http://leipzig-data.de/Data/Agent/APILeipzig> a foaf:Agent ;
                                                rdfs:label "Projekt API Leipzig" ;
                                                foaf:name "Projekt API Leipzig" ;
@@ -43,15 +28,27 @@ ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.AmKanal.28> .
                                                ld:hasURL <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
                                                ld:relatedTo <http://leipzig-data.de/Data/Ort/NetzwerkEnergieUmwelt> .
 
+<http://leipzig-data.de/Data/Firma/BootsverleihKanal28> a org:Organization ;
+                                                        rdfs:label "Bootsverleih Am Kanal 28" ;
+                                                        skos:prefLabel "Bootsverleih Am Kanal 28" ;
+                                                        ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.AmKanal.28> ;
+                                                        ld:hasURL <http://www.freizeit-abenteuer.com/bootsverleih.php> .
+
 <http://leipzig-data.de/Data/Firma/Enterasys.Networks> a org:Organization ;
                                                        rdfs:label "Enterasys Networks Germany GmbH, Niederlassung Leipzig" ;
                                                        skos:prefLabel "Enterasys Networks Germany GmbH, Niederlassung Leipzig" ;
                                                        ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.Walter-Koehn-Strasse.1D> .
 
-<http://leipzig-data.de/Data/Firma/GetAG> a org:Organization, ld:Traeger ;
+<http://leipzig-data.de/Data/Firma/GetAG> a ld:Traeger, org:Organization ;
                                           rdfs:label "GET AG" ;
                                           skos:prefLabel "GET AG" ;
                                           ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.9> .
+
+<http://leipzig-data.de/Data/Firma/KanuverleihRennbahnweg> a org:Organization ;
+                                                           rdfs:label "Kanuverleih am Rennbahnsteg" ;
+                                                           skos:prefLabel "Kanuverleih am Rennbahnsteg" ;
+                                                           ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Rennbahnweg.2A> ;
+                                                           ld:hasURL <http://www.kanuverleih-leipzig.de/index.php/standorte/kanuverleih-am-rennbahnsteg> .
 
 <http://leipzig-data.de/Data/Firma/Lecos> a ld:Traeger ;
                                           rdfs:label "Lecos GmbH" ;
@@ -63,11 +60,11 @@ ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.AmKanal.28> .
                                             ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.7> .
 
 <http://leipzig-data.de/Data/Firma/Softwareforen.Leipzig> a org:Organization ;
-                                                          skos:prefLabel "Softwareforen Leipzig GmbH" ;
                                                           rdfs:label "Softwareforen Leipzig GmbH" ;
+                                                          skos:prefLabel "Softwareforen Leipzig GmbH" ;
                                                           ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Querstrasse.16> .
 
-<http://leipzig-data.de/Data/Firma/evermind> a org:Organization, ld:Traeger ;
+<http://leipzig-data.de/Data/Firma/evermind> a ld:Traeger, org:Organization ;
                                              rdfs:label "Evermind GmbH" ;
                                              skos:prefLabel "Evermind GmbH" ;
                                              ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Schorlemmerstrasse.1> ;
@@ -245,6 +242,10 @@ ld:Verein a owl:Class ;
          ld:engagedPerson <http://leipzig-data.de/Data/Person/Elsaesser_Ralf> ;
          ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Pestalozzistrasse.70> ;
          ld:hasFax "0341-44259916" .
+
+<CodeForLeipzig> a ld:Traeger ;
+                 rdfs:label "Projekt Code for Leipzig" ;
+                 ld:hasURL <http://codefor.de/leipzig/> .
 
 <Columbus> a ld:Traeger ;
            rdfs:label "Columbus Junior e.V." ;
@@ -1027,19 +1028,19 @@ ld:Verein a owl:Class ;
 <http://leipzig-data.de/Data/UniLeipzig/IIR> a ld:Traeger ;
                                              rdfs:label "Institut für Infrastruktur und Ressourcenmanagement der Universität Leipzig" .
 
-<http://leipzig-data.de/Data/Unternehmen/BMW-Leipzig> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Unternehmen/BMW-Leipzig> a org:Organization ;
                                                       rdfs:label "BMW Werk Leipzig" ;
                                                       skos:prefLabel "BMW Werk Leipzig" ;
                                                       ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.BMW-Allee.1> ;
                                                       foaf:homepage <http://www.bmw-werk-leipzig.de> .
 
-<http://leipzig-data.de/Data/Unternehmen/BSE-Engineering> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Unternehmen/BSE-Engineering> a org:Organization ;
                                                           rdfs:label "BSE Engineering" ;
                                                           skos:prefLabel "BSE Engineering" ;
                                                           ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Mottelerstrasse.8> ;
                                                           foaf:homepage <http://www.bse-leipzig.de/> .
 
-<http://leipzig-data.de/Data/Unternehmen/Boerse.Dresden> a org:Organization, ld:Traeger ;
+<http://leipzig-data.de/Data/Unternehmen/Boerse.Dresden> a ld:Traeger, org:Organization ;
                                                          rdfs:label "Börse Dresden" ;
                                                          skos:prefLabel "Börse Dresden" ;
                                                          ld:hasAddress <http://leipzig-data.de/Data/01067.Dresden.Messering.6> ;
@@ -1048,18 +1049,18 @@ ld:Verein a owl:Class ;
                                                          foaf:mbox " office@energiesa.de" ;
                                                          foaf:phone "0351-6557640" .
 
-<http://leipzig-data.de/Data/Unternehmen/GCI> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Unternehmen/GCI> a org:Organization ;
                                               rdfs:label "GCI-Dr. Schindler Geo Consult International" ;
                                               skos:prefLabel "GCI-Dr. Schindler Geo Consult International" ;
                                               ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Marienbrunnenstrasse.4> ;
                                               foaf:homepage <http://www.gc-i.de/> .
 
-<http://leipzig-data.de/Data/Unternehmen/SachsenWasser> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Unternehmen/SachsenWasser> a org:Organization ;
                                                         rdfs:label "Sachsen Wasser GmbH" ;
                                                         skos:prefLabel "Sachsen Wasser GmbH" ;
                                                         ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Stephanstrasse.4> .
 
-<http://leipzig-data.de/Data/Unternehmen/SternburgBrauerei> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Unternehmen/SternburgBrauerei> a org:Organization ;
                                                             rdfs:label "Sternburg Brauerei GmbH. Ein Unternehmen der Radeberger Gruppe" ;
                                                             skos:prefLabel "Sternburg Brauerei GmbH. Ein Unternehmen der Radeberger Gruppe" ;
                                                             ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.13> ;
@@ -1071,9 +1072,9 @@ ld:Verein a owl:Class ;
                                               ld:hasFax "069-31019229" ;
                                               ld:hasUW_id "veranstalter/1455" .
 
-<http://leipzig-data.de/Data/Verein/ASG> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Verein/ASG> a org:Organization ;
                                          rdfs:label "Arnold-Sommerfeld-Gesellschaft" ;
-                                         <http://www.w3.org/ns/org#hasMember> <http://leipzig-data.de/Data/Person/Boran_Roland>, <http://leipzig-data.de/Data/Person/Babel_Wolfgang>, <http://leipzig-data.de/Data/Person/Walter_Roland>, <http://leipzig-data.de/Data/Person/Strauss_Holger>, <http://leipzig-data.de/Data/Person/Eisenberg_Wolfgang>, <http://leipzig-data.de/Data/Person/Meiss_KarlMichael>, <http://leipzig-data.de/Data/Person/Fueting_Manfred>, <http://leipzig-data.de/Data/Person/Kaerger_Joerg> .
+                                         org:hasMember <http://leipzig-data.de/Data/Person/Boran_Roland>, <http://leipzig-data.de/Data/Person/Babel_Wolfgang>, <http://leipzig-data.de/Data/Person/Walter_Roland>, <http://leipzig-data.de/Data/Person/Strauss_Holger>, <http://leipzig-data.de/Data/Person/Eisenberg_Wolfgang>, <http://leipzig-data.de/Data/Person/Meiss_KarlMichael>, <http://leipzig-data.de/Data/Person/Fueting_Manfred>, <http://leipzig-data.de/Data/Person/Kaerger_Joerg> .
 
 <http://leipzig-data.de/Data/Verein/Anker> a ld:Traeger ;
                                            rdfs:label "Der ANKER e.V." ;
@@ -1083,11 +1084,11 @@ ld:Verein a owl:Class ;
                                            ld:hasURL "http://www.anker-leipzig.de" ;
                                            ld:hasSupplierNumber "062" .
 
-<http://leipzig-data.de/Data/Verein/CineMuro> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Verein/CineMuro> a org:Organization ;
                                               rdfs:label "CineMuro e. V." ;
                                               skos:prefLabel "CineMuro e. V." .
 
-<http://leipzig-data.de/Data/Verein/InfAI> a <http://www.w3.org/ns/org#Organization> ;
+<http://leipzig-data.de/Data/Verein/InfAI> a org:Organization ;
                                            rdfs:label "InfAI - Institut für Angewandte Informatik e.V. an der Universität Leipzig" ;
                                            skos:prefLabel "InfAI - Institut für Angewandte Informatik e.V. an der Universität Leipzig" ;
                                            foaf:homepage <http://infai.org> .
@@ -1101,8 +1102,8 @@ ld:Verein a owl:Class ;
                                                         ld:hasURL <http://lebenlernenleipzig.de>, <http://www.facebook.com/LebenLernenLeipzig> .
 
 <http://leipzig-data.de/Data/Verein/WirtschaftsinitiativeMitteldeutschland> a foaf:Agent, ld:Verein ;
-        rdfs:label "Wirtschaftsinitiative für Mitteldeutschland e.V." ;                                         
-skos:prefLabel "Wirtschaftsinitiative für Mitteldeutschland e.V." .
+                                                                            rdfs:label "Wirtschaftsinitiative für Mitteldeutschland e.V." ;
+                                                                            skos:prefLabel "Wirtschaftsinitiative für Mitteldeutschland e.V." .
 
 <http://leipzig-data.de/Data/Verein/Zukunftsakademie> a ld:Traeger, ld:Verein ;
                                                       rdfs:label "ZAK - ZukunftsAkademie - Leipzig e.V." ;
