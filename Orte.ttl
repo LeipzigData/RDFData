@@ -9,6 +9,9 @@
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
+ld:Hotel a owl:Class ;
+         rdfs:label "Hotel" .
+
 ld:Ort a owl:Class ;
        rdfs:label "Ort" .
 
@@ -24,7 +27,7 @@ ld:Ort a owl:Class ;
                                        rdfs:label "ALEX" ;
                                        ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Naschmarkt.3> .
 
-<http://leipzig-data.de/Data/Ort/AO_Hostel> a ld:Ort ;
+<http://leipzig-data.de/Data/Ort/AO_Hostel> a ld:Ort, ld:Hotel ;
                                             rdfs:label "A&O Hostel" ;
                                             ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.BrandenburgerStrasse.2> .
 
@@ -1104,13 +1107,13 @@ ld:Ort a owl:Class ;
                                              rdfs:label "Horns Erben" ;
                                              ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Arndtstrasse.33> .
 
-<http://leipzig-data.de/Data/Ort/Hotel.Pologne> a ld:Ort ;
+<http://leipzig-data.de/Data/Ort/Hotel.Pologne> a ld:Ort, ld:Hotel ;
                                                 rdfs:label "Hotel de Pologne" ;
                                                 ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.16> .
 
-<http://leipzig-data.de/Data/Ort/HoteldePologne> a ld:Ort ;
-                                                 rdfs:label "Hotel de Pologne Leipzig" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.16> .
+<http://leipzig-data.de/Data/Ort/Hotel.Ramada.Schongauerstrasse> a ld:Ort, ld:Hotel ;
+                                                                 rdfs:label "RAMADA Hotel Leipzig" ;
+                                                                 ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Schongauerstrasse.39> .
 
 <http://leipzig-data.de/Data/Ort/IB.Schulsozialarbeit.Gruenau> a ld:Ort ;
                                                                rdfs:label "IB - Schulsozialarbeit" ;
@@ -1186,7 +1189,7 @@ ld:Ort a owl:Class ;
                                          ld:hasSupplier <http://leipzig-data.de/Data/Traeger/Instag> ;
                                          ld:Hintergrund "Seit dem 1. Juli 2010 firmiert unser Unternehmen unter InstaG - Institut für akademische Gesamtbildung GmbH. Die InstaG GmbH - wie bisher schon die EuroGene GmbH - steht dabei für seriöse, qualitativ hochwertige, bedarfs- und kundenorientierte Aus- und Weiterbildung mit einer hohen Praxisrelevanz und einer gleichbleibend hohen Qualität der Bildung. <br/> Unser Unternehmen wurde im Jahr 2005 von Frau Univ.-Prof. Dr. med. habil. Ursula Froster und dem Arzt und Diplom-Verwaltungswirt Dr. med. Armin Baumgartner aus der Universität Leipzig ausgegründet. Als An-Institut konzipiert, folgte es den Vorgaben und Empfehlungen der Bildungs- und Wissenschaftspolitik und übernahm dabei Aufgaben der postgraduierten Weiterbildung auf den Gebieten der Biotechnologie, Molekularbiologie sowie Medizin. Es erfüllte somit Aufgaben der Erwachsenenbildung, die von den Universitäten nicht mehr erfüllt werden konnten. <br/> Zunächst durch einen Kooperationsvertrag mit der Universität Leipzig verbunden, geht das Institut seit Mitte 2010 nun neue und eigene Wege." .
 
-<http://leipzig-data.de/Data/Ort/InterCityHotelLeipzig> a ld:Ort ;
+<http://leipzig-data.de/Data/Ort/InterCityHotelLeipzig> a ld:Ort, ld:Hotel ;
                                                         rdfs:label "InterCityHotel Leipzig" ;
                                                         ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Troendlinring.2> .
 
@@ -1581,7 +1584,7 @@ ld:Ort a owl:Class ;
                                                rdfs:label "Marktgalerie" ;
                                                ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Markt.11> .
 
-<http://leipzig-data.de/Data/Ort/Marriott.Leipzig> a ld:Ort ;
+<http://leipzig-data.de/Data/Ort/Marriott.Leipzig> a ld:Ort, ld:Hotel ;
                                                    rdfs:label "Marriott Hotel Leipzig" ;
                                                    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.AmHallischenTor.1> .
 
@@ -2171,7 +2174,7 @@ ld:Ort a owl:Class ;
                                           ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.11> ;
                                           ld:hasURL <http://www.sixtina.de/> .
 
-<http://leipzig-data.de/Data/Ort/Sleepy_Lion_Hostel> a ld:Ort ;
+<http://leipzig-data.de/Data/Ort/Sleepy_Lion_Hostel> a ld:Ort, ld:Hotel ;
                                                      rdfs:label "Sleepy Lion Hostel" ;
                                                      ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Jacobstrasse.8> .
 
@@ -2516,7 +2519,7 @@ ld:Ort a owl:Class ;
                                              rdfs:label "Uptown Coffee Bar" ;
                                              ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Riemannstrasse.44> .
 
-<http://leipzig-data.de/Data/Ort/VictorsResidenz> a ld:Ort ;
+<http://leipzig-data.de/Data/Ort/VictorsResidenz> a ld:Ort, ld:Hotel ;
                                                   rdfs:label "Victor's Residenz-Hotel Leipzig" ;
                                                   ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Georgiring.13> .
 
