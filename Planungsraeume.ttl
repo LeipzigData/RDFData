@@ -6,50 +6,60 @@
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-<http://leipzig-data.de/Data/JH-Planungsraeume/>
+<http://leipzig-data.de/Data/Planungsraeume/>
     cc:attributionName "The Leipzig Open Data Project" ;
     cc:attributionURL <http://leipzig-data.de> ;
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
-    rdfs:comment "Die Jugendhilfeplanung teilt die 63 Ortsteile der Stadt Leipzig in 7 Planungsräume ein" ;
-    rdfs:label "Planungsräume der der Jugendhilfe" .
+    rdfs:label "Verschiedene Planungsräume der Jugendhilfe" .
 
 ld:PlanungsRaum
     a owl:Class ;
+    rdfs:comment "Zur Konzentration der Stadtentwicklungsmittel werden in Leipzig Ortsteile zu Planungsräumen zusammengefasst" ;
+    rdfs:label "Planungsraum der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Planungsraum/LeipzigerOsten>
+    ld:containsOrtsteil ldot:Anger-Crottendorf, ldot:Neustadt-Neuschoenefeld, ldot:Sellerhausen-Stuenz, ldot:Volkmarsdorf, ldot:Althen-Kleinpoesna, ldot:Baalsdorf, ldot:Engelsdorf, ldot:Heiterblick, ldot:Moelkau, ldot:Paunsdorf ;
+    a ld:PlanungsRaum ;
+    rdfs:label "Planungsraum Leipziger Osten" .
+ 
+ld:JH-PlanungsRaum
+    a owl:Class ;
+    rdfs:comment "Die Jugendhilfeplanung teilt die 63 Ortsteile der Stadt Leipzig in 7 Planungsräume ein" ;
     rdfs:label "JH-Planungsraum der Stadt Leipzig" .
 
 <http://leipzig-data.de/Data/Planungsraum/Gruenau>
     ld:containsOrtsteil ldot:Gruenau-Mitte, ldot:Gruenau-Nord, ldot:Gruenau-Ost, ldot:Gruenau-Siedlung, ldot:Lausen-Gruenau, ldot:Miltitz, ldot:Schoenau ;
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Grünau" .
+    a ld:JH-PlanungsRaum ;
+    rdfs:label "JH-Planungsraum Grünau" .
 
 <http://leipzig-data.de/Data/Planungsraum/InnererOsten>
     ld:containsOrtsteil ldot:Anger-Crottendorf, ldot:Neustadt-Neuschoenefeld, ldot:Reudnitz-Thonberg, ldot:Schoenefeld-Abtnaundorf, ldot:Schoenefeld-Ost, ldot:Sellerhausen-Stuenz, ldot:Volkmarsdorf, ldot:Zentrum-Ost ;
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Innerer Osten" .
+    a ld:JH-PlanungsRaum ;
+    rdfs:label "JH-Planungsraum Innerer Osten" .
 
 <http://leipzig-data.de/Data/Planungsraum/MitteSued>
     ld:containsOrtsteil ldot:Connewitz, ldot:Doelitz-Doesen, ldot:Loessnig, ldot:Marienbrunn, ldot:Suedvorstadt, ldot:Zentrum, ldot:Zentrum-Nordwest, ldot:Zentrum-Sued, ldot:Zentrum-Suedost, ldot:Zentrum-West ;
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Mitte/Süd" .
+    a ld:JH-PlanungsRaum ;
+    rdfs:label "JH-Planungsraum Mitte/Süd" .
 
 <http://leipzig-data.de/Data/Planungsraum/Nord>
     ld:containsOrtsteil ldot:Eutritzsch, ldot:Gohlis-Mitte, ldot:Gohlis-Nord, ldot:Gohlis-Sued, ldot:Lindenthal, ldot:Luetzschena-Stahmeln, ldot:Moeckern, ldot:Wahren, ldot:Wiederitzsch, ldot:Zentrum-Nord ;
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Nord" .
+    a ld:JH-PlanungsRaum ;
+    rdfs:label "JH-Planungsraum Nord" .
 
 <http://leipzig-data.de/Data/Planungsraum/NordOst>
     ld:containsOrtsteil ldot:Mockau-Nord, ldot:Mockau-Sued, ldot:Plaussig-Portitz, ldot:Seehausen, ldot:Thekla ;
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Nordost" .
+    a ld:JH-PlanungsRaum ;
+    rdfs:label "JH-Planungsraum Nordost" .
 
 <http://leipzig-data.de/Data/Planungsraum/OstSuedost>
     ld:containsOrtsteil ldot:Althen-Kleinpoesna, ldot:Baalsdorf, ldot:Engelsdorf, ldot:Heiterblick, ldot:Holzhausen, ldot:Liebertwolkwitz, ldot:Meusdorf, ldot:Moelkau, ldot:Paunsdorf, ldot:Probstheida, ldot:Stoetteritz ;
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum Ost/Südost" .
+    a ld:JH-PlanungsRaum ;
+    rdfs:label "JH-Planungsraum Ost/Südost" .
 
 <http://leipzig-data.de/Data/Planungsraum/West>
     ld:containsOrtsteil ldot:Altlindenau, ldot:Boehlitz-Ehrenberg, ldot:Burghausen-Rueckmarsdorf, ldot:Grosszschocher, ldot:Hartmannsdorf-Knautnaundorf, ldot:Kleinzschocher, ldot:Knautkleeberg-Knauthain, ldot:Leutzsch, ldot:Lindenau, ldot:Neulindenau, ldot:Plagwitz, ldot:Schleussig ;
-    a ld:PlanungsRaum ;
-    rdfs:label "Planungsraum West" .
+    a ld:JH-PlanungsRaum ;
+    rdfs:label "JH-Planungsraum West" .
 
