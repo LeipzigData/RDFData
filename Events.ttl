@@ -6,87 +6,12 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
-@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
-@prefix cc: <http://creativecommons.org/ns#> .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.251> a ld:Event ;
-                                                   rdfs:label "Digitale Kreativwirtschaft!- Neue Wege für Kreative Köpfe" ;
-                                                   ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ical:dtstart "2015-05-06T16:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Kubus ;
-                                                   ical:organizer ldp:Praetor_Sandra ;
-                                                   ical:description "Die Digitalisierung schreitet in großen Schritten voran. Auch vor Pinseln, Stiften, Reißbrettern, Nähmaschinen, Musikinstrumenten und Leinwänden macht sie nicht halt. Kleine und mittlere Unternehmen aus der Kreativwirtschaft und dem kreativen Handwerk sind mehr denn je gefragt, sich mit Themen rund um die Digitalisierung und dem eBusiness auseinanderzusetzen." ;
-                                                   ical:dtend "2015-05-06T20:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Digitale Kreativwirtschaft!- Neue Wege für Kreative Köpfe" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.253>, <http://leipzig-data.de/Data/APIId/Event.251> ;
-                                                   ical:url <http://www.ebusiness-lotse-mitteldeutschland.de/veranstaltungen/veranstaltung/digitale-kreativwirtschaft-neue-wege-fuer-kreative-koepfe/> .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.254> a ld:Event ;
-                                                   rdfs:label "FO.DO - Der Fotodonnerstag im April: Bildbesprechung" ;
-                                                   ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ical:dtstart "2015-04-02T19:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Cafe-Grundmann ;
-                                                   ical:organizer ldo:KreativesLeipzig ;
-                                                   ical:description "Auch im April treffen wir uns wieder am 1. Donnerstag im Monat um uns gemeinsam über Fotografie auszutauschen. <br/> <br/> Diesmal machen wir wieder eine Bildbesprechung. <br/> <br/> Das Thema ist: \"Nichts\" <br/> <br/> Wer an der Bildbesprechung teilnehmen möchte, bringt bitte mindestens 5 Fotos als Serie, in der Größe 20x30cm mit. <br/> <br/> Im Anschluss bleibt noch Raum für weitere anregende Gespräche. <br/> <br/> Neue Gesichter heißen wir jederzeit Herzlich Willkommen. Natürlich kann man auch ohne Bilder am FO.DO teilnehmen." ;
-                                                   ical:summary "FO.DO - Der Fotodonnerstag im April: Bildbesprechung" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.254> ;
-                                                   ical:url <https://www.facebook.com/events/761870807239853/> .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.255> a ld:Event ;
-                                                   rdfs:label "AGD-Tagung \"Design und Verantwortung\"" ;
-                                                   ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ical:dtstart "2015-04-16T00:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/APIId/Venue.110> ;
-                                                   ical:organizer <http://leipzig-data.de/Data/APIId/Host.64> ;
-                                                   ical:description "Die deutsche Designbranche trifft sich vom 16. bis 17. April 2015 in Dresden Hellerau zur AGD-Tagung. Unter dem Motto „Design und Verantwortung“ diskutieren Designer, Unternehmer und Verbandskollegen gemeinsam den Wandel der Branche und tauschen sich zu ihren Erfahrungen aus. Am ersten Veranstaltungstag erwarten die Teilnehmer praxisbezogene Workshops. Der zweite Veranstaltungstag ist einer Tagung mit hochkarätigen Keynote-Sprechern gewidmet. " ;
-                                                   ical:dtend "2015-04-17T00:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "AGD-Tagung \"Design und Verantwortung\"" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.255> ;
-                                                   ical:url <https://agd.de/magazin/agenda-design/agd-tagung-2015/tagung> .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.263> a ld:Event ;
-                                                   rdfs:label "Eröffnung Leipziger Drehbuch-Stammtisch" ;
-                                                   ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ical:dtstart "2015-04-22T18:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/APIId/Venue.114> ;
-                                                   ical:organizer <http://leipzig-data.de/Data/APIId/Host.67> ;
-                                                   ical:description "Zum gemütlichen Kennenlernen und Austausch laden wir explizit alle Drehbuchautoren, Regisseure und Produzenten aus der Region ein. Was sind eure Themen? Woran arbeitet ihr gerade? Für wen wollt ihr arbeiten? Wie seht ihre eure Perspektiven in der Region? Was interessiert euch? Welche Themen lassen sich besser verkaufen als andere? usw. Wir wollen alles wissen und auf alles, mit euch, eine Antwort finden. Gern gesehen sind natürlich auch alle weiteren Freunde der Filmherstellung mit einem gesteigerten Interesse an der Stoffentwicklung, Inhalten und Drehbüchern." ;
-                                                   ical:summary "Eröffnung Leipziger Drehbuch-Stammtisch" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.263> ;
-                                                   ical:url <http://www.drehfreibier.de> .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.264> a ld:Event ;
-                                                   rdfs:label "Start-Up Weekend Leipzig" ;
-                                                   ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ical:dtstart "2015-04-17T00:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/APIId/Venue.115> ;
-                                                   ical:organizer <http://leipzig-data.de/Data/APIId/Host.68> ;
-                                                   ical:description "Das Startup Weekend Leipzig ist eine dreitägige Veranstaltung, die in 54 Stunden die Basis für ein Unternehmen oder den Launch eines Produktes schafft. <br/> <br/> Ideengeber präsentieren am Freitagabend in kurzen Pitches ihren Gründungsgedanken und gewinnen so andere Gründungsinteressierte für ihr Team. Die darauffolgenden Stunden nutzen die Teams, um aus der innovativen Geschäftsidee ein erfolgreiches Konzept zu entwickeln. Dazu stehen ihnen Coaches und Mentoren aus verschiedenen Branchen beratend zur Seite. Am Sonntagabend kürt eine hochkarätige Jury schließlich die besten Teams. <br/> <br/> Das Gewinnerteam erhält den Startup Weekend Pokal. Außerdem werden die besten Gründungsideen mit tollen Sachpreisen prämiert, die die Teilnehmer bei der weiteren Umsetzung ihrer Idee unterstützen sollen. Ein weiteres Sahnehäubchen: In Anwesenheit von potenziellen Investoren, Sponsoren und Gleichgesinnten können sich die Teilnehmer in ungezwungener Atmosphäre über eine zukünftige Zusammenarbeit austauschen." ;
-                                                   ical:dtend "2015-04-19T00:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Start-Up Weekend Leipzig" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.264> ;
-                                                   ical:url <http://www.up.co/communities/germany/leipzig/startup-weekend/5984> .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.265> a ld:Event ;
-                                                   rdfs:label "Auswärtstermin @ i-Fabrik" ;
-                                                   ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ical:dtstart "2015-04-28T18:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:i-fabrik ;
-                                                   ical:organizer ldo:KreativesLeipzig ;
-                                                   ical:description "wir freuen uns, euch am 28.04.2015 schon zum dritten Auswärtstermin einladen zu dürfen. <br/> Wir werden bei Götz in der i-fabrik GmbH zu Gast sein. <br/> <br/> Beginn ist um 18:00 und natürlich sind auch interessierte Nicht-Mitglieder herzlich eingeladen. Wir freuen uns auf euch! <br/> " ;
-                                                   ical:summary "Auswärtstermin @ i-Fabrik" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.265> ;
-                                                   ical:url <http://www.ifabrik.de> .
 
 <http://leipzig-data.de/Data/Event/APILeipzig.267> a ld:Event ;
                                                    rdfs:label "info@kreativwirtschaft" ;
@@ -217,84 +142,16 @@
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
                                                    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.279> .
 
-<http://leipzig-data.de/Data/Event/ASG.2015-03-31> a ld:Event ;
-                                                   rdfs:label "ASG-Schülerakademie: Quantencomputer und  Quantensensorik." ;
-                                                   ld:hasTag ldtag:ASG ;
-                                                   ical:dtstart "2015-03-31T16:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:HfTL ;
-                                                   ical:organizer ldo:ASG ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> ;
-                                                   ical:description "Quantenmechanik ist eines der faszinierendsten Forschungsbereiche der letzten Jahre. Obwohl diese Theorie schon vor fast 100 Jahren – im Wesentlichen in Leipzig – entwickelt wurde, gelang es der Experimentalphysik erst in den letzten Jahren quantenmechanische Objekte quasi in Reinkultur unter normalen Bedingungen herzustellen. Tatsächlich folgen sie dabei exakt den Grundlagen der Theorie. Dies ist ein wichtiges Resultat, denn selbst die Erfinder der Quantenmechanik hielten diese Theorie für nicht vollständig und kein geringerer als Albert Einstein lehnte sie schlichtweg ab, obwohl er vorher noch wichtige Beiträge geleistet hatte. <br/> Eine der Voraussetzungen, um diese Experimente durchzuführen, ist die exakte Platzierung einzelner Atome. In dem Vortrag werden verschiedene Verfahren zur Manipulation von Atomen sowie der aktuelle Status zur Realisierung eines Quantencomputers und Quantensensoren vorgestellt.<br/>Prof. Dr. J. Meijer arbeitet am Institut für Nukleare Festkörperphysik der Universität Leipzig. " ;
-                                                   ical:dtend "2015-03-31T17:30:00+01:00"^^xsd:dateTime ;
-                                                   ld:hasAddressAddendum "Raum B 1.50" ;
-                                                   ical:summary "ASG-Schülerakademie: Quantencomputer und  Quantensensorik. Vortrag und Diskussion für Schüler der Oberstufe mit Prof. Dr. J. Meijer. " ;
-                                                   ical:url <http://www.leipzig-netz.de/index.php5/MINT.Schuelerakademie.2015-03-31> .
-
-<http://leipzig-data.de/Data/Event/ASG.2015-04-23> a ld:Event ;
-                                                   rdfs:label "Technik und Sprache" ;
-                                                   ld:hasTag ldtag:ASG ;
-                                                   ical:dtstart "2015-04-23T17:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-                                                   ical:organizer ldo:ASG ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
-                                                   ical:description "Die Verbindungen von Technik und Sprache sind im digitalen Zeitalter vielfältiger denn je und erfuhren durch die Erfindung des WWW eine enorme, bis heute kaum in Gänze begriffene Aufwertung. Neben der Kakophonie individuell-öffentlichen Schnatterns steht die Möglichkeit, vernetzte kooperative Formen von Sprache und Sprechen auch technisch zu unterstützen. Dies wird mit semantischen Technologien des Web 2.0 noch einmal wesentlich erweitert. Auch umgekehrt ist Technik ohne Sprache nicht denkbar. Nach Marx unterscheidet sich bekanntlich die beste Biene vom schlechtesten Baumeister darin, dass letzterer den Bau schon im Kopf, also in sprachlicher Form vollzogen hat, bevor der Bau praktisch beginnt. Technik ist in diesem Sinne \"geronnene Sprache\".  Bisher wurde das Wort \"Technik\" im naiven Sinne gebraucht. Wikipedia unterscheidet allein vier grundsätzlich verschiedene Bedeutungen dieses Begriffs. Im Vortrag werde ich die enge Verzahnung nicht nur von Technik und Sprache, sondern auch von Sprachentwicklung und Technikentwicklung aufzeigen und Argumente präsentieren für die These \"Technik <i>ist</i> Sprache\". <br/> Mit Prof. Dr. Hans-Gert Gräbe (Leipzig)" ;
-                                                   ical:summary "Technik und Sprache. Mit Prof. Dr. Hans-Gert Gräbe (Uni Leipzig)" ;
-                                                   ical:url <http://bj-kaiser.homepage.t-online.de/Seminar.html>, <http://www.leipzig-netz.de/index.php5/ASG.2015-04-23>, <http://bj-kaiser.homepage.t-online.de/Einladung_15_04_.pdf> .
-
 <http://leipzig-data.de/Data/Event/ASG.2015-05-21> a ld:Event ;
                                                    rdfs:label "Neue Kosmologie - Elementenfusion vor der Sternentstehung" ;
                                                    ld:hasTag ldtag:ASG ;
                                                    ical:dtstart "2015-05-21T17:00:00+02:00"^^xsd:dateTime ;
                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
                                                    ical:organizer ldo:ASG ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
                                                    ical:description "Die quantitative Umsetzung von Überlegungen des berühmten Physikers und Naturphilosophen Ernst Mach zum Massenbegriff hat zu einer neuen Kosmologie geführt.  Der Referent zeigt mit seiner Theorie des ewigen und unendlichen Universums ohne Urknall und ohne Expansion, wie sich die leichten und auch schwerere Elemente bilden können, bevor Sterne entstehen.  Damit wird auch erklärt, warum man keine Sterne der vermuteten Population III findet, gesuchte Objekte, die (fast) nur Wasserstoff und Helium aufweisen. Mit Dr. rer. nat. Karl-Ernst Eiermann (Gießen)" ;
                                                    ical:summary "Neue Kosmologie - Elementenfusion vor der Sternentstehung. Mit Dr. rer. nat. Karl-Ernst Eiermann (Gießen)" ;
-                                                   ical:url <http://bj-kaiser.homepage.t-online.de/Seminar.html>, <http://bj-kaiser.homepage.t-online.de/Einladung_15_05_.pdf> .
-
-<http://leipzig-data.de/Data/Event/DTS.2015-04-13> a ld:Event ;
-                                                   rdfs:label "Toleranz" ;
-                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   ld:contactPerson ldp:Schroth_Johannes ;
-                                                   ical:dtstart "2015-04-13T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Cafe-Grundmann ;
-                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-                                                   ical:description "Wie immer sind Alle und Neue herzlich willkommen. Wir haben uns ein Thema ausgewählt, das alles andere als einfach zu bewältigen ist, obwohl das wegen seines häufigen Gebrauchs von Jedermann und -frau auf dem ersten Blick so scheint: \"TOLERANZ\" haben wir es kurz und knapp genannt und damit alle Türen und Tore dazu geöffnet. <br/> Wer sich damit beschäftigt, wird bald feststellen, dass es sich um keine Nebensache handeln kann. Die Diskussion darüber zieht sich über die vieltausendjährige Kulturgeschichte und jeder hat seine Auffassung dazu je nach Erfahrung, Charakter, Ideologie entwickelt. Selbst die Technik spielt eine große Rolle und kann wertvolle Erkenntnisse für die Geisteswissenschaften und die Philosophie beisteuern.  " ;
-                                                   ical:summary "Attac DenkTankStelle: Toleranz" ;
-                                                   ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2015-04-13> .
-
-<http://leipzig-data.de/Data/Event/DTS.2015-05-11> a ld:Event ;
-                                                   rdfs:label "Freiheit, die ich meine" ;
-                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   ld:contactPerson ldp:Schroth_Johannes ;
-                                                   ical:dtstart "2015-05-11T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Cafe-Grundmann ;
-                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-                                                   ical:description "Es ist nicht das erste Mal, dass wir über den Begriff disputieren. Aber gerade wird der 8. Mai vorüber sein, der Tag der Kapitulation Deutschlands vor 70 Jahren. Von den meisten als Tag der Befreiung vom Faschismus gefeiert, von einigen als Niederlage angesehen. Freiheit ist ein oft gebrauchtes Wort unseres Bundespräsidenten, und er meint damit zumeist die Entlassung der ehemaligen DDR-Bürger aus der Unfreiheit. Freiheit ist das Schlagwort von Neoliberalen jeder Farbe, wenn es Schwierigkeiten bei der Durchsetzung ihrer Interessen gibt. Mit dem Wort auf den Lippen sind unzählige Menschen bisher gestorben, glücklich, weil ihnen die Sache das wert war. <br/> In einem berühmten Gedicht über die Völkerschlacht heißt es:<br/> „Die Freiheit ist's wert!“ von Kanzel und Thron <br/> schallt es im Chor, doch wie immer schon <br/> das Volk musst die Rechnung begleichen. <br/> Welche anthropologische Konstanten verbinden sich mit der Freiheit und welche ideologischen, kulturellen? Schließlich wurde die Demokratie in einem Sklavenstaat geboren. Wieso geht das? Genug Stoff für 2 Stunden." ;
-                                                   ical:summary "Attac DenkTankStelle: Freiheit, die ich meine" ;
-                                                   ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2015-05-11> .
-
-<http://leipzig-data.de/Data/Event/FBL.2015-04-13> a ld:Event ;
-                                                   rdfs:label "Forum Bürgerstadt Leipzig - Plenartreffen" ;
-                                                   ld:hasTag ldtag:ZukunftsDiskurs ;
-                                                   ical:dtstart "2015-04-13T16:30:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Volkshochschule ;
-                                                   ical:organizer ldo:Volkshochschule ;
-                                                   ical:description "Forum Bürgerstadt Leipzig - Plenartreffen" ;
-                                                   ical:summary "Forum Bürgerstadt Leipzig - Plenartreffen" ;
-                                                   ical:url <http://leipzig-netz.de/index.php5/FBL.2015-04-13> .
-
-<http://leipzig-data.de/Data/Event/FBL.2015-05-11> a ld:Event ;
-                                                   rdfs:label "Forum Bürgerstadt Leipzig - Plenartreffen" ;
-                                                   ld:hasTag ldtag:ZukunftsDiskurs ;
-                                                   ical:dtstart "2015-05-11T16:30:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Volkshochschule ;
-                                                   ical:organizer <http://leipzig-data.de/Data/Projekt/FBL.Vorbereitungsgruppe> ;
-                                                   ical:description "Forum Bürgerstadt Leipzig - Plenartreffen" ;
-                                                   ical:summary "Forum Bürgerstadt Leipzig - Plenartreffen" ;
-                                                   ical:url <http://leipzig-netz.de/index.php5/FBL.2015-05-11> .
+                                                   ical:url <http://bj-kaiser.homepage.t-online.de/Seminar.html>, <http://bj-kaiser.homepage.t-online.de/Einladung_15_05_.pdf> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> .
 
 <http://leipzig-data.de/Data/Event/FBL.2015-07-06> a ld:Event ;
                                                    rdfs:label "Forum Bürgerstadt Leipzig - Plenartreffen" ;
@@ -306,54 +163,13 @@
                                                    ical:summary "Forum Bürgerstadt Leipzig - Plenartreffen" ;
                                                    ical:url <http://leipzig-netz.de/index.php5/FBL.2015-07-06> .
 
-<http://leipzig-data.de/Data/Event/Inspirata.7248> a ld:Event ;
-                                                   rdfs:label "Museumsnacht – 25.04.2015" ;
-                                                   ld:hasTag ldtag:MINT, ldtag:Inspirata ;
-                                                   ical:dtstart "2015-04-25T12:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:description "<p>Die INSPIRATA beteiligt sich wieder bei der gemeinsamen Museumsnacht von Leipzig und Halle.</p> <p>Am Samstag, dem 25. April 2015, von 18:00 bis 01:00 Uhr<br /> öffnet auch unser Mitmach-Museum seine Ausstellung für alle Besucher.</p> <p><strong>Erleben, Staunen, Experimentieren – das alles ist in der INSPIRATA auf der Alten Messe möglich. Über 150 interaktive Exponate laden zum Mitmachen ein und öffnen eine völlig neue Tür zu Mathematik und Naturwissenschaften.</strong></p> <p>Weitere Informationen folgen nach Erscheinen des offiziellen Programms der beiden Städte &#8230;</p> " ;
-                                                   ical:dtend "2015-04-26T01:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:summary "Die INSPIRATA beteiligt sich wieder bei der gemeinsamen Museumsnacht von Leipzig und Halle. Am Samstag, dem 25. April 2015, von 18:00 bis 01:00 Uhr öffnet auch unser Mitmach-Museum seine Ausstellung für alle Besucher. Erleben, Staunen, Experimentieren – das alles ist in der INSPIRATA auf der Alten Messe möglich. Über 150 interaktive Exponate laden ein zum Mitmachen." ;
-                                                   ical:dtstamp "2015-01-06T12:11:27+01:00"^^xsd:dateTime ;
-                                                   ical:url <http://www.inspirata.de/?p=7248> .
+<http://leipzig-data.de/Data/Event/Inspirata.7248> ical:description "<p>Die INSPIRATA beteiligt sich wieder bei der gemeinsamen Museumsnacht von Leipzig und Halle.</p> <p>Am Samstag, dem 25. April 2015, von 18:00 bis 01:00 Uhr<br /> öffnet auch unser Mitmach-Museum seine Ausstellung für alle Besucher.</p> <p><strong>Erleben, Staunen, Experimentieren – das alles ist in der INSPIRATA auf der Alten Messe möglich. Über 150 interaktive Exponate laden zum Mitmachen ein und öffnen eine völlig neue Tür zu Mathematik und Naturwissenschaften.</strong></p> <p>Weitere Informationen folgen nach Erscheinen des offiziellen Programms der beiden Städte &#8230;</p> " .
 
-<http://leipzig-data.de/Data/Event/Inspirata.7251> a ld:Event ;
-                                                   rdfs:label "3. Leipziger Mineralien- und Familientag in der INSPIRATA – 18.04.2015" ;
-                                                   ld:hasTag ldtag:MINT, ldtag:Inspirata ;
-                                                   ical:dtstart "2015-04-18T12:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:description "<p>Die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig veranstaltet mit Unterstützung der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den</p> <p><strong>3. Leipziger Mineralientag für die ganze Familie in der INSPIRATA!</strong></p> <p>Es wird wieder tolle Sonderaktionen geben &#8211; konkrete Informationen folgen &#8230;<br /> </p> <p>Informationen zur Jugendgruppe für Mineralogie im Naturkundemuseum Leipzig findet man unter:</p> <ul> <li>http://leipzigersteinbeisser.wordpress.com</li> <li>http://www.foerderverein-naturkundemuseum-leipzig.de &#8211; Fachgruppen &amp; Vereine</li> <li>http://leipzig-netz.de/index.php5/Naturkundemuseum &#8211; Junge Mineralogen</li> </ul> " ;
-                                                   ical:dtend "2015-04-18T18:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:summary "Die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig veranstaltet mit Unterstützung der Fachgruppe für Geologie, Mineralogie &#38; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den 3. Leipziger Mineralientag für die ganze Familie in der INSPIRATA!" ;
-                                                   ical:dtstamp "2015-01-06T12:16:16+01:00"^^xsd:dateTime ;
-                                                   ical:url <http://www.inspirata.de/?p=7251> .
+<http://leipzig-data.de/Data/Event/Inspirata.7251> ical:description "<p>Die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig veranstaltet mit Unterstützung der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den</p> <p><strong>3. Leipziger Mineralientag für die ganze Familie in der INSPIRATA!</strong></p> <p>Es wird wieder tolle Sonderaktionen geben &#8211; konkrete Informationen folgen &#8230;<br /> </p> <p>Informationen zur Jugendgruppe für Mineralogie im Naturkundemuseum Leipzig findet man unter:</p> <ul> <li>http://leipzigersteinbeisser.wordpress.com</li> <li>http://www.foerderverein-naturkundemuseum-leipzig.de &#8211; Fachgruppen &amp; Vereine</li> <li>http://leipzig-netz.de/index.php5/Naturkundemuseum &#8211; Junge Mineralogen</li> </ul> " ;
+                                                   ical:summary "Die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig veranstaltet mit Unterstützung der Fachgruppe für Geologie, Mineralogie &#38; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den 3. Leipziger Mineralientag für die ganze Familie in der INSPIRATA!" .
 
-<http://leipzig-data.de/Data/Event/Inspirata.7397> a ld:Event ;
-                                                   rdfs:label "Spiele-Nachmittag mit exotischen Schach-Versionen – 09.05.2015" ;
-                                                   ld:hasTag ldtag:MINT, ldtag:Inspirata ;
-                                                   ical:dtstart "2015-05-09T14:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:description "<p>Am Samstag, dem <strong>9. Mai 2015</strong>, von <strong>14:00 bis 17:30 Uhr</strong>, gibt es wieder ein besonderes Spiele-Event in der INSPIRATA!</p> <p>Unsere ehrenamtlichen Unterstützer Frank Rehm und Axel Schüler stellen drei exotische Schachversionen vor. Außerdem können interessante bekannte und weniger bekannte Taktikspiele ausprobiert werden.</p> <p>Als Krönung können Schüler bis Klassestufe 10 an einem kleinen <strong>Wettkampf</strong> teilnehmen, bei dem sie bei bisher völlig unbekannten Spielen ihre Kräfte messen. Für die Besten warten dann drei <strong>Überraschungspreise</strong>, die der INSPIRATA e.V. und Frank Rehm zur Verfügung stellen.</p> <p>Lasst euch inspirieren!</p> <p>Natürlich kann auch an diesem Samstag zwischen 12 und 18 Uhr wieder unsere naturwissenschaftliche <strong>Mitmach-Ausstellung</strong> von Familien sowie Einzelbesuchern ohne Voranmeldung genutzt werden.</p> <p>Als Unkostenbeitrag zahlen Kinder/ Schüler (jünger als 18 Jahre) 3,00 € pro Person, Erwachsene 5,00 € (ermäßigt 3,50 €) pro Person; Familienkarten kosten 14,00 €.</p> <p>Wir freuen uns auf neugierige Besucher!</p> " ;
-                                                   ical:dtend "2015-05-09T17:30:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Am Samstag, dem 9. Mai 2015, von 14:00 bis 17:30 Uhr, gibt es wieder ein besonderes Spiele-Event in der INSPIRATA! Unsere ehrenamtlichen Unterstützer Frank Rehm und Axel Schüler stellen drei exotische Schachversionen vor. Außerdem können interessante bekannte und weniger bekannte Taktikspiele ausprobiert werden. Als Krönung können Schüler bis Klassestufe 10 an einem kleinen Wettkampf teilnehmen." ;
-                                                   ical:dtstamp "2015-03-11T14:35:15+01:00"^^xsd:dateTime ;
-                                                   ical:url <http://www.inspirata.de/?p=7397> .
-
-<http://leipzig-data.de/Data/Event/Inspirata.7503> a ld:Event ;
-                                                   rdfs:label "GirlsDay in der INSPIRATA – 23.04.2015" ;
-                                                   ld:hasTag ldtag:MINT, ldtag:Inspirata ;
-                                                   ical:dtstart "2015-04-23T09:30:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:description "<p>Gemeinsam mit dem Max-Planck-Institut für Mathematik in den Naturwissenschaften<br /> gestaltet die INSPIRATA auch in diesem Jahr ein interessantes Angebot für euch Mädels:</p> <p><strong>Termin:</strong> 23. April 2015 &#8211; 9:30 bis ca. 13:30 Uhr</p> <p><strong>Ort:</strong> INSPIRATA &#8211; Mitmach-Museum (04103 Leipzig, Deutscher Platz 4, Eingang G)</p> <p><strong>Mathemachen² – Mathe zum Anfassen</strong></p> <p>Die Mitmach-Ausstellung INSPIRATA und das Max-Planck-Institut für Mathematik in den Naturwissenschaften laden alle wissbegierigen und entdeckungsfreudigen Mädchen zu einem spannenden Girls‘Day rund um die Mathematik ein. An den Experimentierstationen des neu eröffneten INSPIRATA-Bereiches mathemachen² erwartet euch Mathematik in ihrer anschaulichsten Form – zum Anfassen, Erleben und Staunen.</p> <p>&#8211; GEOMETRIE – fühlen, schauen, bauen<br /> &#8211; KRYPTOLOGIE – kodieren, probieren, lösen<br /> &#8211; SYMMETRIE – verschieben, drehen, spiegeln<br /> &#8211; ZAHLEN – schätzen, messen, rechnen</p> <p>Beim gemeinsamen Experimentieren werdet ihr auch genügend Zeit und Möglichkeiten haben, mit unseren WissenschaftlerInnen und Mathe-StudentInnen ins Gespräch zu kommen und alle eure Fragen rund um das Studium und das Berufsbild der Mathematikerin oder Mathematik-Lehrerin zu stellen. Außerdem habt ihr die Möglichkeit zum individuellen Ausstellungsbesuch.</p> <p>Getränke und Mittagessen sind inklusive.</p> <p>Wir freuen uns auf euch!</p> <p><em>Das Programm ist insbesondere für Schülerinnen der Klassenstufen 6 bis 8 geeignet.</em></p> " ;
-                                                   ical:dtend "2015-04-23T13:30:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Gemeinsam mit dem Max-Planck-Institut für Mathematik in den Naturwissenschaften gestaltet die INSPIRATA auch in diesem Jahr ein interessantes Angebot für euch Mädels: Termin: 23. April 2015 &#8211; 9:30 bis ca. 13:30 Uhr Ort: INSPIRATA &#8211; Mitmach-Museum (04103 Leipzig, Deutscher Platz 4, Eingang G) " ;
-                                                   ical:dtstamp "2015-03-31T12:30:47+02:00"^^xsd:dateTime ;
-                                                   ical:contact "Anmeldung: jgregor@mis.mpg.de, Tel.: 0341 9959 650" ;
-                                                   ical:url <http://www.inspirata.de/?p=7503> .
+<http://leipzig-data.de/Data/Event/Inspirata.7503> ical:description "<p>Gemeinsam mit dem Max-Planck-Institut für Mathematik in den Naturwissenschaften<br /> gestaltet die INSPIRATA auch in diesem Jahr ein interessantes Angebot für euch Mädels:</p> <p><strong>Termin:</strong> 23. April 2015 &#8211; 9:30 bis ca. 13:30 Uhr</p> <p><strong>Ort:</strong> INSPIRATA &#8211; Mitmach-Museum (04103 Leipzig, Deutscher Platz 4, Eingang G)</p> <p><strong>Mathemachen² – Mathe zum Anfassen</strong></p> <p>Die Mitmach-Ausstellung INSPIRATA und das Max-Planck-Institut für Mathematik in den Naturwissenschaften laden alle wissbegierigen und entdeckungsfreudigen Mädchen zu einem spannenden Girls‘Day rund um die Mathematik ein. An den Experimentierstationen des neu eröffneten INSPIRATA-Bereiches mathemachen² erwartet euch Mathematik in ihrer anschaulichsten Form – zum Anfassen, Erleben und Staunen.</p> <p>&#8211; GEOMETRIE – fühlen, schauen, bauen<br /> &#8211; KRYPTOLOGIE – kodieren, probieren, lösen<br /> &#8211; SYMMETRIE – verschieben, drehen, spiegeln<br /> &#8211; ZAHLEN – schätzen, messen, rechnen</p> <p>Beim gemeinsamen Experimentieren werdet ihr auch genügend Zeit und Möglichkeiten haben, mit unseren WissenschaftlerInnen und Mathe-StudentInnen ins Gespräch zu kommen und alle eure Fragen rund um das Studium und das Berufsbild der Mathematikerin oder Mathematik-Lehrerin zu stellen. Außerdem habt ihr die Möglichkeit zum individuellen Ausstellungsbesuch.</p> <p>Getränke und Mittagessen sind inklusive.</p> <p>Wir freuen uns auf euch!</p> <p><em>Das Programm ist insbesondere für Schülerinnen der Klassenstufen 6 bis 8 geeignet.</em></p> " ;
+                                                   ical:summary "Gemeinsam mit dem Max-Planck-Institut für Mathematik in den Naturwissenschaften gestaltet die INSPIRATA auch in diesem Jahr ein interessantes Angebot für euch Mädels: Termin: 23. April 2015 &#8211; 9:30 bis ca. 13:30 Uhr Ort: INSPIRATA &#8211; Mitmach-Museum (04103 Leipzig, Deutscher Platz 4, Eingang G) " .
 
 <http://leipzig-data.de/Data/Event/Inspirata.7589> a ld:Event ;
                                                    rdfs:label "Finissage zur Kartonmodellbau-Sonderausstellung – 29.05.2015" ;
@@ -364,8 +180,8 @@
                                                    ical:description "<p>Die derzeitige Vitrinen-Ausstellung in der INSPIRATA<br /> “Kartonmodellbau – eine 500-jährige Erfolgsgeschichte”<br /> kann noch bis Ende Mai besichtigt werden!</p> <p>Am <strong>29. Mai 2015</strong> von <strong>18 bis 20 Uhr</strong> wird in Gegenwart von Herrn Dr. Heiko Schinke (IT-Spezialist im Max-Planck-Institut für Mathematik in den Naturwissenschaften und aktiv beim Verein „Geschichte des Kartonmodellbaus“) die Finissage bei uns stattfinden.<br /> Dr. Schinke hatte der INSPIRATA die zahlreichen beeindruckenden Kartonmodelle für diese Sonderausstellung zur Verfügung gestellt.</p> <p>Zur Finissage haben Sie die letzte Gelegenheit, die faszinierenden drei­dimensionalen Nachbildungen von Gebäuden, Schiffen, Flugzeugen, Fahrzeugen, technischen Geräten sowie geometrischen Körpern in der INSPIRATA zu bestaunen.<br /> Zu sehen sind u.a.: Deutsche Nationalbibliothek Leipzig / Völkerschlachtdenkmal zu Leipzig / Reichstag / Le Mont Saint Michel / La Chapelle russe à Paris / Canterbury Cathedral / Schloss Thun / Schloss Nidau / Schloss Wildegg / Schloss Frauenburg / Burg Schattenburg / “Villa Blumenthal” bei Bad Ischl / Torturm der Karlsbrücke in Prag / Arabische Schule in Algier / Opel Kadett / Sportwagen Ford Thunderbird / NSU-Roller „Lambretta” / Micky Maus „Western-Express” / Sportflugzeug Klemm L26Va mit Motor Argus As8 / Gotthard Postkutsche / Gütermotorschiff „Vicosoprano“ der Schweizerischen Reederei AG u.a.</p> <p>Alle Ausstellungsstücke sind aus Modellbaubogen (früher auch Modellier- oder Konstruktionsbogen genannt) durch Ritzen, Ausschneiden, Falten und Zusammenkleben entstanden.<br /> Einige Modellbaubögen können Sie auch bei uns erwerben &#8211; lassen Sie sich inspirieren!</p> " ;
                                                    ical:dtend "2015-05-29T20:00:00+02:00"^^xsd:dateTime ;
                                                    ical:summary "Die derzeitige Vitrinen-Ausstellung in der INSPIRATA „Kartonmodellbau – eine 500-jährige Erfolgsgeschichte” kann noch bis Ende Mai besichtigt werden! Am 29. Mai 2015 von 18 bis 20 Uhr wird in Gegenwart von Herrn Dr. Heiko Schinke (IT-Spezialist im Max-Planck-Institut für Mathematik in den Naturwissenschaften und aktiv beim Verein „Geschichte des Kartonmodellbaus“) die Finissage bei uns stattfinden." ;
-                                                   ical:dtstamp "2015-05-08T11:35:38+02:00"^^xsd:dateTime ;
-                                                   ical:url <http://www.inspirata.de/?p=7589> .
+                                                   ical:url <http://www.inspirata.de/?p=7589> ;
+                                                   ical:dtstamp "2015-05-08T11:35:38+02:00"^^xsd:dateTime .
 
 <http://leipzig-data.de/Data/Event/Inspirata.7611> a ld:Event ;
                                                    rdfs:label "Fortbildung “Robotik und Messtechnik” – 02.06.2015" ;
@@ -376,9 +192,9 @@
                                                    ical:description "<p>Einladung für Lehrerinnen und Lehrer mit den Fächern Mathematik, Physik und Informatik:</p> <p>Sehr geehrte Damen und Herren,</p> <p>wir laden Sie recht herzlich ein zur Fortbildung &#8220;<strong>Robotik und Messtechnik (Schwerpunkt Mathematik)</strong>&#8220;.</p> <p>Die Veranstaltung findet am Dienstag, dem <strong>02.06.2015</strong> in der Zeit von <strong>14:00 Uhr bis 16:30 Uhr</strong> in den Räumen der INSPIRATA (Deutscher Platz 4, 04103 Leipzig) statt.</p> <p><strong>Inhalte:</strong><br /> Humanoide Roboter verbinden Informatik, Mathematik, Physik, Biologie und Technik: Neben den Schwerpunkten in Informatik, Mathematik und Technik eignen sie sich ebenso für fächerverbindenden Unterricht und projektbezogenes Lernen.<br /> Insbesondere der Roboter NAO hat für Schülerinnen und Schüler einen hohen Motivationswert. Die Programmierung ist leicht zu erlernen und kann an die fachlichen Anforderungen von der 5. Klasse bis zum Hochschulstudium angepasst werden.<br /> In dem Workshop wird eine kurze Einführung in die Programmierung des NAO mit der grafischen Entwicklungsumgebung Choreographe gegeben. Anschließend können die Teilnehmerinnen und Teilnehmer den Roboter selbst programmieren.<br /> Im zweiten Teil der Lehrerfortbildung werden Messwerterfassungen für den mathematisch-naturwissenschaftlichen Unterricht vorgestellt. Weiterhin werden Möglichkeiten der vernetzten Arbeit von Schülerinnen und Schülern (z.B. BYOD) mit diesem System gezeigt.</p> <p><strong>Teilnahme:</strong><br /> Bitte melden Sie sich für die Veranstaltung an bis zum 01.06.2015 unter der Telefonnummer 0341 1259757 oder per Mail an kontakt(at)inspirata.de.</p> <p>Die Teilnahme ist für Sie kostenfrei &#8211; über eine Spende für unser ehrenamtlich betriebenes Bildungszentrum freuen wir uns.</p> <p>Lassen Sie sich inspirieren!</p> " ;
                                                    ical:dtend "2015-06-02T16:30:00+02:00"^^xsd:dateTime ;
                                                    ical:summary "Einladung für Lehrerinnen und Lehrer mit den Fächern Mathematik, Physik und Informatik: Sehr geehrte Damen und Herren, wir laden Sie recht herzlich ein zur Fortbildung &#8220;Robotik und Messtechnik (Schwerpunkt Mathematik)&#8220;. " ;
+                                                   ical:url <http://www.inspirata.de/?p=7611> ;
                                                    ical:dtstamp "2015-05-21T10:54:30+02:00"^^xsd:dateTime ;
-                                                   ical:contact "Anmeldung bis zum 01.06.2015 unter der Telefonnummer 0341 1259757 oder per Mail an kontakt(at)inspirata.de erforderlich." ;
-                                                   ical:url <http://www.inspirata.de/?p=7611> .
+                                                   ical:contact "Anmeldung bis zum 01.06.2015 unter der Telefonnummer 0341 1259757 oder per Mail an kontakt(at)inspirata.de erforderlich." .
 
 <http://leipzig-data.de/Data/Event/Inspirata.7614> a ld:Event ;
                                                    rdfs:label "Fortbildung “Mathematik in Grundschule und Kindergarten” – 16.06.2015" ;
@@ -389,9 +205,9 @@
                                                    ical:description "<p>Einladung für Erzieherinnen und Erzieher:</p> <p>Sehr geehrte Damen und Herren,</p> <p>wir laden Sie recht herzlich ein zur Fortbildung &#8220;<strong>Mathematik in Grundschule und Kindergarten</strong>&#8220;.</p> <p>Die Veranstaltung findet statt am Dienstag, dem <strong>16.06.2015</strong> in der Zeit von <strong>10:00 bis 14:00 Uhr</strong> in den Räumen der INSPIRATA (Deutscher Platz 4, 04103 Leipzig).</p> <p><strong>Inhalte:</strong><br /> Der erste Teil der Veranstaltung wird durchgeführt von Prof. Beutelspacher, Professor für Mathematik sowie Gründer und Direktor des Mathematikums in Gießen.<br /> Erzieherinnen und Erzieher lernen in diesem Workshop, wie man mit einfachsten Mitteln mathematische Objekte und Experimente herstellen kann. Ein erkenntnisreicher und unterhaltsamer Workshop, dessen Ergebnisse man unmittelbar umsetzen kann.<br /> Im zweiten Teil haben Sie Gelegenheit, unseren neuen Ausstellungsteil mathemachen² kennenzulernen und sich über die Angebote der INSPIRATA für Kita und Grundschule zu informieren.</p> <p><strong>Teilnahme:</strong> Bitte melden Sie sich für die Veranstaltung an bis zum 12.06.2015 unter der Telefonnummer 0341 1259757 oder per Mail an kontakt(at)inspirata.de.</p> <p>Bringen Sie gern Ihren Fotoapparat mit &#8211; Fotografieren und Filmen ist in der INSPIRATA für den privaten Gebrauch gestattet.</p> <p>Die Teilnahme ist für Sie kostenfrei – über eine Spende für unser ehrenamtlich betriebenes Bildungszentrum freuen wir uns.</p> <p>Lassen Sie sich inspirieren!</p> " ;
                                                    ical:dtend "2015-06-16T14:00:00+02:00"^^xsd:dateTime ;
                                                    ical:summary "Einladung für Erzieherinnen und Erzieher: Sehr geehrte Damen und Herren, wir laden Sie recht herzlich ein zur Fortbildung &#8220;Mathematik in Grundschule und Kindergarten&#8220;. " ;
+                                                   ical:url <http://www.inspirata.de/?p=7614> ;
                                                    ical:dtstamp "2015-05-21T11:17:59+02:00"^^xsd:dateTime ;
-                                                   ical:contact "Anmeldung bis zum 12.06.2015 unter der Telefonnummer 0341 1259757 oder per Mail an kontakt(at)inspirata.de erforderlich." ;
-                                                   ical:url <http://www.inspirata.de/?p=7614> .
+                                                   ical:contact "Anmeldung bis zum 12.06.2015 unter der Telefonnummer 0341 1259757 oder per Mail an kontakt(at)inspirata.de erforderlich." .
 
 <http://leipzig-data.de/Data/Event/Inspirata.7838> a ld:Event ;
                                                    rdfs:label "Vernissage zu “Mathematik und Origami” – 18.06.2015" ;
@@ -401,8 +217,8 @@
                                                    ical:organizer ldo:Inspirata ;
                                                    ical:description "<p>Die Kunst des Papierfaltens und ihre Verbindung zur Mathematik stehen im Mittelpunkt unserer neuesten Sonderausstellung &#8220;Mathematik und Origami&#8221;.</p> <p><strong>Zur Vernissage am Donnerstag, dem 18. Juni 2015, von 18 bis 20 Uhr, laden wir Sie herzlich in die INSPIRATA ein; der Eintritt ist frei.</strong></p> <p>In Anwesenheit von Frau Juniorprof. Dr. Silvia Schöneburg (Professur für Didaktik der Mathematik am Mathematischen Institut der Universität Leipzig und Vorstandsmitglied des INSPIRATA e.V.) sowie der Künstlerin, Frau Katarina Bernauer, können Sie verschiedenste beeindruckende Origami-Kreationen bestaunen. In unseren Vitrinen sind sowohl beeindruckende Tiere oder Blüten aus Papier als auch anspruchsvolle geometrische Figuren und flache Gebilde mit unglaublich vielen komplizierten Faltungen zu entdecken!<br /> Frau Bernauer hat zahlreiche ihrer Faltobjekte für unsere Sonderausstellung zur Verfügung gestellt und freut sich auf Gespräche mit Interessierten während der Vernissage.<br /> Frau Juniorprof. Schöneburg wird einleitend die interessante Verbindung von Origami und Mathematik erläutern.</p> <p>Weitere Informationen zur Sonderausstellung finden Sie hier.</p> <p>Kommen Sie und lassen Sie sich inspirieren!</p> <p></p> " ;
                                                    ical:summary "Die Kunst des Papierfaltens und ihre Verbindung zur Mathematik stehen im Mittelpunkt unserer neuesten Sonderausstellung &#8220;Mathematik und Origami&#8221;. Zur Vernissage am Donnerstag, dem 18. Juni 2015, von 18 bis 20 Uhr, laden wir Sie herzlich in die INSPIRATA ein; der Eintritt ist frei. " ;
-                                                   ical:dtstamp "2015-06-11T14:14:51+02:00"^^xsd:dateTime ;
-                                                   ical:url <http://www.inspirata.de/?p=7838> .
+                                                   ical:url <http://www.inspirata.de/?p=7838> ;
+                                                   ical:dtstamp "2015-06-11T14:14:51+02:00"^^xsd:dateTime .
 
 <http://leipzig-data.de/Data/Event/Inspirata.7869> a ld:Event ;
                                                    rdfs:label "Origami-Falten – 20.06.2015" ;
@@ -413,8 +229,8 @@
                                                    ical:description "<p>Im Rahmen unserer aktuellen Sonderausstellung “Mathematik und Origami” können die Besucher unserer Öffnungszeit für Familien und Einzelbesucher am Samstag, dem 20. Juni 2015, diese Sonder-Aktion nutzen:</p> <p>Zwischen <strong>14 und 17 Uhr</strong> zeigt die Künstlerin, Frau Katarina Bernauer, wie verschiedene Origami-Figuren angefertigt werden; und die Besucher können sich selbst in der Kunst des Papierfaltens versuchen.</p> <p>Für unsere Sonderausstellung hat Frau Bernauer zahlreiche ihrer beeindruckenden Origami-Kreationen zur Verfügung gestellt. In den Vitrinen kann man sowohl beeindruckende Tiere oder Blüten aus Papier als auch anspruchsvolle geometrische Figuren sowie flache Gebilde mit unglaublich vielen komplizierten Faltungen entdecken!<br /> Lassen Sie sich inspirieren!</p> " ;
                                                    ical:dtend "2015-06-20T17:00:00+02:00"^^xsd:dateTime ;
                                                    ical:summary "Im Rahmen unserer aktuellen Sonderausstellung “Mathematik und Origami” können die Besucher unserer Öffnungszeit für Familien und Einzelbesucher am Samstag, dem 20. Juni 2015, diese Sonder-Aktion nutzen: Zwischen 14 und 17 Uhr zeigt die Künstlerin, Frau Katarina Bernauer, wie verschiedene Origami-Figuren angefertigt werden; und die Besucher können sich selbst in der Kunst des Papierfaltens versuchen. " ;
-                                                   ical:dtstamp "2015-06-16T16:19:23+02:00"^^xsd:dateTime ;
-                                                   ical:url <http://www.inspirata.de/?p=7869> .
+                                                   ical:url <http://www.inspirata.de/?p=7869> ;
+                                                   ical:dtstamp "2015-06-16T16:19:23+02:00"^^xsd:dateTime .
 
 <http://leipzig-data.de/Data/Event/Inspirata.7903> a ld:Event ;
                                                    rdfs:label "Finissage zu “Mathematik und Origami” – 07.11.2015" ;
@@ -425,19 +241,8 @@
                                                    ical:description "<p>Die Kunst des Papierfaltens und ihre Verbindung zur Mathematik stehen im Mittelpunkt unserer bis November ausgestellten Sonderschau &#8220;Mathematik und Origami&#8221;.</p> <p><strong>Zur Finissage am Samstag, dem 7. November 2015, von 17 bis 19 Uhr, laden wir herzlich in die INSPIRATA ein.</strong></p> <p><em>In den Stunden vorher &#8211; während unserer regulären Samstags-Öffnungszeit für Familien und Einzelbesucher &#8211; wird es auch nochmals das Sonderangebot geben, sich selbst im Origami-Falten zu probieren.</em></p> <p><em>Weitere Informationen dazu folgen frühestmöglich &#8230;</em></p> <p>Kommen Sie und lassen Sie sich inspirieren!</p>" ;
                                                    ical:dtend "2015-11-07T19:00:00+01:00"^^xsd:dateTime ;
                                                    ical:summary "Die Kunst des Papierfaltens und ihre Verbindung zur Mathematik stehen im Mittelpunkt unserer bis November ausgestellten Sonderschau &#8220;Mathematik und Origami&#8221;. Zur Finissage am Samstag, dem 7. November 2015, von 17 bis 19 Uhr, laden wir herzlich in die INSPIRATA ein. " ;
-                                                   ical:dtstamp "2015-06-17T13:07:15+02:00"^^xsd:dateTime ;
-                                                   ical:url <http://www.inspirata.de/?p=7903> .
-
-<http://leipzig-data.de/Data/Event/Kuni.2015-05-08> a ld:Event ;
-                                                    rdfs:label "Kinderuni: Wie aus dem Schnitzel Energie wird - Eine anatomische Reise durch den Körper." ;
-                                                    ld:hasTag ldtag:Kinderuni ;
-                                                    ical:dtstart "2015-05-08T16:30:00+02:00"^^xsd:dateTime ;
-                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                    ical:organizer ldo:UniLeipzig ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
-                                                    ical:description "Wir essen entweder, weil wir Appetit haben (z. B. leckere Schokolade) oder weil wir Hunger haben. Aus dem leckeren Schnitzel wird dann Energie, die unser Körper benötigt, damit wir denken, atmen und uns bewegen können. <br/> Professor Bechmann nimmt Euch auf eine Reise durch den Körper mit. Dabei erfahrt ihr, wie der Körper aus dem Schnitzel Energie gewinnt, welche Teile des Körpers daran beteiligt sind, wie diese Energie im Körper verteilt wird und welche Körperteile die größten Nutznießer sind. Mit Prof. Dr. Ingo Bechmann, Institut für Anatomie der Universität Leipzig " ;
-                                                    ical:summary "Kinderuni: Wie aus dem Schnitzel Energie wird - Eine anatomische Reise durch den Körper. Vortrag und Diskussion für Schüler im Alter von 8 bis 12 Jahren mit Prof. Dr. Ingo Bechmann, Institut für Anatomie der Universität Leipzig. " ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> .
+                                                   ical:url <http://www.inspirata.de/?p=7903> ;
+                                                   ical:dtstamp "2015-06-17T13:07:15+02:00"^^xsd:dateTime .
 
 <http://leipzig-data.de/Data/Event/Kuni.2015-05-22> a ld:Event ;
                                                     rdfs:label "Kinderuni: Im Land der Traumzeit - Eine Reise zu den Aborigines." ;
@@ -445,10 +250,10 @@
                                                     ical:dtstart "2015-05-22T16:30:00+02:00"^^xsd:dateTime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:organizer ldo:UniLeipzig ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
                                                     ical:description "Diese Vorlesung führt Euch nach Australien. Im tropischen Norden des Kontinents leben die Ureinwohner noch sehr traditionell. Wie sieht ihr Alltag aus, was lernen die Kinder und was haben die vielen geheimnisvollen Malereien an den Wänden der großen Sandsteinfelsen zu erzählen? <br/> In ihrer Vorlesung vermittelt Euch Dr. Birgit Scheps-Bretschneider einen Einblick in die Welt der Aborigines im Arnhemland und ihrer engen Verbindung zur Natur. " ;
                                                     ical:summary "Kinderuni: Im Land der Traumzeit - Eine Reise zu den Aborigines. Vortrag und Diskussion für Schüler im Alter von 8 bis 12 Jahren mit Dr. Birgit Scheps-Bretschneider, Kustos Australien/Ozenanien, GRASSI Museum für Völkerkunde zu Leipzig. " ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> .
+                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
+                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> .
 
 <http://leipzig-data.de/Data/Event/Kuni.2015-05-26> a ld:Event ;
                                                     rdfs:label "Kinderuni: Lieferketten und Logistik - Wie kommen Geschenke unter den Weihnachtsbaum?" ;
@@ -456,10 +261,10 @@
                                                     ical:dtstart "2015-05-26T16:30:00+02:00"^^xsd:dateTime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:organizer ldo:UniLeipzig ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
                                                     ical:description "Wenn wir etwas im Internet bestellen, reichen dafür oft wenige Klicks am Computer aus. Aber dann geht die Arbeit für viele andere Menschen erst los. Vom Eingang der Bestellung bei der Firma, dem Heraussuchen aus dem Lager, über das Verpacken und Versenden sind viele Menschen damit beschäftigt. Es ist also ein langer Weg, bis das Paket an unserer Haustür ankommt. <br/> Dorothee Bär (Bundesministerium für Verkehr und Digitale Infrastruktur) und José Viergas (Weltverkehrsforum) werden berichten, wie diese Prozesse ablaufen und welche Ideen es gibt, um sie in Zukunft zu verbessern und zu vereinfachen. Und Oberbürgermeister Burkhard Jung kann erklären, wie wichtig die Logistikbranche für Leipzig ist. <br/> Diese Vorlesung findet in Kooperation mit dem Weltverkehrsforum statt." ;
                                                     ical:summary "Kinderuni: Lieferketten und Logistik - Wie kommen Geschenke unter den Weihnachtsbaum? Vortrag und Diskussion für Schüler im Alter von 8 bis 12 Jahren mit Dorothee Bär (Bundesministerium für Verkehr und Digitale Infrastruktur) und José Viergas (Weltverkehrsforum) in Kooperation mit dem Weltverkehrsforum. " ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> .
+                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
+                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> .
 
 <http://leipzig-data.de/Data/Event/Kuni.2015-05-29> a ld:Event ;
                                                     rdfs:label "Kinderuni: Pflanzen erobern die Welt - Von Pollen, Samen, Früchten und schleimigen Lagern." ;
@@ -467,10 +272,10 @@
                                                     ical:dtstart "2015-05-29T16:30:00+02:00"^^xsd:dateTime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:organizer ldo:UniLeipzig ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
                                                     ical:description "Egal, ob zu Land oder zu Wasser, in trockenen Wüsten oder feuchten Regenwäldern, in Flüssen, Meeren oder Wasserfällen – Pflanzen findet man (fast) überall und in verschiedensten Erscheinungsformen. <br/> Wir begeben uns auf eine Reise in das Reich der Pflanzen und gehen ihren spannenden Überlebenstricks nach. Mit Prof. Dr. Alexandra Muellner-Riehl, Institut für Biologie der Universität Leipzig." ;
                                                     ical:summary "Kinderuni: Pflanzen erobern die Welt - Von Pollen, Samen, Früchten und schleimigen Lagern. Vortrag und Diskussion für Schüler im Alter von 8 bis 12 Jahren mit Prof. Dr. Alexandra Muellner-Riehl, Institut für Biologie der Universität Leipzig. " ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> .
+                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
+                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> .
 
 <http://leipzig-data.de/Data/Event/Kuni.2015-06-05> a ld:Event ;
                                                     rdfs:label "Kinderuni: Sehen Stiere wirklich rot? - Farbsehen im Tierreich." ;
@@ -478,114 +283,10 @@
                                                     ical:dtstart "2015-06-05T16:30:00+02:00"^^xsd:dateTime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:organizer ldo:UniLeipzig ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
                                                     ical:description "Unsere Welt ist bunt, aber ist sie das auch für Tiere? Gibt es Tiere, deren Welt noch bunter oder anders aussieht? Was passiert eigentlich, wenn man im Malkasten Farben mischt? Wie sind manche Menschen farbenblind? <br/> Ausgehend von der Theorie der Farbfresserchen soll versucht werden, die Grundlagen des Farbensehens und deren Verwirklichung bei Mensch und Tier zu erklären. Mit Prof. Dr. Klaus Schildberger, Institut für Biologie der Universität Leipzig." ;
                                                     ical:summary "Kinderuni: Sehen Stiere wirklich rot? - Farbsehen im Tierreich. Vortrag und Diskussion für Schüler im Alter von 8 bis 12 Jahren mit Prof. Dr. Klaus Schildberger, Institut für Biologie der Universität Leipzig. " ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> .
-
-<http://leipzig-data.de/Data/Event/NEU.2015-04-15> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: 7. Sonnensprechstunde des Clusterteam Solar" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2015-04-15T17:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/SWL.EuZ> ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Das Clusterteam Solar berät zu Fragen der Nutzung von Sonnenenergie. Am 15.04.2015 besteht die Möglichkeit sich kostenfrei zu Themen im Zusammenhang der Nutzung von Solarenergie beraten zu lassen. Dazu bietet das Clusterteam Solar eine „Sonnensprechstunde“ im Energie- und Umweltzentrum der Stadtwerke Leipzig GmbH in der Katharinenstraße 17, 04103 Leipzig an. Die Beratungsgespräche finden in der Zeit von 17 Uhr bis 19 Uhr statt.<br/>Das Beratungsangebot richtet sich an Leipzigerinnen und Leipziger die sich über die verschiedenen Facetten im Kontext der Solarenergie informieren möchten. Schwerpunktthemen sind solare Wärme und Photovoltaikstrom sowie verschiedene Anwendungen und Installationen wie Solarcarports. Zudem wird über die neuen Regelungen im Zuge der EEG-Novelle vom 1. August 2014 beraten.<br/>Die Beratung erfolgt durch Herrn Roland Neumann, aktives Mitglied im Leipziger Cluster für Energie und Umwelttechnik und Geschäftsführer bei Sonnenplaner e.K." ;
-                                                   ical:dtend "2015-04-15T19:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Energiemetropole-Leipzig: 7. Sonnensprechstunde des Clusterteam Solar" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Herr Roland Neumann [energie@sonnenplaner.com]" ;
-                                                   ld:hasMD5Sum "5izHfUVzXZPpjp5rt4wnNA" .
-
-<http://leipzig-data.de/Data/Event/NEU.2015-04-15.1> a ld:Event ;
-                                                     rdfs:label "Energiemetropole-Leipzig: IHK: Gebäude-Energieausweise - EnEV 2014“ - Zusatzveranstaltung" ;
-                                                     ld:hasTag ldtag:Energie ;
-                                                     ical:dtstart "2015-04-15T17:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:IHK ;
-                                                     ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                     ical:description "Die Veranstaltung findet in der IHK zu Leipzig, Goerdelerring 5, 04109 Leipzig statt." ;
-                                                     ical:dtend "2015-04-15T20:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:summary "Energiemetropole-Leipzig: IHK: Gebäude-Energieausweise - EnEV 2014“ - Zusatzveranstaltung" ;
-                                                     ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                     ld:hasMD5Sum "OrviZG1qpcxce7MMTf+mJQ" .
-
-<http://leipzig-data.de/Data/Event/NEU.2015-04-18> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Passivhaus-Handwerkerforum zur 19. Internationalen Passivhaustagung im Congress Center Leipzig" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2015-04-18T14:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:CCL ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Am 18. April 2015 findet das Passivhaus-Handwerkerforum im Rahmen der 19. Internationalen Passivhaustagung statt. Das interessanten Vortragsprogramm wird durch einen geführten Ausstellungsrundgang ergänzt.Das Programm sowie das Anmeldeformular finden Sie in dem folgenden PDF-Dokument. Um eine Anmeldung bis zum 30. März 2015 wird gebeten." ;
-                                                   ical:dtend "2015-04-18T16:30:00+01:00"^^xsd:dateTime ;
-                                                   ical:summary "Energiemetropole-Leipzig: Passivhaus-Handwerkerforum zur 19. Internationalen Passivhaustagung im Congress Center Leipzig" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Handwerkskammer zu Leipzig, Frau Kober, E-Mail: kober.k@hwk-leipzig.de, Tel: 034383 - 6120" ;
-                                                   ld:hasMD5Sum "IZdB4TK+Y3goiHcnRoVttQ" ;
-                                                   ical:url <http://www.hwk-leipzig.de/http://www.passivhaustagung.de/> .
-
-<http://leipzig-data.de/Data/Event/NEU.2015-04-22> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Energiemanagement mit mod.EEM" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2015-04-22T17:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:IHK ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Die gesetzlichen Rahmenbedingungen (z.B. EDL-G, EEG, Spitzenausgleich-Effizienzsystemverordnung (SpaEfV) etc.) stellen in den letzten Jahren immer höhere Anforderungen an die Unternehmen. Alle verbunden mit dem Ziel der Bundesregierung, die Energieeffizienz in den Unternehmen zu steigern.<br/>Energiemanagementsysteme können, so zeigen die Erfahrungen der letzten Jahre, die betriebliche Energieeffizienz steigern, da ein bewusster Umgang mit Energie praktiziert wird.<br/>In der kostenfreien Veranstaltung erhalten Sie einen Überblick über die verschiedenen Normen und Zertifizierungsmöglichkeiten für ein Energiemanagementsystem. Das vorgestellte Online-Tool „mod.EEM“ bietet den leichten Einstieg und besitzt einen umfangreichen Leitfaden.<br/>Zur Anmeldung" ;
-                                                   ical:dtend "2015-04-22T20:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Energiemetropole-Leipzig: Energiemanagement mit mod.EEM" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Januszewski, Jens IHKLEI [Januszewski@leipzig.ihk.de]" ;
-                                                   ld:hasMD5Sum "9yw51Bksu+YriOF+M6UysA" .
-
-<http://leipzig-data.de/Data/Event/NEU.2015-04-23> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: 11. Leipziger Umweltstammtisch" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2015-04-23T17:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Kubus ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Alles für das Rad? Nationaler Radverkehrsplan und Radverkehrsentwicklungskonzept der Stadt LeipzigWie unterstützt der Bund die Entwicklung des Radverkehrs, was kann man von anderen Städten bei der Radverkehrsplanung lernen und ist Leipzig verrückt, Radstreifen auf der Fahrbahn zu markieren, wo die Rüpelradler doch alle über die Fußwege brettern?<br/>Referenten und Diskussionspartner sind Carolin Ommeln, die beim Umweltbundesamt für den Nationalen Radverkehrsplan arbeitet und Jan Rickmeyer, Radverkehrsbeauftragter der Stadt Leipzig. Natürlich wie immer mit Getränken, Snacks und Zeit für persönlichen Austausch. Und - der Umweltstammtisch hat einen neuen Partner gewonnen: neben dem Umweltforschungszentrum, der Landesstiftung Natur und Umwelt, dem Förderverein Umweltinformationszentrum Leipzig und der Umweltbibliothek Leipzig, ist jetzt auch die Außenstelle Leipzig des Bundesamtes für Naturschutz Teil der Kooperation und wird den Umweltstammtisch mit weiteren Themen und Referenten bereichern. Es lohnt sich wie immer dabei zu sein!" ;
-                                                   ical:dtend "2015-04-23T19:30:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Energiemetropole-Leipzig: 11. Leipziger Umweltstammtisch" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "info@umweltbibliothek-leipzig.de. Ihre Anmeldung mailen Sie bitte direkt an: kubus@lanu.de" ;
-                                                   ld:hasMD5Sum "56Zqk/zu1Xpt8h5ulyANtw" .
-
-<http://leipzig-data.de/Data/Event/NEU.2015-04-27> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Kostenlose Beratung zum Thema erneuerbare Energien und Solardachkataster Leipzig" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2015-04-27T16:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:UIZ ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Anlässlich des Tages der erneuerbaren Energien bietet das UiZ am 27. April 2015 von 16 bis 18 Uhr gemeinsam mit der Handwerkskammer zu Leipzig eine kostenlose Beratung rund um das Thema erneuerbare Energien an.<br/>Die Berater geben Tipps zur Vorgehensweise bei Planung und Bau von Photovoltaik-, Solarthermie-, Biomasse-, Erdwärme- und Windenergieanlagen. Des Weiteren können Gebäudeeigentümer mit Hilfe des Solardachkatasters das solare energetische Potenzial ihres Gebäudes einsehen." ;
-                                                   ical:dtend "2015-04-27T18:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Energiemetropole-Leipzig: Kostenlose Beratung zum Thema erneuerbare Energien und Solardachkataster Leipzig" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "bbJrhvpTa98+9oDCjkPecw" .
-
-<http://leipzig-data.de/Data/Event/NEU.2015-04-28> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Kostenlose Beratung zur Fördermittelerhöhung bei Solarthermie, Biomasse und Wärmepumpen" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2015-04-28T17:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:UIZ ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Anlässlich des Tages der erneuerbaren Energien bietet das UiZ am 28. April 2015 von 17 bis 18 Uhr gemeinsam mit einem Fachmann vom Verein für ökologisches Bauen e. V. eine kostenlose Beratung zu den neuen Fördermittelsätzen bei erneuerbaren Energien im Wärmesektor an. Anlagen zur Nutzung von Solarthermie und Biomasse sowie die Errichtung von Wärmepumpen erhalten ab April erhöhte Fördermittelunterstützung. Der Berater steht auch für alle anderen Fragen rund um das Thema Sanieren und Bauen mit erneuerbaren Energien zur Verfügung." ;
-                                                   ical:dtend "2015-04-28T18:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:summary "Energiemetropole-Leipzig: Kostenlose Beratung zur Fördermittelerhöhung bei Solarthermie, Biomasse und Wärmepumpen" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ld:hasMD5Sum "idHsTZH0aGWEK6uGinDKpw" ;
-                                                   ical:url <http://www.leipzig.de/uiz> .
-
-<http://leipzig-data.de/Data/Event/NEU.2015-04-30> a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: 4. Workshop des Clusterteam Energieeffizienz" ;
-                                                   ld:hasTag ldtag:Energie ;
-                                                   ical:dtstart "2015-04-30T17:30:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:ForsthausRaschwitz ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Sitzung des Clusterteams Erneuerbare Energien<br/>Die Themen im Bereich der erneuerbaren Energien und der Energieeffizienz sind sehr vielfältig, zudem sind die Schwerpunktproblematiken der Branche einem ständigen Wandel unterlegen. Im Clusterteam für erneuerbare Energien und Energieeffizienz diskutieren daher regelmäßig interessierte Akteure aus Leipzig und Umgebung Probleme, Projekte und Veranstaltungen im Bereich der erneuerbaren Energien. Unter den Teilnehmern finden sich vor allem Vertreter von Klein- und mittelständischen Unternehmen, aber auch Privatpersonen und Vertreter der Wissenschaft und Forschung.<br/>Themen des Workshops sind u.a.:<ul><li>EnwaMatic-Technologie, Chemikalienfreie Lösung, Herr Matthis Przywara, ENWA AS Deutschland</li><li>Transformatorensicherheit, Trocknung, Energieeffizienz, Egbert Mener, B&F Montagen GmbH</li><li>Lüftungskonzepte nach DIN 1946-6, Steffen Thieme, Richter*Frenzel GmbH+Co. KG.</li></ul>" ;
-                                                   ical:dtend "2015-04-30T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:summary "Energiemetropole-Leipzig: 4. Workshop des Clusterteam Energieeffizienz" ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:contact "Lothar Lindner, iblindner@me.com. Bitte melden Sie sich bei elke.huebner@leipzig.de für die Teilnahme an." ;
-                                                   ld:hasMD5Sum "cIEYsQZJwG/D/4xG1kBXYg", "+uP3vQ3WRPQDYBYgU+lQ2g" ;
-                                                   ical:url <http://iblcluster.blogspot.de> .
+                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
+                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> .
 
 <http://leipzig-data.de/Data/Event/NEU.2015-05-19> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Fachtagung 'Dokumentation im Anlagenlebenszyklus' am 19.05.2015 im InterCityHotel Leipzig" ;
@@ -607,9 +308,9 @@
                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                    ical:organizer ldo:NetzwerkEnergieUmwelt ;
                                                    ical:description "Eines der größten Gesellschaftsprojekte der Gegenwart - die Energiewende – steht auf Messers Schneide. In der öffentlichen Diskussion gestaltet sich dieses nationale Großprojekt vordergründig als Stromwende. Ungeachtet dessen bieten die Sektoren Verkehr und Wärmeversorgung ein hohes Potenzial zukunftsweisender Lösungen auf dem Gebiet des Klima- und Umweltschutzes. Aus diesem Anlass organisiert der Akademische Energieverein Leipzig e.V. am Mittwoch den 20.05.2015 um 18 Uhr im Hörsaal 3 der Universität Leipzig eine energiepolitische Podiumsdiskussion mit dem Titel „Mobilität und Wärme – die vernachlässigten Sektoren der Energiewende“. Wir möchten mit Vertreter aus Politik, Wissenschaft und Industrie diskutieren, inwiefern ganzheitliche, intersektorale Betrachtungen zum Gelingen der Energiewende beitragen können.<br/>Folgende Energieexpert_innen werden auf dem Podium diskutieren: <ul><li>Dr. Stephan Krein (Verbundnetz Gas AG)</li> <li> Christoph Friedrich (Stadtwerke Leipzig GmbH)</li> <li> Prof. Dipl.-Ing. Timo Leukefeld (Firma Timo Leukefeld - Energie verbindet)</li> <li> Frank Christian Hinrichs (Innovationszentrum für Mobilität und gesellschaftlichen Wandel)</li> </ul> Moderator der Veranstaltung ist Herr Ralf Geißler, Wirtschaftsredakteur von MDR Info. Der Einlass ist frei und eine Anmeldung ist nicht notwendig." ;
-                                                   ld:hasAddressAddendum "Hörsaal 3, Hörsaalgebäude der Universität Leipzig" ;
                                                    ical:summary "Energiemetropole-Leipzig: Podiumsdiskussion „Mobilität und Wärme – die vernachlässigten Sektoren der Energiewende“" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasAddressAddendum "Hörsaal 3, Hörsaalgebäude der Universität Leipzig" ;
                                                    ld:hasMD5Sum "7c2mHzQzFLZD8e26CCFmjA" .
 
 <http://leipzig-data.de/Data/Event/NEU.2015-05-28> a ld:Event ;
@@ -622,9 +323,9 @@
                                                    ical:dtend "2015-05-28T19:00:00+02:00"^^xsd:dateTime ;
                                                    ical:summary "Energiemetropole-Leipzig: 5. Workshop des Clusterteam Energieeffizienz" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ical:url <http://iblcluster.blogspot.de>, <http://iblcluster.blogspot.de/2015/05/einladung-zum-5-workshop-des.html> ;
                                                    ical:contact "Lothar Lindner, iblindner@me.com. Bitte melden Sie sich bei elke.huebner@leipzig.de für die Teilnahme an." ;
-                                                   ld:hasMD5Sum "gR1J5ZAOVZJcbshsfE/78Q", "/ot2COOAM/Y2gwhdjScksg" ;
-                                                   ical:url <http://iblcluster.blogspot.de/2015/05/einladung-zum-5-workshop-des.html>, <http://iblcluster.blogspot.de> .
+                                                   ld:hasMD5Sum "gR1J5ZAOVZJcbshsfE/78Q", "/ot2COOAM/Y2gwhdjScksg" .
 
 <http://leipzig-data.de/Data/Event/NEU.2015-06-23> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Energiecluster trifft Wissenschaft" ;
@@ -632,13 +333,13 @@
                                                    ical:dtstart "2015-06-23T15:00:00+02:00"^^xsd:dateTime ;
                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.WiFa> ;
                                                    ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:description "Programm und Anmeldung werden in Kürze veröffentlich. Bitte merken Sie sich den Termin vor.", "Leipziger Wissenschaftseinrichtungen suchen Kooperationspartner aus der regionalen Wirtschaft: Im Fokus der diesjährigen Veranstaltung „Energiecluster trifft Wissenschaft“ stehen konkrete und facettenreiche Forschungsprojekte, für die Wirtschaftspartner aus dem Energie- und Umweltcluster gesucht werdenProgramm und Anmeldung werden in Kürze veröffentlich. Bitte merken Sie sich den Termin vor.", "Leipziger Wissenschaftseinrichtungen suchen Kooperationspartner aus der regionalen Wirtschaft: Im Fokus der diesjährigen Veranstaltung „Energiecluster trifft Wissenschaft“ stehen konkrete und facettenreiche Forschungsprojekte, für die Wirtschaftspartner aus dem Energie- und Umweltcluster gesucht werden. Bitte merken Sie sich den Termin vor." ;
+                                                   ical:description "Leipziger Wissenschaftseinrichtungen suchen Kooperationspartner aus der regionalen Wirtschaft: Im Fokus der diesjährigen Veranstaltung „Energiecluster trifft Wissenschaft“ stehen konkrete und facettenreiche Forschungsprojekte, für die Wirtschaftspartner aus dem Energie- und Umweltcluster gesucht werden. Bitte merken Sie sich den Termin vor.", "Programm und Anmeldung werden in Kürze veröffentlich. Bitte merken Sie sich den Termin vor.", "Leipziger Wissenschaftseinrichtungen suchen Kooperationspartner aus der regionalen Wirtschaft: Im Fokus der diesjährigen Veranstaltung „Energiecluster trifft Wissenschaft“ stehen konkrete und facettenreiche Forschungsprojekte, für die Wirtschaftspartner aus dem Energie- und Umweltcluster gesucht werdenProgramm und Anmeldung werden in Kürze veröffentlich. Bitte merken Sie sich den Termin vor." ;
                                                    ical:dtend "2015-06-23T17:30:00+02:00"^^xsd:dateTime ;
-                                                   ld:hasAddressAddendum "Uni Leipzig, Grimmaische Straße 12, SR 3" ;
                                                    ical:summary "Energiemetropole-Leipzig: Energiecluster trifft Wissenschaft" ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                   ld:hasAddressAddendum "Uni Leipzig, Grimmaische Straße 12, SR 3" ;
                                                    ical:contact "Daniel Reißmann [reissmann@energiemetropole-leipzig.de, 0341-121-3317]" ;
-                                                   ld:hasMD5Sum "ugvuCaxjm3Eal4P3LBV2BA", "eN8/R7fH89hbehP6EcXjSg", "XJtbBs5VjwbhTQvVElP8Aw" .
+                                                   ld:hasMD5Sum "ugvuCaxjm3Eal4P3LBV2BA", "XJtbBs5VjwbhTQvVElP8Aw", "eN8/R7fH89hbehP6EcXjSg" .
 
 <http://leipzig-data.de/Data/Event/NEU.2015-08-26> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Sommerfest des NEU e.V." ;
@@ -653,103 +354,35 @@
                                                    ical:contact "Daniel Reißmann, Tel.:  +49 - 341 121 3317, E-Mail: reissmann@energiemetropole-leipzig.de" ;
                                                    ld:hasMD5Sum "ey63UxCNKWQ6y2gyp02Qfw" .
 
-<http://leipzig-data.de/Data/Event/NuKLA.2015-03-29> a ld:Event ;
-                                                     rdfs:label "20. Kartoffel-Konzert" ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Eintritt: VVK  18/15 € zzgl. VVG (inkl. Kartoffelgericht),  Abendkasse 22/19 € (excl. Kartoffelgericht)" ;
-                                                     ical:dtstart "2015-03-29T17:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:AlteHandelsboerse ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
-                                                     ical:description "Klavierduo tastiera armonica. Perlen der vierhändigen Klavierliteratur. Mit Werken von Franz Schubert, Johannes Brahms und Maurice Ravel." ;
-                                                     ical:summary "20. Kartoffel-Konzert. Klavierduo tastiera armonica. Perlen der vierhändigen Klavierliteratur" ;
-                                                     ical:url <http://www.nukla.de> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2015-04-01> a ld:Event ;
-                                                     rdfs:label "Leipziger Floßgraben. Der Film." ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Eintritt 4 €" ;
-                                                     ical:dtstart "2015-04-01T17:30:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:PragerFruehling ;
-                                                     ical:summary "Leipziger Floßgraben. Der Film." ;
-                                                     ical:url <http://www.nukla.de> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2015-04-18> a ld:Event ;
-                                                     rdfs:label "Frühling im nordwestlichen Auwald." ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "5 EUR (bereits ermäßigt)" ;
-                                                     ical:dtstart "2015-04-18T14:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:LandauerBruecke ;
-                                                     ical:description "Exkursion mit Ralf Märkert, NABU RV Leipzig. VHS-Kursnummer: L 18 102 Z, Anmeldung bei VHS" ;
-                                                     ical:summary "Exkursion mit Ralf Märkert, NABU RV Leipzig. Treff an der Landauer Brücke." ;
-                                                     ical:url <http://www.nukla.de> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2015-04-29> a ld:Event ;
-                                                     rdfs:label "Leipziger Floßgraben. Der Film." ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Eintritt 4 €" ;
-                                                     ical:dtstart "2015-04-29T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:PragerFruehling ;
-                                                     ical:summary "Leipziger Floßgraben. Der Film." ;
-                                                     ical:url <http://www.nukla.de> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2015-05-02> a ld:Event ;
-                                                     rdfs:label "Die Saale-Elster-Luppe-Aue" ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "5 EUR (bereits ermäßigt)" ;
-                                                     ical:dtstart "2015-05-02T08:30:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:NN ;
-                                                     ical:description "Fahrradexkursion von Halle nach Leipzig mit Andreas Liste, AHA e.V. VHS-Kursnummer: L 18 104 Z, Anmeldung bei der VHS. Treff Hbf. Leipzig, Abfahrt S Bahn nach Halle oder 10 Uhr in Halle nach Absprache" ;
-                                                     ical:summary "Fahrradexkursion von Halle nach Leipzig mit Andreas Liste" ;
-                                                     ical:url <http://www.nukla.de> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2015-05-02.1> a ld:Event ;
-                                                       rdfs:label "Geführte Paddeltour für Selbstfahrer im Canadier mit Claudia Dietzel und Dirk Hoffsky, FreizeitAbenteuer." ;
-                                                       ld:hasTag ldtag:AULA ;
-                                                       ld:Kosten "18 EUR (bereits ermäßigt)" ;
-                                                       ical:dtstart "2015-05-02T14:00:00+02:00"^^xsd:dateTime ;
-                                                       ical:location ldo:BootsanlegerRennbahnWeg ;
-                                                       ical:description "Geführte Paddeltour für Selbstfahrer im Canadier mit Claudia Dietzel und Dirk Hoffsky, FreizeitAbenteuer. VHS-Kursnummer: L 18 105 Z, Anmeldung bei VHS, Letzter Rücktritt: 15.4.15" ;
-                                                       ical:summary "Geführte Paddeltour für Selbstfahrer im Canadier mit Claudia Dietzel und Dirk Hoffsky" ;
-                                                       ical:url <http://www.nukla.de> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2015-05-10> a ld:Event ;
-                                                     rdfs:label "NuKLA-Informationsstand Connewitzer Straßenfest" ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     ical:dtstart "2015-05-10T11:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:NN ;
-                                                     ical:description "NuKLA-Informationsstand beim Connewitzer Straßenfest" ;
-                                                     ical:summary "NuKLA-Informationsstand beim Connewitzer Straßenfest" ;
-                                                     ical:url <http://www.nukla.de> .
-
 <http://leipzig-data.de/Data/Event/NuKLA.2015-05-20> a ld:Event ;
                                                      rdfs:label "Leipziger Floßgraben. Der Film." ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Eintritt 4 €" ;
                                                      ical:dtstart "2015-05-20T17:30:00+02:00"^^xsd:dateTime ;
                                                      ical:location ldo:PragerFruehling ;
                                                      ical:summary "Leipziger Floßgraben. Der Film." ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:Kosten "Eintritt 4 €" .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-05-31> a ld:Event ;
                                                      rdfs:label "21. Kartoffel-Konzert" ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Eintritt: VVK  18/15 € zzgl. VVG (inkl. Kartoffelgericht),  Abendkasse 22/19 € (excl. Kartoffelgericht)" ;
                                                      ical:dtstart "2015-05-31T18:30:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:AlteHandelsboerse ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
                                                      ical:description "21. Kartoffel-Konzert. Stephan König Jazz-Quartett. Bilder einer Ausstellung – the jazz-version. Beginn erst 18:30 Uhr!" ;
                                                      ical:summary "21. Kartoffel-Konzert. Stephan König Jazz-Quartett. Bilder einer Ausstellung – the jazz-version" ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "Eintritt: VVK  18/15 € zzgl. VVG (inkl. Kartoffelgericht),  Abendkasse 22/19 € (excl. Kartoffelgericht)" .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-06-13> a ld:Event ;
                                                      rdfs:label "Geführte Paddeltour im Drachenboot mit Claudia Dietzel und Dirk Hoffsky, FreizeitAbenteuer." ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "18 EUR (bereits ermäßigt)" ;
                                                      ical:dtstart "2015-06-13T11:00:00+02:00"^^xsd:dateTime ;
                                                      ical:location <http://leipzig-data.de/Data/Firma/BootsverleihKanal28> ;
                                                      ical:description "Geführte Paddeltour im Drachenboot mit Claudia Dietzel und Dirk Hoffsky, FreizeitAbenteuer. VHS-Kursnummer: L 18 116 Z, Anmeldung bei VHS, Letzter Rücktritt: 1.6.15" ;
                                                      ical:dtend "2015-06-13T16:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:Kosten "18 EUR (bereits ermäßigt)" .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-06-16> a ld:Event ;
                                                      rdfs:label "NuKLA-Informationsstand auf der Ökofete" ;
@@ -764,164 +397,87 @@
 <http://leipzig-data.de/Data/Event/NuKLA.2015-06-27> a ld:Event ;
                                                      rdfs:label "Fahrradexkursion von Zeitz nach Leipzig mit Andreas Liste, AHA e.V.  " ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Diese Veranstaltung der Politischen Bildung ist entgeltfrei" ;
                                                      ical:dtstart "2015-06-27T08:30:00+02:00"^^xsd:dateTime, "2015-06-27T16:00:00+02:00"^^xsd:dateTime ;
                                                      ical:location ldo:NN ;
                                                      ical:description "Fahrradexkursion von Zeitz nach Leipzig mit Andreas Liste, AHA e.V.  VHS-Kursnummer: L 18 118 Z, Anmeldung bei VHS.  Treff 8.30 Uhr Hbf. Leipzig, S-Bahn nach Zeitz, oder 10 Uhr Zeitz Bahnhof" ;
                                                      ical:summary "Fahrradexkursion von Zeitz nach Leipzig mit Andreas Liste, AHA e.V. Treff 8.30 Uhr Hbf. Leipzig, S-Bahn nach Zeitz, oder 10 Uhr Zeitz Bahnhof" ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:Kosten "Diese Veranstaltung der Politischen Bildung ist entgeltfrei" .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-07-05> a ld:Event ;
                                                      rdfs:label "Geführte Paddeltour im Canadier mit Claudia Dietzel, Dirk Hoffsky" ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "25 EUR (bereits ermäßigt)" ;
                                                      ical:dtstart "2015-07-05T10:00:00+02:00"^^xsd:dateTime ;
                                                      ical:location <http://leipzig-data.de/Data/Firma/KanuverleihRennbahnweg> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
                                                      ical:description "Geführte Paddeltour im Canadier mit Claudia Dietzel, Dirk Hoffsky. FreizeitAbenteuer. VHS-Kursnummer L 18 120 Z, Anmeldung bei VHS." ;
                                                      ical:dtend "2015-07-05T15:00:00+02:00"^^xsd:dateTime ;
                                                      ical:summary "Geführte Paddeltour im Canadier mit Claudia Dietzel, Dirk Hoffsky" ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "25 EUR (bereits ermäßigt)" .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-09-26> a ld:Event ;
                                                      rdfs:label "Fahrradexkursion von Taucha nach Leipzig mit Andreas Liste, AHA e.V." ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Diese Veranstaltung der Politischen Bildung ist entgeltfrei." ;
                                                      ical:dtstart "2015-09-26T10:00:00+02:00"^^xsd:dateTime ;
                                                      ical:location ldo:NN ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
                                                      ical:description "Fahrradexkursion von Taucha nach Leipzig mit Andreas Liste, AHA e.V. VHS-Kursnummer: M 18 110 Z, Anmeldung bei VHS. Treff am Bahnhof Taucha" ;
                                                      ical:dtend "2015-09-26T15:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "Diese Veranstaltung der Politischen Bildung ist entgeltfrei." .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-09-27> a ld:Event ;
                                                      rdfs:label "22. Kartoffel-Konzert" ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Eintritt: VVK  18/15 € zzgl. VVG (inkl. Kartoffelgericht),  Abendkasse 22/19 € (excl. Kartoffelgericht)" ;
                                                      ical:dtstart "2015-09-27T19:30:00+02:00"^^xsd:dateTime ;
                                                      ical:location ldo:AlteHandelsboerse ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
                                                      ical:description "22. Kartoffel-Konzert. Duo Stephan König, Klavier und Florian Poser, Vibraphon & Marimbaphon.  Kompositionen für 88 Tasten und 84 Platten." ;
                                                      ical:summary "22. Kartoffel-Konzert. Duo Stephan König, Klavier und Florian Poser, Vibraphon & Marimbaphon.  Kompositionen für 88 Tasten und 84 Platten." ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "Eintritt: VVK  18/15 € zzgl. VVG (inkl. Kartoffelgericht),  Abendkasse 22/19 € (excl. Kartoffelgericht)" .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-11-07> a ld:Event ;
                                                      rdfs:label "Herbstexkursion in die Pleiße-Elster-Aue mit Andreas Liste, AHA e.V." ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Diese Veranstaltung der Politischen Bildung ist entgeltfrei." ;
                                                      ical:dtstart "2015-11-07T10:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:KoburgerBruecke ;
                                                      ical:description "Herbstexkursion in die Pleiße-Elster-Aue mit Andreas Liste, AHA e.V. VHS-Kursnummer: M 18 120 Z, Anmeldung bei VHS. Treff: Tram 9, Haltestelle Koburger Brücke" ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:Kosten "Diese Veranstaltung der Politischen Bildung ist entgeltfrei." .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-11-21> a ld:Event ;
                                                      rdfs:label "23. Konzert, 3. NuKLA Spezial" ;
                                                      ld:hasTag ldtag:AULA ;
                                                      ical:dtstart "2015-11-21T19:30:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:CentralPalastStoetteritz ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
                                                      ical:description "23. Konzert, 3. NuKLA Spezial: Klamauk & gehobener Blödsinn mit Ingo Insterburg" ;
                                                      ical:summary "23. Konzert, 3. NuKLA Spezial: Klamauk & gehobener Blödsinn mit Ingo Insterburg" ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-11-28> a ld:Event ;
                                                      rdfs:label "Herbstexkursion zur Burgaue in Leipzig mit Andreas Liste, AHA e.V." ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Diese Veranstaltung der Politischen Bildung ist entgeltfrei." ;
                                                      ical:dtstart "2015-11-28T10:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:Haus_Auensee ;
                                                      ical:description "Herbstexkursion zur Burgaue in Leipzig mit Andreas Liste, AHA e.V. VHS-Kursnummer: M 18 130 Z, Anmeldung bei VHS. Treff: Haus Auensee" ;
                                                      ical:dtend "2015-11-28T14:00:00+01:00"^^xsd:dateTime ;
                                                      ical:summary "Herbstexkursion zur Burgaue in Leipzig mit Andreas Liste, AHA e.V. Treff: Haus Auensee" ;
-                                                     ical:url <http://www.nukla.de> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:Kosten "Diese Veranstaltung der Politischen Bildung ist entgeltfrei." .
 
 <http://leipzig-data.de/Data/Event/NuKLA.2015-11-29> a ld:Event ;
                                                      rdfs:label "24. Kartoffel-Konzert" ;
                                                      ld:hasTag ldtag:AULA ;
-                                                     ld:Kosten "Eintritt: VVK  18/15 € zzgl. VVG,  Abendkasse 22/19 € (ohne Kartoffelgericht)" ;
                                                      ical:dtstart "2015-11-29T17:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:Paul-Gerhardt-Kirche ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
                                                      ical:description "24. Kartoffel-Konzert: Adventkonzert mit CALMUS" ;
                                                      ical:summary "24. Kartoffel-Konzert: Adventkonzert mit CALMUS" ;
-                                                     ical:url <http://www.nukla.de> .
-
-<http://leipzig-data.de/Data/Event/OKLab.2015-03-30> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:dtstart "2015-03-30T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BIC ;
-                                                     ical:organizer ldt:CodeForLeipzig ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
-                                                     ical:dtend "2015-03-30T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytfbnc/> .
-
-<http://leipzig-data.de/Data/Event/OKLab.2015-04-06> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:dtstart "2015-04-06T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BIC ;
-                                                     ical:organizer ldt:CodeForLeipzig ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
-                                                     ical:dtend "2015-04-06T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytgbjb/> .
-
-<http://leipzig-data.de/Data/Event/OKLab.2015-04-13> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:dtstart "2015-04-13T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BIC ;
-                                                     ical:organizer ldt:CodeForLeipzig ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten." ;
-                                                     ical:dtend "2015-04-13T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytgbrb/> .
-
-<http://leipzig-data.de/Data/Event/OKLab.2015-04-20> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:dtstart "2015-04-20T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BIC ;
-                                                     ical:organizer ldt:CodeForLeipzig ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
-                                                     ical:dtend "2015-04-20T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytgbbc/>, <http://www.meetup.com/OK-Lab-Leipzig/events/221839864/> .
-
-<http://leipzig-data.de/Data/Event/OKLab.2015-04-27> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:dtstart "2015-04-27T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BIC ;
-                                                     ical:organizer ldt:CodeForLeipzig ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
-                                                     ical:dtend "2015-04-27T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/221973845/> .
-
-<http://leipzig-data.de/Data/Event/OKLab.2015-05-04> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:dtstart "2015-05-04T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BIC ;
-                                                     ical:organizer ldt:CodeForLeipzig ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
-                                                     ical:dtend "2015-05-04T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222162213/> .
-
-<http://leipzig-data.de/Data/Event/OKLab.2015-05-11> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:dtstart "2015-05-11T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BIC ;
-                                                     ical:organizer ldt:CodeForLeipzig ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
-                                                     ical:dtend "2015-05-11T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222299292/> .
+                                                     ical:url <http://www.nukla.de> ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "Eintritt: VVK  18/15 € zzgl. VVG,  Abendkasse 22/19 € (ohne Kartoffelgericht)" .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-05-18> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -930,9 +486,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-05-18T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222341685/> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222341685/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-06-01> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -941,9 +497,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-06-01T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222611299/> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222611299/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-06-08> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -952,9 +508,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-06-08T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222450973/> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222450973/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-06-15> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -963,9 +519,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-06-15T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222611303/> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/222611303/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-06-22> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -974,9 +530,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-06-22T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytjbdc/> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytjbdc/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-06-29> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -985,9 +541,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-06-29T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytjbmc/> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytjbmc/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-07-06> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -996,9 +552,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-07-06T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytkbjb/> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytkbjb/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-07-13> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -1007,9 +563,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-07-13T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytkbrb/> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytkbrb/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-07-20> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -1018,9 +574,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-07-20T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytkbbc/> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytkbbc/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-07-27> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
@@ -1029,21 +585,9 @@
                                                      ical:organizer ldt:CodeForLeipzig ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
                                                      ical:dtend "2015-07-27T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytkbkc/> .
-
-<http://leipzig-data.de/Data/Event/PAS.2015-05-09> a ld:Event ;
-                                                   rdfs:label "Berührungslos festhalten: Experimente mit Optischen Pinzetten" ;
-                                                   ld:hasTag ldtag:Physik ;
-                                                   ical:dtstart "2015-05-09T11:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/04103.Leipzig.Linnestrasse.5> ;
-                                                   ical:organizer <http://leipzig-data.de/Data/Traeger/UniLeipzig.Physik> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/PAS> ;
-                                                   ical:description "Die Fakultät für Physik und Geowissenschaften bietet Schülerinnen, Schülern und Interessierten physikalische Vorträge am Samstagmorgen an. ProfessorInnen und WissenschaftlerInnen sprechen über faszinierende Themen der modernen Physik und geben Einblicke in die derzeitige Forschung." ;
-                                                   ld:hasAddressAddendum "Linnéstraße 5, Großer Hörsaal" ;
-                                                   ical:summary "Berührungslos festhalten: Experimente mit Optischen Pinzetten. Mit Prof. Dr. Friedrich Kremer (Uni Leipzig, Institut für Experimentelle Physik I)" ;
-                                                   ical:url <https://www.facebook.com/Physik.am.Samstag.Leipzig>, <http://pas.physgeo.uni-leipzig.de> .
+                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/qhkbdlytkbkc/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig .
 
 <http://leipzig-data.de/Data/Event/PAS.2015-06-06> a ld:Event ;
                                                    rdfs:label "Physics of Star Trek" ;
@@ -1051,11 +595,11 @@
                                                    ical:dtstart "2015-06-06T11:00:00+02:00"^^xsd:dateTime ;
                                                    ical:location <http://leipzig-data.de/Data/04103.Leipzig.Linnestrasse.5> ;
                                                    ical:organizer <http://leipzig-data.de/Data/Traeger/UniLeipzig.Physik> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/PAS> ;
                                                    ical:description "Die Fakultät für Physik und Geowissenschaften bietet Schülerinnen, Schülern und Interessierten physikalische Vorträge am Samstagmorgen an. ProfessorInnen und WissenschaftlerInnen sprechen über faszinierende Themen der modernen Physik und geben Einblicke in die derzeitige Forschung." ;
-                                                   ld:hasAddressAddendum "Linnéstraße 5, Großer Hörsaal" ;
                                                    ical:summary "Physics of Star Trek. Mit Prof. Dr. Dirk Morr (University of Illinois at Chicago)" ;
-                                                   ical:url <https://www.facebook.com/Physik.am.Samstag.Leipzig>, <http://pas.physgeo.uni-leipzig.de> .
+                                                   ical:url <https://www.facebook.com/Physik.am.Samstag.Leipzig>, <http://pas.physgeo.uni-leipzig.de> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/PAS> ;
+                                                   ld:hasAddressAddendum "Linnéstraße 5, Großer Hörsaal" .
 
 <http://leipzig-data.de/Data/Event/PAS.2015-06-20> a ld:Event ;
                                                    rdfs:label "Schwimmen für groß und klein" ;
@@ -1063,17 +607,17 @@
                                                    ical:dtstart "2015-06-20T11:00:00+02:00"^^xsd:dateTime ;
                                                    ical:location <http://leipzig-data.de/Data/04103.Leipzig.Linnestrasse.5> ;
                                                    ical:organizer <http://leipzig-data.de/Data/Traeger/UniLeipzig.Physik> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/PAS> ;
                                                    ical:description "Die Fakultät für Physik und Geowissenschaften bietet Schülerinnen, Schülern und Interessierten physikalische Vorträge am Samstagmorgen an. ProfessorInnen und WissenschaftlerInnen sprechen über faszinierende Themen der modernen Physik und geben Einblicke in die derzeitige Forschung." ;
-                                                   ld:hasAddressAddendum "Linnéstraße 5, Großer Hörsaal" ;
                                                    ical:summary "Schwimmen für groß und klein. Prof. Dr. Frank Cichos (Uni Leipzig, Institut für Experimentelle Physik I)" ;
-                                                   ical:url <https://www.facebook.com/Physik.am.Samstag.Leipzig>, <http://pas.physgeo.uni-leipzig.de> .
+                                                   ical:url <https://www.facebook.com/Physik.am.Samstag.Leipzig>, <http://pas.physgeo.uni-leipzig.de> ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/PAS> ;
+                                                   ld:hasAddressAddendum "Linnéstraße 5, Großer Hörsaal" .
 
 <> a owl:Ontology ;
    rdfs:label "Events" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionName "The Leipzig Open Data Project" ;
    cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" .
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
 
 ld:Event a owl:Class ;
          rdfs:label "Event" .

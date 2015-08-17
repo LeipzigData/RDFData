@@ -1,18 +1,17 @@
 # Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
 
 @base <http://leipzig-data.de/Data/API-Referenzen/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
 
 <> a owl:Ontology ;
    rdfs:label "Referenzen zu API Leipzig" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionName "The Leipzig Open Data Project" ;
    cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" .
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
 
 <http://leipzig-data.de/Data/APIId/Ortsteil.01> rdfs:sameAs <http://leipzig-data.de/Data/StadtId/Ortsteil.00> .
 
@@ -140,6 +139,8 @@
 
 <http://leipzig-data.de/Data/APIId/Ortsteil.63> rdfs:sameAs <http://leipzig-data.de/Data/StadtId/Ortsteil.95> .
 
+<http://leipzig-data.de/Data/Firma/MuconaMedia> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.125> .
+
 <http://leipzig-data.de/Data/Ort/AKAD-Hochschule> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.69> .
 
 <http://leipzig-data.de/Data/Ort/ALEX> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.104> .
@@ -263,6 +264,8 @@
 <http://leipzig-data.de/Data/Ort/SchoolOfMedia> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.37>, <http://leipzig-data.de/Data/APIId/Host.27> .
 
 <http://leipzig-data.de/Data/Ort/SportforumLeipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.54>, <http://leipzig-data.de/Data/APIId/Venue.53> .
+
+<http://leipzig-data.de/Data/Ort/StadtteilladenLeipzigerWesten> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.124> .
 
 <http://leipzig-data.de/Data/Ort/Start-Up_Club_Leipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.68> .
 
