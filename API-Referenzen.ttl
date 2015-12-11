@@ -4,16 +4,15 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 
 <> a owl:Ontology ;
    rdfs:label "Referenzen zu API Leipzig" ;
-   cc:attributionName "The Leipzig Open Data Project" ;
    cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" ;
    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
-
-<http://leipzig-data.de/Data/Ort/Kaiserbad> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.127> .
 
 <http://leipzig-data.de/Data/APIId/Ortsteil.01> rdfs:sameAs <http://leipzig-data.de/Data/StadtId/Ortsteil.00> .
 
@@ -141,6 +140,8 @@
 
 <http://leipzig-data.de/Data/APIId/Ortsteil.63> rdfs:sameAs <http://leipzig-data.de/Data/StadtId/Ortsteil.95> .
 
+<http://leipzig-data.de/Data/Firma/GbR_Caravan> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.80> .
+
 <http://leipzig-data.de/Data/Firma/MuconaMedia> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.125> .
 
 <http://leipzig-data.de/Data/Ort/AKAD-Hochschule> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.69> .
@@ -167,9 +168,11 @@
 
 <http://leipzig-data.de/Data/Ort/Caravan> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.111>, <http://leipzig-data.de/Data/APIId/Venue.112> .
 
+<http://leipzig-data.de/Data/Ort/CaravanProjektladenSinnUndSein> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.137> .
+
 <http://leipzig-data.de/Data/Ort/Chemnitz.weltecho> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.75> .
 
-<http://leipzig-data.de/Data/Ort/Cinemabstruso> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.73>, <http://leipzig-data.de/Data/APIId/Venue.59>, <http://leipzig-data.de/Data/APIId/Host.39> .
+<http://leipzig-data.de/Data/Ort/Cinemabstruso> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.39>, <http://leipzig-data.de/Data/APIId/Venue.59>, <http://leipzig-data.de/Data/APIId/Venue.73> .
 
 <http://leipzig-data.de/Data/Ort/Cinemabstruso.Office> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.25> .
 
@@ -207,11 +210,15 @@
 
 <http://leipzig-data.de/Data/Ort/HdD> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.39>, <http://leipzig-data.de/Data/APIId/Venue.40> .
 
-<http://leipzig-data.de/Data/Ort/HierUndJetzt> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.121> .
+<http://leipzig-data.de/Data/Ort/HierUndJetzt> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.121>, <http://leipzig-data.de/Data/APIId/Venue.131> .
+
+<http://leipzig-data.de/Data/Ort/HofFelgentreff> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.130> .
 
 <http://leipzig-data.de/Data/Ort/HornsErben> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.89> .
 
 <http://leipzig-data.de/Data/Ort/IHK> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.86> .
+
+<http://leipzig-data.de/Data/Ort/Kaiserbad> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.127> .
 
 <http://leipzig-data.de/Data/Ort/Kapitaldruck> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.19> .
 
@@ -229,15 +236,21 @@
 
 <http://leipzig-data.de/Data/Ort/LeipzigOnRails> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.24> .
 
-<http://leipzig-data.de/Data/Ort/LeipzigSchoolOfDesign> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.61>, <http://leipzig-data.de/Data/APIId/Host.41> .
+<http://leipzig-data.de/Data/Ort/LeipzigSchoolOfDesign> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.41>, <http://leipzig-data.de/Data/APIId/Venue.61> .
 
 <http://leipzig-data.de/Data/Ort/LeipzigerBaumwollspinnerei> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.99> .
+
+<http://leipzig-data.de/Data/Ort/Lumalenscape> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.133> .
 
 <http://leipzig-data.de/Data/Ort/MPI.EVA> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.62> .
 
 <http://leipzig-data.de/Data/Ort/MandalaSpieleck> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.79> .
 
 <http://leipzig-data.de/Data/Ort/MediaCityLeipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.35> .
+
+<http://leipzig-data.de/Data/Ort/MonophonStudioLeipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.128> .
+
+<http://leipzig-data.de/Data/Ort/Museum.Grassi> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.134>, <http://leipzig-data.de/Data/APIId/Host.76>, <http://leipzig-data.de/Data/APIId/Host.79> .
 
 <http://leipzig-data.de/Data/Ort/Musikpavillon> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.78> .
 
@@ -251,7 +264,9 @@
 
 <http://leipzig-data.de/Data/Ort/PILOT> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.58> .
 
-<http://leipzig-data.de/Data/Ort/Plan-B> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.12>, <http://leipzig-data.de/Data/APIId/Venue.117> .
+<http://leipzig-data.de/Data/Ort/Plan-B> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.117>, <http://leipzig-data.de/Data/APIId/Venue.12> .
+
+<http://leipzig-data.de/Data/Ort/RaumstationCoworkingLeipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.132> .
 
 <http://leipzig-data.de/Data/Ort/Riquet> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.31> .
 
@@ -263,19 +278,21 @@
 
 <http://leipzig-data.de/Data/Ort/SchlossSchoenefeld> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.71> .
 
-<http://leipzig-data.de/Data/Ort/SchoolOfMedia> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.37>, <http://leipzig-data.de/Data/APIId/Host.27> .
+<http://leipzig-data.de/Data/Ort/SchoolOfMedia> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.27>, <http://leipzig-data.de/Data/APIId/Venue.37> .
 
-<http://leipzig-data.de/Data/Ort/SportforumLeipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.54>, <http://leipzig-data.de/Data/APIId/Venue.53> .
+<http://leipzig-data.de/Data/Ort/SportforumLeipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.53>, <http://leipzig-data.de/Data/APIId/Venue.54> .
 
 <http://leipzig-data.de/Data/Ort/StadtteilladenLeipzigerWesten> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.124> .
 
 <http://leipzig-data.de/Data/Ort/Start-Up_Club_Leipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.68> .
 
+<http://leipzig-data.de/Data/Ort/Stelzenhaus> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.136> .
+
 <http://leipzig-data.de/Data/Ort/Tapetenwerk> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.107> .
 
 <http://leipzig-data.de/Data/Ort/UTConnewitz> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.98> .
 
-<http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.57>, <http://leipzig-data.de/Data/APIId/Venue.70>, <http://leipzig-data.de/Data/APIId/Venue.60> .
+<http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.57>, <http://leipzig-data.de/Data/APIId/Venue.60>, <http://leipzig-data.de/Data/APIId/Venue.70> .
 
 <http://leipzig-data.de/Data/Ort/UniLeipzig.CampusJahnallee> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.56> .
 
@@ -307,6 +324,8 @@
 
 <http://leipzig-data.de/Data/Person/Bergmann_Thommy> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.46> .
 
+<http://leipzig-data.de/Data/Person/Felgentreff_Nadine> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.73> .
+
 <http://leipzig-data.de/Data/Person/Geissler_Maria> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.62> .
 
 <http://leipzig-data.de/Data/Person/Graebe_HansGert> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.28> .
@@ -326,6 +345,8 @@
 <http://leipzig-data.de/Data/Person/Koch_Jan> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.67> .
 
 <http://leipzig-data.de/Data/Person/Koenig_KarlFriedrich> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.22> .
+
+<http://leipzig-data.de/Data/Person/Kretzschmar_Maxi> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.75> .
 
 <http://leipzig-data.de/Data/Person/Meyer_Rene> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.21> .
 
@@ -347,7 +368,7 @@
 
 <http://leipzig-data.de/Data/Person/Senn_Britta> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.51> .
 
-<http://leipzig-data.de/Data/Person/Wagner_Thomas> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.33>, <http://leipzig-data.de/Data/APIId/Host.34>, <http://leipzig-data.de/Data/APIId/Host.30>, <http://leipzig-data.de/Data/APIId/Host.31>, <http://leipzig-data.de/Data/APIId/Host.32> .
+<http://leipzig-data.de/Data/Person/Wagner_Thomas> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.30>, <http://leipzig-data.de/Data/APIId/Host.31>, <http://leipzig-data.de/Data/APIId/Host.32>, <http://leipzig-data.de/Data/APIId/Host.33>, <http://leipzig-data.de/Data/APIId/Host.34> .
 
 <http://leipzig-data.de/Data/Person/Weise_Joerg> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.44> .
 
@@ -359,28 +380,8 @@
 
 <http://leipzig-data.de/Data/Traeger/FES.Leipzig> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.54> .
 
+<http://leipzig-data.de/Data/Traeger/HTWK> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.74> .
+
 <http://leipzig-data.de/Data/Verein/AG_Animationsfilm> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.66> .
 
 <http://leipzig-data.de/Data/Verein/CineMuro> ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.61> .
-
-
-<http://leipzig-data.de/Data/Person/Felgentreff_Nadine> 
-	ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.73> .
-
-<http://leipzig-data.de/Data/Traeger/HTWK> 
-	ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.74>  .
-
-<http://leipzig-data.de/Data/Person/Kretzschmar_Maxi> 
-	ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Host.75> .
-
-<http://leipzig-data.de/Data/Ort/RaumstationCoworkingLeipzig> 
-	ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.132> .
-
-<http://leipzig-data.de/Data/Ort/HierUndJetzt>
-	ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.131> . 
-
-<http://leipzig-data.de/Data/Ort/HofFelgentreff> 
-	ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.130> .
-
-<http://leipzig-data.de/Data/Ort/MonophonStudioLeipzig> 
-	ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Venue.128> .
