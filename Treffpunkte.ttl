@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+
+<http://leipzig-data.de/Data/Treffpunkte/> a owl:Ontology ;
+   rdfs:label "Treffpunkte" ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+ld:Treffpunkt a owl:Class ; 
+  rdfs:comment "Ein Treffpunkt ist ein Ort in der Stadt leipzig, dem keine Adresse zugeordnet werden kann."; 
+  rdfs:label "Treffpunkt" .
+
+<http://leipzig-data.de/Data/Treffpunkt/LandauerBruecke> a ld:Treffpunkt ;
+rdfs:label "Elsterbecken, Landauer Brücke, Hans-Driesch-Straße" ;
+geosparql:asWKT "Point(12.339967 51.350240)" ;
+geo:lat 51.350240 ; geo:long 12.339967 .
+
+<http://leipzig-data.de/Data/Treffpunkt/Teichstrasse> a ld:Treffpunkt ;
+rdfs:label "Teichstraße";
+geosparql:asWKT "Point(12.368072 51.306138)" ;
+geo:lat 51.306138 ; geo:long 12.368072 .
+
+<http://leipzig-data.de/Data/Treffpunkt/Hst.Rennbahn> a ld:Treffpunkt ;
+rdfs:label "Schleußiger Weg, Bushaltestelle Rennbahn";
+geosparql:asWKT "Point(12.360814 51.321093)" ;
+geo:lat 51.321093 ; geo:long 12.360814 .
+
+<http://leipzig-data.de/Data/Treffpunkt/KoburgerBruecke> a ld:Treffpunkt ;
+rdfs:label "Haltestelle Koburger Brücke";
+geosparql:asWKT "Point(12.373905 51.302905)" ;
+geo:lat 51.302905 ; geo:long 12.373905 .
+
+<http://leipzig-data.de/Data/Treffpunkt/Rosental.Sued> a ld:Treffpunkt ;
+rdfs:label "Rosentalgasse, Ecke Emil-Fuchs-Straße" ;
+geosparql:asWKT "Point(12.368344 51.346976)" ;
+geo:lat 51.346976 ; geo:long 12.368344 .
+
+<http://leipzig-data.de/Data/Treffpunkt/Bahnhof.Taucha> a ld:Treffpunkt ;
+rdfs:label "Bahnhof Taucha" ;
+geosparql:asWKT "Point(12.486244 51.379081)" ;
+geo:lat 51.379081 ; geo:long 12.486244 .
