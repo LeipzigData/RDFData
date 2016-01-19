@@ -14,64 +14,18 @@
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.296> ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.296>, <http://leipzig-data.de/Data/APIId/Event.297> ;
-                                                   a ld:Event ;
+<http://leipzig-data.de/Data/Event/APILeipzig.296> a ld:Event ;
                                                    rdfs:label "PECHA KUCHA NIGHT" ;
                                                    ical:description "Eine Kooperation zwischen Kreatives Leipzig e.V. und dem Grassi Museum verlegt die im Neuen Schauspiel Leipzig beheimatete Leipziger PechaKuchaNight ins Grassimuseum – in diesem Fall unter dem Motto Produktdesign. Junge Designer und Designbüros aus Leipzig, Deutschland und der Welt präsentieren ihre Produkte, Philosophien und Visionen. PechaKucha – das heißt: „wirres Geplauder“ und beschreibt die Geräuschkulisse, die entsteht, wenn viele Menschen gleichzeitig reden. Es sollen Ideen ausgetauscht, Gesprächs- und Kooperationspartner gefunden sowie Auftraggeber und -nehmer an einen Tisch gebracht werden. Dem voraus gehen Kurzvorträge, die nach den festen PechaKucha-Regeln ablaufen: In nur 20 Bildern und mit je Bild 20 Sekunden Sprechzeit müssen die Inhalte präsentiert werden. Die Vorträge sind impulsiv, dynamisch und versprechen Slam Charakter. Moderiert wird der Abend von Christian Rost (Kreatives Leipzig). Diskussionen und Gespräche im Anschluss und in den Pausen sind gewünscht! <br/> Kosten: Eintritt für die Sonderausstellung, die während der Veranstaltung geöffnet bleibt. Der Eintritt zur Veranstaltung ist frei. " ;
                                                    ical:dtstart "2016-03-10T18:00:00+01:00"^^xsd:dateTime ;
                                                    ical:location <http://leipzig-data.de/Data/Ort/Museum.Grassi> ;
                                                    ical:organizer ldo:KreativesLeipzig, <http://leipzig-data.de/Data/Ort/Museum.Grassi> ;
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ical:summary "PECHA KUCHA NIGHT" .
+                                                   ical:summary "PECHA KUCHA NIGHT" ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.296>, <http://leipzig-data.de/Data/APIId/Event.297> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.298> ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.298> ;
-                                                   a ld:Event ;
-                                                   rdfs:label " FO.DO - Der Fotodonnerstag \"Mein bestes oder mein Lieblingsbild 2015\"" ;
-                                                   ical:description "Die Mitglieder des FO.DO. laden ein zum Weihnachts-Bildertausch: Jeder Teilnehmer sollte dazu EIN Bild als Print (A4 bzw. 20x30cm) in einem neutralen Umschlag mitbringen. Das Bild sollte zum Thema \"Mein bestes oder mein Lieblingsbild 2015\" passen. Per Zufallsprinzip werden die Bilder getauscht. In diesem doch sehr kollegialen Prozess - man bekommt ja auch was geschenkt - darf/soll eine konstruktive Bildbesprechung statt finden. <br/> <br/> Diesmal ist eine Teilnahme am Stammtisch nur möglich, wenn man ein eigenes Bild mitbringt." ;
-                                                   ical:dtstart "2015-12-03T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Cafe-Grundmann ;
-                                                   ical:organizer ldo:KreativesLeipzig ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ical:summary " FO.DO - Der Fotodonnerstag \"Mein bestes oder mein Lieblingsbild 2015\"" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.300> ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.300> ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Auswärtstermin Spezial @ Social Impact Lab Leipzig" ;
-                                                   ical:description "Der letzte Auswärtstermin in diesem Jahr führt uns in die Räume einer unserer Kooperationspartner – dem Social Impact Lab Leipzig. Frank Lemloh wird uns am 03.12.2015 um 18:00Uhr im Stelzenhaus in Empfang nehmen und uns durch einen spannenden und informativen Abend begleiten. <br/> <br/> Willkommen sind Vereinsmitglieder von Kreatives Leipzig und all diejenigen, die Interesse habe die Damen und Herren vom Social Impact Lab Leipzig und Kreatives Leipzig kennen zulernen." ;
-                                                   ical:dtstart "2015-12-03T18:30:42+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Stelzenhaus ;
-                                                   ical:organizer ldo:KreativesLeipzig ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ical:summary "Auswärtstermin Spezial @ Social Impact Lab Leipzig" ;
-                                                   ical:url <http://leipzig.socialimpactlab.eu/> .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.301> ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.301> ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Plauderbar - 24-Ideen-für-Leipzig" ;
-                                                   ical:description "Es braucht die Mithilfe und Beteiligung aller Bürger um den Lebensstandard und die Attraktivität der Stadt nachhaltig zu sichern. Dabei spielen sozial, ökologisch und kulturell nachhaltige Ideen und Projekte eine immer größere Rolle! Alle Bürger und Mitmenschen unserer Stadt tragen ein großes kreatives Potenzial den Herausforderungen der Zukunft sicher und entschlossen zu begegnen. Dazu braucht es freies, unabhängiges Ideen-Netzwerk für die Bürger, von den Bürgern! <br/> <br/> Wir laden jeden dazu ein, in einen Austausch über die mannigfaltigen und vielseitigen Ideen und Projekte zu kommen, Mitstreiter zu gewinnen und neue Eindrücke und Hinweise zu sammeln. Unter der Webseite: www.nextleipzig.de finden sie den Zugang zu einem 24-Ideen-für-Leipzig-Adventskalender! Wir laden alle Menschen und Bürger der Stadt Leipzig ein, eine Idee für ein nachhaltiges Leipzig der Zukunft zu spenden und auf sich aufmerksam zu machen. Die Plauderbar dient dazu, einen neuen Austausch über aktuelle Ideen und Projekte für ein nachhaltiges Leipzig anzufachen." ;
-                                                   ical:dtstart "2015-12-17T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:CaravanProjektladenSinnUndSein ;
-                                                   ical:organizer <http://leipzig-data.de/Data/APIId/Host.80> ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ical:summary "Plauderbar - 24-Ideen-für-Leipzig" .
-
-<http://leipzig-data.de/Data/Event/ASG.2015-12-10> ld:hasTag ldtag:ASG, ldtag:MINT ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Zur Supraleitung und ihren Anwendungen in der Raumfahrt" ;
-                                                   ical:description "Mit Dr. rer. nat. habil. Frank N. Werfel, Geschäftsführer Adelwitz Technologiezentrum GmbH, Torgau." ;
-                                                   ical:dtstart "2015-12-10T17:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-                                                   ical:organizer ldo:ASG ;
-                                                   ical:summary "Zur Supraleitung und ihren Anwendungen in der Raumfahrt. Mit Dr. rer. nat. habil. Frank N. Werfel, Geschäftsführer Adelwitz Technologiezentrum GmbH, Torgau." ;
-                                                   ical:url <http://asg.ignt.de/Seminar.htm>, <http://asg.ignt.de/Einladung_15_12_.pdf> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> .
-
-<http://leipzig-data.de/Data/Event/ASG.2016-01-21> ld:hasTag ldtag:ASG, ldtag:MINT ;
-                                                   a ld:Event ;
+<http://leipzig-data.de/Data/Event/ASG.2016-01-21> a ld:Event ;
                                                    rdfs:label "Der Nobelpreis für Physik 2015" ;
                                                    ical:description "Mit Dr. rer. nat. Bernd Lippold, Leipzig." ;
                                                    ical:dtstart "2016-01-21T17:00:00+01:00"^^xsd:dateTime ;
@@ -79,23 +33,10 @@
                                                    ical:organizer ldo:ASG ;
                                                    ical:summary "Der Nobelpreis für Physik 2015. Mit Dr. rer. nat. Bernd Lippold, Leipzig." ;
                                                    ical:url <http://asg.ignt.de/Seminar.htm>, <http://asg.ignt.de/Einladung_16_01_.pdf> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> .
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+                                                   ld:hasTag ldtag:ASG, ldtag:MINT .
 
-<http://leipzig-data.de/Data/Event/DTS.2015-12-07> ld:contactPerson ldp:Schroth_Johannes ;
-                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Unterwerfung als Freiheit – Leben im Neoliberalismus" ;
-                                                   ical:description "Als wir das letzte Mal auseinandergingen - nach einer guten, interessanten und lebhaften Diskussion, wie ich meine - wussten wir noch nicht so recht, was wir in unserer letzten DTS 2015 machen wollen. Ich lade Euch ein, am 2.12. zur MitwochsAttacke zu kommen - 18.00 h Schaubühne Lindenfels - und am 7.12. die DTS mit dem gleichen Thema zu bestreiten: <br/> Unterwerfung als Freiheit – Leben im Neoliberalismus <br/> Da in den MittwochsATTACken selten genug Zeit ist, um ausgiebig zu diskutieren, können wir uns dort aber die Grundlagen holen. Bitte guckt Euch den angefügten Flyer an. Wer am 2.12. nicht kann, wird am 7.12. trotzdem genug einbringen und mitnehmen können, dass das Kommen sich lohnt. " ;
-                                                   ical:dtstart "2015-12-07T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Cafe-Grundmann ;
-                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-                                                   ical:summary "Attac DenkTankStelle: Unterwerfung als Freiheit – Leben im Neoliberalismus" ;
-                                                   ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2015-12-07> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> .
-
-<http://leipzig-data.de/Data/Event/DTS.2016-01-11> ld:contactPerson ldp:Schroth_Johannes ;
-                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   a ld:Event ;
+<http://leipzig-data.de/Data/Event/DTS.2016-01-11> a ld:Event ;
                                                    rdfs:label "Konfuzius und das neue China" ;
                                                    ical:description "Es war es uns nicht gelungen, ein gutes Thema zu finden, deshalb mein Vorschlag: „Konfuzius und das neue China“. M.E. können sich damit sowohl aktuelle politische Probleme als auch sehr philosophische Betrachtungen verbinden. Dazu kommt vielleicht noch der Aspekt der Weiterbildung, den wir ja auch nicht gering schätzen wollen.  Wäre schön, wenn noch kleine Denkanstöße vorher die Runde machen würden. Leider konnte das Séparée nicht gebucht werden, so dass wir die Köpfe am runden Tisch zusammenstecken müssen.  <br/> Und nun kann ja nur ein weiser Ausspruch von Konfuzius die Einladung abschließen: „Was ich nicht weiß, macht mich heiß.“" ;
                                                    ical:dtstart "2016-01-11T19:00:00+01:00"^^xsd:dateTime ;
@@ -103,7 +44,9 @@
                                                    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
                                                    ical:summary "Attac DenkTankStelle: Konfuzius und das neue China" ;
                                                    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2016-01-11> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> .
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs .
 
 <http://leipzig-data.de/Data/Event/Inspirata.7248> ical:description "<p>Die INSPIRATA beteiligt sich wieder bei der gemeinsamen Museumsnacht von Leipzig und Halle.</p> <p>Am Samstag, dem 25. April 2015, von 18:00 bis 01:00 Uhr<br /> öffnet auch unser Mitmach-Museum seine Ausstellung für alle Besucher.</p> <p><strong>Erleben, Staunen, Experimentieren – das alles ist in der INSPIRATA auf der Alten Messe möglich. Über 150 interaktive Exponate laden zum Mitmachen ein und öffnen eine völlig neue Tür zu Mathematik und Naturwissenschaften.</strong></p> <p>Weitere Informationen folgen nach Erscheinen des offiziellen Programms der beiden Städte &#8230;</p> " .
 
@@ -135,50 +78,40 @@
 <http://leipzig-data.de/Data/Event/Inspirata.8220> ical:description "<p>Die &#8220;Sendung mit der Maus&#8221; hat für den Feiertag am 3. Oktober 2015 wieder einen &#8220;Türöffner-Tag&#8221; angeregt. Gemeinsam mit dem Max-Planck-Institut für Mathematik in den Naturwissenschaften beteiligt sich die INSPIRATA gern erneut.</p> <p><strong>Dies ist unsere aktuelle Einladung:</strong></p> <h3>Hallo, ihr neugierigen und entdeckungsfreudigen Maus-Fans,</h3> <p>auch in diesem Jahr laden unsere Wissenschaftler gemeinsam mit der INSPIRATA-Mitmach-Ausstellung zum gemeinsamen Forschen, Staunen und Experimentieren ein.<br /> In unserem Workshop „Spielen und Staunen“ dreht sich alles um geometrische Figuren und wie man daraus kleine Kunstwerke gestalten kann. Gemeinsam mit euch erkunden wir verschiedene Flächen, bauen interessante Würfelgebäude, spielen spannende Knobelspiele und entdecken mit kleinen Spiegeln das Geheimnis der Symmetrie.</p> <p>Die Veranstaltung findet statt im <strong>Max-Planck-Institut für Mathematik in den Naturwissenschaften</strong> im Reclam-Carrée (Inselstraße 22, 04103 Leipzig).</p> <p>Dort werden für euch am 3. Oktober 2015 die Türen geöffnet<br /> von 10:00 bis 12:00 Uhr und von 13:30 bis 15:30 Uhr.</p> <p>Die Veranstaltung ist geeignet für Kinder von 6 bis 10 Jahren.<br /> Maximale Teilnehmerzahl pro Workshop: 15 Kinder.</p> <p>Eine Anmeldung ist unbedingt erforderlich unter: jgregor@mis.mpg.de<br /> Bitte die gewünschte Uhrzeit, Namen und Alter angeben.</p> <p>Wir freuen uns auf euch!</p> <p>Kontakt: Jana Gregor, jgregor@mis.mpg.de<br /> Tel. 0341 &#8211; 9959 650</p> " ;
                                                    ical:summary "Die &#8220;Sendung mit der Maus&#8221; hat für den Feiertag am 3. Oktober 2015 wieder einen &#8220;Türöffner-Tag&#8221; angeregt. Gemeinsam mit dem Max-Planck-Institut für Mathematik in den Naturwissenschaften beteiligt sich die INSPIRATA gern erneut. " .
 
-<http://leipzig-data.de/Data/Event/Inspirata.8360> ld:hasTag ldtag:Inspirata, ldtag:MINT ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Weihnachts-Basteln und mehr zur Familienöffnungszeit – 12.12.2015" ;
-                                                   ical:description "<p>Einen spannenden und kreativen vorweihnachtlichen Nachmittag bieten wir für alle INSPIRATA-Besucher &#8211; Familien und Einzelpersonen &#8211; am Samstag, dem 12.12.2015, zwischen 12 und 18 Uhr!</p> <p>Hier kann man unter anderem </p> <ul> <li>tolle Deko aus Papier falten<br /> (z.B. Bascetta-/ Fröbel-Sterne)</li> <li>schöne weiche Weihnachtssterne<br /> aus Stoff nähen und dekorieren</li> <li>Weihnachtsschmuck für Servietten<br /> anfertigen (einfach für die Jüngeren)</li> <li>feinen Weihnachtsbaumschmuck<br /> aus Bügelperlen kreieren</li> <li>zarte Scherenschnitt-Schneeflocken<br /> gestalten</li> <li>leckere Weihnachtsplätzchen zu Tee oder Kaffee naschen</li> <li>in unserer naturwissenschaftlichen Mitmach-Ausstellung knobeln und experimentieren</li> </ul> <p>Alle Gäste können ihre Kreativität einbringen und dann schöne weihnachtliche Dekorationen oder ein selbstgebasteltes Weihnachtspräsent nach Hause mitnehmen!</p> <p>Wir empfehlen eine kurze Anmeldung über unser Online-Formular oder an kontakt(at)inspirata.de und freuen uns schon auf neugierige Besucher!<br /> Lasst euch inspirieren!</p> <p>Im Eintritt sind die Sonderangebote enthalten. Für Materialkosten fällt ein kleiner Unkostenbeitrag an.</p> <p><small><strong>Bastelzeiten</strong> können auch als Workshops für den <strong>Mathematik- bzw. Geometrie-Unterricht</strong> und ebenso als Nachmittags- oder Abend-Veranstaltungen für <strong>Hortgruppen, Vereine, Freundeskreise, Seniorennachmittage u.a.</strong> gebucht werden. Wer also an einem besonderen gemeinsamen Vor- oder Nachmittag mit kreativen Erfolgserlebnissen interessiert ist, meldet sich gern bei uns für einen individuellen Termin<strong>! </strong>Wir bitten um rechtzeitige vorherige Anmeldung über Tel. (0341)12 59 757 oder per Mail an kontakt(at)inspirata.de bzw. online.</small></p> " ;
-                                                   ical:dtend "2015-12-12T18:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2015-11-20T12:39:04+01:00"^^xsd:dateTime ;
-                                                   ical:dtstart "2015-12-12T12:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Einen spannenden und kreativen vorweihnachtlichen Nachmittag bieten wir für alle INSPIRATA-Besucher &#8211; Familien und Einzelpersonen &#8211; am Samstag, dem 12.12.2015, zwischen 12 und 18 Uhr! Hier kann man unter anderem tolle Deko aus Papier falten (z.B. Bascetta-/ Fröbel-Sterne) schöne weiche Weihnachtssterne aus Stoff nähen und dekorieren Weihnachtsschmuck für Servietten anfertigen (einfach für die Jüngeren) ..." ;
-                                                   ical:url <http://www.inspirata.de/?p=8360> .
+<http://leipzig-data.de/Data/Event/Inspirata.8360> ical:description "<p>Einen spannenden und kreativen vorweihnachtlichen Nachmittag bieten wir für alle INSPIRATA-Besucher &#8211; Familien und Einzelpersonen &#8211; am Samstag, dem 12.12.2015, zwischen 12 und 18 Uhr!</p> <p>Hier kann man unter anderem </p> <ul> <li>tolle Deko aus Papier falten<br /> (z.B. Bascetta-/ Fröbel-Sterne)</li> <li>schöne weiche Weihnachtssterne<br /> aus Stoff nähen und dekorieren</li> <li>Weihnachtsschmuck für Servietten<br /> anfertigen (einfach für die Jüngeren)</li> <li>feinen Weihnachtsbaumschmuck<br /> aus Bügelperlen kreieren</li> <li>zarte Scherenschnitt-Schneeflocken<br /> gestalten</li> <li>leckere Weihnachtsplätzchen zu Tee oder Kaffee naschen</li> <li>in unserer naturwissenschaftlichen Mitmach-Ausstellung knobeln und experimentieren</li> </ul> <p>Alle Gäste können ihre Kreativität einbringen und dann schöne weihnachtliche Dekorationen oder ein selbstgebasteltes Weihnachtspräsent nach Hause mitnehmen!</p> <p>Wir empfehlen eine kurze Anmeldung über unser Online-Formular oder an kontakt(at)inspirata.de und freuen uns schon auf neugierige Besucher!<br /> Lasst euch inspirieren!</p> <p>Im Eintritt sind die Sonderangebote enthalten. Für Materialkosten fällt ein kleiner Unkostenbeitrag an.</p> <p><small><strong>Bastelzeiten</strong> können auch als Workshops für den <strong>Mathematik- bzw. Geometrie-Unterricht</strong> und ebenso als Nachmittags- oder Abend-Veranstaltungen für <strong>Hortgruppen, Vereine, Freundeskreise, Seniorennachmittage u.a.</strong> gebucht werden. Wer also an einem besonderen gemeinsamen Vor- oder Nachmittag mit kreativen Erfolgserlebnissen interessiert ist, meldet sich gern bei uns für einen individuellen Termin<strong>! </strong>Wir bitten um rechtzeitige vorherige Anmeldung über Tel. (0341)12 59 757 oder per Mail an kontakt(at)inspirata.de bzw. online.</small></p> " ;
+                                                   ical:summary "Einen spannenden und kreativen vorweihnachtlichen Nachmittag bieten wir für alle INSPIRATA-Besucher &#8211; Familien und Einzelpersonen &#8211; am Samstag, dem 12.12.2015, zwischen 12 und 18 Uhr! Hier kann man unter anderem tolle Deko aus Papier falten (z.B. Bascetta-/ Fröbel-Sterne) schöne weiche Weihnachtssterne aus Stoff nähen und dekorieren Weihnachtsschmuck für Servietten anfertigen (einfach für die Jüngeren) ..." .
 
-<http://leipzig-data.de/Data/Event/LSGM.2015-09-29> ld:hasTag ldtag:LSGM, ldtag:MINT ;
-                                                    a ld:Event ;
+<http://leipzig-data.de/Data/Event/LSGM.2015-09-29> a ld:Event ;
                                                     rdfs:label "LSGM: Eröffnungsveranstaltung der Zirkel Klasse 5." ;
                                                     ical:description "Die LSGM lädt ein, in unseren Schülerzirkeln und unserem Korrespondenzseminar mitzuarbeiten, die wir für Klasse 5 mit Jahresbeginn neu eröffnen. Zur Koordinierung findet die Eröffnungsveranstaltung am Mittwoch, dem 20. Januar 2016, um 16.30 Uhr im Hs 8, Hörsaalgebäude der Universität am Augustusplatz statt. Wir werden an dieser Stelle unsere Aktivitäten und Angebote im Rahmen der LSGM genauer erläutern, die Zirkelleiter vorstellen und die Termine für die einzelnen Zirkel absprechen. " ;
                                                     ical:dtstart "2016-01-20T16:30:00+01:00"^^xsd:dateTime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:organizer ldo:LSGM ;
                                                     ical:summary "LSGM: Eröffnungsveranstaltung der Zirkel Klasse 5." ;
-                                                    ical:url <http://lsgm.de/tiki-index.php?page=LSGM.2016-01-20> .
+                                                    ical:url <http://lsgm.de/tiki-index.php?page=LSGM.2016-01-20> ;
+                                                    ld:hasTag ldtag:LSGM, ldtag:MINT .
 
-<http://leipzig-data.de/Data/Event/MINT.2016-01-15> ld:hasTag ldtag:MINT ;
-                                                    a ld:Event ;
+<http://leipzig-data.de/Data/Event/MINT.2016-01-15> a ld:Event ;
                                                     rdfs:label "First Lego League, Regionalwettbewerb Leipzig" ;
                                                     ical:description "An diesem Tag findet der Regionalwettbewerb Leipzig der First Lego League statt, des renommierten europäischen Roboter-Wettbewerbs für Kinder und Jugendliche. Der Wettbewerb kombiniert den Spaß an Technik und Wissenschaft mit der spannenden Atmosphäre eines Sportevents. Die Kinder und Jugendlichen arbeiten wie echte Ingenieure innerhalb eines Teams an einem gemeinsamen Thema und sie planen, programmieren und testen einen vollautomatischen Roboter, der eine knifflige Mission meistern soll. Sie haben die Möglichkeit, wertvolle und praktische Erfahrungen in der Arbeit mit komplexen Technologien zu sammeln und ihre Problemlösungsfähigkeiten zu verbessern - und das alles mit einer Menge Spaß und Fantasie! 12 Mannschaften gehen an den Start." ;
                                                     ical:dtend "2016-01-15T17:00:00+01:00"^^xsd:dateTime ;
                                                     ical:dtstart "2016-01-15T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:location <http://leipzig-data.de/Data/Schule/Thomas-Gym> ;
                                                     ical:summary "First Lego League, Regionalwettbewerb Leipzig." ;
-                                                    ical:url <http://www.first-lego-league.org/de/fll/regionen.html?s=FLL+2015%2F16&c=FLL+Leipzig&m=20761233685920> .
+                                                    ical:url <http://www.first-lego-league.org/de/fll/regionen.html?s=FLL+2015%2F16&c=FLL+Leipzig&m=20761233685920> ;
+                                                    ld:hasTag ldtag:MINT .
 
-<http://leipzig-data.de/Data/Event/MINT.2016-01-29> ld:hasTag ldtag:MINT ;
-                                                    a ld:Event ;
+<http://leipzig-data.de/Data/Event/MINT.2016-01-29> a ld:Event ;
                                                     rdfs:label "10. Interdisziplinäres Gespräch \"Technik und Sprache. Perspektiven von 'Digital Humanities'\"" ;
                                                     ical:description "10. Interdisziplinäres Gespräch \"Technik und Sprache. Perspektiven von 'Digital Humanities'\" mit einem Impulsbeitrag von Prof. Klaus Mainzer (TU München), Technik- und Wissenschaftsphilosoph." ;
                                                     ical:dtend "2016-01-29T16:00:00+01:00"^^xsd:dateTime ;
                                                     ical:dtstart "2016-01-29T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:summary "10. Interdisziplinäres Gespräch \"Technik und Sprache. Perspektiven von 'Digital Humanities'\"." ;
-                                                    ical:url <http://mint-leipzig.de/2016-01-29.html> .
+                                                    ical:url <http://mint-leipzig.de/2016-01-29.html> ;
+                                                    ld:hasTag ldtag:MINT .
 
-<http://leipzig-data.de/Data/Event/MINT.2016-01-30> ld:hasTag ldtag:MINT ;
-                                                    a ld:Event ;
+<http://leipzig-data.de/Data/Event/MINT.2016-01-30> a ld:Event ;
                                                     rdfs:label "Kann man Atome sehen?" ;
                                                     ical:description "Die Fakultät für Physik und Geowissenschaften bietet Schülerinnen, Schülern und Interessierten physikalische Vorträge am Samstagmorgen an. ProfessorInnen und WissenschaftlerInnen sprechen über faszinierende Themen der modernen Physik und geben Einblicke in die derzeitige Forschung. Mit Prof. Dr. Marius Grundmann (Uni Leipzig, Fakultät für Physik und Geowissenschaften)." ;
                                                     ical:dtstart "2016-01-30T11:00:00+01:00"^^xsd:dateTime ;
@@ -186,36 +119,22 @@
                                                     ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
                                                     ical:summary "Physik am Samstag: Kann man Atome sehen? Mit Prof. Dr. Marius Grundmann (Uni Leipzig, Fakultät für Physik und Geowissenschaften)." ;
                                                     ical:url <http://pas.physgeo.uni-leipzig.de> ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/PAS> .
+                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/PAS> ;
+                                                    ld:hasTag ldtag:MINT .
 
-<http://leipzig-data.de/Data/Event/MINT.2016-02-25> ld:hasTag ldtag:MINT ;
-                                                    a ld:Event ;
+<http://leipzig-data.de/Data/Event/MINT.2016-02-25> a ld:Event ;
                                                     rdfs:label "Regionalwettbewerb \"Jugend forscht\" an der Uni Leipzig" ;
                                                     ical:description "Der Wettbewerb Jugend forscht gibt jungen und interessierten Menschen die Möglichkeit, ihre Ideen aus dem MINT Bereich vorzustellen und umzusetzen. <br/> Dafür konnten bis zum 30. November 2015 Projekte eingereicht werden. Im Dezember wurden die erfolgreichen Starter zum Regionalwettbewerb eingeladen. Die Regionalwettbewerbe stellen die erste Ebende des Wettbewerbs dar und dauern meistens einen Tag. Der Regionalwettbewerb Nordwestsachsen findet am 25. Februar 2016 statt. " ;
                                                     ical:dtend "2016-02-25T16:00:00+01:00"^^xsd:dateTime ;
                                                     ical:dtstart "2016-02-25T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
                                                     ical:summary "Regionalwettbewerb \"Jugend forscht\" an der Uni Leipzig." ;
-                                                    ical:url <http://home.uni-leipzig.de/~jufole/index.php/wettbewerb-2016.html> .
+                                                    ical:url <http://home.uni-leipzig.de/~jufole/index.php/wettbewerb-2016.html> ;
+                                                    ld:hasTag ldtag:MINT .
 
 <http://leipzig-data.de/Data/Event/NEU.2015-08-26.433> ical:contact "Daniel Reißmann, Tel.:  +49 &#40;0&#41;341 121 3317, E-Mail: reissmann@energiemetropole-leipzig.de" .
 
-<http://leipzig-data.de/Data/Event/NEU.2015-12-01> ld:hasTag ldtag:Energie ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Energiemetropole-Leipzig: Ringvorlesung Universität Leipzig: Netzentgelte – Die neuen Kosten­treiber der Energiewende?" ;
-                                                   ical:description "Spätestens seit dem rot-grünen Atomausstieg und der Einführung des Erneuerbare-Energien-Gesetzes wird die Energieversorgung in Deutschland umgebaut. Der neuerliche Atomausstieg nach der Reaktorkatastrophe von Fukushima hat die Transformation zementiert. Die Weiterentwicklung der Energiepolitik ist mittlerweile mit dem Grünbuch- und Weißbuch-Prozess vorangetrieben worden. Gleichzeitig sinken die Kosten der Stromerzeugung aus Wind und Sonne deutlich. Inzwischen decken die Erneuerbaren Energien mehr als 25 % des Stromverbrauchs in Deutschland.Die derzeit öffentlich am dringendsten diskutierten Fragen und Probleme des Systemumbaus sollen im Rahmen der Ringvorlesung „Kraftakt Energiewende – Chancen und Risiken der Transformation“ adressiert und diskutiert werden. <br/>Die Ringvorlesung findet im Hörsaal 2 der Universität Leipzig (Hörsaalgebäude Campus Augustusplatz, Universitätsstraße, 04109 Leipzig) statt." ;
-                                                   ical:contact "Akademischer Energieverein e.V." ;
-                                                   ical:dtend "2015-12-01T21:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:dtstart "2015-12-01T19:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                   ical:organizer ldo:NetzwerkEnergieUmwelt ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                   ical:summary "Energiemetropole-Leipzig: Ringvorlesung Universität Leipzig: Netzentgelte – Die neuen Kosten­treiber der Energiewende?" ;
-                                                   ical:url <http://www.energieverein-leipzig.de/kraftakt/> ;
-                                                   ld:hasMD5Sum "s/HAI5I0z+SC8ztTiQEoLA" .
-
-<http://leipzig-data.de/Data/Event/NEU.2016-01-12> ld:hasTag ldtag:Energie ;
-                                                   a ld:Event ;
+<http://leipzig-data.de/Data/Event/NEU.2016-01-12> a ld:Event ;
                                                    rdfs:label "Energiemetropole-Leipzig: Ringvorlesung Universität Leipzig: Totgesagte leben länger – Herausforderung Photovoltaik" ;
                                                    ical:description "Spätestens seit dem rot-grünen Atomausstieg und der Einführung des Erneuerbare-Energien-Gesetzes wird die Energieversorgung in Deutschland umgebaut. Der neuerliche Atomausstieg nach der Reaktorkatastrophe von Fukushima hat die Transformation zementiert. Die Weiterentwicklung der Energiepolitik ist mittlerweile mit dem Grünbuch- und Weißbuch-Prozess vorangetrieben worden. Gleichzeitig sinken die Kosten der Stromerzeugung aus Wind und Sonne deutlich. Inzwischen decken die Erneuerbaren Energien mehr als 25 % des Stromverbrauchs in Deutschland.Die derzeit öffentlich am dringendsten diskutierten Fragen und Probleme des Systemumbaus sollen im Rahmen der Ringvorlesung „Kraftakt Energiewende – Chancen und Risiken der Transformation“ adressiert und diskutiert werden. <br/>Die Ringvorlesung findet im Hörsaal 2 der Universität Leipzig (Hörsaalgebäude Campus Augustusplatz, Universitätsstraße, 04109 Leipzig) statt. " ;
                                                    ical:contact "Akademischer Energieverein e.V." ;
@@ -226,12 +145,10 @@
                                                    ical:sentBy <http://leipzig-data.de/Data/Agent/NEU.Events> ;
                                                    ical:summary "Energiemetropole-Leipzig: Ringvorlesung Universität Leipzig: Totgesagte leben länger – Herausforderung Photovoltaik" ;
                                                    ical:url <http://www.energieverein-leipzig.de/kraftakt/> ;
-                                                   ld:hasMD5Sum "RMI3U5prVzQHExoWgR2mJg" .
+                                                   ld:hasMD5Sum "RMI3U5prVzQHExoWgR2mJg" ;
+                                                   ld:hasTag ldtag:Energie .
 
-<http://leipzig-data.de/Data/Event/NuKLA.2016-01-14> ld:Kosten "Eintritt frei" ;
-                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+<http://leipzig-data.de/Data/Event/NuKLA.2016-01-14> a ld:Event ;
                                                      rdfs:label "Leipziger Floßgraben. Der Film. Teil II – Frühling" ;
                                                      ical:description "Der Film zeigt spannende 45 Minuten Vorfrühling im Einzugsbereich des Floßgrabens. Der Winter schwindet und der Frühling erblüht. Der Film beinhaltet etwas zur Entstehung des Floßgrabens und etwas zur aktuellen Problematik am Leipziger Floßgraben. Frühblüher, Vögel, Fische und Natur durch Naturstimmen und gesprochenem Text für Sie in Bildern festgehalten." ;
                                                      ical:dtend "2016-01-14T18:30:00+01:00"^^xsd:dateTime ;
@@ -239,36 +156,36 @@
                                                      ical:location ldo:Volkshochschule ;
                                                      ical:summary "Leipziger Floßgraben. Der Film. Teil II – Frühling. In Kooperation mit der Volkshochschule Leipzig." ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-01-31> ld:Kosten "18 Euro Normalpreis, 15 Euro ermäßigt, 7 Euro Abendkasse mit LeipzigPass" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                     ld:Kosten "Eintritt frei" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-01-31> a ld:Event ;
                                                      rdfs:label "25. Klassisches Kartoffelkonzert – „Mit ihm wäre ich überallhin gegangen…“" ;
                                                      ical:description "Die berührende Geschichte der Freundschaft von Tula und Maria Reemy mit Joachim Ringelnatz, recherchiert, gelesen und gesungen von Wolfgang Rieck." ;
                                                      ical:dtstart "2016-01-31T17:00:00+02:00"^^xsd:dateTime ;
                                                      ical:location ldo:AlteHandelsboerse ;
                                                      ical:summary "25. Klassisches Kartoffelkonzert – „Mit ihm wäre ich überallhin gegangen…“" ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-03-27> ld:Kosten "18 Euro Normalpreis, 15 Euro ermäßigt, 7 Euro Abendkasse mit LeipzigPass" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "18 Euro Normalpreis, 15 Euro ermäßigt, 7 Euro Abendkasse mit LeipzigPass" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-03-27> a ld:Event ;
                                                      rdfs:label "26. Klassisches Kartoffelkonzert – Kammerorchester „Artentfaltung“" ;
                                                      ical:description "Kammerorchester „Artentfaltung“. Leitung Stephan König." ;
                                                      ical:dtstart "2016-03-27T17:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:AlteHandelsboerse ;
                                                      ical:summary "26. Klassisches Kartoffelkonzert – Kammerorchester „Artentfaltung“. Leitung Stephan König." ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-04-09> ld:Kosten "6 Euro (bereits ermäßigt)" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "18 Euro Normalpreis, 15 Euro ermäßigt, 7 Euro Abendkasse mit LeipzigPass" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-04-09> a ld:Event ;
                                                      rdfs:label "Frühlingsspaziergang durch den Auwald" ;
                                                      ical:description "Nach dem langen Winter freuen wir uns über das Vogelgezwitscher und die ersten Blumen. Wissen Sie immer, wer da singt und was da blüht? - Wie kommt eigentlich das Wasser in die Aue und wozu ist das wichtig? Ein vergnüglicher Vormittag mit Ralf Mäkert vom Nabu Leipzig, der Ihre Fragen gern beantwortet. " ;
                                                      ical:dtend "2016-04-09T11:30:00+02:00"^^xsd:dateTime ;
@@ -276,12 +193,12 @@
                                                      ical:location <http://leipzig-data.de/Data/Treffpunkt/LandauerBruecke> ;
                                                      ical:summary "Frühlingsspaziergang durch den Auwald" ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-04-16> ld:Kosten "7 Euro. Kinder bis 12 Jahre sind in Begleitung eines Erwachsenen entgeltfrei, sie müssen aber angemeldet werden." ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                     ld:Kosten "6 Euro (bereits ermäßigt)" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-04-16> a ld:Event ;
                                                      rdfs:label "Mythisches, Schauriges und Interessantes rund um den Leipziger Auwald und seine Bewohner" ;
                                                      ical:description "Der Auwald ist mehr als nur ein Wald. Heilige Bäume, Wassergeister, irreführende Gespenster und ehemalige Schlachtfelder sind hier zu finden. Dazu gibt es Interessantes über die Bewohner des Waldes - und natürlich auch ihre Gefährdung - an diesem Frühlingsabend zu hören. Empfehlenswert ist die Mitnahme einer Taschenlampe. <br/> Exkursionsleiter: Johannes Hansmann. " ;
                                                      ical:dtend "2016-04-16T20:00:00+02:00"^^xsd:dateTime ;
@@ -289,12 +206,12 @@
                                                      ical:location <http://leipzig-data.de/Data/Treffpunkt/Hst.Rennbahn> ;
                                                      ical:summary "Mythisches, Schauriges und Interessantes rund um den Leipziger Auwald und seine Bewohner. Exkursionsleiter: Johannes Hansmann. " ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                     ld:Kosten "7 Euro. Kinder bis 12 Jahre sind in Begleitung eines Erwachsenen entgeltfrei, sie müssen aber angemeldet werden." ;
+                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
+                                                     ld:hasTag ldtag:AULA .
 
-<http://leipzig-data.de/Data/Event/NuKLA.2016-04-23.1> ld:Kosten "6 Euro (bereits ermäßigt)" ;
-                                                       ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                       ld:hasTag ldtag:AULA ;
-                                                       a ld:Event ;
+<http://leipzig-data.de/Data/Event/NuKLA.2016-04-23.1> a ld:Event ;
                                                        rdfs:label "Exkursion zu den Frühjahrsblühern des Leipziger Auwaldes" ;
                                                        ical:description "Unsere Tour führt vom Treffpunkt Teichstraße entlang der Linie durch den südlichen Auwald und endet am Schleußiger Weg. Besonders sehenswert sind auf dieser Exkursion die zahlreichen Frühjahrsblüher, die Ihnen Markus Kellermann zeigen wird." ;
                                                        ical:dtend "2016-04-23T15:30:00+02:00"^^xsd:dateTime ;
@@ -302,12 +219,12 @@
                                                        ical:location <http://leipzig-data.de/Data/Treffpunkt/Teichstrasse> ;
                                                        ical:summary "Exkursion zu den Frühjahrsblühern des Leipziger Auwaldes" ;
                                                        ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-04-23.2> ld:Kosten "17 Euro (bereits ermäßigt)" ;
+                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                       ld:Kosten "6 Euro (bereits ermäßigt)" ;
                                                        ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                       ld:hasTag ldtag:AULA ;
-                                                       a ld:Event ;
+                                                       ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-04-23.2> a ld:Event ;
                                                        rdfs:label "Geführte Paddeltour im Drachenboot auf dem Karl-Heine-Kanal" ;
                                                        ical:description "Eine Tour im Drachenboot ist zweifelsohne ein ganz besonderes Erlebnis. Die Standard-Sightseeing-Tour führt auf dem Karl-Heine-Kanal durch das ehemalige Industrieviertel Plagwitz. Vom Steuermann erhalten Sie eine Einführung in die Welt des Drachenboot-Sports und in die Paddeltechnik. Wir paddeln entlang der vielen ehemaligen Fabriken und Industriegebäude, welche heute mit Ihren renovierten und detailreichen Fassaden dem Viertel seinen ganz speziellen Charme verleihen. Auch unterqueren wir auf dieser Wasserstraße insgesamt 15 Brücken. <br/> Im Preis sind die Bootsmiete, Paddelmaterial und der Tourguide enthalten. <br/> Exkursionsleitung: Claudia Dietze, Dirk Hoffsky / Freizeit & Abenteuer. <br/>  Für Kinder bis 12 Jahre besteht Schwimmwestenpflicht. Die Schwimmwesten werden gestellt. Letzter Rücktritt: 14.4.2016. " ;
                                                        ical:dtend "2016-04-23T11:30:00+02:00"^^xsd:dateTime ;
@@ -315,12 +232,12 @@
                                                        ical:location <http://leipzig-data.de/Data/Ort/Bootsverleih.Kanal28> ;
                                                        ical:summary "Geführte Paddeltour im Drachenboot auf dem Karl-Heine-Kanal. Exkursionsleitung: Claudia Dietze, Dirk Hoffsky / Freizeit & Abenteuer." ;
                                                        ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
+                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                       ld:Kosten "17 Euro (bereits ermäßigt)" ;
+                                                       ld:contactPerson ldp:Stoiber_WolfgangEA ;
+                                                       ld:hasTag ldtag:AULA .
 
-<http://leipzig-data.de/Data/Event/NuKLA.2016-05-07> ld:Kosten "10 Euro (bereits ermäßigt)" ;
-                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+<http://leipzig-data.de/Data/Event/NuKLA.2016-05-07> a ld:Event ;
                                                      rdfs:label "Fahrradexkursion in die Saale-Elster-Luppe-Aue zwischen Halle und Leipzig" ;
                                                      ical:description "Die Tour führt uns entlang des Diemitzer Grabens, der Reide, zum Überlauf des Hufeisensees in die Reide, in den Park von Dieskau, durch die Saale-Elster-Luppe-Aue und entlang des Wallendorfer und des Raßnitzer Sees im Saalelandkreis, durch die Luppeaue bei Schkeuditz, durch die Elster-Luppe-Nahle-Aue in der Stadt Leipzig sowie zum Mündungsbereich der Parthe. <br/> Exkursionsleiter: Andreas Liste, AHA e.V.<br/> Die Anfahrt zum Treffpunkt ist mit der S-Bahn nach Halle um 8.30 Uhr möglich. Die Exkursion endet am Hauptbahnhof Leipzig. Letzter Rücktritt: 3.5.2016. " ;
                                                      ical:dtend "2016-05-07T16:00:00+02:00"^^xsd:dateTime ;
@@ -328,35 +245,35 @@
                                                      ical:location ldo:NN ;
                                                      ical:summary "Fahrradexkursion in die Saale-Elster-Luppe-Aue zwischen Halle und Leipzig. Exkursionsleiter: Andreas Liste, AHA e.V." ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-05-29> ld:Kosten "18 Euro Normalpreis, 15 Euro ermäßigt, 7 Euro Abendkasse mit LeipzigPass" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                     ld:Kosten "10 Euro (bereits ermäßigt)" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-05-29> a ld:Event ;
                                                      rdfs:label "27. Klassisches Kartoffelkonzert – „Wenn Purpur in den Wiesen lacht…“ " ;
                                                      ical:description "Konzert mit barocker Musik voller Liebeslust und Frühlingsduft  mit dem Leipziger Barock-Consort" ;
                                                      ical:dtstart "2016-05-29T17:00:00+02:00"^^xsd:dateTime ;
                                                      ical:location ldo:AlteHandelsboerse ;
                                                      ical:summary "27. Klassisches Kartoffelkonzert – „Wenn Purpur in den Wiesen lacht…“" ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-06-02> ld:Kosten "Eintritt frei" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "18 Euro Normalpreis, 15 Euro ermäßigt, 7 Euro Abendkasse mit LeipzigPass" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-06-02> a ld:Event ;
                                                      rdfs:label "3. AULA-Fachveranstaltung" ;
                                                      ical:description "Die „Aufgaben der Leipziger Aue“ von Naturschutz über Freizeit bis Tourismus? und Neues zum Floßgraben." ;
                                                      ical:dtstart "2016-06-02T18:00:00+02:00"^^xsd:dateTime ;
                                                      ical:location ldo:CityTagungLeipzig ;
                                                      ical:summary "3. AULA-Fachveranstaltung" ;
-                                                     ical:url <http://www.nukla.de/veranstaltungen> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-06-05> ld:Kosten "6 Euro (bereits ermäßigt). Ein Kind bis 12 Jahre ist in Begleitung eines Erwachsenen entgeltfrei, muss aber angemeldet werden. " ;
+                                                     ical:url <http://www.nukla.de/veranstaltungen> ;
+                                                     ld:Kosten "Eintritt frei" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-06-05> a ld:Event ;
                                                      rdfs:label "Die Vogelwelt in der Leipziger Aue" ;
                                                      ical:description "Exkursion durch die Natur, um Vögel und ihre Lebensräume zu entdecken. Sie werden von einem Experten des NABU-Regionalverbandes Leipzig begleitet. Bitte tragen Sie bequeme Schuhe. " ;
                                                      ical:dtend "2016-06-05T08:30:00+02:00"^^xsd:dateTime ;
@@ -364,12 +281,12 @@
                                                      ical:location <http://leipzig-data.de/Data/Ort/Schloss.Luetzschena> ;
                                                      ical:summary "Die Vogelwelt in der Leipziger Aue. " ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                     ld:Kosten "6 Euro (bereits ermäßigt). Ein Kind bis 12 Jahre ist in Begleitung eines Erwachsenen entgeltfrei, muss aber angemeldet werden. " ;
+                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
+                                                     ld:hasTag ldtag:AULA .
 
-<http://leipzig-data.de/Data/Event/NuKLA.2016-06-25.1> ld:Kosten "7 Euro. Kinder bis 12 Jahre sind in Begleitung eines Erwachsenen entgeltfrei, sie müssen aber angemeldet werden." ;
-                                                       ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                       ld:hasTag ldtag:AULA ;
-                                                       a ld:Event ;
+<http://leipzig-data.de/Data/Event/NuKLA.2016-06-25.1> a ld:Event ;
                                                        rdfs:label "Grusel, Glühwürmchen und Fledermäuse - Johannisnachtexkursion durchs Rosental" ;
                                                        ical:description "Auch bei Nacht hat das Rosental seinen Reiz. Fledermäuse huschen durch die Baumwipfel und über die Flüsse. Glühwürmchen steigen in der Dämmerung aus dem Grün. Käuzchen und Eulen lassen sich mit ihren gruseligen Rufen hören. Und zu dieser Zeit sind die Waldkauzkinder besonders rege ... Sorgar Gespenster soll es hier geben ... es gibt also nicht nur interessante Tiere zu sehen und zu hören, sondern auch allerlei Gruseliges und Schauriges rund um diese seit Jahrhunderten beliebte Park- und Waldlandschaft. August der Starke, Nixe und Räuber begleiten unseren dusteren Rundgang. <br/> Exkursionsleiter: Johannes Hansmann." ;
                                                        ical:dtend "2016-06-25T23:00:00+02:00"^^xsd:dateTime ;
@@ -377,12 +294,12 @@
                                                        ical:location <http://leipzig-data.de/Data/Treffpunkt/Rosental.Sued> ;
                                                        ical:summary "Grusel, Glühwürmchen und Fledermäuse - Johannisnachtexkursion durchs Rosental. Exkursionsleiter: Johannes Hansmann." ;
                                                        ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-06-25.2> ld:Kosten "22 Euro (bereits ermäßigt)" ;
+                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                       ld:Kosten "7 Euro. Kinder bis 12 Jahre sind in Begleitung eines Erwachsenen entgeltfrei, sie müssen aber angemeldet werden." ;
                                                        ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                       ld:hasTag ldtag:AULA ;
-                                                       a ld:Event ;
+                                                       ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-06-25.2> a ld:Event ;
                                                        rdfs:label "Kleine Hafentour für Paddelanfänger" ;
                                                        ical:description "Seit Juli 2015 ist Leipzig um ein paar Kilometer an paddelbaren Gewässern reicher. Jetzt hat auch der Lindenauer Hafen endlich die langersehnte Wasseranbindung. Die kleine Hafentour geht zum Lindenauer Hafen. Es ist eine kurze Tour, welche das Kennenlernen des Wasserwanderns mit Wissenswertem zur Entstehungsgeschichte des Kanals kombiniert. Die Hafentour ist hervorragend für Anfänger geeignet. <br/> Im Preis sind die Bootsmiete, Paddelmaterial und der Tourguide enthalten. <br/> Exkursionsleitung: Claudia Dietze, Dirk Hoffsky / Freizeit & Abenteuer. <br/> Für Kinder bis 12 Jahre besteht Schwimmwestenpflicht. Die Schwimmwesten werden gestellt. Letzter Rücktritt: 16.6.2016. " ;
                                                        ical:dtend "2016-06-25T17:00:00+02:00"^^xsd:dateTime ;
@@ -390,12 +307,12 @@
                                                        ical:location <http://leipzig-data.de/Data/Ort/Bootsverleih.Kanal28> ;
                                                        ical:summary "Kleine Hafentour für Paddelanfänger. Exkursionsleitung: Claudia Dietze, Dirk Hoffsky / Freizeit & Abenteuer." ;
                                                        ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
+                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                       ld:Kosten "22 Euro (bereits ermäßigt)" ;
+                                                       ld:contactPerson ldp:Stoiber_WolfgangEA ;
+                                                       ld:hasTag ldtag:AULA .
 
-<http://leipzig-data.de/Data/Event/NuKLA.2016-08-07> ld:Kosten "35 Euro (bereits ermäßigt)" ;
-                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+<http://leipzig-data.de/Data/Event/NuKLA.2016-08-07> a ld:Event ;
                                                      rdfs:label "Kanutour Cospudener See" ;
                                                      ical:description "Unsere Tour beginnt mit einer kurzen Einweisung in das \"Paddel-Ein-mal-eins\". Wir bewegen uns auf einigen recht unterschiedlichen Wasserwegen Leipzigs. Idyllisch schlängelt sich der Flossgraben durch den Auwald. Unsere Tour geht über die Pleiße - Elsterflutbett - Weiße Elster und schlussendlich auf den Karl Heine Kanal. <br/> Im Preis sind die Bootsmiete, Paddelmaterial, Personentransfer und der Tourguide enthalten. <br/> Exkursionsleitung: Claudia Dietze, Dirk Hoffsky / Freizeit & Abenteuer. Für Kinder bis 12 Jahre besteht Schwimmwestenpflicht. Die Schwimmwesten werden gestellt. Letzter Rücktritt: 14.7.2016. " ;
                                                      ical:dtend "2016-08-07T14:30:00+02:00"^^xsd:dateTime ;
@@ -403,24 +320,24 @@
                                                      ical:location ldo:PragerFruehling ;
                                                      ical:summary "Kanutour Cospudener See, Exkursionsleitung: Claudia Dietze, Dirk Hoffsky / Freizeit & Abenteuer. " ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-09-22> ld:Kosten "18 Euro Normalpreis, 15 Euro ermäßigt, 7 Euro Abendkasse mit LeipzigPass" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                     ld:Kosten "35 Euro (bereits ermäßigt)" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-09-22> a ld:Event ;
                                                      rdfs:label "28. Klassisches Kartoffelkonzert – Thomas Hanke und Plaintive Cry mit Chamber Blues" ;
                                                      ical:description "" ;
                                                      ical:dtstart "2016-09-22T19:30:00+02:00"^^xsd:dateTime ;
                                                      ical:location ldo:Telegraph ;
                                                      ical:summary "28. Klassisches Kartoffelkonzert – Thomas Hanke und Plaintive Cry mit Chamber Blues" ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-09-24> ld:Kosten "10 Euro (bereits ermäßigt)" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "18 Euro Normalpreis, 15 Euro ermäßigt, 7 Euro Abendkasse mit LeipzigPass" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-09-24> a ld:Event ;
                                                      rdfs:label "Entlang der Parthe. Fahrradexkursion von Taucha nach Leipzig" ;
                                                      ical:description "\"Die Parthe durch Stadt und Land\" - so folgen wir dem Flüsschen von Taucha nach Leipzig bis zur Mündung in die Weiße Elster. Exkursionsleiter: Andreas Liste, AHA e.V. <br/> Letzter Rücktritt ist am 20.9.2016 möglich. " ;
                                                      ical:dtend "2016-09-24T15:00:00+02:00"^^xsd:dateTime ;
@@ -428,12 +345,12 @@
                                                      ical:location <http://leipzig-data.de/Data/Treffpunkt/Bahnhof.Taucha> ;
                                                      ical:summary "Entlang der Parthe. Fahrradexkursion von Taucha nach Leipzig" ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-05> ld:Kosten "8 Euro (bereits ermäßigt)" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                     ld:Kosten "10 Euro (bereits ermäßigt)" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-11-05> a ld:Event ;
                                                      rdfs:label "Herbstexkursion in die Pleiße-Elster-Aue" ;
                                                      ical:description "Erleben und genießen Sie den Herbst im südlichen Auwald - das Licht, die Gerüche und Geräusche. Exkursionsleiter: Andreas Liste, AHA e.V. <br/> Die Exkursion endet am Leipziger Hauptbahnhof. " ;
                                                      ical:dtend "2016-11-05T14:00:00+01:00"^^xsd:dateTime ;
@@ -441,24 +358,24 @@
                                                      ical:location <http://leipzig-data.de/Data/Treffpunkt/KoburgerBruecke> ;
                                                      ical:summary "Herbstexkursion in die Pleiße-Elster-Aue. Exkursionsleiter: Andreas Liste, AHA e.V." ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-16> ld:Kosten "Eintritt lt. Plakataushang" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                     ld:Kosten "8 Euro (bereits ermäßigt)" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-11-16> a ld:Event ;
                                                      rdfs:label "29. Klassisches Kartoffelkonzert – Uschi Brüning und Band" ;
                                                      ical:description "" ;
                                                      ical:dtstart "2016-11-16T19:30:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:KulturhausStoetteritz ;
                                                      ical:summary "29. Klassisches Kartoffelkonzert – Uschi Brüning und Band" ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-26> ld:Kosten "8 Euro (bereits ermäßigt)" ;
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                     ld:Kosten "Eintritt lt. Plakataushang" ;
                                                      ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA ;
-                                                     a ld:Event ;
+                                                     ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-11-26> a ld:Event ;
                                                      rdfs:label "Herbstexkursion zur Burgaue in Leipzig" ;
                                                      ical:description "Herbstexkursion zur Burgaue in Leipzig. Exkursionsleiter: Andreas Liste, AHA e.V. " ;
                                                      ical:dtend "2016-11-26T14:00:00+01:00"^^xsd:dateTime ;
@@ -466,53 +383,34 @@
                                                      ical:location ldo:Haus_Auensee ;
                                                      ical:summary "Herbstexkursion zur Burgaue in Leipzig. Exkursionsleiter: Andreas Liste, AHA e.V." ;
                                                      ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> .
+                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
+                                                     ld:Kosten "8 Euro (bereits ermäßigt)" ;
+                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
+                                                     ld:hasTag ldtag:AULA .
 
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-27.1> ld:Kosten "Eintritt lt. Plakataushang" ;
-                                                       ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                       ld:hasTag ldtag:AULA ;
-                                                       a ld:Event ;
+<http://leipzig-data.de/Data/Event/NuKLA.2016-11-27.1> a ld:Event ;
                                                        rdfs:label "30. Klassisches Kartoffelkonzert – Doppelkonzert zum 1. Advent mit amarcord und Dorothee Oberlinger" ;
                                                        ical:description "" ;
                                                        ical:dtstart "2016-11-27T14:30:00+01:00"^^xsd:dateTime ;
                                                        ical:location ldo:Paul-Gerhardt-Kirche ;
                                                        ical:summary "30. Klassisches Kartoffelkonzert – Doppelkonzert zum 1. Advent mit amarcord und Dorothee Oberlinger" ;
                                                        ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-27.2> ld:Kosten "Eintritt lt. Plakataushang" ;
+                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                       ld:Kosten "Eintritt lt. Plakataushang" ;
                                                        ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                       ld:hasTag ldtag:AULA ;
-                                                       a ld:Event ;
+                                                       ld:hasTag ldtag:AULA .
+
+<http://leipzig-data.de/Data/Event/NuKLA.2016-11-27.2> a ld:Event ;
                                                        rdfs:label "30. Klassisches Kartoffelkonzert – Doppelkonzert zum 1. Advent mit amarcord und Dorothee Oberlinger" ;
                                                        ical:description "" ;
                                                        ical:dtstart "2016-11-27T20:00:00+01:00"^^xsd:dateTime ;
                                                        ical:location ldo:Paul-Gerhardt-Kirche ;
                                                        ical:summary "30. Klassisches Kartoffelkonzert – Doppelkonzert zum 1. Advent mit amarcord und Dorothee Oberlinger" ;
                                                        ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> .
-
-<http://leipzig-data.de/Data/Event/OKLab.2015-12-07> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
-                                                     ical:dtend "2015-12-07T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2015-12-07T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:SpinLab ;
-                                                     ical:organizer ldt:CodeForLeipzig ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/pzstklytqbkb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
-
-<http://leipzig-data.de/Data/Event/OKLab.2015-12-14> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. " ;
-                                                     ical:dtend "2015-12-14T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2015-12-14T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:SpinLab, ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer ldt:CodeForLeipzig ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/pzstklytqbsb/>, <http://www.meetup.com/OK-Lab-Leipzig/events/227115700/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
+                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
+                                                       ld:Kosten "Eintritt lt. Plakataushang" ;
+                                                       ld:contactPerson ldp:Stoiber_WolfgangEA ;
+                                                       ld:hasTag ldtag:AULA .
 
 <http://leipzig-data.de/Data/Event/OKLab.2015-12-21> a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;

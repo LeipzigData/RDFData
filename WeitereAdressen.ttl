@@ -5,6 +5,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 
 <http://leipzig-data.de/Data/01067.Dresden.Messering.6> ld:hasHouseNumber "6" ;
@@ -90,36 +92,36 @@
                                                             ld:hasPostCode "04435" ;
                                                             ld:hasCity "Schkeuditz" .
 
-<http://leipzig-data.de/Data/04451.Borsdorf.LeipzigerStrasse.3> a ld:Adresse ;
-                                                                rdfs:label "04451 Borsdorf, Leipziger Straße 3" ;
+<http://leipzig-data.de/Data/04451.Borsdorf.LeipzigerStrasse.6> ld:hasCity "Borsdorf" ;
+                                                                a ld:Adresse ;
+                                                                rdfs:label "04451 Borsdorf, Leipziger Straße 6" ;
                                                                 ld:hasHouseNumber "6" ;
-                                                                ld:hasPostCode "04451" ;
-                                                                ld:hasCity "Borsdorf" .
+                                                                ld:hasPostCode "04451" .
 
-<http://leipzig-data.de/Data/04451.Borsdorf.Steinweg.3> ld:hasStreet "Steinweg" ;
+<http://leipzig-data.de/Data/04451.Borsdorf.Steinweg.3> ld:hasCity "Borsdorf" ;
+                                                        ld:hasStreet "Steinweg" ;
                                                         a ld:ExterneAdresse ;
                                                         rdfs:label "04451 Borsdorf, Steinweg 3" ;
                                                         ld:hasHouseNumber "3" ;
-                                                        ld:hasPostCode "04451" ;
-                                                        ld:hasCity "Borsdorf" .
+                                                        ld:hasPostCode "04451" .
 
-<http://leipzig-data.de/Data/04463.Grosspoessna.Hauptstrasse.19> a ld:Adresse ;
-                                                                 rdfs:label "04463 Großpösna, Hauptstraße 19" ;
-                                                                 ld:hasHouseNumber "19" ;
-                                                                 ld:hasPostCode "04463" ;
-                                                                 ld:hasCity "Großpösna" .
+<http://leipzig-data.de/Data/04463.Grosspoesna.Hauptstrasse.19> ld:hasCity "Großpösna" ;
+                                                                a ld:Adresse ;
+                                                                rdfs:label "04463 Großpösna, Hauptstraße 19" ;
+                                                                ld:hasHouseNumber "19" ;
+                                                                ld:hasPostCode "04463" .
 
-<http://leipzig-data.de/Data/04463.Grosspoessna.Rittergutshof.7> a ld:Adresse ;
-                                                                 rdfs:label "04463 Großpösna, Rittergutshof 7" ;
-                                                                 ld:hasHouseNumber "7" ;
-                                                                 ld:hasPostCode "04463" ;
-                                                                 ld:hasCity "Großpösna" .
+<http://leipzig-data.de/Data/04463.Grosspoesna.Rittergutshof.7> ld:hasCity "Großpösna" ;
+                                                                a ld:Adresse ;
+                                                                rdfs:label "04463 Großpösna, Rittergutshof 7" ;
+                                                                ld:hasHouseNumber "7" ;
+                                                                ld:hasPostCode "04463" .
 
-<http://leipzig-data.de/Data/04463.Grosspoessna.StoermthalerWeg.2> a ld:Adresse ;
-                                                                   rdfs:label "04463 Großpösna, Störmthaler Weg 2" ;
-                                                                   ld:hasHouseNumber "2" ;
-                                                                   ld:hasPostCode "04463" ;
-                                                                   ld:hasCity "Großpösna" .
+<http://leipzig-data.de/Data/04463.Grosspoesna.StoermthalerWeg.2> a ld:Adresse ;
+                                                                  rdfs:label "04463 Großpösna, Störmthaler Weg 2" ;
+                                                                  ld:hasHouseNumber "2" ;
+                                                                  ld:hasPostCode "04463" ;
+                                                                  ld:hasCity "Großpösna" .
 
 <http://leipzig-data.de/Data/04509.Rabutz.BageritzerWeg.1> ld:hasCity "Rabutz" ;
                                                            ld:hasStreet "Bageritzer Weg" ;
@@ -158,8 +160,8 @@
 ld:ExterneAdresse a owl:Class ;
                   rdfs:label "Weitere Adresse" .
 
-<> a owl:Ontology ;
-   rdfs:label "Weitere Adressen" ;
-   cc:attributionURL <http://leipzig-data.de> ;
+<> cc:attributionURL <http://leipzig-data.de> ;
    cc:attributionName "The Leipzig Open Data Project" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   a owl:Ontology ;
+   rdfs:label "Weitere Adressen" .
