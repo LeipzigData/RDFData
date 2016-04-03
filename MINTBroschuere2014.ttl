@@ -1,0 +1,2773 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix ldTag: <http://leipzig-data.de/Data/Tag/> .
+@prefix mint2014: <http://leipzig-data.de/Data/MINT-2014/> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<http://leipzig-data.de/Data/MINTBroschuere2014/>
+	cc:attributionName "The Leipzig Open Data Project" ;
+	cc:attributionURL <http://leipzig-data.de> ;
+	cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+	a owl:Ontology ;
+	rdfs:comment "Erweiterte Version der Beschreibung von MINT-Orten aus der MINT-Broschüre 2014 des Projekts „Lernen vor Ort“ der Stadt Leipzig" ;
+	rdfs:label "MINT-Broschüre 2014" .
+
+mint2014:Ortsbeschreibung
+	a owl:Class ;
+	rdfs:label "Beschreibung eines MINT-Orts" .
+	
+mint2014:Angebot
+    a owl:Class ;
+    rdfs:label "Angebot" .
+	
+mint2014:Schwerpunkt
+    a owl:Class ;
+    rdfs:label "Schwerpunkt" .
+
+mint2014:ADFC
+	rdfs:label "Allgemeiner Deutscher Fahrrad-Club KV Leipzig e. V. (ADFC)" ;
+	mint2014:Kurzinformation "Der ADFC ist verkehrspolitischer Verein, Verkehrsclub und Verbraucherschutzorganisation. Der ADFC setzt sich für die Stärkung des Umweltverbundes (Fahrrad, Fuß, ÖPNV, CarSharing) ein." ;
+	mint2014:Leistungsangebot "Beratung zur umweltfreundlichen Mobilität/Kurse und Weiterbildungen für Radfahrende/öffentliche Veranstaltungen wie Vorträge, Podiumsdiskussionen und Radtouren/Planung und Absicherung von geführten Radtouren" ;
+	mint2014:Oeffnungszeiten "Dienstag bis Donnerstag 14:00 - 18:00 Uhr" ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linien 10, 11 Haltestelle Münzgasse" ;
+	mint2014:Telefon "0341 22540313" ;
+	mint2014:Fax "0341 22540314" ;
+	mint2014:Mail "info@adfc-leipzig.de" ;
+	mint2014:Internet "www.adfc-leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung, ldTag:Technik;
+	mint2014:hasImage "adfc_leipzig.jpg" ;
+	mint2014:hasLogo "logo_adfc.png" ;
+	mint2014:describes ldo:ADFC .
+
+mint2014:AnglerverbandLeipzig
+	rdfs:label "Anglerverband Leipzig e. V." ;
+	mint2014:Kurzinformation "Der Anglerverband Leipzig e.V. hat 210 Mitgliedsvereine mit zusammen über 11.000 Mitgliedern und unterhält eine Geschäftsstelle in Leipzig. Von hier aus werden die organisatorischen und informativen Aufgaben des Verbandes gesteuert und bewältigt, so auch eine umfangreiche Jugendarbeit." ;
+	mint2014:Leistungsangebot "Schnupperangelveranstaltungen/Projektunterricht zu den Themen Fische und Gewässer,/Entwicklung von Materialien zur Unterstützung von Ganztagsangeboten und Sachkunde- bzw. Biologieunterricht/Einsatzstelle für das Freiwillige Ökologische Jahr" ;
+	mint2014:Oeffnungszeiten "Di und Do 9:00 - 18:00 Uhr (Veranstaltungen nur nach Absprache)" ;
+	mint2014:OePNV-Anbindung "Straßenbahn, Bus, S-Bahn" ;
+	mint2014:Telefon "0341 6523570" ;
+	mint2014:Fax "0341 65235720" ;
+	mint2014:Mail "info@anglerverband-leipzig.de" ;
+	mint2014:Internet "www.anglerverband-leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung;
+	mint2014:hasImage "anglerverband_leipzig_2.jpg" ;
+	mint2014:hasLogo "logo_avl.jpg" ;
+	mint2014:describes ldo:AnglerverbandLeipzig .
+
+mint2014:Auwaldstation
+	rdfs:label "Auwaldstation Leipzig" ;
+	mint2014:Kurzinformation "Das Umweltbildungszentrum, direkt am Eingang zum Naturschutzgebiet Burgaue und Schlosspark Lützschena gelegen, steht seinen Besuchern täglich offen und bietet zahlreiche Informationen zum Leipziger Auwald, zu Umweltthemen allgemein sowie zum Schlosspark Lützschena. Für Kindergärten, Hortgruppen und Schulklassen aller Altersstufen werden abwechslungsreiche Naturerlebnisprogramme angeboten. Die Mitarbeiter der Auwaldstation unterstützen Bildungseinrichtungen bei der Durchführung von interessanten Projekttagen und Praktika. Aber auch für private Gruppen, Vereine und Firmen besteht die Möglichkeit, an geführten Wanderungen, Workshops und Vorträgen teilzunehmen. Die Auwaldstation ist zudem ein beliebter Ort, um Kindergeburtstage in der Natur zu feiern." ;
+	mint2014:Leistungsangebot "thematisch aufgearbeitete Naturerlebnisprogramme für Schulen, Ausbildungsstätten und Vorschulen, wobei die Vermittlung von fachlichen Inhalten und das praktische Naturerlebnis im ausgeglichenen Verhältnis stehen/Weiterbildungsangebote für Erzieher/-innen und Lehrer/-innen/Exkursionen und naturpädagogische Programme zur Entspannung oder zur Förderung des Teamgedanken für Erwachsenengruppen/Naturerlebnisprogramme als Ferienangebot/Bereitstellung von Informationsmaterialien zu Natur- und Umweltthemen/Kindergeburtstage in der Natur/Beratung zu praktischem Naturschutz, Bestimmung von Tier- und Pflanzenarten/Bereitstellung eines multimedialen Auwalderlebnispfades (Begleitung und Geräteverleih, kostenlose App für iPhone und Android)/Fortbildungsangebote, Schülerpraktika/Einsatzstelle für Freiwilliges Ökologisches Jahr" ;
+	mint2014:Oeffnungszeiten "Informationen unter www.auwaldstation.de" ;
+	mint2014:OePNV-Anbindung "Straßenbahn: Linie 11 (Richtung Schkeuditz) bis zur Haltestelle Lützschena; Fußweg über die Alte Schäferei und den Schlossweg; ca. 10 Minuten; S-Bahn Leipzig-Halle, Haltestelle Lützschena, Fußweg ca. 25 Minuten" ;
+	mint2014:Telefon "0341 4621895" ;
+	mint2014:Fax "0341 2537753" ;
+	mint2014:Mail "auwaldstation@gmail.com" ;
+	mint2014:Internet "www.auwaldstation.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung, ldTag:GTA, ldTag:BehiGe;
+	mint2014:hasImage "auwaldstation_3.jpg" ;
+	mint2014:hasLogo "logo_auwald.gif" ;
+	mint2014:describes ldo:Auwaldstation .
+
+mint2014:BergbauTechnikPark
+	rdfs:label "Bergbau-Technik-Park e.V." ;
+	mint2014:Kurzinformation "Der Bergbau-Technik-Park präsentiert in einem spannenden Bogen den kompletten (Förder-)Zyklus eines Braunkohlentagebaus: Rückbau der Kulturlandschaft, Vorbereitung des Vorfeldes, Grundwasserabsenkung, Abraum- und Kohlegewinnung, Transport, Abraum-Verkippung und die anschließende Sanierung und Wiedergewinnung neuer Landschaftsräume. Ein spezieller Bereich im Park erinnert an Heimatverlust und das Verschwinden ganzer Dörfer." ;
+	mint2014:Leistungsangebot "Informationstafeln mit speziellem Kinderbereich ermöglichen einen individuellen/Parkrundgang. Dieser wird durch eine Dauerausstellung in unserem E-Haus ergänzt." ;
+	mint2014:Oeffnungszeiten "für Kinder und Gastronomische Versorgung sind vor Ort. Schülerpraktika, Ferienjobs für Schüler/-innen Öffnungszeiten: Der Park ist in der Regel von Mitte März bis Anfang November geöffnet: Do und Fr 10:00 - 17:00 Uhr; Sa, So, Feiertage 10:00 - 18:00 Uhr In den Schulferien jeweils Di bis So 10:00 - 18:00 Uhr Letzter Einlass jeweils eine Stunde vor Parkschließung. Gruppenführungen sind nach Vereinbarung auch außerhalb der Öffnungszeiten möglich." ;
+	mint2014:OePNV-Anbindung "Nein / Nach Fertigstellung der Schleuse zwischen Markkleeberger und Störmthaler See ca. 25 Minuten Fußweg vom Kanupark Markkleeberg; dieser ist mit einer Bushaltestelle an den ÖPNV angeschlossen" ;
+	mint2014:Telefon "034297 140127" ;
+	mint2014:Fax "034297 140119" ;
+	mint2014:Mail "info@bergbau-technik-park.de" ;
+	mint2014:Internet "www.bergbau-technik-park.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "bergbau_1.jpg" ;
+	mint2014:hasLogo "logo_bbau.png" ;
+	mint2014:describes ldo:BergbauTechnikPark .
+
+mint2014:BASachsen
+	rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" ;
+	mint2014:Kurzinformation "Duales Studium - Die Staatliche Studienakademie Leipzig verknüpft mit ihrem Dualen Studium Theorie und Praxis. In 6 Semestern werden solide Fachkenntnisse und betriebspraktische Handlungskompetenz vermittelt. Jedes Semester besteht aus einem Halbsemester in der Studienakademie (Theorie) und einem Halbsemester im Unternehmen (Praxis)." ;
+	mint2014:Leistungsangebot "verschiedene Studiengänge im Fachbereich Technik:/Informatik, Service Engineering/Wirtschaft:/Immobilienwirtschaft, Controlling, Steuerberatung / Wirtschaftsprüfung, Bankwirtschaft/Schülerpraktika/regelmäßig „Tag der offenen Tür“, individuelle Veranstaltungen" ;
+	mint2014:Oeffnungszeiten "Mo bis Do 7:30 - 17:00 Uhr; Fr 7:30 - 15:00 Uhr" ;
+	mint2014:OePNV-Anbindung "Mit Straßenbahn Linie 1 oder 2 bis Haltestelle „Ratzelstraße“" ;
+	mint2014:Telefon "0341 42743330" ;
+	mint2014:Fax "0341 42743331" ;
+	mint2014:Mail "info@ba-leipzig.de" ;
+	mint2014:Internet "www.ba-leipzig.de" ;
+	mint2014:Besonderheiten "sehr hohe Vermittlungsquote, i.d.R. Vergütung des Studiums" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Technik, ldTag:Informatik, ldTag:BehiGe;
+	mint2014:hasImage "berufsakademie.jpg" ;
+	mint2014:hasLogo "logo_bal.jpg" ;
+	mint2014:describes ldo:BA-Leipzig .
+
+mint2014:BotanischerGartenGrosspoesna
+	rdfs:label "Botanischer Garten für Arznei- und Gewürzpflanzen Großpösna-Oberholz" ;
+	mint2014:Kurzinformation "Der Botanische Garten für Arznei- und Gewürzpflanzen Großpösna-Oberholz wurde 1936 von Leipziger Drogisten als Lehrgarten zur Vermittlung von praktischem Wissen über Arznei- und Gewürzpflanzen angelegt. Auf etwa zwei Hektar werden Heilpflanzen, Gewürzpflanzen, heimische Wildpflanzen, Färberpflanzen und weitere Nutzpflanzen sowie viele bekannte und weniger bekannte Zierpflanzen angebaut und vorgestellt. Im Lehrgarten für Nachwachsende Rohstoffe können sich unsere Besucher/-innen u. a. informieren, welche Pflanzen als Ersatz für Erdöl in der Wirtschaft verwendet werden." ;
+	mint2014:Leistungsangebot "Thematische Führungen und Workshops für Erwachsene/Führungen und Projekte für Schulgruppen unter Berücksichtigung des sächsischen/Lehrplans/Führungen und Projekte für Kindergärten und Horteinrichtungen/Vorträge/Feste im Jahresverlauf: Kräuter-/Frühlingsfest, Mittsommernachtsfest, Halloween,/Adventsfeier/Kindergeburtstage, Familienfeiern, Betriebsfeiern/Pflanzenverkauf und Beratung/Fortbildungsangebote: Pflanzenbestimmungskurs, Nachwachsende Rohstoffe/Praktika und Ferienjobs für Schüler/-innen" ;
+	mint2014:Oeffnungszeiten "Mo bis Fr 8:00 - 12:00 Uhr (April bis Oktober) Sa und So 10:00 - 16:00 Uhr (Mai bis September) und nach Vereinbarung" ;
+	mint2014:OePNV-Anbindung "Zug Leipzig - Geithain, Haltestelle Oberholz, Linie 75 Haltestelle Bahnhof Oberholz oder Pflaumenallee, Linie 690 Haltestelle Pflaumenallee" ;
+	mint2014:Telefon "034297 41249" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "botanischer-garten-oberholz@gmx.de" ;
+	mint2014:Internet "www.botanischer-garten-oberholz.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung, ldTag:Naturwissenschaft, ldTag:EinBehiGe;
+	mint2014:hasImage "botanischer_garten_2.jpg" ;
+	mint2014:describes ldo:BotanischerGartenGrosspoesna .
+
+mint2014:CIT
+	rdfs:label "ciT - Consulting Innovation Training GmbH" ;
+	mint2014:Kurzinformation "Die ciT Leipzig GmbH ist eine führende sächsische Bildungseinrichtung in der Medien-, IT-, kaufmännischen und Logistik-Branche. Wir sind IT- und Bildungsdienstleister für berufliche Weiterbildung und Umschulung in den Bereichen Softwareentwicklung, Netzwerktechnik, Datenbanken, IT-Sicherheit, Multimediaanwendungen, kaufmännische Qualifizierung und Anwendungssoftware, Lager/Logistik sowie Handel & Verkauf. Unsere Stärke liegt in der modularen Einzel- und Kleingruppenausbildung. Sie können aus über 400 Modulen unseres gesamten Angebotsspektrums wählen. Die hohe Qualität unserer AZAV-zertifizierten Qualifizierungen sichern wir mit unserem geprüften Qualitätsmanagement nach DIN ISO 9001." ;
+	mint2014:Leistungsangebot "MINT-Individual: Studienorientierung für Schüler/-innen an Gymnasien ab Klasse 9:/individuell, wiederholbar, flexibel/Grundorientierung: Neigungs- und Begabungstest, Studiengänge kennen lernen/Fahrten zu Messen, naturwissenschaftlichen Ausstellungen und Schülerlaboren/Gespräche mit MINT-Fachleuten/Unternehmensbesuche und Vermittlung von Praktika/Probestudientage an Hochschulen der Region" ;
+	mint2014:Oeffnungszeiten "Unser Büro ist an Wochentagen von 8:00 bis 16:00 Uhr besetzt." ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linien 1, 3, 8 und Busse 72 / 73 bis zur Haltestelle „Friedrich-List-Platz“, dann ca. 5 min Fußweg" ;
+	mint2014:Telefon "0341 68707-0" ;
+	mint2014:Fax "0341 68707-124" ;
+	mint2014:Mail "mint@mint-individual.de" ;
+	mint2014:Internet "www.mint-individual.de" ;
+	mint2014:Internet "www.cit-leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Informatik, ldTag:BehiGe;
+	mint2014:hasImage "cit.jpg" ;
+	mint2014:hasLogo "logo_cit.png" ;
+	mint2014:describes ldo:ciT .
+
+mint2014:ComputerSpielSchule
+	rdfs:label "ComputerSpielSchule Leipzig" ;
+	mint2014:Kurzinformation "Ganzjährig ein Ort der Beratung und Begegnung im Rahmen digitaler Spiele. Ausgewählte Workshops und Sonderveranstaltungen für Kinder, Familien und Pädagog/-innen." ;
+	mint2014:Leistungsangebot "Aufklärung zu Chancen und Risiken digitaler Spiele/Medienpädagogisch angeleitetes Spielen mit und für Kinder(n), Jugendliche(n) und/deren Eltern sowie Pädagogen/-innen/Weiterbildung für Lehrer/-innen, Workshops für Schüler/-innen/Schülerpraktika" ;
+	mint2014:Oeffnungszeiten "Mo 14:00 - 18:00 Uhr, Di 14:00 - 16:00 Uhr, Do 14:00 - 18:00 Uhr (Ferien: Gesonderte Öffnungszeiten, siehe Homepage)" ;
+	mint2014:OePNV-Anbindung "Straßenbahn: Linien 10, 11, 12 bis Haltestelle „G.-Schumann-/ Lützowstraße“; Linie 4 bis Haltestelle „G.-Schumann-/Lindenthaler Straße“. Bus: Linie 90 bis Haltestelle „G.-Schumann-/Lindenthaler Straße“. S-Bahn: S1 und S10 bis Haltestelle „Leipzig Gohlis“" ;
+	mint2014:Telefon "0341 2425976" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "info@computerspielschule-leipzig.de" ;
+	mint2014:Internet "www.computerspielschule-leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Informatik;
+	mint2014:hasImage "computerspielschule_leipzig_1.jpg" ;
+	mint2014:hasLogo "logo_csl.jpg" ;
+	mint2014:describes ldo:ComputerSpielSchule .
+
+mint2014:ETS
+	rdfs:label "Elektrotechnische Sammlung Markkleeberg (ETS)" ;
+	mint2014:Kurzinformation "Die ETS ist Kernstück einer Bildungs- und Begegnungsstätte zur Geschichte der Elektrotechnik. Sie wird getragen von einem Arbeitskreis des VDE-Bezirksvereins Leipzig/ Halle e. V." ;
+	mint2014:Leistungsangebot "praxisnahe Durchführung des Unterrichts zu elektrotechnischen Themen des Lehrplanes mit der Kompetenz unserer Ingenieure und der Vielzahl von Geräten in der/ETS/Darstellung der beruflichen Möglichkeiten auf dem Gebiet der Elektrotechnik/Vorstellung der Technik der Stromversorgung von der Erzeugung über die Übertragung bis zur Anwendung/Fortbildungsangebote: nach Vereinbarung" ;
+	mint2014:Oeffnungszeiten "jeden letzten Dienstag im Monat von 14:00 - 18:00 Uhr sowie nach Vereinbarung" ;
+	mint2014:OePNV-Anbindung "Straßenbahn: Linie 9 bis Markkleeberg Bahnhof, dann ca. 10 min Fußweg; S-Bahn bis Markkleeberg" ;
+	mint2014:Telefon "0341 35022265" ;
+	mint2014:Fax "0341 35022264" ;
+	mint2014:Mail "vde-leipzig-halle@vde-online.de" ;
+	mint2014:Internet "www.vde-leipzig-halle.de/sammlung" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft;
+	mint2014:hasImage "elektrotechnische_sammlung.jpg" ;
+	mint2014:describes ldo:Umspannwerk .
+
+mint2014:ENEDAS
+	rdfs:label "ENEDAS e.V. - ENvironmental EDucation And Science Verein zur Förderung der Umweltbildung und Umweltforschung" ;
+	mint2014:Kurzinformation "Wir sind ein gemeinnütziger Verein mit ca. 30 ehrenamtlich aktiven Mitgliedern. Viele davon sind studierte Naturwissenschaftler, die auch beruflich in der Umweltforschung tätig sind. Zu unserem Team gehören auch eine Reihe von Studenten, die bei unserer Arbeit erste Erfahrungen in ihrem Fachgebiet erlangen. Wir wollen: … durch die Vermittlung unseres ökologischen Wissens das Natur- und Umweltbewusstsein steigern. … durch eigene und von uns unterstützte Projekte die ökologische Grundlagenforschung fördern. … durch die aktive Unterstützung geeigneter Maßnahmen den Natur- und Umweltschutz stärken." ;
+	mint2014:Leistungsangebot "Die Förderung der Umweltbildung im Rahmen von eigenen und unterstützten/Projekten, wie z. B. naturkundlichen Führungen, Exkursionen, Vortragsreihen oder/Ganztagsprojekten, ist eines unserer Haupttätigkeitsfelder. Wir sind bemüht, ein/abwechslungsreiches Angebot zu schaffen, welches auch fachfremden Teilnehmer//-innen den Zugang zu botanischen, zoologischen und ökologischen Fragestellungen ermöglicht. Dabei richtet sich unser Angebot nicht nur an interessierte Bürger//-innen aus Leipzig und Umgebung, sondern auch an Lehrer/-innen, Kinder und Student/-innen." ;
+	mint2014:Oeffnungszeiten "Unsere Mitglieder sind ehrenamtlich in ihrer Freizeit tätig. Aus diesem Grund sind wir nur bedingt telefonisch zu erreichen. Bei allgemeinen Anfragen nutzen Sie bitte unsere E-Mail-Adresse." ;
+	mint2014:OePNV-Anbindung "keine Angabe" ;
+	mint2014:Telefon "01577 1822192" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "info@enedas.de" ;
+	mint2014:Internet "www.enedas.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Naturwissenschaft;
+	mint2014:hasImage "enedas.jpg" ;
+	mint2014:hasLogo "logo_enedas.gif" ;
+	mint2014:describes ldo:ENEDAS .
+
+mint2014:ErfinderKinder
+	rdfs:label "ErfinderKinder" ;
+	mint2014:Kurzinformation "Die Erfinderkinder bieten naturwissenschaftliche Frühbildung und kreative Bildungsangebote für Kinder." ;
+	mint2014:Leistungsangebot "Forscher- und Experimentierkurse/Tüftler- und Erfinderwerkstätten/Kreativangebote/Kurse, Einzelangebote, Projekttage, Projektwochen/Fortbildungsangebote/Ferienangebote, Kindergeburtstage, offene Werkstatt" ;
+	mint2014:Oeffnungszeiten "nach Absprache" ;
+	mint2014:OePNV-Anbindung "Straßenbahn: Linien 7 Haltestelle Wielandstraße" ;
+	mint2014:Telefon "0341 20019395" ;
+	mint2014:Fax "0341 6879080" ;
+	mint2014:Mail "info@erfinderkinder.com" ;
+	mint2014:Internet "www.erfinderkinder.com" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:Mathematik, ldTag:EinBehiGe;
+	mint2014:hasImage "erfinder_kinder.jpg" ;
+	mint2014:hasLogo "logo_erfinderkinder.png" ;
+	mint2014:describes ldo:ErfinderKinder .
+
+mint2014:FakultaetPhysikGeowis
+	rdfs:label "Fakultät für Physik und Geowissenschaften der Universität Leipzig" ;
+	mint2014:Kurzinformation "Institute für Experimentelle und Theoretische Physik, Geographie, Geophysik und Geologie, Meteorologie" ;
+	mint2014:Leistungsangebot "Fortbildungsangebote: Lehrerweiterbildung und Angebote SCHILF/Sonstige Angebote: Sonntagsvorlesung (Ankündigung über Internet und Schulverteiler), Lange Nacht der Wissenschaften, Inspirata, Experinat, Weihnachtsvorlesung,/Kinderuniversität, Fachkolloquia, Betreuung von Besonderen Lernleistungen (BeLL),/Laborbesichtigungen/Tag der offenen Tür: 1. Donnerstag im Januar" ;
+	mint2014:Oeffnungszeiten "nach telefonischer Anfrage" ;
+	mint2014:OePNV-Anbindung "Straßenbahn: Linien 2, 16 (Johannisallee), Linie 15 (Ostplatz); Bus: 60 (Johannisallee)" ;
+	mint2014:Telefon "0341 9732406" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "schiele@physik.uni-leipzig.de" ;
+	mint2014:Internet "keine Angabe" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "fakultaet_fuer_physik.jpg" ;
+	mint2014:describes <http://leipzig-data.de/Data/Ort/UniLeipzig.Physik> .
+
+mint2014:UIZFoerderverein
+	rdfs:label "Förderverein „Umweltinformationszentrum Leipzig - UiZ“ e.V." ;
+	mint2014:Kurzinformation "Der Förderverein am Leipziger Umweltinformationszentrum unterstützt und fördert die Umweltbildungs- und -informationsarbeit der städtischen Einrichtung zum nachhaltigen Umweltschutz im gemeinnützigen Sinne finanziell, sachlich und personell. Weiteres siehe unter www.umwelt-leipzig.de" ;
+	mint2014:Leistungsangebot "Gemeinnützige Veranstaltungen und Projekte, wo Bürger/-innen (verschiedene Zielgruppen von Klein bis Groß) mitwirken, sich informieren, Umweltbewusstsein für/die Region entwickeln und Umweltschutz befördern können./Mit der Stadt und dem städtischen UiZ, wissenschaftlichen Einrichtungen und regionalen Partnern wird thematisch dazu eng zusammengearbeitet./Wer an einer Partnerschaft interessiert ist, ist zur Mitwirkung und Förderung gemeinnütziger Projekte willkommen gemäß folgenden Satzungszwecken:/ - Wecken und Wachhalten des Interesses aller Bevölkerungsschichten am umweltgerechten Verhalten,/ - mediengerechte Aufarbeitung und Darstellung von Umweltprojekten und Umweltvorhaben,/ - Durchführung von Ausstellungen, Präsentationen und Bürgerforen zu aktuellen/ökologischen Themen,/ - Anleitung und Durchführung von Projekten der Umweltpädagogik,/ - Informationsaustausch zwischen Stadt und Umland,/ - Gewinnung von Spenden für den Zweck des Vereins./Weiterbildungsangebote und Aktionen siehe unter www.umwelt-leipzig.de" ;
+	mint2014:Oeffnungszeiten "E-mail an: fvumweltinformationszentrum@web.de oder Nachfrage zum Förderverein im UiZ / Technisches Rathaus, Tel. 0341 1236711" ;
+	mint2014:OePNV-Anbindung "Straßenbahn 12, 15 / Bus 70, 74; Haltestelle: Technisches Rathaus" ;
+	mint2014:Telefon "0341 1236830 und 0177 6590914, Frau Körner" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "fvumweltinformationszentrum@web.de" ;
+	mint2014:Internet "www.umwelt-leipzig.de" ;
+	mint2014:Besonderheiten "Der Förderverein ist Regionalstelle Leipzig im Netzwerk Umweltbildung Sachsen." ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Berufsorientierung, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "technisches_rathaus_1.jpg" ;
+	mint2014:hasLogo "logo_uiz.jpg" ;
+	mint2014:describes ldo:UIZ .
+
+mint2014:GeoWerkstatt
+	rdfs:label "GeoWerkstatt Leipzig e.V." ;
+	mint2014:Kurzinformation "Leipzig - hier sind wir verortet. Die Geowerkstatt. Motivierte Studierende, die mehr wollen, als theoretische Vorlesungen und bunte Beschreibungen aus Büchern, haben sich zusammengetan, um die Geowerkstatt auszufüllen. Als Plattform und eingetragener Verein bieten wir verschiedene Projekte und Vorträge zu praxisorientierter Geographie an. Wir versuchen, die Geographische Forschung herunter zu brechen und begreifbar zu machen. Mit allen Sinnen Geographie erleben und in den Dialog mit der Forschung zu treten, Wissen zu teilen und zu vermitteln, anzuwenden und zu hinterfragen - das ist unser Anspruch!" ;
+	mint2014:Leistungsangebot "Exkursionen, Vorträge, Workshops" ;
+	mint2014:Oeffnungszeiten "Unsere Mitglieder sind ehrenamtlich in ihrer Freizeit tätig. Aus diesem Grund sind wir nur bedingt telefonisch zu erreichen. Bei allgemeinen Anfragen nutzen Sie bitte unsere E-Mail-Adresse." ;
+	mint2014:OePNV-Anbindung "keine Angabe" ;
+	mint2014:Telefon "0341 9738611" ;
+	mint2014:Fax "0341 9732979" ;
+	mint2014:Mail "vorstand@geowerkstatt.com" ;
+	mint2014:Internet "www.geowerkstatt.com" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung, ldTag:Naturwissenschaft;
+	mint2014:hasLogo "logo_geowerkstatt.png" ;
+	mint2014:describes ldo:GeoWerkstatt .
+
+mint2014:GerhardRoeslGmbH
+	rdfs:label "Gerhard Rösl GmbH" ;
+	mint2014:Kurzinformation "Kompostwerk Liemehna: Annahme und Verwertung von Bioabfall aus der getrennten Sammlung von Haushalten sowie Garten- und Grünabfall. Herstellung von hochwertigem Kompost und dessen Vermarktung. Fachgerechte Entsorgung der anfallenden Störstoffe." ;
+	mint2014:Leistungsangebot "Besichtigung des Kompostwerkes (Annahme und Verwiegung des Eingangsmaterials, Zuweisung der Abkippstelle, Bearbeitungsstufen bis hin zum fertigen Kompost)/Vorstellung der modernen Bearbeitungstechnik/Förderung des Umweltgedankens der Kreislaufwirtschaft" ;
+	mint2014:Oeffnungszeiten "Mo bis Fr (nur nach Anmeldung)" ;
+	mint2014:OePNV-Anbindung "keine direkte Verbindung mit öffentlichen Verkehrsmitteln; Bushaltestelle in Liemehna, ca. 2,5 km bis zum Kompostwerk, Zughaltestelle in Jesewitz, ca. 5 km bis zum Kompostwerk" ;
+	mint2014:Telefon "034241 5690041" ;
+	mint2014:Fax "034241 5690028" ;
+	mint2014:Mail "Regina.beege@roesl.de" ;
+	mint2014:Internet "www.kompent.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Berufsorientierung, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:EinBehiGe;
+	mint2014:hasImage "gerhard_roesl_gmbh_2.jpg" ;
+	mint2014:hasLogo "logo_roesl.gif" ;
+	mint2014:describes ldo:GerhardRoeslGmbH .
+
+mint2014:Greenpeace
+	rdfs:label "Greenpeace Leipzig" ;
+	mint2014:Kurzinformation "Greenpeace ist eine international aktive Organisation, die sich für den Schutz der Umwelt einsetzt. Gemeinsam arbeiten wir bei Greenpeace unter anderem daran, den Klimawandel und die Urwaldzerstörung aufzuhalten, aber auch die Verschmutzung der Meere zu stoppen. Greenpeace kämpft gewaltfrei für den Erhalt der Lebensgrundlage von Mensch, Tier und Natur." ;
+	mint2014:Leistungsangebot "Die Greenpeace Gruppe Leipzig bietet verschiedene Vorträge zu den Themen von/Greenpeace Deutschland an. Uns selbst stehen leider keine Räumlichkeiten zur/Verfügung, die ganze Schulklassen fassen. Wir kommen aber trotzdem gerne an/die Schulen, sei es im Rahmen einer Unterrichtsstunde, von Projekttagen oder/anderem." ;
+	mint2014:Oeffnungszeiten "nach Absprache per E-Mail oder telefonisch" ;
+	mint2014:OePNV-Anbindung "keine Angabe" ;
+	mint2014:Telefon "0341 3065184" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "info@leipzig.greenpeace.de" ;
+	mint2014:Internet "greenpeace.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung;
+	mint2014:hasImage "bernhard_goering_str_viele_orte.jpg" ;
+	mint2014:hasLogo "logo_greenpeace.png" ;
+	mint2014:describes ldo:Greenpeace .
+
+mint2014:GruenerRing
+	rdfs:label "Grüner Ring Leipzig (Geschäftsstelle)" ;
+	mint2014:Kurzinformation "Der Grüne Ring Leipzig GRL, gegründet 1996, ist eine freiwillige und gleichberechtigte Arbeitsgemeinschaft von Leipzig, 11 Umlandkommunen und 2 Landkreisen. 26 Schlüsselprojekte in Landschaftspflege, Gewässerentwicklung und in der Tourismusentwicklung - wie die Entwicklung der Parthenaue, des Touristischen Gewässerverbundes, von Rad-, Wasser- und Wanderwegen - umreißen die Aufgabe. Mit dem GRL sorgen die Kommunen und ihre Partner - Vereine, Verbände, Bürger, Firmen - für eine abgestimmte regionale Entwicklung über die Stadt- und Gemeindegrenzen hinweg. Ziel ist, dass unsere Region um Leipzig, dass unsere Heimat lebenswert wird und bleibt, Menschen hier bleiben und Gäste gern hierher kommen. Der GRL bewirtschaftet zwei eigene touristische Radwege, den Äußeren und den Inneren Grünen Ring, auch zahlreiche Karten-Schautafeln informieren über spannende regionale Ziele. Dazu gehören auch die Vermittlung der Schlüsselprojekte und die Förderung von Umwelttechnologie und Umweltbildung. 14 interessante Standorte wie die Dölitzer Wassermühle oder der Fisch-Boot-Pass an der Schleuse Connewitz sind mit Informationstafeln versehen. Dazu gibt der GRL unterstützend eine Orientierungsradkarte UMWELT & NATUR für die Zielgruppe Kinder & Familien heraus, auf der diese Standorte beschrieben sind. Diese Karte ist über die Geschäftsstelle zu beziehen." ;
+	mint2014:Leistungsangebot "z. B. Information und Beratung zu Schlüsselprojekten des Grünen Ringes Leipzig/Vorträge zur Arbeit und zu Projekten des Grünen Ringes/Ausleihe von Studienmaterial/Unterstützung spezieller Projekttage mit Material zu den Themen Bergbaufolgelandschaft, Gewässerverbund, Umwelttechnologie-Standorte, Leipziger Neuseenland/Unterstützung bei der Vermittlung von Praktika im Umweltbereich/Unterstützung studentischer Exkursionen/Vermittlung von Kontakten, Recherchen, etc." ;
+	mint2014:Oeffnungszeiten "Mo - Fr 8:00 - 16:30 Uhr oder nach Absprache" ;
+	mint2014:OePNV-Anbindung "S-Bahn Linie S1 bis Borsdorf, RE bis Borsdorf" ;
+	mint2014:Telefon "034291 20412" ;
+	mint2014:Fax "034291 20412" ;
+	mint2014:Mail "geschaeftsstelle@gruenerring-leipzig.de" ;
+	mint2014:Internet "www.gruenerring-leipzig.de" ;
+	mint2014:Internet "www.facebook.com/grunerring.leipzig" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung;
+	mint2014:hasImage "gruener_ring_leipzig.jpg" ;
+	mint2014:hasLogo "logo_gruenerring.svg.png" ;
+	mint2014:describes ldo:GruenerRing .
+
+mint2014:HandsOnTechnology
+	rdfs:label "HANDS on TECHNOLOGY e. V." ;
+	mint2014:Kurzinformation "HANDS on TECHNOLOGY e. V. ist exklusiver Veranstalter von FIRST LEGO League Zentraleuropa - dem LEGO Roboterwettbewerb für Kinder und Jugendliche im Alter von 10 bis 16 Jahren." ;
+	mint2014:Leistungsangebot "FIRST LEGO League (FLL) ist ein Förderprogramm, das Kinder und Jugendliche/in einer sportlichen Atmosphäre an Wissenschaft und Technologie heran führen/möchte./Neben dem Bau und der Programmierung eines LEGO Roboters wird zu einem/wissenschaftlichen Thema geforscht./Mit FLL werden Softskills geschult und das Interesse an MINT-Fächern geweckt./LEGO Mindstorms EV3 Workshops (auf Anfrage)" ;
+	mint2014:Oeffnungszeiten "nach Absprache per E-Mail oder telefonisch" ;
+	mint2014:OePNV-Anbindung "keine Angabe" ;
+	mint2014:Telefon "0341 2461583" ;
+	mint2014:Fax "0341 2461585" ;
+	mint2014:Mail "info@hands-on-technology.org" ;
+	mint2014:Internet "www.first-lego-leauge.org" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Berufsorientierung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:Informatik, ldTag:Mathematik;
+	mint2014:hasImage "hands_on_technology.jpg" ;
+	mint2014:hasLogo "logo_handsontech.jpeg" ;
+	mint2014:describes ldo:HandsOnTechnology .
+
+mint2014:HausDerKleinenForscher
+	rdfs:label "Handwerkskammer zu Leipzig Haus der kleinen Forscher" ;
+	mint2014:Kurzinformation "Seit 2009 ist die Handwerkskammer zu Leipzig als Netzwerkpartner der Stiftung „Haus der kleinen Forscher“ aktiv und engagiert sich im sächsischen Netzwerk für die frühe naturwissenschaftliche und technische Frühförderung. Drei- bis zehnjährige Mädchen und Jungen können auch in Sachsen nach dem Konzept der Stiftung Haus der kleinen Forscher bereits in der Kita spielerisch mit alltagsnahen Experimenten ihre Freude an Naturwissenschaften und Technik entdecken." ;
+	mint2014:Leistungsangebot "In unserer technologieorientierten Gesellschaft wächst die Bedeutung der naturwissenschaftlichen und technischen (Früh-)Bildung. Die gemeinnützige Stiftung „Haus der/kleinen Forscher“ unterstützt daher pädagogische Fach- und Lehrkräfte dabei, den/Forschergeist von Mädchen und Jungen im Kita- und Grundschulalter qualifiziert zu/begleiten. Das „Haus der kleinen Forscher“ ist mittlerweile die größte Frühbildungsinitiative Deutschlands./Um die Herausforderung ihrer deutschlandweiten Bildungsinitiative zu meistern, arbeitet die Stiftung „Haus der kleinen Forscher“ mittlerweile eng mit über 230 lokalen/Netzwerkpartnern in ganz Deutschland zusammen, die regional Workshops für pädagogische Fach- und Lehrkräfte anbieten. In den Workshops werden spannende Themen/mit jeweils einem pädagogischen Schwerpunkt behandelt und gemeinsam erforscht:/Workshop 1: Forschen mit Wasser - Als Lernbegleitung mit Begeisterung und/Freude die Welt entdecken/Workshop 2: Forschen mit Luft - Als Lernbegleitung Dialoge gestalten/Forschen zu Klängen und Geräuschen - Als Lernbegleitung die Interaktion der/Kinder nutzen/Forschen zu Licht, Farben, Sehen - Als Lernbegleitung Projekte mit Kindern gestalten/Forschen mit Magneten - Als Lernbegleitung Forschungsprozesse unterstützen/Forschen mit Sprudelgas - Als Lernbegleitung die sprachliche Bildung unterstützen/Forschen zu Strom und Energie - Als Lernbegleitung Bildungspartner einbinden/Forschen zu Wasser in Natur und Technik - Als Lernbegleitung Inklusion gestalten/Mathematik in Raum und Form entdecken - Als Lernbegleitung die mathematischen/Kompetenzen unterstützen/Fortbildungsangebote der Stiftung „Haus der kleinen Forscher“" ;
+	mint2014:Oeffnungszeiten "Mo bis Do 6:30 - 15:30 Uhr, Fr 6:30 - 13:30 Uhr" ;
+	mint2014:OePNV-Anbindung "Bahnhof Borsdorf" ;
+	mint2014:Telefon "034291 30182" ;
+	mint2014:Fax "0341 218814552" ;
+	mint2014:Mail "thiele.y@hwk-leipzig.de" ;
+	mint2014:Internet "http://www.hwk-leipzig.de/3,0,1049.html" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Technik, ldTag:Naturwissenschaft, ldTag:Mathematik;
+	mint2014:hasImage "handwerkskammer_zu_leipzig.jpg" ;
+	mint2014:describes <http://leipzig-data.de/Data/Ort/HWK.HausKleineForscher> .
+
+mint2014:UFZ
+	rdfs:label "Helmholtz-Zentrum für Umweltforschung GmbH - UFZ" ;
+	mint2014:Kurzinformation "Das Helmholtz-Zentrum für Umweltforschung - UFZ wurde 1991 gegründet und beschäftigt an den Standorten Leipzig, Halle / Saale und Magdeburg ungefähr 1.100 Mitarbeiter. Es erforscht die komplexen Wechselwirkungen zwischen Mensch und Umwelt in genutzten und gestörten Landschaften. Die Wissenschaftler des UFZ entwickeln Konzepte und Verfahren, die helfen sollen, die natürlichen Lebensgrundlagen für nachfolgende Generationen zu sichern." ;
+	mint2014:Leistungsangebot "Versuchstage für Schüler/-innen der Klassenstufe 9 bis 13 im Schülerlabor/Lehrerfortbildungen zu Themen aus der Umweltforschung/In den wissenschaftlichen Departments des UFZ können sich Schüler/-innen um/Praktika, Facharbeiten und BELL bewerben./Ferner betreibt das UFZ für Grundschulen gemeinsam mit der Sächsischen Landesstiftung Natur und Umwelt (LaNU) den KinderUmweltBus für Kinder im Grundschulbereich (siehe Angebot Seite 53)./Lehrerfortbildungen/Tag der offenen Tür" ;
+	mint2014:Oeffnungszeiten "Di bis Do ab 9:00 Uhr, nur nach Anmeldung" ;
+	mint2014:OePNV-Anbindung "Straßenbahn: Linie 3 Haltestelle „Permoserstraße / Wissenschaftspark“, 5 Minuten Fußweg" ;
+	mint2014:Telefon "0341 2351845" ;
+	mint2014:Fax "0341 2351830" ;
+	mint2014:Mail "schuelerlabor@ufz.de" ;
+	mint2014:Internet "www.ufz-schuelerlabor.de" ;
+	mint2014:Besonderheiten "Ort der Ideen in Deutschland" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Umweltbildung, ldTag:Naturwissenschaft, ldTag:EinBehiGe;
+	mint2014:hasImage "helmholtz_zentrum.jpg" ;
+	mint2014:hasLogo "logo_helmholtz.jpeg" ;
+	mint2014:describes ldo:UFZ .
+
+mint2014:HFTL
+	rdfs:label "Hochschule für Telekommunikation Leipzig (HfTL)" ;
+	mint2014:Kurzinformation "Die Hochschule für Telekommunikation Leipzig (HfTL) ist eine durch das Sächsische Staatsministerium für Wissenschaft und Kunst anerkannte Hochschule in Trägerschaft der HfTL Trägergesellschaft mbH - einer 100 % Beteiligung der Deutschen Telekom. Mit den angebotenen Studienformen Direkt, Dual und Berufsbegleitend setzt die HfTL ihr Konzept des lebenslangen Lernens in die akademische Ausbildung um." ;
+	mint2014:Leistungsangebot "Die HfTL bietet ein breites Spektrum an altersgerechten Angeboten aus dem MINTBereich an./Für die Jüngsten haben wir mit dem Format „Frag den Frosch“ eine spannende/Kinder-Uni, in welcher die Teilnehmer/-innen mit lustigen „Mitmach-Experimenten“/die Möglichkeit haben, neues Wissen zu erwerben./Mit unseren Studien-Infotagen sprechen wir Schüler/-innen ab Klassenstufe 9 an./Neben Wissenswertem zum Bachelor und Master erleben die Teilnehmer/-innen/hier den Studienalltag „live“ und können sich mit Studierenden austauschen./Weiterbildungsangebote der HfTL finden Sie unter www.hft-leipzig.de/aw./Tag der offenen Tür" ;
+	mint2014:Oeffnungszeiten "Mo bis Fr von 7:30 - 17:00 Uhr Veranstaltungen am Wochenende bedürfen einer gesonderten Absprache" ;
+	mint2014:OePNV-Anbindung "Straßenbahn: Linie 9 (Markkleeberg-West), Linie 10 (Lößnig), Linie 11 (Markkleeberg-Ost) bis Haltestelle HTWK oder Connewitzer Kreuz" ;
+	mint2014:Telefon "0341 3062120" ;
+	mint2014:Fax "0341 3062119" ;
+	mint2014:Mail "pr@hft-leipzig.de" ;
+	mint2014:Internet "www.hft-leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:Informatik, ldTag:BehiGe;
+	mint2014:hasImage "hochschule_fuer_kommunikation.jpg" ;
+	mint2014:hasLogo "logo_hftl.jpg" ;
+	mint2014:describes ldo:HfTL .
+
+mint2014:IndustrieHandelskammer
+	rdfs:label "Industrie- und Handelskammer zu Leipzig" ;
+	mint2014:Kurzinformation "Als zuständige Stelle der Aus- und Weiterbildung im dualen System beteiligt sich die IHK zu Leipzig aktiv an bildungspolitischen Themen zur Sicherung des Fachkräftebedarfs in der Region. Wir betreuen Projekte in den Bereichen der allgemeinbildenden Schulbildung, beruflichen Bildung, Hochschulbildung sowie Weiterbildung. Wir wirken mit in bundesweiten sowie regionalen Arbeitskreisen und Gremien. Wir initiieren und unterstützen Maßnahmen zur Berufs- und Studienorientierung. Wir nehmen Stellung zu bildungspolitischen Themen. Als Interessenvertreter der Wirtschaft informiert die IHK zu Leipzig auch zu Fragen der Abfallvermeidung/-verwertung zur Ressourceneffizienz und Umweltmanagementsystemen und führt das Register zur Vollständigkeitserklärung nach Verpackungsverordnung." ;
+	mint2014:Leistungsangebot "Online-Plattform „tecnopedia“/Informationsveranstaltung zur Kreislaufwirtschaft auf der Grundlage gesetzlicher/Regeln und der technisch möglichen Umsetzung am Beispiel von kurzlebigen/Produkten, wie zum Beispiel: Verpackungen, Batterien, Autos, Elektrogeräte/Hintergrundinformationen für den individuellen praktischen Nutzen/Fortbildungsangebote: Umweltfachveranstaltungen laut Online-Veranstaltungskalender der IHK" ;
+	mint2014:Oeffnungszeiten "Mo bis Do von 9:00 - 18:00 Uhr, Fr 9:00 - 16:00 Uhr" ;
+	mint2014:OePNV-Anbindung "Straßenbahn bis Haltestelle „Goerdelerring“" ;
+	mint2014:Telefon "0341 12671354" ;
+	mint2014:Fax "0341 12671426" ;
+	mint2014:Mail "tanzmann@leipzig.ihk.de" ;
+	mint2014:Internet "www.leipzig.ihk.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:Informatik, ldTag:Mathematik, ldTag:BehiGe;
+	mint2014:hasImage "ihk_leipzig.jpg" ;
+	mint2014:hasLogo "logo_ihk.png" ;
+	mint2014:describes ldo:IHK .
+
+mint2014:INSPIRATA
+	rdfs:label "INSPIRATA - Zentrum für mathematischnaturwissenschaftliche Bildung e.V." ;
+	mint2014:Kurzinformation "Die INSPIRATA fördert die mathematisch-naturwissenschaftliche Bildung für alle Interessierten, hauptsächlich für Vorschulgruppen und Schulklassen. Kern ist eine Sammlung von Exponaten, an Hand derer die Besucher/-innen Phänomene und Naturgesetze erkunden, erfahren und verstehen können. Außerdem werden lehrplanbezogene Workshops und spezielle Führungen angeboten. Charakteristisch ist ein intensives pädagogisches Betreuungssystem." ;
+	mint2014:Leistungsangebot "Mitmachmuseum mit mathematisch-naturwissenschaftlichen Exponaten und fachlicher Betreuung/Thematische Führungen/Workshops zu mathematisch-naturwissenschaftlichen (Unterrichts-)Themen/Vorträge mit naturwissenschaftlichen und pädagogischen Inhalten/Thematische Weiterbildungen für Pädagogen/-innen und Erzieher/-innen/schulinterne Lehrerfortbildung (SCHILF), Pädagogischer Tag; Angebote für Multiplikatoren; andere Angebote gern auf Anfrage/Schülerpraktika/Kindergeburtstagsbetreuung (max. 12 Kinder) - Betreuungen mit anregenden Experimenten und mathematischen Spielen; Alter: 5 - 13 Jahre; Kosten: ab 60 Euro, je/nach Aufwand und Absprache; Veranstaltungsort: INSPIRATA e. V." ;
+	mint2014:Oeffnungszeiten "für Gruppen (nach Anmeldung): jeden Mo bis Fr (außer an Feiertagen) jeweils 8:30 - 10:00 Uhr, 10:30 - 12:00 Uhr, 12:30 - 14:00 Uhr und 14:30 - 16:00 Uhr Einzelbesucher / Familien: jeden Samstag 12:00 - 18:00 Uhr sowie Ferien-Angebote und individuelle Besuchszeiten nach Abstimmung" ;
+	mint2014:OePNV-Anbindung "S1 / S3 Haltestelle „Völkerschlachtdenkmal“, S2 / S4 / S5 Haltestelle „MDR“; Tram 2 / Tram 16 Haltestelle „Deutsche Nationalbibliothek“, Tram 12 / Tram 15 Haltestelle „Technisches Rathaus“; Bus 70 Haltestelle „Altes Messegelände“, Bus 74 Haltestelle „Deutsche Nationalbibliothek“. Ausreichend Parkmöglichkeiten in der Nähe (Ph.Rosental-Straße u. a.)" ;
+	mint2014:Telefon "0341 1259757" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "kontakt@inspirata.de" ;
+	mint2014:Internet "www.inspirata.de" ;
+	mint2014:Besonderheiten "gefördert von „Aktion Mensch“ seit April 2014 Auszeichnung als Bildungsidee 2011 im Wettbewerb „Ideen für die Bildungsrepublik“ Leipziger Agenda 21-Preis 2011 Familienfreundlichkeitspreis 2010 Mitglied im Landesverband Sächsischer Jugendbildungswerke e. V." ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:Mathematik, ldTag:EinBehiGe;
+	mint2014:hasImage "inspirata.jpg" ;
+	mint2014:hasLogo "logo_inspirata.png" ;
+	mint2014:describes ldo:Inspirata .
+
+mint2014:UFZKinderUmweltBus
+	rdfs:label "KinderUmweltBus Helmholtz-Zentrum für Umweltforschung - UFZ" ;
+	mint2014:Kurzinformation "Das Helmholtz-Zentrum für Umweltforschung - UFZ wurde 1991 gegründet und beschäftigt an den Standorten Leipzig, Halle/Saale und Magdeburg ungefähr 1.100 Mitarbeiter/-innen. Es erforscht die komplexen Wechselwirkungen zwischen Mensch und Umwelt in genutzten und gestörten Landschaften. Die Wissenschaftler/-innen des UFZ entwickeln Konzepte und Verfahren, die helfen sollen, die natürlichen Lebensgrundlagen für nachfolgende Generationen zu sichern." ;
+	mint2014:Leistungsangebot "Das UFZ betreibt gemeinsam mit der Sächsischen Landesstiftung Natur und Umwelt/(LaNU) für Grundschulen und Kitas den KinderUmweltBus. In diesem Projekt lernen/Kinder, Fragen zu ihrer eigenen (Um-)Welt zu formulieren. Im Experiment können/diese und weitere faszinierende Alltagsphänomene erlebbar gemacht werden. Das/Heranführen an das praktische Arbeiten und der eigene Erkenntnisgewinn stehen/dabei im Vordergrund. Die Arbeit erfolgt je nach Angebot im Freien oder im Klassenraum./Ferner bietet das UFZ im Schülerlabor Versuchstage für Schüler/-innen der Klassenstufen 9 bis 13 und Lehrerfortbildungen zu Themen aus der Umweltforschung/an./Multiplikatorenfortbildungen/Tag der offenen Tür/Schülerpraktika" ;
+	mint2014:Oeffnungszeiten "nach Terminvergabe" ;
+	mint2014:OePNV-Anbindung "Besuch in den Einrichtungen" ;
+	mint2014:Telefon "0341 2351868" ;
+	mint2014:Fax "0341 2351830" ;
+	mint2014:Mail "kinderumweltbus@ufz.de" ;
+	mint2014:Internet "www.kinderumweltbus.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Naturwissenschaft;
+	mint2014:hasImage "helmholtz_zentrum.jpg" ;
+	mint2014:describes <http://leipzig-data.de/Data/Ort/UFZ.KinderUmweltBus> .
+
+mint2014:Oekoschule
+	rdfs:label "Kultur- und Umweltzentrum e.V. Ökoschule" ;
+	mint2014:Kurzinformation "Das Umweltzentrum ist Teil des Kultur- und Umweltzentrum e. V., ist Zentrum der außerschulischen Jugendbildung, der Erwachsenenbildung und der offenen Kinder- und Jugendarbeit." ;
+	mint2014:Leistungsangebot "Die Ökoschule und das „Grüne Klassenzimmer“ am agra-Park ermöglichen die/aktive Auseinandersetzung mit der Natur, bieten „Unterricht im Grünen“, Projekttage für alle Altersstufen und Schultypen./Unsere Angebote sind Orientierungshilfen - wir führen Projekte, Umwelttage, Schulund Klassenfeste, Kindergeburtstage, Ferienfreizeiten durch./Schülerpraktika, Studentenpraktika, FÖJ" ;
+	mint2014:Oeffnungszeiten "Mo bis Fr 8:00 - 15:00 Uhr und nach Vereinbarung" ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linie 9, Haltestelle Markkleeberg-Parkstraße; Busse 107, 108; S-Bahn Linien 2, 4, 5" ;
+	mint2014:Telefon "0341 3504766" ;
+	mint2014:Fax "0341 3504769" ;
+	mint2014:Mail "oekoschule-markkleeberg@gmx.de" ;
+	mint2014:Internet "www.kultur-und-umweltzentrum.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "kultur_und_umweltzentrum_1.jpg" ;
+	mint2014:describes <http://leipzig-data.de/Data/Ort/Oekoschule.Agrapark> .
+
+mint2014:SchuelergesellschaftMathematik
+	rdfs:label "Leipziger Schülergesellschaft für Mathematik" ;
+	mint2014:Kurzinformation "Die Leipziger Schülergesellschaft für Mathematik (LSGM) ist ein Zusammenschluss engagierter Einzelpersonen zur Förderung mathematischer Nachwuchstalente. Wir geben Schüler/-innen der Klassen 5 bis 12, denen Mathematik Spaß bereitet, die Möglichkeit, mit Gleichgesinnten und unter Anleitung erfahrener Fachleute auf Entdeckungsreise in die Gefilde der „Mutter aller Wissenschaften“ zu gehen und ihre mathematischen Kenntnisse zu vertiefen." ;
+	mint2014:Leistungsangebot "Präsenz- und Korrespondenzzirkel/Wochenendseminare und Winterschulen/jährlich ein Mathecamp in den Sommerferien/Stadtrallyes/„Aufgabe des Monats“" ;
+	mint2014:Oeffnungszeiten "nach Vereinbarung" ;
+	mint2014:OePNV-Anbindung "Straßenbahnen Haltestelle Augustusplatz" ;
+	mint2014:Telefon "0341 9732248" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "info@lsgm.de" ;
+	mint2014:Internet "http://www.lsgm.de" ;
+	mint2014:Besonderheiten "Teubner-Förderpreis 2005 Mathe erleben im Wissenschaftssommer 2008" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Mathematik, ldTag:BehiGe;
+	mint2014:hasImage "uni_1.jpg" ;
+	mint2014:describes ldo:LSGM .
+
+mint2014:MaxPlanckInstitut
+	rdfs:label "Max-Planck-Institut für Mathematik in den Naturwissenschaften" ;
+	mint2014:Kurzinformation "Die interdisziplinäre Zusammenarbeit von Mathematik und Naturwissenschaften bildet den Kernpunkt der Arbeit des 1996 gegründeten Max-Planck-Instituts. Die Wissenschaftler/-innen beschäftigten sich mit einem breiten Spektrum an Fragestellungen der reinen und angewandten Mathematik und stellen sich den mathematischen Herausforderungen, die durch theoretische Fragestellungen in den Natur- und Ingenieurwissenschaften entstehen. Ziel ist es, mathematische Denkweisen und Methoden in neuartiger Weise in verschiedene Anwendungsbereiche in den Naturwissenschaften zu integrieren." ;
+	mint2014:Leistungsangebot "Vorträge für Schüler/-innen an Gymnasien/Die Wissenschaftler/-innen des Instituts geben Einblicke in aktuelle mathematische/und naturwissenschaftliche Forschungsthemen./Die Vorträge finden wahlweise am Institut oder an den Schulen statt./Schülerprojekttage / Schülerpraktika nach individueller Absprache" ;
+	mint2014:Oeffnungszeiten "keine allgemeinen Öffnungszeiten; Erreichbarkeit der Rezeption des Instituts: Mo bis Do 8:00 - 16:30 Uhr, Fr 8:00 - 15:30 Uhr" ;
+	mint2014:OePNV-Anbindung "ab Hauptbahnhof bis Haltestelle „Friedrich-List-Platz“, dann 5 min. Fußweg: Straßenbahn Linie 1, Richtung Schönefeld / Mockau, Post; Linie 3, Richtung Sommerfeld / Taucha; Linie 8, Richtung Paunsdorf-Nord; Bus Linien 72 und 73, Richtung Paunsdorf /Sommerfeld / Baalsdorf. Von der Haltestelle „Augustusplatz“ ca. 10 min. Fußweg, vom / zum Hauptbahnhof ca. 10 min. Fußweg." ;
+	mint2014:Telefon "0341 9959650" ;
+	mint2014:Fax "0341 9959658" ;
+	mint2014:Mail "jgregor@mis.mpg.de" ;
+	mint2014:Internet "www.mis.mpg.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Berufsorientierung, ldTag:Naturwissenschaft, ldTag:Mathematik, ldTag:BehiGe;
+	mint2014:hasImage "max_planck_institut.jpg" ;
+	mint2014:hasLogo "logo_mpi_mis_leipzig.png" ;
+	mint2014:describes ldo:MPI-MIS .
+
+mint2014:Naturkundemuseum
+	rdfs:label "Naturkundemuseum Leipzig" ;
+	mint2014:Kurzinformation "10.000 Jahre NaturKulturGeschichte der Region Leipzig in zoologischen, botanischen, geologischen und archäologischen Sammlungen zeigen Wechselwirkungen zwischen der Auenlandschaft mit ihren Flüssen, Wäldern und Wiesen und einer artenreichen Natur- und Kulturlandschaft. Mitarbeiter/-innen und Museumspädagog/-innen vermitteln insbesondere Kindern und Jugendlichen umfangreiche Kenntnisse über Natur und Umwelt." ;
+	mint2014:Leistungsangebot "zoologische Raritäten weltweit/heimische vielfältige Tierwelt, Herbarbelege und botanische Exkursionen/Baugesteine in der Leipziger Innenstadt/Fossilien, Braunkohle, Eiszeit, Quartär, Tertiär/Auwald als spezifischer Leipziger Lebensraum/Veranstaltungen, wie z. B. Vorträge, Lesungen, Vernissagen, Finissagen, Museum im/Krankenhaus, Spiel- und Infostände, Naturkundliche Paddeltouren, Bienenfest/Teilnahme an regionalen und überregionalen Aktionen, wie Museumsnacht Halle//Leipzig, Internationaler Museumstag, Tag des Offenen Denkmals, Naturschutzwoche, Leipziger Umwelttage uvm./Fortbildungsangebote: auf Wunsch für Lehrpersonal viele biologische oder geologische Themen/Schülerpraktika" ;
+	mint2014:Oeffnungszeiten "Mo geschlossen Di bis Do 9:00 - 16:30 Uhr Winterzeit Di bis Do 9:00 - 18:00 Uhr Sommerzeit Fr 9:00 - 13:00 Uhr, Sa/So 10:00 - 16:30 Uhr" ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linien 1, 3, 4, 7, 9, 12, 14, 15: Haltestelle Goerdelerring" ;
+	mint2014:Telefon "0341 982210" ;
+	mint2014:Fax "0341 9822122" ;
+	mint2014:Mail "naturkundemuseum@leipzig.de" ;
+	mint2014:Internet "www.naturkundemuseum.leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:EinBehiGe;
+	mint2014:hasImage "naturkundemuseum_1.jpg" ;
+	mint2014:hasLogo "logo_naturkundemuseum.jpg" ;
+	mint2014:describes ldo:Naturkundemuseum .
+
+mint2014:Oekoloewe
+	rdfs:label "Ökolöwe - Umweltbund Leipzig e.V." ;
+	mint2014:Kurzinformation "Der Ökolöwe - Umweltbund Leipzig e.V. ist ein gemeinnütziger Verein, der im Interesse des Natur- und Umweltschutzes arbeitet. Wir setzen uns für eine umweltgerechte und ökologisch nachhaltige Entwicklung der Region Leipzig ein. Schwerpunkte unseres Handelns sind: umweltpolitische Arbeit, Natur- und Artenschutz, Umweltbildung, Klima und Mobilität, Ökolandbau und gesunde Ernährung. Hier gibt es zahlreiche Verzweigungen zu speziellen Themengebieten. Wir arbeiten öffentlich, informieren und beraten, klären auf und bieten aktive Unterstützung. Die praktische Arbeit der einzelnen Projekte umfasst u. a. die Pflege von Streuobstwiesen, die Gestaltung und Bewirtschaftung des Stadtgarten Connewitz, Führungen und Workshops zu Natur- und Umweltthemen sowie bürgernahe Öffentlichkeitsarbeit. Darüber hinaus nehmen wir mit Stellungnahmen Einfluss auf staatliche und kommunale Entscheidungen im umweltpolitischen Zusammenhang und fördern damit eine umweltverträgliche Entwicklung im Raum Leipzig. Wir verstehen Umweltbildung als wesentliche Grundlage für erfolgreichen Umweltschutz. Ziel unserer Bildungsarbeit ist es, das Bewusstsein für den Wert biologischer Vielfalt und für die Notwendigkeit zu ihrem Erhalt zu schärfen. Wir vermitteln Wissen über unsere Umwelt, zeigen Zusammenhänge auf und reflektieren dabei die Rolle des Menschen. Ausgehend von lokalen Bezügen und der unmittelbaren sinnlichen Erfahrung, öffnen wir auch den Blick für globale Zusammenhänge. So greifen wir im Rahmen unserer Veranstaltungen Problemthemen wie z. B. Überfischung der Weltmeere, Abholzung der Wälder, weltweite Transportwege von Lebensmitteln und Klimawandel auf. Wir nehmen Bezug auf die Alltagserfahrungen der Teilnehmer/-innen und regen zu gegenseitigem Austausch und Diskussionen an. Im Sinne einer Bildung für nachhaltige Entwicklung (BNE) geht es dabei um das „SichBegreifen“ als Teil der Umwelt und das Übernehmen persönlicher Verantwortung." ;
+	mint2014:Leistungsangebot "Durchführung von Umweltbildungsveranstaltungen (Unterrichtseinheiten, Führungen, Exkursionen, Projekttage, Ganztagsangebote) in verschiedenen Bildungseinrichtungen, im Auwald, im Leipziger Stadtgebiet, im Stadtgarten Connewitz und/auf Biobauernhöfen/Ausleihe von Bildungskisten (Umweltbibliothek des Ökolöwen)/Bürgerberatung zu Naturschutzfragen, zur ökologischen Stadtentwicklung, zum/ökologischen Gartenbau/Vermittlung von Kontakten/Schülerpraktika, Ferienjobs für Schüler/-innen/ehrenamtliche Mitarbeit in unseren Projekten" ;
+	mint2014:Oeffnungszeiten "Mo bis Fr 9:00 - 18:00 Uhr" ;
+	mint2014:OePNV-Anbindung "keine Angabe" ;
+	mint2014:Telefon "0341 3065185" ;
+	mint2014:Fax "0341 3065179" ;
+	mint2014:Mail "umweltbildung@oekoloewe.de" ;
+	mint2014:Internet "www.ökolöwe.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "bernhard_goering_str_viele_orte.jpg" ;
+    mint2014:hasLogo "logo_oekoloewe.jpeg" ;
+	mint2014:describes ldo:Oekoloewe .
+
+mint2014:OekoloeweNaturnah
+	rdfs:label "Ökolöwe - Umweltbund Leipzig e.V. Leipzig naturnah" ;
+	mint2014:Kurzinformation "Der Leipziger Auwald bietet ideale Voraussetzungen, um die heimische Tier- und Pflanzenwelt kennen zu lernen und ökologische Zusammenhänge unmittelbar nachzuvollziehen. Auch an Gewässern, in Parks und sogar auf Brachflächen mitten in der Stadt lohnt es sich, genauer hinzuschauen. Bei spannenden und lehrreichen Ausflügen erkunden wir Naturräume in und um Leipzig." ;
+	mint2014:Leistungsangebot "Wir bieten naturkundliche Führungen, Exkursionen und Projekttage - orientiert an/Lehrplaninhalten zu Themen wie Bäume, Wiese, Wald und Wasser - sowie umweltpädagogische Weiterbildungen für Lehrer/-innen und Erzieher/-innen an./Fortbildungsangebote: Naturkunde in der pädagogischen Praxis (für Lehrer/-innen/und Erzieher/-innen)" ;
+	mint2014:Oeffnungszeiten "keine Angabe" ;
+	mint2014:OePNV-Anbindung "keine Angabe" ;
+	mint2014:Telefon "0341 3065114" ;
+	mint2014:Fax "0341 3065179" ;
+	mint2014:Mail "umweltbildung@oekoloewe.de" ;
+	mint2014:Internet "www.ökolöwe.de/leipzignaturnah.html" ;
+	mint2014:Besonderheiten "Deutscher Naturschutzpreis 2013 für das Projekt „Eisvogel, Bitterling und Co. - Einblick in Leipziger Wasserwelten“" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Naturwissenschaft;
+	mint2014:hasImage "bernhard_goering_str_viele_orte.jpg" ;
+    mint2014:hasLogo "logo_oekoloewe.jpeg" ;
+	mint2014:describes ldo:OekoloeweNaturnah .
+
+mint2014:OekoloeweLandwirtschaft
+	rdfs:label "Ökolöwe - Umweltbund Leipzig e.V. Bio-Bauern über die Schulter geschaut - Kinder und Jugendliche entdecken die Landwirtschaft" ;
+	mint2014:Kurzinformation "„Bio-Bauern über die Schulter geschaut - Kinder und Jugendliche entdecken die Landwirtschaft“ ist ein Umweltbildungsprojekt des Ökolöwen - Umweltbund Leipzig e. V. (siehe eigene Darstellung des Vereins im Katalog). Kinder, Jugendliche und Multiplikator/-innen sollen mit ökologischer Landwirtschaft und gesunder Ernährung hautnah in Berührung kommen. Wer einmal Bienenwaben berührt hat, schaut Honiggläser im Laden anders an. Wer schon einmal aus Hafer Flocken gequetscht hat, entdeckt womöglich das Müsli neu. An Projekttagen tauchen wir ein in Stallgeruch, wirbeln in Backstube und Küche, ernten im Garten und nehmen Erde und Eindrücke vom Acker mit nach Hause. Im späteren Verlauf können die Kinder wiederum als Mittler zwischen neuem Wissen und Neugierigen stehen, zum Beispiel bei Aktionstagen und Schulfesten. Für Multiplikator/-innen erarbeiten wir zu ausgewählten Themen Broschüren, die für die Unterrichtsvorbereitung genutzt werden können und führen Fortbildungen für Erzieher/-innen und Lehrer/-innen durch. Den Kindern und Jugendlichen authentische Bilder von ökologischer Landwirtschaft zu vermitteln, steht im Vordergrund des Projektes. Sinnliches Begreifen soll theoretisches Wissen stützen und eine emotionale Verknüpfung mit dem Thema herstellen. BioBauernhöfe sowie Verarbeitende und Händler im Bio-Bereich sind unsere Projektpartner. Den Teilnehmenden wird so der Bezug zwischen dem täglichen Essen auf ihren Tellern und den Umständen von Herstellung und Verarbeitung klar." ;
+	mint2014:Leistungsangebot "Projekttage zu Themen rund um die ökologische Landwirtschaft, die auf Höfen //Verarbeitungsbetrieben oder in der Schule stattfinden können/Begleitung von Unterrichtseinheiten zu Themen rund um die ökologische Landwirtschaft (3 Bausteine: 1. Vorbereitung in der Schule, 2. Hofbesuch / Exkursion,/3. Aktionstag in der Schule)/Bereitstellung von Unterrichtsmaterialien/Ganztagsangebote an Schulen (GTA)/Fortbildungen für Lehrer/-innen und Erzieher/-innen: rund um den Lernort Bauernhof, Lernort Schulgarten, Thema ökologische Landwirtschaft und gesunde Ernährung" ;
+	mint2014:Oeffnungszeiten "im Büro i.d.R. Mo bis Do 9:00 - 16:30 Uhr; die Termine für die Umweltbildungsangebote werden individuell abgesprochen." ;
+	mint2014:OePNV-Anbindung "keine Angabe" ;
+	mint2014:Telefon "0341 3065381" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "oekovermarktung@oekoloewe.de" ;
+	mint2014:Internet "www.ökolöwe.de/biobauer.html" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft;
+	mint2014:hasImage "bernhard_goering_str_viele_orte.jpg" ;
+    mint2014:hasLogo "logo_oekoloewe.jpeg" ;
+	mint2014:describes ldo:Oekoloewe .
+
+mint2014:Phyllodrom
+	rdfs:label "Phyllodrom Museum und Institut für Regenwaldökologie e.V." ;
+	mint2014:Kurzinformation "Das Phyllodrom - Regenwaldmuseum Leipzig ist ein Lernort für natur- und völkerkundliche Bildung in Leipzig mit Fokus auf das Ökosystem tropischer Regenwald. In einem spezialisierten Museum wird den Besucher/-innen mit verschiedenen Präsentationsformen und unterschiedlichen Aktivitäten ein abwechslungsreiches Erlebnis geboten, das nachhaltig zum Weiterdenken anregen soll. Wechselnde Ausstellungen behandeln vielfältige Themen aus den Bereichen Zoologie, Botanik, Völkerkunde, Ökologie sowie Bedeutung und Bedrohung der Regenwälder. In die Ausstellungsgestaltung werden lebende Tiere und Pflanzen, Modelle oder Originalpräparate sowie Kult- und Gebrauchsgegenstände integriert. Um die Erforschung des Ökosystems Regenwald zu unterstützen, arbeitet die Einrichtung mit Wissenschaftler/-innen unterschiedlicher Fachrichtungen sowie mit Institutionen und Vereinen im In- und Ausland zusammen. Dabei beteiligt sich der Phyllodrom e.V. auch aktiv an Maßnahmen des Natur- und Umweltschutzes, wie beispielsweise an Wiederaufforstungs- und Auswilderungsprojekten in Indonesien und Papua Neuguinea. Natur- und Umweltbildung für Menschen jeden Alters stellt im Regenwaldmuseum ein zentrales Arbeits- und Aufgabenfeld dar, sodass fortlaufend vielfältige museumspädagogische Veranstaltungen angeboten und durchgeführt werden." ;
+	mint2014:Leistungsangebot "Museumspädagogische Veranstaltungen mit unterschiedlichen Formaten, Inhalten und/Zielgruppen:/Führungen für Kindergärten, Schulklassen, Familien, Gruppen sowie erlebnis- und/handlungsorientierte Veranstaltungen/lehrplanspezifische außerschulische Lernangebote/Arbeitsgemeinschaften für verschiedene Altersgruppen: „Dschungelkids“ und „Regenwald-AG“/Begabungsförderung und Kompetenzentwicklung/Workshops/Präsentationen und Ausstellungen/Schulveranstaltungen / Projektwochen/Ferienpassveranstaltungen und Ferienangebote für Familien und (Hort-)Gruppen/Ganztagsangebote/Geburtstagsveranstaltungen/Fortbildungsangebote/Projekte im Rahmen „Kultur macht STARK - Bündnisse für Bildung“/Schülerpraktika/Tag der offenen Tür (27.09.2014)" ;
+	mint2014:Oeffnungszeiten "Mo bis Sa 10:00 - 17:00 Uhr" ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linie 16 (bis Dachauer Straße); S-Bahn Linien S1, S2, S5, S5X (Bahnhof Messe); Bus 87 (bis Dachauer Straße)" ;
+	mint2014:Telefon "0341 5257757" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "info@Phyllodrom.de" ;
+	mint2014:Internet "www.Phyllodrom.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Naturwissenschaft;
+	mint2014:hasImage "phyllodrom.jpg" ;
+	mint2014:hasLogo "logo_phyllo.png" ;
+	mint2014:describes ldo:Phyllodrom .
+
+mint2014:ScholaOecologica
+	rdfs:label "Schola Oecologica" ;
+	mint2014:Kurzinformation "Mitten in Dreiskau-Muckern, im liebevoll restaurierten Rittergutshof, betreibt der Verein „Schola Oecologica Sozio-ökologisches Zentrum e.V.“ seit 10 Jahren das OEKOLA. In familiärer, angenehmer Atmosphäre bietet das Haus Platz für 60 Besucher, kann also gleichzeitig 2 Schulklassen beherbergen. Das vielseitige Programm richtet sich vorrangig an Grundschulklassen. Die Projektbausteine können flexibel und offen, draußen oder drinnen, an erwanderbaren Lernorten, verknüpft mit Exkursionen, Kunstprojekten oder Werkstattarbeit durchgeführt werden." ;
+	mint2014:Leistungsangebot "Übernachtung / Vollpension / Projektbausteine/(Bausteine nur in Zusammenhang eines Aufenthaltes mit mindestens 2 Nächten/buchbar! Ausnahme: Weihnachtswerkstatt)/Exkursionen zu Themen wie: Wiese, Erdforscher, Steine, Teich, Wald/Kreativangebote: Papierwerkstatt, Filzen, Korbflechten, Töpfern/Bereitstellung zur Selbstdurchführung: Milch zur Butter und Getreideprojekt/mit allen Sinnen: „Grünschuh“-Projekt, Freddy Fledermaus, Schnecke Berta, Steinzeit, Lehmbau" ;
+	mint2014:Oeffnungszeiten "ganzjährig" ;
+	mint2014:OePNV-Anbindung "Buslinien 141, 276, 145, Haltestelle Muckern (Großpösna)" ;
+	mint2014:Telefon "034206 68974" ;
+	mint2014:Fax "034206 68975" ;
+	mint2014:Mail "oekola@web.de" ;
+	mint2014:Internet "www.oekola7.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "schola_oecologica.jpg" ;
+	mint2014:hasLogo "logo_schola.gif" ;
+	mint2014:describes ldo:ScholaOecologica .
+
+mint2014:Schulbiologiezentrum
+	rdfs:label "Schulbiologiezentrum" ;
+	mint2014:Kurzinformation "Außerschulischer Lernort für lehrplanbezogenen Unterricht in den Fächern Biologie, Sach- und Heimatkunde. Nutzbar für Schüler/-innen der Klassen 1 bis 12." ;
+	mint2014:Leistungsangebot "Unterricht, Projekttage, Hortnachmittage, sinnvolle Feriengestaltung, Exkursionen,/Kreativangebote, Sachkunde/Osterbasteln, Frühlingsspaziergänge, Sommerfest, Naturerlebnistage, Kürbisfest,/Adventsbasteln/Schülerpraktika/Tag der offenen Tür" ;
+	mint2014:Oeffnungszeiten "Mo bis Do 08:00 - 16:00 Uhr (ab 1. Mai bis 17:00 Uhr), Fr 08:00 - 12:00 Uhr" ;
+	mint2014:OePNV-Anbindung "Bus Linie 60" ;
+	mint2014:Telefon "0341 3915102" ;
+	mint2014:Fax "0341 2253768" ;
+	mint2014:Mail "rehm@schulbiologiezentrum-leipzig.de" ;
+	mint2014:Internet "www.schulbiologiezentrum-leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung, ldTag:Naturwissenschaft;
+	mint2014:hasImage "schulbiologiezentrum.jpg" ;
+	mint2014:describes <http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Lehrgarten> .
+
+mint2014:OekoloeweStadtgartenConnewitz
+	rdfs:label "Stadtgarten Connewitz Ökolöwe - Umweltbund Leipzig e. V." ;
+	mint2014:Kurzinformation "„Natur in der Stadt entdecken und erleben“ ist seit 1993 das Motto des Stadtgarten Connewitz im Leipziger Süden. Der naturnah gestaltete Schau- und Bildungsgarten ist ein Ort der Wissensvermittlung, Naturerfahrung und Erholung mitten in der Stadt. Mit vielfältigen Umweltbildungsangeboten ermöglichen wir es Besuchergruppen jeden Alters die heimische Tier- und Pflanzenwelt genauer kennen zu lernen und Natur „vor der Haustür“ bewusst zu erleben." ;
+	mint2014:Leistungsangebot "Mit Becherlupen in die Welt der Insekten eintauchen,/Kräuter, Obst und Gemüse kennenlernen und ernten,/gemeinsam leckere und gesunde Speisen zubereiten,/Brötchen im Lehmofen backen,/und jede Menge Spaß beim Bau eines Räuberlagers - /das alles ist möglich im Stadtgarten Connewitz./Schülerpraktika/Fortbildungsangebot für Lehrer- und Erzieher/-innen: Naturkunde in der pädagogischen Praxis/Ehrenamtliche Mitarbeit im Stadtgarten Connewitz" ;
+	mint2014:Oeffnungszeiten "Saison vom 1. April bis 31. Oktober Mo bis Fr 9:00 - 18:00 Uhr, So 15:00 - 18:00 Uhr Im Oktober jeweils nur bis 17:00 Uhr geöffnet. An Samstagen und Feiertagen geschlossen." ;
+	mint2014:OePNV-Anbindung "Straßenbahnlinie 11 (Richtung Markkleeberg), Haltestelle: Hildebrandstraße; S-Bahn bis Bhf. Connewitz" ;
+	mint2014:Telefon "0341 3065114" ;
+	mint2014:Fax "0341 3065179" ;
+	mint2014:Mail "stadtgarten@oekoloewe.de" ;
+	mint2014:Internet "www.ökolöwe.de/stadtgarten.html" ;
+	mint2014:Besonderheiten "Familienfreundlichkeitspreis der Stadt Leipzig (2012, 2. Platz) Leipziger Agenda 21-Preis (2013)" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Naturwissenschaft, ldTag:EinBehiGe;
+	mint2014:hasImage "oekoloewe_garten_2.jpg" ;
+    mint2014:hasLogo "logo_oekoloewe.jpeg" ;
+	mint2014:describes ldo:StadtgartenConnewitz .
+
+mint2014:StadtNameLand
+	rdfs:label "Stadt.Name.Land" ;
+	mint2014:Kurzinformation "Stadt.Name.Land bietet Stadt- und Museumsführungen speziell für Kinder und Jugendliche an. Mit Stadt.Name.Land können Kinder und Jugendliche Leipzig entdecken - vom Vorschulalter bis zum Ende der Schulzeit. Und wie? Wir haben besondere Stadtführungen, Touren durch Museen, Parks und besonders wichtige Gebäude in Leipzig speziell für Kinder und Jugendliche entwickelt. Diese Touren sind auf das Vorwissen der Altersgruppe zugeschnitten - in Bezug auf Thema, Dauer, Art der Vermittlung und Inhalte. So wird niemand überfordert oder gelangweilt - unsere Stadtführungen sind für Kinder und Jugendliche immer spannend, kurzweilig und informativ!" ;
+	mint2014:Leistungsangebot "Schülerpraktika/als Weiterbildung für Lehrer- und Erzieher/-innen möglich" ;
+	mint2014:Oeffnungszeiten "nach Bedarf" ;
+	mint2014:OePNV-Anbindung "keine Angabe" ;
+	mint2014:Telefon "0341 3065412" ;
+	mint2014:Fax "0341 3039113" ;
+	mint2014:Mail "post@stadtnameland.de" ;
+	mint2014:Internet "www.stadtnameland.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "bernhard_goering_str_viele_orte.jpg" ;
+    mint2014:hasLogo "logo_stadtnameland.jpeg" ;
+	mint2014:describes ldo:StadtNameLand .
+
+mint2014:WildernessInternational
+	rdfs:label "Stiftung Wilderness International" ;
+	mint2014:Kurzinformation "Wilderness International engagiert sich für intakte Natur, denn die von Menschen wenig beeinflussten Naturgebiete werden immer seltener und damit zu unersetzlichen Schätzen für nachfolgende Generationen. Die Stiftung hilft, Wildnisgebiete zu bewahren und weitreichende Umweltschädigungen aufzuhalten, wobei die Bewohner/-innen und Institutionen der gefährdeten Gebiete eingebunden werden. So werden z. B. Natur erhaltende Nutzungskonzepte für Wildnisgebiete entwickelt, vor Ort umgesetzt und Patenschaften für Gebiete übernommen. Expeditionsreisen vermitteln die einzigartige Vielfalt ursprünglicher Natur und die Notwendigkeit, sie zu erhalten. Mit Hilfe von Umweltstipendien erkunden junge Menschen die bedrohten Regionen und werden so zu Botschaftern der Wildnis." ;
+	mint2014:Leistungsangebot "Multimediavorträge für Schüler/-innen zum temperierten Regenwald/Multimediavorträge für die interessierte Öffentlichkeit/Aktionstage und Projekte zum temperierten Regenwald in Kindergärten/Organisation und Durchführung von Sponsorenläufen (zugunsten von Wildnisgebieten, z. B. des temperierten Regenwaldes Westkanadas und von Umweltbildungsprojekten der teilnehmenden Schulen)/Unterstützung von regionalen Umweltprojekten von Schulen und Kindergärten/Durchführung von Stipendiatenreisen an Kanadas Westküste mit individuellen/Projektarbeiten zu Natur und Kultur vor Ort (u. a. Kooperation mit First Nations)/Praktika, Freiwilliges Ökologisches Jahr" ;
+	mint2014:Oeffnungszeiten "Mo bis Fr 9:00 - 17:00 Uhr; telefonische Absprache wird empfohlen" ;
+	mint2014:OePNV-Anbindung "" ;
+	mint2014:Telefon "0351 31402220" ;
+	mint2014:Fax "0341 2353629" ;
+	mint2014:Mail "kontakt@wilderness-international.org" ;
+	mint2014:Internet "www.wilderness-international.org" ;
+	mint2014:Besonderheiten "ausgezeichnet als ein Ort in Deutschland, Land der Ideen 2010 Kooperation mit: Sächsische Landesstiftung Natur und Umwelt, Helmholtz-Zentrum für Umweltforschung - UFZ, Staatliche Kunstsammlungen Dresden, Sachsenforst, Senckenberg Naturhistorische Sammlungen Dresden, Amöba Verein für Umweltbildung, Cowichan Tribes" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung, ldTag:Naturwissenschaft;
+	mint2014:hasLogo "logo_wilderness.jpg" ;
+	mint2014:describes ldo:WildernessInternational .
+
+mint2014:Rabutz
+	rdfs:label "Technisch ökologisches Jugendprojektzentrum Rabutz" ;
+	mint2014:Kurzinformation "Das TÖP Rabutz arbeitet seit 1996 daran, mit Schüler/-innen Technik zu entwickeln, die sehr umweltverträglich ist. Alle Fahrzeuge haben E-Antrieb und werden von einer selbst entwickelten Solaranlage mit Energie versorgt. Das Abwasser aus dem Solarcafé und den Toiletten wird vollbiologisch gereinigt und im Kreislauf als Brauchwasser wieder genutzt. Alle diese Anlagen werden von den Schüler/-innen betreut und überwacht." ;
+	mint2014:Leistungsangebot "Es werden den Schulen Arbeitsgemeinschaften, Projektwochen und Ferienveranstaltungen zu technisch ökologischen Themen angeboten./mehrtägige Boden- und Wasseruntersuchungen, Beobachtungen der Tier- und/Pflanzenwelt mit dem Umwelt-Erkundungsfahrzeug/Gestaltung des Verkehrsablaufes mit der Solar-Gartenbahn/Im Minidorf (M 1:10) kann das Leben der Bauern vor 100 Jahren nachgestaltet/werden./Im Verkehrsgarten ist es möglich, Verkehrsführung und -organisation selbst zu/gestalten./Für Gruppen besteht Übernachtungsmöglichkeit und Vollverpflegung nach dem/Prinzip der Vollwertkost./Fortbildungsangebote speziell für Lehrer/-innen zur Projektpädagogik" ;
+	mint2014:Oeffnungszeiten "täglich von 14:00 - 18:00 Uhr; andere Zeiten nach Absprache" ;
+	mint2014:OePNV-Anbindung "S-Bahn nach Gröbers, dann mit dem Fahrrad nach Rabutz (5 km)" ;
+	mint2014:Telefon "034207 73595" ;
+	mint2014:Fax "034207 73597" ;
+	mint2014:Mail "drelk@rennstall-rabutz.de" ;
+	mint2014:Internet "www.rennstall-rabutz.de" ;
+	mint2014:Besonderheiten "Europaen Kid’s Tropy 2005 - zertifiziert als Europäisches Jugendkompetenzzentrum für erneuerbare Energien" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Technik;
+	mint2014:hasImage "technisch_oekologisches_jugendprojekt_zentrum_1.jpg" ;
+	mint2014:describes <http://leipzig-data.de/Data/Ort/Rabutz.TOeP> .
+
+mint2014:Umweltbibliothek
+	rdfs:label "Umweltbibliothek Leipzig" ;
+	mint2014:Kurzinformation "Die Umweltbibliothek Leipzig des Ökolöwen wurde 1988 gegründet. Als unbeschränkt öffentlich und kostenfrei zugängliche Spezialbibliothek versteht sie sich als ein zentraler Informationsdienstleister im Bereich Umweltschutz in der Stadt Leipzig und ihrem Umland. Sie kooperiert mit lokalen und besonders relevanten überregionalen Informationsanbietern, wie Behörden, Vereinen, Forschungseinrichtungen, Stadt- und Hochschulbibliotheken, um deren Informationen zur (regionalen) Umweltsituation und Umweltschutzmaßnahmen konzentriert zu sammeln, zu erschließen und anzubieten und um als qualifizierte Ergänzung zu deren Angeboten zu fungieren." ;
+	mint2014:Leistungsangebot "20.000 Sach- und Fachmedien für Studierende, Lernende, Lehrende, im Umweltschutz Tätige in Vereinen, Behörden und Planungsbüros sowie für Privatpersonen/Erschließung umweltbezogener Informationsangebote im Internet/eigene Internetseiten, u. a. mit dem kompletten Bestandskatalog, Umweltschutzadressen/Unterstützung bei der aufgabenbezogenen Recherche und Medienauswahl/Vermittlung von Umweltberatungs- und Umweltbildungsangeboten/Arbeitsplätze, Internetzugang, Kopierer" ;
+	mint2014:Oeffnungszeiten "Mo bis Do 9:00 - 18:00 Uhr, Fr 9:00 - 12:00 Uhr" ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linien 9, 10, 11, Bus Linien 70, 89, 107 alle bis Haltestelle Connewitz Kreuz" ;
+	mint2014:Telefon "0341 3065180" ;
+	mint2014:Fax "0341 3065179" ;
+	mint2014:Mail "info@umweltbibliothek-leipzig.de" ;
+	mint2014:Internet "www.umweltbibliothek-leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "bernhard_goering_str_viele_orte.jpg" ;
+	mint2014:hasLogo "logo_umweltbib.png" ;
+	mint2014:describes ldo:Umweltbibliothek .
+
+mint2014:UIZAmtFuerUmweltschutz
+	rdfs:label "Umweltinformationszentrum (UiZ) des Amtes für Umweltschutz der Stadt Leipzig" ;
+	mint2014:Kurzinformation "Das Umweltinformationszentrum (UiZ), als Einrichtung des Amtes für Umweltschutz, ist ein Beratungs-, Informations- und Kommunikationszentrum für Bürger/-innen, Gäste und Bildungseinrichtungen der Stadt Leipzig und informiert über Leipziger und überregionale Umweltthemen." ;
+	mint2014:Leistungsangebot "Neben den Beratungen, dem kostenlosen Informationsmaterial und der Entgegennahme von Bürgerhinweisen, werden Veranstaltungen wie wechselnde Ausstellungen, Fachsprechstunden, Exkursionen oder Foren angeboten./Das Amt für Umweltschutz der Stadt Leipzig lädt herzlich ein, die verschiedenen/Informationsmöglichkeiten im Ladengeschäft der Fußgängerzone im Technischen/Rathaus zu nutzen./Weitere und zusätzliche Angebote für Schulen auf Nachfrage und mit Detailabsprachen in Abhängigkeit der Kapazitäten./Schülerpraktika/Auch andere Ämter der Stadt Leipzig halten Informationen mit Umweltbezug bereit." ;
+	mint2014:Oeffnungszeiten "Di und Do 10:00 - 12:00 Uhr und 14:00 - 17:00 Uhr und nach Vereinbarung" ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linien 12, 15 und Bus 70, 74 bis Haltestelle „Technisches Rathaus“, Straßenbahn Linie 2 bis Haltestelle „Dt. Nationalbibliothek“" ;
+	mint2014:Telefon "0341 1236711" ;
+	mint2014:Fax "0341 1231655" ;
+	mint2014:Mail "uiz@leipzig.de" ;
+	mint2014:Internet "www.leipzig.de/uiz" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Umweltbildung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "technisches_rathaus_1.jpg" ;
+	mint2014:hasLogo "logo_uiz.jpg" ;
+	mint2014:describes ldo:UIZ .
+
+mint2014:VDI
+	rdfs:label "VDI - GaraGe gemeinnützige GmbH" ;
+	mint2014:Kurzinformation "Die VDI - GaraGe gemeinnützige GmbH gehört zur VDI-Gruppe und ist eine eigenständige, autonome Einrichtung, deren Leistungen und Praxisfelder die Defizite von Schule und Berufsausbildung über ein gänzlich neues, integratives Angebot kompensieren und zu einem innovativen Lösungsweg verbindet. Sie gilt als ein Modell für die neuartige Vermittlung von Kompetenzen in den Bereichen Technik, Naturwissenschaften und Wirtschaft in der Zielgruppe der Kinder und Jugendlichen." ;
+	mint2014:Leistungsangebot "Die VDI - GaraGe stellt ca. 120 Lehr- und Lernprogramme zur technischen, naturwissenschaftlichen, informatorischen und technischen Bildung für alle Bildungsprofile und Altersgrupen zur Verfügung. Sie setzt mit Kooperationschulen im Bereich der SBAL und mit Unterstützung der Arbeitsagenturen, der Stadt Leipzig, von/Stiftungen und von Unternehmen Programme zur technischen Bildung sowie zur/Berufs- und Studienorintierung um./Schülerpraktika, Museumsnacht/Unterstützung von Weiterbildungsangeboten für Lehrer/-innen im Rahmen MINT/Leipzig; Themenbezogene Fortbildungsangebote auf Anfrage" ;
+	mint2014:Oeffnungszeiten "Voranmeldung für alle Angebot notwendig. Durchführung der Kurse in Abstimmung mit den Nutzer/-innen." ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linie 14 Richtung Plagwitz, Haltestelle „Gießerstraße“" ;
+	mint2014:Telefon "0341 87086-0" ;
+	mint2014:Fax "0341 87086-10" ;
+	mint2014:Mail "kontakt@g-a-r-a-g-e.biz" ;
+	mint2014:Internet "www.g-a-r-a-g-e.biz" ;
+	mint2014:Besonderheiten "bundesweit nach AZAV zertifizierter Bildungsträger" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Berufsorientierung, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:Informatik, ldTag:BehiGe;
+	mint2014:hasImage "vdi_garage_1.jpg" ;
+	mint2014:hasLogo "logo_vdigarage.png" ;
+	mint2014:describes ldo:Garage .
+
+mint2014:Wildpark
+	rdfs:label "Wildpark Verein der Freunde und Förderer des Wildparks Leipzig e.V." ;
+	mint2014:Kurzinformation "Der Wildpark Leipzig ist nunmehr seit 1904 Zentrum für Erholung, Forschung und die Erhaltung bedrohter einheimischer Wildtierarten. Darüber hinaus erfüllt er auch eine wichtige Bildungsfunktion, stellt er doch eine ideale Schnittstelle zwischen Natur und Kultur dar. Das Leben von Wildtieren wird hier, inmitten einer Großstadt, erlebbar gemacht. Der Wildparkverein hat sich die praxisbezogene Bildung im Wildpark und dem Leipziger Auwald auf die Fahne geschrieben." ;
+	mint2014:Leistungsangebot "Führungen, Exkursionen, Unterricht im Grünen, Wandertage, Projekttage/Ganztagsangebot „Forschen mit Willi“, Konzept auf unserer Internetseite/Große Wildparkrallye, Kosten 5 Euro pro Teilnehmer/-in, aber mindestens 50 Euro/lehrplanorientierte Vorträge und Exkursionen an und im Umfeld von Schulen und/sozialen Einrichtungen/Kindergeburtstage, Festtage" ;
+	mint2014:Oeffnungszeiten "16. März bis 31. Oktober täglich 9:00 - 19:00 Uhr, 1. November bis 15. März täglich 9:00 - 17:00 Uhr" ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linie 9, Richtung Markkleeberg; Bus 107, Richtung Zöbiger; Haltestelle Wildpark" ;
+	mint2014:Telefon "0341 26496004" ;
+	mint2014:Fax "0341 26378001" ;
+	mint2014:Mail "info@wildparkverein-leipzig.de" ;
+	mint2014:Internet "www.wildparkverein-leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:BehiGe;
+	mint2014:hasImage "wildpark.jpg" ;
+	mint2014:describes ldo:Wildpark .
+
+mint2014:Vogelschutzlehrstaette
+	rdfs:label "Vogelschutzlehrstätte Stadtverband Leipzig der Kleingärtner e.V. (Träger)" ;
+	mint2014:Kurzinformation "Die Einrichtung in der Kleingartenanlage „Am Kärrnerweg“ in Leipzig Stötteritz ist eine traditionelle Lehr- und Schaustätte für den aktiven Vogelschutz inklusive Vogelhain mit Naturlehrpfad und Teich." ;
+	mint2014:Leistungsangebot "In der Vogelschutzstätte erfahren Kinder und Jugendliche mehr über die Lebensräume/von Vögeln sowie Möglichkeiten, diese Tiere zu schützen und bietet gute Gelegenheiten, Wissen mit Erlebnissen anzureichern." ;
+	mint2014:Oeffnungszeiten "nach telefonischer Absprache April bis Oktober jeden Sonntag von 9:00 - 12:00 Uhr (außer feiertags)" ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linie 4 bis Endstelle Stötteritz; Bus 74 Haltestelle Holzhäuser Straße" ;
+	mint2014:Telefon "0341 4772753" ;
+	mint2014:Fax "0341 4774306" ;
+	mint2014:Mail "info@leipziger-kleingaertner.de" ;
+	mint2014:Internet "www.vogelschutz-leipzig.de" ;
+	mint2014:Besonderheiten "einzige Einrichtung ihrer Art in einer Kleingartenanlage weltweit; bereits 1955 gegründet" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:Umweltbildung, ldTag:EinBehiGe;
+	mint2014:hasImage "vogelschutzlehrstaette.jpg" ;
+	mint2014:describes ldo:Vogelschutzlehrstaette .
+
+mint2014:Volkshochschule
+	rdfs:label "Volkshochschule Leipzig" ;
+	mint2014:Kurzinformation "Volkshochschule Leipzig - Kommunales Weiterbildungszentrum für alle Leipziger/-innen. Die VHS steht für lebensbegleitendes Lernen, vielfältige Bildungsangebote, für die Verbindung von Bildung, Kommunikation und Erlebnis sowie individuelle Beratung, kompetenten Service und sozialverträgliche Entgelte." ;
+	mint2014:Leistungsangebot "Die VHS unterbreitet Bildungsangebote zur allseitigen und beruflichen Entwicklung,/interessante Freizeitangebote und Möglichkeiten, andere Menschen, ihre Ideen und/Erfahrungen kennen zu lernen./Themenangebote sind: Politik, Gesellschaft, Umwelt, Pädagogik, Psychologie, Philosophie, Kulturelle Bildung, Kreativität, Freizeit, Gesundheit, Gesunde Ernährung//Kochen, Sprachen, Berufliche Bildung, Computer, Internet, Neue Medien, Stadtteilangebote/Schülerpraktika/Tag der offenen Tür" ;
+	mint2014:Oeffnungszeiten "Mo, Di, Do 10:00 - 12:30 Uhr und 13:30 - 18:00 Uhr, Fr 10:00 - 12:30 Uhr, Mi geschlossen; Anmeldung: Telefon 0341 1236000 oder www.vhs-leipzig.de; VHS in Grünau: Stuttgarter Allee 19; Mo, Di, Do 10:00 - 17:30 Uhr, Mi 10:00 - 16:00 Uhr; Telefon 0341 2304583 VHS in Paunsdorf mit Mölkau, Liebertwolkwitz und Holzhausen: Wiesenstraße 14; Telefon 0341 123 6000" ;
+	mint2014:OePNV-Anbindung "Straßenbahn Linien 1, 3, 4, 7, 9, 12, 14, 15, bis Goerdelerring; Bus 72 und 73, bis Hauptbahnhof" ;
+	mint2014:Telefon "0341 1236000" ;
+	mint2014:Fax "0341 1236031" ;
+	mint2014:Mail "vhs@leipzig.de" ;
+	mint2014:Internet "vhs-leipzig.de" ;
+	mint2014:Besonderheiten "Innovationspreis Weiterbildung 2011 vom Staatsministerium für Kultus und Sport" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Technik, ldTag:Naturwissenschaft, ldTag:Informatik, ldTag:Mathematik, ldTag:BehiGe;
+	mint2014:hasImage "volkshochschule.jpg" ;
+	mint2014:hasLogo "logo_vhs.jpg" ;
+	mint2014:describes ldo:Volkshochschule .
+
+mint2014:Zooschule
+	rdfs:label "Zooschule im Zoo Leipzig" ;
+	mint2014:Kurzinformation "Die Unterrichtsangebote der Zooschule im Zoo Leipzig tragen dazu bei, Erfahrungen mit der Vielfalt und Einzigartigkeit der Natur zu sammeln und ein Bewusstsein für die Notwendigkeit des Schutzes und eines verantwortungsvollen Umgangs mit der natürlichen Umwelt zu entwickeln. Entlang der Leitfächer Biologie bzw. Sachunterricht wird fachübergreifend und fächerverbindend unterrichtet. Zooschulunterricht greift inhaltliche Lehrplanvorgaben des Regelschulwesens auf. Auf entdeckende und handlungsorientierte Weise schulen sich die Kinder und Jugendlichen durch gezielte Beobachtungen im außerschulischen Lernort Zoo. Im Zentrum steht die Tierbeobachtung. Neben dem Wissenserwerb steht die Förderung allgemeiner Fähigkeiten und Fertigkeiten. Schulen und Schulkassen können die Zooschulangebote in ihren Projektunterricht integrieren. Dabei werden auch die Hauptanliegen des Weltzooverbandes (WAZA) aufgegriffen." ;
+	mint2014:Leistungsangebot "Lehrplanorientierter, fachübergreifender und fächerverbindender Zooschulunterricht/Entwicklung und Erprobung von Schüler- und Lehrermaterialien für den Lernort Zoo/Leipzig/Unterstützung pädagogischer Angebote der Zoo Leipzig GmbH/Fortbildungen für Lehrer/-innen/Unterrichtszeit je nach Themenbereich zwischen 2,5 und 4 Stunden/Fortbildungsangebote siehe Fortbildungskatalog der Sächsischen Bildungsagentur" ;
+	mint2014:Oeffnungszeiten "an allen sächsischen Schultagen; Anmeldungen werden in der Regel per E-Mail vereinbart" ;
+	mint2014:OePNV-Anbindung "Straßenbahnlinie 12, Haltestelle Zoo" ;
+	mint2014:Telefon "0341 5933396" ;
+	mint2014:Fax "keine Angabe" ;
+	mint2014:Mail "zooschule@zoo-leipzig.de" ;
+	mint2014:Internet "www.zoo-leipzig.de" ;
+	a mint2014:Ortsbeschreibung ;
+	mint2014:hasTag ldTag:GTA, ldTag:Umweltbildung, ldTag:Naturwissenschaft, ldTag:BehiGe;
+	mint2014:hasImage "zoo_leipzig.jpg" ;
+	mint2014:hasLogo "logo_zoo.svg.png" ;
+	mint2014:describes <http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Zooschule> .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/AnglerverbandLeipzig.DerLachs>
+	ld:Lernziele "Vertragen sich Wanderfische und Wasserkraft? Die Teilnehmer/-innen gewinnen Einblicke in die „Sorgen“ der Fische" ;
+	ld:Zielgruppen "Schüler/-innen - vor allem der Klassen 3 bis 6" ;
+	ld:Kosten "bisher nicht" ;
+	ld:Veranstaltungsort "Engelsdorfer Straße 377 in 04319 Leipzig" ;
+	ld:Hinweise "Termine nur nach Vereinbarung mit Herrn Kopp (0170 8228356)" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:AnglerverbandLeipzig ;
+	a mint2014:Angebot ;
+	rdfs:label "DER LACHS - EIN HEIMISCHER WANDERFISCH MIT PROBLEMEN" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/AnglerverbandLeipzig.HeimischeFische>
+	ld:Lernziele "Kennenlernen der heimischen Fischfauna und „Welcher Fisch lebt wo?“" ;
+	ld:Zielgruppen "Schüler/-innen - vor allem der Klassen 2 bis 4" ;
+	ld:Kosten "bisher nicht" ;
+	ld:Veranstaltungsort "Engelsdorfer Straße 377 in 04319 Leipzig" ;
+	ld:Hinweise "Termine nur nach Vereinbarung mit Herrn Kopp (0170 8228356)" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:AnglerverbandLeipzig ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "HEIMISCHE FISCHE - DIE INTERESSANTE WELT UNTER WASSER" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/AnglerverbandLeipzig.WieLebenFische>
+	ld:Lernziele "Allgemeine und spezielle Fischkunde anhand ausgewählter Arten" ;
+	ld:Zielgruppen "Schüler/-innen - vor allem der Klassen 4 bis 6" ;
+	ld:Kosten "bisher nicht" ;
+	ld:Veranstaltungsort "Engelsdorfer Straße 377 in 04319 Leipzig" ;
+	ld:Hinweise "Termine nur nach Vereinbarung mit Herrn Kopp (0170 8228356)" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:AnglerverbandLeipzig ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "WIE LEBEN FISCHE?" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Auwaldstation.EinJahrImAuwald>
+	ld:Lernziele "Die Schüler/-innen lernen in einem Jahr, auf monatlich stattfindenden Exkursionen und durch die Betreuung einer Dauerbeobachtungsfläche, den überregional bedeutsamen Leipziger Auwald mit all seinen Facetten kennen. Sie eignen sich Artenkenntnisse an, lernen an praktischen Beispielen ökologische Zusammenhänge verstehen, erleben Abenteuer in der Natur und bauen so nachhaltig eine intensive Beziehung zu ihrer heimischen Naturlandschaft auf." ;
+	ld:Zielgruppen "Schulklassen" ;
+	ld:Kosten "2 - 5 Euro pro Veranstaltung" ;
+	ld:Veranstaltungsort "Auwaldstation" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:Auwaldstation ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "EIN JAHR IM AUWALD" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/BASachsen.Schnupperstudium>
+	ld:Lernziele "Kennenlernen der Studienakademie und des Studienmodells, Einblick in den Studienalltag, Wissensvermittlung etc." ;
+	ld:Zielgruppen "Schüler/-innen verschiedener Schulformen (Gymnasium, BSZ, BGY ...), Interessenten" ;
+	ld:Kosten "kostenfrei (eigene Anreise)" ;
+	ld:Veranstaltungsort "Staatliche Studienakademie Leipzig" ;
+	ld:Hinweise "bitte anmelden: info@ba-leipzig.de" ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:BASachsen ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "SCHNUPPERSTUDIUM AN DER STAATLICHEN STUDIENAKADEMIE LEIPZIG" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/BASachsen.WorkshopLabor>
+	ld:Lernziele "Wissensvermittlung, Einblick in Mathematik bzw. Technik" ;
+	ld:Zielgruppen "Schüler/-innen verschiedener Schulformen (Gymnasium, BSZ, BGY ...), Interessenten" ;
+	ld:Kosten "kostenfrei" ;
+	ld:Veranstaltungsort "Staatliche Studienakademie Leipzig" ;
+	ld:Hinweise "bitte anmelden: info@ba-leipzig.de" ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:BASachsen ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "WORKSHOPANGEBOTE / LABOREXPERIMENTE BEISPIEL: „KEINE ANGST VOR MATHE“" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/BASachsen.VortraegeWorkshops>
+	ld:Lernziele "Vorstellung Studienmodell und Studienakademie, ggf. Wissensvermittlung" ;
+	ld:Zielgruppen "Schüler/-innen verschiedener Schulformen (Gymnasium, BSZ, BGY ...), Interessenten" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "Schule" ;
+	ld:Hinweise "Anfragen an info@ba-leipzig.de" ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:BASachsen ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "VORTRÄGE / WORKSHOPS IN SCHULEN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/BotanischerGartenGrosspoesna.Kartoffelprojekt>
+	ld:Lernziele "Rundgang durch den Garten mit Kartoffel- bzw. Getreideernte und anschließend Experimente in Gruppenarbeit: Pflanzen untersuchen, Isolierung der Stärke, Stärkenachweis bei verschiedenen Produkten, Verarbeitung der Stärke zu Kleber und Herstellung einer Folie aus Stärke als umweltfreundliche Alternative zu Plastikfolie. Kennenlernen der Kartoffel bzw. des Getreides sowohl als Nahrungspflanze als auch als „nachwachsender Rohstoff“ und Diskussion um die Problematik „Tank oder Teller“." ;
+	ld:Zielgruppen "Kindergarten, Grundschule, Sek I" ;
+	ld:Kosten "4 Euro" ;
+	ld:Veranstaltungsort "Botanischer Garten Oberholz" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "Juli bis September" ;
+	ld:relatedBundle mint2014:BotanischerGartenGrosspoesna ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:EinBehiGe;
+	rdfs:label "KARTOFFEL- BZW. GETREIDEPROJEKT" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/BotanischerGartenGrosspoesna.WaldBodenprojekt>
+	ld:Lernziele "Wir erleben Wald als Lebensgemeinschaft: Bestimmung und Zuordnung der Lebewesen der unterschiedlichen Waldschichten, Untersuchung der Zersetzungsstadien in der Streuschicht, Mikroskopieren der Lebewesen der Streuschicht, Experiment zur Wasserrückhaltefähigkeit des Waldbodens, der Wald als Netzwerk, den Wald mit allen Sinnen erleben." ;
+	ld:Zielgruppen "Vor- und Grundschule, Sek I" ;
+	ld:Kosten "4 Euro" ;
+	ld:Veranstaltungsort "Botanischer Garten Oberholz" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "Mai bis Oktober" ;
+	ld:relatedBundle mint2014:BotanischerGartenGrosspoesna ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:EinBehiGe;
+	rdfs:label "WALD- UND BODENPROJEKT" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/BotanischerGartenGrosspoesna.Teichprojekt>
+	ld:Lernziele "Wir erforschen das Leben in verschiedenen Lebensräumen unseres Teiches: Beobachtung und Bestimmung von Pflanzen, Mikroskopieren, Wasseranalysen, Entwicklung des Frosches, Experimente mit Wasser" ;
+	ld:Zielgruppen "Klassen 3 - 6" ;
+	ld:Kosten "4 Euro" ;
+	ld:Veranstaltungsort "Botanischer Garten Oberholz ja, mit Einschränkungen, wir bitten um Rücksprache" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:BotanischerGartenGrosspoesna ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:EinBehiGe;
+	rdfs:label "TEICHPROJEKT" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/CIT.Studienorientierung>
+	ld:Lernziele "Wir möchten Schülern/-innen helfen, ihren Weg nach dem Abitur zu finden, und ihnen speziell die zahlreichen attraktiven Perspektiven in den MINT-Studiengängen praxisorientiert nahe bringen." ;
+	ld:Zielgruppen "Schüler/-innen an Gymnasien ab Klasse 9" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "ciT GmbH Leipzig, Lutherstraße 10 oder andere" ;
+	ld:Hinweise "Schüler/-innen ab Klasse 9 an Gymnasien können sich unter www.mint-individual.de kostenfrei und unverbindlich anmelden und dann selbst entscheiden, wann sie welche Veranstaltungen wahrnehmen möchten." ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:CIT ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "STUDIENORIENTIERUNG FÜR SCHÜLER/-INNEN AN GYMNASIEN IM MINT-BEREICH" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/ErfinderKinder.Automatenbauer>
+	ld:Lernziele "Verstehen von technischen Zusammenhängen, Mechanik, Ingenieurswesen" ;
+	ld:Zielgruppen "Schüler/-innen der Grundschule" ;
+	ld:Kosten "3,20 Euro pro Teilnehmer / Stunde" ;
+	ld:Veranstaltungsort "mobil oder Spittastraße 16, 04177 Leipzig ja" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:ErfinderKinder ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "AUTOMATENBAUER" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/ErfinderKinder.Experimentierfuehrerschein>
+	ld:Lernziele "Naturwissenschaften erproben, erforschen und begreifen" ;
+	ld:Zielgruppen "Schüler/-innen der Grundschule" ;
+	ld:Kosten "3,50 Euro pro Teilnehmer / Stunde" ;
+	ld:Veranstaltungsort "mobil oder Spittastraße 16, 04177 Leipzig" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:ErfinderKinder ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "EXPERIMENTIER-FÜHRERSCHEIN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/FakultaetPhysikGeowis.Physikzirkel>
+	ld:Lernziele "Vertiefung ausgewählter Kapitel der klassischen Physik, experimentelle und theoretische Arbeit" ;
+	ld:Zielgruppen "Schüler/-innen der Klassenstufen 11 und 12 (potenzielle Studienbewerber/-innen)" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "Physikalische Institute" ;
+	ld:Hinweise "Freizeitangebot (kein Versicherungsschutz durch den Anbieter)" ;
+	ld:Laufzeit "1 Jahr (2.4.2014 bis März 2015), danach inhaltliche Wiederholung vorgesehen" ;
+	ld:relatedBundle mint2014:FakultaetPhysikGeowis ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "PHYSIKZIRKEL" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/FakultaetPhysikGeowis.Projekttage>
+	ld:Lernziele "Aufnahme von Bodenprofilen, Bodeneigenschaften, Naturraumausstattung" ;
+	ld:Zielgruppen "Schüler/-innen Sekundarstufe I und II" ;
+	ld:Kosten "ggf. Kopierkosten" ;
+	ld:Veranstaltungsort "Exkursionen in der Umgebung von Leipzig (z. B. Bienitz, Stahmeln / Lützschena, Hohburg, Röcknitz, Püchau u. a.)" ;
+	ld:Hinweise "wetterfeste Kleidung erforderlich" ;
+	ld:Laufzeit "nach Absprache" ;
+	ld:relatedBundle mint2014:FakultaetPhysikGeowis ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "PROJEKTTAGE / EXKURSIONEN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/FakultaetPhysikGeowis.Schilf>
+	ld:Lernziele "Projekttage und Exkursionen zu folgenden Themen (lehrplankonform): · Landschaftsentstehung und Entstehung der Naturraumausstattung · Abbau und Nutzung der Rohstoffe Gesteine und Gesteinskreislauf · Plattentektonik · Vulkanismus und Erdbeben · Landschaften im Tiefland · Exogene Formungsdynamik · Bodenentwicklung und Experimente · Kulturhistorische Entwicklung in der Region · Fragengeleitete Raumanalyse · Landnutzung und Geotourismus (Exkursionen im Heimatraum)" ;
+	ld:Zielgruppen "Vorstellung von geführten Beispielexkursionen (zentrale Lehrerfortbildung SBAL, SCHILF, Schülerexkursionen im Rahmen des fächerverbindenden Unterrichtes, des Projektunterrichtes, in Neigungskursen und in Projektwochen" ;
+	ld:Kosten "nach Vereinbarung" ;
+	ld:Veranstaltungsort "nach Vereinbarung" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "nach Absprache" ;
+	ld:relatedBundle mint2014:FakultaetPhysikGeowis ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "SCHULINTERNE FORTBILDUNG (SCHILF) FÜR LEHRER/-INNEN UND SCHÜLER/-INNEN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/GeoWerkstatt.KEGG>
+	ld:Lernziele "Kindern Natur und Naturwissenschaften näher bringen, z. B. Wie funktioniert ein Vulkan?" ;
+	ld:Zielgruppen "Kindergartenkinder, Kinder im Vorschulalter" ;
+	ld:Kosten "Verhandlungssache" ;
+	ld:Veranstaltungsort "variiert" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:GeoWerkstatt ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "KLEINE ENTDECKER GANZ GROSS (KEGG)" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/GeoWerkstatt.Exkursionen>
+	ld:Lernziele "spezifische Fragestellungen im Raum Leipzig" ;
+	ld:Zielgruppen "Schüler/-innen, Student/-innen, Familien" ;
+	ld:Kosten "Verhandlungssache" ;
+	ld:Veranstaltungsort "variiert" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:GeoWerkstatt ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "EXKURSIONEN ZU SPEZIFISCHEN FRAGESTELLUNGEN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/HANDSONTECHNOLOGY.FirstLegoLeague>
+	ld:Lernziele "Wie sieht die Zukunft des Lernens aus? FIRST® LEGO® League Teams werden es kennenlernen. Im Wettbewerb 2014 FLL World Class können die Teilnehmer Ideen entwerfen, wie sich Schüler/-innen im 21. Jahrhundert Wissen und Fähigkeiten aneignen." ;
+	ld:Zielgruppen "Schüler/-innen im Alter von 10 bis 16 Jahren sowie Erwachsene (Lehrer/-innen, Eltern, etc.) ab 18 Jahre" ;
+	ld:Kosten "Je Team (3 - 10 Teilnehmer/-innen) beträgt die Teilnahmegebühr 125 Euro." ;
+	ld:Veranstaltungsort "bundesweit" ;
+	ld:Hinweise "HANDS on TECHNOLOGY e. V. ist lediglich Veranstalter der FIRST LEGO League, die Vorbereitung auf den Wettbewerb erfolgt individuell in den jeweiligen Teams." ;
+	ld:Laufzeit "Anmeldung bis Oktober - Wettbewerbszeitraum Ende November bis Anfang Februar (jedes Jahr)" ;
+	ld:relatedBundle mint2014:HANDSONTECHNOLOGY ;
+	a mint2014:Angebot ;
+	rdfs:label "FIRST LEGO LEAGUE / NÄCHSTES SAISONMOTTO: WORLD CLASS" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/HANDSONTECHNOLOGY.FirstTechChallenge>
+	ld:Lernziele "44" ;
+	ld:Zielgruppen "Schüler/-innen im Alter von 16 bis 20 Jahren sowie Erwachsene (Lehrer/-innen, Professoren/-innen, Eltern)" ;
+	ld:Kosten "Je Team (3 - 10 Teilnehmer/-innen) beträgt die Teilnahmegebühr 125 Euro." ;
+	ld:Veranstaltungsort "bundesweit" ;
+	ld:Hinweise "HANDS on TECHNOLOGY e. V. ist lediglich Veranstalter der FIRST LEGO League, die Vorbereitung auf den Wettbewerb erfolgt individuell in den jeweiligen Teams." ;
+	ld:Laufzeit "Anmeldung bis Dezember - Wettbewerbszeitraum ist von September bis März" ;
+	ld:relatedBundle mint2014:HANDSONTECHNOLOGY ;
+	a mint2014:Angebot ;
+	rdfs:label "FIRST TECH CHALLENGE" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/UFZ.ErneuerbareEnergie>
+	ld:Lernziele "Einblicke in moderne Technologien: Versuche mit Brennstoffzellen, Grätzelzellen und Solarkollektoren" ;
+	ld:Zielgruppen "Schüler/-innen ab Klassenstufe 9" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "UFZ-Schülerlabor im Helmholtz-Zentrum für Umweltforschung - UFZ" ;
+	ld:Hinweise "Gesetzliche Richtlinien für Laborarbeiten müssen beachtet werden." ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:UFZ ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:EinBehiGe;
+	rdfs:label "ERNEUERBARE ENERGIE" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/UFZ.NachwachsendeRohstoffe>
+	ld:Lernziele "Was kommt nach dem Öl? Herstellung von Biodiesel. Bienen als Rohstofflieferanten. Wachs und Honig als Rohstoffe." ;
+	ld:Zielgruppen "Schüler/-innen ab Klassenstufe 9" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "UFZ-Schülerlabor im Helmholtz-Zentrum für Umweltforschung - UFZ" ;
+	ld:Hinweise "Gesetzliche Richtlinien für Laborarbeiten müssen beachtet werden." ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:UFZ ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:EinBehiGe;
+	rdfs:label "NACHWACHSENDE ROHSTOFFE" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/UFZ.Pruefungsvorbereitung>
+	ld:Lernziele "Erlernung / Wiederholung von prüfungsrelevanten Experimenten im Labor" ;
+	ld:Zielgruppen "10. und 12. (13.) Klasse" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "UFZ-Schülerlabor im Helmholtz-Zentrum für Umweltforschung - UFZ" ;
+	ld:Hinweise "Gesetzliche Richtlinien für Laborarbeiten müssen beachtet werden." ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:UFZ ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:EinBehiGe;
+	rdfs:label "PRAKTISCHE PRÜFUNGSVORBEREITUNG BIOLOGIE UND CHEMIE" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/HFTL.FragDenFrosch>
+	ld:Lernziele "Kann man mit Hilfe von Zitronen Strom erzeugen und eine LED zum Leuchten bringen? Mit Hochschullehrer/-innen und Labor-Ingenieur/-innen gehen die kleinen Forscher/ -innen dieser Frage auf den Grund." ;
+	ld:Zielgruppen "Kindergarten (ab 4 Jahre) bis Grundschule (7 Jahre)" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "Hochschule für Telekommunikation Leipzig" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:HFTL ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "FRAG DEN FROSCH - KINDERUNI IN DER HFTL" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/HFTL.Binaeruhr>
+	ld:Lernziele "Einführung in das binäre Zahlensystem, Verständnis für Zeit als Begriff in der Natur" ;
+	ld:Zielgruppen "Klassen 3 - 8" ;
+	ld:Kosten "5 Euro pro Teilnehmer/-innen" ;
+	ld:Veranstaltungsort "Hochschule für Telekommunikation Leipzig" ;
+	ld:Hinweise "praktische Arbeiten mit Lötkolben" ;
+	ld:Laufzeit "permanent" ;
+	ld:relatedBundle mint2014:HFTL ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "BINÄRUHR" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/HFTL.Infotag>
+	ld:Lernziele "Einblicke in den Studienalltag, Gespräche mit Hochschullehrer/-innen und Studierenden, Informationen zu Bachelor, Master und zum Bolognaprozess" ;
+	ld:Zielgruppen "ab Klasse 10" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "Hochschule für Telekommunikation Leipzig, Großer Hörsaal" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "permanent" ;
+	ld:relatedBundle mint2014:HFTL ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "STUDIEN-INFOTAG" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/HFTL.Exkursionen>
+	ld:Lernziele "Einblicke in das Berufsbild des Ingenieurs in Unternehmen der Telekommunikationsbranche. Projektorientiertes Arbeiten, industrienahe Forschung sind Schwerpunkte der Exkursion." ;
+	ld:Zielgruppen "ab Klasse 11" ;
+	ld:Kosten "auf Anfrage" ;
+	ld:Veranstaltungsort "abhängig vom Exkursionsziel" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "permanent, auf Anfrage" ;
+	ld:relatedBundle mint2014:HFTL ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "EXKURSIONEN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/IndustrieHandelskammer.TECNOPEDIA>
+	ld:Lernziele "„tecnopedia“ ist das MI(N)T-Mach-Portal der IHKs. Die Online-Plattform hilft Lehrer/ -innen ihren Unterricht in Mathematik, Informatik, Naturwissenschaft und Technik praxisnah zu gestalten. „tecnopedia“ bietet Experimente für den Einsatz im Unterricht an. Außerdem stellt es die Verknüpfung zu regionalen Technikangeboten, wie z. B. Unternehmens- oder Laborbesuche, her. Karrieretipps und Veranstaltungskalender ergänzen das Angebot." ;
+	ld:Zielgruppen "Unternehmen, Institutionen, Forschungseinrichtungen und außerschulische Lernorte im MINT-Bereich, Schüler/-innen, Eltern" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "online unter www.ihk-tecnopedia.de/leipzig" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:IndustrieHandelskammer ;
+	a mint2014:Angebot ;
+	rdfs:label "ONLINE-PLATTFORM „TECNOPEDIA“" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/INSPIRATA.Lehrerfortbildungen>
+	ld:Lernziele "Didaktische und lehrplanrelevante Themen, besonders in den Fächern Mathematik und Physik / Naturwissenschaften für alle Schularten und Kindertagesstätten" ;
+	ld:Zielgruppen "Lehrer/-innen, Erzieher/-innen, Multiplikatoren" ;
+	ld:Kosten "Kosten je nach Angebot bzw. individuellen Wünschen und Absprachen" ;
+	ld:Veranstaltungsort "INSPIRATA e. V. eingeschränkt (Voranmeldung für Aufzug)" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:INSPIRATA ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:EinBehiGe;
+	rdfs:label "LEHRERFORTBILDUNGEN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/INSPIRATA.BetreuteBesuche>
+	ld:Lernziele "Eigenhändig ausgeführte Experimente unter fachlicher Anleitung zu verschiedenen Themen der Mathematik und Physik / Naturwissenschaften für alle Schularten und Kita" ;
+	ld:Zielgruppen "Schulklassen versch. Klassenstufen, Kita- und Hortgruppen, weitere Interessent/-innen" ;
+	ld:Kosten "ab 2,50 Euro pro Kind; 5 Euro pro Erwachsener" ;
+	ld:Veranstaltungsort "INSPIRATA e.V. eingeschränkt (Voranmeldung für Aufzug)" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:INSPIRATA ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:EinBehiGe;
+	rdfs:label "BETREUTE BESUCHE DER AUSSTELLUNG" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/INSPIRATA.ThematischeWorkshops>
+	ld:Lernziele "Workshops zu verschiedenen Themen für Gruppen bzw. Schulklassen (mind. 15 Teilnehmer/ -innen), angepasst an die Wünsche und Voraussetzungen der Teilnehmer/-innen" ;
+	ld:Zielgruppen "Schulklassen verschiedener Klassenstufen, Kita- und Hortgruppen" ;
+	ld:Kosten "ab 3,50 Euro pro Kind" ;
+	ld:Veranstaltungsort "INSPIRATA e.V. eingeschränkt (Voranmeldung für Aufzug)" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:INSPIRATA ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:EinBehiGe;
+	rdfs:label "THEMATISCHE WORKSHOPS" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/UFZKinderUmweltBus.KinderUmweltBus>
+	ld:Lernziele "Unter dem Motto „Bestaunen, Begreifen, Beschützen“ werden experimentell naturwissenschaftliche Zusammenhänge zum Thema Wasser, Energie und Natur veranschaulicht. Im Naturraum werden verschiedene Lebensräume erforscht, die das Interesse an der Natur wecken und umweltbewusstes Handeln fördern sollen. Der KinderUmweltBus ermöglicht es, mit Kindern und Schüler/-innen vor Ort zu arbeiten. Die Experimentierstunden finden in den Gruppen- oder Klassenräumen statt. Zur Erkundung der Lebensräume Wasser, Boden, Wald und Artenvielfalt treffen wir uns direkt am Teich, Tümpel, Wald oder Wiese im Naturraum in Ihrer Nähe. Die Themen nehmen Bezug auf den Lehrplan und können damit den Lehrstoff z. B. im Fach Sachkunde sinnvoll ergänzen. Die genauen Themen finden Sie auf unserer Internetseite." ;
+	ld:Zielgruppen "Vorschule und Grundschule, Multiplikatoren" ;
+	ld:Kosten "nein" ;
+	ld:Veranstaltungsort "Besuch in den Einrichtungen" ;
+	ld:Hinweise "Der KinderUmweltBus bietet Projektstunden von 60 bis 180 Minuten für Kinder im Vor- und Grundschulalter an, die je nach Thema und Alter der Kinder angepasst werden. Um die Einsatzverteilung optimal planen zu können, werden die Termine halbjährlich vergeben. Wenn Sie einen Termin wünschen, so senden Sie uns unseren Anmeldebogen mit Wunschthema und Terminoptionen zu (download unter www.kinderumweltbus.de) oder Sie sprechen uns per Mail oder Telefon an. Auf Anfrage können auch spezielle Fortbildungsangebote für Pädagogen (Lehrer/-innen, Erzieher/-innen sowie Umweltbildner/-innen) angeboten werden." ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:UFZKinderUmweltBus ;
+	a mint2014:Angebot ;
+	rdfs:label "KINDERUMWELTBUS" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Oekoschule.WaldGewaesserBodenWiese>
+	ld:Lernziele "Pflanzenfamilien; Nahrungsketten; Stockwerke des Waldes; Lebensraum Boden, Wiese, Gewässer; biologische und chemische Parameter" ;
+	ld:Zielgruppen "Schüler/-innen aller Altersstufen und Schultypen" ;
+	ld:Kosten "3 Euro" ;
+	ld:Veranstaltungsort "Ökoschule Markkleeberg und agra-Park" ;
+	ld:Hinweise "Anmeldung erforderlich" ;
+	ld:Laufzeit "nach Absprache" ;
+	ld:relatedBundle mint2014:Oekoschule ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "ÖKOSYSTEM WALD, GEWÄSSER, BODEN, WIESE" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Oekoschule.Stadtoekologie>
+	ld:Lernziele "Lebensräume in der Stadt, Bedeutung des Parks, veränderte Landschaften, Geschichte des Südraums" ;
+	ld:Zielgruppen "Klassen 5 - 12" ;
+	ld:Kosten "3 Euro" ;
+	ld:Veranstaltungsort "Ökoschule Markkleeberg und agra-Park" ;
+	ld:Hinweise "Anmeldung erforderlich" ;
+	ld:Laufzeit "nach Absprache" ;
+	ld:relatedBundle mint2014:Oekoschule ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "STADTÖKOLOGIE" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Oekoschule.FruehSommHerbWinWerkstatt>
+	ld:Lernziele "Frühblüher im Auwald, sinnliches Naturerleben, Vom Korn zum Brot, Papierschöpfen" ;
+	ld:Zielgruppen "Vorschulkinder, Klassen 1 - 4" ;
+	ld:Kosten "3 Euro" ;
+	ld:Veranstaltungsort "Ökoschule Markkleeberg und agra-Park" ;
+	ld:Hinweise "Anmeldung erforderlich" ;
+	ld:Laufzeit "nach Absprache" ;
+	ld:relatedBundle mint2014:Oekoschule ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "FRÜHLINGS-, SOMMER-, HERBST- UND WINTERWERKSTATT" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/SchuelergesellschaftMathematik.AufgabeDesMonats>
+	ld:Lernziele "Über etablierte Kontaktlehrer/-innen wird eine Aufgabe des Monats verschickt, die Schülerlösungen werden eingesammelt, zentral korrigiert und über die Kontaktlehrer/ -innen zurückgegeben. Damit wollen wir bei den Schüler/-innen Interesse an der Beschäftigung mit Mathematik wecken und zugleich Kontakte zu den Gymnasien etablieren." ;
+	ld:Zielgruppen "Gymnasien in der Region Leipzig Klassen 5 - 6" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "keine Angabe" ;
+	ld:Hinweise "Teilnahme nur über die Schule möglich" ;
+	ld:Laufzeit "dauernd" ;
+	ld:relatedBundle mint2014:SchuelergesellschaftMathematik ;
+	a mint2014:Angebot ;
+	rdfs:label "AUFGABE DES MONATS" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/SchuelergesellschaftMathematik.Schuelerzirkel>
+	ld:Lernziele "Durch regelmäßige Beschäftigung mit mathematischen Themen werden die mathematischen Kenntnisse und Fertigkeiten der Teilnehmer/-innen entwickelt." ;
+	ld:Zielgruppen "Schüler/innen der Klassen 5 - 8" ;
+	ld:Kosten "50 Euro pro Schuljahr" ;
+	ld:Veranstaltungsort "Universität Leipzig" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "dauernd" ;
+	ld:relatedBundle mint2014:SchuelergesellschaftMathematik ;
+	a mint2014:Angebot ;
+	rdfs:label "Schülerzirkel" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/SchuelergesellschaftMathematik.Mathecamp>
+	ld:Lernziele "Dieses Angebot richtet sich an mathematisch interessierte Kinder und Jugendliche, sich 10 Tage lang in den Sommerferien im Rahmen einer Ferienfreizeit (auch) mit Mathematik zu beschäftigen. Wir bieten euch spielerische Kontakte mit Mathematik und gemeinsame Abenteuer mit anderen Mathematik-Interessierten in der entspannten Atmosphäre einer (thematischen) Ferienfreizeit." ;
+	ld:Zielgruppen "Mathematisch interessierte Jugendliche der Klassen 5 - 12 vorwiegend" ;
+	ld:Kosten "ca. 300 Euro" ;
+	ld:Veranstaltungsort "Ilmenau" ;
+	ld:Hinweise "Anmeldung erforderlich" ;
+	ld:Laufzeit "jede Sommerferien" ;
+	ld:relatedBundle mint2014:SchuelergesellschaftMathematik ;
+	a mint2014:Angebot ;
+	rdfs:label "MATHECAMP" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/MaxPlanckInstitut.LandkartenGehirn>
+	ld:Lernziele "Das menschliche Gehirn speichert nicht nur Information über die Außenwelt, sondern auch wichtige Daten über den menschlichen Körper. Daher finden sich dort auch Abbilder von Armen, Händen, Beinen usw. Erstaunlich hierbei ist, dass diese Abbildungen in bestimmten Nachbarschaftsbeziehungen zueinander stehen. So liegt z. B. das Abbild des Arms räumlich nah dem der Hand. Diese Ordnung erinnert stark an den Aufbau von Landkarten. Im Rahmen künstlicher neuronaler Netze wurden Modelle entwickelt, die das Entstehen solcher Karten im Gehirn illustrieren. Die Arbeitsweise eines solchen Modells wird im Vortrag beschrieben und anhand von Computersimulationen demonstriert." ;
+	ld:Zielgruppen "ab Klassenstufe 10, Gymnasium" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "MPI für Mathematik in den Naturwissenschaften; wahlweise an der jeweiligen Schule" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:MaxPlanckInstitut ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "LANDKARTEN IM GEHIRN Schülervortrag" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/MaxPlanckInstitut.Netzwerke>
+	ld:Lernziele "Immer wenn es um paarweise Wechselwirkungen zwischen gleichartigen Elementen geht, bietet sich eine Modellierung mittels des mathematischen Konzeptes des Graphen an. Ganz unterschiedliche Inhalte, sich gegenseitig regulierende Gene in einer Zelle, Signale austauschende Gehirnzellen, durch Flüge verbundene Städte, miteinander verlinkte Webseiten oder Emails austauschende Gruppen führen zu einer ähnlichen formalen Struktur. Diese Struktur kann dann mit mathematischen Methoden auf universelle und spezifische Eigenschaften hin untersucht werden. Auf diese Weise sind in den letzten Jahren wichtige Gesetzmäßigkeiten hinsichtlich der Herausbildung stabiler Netzwerkstrukturen gefunden worden. Die Anwendungen reichen von der Biologie über die Infrastruktur und Technik bis in die Sozialwissenschaften." ;
+	ld:Zielgruppen "ab Klassenstufe 10, Gymnasium" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "MPI für Mathematik in den Naturwissenschaften; wahlweise an der jeweiligen Schule" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:MaxPlanckInstitut ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "NETZWERKE Schülervortrag" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/MaxPlanckInstitut.FrankfurtNachLA>
+	ld:Lernziele "In diesem Vortrag geht es um kürzeste Verbindungen. Wir beginnen mit einem Hindernisproblem: Personen A und B stehen vor bzw. hinter dem Teich - entlang welchen Weges kommt A am schnellsten zu B. Dann geht es um kürzeste Verbindungen auf der Kugeloberfläche - auch dort gibt es Dreiecke, deren Winkelsumme aber nicht 180 Grad ist. Schließlich geht es um Dreiecke auf Flächen mit Kanten und Ecken. Das Ganze ist ein experimenteller Zugang (mit Modellen und Gummibändern) zur Differentialgeometrie." ;
+	ld:Zielgruppen "ab Klassenstufe 10, Gymnasium" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "MPI für Mathematik in den Naturwissenschaften; wahlweise an der jeweiligen Schule" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "unbegrenzt" ;
+	ld:relatedBundle mint2014:MaxPlanckInstitut ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "WARUM FLIEGT MAN VON FRANKFURT NACH LOS ANGELES NAHE AM NORDPOL VORBEI? Schülervortrag" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Naturkundemuseum.Bionik>
+	ld:Lernziele "Natur als Technikvorbild - biologische Prinzipien finden eine technische Umsetzung" ;
+	ld:Zielgruppen "alle Schultypen" ;
+	ld:Kosten "0,50 - 1,50 Euro pro Teilnehmer/-in" ;
+	ld:Veranstaltungsort "Naturkundemuseum" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "ganzjährig" ;
+	ld:relatedBundle mint2014:Naturkundemuseum ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:EinBehiGe;
+	rdfs:label "BIONIK" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Naturkundemuseum.AnpassungTierenLebensraum>
+	ld:Lernziele "Anatomische Besonderheiten der Tiere werden erklärt; die Möglichkeit der Besiedlung vielfältiger Biotope" ;
+	ld:Zielgruppen "alle Schultypen" ;
+	ld:Kosten "0,50 - 1,50 Euro pro Teilnehmer/-in" ;
+	ld:Veranstaltungsort "Naturkundemuseum" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "ganzjährig" ;
+	ld:relatedBundle mint2014:Naturkundemuseum ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:EinBehiGe;
+	rdfs:label "ANPASSUNG VON TIEREN AN IHREN LEBENSRAUM" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Naturkundemuseum.Fossilien>
+	ld:Lernziele "Verständnis evolutionärer Prozesse, Wiedererkennen eigener Sammelfunde aus der Natur" ;
+	ld:Zielgruppen "alle Schultypen" ;
+	ld:Kosten "0,50 - 1,50 Euro pro Teilnehmer/-in" ;
+	ld:Veranstaltungsort "Naturkundemuseum" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "ganzjährig" ;
+	ld:relatedBundle mint2014:Naturkundemuseum ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:EinBehiGe;
+	rdfs:label "FOSSILIEN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Phyllodrom.Regenwald>
+	ld:Lernziele "Die Regenwälder der Erde haben eine fundamentale Bedeutung für das weltweite Klima. Ihre Artenvielfalt ist so groß wie in keinem anderen Ökosystem, aber im gleichen Maße bedroht. Die Verbreitung der Regenwälder auf der Erde, die ökologischen Bedingungen in diesem Ökosystem und Anpassungen von Tieren, Pflanzen und Menschen an ihren Lebensraum sind ebenso Thema dieses Angebotes wie die nachhaltige Nutzung und Handlungsoptionen zum Schutz des faszinierenden Lebensraumes Regenwald." ;
+	ld:Zielgruppen "Familien, Schulklassen 1 - 12 aller Schularten, Hort- und Kindergartengruppen, Erwachsene, Student/-innen" ;
+	ld:Kosten "2 Euro pro Teilnehmer/-in bei Gruppen ab 6 Personen" ;
+	ld:Veranstaltungsort "Phyllodrom Regenwaldmuseum Leipzig" ;
+	ld:Hinweise "Projektbegleitung an Schulen wird angeboten" ;
+	ld:Laufzeit "ständig" ;
+	ld:relatedBundle mint2014:Phyllodrom ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "LEBENSRAUM REGENWALD" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Phyllodrom.KribbelnKrabbeln>
+	ld:Lernziele "Die Besucher/-innen lernen anhand ausgewählter Beispiele (wie Gespenst- und Stabschrecken, Vogelspinnen, Schlangen, Baumsteigerfröschen, Brettwurzeln, Bromelie, Kannenpflanze und Helmkasuar) verschiedene Anpassungen in Körperbau oder Verhalten von Tieren und Pflanzen an konkrete Lebensräume kennen. Dabei wird u. a. auf Mimikry und Mimese eingegangen sowie auf verschiedene Schutzmechanismen oder das Phänomen Gigantismus / Zwergformen." ;
+	ld:Zielgruppen "Familien, Schulklassen 1 - 12 aller Schularten, Hort- und Kindergartengruppen, Erwachsene, Student/-innen" ;
+	ld:Kosten "2 Euro pro Teilnehmer/-in" ;
+	ld:Veranstaltungsort "Phyllodrom Regenwaldmuseum Leipzig" ;
+	ld:Hinweise "Projektbegleitung an Schulen möglich" ;
+	ld:Laufzeit "ständig" ;
+	ld:relatedBundle mint2014:Phyllodrom ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "EIN KRIBBELN UND KRABBELN / KURIOSITÄTENKABINETT REGENWALD" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Phyllodrom.Dschungelkids>
+	ld:Lernziele "Die Teilnehmer/-innen beschäftigen sich in den altersgerechten Veranstaltungen mit vielfältigen Themen rund um den Regenwald. Dabei erkunden die Kinder das Regenwaldmuseum mit allen Sinnen und beteiligen sich an der Pflege der lebenden Tiere und Pflanzen. Experimente und kreative Gestaltungsmöglichkeiten ermöglichen forschendes und entdeckendes Lernen mit Spaß und Freude. Die Kinder erkennen ökologische Zusammenhänge und bilden ein Bewusstsein für Handlungsmöglichkeiten aktiven Umwelt- und Naturschutzes aus." ;
+	ld:Zielgruppen "Kinder ab 6 Jahren, Kinder ab 11 Jahren (Aufteilung auf die Arbeitsgemeinschaften je nach Alter und Interessenlage), Begabungs- und Begabtenförderung" ;
+	ld:Kosten "10 Euro im Monat" ;
+	ld:Veranstaltungsort "Phyllodrom Regenwaldmuseum Leipzig" ;
+	ld:Hinweise "Anmeldung jederzeit möglich, Schnuppermonat ist kostenfrei" ;
+	ld:Laufzeit "ständig" ;
+	ld:relatedBundle mint2014:Phyllodrom ;
+	a mint2014:Angebot ;
+	rdfs:label "ARBEITSGEMEINSCHAFTEN „DSCHUNGELKIDS“ UND „REGENWALD AG“" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/ScholaOecologica.Wiesenexkursion>
+	ld:Lernziele "• Erlernen von 5 - 15 Wiesenpflanzen mit Namen und Bedeutung/Nutzen • Hauptschwerpunkt je nach Vegetationszeit: Holunder, Johanniskraut, Giersch • eventuell Weiterverarbeitung einer Pflanze im Anschluss nach Absprache" ;
+	ld:Zielgruppen "Grundschulkinder" ;
+	ld:Kosten "4,00 Euro (nur innerhalb des Klassenfahrt-Aufenthaltes buchbar)" ;
+	ld:Veranstaltungsort "Dreiskau-Muckern" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:ScholaOecologica ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "WIESENEXKURSION" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/ScholaOecologica.GetreideMuesliFladenbrot>
+	ld:Lernziele "Artenkenntnis Getreide festigen Quetschen von Haferkörnern zu Haferflocken mit Verkostung Mahlen von Getreide mit elektrischer Mühle Kneten eines Brotteiges und Formen von kleinen Brotfladen" ;
+	ld:Zielgruppen "Grundschulkinder" ;
+	ld:Kosten "1,00 Euro (nur innerhalb des Klassenfahrt-Aufenthaltes buchbar)" ;
+	ld:Veranstaltungsort "Dreiskau-Muckern" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:ScholaOecologica ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "GETREIDE-MÜSLI-FLADENBROT als Stationsbetrieb zur Selbstdurchführung" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/ScholaOecologica.Weihnachtswerkstatt>
+	ld:Lernziele "Gestalten mit Naturmaterialien, Herstellung von Geschenken, Getreidekörner mahlen, Teig bereiten, Plätzchen backen. Jedes Kind nimmt ein Werkstück und/oder Plätzchen mit nach Hause." ;
+	ld:Zielgruppen "Grundschulkinder" ;
+	ld:Kosten "5,00 Euro (ein Baustein) bzw. 12,00 Euro (zwei Bausteine und Mittagessen am Kamin)" ;
+	ld:Veranstaltungsort "Dreiskau-Muckern" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:ScholaOecologica ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "WEIHNACHTSWERKSTATT" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/StadtNameLand.Geocaching>
+	ld:Lernziele "keine Angabe" ;
+	ld:Zielgruppen "ab 10 Jahre" ;
+	ld:Kosten "ab 140 Euro / Klassenstärke" ;
+	ld:Veranstaltungsort "verschiedene Touren" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "ganzjährig" ;
+	ld:relatedBundle mint2014:StadtNameLand ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "GEOCACHING" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/StadtNameLand.ScientificEducation>
+	ld:Lernziele "keine Angabe" ;
+	ld:Zielgruppen "ab Klasse 6" ;
+	ld:Kosten "ab 90 Euro / Klassenstärke" ;
+	ld:Veranstaltungsort "verschiedene Touren" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "ganzjährig" ;
+	ld:relatedBundle mint2014:StadtNameLand ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "SCIENTIFIC EDUCATION" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/StadtNameLand.BaeumeStraeucher>
+	ld:Lernziele "keine Angabe" ;
+	ld:Zielgruppen "ab Klasse 1" ;
+	ld:Kosten "ab 90 Euro / Klassenstärke" ;
+	ld:Veranstaltungsort "verschiedene Touren" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "März bis Oktober" ;
+	ld:relatedBundle mint2014:StadtNameLand ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "BÄUME UND STRÄUCHER" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/StadtNameLand.WaldWiesenGeheimnisse>
+	ld:Lernziele "keine Angabe" ;
+	ld:Zielgruppen "ab Klasse 1" ;
+	ld:Kosten "ab 90 Euro / Klassenstärke" ;
+	ld:Veranstaltungsort "verschiedene Touren" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "März bis Oktober" ;
+	ld:relatedBundle mint2014:StadtNameLand ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "WALD- UND WIESENGEHEIMNISSE" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/StadtNameLand.SpurDerSteine>
+	ld:Lernziele "keine Angabe" ;
+	ld:Zielgruppen "ab Klasse 1" ;
+	ld:Kosten "ab 90 Euro / Klassenstärke" ;
+	ld:Veranstaltungsort "verschiedene Touren" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "ganzjährig" ;
+	ld:relatedBundle mint2014:StadtNameLand ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "SPUR DER STEINE" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/WildernessInternational.TemperierterRegenwald>
+	ld:Lernziele "Als Beispiel für schützenswerte Wildnisgebiete wird der temperierte Regenwald mit seinen riesigen Bäumen, den tierischen Bewohnern und dem Zusammenleben dieser vorgestellt und kindgerecht „erlebt“ (mit Bildern, Filmen, Bastelaktionen, kleinen Experimenten, Liedern und Spielen)" ;
+	ld:Zielgruppen "Kindergartengruppen" ;
+	ld:Kosten "Material und Fahrtkosten, u. U. Kosten für Betreuer/-innen" ;
+	ld:Veranstaltungsort "in der Einrichtung" ;
+	ld:Hinweise "Auch die Teilnahme an einem Sponsorenlauf wird organisiert." ;
+	ld:Laufzeit "basierend auf Nachfrage" ;
+	ld:relatedBundle mint2014:WildernessInternational ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "TEMPERIERTER REGENWALD FÜR KINDER" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/WildernessInternational.Umweltbotschafter>
+	ld:Lernziele "Die Schüler/-innen bewerben sich, sie bearbeiten Projekte zu unterschiedlichen Themen vor, während und nach der Reise (ca. 3,5 Wochen im Sommer), z. B. zur Nutzung von bestimmten Pflanzen durch die Indianer/-innen früher und heute. Sie lernen die bedrohten Regenwälder durch Outdoor-Reisen und durch die Kommunikation mit Umweltschützer/-innen vor Ort und indigenen Ureinwohner/-innen kennen. Indianische Schüler/ -innen kommen zu einem Austausch für ca. 3 Wochen nach Deutschland. Die Schüler/ -innen stellen ihre Ergebnisse in einer gemeinsamen Ausstellung und in Vorträgen an ihren Schulen und der Öffentlichkeit vor." ;
+	ld:Zielgruppen "Schüler/-innen der Klassen 9 - 11 von Schulen, die sich beim Sponsorenlauf engagiert haben" ;
+	ld:Kosten "Stipendium, der überwiegende Teil wird von der Stiftung übernommen; Eigenbeteiligung ca. 500 Euro pro Schüler/-in" ;
+	ld:Veranstaltungsort "Westküste Kanadas" ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "jährlich eine Expedition über ca. 4 Wochen" ;
+	ld:relatedBundle mint2014:WildernessInternational ;
+	a mint2014:Angebot ;
+	rdfs:label "ALS UMWELTBOTSCHAFTER IN DIE TEMPERIERTEN REGENWÄLDER WESTKANADAS" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/WildernessInternational.WalkForTheWild>
+	ld:Lernziele "Schüler/-innen (schwerpunktmäßig aus den Klassen 4 - 7) und Kindergartenkinder engagieren sich für den Erhalt von bedrohten Wildnisgebieten. Sie gewinnen Sponsoren und nehmen an einem Sponsorenlauf von Wilderness International teil. Im Zuge dessen übernehmen sie Patenschaften für Wildnisgebiete, die sie mit Hilfe ihrer Sponsoren finanziert und „erlaufen“ haben. Dazu erhalten sie Patenschaftsurkunden mit konkreten Geokoordinaten des jeweiligen Patengebietes. Vorab werden die Schüler/ -innen über den Lebensraum Regenwald informiert und nehmen an Informationsveranstaltungen dazu teil." ;
+	ld:Zielgruppen "Kindergärten, Grundschulen und weiterführende Schulen (Schwerpunkt: Klassen 4 - 7)" ;
+	ld:Kosten "die Schüler/-innen finden Sponsoren, die Teilnahme selbst ist kostenlos" ;
+	ld:Veranstaltungsort "Sportplatz nach Vereinbarung" ;
+	ld:Hinweise "Die Läufer/-innen erhalten ein T-Shirt, Getränke und einen Snack, außerdem werden Klassenpreise und wertvolle Einzelpreise ausgelobt (alle Kosten des Laufs werden von externen Sponsoren gedeckt, alles erlaufene Geld fließt in den Kauf von Wildnisgebieten und in die Umweltbildungsprojekte (auch für eigene Projekte der Schulen/Kindergärten) ein." ;
+	ld:Laufzeit "mehrmals im Jahr" ;
+	ld:relatedBundle mint2014:WildernessInternational ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "TAKE A WALK FOR THE WILD" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Rabutz.Umwelterkundung>
+	ld:Lernziele "Die Schüler/-innen fahren mit dem Umwelterkundungsmobil auf die Ackerflächen unserer Kooperationspartner (Auftraggeber), nehmen Bodenproben und untersuchen diese im Labor. Zu den erfassten Daten gehören neben Datum und Uhrzeit auch die GPS-Koordinaten. Dadurch ist es möglich, an gleicher Stelle zu bestimmten Zeiten Proben zu nehmen und die Ergebnisse mit den Angaben über die Bewirtschaftung der Fläche abzustimmen. Eine weitere Aufgabe dieser Gruppe ist die systematische Wasseruntersuchung in den Abwasseraufbereitungsanlagen des Objektes und in verschiedenen Teichen. Bei Angelgewässern liegen Aufgabenstellungen des Angelverbandes vor. Für alle diese Aufgaben ist das Fahrzeug mit besonderer Technik ausgestattet: Bordcomputer, GPS, Pumpe für Schmutzwasser und Bohrgerät für Bodenproben." ;
+	ld:Zielgruppen "je 10 Schüler/-innen zwischen 12 und 15 Jahren" ;
+	ld:Kosten "100 Euro je Schüler/-in" ;
+	ld:Veranstaltungsort "Projektzentrum Rabutz und Umland" ;
+	ld:Hinweise "Projektdauer 4 Tage, Übernachtung im Zentrum ist möglich" ;
+	ld:Laufzeit "nach Absprache" ;
+	ld:relatedBundle mint2014:Rabutz ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "UMWELTERKUNDUNG" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Rabutz.Verkehrsplanung>
+	ld:Lernziele "Die Schüler/-innen erhalten die Aufgabe, für die Gartenbahn einen Fahrplan aufzustellen. Dafür werden bestimmte Vorgaben gemacht: Natürlich muss zunächst der Ablauf getestet werden und die Fahr- und Rangierzeiten müssen bestimmt werden. Es sind dann die Bahnhöfe zu besetzen. Einzelne Schüler/-innen fahren mit den Straßenfahrzeugen, deshalb ist auch die Schrankenanlage einbezogen. Die Schüler/-innen erhalten sowohl für die Arbeit an der Bahnanlage als auch für das Verhalten im Straßenverkehr eine entsprechend Abschlussurkunde." ;
+	ld:Zielgruppen "je 10 Schüler/-innen zwischen 12 und 15 Jahren" ;
+	ld:Kosten "60 Euro je Schüler/-in" ;
+	ld:Veranstaltungsort "Projektzentrum Rabutz" ;
+	ld:Hinweise "Projektdauer 2 Tage, Übernachtung im Zentrum ist möglich" ;
+	ld:Laufzeit "nach Absprache" ;
+	ld:relatedBundle mint2014:Rabutz ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA;
+	rdfs:label "VERKEHRSPLANUNG" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/Umweltbibliothek.Medienkisten>
+	ld:Lernziele "Die Medienkisten werden zu vielfältigen Themen angeboten, so zu Regenwald, Boden, Wasser, Ernährung, Landwirtschaft und grüne Gentechnik, Energie, Konsum und Lebensstile, Lärm, Mobilität, Igel, Fledermäuse, Streuobstwiesen, Baum und Auenwald, Bauernhof, Energiesparen an Schulen, Agenda 21. Sie bieten unterschiedlichste Medien von Spielen über Bücher, Unterrichtsmaterialien und DVD’s, sowie z. T. praktisches Inventar, wie Becherlupen und Messgeräte und unterstützen lebensweltbezogenes Lernen und das Erarbeiten und Erkennen von (ökologischen) Zusammenhängen." ;
+	ld:Zielgruppen "Direkt: Personen, die Umweltbildungsthemen vermitteln, insbesondere Kindergärtner/ -innen und Lehrer/-innen; Indirekt: Kindergarten- bis Erwachsenenalter" ;
+	ld:Kosten "Die Entleihung kostet pro Kiste 10,00 Euro und ist für bis zu vier Wochen möglich. Die für eine Entleihung notwendige Annmeldung in der Umweltbibliothek ist kostenfrei." ;
+	ld:Veranstaltungsort "Entleihungsort ist die Umweltbibliothek, gegen Versandkostenerstattung werden die Medienkisten auch nach außerhalb Leipzigs verschickt." ;
+	ld:Hinweise "keine Angabe" ;
+	ld:Laufzeit "keine Angabe" ;
+	ld:relatedBundle mint2014:Umweltbibliothek ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:BehiGe;
+	rdfs:label "UMWELT-MEDIENKISTEN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/UIZAmtFuerUmweltschutz.Solarmobil>
+	ld:Lernziele "Bau von fahrtüchtigen Mobilen und Teilnahme an einem Wettbewerb. Fragestellung: Nutzung Sonnenenergie, Halbleitertechnik" ;
+	ld:Zielgruppen "Schüler/-innen der Klassen 3 - 12" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "Schulen, Freizeiteinrichtungen" ;
+	ld:Hinweise "Voranmeldung notwendig; obligatorischer Wettbewerb der Solarmobile zur Ökofete" ;
+	ld:Laufzeit "Schuljahr" ;
+	ld:relatedBundle mint2014:UIZAmtFuerUmweltschutz ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:GTA, ldTag:EinBehiGe;
+	rdfs:label "SOLARMOBIL" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Angebot/UIZAmtFuerUmweltschutz.Klimaschuetzer>
+	ld:Lernziele "Die Kilometer, die jeden Tag zu Fuß, per Fahrrad oder mit dem ÖPNV zurückgelegt wurden, werden gesammelt und in eine Sammelmappe eingetragen. Fragestellung: Mobilität und Klimaschutz" ;
+	ld:Zielgruppen "Grundschul- und Kindergartenkinder" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "Kindergärten, Schüler/-innen bis Klasse 4" ;
+	ld:Hinweise "Voranmeldung notwendig" ;
+	ld:Laufzeit "1 bis 4 Wochen im Frühjahr oder Sommer" ;
+	ld:relatedBundle mint2014:UIZAmtFuerUmweltschutz ;
+	a mint2014:Angebot ;
+	rdfs:label "KLEINE KLIMASCHÜTZER UNTERWEGS - SAMMELMAPPEN MIT STICKERN" .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot/UIZAmtFuerUmweltschutz.LeipzigerBoeden>
+	ld:Lernziele "Führung und Erklärung zum Thema Bodenprofile in Leipzig und Umgebung durch Mitarbeiter/-innen der Bodenschutzbehörde. Fragestellung: Bodenbeschaffenheit, Bodenschutz, Besonderheiten der Leipziger Böden" ;
+	ld:Zielgruppen "Schüler/-innen der Klassen 5 - 12" ;
+	ld:Kosten "keine" ;
+	ld:Veranstaltungsort "Technisches Rathaus, Prager Straße 118 - 136, 04317 Leipzig" ;
+	ld:Hinweise "Voranmeldung notwendig" ;
+	ld:Laufzeit "ganzjährig" ;
+	ld:relatedBundle mint2014:UIZAmtFuerUmweltschutz ;
+	a mint2014:Angebot ;
+	mint2014:hasTag ldTag:BehiGe;
+	rdfs:label "FÜHRUNGEN ZU BODENPROFILEN VON LEIPZIGER BÖDEN" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ADFC.Radtouren>
+	ld:Zielgruppen "jede Altersgruppe" ;
+	ld:Kosten "3 Euro / 1 Euro (ermäßigt)" ;
+	ld:Teilnehmerzahl "20" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ADFC ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "ADFC-Radtouren" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ADFC.RadtourenBegleitet>
+	ld:Zielgruppen "Schülergruppen ab Klasse 5, Erwachsenengruppen" ;
+	ld:Kosten "2 Euro, mind. jedoch 100 Euro" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ADFC ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "vom ADFC begleitete Radtouren" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ADFC.Mobilitaetsberatung>
+	ld:Zielgruppen "jede Altersgruppe" ;
+	ld:Kosten "kostenlos" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ADFC ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Mobilitätsberatung" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ADFC.Kurse>
+	ld:Zielgruppen "Erwachsene, Student/-innen, Jugendliche" ;
+	ld:Kosten "je nach Angebot" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ADFC ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Kurse wie Radfahrschule, Fahrrad-Selbsthilfe-Kurs, Erste Hilfe, Ausbildung Radtouren-Leiter/-innen" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ADFC.Vortraege>
+	ld:Zielgruppen "Erwachsene, Student/-innen, Jugendliche" ;
+	ld:Kosten "3 Euro / 1 Euro (ermäßigt)" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ADFC ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Vorträge und Podiumsdiskussionen" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/AnglerverbandLeipzig.Projektveranstaltungen>
+	ld:Zielgruppen "Schüler/-innen Klasse 3 - 6" ;
+	ld:Kosten "bisher kostenfrei" ;
+	ld:Teilnehmerzahl "20 (max. eine Schulklasse)" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:AnglerverbandLeipzig ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Projektveranstaltungen Sachkunde/Biologie" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/AnglerverbandLeipzig.Schnupperangeln>
+	ld:Zielgruppen "Klassen oder Hortgruppen (Klasse 3 - 6)" ;
+	ld:Kosten "bisher kostenfrei" ;
+	ld:Teilnehmerzahl "20 (max. eine Schulklasse)" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:AnglerverbandLeipzig ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Schnupperangeln" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Auwaldstation.Sachunterricht>
+	ld:Zielgruppen "Klasse 1 - 4, Vorschule" ;
+	ld:Kosten "2 - 5 Euro" ;
+	ld:Teilnehmerzahl "mind. 8, max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Auwaldstation ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Sachunterricht Vielfältige Themen: z.B. Wald als Lebensgemeinschaft; Bäume und Sträucher; Faszination Wasser; Spurensuche in der Aue; Auwaldrallye; die Weltder Vögel; im Reich der Insekten; Natur im Winter; Kleine Wildkräuterkunde; Tiere im Winter; Frühlingserwachen; Wandertag im Auwald; Müllexperte; Naturschutz" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Auwaldstation.Biologie>
+	ld:Zielgruppen "Klasse 5 - 12" ;
+	ld:Kosten "2 - 5 Euro" ;
+	ld:Teilnehmerzahl "mind. 8, max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Auwaldstation ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie Vielfältige Themen: z.B. Wald als Lebensgemeinschaft; Die Welt der Vögel; Im Reich der Insekten Kraftwerk Pflanze; Kleine Wildkräuterkunde; Pflanzenbestimmung in der Aue; Die Natur mit allen Sinnen erleben; gewässerkundliche Exkursion; Ganztagsexkursion Ökologie; Neobiota - pflanzliche und tierische Einwanderer; Biologische Vielfalt; Bionik" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Auwaldstation.Geographie>
+	ld:Zielgruppen "Klasse 5 - 12" ;
+	ld:Kosten "2 - 5 Euro" ;
+	ld:Teilnehmerzahl "mind. 8, max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Auwaldstation ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Geographie, Profilunterricht naturwissenschaftlich · bodenkundliche Exkursion · Klima im Wandel · ganztägige Auwaldexkursion · Lebensraum Stadt" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Auwaldstation.Ethik>
+	ld:Zielgruppen "Klasse 5 - 12" ;
+	ld:Kosten "2 - 5 Euro" ;
+	ld:Teilnehmerzahl "mind. 8, max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Auwaldstation ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Ethik, Gemeinschaftskunde · Nachhaltigkeitsrallye · Naturschutz - Notwendigkeit und Praxis" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Auwaldstation.Anderes>
+	ld:Zielgruppen "Ausbildungsstätten, Freiwilligendienste, private Gruppen, Vereine, Firmen, breite Öffentlichkeit" ;
+	ld:Kosten "nach Absprache" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:Auwaldstation ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "thematische Exkursionen, multimedialer Auwald-Erlebnispfad, naturpädagogische Programme zur Entspannung oder zur Förderung des Teamgedankens für Erwachsenengruppen, naturpädagogische Weiterbildung für Erzieher/-innen" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BergbauTechnikPark.Industriekultur1>
+	ld:Zielgruppen "generationsübergreifend 60-minütige Parkführung" ;
+	ld:Kosten "2 Euro (Mindestgebühr 40 Euro) zzgl. Eintritt: 6 Euro, ermäßigt: 3 Euro; Kinder bis fünf Jahre frei" ;
+	ld:Teilnehmerzahl "keine Beschränkung" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:BergbauTechnikPark ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Industriekultur, Geografie, Erdkunde, Technik, Naturwissenschaft, Umweltbildung" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BergbauTechnikPark.Industriekultur2>
+	ld:Zielgruppen "Schüler/-innen ab Sekundarstufe I (Klasse 5 - 11) 60-minütige Parkführung" ;
+	ld:Kosten "2 Euro zzgl. Eintritt: 2,50 Euro; zwei Begleitpersonen sind frei (Mindestgebühr 40 Euro)" ;
+	ld:Teilnehmerzahl "keine Beschränkung" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:BergbauTechnikPark ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Industriekultur, Geografie, Erdkunde, Technik, Naturwissenschaft, Umweltbildung" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BASachsen.Schnuppertage>
+	ld:Zielgruppen "Schüler/-innen ab Klasse 9 oder 10, Gymnasium / BSZ / BGY, Interessent/-innen, Lehrer/-innen etc." ;
+	ld:Kosten "kostenfrei" ;
+	ld:Teilnehmerzahl "individuell, nach Anmeldung" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:BASachsen ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Schnuppertage mit praktischer Laborführung" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BASachsen.Experimente>
+	ld:Zielgruppen "Schüler/-innen ab Klasse 9 oder 10, Gymnasium / BSZ / BGY, Interessent/-innen, Lehrer/-innen etc." ;
+	ld:Kosten "kostenfrei" ;
+	ld:Teilnehmerzahl "individuell, nach Anmeldung" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:BASachsen ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Zusammenarbeit / Projekte zu Experimenten in den Laboren" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BASachsen.Vortraege>
+	ld:Zielgruppen "Schüler/-innen ab Klasse 10, Gymnasium / BSZ / BGY" ;
+	ld:Kosten "kostenfrei" ;
+	ld:Teilnehmerzahl "offen" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:BASachsen ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Vorträge in Schulen" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BASachsen.Individuell>
+	ld:Zielgruppen "offen - wenden Sie sich gern an uns" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:BASachsen ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "individuelle Angebote auf Anfrage / Workshops" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BASachsen.Mathematik>
+	ld:Zielgruppen "Schüler/-innen ab Klasse 9 oder 10, Gymnasium / BSZ / BGY, Interessent/-innen, Lehrer/-innen etc." ;
+	ld:Kosten "kostenfrei" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:BASachsen ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "„Keine Angst vor Mathe“ (Mathematik)" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BotanischerGartenGrosspoesna.Kraeuterprojekt>
+	ld:Zielgruppen "Kindergarten, Grundschule, Hort: Klasse 1 / 2 - Sachunterricht: „Mein Körper und meine Gesundheit“" ;
+	ld:Kosten "2 / 4 Euro" ;
+	ld:Teilnehmerzahl "eine Schulklasse" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:BotanischerGartenGrosspoesna ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Kräuterprojekt" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BotanischerGartenGrosspoesna.Gewaesserprojekt>
+	ld:Zielgruppen "Grundschlule, Sek I: Klasse 4 - Sachunterricht Lernbereich 3: Begegnung mit Pflanzen und Tieren" ;
+	ld:Kosten "4 Euro" ;
+	ld:Teilnehmerzahl "eine Schulklasse" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:BotanischerGartenGrosspoesna ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Gewässerprojekt" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BotanischerGartenGrosspoesna.KartoffelGetreideprojekt>
+	ld:Zielgruppen "Kindergarten, Grundschule, Sek I: Klasse 3 - Sachunterricht Lernbereich 3: Begegnung mit Pflanzen und Tieren Klasse 3: Festigung und Vertiefung: Experimentieren" ;
+	ld:Kosten "4 Euro" ;
+	ld:Teilnehmerzahl "eine Schulklasse" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:BotanischerGartenGrosspoesna ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Kartoffel- und Getreideprojekt" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BotanischerGartenGrosspoesna.Energieprojekt>
+	ld:Zielgruppen "Vor- und Grundschule, Sek I: Klasse 3: Festigung und Vertiefung: Experimentieren" ;
+	ld:Kosten "4 Euro" ;
+	ld:Teilnehmerzahl "eine Schulklasse" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:BotanischerGartenGrosspoesna ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Energieprojekt" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/BotanischerGartenGrosspoesna.WaldBodenprojekt>
+	ld:Zielgruppen "Vor- und Grundschule, Sek I: Klasse 4 - Sachunterricht Lernbereich 3: Begegnung mit Pflanzen und Tieren" ;
+	ld:Kosten "4 Euro" ;
+	ld:Teilnehmerzahl "eine Schulklasse" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:BotanischerGartenGrosspoesna ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Energieprojekt" .
+
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/CIT.Studienorientierung>
+	ld:Zielgruppen "Schüler/-innen an Gymnasien ab Klasse 9" ;
+	ld:Kosten "keine" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:CIT ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Berufs- und Studienorientierung Studienorientierung MINT" .
+
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ComputerSpielSchule>
+	ld:Zielgruppen "alles möglich" ;
+	ld:Kosten "nach Absprache" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:ComputerSpielSchule ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "alles möglich" .
+
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ETS.WTH>
+	ld:Zielgruppen "Schüler/-innen der 9. Klasse an Oberschulen" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "Gruppen bis max. 20" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ETS ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Elektrotechnische Themen im Fach WTH" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ETS.Physik>
+	ld:Zielgruppen "Schüler/-innen der 6. bis 9. Klasse an Oberschulen und an Gymnasien" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "Gruppen bis max. 20" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ETS ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Elektrotechnische Themen im Fach Physik" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ETS.Elektrotechnik>
+	ld:Zielgruppen "Schüler/-innen der 9. Klasse an Oberschulen und der 11. Klasse an Gymnasien" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "Gruppen bis max. 50" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:ETS ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Information über Berufe in der Elektrotechnik" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ENEDAS.Stadtwaldoekologie>
+	ld:Zielgruppen "Selbstwerber, aber auch interessierte Erwachsene" ;
+	ld:Kosten "16 Euro" ;
+	ld:Teilnehmerzahl "ca. 20" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ENEDAS ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Lehrgang zur Stadtwaldökologie" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ENEDAS.Spaziergaenge>
+	ld:Zielgruppen "naturinteressierte Schüler/-innen (ab 6./8. Klasse), Studenten/-innen, Erwachsene, Familien" ;
+	ld:Kosten "5 Euro ermäßigt: 3 Euro für Schüler/-innen, Studenten/-innen, Leipzig-Pass-Inhaber" ;
+	ld:Teilnehmerzahl "ca. 20" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ENEDAS ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturkundliche Spaziergänge" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ENEDAS.Fachfuehrungen>
+	ld:Zielgruppen "Interessenten/-innen aller Altersstufen" ;
+	ld:Kosten "70 Euro pro Führung" ;
+	ld:Teilnehmerzahl "max. 20" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ENEDAS ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Fachführungen zu botanischen, zoologischen und ökologischen Fragestellungen" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ENEDAS.Projekttage>
+	ld:Zielgruppen "Interessenten/-innen aller Altersstufen (insbes. Schulklassen)" ;
+	ld:Kosten "nach Vereinbarung" ;
+	ld:Teilnehmerzahl "nach Vereinbarung" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:ENEDAS ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Projekttage zu verschiedenen ökologischen, botanischen und zoologischen Themen" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ENEDAS.Fachvortraege>
+	ld:Zielgruppen "Interessenten/-innen aller Altersstufen" ;
+	ld:Kosten "70 Euro pro Veranstaltung" ;
+	ld:Teilnehmerzahl "nach Vereinbarung" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ENEDAS ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Fachvorträge und Seminare zu speziellen ökologischen Themen" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ErfinderKinder.Naturwissenschaften>
+	ld:Zielgruppen "Schüler/-innen der Grundschule" ;
+	ld:Kosten "3,50 - 6 Euro" ;
+	ld:Teilnehmerzahl "mind. 8" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:ErfinderKinder ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturwissenschaften / Biologie" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ErfinderKinder.Mathematik>
+	ld:Zielgruppen "Schüler/-innen der Grundschule" ;
+	ld:Kosten "3,50 - 6 Euro" ;
+	ld:Teilnehmerzahl "mind. 8" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:ErfinderKinder ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Mathematik im Alltag" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ErfinderKinder.Umweltbildung>
+	ld:Zielgruppen "Schüler/-innen der Grundschule" ;
+	ld:Kosten "3,50 - 6 Euro" ;
+	ld:Teilnehmerzahl "mind. 8" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:ErfinderKinder ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Umweltbildung" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ErfinderKinder.Technik>
+	ld:Zielgruppen "Schüler/-innen der Grundschule" ;
+	ld:Kosten "3,50 - 6 Euro" ;
+	ld:Teilnehmerzahl "mind. 8" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:ErfinderKinder ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Technik" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/FakultaetPhysikGeowis.Physik>
+	ld:Zielgruppen "Physikzirkel" ;
+	ld:Kosten "kostenfrei" ;
+	ld:Teilnehmerzahl "8 - 15" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:FakultaetPhysikGeowis ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Physik (Abiturstufe)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/FakultaetPhysikGeowis.Geographie>
+	ld:Zielgruppen "Projekttage / Exkursionen" ;
+	ld:Kosten "kostenfrei, ggf. Kopiergeld" ;
+	ld:Teilnehmerzahl "20 - 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:FakultaetPhysikGeowis ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Geographie (Sekundarstufe I und II)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/FakultaetPhysikGeowis.Fortbildung>
+	ld:Zielgruppen "Geographie Klasse 7 - 12" ;
+	ld:Kosten "kostenfrei, ggf. Kopiergeld" ;
+	ld:Teilnehmerzahl "30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:FakultaetPhysikGeowis ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Schulinterne Fortbildung" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UIZFoerderverein>
+	ld:Zielgruppen "verschiedene Zielgruppen je nach Angebot" ;
+	ld:relatedBundle mint2014:UIZFoerderverein ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "aktuelle Angebote unter www.umwelt-leipzig.de" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/GeoWerkstatt.Naturwissenschaften>
+	ld:Zielgruppen "Kindergartenkinder / Vorschule" ;
+	ld:Kosten "Verhandlungssache" ;
+	ld:Teilnehmerzahl "max. 15" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:GeoWerkstatt ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturwissenschaften" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/GeoWerkstatt.Geographie>
+	ld:Zielgruppen "Schüler/-innen aller Altersklassen und Schularten" ;
+	ld:Kosten "Verhandlungssache" ;
+	ld:Teilnehmerzahl "max. 15" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:GeoWerkstatt ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Geographie / Erdkunde" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/GerhardRoeslGmbH.Biologie1>
+	ld:Zielgruppen "Schüler/-innen der Grundschule" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "10 - 20" ;
+	ld:GTA "nein ca. 1 - 1,5 Std." ;
+	ld:relatedBundle mint2014:GerhardRoeslGmbH ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/GerhardRoeslGmbH.Biologie2>
+	ld:Zielgruppen "Lehrlinge Landschaftsgestaltung / Gartenbau" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "10 - 20" ;
+	ld:GTA "nein ca. 1 - 1,5 Std." ;
+	ld:relatedBundle mint2014:GerhardRoeslGmbH ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/GerhardRoeslGmbH.Biologie3>
+	ld:Zielgruppen "Kleingartenvereine" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "10 - 20" ;
+	ld:GTA "nein ca. 1 - 1,5 Std." ;
+	ld:relatedBundle mint2014:GerhardRoeslGmbH ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Greenpeace.Bildung>
+	ld:Zielgruppen "ab 3. Klasse" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "auf Anfrage" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:Greenpeace ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Bildung für nachhaltige Entwicklung" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Greenpeace.Vortraege>
+	ld:Zielgruppen "Erwachsene" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "auf Anfrage" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:Greenpeace ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Vorträge zu den Greenpeace-Themen: Klimawandel, Artenvielfalt, Energiewende, Postwachstum, Landwirtschaft, Meere, Wälder und Arktis" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/GruenerRing>
+	ld:relatedBundle mint2014:GruenerRing ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Angebote entsprechend unserem Leistungsangebot nach Absprache und Bedarf, darunter Ausstellungen, Führungen, Radtouren, Wanderungen - keine regelmäßigen Angebote." .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/HandsOnTechnology>
+	ld:Zielgruppen "Schüler/-innen im Alter von 10 bis 16 Jahren" ;
+	ld:Kosten "125 Euro je Team" ;
+	ld:Teilnehmerzahl "3 - 10 Teilnehmer/-innen je Team" ;
+	ld:relatedBundle mint2014:HandsOnTechnology ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Informatik, Mathematik, Physik & Technik" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/HausDerKleinenForscher>
+	ld:Zielgruppen "pädagogische Fach- und Lehrkräfte aus Kitas, Horten und Grundschulen" ;
+	ld:Kosten "25 Euro" ;
+	ld:Teilnehmerzahl "ca. 20" ;
+	ld:Zusatzinformation "6 stündiger Workshop" ;
+	ld:relatedBundle mint2014:HausDerKleinenForscher ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "siehe Leistungsangebot" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UFZ.Rohstoffe>
+	ld:Zielgruppen "für Oberschulen und Gymnasien ab Klasse 10" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "nach Absprache" ;
+	ld:relatedBundle mint2014:UFZ ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Nachwachsende Rohstoffe (Biologie/Chemie)" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UFZ.Genetik>
+	ld:Zielgruppen "für Oberschulen und Gymnasien ab Klasse 10" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "nach Absprache" ;
+	ld:relatedBundle mint2014:UFZ ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie (Genetik) DNA-Isolierung" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UFZ.Fotosynthese>
+	ld:Zielgruppen "für Oberschulen und Gymnasien ab Klasse 10" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "nach Absprache" ;
+	ld:relatedBundle mint2014:UFZ ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie (Fotosynthese) Untersuchung abiotischer Faktoren" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UFZ.Analytik>
+	ld:Zielgruppen "für Oberschulen und Gymnasien ab Klasse 10" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "nach Absprache" ;
+	ld:relatedBundle mint2014:UFZ ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Chemie (Analytik) Titration, Chromatographie" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UFZ.Energie>
+	ld:Zielgruppen "für Oberschulen und Gymnasien ab Klasse 10" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "nach Absprache" ;
+	ld:relatedBundle mint2014:UFZ ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Erneuerbare Energie (Physik/Chemie/Biologie)" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/HFTL.Mathematik>
+	ld:Zielgruppen "ab Klassenstufe 9" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "20 - 40" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:HFTL ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Mathematik" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/HFTL.Physik>
+	ld:Zielgruppen "für 4 - 8 Jahre ab Klassenstufe 9" ;
+	ld:Kosten "keine keine" ;
+	ld:Teilnehmerzahl "20 20 - 40" ;
+	ld:GTA "2 - 3 Stunden ja" ;
+	ld:relatedBundle mint2014:HFTL ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Physik" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/HFTL.Informatik>
+	ld:Zielgruppen "ab Klassenstufe 7 ab Klassenstufe 9" ;
+	ld:Kosten "5 Euro keine" ;
+	ld:Teilnehmerzahl "20 20 - 40" ;
+	ld:GTA "ca. 3 Stunden ja" ;
+	ld:relatedBundle mint2014:HFTL ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Informatik" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/HFTL.Elektrotechnik>
+	ld:Zielgruppen "ab Klassenstufe 9" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "20 - 40" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:HFTL ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Elektrotechnik" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/HFTL.Nachrichtentechnik>
+	ld:Zielgruppen "ab Klassenstufe 9" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "20 - 40" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:HFTL ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Nachrichtentechnik" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/IndustrieHandelskammer>
+	ld:Zielgruppen "ab Klassenstufe 6" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "10 - 30" ;
+	ld:GTA "optional, nur mit Partner" ;
+	ld:relatedBundle mint2014:IndustrieHandelskammer ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Technik, Wirtschaft" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/INSPIRATA.Mathematik>
+	ld:Zielgruppen "Kita, Hort, Grund-, Ober- und Förderschule; Gymnasium; Berufsbildung; Vereine" ;
+	ld:Kosten "2,50 bis 4 Euro pro Schüler/-in" ;
+	ld:Teilnehmerzahl "28" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:INSPIRATA ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Mathematik" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/INSPIRATA.Naturwissenschaften>
+	ld:Zielgruppen "Kita, Hort, Grund-, Ober- und Förderschule; Gymnasium; Berufsbildung; Vereine" ;
+	ld:Kosten "2,50 bis 4 Euro pro Schüler/-in" ;
+	ld:Teilnehmerzahl "28" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:INSPIRATA ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturwissenschaften" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/INSPIRATA.Technik>
+	ld:Zielgruppen "Kita, Hort, Grund-, Ober- und Förderschule; Gymnasium; Berufsbildung; Vereine" ;
+	ld:Kosten "2,50 bis 4 Euro pro Schüler/-in" ;
+	ld:Teilnehmerzahl "28" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:INSPIRATA ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Technik" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/INSPIRATA.Studienorientierung>
+	ld:Zielgruppen "Oberschule, Gymnasium" ;
+	ld:Kosten "nach Vereinbarung" ;
+	ld:Teilnehmerzahl "nach Rücksprache" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:INSPIRATA ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Berufs- und Studienorientierung" .		
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/INSPIRATA.Fortbildung>
+	ld:Zielgruppen "Kita- und Hort-Erzieher/-innen; Lehrer/-innen; Multiplikatoren; Eltern" ;
+	ld:Kosten "nach Vereinbarung" ;
+	ld:Teilnehmerzahl "nach Rücksprache" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:INSPIRATA ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Fortbildung - Weiterbildung, schulinterne Lehrerfortbildung (SCHILF), Pädagogischer Tag; andere Angebote gern auf Anfrage" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UFZKinderUmweltBus.Wasser>
+	ld:Zielgruppen "Vorschule bis 4. Klasse z. B. Sachkunde" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "nach Absprache" ;
+	ld:relatedBundle mint2014:UFZKinderUmweltBus ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Wasser - ein lebenswichtiges Element" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UFZKinderUmweltBus.Energie>
+	ld:Zielgruppen "Vorschule bis 4. Klasse z. B. Sachkunde" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "nach Absprache" ;
+	ld:relatedBundle mint2014:UFZKinderUmweltBus ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Energie - eine spannende Materie" .		
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UFZKinderUmweltBus.Lebensraeume>
+	ld:Zielgruppen "Vorschule bis 4. Klasse z. B. Sachkunde" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "nach Absprache" ;
+	ld:GTA "nach Absprache" ;
+	ld:relatedBundle mint2014:UFZKinderUmweltBus ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Lebensräume - die Vielfalt entdecken" .		
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Oekoschule.Naturerleben>
+	ld:Zielgruppen "(Vor-)Schüler/-innen, Pädagog/-innen, Familien ..." ;
+	ld:Kosten "3 Euro" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Oekoschule ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturerleben / Exkursionen" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Oekoschule.Artenschutz>
+	ld:Zielgruppen "Grundschule, Mittelschule, Förderschule, Gymnasium" ;
+	ld:Kosten "3 Euro" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Oekoschule ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Artenschutz / Biotopschutz" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Oekoschule.FairerHandel>
+	ld:Zielgruppen "Grundschule, Mittelschule, Förderschule, Gymnasium" ;
+	ld:Kosten "3 Euro" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Oekoschule ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Fairer Handel / regionale Produkte" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/SchuelergesellschaftMathematik>
+	ld:Zielgruppen "Klassen 2 - 12" ;
+	ld:Kosten "abhängig vom Angebot" ;
+	ld:relatedBundle mint2014:SchuelergesellschaftMathematik ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Mathematik" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/MaxPlanckInstitut>
+	ld:Zielgruppen "Klassenstufe 9 - 12, Gymnasium" ;
+	ld:Kosten "i.d.R. keine" ;
+	ld:Teilnehmerzahl "offen" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:MaxPlanckInstitut ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Schulvorträge Mathematik / Naturwissenschaften" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Naturkundemuseum.Biologie>
+	ld:Zielgruppen "alle" ;
+	ld:Kosten "0,50 Euro / 1 Euro" ;
+	ld:Teilnehmerzahl "max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Naturkundemuseum ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Naturkundemuseum.Geografie>
+	ld:Zielgruppen "alle" ;
+	ld:Kosten "0,50 Euro / 1 Euro" ;
+	ld:Teilnehmerzahl "max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Naturkundemuseum ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Geografie" .		
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Naturkundemuseum.Technik>
+	ld:Zielgruppen "alle" ;
+	ld:Kosten "0,50 Euro / 1 Euro" ;
+	ld:Teilnehmerzahl "max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Naturkundemuseum ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Technik / Physik" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Naturkundemuseum.Umweltbildung>
+	ld:Zielgruppen "alle" ;
+	ld:Kosten "0,50 Euro / 1 Euro" ;
+	ld:Teilnehmerzahl "max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Naturkundemuseum ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Umweltbildung" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Oekoloewe.Naturerleben>
+	ld:Zielgruppen "(Vor-)Schüler/-innen, Pädagog/-innen, Familien, Senior/-innen" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Oekoloewe ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturerleben / Exkursionen Auwald, Stadtgarten Connewitz, Dölitzer Wassermühle, Leipziger Stadtgebiet (Parks, Brachflächen, Seen etc.), Biobauernhöfe" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Oekoloewe.ErnaehrungLandwirtschaft>
+	ld:Zielgruppen "(Vor-)Schüler/-innen, Pädagog/-innen, Familien, Senior/-innen" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Oekoloewe ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Ernährung / Ökologische Landwirtschaft / Ökologisches Gärtnern Koch- und Backkurse" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Oekoloewe.Bildungskisten>
+	ld:Zielgruppen "(Vor-)Schüler/-innen, Pädagog/-innen, Familien, Senior/-innen" ;
+	ld:relatedBundle mint2014:Oekoloewe ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Bildungskisten zur Ausleihe z. B. Mobilität / Verkehr, Ernergie / Klima, Gewässerkunde, Gartenerlebnis" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Oekoloewe.Artenschutz>
+	ld:Zielgruppen "(Vor-)Schüler/-innen, Pädagog/-innen, Familien, Senior/-innen" ;
+	ld:relatedBundle mint2014:Oekoloewe ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Artenschutz /Biotopschutz Nistkastenwerkstatt, Streuobstwiesenpflege" .
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweNaturnah.SachunterrichtZitterpappel>
+	ld:Zielgruppen "Schüler/-innen Klasse 2 - 6" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:Teilnehmerzahl "mind. 10 max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweNaturnah ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Sachunterricht / Biologie Baumkunde von A wie Ahorn bis Z wie Zitterpappel" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweNaturnah.SachunterrichtWiesenleben>
+	ld:Zielgruppen "Schüler/-innen Klasse 3 - 7" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:Teilnehmerzahl "mind. 10 max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweNaturnah ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Sachunterricht / Biologie Wiesenleben" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweNaturnah.SachunterrichtEntdeckertour>
+	ld:Zielgruppen "Schüler/-innen Klasse 1 - 12" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:Teilnehmerzahl "mind. 10 max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweNaturnah ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Sachunterricht / Biologie Auwald-Entdeckertour" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweNaturnah.SachunterrichtWasserwelten>
+	ld:Zielgruppen "Schüler/-innen Klasse 2 - 12 Erwachsene" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:Teilnehmerzahl "mind. 10 max. 30" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:OekoloeweNaturnah ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Sachunterricht / Biologie Eisvogel, Bitterling und Co. - EinBlick in Leipziger Wasserwelten" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweLandwirtschaft.Landwirtschaft>
+	ld:Zielgruppen "Kindergartenkinder, Schülergruppen (alle Altersstufen), Multiplikator/-innen" ;
+	ld:Kosten "ab 3 Euro (je nach Thema und Materialeinsatz; bitte individuell anfragen)" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweLandwirtschaft ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Ökologische Landwirtschaft Was machen Bio-Bauernhöfe anders?" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweLandwirtschaft.Bauernhof>
+	ld:Zielgruppen "Kindergartenkinder, Schülergruppen (alle Altersstufen), Multiplikator/-innen" ;
+	ld:Kosten "ab 3 Euro (je nach Thema und Materialeinsatz; bitte individuell anfragen)" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:OekoloeweLandwirtschaft ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Auf dem Bauernhof Welche Tiere leben auf dem Bauernhof?" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweLandwirtschaft.Backstube>
+	ld:Zielgruppen "Kindergartenkinder, Schülergruppen (alle Altersstufen), Multiplikator/-innen" ;
+	ld:Kosten "ab 3 Euro (je nach Thema und Materialeinsatz; bitte individuell anfragen)" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweLandwirtschaft ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Vom Getreidefeld in die Backstube Wie entstehen aus Getreide leckere Backwaren?" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweLandwirtschaft.Stall>
+	ld:Zielgruppen "Kindergartenkinder, Schülergruppen (alle Altersstufen), Multiplikator/-innen" ;
+	ld:Kosten "ab 3 Euro (je nach Thema und Materialeinsatz; bitte individuell anfragen)" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:OekoloeweLandwirtschaft ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Im Stall Welche Tiere geben Milch und wie wird sie verarbeitet?" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweLandwirtschaft.Gewaechshaus>
+	ld:Zielgruppen "Kindergartenkinder, Schülergruppen (alle Altersstufen), Multiplikator/-innen" ;
+	ld:Kosten "ab 3 Euro (je nach Thema und Materialeinsatz; bitte individuell anfragen)" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweLandwirtschaft ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Auf dem Gemüsefeld und im Gewächshaus Was wächst in unserer Region?" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweLandwirtschaft.Obstgarten>
+	ld:Zielgruppen "Kindergartenkinder, Schülergruppen (alle Altersstufen), Multiplikator/-innen" ;
+	ld:Kosten "ab 3 Euro (je nach Thema und Materialeinsatz; bitte individuell anfragen)" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweLandwirtschaft ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Im Obstgarten Wer sind Relinda und Renette?" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweLandwirtschaft.Imker>
+	ld:Zielgruppen "Kindergartenkinder, Schülergruppen (alle Altersstufen), Multiplikator/-innen" ;
+	ld:Kosten "ab 3 Euro (je nach Thema und Materialeinsatz; bitte individuell anfragen)" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:OekoloeweLandwirtschaft ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Beim Imker Wie machen Bienen Honig?" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweLandwirtschaft.Schulkueche>
+	ld:Zielgruppen "Kindergartenkinder, Schülergruppen (alle Altersstufen), Multiplikator/-innen" ;
+	ld:Kosten "ab 3 Euro (je nach Thema und Materialeinsatz; bitte individuell anfragen)" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweLandwirtschaft ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "In der Schulküche Wie können wir ein saisonales Gericht zubereiten?" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweLandwirtschaft.Markt>
+	ld:Zielgruppen "Kindergartenkinder, Schülergruppen (alle Altersstufen), Multiplikator/-innen" ;
+	ld:Kosten "ab 3 Euro (je nach Thema und Materialeinsatz; bitte individuell anfragen)" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweLandwirtschaft ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Im Hofladen und auf dem Markt Woran erkennt man eigentlich Bio-Produkte?" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Phyllodrom.Regenwald>
+	ld:Zielgruppen "Kita, Hort, Grund-, Ober- und Förderschule, Gymnasium, Berufsbildung, Studierende, Familien, Senior/-innen, Vereine" ;
+	ld:Kosten "2 Euro" ;
+	ld:Teilnehmerzahl "30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Phyllodrom ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Regenwald und Tropen" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Phyllodrom.Zoologie>
+	ld:Zielgruppen "Kita, Hort, Grund-, Ober- und Förderschule, Gymnasium, Berufsbildung, Studierende, Familien, Senior/-innen, Vereine" ;
+	ld:Kosten "2 Euro" ;
+	ld:Teilnehmerzahl "30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Phyllodrom ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Zoologie /Botanik (Biologie) Themenvielfalt von allgemein bis Regenwald" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Phyllodrom.Voelkerkunde>
+	ld:Zielgruppen "Kita, Hort, Grund-, Ober- und Förderschule, Gymnasium, Berufsbildung, Studierende, Familien, Senior/-innen, Vereine" ;
+	ld:Kosten "2 Euro" ;
+	ld:Teilnehmerzahl "30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Phyllodrom ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Völkerkunde (Ethik /Religion) Menschen in den Regenwäldern: Alltag, Kultur, Glauben" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Phyllodrom.Geografie>
+	ld:Zielgruppen "Hort, Grund-, Ober- und Förderschule, Gymnasium, Berufsbildung, Studierende, Familien, Senior/-innen, Vereine" ;
+	ld:Kosten "2 Euro" ;
+	ld:Teilnehmerzahl "30" ;
+	ld:relatedBundle mint2014:Phyllodrom ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Geografie" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Phyllodrom.Oekologie>
+	ld:Zielgruppen "Kita, Hort, Grund-, Ober- und Förderschule, Gymnasium, Berufsbildung, Studierende, Familien, Senior/-innen, Vereine" ;
+	ld:Kosten "2 Euro" ;
+	ld:Teilnehmerzahl "30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Phyllodrom ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Ökologie und Nachhaltigkeit Themenvielfalt von Umweltschutz bis Regenwaldökologie" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Phyllodrom.Bionik>
+	ld:Zielgruppen "Hort, Grund-, Ober- und Förderschule, Gymnasium, Berufsbildung, Familien, Senior/-innen, Vereine" ;
+	ld:Kosten "2 Euro" ;
+	ld:Teilnehmerzahl "30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Phyllodrom ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Bionik" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ScholaOecologica.Naturerleben>
+	ld:Zielgruppen "Grundschule" ;
+	ld:Kosten "4 Euro" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ScholaOecologica ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturerleben / Exkursionen Wiese, Erdforscher, Spur der Steine, Wald" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ScholaOecologica.Artenschutz>
+	ld:Zielgruppen "Grundschule, KITA" ;
+	ld:Kosten "4 Euro" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ScholaOecologica ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Artenschutz / Biotopschutz Freddy Fledermaus, Teich, Schnecke Berta" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ScholaOecologica.Ernaehrung>
+	ld:Zielgruppen "Grundschule" ;
+	ld:Kosten "1 Euro" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ScholaOecologica ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Ernährung Milch zur Butter und Getreide als Selbstdurchführung im Stationsbetrieb" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ScholaOecologica.Rohstoffe>
+	ld:Zielgruppen "Grundschule" ;
+	ld:Kosten "4 Euro" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ScholaOecologica ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Nachwachsende Rohstoffe /Ökologisches Bauen Lehmbauspiel" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ScholaOecologica.Weihnachtswerkstatt>
+	ld:Zielgruppen "Grundschule, KITA" ;
+	ld:Kosten "5 - 12 Euro" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:ScholaOecologica ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Weihnachtswerkstatt Kreativ- oder Backtag oder Kombi inkl. Mittagessen" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/ScholaOecologica.Sinne>
+	ld:Zielgruppen "Grundschule, KITA" ;
+	ld:Kosten "5 Euro" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:ScholaOecologica ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Mit allen Sinnen Erdenkinder (Grünschuh-Projekt)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Schulbiologiezentrum.Sachkunde>
+	ld:Zielgruppen "Schüler/-innen der Klassen 1 - 12" ;
+	ld:relatedBundle mint2014:Schulbiologiezentrum ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Sachkunde" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Schulbiologiezentrum.Heimatkunde>
+	ld:Zielgruppen "Kinder" ;
+	ld:relatedBundle mint2014:Schulbiologiezentrum ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Heimatkunde" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Schulbiologiezentrum.Biologie>
+	ld:Zielgruppen "Familien" ;
+	ld:relatedBundle mint2014:Schulbiologiezentrum ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweStadtgartenConnewitz.Entdeckertour>
+	ld:Zielgruppen "Schüler/-innen Klasse 1 - 5" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:Teilnehmerzahl "mind. 10 max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweStadtgartenConnewitz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Stadtgarten-Entdeckertour (Sachunterricht / Biologie)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweStadtgartenConnewitz.Kraeuterjahr>
+	ld:Zielgruppen "Schüler/-innen Klasse 1 - 5" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:Teilnehmerzahl "mind. 10 max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweStadtgartenConnewitz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Mit allen Sinnen durch das Kräuterjahr (Sachunterricht)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweStadtgartenConnewitz.Naturschutz>
+	ld:Zielgruppen "Schüler/-innen Klasse 1 - 5" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:Teilnehmerzahl "mind. 10 max. 30" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:OekoloeweStadtgartenConnewitz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturschutz ganz praktisch (Sachunterricht / Biologie)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweStadtgartenConnewitz.Gaertnern>
+	ld:Zielgruppen "Schüler/-innen Klasse 6, Erwachsene" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:Teilnehmerzahl "mind. 10 max. 30" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:OekoloeweStadtgartenConnewitz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturnahes Gärtnern (Biologie)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/OekoloeweStadtgartenConnewitz.Gartenwildpflanzen>
+	ld:Zielgruppen "Schüler/-innen Klasse 6, Erwachsene" ;
+	ld:Kosten "auf Anfrage (je nach Thema und Materialeinsatz)" ;
+	ld:Teilnehmerzahl "mind. 10 max. 30" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:OekoloeweStadtgartenConnewitz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Gartenwildpflanzen - schmackhaft und heilsam (Biologie)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/StadtNameLand.Geografie>
+	ld:Zielgruppen "ab 10 Jahre" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "15" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:StadtNameLand ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Geografie/Sachkunde" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/StadtNameLand.Naturwissenschaften>
+	ld:Zielgruppen "ab 10 Jahre" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "25" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:StadtNameLand ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturwissenschaften" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/StadtNameLand.Biologie>
+	ld:Zielgruppen "ab 7 Jahre" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "25" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:StadtNameLand ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/WildernessInternational.Naturerleben>
+	ld:Zielgruppen "Schüler/-innen Klassen 9 - 11" ;
+	ld:Kosten "Beteiligung 400 - 500 Euro" ;
+	ld:Teilnehmerzahl "8 - 10" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:WildernessInternational ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Naturerleben / Exkursionen Stipendiatenreisen an Kanadas Westküste mit Projektarbeiten zu Natur und Kultur vor Ort, dazu Funktion als Umweltbotschafter an den Schulen" .	
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/WildernessInternational.Artenschutz>
+	ld:Zielgruppen "Kindergärten, Grundschulen und weiterführende Schulen (Schwerpunkt: Klassen 4 - 7)" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "ca. 1000 Teilnehmer pro Veranstaltung" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:WildernessInternational ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Artenschutz / Biotopschutz Organisation und Durchführung von Sponsorenläufen (zugunsten von Wildnisgebieten und von Umweltbildungsprojekten der teilnehmenden Schulen)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/WildernessInternational.Sonstige>
+	ld:Kosten "nach Vereinbarung" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:WildernessInternational ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Sonstige Multimediavorträge und Aktionstage zum Thema temperierte Regenwälder" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/WildernessInternational.OekologischesJahr>
+	ld:Zielgruppen "ab 16 Jahren" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "3" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:WildernessInternational ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Freiwilliges Ökologisches Jahr Organisation, Betreuung und Auswertung der Sponsorenläufe, Multimediavorträge an Schulen, lokale Umweltprojekte mit Kindern und Jugendlichen" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Umweltbibliothek.Medien>
+	ld:Zielgruppen "alle Alters- und Zielgruppen" ;
+	ld:Kosten "keine" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:Umweltbibliothek ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Informationen und Medien zu allen umweltrelevanten Themenbereichen u. a. Arten- und Biotopschutz / Naturerleben / Energie / Klimaschutz / Mobilität und Verkehr / Abfall / Lärm / Luftschadstoffe / Ernährung / Landwirtschaft / Ökologisches Gärtnern / Nachwachsende Rohstoffe / Ökologisches Bauen / Globalisierung / Fairer Handel / Gesundheit / Leipzig und Sachsen" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Umweltbibliothek.Medienkisten>
+	ld:Zielgruppen "Pädagog/-innen, Personen der Bildungsarbeit mit Kindern ab Kindergartenalter bis Schule Sekundarstufe II" ;
+	ld:Kosten "10,00 Euro Ausleihgebühr pro Medienkiste" ;
+	ld:GTA "zur eigenen Gestaltung" ;
+	ld:relatedBundle mint2014:Umweltbibliothek ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Medienkisten für den pädagogischen Einsatz in Kindergarten, Schule und außerschulische Bildung" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UIZAmtFürUmweltschutz.Fachsprechstunden>
+	ld:Zielgruppen "Erwachsene, Student/-innen, Schüler/-innen ab Klasse 8" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "unbegrenzt" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:UIZAmtFuerUmweltschutz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Regelmäßige Fachsprechstunden (Biologie, Physik, Geografie, Umweltbildung)" .	
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UIZAmtFürUmweltschutz.Informationen>
+	ld:Zielgruppen "Schüler/-innen (und Erwachsene)" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "unbegrenzt" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:UIZAmtFuerUmweltschutz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Bereitstellung von Informationen und Materialien (Biologie, Physik, Geografie, Umweltbildung)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UIZAmtFürUmweltschutz.Ausstellungen>
+	ld:Zielgruppen "Schüler/-innen Klassen 1 - 12, Student/-innen, Familien Erwachsene" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "unbegrenzt" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:UIZAmtFuerUmweltschutz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Regelmäßig wechselnde Ausstellungen (Biologie, Physik, Geografie, Umweltbildung)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UIZAmtFürUmweltschutz.Verleih>
+	ld:Zielgruppen "Klassenstufen 1 - 4" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "unbegrenzt" ;
+	ld:GTA "ggf." ;
+	ld:relatedBundle mint2014:UIZAmtFuerUmweltschutz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Verleih von CO2- und Energie-Messgeräten, Insektenbetrachtern und Schullizenzen für das PC-Spiel „Mission Blue Planet“ (Biologie, Physik, Umweltbildung, Geografie,Informatik)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/UIZAmtFürUmweltschutz.Medienkisten>
+	ld:Zielgruppen "bis Klasse 10, auch berufsorientierend" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "unbegrenzt" ;
+	ld:GTA "ggf." ;
+	ld:relatedBundle mint2014:UIZAmtFuerUmweltschutz ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Vorstellung oder Verleih von Medienkisten „Nachwachsende Rohstoffe“ und „Ökologisches Bauen“ (Biologie, Physik, Umweltbildung, Umweltbildung)" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/VDI.Schullabor>
+	ld:Zielgruppen "Lernsysteme zur Vermittlung von Grundlagen der Elektrotechnik und Elektronik im Rahmen des schulischen und außerschulischen Unterrichts für alle Bildungsprofile ab Primarstufe bis Sekundarstufe II, für Interessensgruppen, Arbeitsgemeinschaften, Student/-innen und Lehrer/-innen." ;
+	ld:Kosten "nach Anfrage" ;
+	ld:Teilnehmerzahl "10" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:VDI ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Elektrotechnisches Schullabor E-Lab" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/VDI.Futurelab>
+	ld:Zielgruppen "„Futurelab“ steht Schülergruppen der Primarstufe bis zur Sekundarstufe II und Interessensgruppen zu den Technologiethemen Bionik, Robotik, Mechatronik, Bio- und Umwelttechnologie, Nanotechnologie, Optische Technologien, Moderne Werkstoffe, Informations-, Kommunikations- und Medientechnik sowie E-Mobilität auf der Grundlage ausgearbeiteter und altersgerechter Programme unter fachlicher Anleitung zur Nutzung zur Verfügung." ;
+	ld:Teilnehmerzahl "15" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:VDI ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Futurelab" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/VDI.Porsche>
+	ld:Zielgruppen "Die Porsche-Schülerwerkstatt bietet Technikbildung, Berufs- und Studienorientierung am Beispiel der Fahrzeugtechnik an. Angebote sind u. a. der „Porsche- Pass“ sowie die Porsche-Camps, die von interessierten Jugendlichen ab 13 Jahre in der schulfreien Zeit individuell aber auch von Schülergruppen der Sekundratsufe I und II schulbegleitend genutzt werden können. Für die Primarstufe steht ebenfalls ein Grundprogramm zur Verfügung." ;
+	ld:Kosten "nach Anfrage" ;
+	ld:Teilnehmerzahl "10" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:VDI ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Porsche-Schülerwerkstatt" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/VDI.AQUA>
+	ld:Zielgruppen "Vermittlung von allgemeinem, fachspezifischem, fächerverbindendem, fächerübergreifendem und multiperspektivischem Wissen zum Thema „Wasser“ durch entdeckendes Lernen auf Grundlage der sächsischen Lehrpläne. Das Projekt AQUA umfaßt folgende Themengebiete: 1. Wasser und seine Eigenschaften, 2. Wasserhaushalt und Klima, 3. Wasser und Leben, 4. Wasser und seine Nutzung, 5. Wasser und Umweltschutz. Zielgruppe sind Schüler/-innen der Primarstufe, der Sekundarstufe I und II, Interessengruppen und Lehrer/-innen." ;
+	ld:Kosten "nach Anfrage" ;
+	ld:Teilnehmerzahl "15" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:VDI ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Pojekt AQUA" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/VDI.Schlaugefragt>
+	ld:Zielgruppen "Angebote zur frühkindlichen technischen Bildung, bestehend aus verschiedenen Bausteinen für die Elementar- und Primarstufe. Themengebiete sind u. a. Wasser und Umwelt, Energie bewusst, Netzmaus, Technische Geräte und Objekte praktisch erklärt, Werkstoff Kunststoff, Mein Auto fährt auch ohne Benzin u.a.m." ;
+	ld:Kosten "nach Anfrage" ;
+	ld:Teilnehmerzahl "15 - 20" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:VDI ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "„Schlau gefragt“" .
+
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Wildpark.Willi>
+	ld:Zielgruppen "Grundschule" ;
+	ld:Kosten "20 Euro pro Stunde" ;
+	ld:Teilnehmerzahl "10" ;
+	ld:GTA "nur GTA" ;
+	ld:relatedBundle mint2014:Wildpark ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Forschen mit Willi (Sachkunde)" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Wildpark.FuchsRehWildschwein>
+	ld:Zielgruppen "Grundschule 3. /4. Klasse" ;
+	ld:Kosten "3 Euro" ;
+	ld:Teilnehmerzahl "28" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:Wildpark ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Fuchs, Reh, Wildschwein" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Wildpark.Wiese>
+	ld:Zielgruppen "Grundschule 2. Klasse" ;
+	ld:Kosten "3 Euro" ;
+	ld:Teilnehmerzahl "28" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:Wildpark ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Lebensraum Wiese" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Wildpark.Wildparkfuehrungen>
+	ld:Zielgruppen "alle Schularten" ;
+	ld:Kosten "2 Euro" ;
+	ld:Teilnehmerzahl "28" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:Wildpark ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Allgemeine Wildparkführungen" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Wildpark.Wald>
+	ld:Zielgruppen "Grundschule 3. /4. Klasse Mittelschule und Gymnasium 6. Klasse" ;
+	ld:Kosten "2 Euro" ;
+	ld:Teilnehmerzahl "28" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:Wildpark ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Lebensraum Wald" .		
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Vogelschutzlehrstaette>
+	ld:Zielgruppen "Klassenstufen 1 - 8" ;
+	ld:Kosten "0,50 Euro" ;
+	ld:Teilnehmerzahl "ca. 20" ;
+	ld:GTA "nein" ;
+	ld:relatedBundle mint2014:Vogelschutzlehrstaette ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie / Heimatkunde" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Volkshochschule.Studienvorbereitungen>
+	ld:Zielgruppen "Schüler/-innen ab Klasse 10" ;
+	ld:Kosten "ab 23 Euro" ;
+	ld:Teilnehmerzahl "ab 6" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Volkshochschule ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Prüfungs- und Studienvorbereitungen in unterschiedlichen Unterrichtsfächern" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Volkshochschule.NaturUmwelt>
+	ld:Zielgruppen "Schüler/-innen, Erwachsene, Familien" ;
+	ld:Kosten "je nach Angebot" ;
+	ld:Teilnehmerzahl "ab 8" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Volkshochschule ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Unterschiedliche Angebote im Fachbereich Natur und Umwelt" .		
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Zooschule.Biologie>
+	ld:Zielgruppen "Schulklassen / Kurse der Klassenstufen 5 - 12" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "Klassenstärke" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Zooschule ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Biologie" .	
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Zooschule.Sachunterricht>
+	ld:Zielgruppen "Schulklassen der Klassenstufe (1) 2 - 4" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "Klassenstärke" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Zooschule ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Sachunterricht" .		
+	
+<http://leipzig-data.de/Data/MINT-2014/Schwerpunkt/Zooschule.Faecherverbindend>
+	ld:Zielgruppen "Schulklassen / Kurse der Klassenstufen 2 - 12" ;
+	ld:Kosten "keine" ;
+	ld:Teilnehmerzahl "Klassenstärke" ;
+	ld:GTA "ja" ;
+	ld:relatedBundle mint2014:Zooschule ;
+	a mint2014:Schwerpunkt ;
+	rdfs:label "Fächerverbindender Unterricht" .
