@@ -1,0 +1,249 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+
+<http://leipzig-data.de/Data/Organigramm.UniLeipzig> a owl:Ontology ;
+   rdfs:label "Organigramm der Uni Leipzig" ;
+   cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://leipzig-data.de/Data/UniLeipzig>
+    a org:FormalOrganization ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.26>;
+    foaf:phone "+49 341 97-108"; 
+    rdfs:label "Universität Leipzig" .
+
+<http://leipzig-data.de/Data/UniLeipzig/BioFak>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Bruederstrasse.32> ;
+    foaf:phone "+49 341 97-36700"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Fakultät für Biowissenschaften, Pharmazie und Psychologie" .
+
+<http://leipzig-data.de/Data/UniLeipzig/ChemFak>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.29>;
+    foaf:phone "+49 341 97-36000"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Fakultät für Chemie und Mineralogie" .
+
+<http://leipzig-data.de/Data/UniLeipzig/ErzWissFak>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.22B>;
+    foaf:phone "+49 341 97-31400"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Erziehungswissenschaftliche Fakultät" .
+
+<http://leipzig-data.de/Data/UniLeipzig/FMI>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
+    foaf:phone "+49 341 97-32100"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Fakultät für Mathematik und Informatik" .
+
+<http://leipzig-data.de/Data/UniLeipzig/SozPhilFak>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Beethovenstrasse.15> ;
+    foaf:phone "+49 341 97-35600"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Fakultät für Sozialwissenschaften und Philosophie" .
+
+<http://leipzig-data.de/Data/UniLeipzig/GKO>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Schillerstrasse.6>;
+    foaf:phone "+49 341 97-37000"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Fakultät für Geschichte, Kunst- und Orientwissenschaften" .
+
+<http://leipzig-data.de/Data/UniLeipzig/JurFak>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Burgstrasse.27>;
+    foaf:phone "+49 341 97-35100"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Juristenfakultät" .
+
+<http://leipzig-data.de/Data/UniLeipzig/MedFak>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Liebigstrasse.27B> ;
+    foaf:phone "+49 341 97-15930"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Medizinische Fakultät" .
+
+<http://leipzig-data.de/Data/UniLeipzig/PhilFak>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Beethovenstrasse.15>;
+    foaf:phone "+49 341 97-37300"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Philologische Fakultät" .
+
+<http://leipzig-data.de/Data/UniLeipzig/PhysFak>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Linnestrasse.5>;
+    foaf:phone "+49 341 97-32400"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Fakultät für Biowissenschaften, Pharmazie und Psychologie" .
+
+<http://leipzig-data.de/Data/UniLeipzig/SpoFa>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Jahnallee.59> ;
+    foaf:phone "+49 341 97-31600"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Sportwissenschaftliche Fakultät" .
+
+<http://leipzig-data.de/Data/UniLeipzig/TheoFak>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.3>;
+    foaf:phone "+49 341 97-35400"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Theologische Fakultät" .
+
+<http://leipzig-data.de/Data/UniLeipzig/VetMed>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.AndenTierkliniken.19> ;
+    foaf:phone "+49 341 97-108"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Veterinärmedizinische Fakultät" .
+
+<http://leipzig-data.de/Data/UniLeipzig/WiFa>
+    a ld:Fakultaet ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.12> ;
+    foaf:phone "+49 341 97-33500"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Wirtschaftswissenschaftliche Fakultät" .
+
+<http://leipzig-data.de/Data/UniLeipzig/BBZ>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.5> ;
+    foaf:phone "+49 341 97-31300"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Biotechnologisch-Biomedizinisches Zentrum" .
+
+<http://leipzig-data.de/Data/UniLeipzig/DLL>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Waechterstrasse.34> ;
+    foaf:phone "+49 341 97-30300"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Deutsches Literaturinstitut Leipzig" .
+
+<http://leipzig-data.de/Data/UniLeipzig/iDiv>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress  <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.5E>;
+    foaf:phone "+49 341 97-33105"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Deutsches Zentrum für integrative Biodiversitätsforschung (iDiv) Halle-Jena-Leipzig" .
+
+<http://leipzig-data.de/Data/UniLeipzig/Frankreichzentrum>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomaskirchhof.20>;
+    foaf:phone "+49 341 97-30264"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Frankreichzentrum" .
+
+<http://leipzig-data.de/Data/UniLeipzig/HDS>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Waechterstrasse.30> ;
+    foaf:phone "+49 341 97-30045"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Hochschuldidaktisches Zentrum Sachsen" .
+
+<http://leipzig-data.de/Data/UniLeipzig/Kustodie>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goethestrasse.2>;
+    foaf:phone "+49 341 97-30170"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Kustodie" .
+
+<http://leipzig-data.de/Data/UniLeipzig/UnivMusik>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Goldschmidtstrasse.12> ;
+    foaf:phone "+49 341 97-30190"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Leipziger Universitätsmusik" .
+
+<http://leipzig-data.de/Data/UniLeipzig/RAL>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Burgstrasse.21> ;
+    foaf:phone "+49 341 97-30234"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Research Academy Leipzig" .
+
+<http://leipzig-data.de/Data/UniLeipzig/SIKT>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Philipp-Rosenthal-Strasse.55> ;
+    foaf:phone "+49 341 97-39600"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Sächsischer Inkubator für klinische Translation (SIKT)" .
+
+<http://leipzig-data.de/Data/UniLeipzig/Sprachenzentrum>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goethestrasse.2> ;
+    foaf:phone "+49 341 97-30270"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Sprachenzentrum" .
+
+<http://leipzig-data.de/Data/UniLeipzig/Studienkolleg>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Lumumbastrasse.4> ;
+    foaf:phone "+49 341 97-30242"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Studienkolleg Sachsen" .
+
+<http://leipzig-data.de/Data/UniLeipzig/Universitaetsarchiv>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.PragerStrasse.6>;
+    foaf:phone "+49 341 97-30200"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Universitätsarchiv" .
+
+<http://leipzig-data.de/Data/UniLeipzig/UB>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Beethovenstrasse.6> ;
+    foaf:phone "+49 341 97-30577"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Universitätsbibliothek" .
+
+<http://leipzig-data.de/Data/UniLeipzig/URZ>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
+    foaf:phone "+49 341 97-33300"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Universitätsrechenzentrum" .
+
+<http://leipzig-data.de/Data/UniLeipzig/ZfH>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress  <http://leipzig-data.de/Data/04109.Leipzig.Jahnallee.59> ;
+    foaf:phone "+49 341 97-30320"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Zentrum für Hochschulsport" .
+
+<http://leipzig-data.de/Data/UniLeipzig/ZLS>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Dittrichring.5> ;
+    foaf:phone "+49 341 "; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Zentrum für Lehrerbildung und Schulforschung" .
+
+<http://leipzig-data.de/Data/UniLeipzig/ZMK>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Emil-Fuchs-Strasse.1> ;
+    foaf:phone "+49 341 97-35850"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Zentrum für Medien und Kommunikation" .
+
+<http://leipzig-data.de/Data/UniLeipzig/Rektorat>
+    a ld:ZentraleEinrichtung ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.26>;
+    foaf:phone "+49 341 97-30000"; 
+    org:unitOf <http://leipzig-data.de/Data/UniLeipzig>; 
+    rdfs:label "Rektorat" .
+
+ld:Fakultaet rdfs:subClassOf org:OrganizationalUnit ; 
+rdfs:label "Fakultät der Universität Leipzig" .
+
+ld:ZentraleEinrichtung rdfs:subClassOf org:OrganizationalUnit ; 
+rdfs:label "Zentrale Einrichtung der Universität Leipzig" .
