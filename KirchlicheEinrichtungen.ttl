@@ -1,3 +1,6 @@
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://leipzig-data.de/Data/KirchlicheEinrichtungen/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,44 +11,100 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://leipzig-data.de/Data/KirchlicheEinrichtungen/> a owl:Ontology ;
-rdfs:label "Kirchliche Einrichtungen" ;
-cc:attributionURL <http://leipzig-data.de> ;
-cc:attributionName "The Leipzig Open Data Project" ;
-cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+<http://leipzig-data.de/Data/KE/BistumDresdenMeissen/EheFamilienberatung> ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Loehrstrasse.14> ;
+                                                                          a org:Organization ;
+                                                                          rdfs:label "Ehe-, Familien- und Lebensberatung im Bistum Dresden-Meißen Beratungsstelle Leipzig" ;
+                                                                          ld:hasCategories "Kinder, Jugend und Familie, Frauenvereine" ;
+                                                                          ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Nord> ;
+                                                                          ld:hasStadtId "458" .
 
-<http://leipzig-data.de/Data/KE/Dekanatsjugendseelsorge> a org:Organization ;
-rdfs:label "Dekanatsjugendseelsorge" ;
-ld:hasSupplierNumber "079" .
+<http://leipzig-data.de/Data/KE/Burgarbeit> ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Hermannstrasse.8> ;
+                                            a ld:Verein ;
+                                            rdfs:label "'Burgarbeit' christliches Sozialwerk und Lebenshilfe e.V." ;
+                                            ld:hasCategories "Kinder, Jugend und Familie, Wohnprojekte" ;
+                                            ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Connewitz> ;
+                                            ld:hasStadtId "679" .
 
-<http://leipzig-data.de/Data/KE/DiakonischesWerk> a org:Organization ;
-rdfs:label "Diakonisches Werk, Innere Mission" ;
-foaf:homepage <http://www.diakonie-leipzig.de> ;
-ld:hasSupplierNumber "030" .
+<http://leipzig-data.de/Data/KE/Dekanatsjugendseelsorge> ld:hasSupplierNumber "079" ;
+                                                         a org:Organization ;
+                                                         rdfs:label "Dekanatsjugendseelsorge" .
 
-<http://leipzig-data.de/Data/KE/EvFreiKirche> a org:Organization ;
-rdfs:label "Ev.-Freikirchliche Gemeinde" ;
-ld:hasSupplierNumber "140" .
+<http://leipzig-data.de/Data/KE/DiakonieAmThonberg> ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Eichlerstrasse.2> ;
+                                                    a ld:Unternehmen ;
+                                                    rdfs:label "Diakonische Leipziger gGmbH - Diakonie am Thonberg" ;
+                                                    ld:hasCategories "Behindertenvereine" ;
+                                                    ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Reudnitz-Thonberg> ;
+                                                    ld:hasStadtId "241" .
 
-<http://leipzig-data.de/Data/KE/EvLuthJugend> a org:Organization ;
-rdfs:label "Evangelisch-lutherische Jugend" ;
-ld:hasSupplierNumber "083" .
+<http://leipzig-data.de/Data/KE/DiakonischesWerk> ld:hasSupplierNumber "030" ;
+                                                  foaf:homepage <http://www.diakonie-leipzig.de> ;
+                                                  a org:Organization ;
+                                                  rdfs:label "Diakonisches Werk, Innere Mission" .
 
-<http://leipzig-data.de/Data/KE/EvMethKirche> a org:Organization ;
-rdfs:label "Evangelisch-methodistische Kirche" ;
-ld:hasSupplierNumber "123" .
+<http://leipzig-data.de/Data/KE/EvFreiKirche> ld:hasSupplierNumber "140" ;
+                                              a org:Organization ;
+                                              rdfs:label "Ev.-Freikirchliche Gemeinde" .
 
-<http://leipzig-data.de/Data/KE/EvRefKirche> a org:Organization ;
-rdfs:label "Evangelisch-reformierte Kirche zu Leipzig" ;
-ld:hasSupplierNumber "124" .
+<http://leipzig-data.de/Data/KE/EvLuthJugend> ld:hasSupplierNumber "083" ;
+                                              a org:Organization ;
+                                              rdfs:label "Evangelisch-lutherische Jugend" .
 
-<http://leipzig-data.de/Data/KE/Heilsarmee> a org:Organization ;
-rdfs:label "Die Heilsarmee" ;
-ld:hasSupplierNumber "075" .
+<http://leipzig-data.de/Data/KE/EvMethKirche> ld:hasSupplierNumber "123" ;
+                                              a org:Organization ;
+                                              rdfs:label "Evangelisch-methodistische Kirche" .
 
-<http://leipzig-data.de/Data/KE/HilfswerkAlexandra> a org:Organization ;
-rdfs:label "Deutsch-Russisches Hilfswerk zur Heiligen Alexandra" ;
-ld:hasSupplierNumber "305" .
+<http://leipzig-data.de/Data/KE/EvRefKirche> ld:hasSupplierNumber "124" ;
+                                             a org:Organization ;
+                                             rdfs:label "Evangelisch-reformierte Kirche zu Leipzig" .
+
+<http://leipzig-data.de/Data/KE/EvangelischLutherischesMissionswerkLeipzig> ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Paul-List-Strasse.19> ;
+                                                                            a ld:Verein ;
+                                                                            rdfs:label "Evangelisch-Lutherisches Missionswerk Leipzig e.V." ;
+                                                                            ld:hasCategories "Interkulturelle Vereine, Kinder, Jugend und Familie" ;
+                                                                            ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Sued> ;
+                                                                            ld:hasStadtId "248" .
+
+<http://leipzig-data.de/Data/KE/EvangelischeJugendLeipzig> ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Burgstrasse.1-5> ;
+                                                           a org:Organization ;
+                                                           rdfs:label "Evangelische Jugend Leipzig" ;
+                                                           ld:hasCategories "Kinder, Jugend und Familie, Bildung und Freizeit, Jugendsozialarbeit, Musik" ;
+                                                           ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Ueberregional> ;
+                                                           ld:hasStadtId "556" .
+
+<http://leipzig-data.de/Data/KE/HeiligeAlexandra> ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.DresdnerStrasse.82> ;
+                                                  a org:Organization ;
+                                                  rdfs:label "Deutsch-Russisches Hilfswerk zur Heiligen Alexandra" ;
+                                                  ld:hasCategories "Kulturvereine, Interkulturelle Vereine, Kulturvereine, Kinder- und Jugendkultur, Musik, Sozio- und Stadtteilkultur" ;
+                                                  ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Reudnitz-Thonberg> ;
+                                                  ld:hasStadtId "423" .
+
+<http://leipzig-data.de/Data/KE/Heilsarmee> ld:hasSupplierNumber "075" ;
+                                            a org:Organization ;
+                                            rdfs:label "Die Heilsarmee" .
+
+<http://leipzig-data.de/Data/KE/HilfswerkAlexandra> ld:hasSupplierNumber "305" ;
+                                                    a org:Organization ;
+                                                    rdfs:label "Deutsch-Russisches Hilfswerk zur Heiligen Alexandra" .
+
+<http://leipzig-data.de/Data/KE/KirchlicheErwerbsloseninitiative> ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.5> ;
+                                                                  a org:Organization ;
+                                                                  rdfs:label "KEL - Kirchliche Erwerbsloseninitiative Leipzig in Trägerschaft des Ev.-Luth. Kirchenbezirkes Leipzig" ;
+                                                                  ld:hasCategories "Frauenvereine" ;
+                                                                  ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum> ;
+                                                                  ld:hasStadtId "604" .
+
+<http://leipzig-data.de/Data/KE/Orientierung> ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.12-14> ;
+                                              a org:Organization ;
+                                              rdfs:label "„Orientierung“ – Kontaktstelle der katholischen Kirche in Leipzig" ;
+                                              ld:hasCategories "Frauenvereine" ;
+                                              ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum> ;
+                                              ld:hasStadtId "491" .
 
 <http://leipzig-data.de/Data/KE/StMartin> a org:Organization ;
-rdfs:label "Katholische Pfarrei St. Martin" .
+                                          rdfs:label "Katholische Pfarrei St. Martin" .
+
+<> cc:attributionURL <http://leipzig-data.de> ;
+   cc:attributionName "The Leipzig Open Data Project" ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   a owl:Ontology ;
+   rdfs:label "Kirchliche Einrichtungen" .
