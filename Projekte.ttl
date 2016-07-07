@@ -2,13 +2,28 @@
 
 @base <http://leipzig-data.de/Data/Projekte/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 ld:Projekt a owl:Class ;
            rdfs:label "Projekt" .
+
+<http://leipzig-data.de/Data/Projekt/APILeipzig> a ld:Projekt ;
+                                                 rdfs:label "Projekt API Leipzig" ;
+                                                 foaf:name "Projekt API Leipzig" ;
+                                                 foaf:homepage <http://www.apileipzig.de> .
+
+<http://leipzig-data.de/Data/Projekt/APILeipzig.Events> a ld:Projekt ;
+                                                        rdfs:label "API Leipzig Eventkalender" ;
+                                                        foaf:name "API Leipzig Eventkalender" ;
+                                                        foaf:homepage <http://www.apileipzig.de/wiki/show/Beispielabfragen> ;
+                                                        ld:relatedTo <http://leipzig-data.de/Data/Agent/APILeipzig> .
 
 <http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> a ld:Projekt ;
                                                            rdfs:label "Schülerakademie der ASG" .
@@ -19,44 +34,59 @@ ld:Projekt a owl:Class ;
 <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> a ld:Projekt ;
                                                            rdfs:label "Attac Denktankstelle" .
 
+<http://leipzig-data.de/Data/Projekt/CodeForLeipzig> foaf:homepage <http://codefor.de/leipzig/> ;
+                                                     a ld:Projekt ;
+                                                     rdfs:label "Projekt Code for Leipzig" .
+
 <http://leipzig-data.de/Data/Projekt/FBL.Vorbereitungsgruppe> a ld:Projekt ;
                                                               rdfs:label "Vorbereitungsgruppe FBL" ;
                                                               ld:engagedPerson <http://leipzig-data.de/Data/Person/Brier_Leonhard>, <http://leipzig-data.de/Data/Person/Keppler_Ralph>, <http://leipzig-data.de/Data/Person/Tischer_Beate> .
 
-<http://leipzig-data.de/Data/Projekt/InitiativeSchleussig> rdfs:label "Initiative Schleußig" ;
-                                                           ld:engagedPerson <http://leipzig-data.de/Data/Person/Hoenemann_Tobias> ;
-                                                           a ld:Projekt .
+<http://leipzig-data.de/Data/Projekt/InitiativeSchleussig> ld:engagedPerson <http://leipzig-data.de/Data/Person/Hoenemann_Tobias> ;
+                                                           a ld:Projekt ;
+                                                           rdfs:label "Initiative Schleußig" .
 
-<http://leipzig-data.de/Data/Projekt/LD> a ld:Projekt ;
-                                         rdfs:label "Leipzig Open Data Initiative" ;
-                                         ld:hasURL <http://www.leipzig-data.de> .
+<http://leipzig-data.de/Data/Projekt/LD> rdfs:label "Leipzig Open Data Initiative" ;
+                                         ld:hasURL <http://www.leipzig-data.de> ;
+                                         a ld:Projekt .
 
-<http://leipzig-data.de/Data/Projekt/LD.Seminar> a ld:Projekt ;
-                                                 rdfs:label "Leipzig Open Data Seminar" ;
-                                                 ld:hasURL <http://www.leipzig-data.de/ld-seminar/> .
+<http://leipzig-data.de/Data/Projekt/LD.Seminar> ld:hasURL <http://www.leipzig-data.de/ld-seminar/> ;
+                                                 a ld:Projekt ;
+                                                 rdfs:label "Leipzig Open Data Seminar" .
 
-<http://leipzig-data.de/Data/Projekt/LeipzigWeiterDenken> a ld:Projekt ;
-                                                          rdfs:label "Veranstaltungsreihe \"Leipzig Weiter Denken\"" ;
-                                                          ld:hasURL <http://leipzig.de/weiterdenken> ;
-                                                          ld:relatedBundle <http://leipzig-data.de/Data/Traeger/StadtLeipzig> .
+<http://leipzig-data.de/Data/Projekt/LeipzigWeiterDenken> ld:hasURL <http://leipzig.de/weiterdenken> ;
+                                                          ld:relatedBundle <http://leipzig-data.de/Data/Traeger/StadtLeipzig> ;
+                                                          a ld:Projekt ;
+                                                          rdfs:label "Veranstaltungsreihe \"Leipzig Weiter Denken\"" .
 
-<http://leipzig-data.de/Data/Projekt/NEU.Cluster-Lindner> a ld:Projekt ;
+<http://leipzig-data.de/Data/Projekt/MINT-Netzwerk> ld:engagedPerson <http://leipzig-data.de/Data/Person/Graebe_HansGert>, <http://leipzig-data.de/Data/Person/Wieland_Sabine> ;
+                                                    foaf:homepage <http://mint-leipzig.de/> ;
+                                                    a ld:Projekt ;
+                                                    rdfs:label "MINT Netzwerk Leipzig" .
+
+<http://leipzig-data.de/Data/Projekt/NEU.Cluster-Lindner> ld:relatedBundle <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                          a ld:Projekt ;
                                                           rdfs:label "Workshopreihe des Clusterteams 'Erneuerbare Energien und Energieeffizienz'" ;
                                                           ld:Kurzinformation "Die Themen im Bereich der erneuerbaren Energien und der Energieeffizienz sind sehr vielfältig, zudem sind die Schwerpunktproblematiken der Branche einem ständigen Wandel unterlegen. Im Clusterteam für erneuerbare Energien und Energieeffizienz diskutieren daher regelmäßig interessierte Akteure aus Leipzig und Umgebung Probleme, Projekte und Veranstaltungen im Bereich der erneuerbaren Energien. Unter den Teilnehmern finden sich vor allem Vertreter von Klein- und mittelständischen Unternehmen, aber auch Privatpersonen und Vertreter der Wissenschaft und Forschung. Nehmen Sie also bei einem der zahlreichen Treffen des Clusterteams im Forsthaus Raschwitz teil. Anmelden können Sie sich beim Clusterteamleiter Lothar Lindner." ;
-                                                          ld:contactPerson <http://leipzig-data.de/Data/Person/Lindner_Lothar> ;
-                                                          ld:relatedBundle <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                          ld:contactPerson <http://leipzig-data.de/Data/Person/Lindner_Lothar> .
 
-<http://leipzig-data.de/Data/Projekt/NEU.Energiefachgespraeche> a ld:Projekt ;
+<http://leipzig-data.de/Data/Projekt/NEU.Energiefachgespraeche> ld:hasURL <http://www.metastream-netzwerk.de/fachgespraechsreihe.html> ;
+                                                                ld:relatedBundle <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+                                                                a ld:Projekt ;
                                                                 rdfs:label "Fachgesprächsreihe - Energieversorgungssysteme der Zukunft" ;
-                                                                ld:Kurzinformation "Das Netzwerk „metaStream“ organisiert seit 2012 gemeinsam mit der Universität Leipzig die Reihe Fachgespräche „Energiesysteme der Zukunft“. Auf den Fachgesprächen diskutieren Industriepartner und Wissenschaftler aktuelle Entwicklungen von Energiesystemen und innovative technische Konzepte für eine nachhaltige, robuste, kostengünstige und sichere Energieversorgung. Die Veranstaltungen bieten Industrieunternehmen, Verbänden und Forschungseinrichtungen eine Plattform zur Vernetzung und zum Ideenaustausch. Das Netzwerk selbst erbringt die wissenschaftliche ingenieurtechnische Leistungen sowie Beratungsleistungen und stellt die dafür erforderlichen technischen Ausrüstungen. <br/>Projekte des metaStream-Netzwerks sind auf der Netzwerkseite einsehbar:<br/>Ansprechpartner<br/>Dr. Stefan Kühne<br/>Telefon: +49 341 9732360<br/>kuehne@informatik.uni-leipzig.de." ;
-                                                                ld:hasURL <http://www.metastream-netzwerk.de/fachgespraechsreihe.html> ;
-                                                                ld:relatedBundle <http://leipzig-data.de/Data/Agent/NEU.Events> .
+                                                                ld:Kurzinformation "Das Netzwerk „metaStream“ organisiert seit 2012 gemeinsam mit der Universität Leipzig die Reihe Fachgespräche „Energiesysteme der Zukunft“. Auf den Fachgesprächen diskutieren Industriepartner und Wissenschaftler aktuelle Entwicklungen von Energiesystemen und innovative technische Konzepte für eine nachhaltige, robuste, kostengünstige und sichere Energieversorgung. Die Veranstaltungen bieten Industrieunternehmen, Verbänden und Forschungseinrichtungen eine Plattform zur Vernetzung und zum Ideenaustausch. Das Netzwerk selbst erbringt die wissenschaftliche ingenieurtechnische Leistungen sowie Beratungsleistungen und stellt die dafür erforderlichen technischen Ausrüstungen. <br/>Projekte des metaStream-Netzwerks sind auf der Netzwerkseite einsehbar:<br/>Ansprechpartner<br/>Dr. Stefan Kühne<br/>Telefon: +49 341 9732360<br/>kuehne@informatik.uni-leipzig.de." .
 
-<http://leipzig-data.de/Data/Projekt/NuKLA.AULA2030> ld:Kurzinformation "Veranstaltungsreihe von NuKLA zum Leipziger Auenökosystem an der Volkshochschule Leipzig" ;
-                                                     ld:contactPerson <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
+<http://leipzig-data.de/Data/Projekt/NEU.Events> foaf:name "Eventkalender des Netzwerks \"Energie und Umwelt\"" ;
+                                                 foaf:homepage <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
+                                                 ld:relatedTo <http://leipzig-data.de/Data/Ort/NetzwerkEnergieUmwelt> ;
+                                                 a ld:Projekt ;
+                                                 rdfs:label "Eventkalender des Netzwerks \"Energie und Umwelt\"" .
+
+<http://leipzig-data.de/Data/Projekt/NuKLA.AULA2030> ld:contactPerson <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
                                                      ld:relatedBundle <http://leipzig-data.de/Data/Traeger/NuKLA> ;
                                                      a ld:Projekt ;
-                                                     rdfs:label "AULA-Projekt 2030" .
+                                                     rdfs:label "AULA-Projekt 2030" ;
+                                                     ld:Kurzinformation "Veranstaltungsreihe von NuKLA zum Leipziger Auenökosystem an der Volkshochschule Leipzig" .
 
 <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> a ld:Projekt ;
                                                              rdfs:label "Klassische Kartoffelkonzerte zu Gunsten des Leipziger Auwalds" ;

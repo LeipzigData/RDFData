@@ -245,5 +245,21 @@
 ld:Fakultaet rdfs:subClassOf org:OrganizationalUnit ; 
 rdfs:label "Fakultät der Universität Leipzig" .
 
+ld:Institut rdfs:subClassOf org:OrganizationalUnit ; 
+rdfs:label "Institut an der Universität Leipzig" .
+
 ld:ZentraleEinrichtung rdfs:subClassOf org:OrganizationalUnit ; 
 rdfs:label "Zentrale Einrichtung der Universität Leipzig" .
+
+<http://leipzig-data.de/Data/UniLeipzig/Geographie> a ld:Institut ;
+rdfs:label "Institut für Geographie" ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19> ;
+foaf:phone "0341-9732799" ;
+foaf:phone "0341-9732790" .
+
+<http://leipzig-data.de/Data/UniLeipzig/Studentenrat> a ld:ZentraleEinrichtung ;
+rdfs:label "Studentenrat der Uni Leipzig" ;
+foaf:homepage <http://www.stura.uni-leipzig.de> .
+
+<http://leipzig-data.de/Data/UniLeipzig/IIR> a ld:Institut ;
+rdfs:label "Institut für Infrastruktur und Ressourcenmanagement der Universität Leipzig" .

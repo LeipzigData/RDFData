@@ -1,0 +1,726 @@
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://leipzig-data.de/Data/Vereine/> a owl:Ontology ;
+rdfs:label "Vereine" ;
+cc:attributionURL <http://leipzig-data.de> ;
+cc:attributionName "The Leipzig Open Data Project" ;
+cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+ld:Verein a owl:Class ;
+rdfs:label "Verein" ;
+rdfs:subClassOf org:Organization .
+
+<http://leipzig-data.de/Data/Verein/AEL> a ld:Verein ;
+rdfs:label "AEL e.V." .
+
+<http://leipzig-data.de/Data/Verein/ASB> a ld:Verein ;
+rdfs:label "Arbeiter-Samariter-Bund RV Leipzig" ;
+ld:hasSupplierNumber "003" .
+
+<http://leipzig-data.de/Data/Verein/AWO.Leipzig> a ld:Verein ;
+rdfs:label "AWO Kreisverband Leipzig-Stadt" ;
+foaf:homepage <http://www.awo-leipzig-stadt.de> ;
+ld:hasSupplierNumber "258" .
+
+<http://leipzig-data.de/Data/Verein/Adventjugend> a ld:Verein ;
+rdfs:label "Adventjugend" ;
+ld:hasSupplierNumber "077" .
+
+<http://leipzig-data.de/Data/Verein/AidsHilfe> a ld:Verein ;
+rdfs:label "AIDS Hilfe Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Ossietzkystrasse.18> ;
+foaf:homepage <http://www.leipzig.aidshilfe.de> ;
+ld:hasSupplierNumber "039" ;
+foaf:mbox "thomas.franke@Leipzig.aidshilfe.de" ;
+ld:hasTelefon "0341-2323126" .
+
+<http://leipzig-data.de/Data/Verein/ArbeitLeben.Sachsen> a ld:Verein ;
+rdfs:label "Arbeit und Leben Sachsen" ;
+ld:hasSupplierNumber "148" .
+
+<http://leipzig-data.de/Data/Verein/AriowitschHaus> a ld:Verein ;
+rdfs:label "Ariowitsch-Haus" ;
+ld:hasSupplierNumber "345" .
+
+<http://leipzig-data.de/Data/Verein/Attac.Leipzig> a ld:Verein ;
+rdfs:label "Attac Leipzig" .
+
+<http://leipzig-data.de/Data/Verein/Auwaldstation> a ld:Verein ;
+rdfs:label "Auwaldstation Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Seidel_Franka>, <http://leipzig-data.de/Data/Person/Baesler_Detlef> .
+
+<http://leipzig-data.de/Data/Verein/BGL.Nachbarschaftshilfeverein> a ld:Verein ;
+rdfs:label "BGL Nachbarschaftshilfeverein" .
+
+<http://leipzig-data.de/Data/Verein/BUND> a ld:Verein ;
+rdfs:label "BUND Regionalgruppe Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+foaf:homepage <http://www.bund-leipzig.de> ;
+foaf:mbox "bund.leipzig@gmx.de" ;
+foaf:phone "0341-3065395" .
+
+<http://leipzig-data.de/Data/Verein/BauhuetteOst> a ld:Verein ;
+rdfs:label "Bauhütte Ost" ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Kohl_Ralf> .
+
+<http://leipzig-data.de/Data/Verein/Behindertenverband> a ld:Verein ;
+rdfs:label "Behindertenverband" ;
+ld:hasSupplierNumber "010" .
+
+<http://leipzig-data.de/Data/Verein/Buchkinder> a ld:Verein ;
+rdfs:label "Buchkinder Leipzig" ;
+ld:hasSupplierNumber "361" .
+
+<http://leipzig-data.de/Data/Verein/Buchkinder.Freundeskreis> a ld:Verein ;
+rdfs:label "Freundeskreis Buchkinder" ;
+ld:hasSupplierNumber "366" .
+
+<http://leipzig-data.de/Data/Verein/BuntePlatte> a ld:Verein ;
+rdfs:label "Bunte Platte" ;
+ld:hasSupplierNumber "299" .
+
+<http://leipzig-data.de/Data/Verein/Burgarbeit> a ld:Verein ;
+rdfs:label "Burgarbeit" ;
+ld:hasSupplierNumber "226" .
+
+<http://leipzig-data.de/Data/Verein/CCLS> a ld:Verein ;
+rdfs:label "Computerclub Lützschena-Stahmeln" ;
+ld:hasSupplierNumber "270" .
+
+<http://leipzig-data.de/Data/Verein/CVJM> a ld:Verein ;
+rdfs:label "CVJM e.V. - Christlicher Verein Junger Menschen" ;
+ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.SchoenefelderAllee.23> ;
+foaf:homepage <http://www.cvjm-leipzig.de> ;
+ld:hasSupplierNumber "078" ;
+foaf:mbox "info@cvjm-leipzig.de" ;
+foaf:phone "0341-26675540" .
+
+<http://leipzig-data.de/Data/Verein/Caktus> a ld:Verein ;
+rdfs:label "Caktus e.V." .
+
+<http://leipzig-data.de/Data/Verein/Caritas.Leipzig> a ld:Verein ;
+rdfs:label "Caritasverband Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/Strasse/Elsterstrasse.15> ;
+ld:hasSupplierNumber "135" .
+
+<http://leipzig-data.de/Data/Verein/CityKids> a ld:Verein ;
+rdfs:label "CITY KIDS e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Roentgenstrasse.13> ;
+foaf:homepage <http://www.city-kids.net> ;
+ld:hasSupplierNumber "180" ;
+foaf:mbox "kontakt@city-kids.net" ;
+foaf:phone "0341-87099110" .
+
+<http://leipzig-data.de/Data/Verein/Civixx> a ld:Verein ;
+rdfs:label "CivixX - Werkstatt für Zivilgesellschaft" ;
+ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Pestalozzistrasse.70> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Elsaesser_Ralf> ;
+foaf:phone "0341-44259916" ;
+foaf:phone "0341-44259900" .
+
+<http://leipzig-data.de/Data/Verein/Columbus> a ld:Verein ;
+rdfs:label "Columbus Junior e.V." ;
+ld:hasSupplierNumber "011" .
+
+<http://leipzig-data.de/Data/Verein/ConneIsland> a ld:Verein ;
+rdfs:label "Conne Island" ;
+ld:hasSupplierNumber "012" .
+
+<http://leipzig-data.de/Data/Verein/DJO.Sachsen> a ld:Verein ;
+rdfs:label "djo Deutsche Jugend in Europa LV Sachsen" ;
+ld:hasSupplierNumber "356" .
+
+<http://leipzig-data.de/Data/Verein/DRIEE> a ld:Verein ;
+rdfs:label "DRIEE e.V." .
+
+<http://leipzig-data.de/Data/Verein/DRK.AkademischerKreisverband> a ld:Verein ;
+rdfs:label "DRK - Akademischer KV" ;
+ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Birkenstrasse.26-30> ;
+foaf:homepage <http://www.drk-akademischer-kv-leipzig.de> ;
+foaf:mbox "drk-akt@t-online.de" ;
+foaf:phone "0341-4799464" .
+
+<http://leipzig-data.de/Data/Verein/Durchblick> a ld:Verein, ld:Verein ;
+rdfs:label "Interessengemeinschaft für psychiatrisch Betroffene \"Durchblick e.V.\"" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.MainzerStrasse.7> ;
+foaf:homepage <http://www.durchblick-ev.de> ;
+foaf:mbox "verein@durchblick-ev.de" ;
+foaf:phone "0341-1406140" .
+
+<http://leipzig-data.de/Data/Verein/EineWelt> a ld:Verein ;
+rdfs:label "Eine Welt e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
+foaf:homepage <http://www.einewelt-sachsen.de> ;
+ld:hasSupplierNumber "016" ;
+foaf:mbox "miguel.ruiz@einewelt-sachsen.de" ;
+foaf:phone "0341-9940683" .
+
+<http://leipzig-data.de/Data/Verein/FAIRBUND> a ld:Verein ;
+rdfs:label "FAIRBUND" ;
+ld:hasSupplierNumber "047" .
+
+<http://leipzig-data.de/Data/Verein/FED> a ld:Verein ;
+rdfs:label "Familienentlastender Dienst e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Kregelstrasse.23> ;
+foaf:homepage <http://www.fed-leipzig.de> ;
+foaf:mbox "freizeit@fed-leipzig.de" ;
+foaf:phone "0341-4219419" .
+
+<http://leipzig-data.de/Data/Verein/FFS> a ld:Verein ;
+rdfs:label "FRÜHES FORSCHEN Sachsen" ;
+ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.AmRussischenGarten.2> .
+
+<http://leipzig-data.de/Data/Verein/Familienverband.Leipzig> a ld:Verein ;
+rdfs:label "Deutscher Familienverband" ;
+ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Biedermannstrasse.42> ;
+foaf:mbox "Familienverband.Leipzig@gmx.de" ;
+foaf:phone "0341-3017152" .
+
+<http://leipzig-data.de/Data/Verein/Filmschule> a ld:Verein ;
+rdfs:label "Filmschule Leipzig e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.6> ;
+foaf:homepage <http://www.filmschule-leipzig.de> ;
+ld:hasSupplierNumber "096" ;
+foaf:mbox "Filmschuleleipzig@web.de" ;
+foaf:phone "0341-2119158" .
+
+<http://leipzig-data.de/Data/Verein/Frauenkultur> a ld:Verein ;
+rdfs:label "Frauenkultur e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Windscheidstrasse.51> ;
+foaf:homepage <http://www.frauenkultur-leipzig.de> ;
+foaf:mbox "hallo@frauenkultur.leipzig.w4w.net" ;
+foaf:phone "0341-2130030" .
+
+<http://leipzig-data.de/Data/Verein/FroebelGruppe> a ld:Verein ;
+rdfs:label "Fröbel Gruppe e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.4> ;
+foaf:homepage <http://www.Froebel-gruppe.de> ;
+ld:hasSupplierNumber "266" ;
+foaf:mbox "arena-leipzig@froebel-gruppe.de" ;
+foaf:phone "0341-4299745" .
+
+<http://leipzig-data.de/Data/Verein/GAZ> a ld:Verein ;
+rdfs:label "Grün-Alternatives Zentrum Leipzig e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Reschke_Volker> ;
+foaf:mbox "gaz-leipzig@t-online.de" .
+
+<http://leipzig-data.de/Data/Verein/GI.RG-Leipzig> a foaf:Agent ;
+rdfs:label "Regionalgruppe Leipzig der GI - Gesellschaft für Informatik" ;
+ld:contactPerson <http://leipzig-data.de/Data/Person/Wieland_Sabine> ;
+foaf:homepage <http://rg-leipzig.gi.de> ;
+foaf:name "Regionalgruppe Leipzig der GI - Gesellschaft für Informatik" .
+
+<http://leipzig-data.de/Data/Verein/GeografischeGesellschaftLeipzig> a ld:Verein ;
+rdfs:label "Geografische Gesellschaft Leipzig" .
+
+<http://leipzig-data.de/Data/Verein/Geyserhaus> a ld:Verein ;
+rdfs:label "Geyserhaus" ;
+ld:hasSupplierNumber "025" .
+
+<http://leipzig-data.de/Data/Verein/GrossStadtKinder> a ld:Verein ;
+rdfs:label "großstadtKINDER e.V" ;
+ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.59> ;
+ld:hasSupplierNumber "211" .
+
+<http://leipzig-data.de/Data/Verein/Halle5> a ld:Verein ;
+rdfs:label "HALLE 5" ;
+ld:hasSupplierNumber "116" .
+
+<http://leipzig-data.de/Data/Verein/HausSteinstrasse> a ld:Verein ;
+rdfs:label "Haus Steinstraße e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Steinstrasse.18> ;
+foaf:homepage <http://www.haus-steinstrasse.de> ;
+ld:hasSupplierNumber "026" ;
+foaf:mbox "michael.rausch@haus-steinstrasse.de" ;
+foaf:phone "0341-3913219" .
+
+<http://leipzig-data.de/Data/Verein/IG.HEMB>  a ld:Verein ;
+rdfs:label "IG Historischer Elektromaschinenbau" ;
+ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Plautstrasse.16> ;
+foaf:homepage <http://www.historischer-elektromaschinenbau.de> ;
+ld:hasAddressAddendum "Eingang Morgensternstraße" ;
+foaf:mbox "info@historischer-elektromaschinenbau.de" .
+
+<http://leipzig-data.de/Data/Verein/ISEI> a ld:Verein ;
+rdfs:label "International Space Education Institute e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.WurznerStrasse.4> ;
+foaf:homepage <http://www.spaceeducation.de/> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Heckel_Ralf> ;
+foaf:phone "341-6813989" ;
+foaf:phone "341-6813986" .
+
+<http://leipzig-data.de/Data/Verein/IndustriekulturLeipzig> a ld:Verein, ld:Verein ;
+rdfs:label "Verein für Industriekultur Leipzig e.V." ;
+foaf:homepage <http://www.industriekulturtag-leipzig.de> ;
+foaf:mbox "info@industriekulturtag-leipzig.de" .
+
+<http://leipzig-data.de/Data/Verein/Inspirata> a ld:Verein ;
+rdfs:label "Inspirata e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
+foaf:homepage <http://www.inspirata.de> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Koenig_Wolfgang> ;
+ld:hasAddressAddendum "Eingang G (3. Etage)" ;
+foaf:mbox "kontakt@inspirata.de" ;
+foaf:phone "0341-1259757" .
+
+<http://leipzig-data.de/Data/Verein/InternationalerBund> a ld:Verein ;
+rdfs:label "Internationaler Bund e.V., Verbund Lpz." ;
+ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Rosenowstrasse.24> ;
+ld:hasSupplierNumber "032" .
+
+<http://leipzig-data.de/Data/Verein/IrrsinnigMenschlich> a ld:Verein ;
+rdfs:label "Irrsinnig Menschlich" ;
+ld:hasSupplierNumber "357" .
+
+<http://leipzig-data.de/Data/Verein/JAV.Gruenau> a ld:Verein ;
+rdfs:label "Jugend- und Altenhilfeverein Grünau" ;
+ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.AnderKotsche.49> ;
+foaf:phone "0341-2675306" .
+
+<http://leipzig-data.de/Data/Verein/JAV.Paunsdorf> a ld:Verein ;
+rdfs:label "Jugend- und Altenhilfeverein Paunsdorf" ;
+ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Goldsternstrasse.9> ;
+foaf:homepage <http://www.wbg-kontakt.de> ;
+foaf:mbox "javpaunsdorf@primacom.net" ;
+foaf:phone "0341-2532287" .
+
+<http://leipzig-data.de/Data/Verein/JC.Moelkau> a ld:Verein ;
+rdfs:label "Jugendclub Mölkau" ;
+ld:hasSupplierNumber "308" .
+
+<http://leipzig-data.de/Data/Verein/JFKreativ> a ld:Verein ;
+rdfs:label "Jugend und Familie Kreativ e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Luetzowstrasse.19> ;
+foaf:homepage <http://www.Waldhaus-Kreativ.de> ;
+foaf:mbox "jfk_po@t-online.de" ;
+foaf:phone "0341-9129698" .
+
+<http://leipzig-data.de/Data/Verein/JMGPraetorius> a ld:Verein ;
+rdfs:label "Jugendmusiziergruppe Michael Prätorius" ;
+ld:hasSupplierNumber "122" .
+
+<http://leipzig-data.de/Data/Verein/JaRiKo> a ld:Verein ;
+rdfs:label "JaRiKo - Sozialer Ring" ;
+ld:hasSupplierNumber "359" .
+
+<http://leipzig-data.de/Data/Verein/JohanniterJugend> a ld:Verein ;
+rdfs:label "Johanniter-Jugend Leipzig" ;
+ld:hasSupplierNumber "304" .
+
+<http://leipzig-data.de/Data/Verein/JuKuWe> a ld:Verein ;
+rdfs:label "Kinder- und JugendKulturWerkstatt Südost" ;
+ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Riebeckstrasse.51> ;
+foaf:homepage <http://www.jukuwe-leipzig.de> ;
+foaf:mbox "kontakt@jukuwe-leipzig.de" ;
+foaf:phone "0341-8775507" .
+
+<http://leipzig-data.de/Data/Verein/Jugendbrass> a ld:Verein ;
+rdfs:label "Jugendbrass" ;
+ld:hasSupplierNumber "019" .
+
+<http://leipzig-data.de/Data/Verein/Jugendhaus> a ld:Verein ;
+rdfs:label "Jugendhaus" ;
+ld:hasSupplierNumber "036" .
+
+<http://leipzig-data.de/Data/Verein/Jugendpresse.Sachsen> a ld:Verein ;
+rdfs:label "Jugendpresse Sachsen" ;
+ld:hasSupplierNumber "198" .
+
+<http://leipzig-data.de/Data/Verein/Jugendrotkreuz> a ld:Verein ;
+rdfs:label "Jugendrotkreuz" ;
+ld:hasSupplierNumber "088" .
+
+<http://leipzig-data.de/Data/Verein/KUZ> a ld:Verein ;
+ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Hauptstrasse.315> ;
+rdfs:label "Kultur- und Umweltzentrum e.V."  .
+
+<http://leipzig-data.de/Data/Verein/KiJu.Gruenau> a ld:Verein ;
+rdfs:label "Kinder- u. Jugendtreff Grünau e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.HeilbronnerStrasse.16> ;
+foaf:homepage <http://www.kijuleipzig.de> ;
+ld:hasSupplierNumber "279" ;
+foaf:mbox "kijuleipzig@gmx.de" ;
+foaf:phone "0341-4113196" .
+
+<http://leipzig-data.de/Data/Verein/KinderBuero> a ld:Verein ;
+rdfs:label "Leipziger Kinderbüro" ;
+ld:hasSupplierNumber "230" .
+
+<http://leipzig-data.de/Data/Verein/KinderVereinigung.Leipzig> a ld:Verein ;
+rdfs:label "Kindervereinigung Leipzig" ;
+rdfs:comment "Beide Trägernummern in der JHA-Zuschussübersicht 2011" ;
+foaf:homepage <http://www.kv-leipzig.de> ;
+ld:hasSupplierNumber "163", "090" .
+
+<http://leipzig-data.de/Data/Verein/Kinderhilfe.Leipzig> a ld:Verein ;
+rdfs:label "Kinderhilfe Leipzig e.V." ;
+rdfs:comment "gegründet 1990, seit 2000 OFT in Schönefeld" ;
+ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Schulzeweg.11> ;
+foaf:homepage <http://www.kinderhilfe-leipzig.de> ;
+ld:hasSupplierNumber "035" ;
+foaf:mbox "kontakt@kinderhilfe-leipzig.de" ;
+foaf:phone "0341-4211740" .
+
+<http://leipzig-data.de/Data/Verein/Kinderschutzbund> a ld:Verein ;
+rdfs:label "Deutscher Kinderschutzbund" ;
+ld:hasSupplierNumber "146" ;
+foaf:mbox "eb@dksb-leipzig.de", "kjt@dksb-leipzig.de" .
+
+<http://leipzig-data.de/Data/Verein/KreativesSchaffen> a ld:Verein ;
+rdfs:label "KiJuWe Kreatives Schaffen" ;
+ld:hasSupplierNumber "145" .
+
+<http://leipzig-data.de/Data/Verein/KreativitaetsWerkstatt> a ld:Verein ;
+rdfs:label "Kreativitätswerkstatt Leipzig" ;
+ld:hasSupplierNumber "215" .
+
+<http://leipzig-data.de/Data/Verein/Kreativzentrum.Gruenau> a ld:Verein ;
+rdfs:label "Kreativzentrum Grünau e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.17> ;
+foaf:homepage <http://www.Kreativzentrum-Gruenau.de> ;
+ld:hasSupplierNumber "131" ;
+foaf:mbox "Kreativzentrum@t-online.de" ;
+foaf:phone "0341-4225393" .
+
+<http://leipzig-data.de/Data/Verein/LANU> a ld:Verein ;
+rdfs:label "Sächsische Landesstiftung Natur und Umwelt" ;
+ld:contactPerson <http://leipzig-data.de/Data/Person/Klauer_AnnaKatharina> .
+
+<http://leipzig-data.de/Data/Verein/LEmann> a ld:Verein ;
+rdfs:label "LEmann - Jungen- und Männernetzwerk Leipzig" ;
+ld:hasSupplierNumber "321" .
+
+<http://leipzig-data.de/Data/Verein/LGBA> a ld:Verein ;
+rdfs:label "Leipziger Gesellschaft für Bildung und Arbeit" ;
+ld:hasSupplierNumber "355" .
+
+<http://leipzig-data.de/Data/Verein/LSGM> a ld:Verein ;
+rdfs:label "Leipziger Schülergesellschaft für Mathematik e.V." ;
+foaf:homepage <http://www.lsgm.de> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Schueler_Axel> .
+
+<http://leipzig-data.de/Data/Verein/Landesfilmdienst.Sachsen> a ld:Verein ;
+rdfs:label "Landesfilmdienst Sachsen" ;
+ld:hasSupplierNumber "045" .
+
+<http://leipzig-data.de/Data/Verein/LeipzigCourage> a ld:Verein ;
+rdfs:label "Leipzig Courage zeigen" ;
+ld:hasSupplierNumber "316" .
+
+<http://leipzig-data.de/Data/Verein/MJA.Leipzig> a ld:Verein ;
+rdfs:label "Mobile Jugendarbeit Leipzig e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.3> ;
+foaf:homepage <http://kuebelonline.de> .
+
+<http://leipzig-data.de/Data/Verein/MNU> a ld:Verein ;
+rdfs:label "Deutscher Verein zur Förderung des mathematischen und naturwissenschaftlichen Unterrichts e.V. (MNU) / Geschäftsstelle Landesverband Sachsen" ;
+foaf:homepage <http://www.mnu.de> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Schmidt_Rosemarie> .
+
+<http://leipzig-data.de/Data/Verein/MONAliesA> a ld:Verein ;
+rdfs:label "MONALiesa" ;
+rdfs:comment "Info SJR 2014-03-04: Verein insolvent, wird aufgelöst" ;
+ld:hasSupplierNumber "091" .
+
+<http://leipzig-data.de/Data/Verein/Machtlos> a ld:Verein ;
+rdfs:label "Machtlos" ;
+ld:hasSupplierNumber "229" .
+
+<http://leipzig-data.de/Data/Verein/Medienpaedagogik> a ld:Verein ;
+rdfs:label "Medienpädagogik e.V." ;
+ld:contactPerson <http://leipzig-data.de/Data/Person/Warkus_Hartmut> ;
+ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Emil-Fuchs-Strasse.1> ;
+ld:hasSupplierNumber "291" ;
+foaf:mbox "info@computerspielschule.org" ;
+foaf:phone "0341-9735859" ;
+foaf:phone "0341-9735850" .
+
+<http://leipzig-data.de/Data/Verein/MobileJugendarbeit> a ld:Verein ;
+rdfs:label "Mobile Jugendarbeit" ;
+ld:hasSupplierNumber "044" .
+
+<http://leipzig-data.de/Data/Verein/Muehlstrasse> a ld:Verein ;
+rdfs:label "Begegnungsstätte Mühlstraße e.V." ;
+ld:contactPerson <http://leipzig-data.de/Data/Person/Hoernig_Karin> ;
+ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.14> ;
+foaf:homepage <http://www.muehlstrasse.de> ;
+ld:hasSupplierNumber "050" ;
+foaf:mbox "kontakt@muehlstrasse.de" ;
+foaf:phone "0341-9903602" ;
+foaf:phone "0341-9903600" .
+
+<http://leipzig-data.de/Data/Verein/Muetterzentrum> a ld:Verein ;
+rdfs:label "Mütterzentrum e.V." ;
+ld:Kurzinformation "Der Mütterzentrum e.V. Leipzig setzt sich seit seiner Gründung 1990 für die Interessen von Familien in Leipzig ein. Er ist seit 1992 als freier Träger der Jugendhilfe anerkannt und auf dem Gebiet der Familienbildung tätig. Der Verein ist Träger von vier Familienzentren, zwei Kindergärten und einer Tagespflegevermittlung in Leipzig und in folgenden Stadtteilen vertreten: Paunsdorf, Plagwitz, Thekla und in Grünau." ;
+ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Potschkaustrasse.50> ;
+foaf:homepage <http://www.mütterzentrum-leipzig.de> ;
+ld:hasSupplierNumber "051" .
+
+<http://leipzig-data.de/Data/Verein/NABU> a ld:Verein ;
+rdfs:label "NABU Regionalverband Leipzig e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Zollikoferstrasse.21> ;
+foaf:homepage <http://www.nabu-leipzig.de> ;
+foaf:mbox "kv.leipzig@nabu-sachsen.de" ;
+foaf:phone "0341-6884477" .
+
+<http://leipzig-data.de/Data/Verein/NABU.Parthenfroesche> a ld:Verein ;
+rdfs:label "NABU Deutschland \"Parthenfrösche\"" ;
+ld:hasSupplierNumber "227" .
+
+<http://leipzig-data.de/Data/Verein/NeueMusikLeipzig> a ld:Verein ;
+rdfs:label "Neue Musik Leipzig" ;
+ld:hasSupplierNumber "363" .
+
+<http://leipzig-data.de/Data/Verein/NuKLA> a org:Organization, ld:Verein ;
+rdfs:label "Naturschutz und Kunst Leipziger Auwald (NuKLA) e. V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Otto-Adam-Strasse.14> ;
+foaf:homepage <http://www.nukla.de> ;
+foaf:mbox "stoiber@nukla.de" ;
+foaf:phone "0178-6662454", "0341-3503421" ;
+skos:prefLabel "Naturschutz und Kunst Leipziger Auwald (NuKLA) e. V." ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Maruhn_Olaf>, <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> .
+
+<http://leipzig-data.de/Data/Verein/Oekoloewe> a ld:Verein ;
+rdfs:label "Ökolöwe Umweltbund Leipzig e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+ld:hasSupplierNumber "053" ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Quester_Roland> ;
+foaf:phone "0341-3065-179" .
+
+<http://leipzig-data.de/Data/Verein/Oikos> a ld:Verein ;
+rdfs:label "Studierendeninitiative „oikos“" .
+
+<http://leipzig-data.de/Data/Verein/OrchesterHolzhausen> a ld:Verein ;
+rdfs:label "Orchester Holzhausen" ;
+ld:hasSupplierNumber "328" .
+
+<http://leipzig-data.de/Data/Verein/PfadfinderLeo> a ld:Verein ;
+rdfs:label "Bund der PfadfinderInnen, Stamm Leo" ;
+ld:hasSupplierNumber "076" .
+
+<http://leipzig-data.de/Data/Verein/PfadfinderWeltenbummler> a ld:Verein ;
+rdfs:label "Pfadfinder Weltenbummler" ;
+ld:hasSupplierNumber "228" .
+
+<http://leipzig-data.de/Data/Verein/Pikanta> a ld:Verein ;
+rdfs:label "Pikanta" ;
+ld:hasSupplierNumber "057" .
+
+<http://leipzig-data.de/Data/Verein/PlanL> a ld:Verein ;
+rdfs:label "PLAN L" ;
+ld:hasSupplierNumber "313" .
+
+<http://leipzig-data.de/Data/Verein/RAA.Leipzig> a ld:Verein ;
+rdfs:label "RAA Leipzig" ;
+ld:hasSupplierNumber "175" .
+
+<http://leipzig-data.de/Data/Verein/RAA.Sachsen> a ld:Verein ;
+rdfs:label "RAA Sachsen" ;
+ld:hasSupplierNumber "351" .
+
+<http://leipzig-data.de/Data/Verein/Rabutz.TOeP> a ld:Verein ;
+rdfs:label "Förderverein „Technisch-Ökologisches Projektzentrum Rabutz“ e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04509.Rabutz.BageritzerWeg.1> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Messerschmidt_Elk> .
+
+<http://leipzig-data.de/Data/Verein/RadioBlau> a ld:Verein ;
+rdfs:label "Radio-Verein Lpz. e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.62> ;
+foaf:homepage <http://www.radioblau.de> ;
+foaf:mbox "medienpaedagogik@radioblau.de" ;
+foaf:phone "0341-3010097" .
+
+<http://leipzig-data.de/Data/Verein/Radioverein> a ld:Verein ;
+rdfs:label "Radioverein" ;
+ld:hasSupplierNumber "054" .
+
+<http://leipzig-data.de/Data/Verein/Raduga> a ld:Verein ;
+rdfs:label "Raduga" ;
+ld:hasSupplierNumber "335" .
+
+<http://leipzig-data.de/Data/Verein/Richtungswechsel> a ld:Verein ;
+rdfs:label "Richtungswechsel" ;
+ld:hasSupplierNumber "144" .
+
+<http://leipzig-data.de/Data/Verein/SJD.Falken> a ld:Verein ;
+rdfs:label "SJD Die Falken" ;
+ld:hasSupplierNumber "293" .
+
+<http://leipzig-data.de/Data/Verein/SV.Jugendweihe> a ld:Verein ;
+rdfs:label "Sächs. Verband Jugendweihe" ;
+ld:hasSupplierNumber "240" .
+
+<http://leipzig-data.de/Data/Verein/Sportjugend> a ld:Verein ;
+rdfs:label "Sportjugend Leipzig" .
+
+<http://leipzig-data.de/Data/Verein/Sportmobil> a ld:Verein ;
+rdfs:label "Sportmobil, Springburg" ;
+ld:hasSupplierNumber "255" .
+
+<http://leipzig-data.de/Data/Verein/Stadtjugendfeuerwehr> a ld:Verein ;
+rdfs:label "Stadtjugendfeuerwehr" ;
+ld:hasSupplierNumber "087" .
+
+<http://leipzig-data.de/Data/Verein/Stadtjugendring> a ld:Verein ;
+rdfs:label "Stadtjugendring" ;
+ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.DresdnerStrasse.82> ;
+foaf:homepage <http://www.stadtjugendring-leipzig.de> ;
+ld:hasSupplierNumber "093" ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Graf_Corinna>, <http://leipzig-data.de/Data/Person/vonJan_Teresa> ;
+foaf:mbox "sjr@stadtjugendring-leipzig.de" ;
+foaf:phone "0341-6889334" ;
+foaf:phone "0152-34260674", "0341-6894859" .
+
+<http://leipzig-data.de/Data/Verein/Stadtsportbund> a ld:Verein ;
+rdfs:label "Stadtsportbund" ;
+ld:hasSupplierNumber "205" .
+
+<http://leipzig-data.de/Data/Verein/Tanztheater> a ld:Verein ;
+rdfs:label "Leipziger Tanztheater" ;
+ld:hasSupplierNumber "325" .
+
+<http://leipzig-data.de/Data/Verein/UIZ> a ld:Verein ;
+rdfs:label "Förderverein Umweltinformationszentrum Stadt Leipzig UIZ e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
+foaf:homepage <http://www.uiz-foerderverein.de> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Koerner_Annette> ;
+foaf:mbox "fvumweltinformationszentrum@web.de" ;
+foaf:phone "0341-1236835" ;
+foaf:phone "0341-1236830" .
+
+<http://leipzig-data.de/Data/Verein/Unikatum> a ld:Verein ;
+rdfs:label "Unikatum Kindermuseum gGmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.26> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Haensel_Annegret> ;
+foaf:mbox "info@kindermuseum-unikatum.de" ;
+foaf:phone "0341-3061986" .
+
+<http://leipzig-data.de/Data/Verein/UrbanSouls> a ld:Verein ;
+rdfs:label "Urban Souls" ;
+ld:hasSupplierNumber "364" .
+
+<http://leipzig-data.de/Data/Verein/VDE.LeipzigHalle> a ld:Verein ;
+rdfs:label "VDE-BV Leipzig/Halle" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Friedrich-Ebert-Strasse.26> ;
+foaf:homepage <www.VDE-Leipzig-Halle.de> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Raue_Manfred> ;
+foaf:mbox "manfred.raue@vde-mitglied.de" ;
+foaf:phone "0341-1207496" .
+
+<http://leipzig-data.de/Data/Verein/VS.Leipzig> a ld:Verein ;
+rdfs:label "Volkssolidarität Stadtverband Leipzig" .
+
+<http://leipzig-data.de/Data/Verein/Verein.FFJ> a ld:Verein ;
+rdfs:label "Verein für Frauen, Familie und Jugend" ;
+ld:hasSupplierNumber "168" .
+
+<http://leipzig-data.de/Data/Verein/Villa> a ld:Verein ;
+rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lessingstrasse.7> ;
+foaf:homepage <http://www.villa-Leipzig.de> ;
+foaf:mbox "jugendarbeit@villa-leipzig.de" ;
+foaf:phone "0341-3552040" .
+
+<http://leipzig-data.de/Data/Verein/WABE> a ld:Verein ;
+rdfs:label "Wabe e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.AmKanal.28> ;
+foaf:homepage <http://www.wabe-leipzig.de> ;
+ld:hasSupplierNumber "043" ;
+foaf:mbox "S.Scherbaum@wabe-leipzig.de" ;
+foaf:phone "0341-4972415" .
+
+<http://leipzig-data.de/Data/Verein/Werk2> a ld:Verein ;
+rdfs:label "WERK II" ;
+ld:hasSupplierNumber "046" .
+
+<http://leipzig-data.de/Data/Verein/ZfI> a ld:Verein ;
+rdfs:label "Zentrum für Integration e.V." ;
+rdfs:comment "Schließt seine Einrichtung zum Jahresende 2013" ;
+ld:contactPerson <http://leipzig-data.de/Data/Person/Mueller_Doris> ;
+ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Demmeringstrasse.115> ;
+ld:hasSupplierNumber "190" ;
+foaf:mbox "doris.mueller@zfi-leipzig.de" ;
+foaf:phone "0341-4773703" ;
+foaf:phone "0341-4804311" .
+
+<http://leipzig-data.de/Data/Verein/Zukunftsnetz> a ld:Verein ;
+rdfs:label "Zukunftsnetz" ;
+ld:hasSupplierNumber "365" .
+
+<http://leipzig-data.de/Data/Verein/Zukunftswerkstatt> a ld:Verein ;
+rdfs:label "Zukunftswerkstatt" ;
+ld:hasSupplierNumber "153" .
+
+<http://leipzig-data.de/Data/Verein/AG_Animationsfilm> a ld:Verein, org:Organization ;
+rdfs:label "AG Animationsfilm e.V." .
+
+<http://leipzig-data.de/Data/Verein/ANU-Bund> a ld:Verein ;
+rdfs:label "ANU - Arbeitsgemeinschaft Natur- und Umweltbildung, Bundesverband e.V." ;
+ld:hasUW_id "veranstalter/1455" ;
+foaf:phone "069-31019229" ;
+foaf:phone "069-31019243" .
+
+<http://leipzig-data.de/Data/Verein/ASG> a org:Organization ;
+rdfs:label "Arnold-Sommerfeld-Gesellschaft" ;
+org:hasMember <http://leipzig-data.de/Data/Person/Boran_Roland>, <http://leipzig-data.de/Data/Person/Babel_Wolfgang>, <http://leipzig-data.de/Data/Person/Eisenberg_Wolfgang>, <http://leipzig-data.de/Data/Person/Fueting_Manfred>, <http://leipzig-data.de/Data/Person/Kaerger_Joerg>, <http://leipzig-data.de/Data/Person/Meiss_KarlMichael>, <http://leipzig-data.de/Data/Person/Strauss_Holger>, <http://leipzig-data.de/Data/Person/Walter_Roland> .
+
+<http://leipzig-data.de/Data/Verein/Anker> a ld:Verein ;
+rdfs:label "Der ANKER e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Renftstrasse.1> ;
+foaf:homepage <http://www.anker-leipzig.de> ;
+ld:hasSupplierNumber "062" ;
+foaf:mbox "info@anker-leipzig.de" ;
+foaf:phone "0341-9128327" .
+
+<http://leipzig-data.de/Data/Verein/CineMuro> a ld:Verein, org:Organization ;
+rdfs:label "CineMuro e. V." ;
+skos:prefLabel "CineMuro e. V." .
+
+<http://leipzig-data.de/Data/Verein/InfAI> a ld:Verein, org:Organization ;
+rdfs:label "InfAI - Institut für Angewandte Informatik e.V. an der Universität Leipzig" ;
+skos:prefLabel "InfAI - Institut für Angewandte Informatik e.V. an der Universität Leipzig" ;
+foaf:homepage <http://infai.org> .
+
+<http://leipzig-data.de/Data/Verein/KreativesLeipzig> a ld:Verein ;
+rdfs:label "Kreatives Leipzig e.V." .
+
+<http://leipzig-data.de/Data/Verein/LebenLernenLeipzig> a ld:Verein ;
+rdfs:label "Leben.Lernen.Leipzig e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.102> ;
+foaf:homepage <http://lebenlernenleipzig.de>, <http://www.facebook.com/LebenLernenLeipzig> .
+
+<http://leipzig-data.de/Data/Verein/WirtschaftsinitiativeMitteldeutschland> a ld:Verein ;
+rdfs:label "Wirtschaftsinitiative für Mitteldeutschland e.V." ;
+skos:prefLabel "Wirtschaftsinitiative für Mitteldeutschland e.V." .
+
+<http://leipzig-data.de/Data/Verein/Zukunftsakademie> a ld:Verein ;
+rdfs:label "ZAK - Zukunftsakademie Leipzig e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+foaf:homepage <http://www.zukunftsakademie-leipzig.de/> ;
+foaf:mbox "info@zak-le.de" .
+
+<http://leipzig-data.de/Data/Verein/WI.Mitteldeutschland> a ld:Verein ;
+rdfs:label "Wirtschaftsinitiative Mitteldeutschland" ;
+rdf:seeAlso <http://leipzig-data.de/Data/Verein/EMMD>  .
+
+<http://leipzig-data.de/Data/Verein/MR.Mitteldeutschland> a ld:Verein ;
+rdfs:label "Metropolregion Mitteldeutschland" ;
+rdf:seeAlso <http://leipzig-data.de/Data/Verein/EMMD> .
+
+<http://leipzig-data.de/Data/Verein/EMMD> a ld:Verein ;
+rdfs:label "Europäischen Metropolregion Mitteldeutschland e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Schillerstrasse.5> ;
+rdfs:comment "Am 18. März 2014 fusionierten die Wirtschaftsinitiative für Mitteldeutschland und die Metropolregion Mitteldeutschland zur „Europäischen Metropolregion Mitteldeutschland e.V.“ Die Wirtschaftsinitiative für Mitteldeutschland als Unternehmensnetzwerk und die Metropolregion Mitteldeutschland als Städtebündnis wollen durch die Verschmelzung die Region gemeinsam voranbringen. ... Der neue „Europäische Metropolregion Mitteldeutschland e.V.“ wird die bestehende Vereinsstruktur der Wirtschaftsinitiative für Mitteldeutschland e.V. nutzen. Ihm gehören 54 Unternehmen, drei Industrie- und Handelskammern sowie die Städte Leipzig, Halle/Saale, Dessau-Roßlau, Jena, Gera, Chemnitz und Zwickau an.  <br/> Quelle: http://www.region-halle.de/de/metropolregion/wirtschaftsinitiative-f%C3%BCr-mitteldeutschland-stellt-sich-neu-auf.html" ; 
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Tobaben_JoernHeinrich> .

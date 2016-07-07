@@ -1,0 +1,276 @@
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://leipzig-data.de/Data/Unternehmen/> a owl:Ontology ;
+rdfs:label "Unternehmen" ;
+cc:attributionURL <http://leipzig-data.de> ;
+cc:attributionName "The Leipzig Open Data Project" ;
+cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://leipzig-data.de/Data/Firma/Autohaus_Auto_Saxe> a org:Organization, ld:Autohaus, ld:Unternehmen ;
+rdfs:label "Autohaus 'Auto Saxe', Toyota- und Lexus-Vertragshändler" ;
+ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Sandberg.59> ;
+skos:prefLabel "Autohaus 'Auto Saxe', Toyota- und Lexus-Vertragshändler" .
+
+<http://leipzig-data.de/Data/Firma/Autohaus_Zimmermann_Automobile> a org:Organization, ld:Autohaus, ld:Unternehmen ;
+rdfs:label "Autohaus Zimmermann Automobile" ;
+ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Hohentichelnstrasse.22> ;
+skos:prefLabel "Autohaus Zimmermann Automobile" .
+
+<http://leipzig-data.de/Data/Firma/BootsverleihKanal28> a org:Organization, ld:Bootsverleih, ld:Unternehmen ;
+rdfs:label "Bootsverleih Am Kanal 28" ;
+ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.AmKanal.28> ;
+foaf:homepage <http://www.freizeit-abenteuer.com/bootsverleih.php> ;
+skos:prefLabel "Bootsverleih Am Kanal 28" .
+
+<http://leipzig-data.de/Data/Firma/Enterasys.Networks> a org:Organization, ld:Unternehmen ;
+rdfs:label "Enterasys Networks Germany GmbH, Niederlassung Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.Walter-Koehn-Strasse.1D> ;
+skos:prefLabel "Enterasys Networks Germany GmbH, Niederlassung Leipzig" .
+
+<http://leipzig-data.de/Data/Firma/GbR_Caravan> a org:Organization, ld:Unternehmen ;
+rdfs:label "Caravan GbR" ;
+ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.19> ;
+foaf:homepage <http://www.jointhecaravan.de/> ;
+skos:prefLabel "Caravan GbR" .
+
+<http://leipzig-data.de/Data/Firma/GetAG> a org:Organization, ld:Unternehmen ;
+rdfs:label "GET AG" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.9> ;
+skos:prefLabel "GET AG" .
+
+<http://leipzig-data.de/Data/Firma/KanuverleihRennbahnweg> a org:Organization, ld:Bootsverleih, ld:Unternehmen ;
+rdfs:label "Kanuverleih am Rennbahnsteg" ;
+ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Rennbahnweg.2A> ;
+foaf:homepage <http://www.kanuverleih-leipzig.de/index.php/standorte/kanuverleih-am-rennbahnsteg> ;
+skos:prefLabel "Kanuverleih am Rennbahnsteg" .
+
+<http://leipzig-data.de/Data/Firma/Lecos> a org:Organization, ld:Unternehmen ;
+rdfs:label "Lecos GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.PragerStrasse.8> ;
+foaf:homepage <http://www.lecos-gmbh.de> .
+
+<http://leipzig-data.de/Data/Firma/MuconaMedia> a org:Organization, ld:Unternehmen ;
+rdfs:label "Mucona Media GbR" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bruehl.52> ;
+skos:prefLabel "Mucona Media GbR" .
+
+<http://leipzig-data.de/Data/Firma/Perdata> a org:Organization, ld:Unternehmen ;
+rdfs:label "Arvato Systems GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.7> .
+
+<http://leipzig-data.de/Data/Firma/ArvatoSystems> a org:Organization, ld:Unternehmen ;
+rdfs:label "Arvato Systems GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.7> .
+
+<http://leipzig-data.de/Data/Firma/Softwareforen.Leipzig> a org:Organization, ld:Unternehmen ;
+rdfs:label "Softwareforen Leipzig GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Querstrasse.16> ;
+skos:prefLabel "Softwareforen Leipzig GmbH" .
+
+<http://leipzig-data.de/Data/Firma/Ungestalt_GbR> a org:Organization, ld:Unternehmen ;
+rdfs:label "Ungestalt GbR" ;
+rdfs:comment "Tapetenwerk, Haus K" ;
+ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.91> ;
+foaf:homepage <http://www.ungestalt.de> ;
+skos:prefLabel "Ungestalt GbR" .
+
+<http://leipzig-data.de/Data/Firma/evermind> a org:Organization, ld:Unternehmen ;
+rdfs:label "Evermind GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Schorlemmerstrasse.1> ;
+foaf:phone "0341-2539660" ;
+skos:prefLabel "Evermind GmbH" ;
+foaf:fax "0341-2539661" .
+
+ld:Unternehmen a owl:Class ;
+rdfs:label "Unternehmen" ;
+rdfs:subClassOf org:Organization .
+
+ld:Autohaus a owl:Class ;
+rdfs:label "Autohaus" ;
+rdfs:subClassOf ld:Unternehmen .
+
+ld:Bootsverleih a owl:Class ;
+rdfs:label "Bootsverleih" ;
+rdfs:subClassOf ld:Unternehmen .
+
+<http://leipzig-data.de/Data/Firma/Aurel.Marketing> a ld:Unternehmen ;
+rdfs:label "Aurel Marketing" ;
+foaf:homepage <http://www.aurel-marketing.de> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Weissgerber_Kerstin> .
+
+<http://leipzig-data.de/Data/Firma/BBW> a ld:Unternehmen ;
+rdfs:label "Berufsbildungswerk für Hör- und Sprachgeschädigte gGmbH" ;
+ld:hasSupplierNumber "312" .
+
+<http://leipzig-data.de/Data/Firma/BFW> a ld:Unternehmen ;
+rdfs:label "BFW - Berufsförderungswerk Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Georg-Schumann-Strasse.148> .
+
+<http://leipzig-data.de/Data/Firma/Baumsr> a ld:Unternehmen ;
+rdfs:label "Bau msr GmbH" ;
+foaf:homepage <http://www.baumsr.de> .
+
+<http://leipzig-data.de/Data/Firma/BusinessIntelligence> a ld:Unternehmen ;
+rdfs:label "BI Business Intelligence GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.August-Bebel-Strasse.44> ;
+foaf:homepage <http://www.bi-web.de> ;
+foaf:phone "0341-303383-30" ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Albert_Katrin> .
+
+<http://leipzig-data.de/Data/Firma/Drechslertechnik> a  ld:Unternehmen ;
+rdfs:label "Drechslertechnik GmbH" ;
+foaf:homepage <http://www.dretec.de> .
+
+<http://leipzig-data.de/Data/Firma/Enerelektronik> a ld:Unternehmen ;
+rdfs:label "Enerelektronik GmbH" .
+
+<http://leipzig-data.de/Data/Firma/EnergieUmweltLindner> a ld:Unternehmen ;
+rdfs:label "Planungsbüro für Energie und Umwelt" ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Lindner_Lothar> .
+
+<http://leipzig-data.de/Data/Firma/Energieforen.Leipzig> a ld:Unternehmen ;
+rdfs:label "Energieforen Leipzig GmbH" ;
+ld:contactPerson <http://leipzig-data.de/Data/Person/Haenel_Andreas> ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Querstrasse.16> ;
+foaf:homepage <http://www.energieforen.de> .
+
+<http://leipzig-data.de/Data/Firma/Garage> a ld:Unternehmen ;
+rdfs:label "GaraGe gGmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.97> ;
+ld:hasSupplierNumber "320" .
+
+<http://leipzig-data.de/Data/Firma/Humanitas> a ld:Unternehmen ;
+rdfs:label "Humanitas gGmbH" .
+
+<http://leipzig-data.de/Data/Firma/Instag> a ld:Unternehmen ;
+rdfs:label "Instag GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goethestrasse.1> ;
+foaf:homepage <http://instag-bildung.de> ;
+foaf:mbox "info@instag-bildung.de" ;
+ld:hasFax "0341-35591755" ;
+foaf:phone "0341-35591755" .
+
+<http://leipzig-data.de/Data/Firma/LeISA> a ld:Unternehmen ;
+rdfs:label "LeISA gGmbH" ;
+ld:hasSupplierNumber "324" .
+
+<http://leipzig-data.de/Data/Firma/LehmbauGesellschaft> a ld:Unternehmen ;
+rdfs:label "Augsburger Gesellschaft für Lehmbau" ;
+ld:hasSupplierNumber "038" .
+
+<http://leipzig-data.de/Data/Firma/SAEK-Leipzig> a ld:Unternehmen ;
+rdfs:label "SAEK Förderwerk für Rundfunk und neue Medien gGmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ferdinand-Lassalle-Strasse.21> ;
+foaf:homepage <http://www.saek.de> ;
+foaf:mbox "leipzig@saek.de" ;
+foaf:phone "0341-5194363" .
+
+<http://leipzig-data.de/Data/Firma/SZL> a ld:Unternehmen ;
+rdfs:label "SZL Suchtzentrum Leipzig gGmbH" ;
+ld:hasSupplierNumber "233" .
+
+<http://leipzig-data.de/Data/Firma/StaedtischesKaufhaus> a org:Organization ;
+rdfs:label "Städtisches Kaufhaus Leipzig GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Neumarkt.9> .
+
+<http://leipzig-data.de/Data/Firma/Unikatum> a ld:Unternehmen ;
+rdfs:label "Unikatum Kindermuseum gGmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.26> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Haensel_Annegret> ;
+foaf:mbox "info@kindermuseum-unikatum.de" ;
+foaf:phone "0341-3061986" .
+
+<http://leipzig-data.de/Data/Firma/VNG> a ld:Unternehmen ;
+rdfs:label "VNG – Verbundnetz Gas AG" ;
+ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Braunstrasse.7> .
+
+<http://leipzig-data.de/Data/Firma/WRL> a ld:Unternehmen ;
+rdfs:label "WRL - Wirtschaftsförderung Region Leipzig GmbH" ;
+rdfs:comment "Gründung als Modellprojekt der interkommunalen Zusammenarbeit in Sachsen auf Basis des Ratsbeschlusses RB V-1366/12. Details im ERIS" .
+
+<http://leipzig-data.de/Data/Firma/ZooLeipzig> a ld:Unternehmen ;
+rdfs:label "Zoo Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
+foaf:homepage <http://www.zoo-leipzig.de> ;
+foaf:phone "0341-5933385" .
+
+<http://leipzig-data.de/Data/Firma/ciT> a ld:Unternehmen ;
+rdfs:label "ciT – Consulting Innovation Training GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Lutherstrasse.10> ;
+foaf:phone "0341-68707-0" .
+
+<http://leipzig-data.de/Data/Firma/BMW-Leipzig> a ld:Unternehmen, org:Organization ;
+rdfs:label "BMW Werk Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.BMW-Allee.1> ;
+skos:prefLabel "BMW Werk Leipzig" ;
+foaf:homepage <http://www.bmw-werk-leipzig.de> .
+
+<http://leipzig-data.de/Data/Firma/BSE-Engineering> a ld:Unternehmen, org:Organization ;
+rdfs:label "BSE Engineering" ;
+ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Mottelerstrasse.8> ;
+skos:prefLabel "BSE Engineering" ;
+foaf:homepage <http://www.bse-leipzig.de/> .
+
+<http://leipzig-data.de/Data/Firma/Bio-Net> a ld:Unternehmen ;
+rdfs:label "Bio-Net Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.5> .
+
+<http://leipzig-data.de/Data/Firma/GCI> a ld:Unternehmen, org:Organization ;
+rdfs:label "GCI-Dr. Schindler Geo Consult International" ;
+ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Marienbrunnenstrasse.4> ;
+skos:prefLabel "GCI-Dr. Schindler Geo Consult International" ;
+foaf:homepage <http://www.gc-i.de/> .
+
+<http://leipzig-data.de/Data/Firma/Picmention> a ld:Unternehmen ;
+rdfs:label "Picmention Medienproduktion" ;
+ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.August-Bebel-Strasse.73> .
+
+<http://leipzig-data.de/Data/Firma/SachsenWasser> a ld:Unternehmen, org:Organization ;
+rdfs:label "Sachsen Wasser GmbH" ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Stephanstrasse.4> ;
+skos:prefLabel "Sachsen Wasser GmbH" .
+
+<http://leipzig-data.de/Data/Firma/SternburgBrauerei> a ld:Unternehmen, org:Organization ;
+rdfs:label "Sternburg Brauerei GmbH. Ein Unternehmen der Radeberger Gruppe" ;
+ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.13> ;
+skos:prefLabel "Sternburg Brauerei GmbH. Ein Unternehmen der Radeberger Gruppe" ;
+foaf:homepage <http://www.sternburg-bier.de/> .
+
+<http://leipzig-data.de/Data/Firma/StudioBosco> a ld:Unternehmen ;
+rdfs:label "Studio Bosco" ;
+ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.29> ;
+foaf:homepage <http://www.studiobosco.de/> .
+
+<http://leipzig-data.de/Data/Firma/VivoSensMedical> a ld:Unternehmen ;
+rdfs:label "Vivo Sens Medical" ;
+ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Ferdinand-Rhode-Strasse.20> .
+
+<http://leipzig-data.de/Data/Firma/WebdataSolutions> a ld:Unternehmen ;
+rdfs:label "Webdata Solutions" ;
+ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Jacobstrasse.5> ;
+foaf:homepage <http://webdata-solutions.com/> .
+
+<http://leipzig-data.de/Data/Firma/apiOmat> a ld:Unternehmen ;
+rdfs:label "apiOmat" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.4> ;
+foaf:homepage <https://apiomat.com/de/> .
+
+<http://leipzig-data.de/Data/Firma/axxplore> a ld:Unternehmen ;
+rdfs:label "axxplore" ;
+ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Daehnhardtstrasse.1> ;
+foaf:homepage <http://www.axxplore.com/> .
+
+<http://leipzig-data.de/Data/Firma/saxess> a ld:Unternehmen ;
+rdfs:label "saxess AG" ;
+ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Grassistrasse.12> ;
+foaf:homepage <http://www.saxess-ag.de/> .

@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://leipzig-data.de/Data/KirchlicheEinrichtungen/> a owl:Ontology ;
+rdfs:label "Kirchliche Einrichtungen" ;
+cc:attributionURL <http://leipzig-data.de> ;
+cc:attributionName "The Leipzig Open Data Project" ;
+cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://leipzig-data.de/Data/KE/Dekanatsjugendseelsorge> a org:Organization ;
+rdfs:label "Dekanatsjugendseelsorge" ;
+ld:hasSupplierNumber "079" .
+
+<http://leipzig-data.de/Data/KE/DiakonischesWerk> a org:Organization ;
+rdfs:label "Diakonisches Werk, Innere Mission" ;
+foaf:homepage <http://www.diakonie-leipzig.de> ;
+ld:hasSupplierNumber "030" .
+
+<http://leipzig-data.de/Data/KE/EvFreiKirche> a org:Organization ;
+rdfs:label "Ev.-Freikirchliche Gemeinde" ;
+ld:hasSupplierNumber "140" .
+
+<http://leipzig-data.de/Data/KE/EvLuthJugend> a org:Organization ;
+rdfs:label "Evangelisch-lutherische Jugend" ;
+ld:hasSupplierNumber "083" .
+
+<http://leipzig-data.de/Data/KE/EvMethKirche> a org:Organization ;
+rdfs:label "Evangelisch-methodistische Kirche" ;
+ld:hasSupplierNumber "123" .
+
+<http://leipzig-data.de/Data/KE/EvRefKirche> a org:Organization ;
+rdfs:label "Evangelisch-reformierte Kirche zu Leipzig" ;
+ld:hasSupplierNumber "124" .
+
+<http://leipzig-data.de/Data/KE/Heilsarmee> a org:Organization ;
+rdfs:label "Die Heilsarmee" ;
+ld:hasSupplierNumber "075" .
+
+<http://leipzig-data.de/Data/KE/HilfswerkAlexandra> a org:Organization ;
+rdfs:label "Deutsch-Russisches Hilfswerk zur Heiligen Alexandra" ;
+ld:hasSupplierNumber "305" .
+
+<http://leipzig-data.de/Data/KE/StMartin> a org:Organization ;
+rdfs:label "Katholische Pfarrei St. Martin" .

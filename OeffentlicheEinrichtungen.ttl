@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://leipzig-data.de/Data/OeffentlicheEinrichtungen/> a owl:Ontology ;
+rdfs:label "Stiftungen und Öffentliche Einrichtungen" ;
+cc:attributionURL <http://leipzig-data.de> ;
+cc:attributionName "The Leipzig Open Data Project" ;
+cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://leipzig-data.de/Data/BA-Leipzig> a org:Organization ;
+rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.113> ;
+foaf:homepage <http://www.ba-leipzig.de> ;
+ld:hasTelefon "0341 42743-404" .
+
+<http://leipzig-data.de/Data/DeutscheNationalbibliothek> a org:Organization  ;
+rdfs:label "Deutsche Nationalbibliothek Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.1> ;
+foaf:homepage <http://www.d-nb.de> .
+
+<http://leipzig-data.de/Data/Stiftung/FES.Leipzig> a org:Organization ;
+rdfs:label "Friedrich-Ebert-Stiftung Leipzig" ;
+ld:Kurzinformation "<p>Mit jährlich über einhundert Veranstaltungen leistet das Büro einen Beitrag zur politischen Bildungsarbeit in Leipzig und der Region. Als erster ostdeutscher Standort der Friedrich-Ebert-Stiftung hat es bereits Anfang 1990 seine Arbeit aufgenommen. Unsere Tagungen und Seminare, Podiumsdiskussionen, Gesprächskreise und Ausstellungen thematisieren wichtige Fragestellungen aus Politik und Gesellschaft und zielen damit auf die Förderung von Demokratie. </p> <p>Wir wollen die komplizierten Abläufe politischer Entscheidungsprozesse aufzeigen, darauf einwirkende Interessen verdeutlichen und die Menschen zum politischen Handeln und engagierten Mitwirken ermutigen und zusammenbringen.</p>" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Burgstrasse.25> ;
+foaf:homepage <http://www.fes.de/Leipzig> .
+
+<http://leipzig-data.de/Data/HTWK> a  org:Organization ;
+rdfs:label "HTWK Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Karl-Liebknecht-Strasse.132> ;
+foaf:homepage <http://www.htwk-leipzig.de> .
+
+<http://leipzig-data.de/Data/HWK-Leipzig> a org:Organization ;
+rdfs:label "Handwerkskammer Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DresdnerStrasse.11> ;
+foaf:homepage <http://www.hwk-leipzig.de> .
+
+<http://leipzig-data.de/Data/HfTL> a org:Organization  ;
+rdfs:label "Hochschule für Telekommunikation Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.43> ;
+foaf:homepage <http://www.hft-leipzig.de> .
+
+<http://leipzig-data.de/Data/IHK-Leipzig> a org:Organization ;
+rdfs:label "IHK Leipzig" ;
+ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goerdelerring.5> ;
+foaf:homepage <http://www.leipzig.ihk.de> .
+
+<http://leipzig-data.de/Data/MPI-MIS> a org:Organization ;
+rdfs:label "MPI für Mathematik in den Naturwissenschaften" ;
+rdfs:comment "Die interdisziplinäre Zusammenarbeit von Mathematik und Naturwissenschaften bildet den Kernpunkt der Arbeit des 1996 gegründeten Max-Planck-Instituts. Die Wissenschaftler beschäftigten sich mit einem breiten Spektrum an Fragestellungen der reinen und angewandten Mathematik und stellen sich den mathematischen Herausforderungen, die durch theoretische Fragestellungen in den Natur- und Ingenieurwissenschaften entstehen. Ziel ist es, mathematische Denkweisen und Methoden in neuartiger Weise in verschiedene Anwendungsbereiche in den Naturwissenschaften zu integrieren." ;
+ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.22> ;
+foaf:homepage <http://www.mis.mpg.de> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Gregor_Jana> .
+
+<http://leipzig-data.de/Data/Stiftung/RLSachsen> a org:Organization ;
+rdfs:label "Rosa-Luxemburg Stiftung Sachsen" ;
+ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Harkortstrasse.10> ;
+foaf:homepage <http://www.rosa-luxemburg-stiftung-sachsen.de> .
+
+<http://leipzig-data.de/Data/UFZ> a  org:Organization  ;
+rdfs:label "UFZ" ;
+ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Permoserstrasse.15> ;
+foaf:homepage <http://www.ufz.de> ;
+ld:engagedPerson <http://leipzig-data.de/Data/Person/Teutsch_Georg> .
+
+<http://leipzig-data.de/Data/ZV_Parthenaue> a org:Organization ;
+rdfs:label "Zweckverband Parthenaue" ;
+foaf:homepage <http://www.zv-parthenaue.de> .

@@ -1,0 +1,276 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://leipzig-data.de/Data/StadtLeipzig/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;rdfs:comment "Ämter der Stadt Leipzig wurden im Rahmen des Projekts \"Interaktiver Haushaltsrechner für Leipzig 2015\" extrahiert"; 
+    rdfs:label "Stadtverwaltung Leipzig" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/GB-OBM>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.01.1> ;
+    a org:Organization ;
+    rdfs:label "Geschäftsbereich des Oberbürgermeisters und des Stadtrats" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Kommunalwirtschaft>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.01.2> ;
+    a org:Organization ;
+    rdfs:label "Geschäftsbereich des Oberbürgermeisters - Kommunalwirtschaft" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Hauptamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.10> ;
+    a org:Organization ;
+    rdfs:label "Hauptamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Personalamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.11> ;
+    a org:Organization ;
+    rdfs:label "Personalamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/StatistikWahlen>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.12> ;
+    a org:Organization ;
+    rdfs:label "Amt für Statistik und Wahlen" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Gesamtpersonalrat>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.13> ;
+    a org:Organization ;
+    rdfs:label "Gesamtpersonalrat" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Rechnungspruefungsamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.14> ;
+    a org:Organization ;
+    rdfs:label "Rechnungsprüfungsamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/ReferatGleichstellung>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.17> ;
+    a org:Organization ;
+    rdfs:label "Referat für Gleichstellung von Frau und Mann" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/ReferatMigration>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.18> ;
+    a org:Organization ;
+    rdfs:label "Referat für Migration und Integration" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Personalrat>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.19> ;
+    a org:Organization ;
+    rdfs:label "Personalrat Stadtverwaltung" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt2>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.2> ;
+    a org:Organization ;
+    rdfs:label "Amt 2" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Stadtkaemmerei>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.20> ;
+    a org:Organization ;
+    rdfs:label "Stadtkämmerei" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Stadtkasse>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.21> ;
+    a org:Organization ;
+    rdfs:label "Stadtkasse" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Liegenschaftsamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.23> ;
+    a org:Organization ;
+    rdfs:label "Liegenschaftsamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt27>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.27> ;
+    a org:Organization ;
+    rdfs:label "Amt 27" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Rechtsamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.30> ;
+    a org:Organization ;
+    rdfs:label "Rechtsamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Ordnungsamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.32> ;
+    a org:Organization ;
+    rdfs:label "Ordnungsamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Standesamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.34> ;
+    a org:Organization ;
+    rdfs:label "Standesamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Umweltschutz>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.36> ;
+    a org:Organization ;
+    rdfs:label "Amt für Umweltschutz" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Branddirektion>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.37> ;
+    a org:Organization ;
+    rdfs:label "Branddirektion" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Kulturamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.41> ;
+    a org:Organization ;
+    rdfs:label "Kulturamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Volkshochschule>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.42> ;
+    a org:Organization ;
+    rdfs:label "Volkshochschule" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/MuseumBildendeKuenste>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.43> ;
+    a org:Organization ;
+    rdfs:label "Museum für bildende Künste" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken>
+    ld:contactPerson <http://leipzig-data.de/Data/Person/Ackermann_Arne> ;
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.45> ;
+    a org:Organization ;
+    rdfs:label "Leipziger Städtische Bibliotheken" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Sozialamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.50> ;
+    a org:Organization ;
+    rdfs:label "Sozialamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Jugendamt>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.51> ;
+    a org:Organization ;
+    rdfs:label "Amt für Jugend, Familie und Bildung" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Sportamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.52> ;
+    a org:Organization ;
+    rdfs:label "Amt für Sport" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Gesundheitsamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.53> ;
+    a org:Organization ;
+    rdfs:label "Gesundheitsamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Lebensmittelaufsicht>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.56> ;
+    a org:Organization ;
+    rdfs:label "Veterinär- und Lebensmittelaufsichtsamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/ReferatSenioren>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.57> ;
+    a org:Organization ;
+    rdfs:label "Referat für Senioren und Menschen mit Behinderungen" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Stadtplanungsamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.61> ;
+    a org:Organization ;
+    rdfs:label "Stadtplanungsamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/GeoinformationBodenordnung>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.62> ;
+    a org:Organization ;
+    rdfs:label "Amt für Geoinformation und Bodenordnung" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/BauordnungDenkmalpflege>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.63> ;
+    a org:Organization ;
+    rdfs:label "Amt für Bauordnung und Denkmalpflege" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/ASW>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.64> ;
+    a org:Organization ;
+    rdfs:label "Amt für Stadterneuerung und Wohnungsbauförderung" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/AGM>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.65> ;
+    a org:Organization ;
+    rdfs:label "Amt für Gebäudemanagement" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Tiefbauamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.66> ;
+    a org:Organization ;
+    rdfs:label "Verkehrs- und Tiefbauamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Umweltamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.67> ;
+    a org:Organization ;
+    rdfs:label "Umweltamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Marktamt>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.72> ;
+    a org:Organization ;
+    rdfs:label "Marktamt" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.80> ;
+    a org:Organization ;
+    rdfs:label "Amt für Wirtschaftsförderung";
+    foaf:phone "0341-1235826"  .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt801>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.801> ;
+    a org:Organization ;
+    rdfs:label "Amt 801" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Beschaeftigungspolitik>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.81> ;
+    a org:Organization ;
+    rdfs:label "Referat für Beschäftigungspolitik" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt921>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.921> ;
+    a org:Organization ;
+    rdfs:label "Amt 921" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt922>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.922> ;
+    a org:Organization ;
+    rdfs:label "Amt 922" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt923>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.923> ;
+    a org:Organization ;
+    rdfs:label "Amt 923" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt924>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.924> ;
+    a org:Organization ;
+    rdfs:label "Amt 924" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt925>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.925> ;
+    a org:Organization ;
+    rdfs:label "Amt 925" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt926>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.926> ;
+    a org:Organization ;
+    rdfs:label "Amt 926" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt927>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.927> ;
+    a org:Organization ;
+    rdfs:label "Amt 927" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Amt98>
+    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.98> ;
+    a org:Organization ;
+    rdfs:label "Amt 98" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Kommunikation>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.2> ;
+    a org:Organization ;
+    rdfs:label "Referat Kommunikation im Geschäftsbereich des Oberbürgermeisters" .
+
+<http://leipzig-data.de/Data/StadtLeipzig/Verwaltung>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
+    a org:Organization ;
+    rdfs:label "Stadt Leipzig, Stadtverwaltung" ;
+    foaf:homepage <http://www.leipzig.de> .
+
