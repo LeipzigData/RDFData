@@ -42,8 +42,8 @@ ld:Schule
 
 <http://leipzig-data.de/Data/Schule/125-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.43> ;
-    ld:angeboteneFremdsprachen "Englisch" ;
-    ld:hasURL <http://www.sn.schule.de/~ms125> ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasURL <http://www.125-oberschule.de> ;
     a ld:Oberschule, ld:Schule ;
     rdfs:label "125. Schule" .
 
@@ -120,8 +120,8 @@ ld:Schule
 
 <http://leipzig-data.de/Data/Schule/56-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Dieskaustrasse.213> ;
-    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-    ld:hasURL <http://www.56-mittelschule-leipzig.de> ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
+    ld:hasURL <http://www.56-oberschule-leipzig.de> ;
     a ld:Oberschule, ld:Schule ;
     rdfs:label "56. Schule" .
 
@@ -137,7 +137,7 @@ ld:Schule
 
 <http://leipzig-data.de/Data/Schule/68-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.BreitenfelderStrasse.19> ;
-    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
     ld:hasURL <http://www.mittelschule-moeckern.de> ;
     a ld:Oberschule, ld:Schule ;
     rdfs:label "68. Schule" .
@@ -164,7 +164,7 @@ ld:Schule
 
 <http://leipzig-data.de/Data/Schule/84-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.5> ;
-    ld:angeboteneFremdsprachen "Englisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
     ld:hasURL <http://www.84-ms-leipzig.de> ;
     a ld:Oberschule, ld:Schule ;
     rdfs:label "84. Schule" .
@@ -192,7 +192,7 @@ ld:Schule
 <http://leipzig-data.de/Data/Schule/94-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.3> ;
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-    ld:hasURL <http://www.94ms.de.vu> ;
+    ld:hasURL <http://cms.sachsen.schule/94osl> ;
     a ld:Oberschule, ld:Schule ;
     rdfs:label "94. Schule" .
 
@@ -214,9 +214,9 @@ ld:Schule
 <http://leipzig-data.de/Data/Schule/Adler-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Antonienstrasse.24> ;
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-    ld:hasURL <http://www.schule-am-adler.de> ;
+    ld:hasURL <http://www.schule-am-adler.de> , <http://www.schuleamadler.de> ;
     a ld:Grundschule, ld:Oberschule, ld:Schule ;
-    rdfs:label "Schule am Adler" .
+    rdfs:label "Oberschule am Adler" .
 
 <http://leipzig-data.de/Data/Schule/AktiveSchule-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.EisenacherStrasse.40> ;
@@ -269,7 +269,7 @@ ld:Schule
     ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 01" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Friedrich-Arnold-Brockhaus-Schule" .
+    rdfs:label "Friedrich-Arnold-Brockhaus-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Busch-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.43> ;
@@ -304,8 +304,9 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.7> ;
     ld:hatSchulkuerzel "FT 1" ;
     ld:hatProfile "mathematisch", "musisch-künstlerisch", "sprachlich" ;
-    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch", "Italienisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch", "Italienisch", "Russisch" ;
     ld:hasURL <http://www.schulzentrum.de> ;
+    rdfs:comment "In kirchlicher Trägerschaft. Religionsunterricht, Andachten und Gottesdienste gehören zum Schulalltag." ; 
     a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
     rdfs:label "Evangelisches Schulzentrum" .
 
@@ -321,10 +322,10 @@ ld:Schule
 
 <http://leipzig-data.de/Data/Schule/FreieSchule>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.67> ;
-    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
     ld:hasURL <http://www.freie-schule-leipzig.de> ;
-    rdfs:comment "Freie Alternativschule, keine Zensuren, Ganztagsschule"; 
+    rdfs:comment "Freie Alternativschule, keine Zensuren, Ganztagsschule, 1990 als Alternativschule gegründet"; 
     rdfs:label "Freie Schule Leipzig e.V." .
 
 <http://leipzig-data.de/Data/Schule/FreieWaldorfschule>
@@ -333,7 +334,7 @@ ld:Schule
     ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
     ld:hasURL <http://www.waldorfschule-leipzig.de> ;
     rdfs:comment "Gesamtschule"; 
-    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
     rdfs:label "Freie Waldorfschule Leipzig" .
 
 <http://leipzig-data.de/Data/Schule/Froebel-GS>
@@ -349,15 +350,15 @@ ld:Schule
 <http://leipzig-data.de/Data/Schule/Georg-Schumann-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Glockenstrasse.6> ;
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-    ld:hasURL <http://www.g-schumann-schule.de> ;
+    ld:hasURL <http://www.georg-schumann-schule.de> ;
     a ld:Oberschule, ld:Schule ;
-    rdfs:label "Georg-Schumann-Schule" .
+    rdfs:label "Georg-Schumann-Oberschule" .
 
 <http://leipzig-data.de/Data/Schule/Gohlis-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Luetzowstrasse.8> ;
     a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-    rdfs:comment "Ganztagsschule"; 
+    rdfs:comment "Ganztagsschule, Träger ist der Verein \"Schulen für gemeinschaftlices Lernen\""; 
     ld:hasURL <http://www.schugel.de> ;
     rdfs:label "Freie Oberschule Gohlis" .
 
@@ -383,14 +384,14 @@ ld:Schule
     ld:hatProfile "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 23" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Werner-Heisenberg-Schule" .
+    rdfs:label "Werner-Heisenberg-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Helmholtz-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Helmholtzstrasse.6> ;
     ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
     ld:hasURL <http://www.helmholtzschule-leipzig.de> ;
    a ld:Oberschule, ld:Schule ;
-    rdfs:label "Helmholtzschule" .
+    rdfs:label "Helmholtz-Oberschule" .
 
 <http://leipzig-data.de/Data/Schule/Hertz-Gym>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch", "Spanisch" ;
@@ -399,7 +400,7 @@ ld:Schule
     ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sprachlich" ;
     ld:hatSchulkuerzel "S 04" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Gustav-Hertz-Schule" .
+    rdfs:label "Gustav-Hertz-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Holzhausen-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.StoetteritzerLandstrasse.21> ;
@@ -407,13 +408,13 @@ ld:Schule
     rdfs:label "Schule Holzhausen" .
 
 <http://leipzig-data.de/Data/Schule/Humboldt-Gym>
-    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Moebiusstrasse.8> ;
     ld:hasURL <http://marvin.sn.schule.de/~humboldt-leipzig> ;
     ld:hatProfile "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 06" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Humboldt-Schule" .
+    rdfs:label "Humboldt-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Kant-Gym>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
@@ -422,7 +423,7 @@ ld:Schule
     ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 06" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Immanuel-Kant-Schule" .
+    rdfs:label "Immanuel-Kant-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Kepler-Gym>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
@@ -431,7 +432,7 @@ ld:Schule
     ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sportlich" ;
     ld:hatSchulkuerzel "S 14" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Johannes-Kepler-Schule" .
+    rdfs:label "Johannes-Kepler-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Klinger-Gym>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
@@ -440,7 +441,7 @@ ld:Schule
     ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 16" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Max-Klinger-Schule" .
+    rdfs:label "Max-Klinger-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Koerner-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Schlehenweg.32> ;
@@ -466,16 +467,16 @@ ld:Schule
     ld:hatSchulkuerzel "FT 4" ;
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
     ld:hasURL <http://www.intschool-leipzig.com> ;
-    rdfs:comment "Gesamtschule (Kindergarten bis Klasse 12), Ganztagsschule"; 
-    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    rdfs:comment "Gesamtschule (Kindergarten bis Klasse 12), Ganztagsschule, Englich ist Unterrichtssprache"; 
+    a ld:FreierTraeger, ld:Grundschule,  ld:Gymnasium, ld:Oberschule, ld:Schule ;
     rdfs:label "Leipzig International School e.V." .
 
 <http://leipzig-data.de/Data/Schule/Lene-Voigt-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Willi-Bredel-Strasse.11> ;
-    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
     ld:hasURL <http://www.lene-voigt-schule-leipzig.de> ;
     a ld:Oberschule, ld:Schule ;
-    rdfs:label "Lene-Voigt-Schule" .
+    rdfs:label "Lene-Voigt-Oberschule" .
 
 <http://leipzig-data.de/Data/Schule/Lessing-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lessingstrasse.27> ;
@@ -529,9 +530,9 @@ ld:Schule
 <http://leipzig-data.de/Data/Schule/Moelkau-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04316.Leipzig.Schulstrasse.6> ;
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-    ld:hasURL <http://www.sn.schule.de/~ms-moelkau> ;
+    ld:hasURL <http://www.oberschule-moelkau.de> ;
     a ld:Grundschule, ld:Oberschule, ld:Schule ;
-    rdfs:label "Schule Mölkau" .
+    rdfs:label "Oberschule Mölkau" .
 
 <http://leipzig-data.de/Data/Schule/Montessori-Schulzentrum>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.61> ;
@@ -539,6 +540,7 @@ ld:Schule
     ld:hatProfile "naturwissenschaftlich", "gesellschaftswissenschaftlich", "sprachlich" ;
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
     ld:hasURL <http://www.montessori-leipzig.de> ;
+    rdfs:comment "Träger ist das Bischöfliche Ordinariat des Bistums Dresden-Meißen." ;  
     a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
     rdfs:label "Bischöfliches Maria-Montessori-Schulzentrum Leipzig" .
 
@@ -561,7 +563,7 @@ ld:Schule
     ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 07" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Neue Nikolaischule" .
+    rdfs:label "Neues Nikolai-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Oeser-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Geibelstrasse.74> ;
@@ -576,56 +578,57 @@ ld:Schule
     ld:hatSchulkuerzel "S 09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Schule mit vertieftem mathematisch-naturwissenschaftlichen Profil" ;
-    rdfs:label "Wilhelm-Ostwald-Schule" .
+    rdfs:label "Wilhelm-Ostwald-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Paunsdorf-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.ZumWaeldchen.4> ;
     ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-    ld:hasURL <http://www.mittelschule-leipzig-paunsdorf.de> ;
+    ld:hasURL <http://www.oberschule-leipzig-paunsdorf.de> ;
     a ld:Oberschule, ld:Schule ;
-    rdfs:label "Schule Paunsdorf" .
+    rdfs:label "Oberschule Paunsdorf" .
 
 <http://leipzig-data.de/Data/Schule/Pestalozzi-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Pestalozzistrasse.39> ;
     ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-    ld:hasURL <http://www.cms.sn.schule.de/mspestal/start> ;
+    ld:hasURL <http://cms.sachsen.schule/mspestal/start> ;
     a ld:Oberschule, ld:Schule ;
-    rdfs:label "Heinrich-Pestalozzi-Schule" .
+    rdfs:label "Heinrich-Pestalozzi-Oberschule" .
 
 <http://leipzig-data.de/Data/Schule/Peters-Gym>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Latein" ;
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.104> ;
-    ld:hasURL <http://www.lops-leipzig.de> ;
+    ld:hasURL <http://www.lops-leipzig.de>, <http://cms.sachsen.schule/gymlops> ;
     ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Lousie-Otto-Peters-Schule";
+    rdfs:label "Lousie-Otto-Peters-Gymnasium";
     ld:hatSchulkuerzel "S 10" .
 
 <http://leipzig-data.de/Data/Schule/Petri-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.50> ;
-    ld:angeboteneFremdsprachen "Englisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
     ld:hasURL <http://www.petrischule-leipzig.de> ;
     a ld:Oberschule, ld:Schule ;
-    rdfs:label "Petrischule" .
+    rdfs:label "Petri-Oberschule" .
 
 <http://leipzig-data.de/Data/Schule/Portitz-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.Licidestrasse.12> ;
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
     ld:hasURL <http://www.mittelschule-portitz.de> ;
     a ld:Grundschule, ld:Oberschule, ld:Schule ;
-    rdfs:label "Schule Portitz" .
+    rdfs:label "Oberschule Portitz" .
 
 <http://leipzig-data.de/Data/Schule/Rabet-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.50> ;
     a ld:Grundschule, ld:Schule ;
     rdfs:label "Schule am Rabet" .
 
-<http://leipzig-data.de/Data/Schule/Rahn-OS>
+<http://leipzig-data.de/Data/Schule/Rahn-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kochstrasse.28A> ;
     ld:angeboteneFremdsprachen "Englisch", "Spanisch", "Französisch" ;
     ld:hasURL <http://www.rahndittrich.de/os-lpz> ;
-    a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
-    rdfs:label "Freie Oberschule der Rahn-Dittrich-Gruppe" .
+    rdfs:comment "Träger ist die Rahn-Dittrich Group. 2017 ist der Umzug auf den Campus Salomonstraße geplant." ;  
+    a ld:FreierTraeger, ld:Oberschule, ld:Gymnasium, ld:Schule ;
+    rdfs:label "Rahn-Oberschule und -Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Reclam-Gym>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Spanisch" ;
@@ -635,7 +638,7 @@ ld:Schule
     ld:hatSchulkuerzel "S 08" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Teil des deutsch-französischen Bildungszentrums" ;
-    rdfs:label "Anton-Philipp-Reclam-Schule" .
+    rdfs:label "Anton-Philipp-Reclam-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Regenbogen-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15> ;
@@ -654,11 +657,11 @@ ld:Schule
     ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 18" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Robert-Schumann-Schule" .
+    rdfs:label "Robert-Schumann-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Robeson-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Jungmannstrasse.5> ;
-    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
     ld:hasURL <http://www.sn.schule.de/~ms-robeson-l> ;
     a ld:Grundschule, ld:Oberschule, ld:Schule ;
     rdfs:label "Paul-Robeson-Schule" .
@@ -672,25 +675,26 @@ ld:Schule
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.2> ;
     ld:hasURL <http://www.fschillerg.de> ;
-    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sprachlich" ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "künstlerisch" ;
     ld:hatSchulkuerzel "S 22" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:label "Friedrich-Schiller-Schule" .
+    rdfs:label "Friedrich-Schiller-Gymnasium" .
 
 <http://leipzig-data.de/Data/Schule/Schoenefeld-Gym>
-    ld:angeboteneFremdsprachen "Englisch", "Spanisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.LoebauerStrasse.46> ;
-    ld:hatProfile "unklar" ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "sprachlich" ;
+    ld:hasURL <http://www.brockhaus-gymnasium.de> ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:comment "Schule im Aufbau, derzeit Außenstelle des Brockhaus-Gymnasiums" ;
     rdfs:label "Gymnasium Schönefeld" .
 
 <http://leipzig-data.de/Data/Schule/GS-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.113> ;
     ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-    rdfs:comment "Schule im Aufbau, derzeit Außenstelle der Helmholtz-Oberschule" ;
+    rdfs:comment "Schule im Aufbau" ;
+    ld:hasURL <http://www.schule-georg-schwarz-strasse.de> ;
     a ld:Oberschule, ld:Schule ;
-    rdfs:label "Schule Georg-Schwarz-Straße" .
+    rdfs:label "Oberschule Georg-Schwarz-Straße" .
 
 <http://leipzig-data.de/Data/Schule/Scholl-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.1> ;
@@ -731,7 +735,7 @@ ld:Schule
 
 <http://leipzig-data.de/Data/Schule/Sport-OS>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Max-Planck-Strasse.1> ;
-    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
     ld:hasURL <http://www.sportoberschule-leipzig.de> ;
     a ld:Oberschule, ld:Schule ;
     rdfs:label "Sportoberschule Leipzig" .
@@ -745,14 +749,15 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.59> ;
     ld:angeboteneFremdsprachen "Englisch", "Spanisch" ;
     ld:hasURL <http://www.tuv.com/schule-leipzig> ;
-    rdfs:comment "Ganztagsschule"; 
+    rdfs:comment "Ganztagsschule, Träger ist der TÜV Rheinland"; 
     a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
     rdfs:label "TÜV Oberschule Leipzig" .
 
 <http://leipzig-data.de/Data/Schule/Telemann-Gym>
-    ld:angeboteneFremdsprachen "Englisch" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.ErfurterStrasse.14> ;
+    ld:angeboteneFremdsprachen "Englisch", "Spanisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.ErfurterStrasse.4> ;
     ld:hatProfile "unklar" ;
+    ld:hasURL <http://cms.sachsen.schule/gym/tele> ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Schule im Aufbau, derzeit Außenstelle des Schiller-Gymnasiums" ;
     rdfs:label "Gymnasium Telemannstraße" .
@@ -770,7 +775,7 @@ ld:Schule
 <http://leipzig-data.de/Data/Schule/OS-Weisseplatz>
     ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Ferdinand-Jost-Strasse.33>;
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-    rdfs:comment "Schule im Aufbau" ;
+    rdfs:comment "Schule im Aufbau, geplant ist eine musisch-sprachlich-mediale Orientierung" ;
     ld:hasURL <http://www.schule-am-weisseplatz.de> ;
     a ld:Oberschule, ld:Schule ;
     rdfs:label "Oberschule am Weißeplatz" .
@@ -785,14 +790,15 @@ ld:Schule
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
     ld:hasURL <http://www.wiedebachschule-leipzig.de> ;
     a ld:Oberschule, ld:Schule ;
-    rdfs:label "Apollonia-von-Wiedebach-Schule" .
+    rdfs:label "Wiedebach-Oberschule" .
 
 <http://leipzig-data.de/Data/Schule/Wiederitzsch-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.ZurSchule.11> ;
-    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
     ld:hasURL <http://www.oberschule-wiederitzsch.de> ;
+    rdfs:comment "Gemeinsames Gebäude für Grund- und Oberschule" ; 
     a ld:Grundschule, ld:Oberschule, ld:Schule ;
-    rdfs:label "Schule Wiederitzsch" .
+    rdfs:label "Grund- und Oberschule Wiederitzsch" .
 
 <http://leipzig-data.de/Data/Schule/Zeigner-GS>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.24> ;
