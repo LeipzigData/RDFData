@@ -2,7 +2,6 @@
 
 @base <http://leipzig-data.de/Data/Events/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,48 +13,39 @@
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.311> a ld:Event ;
-                                                   rdfs:label "Tag des kreativen Hofes" ;
-                                                   ical:description "Bummeln, Probieren, Mitmachen – der Tag des kreativen Hofes – am 5. November 2016 <br/> Immer am erstem Samstag im November treffen sich Künstler, Kunsthandwerker und kreative Menschen jedweder Couleur zu diesem kleinen Kunsthandwerks- und Kreativmarkt in Leipzig-Miltitz. Um die 15 Teilnehmer zeigen im Hof des Anwesens an der Mittelstraße 13 eine bunte Vielfalt aus den Bereich von Bonsai, textiles Schaffen, Malerei, Druck bis zu Floristik und Schmuck. <br/> Die Idee zum TKH entstand aus der Überlegung, dass gerade kleinere Unternehmen aus dem Kreativsektor Probleme haben, Podien zur Selbstdarstellung und Vermarktung zu finden. Unter dem Motto „Miteinander sind wir stärker“ finden sich beim TKH Kreative unterschiedlichster Ausrichtungen zusammen und präsentieren sich, ihre Ideen und ihre Produkte gemeinsam. <br/> Der Tag des kreativen Hofes beginnt um 11 Uhr und soll bis 18 Uhr dauern. Für Kuchen und hausgemachten Glühwein sorgen die Miltitzer Backfrauen, für Herzhaftes ist die Fleischerei Felgentreff (Markranstädt) zuständig. <br/> Bummeln, Probieren, Mitmachen sollen die Besucher des TKH: Eine Vielzahl von Mitmachaktionen und Vorführungen laden zum selbst kreativ sein und diskutieren ein. So können Sie sich verschiedene Nähtechniken zeigen lassen, selbst ein kleines Herbstgesteck gestalten und Bonsaifreunden bei der Arbeit an ihren Miniaturbäumen über die Schulter schauen, bekommen Einblicke in eine Goldschmiede-Werkstatt und erfahren mehr über Wildkräuter und -früchte." ;
-                                                   ical:dtend "2016-11-05T18:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:dtstart "2016-11-05T11:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:HofFelgentreff ;
-                                                   ical:organizer ldp:Felgentreff_Nadine ;
-                                                   ical:sentBy <http://leipzig-data.de/Data/Agent/APILeipzig.Events> ;
-                                                   ical:summary "Tag des kreativen Hofes" ;
-                                                   ld:hasTag ldtag:KreativesLeipzig ;
-                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.317>, <http://leipzig-data.de/Data/APIId/Event.311> .
-
-<http://leipzig-data.de/Data/Event/DTS.2016-11-07> a ld:Event ;
-                                                   rdfs:label "Menschen und Tiere" ;
-                                                   ical:description "Überrascht war ich, als ich feststellte, dass ausgerechnet der Utilitarist Peter Singer sich stark macht für eine Ethik, die ausdrücklich Tiere aus dem Rechtsverhältnis einer Sache heraus haben will und eine eigene Tierethik vorschlägt. Warum gerade der? War das nicht der, der Euthanasie aus Nützlichkeitserwägungen als moralisch vertretbar hält? Und der den Abschuss eines Flugzeuges für vertretbar ansieht, wenn dadurch wahrscheinlich eine größere Anzahl von Menschen gerettet werden könnte. Wäre schön, wenn einer oder eine wieder einen Pfahl vorher im Netz schlägt, an denen sich die anderen reiben können. <ul><li>https://de.wikipedia.org/wiki/Peter_Singer</li><li>https://de.wikipedia.org/wiki/Tierrechte</li></ul>" ;
-                                                   ical:dtstart "2016-11-07T19:00:00+01:00"^^xsd:dateTime ;
+<http://leipzig-data.de/Data/Event/DTS.2016-12-05> ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2016-12-05> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+                                                   a ld:Event ;
+                                                   rdfs:label "Zukunft der Arbeit" ;
+                                                   ical:dtstart "2016-12-05T19:00:00+01:00"^^xsd:dateTime ;
+                                                   ical:description "Wir diskutieren zur Zukunft der Arbeit" ;
                                                    ical:location ldo:Cafe-Grundmann ;
                                                    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-                                                   ical:summary "Attac DenkTankStelle: Menschen und Tiere" ;
-                                                   ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2016-11-07> ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-                                                   ld:contactPerson ldp:Schroth_Johannes ;
-                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs .
+                                                   ical:summary "Attac DenkTankStelle: Zukunft der Arbeit" .
 
-<http://leipzig-data.de/Data/Event/Inspirata.8765> a ld:Event ;
-                                                   rdfs:label "“Zaubern mit Leibniz + mehr” – 14.+ 15.11.2016" ;
-                                                   ical:description "<p>Am 14. und 15. November 2016 finden jeweils ab 9 Uhr in und mit der INSPIRATA Veranstaltungen im Rahmen des Leipziger Leibniz-Jahres statt:</p> <p><strong>&#8220;zaubern mit Leibniz + mehr&#8221;</strong></p> <p><strong>Die mathematische Vielseitigkeit von Gottfried Wilhelm Leibniz</strong></p> <p>Im Workshop „Zaubern mit Leibniz“ (Klasse 5/6) geht es um Binärzahlen, also um die Darstellung des gesamten Zahlensystems nur mithilfe der zwei Zahlen 0 und 1. Dabei spielen mathematische Zaubertricks ebenso eine Rolle wie das Basteln eines „Leibnizhandschuhs“, mit dessen Hilfe die Teilnehmerinnen und Teilnehmer mit den Fingern bis zur Zahl 1023 rechnen können.</p> <p>Im Workshop „Stadtrallye“ (Klasse 7/8 und 9/10) werden Schülerinnen und Schüler zu den Leipziger Wirkungsstätten von Leibniz geführt und mit seinen wichtigsten mathematischen Erkenntnissen vertraut gemacht.</p> <p>Im Workshop „Modellierung“ (Klasse 11/12) werden verschiedene historische Zugänge zum Ableitungs- und Integralbegriff (Newton, Leibniz) an praktischen Problemstellungen erarbeitet und gegenübergestellt. Grundlegende Kenntnisse zur Differentialrechnung werden erfahrbar gemacht.</p> <p>Das finden Sie interessant? Die INSPIRATA freut sich auch auf Sie!</p>" ;
-                                                   ical:dtend "2016-11-15T09:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2016-04-19T15:18:34+02:00"^^xsd:dateTime ;
-                                                   ical:dtstart "2016-11-14T09:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Am 14. und 15. November 2016 finden jeweils ab 9 Uhr in und mit der INSPIRATA Veranstaltungen im Rahmen des Leipziger Leibniz-Jahres statt: &#8220;zaubern mit Leibniz + mehr&#8221; Die mathematische Vielseitigkeit von Gottfried Wilhelm Leibniz. " ;
-                                                   ical:url <http://www.inspirata.de/?p=8765> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT .
+<http://leipzig-data.de/Data/Event/DTS.2017-01-09> ical:summary "Attac DenkTankStelle: Postfaktisch" ;
+                                                   ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-01-09> ;
+                                                   ld:contactPerson ldp:Schroth_Johannes ;
+                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+                                                   a ld:Event ;
+                                                   rdfs:label "Postfaktisch" ;
+                                                   ical:dtstart "2017-01-09T19:00:00+01:00"^^xsd:dateTime ;
+                                                   ical:description "Postfaktisch heißt unser Thema. <br/> Ja, auch wir besteigen die Sau, die gerade durchs Dorf getrieben wird, wurde? Nicht, weil es alle tun, nein, weil es eine genialische Erfindung ist. Schon der Begriff Postmoderne enthob von der Pflicht, neue Erscheinungen mit den alten, bewährten Maßstäben erklären zu müssen. Für die Moderne danach durfte sich jeder seinen eigenen Reim machen und der Satz: Nichts ist unmöglich löste Regeln und Kanonisierungen ab. Postfaktisch beschreibt in ähnlicher Weise den Abschied von der Notwendigkeit, Fakten miteinander in Beziehung bringen zu müssen und diese an der Realität zu überprüfen, um zu einem Urteil zu kommen.<br/> Wie ist der Begriff entstanden? Was soll damit erreicht und ausgedrückt werden? Was steckt dahinter, welche Interessen werden bedient? Und vielleicht sollte man ihn gar nicht so negativ sehen, wie ich das gerade getan habe?" ;
+                                                   ical:location ldo:Cafe-Grundmann ;
+                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> .
+
+<http://leipzig-data.de/Data/Event/Inspirata.8765> ical:description "<p>Am 14. und 15. November 2016 finden jeweils ab 9 Uhr in und mit der INSPIRATA Veranstaltungen im Rahmen des Leipziger Leibniz-Jahres statt:</p> <p><strong>&#8220;zaubern mit Leibniz + mehr&#8221;</strong></p> <p><strong>Die mathematische Vielseitigkeit von Gottfried Wilhelm Leibniz</strong></p> <p>Im Workshop „Zaubern mit Leibniz“ (Klasse 5/6) geht es um Binärzahlen, also um die Darstellung des gesamten Zahlensystems nur mithilfe der zwei Zahlen 0 und 1. Dabei spielen mathematische Zaubertricks ebenso eine Rolle wie das Basteln eines „Leibnizhandschuhs“, mit dessen Hilfe die Teilnehmerinnen und Teilnehmer mit den Fingern bis zur Zahl 1023 rechnen können.</p> <p>Im Workshop „Stadtrallye“ (Klasse 7/8 und 9/10) werden Schülerinnen und Schüler zu den Leipziger Wirkungsstätten von Leibniz geführt und mit seinen wichtigsten mathematischen Erkenntnissen vertraut gemacht.</p> <p>Im Workshop „Modellierung“ (Klasse 11/12) werden verschiedene historische Zugänge zum Ableitungs- und Integralbegriff (Newton, Leibniz) an praktischen Problemstellungen erarbeitet und gegenübergestellt. Grundlegende Kenntnisse zur Differentialrechnung werden erfahrbar gemacht.</p> <p>Das finden Sie interessant? Die INSPIRATA freut sich auch auf Sie!</p>" ;
+                                                   ical:summary "Am 14. und 15. November 2016 finden jeweils ab 9 Uhr in und mit der INSPIRATA Veranstaltungen im Rahmen des Leipziger Leibniz-Jahres statt: &#8220;zaubern mit Leibniz + mehr&#8221; Die mathematische Vielseitigkeit von Gottfried Wilhelm Leibniz. " .
 
 <http://leipzig-data.de/Data/Event/Inspirata.8929a> a ld:Event ;
                                                     rdfs:label "Sonder-Öffnungszeiten zwischen den Feiertagen – 27.-30.12.2016" ;
+                                                    ical:dtstart "2016-12-27T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:description "<p>In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen:</p> <p><strong>am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr</strong></p> <p>&#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren!</p> <p>Weitere Informationen folgen rechtzeitig &#8230;</p> " ;
                                                     ical:dtend "2016-12-27T16:00:00+01:00"^^xsd:dateTime ;
                                                     ical:dtstamp "2016-06-28T11:33:03+02:00"^^xsd:dateTime ;
-                                                    ical:dtstart "2016-12-27T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:location ldo:Inspirata ;
                                                     ical:organizer ldo:Inspirata ;
                                                     ical:summary "In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen: am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr &#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren! Weitere Informationen folgen rechtzeitig." ;
@@ -64,10 +54,10 @@
 
 <http://leipzig-data.de/Data/Event/Inspirata.8929b> a ld:Event ;
                                                     rdfs:label "Sonder-Öffnungszeiten zwischen den Feiertagen – 27.-30.12.2016" ;
+                                                    ical:dtstart "2016-12-28T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:description "<p>In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen:</p> <p><strong>am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr</strong></p> <p>&#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren!</p> <p>Weitere Informationen folgen rechtzeitig &#8230;</p> " ;
                                                     ical:dtend "2016-12-28T16:00:00+01:00"^^xsd:dateTime ;
                                                     ical:dtstamp "2016-06-28T11:33:03+02:00"^^xsd:dateTime ;
-                                                    ical:dtstart "2016-12-28T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:location ldo:Inspirata ;
                                                     ical:organizer ldo:Inspirata ;
                                                     ical:summary "In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen: am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr &#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren! Weitere Informationen folgen rechtzeitig." ;
@@ -76,10 +66,10 @@
 
 <http://leipzig-data.de/Data/Event/Inspirata.8929c> a ld:Event ;
                                                     rdfs:label "Sonder-Öffnungszeiten zwischen den Feiertagen – 27.-30.12.2016" ;
+                                                    ical:dtstart "2016-12-29T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:description "<p>In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen:</p> <p><strong>am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr</strong></p> <p>&#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren!</p> <p>Weitere Informationen folgen rechtzeitig &#8230;</p> " ;
                                                     ical:dtend "2016-12-29T16:00:00+01:00"^^xsd:dateTime ;
                                                     ical:dtstamp "2016-06-28T11:33:03+02:00"^^xsd:dateTime ;
-                                                    ical:dtstart "2016-12-29T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:location ldo:Inspirata ;
                                                     ical:organizer ldo:Inspirata ;
                                                     ical:summary "In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen: am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr &#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren! Weitere Informationen folgen rechtzeitig." ;
@@ -88,323 +78,180 @@
 
 <http://leipzig-data.de/Data/Event/Inspirata.8929d> a ld:Event ;
                                                     rdfs:label "Sonder-Öffnungszeiten zwischen den Feiertagen – 27.-30.12.2016" ;
+                                                    ical:dtstart "2016-12-30T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:description "<p>In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen:</p> <p><strong>am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr</strong></p> <p>&#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren!</p> <p>Weitere Informationen folgen rechtzeitig &#8230;</p> " ;
                                                     ical:dtend "2016-12-30T16:00:00+01:00"^^xsd:dateTime ;
                                                     ical:dtstamp "2016-06-28T11:33:03+02:00"^^xsd:dateTime ;
-                                                    ical:dtstart "2016-12-30T10:00:00+01:00"^^xsd:dateTime ;
                                                     ical:location ldo:Inspirata ;
                                                     ical:organizer ldo:Inspirata ;
                                                     ical:summary "In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen: am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr &#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren! Weitere Informationen folgen rechtzeitig." ;
                                                     ical:url <http://www.inspirata.de/?p=8929> ;
                                                     ld:hasTag ldtag:Inspirata, ldtag:MINT .
 
-<http://leipzig-data.de/Data/Event/Inspirata.8972> a ld:Event ;
-                                                   rdfs:label "Halloween-Nacht in der INSPIRATA – 29.10.2016" ;
-                                                   ical:description "<p>Aus Anlass von Halloween verschieben wir unsere Samstags-Öffnungszeit am 29. Oktober 2016 in die dunklen Abend- und Nachtstunden: <strong>von 18 bis 24 Uhr</strong> kann man unsere dann passend vergeisterte Mitmach-Ausstellung besuchen!</p> <p>Kinder und Erwachsene in Verkleidung erhalten Eintritt zum halben Preis!</p> <p>Weitere Informationen folgen &#8230;</p> " ;
-                                                   ical:dtend "2016-10-29T24:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2016-07-14T12:41:45+02:00"^^xsd:dateTime ;
-                                                   ical:dtstart "2016-10-29T18:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Aus Anlass von Halloween verschieben wir unsere Samstags-Öffnungszeit am 29. Oktober 2016 in die dunklen Abend- und Nachtstunden: von 18 bis 24 Uhr kann man unsere dann passend vergeisterte Mitmach-Ausstellung besuchen! Kinder und Erwachsene in Verkleidung erhalten Eintritt zum halben Preis! Weitere Informationen folgen &#8230;" ;
-                                                   ical:url <http://www.inspirata.de/?p=8972> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT .
+<http://leipzig-data.de/Data/Event/Inspirata.8972> ical:description "<p>Aus Anlass von Halloween verschieben wir unsere Samstags-Öffnungszeit am 29. Oktober 2016 in die dunklen Abend- und Nachtstunden: <strong>von 18 bis 24 Uhr</strong> kann man unsere dann passend vergeisterte Mitmach-Ausstellung besuchen!</p> <p>Kinder und Erwachsene in Verkleidung erhalten Eintritt zum halben Preis!</p> <p>Weitere Informationen folgen &#8230;</p> " ;
+                                                   ical:summary "Aus Anlass von Halloween verschieben wir unsere Samstags-Öffnungszeit am 29. Oktober 2016 in die dunklen Abend- und Nachtstunden: von 18 bis 24 Uhr kann man unsere dann passend vergeisterte Mitmach-Ausstellung besuchen! Kinder und Erwachsene in Verkleidung erhalten Eintritt zum halben Preis! Weitere Informationen folgen &#8230;" .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9017> a ld:Event ;
-                                                   rdfs:label "Science Slam in der INSPIRATA – 15.11.2016" ;
-                                                   ical:description "<p>Liebe Schülerinnen und Schüler der 7. bis 11. Klassen,</p> <p>kommt am Dienstag, dem 15. November 2016, zum Science Slam in die INSPIRATA! Präsentiert euer naturwissenschaftliches Lieblingsthema in Form eines eigenen Beitrags von maximal 12 Minuten, als Kurzvortrag oder Rap, nutzt Präsentationen, Requisiten, Exponate … Hauptsache das Publikum geht gut unterhalten und mit neuem Wissen aus interessanten Gebieten der Naturwissenschaften nach Hause!</p> <p>Der Sieger des Science Slam wird durch eine Kombination von Publikum und Jury bestimmt. Es warten tolle Preise auf euch!</p> <p>Denkt euch etwas aus und meldet euch an bis zum 15.10.2016<br /> unter scienceslam(at)inspirata.de mit folgenden Angaben:<br /> • Name, Vorname<br /> • Schule und Klasse<br /> • Thema eures Beitrags<br /> • eure E-Mail-Adresse (wird vertraulich behandelt)<br /> Eine Teilnahmegebühr wird nicht erhoben.</p> <p>Informationen zum genauen zeitlichen Ablauf sowie Organisatorisches werden den Teilnehmern schriftlich per E-Mail nach Ablauf der Anmeldefrist mitgeteilt.</p> <hr /> <p>Science Slam – was ist das eigentlich?</p> <p>Ein Slam ist ein Kurzvortragsturnier, bei dem sogenannte Slammer verschiedene Themen innerhalb einer vorgegebenen Zeit vor Publikum präsentieren. Bei einem Science Slam geht es natürlich um wissenschaftliche Inhalte, die möglichst anschaulich und verständlich erklärt werden sollen. Gewählt werden können Themen aus den Gebieten Mathematik, Physik, Astronomie, Chemie, Biologie und Informatik; es können schulische, aber auch darüber hinaus gehende Inhalte vermittelt werden. Gern dürfen – nach Abstimmung mit uns – auch Exponate unserer Dauerausstellung einbezogen werden. Viele Anregungen zu solchen Vorträgen von Wissenschaftlern findet man im Internet, zum Beispiel bei YouTube unter dem Suchbegriff „Science Slam“.<br /> Der Sieger des Slam wird durch eine Kombination aus Jury und Publikum gekürt. Bei der Bewertung steht neben wissenschaftlichem Inhalt und Verständlichkeit auch der Unterhaltungswert des Vortrags im Mittelpunkt.</p> <p>Unser Science Slam soll als Abschluss der Leibniz-Tage in der INSPIRATA im November 2016 stattfinden.</p> <p>Für weitere Fragen stehen wir gern unter scienceslam(at)inspirata.de zur Verfügung.</p> <p>Nun ist es an der Zeit, die Wissenschaftler von morgen zu Wort kommen zu lassen!<br /> Lasst euch inspirieren!</p> " ;
-                                                   ical:dtend "2016-11-15T18:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2016-08-08T11:49:21+02:00"^^xsd:dateTime ;
-                                                   ical:dtstart "2016-11-15T14:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Liebe Schülerinnen und Schüler der 7. bis 11. Klassen, kommt am Dienstag, dem 15. November 2016, zum Science Slam in die INSPIRATA! Präsentiert euer naturwissenschaftliches Lieblingsthema in Form eines eigenen Beitrags von maximal 12 Minuten, als Kurzvortrag oder Rap, nutzt Präsentationen, Requisiten, Exponate … Hauptsache das Publikum geht gut unterhalten und mit neuem Wissen aus […]" ;
-                                                   ical:url <http://www.inspirata.de/?p=9017> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT .
+<http://leipzig-data.de/Data/Event/Inspirata.9217> ical:summary "Fachtagung der INSPIRATA in Kooperation mit dem Sächsischen Staatsministerium für Kultus &#8220;Umgang mit Schülerinnen und Schülern, die besondere Schwierigkeiten im Rechnen haben&#8221; Wer? Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare mit dem Fach Mathematik." ;
+                                                   ical:description "<p>Fachtagung der INSPIRATA in Kooperation<br /> mit dem Sächsischen Staatsministerium für Kultus</p> <p><strong>&#8220;Umgang mit Schülerinnen und Schülern, die besondere Schwierigkeiten<br /> im Rechnen haben&#8221;</strong></p> <p><strong>Wer?</strong> Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare<br /> mit dem Fach Mathematik<br /> <strong>Wo?</strong> INSPIRATA &#8211; 04103 Leipzig, Deutscher Platz 4 (Eingang G, 3. Etage)<br /> <strong>Wann?</strong> Mittwoch, 23. November 2016, von 9:00 bis 16:00 Uhr</p> <p><strong>Ablauf:</strong><br /> 09:00 Uhr: Einführungsvortrag<br /> 10:45 Uhr: Workshops (für jeweils die Hälfte der Teilnehmer)<br /> 12:45 Uhr: Wiederholung der Workshops (für jeweils die andere Hälfte der Teilnehmer)<br /> 14:15 Uhr: Im Anschluss haben Sie die Möglichkeit, die Ausstellungen der INSPIRATA zu besuchen.</p> <p><strong>Anmeldung:</strong><br /> bis zum 18.11.2016<br /> möglichst unter www.inspirata.de/rechnen (hier auf der Seite ganz unten!)<br /> oder ggf. telefonisch über 0341-1259757</p> <hr /> <h3>Von 1, 2, 3 zu 1/3, 2/3, 3/3 &#8230;<br /> Wie kann man Schülerinnen und Schüler mit besonderen Schwierigkeiten im Rechnen unterstützen?</h3> <p><strong>09:00 &#8211; 10:15 Uhr: Einführungsvortrag</strong></p> <p><strong>Referentin und Workshop-Leiterin:</strong><br /> <em>Jana Köppen, Duden Institute für Lerntherapie, Berlin<br /> </em></p> <p>Einige Kinder können dem Mathematikunterricht der Sekundarstufe I nur mühsam gerecht werden. Es zeigt sich, dass diesen Kindern oft grundlegende Vorstellungen fehlen. Es soll beleuchtet werden, welche Voraussetzungen für ein erfolgreiches Lernen in Klasse 5 und 6 unabdingbar sind. Welche Konsequenzen ergeben sich daraus für eine Hilfe für diese Schüler?<br /> Es werden Wege zum Aufbau effektiver Rechenstrategien und zur Entwicklung tragfähiger Bruchvorstellungen gezeigt.</p> <p><strong>10:45 Uhr – 12:15 Uhr: Workshop zum Vortrag</strong><br /> <strong>12:45 Uhr – 14:15 Uhr: Workshop zum Vortrag</strong> &#8211; Wiederholung</p> <p><strong>Von 1, 2, 3 zu 1/3, 2/3, 3/3 &#8230;</strong><br /> <strong> Wie kann man Schülerinnen und Schüler mit besonderen Schwierigkeiten im Rechnen unterstützen?</strong></p> <p>Im Workshop soll es um die Entwicklung effektiver Rechenstrategien, insbesondere zu Multiplikation und Division, und die Entwicklung von Vorstellungen zu Brüchen gehen. Welche Rolle kommt dem Reflektieren über unterschiedliche Vorgehensweisen zu?</p> <h3>Pentomino-Puzzle<br /> Ernsthafter Spielspaß in Unterricht und Lerntherapie</h3> <p><strong>10:45 Uhr – 12:15 Uhr: Pentomino-Workshop</strong><br /> <strong>12:45 Uhr – 14:15 Uhr: Pentomino-Workshop</strong> &#8211; Wiederholung</p> <p><strong>Workshop-Leiter:</strong><br /> <em>Dr. Christian Werge, Universität Leipzig &amp;<br /> Duden Institut für Lerntherapie, Halle</em></p> <p>Eine wichtige Voraussetzung fürs Erlernen des Rechnens und der Algebra ist die Geometrie. „[Sie] … ist das Eingangstor zur Naturwissenschaft, und dieses Tor ist so niedrig und so eng, dass du es nur als Kind durchschreiten kannst“, schrieb der englische Mathematiker W. K. Clifford (1845 &#8211; 1879).</p> <p>Räumliches Vorstellungsvermögen entwickelt sich am besten in jungen Jahren, in der manuellen Tätigkeit mit geometrischen Objekten und &#8211; spielerisch.<br /> Im Workshop wird das von Solomon W. Golomb (1932 &#8211; 2016) entwickelte Pentomino-Puzzle vorgestellt. Es bietet ein unerschöpfliches Reservoir an leichten, aber auch sehr anspruchsvollen Aufgaben. Darüber hinaus kann ein Satz Puzzle-Teile hergestellt und unmittelbar ausprobiert werden.<br /> Ein weiteres 3D-Puzzle, angelehnt an den Soma-Würfel, gestattet besonders kopfgeometrische Übungen, auch zum Umgang mit Spiegelbildern.</p> <hr /> <p><strong>Online-Anmeldung:</strong><br /> [contact-form-7]</p> " .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9217> a ld:Event ;
-                                                   rdfs:label "Fachtagung “Umgang mit Schülerinnen und Schülern, die besondere Schwierigkeiten im Rechnen haben” – 23.11.2016" ;
-                                                   ical:description "<p>Fachtagung der INSPIRATA in Kooperation<br /> mit dem Sächsischen Staatsministerium für Kultus</p> <p><strong>&#8220;Umgang mit Schülerinnen und Schülern, die besondere Schwierigkeiten<br /> im Rechnen haben&#8221;</strong></p> <p><strong>Wer?</strong> Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare<br /> mit dem Fach Mathematik<br /> <strong>Wo?</strong> INSPIRATA &#8211; 04103 Leipzig, Deutscher Platz 4 (Eingang G, 3. Etage)<br /> <strong>Wann?</strong> Mittwoch, 23. November 2016, von 9:00 bis 16:00 Uhr</p> <p><strong>Ablauf:</strong><br /> 09:00 Uhr: Einführungsvortrag<br /> 10:45 Uhr: Workshops (für jeweils die Hälfte der Teilnehmer)<br /> 12:45 Uhr: Wiederholung der Workshops (für jeweils die andere Hälfte der Teilnehmer)<br /> 14:15 Uhr: Im Anschluss haben Sie die Möglichkeit, die Ausstellungen der INSPIRATA zu besuchen.</p> <p><strong>Anmeldung:</strong><br /> bis zum 18.11.2016<br /> möglichst unter www.inspirata.de/rechnen (hier auf der Seite ganz unten!)<br /> oder ggf. telefonisch über 0341-1259757</p> <hr /> <h3>Von 1, 2, 3 zu 1/3, 2/3, 3/3 &#8230;<br /> Wie kann man Schülerinnen und Schüler mit besonderen Schwierigkeiten im Rechnen unterstützen?</h3> <p><strong>09:00 &#8211; 10:15 Uhr: Einführungsvortrag</strong></p> <p><strong>Referentin und Workshop-Leiterin:</strong><br /> <em>Jana Köppen, Duden Institute für Lerntherapie, Berlin<br /> </em></p> <p>Einige Kinder können dem Mathematikunterricht der Sekundarstufe I nur mühsam gerecht werden. Es zeigt sich, dass diesen Kindern oft grundlegende Vorstellungen fehlen. Es soll beleuchtet werden, welche Voraussetzungen für ein erfolgreiches Lernen in Klasse 5 und 6 unabdingbar sind. Welche Konsequenzen ergeben sich daraus für eine Hilfe für diese Schüler?<br /> Es werden Wege zum Aufbau effektiver Rechenstrategien und zur Entwicklung tragfähiger Bruchvorstellungen gezeigt.</p> <p><strong>10:45 Uhr – 12:15 Uhr: Workshop zum Vortrag</strong><br /> <strong>12:45 Uhr – 14:15 Uhr: Workshop zum Vortrag</strong> &#8211; Wiederholung</p> <p><strong>Von 1, 2, 3 zu 1/3, 2/3, 3/3 &#8230;</strong><br /> <strong> Wie kann man Schülerinnen und Schüler mit besonderen Schwierigkeiten im Rechnen unterstützen?</strong></p> <p>Im Workshop soll es um die Entwicklung effektiver Rechenstrategien, insbesondere zu Multiplikation und Division, und die Entwicklung von Vorstellungen zu Brüchen gehen. Welche Rolle kommt dem Reflektieren über unterschiedliche Vorgehensweisen zu?</p> <h3>Pentomino-Puzzle<br /> Ernsthafter Spielspaß in Unterricht und Lerntherapie</h3> <p><strong>10:45 Uhr – 12:15 Uhr: Pentomino-Workshop</strong><br /> <strong>12:45 Uhr – 14:15 Uhr: Pentomino-Workshop</strong> &#8211; Wiederholung</p> <p><strong>Workshop-Leiter:</strong><br /> <em>Dr. Christian Werge, Universität Leipzig &amp;<br /> Duden Institut für Lerntherapie, Halle</em></p> <p>Eine wichtige Voraussetzung fürs Erlernen des Rechnens und der Algebra ist die Geometrie. „[Sie] … ist das Eingangstor zur Naturwissenschaft, und dieses Tor ist so niedrig und so eng, dass du es nur als Kind durchschreiten kannst“, schrieb der englische Mathematiker W. K. Clifford (1845 &#8211; 1879).</p> <p>Räumliches Vorstellungsvermögen entwickelt sich am besten in jungen Jahren, in der manuellen Tätigkeit mit geometrischen Objekten und &#8211; spielerisch.<br /> Im Workshop wird das von Solomon W. Golomb (1932 &#8211; 2016) entwickelte Pentomino-Puzzle vorgestellt. Es bietet ein unerschöpfliches Reservoir an leichten, aber auch sehr anspruchsvollen Aufgaben. Darüber hinaus kann ein Satz Puzzle-Teile hergestellt und unmittelbar ausprobiert werden.<br /> Ein weiteres 3D-Puzzle, angelehnt an den Soma-Würfel, gestattet besonders kopfgeometrische Übungen, auch zum Umgang mit Spiegelbildern.</p> <hr /> <p><strong>Online-Anmeldung:</strong><br /> [contact-form-7]</p> " ;
-                                                   ical:dtend "2016-11-23T16:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2016-09-20T16:48:46+02:00"^^xsd:dateTime ;
-                                                   ical:dtstart "2016-11-23T09:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Fachtagung der INSPIRATA in Kooperation mit dem Sächsischen Staatsministerium für Kultus &#8220;Umgang mit Schülerinnen und Schülern, die besondere Schwierigkeiten im Rechnen haben&#8221; Wer? Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare mit dem Fach Mathematik." ;
-                                                   ical:url <http://www.inspirata.de/?p=9217> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT .
-
-<http://leipzig-data.de/Data/Event/Inspirata.9392> a ld:Event ;
+<http://leipzig-data.de/Data/Event/Inspirata.9392> ical:organizer ldo:Inspirata ;
+                                                   ical:summary "Am Samstag, dem 8. April 2017, von 12:00 bis 18:00 Uhr veranstaltet in der INSPIRATA die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig mit Unterstützung der Fachgruppe für Geologie, Mineralogie &#38; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den 5. Leipziger Mineralientag." ;
+                                                   ical:url <http://www.inspirata.de/?p=9392> ;
+                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+                                                   a ld:Event ;
                                                    rdfs:label "5. Leipziger Mineralien- und Familientag in der INSPIRATA – 08.04.2017" ;
+                                                   ical:dtstart "2017-04-08T12:00:00+02:00"^^xsd:dateTime ;
                                                    ical:description "<p>Am Samstag, dem 8. April 2017, von 12:00 bis 18:00 Uhr in der INSPIRATA<br /> in Leipzig an der Alten Messe, Deutscher Platz 4, Eingang G (in der Durchfahrt)</p> <p>veranstaltet die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig<br /> mit Unterstützung der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie und<br /> in Zusammenarbeit mit dem Team der INSPIRATA den</p> <p><strong>5. Leipziger Mineralientag für die ganze Familie in der INSPIRATA!</strong></p> <p>Es gibt wieder viele tolle Sonderaktionen &#8211; u.a.:</p> <ul> <li>Mineralien-/ Fossilien-Börse/-Verkauf</li> <li>kostenlos Mineralien-Schleifen</li> <li>Tombola ohne Nieten</li> <li>Basteln von (geometrischen) Kristallformen mit den INSPIRATA-Betreuern</li> <li>Kuchenbasar der &#8220;Leipziger Steinbeißer&#8221;/ Jugendgruppe für Mineralogie</li> <li>Vorstellung der &#8220;Leipziger Steinbeißer&#8221;/ Jugendgruppe für Mineralogie im Naturkundemuseum Leipzig</li> <li>Informationen über das Leipziger Naturkundemuseum durch Mitglieder des Vereins der Freunde und Förderer des Naturkundemuseum Leipzig e.V.</li> <li>Informationen über den INSPIRATA e.V. durch das Team der INSPIRATA<br /> einschließlich Übersicht über die in der INSPIRATA nutzbaren Angebote</li> <li>INSPIRATA-Mitmach-Ausstellung mit über 150 naturwissenschaftlichen Exponaten, Experimenten, Knobelspielen u.v.a.</li> <li>17 Uhr Abschlusskonzert mit Rock&#8217;n&#8217;Reudnitz!</li> </ul> <p>Der Eintritt zur Ausstellung und zu den Sonder-Angeboten kostet pro Kind/Schüler/in (jünger als 18 Jahre) 3,50 €, pro Erwachsenem 5,00 € (ermäßigt 3,50 €), pro Familienkarte 15,00 € (für 2 Erwachsene mit bis zu 3 eigenen Kindern oder Enkeln unter 18 Jahren).</p> <p>Unterstützer unseres diesjährigen Mineralientages sind:<br /> Mitglieder der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie am Naturkundemuseum Leipzig,<br /> Eltern der “Steinbeißer”,<br /> INSPIRATA-Betreuer und -Mitglieder u.v.a.</p>  <hr /> <p>Informationen zur Jugendgruppe für Mineralogie im Naturkundemuseum Leipzig findet man unter:</p> <ul> <li>www.foerderverein-naturkundemuseum-leipzig.de &#8211; Fachgruppen &amp; Vereine</li> <li>leipzig-netz.de/index.php5/Naturkundemuseum &#8211; Junge Mineralogen</li> </ul> " ;
                                                    ical:dtend "2017-04-08T18:00:00+02:00"^^xsd:dateTime ;
                                                    ical:dtstamp "2016-11-03T00:49:46+01:00"^^xsd:dateTime ;
-                                                   ical:dtstart "2017-04-08T12:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Inspirata .
+
+<http://leipzig-data.de/Data/Event/Inspirata.9429> ical:url <http://www.inspirata.de/?p=9429> ;
+                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+                                                   a ld:Event ;
+                                                   rdfs:label "Kirchenfenster &amp; -architektur in der INSPIRATA – 26./27.05.2017" ;
+                                                   ical:dtstart "2017-05-26T10:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:description "<p><strong>Kirchenfenster und Kirchenarchitektur in der INSPIRATA &#8230;?</strong></p> <p><strong>Da stecken Geometrie, Mathe und Physik drin!!</strong></p> <p>Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt.</p> <p>Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken! Wer mag, kann selbst aus geometrischen Formen typische Grundrisse bauen und schöne Kirchenfenster zeichnen!</p> <p>Außerdem lassen sich auch die anderen Experimente und Knobeleien unserer Mitmach-Ausstellung mit über 150 Exponaten erkunden.</p> <p>Lassen Sie sich inspirieren!</p> <p><strong>Datum, Uhrzeit:</strong><br /> Freitag, 26.05.2017, 10:00 – 17:00 Uhr &amp;<br /> Samstag, 27.05.2017, 12:00 – 18:00 Uhr</p> <p><strong>Ort:</strong><br /> INSPIRATA,<br /> 04103 Leipzig (Alte Messe), Deutscher Platz 4, Eingang G, 3. Etage</p> <p><strong>Eintritt:</strong><br /> <em>Vollzahler</em> : 5,00 Euro<br /> = Erwachsene ab 18 Jahren<br /> <em>Ermäßigt</em> : 3,50 Euro<br /> = Kinder (4-17 Jahre), Schüler, Studenten; Rentner; Schwerbeschädigte;<br /> Inhaber von “Leipzig Pass”, “Leipzig Card”, “Leipzig Regio Card” (Nachweis erforderlich)<br /> <em>Familie</em> : 15,00 Euro<br /> = 2 Erwachsene mit bis zu 3 eigenen Kindern</p> " ;
+                                                   ical:dtend "2017-05-26T17:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:dtstamp "2016-11-29T17:03:07+01:00"^^xsd:dateTime ;
                                                    ical:location ldo:Inspirata ;
                                                    ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Am Samstag, dem 8. April 2017, von 12:00 bis 18:00 Uhr veranstaltet in der INSPIRATA die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig mit Unterstützung der Fachgruppe für Geologie, Mineralogie &#38; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den 5. Leipziger Mineralientag." ;
-                                                   ical:url <http://www.inspirata.de/?p=9392> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT .
+                                                   ical:summary "Kirchenfenster und Kirchenarchitektur in der INSPIRATA. Da stecken Geometrie, Mathe und Physik drin!! Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt. Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken!" .
 
-<http://leipzig-data.de/Data/Event/Kuni.2016-11-04> a ld:Event ;
-                                                    rdfs:label "Kinderuni: Von Pac-Man, Mario und Pikachu - Eine kleine Geschichte japanischer Videospiele" ;
-                                                    ical:description "Auch wenn ihr es euch schwer vorstellen könnt: Videospiele gibt es schon seit mehreren Jahrzehnten. Und ob Mario, Zelda oder Pikachu, viele einflussreiche Videospiele wurden in Japan geschaffen. Professor Martin Roth wird euch in seiner Vorlesung einen kurzen Überblick über einige der wichtigsten Entwicklungen geben. Anschließend blicken wir auf die jüngeren Neuerungen der Videospielkultur in Japan und weltweit. Mit Prof. Dr. Martin Roth, Ostasiatisches Institut der Universität Leipzig. " ;
-                                                    ical:dtstart "2016-11-04T16:30:00+01:00"^^xsd:dateTime ;
-                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                    ical:organizer ldo:UniLeipzig ;
-                                                    ical:summary "Kinderuni: Von Pac-Man, Mario und Pikachu - Eine kleine Geschichte japanischer Videospiele. Mit Prof. Dr. Martin Roth, Ostasiatisches Institut der Universität Leipzig. " ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
-                                                    ld:hasTag ldtag:Kinderuni .
+<http://leipzig-data.de/Data/Event/Inspirata.9429a> ical:summary "Kirchenfenster und Kirchenarchitektur in der INSPIRATA. Da stecken Geometrie, Mathe und Physik drin!! Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt. Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken!" ;
+                                                    ical:url <http://www.inspirata.de/?p=9429> ;
+                                                    ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+                                                    a ld:Event ;
+                                                    rdfs:label "Kirchenfenster &amp; -architektur in der INSPIRATA – 26./27.05.2017" ;
+                                                    ical:dtstart "2017-05-27T12:00:00+02:00"^^xsd:dateTime ;
+                                                    ical:description "<p><strong>Kirchenfenster und Kirchenarchitektur in der INSPIRATA &#8230;?</strong></p> <p><strong>Da stecken Geometrie, Mathe und Physik drin!!</strong></p> <p>Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt.</p> <p>Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken! Wer mag, kann selbst aus geometrischen Formen typische Grundrisse bauen und schöne Kirchenfenster zeichnen!</p> <p>Außerdem lassen sich auch die anderen Experimente und Knobeleien unserer Mitmach-Ausstellung mit über 150 Exponaten erkunden.</p> <p>Lassen Sie sich inspirieren!</p> <p><strong>Datum, Uhrzeit:</strong><br /> Freitag, 26.05.2017, 10:00 – 17:00 Uhr &amp;<br /> Samstag, 27.05.2017, 12:00 – 18:00 Uhr</p> <p><strong>Ort:</strong><br /> INSPIRATA,<br /> 04103 Leipzig (Alte Messe), Deutscher Platz 4, Eingang G, 3. Etage</p> <p><strong>Eintritt:</strong><br /> <em>Vollzahler</em> : 5,00 Euro<br /> = Erwachsene ab 18 Jahren<br /> <em>Ermäßigt</em> : 3,50 Euro<br /> = Kinder (4-17 Jahre), Schüler, Studenten; Rentner; Schwerbeschädigte;<br /> Inhaber von “Leipzig Pass”, “Leipzig Card”, “Leipzig Regio Card” (Nachweis erforderlich)<br /> <em>Familie</em> : 15,00 Euro<br /> = 2 Erwachsene mit bis zu 3 eigenen Kindern</p> " ;
+                                                    ical:dtend "2017-05-27T18:00:00+02:00"^^xsd:dateTime ;
+                                                    ical:dtstamp "2016-11-29T17:03:07+01:00"^^xsd:dateTime ;
+                                                    ical:location ldo:Inspirata ;
+                                                    ical:organizer ldo:Inspirata .
 
-<http://leipzig-data.de/Data/Event/Kuni.2016-11-11> a ld:Event ;
-                                                    rdfs:label "Kinderuni: Der Karneval der Tiere" ;
-                                                    ical:description "Mit viel Musik und Lärm verbunden beginnt am 11. November wieder die Karnevalszeit. Höhepunkt sind die Tage vor Aschermittwoch, 40 Tage vor Ostern. Groß und Klein feiern hier vor der langen Fastenzeit noch einmal ausgelassen. Und auch wo der religiöse Hintergrund fehlt, sind Maskeraden und anschließende Diäten zu dieser Gelegenheit sehr beliebt. Ob wohl auch die Tierwelt Karneval feiert? Der Komponist Camille Saint-Saens hat diese Vorstellung so plastisch in Musik umgesetzt, dass es kaum anders sein kann. Professor Helmut Loos wird euch diese Orchestermusik voller Witz, die einfach nur Spaß macht, in seiner Vorlesung näherbringen. Mit Prof. Dr. Helmut Loos, Institut für Musikwissenschaft der Universität Leipzig. " ;
-                                                    ical:dtstart "2016-11-11T16:30:00+01:00"^^xsd:dateTime ;
-                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                    ical:organizer ldo:UniLeipzig ;
-                                                    ical:summary "Kinderuni: Der Karneval der Tiere. Mit Prof. Dr. Helmut Loos, Institut für Musikwissenschaft der Universität Leipzig. " ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
-                                                    ld:hasTag ldtag:Kinderuni .
+<http://leipzig-data.de/Data/Event/Inspirata.9471> ical:url <http://www.inspirata.de/?p=9471> ;
+                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+                                                   a ld:Event ;
+                                                   rdfs:label "Können wir unseren Sinnen trauen? – Sonderaktionen zu Optischen Täuschungen – 28.01.2017" ;
+                                                   ical:dtstart "2017-01-28T14:00:00+01:00"^^xsd:dateTime ;
+                                                   ical:description "<p><strong>Können wir unseren Sinnen trauen?</strong></p> <p><strong>Sonderaktionen zu Optischen Täuschungen</strong></p> <p><strong>Kommt staunen!</strong></p> <p>Am <strong>Samstag, </strong>dem <strong>28.01.2017</strong>, können Familien und Einzelbesucher<br /> einen ganz besonderen Nachmittag in der INSPIRATA erleben!</p> <p>Zwischen <strong>14 und 17 Uhr </strong>zeigen wir einen spannenden PowerPoint-<strong>Vortrag</strong><br /> mit zahlreichen erstaunlichen <strong>optischen Täuschungen</strong></p> <p>und<br /> <br /> unsere INSPIRATA-Betreuer führen durch unsere Optik-Räume,<br /> in denen <strong>optische Exponate und optische Täuschungen</strong><br /> selbst erfahren werden können.</p> <p><em>Seht ihr unser Spiegelschwein? Versucht, es zu fassen!</em></p> <p><em>Riese und Zwerg &#8230;? &#8230; &#8230; &#8230; Kopf ab &#8230;?   :-)<br /> </em></p> <p> </p>  <hr /> <p>Auch an diesem Samstag ist <strong>von 12 bis 18 Uhr unsere Mitmach-Ausstellung</strong> (alle Ausstellungsbereiche) für Familien und Einzelbesucher geöffnet und möchte erkundet, ausprobiert und be-griffen werden!</p> <p>Kommt uns besuchen und lasst euch verblüffen!</p> " ;
+                                                   ical:dtend "2017-01-28T17:00:00+01:00"^^xsd:dateTime ;
+                                                   ical:dtstamp "2016-12-06T13:28:18+01:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Inspirata ;
+                                                   ical:organizer ldo:Inspirata ;
+                                                   ical:summary "Können wir unseren Sinnen trauen? Sonderaktionen zu Optischen Täuschungen Kommt staunen! Am Samstag, dem 28.01.2017, können Familien und Einzelbesucher einen ganz besonderen Nachmittag in der INSPIRATA erleben! Zwischen 14 und 17 Uhr zeigen wir einen spannenden PowerPoint-Vortrag mit zahlreichen erstaunlichen optischen Täuschungen und unsere INSPIRATA-Betreuer führen durch unsere Optik-Räume." .
 
-<http://leipzig-data.de/Data/Event/Kuni.2016-11-18> a ld:Event ;
-                                                    rdfs:label "Kinderuni: Auf den Spuren unserer Vorfahren – die Arbeit mit alter DNA" ;
-                                                    ical:description "Von jeher ist der Mensch fasziniert von der Frage nach seinem Ursprung. Wann gab es die ersten Menschen, wozu waren sie fähig und wie entwickelten sie sich zu den heute lebenden, modernen Menschen? Wer waren die Neandertaler, warum sind sie ausgestorben und wie haben sie sich von uns unterschieden? Die Erschließung der Erbinformation aus fossilem Material wie Knochen oder Zähnen kann uns helfen, diese Fragen zu beantworten. Aber die DNA solcher Proben stellt uns vor verschiedene Herausforderungen. In kleine Fragmente zerstückelt, von Bakterien verschmutzt und chemisch verändert, muss die Erbsubstanz erst wieder aufbereitet werden, um die gewünschten Informationen liefern zu können. In Ihrer Vorlesung zeigt Isabelle Glocke, dass die Arbeit mit alter DNA spannend und kniffelig ist und ein wichtiger Baustein zur Lösung des Rätsels unserer Vergangenheit. Mit Isabelle Glocke, Max-Planck-Institut für Evolutionäre Anthropologie Leipzig. " ;
-                                                    ical:dtstart "2016-11-18T16:30:00+01:00"^^xsd:dateTime ;
-                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                    ical:organizer ldo:UniLeipzig ;
-                                                    ical:summary "Kinderuni: Auf den Spuren unserer Vorfahren – die Arbeit mit alter DNA. Mit Isabelle Glocke, Max-Planck-Institut für Evolutionäre Anthropologie Leipzig. " ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
-                                                    ld:hasTag ldtag:Kinderuni .
+<http://leipzig-data.de/Data/Event/Inspirata.9511> ical:summary "Basteln kleiner Oster-Geschenke und Frühlings-Deko &#8211; entdecke die Geometrie darin! Am Samstag, dem 25. März, von 14 bis 17 Uhr in der INSPIRATA, könnt ihr aus Papier schöne Dekorationen und selbstgemachte Oster-Geschenke erschaffen! Und ihr werdet bemerken, dass die Papiere zu falten ganz viel mit Mathematik und Geometrie zu tun hat! :-) " ;
+                                                   ical:url <http://www.inspirata.de/?p=9511> ;
+                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+                                                   a ld:Event ;
+                                                   rdfs:label "Basteln kleiner Oster-Geschenke und Frühlings-Deko – 25.03.2017" ;
+                                                   ical:dtstart "2017-03-25T14:00:00+01:00"^^xsd:dateTime ;
+                                                   ical:description "<p><strong>Basteln kleiner Oster-Geschenke und Frühlings-Deko &#8211; entdecke die Geometrie darin!</strong></p> <p>Am Samstag, dem 25. März, von 14 bis 17 Uhr in der INSPIRATA,<br /> könnt ihr aus Papier schöne Dekorationen und selbstgemachte <strong>Oster-Geschenke</strong> erschaffen!</p> <p>Und ihr werdet bemerken, dass die Papiere zu falten ganz viel mit Mathematik und Geometrie zu tun hat! :-)</p> <p>&#8230;</p> <p>In der Frühlingszeit können wir u.a. Folgendes basteln:<br /> Blumenkränze / Blumen / Blüten / Blüten-Bälle / 3D-Osterei / Hasenkörbchen<br /> sowie Pop-up-Karten / Geschenke-Schachteln / Bucky-Ball / CD-Hüllen<br /> und Papierkreisel oder andere interessante, erstaunliche und auch nützliche Dinge!</p> <p>Beispiele für Oster-Basteleien kann man hier sehen:</p> <p>Dafür sind (zusätzlich zum Eintritt) je nach Bastelei bestimmte Materialkosten erforderlich – die Bastel-Ergebnisse können dann natürlich mit nach Hause genommen werden!</p> <p>Außerdem ist an diesem Samstag von 12 bis 18 Uhr auch wieder die <strong>naturwissenschaftliche Mitmach-Ausstellung</strong> der INSPIRATA für Jedermann, für Familien und Einzelbesucher geöffnet!</p>  <hr />  <p><strong>Bastel-Aktionen</strong> können auch als Workshops <strong>für den Mathematik- bzw. Geometrie-Unterricht</strong> und ebenso als Nachmittags- oder Abend-Veranstaltungen <strong>für Hortgruppen, Vereine, Freundeskreise, Seniorennachmittage u.a.</strong> gebucht werden! Wer also an einem besonderen gemeinsamen Vor- oder Nachmittag mit kreativen Erfolgserlebnissen interessiert ist, meldet sich bitte an bei uns für einen individuellen Termin!</p> <p>Wir freuen uns auf neugierige und kreative Besucher!</p> " ;
+                                                   ical:dtend "2017-03-25T17:00:00+01:00"^^xsd:dateTime ;
+                                                   ical:dtstamp "2016-12-15T15:11:02+01:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Inspirata ;
+                                                   ical:organizer ldo:Inspirata .
 
-<http://leipzig-data.de/Data/Event/Kuni.2016-11-25> a ld:Event ;
-                                                    rdfs:label "Kinderuni: Sherlock Holmes: Der berühmte Meisterdetektiv" ;
-                                                    ical:description "Wer ist eigentlich dieser Sherlock Holmes und warum ist sein Freund Dr. Watson mindestens genauso wichtig? Die Vorlesung lässt uns in die Welt des Sherlock Holmes eintauchen: Droschken, Gaslaternen und der gelbe Londoner Nebel – und mittendrin Sherlock Holmes und John Watson, die Verbrecher jagen, Geheimschriften entziffern und Geheimnisse lüften. Aber warum sind die beiden eigentlich so berühmt, und warum trägt Holmes immer diesen komischen Hut – den Deerstalker. Diesen und viele weiteren Fragen wird Dr. Maria Fleischhack auf den Grund gehen. Mit Dr. Maria Fleischhack, Institut für Anglistik der Universität Leipzig. " ;
-                                                    ical:dtstart "2016-11-25T16:30:00+01:00"^^xsd:dateTime ;
-                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                    ical:organizer ldo:UniLeipzig ;
-                                                    ical:summary "Kinderuni: Sherlock Holmes: Der berühmte Meisterdetektiv. Mit Dr. Maria Fleischhack, Institut für Anglistik der Universität Leipzig. " ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
-                                                    ld:hasTag ldtag:Kinderuni .
+<http://leipzig-data.de/Data/Event/Inspirata.9525> ical:summary "Die INSPIRATA beteiligt sich wieder bei der gemeinsamen Museumsnacht in Leipzig/Halle: Am Samstag, dem 6. Mai 2017, öffnet auch unser Mitmach-Museum seine Ausstellung für alle Besucher!" ;
+                                                   ical:url <http://www.inspirata.de/?p=9525> ;
+                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+                                                   a ld:Event ;
+                                                   rdfs:label "Museumsnacht – 06.05.2017" ;
+                                                   ical:dtstart "2017-05-06T18:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:description "<p>Die INSPIRATA beteiligt sich wieder bei der gemeinsamen Museumsnacht in Leipzig/Halle:</p> <p>Am Samstag, dem 6. Mai 2017, öffnet auch unser Mitmach-Museum seine Ausstellung für alle Besucher!</p> <p><em>Weitere Informationen folgen &#8230;</em></p> " ;
+                                                   ical:dtstamp "2016-12-22T14:31:27+01:00"^^xsd:dateTime ;
+                                                   ical:location ldo:Inspirata ;
+                                                   ical:organizer ldo:Inspirata .
 
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-05> a ld:Event ;
-                                                     rdfs:label "Herbstexkursion in die Pleiße-Elster-Aue" ;
-                                                     ical:description "Erleben und genießen Sie den Herbst im südlichen Auwald - das Licht, die Gerüche und Geräusche. Exkursionsleiter: Andreas Liste, AHA e.V. <br/> Die Exkursion endet am Leipziger Hauptbahnhof. " ;
-                                                     ical:dtend "2016-11-05T14:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-11-05T10:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location <http://leipzig-data.de/Data/Treffpunkt/KoburgerBruecke> ;
-                                                     ical:summary "Herbstexkursion in die Pleiße-Elster-Aue. Exkursionsleiter: Andreas Liste, AHA e.V." ;
-                                                     ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
-                                                     ld:Kosten "8 Euro (bereits ermäßigt)" ;
-                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-16> a ld:Event ;
-                                                     rdfs:label "29. Klassisches Kartoffelkonzert – Uschi Brüning und Band" ;
-                                                     ical:description "" ;
-                                                     ical:dtstart "2016-11-16T19:30:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:KulturhausStoetteritz ;
-                                                     ical:summary "29. Klassisches Kartoffelkonzert – Uschi Brüning und Band" ;
-                                                     ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
-                                                     ld:Kosten "Eintritt lt. Plakataushang" ;
-                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-26> a ld:Event ;
-                                                     rdfs:label "Herbstexkursion zur Burgaue in Leipzig" ;
-                                                     ical:description "Herbstexkursion zur Burgaue in Leipzig. Exkursionsleiter: Andreas Liste, AHA e.V. " ;
-                                                     ical:dtend "2016-11-26T14:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-11-26T10:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:Haus_Auensee ;
-                                                     ical:summary "Herbstexkursion zur Burgaue in Leipzig. Exkursionsleiter: Andreas Liste, AHA e.V." ;
-                                                     ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                     ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> ;
-                                                     ld:Kosten "8 Euro (bereits ermäßigt)" ;
-                                                     ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                     ld:hasTag ldtag:AULA .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-27.1> a ld:Event ;
-                                                       rdfs:label "30. Klassisches Kartoffelkonzert – Doppelkonzert zum 1. Advent mit amarcord und Dorothee Oberlinger" ;
-                                                       ical:description "" ;
-                                                       ical:dtstart "2016-11-27T14:30:00+01:00"^^xsd:dateTime ;
-                                                       ical:location ldo:Paul-Gerhardt-Kirche ;
-                                                       ical:summary "30. Klassisches Kartoffelkonzert – Doppelkonzert zum 1. Advent mit amarcord und Dorothee Oberlinger" ;
-                                                       ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
-                                                       ld:Kosten "Eintritt lt. Plakataushang" ;
-                                                       ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                       ld:hasTag ldtag:AULA .
-
-<http://leipzig-data.de/Data/Event/NuKLA.2016-11-27.2> a ld:Event ;
-                                                       rdfs:label "30. Klassisches Kartoffelkonzert – Doppelkonzert zum 1. Advent mit amarcord und Dorothee Oberlinger" ;
-                                                       ical:description "" ;
-                                                       ical:dtstart "2016-11-27T20:00:00+01:00"^^xsd:dateTime ;
-                                                       ical:location ldo:Paul-Gerhardt-Kirche ;
-                                                       ical:summary "30. Klassisches Kartoffelkonzert – Doppelkonzert zum 1. Advent mit amarcord und Dorothee Oberlinger" ;
-                                                       ical:url <http://www.nukla.de/veranstaltungen> ;
-                                                       ld:zurReihe <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> ;
-                                                       ld:Kosten "Eintritt lt. Plakataushang" ;
-                                                       ld:contactPerson ldp:Stoiber_WolfgangEA ;
-                                                       ld:hasTag ldtag:AULA .
-
-<http://leipzig-data.de/Data/Event/OKLab.2016-10-26> a ld:Event ;
+<http://leipzig-data.de/Data/Event/OKLab.2016-12-07> ical:summary "OK Lab Leipzig Treffen" ;
+                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/235655247/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqbkb/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig ;
+                                                     a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2016-10-26T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-10-26T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvnbjc/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
-
-<http://leipzig-data.de/Data/Event/OKLab.2016-11-02> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2016-11-02T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-11-02T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvpbdb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
-
-<http://leipzig-data.de/Data/Event/OKLab.2016-11-09> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2016-11-09T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-11-09T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvpbmb/>, <http://www.meetup.com/OK-Lab-Leipzig/events/235003727/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
-
-<http://leipzig-data.de/Data/Event/OKLab.2016-11-16> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2016-11-16T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-11-16T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <http://www.meetup.com/OK-Lab-Leipzig/events/233723288/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
-
-<http://leipzig-data.de/Data/Event/OKLab.2016-11-23> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2016-11-23T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-11-23T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/235496705/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvpbfc/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
-
-<http://leipzig-data.de/Data/Event/OKLab.2016-11-30> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2016-11-30T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-11-30T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvpbnc/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvpbnc/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
-
-<http://leipzig-data.de/Data/Event/OKLab.2016-12-07> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
+                                                     ical:dtstart "2016-12-07T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
                                                      ical:dtend "2016-12-07T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-12-07T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/235655247/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqbkb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
+                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> .
 
-<http://leipzig-data.de/Data/Event/OKLab.2016-12-14> a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2016-12-14T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-12-14T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
+<http://leipzig-data.de/Data/Event/OKLab.2016-12-14> ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
                                                      ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqbsb/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqbsb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
-
-<http://leipzig-data.de/Data/Event/OKLab.2016-12-21> a ld:Event ;
+                                                     ld:Tag ldtag:CodeForLeipzig ;
+                                                     a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
+                                                     ical:dtstart "2016-12-14T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2016-12-21T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-12-21T19:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
+                                                     ical:dtend "2016-12-14T22:00:00+01:00"^^xsd:dateTime ;
+                                                     ical:location ldo:BasislagerCoworkingLeipzig .
+
+<http://leipzig-data.de/Data/Event/OKLab.2016-12-21> ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
                                                      ical:summary "OK Lab Leipzig Treffen" ;
                                                      ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqbcc/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqbcc/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
-
-<http://leipzig-data.de/Data/Event/OKLab.2016-12-28> a ld:Event ;
+                                                     ld:Tag ldtag:CodeForLeipzig ;
+                                                     a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
+                                                     ical:dtstart "2016-12-21T19:00:00+01:00"^^xsd:dateTime ;
+                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
+                                                     ical:dtend "2016-12-21T22:00:00+01:00"^^xsd:dateTime ;
+                                                     ical:location ldo:BasislagerCoworkingLeipzig .
+
+<http://leipzig-data.de/Data/Event/OKLab.2016-12-28> ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqblc/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqblc/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig ;
+                                                     a ld:Event ;
+                                                     rdfs:label "OK Lab Leipzig Treffen" ;
+                                                     ical:dtstart "2016-12-28T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
                                                      ical:dtend "2016-12-28T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2016-12-28T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:BasislagerCoworkingLeipzig ;
                                                      ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqblc/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplyvqblc/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
+                                                     ical:summary "OK Lab Leipzig Treffen" .
 
-<http://leipzig-data.de/Data/Event/OKLab.2017-01-04> a ld:Event ;
+<http://leipzig-data.de/Data/Event/OKLab.2017-01-04> ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbgb/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbgb/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig ;
+                                                     a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
+                                                     ical:dtstart "2017-01-04T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
                                                      ical:dtend "2017-01-04T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2017-01-04T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:BasislagerCoworkingLeipzig ;
                                                      ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbgb/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbgb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
+                                                     ical:summary "OK Lab Leipzig Treffen" .
 
-<http://leipzig-data.de/Data/Event/OKLab.2017-01-11> a ld:Event ;
+<http://leipzig-data.de/Data/Event/OKLab.2017-01-11> ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbpb/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbpb/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig ;
+                                                     a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
+                                                     ical:dtstart "2017-01-11T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
                                                      ical:dtend "2017-01-11T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2017-01-11T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:BasislagerCoworkingLeipzig ;
                                                      ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbpb/>, <http://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbpb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
+                                                     ical:summary "OK Lab Leipzig Treffen" .
 
-<http://leipzig-data.de/Data/Event/OKLab.2017-01-18> a ld:Event ;
+<http://leipzig-data.de/Data/Event/OKLab.2017-01-18> ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbxb/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig ;
+                                                     a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
+                                                     ical:dtstart "2017-01-18T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
                                                      ical:dtend "2017-01-18T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2017-01-18T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:BasislagerCoworkingLeipzig ;
                                                      ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbxb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
+                                                     ical:summary "OK Lab Leipzig Treffen" .
 
-<http://leipzig-data.de/Data/Event/OKLab.2017-01-25> a ld:Event ;
+<http://leipzig-data.de/Data/Event/OKLab.2017-01-25> ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbhc/> ;
+                                                     ld:Tag ldtag:CodeForLeipzig ;
+                                                     a ld:Event ;
                                                      rdfs:label "OK Lab Leipzig Treffen" ;
+                                                     ical:dtstart "2017-01-25T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
                                                      ical:dtend "2017-01-25T22:00:00+01:00"^^xsd:dateTime ;
-                                                     ical:dtstart "2017-01-25T19:00:00+01:00"^^xsd:dateTime ;
                                                      ical:location ldo:BasislagerCoworkingLeipzig ;
                                                      ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywcbhc/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig .
+                                                     ical:summary "OK Lab Leipzig Treffen" .
 
 <> a owl:Ontology ;
    rdfs:label "Events" ;
