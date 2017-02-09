@@ -1234,14 +1234,14 @@ ld:Ort a owl:Class ;
                                       ld:hasURL <http://www.leipzig.ihk.de> .
 
 <http://leipzig-data.de/Data/Ort/ISEI> a ld:Ort ;
-                                       rdfs:label "International Space Education Institute" ;
+                                       rdfs:label "International Space Education Institute", "International Space Education Institute (ISEI)" ;
                                        ld:Kurzinformation "Verein zur Förderung von Berufs- und Studienorientierung für MINT- und STEM-Disziplinen in Verbindung mit praktischen Anwendungen aus dem Handwerk, sowie der Luft- und Raumfahrt. Interessenten können ein Betriebsparktikum im Verein und dessen angeschlossenen Unternehmen an konkreten Projekten absolvieren. Mitglieder und Interessenten mit besonderen Leistungen können an internationalen Wettbewerben teilnehmen, um die eigenen Bewerbungschancen für Studium und Beruf durch Skills und Referenzen zu verbessern." ;
                                        ld:contactPerson <http://leipzig-data.de/Data/Person/Heckel_Ralf> ;
                                        ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.WurznerStrasse.4> ;
                                        ld:hasStatus "aktiv" ;
                                        ld:hasSupplier <http://leipzig-data.de/Data/Traeger/ISEI> ;
-                                       ld:hasTag ldtag:MINT ;
-                                       ld:hasURL <http://www.spaceeducation.de/> ;
+                                       ld:hasTag <http://leipzig-data.de/Data/Tags/MINT>, ldtag:MINT ;
+                                       ld:hasURL <http://www.spaceeducation.de>, <http://www.spaceeducation.de/> ;
                                        ld:hasTelefon "0172-7949375" .
 
 <http://leipzig-data.de/Data/Ort/Igelschutzzentrum> a ld:Ort ;
@@ -1515,6 +1515,11 @@ ld:Ort a owl:Class ;
                                                          ld:hasURL <http://www.Kreativzentrum-Gruenau.de> ;
                                                          ld:hasEmail "Kreativzentrum@t-online.de" ;
                                                          ld:hasTelefon "0341-4225393" .
+
+<http://leipzig-data.de/Data/Ort/Kregeline> a ld:Ort ;
+                                            rdfs:label "Begegnungsstätte „Kregeline“" ;
+                                            ld:hasCategories "Behindertenvereine, Frauenvereine" ;
+                                            ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> .
 
 <http://leipzig-data.de/Data/Ort/Kretschmanns_Hof> a ld:Ort ;
                                                    rdfs:label "Kretschmanns Hof" ;

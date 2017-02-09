@@ -17,58 +17,58 @@
                                          a org:Organization ;
                                          rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" .
 
-<http://leipzig-data.de/Data/CDU/FrauenUnion> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum> ;
-                                              ld:hasStadtId "472" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.GrimmaischeStrasse.2> ;
+<http://leipzig-data.de/Data/CDU/FrauenUnion> ld:hasStadtId "472" ;
+                                              ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.2> ;
                                               a org:Organization ;
                                               rdfs:label "FrauenUnion der CDU. Kreisverband Leipzig-Stadt" ;
-                                              ld:hasCategories "Frauenvereine" .
+                                              ld:hasCategories "Frauenvereine" ;
+                                              ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum> .
 
-<http://leipzig-data.de/Data/DGB/NetzwerkFrau> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Sued> ;
-                                               ld:hasStadtId "452" ;
-                                               ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.30-32> ;
+<http://leipzig-data.de/Data/DGB/NetzwerkFrau> ld:hasStadtId "452" ;
+                                               ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.30> ;
                                                a org:Organization ;
                                                rdfs:label "Deutscher Gewerkschaftsbund Netzwerk Frau in der DGB-Region Leipzig" ;
-                                               ld:hasCategories "Frauenvereine" .
+                                               ld:hasCategories "Frauenvereine" ;
+                                               ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Sued> .
 
-<http://leipzig-data.de/Data/DeutscheNationalbibliothek> a org:Organization ;
-                                                         rdfs:label "Deutsche Nationalbibliothek Leipzig" ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.1> ;
-                                                         foaf:homepage <http://www.d-nb.de> .
+<http://leipzig-data.de/Data/DeutscheNationalbibliothek> ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.1> ;
+                                                         foaf:homepage <http://www.d-nb.de> ;
+                                                         a org:Organization ;
+                                                         rdfs:label "Deutsche Nationalbibliothek Leipzig" .
 
-<http://leipzig-data.de/Data/Gruene/BuendnisgrueneFrauen> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum> ;
-                                                          ld:hasStadtId "442" ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4-6> ;
+<http://leipzig-data.de/Data/Gruene/BuendnisgrueneFrauen> ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
                                                           a org:Organization ;
                                                           rdfs:label "Bündnisgrüne Frauen" ;
-                                                          ld:hasCategories "Frauenvereine" .
+                                                          ld:hasCategories "Frauenvereine" ;
+                                                          ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum> ;
+                                                          ld:hasStadtId "442" .
 
-<http://leipzig-data.de/Data/HTWK> a org:Organization ;
-                                   rdfs:label "HTWK Leipzig" ;
-                                   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Karl-Liebknecht-Strasse.132> ;
-                                   foaf:homepage <http://www.htwk-leipzig.de> .
+<http://leipzig-data.de/Data/HTWK> ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Karl-Liebknecht-Strasse.132> ;
+                                   foaf:homepage <http://www.htwk-leipzig.de> ;
+                                   a org:Organization ;
+                                   rdfs:label "HTWK Leipzig" .
 
-<http://leipzig-data.de/Data/HWK-Leipzig> a org:Organization ;
-                                          rdfs:label "Handwerkskammer Leipzig" ;
-                                          ld:hasAddress <http://leipzig-data.de/Data/Adresse/04103.DresdnerStrasse.11> ;
-                                          foaf:homepage <http://www.hwk-leipzig.de> .
+<http://leipzig-data.de/Data/HWK-Leipzig> ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DresdnerStrasse.11> ;
+                                          foaf:homepage <http://www.hwk-leipzig.de> ;
+                                          a org:Organization ;
+                                          rdfs:label "Handwerkskammer Leipzig" .
 
-<http://leipzig-data.de/Data/HfTL> a org:Organization ;
+<http://leipzig-data.de/Data/HfTL> foaf:homepage <http://www.hft-leipzig.de> ;
+                                   a org:Organization ;
                                    rdfs:label "Hochschule für Telekommunikation Leipzig" ;
-                                   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.43> ;
-                                   foaf:homepage <http://www.hft-leipzig.de> .
+                                   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.43> .
 
-<http://leipzig-data.de/Data/IHK-Leipzig> a org:Organization ;
+<http://leipzig-data.de/Data/IHK-Leipzig> foaf:homepage <http://www.leipzig.ihk.de> ;
+                                          a org:Organization ;
                                           rdfs:label "IHK Leipzig" ;
-                                          ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goerdelerring.5> ;
-                                          foaf:homepage <http://www.leipzig.ihk.de> .
+                                          ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goerdelerring.5> .
 
-<http://leipzig-data.de/Data/MPI-MIS> a org:Organization ;
+<http://leipzig-data.de/Data/MPI-MIS> ld:engagedPerson <http://leipzig-data.de/Data/Person/Gregor_Jana> ;
+                                      foaf:homepage <http://www.mis.mpg.de> ;
+                                      a org:Organization ;
                                       rdfs:label "MPI für Mathematik in den Naturwissenschaften" ;
                                       rdfs:comment "Die interdisziplinäre Zusammenarbeit von Mathematik und Naturwissenschaften bildet den Kernpunkt der Arbeit des 1996 gegründeten Max-Planck-Instituts. Die Wissenschaftler beschäftigten sich mit einem breiten Spektrum an Fragestellungen der reinen und angewandten Mathematik und stellen sich den mathematischen Herausforderungen, die durch theoretische Fragestellungen in den Natur- und Ingenieurwissenschaften entstehen. Ziel ist es, mathematische Denkweisen und Methoden in neuartiger Weise in verschiedene Anwendungsbereiche in den Naturwissenschaften zu integrieren." ;
-                                      ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.22> ;
-                                      ld:engagedPerson <http://leipzig-data.de/Data/Person/Gregor_Jana> ;
-                                      foaf:homepage <http://www.mis.mpg.de> .
+                                      ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.22> .
 
 <> cc:attributionURL <http://leipzig-data.de> ;
    cc:attributionName "The Leipzig Open Data Project" ;
@@ -76,84 +76,84 @@
    a owl:Ontology ;
    rdfs:label "Parteien, Stiftungen, Öffentliche Einrichtungen" .
 
-<http://leipzig-data.de/Data/SPD/AGSozialdemokratischerFrauenLeipzig> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Ost> ;
-                                                                      ld:hasStadtId "433" ;
-                                                                      ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.19> ;
+<http://leipzig-data.de/Data/SPD/AGSozialdemokratischerFrauenLeipzig> ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.19> ;
                                                                       a org:Organization ;
                                                                       rdfs:label "Arbeitsgemeinschaft Sozialdemokratischer Frauen Leipzig" ;
-                                                                      ld:hasCategories "Frauenvereine" .
+                                                                      ld:hasCategories "Frauenvereine" ;
+                                                                      ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Ost> ;
+                                                                      ld:hasStadtId "433" .
 
-<http://leipzig-data.de/Data/StGeorg/SBB.AlternativeI> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Ost> ;
-                                                       ld:hasStadtId "293" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Chopinstrasse.13> ;
-                                                       a org:Organization ;
+<http://leipzig-data.de/Data/StGeorg/SBB.AlternativeI> a org:Organization ;
                                                        rdfs:label "Städtisches Klinikum „St. Georg“ Leipzig, Zentrum für Drogenhilfe, Suchtberatungs- und -behandlungsstelle (SBB) Alternative I" ;
-                                                       ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen, Wohnprojekte" .
+                                                       ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen, Wohnprojekte" ;
+                                                       ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Ost> ;
+                                                       ld:hasStadtId "293" ;
+                                                       ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Chopinstrasse.13> .
 
-<http://leipzig-data.de/Data/StGeorg/SBB.AlternativeII> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Reudnitz-Thonberg> ;
-                                                        ld:hasStadtId "292" ;
-                                                        ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.18> ;
-                                                        a org:Organization ;
+<http://leipzig-data.de/Data/StGeorg/SBB.AlternativeII> a org:Organization ;
                                                         rdfs:label "Städtisches Klinikum „St. Georg“ Leipzig, Zentrum für Drogenhilfe, Suchtberatungs- und -behandlungsstelle (SBB) Alternative II" ;
-                                                        ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen" .
+                                                        ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen" ;
+                                                        ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Reudnitz-Thonberg> ;
+                                                        ld:hasStadtId "292" ;
+                                                        ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.18> .
 
-<http://leipzig-data.de/Data/StGeorg/SBB.Gruenau> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Gruenau-Mitte> ;
-                                                  ld:hasStadtId "314" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Potschkaustrasse.50> ;
-                                                  a org:Organization ;
+<http://leipzig-data.de/Data/StGeorg/SBB.Gruenau> a org:Organization ;
                                                   rdfs:label "Städtisches Klinikum 'St. Georg', Zentrum für Drogenhilfe, Suchtberatungs- und -behandlungsstelle (SBB) Grünau" ;
-                                                  ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen" .
+                                                  ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen" ;
+                                                  ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Gruenau-Mitte> ;
+                                                  ld:hasStadtId "314" ;
+                                                  ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Potschkaustrasse.50> .
 
-<http://leipzig-data.de/Data/StGeorg/SBB.HausAltSchoenefeld> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Schoenefeld-Abtnaundorf> ;
-                                                             ld:hasStadtId "315" ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TheklaerStrasse.11> ;
-                                                             a org:Organization ;
+<http://leipzig-data.de/Data/StGeorg/SBB.HausAltSchoenefeld> a org:Organization ;
                                                              rdfs:label "Städtisches Klinikum 'St. Georg' Leipzig, Zentrum für Drogenhilfe, Suchtberatungs- und -behandlungsstelle (SBB) Haus Alt-Schönefeld" ;
-                                                             ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen, Wohnprojekte" .
+                                                             ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen, Wohnprojekte" ;
+                                                             ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Schoenefeld-Abtnaundorf> ;
+                                                             ld:hasStadtId "315" ;
+                                                             ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TheklaerStrasse.11> .
 
-<http://leipzig-data.de/Data/StGeorg/SBB.Regenbogen> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Lindenau> ;
-                                                     ld:hasStadtId "317" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Friesenstrasse.8> ;
-                                                     a org:Organization ;
+<http://leipzig-data.de/Data/StGeorg/SBB.Regenbogen> a org:Organization ;
                                                      rdfs:label "Städtisches Klinikum 'St. Georg', Suchtberatungs- und -behandlungsstelle (SBB) Regenbogen" ;
-                                                     ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen" .
+                                                     ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen" ;
+                                                     ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Lindenau> ;
+                                                     ld:hasStadtId "317" ;
+                                                     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Friesenstrasse.8> .
 
-<http://leipzig-data.de/Data/StGeorg/SBB.SuchtKontaktKaenguruh> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum> ;
-                                                                ld:hasStadtId "316" ;
-                                                                ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Beethovenstrasse.21> ;
-                                                                a org:Organization ;
+<http://leipzig-data.de/Data/StGeorg/SBB.SuchtKontaktKaenguruh> a org:Organization ;
                                                                 rdfs:label "Städtisches Klinikum 'St. Georg' Leipzig, Zentrum für Drogenhilfe, Suchtberatungs- und -behandlungsstelle (SBB) SuchtKontakt Känguruh" ;
-                                                                ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen" .
+                                                                ld:hasCategories "Suchthilfe, Suchthilfe, Suchtberatungs- und Behandlungsstellen" ;
+                                                                ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum> ;
+                                                                ld:hasStadtId "316" ;
+                                                                ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Beethovenstrasse.21> .
 
-<http://leipzig-data.de/Data/StGeorg/SBB.ZentrumFuerDrogenhilfe> ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Schoenefeld-Abtnaundorf> ;
-                                                                 ld:hasStadtId "513" ;
+<http://leipzig-data.de/Data/StGeorg/SBB.ZentrumFuerDrogenhilfe> ld:hasStadtId "513" ;
                                                                  ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Chopinstrasse.13> ;
                                                                  a org:Organization ;
                                                                  rdfs:label "Zentrum für Drogenhilfe im Städtischen Klinikum „Sankt Georg“" ;
-                                                                 ld:hasCategories "Suchthilfe, Frauenvereine" .
+                                                                 ld:hasCategories "Suchthilfe, Frauenvereine" ;
+                                                                 ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Schoenefeld-Abtnaundorf> .
 
-<http://leipzig-data.de/Data/Stiftung/FES.Leipzig> a org:Organization ;
-                                                   rdfs:label "Friedrich-Ebert-Stiftung Leipzig" ;
-                                                   ld:Kurzinformation "<p>Mit jährlich über einhundert Veranstaltungen leistet das Büro einen Beitrag zur politischen Bildungsarbeit in Leipzig und der Region. Als erster ostdeutscher Standort der Friedrich-Ebert-Stiftung hat es bereits Anfang 1990 seine Arbeit aufgenommen. Unsere Tagungen und Seminare, Podiumsdiskussionen, Gesprächskreise und Ausstellungen thematisieren wichtige Fragestellungen aus Politik und Gesellschaft und zielen damit auf die Förderung von Demokratie. </p> <p>Wir wollen die komplizierten Abläufe politischer Entscheidungsprozesse aufzeigen, darauf einwirkende Interessen verdeutlichen und die Menschen zum politischen Handeln und engagierten Mitwirken ermutigen und zusammenbringen.</p>" ;
+<http://leipzig-data.de/Data/Stiftung/FES.Leipzig> ld:Kurzinformation "<p>Mit jährlich über einhundert Veranstaltungen leistet das Büro einen Beitrag zur politischen Bildungsarbeit in Leipzig und der Region. Als erster ostdeutscher Standort der Friedrich-Ebert-Stiftung hat es bereits Anfang 1990 seine Arbeit aufgenommen. Unsere Tagungen und Seminare, Podiumsdiskussionen, Gesprächskreise und Ausstellungen thematisieren wichtige Fragestellungen aus Politik und Gesellschaft und zielen damit auf die Förderung von Demokratie. </p> <p>Wir wollen die komplizierten Abläufe politischer Entscheidungsprozesse aufzeigen, darauf einwirkende Interessen verdeutlichen und die Menschen zum politischen Handeln und engagierten Mitwirken ermutigen und zusammenbringen.</p>" ;
                                                    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Burgstrasse.25> ;
-                                                   foaf:homepage <http://www.fes.de/Leipzig> .
+                                                   foaf:homepage <http://www.fes.de/Leipzig> ;
+                                                   a org:Organization ;
+                                                   rdfs:label "Friedrich-Ebert-Stiftung Leipzig" .
 
-<http://leipzig-data.de/Data/Stiftung/RLSachsen> a org:Organization ;
-                                                 rdfs:label "Rosa-Luxemburg Stiftung Sachsen" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Harkortstrasse.10> ;
-                                                 foaf:homepage <http://www.rosa-luxemburg-stiftung-sachsen.de> .
+<http://leipzig-data.de/Data/Stiftung/RLSachsen> ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Harkortstrasse.10> ;
+                                                 foaf:homepage <http://www.rosa-luxemburg-stiftung-sachsen.de> ;
+                                                 a org:Organization ;
+                                                 rdfs:label "Rosa-Luxemburg Stiftung Sachsen" .
 
-<http://leipzig-data.de/Data/UFZ> ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Permoserstrasse.15> ;
+<http://leipzig-data.de/Data/UFZ> ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
                                   ld:engagedPerson <http://leipzig-data.de/Data/Person/Teutsch_Georg> ;
                                   foaf:homepage <http://www.ufz.de> ;
                                   a org:Organization ;
                                   rdfs:label "UFZ" .
 
-<http://leipzig-data.de/Data/Verdi/Bezirksfrauenrat> ld:hasStadtId "511" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.30> ;
+<http://leipzig-data.de/Data/Verdi/Bezirksfrauenrat> ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.30> ;
                                                      a org:Organization ;
                                                      rdfs:label "Vereinte Dienstleistungsgewerkschaft ver.di Bezirksfrauenrat" ;
-                                                     ld:hasCategories "Frauenvereine" .
+                                                     ld:hasCategories "Frauenvereine" ;
+                                                     ld:hasStadtId "511" .
 
 <http://leipzig-data.de/Data/ZV_Parthenaue> foaf:homepage <http://www.zv-parthenaue.de> ;
                                             a org:Organization ;
