@@ -5,7 +5,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ns0: <http://creativecommons.org/ns#> .
 @prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
@@ -13,53 +13,30 @@
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
+<http://leipzig-data.de/Data/Event/APILeipzig.313> ical:dtstart "2016-07-25T18:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:description "Kreatives Leipzig lädt am 25.07.2016 zum WebMontag. <br/> <br/> Der nächste WebMontag des Kreativen Leipzig wird präsentiert von der Rechtsanwaltskanzlei Spirit Legal LLP (www.spiritlegal.com) und befasst sich mit dem Thema \"Multicopter/ Drohnen\". <br/> <br/> Jeden Tag werden hunderte Multicopter verkauft und füllen bei schönen Wetter den Himmel über der Stadt. Doch was ist erlaubt? Was ist verboten? Und wie funktioniert das mit dem Fliegen überhaupt? <br/> <br/> Spirit Legal LLP hat sich schon früh tief in die juristischen Belange beim Umgang mit Multicoptern eingearbeitet und ist Spezialist bei der Bewertung von Rechtsfragen rund um die Nutzung von Multicoptern. <br/> <br/> Darüber hinaus freuen wir uns Frank Lochau von ProCopter (http://www.procopter.de) an diesem Abend begrüßen zu können. Er hat das Hobby zum Beruf gemacht und fliegt professionell Multicopter für Firmen und Veranstaltungen. <br/> <br/> Und da bei Fliegen mit Multicoptern immer wieder öffentlicher Raum eine Rolle spielt, haben wir auch die Stadt Leipzig eingeladen. Abteilungsleiter Thomas Schulze der <br/> Straßenverkehrsbehörde/Verkehrsmanagement wird uns ebenfalls an diesem Abend mit seinem Wissen zu Verfügung stehen. <br/> <br/> <strong>Datum:</strong> 25.06.2016 <br/> <strong>Beginn:</strong> 18:00 Uhr <br/> <strong>Ort:</strong> Basislager Coworking Leipzig, Peterssteinweg 14, 04107 Leipzig <br/> <br/> <strong>Ablauf:</strong> <br/> ab 18 Uhr - Ankommen <br/> 18:30 Uhr - Begrüßung <br/> 18:40 - 19:00 Uhr - SpiritLegal: \"Multicopter - Was darf ich, was darf ich nicht\". <br/> 19:10 - 19:30 Uhr - ProCopter: \"Mit Multicoptern Geld verdienen.\" <br/> 19:40 - 20:00 Uhr - Stadt Leipzig: \"Multicopter im öffentlichen Raum.\" <br/> <br/> " ;
+                                                   ical:dtend "2016-06-25T21:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:location ldo:BasislagerCoworkingLeipzig ;
+                                                   ical:organizer ldp:Wagner_Thomas ;
+                                                   ical:sentBy <http://leipzig-data.de/Data/Projekt/APILeipzig.Events> ;
+                                                   ical:summary "WebMontag - Multicopter und Drohnen im Alltag - Vom Nerdspielzeug zum Alltagsgegenstand." ;
+                                                   ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.313>, <http://leipzig-data.de/Data/APIId/Event.314> ;
+                                                   ld:hasTag ldtag:KreativesLeipzig ;
+                                                   a ld:Event ;
+                                                   rdfs:label "WebMontag - Multicopter und Drohnen im Alltag - Vom Nerdspielzeug zum Alltagsgegenstand." .
+
 <http://leipzig-data.de/Data/Event/APILeipzig.319> ical:description "Die Kultur- und Kreativwirtschaft ist sehr divers. Bildende Künstler haben zuweilen andere Bedürfnisse als ein Programmierer oder ein Möbeldesigner. Auch, wenn es um Finanzierungsmöglichkeiten geht. Es ist nicht immer einfach für sein Projekt oder sein Unternehmen die passenden Födermittel zu finden. Dann kommen Fragen auf: Wer ist der richtige Ansprechpartner für Ausstellungs-, Theater oder soziokulturelle Projekte, an wen kann ich mich wenden, wenn es bei den Investitionen hakt und wer kann bei der unternehmerischen Weiterentwicklung helfen? <br/> Über diese und weitere Fragen soll die Infoveranstaltung Anfang März Licht ins Dunkel bringen. Drei Ämter der Stadt Leipzig stellen ihre Fördermaßnahmen vor, die für alle Kultur- und Kreativschaffenden interessant sein können. <br/> <br/> Die Teilnahme ist kostenfrei. Um Anmeldung wird über das Anmeldetool gebeten. <br/> <br/> Ort der Veranstaltung: HALLE 14 - Zentrum für zeitgenössische Kunst <br/> <br/> Programm am 2. März 2017 <br/> 18:00 Uhr Ankommen <br/> 18:15 Uhr Begrüßung durch Kreatives Leipzig e.V. &amp; Amt für <br/> Wirtschaftsförderung <br/> 1. Präsentation zum Mittelstandsförderprogramm der Stadt Leipzig <br/> (Elisabeth Hauck – Amt für Wirtschaftsförderung) <br/> 2. Präsentation zur Kulturförderung der Stadt Leipzig <br/> (Antje Brodhun - Kulturamt) <br/> 3. Präsentation zur KU-Beihilfe EFRE im Leipziger Westen <br/> (Achim Lohse – Amt für Wirtschaftsförderung) <br/> 4. Verfügungsfonds des Leipziger Westens <br/> (Stefan Geiss – Amt für Stadterneuerung und <br/> Wohnungsbauförderung) <br/> 19:30 Uhr individuelle Fragerunde <br/> 20:15 Uhr Schluss" .
 
-<http://leipzig-data.de/Data/Event/ASG.2017-04-20> ical:dtstart "2017-04-20T17:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:description "Klimawandel, physikalische und chemisch-biologische Rückkopplungen (und wie man sie unterscheidet), biogeochemische Sekundäreffekte und eine neue Messmethode aus Zittau. Mit Priv.-Doz. Dr. rer. nat. habil. Stefan Fränzle, TU Dresden, FH Zittau." ;
+<http://leipzig-data.de/Data/Event/ASG.2017-06-22> ical:dtstart "2017-06-22T17:00:00+02:00"^^xsd:dateTime ;
+                                                   ical:description "Ionisierende Strahlung - die \"unsichtbare\" Botschaft aus dem Inneren radioaktiver Atome. Der Start des geheimen Uranprojekts in Deutschland vor 78 Jahren, sein Verlauf und seine Ergebnisse aus heutiger Sicht. Der Beitrag der \"Leipziger Physik\". Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
                                                    ical:organizer ldo:ASG ;
-                                                   ical:summary "Klimawandel, physikalische und chemisch-biologische Rückkopplungen (und wie man sie unterscheidet), biogeochemische Sekundäreffekte und eine neue Messmethode aus Zittau. Mit Priv.-Doz. Dr. rer. nat. habil. Stefan Fränzle, TU Dresden, FH Zittau." ;
+                                                   ical:summary "Das geheime Uranprojekt in Deutschland vor 78 Jahren und der Beitrag der \"Leipziger Physik\". Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
                                                    ical:url <http://asg.ignt.de/Seminar.htm>, <http://asg.ignt.de/Einladung_17_04_.pdf> ;
                                                    ld:hasTag ldtag:ASG, ldtag:MINT ;
                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
                                                    a ld:Event ;
-                                                   rdfs:label "Klimawandel, physikalische und chemisch-biologische Rückkopplungen (und wie man sie unterscheidet), biogeochemische Sekundäreffekte und eine neue Messmethode aus Zittau." .
-
-<http://leipzig-data.de/Data/Event/ASG.2017-05-11> ical:dtstart "2017-05-11T17:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:description "Martin Luther zwischen Naturbeobachtung, Naturerklärung, Naturwissenschaft. Mit Dr. theol. Sieghard Mühlmann, Leipzig." ;
-                                                   ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-                                                   ical:organizer ldo:ASG ;
-                                                   ical:summary "Martin Luther zwischen Naturbeobachtung, Naturerklärung, Naturwissenschaft. Mit Dr. theol. Sieghard Mühlmann, Leipzig." ;
-                                                   ical:url <http://asg.ignt.de/Seminar.htm>, <http://asg.ignt.de/Einladung_17_05_.pdf> ;
-                                                   ld:hasTag ldtag:ASG, ldtag:MINT ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Martin Luther zwischen Naturbeobachtung, Naturerklärung, Naturwissenschaft." .
-
-<http://leipzig-data.de/Data/Event/DTS.2017-04-03> ical:dtstart "2017-04-03T19:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:description "Es ist Zeit, wieder einmal zu unserer monatlichen DTS einzuladen. Als Thema war vorgeschlagen worden, über das Verhältnis von Kunst und Gesellschaft nachzudenken und zu diskutieren. Gerade weil es keinen Experten dazu unter uns gibt, aber viele Expertisen auch von uns ausgesprochen werden, kann es interessant werden. Wenn nach Beuys jeder Mensch ein Künstler ist, um wie viel mehr dürfen dann die Menschen Kunstexperten sein? Gemeint sind die sogen. Schönen Künste. Was glauben wir, wie viele unserer Mitmenschen sich sehr gut vorstellen können, in einer Welt ohne Kunst zu leben? Wohlgemerkt, es geht nicht um Kultur allgemein, sondern um Kunst: Bilder, Skulpturen, Gedichte, Lieder, Musikstücke, Theater und so fort. " ;
-                                                   ical:location ldo:Cafe-Grundmann ;
-                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-                                                   ical:summary "Attac DenkTankStelle: Kunst und Gesellschaft" ;
-                                                   ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-04-03> ;
-                                                   ld:contactPerson ldp:Schroth_Johannes ;
-                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Kunst und Gesellschaft" .
-
-<http://leipzig-data.de/Data/Event/DTS.2017-05-15> ical:dtstart "2017-05-15T19:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:description "Zur Vorbereitung wird empfohlen, wenigstens einzelne Discuto-Diskurse über die nachfolgenden Links anzuschauen. Noch besser wäre aktive Beteiligung! Die dafür verlangte Registrierung ist kostenlos und gilt als unbedenklich!! " ;
-                                                   ical:location ldo:Cafe-Grundmann ;
-                                                   ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-                                                   ical:summary "Attac DenkTankStelle: Konstruktive Partizipation" ;
-                                                   ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-05-15> ;
-                                                   ld:contactPerson ldp:Schroth_Johannes ;
-                                                   ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-                                                   ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Konstruktive Partizipation" .
+                                                   rdfs:label "Das geheime Uranprojekt in Deutschland vor 78 Jahren und der Beitrag der \"Leipziger Physik\"." .
 
 <http://leipzig-data.de/Data/Event/Inspirata.8929a> ical:description "<p>In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen:</p> <p><strong>am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr</strong></p> <p>&#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren!</p> <p>Weitere Informationen folgen rechtzeitig &#8230;</p> " ;
                                                     ical:summary "In diesem Jahr planen wir, zwischen Weihnachten und Silvester die INSPIRATA für Familien und Einzelbesucher (ohne Voranmeldung) zu öffnen: am 27. / 28. / 29. / 30. Dezember 2016 &#8211; jeweils von 10 bis 16 Uhr &#8230; mit spannenden Sonder-Aktionen &#8230; lassen Sie sich / lasst euch überraschen und inspirieren! Weitere Informationen folgen rechtzeitig." .
@@ -79,78 +56,26 @@
 <http://leipzig-data.de/Data/Event/Inspirata.9217> ical:description "<p>Fachtagung der INSPIRATA in Kooperation<br /> mit dem Sächsischen Staatsministerium für Kultus</p> <p><strong>&#8220;Umgang mit Schülerinnen und Schülern, die besondere Schwierigkeiten<br /> im Rechnen haben&#8221;</strong></p> <p><strong>Wer?</strong> Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare<br /> mit dem Fach Mathematik<br /> <strong>Wo?</strong> INSPIRATA &#8211; 04103 Leipzig, Deutscher Platz 4 (Eingang G, 3. Etage)<br /> <strong>Wann?</strong> Mittwoch, 23. November 2016, von 9:00 bis 16:00 Uhr</p> <p><strong>Ablauf:</strong><br /> 09:00 Uhr: Einführungsvortrag<br /> 10:45 Uhr: Workshops (für jeweils die Hälfte der Teilnehmer)<br /> 12:45 Uhr: Wiederholung der Workshops (für jeweils die andere Hälfte der Teilnehmer)<br /> 14:15 Uhr: Im Anschluss haben Sie die Möglichkeit, die Ausstellungen der INSPIRATA zu besuchen.</p> <p><strong>Anmeldung:</strong><br /> bis zum 18.11.2016<br /> möglichst unter www.inspirata.de/rechnen (hier auf der Seite ganz unten!)<br /> oder ggf. telefonisch über 0341-1259757</p> <hr /> <h3>Von 1, 2, 3 zu 1/3, 2/3, 3/3 &#8230;<br /> Wie kann man Schülerinnen und Schüler mit besonderen Schwierigkeiten im Rechnen unterstützen?</h3> <p><strong>09:00 &#8211; 10:15 Uhr: Einführungsvortrag</strong></p> <p><strong>Referentin und Workshop-Leiterin:</strong><br /> <em>Jana Köppen, Duden Institute für Lerntherapie, Berlin<br /> </em></p> <p>Einige Kinder können dem Mathematikunterricht der Sekundarstufe I nur mühsam gerecht werden. Es zeigt sich, dass diesen Kindern oft grundlegende Vorstellungen fehlen. Es soll beleuchtet werden, welche Voraussetzungen für ein erfolgreiches Lernen in Klasse 5 und 6 unabdingbar sind. Welche Konsequenzen ergeben sich daraus für eine Hilfe für diese Schüler?<br /> Es werden Wege zum Aufbau effektiver Rechenstrategien und zur Entwicklung tragfähiger Bruchvorstellungen gezeigt.</p> <p><strong>10:45 Uhr – 12:15 Uhr: Workshop zum Vortrag</strong><br /> <strong>12:45 Uhr – 14:15 Uhr: Workshop zum Vortrag</strong> &#8211; Wiederholung</p> <p><strong>Von 1, 2, 3 zu 1/3, 2/3, 3/3 &#8230;</strong><br /> <strong> Wie kann man Schülerinnen und Schüler mit besonderen Schwierigkeiten im Rechnen unterstützen?</strong></p> <p>Im Workshop soll es um die Entwicklung effektiver Rechenstrategien, insbesondere zu Multiplikation und Division, und die Entwicklung von Vorstellungen zu Brüchen gehen. Welche Rolle kommt dem Reflektieren über unterschiedliche Vorgehensweisen zu?</p> <h3>Pentomino-Puzzle<br /> Ernsthafter Spielspaß in Unterricht und Lerntherapie</h3> <p><strong>10:45 Uhr – 12:15 Uhr: Pentomino-Workshop</strong><br /> <strong>12:45 Uhr – 14:15 Uhr: Pentomino-Workshop</strong> &#8211; Wiederholung</p> <p><strong>Workshop-Leiter:</strong><br /> <em>Dr. Christian Werge, Universität Leipzig &amp;<br /> Duden Institut für Lerntherapie, Halle</em></p> <p>Eine wichtige Voraussetzung fürs Erlernen des Rechnens und der Algebra ist die Geometrie. „[Sie] … ist das Eingangstor zur Naturwissenschaft, und dieses Tor ist so niedrig und so eng, dass du es nur als Kind durchschreiten kannst“, schrieb der englische Mathematiker W. K. Clifford (1845 &#8211; 1879).</p> <p>Räumliches Vorstellungsvermögen entwickelt sich am besten in jungen Jahren, in der manuellen Tätigkeit mit geometrischen Objekten und &#8211; spielerisch.<br /> Im Workshop wird das von Solomon W. Golomb (1932 &#8211; 2016) entwickelte Pentomino-Puzzle vorgestellt. Es bietet ein unerschöpfliches Reservoir an leichten, aber auch sehr anspruchsvollen Aufgaben. Darüber hinaus kann ein Satz Puzzle-Teile hergestellt und unmittelbar ausprobiert werden.<br /> Ein weiteres 3D-Puzzle, angelehnt an den Soma-Würfel, gestattet besonders kopfgeometrische Übungen, auch zum Umgang mit Spiegelbildern.</p> <hr /> <p><strong>Online-Anmeldung:</strong><br /> [contact-form-7]</p> " ;
                                                    ical:summary "Fachtagung der INSPIRATA in Kooperation mit dem Sächsischen Staatsministerium für Kultus &#8220;Umgang mit Schülerinnen und Schülern, die besondere Schwierigkeiten im Rechnen haben&#8221; Wer? Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare mit dem Fach Mathematik." .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9392> ical:dtstart "2017-04-08T12:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:description "<p>Am Samstag, dem 8. April 2017, von 12:00 bis 18:00 Uhr in der INSPIRATA<br /> in Leipzig an der Alten Messe, Deutscher Platz 4, Eingang G (in der Durchfahrt)</p> <p>veranstaltet die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig<br /> mit Unterstützung der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie und<br /> in Zusammenarbeit mit dem Team der INSPIRATA den</p> <p><strong>5. Leipziger Mineralientag für die ganze Familie in der INSPIRATA!</strong></p> <p>Es gibt wieder viele tolle Sonderaktionen &#8211; u.a.:</p> <ul> <li>Mineralien-/ Fossilien-Börse/-Verkauf</li> <li>kostenlos Mineralien-Schleifen</li> <li>Tombola ohne Nieten</li> <li>Basteln von (geometrischen) Kristallformen mit den INSPIRATA-Betreuern</li> <li>Kuchenbasar der &#8220;Leipziger Steinbeißer&#8221;/ Jugendgruppe für Mineralogie</li> <li>Vorstellung der &#8220;Leipziger Steinbeißer&#8221;/ Jugendgruppe für Mineralogie im Naturkundemuseum Leipzig</li> <li>Informationen über das Leipziger Naturkundemuseum durch Mitglieder des Vereins der Freunde und Förderer des Naturkundemuseum Leipzig e.V.</li> <li>Informationen über den INSPIRATA e.V. durch das Team der INSPIRATA<br /> einschließlich Übersicht über die in der INSPIRATA nutzbaren Angebote</li> <li>INSPIRATA-Mitmach-Ausstellung mit über 150 naturwissenschaftlichen Exponaten, Experimenten, Knobelspielen u.v.a.</li> <li>17 Uhr Abschlusskonzert mit Rock&#8217;n&#8217;Reudnitz!</li> </ul> <p>Der Eintritt zur Ausstellung und zu den Sonder-Angeboten kostet pro Kind/Schüler/in (jünger als 18 Jahre) 3,50 €, pro Erwachsenem 5,00 € (ermäßigt 3,50 €), pro Familienkarte 15,00 € (für 2 Erwachsene mit bis zu 3 eigenen Kindern oder Enkeln unter 18 Jahren).</p> <p>Unterstützer unseres diesjährigen Mineralientages sind:<br /> Mitglieder der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie am Naturkundemuseum Leipzig,<br /> Eltern der “Steinbeißer”,<br /> INSPIRATA-Betreuer und -Mitglieder u.v.a.</p>  <hr /> <p>Informationen zur Jugendgruppe für Mineralogie im Naturkundemuseum Leipzig findet man unter:</p> <ul> <li>www.foerderverein-naturkundemuseum-leipzig.de &#8211; Fachgruppen &amp; Vereine</li> <li>leipzig-netz.de/index.php5/Naturkundemuseum &#8211; Junge Mineralogen</li> </ul> " ;
-                                                   ical:dtend "2017-04-08T18:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2016-11-03T00:49:46+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Am Samstag, dem 8. April 2017, von 12:00 bis 18:00 Uhr veranstaltet in der INSPIRATA die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig mit Unterstützung der Fachgruppe für Geologie, Mineralogie &#38; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den 5. Leipziger Mineralientag." ;
-                                                   ical:url <http://www.inspirata.de/?p=9392> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
-                                                   a ld:Event ;
-                                                   rdfs:label "5. Leipziger Mineralien- und Familientag in der INSPIRATA – 08.04.2017" .
+<http://leipzig-data.de/Data/Event/Inspirata.9392> ical:description "<p>Am Samstag, dem 8. April 2017, von 12:00 bis 18:00 Uhr in der INSPIRATA<br /> in Leipzig an der Alten Messe, Deutscher Platz 4, Eingang G (in der Durchfahrt)</p> <p>veranstaltet die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig<br /> mit Unterstützung der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie und<br /> in Zusammenarbeit mit dem Team der INSPIRATA den</p> <p><strong>5. Leipziger Mineralientag für die ganze Familie in der INSPIRATA!</strong></p> <p>Es gibt wieder viele tolle Sonderaktionen &#8211; u.a.:</p> <ul> <li>Mineralien-/ Fossilien-Börse/-Verkauf</li> <li>kostenlos Mineralien-Schleifen</li> <li>Tombola ohne Nieten</li> <li>Basteln von (geometrischen) Kristallformen mit den INSPIRATA-Betreuern</li> <li>Kuchenbasar der &#8220;Leipziger Steinbeißer&#8221;/ Jugendgruppe für Mineralogie</li> <li>Vorstellung der &#8220;Leipziger Steinbeißer&#8221;/ Jugendgruppe für Mineralogie im Naturkundemuseum Leipzig</li> <li>Informationen über das Leipziger Naturkundemuseum durch Mitglieder des Vereins der Freunde und Förderer des Naturkundemuseum Leipzig e.V.</li> <li>Informationen über den INSPIRATA e.V. durch das Team der INSPIRATA<br /> einschließlich Übersicht über die in der INSPIRATA nutzbaren Angebote</li> <li>INSPIRATA-Mitmach-Ausstellung mit über 150 naturwissenschaftlichen Exponaten, Experimenten, Knobelspielen u.v.a.</li> <li>17 Uhr Abschlusskonzert mit Rock&#8217;n&#8217;Reudnitz!</li> </ul> <p>Der Eintritt zur Ausstellung und zu den Sonder-Angeboten kostet pro Kind/Schüler/in (jünger als 18 Jahre) 3,50 €, pro Erwachsenem 5,00 € (ermäßigt 3,50 €), pro Familienkarte 15,00 € (für 2 Erwachsene mit bis zu 3 eigenen Kindern oder Enkeln unter 18 Jahren).</p> <p>Unterstützer unseres diesjährigen Mineralientages sind:<br /> Mitglieder der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie am Naturkundemuseum Leipzig,<br /> Eltern der “Steinbeißer”,<br /> INSPIRATA-Betreuer und -Mitglieder u.v.a.</p>  <hr /> <p>Informationen zur Jugendgruppe für Mineralogie im Naturkundemuseum Leipzig findet man unter:</p> <ul> <li>www.foerderverein-naturkundemuseum-leipzig.de &#8211; Fachgruppen &amp; Vereine</li> <li>leipzig-netz.de/index.php5/Naturkundemuseum &#8211; Junge Mineralogen</li> </ul> " ;
+                                                   ical:summary "Am Samstag, dem 8. April 2017, von 12:00 bis 18:00 Uhr veranstaltet in der INSPIRATA die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig mit Unterstützung der Fachgruppe für Geologie, Mineralogie &#38; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den 5. Leipziger Mineralientag." .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9429> ical:dtstart "2017-05-26T10:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:description "<p><strong>Kirchenfenster und Kirchenarchitektur in der INSPIRATA &#8230;?</strong></p> <p><strong>Da stecken Geometrie, Mathe und Physik drin!!</strong></p> <p>Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt.</p> <p>Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken! Wer mag, kann selbst aus geometrischen Formen typische Grundrisse bauen und schöne Kirchenfenster zeichnen!</p> <p>Außerdem lassen sich auch die anderen Experimente und Knobeleien unserer Mitmach-Ausstellung mit über 150 Exponaten erkunden.</p> <p>Lassen Sie sich inspirieren!</p> <p><strong>Datum, Uhrzeit:</strong><br /> Freitag, 26.05.2017, 10:00 – 17:00 Uhr &amp;<br /> Samstag, 27.05.2017, 12:00 – 18:00 Uhr</p> <p><strong>Ort:</strong><br /> INSPIRATA,<br /> 04103 Leipzig (Alte Messe), Deutscher Platz 4, Eingang G, 3. Etage</p> <p><strong>Eintritt:</strong><br /> <em>Vollzahler</em> : 5,00 Euro<br /> = Erwachsene ab 18 Jahren<br /> <em>Ermäßigt</em> : 3,50 Euro<br /> = Kinder (4-17 Jahre), Schüler, Studenten; Rentner; Schwerbeschädigte;<br /> Inhaber von “Leipzig Pass”, “Leipzig Card”, “Leipzig Regio Card” (Nachweis erforderlich)<br /> <em>Familie</em> : 15,00 Euro<br /> = 2 Erwachsene mit bis zu 3 eigenen Kindern</p> " ;
-                                                   ical:dtend "2017-05-26T17:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2016-11-29T17:03:07+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
+<http://leipzig-data.de/Data/Event/Inspirata.9429> ical:description "<p><strong>Kirchenfenster und Kirchenarchitektur in der INSPIRATA &#8230;?</strong></p> <p><strong>Da stecken Geometrie, Mathe und Physik drin!!</strong></p> <p>Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt.</p> <p>Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken! Wer mag, kann selbst aus geometrischen Formen typische Grundrisse bauen und schöne Kirchenfenster zeichnen!</p> <p>Außerdem lassen sich auch die anderen Experimente und Knobeleien unserer Mitmach-Ausstellung mit über 150 Exponaten erkunden.</p> <p>Lassen Sie sich inspirieren!</p> <p><strong>Datum, Uhrzeit:</strong><br /> Freitag, 26.05.2017, 10:00 – 17:00 Uhr &amp;<br /> Samstag, 27.05.2017, 12:00 – 18:00 Uhr</p> <p><strong>Ort:</strong><br /> INSPIRATA,<br /> 04103 Leipzig (Alte Messe), Deutscher Platz 4, Eingang G, 3. Etage</p> <p><strong>Eintritt:</strong><br /> <em>Vollzahler</em> : 5,00 Euro<br /> = Erwachsene ab 18 Jahren<br /> <em>Ermäßigt</em> : 3,50 Euro<br /> = Kinder (4-17 Jahre), Schüler, Studenten; Rentner; Schwerbeschädigte;<br /> Inhaber von “Leipzig Pass”, “Leipzig Card”, “Leipzig Regio Card” (Nachweis erforderlich)<br /> <em>Familie</em> : 15,00 Euro<br /> = 2 Erwachsene mit bis zu 3 eigenen Kindern</p> " ;
                                                    ical:summary "Kirchenfenster und Kirchenarchitektur in der INSPIRATA. Da stecken Geometrie, Mathe und Physik drin!! Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt. Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken!" ;
-                                                   ical:url <http://www.inspirata.de/?p=9429> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
-                                                   a ld:Event ;
                                                    rdfs:label "Kirchenfenster &amp; -architektur in der INSPIRATA – 26./27.05.2017" .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9429a> ical:dtstart "2017-05-27T12:00:00+02:00"^^xsd:dateTime ;
-                                                    ical:description "<p><strong>Kirchenfenster und Kirchenarchitektur in der INSPIRATA &#8230;?</strong></p> <p><strong>Da stecken Geometrie, Mathe und Physik drin!!</strong></p> <p>Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt.</p> <p>Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken! Wer mag, kann selbst aus geometrischen Formen typische Grundrisse bauen und schöne Kirchenfenster zeichnen!</p> <p>Außerdem lassen sich auch die anderen Experimente und Knobeleien unserer Mitmach-Ausstellung mit über 150 Exponaten erkunden.</p> <p>Lassen Sie sich inspirieren!</p> <p><strong>Datum, Uhrzeit:</strong><br /> Freitag, 26.05.2017, 10:00 – 17:00 Uhr &amp;<br /> Samstag, 27.05.2017, 12:00 – 18:00 Uhr</p> <p><strong>Ort:</strong><br /> INSPIRATA,<br /> 04103 Leipzig (Alte Messe), Deutscher Platz 4, Eingang G, 3. Etage</p> <p><strong>Eintritt:</strong><br /> <em>Vollzahler</em> : 5,00 Euro<br /> = Erwachsene ab 18 Jahren<br /> <em>Ermäßigt</em> : 3,50 Euro<br /> = Kinder (4-17 Jahre), Schüler, Studenten; Rentner; Schwerbeschädigte;<br /> Inhaber von “Leipzig Pass”, “Leipzig Card”, “Leipzig Regio Card” (Nachweis erforderlich)<br /> <em>Familie</em> : 15,00 Euro<br /> = 2 Erwachsene mit bis zu 3 eigenen Kindern</p> " ;
-                                                    ical:dtend "2017-05-27T18:00:00+02:00"^^xsd:dateTime ;
-                                                    ical:dtstamp "2016-11-29T17:03:07+01:00"^^xsd:dateTime ;
-                                                    ical:location ldo:Inspirata ;
-                                                    ical:organizer ldo:Inspirata ;
+<http://leipzig-data.de/Data/Event/Inspirata.9429a> ical:description "<p><strong>Kirchenfenster und Kirchenarchitektur in der INSPIRATA &#8230;?</strong></p> <p><strong>Da stecken Geometrie, Mathe und Physik drin!!</strong></p> <p>Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt.</p> <p>Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken! Wer mag, kann selbst aus geometrischen Formen typische Grundrisse bauen und schöne Kirchenfenster zeichnen!</p> <p>Außerdem lassen sich auch die anderen Experimente und Knobeleien unserer Mitmach-Ausstellung mit über 150 Exponaten erkunden.</p> <p>Lassen Sie sich inspirieren!</p> <p><strong>Datum, Uhrzeit:</strong><br /> Freitag, 26.05.2017, 10:00 – 17:00 Uhr &amp;<br /> Samstag, 27.05.2017, 12:00 – 18:00 Uhr</p> <p><strong>Ort:</strong><br /> INSPIRATA,<br /> 04103 Leipzig (Alte Messe), Deutscher Platz 4, Eingang G, 3. Etage</p> <p><strong>Eintritt:</strong><br /> <em>Vollzahler</em> : 5,00 Euro<br /> = Erwachsene ab 18 Jahren<br /> <em>Ermäßigt</em> : 3,50 Euro<br /> = Kinder (4-17 Jahre), Schüler, Studenten; Rentner; Schwerbeschädigte;<br /> Inhaber von “Leipzig Pass”, “Leipzig Card”, “Leipzig Regio Card” (Nachweis erforderlich)<br /> <em>Familie</em> : 15,00 Euro<br /> = 2 Erwachsene mit bis zu 3 eigenen Kindern</p> " ;
                                                     ical:summary "Kirchenfenster und Kirchenarchitektur in der INSPIRATA. Da stecken Geometrie, Mathe und Physik drin!! Am Himmelfahrt-Wochenende findet im Rahmen des Luther-Jahres der &#8220;Kirchentag auf dem Weg&#8221; in Leipzig statt. Besuchen Sie uns zur Sonderöffnungszeit und entdecken Sie, wie viel Mathe und Physik in Kirchenarchitektur und Kirchenfenstern stecken!" ;
-                                                    ical:url <http://www.inspirata.de/?p=9429> ;
-                                                    ld:hasTag ldtag:Inspirata, ldtag:MINT ;
-                                                    a ld:Event ;
                                                     rdfs:label "Kirchenfenster &amp; -architektur in der INSPIRATA – 26./27.05.2017" .
 
 <http://leipzig-data.de/Data/Event/Inspirata.9471> ical:description "<p><strong>Können wir unseren Sinnen trauen?</strong></p> <p><strong>Sonderaktionen zu Optischen Täuschungen</strong></p> <p><strong>Kommt staunen!</strong></p> <p>Am <strong>Samstag, </strong>dem <strong>28.01.2017</strong>, können Familien und Einzelbesucher<br /> einen ganz besonderen Nachmittag in der INSPIRATA erleben!</p> <p>Zwischen <strong>14 und 17 Uhr </strong>zeigen wir einen spannenden PowerPoint-<strong>Vortrag</strong><br /> mit zahlreichen erstaunlichen <strong>optischen Täuschungen</strong></p> <p>und<br /> <br /> unsere INSPIRATA-Betreuer führen durch unsere Optik-Räume,<br /> in denen <strong>optische Exponate und optische Täuschungen</strong><br /> selbst erfahren werden können.</p> <p><em>Seht ihr unser Spiegelschwein? Versucht, es zu fassen!</em></p> <p><em>Riese und Zwerg &#8230;? &#8230; &#8230; &#8230; Kopf ab &#8230;?   :-)<br /> </em></p> <p> </p>  <hr /> <p>Auch an diesem Samstag ist <strong>von 12 bis 18 Uhr unsere Mitmach-Ausstellung</strong> (alle Ausstellungsbereiche) für Familien und Einzelbesucher geöffnet und möchte erkundet, ausprobiert und be-griffen werden!</p> <p>Kommt uns besuchen und lasst euch verblüffen!</p> " .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9511> ical:dtstart "2017-03-25T14:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:description "<p><strong>Basteln kleiner Oster-Geschenke und Frühlings-Deko &#8211; entdecke die Geometrie darin!</strong></p> <p>Am Samstag, dem 25. März, von 14 bis 17 Uhr in der INSPIRATA,<br /> könnt ihr aus Papier schöne Dekorationen und selbstgemachte <strong>Oster-Geschenke</strong> erschaffen!</p> <p>Und ihr werdet bemerken, dass die Papiere zu falten ganz viel mit Mathematik und Geometrie zu tun hat! :-)</p> <p>&#8230;</p> <p>In der Frühlingszeit können wir u.a. Folgendes basteln:<br /> Blumenkränze / Blumen / Blüten / Blüten-Bälle / 3D-Osterei / Hasenkörbchen<br /> sowie Pop-up-Karten / Geschenke-Schachteln / Bucky-Ball / CD-Hüllen<br /> und Papierkreisel oder andere interessante, erstaunliche und auch nützliche Dinge!</p> <p>Beispiele für Oster-Basteleien kann man hier sehen:</p> <p>Dafür sind (zusätzlich zum Eintritt) je nach Bastelei bestimmte Materialkosten erforderlich – die Bastel-Ergebnisse können dann natürlich mit nach Hause genommen werden!</p> <p>Außerdem ist an diesem Samstag von 12 bis 18 Uhr auch wieder die <strong>naturwissenschaftliche Mitmach-Ausstellung</strong> der INSPIRATA für Jedermann, für Familien und Einzelbesucher geöffnet!</p>  <hr />  <p><strong>Bastel-Aktionen</strong> können auch als Workshops <strong>für den Mathematik- bzw. Geometrie-Unterricht</strong> und ebenso als Nachmittags- oder Abend-Veranstaltungen <strong>für Hortgruppen, Vereine, Freundeskreise, Seniorennachmittage u.a.</strong> gebucht werden! Wer also an einem besonderen gemeinsamen Vor- oder Nachmittag mit kreativen Erfolgserlebnissen interessiert ist, meldet sich bitte an bei uns für einen individuellen Termin!</p> <p>Wir freuen uns auf neugierige und kreative Besucher!</p> " ;
-                                                   ical:dtend "2017-03-25T17:00:00+01:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2016-12-15T15:11:02+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Basteln kleiner Oster-Geschenke und Frühlings-Deko &#8211; entdecke die Geometrie darin! Am Samstag, dem 25. März, von 14 bis 17 Uhr in der INSPIRATA, könnt ihr aus Papier schöne Dekorationen und selbstgemachte Oster-Geschenke erschaffen! Und ihr werdet bemerken, dass die Papiere zu falten ganz viel mit Mathematik und Geometrie zu tun hat! :-) " ;
-                                                   ical:url <http://www.inspirata.de/?p=9511> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Basteln kleiner Oster-Geschenke und Frühlings-Deko – 25.03.2017" .
+<http://leipzig-data.de/Data/Event/Inspirata.9511> ical:description "<p><strong>Basteln kleiner Oster-Geschenke und Frühlings-Deko &#8211; entdecke die Geometrie darin!</strong></p> <p>Am Samstag, dem 25. März, von 14 bis 17 Uhr in der INSPIRATA,<br /> könnt ihr aus Papier schöne Dekorationen und selbstgemachte <strong>Oster-Geschenke</strong> erschaffen!</p> <p>Und ihr werdet bemerken, dass die Papiere zu falten ganz viel mit Mathematik und Geometrie zu tun hat! :-)</p> <p>&#8230;</p> <p>In der Frühlingszeit können wir u.a. Folgendes basteln:<br /> Blumenkränze / Blumen / Blüten / Blüten-Bälle / 3D-Osterei / Hasenkörbchen<br /> sowie Pop-up-Karten / Geschenke-Schachteln / Bucky-Ball / CD-Hüllen<br /> und Papierkreisel oder andere interessante, erstaunliche und auch nützliche Dinge!</p> <p>Beispiele für Oster-Basteleien kann man hier sehen:</p> <p>Dafür sind (zusätzlich zum Eintritt) je nach Bastelei bestimmte Materialkosten erforderlich – die Bastel-Ergebnisse können dann natürlich mit nach Hause genommen werden!</p> <p>Außerdem ist an diesem Samstag von 12 bis 18 Uhr auch wieder die <strong>naturwissenschaftliche Mitmach-Ausstellung</strong> der INSPIRATA für Jedermann, für Familien und Einzelbesucher geöffnet!</p>  <hr />  <p><strong>Bastel-Aktionen</strong> können auch als Workshops <strong>für den Mathematik- bzw. Geometrie-Unterricht</strong> und ebenso als Nachmittags- oder Abend-Veranstaltungen <strong>für Hortgruppen, Vereine, Freundeskreise, Seniorennachmittage u.a.</strong> gebucht werden! Wer also an einem besonderen gemeinsamen Vor- oder Nachmittag mit kreativen Erfolgserlebnissen interessiert ist, meldet sich bitte an bei uns für einen individuellen Termin!</p> <p>Wir freuen uns auf neugierige und kreative Besucher!</p> " ;
+                                                   ical:summary "Basteln kleiner Oster-Geschenke und Frühlings-Deko &#8211; entdecke die Geometrie darin! Am Samstag, dem 25. März, von 14 bis 17 Uhr in der INSPIRATA, könnt ihr aus Papier schöne Dekorationen und selbstgemachte Oster-Geschenke erschaffen! Und ihr werdet bemerken, dass die Papiere zu falten ganz viel mit Mathematik und Geometrie zu tun hat! :-) " .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9525> ical:dtstart "2017-05-06T18:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:description "<p>Die INSPIRATA beteiligt sich wieder bei der gemeinsamen Museumsnacht in Leipzig/Halle:</p> <p>Am Samstag, dem 6. Mai 2017, öffnet auch unser Mitmach-Museum seine Ausstellung für alle Besucher!</p> <p><em>Weitere Informationen folgen &#8230;</em></p> " ;
-                                                   ical:dtstamp "2016-12-22T14:31:27+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Die INSPIRATA beteiligt sich wieder bei der gemeinsamen Museumsnacht in Leipzig/Halle: Am Samstag, dem 6. Mai 2017, öffnet auch unser Mitmach-Museum seine Ausstellung für alle Besucher!" ;
-                                                   ical:url <http://www.inspirata.de/?p=9525> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Museumsnacht – 06.05.2017" .
+<http://leipzig-data.de/Data/Event/Inspirata.9525> ical:description "<p>Die INSPIRATA beteiligt sich wieder bei der gemeinsamen Museumsnacht in Leipzig/Halle:</p> <p>Am Samstag, dem 6. Mai 2017, öffnet auch unser Mitmach-Museum seine Ausstellung für alle Besucher!</p> <p><em>Weitere Informationen folgen &#8230;</em></p> " .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9670> ical:dtstart "2017-04-27T09:30:00+02:00"^^xsd:dateTime ;
-                                                   ical:description "<p></p> <h3>Mädchen &#8211; Zukunftstag</h3> <p><strong>Mathe zum Anfassen</strong></p> <p>Die Mitmach-Ausstellung INSPIRATA und das Max-Planck-Institut für Mathematik in den Naturwissenschaften laden alle wissbegierigen und entdeckungsfreudigen Mädchen zu einem spannenden Girls‘Day rund um die Mathematik ein. Über 150 Mitmach-Exponate warten darauf, von euch erkundet zu werden.</p> <p>Zudem haben wir zwei spezielle Angebote:</p> <p><strong>mathemachen² &#8211; Für Mädchen der Klassenstufen 5 bis 7.</strong></p> <p>An den Experimentierstationen des Ausstellungsbereiches mathemachen² erwartet euch die Mathematik in ihrer anschaulichsten Form – zum Anfassen, Erleben und Staunen. So lädt beispielsweise die Geometrie zum Fühlen, Schauen, Bauen ein. In der Kryptologie geht es um Kodieren, Probieren, Lösen. Symmetrie lässt sich hautnah erleben durch Verschieben, Drehen, Spiegeln; und mit Zahlen kann man: Schätzen, Messen, Rechnen.</p> <p><strong>Geometrie der Erde &#8211; Für Mädchen ab Klassenstufe 8.</strong></p> <p>Warum fliegen Flugzeuge nach Amerika nicht gerade, sondern einen Bogen nach Norden? Wie wird die Erdkugel zur flachen Karte? Warum gibt es verschiedene Kartentypen? Wie kann man sich auf dem Globus orientieren? Diesen und anderen Fragen wollen wir mit euch gemeinsam auf den Grund gehen.</p> <p>Beim gemeinsamen Experimentieren werdet ihr auch genügend Zeit und Möglichkeiten haben, mit unseren WissenschaftlerInnen und MatheStudentInnen ins Gespräch zu kommen und alle eure Fragen rund um das Studium und das Berufsbild der Mathematikerin zu stellen.</p> <p>Wir freuen uns auf euch!</p> <p>Getränke und Mittagessen inklusive.</p> <p><strong>Anmeldung</strong> über<br /> mathemachen² &#8211; für Kl. 5 bis 7<br /> oder<br /> Geometrie der Erde &#8211; ab Kl. 8<br /> oder<br /> per E-Mail an jgregor@mis.mpg.de</p> <p><strong>Termin: </strong>27. April 2017<br /> <strong>Dauer:</strong> 9:30 bis ca. 14:00 Uhr</p> <p><strong>Ort:</strong> INSPIRATA &#8211; Mitmach-Museum<br /> (Deutscher Platz 4, Eingang G, 04103 Leipzig)</p> " ;
-                                                   ical:dtend "2017-04-27T14:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2017-03-23T14:47:18+01:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Mädchen &#8211; Zukunftstag Mathe zum Anfassen Die Mitmach-Ausstellung INSPIRATA und das Max-Planck-Institut für Mathematik in den Naturwissenschaften laden alle wissbegierigen und entdeckungsfreudigen Mädchen zu einem spannenden Girls‘Day rund um die Mathematik ein. " ;
-                                                   ical:url <http://www.inspirata.de/?p=9670> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Girls´Day in der INSPIRATA – 27.04.2017" .
+<http://leipzig-data.de/Data/Event/Inspirata.9670> ical:description "<p></p> <h3>Mädchen &#8211; Zukunftstag</h3> <p><strong>Mathe zum Anfassen</strong></p> <p>Die Mitmach-Ausstellung INSPIRATA und das Max-Planck-Institut für Mathematik in den Naturwissenschaften laden alle wissbegierigen und entdeckungsfreudigen Mädchen zu einem spannenden Girls‘Day rund um die Mathematik ein. Über 150 Mitmach-Exponate warten darauf, von euch erkundet zu werden.</p> <p>Zudem haben wir zwei spezielle Angebote:</p> <p><strong>mathemachen² &#8211; Für Mädchen der Klassenstufen 5 bis 7.</strong></p> <p>An den Experimentierstationen des Ausstellungsbereiches mathemachen² erwartet euch die Mathematik in ihrer anschaulichsten Form – zum Anfassen, Erleben und Staunen. So lädt beispielsweise die Geometrie zum Fühlen, Schauen, Bauen ein. In der Kryptologie geht es um Kodieren, Probieren, Lösen. Symmetrie lässt sich hautnah erleben durch Verschieben, Drehen, Spiegeln; und mit Zahlen kann man: Schätzen, Messen, Rechnen.</p> <p><strong>Geometrie der Erde &#8211; Für Mädchen ab Klassenstufe 8.</strong></p> <p>Warum fliegen Flugzeuge nach Amerika nicht gerade, sondern einen Bogen nach Norden? Wie wird die Erdkugel zur flachen Karte? Warum gibt es verschiedene Kartentypen? Wie kann man sich auf dem Globus orientieren? Diesen und anderen Fragen wollen wir mit euch gemeinsam auf den Grund gehen.</p> <p>Beim gemeinsamen Experimentieren werdet ihr auch genügend Zeit und Möglichkeiten haben, mit unseren WissenschaftlerInnen und MatheStudentInnen ins Gespräch zu kommen und alle eure Fragen rund um das Studium und das Berufsbild der Mathematikerin zu stellen.</p> <p>Wir freuen uns auf euch!</p> <p>Getränke und Mittagessen inklusive.</p> <p><strong>Anmeldung</strong> über<br /> mathemachen² &#8211; für Kl. 5 bis 7<br /> oder<br /> Geometrie der Erde &#8211; ab Kl. 8<br /> oder<br /> per E-Mail an jgregor@mis.mpg.de</p> <p><strong>Termin: </strong>27. April 2017<br /> <strong>Dauer:</strong> 9:30 bis ca. 14:00 Uhr</p> <p><strong>Ort:</strong> INSPIRATA &#8211; Mitmach-Museum<br /> (Deutscher Platz 4, Eingang G, 04103 Leipzig)</p> " ;
+                                                   ical:summary "Mädchen &#8211; Zukunftstag Mathe zum Anfassen Die Mitmach-Ausstellung INSPIRATA und das Max-Planck-Institut für Mathematik in den Naturwissenschaften laden alle wissbegierigen und entdeckungsfreudigen Mädchen zu einem spannenden Girls‘Day rund um die Mathematik ein. " .
 
 <http://leipzig-data.de/Data/Event/Inspirata.9719> ical:dtstart "2017-10-18T9:00:00+02:00"^^xsd:dateTime ;
                                                    ical:description "<p>Fortbildung der INSPIRATA in Kooperation<br /> mit dem Sächsischen Staatsministerium für Kultus</p> <p><strong>“Digitale Werkzeuge im Analysisunterricht”</strong></p> <p><strong>Wer?</strong> Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare<br /> mit dem Fach Mathematik<br /> <strong>Wo?</strong> INSPIRATA – 04103 Leipzig, Deutscher Platz 4 (Eingang G, 3. Etage)<br /> <strong>Wann?</strong> Mittwoch, 18. Oktober 2017, von 9:00 bis 16:00 Uhr</p> <p><strong>Ablauf:</strong><br /> <em>Informationen folgen baldmöglichst</em></p> <p><strong>Anmeldung:</strong><br /> <em>Sie können sich gern bereits per Mail an anmeldung(at)inspirata.de vormerken lassen;</em><br /> <em>ein Online-Anmelde-Formular wird baldmöglichst hier unten eingerichtet &#8230;</em></p> " ;
@@ -164,165 +89,11 @@
                                                    a ld:Event ;
                                                    rdfs:label "Fortbildung “Digitale Werkzeuge im Analysisunterricht” – 18.10.2017" .
 
-<http://leipzig-data.de/Data/Event/Kuni.2017-04-28> ical:dtstart "2017-04-28T16:30:00+02:00"^^xsd:dateTime ;
-                                                    ical:description "Seid ihr schon einmal in Ägypten gewesen und habt die Pyramiden bestaunt? Auch für Archäologen gibt es dort viel zu entdecken. Seit mehr als 100 Jahren gibt es Archäologen, die aus dem Leipziger Institut und Museum nach Ägypten reisen und dort die Welt der Pharaonen erforschen. Viele Ihrer Funde sind heute am Augustusplatz im Kroch-Hochhaus zu sehen. Aber was gibt es jenseits von Tutenchamun und Pyramiden aktuell noch so alles zu entdecken? Dies wird euch Dr. Raue vom Ägyptischen Museum Leipzig in seiner Vorlesung vorstellen." ;
-                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                    ical:organizer ldo:UniLeipzig ;
-                                                    ical:summary "Kinderuni: Von Pharaonen, Pyramiden und Mumien – Ausgrabungen der Universität Leipzig in Ägypten. Mit PD Dr. Dietrich Raue, Ägyptisches Museum der Universität Leipzig" ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
-                                                    ld:hasTag ldtag:Kinderuni ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
-                                                    a ld:Event ;
-                                                    rdfs:label "Kinderuni: Von Pharaonen, Pyramiden und Mumien – Ausgrabungen der Universität Leipzig in Ägypten" .
-
-<http://leipzig-data.de/Data/Event/Kuni.2017-05-05> ical:dtstart "2017-05-05T16:30:00+02:00"^^xsd:dateTime ;
-                                                    ical:description "Ihr alle habt schon mal von Leipzigs Oberbürgermeister gehört und das Neue Rathaus gesehen, in dem er sein Büro hat. Aber wisst ihr auch, wie man Oberbürgermeister wird? Was gehört eigentlich alles zu seinen Aufgaben und wer hilft ihm dabei, die Stadt Leipzig zu regieren? In seinem Vortrag erklärt Euch Burkhard Jung, wie die Verwaltung einer Stadt funktioniert und was er, die Mitarbeiter der Stadtverwaltung sowie die Politiker(innen) tun, um Leipzig zu einer noch besseren Stadt zu machen. Außerdem wird er euch zeigen, wie viele Schritte unternommen werden müssen, bis z.B. eine Fußballplatz ein neues Tor erhalten kann. " ;
-                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                    ical:organizer ldo:UniLeipzig ;
-                                                    ical:summary "Kinderuni: Vom Regieren einer Stadt - Was macht eigentlich ein Oberbürgermeister? Mit Burkhard Jung, Oberbürgermeister der Stadt Leipzig" ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
-                                                    ld:hasTag ldtag:Kinderuni ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
-                                                    a ld:Event ;
-                                                    rdfs:label "Kinderuni: Vom Regieren einer Stadt - Was macht eigentlich ein Oberbürgermeister?" .
-
-<http://leipzig-data.de/Data/Event/Kuni.2017-05-12> ical:dtstart "2017-05-12T16:30:00+02:00"^^xsd:dateTime ;
-                                                    ical:description "Unsere Eltern waren als Kinder schlanker als die Kinder heute sind. Und unsere Großeltern waren noch schlanker. Aber warum ist das so, warum werden wir immer dicker? Interessanterweise nehmen manche Menschen leicht zu, während andere anscheinend viel essen, aber trotzdem nicht dick werden. Woran liegt das und was kann man selber tun, um schlank zu bleiben. Und wie kann man verhindern, dass man den Wunsch schlank zu bleiben übertreibt und sogar krank (zum Beispiel magersüchtig) wird? Diesen Fragen und vor allem, was unser Gehirn damit zu tun hat, wird Professor Villringer in seinem Vortrag nachgehen." ;
-                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                    ical:organizer ldo:UniLeipzig ;
-                                                    ical:summary "Kinderuni: Warum werden wir immer dicker? Mit Prof. Dr. Arno Villringer, Max-Planck-Institut für Kognitions- und Neurowissenschaften Leipzig" ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
-                                                    ld:hasTag ldtag:Kinderuni ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
-                                                    a ld:Event ;
-                                                    rdfs:label "Kinderuni: Warum werden wir immer dicker?" .
-
-<http://leipzig-data.de/Data/Event/Kuni.2017-05-19> ical:dtstart "2017-05-19T16:30:00+02:00"^^xsd:dateTime ;
-                                                    ical:description "Wie kann ein Pferd 65 km/h schnell galoppieren? Wie kann Eure Katze blitzschnell einen Baum hochklettern oder sich lautlos anschleichen? Und wie läuft ein Schwein im matschigen Sumpf ohne zu versinken? Unsere Haustiere laufen, klettern, schleichen, springen, rennen, galoppieren, … Und all das ist nur mit Hilfe ihrer Füße, ihren Ballen, Krallen, Hufen und Klauen möglich. Gemeinsam mit Professor Mülling werdet ihr in der Vorlesung mit Mikroskop und Zeitlupenvideos untersuchen, wie diese Füße aufgebaut sind, wie sie funktionieren und wie unser eigener Fuß im Vergleich zu den Füßen der Tiere aussieht. Und als Höhepunkt bekommt ihr noch Hochgeschwindigkeits-Röntgenvideos aus der aktuellen Forschung an Pferd und Rind zu sehen." ;
-                                                    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz> ;
-                                                    ical:organizer ldo:UniLeipzig ;
-                                                    ical:summary "Kinderuni: Auf leisen Pfoten und donnernden Hufen: Die Füße unserer Haustiere. Mit Prof. Dr. Christoph K.W. Mülling, Tierarzt, Professor für Veterinär-Anatomie, Veterinär-Anatomisches Institut der Universität Leipzig" ;
-                                                    ical:url <http://uni-leipzig.de/kinderuni> ;
-                                                    ld:hasTag ldtag:Kinderuni ;
-                                                    ld:zurReihe <http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> ;
-                                                    a ld:Event ;
-                                                    rdfs:label "Kinderuni: Auf leisen Pfoten und donnernden Hufen: Die Füße unserer Haustiere" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-04-26> ical:dtstart "2017-04-26T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-04-26T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/239108509/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-05-03> ical:dtstart "2017-05-03T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-05-03T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywhbfb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-05-10> ical:dtstart "2017-05-10T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-05-10T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/239154354/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-05-17> ical:dtstart "2017-05-17T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-05-17T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/239154358/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-05-24> ical:dtstart "2017-05-24T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-05-24T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/239154362/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-05-31> ical:dtstart "2017-05-31T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-05-31T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/239154365/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-06-07> ical:dtstart "2017-06-07T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-06-07T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywjbkb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-06-14> ical:dtstart "2017-06-14T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-06-14T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywjbsb/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-06-21> ical:dtstart "2017-06-21T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-06-21T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywjbcc/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
-<http://leipzig-data.de/Data/Event/OKLab.2017-06-28> ical:dtstart "2017-06-28T19:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:description "OK Lab Leipzig. Wir treffen uns, um gemeinsam an Civic Apps für Leipzig zu arbeiten. Für alle die Interesse haben, findet jeden 2. Mittwoch im Monat eine kleine Vorstellungsrunde statt." ;
-                                                     ical:dtend "2017-06-28T22:00:00+02:00"^^xsd:dateTime ;
-                                                     ical:location ldo:BasislagerCoworkingLeipzig ;
-                                                     ical:organizer <http://leipzig-data.de/Data/Projekt/CodeForLeipzig> ;
-                                                     ical:summary "OK Lab Leipzig Treffen" ;
-                                                     ical:url <https://www.meetup.com/OK-Lab-Leipzig/events/wzfwplywjblc/> ;
-                                                     ld:Tag ldtag:CodeForLeipzig ;
-                                                     a ld:Event ;
-                                                     rdfs:label "OK Lab Leipzig Treffen" .
-
 <> a owl:Ontology ;
    rdfs:label "Events" ;
-   cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+   ns0:attributionURL <http://leipzig-data.de> ;
+   ns0:attributionName "The Leipzig Open Data Project" ;
+   ns0:license <http://creativecommons.org/publicdomain/zero/1.0/> .
 
 ld:Event a owl:Class ;
          rdfs:label "Event" .
