@@ -186,13 +186,9 @@
                                                  foaf:phone "0341-5194363" ;
                                                  foaf:homepage <http://www.saek.de> .
 
-<http://leipzig-data.de/Data/Firma/SZL> a ld:Unternehmen ;
-                                        rdfs:label "SZL Suchtzentrum Leipzig gGmbH" ;
-                                        ld:hasSupplierNumber "233" .
-
 <http://leipzig-data.de/Data/Firma/SZLSuchtzentrum> a ld:Unternehmen ;
-                                                    rdfs:label "SZL Suchtzentrum gGmbH" ;
-                                                    ld:hasCategories "Suchthilfe, Suchtberatungs- und Behandlungsstellen" ;
+                                                    rdfs:label "SZL Suchtzentrum Leipzig gGmbH" ;
+                                                    ld:hasCategories "Suchthilfe, Suchtberatungs- und Behandlungsstellen" ;ld:hasSupplierNumber "233";
                                                     ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Gohlis-Sued> ;
                                                     ld:hasStadtId "260" ;
                                                     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.MoeckernscheStrasse.3> .
@@ -248,6 +244,10 @@
                                              ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.26> ;
                                              foaf:mbox "info@kindermuseum-unikatum.de" ;
                                              foaf:phone "0341-3061986" ;
+                                              ld:hasCategories "Kinder, Jugend und Familie, Bildung und Freizeit, Bildende Kunst, Kinder- und Jugendkultur, Museum, Sozio- und Stadtteilkultur" ;
+                                              ld:hasOrtsteil ldot:Plagwitz ;
+                                              ld:hasStadtId "645" ;
+                                              ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.26> ;
                                              ld:engagedPerson <http://leipzig-data.de/Data/Person/Haensel_Annegret> .
 
 <http://leipzig-data.de/Data/Firma/VNG> a ld:Unternehmen ;
@@ -273,7 +273,7 @@
                                                foaf:phone "0341-5933385" ;
                                                foaf:homepage <http://www.zoo-leipzig.de> .
 
-<http://leipzig-data.de/Data/Firma/Zuhause> a ld:Verein ;
+<http://leipzig-data.de/Data/Firma/Zuhause> a ld:Unternehmen ;
                                             rdfs:label "Gemeinnützige Zuhause GmbH" ;
                                             ld:hasCategories "Behindertenvereine, Wohnen" ;
                                             ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Lindenau> ;
@@ -289,6 +289,11 @@
                                              rdfs:label "axxplore" ;
                                              ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Daehnhardtstrasse.1> ;
                                              foaf:homepage <http://www.axxplore.com/> .
+
+<http://leipzig-data.de/Data/Firma/Outlaw> a ld:Unternehmen ;
+                                             rdfs:label "Outlaw Kinder- und Jugendhilfe gGmbH" ;
+                                             ld:hasAddress <http://leipzig-data.de/Data/48268.Greven.Muensterstrasse.105> ;
+                                             foaf:homepage <http://www.outlaw-ggmbh.de/> .
 
 <http://leipzig-data.de/Data/Firma/ciT> a ld:Unternehmen ;
                                         rdfs:label "ciT – Consulting Innovation Training GmbH" ;
