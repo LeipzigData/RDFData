@@ -9,8 +9,18 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://leipzig-data.de/Data/Firma/GerhardRoeslGmbH> a ld:Unternehmen, org:Organization ;
+                                                   rdfs:label "Gerhard Rösl GmbH" ;
+                                                   ld:hasAddress <http://leipzig-data.de/Data/04838.Jesewitz.ZschettgauerStrasse.3> ;
+                                                   ld:hasTag ldtag:MINT-Broschuere .
+
+<http://leipzig-data.de/Data/Firma/Fa_Dietmar_Becker> a ld:Unternehmen, org:Organization  ;
+                                                    rdfs:label "Fa. Dietmar Becker" ;
+                                                    ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Hafenstrasse.23> .
 
 <http://leipzig-data.de/Data/Firma/ArvatoSystems> a ld:Unternehmen, org:Organization ;
                                                   rdfs:label "Arvato Systems GmbH" ;
