@@ -473,8 +473,9 @@ ld:Schule a owl:Class ;
 
 <http://leipzig-data.de/Data/Schule/Heisenberg-Gym> a ld:Gymnasium, ld:Schule ;
                                                     rdfs:label "Werner-Heisenberg-Gymnasium" ;
-                                                    rdfs:comment "JIA-Verbund seit 2012", "MINT-freundliche Schule 2015" ;
-                                                    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> ; 
+                                                    rdfs:comment "JIA-Verbund seit 2012" ;
+                                                    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
+						    ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> , <http://leipzig-data.de/Data/JIA> ;
 
                                                     ld:hatProfile "künstlerisch", "naturwissenschaftlich" ;
                                                     ld:hatSchulkuerzel "S 23" ;
@@ -531,7 +532,8 @@ ld:Schule a owl:Class ;
 
 <http://leipzig-data.de/Data/Schule/Kant-Gym> a ld:Gymnasium, ld:Schule ;
                                               rdfs:label "Immanuel-Kant-Gymnasium" ;
-                                              rdfs:comment "JIA-Verbund seit 2012", "MINT-freundliche Schule 2012 + 2015" ;
+                                              rdfs:comment "JIA-Verbund seit 2012" ;
+					      ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2012>, <http://leipzig-data.de/Data/MINT-Schule.2015>, <http://leipzig-data.de/Data/JIA> ; 
                                               ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
                                               ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
                                               ld:hatSchulkuerzel "S 06" ;
@@ -553,8 +555,9 @@ ld:Schule a owl:Class ;
 
 <http://leipzig-data.de/Data/Schule/Klinger-Gym> a ld:Gymnasium, ld:Schule ;
                                                  rdfs:label "Max-Klinger-Gymnasium" ;
-                                                 rdfs:comment "JIA seit 2015", "MINT-freundliche Schule 2015" ;
-                                                 ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> ; 
+                                                 rdfs:comment "JIA seit 2015" ;
+                                                 ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
+						 ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015>, <http://leipzig-data.de/Data/JIA>; 
 
                                                  ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
                                                  ld:hatSchulkuerzel "S 16" ;
@@ -709,7 +712,7 @@ ld:Schule a owl:Class ;
 <http://leipzig-data.de/Data/Schule/Niko-Gym> a ld:Gymnasium, ld:Schule ;
                                               rdfs:label "Neues Nikolai-Gymnasium" ;
                                               rdfs:comment "JIA-Verbund seit 2012" ;
-                                              ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
+                                              ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ; ld:hasTag <http://leipzig-data.de/Data/JIA> ; 
                                               ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich" ;
                                               ld:hatSchulkuerzel "S 07" ;
                                               ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Schoenbachstrasse.17> ;
