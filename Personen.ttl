@@ -85,7 +85,7 @@
     foaf:name "Leonhard Brier" .
 
 <http://leipzig-data.de/Data/Person/BuechelBernhard_Aaron>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM.Leipzig> ;
     a foaf:Person ;
     foaf:name "Aaron Büchel-Bernhard" .
 
@@ -172,11 +172,6 @@
     a foaf:Person ;
     foaf:name "Manfred Füting" ;
     foaf:title "Prof. Dr." .
-
-<http://leipzig-data.de/Data/Person/Fuhrmann_Sabine>
-    ld:relatedTo <http://leipzig-data.de/Data/Unternehmen/SpiritLegal> ;
-    a foaf:Person ;
-    foaf:name "Sabine Fuhrmann" .
 
 <http://leipzig-data.de/Data/Person/Geffken_Michael>
     ld:relatedTo <http://leipzig-data.de/Data/Ort/SchoolOfMedia> ;
@@ -304,7 +299,7 @@
 
 <http://leipzig-data.de/Data/Person/Herold_Corrina>
     ld:hasURL "http://www.fom.de" ;
-    ld:relatedTo <http://leipzig-data.de/Data/Ort/FOM> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Hochschule.FOM> ;
     a foaf:Person ;
     foaf:name "Corrina Herold" ;
     foaf:title "Dr." .
@@ -424,12 +419,6 @@
     a foaf:Person ;
     foaf:name "Ralf Kohl" .
 
-<http://leipzig-data.de/Data/Person/Kramer_Anais>
-    ld:relatedTo <http://leipzig-data.de/Data/Ort/Zukunftsakademie> ;
-    a foaf:Person ;
-    rdfs:comment "Leiterin der GS der Zukunftsakademie" ;
-    foaf:name "Anais Kramer" .
-
 <http://leipzig-data.de/Data/Person/Krause_Tanja>
     a foaf:Person ;
     rdfs:comment "UFZ Department Umwelt- und Planungsrecht" ;
@@ -465,7 +454,7 @@
 
 <http://leipzig-data.de/Data/Person/Lehmann_Olaf>
     a foaf:Person ;
-    rdfs:comment "IHK zu Leipzig" ;
+    ld:relatedTo <http://leipzig-data.de/Data/IHK-Leipzig> ;
     foaf:name "Olaf Lehmann" .
 
 <http://leipzig-data.de/Data/Person/Liebelt_Ute>
@@ -562,7 +551,7 @@
     foaf:name "Joachim R. Niggemeyer" .
 
 <http://leipzig-data.de/Data/Person/Nuernberger_Tabea>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM.Leipzig> ;
     a foaf:Person ;
     foaf:name "Tabea Nürnberger" .
 
@@ -593,7 +582,7 @@
 
 <http://leipzig-data.de/Data/Person/PhuongThaoDinhVan>
     ld:hasURL <http://www.leipzig.ihk.de/desktopdefault.aspx/tabid-248/14_read-5985/date-23723/> ;
-    ld:relatedTo <http://leipzig-data.de/Data/Ort/IHK> ;
+    ld:relatedTo <http://leipzig-data.de/Data/IHK-Leipzig> ;
     a foaf:Person ;
     foaf:name "Phuong Thao Dinh Van" .
 
@@ -652,7 +641,7 @@
     foaf:name "Axel Rehm" .
 
 <http://leipzig-data.de/Data/Person/Reiner_Oliver>
-    ld:relatedTo <http://leipzig-data.de/Data/Ort/Villa>, <http://leipzig-data.de/Data/Verein/LeISA> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/Villa>, <http://leipzig-data.de/Data/Firma/LeISA> ;
     a foaf:Person .
 
 <http://leipzig-data.de/Data/Person/Reinhardt_Sylvi>
@@ -692,7 +681,7 @@
     foaf:name "Sascha Roeser" .
 
 <http://leipzig-data.de/Data/Person/Roth_Dorit>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM.Leipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     a foaf:Person ;
     foaf:name "Dorit Roth" .
 
@@ -972,3 +961,9 @@ foaf:Person
     a owl:Class ;
     rdfs:label "Person" .
 
+
+ldp:Moeckel_Christian
+    org:headOf <http://leipzig-data.de/Data/Buergerverein/Leutzsch> .
+
+ldp:Willkomm_Jan
+    org:headOf <http://leipzig-data.de/Data/Buergerverein/Waldstrassenviertel> .

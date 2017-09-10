@@ -20,7 +20,7 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Bachviertel>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Kaethe-Kollwitz-Strasse.107> ;
-    ld:hasCategories "Bürgervereine, Bildung und Freizeit, Kinder- und Jugendschutz, Kinder- und Jugendkultur, Sozio- und Stadtteilkultur, Stadtgeschichte und Heimatpflege" ;
+    ld:hasCategories "Bildung und Freizeit", "Bürgervereine", "Kinder- und Jugendkultur", "Kinder- und Jugendschutz", "Sozio- und Stadtteilkultur", "Stadtgeschichte und Heimatpflege" ;
     ld:hasOrtsteil ldot:Zentrum-West ;
     ld:hasStadtId "63" ;
     ld:hasSupplierNumber "008" ;
@@ -34,7 +34,7 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Burghausen>
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Bienitzstrasse.26> ;
-    ld:hasCategories "Bürgervereine, Bürgervereine" ;
+    ld:hasCategories "Bürgervereine" ;
     ld:hasOrtsteil ldot:Burghausen-Rueckmarsdorf ;
     ld:hasStadtId "345" ;
     a ld:Verein ;
@@ -42,7 +42,7 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Doelitz>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Helenenstrasse.28> ;
-    ld:hasCategories "Bürgervereine, Bürgervereine" ;
+    ld:hasCategories "Bürgervereine" ;
     ld:hasOrtsteil ldot:Doelitz-Doesen ;
     ld:hasStadtId "158" ;
     a ld:Verein ;
@@ -50,7 +50,7 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Eutritzsch>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Graefestrasse.2> ;
-    ld:hasCategories "Bürgervereine, Medien, Stadtgeschichte und Heimatpflege" ;
+    ld:hasCategories "Bürgervereine", "Medien", "Stadtgeschichte und Heimatpflege" ;
     ld:hasOrtsteil ldot:Eutritzsch ;
     ld:hasStadtId "66" ;
     a ld:Verein ;
@@ -76,7 +76,7 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Gruenau>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Andromedaweg.19> ;
-    ld:hasCategories "Bürgervereine, Seniorenvereine" ;
+    ld:hasCategories "Bürgervereine", "Seniorenvereine" ;
     ld:hasOrtsteil ldot:Gruenau-Nord ;
     ld:hasStadtId "35" ;
     a ld:Verein ;
@@ -84,7 +84,7 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Hohenheida>
     ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.AmAnger.60> ;
-    ld:hasCategories "Bürgervereine, Bürgervereine" ;
+    ld:hasCategories "Bürgervereine" ;
     ld:hasOrtsteil ldot:Seehausen ;
     ld:hasStadtId "144" ;
     a ld:Verein ;
@@ -92,7 +92,7 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Holzhausen>
     ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.Spechtweg.2> ;
-    ld:hasCategories "Bürgervereine, Kulturvereine" ;
+    ld:hasCategories "Bürgervereine", "Kulturvereine" ;
     ld:hasOrtsteil ldot:Holzhausen ;
     ld:hasStadtId "38" ;
     a ld:Verein ;
@@ -100,7 +100,7 @@
 
 <http://leipzig-data.de/Data/Buergerverein/InitiativeSchleussig>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Roedelstrasse.8> ;
-    ld:hasCategories "Bürgervereine, Behindertenvereine" ;
+    ld:hasCategories "Behindertenvereine", "Bürgervereine" ;
     ld:hasOrtsteil ldot:Schleussig ;
     ld:hasStadtId "87" ;
     a ld:Verein ;
@@ -117,7 +117,7 @@
 <http://leipzig-data.de/Data/Buergerverein/KnauthainKnautkleeberg>
     ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Eberpfad.9> ;
     ld:hasCategories "Bürgervereine" ;
-    ld:hasOrtsteil "Knauthain-Knautkleeberg" ;
+    ld:hasOrtsteil ldot:Knautkleeberg-Knauthain ;
     ld:hasStadtId "86" ;
     a ld:Verein ;
     rdfs:label "Bürgerinitiative Knauthain/Knautkleeberg e.V." .
@@ -127,11 +127,11 @@
     ld:hasCategories "Bürgervereine" ;
     ld:hasOrtsteil ldot:Zentrum-West ;
     ld:hasStadtId "50" ;
-    ld:hasURL <http://www.awo-leipzig-stadt.de> ;
     a ld:Buergerverein, ld:Verein, org:Organization ;
     rdfs:label "Bürgerverein Kolonnadenviertel e.V." ;
     skos:prefLabel "Bürgerverein Kolonnadenviertel e.V." ;
-    org:memberOf ldp:Schaetzl_Matthias, ldp:Vetterlein_Guenter .
+    org:memberOf ldp:Schaetzl_Matthias, ldp:Vetterlein_Guenter ;
+    foaf:homepage <http://www.awo-leipzig-stadt.de> .
 
 <http://leipzig-data.de/Data/Buergerverein/Krochsiedlung>
     ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.HelgolaenderWeg.3> ;
@@ -143,15 +143,15 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Leutzsch>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.121>, <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.122> ;
-    ld:hasCategories "Bürgervereine, Bürgervereine" ;
+    ld:hasCategories "Bürgervereine" ;
     ld:hasOrtsteil ldot:Leutzsch ;
     ld:hasStadtId "75" ;
-    ld:hasURL <http://www.blickpunkt-leutzsch.de> ;
     a ld:Buergerverein, ld:Verein, org:Organization ;
     rdfs:comment "Gegründet 1994 (LVZ, 22.06.2014)" ;
     rdfs:label "BürgerVerein Leutzsch e.V." ;
     skos:prefLabel "Bürgerverein Leutzsch e.V." ;
-    org:memberOf ldp:Moeckel_Christian, ldp:Raschke_Roman .
+    org:memberOf ldp:Moeckel_Christian, ldp:Raschke_Roman ;
+    foaf:homepage <http://www.blickpunkt-leutzsch.de> .
 
 <http://leipzig-data.de/Data/Buergerverein/Liebertwolkwitz>
     ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.AlteTauchaerStrasse.1> ;
@@ -171,34 +171,34 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Messemagistrale>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Strassedes18Oktober.10A> ;
-    ld:hasCategories "Bürgervereine, Kinder, Jugend und Familie, Bildung und Freizeit, Jugendsozialarbeit, Kinder- und Jugendschutz, Kulturvereine, Kinder- und Jugendkultur, Literatur, Musik, Sozio- und Stadtteilkultur, Seniorenvereine, Wohnen" ;
+    ld:hasCategories "Bildung und Freizeit", "Bürgervereine", "Jugend und Familie", "Jugendsozialarbeit", "Kinder", "Kinder- und Jugendkultur", "Kinder- und Jugendschutz", "Kulturvereine", "Literatur", "Musik", "Seniorenvereine", "Sozio- und Stadtteilkultur", "Wohnen" ;
     ld:hasOrtsteil ldot:Zentrum-Suedost ;
     ld:hasStadtId "365" ;
     ld:hasSupplierNumber "112" ;
-    ld:hasURL <http://www.awo-leipzig-stadt.de> ;
     a ld:Buergerverein, ld:Verein, org:Organization ;
     rdfs:label "Bürgerverein Messemagistrale" ;
     skos:prefLabel "Bürgerverein Messemagistrale e.V." ;
     org:memberOf ldp:Knospe_Uta ;
+    foaf:homepage <http://www.awo-leipzig-stadt.de> ;
     foaf:mbox "messemagistrale@googlemail.com" .
 
 <http://leipzig-data.de/Data/Buergerverein/MoeckernWahren>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Georg-Schumann-Strasse.294> ;
-    ld:hasCategories "Bürgervereine, Bürgervereine" ;
+    ld:hasCategories "Bürgervereine" ;
     ld:hasOrtsteil ldot:Moeckern ;
     ld:hasStadtId "67" ;
     a ld:Verein ;
     rdfs:label "Bürgerverein Möckern/Wahren e.V." .
 
 <http://leipzig-data.de/Data/Buergerverein/NeustaedterMarkt>
-    ld:hasURL <http://www.neustaedtermarkt-leipzig.de> ;
     a ld:Buergerverein, org:Organization ;
     skos:prefLabel "Bürgerverein Neustädter Markt e.V." ;
-    org:memberOf ldp:Hufenreuter_Henry .
+    org:memberOf ldp:Hufenreuter_Henry ;
+    foaf:homepage <http://www.neustaedtermarkt-leipzig.de> .
 
 <http://leipzig-data.de/Data/Buergerverein/Nordost>
     ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.Kutschweg.36> ;
-    ld:hasCategories "Bürgervereine, Stadtgeschichte und Heimatpflege" ;
+    ld:hasCategories "Bürgervereine", "Stadtgeschichte und Heimatpflege" ;
     ld:hasOrtsteil ldot:Mockau-Nord, ldot:Mockau-Sued, ldot:Plaussig-Portitz, ldot:Thekla ;
     ld:hasStadtId "519", "709", "710", "711" ;
     a ld:Verein ;
@@ -209,11 +209,11 @@
     ld:hasCategories "Bürgervereine" ;
     ld:hasOrtsteil ldot:Neustadt-Neuschoenefeld ;
     ld:hasStadtId "621" ;
-    ld:hasURL <http://www.bvostvorstadt.de> ;
     a ld:Buergerverein, ld:Verein, org:Organization ;
     rdfs:label "Bürgerverein Leipziger Ostvorstadt e.V." ;
     skos:prefLabel "Bürgerverein Leipziger Ostvorstadt e.V." ;
-    org:memberOf ldp:Friedrich_Marga, ldp:Wunderlich_Sabine .
+    org:memberOf ldp:Friedrich_Marga, ldp:Wunderlich_Sabine ;
+    foaf:homepage <http://www.bvostvorstadt.de> .
 
 <http://leipzig-data.de/Data/Buergerverein/Paunsdorf>
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Goldsternstrasse.54> ;
@@ -262,14 +262,14 @@
 
 <http://leipzig-data.de/Data/Buergerverein/Stoetteritz>
     ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Rudolph-Herrmann-Strasse.25> ;
-    ld:hasCategories "Bürgervereine, Seniorenvereine" ;
+    ld:hasCategories "Bürgervereine", "Seniorenvereine" ;
     ld:hasOrtsteil ldot:Stoetteritz ;
     ld:hasStadtId "81" ;
     a ld:Verein ;
     rdfs:label "Bürgerverein Stötteritz e.V." .
 
 <http://leipzig-data.de/Data/Buergerverein/Volkmarsdorf>
-    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Koradstrasse.60A> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Konradstrasse.60A> ;
     ld:hasCategories "Bürgervereine" ;
     ld:hasOrtsteil ldot:Volkmarsdorf ;
     ld:hasStadtId "606" ;
@@ -293,9 +293,8 @@
     a owl:Ontology ;
     rdfs:label "Bürgervereine" .
 
-ldp:Moeckel_Christian
-    org:headOf <http://leipzig-data.de/Data/Buergerverein/Leutzsch> .
-
-ldp:Willkomm_Jan
-    org:headOf <http://leipzig-data.de/Data/Buergerverein/Waldstrassenviertel> .
+ld:Buergerverein
+    a owl:Class ;
+    rdfs:label "Bürgerverein" ;
+    rdfs:subClassOf ld:Verein, org:Organization .
 
