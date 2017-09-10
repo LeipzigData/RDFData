@@ -1,6 +1,3 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Schulen/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -10,993 +7,1191 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 
-ld:Berufsschule a owl:Class ;
-                rdfs:label "Berufsschule in Leipzig" .
-
-ld:Foerderschule a owl:Class ;
-                 rdfs:label "Förderschule in Leipzig" .
-
-ld:FreierTraeger a owl:Class ;
-                 rdfs:label "Schule in freier Trägerschaft" .
-
-ld:Gemeinschaftsschule a owl:Class ;
-                       rdfs:label "Gemeinschaftsschule in Leipzig" .
-
-ld:Grundschule a owl:Class ;
-               rdfs:label "Grundschule in Leipzig" .
-
-ld:Gymnasium a owl:Class ;
-             rdfs:label "Gymnasium in Leipzig" .
-
-ld:Oberschule a owl:Class ;
-              rdfs:label "Oberschule in Leipzig" .
-
-ld:Schule a owl:Class ;
-          rdfs:label "Schule in Leipzig" .
-
-<http://leipzig-data.de/Data/Schule/100-GS> a ld:Grundschule, ld:Schule ;
-                                            rdfs:label "100. Schule" ;
-                                            ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.MiltitzerAllee.1> .
-
-<http://leipzig-data.de/Data/Schule/120-GS> a ld:Grundschule, ld:Schule ;
-                                            rdfs:label "120. Schule" ;
-                                            ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Martin-Herrmann-Strasse.1> .
-
-<http://leipzig-data.de/Data/Schule/125-OS> a ld:Oberschule, ld:Schule ;
-                                            rdfs:label "125. Schule" ;
-                                            ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                            ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.43> ;
-                                            ld:hasURL <http://www.125-oberschule.de> .
-
-<http://leipzig-data.de/Data/Schule/157-GS> a ld:Grundschule, ld:Schule ;
-                                            rdfs:label "157. Schule" ;
-                                            ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Hans-Driesch-Strasse.41> .
-
-<http://leipzig-data.de/Data/Schule/16-OS> a ld:Oberschule, ld:Schule ;
-                                           rdfs:label "16. Schule" ;
-                                           ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Konradstrasse.67> ;
-                                           ld:hasURL <http://www.ms16.de> .
-
-<http://leipzig-data.de/Data/Schule/172-GS> a ld:Grundschule, ld:Schule ;
-                                            rdfs:label "172. Schule" ;
-                                            ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Priessnitzstrasse.19> .
-
-<http://leipzig-data.de/Data/Schule/20-OS> a ld:Oberschule, ld:Schule ;
-                                           rdfs:label "20. Schule" ;
-                                           ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Baestleinstrasse.14> ;
-                                           ld:hasURL <http://www.20schule-ms.de> .
-
-<http://leipzig-data.de/Data/Schule/21-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "21. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Stoeckelstrasse.45> .
-
-<http://leipzig-data.de/Data/Schule/24-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "24. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Doellingstrasse.25> .
-
-<http://leipzig-data.de/Data/Schule/3-GS> a ld:Grundschule, ld:Schule ;
-                                          rdfs:label "3. Schule" ;
-                                          ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Bernhard-Goering-Strasse.107> .
-
-<http://leipzig-data.de/Data/Schule/31-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "31. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Franzosenallee.21> .
-
-<http://leipzig-data.de/Data/Schule/33-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "33. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.AnhalterStrasse.1> .
-
-<http://leipzig-data.de/Data/Schule/35-OS> a ld:Oberschule, ld:Schule ;
-                                           rdfs:label "35. Schule" ;
-                                           ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Virchowstrasse.4> ;
-                                           ld:hasURL <http://www.35mittelschule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/39-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "39. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Gustav-Kuehn-Strasse.1> .
-
-<http://leipzig-data.de/Data/Schule/46-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "46. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.SaalfelderStrasse.29> .
-
-<http://leipzig-data.de/Data/Schule/5-GS> a ld:Grundschule, ld:Schule ;
-                                          rdfs:label "Schule 5 im Stadtbezirk Mitte" ;
-                                          ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Eitingonstrasse.5> .
-
-<http://leipzig-data.de/Data/Schule/56-OS> a ld:Oberschule, ld:Schule ;
-                                           rdfs:label "56. Schule" ;
-                                           ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Dieskaustrasse.213> ;
-                                           ld:hasURL <http://www.56-oberschule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/60-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "60. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Seumestrasse.93> .
-
-<http://leipzig-data.de/Data/Schule/66-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "66. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Rosenowstrasse.56> .
-
-<http://leipzig-data.de/Data/Schule/68-OS> a ld:Oberschule, ld:Schule ;
-                                           rdfs:label "68. Schule" ;
-                                           ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.BreitenfelderStrasse.19> ;
-                                           ld:hasURL <http://www.mittelschule-moeckern.de> .
-
-<http://leipzig-data.de/Data/Schule/74-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "74. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Friedrich-Dittes-Strasse.23> .
-
-<http://leipzig-data.de/Data/Schule/77-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "77. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Riebeckstrasse.50> .
-
-<http://leipzig-data.de/Data/Schule/78-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "78. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.BinzerStrasse.14> .
-
-<http://leipzig-data.de/Data/Schule/8-GS> a ld:Grundschule, ld:Schule ;
-                                          rdfs:label "8. Schule" ;
-                                          ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Wincklerstrasse.3> .
-
-<http://leipzig-data.de/Data/Schule/84-OS> a ld:Oberschule, ld:Schule ;
-                                           rdfs:label "84. Schule" ;
-                                           ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.5> ;
-                                           ld:hasURL <http://www.84-ms-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/85-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "85. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.3> .
-
-<http://leipzig-data.de/Data/Schule/9-GS> a ld:Grundschule, ld:Schule ;
-                                          rdfs:label "9. Schule" ;
-                                          ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Gersterstrasse.74> .
-
-<http://leipzig-data.de/Data/Schule/90-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "90. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.21> .
-
-<http://leipzig-data.de/Data/Schule/91-GS> a ld:Grundschule, ld:Schule ;
-                                           rdfs:label "91. Schule" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Uranusstrasse.1> .
-
-<http://leipzig-data.de/Data/Schule/94-OS> a ld:Oberschule, ld:Schule ;
-                                           rdfs:label "94. Schule" ;
-                                           ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.3> ;
-                                           ld:hasURL <http://cms.sachsen.schule/94osl> .
-
-<http://leipzig-data.de/Data/Schule/A-Kaestner-GS> a ld:Grundschule, ld:Schule ;
-                                                   rdfs:label "Alfred-Kästner-Schule" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.Gartenwinkel.30> .
-
-<http://leipzig-data.de/Data/Schule/AHF-GS> a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
-                                            rdfs:label "August-Hermann-Francke Grundschule" ;
-                                            ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Puschstrasse.9> .
-
-<http://leipzig-data.de/Data/Schule/AM-Bach-GS> a ld:Grundschule, ld:Schule ;
-                                                rdfs:label "Anna-Magdalena-Bach-Schule" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Manetstrasse.8> .
-
-<http://leipzig-data.de/Data/Schule/AWO-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                      rdfs:label "AWO SPI Soziale Stadt und Land Entwicklungsgesellschaft mbH" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Ludwig-Hupfeld-Strasse.16> ;
-                                                      ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-spi-soziale-stadt-und-land-entwicklungsgesellschaft-mbh/> .
-
-<http://leipzig-data.de/Data/Schule/Adler-Schule> a ld:Grundschule, ld:Oberschule, ld:Schule ;
-                                                  rdfs:label "Oberschule am Adler" ;
-                                                  ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Antonienstrasse.24> ;
-                                                  ld:hasURL <http://www.schuleamadler.de>, <http://www.schule-am-adler.de> .
-
-<http://leipzig-data.de/Data/Schule/AkademiefuerKreativitaetspaedagogik> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                         rdfs:label "Akademie für Kreativitätspädagogik Leipzig" ;
-                                                                         ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Braunstrasse.18> ;
-                                                                         ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-akademie-fuer-kreativitaetspaedagogik-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/AktiveSchule-GS> a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
-                                                     rdfs:label "Aktive Schule Leipzig" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.EisenacherStrasse.40> .
-
-<http://leipzig-data.de/Data/Schule/Andersen-GS> a ld:Grundschule, ld:Schule ;
-                                                 rdfs:label "Hans-Christian-Andersen-Schule" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Louis-Fuernberg-Strasse.2> .
-
-<http://leipzig-data.de/Data/Schule/Arnold-GS> a ld:Grundschule, ld:Schule ;
-                                               rdfs:label "Christoph-Arnold-Schule" ;
-                                               ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.Gaswerksweg.1> .
-
-<http://leipzig-data.de/Data/Schule/Arwed-Rossbach-Schule> a ld:Berufsschule, ld:Schule ;
-                                                           rdfs:label "Arwed-Rossbach-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
-                                                           ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.AmkleinenFeld.3> ;
-                                                           ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/arwed-rossbach-schule-berufliches-schulzentrum-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/AugsburgerLehmbaugesellschaft> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                   rdfs:label "Augsburger Lehmbaugesellschaft Leipzig gGmbH in Leipzig e.V." ;
-                                                                   ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.93> ;
-                                                                   ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-augsburger-lehmbaugesellschaft-leipzig-ggmbh-in-leipzig-ev/> .
-
-<http://leipzig-data.de/Data/Schule/Auguste-GS> a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
-                                                rdfs:label "Grundschule Auguste" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.GrueneGasse.21B> .
-
-<http://leipzig-data.de/Data/Schule/Auwald-GS> a ld:Grundschule, ld:Schule ;
-                                               rdfs:label "Schule am Auwald" ;
-                                               ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Roedelstrasse.6> .
-
-<http://leipzig-data.de/Data/Schule/BIP-Schule> a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Schule ;
-                                                rdfs:label "BIP-Kreativitätsgrundschule und -gymnasium" ;
-                                                ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
-                                                ld:hatProfile "fremdsprachlich", "künstlerisch", "mathematisch" ;
-                                                ld:hatSchulkuerzel "FT 3" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TorgauerStrasse.114> ;
-                                                ld:hasURL <http://www.bipschulen.de> .
-
-<http://leipzig-data.de/Data/Schule/BSZ-Robert-Blum> a ld:Berufsschule, ld:Schule ;
-                                                     rdfs:label "Berufliches Schulzentrum 12 \"Robert Blum\" der Stadt Leipzig" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Rosenowstrasse.60> ;
-                                                     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/berufliches-schulzentrum-12-robert-blum-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/BSZ1> a ld:Berufsschule, ld:Schule ;
-                                          rdfs:label "Berufliches Schulzentrum 1 der Stadt Leipzig" ;
-                                          ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Crednerstrasse.1> ;
-                                          ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/berufliches-schulzentrum-1-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/BSZ7> a ld:Berufsschule, ld:Schule ;
-                                          rdfs:label "Berufliches Schulzentrum 7 der Stadt Leipzig" ;
-                                          ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.AnderQuerbreite.8> ;
-                                          ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/berufliches-schulzentrum-7-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/BWM-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                      rdfs:label "BWM GmbH" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.26A> ;
-                                                      ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bwm-gmbh/> .
-
-<http://leipzig-data.de/Data/Schule/Bebel-GS> a ld:Grundschule, ld:Schule ;
-                                              rdfs:label "August-Bebel-Schule" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Husemannstrasse.2> .
-
-<http://leipzig-data.de/Data/Schule/Bernd-Blindow-Schule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                          rdfs:label "Bernd-Blindow-Schulen Leipzig" ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Comeniusstrasse.17> ;
-                                                          ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bernd-blindow-schulen-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Berufsbildungswerk-Hoer-Sprachgeschaedigte> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                                rdfs:label "Berufsbildungswerk Leipzig für Hör- und Sprachgeschädigte" ;
-                                                                                ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.KnautnaundorferStrasse.4> ;
-                                                                                ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-berufsbildungswerk-leipzig-fuer-hoer-und-sprachgeschaedigte/> .
-
-<http://leipzig-data.de/Data/Schule/Berufsschule-MKB-Verein> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                             rdfs:label "Verein für Motivation, Komm. und berufliche Bildung e. V." ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.GeithainerStrasse.7> ;
-                                                             ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-verein-fuer-motivation-komm-und-berufliche-bildung-ev/> .
-
-<http://leipzig-data.de/Data/Schule/Berufsschule-St.ElisabethKrankenhaus> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                          rdfs:label "St. Elisabeth Krankenhaus Leipzig" ;
-                                                                          ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Biedermannstrasse.84> ;
-                                                                          ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-st-elisabeth-krankenhaus-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Berufsschule-St.GeorgKlinikum> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                   rdfs:label "St. Georg Klinikum" ;
-                                                                   ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.DelitzscherStrasse.141> ;
-                                                                   ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-st-georg-klinikum/> .
-
-<http://leipzig-data.de/Data/Schule/Biedermann-Schule> a ld:Foerderschule, ld:Schule ;
-                                                       rdfs:label "Kurt-Biedermann-Schule - Förderzentrum für Erziehungshilfe der Stadt Leipzig" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.19> ;
-                                                       ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/kurt-biedermann-schule-foerderzentrum-fuer-erziehungshilfe-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/BildungsakademieDresden> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                             rdfs:label "Bildungsakademie Dresden" ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.9> ;
-                                                             ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bildungsakademie-dresden/> .
-
-<http://leipzig-data.de/Data/Schule/BildungszentrumfuerGesundheitsberufe> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                          rdfs:label "Bildungszentrum für Gesundheitsberufe Leipzig GmbH" ;
-                                                                          ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> ;
-                                                                          ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bildungszentrum-fuer-gesundheitsberufe-leipzig-gmbh/> .
-
-<http://leipzig-data.de/Data/Schule/BoehlitzEhrenberg-GS> a ld:Grundschule, ld:Schule ;
-                                                          rdfs:label "Schule Böhlitz-Ehrenberg" ;
-                                                          ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Heinrich-Heine-Strasse.64> .
-
-<http://leipzig-data.de/Data/Schule/Brockhaus-Gym> a ld:Gymnasium, ld:Schule ;
-                                                   rdfs:label "Friedrich-Arnold-Brockhaus-Gymnasium" ;
-                                                   ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
-                                                   ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
-                                                   ld:hatSchulkuerzel "S 01" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.KielerStrasse.72B> ;
-                                                   ld:hasURL <http://www.brockhaus-gymnasium.de> .
-
-<http://leipzig-data.de/Data/Schule/Busch-GS> a ld:Grundschule, ld:Schule ;
-                                              rdfs:label "Wilhelm-Busch-Schule" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.43> .
-
-<http://leipzig-data.de/Data/Schule/Connewitz-GS> a ld:Grundschule, ld:Schule ;
-                                                  rdfs:label "Schule Connewitz" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.ZwenkauerStrasse.35> .
-
-<http://leipzig-data.de/Data/Schule/DPFA-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                       rdfs:label "Deutsche Private Finanzakademie (DPFA) GmbH Sachsen" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15> ;
-                                                       ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-deutsche-private-finanzakademie-dpfa-gmbh-sachsen/> .
-
-<http://leipzig-data.de/Data/Schule/Designschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                  rdfs:label "Designschule 1.0 und Designschule 2.0 GmbH" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Bauhofstrasse.3> ;
-                                                  ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-designschule-10-und-designschule-20-gmbh/> .
-
-<http://leipzig-data.de/Data/Schule/DeutschesErwachsenenBildungswerk> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                      rdfs:label "Deutsches Erwachsenen Bildungswerk" ;
-                                                                      ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.85> ;
-                                                                      ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-deutsches-erwachsenen-bildungswerk/> .
-
-<http://leipzig-data.de/Data/Schule/Diakonissenkrankenhaus-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                         rdfs:label "Ev. Diakonissenkrankenhaus Leipzig" ;
-                                                                         ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.49> ;
-                                                                         ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-ev-diakonissenkrankenhaus-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Diesterweg-Lernfoerderschule> a ld:Foerderschule, ld:Schule ;
-                                                                  rdfs:label "Adolph-Diesterweg-Schule - Schule zur Lernförderung der Stadt Leipzig" ;
-                                                                  ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Portitzer.Strasse.1> ;
-                                                                  ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/adolph-diesterweg-schule-schule-zur-lernfoerderung-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/E-Kaestner-GS> a ld:Grundschule, ld:Schule ;
-                                                   rdfs:label "Erich Kästner-Schule" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.ErfurterStrasse.9> .
-
-<http://leipzig-data.de/Data/Schule/Engelsdorf-Gym> a ld:Gymnasium, ld:Schule ;
-                                                    rdfs:label "Gymnasium Engelsdorf" ;
-                                                    rdfs:comment "MINT-freundliche Schule 2015" ;
-                                                    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> ; 
-
-                                                    ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
-                                                    ld:hatSchulkuerzel "S 05" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.Arthur-Winkler-Strasse.6> ;
-                                                    ld:hasURL <http://www.gymnasiumengelsdorf.de> .
-
-<http://leipzig-data.de/Data/Schule/ErnstPinkert-GS> a ld:Grundschule, ld:Schule ;
-                                                     rdfs:label "Ernst-Pinkert-Schule" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Martinstrasse.7> .
-
-<http://leipzig-data.de/Data/Schule/Euro-Schulen> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                  rdfs:label "Euro-Schulen gGmbH" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.23> ;
-                                                  ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-euro-schulen-ggmbh/> .
-
-<http://leipzig-data.de/Data/Schule/EuropaeischesBildungswerkBerufundGesellschaft> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                                   rdfs:label "Europäisches Bildungswerk für Beruf und Gesellschaft e.V." ;
-                                                                                   ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hohmannstrasse.7> ;
-                                                                                   ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-europaeisches-bildungswerk-fuer-beruf-und-gesellschaft-ev/> .
-
-<http://leipzig-data.de/Data/Schule/EvangelischesSchulzentrum> a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
-                                                               rdfs:label "Evangelisches Schulzentrum" ;
-                                                               rdfs:comment "In kirchlicher Trägerschaft. Religionsunterricht, Andachten und Gottesdienste gehören zum Schulalltag." ;
-                                                               ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Latein", "Russisch", "Spanisch" ;
-                                                               ld:hatProfile "mathematisch", "musisch-künstlerisch", "sprachlich" ;
-                                                               ld:hatSchulkuerzel "FT 1" ;
-                                                               ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.7> ;
-                                                               ld:hasURL <http://www.schulzentrum.de> .
-
-<http://leipzig-data.de/Data/Schule/Filatow-Schule> a ld:Foerderschule, ld:Schule ;
-                                                    rdfs:label "Wladimir-Filatow-Schule - Schule für Blinde und Sehbehinderte, Förderzentrum der Stadt Leipzig" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AmKirschberg.49> ;
-                                                    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/wladimir-filatow-schule-schule-fuer-blinde-und-sehbehinderte-foerderzentrum-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Flossplatz-GS> a ld:Grundschule, ld:Schule ;
-                                                   rdfs:label "Schule am Floßplatz" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.45> .
-
-<http://leipzig-data.de/Data/Schule/ForumThomanum-GS> a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
-                                                      rdfs:label "Grundschule forum thomanum" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Joergen-Schmidtchen-Weg.8> .
-
-<http://leipzig-data.de/Data/Schule/FreieSchule> a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
-                                                 rdfs:label "Freie Schule Leipzig e.V." ;
-                                                 rdfs:comment "Freie Alternativschule, keine Zensuren, Ganztagsschule, 1990 als Alternativschule gegründet" ;
-                                                 ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.67> ;
-                                                 ld:hasURL <http://www.freie-schule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/FreieWaldorfschule> a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
-                                                        rdfs:label "Freie Waldorfschule Leipzig" ;
-                                                        rdfs:comment "Gesamtschule" ;
-                                                        ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-                                                        ld:hatSchulkuerzel "FT 2" ;
-                                                        ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Berthastrasse.15> ;
-                                                        ld:hasURL <http://www.waldorfschule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Froebel-GS> a ld:Grundschule, ld:Schule ;
-                                                rdfs:label "Friedrich-Fröbel-Schule" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.MannheimerStrasse.128C> .
-
-<http://leipzig-data.de/Data/Schule/GBS-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                      rdfs:label "GBS - gGmbH für technische und kaufmännische berufsbildende Schulen Leipzig" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Mahlmannstrasse.1> ;
-                                                      ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-gbs-gemeinnuetzige-gmbh-fuer-techn-und-kaufmaennische-berufsbildende/> .
-
-<http://leipzig-data.de/Data/Schule/GS-Marienbrunn> a ld:Grundschule, ld:Schule ;
-                                                    rdfs:label "Marienbrunner Schule" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.AnderMaerchenwiese.49> .
-
-<http://leipzig-data.de/Data/Schule/GS-OS> a ld:Oberschule, ld:Schule ;
-                                           rdfs:label "Oberschule Georg-Schwarz-Straße" ;
-                                           rdfs:comment "Schule im Aufbau" ;
-                                           ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.113> ;
-                                           ld:hasURL <http://www.schule-georg-schwarz-strasse.de> .
-
-<http://leipzig-data.de/Data/Schule/Georg-Schumann-OS> a ld:Oberschule, ld:Schule ;
-                                                       rdfs:label "Georg-Schumann-Oberschule" ;
-                                                       ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Glockenstrasse.6> ;
-                                                       ld:hasURL <http://www.georg-schumann-schule.de> .
-
-<http://leipzig-data.de/Data/Schule/Gietzelt-Lernfoerderschule> a ld:Foerderschule, ld:Schule ;
-                                                                rdfs:label "Fritz-Gietzelt-Schule - Schule zur Lernförderung der Stadt Leipzig" ;
-                                                                ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Kantatenweg.40> ;
-								ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2012>, <http://leipzig-data.de/Data/MINT-Schule.2015> ; 
-                                                                ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/fritz-gietzelt-schule-schule-zur-lernfoerderung-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Gohlis-OS> a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
-                                               rdfs:label "Freie Oberschule Gohlis" ;
-                                               rdfs:comment "Ganztagsschule, Träger ist der Verein \"Schulen für gemeinschaftlices Lernen\"" ;
-                                               ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                               ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Luetzowstrasse.8> ;
-                                               ld:hasURL <http://www.schugel.de> .
-
-<http://leipzig-data.de/Data/Schule/Grimm-GS> a ld:Grundschule, ld:Schule ;
-                                              rdfs:label "Brüder-Grimm-Schule" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Goldsternstrasse.23> .
-
-<http://leipzig-data.de/Data/Schule/Gundorf-GS> a ld:Grundschule, ld:Schule ;
-                                                rdfs:label "Schule Gundorf" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.LeipzigerStrasse.210> .
-
-<http://leipzig-data.de/Data/Schule/Gutenberg-Schule> a ld:Berufsschule, ld:Schule ;
-                                                      rdfs:label "Gutenbergschule - Berufliches Schulzentrum der Stadt Leipzig" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gutenbergplatz.4> ;
-                                                      ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/gutenbergschule-berufliches-schulzentrum-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Hauff-GS> a ld:Grundschule, ld:Schule ;
-                                              rdfs:label "Wilhelm-Hauff-Schule" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Diderotstrasse.37> .
-
-<http://leipzig-data.de/Data/Schule/Heimerer-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                           rdfs:label "Berufsbildungsinstitut und Sozialpflegeschulen Heimerer GmbH" ;
-                                                           ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hohmannstrasse.7B> ;
-                                                           ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-berufsbildungsinstitut-und-sozialpflegeschulen-heimerer-gmbh/> .
-
-<http://leipzig-data.de/Data/Schule/Heisenberg-Gym> a ld:Gymnasium, ld:Schule ;
-                                                    rdfs:label "Werner-Heisenberg-Gymnasium" ;
-                                                    rdfs:comment "JIA-Verbund seit 2012" ;
-                                                    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
-						    ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> , <http://leipzig-data.de/Data/JIA> ;
-
-                                                    ld:hatProfile "künstlerisch", "naturwissenschaftlich" ;
-                                                    ld:hatSchulkuerzel "S 23" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Renftstrasse.3> ;
-                                                    ld:hasURL <http://www.whs-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Helmholtz-OS> a ld:Oberschule, ld:Schule ;
-                                                  rdfs:label "Helmholtz-Oberschule" ;
-                                                  ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Helmholtzstrasse.6> ;
-                                                  ld:hasURL <http://www.helmholtzschule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Henriette-Goldschmidt-Schule> a ld:Berufsschule, ld:Schule ;
-                                                                  rdfs:label "Henriette-Goldschmidt-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
-                                                                  ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Goldschmidtstrasse.20> ;
-                                                                  ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/henriette-goldschmidt-schule-berufliches-schulzentrum-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Hertz-Gym> a ld:Gymnasium, ld:Schule ;
-                                               rdfs:label "Gustav-Hertz-Gymnasium" ;
-                                               rdfs:comment "Fair-Trade-Schule", "MINT-freundliche Schule 2015" ;
-                                               ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch", "Spanisch" ;
-                                               ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sprachlich" ;ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> ; 
-
-                                               ld:hatSchulkuerzel "S 04" ;
-                                               ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Dachsstrasse.5> ;
-                                               ld:hasURL <http://www.gustav-hertz-gymnasium.de> .
-
-<http://leipzig-data.de/Data/Schule/Holzhausen-GS> a ld:Grundschule, ld:Schule ;
-                                                   rdfs:label "Schule Holzhausen" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.StoetteritzerLandstrasse.21> .
-
-<http://leipzig-data.de/Data/Schule/Humana-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                         rdfs:label "HUMANA gGmbH Leipzig" ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Comeniusstrasse.17> ;
-                                                         ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-humana-ggmbh-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Humboldt-Gym> a ld:Gymnasium, ld:Schule ;
-                                                  rdfs:label "Humboldt-Gymnasium" ;
-                                                  ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
-                                                  ld:hatProfile "künstlerisch", "naturwissenschaftlich" ;
-                                                  ld:hatSchulkuerzel "S 06" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Moebiusstrasse.8> ;
-                                                  ld:hasURL <http://marvin.sn.schule.de/~humboldt-leipzig> .
-
-<http://leipzig-data.de/Data/Schule/IB-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                     rdfs:label "IB Gesellschaft für interdisziplinäre Studien mbH" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Grassistrasse.12> ;
-                                                     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-ib-gesellschaft-fuer-interdisziplinaere-studien-mbh/> .
-
-<http://leipzig-data.de/Data/Schule/Johanniter-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                             rdfs:label "Johanniter-Unfall-Hilfe e. V." ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Witzgallstrasse.20> ;
-                                                             ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-johanniter-unfall-hilfe-ev/> .
-
-<http://leipzig-data.de/Data/Schule/Kant-Gym> a ld:Gymnasium, ld:Schule ;
-                                              rdfs:label "Immanuel-Kant-Gymnasium" ;
-                                              rdfs:comment "JIA-Verbund seit 2012" ;
-					      ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2012>, <http://leipzig-data.de/Data/MINT-Schule.2015>, <http://leipzig-data.de/Data/JIA> ; 
-                                              ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
-                                              ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
-                                              ld:hatSchulkuerzel "S 06" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Scharnhorststrasse.15> ;
-                                              ld:hasURL <http://www.kantgym-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Karl-Heine-Schule> a ld:Berufsschule, ld:Schule ;
-                                                       rdfs:label "Karl-Heine-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.56> ;
-                                                       ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/karl-heine-schule-berufliches-schulzentrum-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Kepler-Gym> a ld:Gymnasium, ld:Schule ;
-                                                rdfs:label "Johannes-Kepler-Gymnasium" ;
-                                                ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
-                                                ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sportlich" ; ld:hasTag <http://leipzig-data.de/Data/UNESCO-Schule> ; 
-                                                ld:hatSchulkuerzel "S 14" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Dieskaustrasse.76> ;
-                                                ld:hasURL <http://www.johannes-kepler-gymnasium.de> .
-
-<http://leipzig-data.de/Data/Schule/Klinger-Gym> a ld:Gymnasium, ld:Schule ;
-                                                 rdfs:label "Max-Klinger-Gymnasium" ;
-                                                 rdfs:comment "JIA seit 2015" ;
-                                                 ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
-						 ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015>, <http://leipzig-data.de/Data/JIA>; 
-
-                                                 ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
-                                                 ld:hatSchulkuerzel "S 16" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.4> ;
-                                                 ld:hasURL <http://www.klingerschule.de> .
-
-<http://leipzig-data.de/Data/Schule/Koerner-GS> a ld:Grundschule, ld:Schule ;
-                                                rdfs:label "Theodor-Körner-Schule" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Schlehenweg.32> .
-
-<http://leipzig-data.de/Data/Schule/Kollwitz-Schule> a ld:Foerderschule, ld:Schule ;
-                                                     rdfs:label "Käthe-Kollwitz-Schule - Förderzentrum und Sprachheilschule der Stadt Leipzig" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Karl-Vogel-Strasse.17> ;
-                                                     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/kaethe-kollwitz-schule-foerderzentrum-sprachheilschule-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Kroch-GS> a ld:Grundschule, ld:Schule ;
-                                              rdfs:label "Hans-Kroch-Schule" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Joergen-Schmidtchen-Weg.8> .
-
-<http://leipzig-data.de/Data/Schule/KulturhafenamRiverboat> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                            rdfs:label "Kulturhafen am Riverboat" ;
-                                                            ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.45> ;
-                                                            ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-kulturhafen-am-riverboat/> .
-
-<http://leipzig-data.de/Data/Schule/Landesschule-Hoergeschaedigte> a ld:Foerderschule, ld:Schule ;
-                                                                   rdfs:label "Sächsische Landesschule für Hörgeschädigte Leipzig - Förderzentrum Samuel Heinicke" ;
-                                                                   ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Karl-Siegismund-Strasse.2> ;
-                                                                   ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/saechsische-landesschule-fuer-hoergeschaedigte-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Leibniz-Gym> a ld:Gymnasium, ld:Schule ;
-                                                 rdfs:label "Leibnizschule" ;
-                                                 ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch", "Spanisch" ;
-                                                 ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
-                                                 ld:hatSchulkuerzel "S 20" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Nordplatz.13> ;
-                                                 ld:hasURL <http://www.leibniz-gymnasium-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Leibnizeum> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                rdfs:label "Leibnizeum Aus- und Weiterbildung Dr. Gröbke" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Theodor-Heuss-Strasse.30> ;
-                                                ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-leibnizeum-aus-und-weiterbildung-dr-groebke/> .
-
-<http://leipzig-data.de/Data/Schule/LeipzigInternationalSchool> a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
-                                                                rdfs:label "Leipzig International School e.V." ;
-                                                                rdfs:comment "Gesamtschule (Kindergarten bis Klasse 12), Ganztagsschule, Englich ist Unterrichtssprache" ;
-                                                                ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
-                                                                ld:hatSchulkuerzel "FT 4" ;
-                                                                ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.47> ;
-                                                                ld:hasURL <http://www.intschool-leipzig.com> .
-
-<http://leipzig-data.de/Data/Schule/Lene-Voigt-OS> a ld:Oberschule, ld:Schule ;
-                                                   rdfs:label "Lene-Voigt-Oberschule" ;
-                                                   ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Willi-Bredel-Strasse.11> ;
-                                                   ld:hasURL <http://www.lene-voigt-schule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Lernfoerderschule-Engelsdorf> a ld:Foerderschule, ld:Schule ;
-                                                                  rdfs:label "Schule Engelsdorf - Schule zur Lernförderung der Stadt Leipzig" ;
-                                                                  ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.RiesaerStrasse.177> ;
-                                                                  ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/schule-engelsdorf-schule-zur-lernfoerderung-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Lernfoerderschule-Gruenau> a ld:Foerderschule, ld:Schule ;
-                                                               rdfs:label "Schule Grünau - Schule zur Lernförderung der Stadt Leipzig" ;
-                                                               ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.1> ;
-                                                               ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/schule-gruenau-schule-zur-lernfoerderung-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Lernfoerderschule-Schloss-Schoenefeld> a ld:Foerderschule, ld:FreierTraeger, ld:Schule ;
-                                                                           rdfs:label "Schule für geistig Behinderte Schloss Schönefeld e. V." ;
-                                                                           ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Zeumerstrasse.1> ;
-                                                                           ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-schule-fuer-geistig-behinderte-schloss-schoenefeld-ev/> .
-
-<http://leipzig-data.de/Data/Schule/Lessing-GS> a ld:Grundschule, ld:Schule ;
-                                                rdfs:label "Lessingschule" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lessingstrasse.27> .
-
-<http://leipzig-data.de/Data/Schule/Liebertwolkwitz-GS> a ld:Grundschule, ld:Schule ;
-                                                        rdfs:label "Schule Liebertwolkwitz" ;
-                                                        ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.AmAngerteich.2> .
-
-<http://leipzig-data.de/Data/Schule/Liebknecht-GS> a ld:Grundschule, ld:Schule ;
-                                                   rdfs:label "Karl-Liebknecht-Schule" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Heinrich-Mann-Strasse.1> .
-
-<http://leipzig-data.de/Data/Schule/Lindenhofschule> a ld:Foerderschule, ld:Schule ;
-                                                     rdfs:label "Lindenhofschule - Schule für geistig Behinderte der Stadt Leipzig" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Delitzscher.Strasse.110> ;
-                                                     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/lindenhofschule-schule-fuer-geistig-behinderte-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Lindgren-GS> a ld:Grundschule, ld:Schule ;
-                                                 rdfs:label "Astrid-Lindgren-Schule" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Volksgartenstrasse.16> .
-
-<http://leipzig-data.de/Data/Schule/Linne-GS> a ld:Grundschule, ld:Schule ; ld:hasTag <http://leipzig-data.de/Data/UNESCO-Schule> ; 
-                                              rdfs:label "Carl-von-Linné-Schule" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.DelitzscherStrasse.110> .
-
-<http://leipzig-data.de/Data/Schule/MSG> a ld:Gymnasium, ld:Schule ;
-                                         rdfs:label "Musikalisch-Sportliches Gymnasium Leipzig der Rahn-Dittrich Gruppe" ;
-                                         ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
-                                         ld:hatProfile "künstlerisch", "musikalisch", "sportlich" ;
-                                         ld:hatSchulkuerzel "FT 8" ;
-                                         ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Salomonstrasse.10> ;
-                                         ld:hasURL <http://www.rahndittrich.de/gymnasium-lpz> .
-
-<http://leipzig-data.de/Data/Schule/Mann-GS> a ld:Grundschule, ld:Schule ;
-                                             rdfs:label "Heinrich-Mann-Schule" ;
-                                             ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Schwarzenbergweg.4> .
-
-<http://leipzig-data.de/Data/Schule/Martin-Schule> a ld:Foerderschule, ld:Schule ;
-                                                   rdfs:label "Martin-Schule - Schule für geistig Behinderte der Stadt Leipzig" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Neptunweg.31> ;
-                                                   ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/martin-schule-schule-fuer-geistig-behinderte-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Mehring-GS> a ld:Grundschule, ld:Schule ;
-                                                rdfs:label "Franz-Mehring-Schule" ;ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> ; 
-                                                ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Gletschersteinstrasse.9> .
-
-<http://leipzig-data.de/Data/Schule/Miltitz-GS> a ld:Grundschule, ld:Schule ;
-                                                rdfs:label "Schule Miltitz" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.GrossmiltitzerStrasse.4> .
-
-<http://leipzig-data.de/Data/Schule/Moelkau-Schule> a ld:Grundschule, ld:Oberschule, ld:Schule ;
-                                                    rdfs:label "Oberschule Mölkau" ;
-                                                    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/04316.Leipzig.Schulstrasse.6> ;
-                                                    ld:hasURL <http://www.oberschule-moelkau.de> .
-
-<http://leipzig-data.de/Data/Schule/Montessori-Schulzentrum> a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
-                                                             rdfs:label "Bischöfliches Maria-Montessori-Schulzentrum Leipzig" ;
-                                                             rdfs:comment "Träger ist das Bischöfliche Ordinariat des Bistums Dresden-Meißen." ;
-                                                             ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
-                                                             ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sprachlich" ;
-                                                             ld:hatSchulkuerzel "FT 6" ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.61> ;
-                                                             ld:hasURL <http://www.montessori-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Mutzeck-Lernfoerderschule> a ld:Foerderschule, ld:FreierTraeger, ld:Schule ;
-                                                               rdfs:label "Wolfgang-Mutzeck-Schule" ;
-                                                               ld:hasAddress <http://leipzig-data.de/Data/> ;
-                                                               ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-wolfgang-mutzeck-schule/> .
-
-<http://leipzig-data.de/Data/Schule/NaSch> a ld:Gemeinschaftsschule, ld:Grundschule, ld:Oberschule, ld:Schule ;
-                                           rdfs:label "Nachbarschaftsschule" ;
-                                           ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                           ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Gemeindeamtsstrasse.8> ;
-                                           ld:hasURL <http://www.nasch.de> .
-
-<http://leipzig-data.de/Data/Schule/Neruda-GS> a ld:Grundschule, ld:Schule ;
-                                               rdfs:label "Pablo-Neruda-Schule" ;
-                                               ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Tarostrasse.6> .
-
-<http://leipzig-data.de/Data/Schule/Niko-Gym> a ld:Gymnasium, ld:Schule ;
-                                              rdfs:label "Neues Nikolai-Gymnasium" ;
-                                              rdfs:comment "JIA-Verbund seit 2012" ;
-                                              ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ; ld:hasTag <http://leipzig-data.de/Data/JIA> ; 
-                                              ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich" ;
-                                              ld:hatSchulkuerzel "S 07" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Schoenbachstrasse.17> ;
-                                              ld:hasURL <http://www.neuenikolaischule.de> .
-
-<http://leipzig-data.de/Data/Schule/OS-Weisseplatz> a ld:Oberschule, ld:Schule ;
-                                                    rdfs:label "Oberschule am Weißeplatz" ;
-                                                    rdfs:comment "Schule im Aufbau, geplant ist eine musisch-sprachlich-mediale Orientierung" ;
-                                                    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Ferdinand-Jost-Strasse.33> ;
-                                                    ld:hasURL <http://www.schule-am-weisseplatz.de> .
-
-<http://leipzig-data.de/Data/Schule/Oeser-GS> a ld:Grundschule, ld:Schule ;
-                                              rdfs:label "Adam-Friedrich-Oeser-Schule" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Geibelstrasse.74> .
-
-<http://leipzig-data.de/Data/Schule/Ostwald-Gym> a ld:Gymnasium, ld:Schule ;
-                                                 rdfs:label "Wilhelm-Ostwald-Gymnasium" ;
-                                                 rdfs:comment "Schule mit vertieftem mathematisch-naturwissenschaftlichen Profil" ; ld:hasTag <http://leipzig-data.de/Data/MINT-EC-Schule> ; 
-                                                 ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein" ;
-                                                 ld:hatProfile "mathematisch-naturwissenschaftlich" ;
-                                                 ld:hatSchulkuerzel "S 09" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Willi-Bredel-Strasse.13> ;
-                                                 ld:hasURL <http://ostwaldportal.de> .
-
-<http://leipzig-data.de/Data/Schule/Paunsdorf-OS> a ld:Oberschule, ld:Schule ;
-                                                  rdfs:label "Oberschule Paunsdorf" ;
-                                                  ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.ZumWaeldchen.4> ;
-                                                  ld:hasURL <http://www.oberschule-leipzig-paunsdorf.de> .
-
-<http://leipzig-data.de/Data/Schule/Pestalozzi-Lernfoerderschule> a ld:Foerderschule, ld:Schule ;
-                                                                  rdfs:label "Johann-Heinrich-Pestalozzi-Schule - Schule zur Lernförderung der Stadt Leipzig" ;
-                                                                  ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.HannoverscheStrasse.2> ;
-                                                                  ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/johann-heinrich-pestalozzi-schule-schule-zur-lernfoerderung-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Pestalozzi-OS> a ld:Oberschule, ld:Schule ;
-                                                   rdfs:label "Heinrich-Pestalozzi-Oberschule" ;
-                                                   ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Pestalozzistrasse.39> ;
-                                                   ld:hasURL <http://cms.sachsen.schule/mspestal/start> .
-
-<http://leipzig-data.de/Data/Schule/Peters-Gym> a ld:Gymnasium, ld:Schule ;
-                                                rdfs:label "Lousie-Otto-Peters-Gymnasium" ;
-                                                ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Latein" ; ld:hasTag <http://leipzig-data.de/Data/Klimaschule-Schule> ; 
-                                                ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
-                                                ld:hatSchulkuerzel "S 10" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.104> ;
-                                                ld:hasURL <http://cms.sachsen.schule/gymlops>, <http://www.lops-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Petri-OS> a ld:Oberschule, ld:Schule ;
-                                              rdfs:label "Petri-Oberschule" ;
-                                              ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.50> ;
-                                              ld:hasURL <http://www.petrischule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Portitz-Schule> a ld:Grundschule, ld:Oberschule, ld:Schule ;
-                                                    rdfs:label "Oberschule Portitz" ;
-                                                    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.Licidestrasse.12> ;
-                                                    ld:hasURL <http://www.mittelschule-portitz.de> .
-
-<http://leipzig-data.de/Data/Schule/Rabet-GS> a ld:Grundschule, ld:Schule ;
-                                              rdfs:label "Schule am Rabet" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.50> .
-
-<http://leipzig-data.de/Data/Schule/Rahn-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                       rdfs:label "Dr. P. Rahn & Partner Schulen in freier Trägerschaft" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kochstrasse.28A> ;
-                                                       ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-dr-p-rahn-partner-schulen-in-freier-traegerschaft/> .
-
-<http://leipzig-data.de/Data/Schule/Rahn-Schule> a ld:FreierTraeger, ld:Gymnasium, ld:Oberschule, ld:Schule ;
-                                                 rdfs:label "Rahn-Oberschule und -Gymnasium" ;
-                                                 rdfs:comment "Träger ist die Rahn-Dittrich Group. 2017 ist der Umzug auf den Campus Salomonstraße geplant." ;
-                                                 ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kochstrasse.28A> ;
-                                                 ld:hasURL <http://www.rahndittrich.de/os-lpz> .
-
-<http://leipzig-data.de/Data/Schule/Reclam-Gym> a ld:Gymnasium, ld:Schule ;
-                                                rdfs:label "Anton-Philipp-Reclam-Gymnasium" ;
-                                                rdfs:comment "Teil des deutsch-französischen Bildungszentrums" ;
-                                                ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Spanisch" ;
-                                                ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
-                                                ld:hatSchulkuerzel "S 08" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Tarostrasse.4> ;
-                                                ld:hasURL <http://www.reclamgymnasium.de> .
-
-<http://leipzig-data.de/Data/Schule/Regenbogen-GS> a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
-                                                   rdfs:label "Freie Grundschule \"Regenbogen\"" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15> .
-
-<http://leipzig-data.de/Data/Schule/Ringelnatz-GS> a ld:Grundschule, ld:Schule ;
-                                                   rdfs:label "Joachim-Ringelnatz-Schule" ;
-                                                   ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.GruenauerAllee.35> .
-
-<http://leipzig-data.de/Data/Schule/Robert-Schumann-Gym> a ld:Gymnasium, ld:Schule ;
-                                                         rdfs:label "Robert-Schumann-Gymnasium" ;
-                                                         ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein" ;
-                                                         ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
-                                                         ld:hatSchulkuerzel "S 18" ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Demmeringstrasse.84> ;
-                                                         ld:hasURL <http://www.robert-schumann-gymnasium-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Robeson-Schule> a ld:Grundschule, ld:Oberschule, ld:Schule ;
-                                                    rdfs:label "Paul-Robeson-Schule" ;
-                                                    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
-                                                    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Jungmannstrasse.5> ; ld:hasTag <http://leipzig-data.de/Data/UNESCO-Schule> ;
-                                                    ld:hasURL <http://www.sn.schule.de/~ms-robeson-l> .
-
-<http://leipzig-data.de/Data/Schule/Rueckmarsdorf-GS> a ld:Grundschule, ld:Schule ;
-                                                      rdfs:label "Schule Rückmarsdorf" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.AnderFriedenseiche.4> .
-
-<http://leipzig-data.de/Data/Schule/Ruth-Pfau-Schule> a ld:Berufsschule, ld:Schule ;
-                                                      rdfs:label "Ruth-Pfau-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.160> ;
-                                                      ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/ruth-pfau-schule-berufliches-schulzentrum-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Sacke-Krankenhausschule> a ld:Foerderschule, ld:Schule ;
-                                                             rdfs:label "Dr.-Georg-Sacke-Schule - Klinik- und Krankenhausschule der Stadt Leipzig" ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Morawitzstrasse.2> ;
-                                                             ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/dr-georg-sacke-schule-klinik-und-krankenhausschule-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Schiller-Gym> a ld:Gymnasium, ld:Schule ;
-                                                  rdfs:label "Friedrich-Schiller-Gymnasium" ;
-                                                  ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
-                                                  ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
-                                                  ld:hatSchulkuerzel "S 22" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.2> ;
-                                                  ld:hasURL <http://www.fschillerg.de> .
-
-
-<http://leipzig-data.de/Data/Schule/Goethe-Gym> a ld:Gymnasium, ld:Schule ;
-                                                     rdfs:label "Goethe-Gymnasium" ;
-                                                     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch", "Russisch" ;
-                                                     ld:hatProfile "gesellschaftswissenschaftlich", "sprachlich" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Gorkistrasse.25> ;
-                                                     ld:hasURL <http://www.schönefeld-gymnasium.de/> .
-						     
-<http://leipzig-data.de/Data/Schule/Scholl-GS> a ld:Grundschule, ld:Schule ;
-                                               rdfs:label "Geschwister-Scholl-Schule" ;
-                                               ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.1> .
-
-<http://leipzig-data.de/Data/Schule/Scholl-OS-Liebertwolkwitz> a ld:Oberschule, ld:Schule ;
-                                                               rdfs:label "Geschwister-Scholl-Schule Liebertwolkwitz" ;
-                                                               ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                                               ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.AmAngerteich.2> ;
-                                                               ld:hasURL <http://www.oberschule-liebertwolkwitz.de> .
-
-<http://leipzig-data.de/Data/Schule/Schubert-GS> a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
-                                                 rdfs:label "Karl-Schubert-Schule" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.4> .
-
-<http://leipzig-data.de/Data/Schule/Schule-Rosenweg> a ld:Foerderschule, ld:Schule ;
-                                                     rdfs:label "Schule Rosenweg - Schule für geistig Behinderte der Stadt Leipzig" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Rosenweg.59> ;
-                                                     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/schule-rosenweg-schule-fuer-geistig-behinderte-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Schule-Thonberg> a ld:Foerderschule, ld:Schule ;
-                                                     rdfs:label "Schule Thonberg - Schule für geistig Behinderte der Stadt Leipzig" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Riebeckstrasse.50> ;
-                                                     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/schule-thonberg-schule-fuer-geistig-behinderte-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Schumann-GS> a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
-                                                 rdfs:label "Freie Grundschule \"Clara Schumann\" Leipzig" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.18> .
-
-<http://leipzig-data.de/Data/Schule/Schweitzer-Schule> a ld:Foerderschule, ld:Schule ;
-                                                       rdfs:label "Albert-Schweitzer-Schule - Schule für Körperbehinderte der Stadt Leipzig" ;
-                                                       ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.AnderMaerchenwiese.3> ;
-                                                       ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/albert-schweitzer-schule-schule-fuer-koerperbehinderte-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/Seehausen-GS> a ld:Grundschule, ld:Schule ;
-                                                  rdfs:label "Schule Seehausen" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.SeehausenerAllee.17> .
-
-<http://leipzig-data.de/Data/Schule/Sport-Gym> a ld:Gymnasium, ld:Schule ;
-                                               rdfs:label "Landesgymnasium für Sport Leipzig" ;
-                                               rdfs:comment "Schule mit vertieftem sportlichen Profil in Landesträgerschaft" ;
-                                               ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
-                                               ld:hatProfile "sportlich" ;
-                                               ld:hatSchulkuerzel "LS 1" ;
-                                               ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Marschnerstrasse.30> ;
-                                               ld:hasURL <http://www.sportgymnasium-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Sport-OS> a ld:Oberschule, ld:Schule ;
-                                              rdfs:label "Sportoberschule Leipzig" ;
-                                              ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
-                                              ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Max-Planck-Strasse.1> ;
-                                              ld:hasURL <http://www.sportoberschule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Stahmeln-GS> a ld:Grundschule, ld:Schule ;
-                                                 rdfs:label "Schule Stahmeln" ;
-                                                 ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.StahmelnerHoehe.1> .
-
-<http://leipzig-data.de/Data/Schule/Susanna-Eger-Schule> a ld:Berufsschule, ld:Schule ;
-                                                         rdfs:label "Susanna-Eger-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
-                                                         rdfs:comment "Fair-Trade-Schule" ;
-                                                         ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.AnderQuerbreite.6> ;
-                                                         ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/susanna-eger-schule-berufliches-schulzentrum-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/TUEV-OS> a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
-                                             rdfs:label "TÜV Oberschule Leipzig" ;
-                                             rdfs:comment "Ganztagsschule, Träger ist der TÜV Rheinland" ;
-                                             ld:angeboteneFremdsprachen "Englisch", "Spanisch" ;
-                                             ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.59> ;
-                                             ld:hasURL <http://www.tuv.com/schule-leipzig> .
-
-<http://leipzig-data.de/Data/Schule/Telemann-Gym> a ld:Gymnasium, ld:Schule ;
-                                                  rdfs:label "Gymnasium an der Telemannstraße" ;
-                                                  ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
-                                                  ld:hatProfile "unklar" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Telemannstrasse.9> ;
-                                                  ld:hasURL <http://cms.sachsen.schule/gymltele> .
-
-<http://leipzig-data.de/Data/Schule/Theater-Fabrik-Sachsen> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                            rdfs:label "Theater-Fabrik-Sachsen GmbH" ;
-                                                            ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Franz-Flemming-Strasse.16> ;
-                                                            ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-theater-fabrik-sachsen-gmbh/> .
-
-<http://leipzig-data.de/Data/Schule/Thomas-Gym> a ld:Gymnasium, ld:Schule ;
-                                                rdfs:label "Thomasschule zu Leipzig" ;
-                                                rdfs:comment "Schule mit vertieftem musischen Profil, Teil des Bildungscampus Forum Thomanum" ;
-                                                ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein" ;
-                                                ld:hatProfile "künstlerisch", "musisch", "sprachlich" ;
-                                                ld:hatSchulkuerzel "S 12" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hillerstrasse.7> ;
-                                                ld:hasURL <http://www.thomasschule.de> .
-
-<http://leipzig-data.de/Data/Schule/Universitaetsklinikum> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                           rdfs:label "Universitätsklinikum Leipzig AöR" ;
-                                                           ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Richterstrasse.9> ;
-                                                           ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-universitaetsklinikum-leipzig-aoer/> .
-
-<http://leipzig-data.de/Data/Schule/Universum-Berufsbildungs-Akademie> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                                       rdfs:label "UNIVERSUM - Private Berufsbildungs-Akademie" ;
-                                                                       ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Angerstrasse.42E> ;
-                                                                       ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-universum-private-berufsbildungs-akademie/> .
-
-<http://leipzig-data.de/Data/Schule/Vogel-Lernfoerderschule> a ld:Foerderschule, ld:FreierTraeger, ld:Schule ;
-                                                             rdfs:label "Förderschule \"Werner Vogel\"" ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Hans-Marchwitza-Strasse.12> ;
-                                                             ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-foerderschule-werner-vogel/> .
-
-<http://leipzig-data.de/Data/Schule/WBS-Schule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                rdfs:label "WBS Training Schulen gGmbH" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bruehl.67> ;
-                                                ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-wbs-training-schulen-ggmbh/> .
-
-<http://leipzig-data.de/Data/Schule/Wander-GS> a ld:Grundschule, ld:Schule ;
-                                               rdfs:label "Wilhelm-Wander-Schule" ;
-                                               ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Schulze-Delitzsch-Strasse.23> .
-
-<http://leipzig-data.de/Data/Schule/Wiedebach-OS> a ld:Oberschule, ld:Schule ;
-                                                  rdfs:label "Wiedebach-Oberschule" ;
-                                                  ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                                  ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Arno-Nitzsche-Strasse.7> ;
-                                                  ld:hasURL <http://www.wiedebachschule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Schule/Wiederitzsch-GS> a ld:Grundschule, ld:Oberschule, ld:Schule ;
-                                                     rdfs:label "Grund- und Oberschule Wiederitzsch" ;
-                                                     rdfs:comment "Gemeinsames Gebäude für Grund- und Oberschule" ;
-                                                     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
-                                                     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.ZurSchule.11> ;
-                                                     ld:hasURL <http://www.oberschule-wiederitzsch.de> .
-
-<http://leipzig-data.de/Data/Schule/Zeigner-GS> a ld:Grundschule, ld:Schule ;
-                                                rdfs:label "Erich-Zeigner-Schule" ;
-                                                ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.24> .
-
-<http://leipzig-data.de/Data/Schule/Zinna-Lernfoerderschule> a ld:Foerderschule, ld:Schule ;
-                                                             rdfs:label "Ernst-Zinna-Schule - Schule zur Lernförderung der Stadt Leipzig" ;
-                                                             ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Wincklerstrasse.3/5> ;
-                                                             ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/ernst-zinna-schule-schule-zur-lernfoerderung-der-stadt-leipzig/> .
-
-<http://leipzig-data.de/Data/Schule/ciT-Berufsschule> a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-                                                      rdfs:label "ciT gGmbH" ;
-                                                      ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Lutherstrasse.10> ;
-                                                      ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-cit-ggmbh/> .
-
-<> a owl:Ontology ;
-   rdfs:label "Schulen der Stadt Leipzig" ;
-   rdfs:comment "2016-12-07 berufliche Schulen und Förderschulen nachgetragen. 2014-07-20: Abgleich mit den Stadtseiten." ;
-   cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   dct:source "Seiten der Stadt Leipzig" .
+ld:Berufsschule
+    a owl:Class ;
+    rdfs:label "Berufsschule in Leipzig" .
+
+ld:Foerderschule
+    a owl:Class ;
+    rdfs:label "Förderschule in Leipzig" .
+
+ld:FreierTraeger
+    a owl:Class ;
+    rdfs:label "Schule in freier Trägerschaft" .
+
+ld:Gemeinschaftsschule
+    a owl:Class ;
+    rdfs:label "Gemeinschaftsschule in Leipzig" .
+
+ld:Grundschule
+    a owl:Class ;
+    rdfs:label "Grundschule in Leipzig" .
+
+ld:Gymnasium
+    a owl:Class ;
+    rdfs:label "Gymnasium in Leipzig" .
+
+ld:Oberschule
+    a owl:Class ;
+    rdfs:label "Oberschule in Leipzig" .
+
+ld:Schule
+    a owl:Class ;
+    rdfs:label "Schule in Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/100-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.MiltitzerAllee.1> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "100. Schule" .
+
+<http://leipzig-data.de/Data/Schule/120-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Martin-Herrmann-Strasse.1> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "120. Schule" .
+
+<http://leipzig-data.de/Data/Schule/125-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.43> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "125. Schule" ;
+    foaf:homepage <http://www.125-oberschule.de> .
+
+<http://leipzig-data.de/Data/Schule/157-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Hans-Driesch-Strasse.41> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "157. Schule" .
+
+<http://leipzig-data.de/Data/Schule/16-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Konradstrasse.67> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "16. Schule" ;
+    foaf:homepage <http://www.ms16.de> .
+
+<http://leipzig-data.de/Data/Schule/172-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Priessnitzstrasse.19> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "172. Schule" .
+
+<http://leipzig-data.de/Data/Schule/20-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Baestleinstrasse.14> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "20. Schule" ;
+    foaf:homepage <http://www.20schule-ms.de> .
+
+<http://leipzig-data.de/Data/Schule/21-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Stoeckelstrasse.45> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "21. Schule" .
+
+<http://leipzig-data.de/Data/Schule/24-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Doellingstrasse.25> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "24. Schule" .
+
+<http://leipzig-data.de/Data/Schule/3-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Bernhard-Goering-Strasse.107> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "3. Schule" .
+
+<http://leipzig-data.de/Data/Schule/31-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Franzosenallee.21> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "31. Schule" .
+
+<http://leipzig-data.de/Data/Schule/33-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.AnhalterStrasse.1> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "33. Schule" .
+
+<http://leipzig-data.de/Data/Schule/35-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Virchowstrasse.4> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "35. Schule" ;
+    foaf:homepage <http://www.35mittelschule-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/39-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Gustav-Kuehn-Strasse.1> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "39. Schule" .
+
+<http://leipzig-data.de/Data/Schule/46-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.SaalfelderStrasse.29> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "46. Schule" .
+
+<http://leipzig-data.de/Data/Schule/5-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Eitingonstrasse.5> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule 5 im Stadtbezirk Mitte" .
+
+<http://leipzig-data.de/Data/Schule/56-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Dieskaustrasse.213> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "56. Schule" ;
+    foaf:homepage <http://www.56-oberschule-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/60-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Seumestrasse.93> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "60. Schule" .
+
+<http://leipzig-data.de/Data/Schule/66-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Rosenowstrasse.56> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "66. Schule" .
+
+<http://leipzig-data.de/Data/Schule/68-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.BreitenfelderStrasse.19> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "68. Schule" ;
+    foaf:homepage <http://www.mittelschule-moeckern.de> .
+
+<http://leipzig-data.de/Data/Schule/74-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Friedrich-Dittes-Strasse.23> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "74. Schule" .
+
+<http://leipzig-data.de/Data/Schule/77-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Riebeckstrasse.50> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "77. Schule" .
+
+<http://leipzig-data.de/Data/Schule/78-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.BinzerStrasse.14> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "78. Schule" .
+
+<http://leipzig-data.de/Data/Schule/8-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Wincklerstrasse.3> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "8. Schule" .
+
+<http://leipzig-data.de/Data/Schule/84-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.5> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "84. Schule" ;
+    foaf:homepage <http://www.84-ms-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/85-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.3> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "85. Schule" .
+
+<http://leipzig-data.de/Data/Schule/9-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Gersterstrasse.74> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "9. Schule" .
+
+<http://leipzig-data.de/Data/Schule/90-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.21> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "90. Schule" .
+
+<http://leipzig-data.de/Data/Schule/91-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Uranusstrasse.1> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "91. Schule" .
+
+<http://leipzig-data.de/Data/Schule/94-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.3> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "94. Schule" ;
+    foaf:homepage <http://cms.sachsen.schule/94osl> .
+
+<http://leipzig-data.de/Data/Schule/A-Kaestner-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.Gartenwinkel.30> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Alfred-Kästner-Schule" .
+
+<http://leipzig-data.de/Data/Schule/AHF-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Puschstrasse.9> ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    rdfs:label "August-Hermann-Francke Grundschule" .
+
+<http://leipzig-data.de/Data/Schule/AM-Bach-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Manetstrasse.8> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Anna-Magdalena-Bach-Schule" .
+
+<http://leipzig-data.de/Data/Schule/AWO-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Ludwig-Hupfeld-Strasse.16> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-spi-soziale-stadt-und-land-entwicklungsgesellschaft-mbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "AWO SPI Soziale Stadt und Land Entwicklungsgesellschaft mbH" .
+
+<http://leipzig-data.de/Data/Schule/Adler-Schule>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Antonienstrasse.24> ;
+    a ld:Grundschule, ld:Oberschule, ld:Schule ;
+    rdfs:label "Oberschule am Adler" ;
+    foaf:homepage <http://www.schule-am-adler.de>, <http://www.schuleamadler.de> .
+
+<http://leipzig-data.de/Data/Schule/AkademiefuerKreativitaetspaedagogik>
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Braunstrasse.18> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-akademie-fuer-kreativitaetspaedagogik-leipzig/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Akademie für Kreativitätspädagogik Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/AktiveSchule-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.EisenacherStrasse.40> ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    rdfs:label "Aktive Schule Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Andersen-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Louis-Fuernberg-Strasse.2> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Hans-Christian-Andersen-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Arnold-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.Gaswerksweg.1> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Christoph-Arnold-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Arwed-Rossbach-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.AmkleinenFeld.3> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/arwed-rossbach-schule-berufliches-schulzentrum-der-stadt-leipzig/> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:label "Arwed-Rossbach-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/AugsburgerLehmbaugesellschaft>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.93> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-augsburger-lehmbaugesellschaft-leipzig-ggmbh-in-leipzig-ev/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Augsburger Lehmbaugesellschaft Leipzig gGmbH in Leipzig e.V." .
+
+<http://leipzig-data.de/Data/Schule/Auguste-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.GrueneGasse.21B> ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    rdfs:label "Grundschule Auguste" .
+
+<http://leipzig-data.de/Data/Schule/Auwald-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Roedelstrasse.6> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule am Auwald" .
+
+<http://leipzig-data.de/Data/Schule/BIP-Schule>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TorgauerStrasse.114> ;
+    ld:hatProfile "fremdsprachlich", "künstlerisch", "mathematisch" ;
+    ld:hatSchulkuerzel "FT 3" ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Schule ;
+    rdfs:label "BIP-Kreativitätsgrundschule und -gymnasium" ;
+    foaf:homepage <http://www.bipschulen.de> .
+
+<http://leipzig-data.de/Data/Schule/BSZ-Robert-Blum>
+    ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Rosenowstrasse.60> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/berufliches-schulzentrum-12-robert-blum-der-stadt-leipzig/> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:label "Berufliches Schulzentrum 12 \"Robert Blum\" der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/BSZ.LeipzigerLand>
+    ld:hasAddress <http://leipzig-data.de/Data/04564.Boehlen.RoethaerStrasse.44> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:label "Berufliches Schulzentrum Leipziger Land" .
+
+<http://leipzig-data.de/Data/Schule/BSZ1>
+    ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Crednerstrasse.1> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/berufliches-schulzentrum-1-der-stadt-leipzig/> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:label "Berufliches Schulzentrum 1 der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/BSZ7>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.AnderQuerbreite.8> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/berufliches-schulzentrum-7-der-stadt-leipzig/> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:label "Berufliches Schulzentrum 7 der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/BWM-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.26A> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bwm-gmbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "BWM GmbH" .
+
+<http://leipzig-data.de/Data/Schule/Bebel-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Husemannstrasse.2> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "August-Bebel-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Bernd-Blindow-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Comeniusstrasse.17> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bernd-blindow-schulen-leipzig/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Bernd-Blindow-Schulen Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Berufsbildungswerk-Hoer-Sprachgeschaedigte>
+    ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.KnautnaundorferStrasse.4> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-berufsbildungswerk-leipzig-fuer-hoer-und-sprachgeschaedigte/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Berufsbildungswerk Leipzig für Hör- und Sprachgeschädigte" .
+
+<http://leipzig-data.de/Data/Schule/Berufsschule-MKB-Verein>
+    ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.GeithainerStrasse.7> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-verein-fuer-motivation-komm-und-berufliche-bildung-ev/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Verein für Motivation, Komm. und berufliche Bildung e. V." .
+
+<http://leipzig-data.de/Data/Schule/Berufsschule-St.ElisabethKrankenhaus>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Biedermannstrasse.84> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-st-elisabeth-krankenhaus-leipzig/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "St. Elisabeth Krankenhaus Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Berufsschule-St.GeorgKlinikum>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.DelitzscherStrasse.141> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-st-georg-klinikum/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "St. Georg Klinikum" .
+
+<http://leipzig-data.de/Data/Schule/Biedermann-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.19> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/kurt-biedermann-schule-foerderzentrum-fuer-erziehungshilfe-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Kurt-Biedermann-Schule - Förderzentrum für Erziehungshilfe der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/BildungsakademieDresden>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.9> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bildungsakademie-dresden/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Bildungsakademie Dresden" .
+
+<http://leipzig-data.de/Data/Schule/BildungszentrumfuerGesundheitsberufe>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bildungszentrum-fuer-gesundheitsberufe-leipzig-gmbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Bildungszentrum für Gesundheitsberufe Leipzig GmbH" .
+
+<http://leipzig-data.de/Data/Schule/BoehlitzEhrenberg-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Heinrich-Heine-Strasse.64> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule Böhlitz-Ehrenberg" .
+
+<http://leipzig-data.de/Data/Schule/Brockhaus-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.KielerStrasse.72B> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
+    ld:hatSchulkuerzel "S 01" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Friedrich-Arnold-Brockhaus-Gymnasium" ;
+    foaf:homepage <http://www.brockhaus-gymnasium.de> .
+
+<http://leipzig-data.de/Data/Schule/Busch-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.43> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Wilhelm-Busch-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Connewitz-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.ZwenkauerStrasse.35> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule Connewitz" .
+
+<http://leipzig-data.de/Data/Schule/DPFA-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-deutsche-private-finanzakademie-dpfa-gmbh-sachsen/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Deutsche Private Finanzakademie (DPFA) GmbH Sachsen" .
+
+<http://leipzig-data.de/Data/Schule/Designschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Bauhofstrasse.3> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-designschule-10-und-designschule-20-gmbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Designschule 1.0 und Designschule 2.0 GmbH" .
+
+<http://leipzig-data.de/Data/Schule/DeutschesErwachsenenBildungswerk>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.85> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-deutsches-erwachsenen-bildungswerk/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Deutsches Erwachsenen Bildungswerk" .
+
+<http://leipzig-data.de/Data/Schule/Diakonissenkrankenhaus-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.49> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-ev-diakonissenkrankenhaus-leipzig/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Ev. Diakonissenkrankenhaus Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Diesterweg-Lernfoerderschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Portitzer.Strasse.1> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/adolph-diesterweg-schule-schule-zur-lernfoerderung-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Adolph-Diesterweg-Schule - Schule zur Lernförderung der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/E-Kaestner-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.ErfurterStrasse.9> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Erich Kästner-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Engelsdorf-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.Arthur-Winkler-Strasse.6> ;
+    ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> ;
+    ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
+    ld:hatSchulkuerzel "S 05" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "MINT-freundliche Schule 2015" ;
+    rdfs:label "Gymnasium Engelsdorf" ;
+    foaf:homepage <http://www.gymnasiumengelsdorf.de> .
+
+<http://leipzig-data.de/Data/Schule/ErnstPinkert-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Martinstrasse.7> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Ernst-Pinkert-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Euro-Schulen>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.23> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-euro-schulen-ggmbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Euro-Schulen gGmbH" .
+
+<http://leipzig-data.de/Data/Schule/EuropaeischesBildungswerkBerufundGesellschaft>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hohmannstrasse.7> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-europaeisches-bildungswerk-fuer-beruf-und-gesellschaft-ev/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Europäisches Bildungswerk für Beruf und Gesellschaft e.V." .
+
+<http://leipzig-data.de/Data/Schule/EvangelischesSchulzentrum>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Latein", "Russisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.7> ;
+    ld:hatProfile "mathematisch", "musisch-künstlerisch", "sprachlich" ;
+    ld:hatSchulkuerzel "FT 1" ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
+    rdfs:comment "In kirchlicher Trägerschaft. Religionsunterricht, Andachten und Gottesdienste gehören zum Schulalltag." ;
+    rdfs:label "Evangelisches Schulzentrum" ;
+    foaf:homepage <http://www.schulzentrum.de> .
+
+<http://leipzig-data.de/Data/Schule/Filatow-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AmKirschberg.49> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/wladimir-filatow-schule-schule-fuer-blinde-und-sehbehinderte-foerderzentrum-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Wladimir-Filatow-Schule - Schule für Blinde und Sehbehinderte, Förderzentrum der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Flossplatz-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.45> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule am Floßplatz" .
+
+<http://leipzig-data.de/Data/Schule/ForumThomanum-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Joergen-Schmidtchen-Weg.8> ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    rdfs:label "Grundschule forum thomanum" .
+
+<http://leipzig-data.de/Data/Schule/FreieSchule>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.67> ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
+    rdfs:comment "Freie Alternativschule, keine Zensuren, Ganztagsschule, 1990 als Alternativschule gegründet" ;
+    rdfs:label "Freie Schule Leipzig e.V." ;
+    foaf:homepage <http://www.freie-schule-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/FreieWaldorfschule>
+    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Berthastrasse.15> ;
+    ld:hatSchulkuerzel "FT 2" ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
+    rdfs:comment "Gesamtschule" ;
+    rdfs:label "Freie Waldorfschule Leipzig" ;
+    foaf:homepage <http://www.waldorfschule-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Froebel-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.MannheimerStrasse.128C> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Friedrich-Fröbel-Schule" .
+
+<http://leipzig-data.de/Data/Schule/GBS-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Mahlmannstrasse.1> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-gbs-gemeinnuetzige-gmbh-fuer-techn-und-kaufmaennische-berufsbildende/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "GBS - gGmbH für technische und kaufmännische berufsbildende Schulen Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/GS-Marienbrunn>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.AnderMaerchenwiese.49> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Marienbrunner Schule" .
+
+<http://leipzig-data.de/Data/Schule/GS-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.113> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:comment "Schule im Aufbau" ;
+    rdfs:label "Oberschule Georg-Schwarz-Straße" ;
+    foaf:homepage <http://www.schule-georg-schwarz-strasse.de> .
+
+<http://leipzig-data.de/Data/Schule/Georg-Schumann-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Glockenstrasse.6> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "Georg-Schumann-Oberschule" ;
+    foaf:homepage <http://www.georg-schumann-schule.de> .
+
+<http://leipzig-data.de/Data/Schule/Gietzelt-Lernfoerderschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Kantatenweg.40> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/fritz-gietzelt-schule-schule-zur-lernfoerderung-der-stadt-leipzig/> ;
+    ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2012>, <http://leipzig-data.de/Data/MINT-Schule.2015> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Fritz-Gietzelt-Schule - Schule zur Lernförderung der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Goethe-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Gorkistrasse.25> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "sprachlich" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Goethe-Gymnasium" ;
+    foaf:homepage <http://www.sch\u00F6nefeld-gymnasium.de/> .
+
+<http://leipzig-data.de/Data/Schule/Gohlis-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Luetzowstrasse.8> ;
+    a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
+    rdfs:comment "Ganztagsschule, Träger ist der Verein \"Schulen für gemeinschaftlices Lernen\"" ;
+    rdfs:label "Freie Oberschule Gohlis" ;
+    foaf:homepage <http://www.schugel.de> .
+
+<http://leipzig-data.de/Data/Schule/Grimm-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Goldsternstrasse.23> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Brüder-Grimm-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Gundorf-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.LeipzigerStrasse.210> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule Gundorf" .
+
+<http://leipzig-data.de/Data/Schule/Gutenberg-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gutenbergplatz.4> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/gutenbergschule-berufliches-schulzentrum-der-stadt-leipzig/> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:label "Gutenbergschule - Berufliches Schulzentrum der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Hauff-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Diderotstrasse.37> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Wilhelm-Hauff-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Heimerer-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hohmannstrasse.7B> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-berufsbildungsinstitut-und-sozialpflegeschulen-heimerer-gmbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Berufsbildungsinstitut und Sozialpflegeschulen Heimerer GmbH" .
+
+<http://leipzig-data.de/Data/Schule/Heisenberg-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Renftstrasse.3> ;
+    ld:hasTag <http://leipzig-data.de/Data/JIA>, <http://leipzig-data.de/Data/MINT-Schule.2015> ;
+    ld:hatProfile "künstlerisch", "naturwissenschaftlich" ;
+    ld:hatSchulkuerzel "S 23" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "JIA-Verbund seit 2012" ;
+    rdfs:label "Werner-Heisenberg-Gymnasium" ;
+    foaf:homepage <http://www.whs-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Helmholtz-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Helmholtzstrasse.6> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "Helmholtz-Oberschule" ;
+    foaf:homepage <http://www.helmholtzschule-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Henriette-Goldschmidt-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Goldschmidtstrasse.20> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/henriette-goldschmidt-schule-berufliches-schulzentrum-der-stadt-leipzig/> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:label "Henriette-Goldschmidt-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Hertz-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Dachsstrasse.5> ;
+    ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sprachlich" ;
+    ld:hatSchulkuerzel "S 04" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "Fair-Trade-Schule", "MINT-freundliche Schule 2015" ;
+    rdfs:label "Gustav-Hertz-Gymnasium" ;
+    foaf:homepage <http://www.gustav-hertz-gymnasium.de> .
+
+<http://leipzig-data.de/Data/Schule/Holzhausen-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.StoetteritzerLandstrasse.21> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule Holzhausen" .
+
+<http://leipzig-data.de/Data/Schule/Humana-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Comeniusstrasse.17> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-humana-ggmbh-leipzig/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "HUMANA gGmbH Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Humboldt-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Moebiusstrasse.8> ;
+    ld:hatProfile "künstlerisch", "naturwissenschaftlich" ;
+    ld:hatSchulkuerzel "S 06" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Humboldt-Gymnasium" ;
+    foaf:homepage <http://marvin.sn.schule.de/~humboldt-leipzig> .
+
+<http://leipzig-data.de/Data/Schule/IB.Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Grassistrasse.12> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-ib-gesellschaft-fuer-interdisziplinaere-studien-mbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "IB Gesellschaft für interdisziplinäre Studien mbH" .
+
+<http://leipzig-data.de/Data/Schule/Johanniter-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Witzgallstrasse.20> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-johanniter-unfall-hilfe-ev/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Johanniter-Unfall-Hilfe e. V." .
+
+<http://leipzig-data.de/Data/Schule/Kant-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Scharnhorststrasse.15> ;
+    ld:hasTag <http://leipzig-data.de/Data/JIA>, <http://leipzig-data.de/Data/MINT-Schule.2012>, <http://leipzig-data.de/Data/MINT-Schule.2015> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
+    ld:hatSchulkuerzel "S 06" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "JIA-Verbund seit 2012" ;
+    rdfs:label "Immanuel-Kant-Gymnasium" ;
+    foaf:homepage <http://www.kantgym-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Karl-Heine-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.56> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/karl-heine-schule-berufliches-schulzentrum-der-stadt-leipzig/> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:label "Karl-Heine-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Kepler-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Dieskaustrasse.76> ;
+    ld:hasTag <http://leipzig-data.de/Data/UNESCO-Schule> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sportlich" ;
+    ld:hatSchulkuerzel "S 14" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Johannes-Kepler-Gymnasium" ;
+    foaf:homepage <http://www.johannes-kepler-gymnasium.de> .
+
+<http://leipzig-data.de/Data/Schule/Klinger-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.4> ;
+    ld:hasTag <http://leipzig-data.de/Data/JIA>, <http://leipzig-data.de/Data/MINT-Schule.2015> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
+    ld:hatSchulkuerzel "S 16" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "JIA seit 2015" ;
+    rdfs:label "Max-Klinger-Gymnasium" ;
+    foaf:homepage <http://www.klingerschule.de> .
+
+<http://leipzig-data.de/Data/Schule/Koerner-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Schlehenweg.32> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Theodor-Körner-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Kollwitz-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Karl-Vogel-Strasse.17> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/kaethe-kollwitz-schule-foerderzentrum-sprachheilschule-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Käthe-Kollwitz-Schule - Förderzentrum und Sprachheilschule der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Kroch-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Joergen-Schmidtchen-Weg.8> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Hans-Kroch-Schule" .
+
+<http://leipzig-data.de/Data/Schule/KulturhafenamRiverboat>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.45> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-kulturhafen-am-riverboat/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Kulturhafen am Riverboat" .
+
+<http://leipzig-data.de/Data/Schule/Landesschule-Hoergeschaedigte>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Karl-Siegismund-Strasse.2> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/saechsische-landesschule-fuer-hoergeschaedigte-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Sächsische Landesschule für Hörgeschädigte Leipzig - Förderzentrum Samuel Heinicke" .
+
+<http://leipzig-data.de/Data/Schule/Leibniz-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Nordplatz.13> ;
+    ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
+    ld:hatSchulkuerzel "S 20" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Leibnizschule" ;
+    foaf:homepage <http://www.leibniz-gymnasium-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Leibnizeum>
+    ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Theodor-Heuss-Strasse.30> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-leibnizeum-aus-und-weiterbildung-dr-groebke/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Leibnizeum Aus- und Weiterbildung Dr. Gröbke" .
+
+<http://leipzig-data.de/Data/Schule/LeipzigInternationalSchool>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.47> ;
+    ld:hatSchulkuerzel "FT 4" ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
+    rdfs:comment "Gesamtschule (Kindergarten bis Klasse 12), Ganztagsschule, Englich ist Unterrichtssprache" ;
+    rdfs:label "Leipzig International School e.V." ;
+    foaf:homepage <http://www.intschool-leipzig.com> .
+
+<http://leipzig-data.de/Data/Schule/Lene-Voigt-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Willi-Bredel-Strasse.11> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "Lene-Voigt-Oberschule" ;
+    foaf:homepage <http://www.lene-voigt-schule-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Lernfoerderschule-Engelsdorf>
+    ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.RiesaerStrasse.177> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/schule-engelsdorf-schule-zur-lernfoerderung-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Schule Engelsdorf - Schule zur Lernförderung der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Lernfoerderschule-Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.1> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/schule-gruenau-schule-zur-lernfoerderung-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Schule Grünau - Schule zur Lernförderung der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Lernfoerderschule-Schloss-Schoenefeld>
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Zeumerstrasse.1> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-schule-fuer-geistig-behinderte-schloss-schoenefeld-ev/> ;
+    a ld:Foerderschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Schule für geistig Behinderte Schloss Schönefeld e. V." .
+
+<http://leipzig-data.de/Data/Schule/Lessing-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lessingstrasse.27> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Lessingschule" .
+
+<http://leipzig-data.de/Data/Schule/Liebertwolkwitz-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.AmAngerteich.2> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule Liebertwolkwitz" .
+
+<http://leipzig-data.de/Data/Schule/Liebknecht-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Heinrich-Mann-Strasse.1> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Karl-Liebknecht-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Lindenhofschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Delitzscher.Strasse.110> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/lindenhofschule-schule-fuer-geistig-behinderte-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Lindenhofschule - Schule für geistig Behinderte der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Lindgren-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Volksgartenstrasse.16> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Astrid-Lindgren-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Linne-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.DelitzscherStrasse.110> ;
+    ld:hasTag <http://leipzig-data.de/Data/UNESCO-Schule> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Carl-von-Linné-Schule" .
+
+<http://leipzig-data.de/Data/Schule/MSG>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Salomonstrasse.10> ;
+    ld:hatProfile "künstlerisch", "musikalisch", "sportlich" ;
+    ld:hatSchulkuerzel "FT 8" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Musikalisch-Sportliches Gymnasium Leipzig der Rahn-Dittrich Gruppe" ;
+    foaf:homepage <http://www.rahndittrich.de/gymnasium-lpz> .
+
+<http://leipzig-data.de/Data/Schule/Mann-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Schwarzenbergweg.4> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Heinrich-Mann-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Martin-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Neptunweg.31> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/martin-schule-schule-fuer-geistig-behinderte-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Martin-Schule - Schule für geistig Behinderte der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Mehring-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Gletschersteinstrasse.9> ;
+    ld:hasTag <http://leipzig-data.de/Data/MINT-Schule.2015> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Franz-Mehring-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Miltitz-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.GrossmiltitzerStrasse.4> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule Miltitz" .
+
+<http://leipzig-data.de/Data/Schule/Moelkau-Schule>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04316.Leipzig.Schulstrasse.6> ;
+    a ld:Grundschule, ld:Oberschule, ld:Schule ;
+    rdfs:label "Oberschule Mölkau" ;
+    foaf:homepage <http://www.oberschule-moelkau.de> .
+
+<http://leipzig-data.de/Data/Schule/Montessori-Schulzentrum>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.61> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sprachlich" ;
+    ld:hatSchulkuerzel "FT 6" ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
+    rdfs:comment "Träger ist das Bischöfliche Ordinariat des Bistums Dresden-Meißen." ;
+    rdfs:label "Bischöfliches Maria-Montessori-Schulzentrum Leipzig" ;
+    foaf:homepage <http://www.montessori-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Mutzeck-Lernfoerderschule>
+    ld:hasAddress <http://leipzig-data.de/Data/> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-wolfgang-mutzeck-schule/> ;
+    a ld:Foerderschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Wolfgang-Mutzeck-Schule" .
+
+<http://leipzig-data.de/Data/Schule/NaSch>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Gemeindeamtsstrasse.8> ;
+    a ld:Gemeinschaftsschule, ld:Grundschule, ld:Oberschule, ld:Schule ;
+    rdfs:label "Nachbarschaftsschule" ;
+    foaf:homepage <http://www.nasch.de> .
+
+<http://leipzig-data.de/Data/Schule/Neruda-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Tarostrasse.6> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Pablo-Neruda-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Niko-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Schoenbachstrasse.17> ;
+    ld:hasTag <http://leipzig-data.de/Data/JIA> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich" ;
+    ld:hatSchulkuerzel "S 07" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "JIA-Verbund seit 2012" ;
+    rdfs:label "Neues Nikolai-Gymnasium" ;
+    foaf:homepage <http://www.neuenikolaischule.de> .
+
+<http://leipzig-data.de/Data/Schule/OS-Weisseplatz>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Ferdinand-Jost-Strasse.33> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:comment "Schule im Aufbau, geplant ist eine musisch-sprachlich-mediale Orientierung" ;
+    rdfs:label "Oberschule am Weißeplatz" ;
+    foaf:homepage <http://www.schule-am-weisseplatz.de> .
+
+<http://leipzig-data.de/Data/Schule/Oeser-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Geibelstrasse.74> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Adam-Friedrich-Oeser-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Ostwald-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Willi-Bredel-Strasse.13> ;
+    ld:hasTag <http://leipzig-data.de/Data/MINT-EC-Schule> ;
+    ld:hatProfile "mathematisch-naturwissenschaftlich" ;
+    ld:hatSchulkuerzel "S 09" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "Schule mit vertieftem mathematisch-naturwissenschaftlichen Profil" ;
+    rdfs:label "Wilhelm-Ostwald-Gymnasium" ;
+    foaf:homepage <http://ostwaldportal.de> .
+
+<http://leipzig-data.de/Data/Schule/Paunsdorf-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.ZumWaeldchen.4> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "Oberschule Paunsdorf" ;
+    foaf:homepage <http://www.oberschule-leipzig-paunsdorf.de> .
+
+<http://leipzig-data.de/Data/Schule/Pestalozzi-Lernfoerderschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.HannoverscheStrasse.2> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/johann-heinrich-pestalozzi-schule-schule-zur-lernfoerderung-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Johann-Heinrich-Pestalozzi-Schule - Schule zur Lernförderung der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Pestalozzi-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Pestalozzistrasse.39> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "Heinrich-Pestalozzi-Oberschule" ;
+    foaf:homepage <http://cms.sachsen.schule/mspestal/start> .
+
+<http://leipzig-data.de/Data/Schule/Peters-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Latein" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.104> ;
+    ld:hasTag <http://leipzig-data.de/Data/Klimaschule-Schule> ;
+    ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
+    ld:hatSchulkuerzel "S 10" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Lousie-Otto-Peters-Gymnasium" ;
+    foaf:homepage <http://cms.sachsen.schule/gymlops>, <http://www.lops-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Petri-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.50> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "Petri-Oberschule" ;
+    foaf:homepage <http://www.petrischule-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Portitz-Schule>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.Licidestrasse.12> ;
+    a ld:Grundschule, ld:Oberschule, ld:Schule ;
+    rdfs:label "Oberschule Portitz" ;
+    foaf:homepage <http://www.mittelschule-portitz.de> .
+
+<http://leipzig-data.de/Data/Schule/Rabet-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.50> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule am Rabet" .
+
+<http://leipzig-data.de/Data/Schule/Rahn-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kochstrasse.28A> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-dr-p-rahn-partner-schulen-in-freier-traegerschaft/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Dr. P. Rahn & Partner Schulen in freier Trägerschaft" .
+
+<http://leipzig-data.de/Data/Schule/Rahn-Schule>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kochstrasse.28A> ;
+    a ld:FreierTraeger, ld:Gymnasium, ld:Oberschule, ld:Schule ;
+    rdfs:comment "Träger ist die Rahn-Dittrich Group. 2017 ist der Umzug auf den Campus Salomonstraße geplant." ;
+    rdfs:label "Rahn-Oberschule und -Gymnasium" ;
+    foaf:homepage <http://www.rahndittrich.de/os-lpz> .
+
+<http://leipzig-data.de/Data/Schule/Reclam-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Tarostrasse.4> ;
+    ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
+    ld:hatSchulkuerzel "S 08" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "Teil des deutsch-französischen Bildungszentrums" ;
+    rdfs:label "Anton-Philipp-Reclam-Gymnasium" ;
+    foaf:homepage <http://www.reclamgymnasium.de> .
+
+<http://leipzig-data.de/Data/Schule/Regenbogen-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15> ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    rdfs:label "Freie Grundschule \"Regenbogen\"" .
+
+<http://leipzig-data.de/Data/Schule/Ringelnatz-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.GruenauerAllee.35> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Joachim-Ringelnatz-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Robert-Schumann-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Demmeringstrasse.84> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
+    ld:hatSchulkuerzel "S 18" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Robert-Schumann-Gymnasium" ;
+    foaf:homepage <http://www.robert-schumann-gymnasium-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Robeson-Schule>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Jungmannstrasse.5> ;
+    ld:hasTag <http://leipzig-data.de/Data/UNESCO-Schule> ;
+    a ld:Grundschule, ld:Oberschule, ld:Schule ;
+    rdfs:label "Paul-Robeson-Schule" ;
+    foaf:homepage <http://www.sn.schule.de/~ms-robeson-l> .
+
+<http://leipzig-data.de/Data/Schule/Rueckmarsdorf-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.AnderFriedenseiche.4> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule Rückmarsdorf" .
+
+<http://leipzig-data.de/Data/Schule/Ruth-Pfau-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.160> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/ruth-pfau-schule-berufliches-schulzentrum-der-stadt-leipzig/> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:label "Ruth-Pfau-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Sacke-Krankenhausschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Morawitzstrasse.2> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/dr-georg-sacke-schule-klinik-und-krankenhausschule-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Dr.-Georg-Sacke-Schule - Klinik- und Krankenhausschule der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Schiller-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.2> ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
+    ld:hatSchulkuerzel "S 22" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Friedrich-Schiller-Gymnasium" ;
+    foaf:homepage <http://www.fschillerg.de> .
+
+<http://leipzig-data.de/Data/Schule/Scholl-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.1> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Geschwister-Scholl-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Scholl-OS-Liebertwolkwitz>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.AmAngerteich.2> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "Geschwister-Scholl-Schule Liebertwolkwitz" ;
+    foaf:homepage <http://www.oberschule-liebertwolkwitz.de> .
+
+<http://leipzig-data.de/Data/Schule/Schubert-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.4> ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    rdfs:label "Karl-Schubert-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Schule-Rosenweg>
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Rosenweg.59> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/schule-rosenweg-schule-fuer-geistig-behinderte-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Schule Rosenweg - Schule für geistig Behinderte der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Schule-Thonberg>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Riebeckstrasse.50> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/schule-thonberg-schule-fuer-geistig-behinderte-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Schule Thonberg - Schule für geistig Behinderte der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Schumann-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.18> ;
+    a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
+    rdfs:label "Freie Grundschule \"Clara Schumann\" Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Schweitzer-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.AnderMaerchenwiese.3> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/albert-schweitzer-schule-schule-fuer-koerperbehinderte-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Albert-Schweitzer-Schule - Schule für Körperbehinderte der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/Seehausen-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.SeehausenerAllee.17> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule Seehausen" .
+
+<http://leipzig-data.de/Data/Schule/Sport-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Marschnerstrasse.30> ;
+    ld:hatProfile "sportlich" ;
+    ld:hatSchulkuerzel "LS 1" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "Schule mit vertieftem sportlichen Profil in Landesträgerschaft" ;
+    rdfs:label "Landesgymnasium für Sport Leipzig" ;
+    foaf:homepage <http://www.sportgymnasium-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Sport-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Russisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Max-Planck-Strasse.1> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "Sportoberschule Leipzig" ;
+    foaf:homepage <http://www.sportoberschule-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Stahmeln-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.StahmelnerHoehe.1> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Schule Stahmeln" .
+
+<http://leipzig-data.de/Data/Schule/Susanna-Eger-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.AnderQuerbreite.6> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/susanna-eger-schule-berufliches-schulzentrum-der-stadt-leipzig/> ;
+    a ld:Berufsschule, ld:Schule ;
+    rdfs:comment "Fair-Trade-Schule" ;
+    rdfs:label "Susanna-Eger-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/TUEV-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.59> ;
+    a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
+    rdfs:comment "Ganztagsschule, Träger ist der TÜV Rheinland" ;
+    rdfs:label "TÜV Oberschule Leipzig" ;
+    foaf:homepage <http://www.tuv.com/schule-leipzig> .
+
+<http://leipzig-data.de/Data/Schule/Telemann-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Telemannstrasse.9> ;
+    ld:hatProfile "unklar" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:label "Gymnasium an der Telemannstraße" ;
+    foaf:homepage <http://cms.sachsen.schule/gymltele> .
+
+<http://leipzig-data.de/Data/Schule/Theater-Fabrik-Sachsen>
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Franz-Flemming-Strasse.16> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-theater-fabrik-sachsen-gmbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Theater-Fabrik-Sachsen GmbH" .
+
+<http://leipzig-data.de/Data/Schule/Thomas-Gym>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hillerstrasse.7> ;
+    ld:hatProfile "künstlerisch", "musisch", "sprachlich" ;
+    ld:hatSchulkuerzel "S 12" ;
+    a ld:Gymnasium, ld:Schule ;
+    rdfs:comment "Schule mit vertieftem musischen Profil, Teil des Bildungscampus Forum Thomanum" ;
+    rdfs:label "Thomasschule zu Leipzig" ;
+    foaf:homepage <http://www.thomasschule.de> .
+
+<http://leipzig-data.de/Data/Schule/Universitaetsklinikum>
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Richterstrasse.9> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-universitaetsklinikum-leipzig-aoer/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Universitätsklinikum Leipzig AöR" .
+
+<http://leipzig-data.de/Data/Schule/Universum-Berufsbildungs-Akademie>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Angerstrasse.42E> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-universum-private-berufsbildungs-akademie/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "UNIVERSUM - Private Berufsbildungs-Akademie" .
+
+<http://leipzig-data.de/Data/Schule/Vogel-Lernfoerderschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Hans-Marchwitza-Strasse.12> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-foerderschule-werner-vogel/> ;
+    a ld:Foerderschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Förderschule \"Werner Vogel\"" .
+
+<http://leipzig-data.de/Data/Schule/WBS-Schule>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bruehl.67> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-wbs-training-schulen-ggmbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "WBS Training Schulen gGmbH" .
+
+<http://leipzig-data.de/Data/Schule/Wander-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Schulze-Delitzsch-Strasse.23> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Wilhelm-Wander-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Wiedebach-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Arno-Nitzsche-Strasse.7> ;
+    a ld:Oberschule, ld:Schule ;
+    rdfs:label "Wiedebach-Oberschule" ;
+    foaf:homepage <http://www.wiedebachschule-leipzig.de> .
+
+<http://leipzig-data.de/Data/Schule/Wiederitzsch-GS>
+    ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.ZurSchule.11> ;
+    a ld:Grundschule, ld:Oberschule, ld:Schule ;
+    rdfs:comment "Gemeinsames Gebäude für Grund- und Oberschule" ;
+    rdfs:label "Grund- und Oberschule Wiederitzsch" ;
+    foaf:homepage <http://www.oberschule-wiederitzsch.de> .
+
+<http://leipzig-data.de/Data/Schule/Zeigner-GS>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.24> ;
+    a ld:Grundschule, ld:Schule ;
+    rdfs:label "Erich-Zeigner-Schule" .
+
+<http://leipzig-data.de/Data/Schule/Zinna-Lernfoerderschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Wincklerstrasse.3/5> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/ernst-zinna-schule-schule-zur-lernfoerderung-der-stadt-leipzig/> ;
+    a ld:Foerderschule, ld:Schule ;
+    rdfs:label "Ernst-Zinna-Schule - Schule zur Lernförderung der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Schule/ciT-Berufsschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Lutherstrasse.10> ;
+    ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-cit-ggmbh/> ;
+    a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "ciT gGmbH" .
+
+<http://leipzig-data.de/Data/Schulen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "Seiten der Stadt Leipzig" ;
+    a owl:Ontology ;
+    rdfs:comment "2016-12-07 berufliche Schulen und Förderschulen nachgetragen. 2014-07-20: Abgleich mit den Stadtseiten." ;
+    rdfs:label "Schulen der Stadt Leipzig" .
+

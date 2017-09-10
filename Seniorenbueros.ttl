@@ -1,8 +1,6 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
@@ -10,7 +8,90 @@
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix org: <http://www.w3.org/ns/org#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ld:SeniorenBuero
+    a owl:Class ;
+    rdfs:label "Seniorenbüro" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/AltWest>
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.SaalfelderStrasse.12> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/Volkssolidaritaet.StadtverbandLeipzig> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/AltWest> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "info@volkssolidaritaet-leipzig.de" ;
+    foaf:phone "0341-49541102" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/Mitte>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisplatz.2> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/Caritas.Leipzig> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Mitte> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "seniorenbuero@caritas-leipzig.de" ;
+    foaf:phone "0341-14969653" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/Nord>
+    ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Kleiststrasse.52> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/Geyserhaus> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Nord> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "seniorenbuero@geyserhaus.de" ;
+    foaf:phone "0341-12579210" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/NordOst>
+    ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.KielerStrasse.63> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/Volkssolidaritaet.StadtverbandLeipzig> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/NordOst> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "info@volkssolidaritaet-leipzig.de" ;
+    foaf:phone "0341-6018410" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/NordWest>
+    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Horst-Heilmann-Strasse.4> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/Volkssolidaritaet.StadtverbandLeipzig> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/NordWest> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "info@volkssolidaritaet-leipzig.de" ;
+    foaf:phone "0341-9010517" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/Ost>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.66> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/Muehlstrasse> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Ost> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "seniorenbuero@muehlstrasse.de" ;
+    foaf:phone "0341-26371168" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/Sued>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Prinz-Eugen-Strasse.1> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/Volkssolidaritaet.StadtverbandLeipzig> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Sued> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "info@volkssolidaritaet-leipzig.de" ;
+    foaf:phone "0341-3913971" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/SuedOst>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/ASB.KreisverbandLeipzig> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/SuedOst> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "seniorenbuero@asb-leipzig.de" ;
+    foaf:phone "0341-2535719" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/SuedWest>
+    ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Dieskaustrasse.138> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/BGL.Nachbarschaftshilfeverein> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/SuedWest> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "seniorenbuero-suedwest@web.de" ;
+    foaf:phone "0341-3526043" .
+
+<http://leipzig-data.de/Data/Seniorenbuero/West>
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.18> ;
+    ld:hatTraeger <http://leipzig-data.de/Data/Verein/AWO.Leipzig> ;
+    ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/West> ;
+    a ld:SeniorenBuero ;
+    foaf:mbox "beratungszentrum@awo-leipzig-stadt.de" ;
+    foaf:phone "0341-94683439" .
 
 <http://leipzig-data.de/Data/Seniorenbueros/>
     cc:attributionName "The Leipzig Open Data Project" ;
@@ -20,74 +101,3 @@
     rdfs:comment "Quelle: LVZ, 22.08.2014" ;
     rdfs:label "Seniorenbüros der Stadt Leipzig" .
 
-ld:SeniorenBuero a owl:Class ; rdfs:label "Seniorenbüro" .
-   
-<http://leipzig-data.de/Data/Seniorenbuero/AltWest> a ld:SeniorenBuero; 
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/AltWest> ;
-foaf:phone "0341-49541102" ; 
-foaf:mbox "info@volkssolidaritaet-leipzig.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/Volkssolidaritaet.StadtverbandLeipzig> ; 
-ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.SaalfelderStrasse.12> .
-
-<http://leipzig-data.de/Data/Seniorenbuero/Mitte> a ld:SeniorenBuero; 
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Mitte> ;
-foaf:phone "0341-14969653" ; 
-foaf:mbox "seniorenbuero@caritas-leipzig.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/Caritas.Leipzig>  ; 
-ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisplatz.2> .
-
-<http://leipzig-data.de/Data/Seniorenbuero/Nord> a ld:SeniorenBuero; 
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Nord> ;
-foaf:phone "0341-12579210" ; 
-foaf:mbox "seniorenbuero@geyserhaus.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/Geyserhaus> ; 
-ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Kleiststrasse.52> .
-
-<http://leipzig-data.de/Data/Seniorenbuero/NordOst> a ld:SeniorenBuero; 
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/NordOst> ;
-foaf:phone "0341-6018410" ; 
-foaf:mbox "info@volkssolidaritaet-leipzig.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/Volkssolidaritaet.StadtverbandLeipzig> ; 
-ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.KielerStrasse.63> .
-
-<http://leipzig-data.de/Data/Seniorenbuero/NordWest> a ld:SeniorenBuero; 
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/NordWest> ;
-foaf:phone "0341-9010517" ; 
-foaf:mbox "info@volkssolidaritaet-leipzig.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/Volkssolidaritaet.StadtverbandLeipzig> ; 
-ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Horst-Heilmann-Strasse.4> .
-
-<http://leipzig-data.de/Data/Seniorenbuero/Ost> a ld:SeniorenBuero; 
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Ost> ;
-foaf:phone "0341-26371168" ; 
-foaf:mbox "seniorenbuero@muehlstrasse.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/Muehlstrasse>  ; 
-ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.66> .
-
-<http://leipzig-data.de/Data/Seniorenbuero/Sued> a ld:SeniorenBuero; 
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/Sued> ;
-foaf:phone "0341-3913971" ; 
-foaf:mbox "info@volkssolidaritaet-leipzig.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/Volkssolidaritaet.StadtverbandLeipzig> ; 
-ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Prinz-Eugen-Strasse.1> .
-
-<http://leipzig-data.de/Data/Seniorenbuero/SuedOst> a ld:SeniorenBuero; 
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/SuedOst> ;
-foaf:phone "0341-2535719" ; 
-foaf:mbox "seniorenbuero@asb-leipzig.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/ASB.KreisverbandLeipzig> ; 
-ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> .
-
-<http://leipzig-data.de/Data/Seniorenbuero/SuedWest> a ld:SeniorenBuero;
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/SuedWest> ;
-foaf:phone "0341-3526043" ; 
-foaf:mbox "seniorenbuero-suedwest@web.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/BGL.Nachbarschaftshilfeverein>  ; 
-ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Dieskaustrasse.138> .
- 
-<http://leipzig-data.de/Data/Seniorenbuero/West> a ld:SeniorenBuero; 
-ld:imStadtbezirk <http://leipzig-data.de/Data/Stadtbezirk/West> ;
-foaf:phone "0341-94683439" ; 
-foaf:mbox "beratungszentrum@awo-leipzig-stadt.de" ; 
-ld:hatTraeger <http://leipzig-data.de/Data/Verein/AWO.Leipzig> ; 
-ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.18> .

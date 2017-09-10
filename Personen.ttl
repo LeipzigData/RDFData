@@ -1,6 +1,3 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Personen/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -9,764 +6,969 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 
-<http://leipzig-data.de/Data/Person/Ackermann_Arne> a foaf:Person ;
-                                                    foaf:name "Arne Ackermann" .
+<http://leipzig-data.de/Data/Person/Ackermann_Arne>
+    a foaf:Person ;
+    foaf:name "Arne Ackermann" .
+
+<http://leipzig-data.de/Data/Person/Albert_Katrin>
+    ld:relatedTo <http://leipzig-data.de/Data/Firma/BusinessIntelligence> ;
+    a foaf:Person ;
+    foaf:name "Katrin Albert" .
+
+<http://leipzig-data.de/Data/Person/Babel_Wolfgang>
+    a foaf:Person ;
+    foaf:name "Wolfgang Babel" ;
+    foaf:title "Prof. Dr." .
+
+<http://leipzig-data.de/Data/Person/Bachmann_Lars>
+    a foaf:Person ;
+    foaf:name "Lars Bachmann" .
+
+<http://leipzig-data.de/Data/Person/Baesler_Detlef>
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" ;
+    foaf:name "Detlef Bäsler" .
+
+<http://leipzig-data.de/Data/Person/Bamberg_Stefanie>
+    a foaf:Person ;
+    foaf:name "Stefanie Bamberg" .
+
+<http://leipzig-data.de/Data/Person/Benedix_Katrin>
+    ld:relatedTo <http://leipzig-data.de/Data/KE/DiakonischesWerk> ;
+    a foaf:Person ;
+    rdfs:comment "SSA Schumann-Mittelschule" ;
+    foaf:name "Katrin Benedix" .
+
+<http://leipzig-data.de/Data/Person/Berg_Dennis>
+    a foaf:Person ;
+    foaf:name "Dennis Berg" .
+
+<http://leipzig-data.de/Data/Person/Bergmann_Thommy>
+    ld:hasURL <http://www.mandalari.de> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/MandalaSpieleck> ;
+    a foaf:Person ;
+    foaf:name "Thommy Bergmann" .
+
+<http://leipzig-data.de/Data/Person/Bernard_Ulrike>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/HausSteinstrasse> ;
+    a foaf:Person ;
+    foaf:name "Ulrike Bernard" .
+
+<http://leipzig-data.de/Data/Person/Bielig_Sven>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau>, <http://leipzig-data.de/Data/Verein/Stadtjugendring>, <http://leipzig-data.de/Data/Verein/UrbanSouls> ;
+    a foaf:Person ;
+    foaf:name "Sven Bielig" .
+
+<http://leipzig-data.de/Data/Person/Boehr_Annett>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/RAA.Leipzig> ;
+    a foaf:Person ;
+    rdfs:comment "SSA Petri-Mittelschule" ;
+    foaf:name "Annett Böhr" .
+
+<http://leipzig-data.de/Data/Person/Boran_Roland>
+    a foaf:Person ;
+    rdfs:comment "Projektleiter ASG-Schülerakademie" ;
+    foaf:name "Dr. Roland Boran" .
+
+<http://leipzig-data.de/Data/Person/Both_Jana>
+    a foaf:Person ;
+    rdfs:comment "Organisierte bis 2009 die Kinderuni. Inzwischen aus Leipzig weggezogen." ;
+    foaf:name "Jana Both" .
+
+<http://leipzig-data.de/Data/Person/BrendAmour_Nicola>
+    a foaf:Person ;
+    foaf:name "Nicola Bren d‘Amour" .
+
+<http://leipzig-data.de/Data/Person/Brier_Leonhard>
+    a foaf:Person ;
+    foaf:homepage <http://www.verbundnetz-der-waerme.de/v201208/ccc-a-572.html> ;
+    foaf:name "Leonhard Brier" .
+
+<http://leipzig-data.de/Data/Person/BuechelBernhard_Aaron>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM> ;
+    a foaf:Person ;
+    foaf:name "Aaron Büchel-Bernhard" .
+
+<http://leipzig-data.de/Data/Person/Buettner_Torsten>
+    a foaf:Person ;
+    foaf:name "Torsten Büttner" .
+
+<http://leipzig-data.de/Data/Person/Burger_Petra>
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
+    a foaf:Person ;
+    foaf:name "Petra Burger" .
+
+<http://leipzig-data.de/Data/Person/Darlatt_Kathrin>
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig> ;
+    a foaf:Person ;
+    rdfs:comment "Gleichstellungspolitische Referentin Stadt Leipzig" ;
+    foaf:name "Kathrin Darlatt" .
+
+<http://leipzig-data.de/Data/Person/Diebler_Peggy>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/Stadtteilladen.Gruenau> ;
+    a foaf:Person ;
+    rdfs:comment "JHA-Koordinatorin Planungsraum" ;
+    foaf:name "Peggy Diebler" .
+
+<http://leipzig-data.de/Data/Person/Dittrich_Sarah>
+    a foaf:Person ;
+    rdfs:comment "Programm MINT-Individual" ;
+    foaf:name "Sarah Dittrich" .
+
+<http://leipzig-data.de/Data/Person/Duschinger_Robert>
+    a foaf:Person ;
+    rdfs:comment "stellv. Vorsitzender des Stadtelternrats (2013 gewählt)" ;
+    foaf:name "Robert Duschinger" .
+
+<http://leipzig-data.de/Data/Person/Eisenberg_Wolfgang>
+    a foaf:Person ;
+    foaf:name "Wolfgang Eisenberg" ;
+    foaf:title "Dr." .
+
+<http://leipzig-data.de/Data/Person/Elsaesser_Ralf>
+    a foaf:Person ;
+    foaf:name "Ralf Elsässer" .
+
+<http://leipzig-data.de/Data/Person/Engel_Heike>
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin Anker e.V." ;
+    foaf:name "Heike Engel" .
+
+<http://leipzig-data.de/Data/Person/Faehse_Robby>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendfeuerwehr> ;
+    a foaf:Person ;
+    foaf:name "Robby Faehse" .
+
+<http://leipzig-data.de/Data/Person/Felgentreff_Nadine>
+    a foaf:Person ;
+    foaf:name "Nadine Felgentreff" .
+
+<http://leipzig-data.de/Data/Person/Fleckenstein_Heike>
+    a foaf:Person ;
+    rdfs:comment "stellv. Vorsitzende des Stadtelternrats (2013 gewählt)" ;
+    foaf:name "Heike Fleckenstein" .
+
+<http://leipzig-data.de/Data/Person/Friedrich_Alexandra>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/GfZK> ;
+    a foaf:Person ;
+    rdfs:comment "Leitung Kunstvermittlung der GfZK" ;
+    foaf:name "Alexandra Friedrich" .
+
+<http://leipzig-data.de/Data/Person/Friedrich_Marga>
+    a foaf:Person ;
+    foaf:name "Marga Friedrich" .
+
+<http://leipzig-data.de/Data/Person/Fries_Kerstin>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/Verein.FFJ> ;
+    a foaf:Person ;
+    foaf:name "Kerstin Fries" .
+
+<http://leipzig-data.de/Data/Person/Fritzsche_Nicole>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/KinderVereinigung.Leipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    a foaf:Person ;
+    foaf:name "Nicole Fritzsche" .
+
+<http://leipzig-data.de/Data/Person/Fueting_Manfred>
+    a foaf:Person ;
+    foaf:name "Manfred Füting" ;
+    foaf:title "Prof. Dr." .
+
+<http://leipzig-data.de/Data/Person/Fuhrmann_Sabine>
+    ld:relatedTo <http://leipzig-data.de/Data/Unternehmen/SpiritLegal> ;
+    a foaf:Person ;
+    foaf:name "Sabine Fuhrmann" .
+
+<http://leipzig-data.de/Data/Person/Geffken_Michael>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/SchoolOfMedia> ;
+    a foaf:Person ;
+    foaf:name "Michael Geffken" .
+
+<http://leipzig-data.de/Data/Person/Geisler_Andreas>
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender des Stadtelternrats (2013 gewählt)" ;
+    foaf:name "Andreas Geisler" .
+
+<http://leipzig-data.de/Data/Person/Geissler_Maria>
+    foaf:name "Maria Geißler" .
+
+<http://leipzig-data.de/Data/Person/Geng_Tobias>
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
+    a foaf:Person ;
+    foaf:name "Tobias Geng" .
+
+<http://leipzig-data.de/Data/Person/Georgi_Gunnar>
+    ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/80-gunnar> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    a foaf:Person ;
+    foaf:name "Gunnar Georgi" .
+
+<http://leipzig-data.de/Data/Person/Giersdorf_Jens>
+    a foaf:Person ;
+    foaf:name "Jens Giersdorf" .
+
+<http://leipzig-data.de/Data/Person/Gleichmann_Tina>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/HausSteinstrasse> ;
+    a foaf:Person ;
+    foaf:name "Tina Gleichmann" .
+
+<http://leipzig-data.de/Data/Person/Glowacki_Romann>
+    a foaf:Person ;
+    foaf:name "Romann Glowacki" .
+
+<http://leipzig-data.de/Data/Person/Graebe_HansGert>
+    a foaf:Person ;
+    foaf:name "Prof. Dr. Hans-Gert Gräbe" .
+
+<http://leipzig-data.de/Data/Person/Graf_Corinna>
+    ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/78-corinna> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    a foaf:Person ;
+    rdfs:comment "GF des Stadtjugendrings" ;
+    foaf:name "Corinna Graf" .
+
+<http://leipzig-data.de/Data/Person/Gregor_Jana>
+    a foaf:Person ;
+    rdfs:comment "MINT-Beauftragte des MPI MIS" ;
+    foaf:name "Jana Gregor" .
+
+<http://leipzig-data.de/Data/Person/Grosser_Katja>
+    a foaf:Person ;
+    foaf:name "Katja Großer" .
+
+<http://leipzig-data.de/Data/Person/Gruener_Andre>
+    a foaf:Person ;
+    rdfs:comment "IHK zu Leipzig" ;
+    foaf:name "André Grüner" .
+
+<http://leipzig-data.de/Data/Person/Gutschale_Anke>
+    a foaf:Person ;
+    rdfs:comment "Organisation der Kinderuni" ;
+    foaf:name "Anke Gutschale" .
+
+<http://leipzig-data.de/Data/Person/Haenel_Andreas>
+    a foaf:Person ;
+    foaf:name "Andreas Hänel" .
+
+<http://leipzig-data.de/Data/Person/Haenisch_Wolfgang>
+    a foaf:Person ;
+    foaf:name "Wolfgang Hänisch" .
+
+<http://leipzig-data.de/Data/Person/Haensch_Solveig>
+    a foaf:Person ;
+    rdfs:comment "JHA-Koordinatorin Planungsraum" ;
+    foaf:name "Solveig Hänsch" .
+
+<http://leipzig-data.de/Data/Person/Haensel_Annegret>
+    ld:relatedTo <http://leipzig-data.de/Data/Firma/Unikatum>, <http://leipzig-data.de/Data/Ort/Unikatum> ;
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin Unikatum gGmbH" ;
+    foaf:name "Annegret Hänsel" .
+
+<http://leipzig-data.de/Data/Person/Haensgen_Christoph>
+    ld:hasURL <http://www.happy-robots.de> ;
+    a foaf:Person ;
+    foaf:name "Christoph Hänsgen" .
+
+<http://leipzig-data.de/Data/Person/Hahn_Michael>
+    a foaf:Person ;
+    rdfs:comment "Vereinsvorsitzender LJBW" ;
+    foaf:name "Michael Hahn" .
+
+<http://leipzig-data.de/Data/Person/Hamel_Corinna>
+    a foaf:Person ;
+    rdfs:comment "Programm MINT-Individual" ;
+    foaf:name "Corinna Hamel" .
+
+<http://leipzig-data.de/Data/Person/Hantschick_Ines>
+    a foaf:Person ;
+    foaf:name "Ines Hantschick" .
+
+<http://leipzig-data.de/Data/Person/Hauptmann_Anke>
+    a foaf:Person ;
+    foaf:name "Anke Hauptmann" .
+
+<http://leipzig-data.de/Data/Person/Heckel_Ralf>
+    a foaf:Person ;
+    foaf:name "Ralf Heckel" .
+
+<http://leipzig-data.de/Data/Person/Heinrich_Torsten>
+    ld:relatedTo <http://leipzig-data.de/Data/KE/EvLuthJugend> ;
+    a foaf:Person ;
+    rdfs:comment "Vertreter des SJR im JHA" ;
+    foaf:name "Torsten Heinrich" .
+
+<http://leipzig-data.de/Data/Person/Heinze_Sven>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/Sportjugend>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    a foaf:Person ;
+    foaf:name "Sven Heinze" .
+
+<http://leipzig-data.de/Data/Person/Herold_Corrina>
+    ld:hasURL "http://www.fom.de" ;
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/FOM> ;
+    a foaf:Person ;
+    foaf:name "Corrina Herold" ;
+    foaf:title "Dr." .
+
+<http://leipzig-data.de/Data/Person/Herrmann_Anne>
+    a foaf:Person ;
+    foaf:name "Anne Herrmann" .
+
+<http://leipzig-data.de/Data/Person/Hintze_Steffen>
+    a foaf:Person ;
+    foaf:name "Steffen Hintze" .
+
+<http://leipzig-data.de/Data/Person/Hoenemann_Tobias>
+    a foaf:Person ;
+    foaf:name "Tobias Hönemann" .
+
+<http://leipzig-data.de/Data/Person/Hoernig_Karin>
+    a foaf:Person ;
+    foaf:name "Karin Hörnig" .
+
+<http://leipzig-data.de/Data/Person/Holunder_Alma>
+    a foaf:Person ;
+    foaf:name "Alma Holunder" .
+
+<http://leipzig-data.de/Data/Person/Hoyer_Stephan>
+    a foaf:Person ;
+    foaf:name "Stephan Hoyer" .
+
+<http://leipzig-data.de/Data/Person/Huebner_Elke>
+    a foaf:Person ;
+    foaf:name "Elke Hübner" .
+
+<http://leipzig-data.de/Data/Person/Hufenreuter_Henry>
+    a foaf:Person ;
+    foaf:name "Henry Hufenreuter" .
+
+<http://leipzig-data.de/Data/Person/Ihring_Lars>
+    a foaf:Person ;
+    foaf:name "Lars Ihring" .
+
+<http://leipzig-data.de/Data/Person/Jaeger_Alexander>
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
+    a foaf:Person ;
+    foaf:name "Alexander Jäger" .
+
+<http://leipzig-data.de/Data/Person/Jaehnig_HeinrichMoritz>
+    a foaf:Person ;
+    foaf:name "Heinrich Moritz Jähnig" .
+
+<http://leipzig-data.de/Data/Person/Johannes_Uta>
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+    a foaf:Person ;
+    rdfs:comment "Sachbearbeiterin Medien- und Kreativwirtschaft im Amt für Wirtschaftsförderung" ;
+    foaf:name "Uta Johannes" .
+
+<http://leipzig-data.de/Data/Person/Kaerger_Joerg>
+    a foaf:Person ;
+    foaf:name "Jörg Kärger" ;
+    foaf:title "Prof. Dr." .
+
+<http://leipzig-data.de/Data/Person/Karwen_Bernd>
+    a foaf:Person ;
+    foaf:name "Bernd Karwen" .
+
+<http://leipzig-data.de/Data/Person/Keck_Lisa>
+    a foaf:Person ;
+    rdfs:comment "Geschäftsstellenleiterin des Netzwerks \"Energie und Umwelt\" e.V." ;
+    foaf:name "Lisa Keck" .
+
+<http://leipzig-data.de/Data/Person/Keppler_Ralph>
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> ;
+    a foaf:Person ;
+    foaf:homepage <http://www.civitas-botschafter.de/Keppler.htm> ;
+    foaf:name "Ralph Keppler" .
+
+<http://leipzig-data.de/Data/Person/Kilchert_Manfred>
+    a foaf:Person ;
+    foaf:name "Prof. Dipl.-Ing. Manfred Kilchert" .
+
+<http://leipzig-data.de/Data/Person/Klauer_AnnaKatharina>
+    a foaf:Person ;
+    foaf:name "Anna-Katharina Klauer" .
+
+<http://leipzig-data.de/Data/Person/Kleshch_Irina>
+    ld:relatedTo <http://leipzig-data.de/Data/Firma/evermind> ;
+    a foaf:Person ;
+    foaf:name "Irina Kleshch" .
+
+<http://leipzig-data.de/Data/Person/Klimesch_Holger>
+    a foaf:Person ;
+    foaf:name "Holger Klimesch" .
+
+<http://leipzig-data.de/Data/Person/Knospe_Uta>
+    ld:relatedTo <http://leipzig-data.de/Data/Buergerverein/Messemagistrale> ;
+    a foaf:Person ;
+    foaf:name "Uta Knospe" .
+
+<http://leipzig-data.de/Data/Person/Koch_Jan>
+    ld:hasURL <http://www.drehfreibier.de/> ;
+    a foaf:Person ;
+    foaf:name "Jan Koch" .
+
+<http://leipzig-data.de/Data/Person/Koenig_KarlFriedrich>
+    a foaf:Person ;
+    foaf:name "Karl-Friedrich König" .
+
+<http://leipzig-data.de/Data/Person/Koenig_Wolfgang>
+    a foaf:Person ;
+    foaf:name "Prof. Wolfgang König" .
+
+<http://leipzig-data.de/Data/Person/Koerner_Annette>
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin UIZ Förderverein" ;
+    foaf:name "Annette Körner" .
+
+<http://leipzig-data.de/Data/Person/Kohl_Ralf>
+    a foaf:Person ;
+    foaf:name "Ralf Kohl" .
+
+<http://leipzig-data.de/Data/Person/Kramer_Anais>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/Zukunftsakademie> ;
+    a foaf:Person ;
+    rdfs:comment "Leiterin der GS der Zukunftsakademie" ;
+    foaf:name "Anais Kramer" .
+
+<http://leipzig-data.de/Data/Person/Krause_Tanja>
+    a foaf:Person ;
+    rdfs:comment "UFZ Department Umwelt- und Planungsrecht" ;
+    foaf:name "Tanja Krause" .
+
+<http://leipzig-data.de/Data/Person/Kretzschmar_Maxi>
+    a foaf:Person ;
+    foaf:name "Maxi Kretzschmar" .
+
+<http://leipzig-data.de/Data/Person/Krueger_Annett>
+    a foaf:Person ;
+    foaf:name "Dr. Annett Krüger" .
+
+<http://leipzig-data.de/Data/Person/Kuechler_Romy>
+    a foaf:Person ;
+    foaf:name "Romy Küchler" .
+
+<http://leipzig-data.de/Data/Person/Kuehne_Peter>
+    a foaf:Person ;
+    rdfs:comment "GF der Lecos" ;
+    foaf:name "Peter Kühne" .
+
+<http://leipzig-data.de/Data/Person/Lange_Torsten>
+    a foaf:Person ;
+    rdfs:comment "Leiter UFZ-Schülerlabor" ;
+    foaf:name "Dr. Torsten Lange" .
+
+<http://leipzig-data.de/Data/Person/Lapoen_Genka>
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig> ;
+    a foaf:Person ;
+    rdfs:comment "Gleichstellungsbeauftragte der Stadt Leipzig" ;
+    foaf:name "Genka Lapön" .
+
+<http://leipzig-data.de/Data/Person/Lehmann_Olaf>
+    a foaf:Person ;
+    rdfs:comment "IHK zu Leipzig" ;
+    foaf:name "Olaf Lehmann" .
+
+<http://leipzig-data.de/Data/Person/Liebelt_Ute>
+    a foaf:Person ;
+    foaf:name "Ute Liebelt" .
+
+<http://leipzig-data.de/Data/Person/Lindner_Bjoern>
+    a foaf:Person ;
+    foaf:name "Björn Lindner" .
+
+<http://leipzig-data.de/Data/Person/Lindner_Lothar>
+    a foaf:Person ;
+    rdfs:comment "Planungsbüro für Energie und Umwelt" ;
+    foaf:name "Lothar Lindner" ;
+    foaf:title "Dipl.-Ing." .
+
+<http://leipzig-data.de/Data/Person/Lingk_Thomas>
+    a foaf:Person ;
+    rdfs:comment "Abteilungsleiter und stellv. Vorsitzender des Netzwerk Energie und Umwelt e.V." ;
+    foaf:name "Thomas Lingk" .
+
+<http://leipzig-data.de/Data/Person/Maennig_Uwe>
+    a foaf:Person ;
+    rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" ;
+    foaf:name "Uwe Männig" .
+
+<http://leipzig-data.de/Data/Person/Maruhn_Olaf>
+    a foaf:Person ;
+    foaf:name "Olaf Maruhn" .
+
+<http://leipzig-data.de/Data/Person/Meier_Katja>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    a foaf:Person ;
+    foaf:name "Katja Meier" .
+
+<http://leipzig-data.de/Data/Person/Meiler_Monika>
+    a foaf:Person ;
+    foaf:name "Dr. Monika Meiler" .
+
+<http://leipzig-data.de/Data/Person/Meiss_KarlMichael>
+    a foaf:Person ;
+    foaf:name "Karl-Michael Meiß" ;
+    foaf:title "Dr." .
+
+<http://leipzig-data.de/Data/Person/Messerschmidt_Elk>
+    a foaf:Person ;
+    rdfs:comment "Leiter TÖP Rabutz" ;
+    foaf:name "Dr. Elk Messerschmidt" .
+
+<http://leipzig-data.de/Data/Person/Metschies_Juliane>
+    a foaf:Person ;
+    rdfs:comment "JHA-Koordinatorin Planungsraum" ;
+    foaf:name "Juliane Metschies" .
+
+<http://leipzig-data.de/Data/Person/Metz_Susanne>
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
+    a foaf:Person ;
+    rdfs:comment "Amtsleiterin der städtischen Bibliotheken (Amtsblatt, 29.06.2013)" ;
+    foaf:name "Susanne Metz" .
+
+<http://leipzig-data.de/Data/Person/Meyer_Rene>
+    a foaf:Person ;
+    foaf:name "René Meyer" .
+
+<http://leipzig-data.de/Data/Person/Moeckel_Christian>
+    a foaf:Person ;
+    foaf:name "Arne Ackermann" .
+
+<http://leipzig-data.de/Data/Person/Moeller_Juergen>
+    a foaf:Person ;
+    foaf:name "Jürgen Möller" .
+
+<http://leipzig-data.de/Data/Person/Moritz_Anja>
+    a foaf:Person ;
+    rdfs:comment "JHA-Koordinatorin Planungsraum" ;
+    foaf:name "Anja Moritz" .
+
+<http://leipzig-data.de/Data/Person/Mueller_Doris>
+    a foaf:Person ;
+    foaf:name "Doris Müller" .
+
+<http://leipzig-data.de/Data/Person/Mueller_Florian>
+    a foaf:Person ;
+    foaf:name "Florian Müller" .
+
+<http://leipzig-data.de/Data/Person/Nagler_Petra>
+    a foaf:Person ;
+    rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" ;
+    foaf:name "Petra Nagler" .
+
+<http://leipzig-data.de/Data/Person/Niggemeyer_Joachim>
+    ld:hasURL <http://www.niggemeyer-art.de> ;
+    a foaf:Person ;
+    foaf:name "Joachim R. Niggemeyer" .
+
+<http://leipzig-data.de/Data/Person/Nuernberger_Tabea>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM> ;
+    a foaf:Person ;
+    foaf:name "Tabea Nürnberger" .
+
+<http://leipzig-data.de/Data/Person/Pauli_Stev>
+    a foaf:Person ;
+    foaf:name "Stev Pauli" .
+
+<http://leipzig-data.de/Data/Person/PeeckPreimuss_Attila>
+    ld:relatedTo <http://leipzig-data.de/Data/DGB/Jugend> ;
+    a foaf:Person ;
+    foaf:name "Attila Peeck-Preimus" .
+
+<http://leipzig-data.de/Data/Person/Petschauer_Susanne>
+    a foaf:Person ;
+    foaf:name "Susanne Petschauer" .
+
+<http://leipzig-data.de/Data/Person/Petzold_Matthias>
+    a foaf:Person ;
+    foaf:name "Matthias Petzold" .
+
+<http://leipzig-data.de/Data/Person/Petzschler_Ines>
+    a foaf:Person ;
+    foaf:name "Ines Petzschler" .
+
+<http://leipzig-data.de/Data/Person/Petzschler_Uwe>
+    a foaf:Person ;
+    foaf:name "Uwe Petzschler" .
+
+<http://leipzig-data.de/Data/Person/PhuongThaoDinhVan>
+    ld:hasURL <http://www.leipzig.ihk.de/desktopdefault.aspx/tabid-248/14_read-5985/date-23723/> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/IHK> ;
+    a foaf:Person ;
+    foaf:name "Phuong Thao Dinh Van" .
+
+<http://leipzig-data.de/Data/Person/Pieper_Katrin>
+    a foaf:Person ;
+    foaf:name "Katrin Pieper" .
+
+<http://leipzig-data.de/Data/Person/Plaenitz_Sven>
+    a foaf:Person ;
+    foaf:name "Sven Plänitz" .
+
+<http://leipzig-data.de/Data/Person/Pohl_Anja>
+    a foaf:Person ;
+    rdfs:comment "Organisation der Kinderuni" ;
+    foaf:name "Anja Pohl" .
+
+<http://leipzig-data.de/Data/Person/Praetor_Sandra>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/InfAI> ;
+    a foaf:Person ;
+    foaf:name "Sandra Praetor" .
+
+<http://leipzig-data.de/Data/Person/Pretsch_Irina>
+    ld:relatedTo <http://leipzig-data.de/Data/Firma/BBW> ;
+    a foaf:Person ;
+    foaf:name "Irina Pretsch" .
+
+<http://leipzig-data.de/Data/Person/Quapp_Wolfgang>
+    a foaf:Person ;
+    foaf:name "Dr. Wolfgang Quapp" .
+
+<http://leipzig-data.de/Data/Person/Quester_Roland>
+    a foaf:Person ;
+    rdfs:comment "Leiter Umweltbibliothek" ;
+    foaf:name "Roland Quester" .
+
+<http://leipzig-data.de/Data/Person/Quiring_Lars>
+    a foaf:Person ;
+    foaf:name "Lars Quiring" .
+
+<http://leipzig-data.de/Data/Person/Rademacher_HansBert>
+    a foaf:Person ;
+    foaf:name "Prof. Dr. Hans-Bert Rademacher" .
+
+<http://leipzig-data.de/Data/Person/Raschke_Roman>
+    a foaf:Person ;
+    rdfs:comment "BürgerVerein Leutzsch e.V." ;
+    foaf:name "Roman Raschke" .
+
+<http://leipzig-data.de/Data/Person/Raue_Manfred>
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführer VDE Leipzig/Halle" ;
+    foaf:name "Manfred Raue" .
+
+<http://leipzig-data.de/Data/Person/Rehm_Axel>
+    a foaf:Person ;
+    foaf:name "Axel Rehm" .
+
+<http://leipzig-data.de/Data/Person/Reiner_Oliver>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/Villa>, <http://leipzig-data.de/Data/Verein/LeISA> ;
+    a foaf:Person .
+
+<http://leipzig-data.de/Data/Person/Reinhardt_Sylvi>
+    a foaf:Person ;
+    foaf:name "Sylvi Reinhardt" .
+
+<http://leipzig-data.de/Data/Person/Reissmann_Daniel>
+    a foaf:Person ;
+    foaf:name "Daniel Reißmann" .
+
+<http://leipzig-data.de/Data/Person/Reschke_Katrin>
+    a foaf:Person ;
+    rdfs:comment "Leiterin Dölitzer Wassermühle" ;
+    foaf:name "Katrin Reschke" .
+
+<http://leipzig-data.de/Data/Person/Reschke_Volker>
+    a foaf:Person ;
+    rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." ;
+    foaf:name "Volker Reschke" .
+
+<http://leipzig-data.de/Data/Person/Retznick_Laura>
+    ld:relatedTo <http://leipzig-data.de/Data/KE/DiakonischesWerk> ;
+    a foaf:Person ;
+    foaf:name "Laura Retznick" .
+
+<http://leipzig-data.de/Data/Person/Rhinow_Solvejg>
+    a foaf:Person ;
+    foaf:name "Dr. Solvejg Rhinow" .
+
+<http://leipzig-data.de/Data/Person/Rode_Michele>
+    a foaf:Person ;
+    rdfs:comment "Programm MINT-Individual" ;
+    foaf:name "Michéle Rode" .
+
+<http://leipzig-data.de/Data/Person/Roeser_Sascha>
+    a foaf:Person ;
+    foaf:name "Sascha Roeser" .
+
+<http://leipzig-data.de/Data/Person/Roth_Dorit>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    a foaf:Person ;
+    foaf:name "Dorit Roth" .
+
+<http://leipzig-data.de/Data/Person/Sauerland_Antje>
+    a foaf:Person ;
+    foaf:name "Antje Sauerland" .
+
+<http://leipzig-data.de/Data/Person/Schaetzl_Matthias>
+    a foaf:Person ;
+    foaf:name "Matthias Schätzl" .
+
+<http://leipzig-data.de/Data/Person/Schilling_Peter>
+    a foaf:Person ;
+    rdfs:comment "Leiter AZ Schkeuditz" ;
+    foaf:name "Peter Schilling" .
+
+<http://leipzig-data.de/Data/Person/Schirmer_Matthias>
+    a foaf:Person ;
+    foaf:name "Matthias Schirmer" .
+
+<http://leipzig-data.de/Data/Person/Schlupp_Peter>
+    a foaf:Person ;
+    foaf:name "Peter Schlupp" .
+
+<http://leipzig-data.de/Data/Person/Schmidt_David>
+    ld:hasURL <https://www.facebook.com/Tanzagentur> ;
+    a foaf:Person ;
+    rdfs:comment "Reality (Tanzagentur EU i.G.e.V.)" ;
+    foaf:name "David Schmidt" .
+
+<http://leipzig-data.de/Data/Person/Schmidt_Rosemarie>
+    a foaf:Person ;
+    rdfs:comment "Landesgeschäftsführerin MNU Sachsen" ;
+    foaf:name "Rosemarie Schmidt" .
+
+<http://leipzig-data.de/Data/Person/Schneider_Carla>
+    a foaf:Person ;
+    foaf:name "Carla Schneider" .
+
+<http://leipzig-data.de/Data/Person/Schoeneberg_Torsten>
+    a foaf:Person ;
+    foaf:name "Torsten Schöneberg" ;
+    foaf:title "Prof. Dr." .
+
+<http://leipzig-data.de/Data/Person/Schoetter_Andrea>
+    ld:relatedTo <http://leipzig-data.de/Data/IHK-Leipzig> ;
+    a foaf:Person ;
+    foaf:name "Andrea Schötter" .
+
+<http://leipzig-data.de/Data/Person/Schroth_Johannes>
+    a foaf:Person ;
+    foaf:name "Johannes Schroth" .
+
+<http://leipzig-data.de/Data/Person/Schueler_Axel>
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender LSGM" ;
+    foaf:name "Dr. Axel Schüler" .
+
+<http://leipzig-data.de/Data/Person/Schueler_Jana>
+    ld:relatedTo <http://leipzig-data.de/Data/Firma/BBW>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    a foaf:Person ;
+    foaf:name "Jana Schüler" .
+
+<http://leipzig-data.de/Data/Person/Schulze_Susanne>
+    a foaf:Person ;
+    rdfs:comment "MINT-Beauftrage der BA Leipzig" ;
+    foaf:name "Susanne Schulze" .
+
+<http://leipzig-data.de/Data/Person/Schulze_Tristan>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/GfZK> ;
+    a foaf:Person ;
+    rdfs:comment "Webdesigner für die GfZK" ;
+    foaf:name "Tristan Schulze" .
+
+<http://leipzig-data.de/Data/Person/Schwarze_Wolfgang>
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." ;
+    foaf:name "Wolfgang Schwarze" .
+
+<http://leipzig-data.de/Data/Person/Schweikart_Rudolf>
+    a foaf:Person ;
+    foaf:name "Rudolf Schweikart" .
+
+<http://leipzig-data.de/Data/Person/Seidel_Franka>
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" ;
+    foaf:name "Franka Seidel" .
+
+<http://leipzig-data.de/Data/Person/Seik_Lena>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/GfZK> ;
+    a foaf:Person ;
+    rdfs:comment "Leitung Kunstvermittlung der GfZK" ;
+    foaf:name "Lena Seik" .
+
+<http://leipzig-data.de/Data/Person/Senn_Britta>
+    a foaf:Person ;
+    foaf:name "Britta Senn" .
+
+<http://leipzig-data.de/Data/Person/Stadler_Peter>
+    ld:hasURL <http://www.bioinf.uni-leipzig.de/> ;
+    a foaf:Person ;
+    rdfs:comment "Professor für Bioinformatik an der Uni Leipzig" ;
+    foaf:name "Prof. Peter F. Stadler" .
+
+<http://leipzig-data.de/Data/Person/Steudel_Claudia>
+    a foaf:Person ;
+    rdfs:comment "JHA-Koordinatorin Planungsraum" ;
+    foaf:name "Claudia Steudel" .
+
+<http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA>
+    a foaf:Person ;
+    rdfs:comment "Vorsitzender des NuKLA e. V." ;
+    foaf:name "Wolfgang E.A. Stoiber" .
+
+<http://leipzig-data.de/Data/Person/Strauss_Holger>
+    a foaf:Person ;
+    foaf:name "Holger Strauß" ;
+    foaf:title "Dr." .
+
+<http://leipzig-data.de/Data/Person/Teichert_Georg>
+    a foaf:Person ;
+    rdfs:comment "Gleichstellungsbeauftragter der Uni Leipzig" ;
+    foaf:name "Georg Teichert" .
+
+<http://leipzig-data.de/Data/Person/Teutsch_Georg>
+    a foaf:Person ;
+    rdfs:comment "Direktor UFZ (Stand 2010)" ;
+    foaf:name "Prof. Dr. Georg Teutsch" .
+
+<http://leipzig-data.de/Data/Person/Thate_Stefanie>
+    a foaf:Person ;
+    foaf:name "Stefanie Thate" .
+
+<http://leipzig-data.de/Data/Person/Thielemann_Lutz>
+    ld:relatedTo <http://leipzig-data.de/Data/Firma/WRL> ;
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführer der WRL ab 15.08.2013 (Amtsblatt, 29.06.2013)" ;
+    foaf:name "Lutz Thielemann" .
+
+<http://leipzig-data.de/Data/Person/Tischer_Beate>
+    a foaf:Person ;
+    foaf:name "Beate Tischer" .
+
+<http://leipzig-data.de/Data/Person/Tobaben_JoernHeinrich>
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführer der Wirtschaftsinitiative Mitteldeutschland" ;
+    foaf:name "Jörn-Heinrich Tobaben" .
+
+<http://leipzig-data.de/Data/Person/TraegerNestler_Angelika>
+    a foaf:Person ;
+    rdfs:comment "Geschäftsführerin GaraGe gGmbH" ;
+    foaf:name "Dr. Angelika Träger-Nestler" .
+
+<http://leipzig-data.de/Data/Person/Treschok_Katja>
+    a foaf:Person ;
+    foaf:name "Katja Treschok" .
+
+<http://leipzig-data.de/Data/Person/Tutar_Katrin>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/Caktus> ;
+    a foaf:Person ;
+    foaf:name "Katrin Tutar" .
+
+<http://leipzig-data.de/Data/Person/Uhlmann_Matthias>
+    a foaf:Person ;
+    rdfs:comment "JHA-Koordinator Planungsraum" ;
+    foaf:name "Matthias Uhlmann" .
+
+<http://leipzig-data.de/Data/Person/Ulrich_Ruediger>
+    a foaf:Person ;
+    rdfs:comment "stellv. Vorsitzender JHA" ;
+    foaf:name "Rüdiger Ulrich" .
+
+<http://leipzig-data.de/Data/Person/Unckell_Kornelius>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/KreativesLeipzig> ;
+    a foaf:Person ;
+    foaf:name "Kornelius Unckell" .
+
+<http://leipzig-data.de/Data/Person/Vetterlein_Guenter>
+    a foaf:Person ;
+    foaf:name "Günter Vetterlein" .
+
+<http://leipzig-data.de/Data/Person/Wagner_Thomas>
+    a foaf:Person ;
+    foaf:name "Thomas Wagner" .
+
+<http://leipzig-data.de/Data/Person/Waldmann_Johannes>
+    ld:hasURL <http://www.imn.htwk-leipzig.de/~waldmann/> ;
+    a foaf:Person ;
+    rdfs:comment "Professor für Informatik an der HTKW Leipzig" ;
+    foaf:name "Prof. Johannes Waldmann" .
+
+<http://leipzig-data.de/Data/Person/Walter_Roland>
+    a foaf:Person ;
+    foaf:name "Roland Walter" ;
+    foaf:title "Dipl.-Päd." .
+
+<http://leipzig-data.de/Data/Person/Warkus_Hartmut>
+    a foaf:Person ;
+    rdfs:comment "2012 verstorben", "Geschäftsführer der ComputerSpielSchule" ;
+    foaf:name "Prof. Dr. Hartmut Warkus" .
+
+<http://leipzig-data.de/Data/Person/Weise_Joerg>
+    ld:hasURL "http://www.public-confidence.de" ;
+    a foaf:Person ;
+    foaf:name "Jörg Weise" .
+
+<http://leipzig-data.de/Data/Person/Weissgerber_Kerstin>
+    ld:hasURL <http://www.aurel-marketing.de> ;
+    a foaf:Person ;
+    rdfs:comment "Aurel Marketing" ;
+    foaf:name "Kerstin Weißgerber" .
+
+<http://leipzig-data.de/Data/Person/Wieland_Sabine>
+    a foaf:Person ;
+    rdfs:comment "Sprecherin der Regionalgruppe Leipzig der GI und des MINT-Netzwerks Leipzig " ;
+    foaf:name "Prof. Dr. Sabine Wieland" .
+
+<http://leipzig-data.de/Data/Person/Will_Judith>
+    foaf:name "Judith Will" .
+
+<http://leipzig-data.de/Data/Person/Willkomm_Jan>
+    a foaf:Person ;
+    foaf:name "Jan Willkomm" .
+
+<http://leipzig-data.de/Data/Person/Wohlfahrt_Fabian>
+    a foaf:Person ;
+    foaf:name "Fabian Wohlfahrt" .
+
+<http://leipzig-data.de/Data/Person/Wolfram_Franziska>
+    ld:relatedTo <http://leipzig-data.de/Data/KE/EvRefKirche> ;
+    a foaf:Person ;
+    foaf:name "Franziska Wolfram" .
+
+<http://leipzig-data.de/Data/Person/Wozniak_Klaus>
+    a foaf:Person ;
+    rdfs:comment "Fakultät Maschinenbau und Energietechnik der HTWK Leipzig" ;
+    foaf:name "Klaus Wozniak" ;
+    foaf:title "Prof. Dr.-Ing. habil." .
+
+<http://leipzig-data.de/Data/Person/Wuerzberger_Nadine>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/FAIRbund> ;
+    a foaf:Person ;
+    foaf:name "Nadine Würzberger" .
+
+<http://leipzig-data.de/Data/Person/Wummel_Juergen>
+    a foaf:Person ;
+    foaf:name "Jürgen Wummel" ;
+    foaf:title "Dr." .
+
+<http://leipzig-data.de/Data/Person/Wunderlich_Sabine>
+    a foaf:Person ;
+    foaf:name "Sabine Wunderlich" .
+
+<http://leipzig-data.de/Data/Person/Zippe_Annett>
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/Kinderschutzbund> ;
+    a foaf:Person ;
+    foaf:name "Annett Zippe" .
+
+<http://leipzig-data.de/Data/Person/vonJan_Teresa>
+    ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/365-teresa> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    a foaf:Person ;
+    foaf:name "Teresa von Jan" .
+
+<http://leipzig-data.de/Data/Person/vonNessler_Georg>
+    a foaf:Person ;
+    foaf:name "Georg von Nessler" .
+
+<http://leipzig-data.de/Data/Personen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Personen" .
+
+foaf:Person
+    a owl:Class ;
+    rdfs:label "Person" .
 
-<http://leipzig-data.de/Data/Person/Albert_Katrin> a foaf:Person ;
-                                                   foaf:name "Katrin Albert" ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/Firma/BusinessIntelligence> .
-
-<http://leipzig-data.de/Data/Person/Babel_Wolfgang> a foaf:Person ;
-                                                    foaf:name "Wolfgang Babel" ;
-                                                    foaf:title "Prof. Dr." .
-
-<http://leipzig-data.de/Data/Person/Bachmann_Lars> a foaf:Person ;
-                                                   foaf:name "Lars Bachmann" .
-
-<http://leipzig-data.de/Data/Person/Baesler_Detlef> a foaf:Person ;
-                                                    rdfs:comment "Vorsitzender des Fördervereins Auwaldstation und auch Schlosspark Lützschena e.V. Leipzig" ;
-                                                    foaf:name "Detlef Bäsler" .
-
-<http://leipzig-data.de/Data/Person/Bamberg_Stefanie> a foaf:Person ;
-                                                      foaf:name "Stefanie Bamberg" .
-
-<http://leipzig-data.de/Data/Person/Benedix_Katrin> a foaf:Person ;
-                                                    rdfs:comment "SSA Schumann-Mittelschule" ;
-                                                    foaf:name "Katrin Benedix" ;
-                                                    ld:relatedTo <http://leipzig-data.de/Data/KE/DiakonischesWerk> .
-
-<http://leipzig-data.de/Data/Person/Berg_Dennis> a foaf:Person ;
-                                                 foaf:name "Dennis Berg" .
-
-<http://leipzig-data.de/Data/Person/Bergmann_Thommy> a foaf:Person ;
-                                                     ld:hasURL <http://www.mandalari.de> ;
-                                                     foaf:name "Thommy Bergmann" ;
-                                                     ld:relatedTo <http://leipzig-data.de/Data/Ort/MandalaSpieleck> .
-
-<http://leipzig-data.de/Data/Person/Bernard_Ulrike> a foaf:Person ;
-                                                    foaf:name "Ulrike Bernard" ;
-                                                    ld:relatedTo <http://leipzig-data.de/Data/Ort/HausSteinstrasse> .
-
-<http://leipzig-data.de/Data/Person/Bielig_Sven> a foaf:Person ;
-                                                 foaf:name "Sven Bielig" ;
-                                                 ld:relatedTo <http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau>, <http://leipzig-data.de/Data/Verein/UrbanSouls>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> .
-
-<http://leipzig-data.de/Data/Person/Boehr_Annett> a foaf:Person ;
-                                                  rdfs:comment "SSA Petri-Mittelschule" ;
-                                                  foaf:name "Annett Böhr" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/Verein/RAA.Leipzig> .
-
-<http://leipzig-data.de/Data/Person/Boran_Roland> a foaf:Person ;
-                                                  rdfs:comment "Projektleiter ASG-Schülerakademie" ;
-                                                  foaf:name "Dr. Roland Boran" .
-
-<http://leipzig-data.de/Data/Person/Both_Jana> a foaf:Person ;
-                                               rdfs:comment "Organisierte bis 2009 die Kinderuni. Inzwischen aus Leipzig weggezogen." ;
-                                               foaf:name "Jana Both" .
-
-<http://leipzig-data.de/Data/Person/BrendAmour_Nicola> a foaf:Person ;
-                                                       foaf:name "Nicola Bren d‘Amour" .
-
-<http://leipzig-data.de/Data/Person/Brier_Leonhard> a foaf:Person ;
-                                                    foaf:name "Leonhard Brier" ;
-                                                    foaf:homepage <http://www.verbundnetz-der-waerme.de/v201208/ccc-a-572.html> .
-
-<http://leipzig-data.de/Data/Person/BuechelBernhard_Aaron> a foaf:Person ;
-                                                           foaf:name "Aaron Büchel-Bernhard" ;
-                                                           ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM> .
-
-<http://leipzig-data.de/Data/Person/Buettner_Torsten> a foaf:Person ;
-                                                      foaf:name "Torsten Büttner" .
-
-<http://leipzig-data.de/Data/Person/Burger_Petra> a foaf:Person ;
-                                                  foaf:name "Petra Burger" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> .
-
-<http://leipzig-data.de/Data/Person/Darlatt_Kathrin> a foaf:Person ;
-                                                     rdfs:comment "Gleichstellungspolitische Referentin Stadt Leipzig" ;
-                                                     foaf:name "Kathrin Darlatt" ;
-                                                     ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig> .
-
-<http://leipzig-data.de/Data/Person/Diebler_Peggy> a foaf:Person ;
-                                                   rdfs:comment "JHA-Koordinatorin Planungsraum" ;
-                                                   foaf:name "Peggy Diebler" ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/Ort/Stadtteilladen.Gruenau> .
-
-<http://leipzig-data.de/Data/Person/Dittrich_Sarah> a foaf:Person ;
-                                                    rdfs:comment "Programm MINT-Individual" ;
-                                                    foaf:name "Sarah Dittrich" .
-
-<http://leipzig-data.de/Data/Person/Duschinger_Robert> a foaf:Person ;
-                                                       rdfs:comment "stellv. Vorsitzender des Stadtelternrats (2013 gewählt)" ;
-                                                       foaf:name "Robert Duschinger" .
-
-<http://leipzig-data.de/Data/Person/Eisenberg_Wolfgang> a foaf:Person ;
-                                                        foaf:name "Wolfgang Eisenberg" ;
-                                                        foaf:title "Dr." .
-
-<http://leipzig-data.de/Data/Person/Elsaesser_Ralf> a foaf:Person ;
-                                                    foaf:name "Ralf Elsässer" .
-
-<http://leipzig-data.de/Data/Person/Engel_Heike> a foaf:Person ;
-                                                 rdfs:comment "Geschäftsführerin Anker e.V." ;
-                                                 foaf:name "Heike Engel" .
-
-<http://leipzig-data.de/Data/Person/Faehse_Robby> a foaf:Person ;
-                                                  foaf:name "Robby Faehse" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendfeuerwehr> .
-
-<http://leipzig-data.de/Data/Person/Felgentreff_Nadine> a foaf:Person ;
-                                                        foaf:name "Nadine Felgentreff" .
-
-<http://leipzig-data.de/Data/Person/Fleckenstein_Heike> a foaf:Person ;
-                                                        rdfs:comment "stellv. Vorsitzende des Stadtelternrats (2013 gewählt)" ;
-                                                        foaf:name "Heike Fleckenstein" .
-
-<http://leipzig-data.de/Data/Person/Friedrich_Alexandra> a foaf:Person ;
-                                                         rdfs:comment "Leitung Kunstvermittlung der GfZK" ;
-                                                         foaf:name "Alexandra Friedrich" ;
-                                                         ld:relatedTo <http://leipzig-data.de/Data/Ort/GfZK> .
-
-<http://leipzig-data.de/Data/Person/Friedrich_Marga> a foaf:Person ;
-                                                     foaf:name "Marga Friedrich" .
-
-<http://leipzig-data.de/Data/Person/Fries_Kerstin> a foaf:Person ;
-                                                   foaf:name "Kerstin Fries" ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/Verein/Verein.FFJ> .
-
-<http://leipzig-data.de/Data/Person/Fritzsche_Nicole> a foaf:Person ;
-                                                      foaf:name "Nicole Fritzsche" ;
-                                                      ld:relatedTo <http://leipzig-data.de/Data/Verein/KinderVereinigung.Leipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> .
-
-<http://leipzig-data.de/Data/Person/Fueting_Manfred> a foaf:Person ;
-                                                     foaf:name "Manfred Füting" ;
-                                                     foaf:title "Prof. Dr." .
-
-<http://leipzig-data.de/Data/Person/Fuhrmann_Sabine> a foaf:Person ;
-                                                     foaf:name "Sabine Fuhrmann" ;
-                                                     ld:relatedTo <http://leipzig-data.de/Data/Unternehmen/SpiritLegal> .
-
-<http://leipzig-data.de/Data/Person/Geffken_Michael> a foaf:Person ;
-                                                     foaf:name "Michael Geffken" ;
-                                                     ld:relatedTo <http://leipzig-data.de/Data/Ort/SchoolOfMedia> .
-
-<http://leipzig-data.de/Data/Person/Geisler_Andreas> a foaf:Person ;
-                                                     rdfs:comment "Vorsitzender des Stadtelternrats (2013 gewählt)" ;
-                                                     foaf:name "Andreas Geisler" .
-
-<http://leipzig-data.de/Data/Person/Geissler_Maria> foaf:name "Maria Geißler" .
-
-<http://leipzig-data.de/Data/Person/Geng_Tobias> a foaf:Person ;
-                                                 foaf:name "Tobias Geng" ;
-                                                 ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> .
-
-<http://leipzig-data.de/Data/Person/Georgi_Gunnar> a foaf:Person ;
-                                                   ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/80-gunnar> ;
-                                                   foaf:name "Gunnar Georgi" ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendring> .
-
-<http://leipzig-data.de/Data/Person/Giersdorf_Jens> a foaf:Person ;
-                                                    foaf:name "Jens Giersdorf" .
-
-<http://leipzig-data.de/Data/Person/Gleichmann_Tina> a foaf:Person ;
-                                                     foaf:name "Tina Gleichmann" ;
-                                                     ld:relatedTo <http://leipzig-data.de/Data/Ort/HausSteinstrasse> .
-
-<http://leipzig-data.de/Data/Person/Glowacki_Romann> a foaf:Person ;
-                                                     foaf:name "Romann Glowacki" .
-
-<http://leipzig-data.de/Data/Person/Graebe_HansGert> a foaf:Person ;
-                                                     foaf:name "Prof. Dr. Hans-Gert Gräbe" .
-
-<http://leipzig-data.de/Data/Person/Graf_Corinna> a foaf:Person ;
-                                                  rdfs:comment "GF des Stadtjugendrings" ;
-                                                  ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/78-corinna> ;
-                                                  foaf:name "Corinna Graf" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendring> .
-
-<http://leipzig-data.de/Data/Person/Gregor_Jana> a foaf:Person ;
-                                                 rdfs:comment "MINT-Beauftragte des MPI MIS" ;
-                                                 foaf:name "Jana Gregor" .
-
-<http://leipzig-data.de/Data/Person/Grosser_Katja> a foaf:Person ;
-                                                   foaf:name "Katja Großer" .
-
-<http://leipzig-data.de/Data/Person/Gruener_Andre> a foaf:Person ;
-                                                   rdfs:comment "IHK zu Leipzig" ;
-                                                   foaf:name "André Grüner" .
-
-<http://leipzig-data.de/Data/Person/Gutschale_Anke> a foaf:Person ;
-                                                    rdfs:comment "Organisation der Kinderuni" ;
-                                                    foaf:name "Anke Gutschale" .
-
-<http://leipzig-data.de/Data/Person/Haenel_Andreas> a foaf:Person ;
-                                                    foaf:name "Andreas Hänel" .
-
-<http://leipzig-data.de/Data/Person/Haenisch_Wolfgang> a foaf:Person ;
-                                                       foaf:name "Wolfgang Hänisch" .
-
-<http://leipzig-data.de/Data/Person/Haensch_Solveig> a foaf:Person ;
-                                                     rdfs:comment "JHA-Koordinatorin Planungsraum" ;
-                                                     foaf:name "Solveig Hänsch" .
-
-<http://leipzig-data.de/Data/Person/Haensel_Annegret> a foaf:Person ;
-                                                      rdfs:comment "Geschäftsführerin Unikatum gGmbH" ;
-                                                      foaf:name "Annegret Hänsel" ;
-                                                      ld:relatedTo <http://leipzig-data.de/Data/Ort/Unikatum>, <http://leipzig-data.de/Data/Firma/Unikatum> .
-
-<http://leipzig-data.de/Data/Person/Haensgen_Christoph> a foaf:Person ;
-                                                        ld:hasURL <http://www.happy-robots.de> ;
-                                                        foaf:name "Christoph Hänsgen" .
-
-<http://leipzig-data.de/Data/Person/Hahn_Michael> a foaf:Person ;
-                                                  rdfs:comment "Vereinsvorsitzender LJBW" ;
-                                                  foaf:name "Michael Hahn" .
-
-<http://leipzig-data.de/Data/Person/Hamel_Corinna> a foaf:Person ;
-                                                   rdfs:comment "Programm MINT-Individual" ;
-                                                   foaf:name "Corinna Hamel" .
-
-<http://leipzig-data.de/Data/Person/Hantschick_Ines> a foaf:Person ;
-                                                     foaf:name "Ines Hantschick" .
-
-<http://leipzig-data.de/Data/Person/Hauptmann_Anke> a foaf:Person ;
-                                                    foaf:name "Anke Hauptmann" .
-
-<http://leipzig-data.de/Data/Person/Heckel_Ralf> a foaf:Person ;
-                                                 foaf:name "Ralf Heckel" .
-
-<http://leipzig-data.de/Data/Person/Heinrich_Torsten> a foaf:Person ;
-                                                      rdfs:comment "Vertreter des SJR im JHA" ;
-                                                      foaf:name "Torsten Heinrich" ;
-                                                      ld:relatedTo <http://leipzig-data.de/Data/KE/EvLuthJugend> .
-
-<http://leipzig-data.de/Data/Person/Heinze_Sven> a foaf:Person ;
-                                                 foaf:name "Sven Heinze" ;
-                                                 ld:relatedTo <http://leipzig-data.de/Data/Verein/Sportjugend>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> .
-
-<http://leipzig-data.de/Data/Person/Herold_Corrina> a foaf:Person ;
-                                                    ld:hasURL "http://www.fom.de" ;
-                                                    foaf:name "Corrina Herold" ;
-                                                    foaf:title "Dr." ;
-                                                    ld:relatedTo <http://leipzig-data.de/Data/Ort/FOM> .
-
-<http://leipzig-data.de/Data/Person/Herrmann_Anne> a foaf:Person ;
-                                                   foaf:name "Anne Herrmann" .
-
-<http://leipzig-data.de/Data/Person/Hintze_Steffen> a foaf:Person ;
-                                                    foaf:name "Steffen Hintze" .
-
-<http://leipzig-data.de/Data/Person/Hoenemann_Tobias> a foaf:Person ;
-                                                      foaf:name "Tobias Hönemann" .
-
-<http://leipzig-data.de/Data/Person/Hoernig_Karin> a foaf:Person ;
-                                                   foaf:name "Karin Hörnig" .
-
-<http://leipzig-data.de/Data/Person/Holunder_Alma> a foaf:Person ;
-                                                   foaf:name "Alma Holunder" .
-
-<http://leipzig-data.de/Data/Person/Hoyer_Stephan> a foaf:Person ;
-                                                   foaf:name "Stephan Hoyer" .
-
-<http://leipzig-data.de/Data/Person/Huebner_Elke> a foaf:Person ;
-                                                  foaf:name "Elke Hübner" .
-
-<http://leipzig-data.de/Data/Person/Hufenreuter_Henry> a foaf:Person ;
-                                                       foaf:name "Henry Hufenreuter" .
-
-<http://leipzig-data.de/Data/Person/Ihring_Lars> a foaf:Person ;
-                                                 foaf:name "Lars Ihring" .
-
-<http://leipzig-data.de/Data/Person/Jaeger_Alexander> a foaf:Person ;
-                                                      foaf:name "Alexander Jäger" ;
-                                                      ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> .
-
-<http://leipzig-data.de/Data/Person/Jaehnig_HeinrichMoritz> a foaf:Person ;
-                                                            foaf:name "Heinrich Moritz Jähnig" .
-
-<http://leipzig-data.de/Data/Person/Johannes_Uta> a foaf:Person ;
-                                                  rdfs:comment "Sachbearbeiterin Medien- und Kreativwirtschaft im Amt für Wirtschaftsförderung" ;
-                                                  foaf:name "Uta Johannes" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> .
-
-<http://leipzig-data.de/Data/Person/Kaerger_Joerg> a foaf:Person ;
-                                                   foaf:name "Jörg Kärger" ;
-                                                   foaf:title "Prof. Dr." .
-
-<http://leipzig-data.de/Data/Person/Karwen_Bernd> a foaf:Person ;
-                                                  foaf:name "Bernd Karwen" .
-
-<http://leipzig-data.de/Data/Person/Keck_Lisa> a foaf:Person ;
-                                               rdfs:comment "Geschäftsstellenleiterin des Netzwerks \"Energie und Umwelt\" e.V." ;
-                                               foaf:name "Lisa Keck" .
-
-<http://leipzig-data.de/Data/Person/Keppler_Ralph> a foaf:Person ;
-                                                   foaf:name "Ralph Keppler" ;
-                                                   foaf:homepage <http://www.civitas-botschafter.de/Keppler.htm> ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> .
-
-<http://leipzig-data.de/Data/Person/Kilchert_Manfred> a foaf:Person ;
-                                                      foaf:name "Prof. Dipl.-Ing. Manfred Kilchert" .
-
-<http://leipzig-data.de/Data/Person/Klauer_AnnaKatharina> a foaf:Person ;
-                                                          foaf:name "Anna-Katharina Klauer" .
-
-<http://leipzig-data.de/Data/Person/Kleshch_Irina> a foaf:Person ;
-                                                   foaf:name "Irina Kleshch" ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/Firma/evermind> .
-
-<http://leipzig-data.de/Data/Person/Klimesch_Holger> a foaf:Person ;
-                                                     foaf:name "Holger Klimesch" .
-
-<http://leipzig-data.de/Data/Person/Knospe_Uta> a foaf:Person ;
-                                                foaf:name "Uta Knospe" ;
-                                                ld:relatedTo <http://leipzig-data.de/Data/Buergerverein/Messemagistrale> .
-
-<http://leipzig-data.de/Data/Person/Koch_Jan> a foaf:Person ;
-                                              ld:hasURL <http://www.drehfreibier.de/> ;
-                                              foaf:name "Jan Koch" .
-
-<http://leipzig-data.de/Data/Person/Koenig_KarlFriedrich> a foaf:Person ;
-                                                          foaf:name "Karl-Friedrich König" .
-
-<http://leipzig-data.de/Data/Person/Koenig_Wolfgang> a foaf:Person ;
-                                                     foaf:name "Prof. Wolfgang König" .
-
-<http://leipzig-data.de/Data/Person/Koerner_Annette> a foaf:Person ;
-                                                     rdfs:comment "Geschäftsführerin UIZ Förderverein" ;
-                                                     foaf:name "Annette Körner" .
-
-<http://leipzig-data.de/Data/Person/Kohl_Ralf> a foaf:Person ;
-                                               foaf:name "Ralf Kohl" .
-
-<http://leipzig-data.de/Data/Person/Kramer_Anais> a foaf:Person ;
-                                                  rdfs:comment "Leiterin der GS der Zukunftsakademie" ;
-                                                  foaf:name "Anais Kramer" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/Ort/Zukunftsakademie> .
-
-<http://leipzig-data.de/Data/Person/Krause_Tanja> a foaf:Person ;
-                                                  rdfs:comment "UFZ Department Umwelt- und Planungsrecht" ;
-                                                  foaf:name "Tanja Krause" .
-
-<http://leipzig-data.de/Data/Person/Kretzschmar_Maxi> a foaf:Person ;
-                                                      foaf:name "Maxi Kretzschmar" .
-
-<http://leipzig-data.de/Data/Person/Krueger_Annett> a foaf:Person ;
-                                                    foaf:name "Dr. Annett Krüger" .
-
-<http://leipzig-data.de/Data/Person/Kuechler_Romy> a foaf:Person ;
-                                                   foaf:name "Romy Küchler" .
-
-<http://leipzig-data.de/Data/Person/Kuehne_Peter> a foaf:Person ;
-                                                  rdfs:comment "GF der Lecos" ;
-                                                  foaf:name "Peter Kühne" .
-
-<http://leipzig-data.de/Data/Person/Lange_Torsten> a foaf:Person ;
-                                                   rdfs:comment "Leiter UFZ-Schülerlabor" ;
-                                                   foaf:name "Dr. Torsten Lange" .
-
-<http://leipzig-data.de/Data/Person/Lapoen_Genka> a foaf:Person ;
-                                                  rdfs:comment "Gleichstellungsbeauftragte der Stadt Leipzig" ;
-                                                  foaf:name "Genka Lapön" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig> .
-
-<http://leipzig-data.de/Data/Person/Lehmann_Olaf> a foaf:Person ;
-                                                  rdfs:comment "IHK zu Leipzig" ;
-                                                  foaf:name "Olaf Lehmann" .
-
-<http://leipzig-data.de/Data/Person/Liebelt_Ute> a foaf:Person ;
-                                                 foaf:name "Ute Liebelt" .
-
-<http://leipzig-data.de/Data/Person/Lindner_Bjoern> a foaf:Person ;
-                                                    foaf:name "Björn Lindner" .
-
-<http://leipzig-data.de/Data/Person/Lindner_Lothar> a foaf:Person ;
-                                                    rdfs:comment "Planungsbüro für Energie und Umwelt" ;
-                                                    foaf:name "Lothar Lindner" ;
-                                                    foaf:title "Dipl.-Ing." .
-
-<http://leipzig-data.de/Data/Person/Lingk_Thomas> a foaf:Person ;
-                                                  rdfs:comment "Abteilungsleiter und stellv. Vorsitzender des Netzwerk Energie und Umwelt e.V." ;
-                                                  foaf:name "Thomas Lingk" .
-
-<http://leipzig-data.de/Data/Person/Maennig_Uwe> a foaf:Person ;
-                                                 rdfs:comment "Netzwerkkoordinator Leipzig im Haus der kleinen Forscher" ;
-                                                 foaf:name "Uwe Männig" .
-
-<http://leipzig-data.de/Data/Person/Maruhn_Olaf> a foaf:Person ;
-                                                 foaf:name "Olaf Maruhn" .
-
-<http://leipzig-data.de/Data/Person/Meier_Katja> a foaf:Person ;
-                                                 foaf:name "Katja Meier" ;
-                                                 ld:relatedTo <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> .
-
-<http://leipzig-data.de/Data/Person/Meiler_Monika> a foaf:Person ;
-                                                   foaf:name "Dr. Monika Meiler" .
-
-<http://leipzig-data.de/Data/Person/Meiss_KarlMichael> a foaf:Person ;
-                                                       foaf:name "Karl-Michael Meiß" ;
-                                                       foaf:title "Dr." .
-
-<http://leipzig-data.de/Data/Person/Messerschmidt_Elk> a foaf:Person ;
-                                                       rdfs:comment "Leiter TÖP Rabutz" ;
-                                                       foaf:name "Dr. Elk Messerschmidt" .
-
-<http://leipzig-data.de/Data/Person/Metschies_Juliane> a foaf:Person ;
-                                                       rdfs:comment "JHA-Koordinatorin Planungsraum" ;
-                                                       foaf:name "Juliane Metschies" .
-
-<http://leipzig-data.de/Data/Person/Metz_Susanne> a foaf:Person ;
-                                                  rdfs:comment "Amtsleiterin der städtischen Bibliotheken (Amtsblatt, 29.06.2013)" ;
-                                                  foaf:name "Susanne Metz" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> .
-
-<http://leipzig-data.de/Data/Person/Meyer_Rene> a foaf:Person ;
-                                                foaf:name "René Meyer" .
-
-<http://leipzig-data.de/Data/Person/Moeckel_Christian> a foaf:Person ;
-                                                       foaf:name "Arne Ackermann" .
-
-<http://leipzig-data.de/Data/Person/Moeller_Juergen> a foaf:Person ;
-                                                     foaf:name "Jürgen Möller" .
-
-<http://leipzig-data.de/Data/Person/Moritz_Anja> a foaf:Person ;
-                                                 rdfs:comment "JHA-Koordinatorin Planungsraum" ;
-                                                 foaf:name "Anja Moritz" .
-
-<http://leipzig-data.de/Data/Person/Mueller_Doris> a foaf:Person ;
-                                                   foaf:name "Doris Müller" .
-
-<http://leipzig-data.de/Data/Person/Mueller_Florian> a foaf:Person ;
-                                                     foaf:name "Florian Müller" .
-
-<http://leipzig-data.de/Data/Person/Nagler_Petra> a foaf:Person ;
-                                                  rdfs:comment "Leiterin Forscherstützpunkt Frühes Forschen Leipzig" ;
-                                                  foaf:name "Petra Nagler" .
-
-<http://leipzig-data.de/Data/Person/Niggemeyer_Joachim> a foaf:Person ;
-                                                        ld:hasURL <http://www.niggemeyer-art.de> ;
-                                                        foaf:name "Joachim R. Niggemeyer" .
-
-<http://leipzig-data.de/Data/Person/Nuernberger_Tabea> a foaf:Person ;
-                                                       foaf:name "Tabea Nürnberger" ;
-                                                       ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM> .
-
-<http://leipzig-data.de/Data/Person/Pauli_Stev> a foaf:Person ;
-                                                foaf:name "Stev Pauli" .
-
-<http://leipzig-data.de/Data/Person/PeeckPreimuss_Attila> a foaf:Person ;
-                                                          foaf:name "Attila Peeck-Preimus" ;
-                                                          ld:relatedTo <http://leipzig-data.de/Data/DGB/Jugend> .
-
-<http://leipzig-data.de/Data/Person/Petschauer_Susanne> a foaf:Person ;
-                                                        foaf:name "Susanne Petschauer" .
-
-<http://leipzig-data.de/Data/Person/Petzold_Matthias> a foaf:Person ;
-                                                      foaf:name "Matthias Petzold" .
-
-<http://leipzig-data.de/Data/Person/Petzschler_Ines> a foaf:Person ;
-                                                     foaf:name "Ines Petzschler" .
-
-<http://leipzig-data.de/Data/Person/Petzschler_Uwe> a foaf:Person ;
-                                                    foaf:name "Uwe Petzschler" .
-
-<http://leipzig-data.de/Data/Person/PhuongThaoDinhVan> a foaf:Person ;
-                                                       ld:hasURL <http://www.leipzig.ihk.de/desktopdefault.aspx/tabid-248/14_read-5985/date-23723/> ;
-                                                       foaf:name "Phuong Thao Dinh Van" ;
-                                                       ld:relatedTo <http://leipzig-data.de/Data/Ort/IHK> .
-
-<http://leipzig-data.de/Data/Person/Pieper_Katrin> a foaf:Person ;
-                                                   foaf:name "Katrin Pieper" .
-
-<http://leipzig-data.de/Data/Person/Plaenitz_Sven> a foaf:Person ;
-                                                   foaf:name "Sven Plänitz" .
-
-<http://leipzig-data.de/Data/Person/Pohl_Anja> a foaf:Person ;
-                                               rdfs:comment "Organisation der Kinderuni" ;
-                                               foaf:name "Anja Pohl" .
-
-<http://leipzig-data.de/Data/Person/Praetor_Sandra> a foaf:Person ;
-                                                    foaf:name "Sandra Praetor" ;
-                                                    ld:relatedTo <http://leipzig-data.de/Data/Verein/InfAI> .
-
-<http://leipzig-data.de/Data/Person/Pretsch_Irina> a foaf:Person ;
-                                                   foaf:name "Irina Pretsch" ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/Firma/BBW> .
-
-<http://leipzig-data.de/Data/Person/Quapp_Wolfgang> a foaf:Person ;
-                                                    foaf:name "Dr. Wolfgang Quapp" .
-
-<http://leipzig-data.de/Data/Person/Quester_Roland> a foaf:Person ;
-                                                    rdfs:comment "Leiter Umweltbibliothek" ;
-                                                    foaf:name "Roland Quester" .
-
-<http://leipzig-data.de/Data/Person/Quiring_Lars> a foaf:Person ;
-                                                  foaf:name "Lars Quiring" .
-
-<http://leipzig-data.de/Data/Person/Rademacher_HansBert> a foaf:Person ;
-                                                         foaf:name "Prof. Dr. Hans-Bert Rademacher" .
-
-<http://leipzig-data.de/Data/Person/Raschke_Roman> a foaf:Person ;
-                                                   rdfs:comment "BürgerVerein Leutzsch e.V." ;
-                                                   foaf:name "Roman Raschke" .
-
-<http://leipzig-data.de/Data/Person/Raue_Manfred> a foaf:Person ;
-                                                  rdfs:comment "Geschäftsführer VDE Leipzig/Halle" ;
-                                                  foaf:name "Manfred Raue" .
-
-<http://leipzig-data.de/Data/Person/Rehm_Axel> a foaf:Person ;
-                                               foaf:name "Axel Rehm" .
-
-<http://leipzig-data.de/Data/Person/Reiner_Oliver> a foaf:Person ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/Ort/Villa>, <http://leipzig-data.de/Data/Verein/LeISA> .
-
-<http://leipzig-data.de/Data/Person/Reinhardt_Sylvi> a foaf:Person ;
-                                                     foaf:name "Sylvi Reinhardt" .
-
-<http://leipzig-data.de/Data/Person/Reissmann_Daniel> a foaf:Person ;
-                                                      foaf:name "Daniel Reißmann" .
-
-<http://leipzig-data.de/Data/Person/Reschke_Katrin> a foaf:Person ;
-                                                    rdfs:comment "Leiterin Dölitzer Wassermühle" ;
-                                                    foaf:name "Katrin Reschke" .
-
-<http://leipzig-data.de/Data/Person/Reschke_Volker> a foaf:Person ;
-                                                    rdfs:comment "Vorstand Grün-Alternatives Zentrum Leipzig e.V." ;
-                                                    foaf:name "Volker Reschke" .
-
-<http://leipzig-data.de/Data/Person/Retznick_Laura> a foaf:Person ;
-                                                    foaf:name "Laura Retznick" ;
-                                                    ld:relatedTo <http://leipzig-data.de/Data/KE/DiakonischesWerk> .
-
-<http://leipzig-data.de/Data/Person/Rhinow_Solvejg> a foaf:Person ;
-                                                    foaf:name "Dr. Solvejg Rhinow" .
-
-<http://leipzig-data.de/Data/Person/Rode_Michele> a foaf:Person ;
-                                                  rdfs:comment "Programm MINT-Individual" ;
-                                                  foaf:name "Michéle Rode" .
-
-<http://leipzig-data.de/Data/Person/Roeser_Sascha> a foaf:Person ;
-                                                   foaf:name "Sascha Roeser" .
-
-<http://leipzig-data.de/Data/Person/Roth_Dorit> a foaf:Person ;
-                                                foaf:name "Dorit Roth" ;
-                                                ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> .
-
-<http://leipzig-data.de/Data/Person/Sauerland_Antje> a foaf:Person ;
-                                                     foaf:name "Antje Sauerland" .
-
-<http://leipzig-data.de/Data/Person/Schaetzl_Matthias> a foaf:Person ;
-                                                       foaf:name "Matthias Schätzl" .
-
-<http://leipzig-data.de/Data/Person/Schilling_Peter> a foaf:Person ;
-                                                     rdfs:comment "Leiter AZ Schkeuditz" ;
-                                                     foaf:name "Peter Schilling" .
-
-<http://leipzig-data.de/Data/Person/Schirmer_Matthias> a foaf:Person ;
-                                                       foaf:name "Matthias Schirmer" .
-
-<http://leipzig-data.de/Data/Person/Schlupp_Peter> a foaf:Person ;
-                                                   foaf:name "Peter Schlupp" .
-
-<http://leipzig-data.de/Data/Person/Schmidt_David> a foaf:Person ;
-                                                   rdfs:comment "Reality (Tanzagentur EU i.G.e.V.)" ;
-                                                   ld:hasURL <https://www.facebook.com/Tanzagentur> ;
-                                                   foaf:name "David Schmidt" .
-
-<http://leipzig-data.de/Data/Person/Schmidt_Rosemarie> a foaf:Person ;
-                                                       rdfs:comment "Landesgeschäftsführerin MNU Sachsen" ;
-                                                       foaf:name "Rosemarie Schmidt" .
-
-<http://leipzig-data.de/Data/Person/Schneider_Carla> a foaf:Person ;
-                                                     foaf:name "Carla Schneider" .
-
-<http://leipzig-data.de/Data/Person/Schoeneberg_Torsten> a foaf:Person ;
-                                                         foaf:name "Torsten Schöneberg" ;
-                                                         foaf:title "Prof. Dr." .
-
-<http://leipzig-data.de/Data/Person/Schoetter_Andrea> a foaf:Person ;
-                                                      foaf:name "Andrea Schötter" ;
-                                                      ld:relatedTo <http://leipzig-data.de/Data/IHK-Leipzig> .
-
-<http://leipzig-data.de/Data/Person/Schroth_Johannes> a foaf:Person ;
-                                                      foaf:name "Johannes Schroth" .
-
-<http://leipzig-data.de/Data/Person/Schueler_Axel> a foaf:Person ;
-                                                   rdfs:comment "Vorsitzender LSGM" ;
-                                                   foaf:name "Dr. Axel Schüler" .
-
-<http://leipzig-data.de/Data/Person/Schueler_Jana> a foaf:Person ;
-                                                   foaf:name "Jana Schüler" ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/Firma/BBW>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> .
-
-<http://leipzig-data.de/Data/Person/Schulze_Susanne> a foaf:Person ;
-                                                     rdfs:comment "MINT-Beauftrage der BA Leipzig" ;
-                                                     foaf:name "Susanne Schulze" .
-
-<http://leipzig-data.de/Data/Person/Schulze_Tristan> a foaf:Person ;
-                                                     rdfs:comment "Webdesigner für die GfZK" ;
-                                                     foaf:name "Tristan Schulze" ;
-                                                     ld:relatedTo <http://leipzig-data.de/Data/Ort/GfZK> .
-
-<http://leipzig-data.de/Data/Person/Schwarze_Wolfgang> a foaf:Person ;
-                                                       rdfs:comment "Vorsitzender des Kultur- und Umweltzentrum e.V." ;
-                                                       foaf:name "Wolfgang Schwarze" .
-
-<http://leipzig-data.de/Data/Person/Schweikart_Rudolf> a foaf:Person ;
-                                                       foaf:name "Rudolf Schweikart" .
-
-<http://leipzig-data.de/Data/Person/Seidel_Franka> a foaf:Person ;
-                                                   rdfs:comment "Geschäftsführerin der Auwaldstation Leipzig" ;
-                                                   foaf:name "Franka Seidel" .
-
-<http://leipzig-data.de/Data/Person/Seik_Lena> a foaf:Person ;
-                                               rdfs:comment "Leitung Kunstvermittlung der GfZK" ;
-                                               foaf:name "Lena Seik" ;
-                                               ld:relatedTo <http://leipzig-data.de/Data/Ort/GfZK> .
-
-<http://leipzig-data.de/Data/Person/Senn_Britta> a foaf:Person ;
-                                                 foaf:name "Britta Senn" .
-
-<http://leipzig-data.de/Data/Person/Stadler_Peter> a foaf:Person ;
-                                                   rdfs:comment "Professor für Bioinformatik an der Uni Leipzig" ;
-                                                   ld:hasURL <http://www.bioinf.uni-leipzig.de/> ;
-                                                   foaf:name "Prof. Peter F. Stadler" .
-
-<http://leipzig-data.de/Data/Person/Steudel_Claudia> a foaf:Person ;
-                                                     rdfs:comment "JHA-Koordinatorin Planungsraum" ;
-                                                     foaf:name "Claudia Steudel" .
-
-<http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> a foaf:Person ;
-                                                        rdfs:comment "Vorsitzender des NuKLA e. V." ;
-                                                        foaf:name "Wolfgang E.A. Stoiber" .
-
-<http://leipzig-data.de/Data/Person/Strauss_Holger> a foaf:Person ;
-                                                    foaf:name "Holger Strauß" ;
-                                                    foaf:title "Dr." .
-
-<http://leipzig-data.de/Data/Person/Teichert_Georg> a foaf:Person ;
-                                                    rdfs:comment "Gleichstellungsbeauftragter der Uni Leipzig" ;
-                                                    foaf:name "Georg Teichert" .
-
-<http://leipzig-data.de/Data/Person/Teutsch_Georg> a foaf:Person ;
-                                                   rdfs:comment "Direktor UFZ (Stand 2010)" ;
-                                                   foaf:name "Prof. Dr. Georg Teutsch" .
-
-<http://leipzig-data.de/Data/Person/Thate_Stefanie> a foaf:Person ;
-                                                    foaf:name "Stefanie Thate" .
-
-<http://leipzig-data.de/Data/Person/Thielemann_Lutz> a foaf:Person ;
-                                                     rdfs:comment "Geschäftsführer der WRL ab 15.08.2013 (Amtsblatt, 29.06.2013)" ;
-                                                     foaf:name "Lutz Thielemann" ;
-                                                     ld:relatedTo <http://leipzig-data.de/Data/Firma/WRL> .
-
-<http://leipzig-data.de/Data/Person/Tischer_Beate> a foaf:Person ;
-                                                   foaf:name "Beate Tischer" .
-
-<http://leipzig-data.de/Data/Person/Tobaben_JoernHeinrich> a foaf:Person ;
-                                                           rdfs:comment "Geschäftsführer der Wirtschaftsinitiative Mitteldeutschland" ;
-                                                           foaf:name "Jörn-Heinrich Tobaben" .
-
-<http://leipzig-data.de/Data/Person/TraegerNestler_Angelika> a foaf:Person ;
-                                                             rdfs:comment "Geschäftsführerin GaraGe gGmbH" ;
-                                                             foaf:name "Dr. Angelika Träger-Nestler" .
-
-<http://leipzig-data.de/Data/Person/Treschok_Katja> a foaf:Person ;
-                                                    foaf:name "Katja Treschok" .
-
-<http://leipzig-data.de/Data/Person/Tutar_Katrin> a foaf:Person ;
-                                                  foaf:name "Katrin Tutar" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/Verein/Caktus> .
-
-<http://leipzig-data.de/Data/Person/Uhlmann_Matthias> a foaf:Person ;
-                                                      rdfs:comment "JHA-Koordinator Planungsraum" ;
-                                                      foaf:name "Matthias Uhlmann" .
-
-<http://leipzig-data.de/Data/Person/Ulrich_Ruediger> a foaf:Person ;
-                                                     rdfs:comment "stellv. Vorsitzender JHA" ;
-                                                     foaf:name "Rüdiger Ulrich" .
-
-<http://leipzig-data.de/Data/Person/Unckell_Kornelius> a foaf:Person ;
-                                                       foaf:name "Kornelius Unckell" ;
-                                                       ld:relatedTo <http://leipzig-data.de/Data/Verein/KreativesLeipzig> .
-
-<http://leipzig-data.de/Data/Person/Vetterlein_Guenter> a foaf:Person ;
-                                                        foaf:name "Günter Vetterlein" .
-
-<http://leipzig-data.de/Data/Person/Wagner_Thomas> a foaf:Person ;
-                                                   foaf:name "Thomas Wagner" .
-
-<http://leipzig-data.de/Data/Person/Waldmann_Johannes> a foaf:Person ;
-                                                       rdfs:comment "Professor für Informatik an der HTKW Leipzig" ;
-                                                       ld:hasURL <http://www.imn.htwk-leipzig.de/~waldmann/> ;
-                                                       foaf:name "Prof. Johannes Waldmann" .
-
-<http://leipzig-data.de/Data/Person/Walter_Roland> a foaf:Person ;
-                                                   foaf:name "Roland Walter" ;
-                                                   foaf:title "Dipl.-Päd." .
-
-<http://leipzig-data.de/Data/Person/Warkus_Hartmut> a foaf:Person ;
-                                                    rdfs:comment "2012 verstorben", "Geschäftsführer der ComputerSpielSchule" ;
-                                                    foaf:name "Prof. Dr. Hartmut Warkus" .
-
-<http://leipzig-data.de/Data/Person/Weise_Joerg> a foaf:Person ;
-                                                 ld:hasURL "http://www.public-confidence.de" ;
-                                                 foaf:name "Jörg Weise" .
-
-<http://leipzig-data.de/Data/Person/Weissgerber_Kerstin> a foaf:Person ;
-                                                         rdfs:comment "Aurel Marketing" ;
-                                                         ld:hasURL <http://www.aurel-marketing.de> ;
-                                                         foaf:name "Kerstin Weißgerber" .
-
-<http://leipzig-data.de/Data/Person/Wieland_Sabine> a foaf:Person ;
-                                                    rdfs:comment "Sprecherin der Regionalgruppe Leipzig der GI und des MINT-Netzwerks Leipzig " ;
-                                                    foaf:name "Prof. Dr. Sabine Wieland" .
-
-<http://leipzig-data.de/Data/Person/Will_Judith> foaf:name "Judith Will" .
-
-<http://leipzig-data.de/Data/Person/Willkomm_Jan> a foaf:Person ;
-                                                  foaf:name "Jan Willkomm" .
-
-<http://leipzig-data.de/Data/Person/Wohlfahrt_Fabian> a foaf:Person ;
-                                                      foaf:name "Fabian Wohlfahrt" .
-
-<http://leipzig-data.de/Data/Person/Wolfram_Franziska> a foaf:Person ;
-                                                       foaf:name "Franziska Wolfram" ;
-                                                       ld:relatedTo <http://leipzig-data.de/Data/KE/EvRefKirche> .
-
-<http://leipzig-data.de/Data/Person/Wozniak_Klaus> a foaf:Person ;
-                                                   rdfs:comment "Fakultät Maschinenbau und Energietechnik der HTWK Leipzig" ;
-                                                   foaf:name "Klaus Wozniak" ;
-                                                   foaf:title "Prof. Dr.-Ing. habil." .
-
-<http://leipzig-data.de/Data/Person/Wuerzberger_Nadine> a foaf:Person ;
-                                                        foaf:name "Nadine Würzberger" ;
-                                                        ld:relatedTo <http://leipzig-data.de/Data/Verein/FAIRbund> .
-
-<http://leipzig-data.de/Data/Person/Wummel_Juergen> a foaf:Person ;
-                                                    foaf:name "Jürgen Wummel" ;
-                                                    foaf:title "Dr." .
-
-<http://leipzig-data.de/Data/Person/Wunderlich_Sabine> a foaf:Person ;
-                                                       foaf:name "Sabine Wunderlich" .
-
-<http://leipzig-data.de/Data/Person/Zippe_Annett> a foaf:Person ;
-                                                  foaf:name "Annett Zippe" ;
-                                                  ld:relatedTo <http://leipzig-data.de/Data/Verein/Kinderschutzbund> .
-
-<http://leipzig-data.de/Data/Person/vonJan_Teresa> a foaf:Person ;
-                                                   ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/365-teresa> ;
-                                                   foaf:name "Teresa von Jan" ;
-                                                   ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendring> .
-
-<http://leipzig-data.de/Data/Person/vonNessler_Georg> a foaf:Person ;
-                                                      foaf:name "Georg von Nessler" .
-
-<> a owl:Ontology ;
-   rdfs:label "Personen" ;
-   cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
-
-foaf:Person a owl:Class ;
-            rdfs:label "Person" .

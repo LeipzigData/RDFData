@@ -1,6 +1,3 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Events/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,72 +9,78 @@
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
-<http://leipzig-data.de/Data/Event/DTS.2017-08-14> a ld:Event ;
-rdfs:label "Wege zu einer neuen Gesellschaft. Revolution oder Transformation." ;
-ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-ical:dtstart "2017-08-14T19:00:00+02:00"^^xsd:dateTime ;
-ical:location ldo:Cafe-Grundmann ;
-ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-ical:description "Als Thema wurde ausgewählt: Revolution oder Transformation, Unterthema einer kleinen Reihe, die wir Wege zur neuen Gesellschaft nennen wollen. " ;
-ical:summary "Attac DenkTankStelle: Wege zu einer neuen Gesellschaft. Revolution oder Transformation." ;
-ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-08-14> ;
-ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-ld:contactPerson ldp:Schroth_Johannes .
+<http://leipzig-data.de/Data/Event/DTS.2017-08-14>
+    ld:contactPerson ldp:Schroth_Johannes ;
+    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+    a ld:Event ;
+    rdfs:label "Wege zu einer neuen Gesellschaft. Revolution oder Transformation." ;
+    ical:description "Als Thema wurde ausgewählt: Revolution oder Transformation, Unterthema einer kleinen Reihe, die wir Wege zur neuen Gesellschaft nennen wollen. " ;
+    ical:dtstart "2017-08-14T19:00:00+02:00"^^xsd:dateTime ;
+    ical:location ldo:Cafe-Grundmann ;
+    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+    ical:summary "Attac DenkTankStelle: Wege zu einer neuen Gesellschaft. Revolution oder Transformation." ;
+    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-08-14> .
 
-<http://leipzig-data.de/Data/Event/DTS.2017-09-11> a ld:Event ;
-rdfs:label "Wege zu einer neuen Gesellschaft. Bedingungsloses Grundeinkommen." ;
-ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
-ical:dtstart "2017-09-11T19:00:00+02:00"^^xsd:dateTime ;
-ical:location ldo:Cafe-Grundmann ;
-ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
-ical:description "Als Thema wurde in der kleinen Reihe >Wege zur neuen Gesellschaft< das bedingungslose Grundeinkommen ausgewählt. Inzwischen von allen gut durchgekaut, wird es schwer werden, etwas Neues herauszuschmecken. Vielleicht gelingt es, indem wir unsere ganz persönliche Sicht dazu zur Diskussion stellen. Schön wär’s, wenn einer, eine sich darauf einstellt, den ersten Pfahl zu schlagen. " ;
-ical:summary "Attac DenkTankStelle: Wege zu einer neuen Gesellschaft. Bedingungsloses Grundeinkommen." ;
-ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-09-11> ;
-ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
-ld:contactPerson ldp:Schroth_Johannes .
+<http://leipzig-data.de/Data/Event/DTS.2017-09-11>
+    ld:contactPerson ldp:Schroth_Johannes ;
+    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+    a ld:Event ;
+    rdfs:label "Wege zu einer neuen Gesellschaft. Bedingungsloses Grundeinkommen." ;
+    ical:description "Als Thema wurde in der kleinen Reihe >Wege zur neuen Gesellschaft< das bedingungslose Grundeinkommen ausgewählt. Inzwischen von allen gut durchgekaut, wird es schwer werden, etwas Neues herauszuschmecken. Vielleicht gelingt es, indem wir unsere ganz persönliche Sicht dazu zur Diskussion stellen. Schön wär’s, wenn einer, eine sich darauf einstellt, den ersten Pfahl zu schlagen. " ;
+    ical:dtstart "2017-09-11T19:00:00+02:00"^^xsd:dateTime ;
+    ical:location ldo:Cafe-Grundmann ;
+    ical:organizer <http://leipzig-data.de/Data/Ort/Attac.Leipzig> ;
+    ical:summary "Attac DenkTankStelle: Wege zu einer neuen Gesellschaft. Bedingungsloses Grundeinkommen." ;
+    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-09-11> .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9719> ical:dtstart "2017-10-18T9:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:description "<p>Fortbildung der INSPIRATA in Kooperation<br /> mit dem Sächsischen Staatsministerium für Kultus</p> <p><strong>“Digitale Werkzeuge im Analysisunterricht”</strong></p> <p><strong>Wer?</strong> Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare<br /> mit dem Fach Mathematik<br /> <strong>Wo?</strong> INSPIRATA – 04103 Leipzig, Deutscher Platz 4 (Eingang G, 3. Etage)<br /> <strong>Wann?</strong> Mittwoch, 18. Oktober 2017, von 9:00 bis 16:00 Uhr</p> <p><strong>Ablauf:</strong><br /> <em>Informationen folgen baldmöglichst</em></p> <p><strong>Anmeldung:</strong><br /> <em>Sie können sich gern bereits per Mail an anmeldung(at)inspirata.de vormerken lassen;</em><br /> <em>ein Online-Anmelde-Formular wird baldmöglichst hier unten eingerichtet &#8230;</em></p> " ;
-                                                   ical:dtend "2017-10-18T16:00:00+02:00"^^xsd:dateTime ;
-                                                   ical:dtstamp "2017-03-31T11:53:00+02:00"^^xsd:dateTime ;
-                                                   ical:location ldo:Inspirata ;
-                                                   ical:organizer ldo:Inspirata ;
-                                                   ical:summary "Fortbildung der INSPIRATA in Kooperation mit dem Sächsischen Staatsministerium für Kultus “Digitale Werkzeuge im Analysisunterricht” Wer? Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare mit dem Fach Mathematik Wo? INSPIRATA – 04103 Leipzig, Deutscher Platz 4 (Eingang G, 3. Etage) Wann? Mittwoch, 18. Oktober 2017, von 9:00 bis 16:00 Uhr" ;
-                                                   ical:url <http://www.inspirata.de/?p=9719> ;
-                                                   ld:hasTag ldtag:Inspirata, ldtag:MINT ;
-                                                   a ld:Event ;
-                                                   rdfs:label "Fortbildung “Digitale Werkzeuge im Analysisunterricht” – 18.10.2017" .
+<http://leipzig-data.de/Data/Event/Inspirata.9719>
+    ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+    a ld:Event ;
+    rdfs:label "Fortbildung “Digitale Werkzeuge im Analysisunterricht” – 18.10.2017" ;
+    ical:description "<p>Fortbildung der INSPIRATA in Kooperation<br /> mit dem Sächsischen Staatsministerium für Kultus</p> <p><strong>“Digitale Werkzeuge im Analysisunterricht”</strong></p> <p><strong>Wer?</strong> Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare<br /> mit dem Fach Mathematik<br /> <strong>Wo?</strong> INSPIRATA – 04103 Leipzig, Deutscher Platz 4 (Eingang G, 3. Etage)<br /> <strong>Wann?</strong> Mittwoch, 18. Oktober 2017, von 9:00 bis 16:00 Uhr</p> <p><strong>Ablauf:</strong><br /> <em>Informationen folgen baldmöglichst</em></p> <p><strong>Anmeldung:</strong><br /> <em>Sie können sich gern bereits per Mail an anmeldung(at)inspirata.de vormerken lassen;</em><br /> <em>ein Online-Anmelde-Formular wird baldmöglichst hier unten eingerichtet &#8230;</em></p> " ;
+    ical:dtend "2017-10-18T16:00:00+02:00"^^xsd:dateTime ;
+    ical:dtstamp "2017-03-31T11:53:00+02:00"^^xsd:dateTime ;
+    ical:dtstart "2017-10-18T9:00:00+02:00"^^xsd:dateTime ;
+    ical:location ldo:Inspirata ;
+    ical:organizer ldo:Inspirata ;
+    ical:summary "Fortbildung der INSPIRATA in Kooperation mit dem Sächsischen Staatsministerium für Kultus “Digitale Werkzeuge im Analysisunterricht” Wer? Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare mit dem Fach Mathematik Wo? INSPIRATA – 04103 Leipzig, Deutscher Platz 4 (Eingang G, 3. Etage) Wann? Mittwoch, 18. Oktober 2017, von 9:00 bis 16:00 Uhr" ;
+    ical:url <http://www.inspirata.de/?p=9719> .
 
-<> a owl:Ontology ;
-   rdfs:label "Events" ;
-   cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+<http://leipzig-data.de/Data/Event/Inspirata.9935>
+    ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+    a ld:Event ;
+    rdfs:label "INSPIRATA beim „Messtival“ auf der Alten Messe – 09.09.2017" ;
+    ical:description "<p>Im September 2017 feiert die Alte Messe Leipzig:</p> <p><strong>MESSTIVAL = Musik + Streetfood + Show</strong></p> <p>Am 9. September wird von 15 bis 22 Uhr die Straße des 18. Oktober in Leipzig ein sensationelles Event erleben:<br /> Bands der Alten Messe Leipzig, die &#8222;Firebirds-Show&#8220; des Theater Titanick, Automeile, Kinderflohmarkt, Kinderfahrschule, Fahrsimulator und vieles mehr &#8230;</p> <p>Bands, die auf der Alten Messe ihre Proberäume haben, spielen auf 2 Bühnen Rock&amp;Pop, Alternativ-Rock, deutsche Coversongs oder Indierock.<br /> Drei Shows des Theater Titanick zeigen Feuereffekte und Explosionen, groteske Flugmaschinen und Flugversuche.</p> <p>Bei Streetfood kann man sich auf eine kulinarische Weltreise begeben: ob Fleischliebhaber, Flexianer oder Veganer, über 35 Stände mit internationaler Küche versprechen faire Preise, ein ganzes Wochenende lang.</p> <p>Quelle und weitere Informationen unter www.messtival.de und www.facebook.com/MesstivalLeipzig &#8230;</p> <hr /> <p>Der INSPIRATA e.V. als Anlieger der Straße des 18. Oktober sowie Mitglied der &#8222;IG Alte Messe&#8220; beteiligt sich gern mit einem Stand am großen Event.</p> <p>In jedem Fall wird auch unsere Mitmach-Ausstellung von 12 bis 18 Uhr für Familien und Einzelbesucher geöffnet sein (Gruppen nach Voranmeldung).</p> <p>Wir freuen uns auf viele Besucher. Lasst euch inspirieren!</p> <p> </p> " ;
+    ical:dtend "2017-09-09T22:00:00+02:00"^^xsd:dateTime ;
+    ical:dtstamp "2017-06-28T12:58:58+02:00"^^xsd:dateTime ;
+    ical:dtstart "2017-09-09T15:00:00+02:00"^^xsd:dateTime ;
+    ical:location ldo:Inspirata ;
+    ical:organizer ldo:Inspirata ;
+    ical:summary "Im September 2017 feiert die Alte Messe Leipzig: MESSTIVAL = Musik + Streetfood + Show Am 9. September wird von 15 bis 22 Uhr die Straße des 18. Oktober in Leipzig ein sensationelles Event erleben: Bands der Alten Messe Leipzig, die &#8222;Firebirds-Show&#8220; des Theater Titanick, Automeile, Kinderflohmarkt, Kinderfahrschule, Fahrsimulator und vieles mehr &#8230; " ;
+    ical:url <https://www.inspirata.de/?p=9935> .
 
-ld:Event a owl:Class ;
-         rdfs:label "Event" .
+<http://leipzig-data.de/Data/Event/Inspirata.9946>
+    ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+    a ld:Event ;
+    rdfs:label "Projektbörse nachhaltige Bildung für Leipziger Schulen – 19.10.2017" ;
+    ical:description "<p><strong>Unter dem Motto &#8222;ZUKUNFT GESTALTEN LERNEN&#8220;</strong><br /> lädt der ZukunftsAkademie Leipzig e.V.<br /> <strong>Leipziger Schulen</strong> und <strong>externe Bildungsanbieter</strong><br /> für Donnerstag, den 19. Oktober 2017, ab 14 Uhr<br /> in die Stadtbibliothek an den Wilhelm-Leuschner-Platz ein.</p> <p>Dort werden sich viele Bildungsanbieter aus den Bereichen <strong>MINT</strong> (Mathematik/ Informatik/ Naturwissenschaft/ Technik) und <strong>BNE</strong> (Bildung für nachhaltige Entwicklung) präsentieren.<br /> Nach einem inspirierenden Kurzinput zu diesen Themen <strong>können Lehrkräfte aus Oberschulen und Gymnasien die Angebote direkt vor Ort und ihre Anbieter persönlich kennen lernen</strong> und Kooperationen vereinbaren. Die Angebote der Initiativen und Projekte sollen als <strong>Ergänzungen für den Profilunterricht, für Projekttage, GTA (Ganztagsangebote) u.ä.</strong> dienen.<br /> Einladungen mit ausführlichen Informationen zur Veranstaltung gingen vom ZukunftsAkademie e.V. per Post an Leipziger Schulen sowie per E-Mail an registrierte Lehrkräfte.</p> <p>Die Projektbörse wird in Kooperation mit der SBAL, dem ZLS der Uni Leipzig, der Stadt Leipzig sowie der Leipziger Agenda 21 organisiert.</p> <p>(Quelle: www.zukunftsakademie-leipzig.de/ziele/projektboerse)</p> <p>Auch unser INSPIRATA e.V. wird auf dieser Projektbörse seine aktuellen Angebote für Schulen vorstellen. Wir freuen uns auf persönliche Gespräche mit interessierten Lehrerinnen und Lehrern, Horterzieherinnen und Horterziehern.</p> <p>Lassen Sie sich inspirieren!</p> " ;
+    ical:dtstamp "2017-06-30T17:27:05+02:00"^^xsd:dateTime ;
+    ical:dtstart "2017-10-19T14:00:00+02:00"^^xsd:dateTime ;
+    ical:location <http://leipzig-data.de/Data/Ort/Bibliothek.Stadtbibliothek> ;
+    ical:organizer <http://leipzig-data.de/Data/Verein/Zukunftsakademie> ;
+    ical:summary "Unter dem Motto &#8222;ZUKUNFT GESTALTEN LERNEN&#8220; lädt der ZukunftsAkademie Leipzig e.V. Leipziger Schulen und externe Bildungsanbieter für Donnerstag, den 19. Oktober 2017, ab 14 Uhr in die Stadtbibliothek an den Wilhelm-Leuschner-Platz ein. Dort werden sich viele Bildungsanbieter aus den Bereichen MINT (Mathematik/ Informatik/ Naturwissenschaft/ Technik) und BNE (Bildung für nachhaltige Entwicklung) präsentieren. " ;
+    ical:url <https://www.inspirata.de/?p=9946> .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9946> a ld:Event;
-rdfs:label "Projektbörse nachhaltige Bildung für Leipziger Schulen – 19.10.2017" ; 
-ical:dtstart "2017-10-19T14:00:00+02:00"^^xsd:dateTime ;  # fix this 
-ld:hasTag ldtag:MINT, ldtag:Inspirata ;
-ical:organizer <http://leipzig-data.de/Data/Verein/Zukunftsakademie> ; 
-ical:location <http://leipzig-data.de/Data/Ort/Bibliothek.Stadtbibliothek> ; 
-ical:url <https://www.inspirata.de/?p=9946> ; 
-ical:summary "Unter dem Motto &#8222;ZUKUNFT GESTALTEN LERNEN&#8220; lädt der ZukunftsAkademie Leipzig e.V. Leipziger Schulen und externe Bildungsanbieter für Donnerstag, den 19. Oktober 2017, ab 14 Uhr in die Stadtbibliothek an den Wilhelm-Leuschner-Platz ein. Dort werden sich viele Bildungsanbieter aus den Bereichen MINT (Mathematik/ Informatik/ Naturwissenschaft/ Technik) und BNE (Bildung für nachhaltige Entwicklung) präsentieren. " ;
-ical:dtstamp "2017-06-30T17:27:05+02:00"^^xsd:dateTime ;
-ical:description "<p><strong>Unter dem Motto &#8222;ZUKUNFT GESTALTEN LERNEN&#8220;</strong><br /> lädt der ZukunftsAkademie Leipzig e.V.<br /> <strong>Leipziger Schulen</strong> und <strong>externe Bildungsanbieter</strong><br /> für Donnerstag, den 19. Oktober 2017, ab 14 Uhr<br /> in die Stadtbibliothek an den Wilhelm-Leuschner-Platz ein.</p> <p>Dort werden sich viele Bildungsanbieter aus den Bereichen <strong>MINT</strong> (Mathematik/ Informatik/ Naturwissenschaft/ Technik) und <strong>BNE</strong> (Bildung für nachhaltige Entwicklung) präsentieren.<br /> Nach einem inspirierenden Kurzinput zu diesen Themen <strong>können Lehrkräfte aus Oberschulen und Gymnasien die Angebote direkt vor Ort und ihre Anbieter persönlich kennen lernen</strong> und Kooperationen vereinbaren. Die Angebote der Initiativen und Projekte sollen als <strong>Ergänzungen für den Profilunterricht, für Projekttage, GTA (Ganztagsangebote) u.ä.</strong> dienen.<br /> Einladungen mit ausführlichen Informationen zur Veranstaltung gingen vom ZukunftsAkademie e.V. per Post an Leipziger Schulen sowie per E-Mail an registrierte Lehrkräfte.</p> <p>Die Projektbörse wird in Kooperation mit der SBAL, dem ZLS der Uni Leipzig, der Stadt Leipzig sowie der Leipziger Agenda 21 organisiert.</p> <p>(Quelle: www.zukunftsakademie-leipzig.de/ziele/projektboerse)</p> <p>Auch unser INSPIRATA e.V. wird auf dieser Projektbörse seine aktuellen Angebote für Schulen vorstellen. Wir freuen uns auf persönliche Gespräche mit interessierten Lehrerinnen und Lehrern, Horterzieherinnen und Horterziehern.</p> <p>Lassen Sie sich inspirieren!</p> " .
+<http://leipzig-data.de/Data/Events/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Events" .
 
-<http://leipzig-data.de/Data/Event/Inspirata.9935> a ld:Event;
-rdfs:label "INSPIRATA beim „Messtival“ auf der Alten Messe – 09.09.2017" ; 
-ical:dtstart "2017-09-09T15:00:00+02:00"^^xsd:dateTime ;  # fix this 
-ical:dtend "2017-09-09T22:00:00+02:00"^^xsd:dateTime ;  # fix this 
-ld:hasTag ldtag:MINT, ldtag:Inspirata ;
-ical:organizer <http://leipzig-data.de/Data/Ort/Inspirata> ; 
-ical:location <http://leipzig-data.de/Data/Ort/Inspirata> ; 
-ical:url <https://www.inspirata.de/?p=9935> ; 
-ical:summary "Im September 2017 feiert die Alte Messe Leipzig: MESSTIVAL = Musik + Streetfood + Show Am 9. September wird von 15 bis 22 Uhr die Straße des 18. Oktober in Leipzig ein sensationelles Event erleben: Bands der Alten Messe Leipzig, die &#8222;Firebirds-Show&#8220; des Theater Titanick, Automeile, Kinderflohmarkt, Kinderfahrschule, Fahrsimulator und vieles mehr &#8230; " ;
-ical:dtstamp "2017-06-28T12:58:58+02:00"^^xsd:dateTime ;
-ical:description "<p>Im September 2017 feiert die Alte Messe Leipzig:</p> <p><strong>MESSTIVAL = Musik + Streetfood + Show</strong></p> <p>Am 9. September wird von 15 bis 22 Uhr die Straße des 18. Oktober in Leipzig ein sensationelles Event erleben:<br /> Bands der Alten Messe Leipzig, die &#8222;Firebirds-Show&#8220; des Theater Titanick, Automeile, Kinderflohmarkt, Kinderfahrschule, Fahrsimulator und vieles mehr &#8230;</p> <p>Bands, die auf der Alten Messe ihre Proberäume haben, spielen auf 2 Bühnen Rock&amp;Pop, Alternativ-Rock, deutsche Coversongs oder Indierock.<br /> Drei Shows des Theater Titanick zeigen Feuereffekte und Explosionen, groteske Flugmaschinen und Flugversuche.</p> <p>Bei Streetfood kann man sich auf eine kulinarische Weltreise begeben: ob Fleischliebhaber, Flexianer oder Veganer, über 35 Stände mit internationaler Küche versprechen faire Preise, ein ganzes Wochenende lang.</p> <p>Quelle und weitere Informationen unter www.messtival.de und www.facebook.com/MesstivalLeipzig &#8230;</p> <hr /> <p>Der INSPIRATA e.V. als Anlieger der Straße des 18. Oktober sowie Mitglied der &#8222;IG Alte Messe&#8220; beteiligt sich gern mit einem Stand am großen Event.</p> <p>In jedem Fall wird auch unsere Mitmach-Ausstellung von 12 bis 18 Uhr für Familien und Einzelbesucher geöffnet sein (Gruppen nach Voranmeldung).</p> <p>Wir freuen uns auf viele Besucher. Lasst euch inspirieren!</p> <p> </p> " .
-
+ld:Event
+    a owl:Class ;
+    rdfs:label "Event" .
 

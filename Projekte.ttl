@@ -1,6 +1,3 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
-
-@base <http://leipzig-data.de/Data/Projekte/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,146 +5,223 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
-ld:Projekt a owl:Class ;
-           rdfs:label "Projekt" .
+ld:Projekt
+    a owl:Class ;
+    rdfs:label "Projekt" .
 
-<http://leipzig-data.de/Data/Projekt/APILeipzig> a ld:Projekt ;
-                                                 rdfs:label "Projekt API Leipzig" ;
-                                                 foaf:name "Projekt API Leipzig" ;
-                                                 foaf:homepage <http://www.apileipzig.de> .
+<http://leipzig-data.de/Data/Projekt/APILeipzig>
+    a ld:Projekt ;
+    rdfs:label "Projekt API Leipzig" ;
+    foaf:homepage <http://www.apileipzig.de> ;
+    foaf:name "Projekt API Leipzig" .
 
-<http://leipzig-data.de/Data/Projekt/APILeipzig.Events> a ld:Projekt ;
-                                                        rdfs:label "API Leipzig Eventkalender" ;
-                                                        foaf:name "API Leipzig Eventkalender" ;
-                                                        foaf:homepage <http://www.apileipzig.de/wiki/show/Beispielabfragen> ;
-                                                        ld:relatedTo <http://leipzig-data.de/Data/Agent/APILeipzig> .
+<http://leipzig-data.de/Data/Projekt/APILeipzig.Events>
+    ld:relatedTo <http://leipzig-data.de/Data/Agent/APILeipzig> ;
+    a ld:Projekt ;
+    rdfs:label "API Leipzig Eventkalender" ;
+    foaf:homepage <http://www.apileipzig.de/wiki/show/Beispielabfragen> ;
+    foaf:name "API Leipzig Eventkalender" .
 
-<http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie> a ld:Projekt ;
-                                                           rdfs:label "Schülerakademie der ASG" .
+<http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie>
+    a ld:Projekt ;
+    rdfs:label "Schülerakademie der ASG" .
 
-<http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> a ld:Projekt ;
-                                                            rdfs:label "Sommerfeldseminar der ASG" .
+<http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar>
+    a ld:Projekt ;
+    rdfs:label "Sommerfeldseminar der ASG" .
 
-<http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> a ld:Projekt ;
-                                                           rdfs:label "Attac Denktankstelle" .
+<http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle>
+    a ld:Projekt ;
+    rdfs:label "Attac Denktankstelle" .
 
-<http://leipzig-data.de/Data/Projekt/CodeForLeipzig> foaf:homepage <http://codefor.de/leipzig/> ;
-                                                     a ld:Projekt ;
-                                                     rdfs:label "Projekt Code for Leipzig" .
+<http://leipzig-data.de/Data/Projekt/Clusterteam.ErneuerbareEnergien>
+    ld:engagedPerson <http://leipzig-data.de/Data/Person/Huebner_Elke>, <http://leipzig-data.de/Data/Person/Lindner_Lothar> ;
+    a ld:Projekt ;
+    rdfs:label "Clusterteam Erneuerbare Energien" .
 
-<http://leipzig-data.de/Data/Projekt/FBL.Vorbereitungsgruppe> a ld:Projekt ;
-                                                              rdfs:label "Vorbereitungsgruppe FBL" ;
-                                                              ld:engagedPerson <http://leipzig-data.de/Data/Person/Brier_Leonhard>, <http://leipzig-data.de/Data/Person/Keppler_Ralph>, <http://leipzig-data.de/Data/Person/Tischer_Beate> .
+<http://leipzig-data.de/Data/Projekt/CodeForLeipzig>
+    a ld:Projekt ;
+    rdfs:label "Projekt Code for Leipzig" ;
+    foaf:homepage <http://codefor.de/leipzig/> .
 
-<http://leipzig-data.de/Data/Projekt/InitiativeSchleussig> ld:engagedPerson <http://leipzig-data.de/Data/Person/Hoenemann_Tobias> ;
-                                                           a ld:Projekt ;
-                                                           rdfs:label "Initiative Schleußig" .
+<http://leipzig-data.de/Data/Projekt/FBL.Vorbereitungsgruppe>
+    ld:engagedPerson <http://leipzig-data.de/Data/Person/Brier_Leonhard>, <http://leipzig-data.de/Data/Person/Keppler_Ralph>, <http://leipzig-data.de/Data/Person/Tischer_Beate> ;
+    a ld:Projekt ;
+    rdfs:label "Vorbereitungsgruppe FBL" .
 
-<http://leipzig-data.de/Data/Projekt/LD> rdfs:label "Leipzig Open Data Initiative" ;
-                                         ld:hasURL <http://www.leipzig-data.de> ;
-                                         a ld:Projekt .
+<http://leipzig-data.de/Data/Projekt/IB.JugendmigrationsdienstLeipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.53> ;
+    ld:hasCategories "Interkulturelle Vereine" ;
+    ld:hasOrtsteil ldot:Connewitz ;
+    ld:hasStadtId "213" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig> ;
+    a ld:Projekt ;
+    rdfs:label "IB Jugendmigrationsdienst Leipzig (JMD)" .
 
-<http://leipzig-data.de/Data/Projekt/LD.Seminar> ld:hasURL <http://www.leipzig-data.de/ld-seminar/> ;
-                                                 a ld:Projekt ;
-                                                 rdfs:label "Leipzig Open Data Seminar" .
+<http://leipzig-data.de/Data/Projekt/IB.Schulsozialarbeit.Gruenau>
+    ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.1> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig> ;
+    a ld:Projekt ;
+    rdfs:label "IB - Schulsozialarbeit" .
 
-<http://leipzig-data.de/Data/Projekt/LeipzigWeiterDenken> ld:hasURL <http://leipzig.de/weiterdenken> ;
-                                                          ld:relatedBundle <http://leipzig-data.de/Data/StadtLeipzig> ;
-                                                          a ld:Projekt ;
-                                                          rdfs:label "Veranstaltungsreihe \"Leipzig Weiter Denken\"" .
+<http://leipzig-data.de/Data/Projekt/IB.SystemischeMaedchenwohngruppe>
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Schachtstrasse.14> ;
+    ld:hasCategories "Kinder, Jugend und Familie, Frauenvereine" ;
+    ld:hasOrtsteil ldot:Gohlis-Sued ;
+    ld:hasStadtId "476" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig> ;
+    a ld:Projekt ;
+    rdfs:label "Internationaler Bund. Jugendhilfeverbund Systemische Mädchenwohngruppe mit integriertem Inobhutnahmeangebot" .
 
-<http://leipzig-data.de/Data/Projekt/MINT-Netzwerk> ld:engagedPerson <http://leipzig-data.de/Data/Person/Graebe_HansGert>, <http://leipzig-data.de/Data/Person/Wieland_Sabine> ;
-                                                    foaf:homepage <http://mint-leipzig.de/> ;
-                                                    a ld:Projekt ;
-                                                    rdfs:label "MINT Netzwerk Leipzig" .
+<http://leipzig-data.de/Data/Projekt/InitiativeSchleussig>
+    ld:engagedPerson <http://leipzig-data.de/Data/Person/Hoenemann_Tobias> ;
+    a ld:Projekt ;
+    rdfs:label "Initiative Schleußig" .
 
-<http://leipzig-data.de/Data/Projekt/NEU.Cluster-Lindner> ld:relatedBundle <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                          a ld:Projekt ;
-                                                          rdfs:label "Workshopreihe des Clusterteams 'Erneuerbare Energien und Energieeffizienz'" ;
-                                                          ld:Kurzinformation "Die Themen im Bereich der erneuerbaren Energien und der Energieeffizienz sind sehr vielfältig, zudem sind die Schwerpunktproblematiken der Branche einem ständigen Wandel unterlegen. Im Clusterteam für erneuerbare Energien und Energieeffizienz diskutieren daher regelmäßig interessierte Akteure aus Leipzig und Umgebung Probleme, Projekte und Veranstaltungen im Bereich der erneuerbaren Energien. Unter den Teilnehmern finden sich vor allem Vertreter von Klein- und mittelständischen Unternehmen, aber auch Privatpersonen und Vertreter der Wissenschaft und Forschung. Nehmen Sie also bei einem der zahlreichen Treffen des Clusterteams im Forsthaus Raschwitz teil. Anmelden können Sie sich beim Clusterteamleiter Lothar Lindner." ;
-                                                          ld:contactPerson <http://leipzig-data.de/Data/Person/Lindner_Lothar> .
+<http://leipzig-data.de/Data/Projekt/LD>
+    ld:hasURL <http://www.leipzig-data.de> ;
+    a ld:Projekt ;
+    rdfs:label "Leipzig Open Data Initiative" .
 
-<http://leipzig-data.de/Data/Projekt/NEU.Energiefachgespraeche> ld:hasURL <http://www.metastream-netzwerk.de/fachgespraechsreihe.html> ;
-                                                                ld:relatedBundle <http://leipzig-data.de/Data/Agent/NEU.Events> ;
-                                                                a ld:Projekt ;
-                                                                rdfs:label "Fachgesprächsreihe - Energieversorgungssysteme der Zukunft" ;
-                                                                ld:Kurzinformation "Das Netzwerk „metaStream“ organisiert seit 2012 gemeinsam mit der Universität Leipzig die Reihe Fachgespräche „Energiesysteme der Zukunft“. Auf den Fachgesprächen diskutieren Industriepartner und Wissenschaftler aktuelle Entwicklungen von Energiesystemen und innovative technische Konzepte für eine nachhaltige, robuste, kostengünstige und sichere Energieversorgung. Die Veranstaltungen bieten Industrieunternehmen, Verbänden und Forschungseinrichtungen eine Plattform zur Vernetzung und zum Ideenaustausch. Das Netzwerk selbst erbringt die wissenschaftliche ingenieurtechnische Leistungen sowie Beratungsleistungen und stellt die dafür erforderlichen technischen Ausrüstungen. <br/>Projekte des metaStream-Netzwerks sind auf der Netzwerkseite einsehbar:<br/>Ansprechpartner<br/>Dr. Stefan Kühne<br/>Telefon: +49 341 9732360<br/>kuehne@informatik.uni-leipzig.de." .
+<http://leipzig-data.de/Data/Projekt/LD.Seminar>
+    ld:hasURL <http://www.leipzig-data.de/ld-seminar/> ;
+    a ld:Projekt ;
+    rdfs:label "Leipzig Open Data Seminar" .
 
-<http://leipzig-data.de/Data/Projekt/NEU.Events> foaf:name "Eventkalender des Netzwerks \"Energie und Umwelt\"" ;
-                                                 foaf:homepage <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
-                                                 ld:relatedTo <http://leipzig-data.de/Data/Ort/NetzwerkEnergieUmwelt> ;
-                                                 a ld:Projekt ;
-                                                 rdfs:label "Eventkalender des Netzwerks \"Energie und Umwelt\"" .
+<http://leipzig-data.de/Data/Projekt/LeipzigOnRails>
+    a ld:Projekt ;
+    rdfs:label "Leipzig on Rails. Leipziger Ruby/Rails User Group" .
 
-<http://leipzig-data.de/Data/Projekt/NuKLA.AULA2030> ld:contactPerson <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
-                                                     ld:relatedBundle <http://leipzig-data.de/Data/Verein/NuKLA> ;
-                                                     a ld:Projekt ;
-                                                     rdfs:label "AULA-Projekt 2030" ;
-                                                     ld:Kurzinformation "Veranstaltungsreihe von NuKLA zum Leipziger Auenökosystem an der Volkshochschule Leipzig" .
+<http://leipzig-data.de/Data/Projekt/LeipzigWeiterDenken>
+    ld:hasURL <http://leipzig.de/weiterdenken> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/StadtLeipzig> ;
+    a ld:Projekt ;
+    rdfs:label "Veranstaltungsreihe \"Leipzig Weiter Denken\"" .
 
-<http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert> a ld:Projekt ;
-                                                             rdfs:label "Klassische Kartoffelkonzerte zu Gunsten des Leipziger Auwalds" ;
-                                                             ld:contactPerson <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
-                                                             ld:hasURL <http://www.klassischekartoffelkonzerte.de> ;
-                                                             ld:relatedBundle <http://leipzig-data.de/Data/Verein/NuKLA> .
+<http://leipzig-data.de/Data/Projekt/LeipzigerAgenda21>
+    ld:engagedPerson <http://leipzig-data.de/Data/Person/Elsaesser_Ralf> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Civixx> ;
+    a ld:Projekt ;
+    rdfs:label "Leipziger Agenda 21" .
 
-<http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe> a ld:Projekt ;
-                                                      rdfs:label "Veranstaltungsreihe von VHS und NuKLA e.V. zum Leipziger Auenökosystem" .
+<http://leipzig-data.de/Data/Projekt/MINT-Netzwerk>
+    ld:engagedPerson <http://leipzig-data.de/Data/Person/Graebe_HansGert>, <http://leipzig-data.de/Data/Person/Wieland_Sabine> ;
+    a ld:Projekt ;
+    rdfs:label "MINT Netzwerk Leipzig" ;
+    foaf:homepage <http://mint-leipzig.de/> .
 
-<http://leipzig-data.de/Data/Projekt/PAS> ld:hasURL <http://pas.physgeo.uni-leipzig.de>, <https://www.facebook.com/Physik.am.Samstag.Leipzig> ;
-                                          ld:relatedBundle <http://leipzig-data.de/Data/UniLeipzig/PhysFak> ;
-                                          a ld:Projekt ;
-                                          rdfs:label "Physik am Samstag" ;
-                                          rdfs:comment "Seit dem Wintersemester 2014/15 bietet die Fakultät für Physik und Geowissenschaften Schülerinnen, Schülern und Interessierten eine Reihe physikalischer Vorträge am Samstagmorgen an. ProfessorInnen und WissenschaftlerInnen werden dabei über faszinierende Themen der modernen Physik sprechen sowie Einblicke in die derzeitige Forschung geben. Die Vorlesungen finden alle im Großen Hörsaal der Fakultät für Physik und Geowissenschaften, Linnéstraße 5, Leipzig, statt. Von der Haltestelle Johannisallee, erreichbar mit dem Bus (60) oder der Straßenbahn (2, 16), geht man etwa 2 Minuten zum Großen Hörsaal. Die Zugangstreppen zum Hörsaal befinden sich gleich beim rückwärtigen Eingang des Fakultätsgebäudes." .
+<http://leipzig-data.de/Data/Projekt/NEU.Cluster-Lindner>
+    ld:Kurzinformation "Die Themen im Bereich der erneuerbaren Energien und der Energieeffizienz sind sehr vielfältig, zudem sind die Schwerpunktproblematiken der Branche einem ständigen Wandel unterlegen. Im Clusterteam für erneuerbare Energien und Energieeffizienz diskutieren daher regelmäßig interessierte Akteure aus Leipzig und Umgebung Probleme, Projekte und Veranstaltungen im Bereich der erneuerbaren Energien. Unter den Teilnehmern finden sich vor allem Vertreter von Klein- und mittelständischen Unternehmen, aber auch Privatpersonen und Vertreter der Wissenschaft und Forschung. Nehmen Sie also bei einem der zahlreichen Treffen des Clusterteams im Forsthaus Raschwitz teil. Anmelden können Sie sich beim Clusterteamleiter Lothar Lindner." ;
+    ld:contactPerson <http://leipzig-data.de/Data/Person/Lindner_Lothar> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+    a ld:Projekt ;
+    rdfs:label "Workshopreihe des Clusterteams 'Erneuerbare Energien und Energieeffizienz'" .
 
-<http://leipzig-data.de/Data/Projekt/PeakOil> ld:contactPerson <http://leipzig-data.de/Data/Person/Kramer_Anais> ;
-                                              ld:relatedBundle <http://leipzig-data.de/Data/Ort/NetzwerkEnergieUmwelt>, <http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig>, <http://leipzig-data.de/Data/Ort/Zukunftsakademie> ;
-                                              a ld:Projekt ;
-                                              rdfs:label "Projekt Peak Oil" ;
-                                              ld:Hintergrund "Projekt wird vom BMBF mit 35.000 Euro gefördert. Laufzeit bis 30.09.2013 (LVZ, 22.01.2013)" .
+<http://leipzig-data.de/Data/Projekt/NEU.Energiefachgespraeche>
+    ld:Kurzinformation "Das Netzwerk „metaStream“ organisiert seit 2012 gemeinsam mit der Universität Leipzig die Reihe Fachgespräche „Energiesysteme der Zukunft“. Auf den Fachgesprächen diskutieren Industriepartner und Wissenschaftler aktuelle Entwicklungen von Energiesystemen und innovative technische Konzepte für eine nachhaltige, robuste, kostengünstige und sichere Energieversorgung. Die Veranstaltungen bieten Industrieunternehmen, Verbänden und Forschungseinrichtungen eine Plattform zur Vernetzung und zum Ideenaustausch. Das Netzwerk selbst erbringt die wissenschaftliche ingenieurtechnische Leistungen sowie Beratungsleistungen und stellt die dafür erforderlichen technischen Ausrüstungen. <br/>Projekte des metaStream-Netzwerks sind auf der Netzwerkseite einsehbar:<br/>Ansprechpartner<br/>Dr. Stefan Kühne<br/>Telefon: +49 341 9732360<br/>kuehne@informatik.uni-leipzig.de." ;
+    ld:hasURL <http://www.metastream-netzwerk.de/fachgespraechsreihe.html> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Agent/NEU.Events> ;
+    a ld:Projekt ;
+    rdfs:label "Fachgesprächsreihe - Energieversorgungssysteme der Zukunft" .
 
-<http://leipzig-data.de/Data/Projekt/StartupWeekend> ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
-                                                     ld:hasURL <http://leipzig.startupweekend.org/> ;
-                                                     a ld:Projekt ;
-                                                     rdfs:label "Startup Weekend Leipzig" .
+<http://leipzig-data.de/Data/Projekt/NEU.Events>
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/NetzwerkEnergieUmwelt> ;
+    a ld:Projekt ;
+    rdfs:label "Eventkalender des Netzwerks \"Energie und Umwelt\"" ;
+    foaf:homepage <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
+    foaf:name "Eventkalender des Netzwerks \"Energie und Umwelt\"" .
 
-<http://leipzig-data.de/Data/Projekt/Umweltstammtisch> ld:Kurzinformation "Die vier an FOKUS Umwelt beteiligten Institutionen greifen seit 2006 in gemeinsamen Veranstaltungen aktuelle Umweltthemen auf, um sie mit und in der interessierten Öffentlichkeit zu diskutieren. Sie möchten Denkanstöße geben und neue Sichtweisen erschließen, aber auch die Vernetzung der Akteure im Umweltbereich in der Region Leipzig befördern. <br/> Mit dem Umweltstammtisch hat FOKUS Umwelt ein bekanntes Veranstaltungsformat wiederbelebt. Zwei- bis dreimal im Jahr soll der Stammtisch den Austausch zwischen mit Umweltthemen befassten Behördenvertretern, Wissenschaftlern, Planern, Umweltschützern und Unternehmensmitarbeitern der Region Leipzig fördern.<br/> Einstieg und Hauptteil der jeweiligen Veranstaltung bilden Vorträge oder Podiumsgespräche, um aktuelle, spannende oder kontroverse Themen und Sichtweisen in diesen Kreis einzubringen. Sie sollen auch den Blick auf die Region, die Disziplinen und die eigenen Denkmuster erweitern helfen. Danach besteht bei einen Imbiss und Getränken – danke an die Firma Sodexo – die Möglichkeit zum individuellen Austausch und zur Netzwerkarbeit. Sie können dazu gerne eigene Poster und Info-Materialien zur Auslage mitbringen. Wir freuen uns auf Ihre lebhafte Beteiligung!" ;
-                                                       ld:relatedBundle <http://leipzig-data.de/Data/Ort/UFZ>, <http://leipzig-data.de/Data/Ort/UIZ>, <http://leipzig-data.de/Data/Verein/LANU>, <http://leipzig-data.de/Data/Ort/Umweltbibliothek> ;
-                                                       a ld:Projekt ;
-                                                       rdfs:label "Umweltstammtisch" .
+<http://leipzig-data.de/Data/Projekt/NuKLA.AULA2030>
+    ld:Kurzinformation "Veranstaltungsreihe von NuKLA zum Leipziger Auenökosystem an der Volkshochschule Leipzig" ;
+    ld:contactPerson <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Verein/NuKLA> ;
+    a ld:Projekt ;
+    rdfs:label "AULA-Projekt 2030" .
 
-<http://leipzig-data.de/Data/Projekt/UniLeipzig.Energiewende-13> ld:Kurzinformation "Die Ringvorlesung „Kraftakt Energiewende – Chancen und Risiken der Transformation“ findet im Wintersemester 2013/14, zwischen 19 Uhr und 21 Uhr im Hörsaal 2 der Universität Leipzig (Hörsaalgebäude Campus Augustusplatz, Universitätsstraße, 04109 Leipzig) statt und wird vom Institut für Infrastruktur und Ressourcenmanagement der Universität Leipzig in Kooperation mit dem AEL e.V. und dem DRIEE e.V. organisiert." ;
-                                                                 ld:relatedBundle <http://leipzig-data.de/Data/Verein/AEL>, <http://leipzig-data.de/Data/Verein/DRIEE>, <http://leipzig-data.de/Data/UniLeipzig/IIR> ;
-                                                                 a ld:Projekt ;
-                                                                 rdfs:label "Ringvorlesung an der Universität Leipzig: „Kraftakt Energiewende – Chancen und Risiken der Transformation“" .
+<http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert>
+    ld:contactPerson <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
+    ld:hasURL <http://www.klassischekartoffelkonzerte.de> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Verein/NuKLA> ;
+    a ld:Projekt ;
+    rdfs:label "Klassische Kartoffelkonzerte zu Gunsten des Leipziger Auwalds" .
 
-<http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni> a ld:Projekt ;
-                                                      rdfs:label "Kinder-Uni an der Uni Leipzig" ;
-                                                      ld:Art "kindgerechte Vorlesungen" ;
-                                                      ld:Finanzierung "Aktivität der Universität" ;
-                                                      ld:Hintergrund "2005-2009 in Regie des Zentrums für Lehrerbildung, letztmalig im Kontext der 600-Jahr-Feier der Universität. Wurde von Frau Both organisiert, so lange sie an der Universität war. Seit Sept. 2011 organisiert von der Medizinischen Fakultät, der Anstoß dazu kam von Prof. Torsten Schöneberg (Prodekan Medizin)." ;
-                                                      ld:Kosten "nein" ;
-                                                      ld:Teilnahmebedingungen "keine" ;
-                                                      ld:Zielgruppe "Kinder im Alter zwischen 8 und 11 Jahren" ;
-                                                      ld:Zielstellung "KUNI setzt sich mit typischen Themen und Fragestellungen auseinander, die Kinder im frühen und mittleren Schulalter beschäftigen. " ;
-                                                      ld:hasStatus "Seit Sept/Okt 2011 in Regie der Medizinischen Fakultät" ;
-                                                      ld:hasTag <http://leipzig-data.de/Data/Tag/Jugendbildung> ;
-                                                      ld:hasURL <https://www.facebook.com/kuni.leipzig>, <http://www.uni-leipzig.de/kinderuni> ;
-                                                      ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig> ;
-                                                      ld:engagedPerson <http://leipzig-data.de/Data/Person/Gutschale_Anke>, <http://leipzig-data.de/Data/Person/Pohl_Anja>, <http://leipzig-data.de/Data/Person/Schoeneberg_Torsten> ;
-                                                      ld:hasEmail "kinderuni@uni-leipzig.de" .
+<http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe>
+    a ld:Projekt ;
+    rdfs:label "Veranstaltungsreihe von VHS und NuKLA e.V. zum Leipziger Auenökosystem" .
 
-<http://leipzig-data.de/Data/Projekt/UniLeipzig.Netzprojekt> a ld:Projekt ;
-                                                             rdfs:label "Netzprojekt HGG" .
+<http://leipzig-data.de/Data/Projekt/PAS>
+    ld:hasURL <http://pas.physgeo.uni-leipzig.de>, <https://www.facebook.com/Physik.am.Samstag.Leipzig> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/UniLeipzig/PhysFak> ;
+    a ld:Projekt ;
+    rdfs:comment "Seit dem Wintersemester 2014/15 bietet die Fakultät für Physik und Geowissenschaften Schülerinnen, Schülern und Interessierten eine Reihe physikalischer Vorträge am Samstagmorgen an. ProfessorInnen und WissenschaftlerInnen werden dabei über faszinierende Themen der modernen Physik sprechen sowie Einblicke in die derzeitige Forschung geben. Die Vorlesungen finden alle im Großen Hörsaal der Fakultät für Physik und Geowissenschaften, Linnéstraße 5, Leipzig, statt. Von der Haltestelle Johannisallee, erreichbar mit dem Bus (60) oder der Straßenbahn (2, 16), geht man etwa 2 Minuten zum Großen Hörsaal. Die Zugangstreppen zum Hörsaal befinden sich gleich beim rückwärtigen Eingang des Fakultätsgebäudes." ;
+    rdfs:label "Physik am Samstag" .
 
-<http://leipzig-data.de/Data/Projekt/UniLeipzig.Netzprojekt.IG> a ld:Projekt ;
-                                                                rdfs:label "Interdisziplinäre Gespräche zum digitalen Wandel" .
+<http://leipzig-data.de/Data/Projekt/PeakOil>
+    ld:Hintergrund "Projekt wird vom BMBF mit 35.000 Euro gefördert. Laufzeit bis 30.09.2013 (LVZ, 22.01.2013)" ;
+    ld:contactPerson <http://leipzig-data.de/Data/Person/Kramer_Anais> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Ort/NetzwerkEnergieUmwelt>, <http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig>, <http://leipzig-data.de/Data/Ort/Zukunftsakademie> ;
+    a ld:Projekt ;
+    rdfs:label "Projekt Peak Oil" .
 
-<> cc:attributionURL <http://leipzig-data.de> ;
-   cc:attributionName "The Leipzig Open Data Project" ;
-   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   a owl:Ontology ;
-   rdfs:label "Projekte" .
+<http://leipzig-data.de/Data/Projekt/StartupWeekend>
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
+    ld:hasURL <http://leipzig.startupweekend.org/> ;
+    a ld:Projekt ;
+    rdfs:label "Startup Weekend Leipzig" .
+
+<http://leipzig-data.de/Data/Projekt/UFZ.KinderUmweltBus>
+    ld:Kosten "Bei ganzen Projekttagen fällt ggf. ein Personalkostenzuschuss an." ;
+    ld:Kurzinformation "Der KinderUmweltBus bietet zu den Themen Wasser, Lebensraum Boden und Energie Projektstunden von 60 bis 90 Minuten für Kinder im Vor- und Grundschulalter mit spielerisch-spannenden Experimenten und kreativer Naturforschung – auch im Rahmen Ihrer Projekttage und Projektwochen – und spezielle Fortbildungsangebote für Pädagogen (Lehrer, Erzieher sowie Umweltbildner) an.", "Unter dem Motto „Bestaunen, Begreifen, Beschützen“ werden experimentell und spielerisch elementare naturwissenschaftliche Zusammenhänge speziell zum Thema Wasser erläutert, die das Interesse an der Natur wecken und umweltbewusstes Handeln fördern sollen. Der KinderUmweltBus ermöglicht es, mit Kindern und Schülern vor Ort zu arbeiten, sowohl in den Räumen der Schule als auch direkt in der Natur. Die Themen nehmen einen engen Bezug auf den Lehrplan. Damit kann dieses Angebot den Lehrstoff z.B. im Fach Sachkunde sinnvoll ergänzen." ;
+    ld:Oeffnungszeiten "Anmeldungen sind halbjährlich möglich. Anmeldeformular unter www.kinderumwelt-bus.de" ;
+    ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
+    ld:Zielgruppe "Lehrerweiterbildung", "Vor- und Grundschule" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Permoserstrasse.15> ;
+    ld:hasEmail "kinderumweltbus@ufz.de" ;
+    ld:hasFax "0341-235-3629" ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/UFZ> ;
+    ld:hasTag ldtag:MINT, ldtag:Umwelt ;
+    ld:hasTelefon "0341-235-3630" ;
+    a ld:Projekt ;
+    rdfs:label "UFZ KinderUmweltBus" ;
+    foaf:homepage <http://www.kinderumwelt-bus.de>, <http://www.kinderumweltbus.de> .
+
+<http://leipzig-data.de/Data/Projekt/Umweltstammtisch>
+    ld:Kurzinformation "Die vier an FOKUS Umwelt beteiligten Institutionen greifen seit 2006 in gemeinsamen Veranstaltungen aktuelle Umweltthemen auf, um sie mit und in der interessierten Öffentlichkeit zu diskutieren. Sie möchten Denkanstöße geben und neue Sichtweisen erschließen, aber auch die Vernetzung der Akteure im Umweltbereich in der Region Leipzig befördern. <br/> Mit dem Umweltstammtisch hat FOKUS Umwelt ein bekanntes Veranstaltungsformat wiederbelebt. Zwei- bis dreimal im Jahr soll der Stammtisch den Austausch zwischen mit Umweltthemen befassten Behördenvertretern, Wissenschaftlern, Planern, Umweltschützern und Unternehmensmitarbeitern der Region Leipzig fördern.<br/> Einstieg und Hauptteil der jeweiligen Veranstaltung bilden Vorträge oder Podiumsgespräche, um aktuelle, spannende oder kontroverse Themen und Sichtweisen in diesen Kreis einzubringen. Sie sollen auch den Blick auf die Region, die Disziplinen und die eigenen Denkmuster erweitern helfen. Danach besteht bei einen Imbiss und Getränken – danke an die Firma Sodexo – die Möglichkeit zum individuellen Austausch und zur Netzwerkarbeit. Sie können dazu gerne eigene Poster und Info-Materialien zur Auslage mitbringen. Wir freuen uns auf Ihre lebhafte Beteiligung!" ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UFZ>, <http://leipzig-data.de/Data/Ort/UIZ>, <http://leipzig-data.de/Data/Ort/Umweltbibliothek>, <http://leipzig-data.de/Data/Verein/LANU> ;
+    a ld:Projekt ;
+    rdfs:label "Umweltstammtisch" .
+
+<http://leipzig-data.de/Data/Projekt/UniLeipzig.Energiewende-13>
+    ld:Kurzinformation "Die Ringvorlesung „Kraftakt Energiewende – Chancen und Risiken der Transformation“ findet im Wintersemester 2013/14, zwischen 19 Uhr und 21 Uhr im Hörsaal 2 der Universität Leipzig (Hörsaalgebäude Campus Augustusplatz, Universitätsstraße, 04109 Leipzig) statt und wird vom Institut für Infrastruktur und Ressourcenmanagement der Universität Leipzig in Kooperation mit dem AEL e.V. und dem DRIEE e.V. organisiert." ;
+    ld:relatedBundle <http://leipzig-data.de/Data/UniLeipzig/IIR>, <http://leipzig-data.de/Data/Verein/AEL>, <http://leipzig-data.de/Data/Verein/DRIEE> ;
+    a ld:Projekt ;
+    rdfs:label "Ringvorlesung an der Universität Leipzig: „Kraftakt Energiewende – Chancen und Risiken der Transformation“" .
+
+<http://leipzig-data.de/Data/Projekt/UniLeipzig.Kuni>
+    ld:Art "kindgerechte Vorlesungen" ;
+    ld:Finanzierung "Aktivität der Universität" ;
+    ld:Hintergrund "2005-2009 in Regie des Zentrums für Lehrerbildung, letztmalig im Kontext der 600-Jahr-Feier der Universität. Wurde von Frau Both organisiert, so lange sie an der Universität war. Seit Sept. 2011 organisiert von der Medizinischen Fakultät, der Anstoß dazu kam von Prof. Torsten Schöneberg (Prodekan Medizin)." ;
+    ld:Kosten "nein" ;
+    ld:Teilnahmebedingungen "keine" ;
+    ld:Zielgruppe "Kinder im Alter zwischen 8 und 11 Jahren" ;
+    ld:Zielstellung "KUNI setzt sich mit typischen Themen und Fragestellungen auseinander, die Kinder im frühen und mittleren Schulalter beschäftigen. " ;
+    ld:engagedPerson <http://leipzig-data.de/Data/Person/Gutschale_Anke>, <http://leipzig-data.de/Data/Person/Pohl_Anja>, <http://leipzig-data.de/Data/Person/Schoeneberg_Torsten> ;
+    ld:hasEmail "kinderuni@uni-leipzig.de" ;
+    ld:hasStatus "Seit Sept/Okt 2011 in Regie der Medizinischen Fakultät" ;
+    ld:hasTag ldtag:Jugendbildung ;
+    ld:hasURL <http://www.uni-leipzig.de/kinderuni>, <https://www.facebook.com/kuni.leipzig> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UniLeipzig> ;
+    a ld:Projekt ;
+    rdfs:label "Kinder-Uni an der Uni Leipzig" .
+
+<http://leipzig-data.de/Data/Projekte/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Projekte" .
+
