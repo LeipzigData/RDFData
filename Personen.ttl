@@ -5,13 +5,15 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 
 <http://leipzig-data.de/Data/Person/Ackermann_Arne>
     a foaf:Person ;
     foaf:name "Arne Ackermann" .
 
 <http://leipzig-data.de/Data/Person/Albert_Katrin>
-    ld:relatedTo <http://leipzig-data.de/Data/Firma/BusinessIntelligence> ;
+    org:memberOf <http://leipzig-data.de/Data/Firma/BusinessIntelligence> ;
     a foaf:Person ;
     foaf:name "Katrin Albert" .
 
@@ -34,7 +36,7 @@
     foaf:name "Stefanie Bamberg" .
 
 <http://leipzig-data.de/Data/Person/Benedix_Katrin>
-    ld:relatedTo <http://leipzig-data.de/Data/KE/DiakonischesWerk> ;
+    org:memberOf <http://leipzig-data.de/Data/KE/DiakonischesWerk> ;
     a foaf:Person ;
     rdfs:comment "SSA Schumann-Mittelschule" ;
     foaf:name "Katrin Benedix" .
@@ -44,7 +46,7 @@
     foaf:name "Dennis Berg" .
 
 <http://leipzig-data.de/Data/Person/Bergmann_Thommy>
-    ld:hasURL <http://www.mandalari.de> ;
+    foaf:homepage <http://www.mandalari.de> ;
     ld:relatedTo <http://leipzig-data.de/Data/Ort/MandalaSpieleck> ;
     a foaf:Person ;
     foaf:name "Thommy Bergmann" .
@@ -55,12 +57,13 @@
     foaf:name "Ulrike Bernard" .
 
 <http://leipzig-data.de/Data/Person/Bielig_Sven>
-    ld:relatedTo <http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau>, <http://leipzig-data.de/Data/Verein/Stadtjugendring>, <http://leipzig-data.de/Data/Verein/UrbanSouls> ;
+    ld:relatedTo <http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/Stadtjugendring>, <http://leipzig-data.de/Data/Verein/UrbanSouls> ;
     a foaf:Person ;
     foaf:name "Sven Bielig" .
 
 <http://leipzig-data.de/Data/Person/Boehr_Annett>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/RAA.Leipzig> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/RAA.Leipzig> ;
     a foaf:Person ;
     rdfs:comment "SSA Petri-Mittelschule" ;
     foaf:name "Annett Böhr" .
@@ -85,7 +88,7 @@
     foaf:name "Leonhard Brier" .
 
 <http://leipzig-data.de/Data/Person/BuechelBernhard_Aaron>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM.Leipzig> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/CVJM.Leipzig> ;
     a foaf:Person ;
     foaf:name "Aaron Büchel-Bernhard" .
 
@@ -94,12 +97,12 @@
     foaf:name "Torsten Büttner" .
 
 <http://leipzig-data.de/Data/Person/Burger_Petra>
-    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
+    org:memberOf <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
     a foaf:Person ;
     foaf:name "Petra Burger" .
 
 <http://leipzig-data.de/Data/Person/Darlatt_Kathrin>
-    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig> ;
+    org:memberOf <http://leipzig-data.de/Data/StadtLeipzig> ;
     a foaf:Person ;
     rdfs:comment "Gleichstellungspolitische Referentin Stadt Leipzig" ;
     foaf:name "Kathrin Darlatt" .
@@ -135,7 +138,7 @@
     foaf:name "Heike Engel" .
 
 <http://leipzig-data.de/Data/Person/Faehse_Robby>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendfeuerwehr> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/Stadtjugendfeuerwehr> ;
     a foaf:Person ;
     foaf:name "Robby Faehse" .
 
@@ -159,12 +162,12 @@
     foaf:name "Marga Friedrich" .
 
 <http://leipzig-data.de/Data/Person/Fries_Kerstin>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/Verein.FFJ> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/Verein.FFJ> ;
     a foaf:Person ;
     foaf:name "Kerstin Fries" .
 
 <http://leipzig-data.de/Data/Person/Fritzsche_Nicole>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/KinderVereinigung.Leipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/KinderVereinigung.Leipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     a foaf:Person ;
     foaf:name "Nicole Fritzsche" .
 
@@ -187,13 +190,13 @@
     foaf:name "Maria Geißler" .
 
 <http://leipzig-data.de/Data/Person/Geng_Tobias>
-    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
+    org:memberOf <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
     a foaf:Person ;
     foaf:name "Tobias Geng" .
 
 <http://leipzig-data.de/Data/Person/Georgi_Gunnar>
-    ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/80-gunnar> ;
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    foaf:homepage <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/80-gunnar> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     a foaf:Person ;
     foaf:name "Gunnar Georgi" .
 
@@ -215,8 +218,8 @@
     foaf:name "Prof. Dr. Hans-Gert Gräbe" .
 
 <http://leipzig-data.de/Data/Person/Graf_Corinna>
-    ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/78-corinna> ;
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    foaf:homepage <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/78-corinna> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     a foaf:Person ;
     rdfs:comment "GF des Stadtjugendrings" ;
     foaf:name "Corinna Graf" .
@@ -260,7 +263,7 @@
     foaf:name "Annegret Hänsel" .
 
 <http://leipzig-data.de/Data/Person/Haensgen_Christoph>
-    ld:hasURL <http://www.happy-robots.de> ;
+    foaf:homepage <http://www.happy-robots.de> ;
     a foaf:Person ;
     foaf:name "Christoph Hänsgen" .
 
@@ -293,12 +296,12 @@
     foaf:name "Torsten Heinrich" .
 
 <http://leipzig-data.de/Data/Person/Heinze_Sven>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/Sportjugend>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/Sportjugend>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     a foaf:Person ;
     foaf:name "Sven Heinze" .
 
 <http://leipzig-data.de/Data/Person/Herold_Corrina>
-    ld:hasURL "http://www.fom.de" ;
+    foaf:homepage "http://www.fom.de" ;
     ld:relatedTo <http://leipzig-data.de/Data/Hochschule.FOM> ;
     a foaf:Person ;
     foaf:name "Corrina Herold" ;
@@ -341,7 +344,7 @@
     foaf:name "Lars Ihring" .
 
 <http://leipzig-data.de/Data/Person/Jaeger_Alexander>
-    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
+    org:memberOf <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
     a foaf:Person ;
     foaf:name "Alexander Jäger" .
 
@@ -350,7 +353,7 @@
     foaf:name "Heinrich Moritz Jähnig" .
 
 <http://leipzig-data.de/Data/Person/Johannes_Uta>
-    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
+    org:memberOf <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
     a foaf:Person ;
     rdfs:comment "Sachbearbeiterin Medien- und Kreativwirtschaft im Amt für Wirtschaftsförderung" ;
     foaf:name "Uta Johannes" .
@@ -370,7 +373,7 @@
     foaf:name "Lisa Keck" .
 
 <http://leipzig-data.de/Data/Person/Keppler_Ralph>
-    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> ;
+    org:memberOf <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation> ;
     a foaf:Person ;
     foaf:homepage <http://www.civitas-botschafter.de/Keppler.htm> ;
     foaf:name "Ralph Keppler" .
@@ -384,7 +387,7 @@
     foaf:name "Anna-Katharina Klauer" .
 
 <http://leipzig-data.de/Data/Person/Kleshch_Irina>
-    ld:relatedTo <http://leipzig-data.de/Data/Firma/evermind> ;
+    org:memberOf <http://leipzig-data.de/Data/Firma/evermind> ;
     a foaf:Person ;
     foaf:name "Irina Kleshch" .
 
@@ -393,12 +396,12 @@
     foaf:name "Holger Klimesch" .
 
 <http://leipzig-data.de/Data/Person/Knospe_Uta>
-    ld:relatedTo <http://leipzig-data.de/Data/Buergerverein/Messemagistrale> ;
+    org:memberOf <http://leipzig-data.de/Data/Buergerverein/Messemagistrale> ;
     a foaf:Person ;
     foaf:name "Uta Knospe" .
 
 <http://leipzig-data.de/Data/Person/Koch_Jan>
-    ld:hasURL <http://www.drehfreibier.de/> ;
+    foaf:homepage <http://www.drehfreibier.de/> ;
     a foaf:Person ;
     foaf:name "Jan Koch" .
 
@@ -447,14 +450,14 @@
     foaf:name "Dr. Torsten Lange" .
 
 <http://leipzig-data.de/Data/Person/Lapoen_Genka>
-    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig> ;
+    org:memberOf <http://leipzig-data.de/Data/StadtLeipzig> ;
     a foaf:Person ;
     rdfs:comment "Gleichstellungsbeauftragte der Stadt Leipzig" ;
     foaf:name "Genka Lapön" .
 
 <http://leipzig-data.de/Data/Person/Lehmann_Olaf>
     a foaf:Person ;
-    ld:relatedTo <http://leipzig-data.de/Data/IHK-Leipzig> ;
+    org:memberOf <http://leipzig-data.de/Data/IHK-Leipzig> ;
     foaf:name "Olaf Lehmann" .
 
 <http://leipzig-data.de/Data/Person/Liebelt_Ute>
@@ -486,7 +489,7 @@
     foaf:name "Olaf Maruhn" .
 
 <http://leipzig-data.de/Data/Person/Meier_Katja>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     a foaf:Person ;
     foaf:name "Katja Meier" .
 
@@ -510,7 +513,7 @@
     foaf:name "Juliane Metschies" .
 
 <http://leipzig-data.de/Data/Person/Metz_Susanne>
-    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
+    org:memberOf <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     a foaf:Person ;
     rdfs:comment "Amtsleiterin der städtischen Bibliotheken (Amtsblatt, 29.06.2013)" ;
     foaf:name "Susanne Metz" .
@@ -546,12 +549,12 @@
     foaf:name "Petra Nagler" .
 
 <http://leipzig-data.de/Data/Person/Niggemeyer_Joachim>
-    ld:hasURL <http://www.niggemeyer-art.de> ;
+    foaf:homepage <http://www.niggemeyer-art.de> ;
     a foaf:Person ;
     foaf:name "Joachim R. Niggemeyer" .
 
 <http://leipzig-data.de/Data/Person/Nuernberger_Tabea>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM.Leipzig> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/CVJM.Leipzig> ;
     a foaf:Person ;
     foaf:name "Tabea Nürnberger" .
 
@@ -560,7 +563,7 @@
     foaf:name "Stev Pauli" .
 
 <http://leipzig-data.de/Data/Person/PeeckPreimuss_Attila>
-    ld:relatedTo <http://leipzig-data.de/Data/DGB/Jugend> ;
+    org:memberOf <http://leipzig-data.de/Data/DGB/Jugend> ;
     a foaf:Person ;
     foaf:name "Attila Peeck-Preimus" .
 
@@ -581,8 +584,8 @@
     foaf:name "Uwe Petzschler" .
 
 <http://leipzig-data.de/Data/Person/PhuongThaoDinhVan>
-    ld:hasURL <http://www.leipzig.ihk.de/desktopdefault.aspx/tabid-248/14_read-5985/date-23723/> ;
-    ld:relatedTo <http://leipzig-data.de/Data/IHK-Leipzig> ;
+    foaf:homepage <http://www.leipzig.ihk.de/desktopdefault.aspx/tabid-248/14_read-5985/date-23723/> ;
+    org:memberOf <http://leipzig-data.de/Data/IHK-Leipzig> ;
     a foaf:Person ;
     foaf:name "Phuong Thao Dinh Van" .
 
@@ -600,12 +603,12 @@
     foaf:name "Anja Pohl" .
 
 <http://leipzig-data.de/Data/Person/Praetor_Sandra>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/InfAI> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/InfAI> ;
     a foaf:Person ;
     foaf:name "Sandra Praetor" .
 
 <http://leipzig-data.de/Data/Person/Pretsch_Irina>
-    ld:relatedTo <http://leipzig-data.de/Data/Firma/BBW> ;
+    org:memberOf <http://leipzig-data.de/Data/Firma/BBW> ;
     a foaf:Person ;
     foaf:name "Irina Pretsch" .
 
@@ -681,7 +684,7 @@
     foaf:name "Sascha Roeser" .
 
 <http://leipzig-data.de/Data/Person/Roth_Dorit>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/CVJM.Leipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/CVJM.Leipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     a foaf:Person ;
     foaf:name "Dorit Roth" .
 
@@ -707,7 +710,7 @@
     foaf:name "Peter Schlupp" .
 
 <http://leipzig-data.de/Data/Person/Schmidt_David>
-    ld:hasURL <https://www.facebook.com/Tanzagentur> ;
+    foaf:homepage <https://www.facebook.com/Tanzagentur> ;
     a foaf:Person ;
     rdfs:comment "Reality (Tanzagentur EU i.G.e.V.)" ;
     foaf:name "David Schmidt" .
@@ -727,7 +730,7 @@
     foaf:title "Prof. Dr." .
 
 <http://leipzig-data.de/Data/Person/Schoetter_Andrea>
-    ld:relatedTo <http://leipzig-data.de/Data/IHK-Leipzig> ;
+    org:memberOf <http://leipzig-data.de/Data/IHK-Leipzig> ;
     a foaf:Person ;
     foaf:name "Andrea Schötter" .
 
@@ -741,7 +744,7 @@
     foaf:name "Dr. Axel Schüler" .
 
 <http://leipzig-data.de/Data/Person/Schueler_Jana>
-    ld:relatedTo <http://leipzig-data.de/Data/Firma/BBW>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
+    org:memberOf <http://leipzig-data.de/Data/Firma/BBW>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     a foaf:Person ;
     foaf:name "Jana Schüler" .
 
@@ -781,7 +784,7 @@
     foaf:name "Britta Senn" .
 
 <http://leipzig-data.de/Data/Person/Stadler_Peter>
-    ld:hasURL <http://www.bioinf.uni-leipzig.de/> ;
+    foaf:homepage <http://www.bioinf.uni-leipzig.de/> ;
     a foaf:Person ;
     rdfs:comment "Professor für Bioinformatik an der Uni Leipzig" ;
     foaf:name "Prof. Peter F. Stadler" .
@@ -816,7 +819,7 @@
     foaf:name "Stefanie Thate" .
 
 <http://leipzig-data.de/Data/Person/Thielemann_Lutz>
-    ld:relatedTo <http://leipzig-data.de/Data/Firma/WRL> ;
+    org:memberOf <http://leipzig-data.de/Data/Firma/WRL> ;
     a foaf:Person ;
     rdfs:comment "Geschäftsführer der WRL ab 15.08.2013 (Amtsblatt, 29.06.2013)" ;
     foaf:name "Lutz Thielemann" .
@@ -840,7 +843,7 @@
     foaf:name "Katja Treschok" .
 
 <http://leipzig-data.de/Data/Person/Tutar_Katrin>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/Caktus> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/Caktus> ;
     a foaf:Person ;
     foaf:name "Katrin Tutar" .
 
@@ -855,7 +858,7 @@
     foaf:name "Rüdiger Ulrich" .
 
 <http://leipzig-data.de/Data/Person/Unckell_Kornelius>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/KreativesLeipzig> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/KreativesLeipzig> ;
     a foaf:Person ;
     foaf:name "Kornelius Unckell" .
 
@@ -868,7 +871,7 @@
     foaf:name "Thomas Wagner" .
 
 <http://leipzig-data.de/Data/Person/Waldmann_Johannes>
-    ld:hasURL <http://www.imn.htwk-leipzig.de/~waldmann/> ;
+    foaf:homepage <http://www.imn.htwk-leipzig.de/~waldmann/> ;
     a foaf:Person ;
     rdfs:comment "Professor für Informatik an der HTKW Leipzig" ;
     foaf:name "Prof. Johannes Waldmann" .
@@ -884,12 +887,12 @@
     foaf:name "Prof. Dr. Hartmut Warkus" .
 
 <http://leipzig-data.de/Data/Person/Weise_Joerg>
-    ld:hasURL "http://www.public-confidence.de" ;
+    foaf:homepage "http://www.public-confidence.de" ;
     a foaf:Person ;
     foaf:name "Jörg Weise" .
 
 <http://leipzig-data.de/Data/Person/Weissgerber_Kerstin>
-    ld:hasURL <http://www.aurel-marketing.de> ;
+    foaf:homepage <http://www.aurel-marketing.de> ;
     a foaf:Person ;
     rdfs:comment "Aurel Marketing" ;
     foaf:name "Kerstin Weißgerber" .
@@ -922,7 +925,7 @@
     foaf:title "Prof. Dr.-Ing. habil." .
 
 <http://leipzig-data.de/Data/Person/Wuerzberger_Nadine>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/FAIRbund> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/FAIRbund> ;
     a foaf:Person ;
     foaf:name "Nadine Würzberger" .
 
@@ -936,15 +939,9 @@
     foaf:name "Sabine Wunderlich" .
 
 <http://leipzig-data.de/Data/Person/Zippe_Annett>
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/Kinderschutzbund> ;
+    org:memberOf <http://leipzig-data.de/Data/Verein/Kinderschutzbund> ;
     a foaf:Person ;
     foaf:name "Annett Zippe" .
-
-<http://leipzig-data.de/Data/Person/vonJan_Teresa>
-    ld:hasURL <http://www.stadtjugendring-leipzig.de/mitarbeiterinnen/365-teresa> ;
-    ld:relatedTo <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
-    a foaf:Person ;
-    foaf:name "Teresa von Jan" .
 
 <http://leipzig-data.de/Data/Person/vonNessler_Georg>
     a foaf:Person ;
