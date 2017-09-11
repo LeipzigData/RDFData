@@ -8,10 +8,9 @@
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix org: <http://www.w3.org/ns/org#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 ld:PolizeiInspektion
-    a owl:Class ;
+    a owl:Class ; 
     rdfs:label "Polizei-Inspektion" .
 
 ld:PolizeiRevier
@@ -61,82 +60,82 @@ ldp:Palitzsch_Axel
 <http://leipzig-data.de/Data/Polizeiinspektion/Kriminalpolizei>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Dimitroffstrasse.1> ;
     a ld:PolizeiInspektion, org:Organization ;
-    skos:prefLabel "Kriminalpolizei" ;
+    rdfs:label "Kriminalpolizei" ;
     foaf:phone "0341-9660" .
 
 <http://leipzig-data.de/Data/Polizeiinspektion/Verkehrspolizei>
     ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Schongauerstrasse.13> ;
     a ld:PolizeiInspektion, org:Organization ;
-    skos:prefLabel "Verkehrspolizei" ;
+    rdfs:label "Verkehrspolizei" ;
     foaf:phone "0341-2550" .
 
 <http://leipzig-data.de/Data/Polizeiinspektion/ZentraleDienste>
     ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Schongauerstrasse.17> ;
     a ld:PolizeiInspektion, org:Organization ;
-    skos:prefLabel "Zentrale Dienste" ;
+    rdfs:label "Zentrale Dienste" ;
     foaf:phone "0341-2550" .
 
 <http://leipzig-data.de/Data/Polizeirevier/Nord>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.EssenerStrasse.1> ;
     ld:zustaendigFuer ldot:Eutritzsch, ldot:Gohlis-Mitte, ldot:Gohlis-Nord, ldot:Gohlis-Sued, ldot:Lindenthal, ldot:Luetzschena-Stahmeln, ldot:Mockau-Nord, ldot:Mockau-Sued, ldot:Moeckern, ldot:Plaussig-Portitz, ldot:Schoenefeld-Abtnaundorf, ldot:Schoenefeld-Ost, ldot:Seehausen, ldot:Thekla, ldot:Wahren, ldot:Wiederitzsch ;
     a ld:PolizeiRevier, org:Organization ;
-    skos:prefLabel "Polizeirevier Leipzig-Nord" ;
+    rdfs:label "Polizeirevier Leipzig-Nord" ;
     foaf:phone "0341-59350" .
 
 <http://leipzig-data.de/Data/Polizeirevier/SuedOst>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Richard-Lehmann-Strasse.19> ;
     ld:zustaendigFuer ldot:Althen-Kleinpoesna, ldot:Anger-Crottendorf, ldot:Baalsdorf, ldot:Connewitz, ldot:Doelitz-Doesen, ldot:Engelsdorf, ldot:Heiterblick, ldot:Holzhausen, ldot:Liebertwolkwitz, ldot:Loessnig, ldot:Marienbrunn, ldot:Meusdorf, ldot:Moelkau, ldot:Paunsdorf, ldot:Probstheida, ldot:Sellerhausen-Stuenz, ldot:Stoetteritz, ldot:Suedvorstadt ;
     a ld:PolizeiRevier, org:Organization ;
-    skos:prefLabel "Polizeirevier Leipzig-Südost" ;
+    rdfs:label "Polizeirevier Leipzig-Südost" ;
     foaf:phone "0341-3030299" .
 
 <http://leipzig-data.de/Data/Polizeirevier/SuedWest>
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.Ratzelstrasse.222> ;
     ld:zustaendigFuer ldot:Altlindenau, ldot:Boehlitz-Ehrenberg, ldot:Burghausen-Rueckmarsdorf, ldot:Grosszschocher, ldot:Gruenau-Mitte, ldot:Gruenau-Nord, ldot:Gruenau-Ost, ldot:Gruenau-Siedlung, ldot:Hartmannsdorf-Knautnaundorf, ldot:Kleinzschocher, ldot:Knautkleeberg-Knauthain, ldot:Lausen-Gruenau, ldot:Leutzsch, ldot:Lindenau, ldot:Miltitz, ldot:Neulindenau, ldot:Plagwitz, ldot:Schleussig, ldot:Schoenau ;
     a ld:PolizeiRevier, org:Organization ;
-    skos:prefLabel "Polizeirevier Leipzig-Südwest" ;
+    rdfs:label "Polizeirevier Leipzig-Südwest" ;
     foaf:phone "0341-94600" .
 
 <http://leipzig-data.de/Data/Polizeirevier/Zentrum>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Dimitroffstrasse.1> ;
     ld:zustaendigFuer ldot:Neustadt-Neuschoenefeld, ldot:Reudnitz-Thonberg, ldot:Volkmarsdorf, ldot:Zentrum, ldot:Zentrum-Nord, ldot:Zentrum-Nordwest, ldot:Zentrum-Ost, ldot:Zentrum-Sued, ldot:Zentrum-Suedost, ldot:Zentrum-West ;
     a ld:PolizeiRevier, org:Organization ;
-    skos:prefLabel "Polizeirevier Leipzig-Zentrum" ;
+    rdfs:label "Polizeirevier Leipzig-Zentrum" ;
     foaf:phone "0341-96634299" .
 
 <http://leipzig-data.de/Data/Polizeistandort/Nord.1>
     ld:hasAddress <http://leipzig-data.de/Data/04435.Schkeuditz.Markt.2> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/Nord> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Schkeuditz" ;
+    rdfs:label "Polizeistandort Schkeuditz" ;
     foaf:phone "034204-860" .
 
 <http://leipzig-data.de/Data/Polizeistandort/Nord.2>
     ld:hasAddress <http://leipzig-data.de/Data/04425.Taucha.Schlossstrasse.13> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/Nord> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Taucha" ;
+    rdfs:label "Polizeistandort Taucha" ;
     foaf:phone "034298-6030" .
 
 <http://leipzig-data.de/Data/Polizeistandort/Nord.3>
     ld:hasAddress <http://leipzig-data.de/Data/04435.Schkeuditz.AmFlughafenbahnhof.1> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/Nord> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Flughafen" ;
+    rdfs:label "Polizeistandort Flughafen" ;
     foaf:phone "0341-96628425" .
 
 <http://leipzig-data.de/Data/Polizeistandort/SuedOst.1>
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.AmPoseidon.4> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/SuedOst> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Markkleeberg" ;
+    rdfs:label "Polizeistandort Markkleeberg" ;
     foaf:phone "0341-35310" .
 
 <http://leipzig-data.de/Data/Polizeistandort/SuedOst.2>
     ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Schongauerstrasse.13> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/SuedOst> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Paunsdorf" ;
+    rdfs:label "Polizeistandort Paunsdorf" ;
     foaf:phone "0341-35310" .
 
 <http://leipzig-data.de/Data/Polizeistandort/SuedOst.3>
@@ -144,47 +143,47 @@ ldp:Palitzsch_Axel
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/SuedOst> ;
     a ld:PolizeiStandort, org:Organization ;
     rdfs:comment "Wiedebach-Passage" ;
-    skos:prefLabel "Polizeistandort Connewitz" ;
+    rdfs:label "Polizeistandort Connewitz" ;
     foaf:phone "0173-9618464" .
 
 <http://leipzig-data.de/Data/Polizeistandort/SuedOst.4>
     ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.LiebertwolkwitzerMarkt.10> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/SuedOst> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Liebertwolkwitz" ;
+    rdfs:label "Polizeistandort Liebertwolkwitz" ;
     foaf:phone "034297-30300" .
 
 <http://leipzig-data.de/Data/Polizeistandort/SuedWest.1>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.WeissenfelserStrasse.7> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/SuedWest> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Weißenfelser Straße" ;
+    rdfs:label "Polizeistandort Weißenfelser Straße" ;
     foaf:phone "0341-94600" .
 
 <http://leipzig-data.de/Data/Polizeistandort/SuedWest.2>
     ld:hasAddress <http://leipzig-data.de/Data/04420.Markranstaedt.Markt.11> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/SuedWest> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Markranstädt" ;
+    rdfs:label "Polizeistandort Markranstädt" ;
     foaf:phone "034205-79310" .
 
 <http://leipzig-data.de/Data/Polizeistandort/SuedWest.3>
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.AmMarkt.10> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/SuedWest> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Böhlitz-Ehrenberg" ;
+    rdfs:label "Polizeistandort Böhlitz-Ehrenberg" ;
     foaf:phone "0173-9618507" .
 
 <http://leipzig-data.de/Data/Polizeistandort/Zentrum.1>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.19> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/Zentrum> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Ritterstraße" ;
+    rdfs:label "Polizeistandort Ritterstraße" ;
     foaf:phone "0341-7105224" .
 
 <http://leipzig-data.de/Data/Polizeistandort/Zentrum.2>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.49> ;
     ld:zuRevier <http://leipzig-data.de/Data/Polizeirevier/Zentrum> ;
     a ld:PolizeiStandort, org:Organization ;
-    skos:prefLabel "Polizeistandort Eisenbahnstraße" .
+    rdfs:label "Polizeistandort Eisenbahnstraße" .
 

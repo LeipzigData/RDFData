@@ -4,202 +4,212 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
-
-<http://leipzig-data.de/Data/JIA>
-    a ld:Tag ;
-    rdfs:comment "Siehe https://www.telekom-stiftung.de/projekte/junior-ingenieur-akademie" ;
-    rdfs:label "Junior-Ingenieur-Akademie" .
-
-<http://leipzig-data.de/Data/Klimaschule-Schule>
-    a ld:Tag ;
-    rdfs:comment "Siehe https://www.umwelt.sachsen.de/umwelt/klima/44130.htm" ;
-    rdfs:label "Sächsische Klima-Schule" .
-
-<http://leipzig-data.de/Data/MINT-EC-Schule>
-    a ld:Tag ;
-    rdfs:comment "Siehe http://leipzig-netz.de/index.php5/MINT.Schulen" ;
-    rdfs:label "MINT-EC Schule" .
-
-<http://leipzig-data.de/Data/MINT-Schule.2012>
-    a ld:Tag ;
-    rdfs:comment "Siehe http://leipzig-netz.de/index.php5/MINT.Schulen" ;
-    rdfs:label "MINT-Schule 2012", "MINT-freundliche Schule 2012" .
-
-<http://leipzig-data.de/Data/MINT-Schule.2015>
-    a ld:Tag ;
-    rdfs:comment "Siehe http://leipzig-netz.de/index.php5/MINT.Schulen" ;
-    rdfs:label "MINT-freundliche Schule 2015" .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
 ld:Tag
     a owl:Class ;
     rdfs:comment "Genormtes Schlagwort zur Klassifizierung" ;
     rdfs:label "Tag" .
 
-<http://leipzig-data.de/Data/Tag/ASG>
+ldtag:ASG
     a ld:Tag ;
     rdfs:label "Arnold-Sommerfeld-Gesellschaft" .
 
-<http://leipzig-data.de/Data/Tag/AULA>
+ldtag:AULA
     a ld:Tag ;
     rdfs:label "Leipziger Auwald" .
 
-<http://leipzig-data.de/Data/Tag/AttacLeipzig>
+ldtag:AttacLeipzig
     a ld:Tag ;
     rdfs:label "Attac Leipzig" .
 
-<http://leipzig-data.de/Data/Tag/BehiGe>
+ldtag:BehiGe
     a ld:Tag ;
     rdfs:label "Behindertengerecht" .
 
-<http://leipzig-data.de/Data/Tag/Berufsbildung>
+ldtag:Berufsbildung
     a ld:Tag ;
     rdfs:label "Berufsbildung" .
 
-<http://leipzig-data.de/Data/Tag/Berufsorientierung>
+ldtag:Berufsorientierung
     a ld:Tag ;
     rdfs:label "Berufsorientierung" .
 
-<http://leipzig-data.de/Data/Tag/Bibliothek>
+ldtag:Bibliothek
     a ld:Tag ;
     rdfs:label "Bibliothek" .
 
-<http://leipzig-data.de/Data/Tag/Bildung>
+ldtag:Bildung
     a ld:Tag ;
     rdfs:label "Bildung" .
 
-<http://leipzig-data.de/Data/Tag/Biologie>
+ldtag:Biologie
     a ld:Tag ;
     rdfs:label "Bereich Biologie" .
 
-<http://leipzig-data.de/Data/Tag/Chemie>
+ldtag:Chemie
     a ld:Tag ;
     rdfs:label "Bereich Chemie" .
 
-<http://leipzig-data.de/Data/Tag/CodeForLeipzig>
+ldtag:CodeForLeipzig
     a ld:Tag ;
     rdfs:label "Code for Leipzig" .
 
-<http://leipzig-data.de/Data/Tag/DenkTankStelle>
+ldtag:DenkTankStelle
     a ld:Tag ;
     rdfs:label "Attac-Denktankstelle" .
 
-<http://leipzig-data.de/Data/Tag/EinBehiGe>
+ldtag:EinBehiGe
     a ld:Tag ;
     rdfs:label "Eingeschränkt Behindertengerecht" .
 
-<http://leipzig-data.de/Data/Tag/Energie>
+ldtag:Energie
     a ld:Tag ;
     rdfs:label "Energiethema" .
 
-<http://leipzig-data.de/Data/Tag/Forschung>
+ldtag:Forschung
     a ld:Tag ;
     rdfs:label "Forschung" .
 
-<http://leipzig-data.de/Data/Tag/Freizeit>
+ldtag:Freizeit
     a ld:Tag ;
     rdfs:label "Freizeit" .
 
-<http://leipzig-data.de/Data/Tag/GTA>
+ldtag:GTA
     a ld:Tag ;
     rdfs:label "Als Ganztagsangebot möglich" .
 
-<http://leipzig-data.de/Data/Tag/Hochschule>
+ldtag:Hochschule
     a ld:Tag ;
     rdfs:label "Hochschulbereich" .
 
-<http://leipzig-data.de/Data/Tag/Informatik>
+ldtag:Informatik
     a ld:Tag ;
     rdfs:label "Bereich Informatik" .
 
-<http://leipzig-data.de/Data/Tag/Inspirata>
+ldtag:Inspirata
     a ld:Tag ;
     rdfs:label "Inspirata" .
 
-<http://leipzig-data.de/Data/Tag/Jugendbildung>
+ldtag:JIA
+    a ld:Tag ;
+    rdfs:comment "Siehe https://www.telekom-stiftung.de/projekte/junior-ingenieur-akademie" ;
+    rdfs:label "Junior-Ingenieur-Akademie" .
+
+ldtag:Jugendbildung
     a ld:Tag ;
     rdfs:label "Jugendbildung" .
 
-<http://leipzig-data.de/Data/Tag/Jugendhilfe>
+ldtag:Jugendhilfe
     a ld:Tag ;
     rdfs:label "Jugendhilfe" .
 
-<http://leipzig-data.de/Data/Tag/KapitalismusKritik>
+ldtag:KapitalismusKritik
     a ld:Tag ;
     rdfs:label "Kapitalismus-Kritik" .
 
-<http://leipzig-data.de/Data/Tag/Kinderuni>
+ldtag:Kinderuni
     a ld:Tag ;
     rdfs:label "Kinderuni" .
 
-<http://leipzig-data.de/Data/Tag/KreativesLeipzig>
+ldtag:Klimaschule-Schule
+    a ld:Tag ;
+    rdfs:comment "Siehe https://www.umwelt.sachsen.de/umwelt/klima/44130.htm" ;
+    rdfs:label "Sächsische Klima-Schule" .
+
+ldtag:KreativesLeipzig
     a ld:Tag ;
     rdfs:label "Kreatives Leipzig" .
 
-<http://leipzig-data.de/Data/Tag/LSGM>
+ldtag:LSGM
     a ld:Tag ;
     rdfs:label "LSGM" .
 
-<http://leipzig-data.de/Data/Tag/LeipzigData>
+ldtag:LeipzigData
     a ld:Tag ;
     rdfs:label "Das Leipzig Data Projekt" .
 
-<http://leipzig-data.de/Data/Tag/MINT>
+ldtag:MINT
     a ld:Tag ;
     rdfs:label "Bereich MINT" .
 
-<http://leipzig-data.de/Data/Tag/MINT-Broschuere>
+ldtag:MINT-Broschuere
     a ld:Tag ;
     rdfs:label "Gelistet in der MINT-Broschuere 2014" .
 
-<http://leipzig-data.de/Data/Tag/Marx>
+ldtag:MINT-EC-Schule
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php5/MINT.Schulen" ;
+    rdfs:label "MINT-EC Schule" .
+
+<http://leipzig-data.de/Data/Tag/MINT-Schule.2012>
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php5/MINT.Schulen" ;
+    rdfs:label "MINT-Schule 2012", "MINT-freundliche Schule 2012" .
+
+<http://leipzig-data.de/Data/Tag/MINT-Schule.2015>
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php5/MINT.Schulen" ;
+    rdfs:label "MINT-freundliche Schule 2015" .
+
+ldtag:Marx
     a ld:Tag ;
     rdfs:label "Marxismus" .
 
-<http://leipzig-data.de/Data/Tag/Mathematik>
+ldtag:Mathematik
     a ld:Tag ;
     rdfs:label "Bereich Mathematik" .
 
-<http://leipzig-data.de/Data/Tag/MehrAlsChillen>
+ldtag:MehrAlsChillen
     a ld:Tag ;
     rdfs:label "Mehr als Chillen - Grünau" .
 
-<http://leipzig-data.de/Data/Tag/Museum>
+ldtag:Museum
     a ld:Tag ;
     rdfs:label "Museum" .
 
-<http://leipzig-data.de/Data/Tag/Nachhilfe>
+ldtag:Nachhilfe
     a ld:Tag ;
     rdfs:label "Nachhilfe" .
 
-<http://leipzig-data.de/Data/Tag/Naturwissenschaft>
+ldtag:Naturwissenschaft
     a ld:Tag ;
     rdfs:label "Bereich Naturwissenschaft" .
 
-<http://leipzig-data.de/Data/Tag/Naturwissenschaften>
+ldtag:Naturwissenschaften
     a ld:Tag ;
     rdfs:label "Bereich Naturwissenschaften" .
 
-<http://leipzig-data.de/Data/Tag/Physik>
+ldtag:Physik
     a ld:Tag ;
     rdfs:label "Bereich Physik" .
 
-<http://leipzig-data.de/Data/Tag/Technik>
+ldtag:Technik
     a ld:Tag ;
     rdfs:label "Bereich Technik" .
 
-<http://leipzig-data.de/Data/Tag/Umwelt>
+ldtag:UNESCO-Schule
+    a ld:Tag ;
+    rdfs:comment "Siehe http://www.unesco.de/bildung/ups.html" ;
+    rdfs:label "UNESCO Schule" .
+
+ldtag:Ueberregional
+    a ld:Tag ;
+    rdfs:label "Überregionaler Akteur" .
+
+ldtag:Umwelt
     a ld:Tag ;
     rdfs:label "Umwelt" .
 
-<http://leipzig-data.de/Data/Tag/Umweltbildung>
+ldtag:Umweltbildung
     a ld:Tag ;
     rdfs:label "Umweltbildung" .
 
-<http://leipzig-data.de/Data/Tag/ZAK>
+ldtag:ZAK
     a ld:Tag ;
     rdfs:label "Zukunfts-Akademie" .
 
-<http://leipzig-data.de/Data/Tag/ZukunftsDiskurs>
+ldtag:ZukunftsDiskurs
     a ld:Tag ;
     rdfs:label "Zukunfts-Diskurs" .
 
@@ -209,9 +219,4 @@ ld:Tag
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:label "Tags" .
-
-<http://leipzig-data.de/Data/UNESCO-Schule>
-    a ld:Tag ;
-    rdfs:comment "Siehe http://www.unesco.de/bildung/ups.html" ;
-    rdfs:label "UNESCO Schule" .
 
