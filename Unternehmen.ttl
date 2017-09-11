@@ -15,9 +15,9 @@
     rdfs:label "Arvato Systems GmbH" .
 
 <http://leipzig-data.de/Data/Firma/Aurel.Marketing>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Weissgerber_Kerstin> ;
     a ld:Unternehmen ;
     rdfs:label "Aurel Marketing" ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Weissgerber_Kerstin> ;
     foaf:homepage <http://www.aurel-marketing.de> .
 
 <http://leipzig-data.de/Data/Firma/Autohaus_Auto_Saxe>
@@ -69,10 +69,10 @@
     foaf:homepage <http://www.freizeit-abenteuer.com/bootsverleih.php> .
 
 <http://leipzig-data.de/Data/Firma/BusinessIntelligence>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Albert_Katrin> ;
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.August-Bebel-Strasse.44> ;
     a ld:Unternehmen ;
     rdfs:label "BI Business Intelligence GmbH" ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Albert_Katrin> ;
     foaf:homepage <http://www.bi-web.de> ;
     foaf:phone "0341-303383-30" .
 
@@ -80,7 +80,6 @@
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TorgauerStrasse.116> ;
     a org:Organization ;
     rdfs:label "Deutsches Biomasseforschungszentrum gGmbH" ;
-    foaf:fax "0341-2434-133" ;
     foaf:homepage <http://dbfz.de> ;
     foaf:mbox "info@dbfz.de" ;
     foaf:phone "0341-2434-112" .
@@ -116,9 +115,9 @@
     rdfs:label "Enerelektronik GmbH" .
 
 <http://leipzig-data.de/Data/Firma/EnergieUmweltLindner>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Lindner_Lothar> ;
     a ld:Unternehmen ;
-    rdfs:label "Planungsbüro für Energie und Umwelt" .
+    rdfs:label "Planungsbüro für Energie und Umwelt" ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Lindner_Lothar> .
 
 <http://leipzig-data.de/Data/Firma/Energieforen.Leipzig>
     ld:contactPerson <http://leipzig-data.de/Data/Person/Haenel_Andreas> ;
@@ -174,7 +173,6 @@
     ld:Art "Freier Weiterbildner" ;
     ld:Hintergrund "Seit dem 1. Juli 2010 firmiert unser Unternehmen unter InstaG - Institut für akademische Gesamtbildung GmbH. Die InstaG GmbH - wie bisher schon die EuroGene GmbH - steht dabei für seriöse, qualitativ hochwertige, bedarfs- und kundenorientierte Aus- und Weiterbildung mit einer hohen Praxisrelevanz und einer gleichbleibend hohen Qualität der Bildung. <br/> Unser Unternehmen wurde im Jahr 2005 von Frau Univ.-Prof. Dr. med. habil. Ursula Froster und dem Arzt und Diplom-Verwaltungswirt Dr. med. Armin Baumgartner aus der Universität Leipzig ausgegründet. Als An-Institut konzipiert, folgte es den Vorgaben und Empfehlungen der Bildungs- und Wissenschaftspolitik und übernahm dabei Aufgaben der postgraduierten Weiterbildung auf den Gebieten der Biotechnologie, Molekularbiologie sowie Medizin. Es erfüllte somit Aufgaben der Erwachsenenbildung, die von den Universitäten nicht mehr erfüllt werden konnten. <br/> Zunächst durch einen Kooperationsvertrag mit der Universität Leipzig verbunden, geht das Institut seit Mitte 2010 nun neue und eigene Wege." ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goethestrasse.1> ;
-    ld:hasFax "0341-35591755" ;
     ld:hasTag ldtag:MINT ;
     a ld:Unternehmen ;
     rdfs:comment "2017 Weiterleitung auf http://biotechnologie-weiterbildung.de/ der Genovia GmbH" ;
@@ -260,8 +258,8 @@
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Angerstrasse.40> ;
     ld:hasSupplierNumber "313" ;
     a ld:Unternehmen ;
-    foaf:homepage <http://www.planl-leipzig.de> ;
-    rdfs:label "PLAN L gGmbH" .
+    rdfs:label "PLAN L gGmbH" ;
+    foaf:homepage <http://www.planl-leipzig.de> .
 
 <http://leipzig-data.de/Data/Firma/SAEK-Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ferdinand-Lassalle-Strasse.21> ;
@@ -306,8 +304,8 @@
 <http://leipzig-data.de/Data/Firma/SternburgBrauerei>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.13> ;
     a ld:Unternehmen, org:Organization ;
-    rdfs:label "Sternburg Brauerei GmbH" ;
     rdfs:comment "Ein Unternehmen der Radeberger Gruppe" ;
+    rdfs:label "Sternburg Brauerei GmbH" ;
     foaf:homepage <http://www.sternburg-bier.de/> .
 
 <http://leipzig-data.de/Data/Firma/StudioBosco>
@@ -327,8 +325,8 @@
 <http://leipzig-data.de/Data/Firma/Triade>
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.August-Bebel-Strasse.35> ;
     ld:hasCategories "Frauenvereine", "Sozialpsychiatrische Hilfen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "504" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Unternehmen ;
     rdfs:label "TRIADE GbR Beratungsstelle zur täterorientierten Anti-Gewaltarbeit" .
 
@@ -340,13 +338,13 @@
     foaf:homepage <http://www.ungestalt.de> .
 
 <http://leipzig-data.de/Data/Firma/Unikatum>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Haensel_Annegret> ;
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.26> ;
     ld:hasCategories "Kinder, Jugend und Familie, Bildung und Freizeit, Bildende Kunst, Kinder- und Jugendkultur, Museum, Sozio- und Stadtteilkultur" ;
     ld:hasOrtsteil ldot:Plagwitz ;
     ld:hasStadtId "645" ;
     a ld:Unternehmen ;
     rdfs:label "Unikatum Kindermuseum gGmbH" ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Haensel_Annegret> ;
     foaf:mbox "info@kindermuseum-unikatum.de" ;
     foaf:phone "0341-3061986" .
 
@@ -411,7 +409,6 @@
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Schorlemmerstrasse.1> ;
     a ld:Unternehmen, org:Organization ;
     rdfs:label "Evermind GmbH" ;
-    foaf:fax "0341-2539661" ;
     foaf:phone "0341-2539660" .
 
 <http://leipzig-data.de/Data/Firma/i-fabrik>

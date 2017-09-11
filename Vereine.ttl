@@ -47,7 +47,6 @@ ld:Verein
     rdfs:label "AG Animationsfilm e.V." .
 
 <http://leipzig-data.de/Data/Verein/ANU-Bund>
-    ld:hasUW_id "veranstalter/1455" ;
     a ld:Verein ;
     rdfs:label "ANU - Arbeitsgemeinschaft Natur- und Umweltbildung, Bundesverband e.V." ;
     foaf:phone "069-31019229", "069-31019243" .
@@ -84,11 +83,11 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/AidsHilfe>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Ossietzkystrasse.18> ;
     ld:hasSupplierNumber "039" ;
-    ld:hasTelefon "0341-2323126" ;
     a ld:Verein ;
     rdfs:label "AIDS Hilfe Leipzig" ;
     foaf:homepage <http://www.leipzig.aidshilfe.de> ;
-    foaf:mbox "thomas.franke@Leipzig.aidshilfe.de" .
+    foaf:mbox "thomas.franke@Leipzig.aidshilfe.de" ;
+    foaf:phone "0341-2323126" .
 
 <http://leipzig-data.de/Data/Verein/AktiveSeniorenLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Doellingstrasse.31> ;
@@ -101,8 +100,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/AlleMitmischen>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.DoelitzerStrasse.31A> ;
     ld:hasCategories "Bildung und Freizeit", "Kulturvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "648" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Alle Mitmischen e.V." .
 
@@ -117,8 +116,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/AlzheimerAngehoerigenInitiativeLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Hoeltystrasse.30> ;
     ld:hasCategories "Behindertenvereine", "Neurologische Krankheiten", "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "580" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Alzheimer Angehörigen-Initiative Leipzig e.V." .
 
@@ -133,8 +132,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/AngehoerigenSelbsthilfegruppeAlzheimerDemenz>
     ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Hoeltystrasse.30> ;
     ld:hasCategories "Neurologische Krankheiten", "Prävention", "Selbsthilfe", "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "579" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Angehörigen-Selbsthilfegruppe Alzheimer/Demenz" .
 
@@ -158,8 +157,8 @@ ld:Verein
 
 <http://leipzig-data.de/Data/Verein/AnonymeAlkoholiker>
     ld:hasCategories "Selbsthilfe", "Selbsthilfegruppen", "Sucht/Abhängigkeit" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "554" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Anonyme Alkoholiker" .
 
@@ -235,10 +234,10 @@ ld:Verein
     foaf:homepage <http://www.attac-leipzig.de> .
 
 <http://leipzig-data.de/Data/Verein/Auwaldstation>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Baesler_Detlef>, <http://leipzig-data.de/Data/Person/Seidel_Franka> ;
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
     a ld:Verein ;
-    rdfs:label "Auwaldstation Leipzig" .
+    rdfs:label "Auwaldstation Leipzig" ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Baesler_Detlef>, <http://leipzig-data.de/Data/Person/Seidel_Franka> .
 
 <http://leipzig-data.de/Data/Verein/BGL.Nachbarschaftshilfeverein>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Querstrasse.22> ;
@@ -297,9 +296,9 @@ ld:Verein
     rdfs:label "Batzen-Tauschring Leipzig e.V." .
 
 <http://leipzig-data.de/Data/Verein/BauhuetteOst>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Kohl_Ralf> ;
     a ld:Verein ;
-    rdfs:label "Bauhütte Ost" .
+    rdfs:label "Bauhütte Ost" ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Kohl_Ralf> .
 
 <http://leipzig-data.de/Data/Verein/BehindertenverbandLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
@@ -321,8 +320,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/BlaswerkLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Universitaetsstrasse.1> ;
     ld:hasCategories "Kulturvereine", "Musik" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "462" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Blaswerk-Leipzig e.V." .
 
@@ -345,8 +344,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/BorrelioseSHG>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Hans-Marchwitza-Strasse.28> ;
     ld:hasCategories "Behinderungen", "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "408" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Borreliose-SHG" .
 
@@ -495,10 +494,10 @@ ld:Verein
     foaf:phone "0341-87099110" .
 
 <http://leipzig-data.de/Data/Verein/Civixx>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Elsaesser_Ralf> ;
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Pestalozzistrasse.70> ;
     a ld:Verein ;
     rdfs:label "CivixX - Werkstatt für Zivilgesellschaft" ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Elsaesser_Ralf> ;
     foaf:phone "0341-44259900", "0341-44259916" .
 
 <http://leipzig-data.de/Data/Verein/ClownmuseumLeipzig>
@@ -564,8 +563,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/DKSB.OrtsverbandLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Tarostrasse.17> ;
     ld:hasCategories "Jugend und Familie", "Kinder", "Kinder- und Jugendschutz", "Prävention", "Suchthilfe" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "546" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Deutscher Kinderschutzbund Ortsverband Leipzig e.V." .
 
@@ -685,8 +684,8 @@ ld:Verein
 
 <http://leipzig-data.de/Data/Verein/DeutscheGesellschaftFuerDasHochbegabteKind>
     ld:hasCategories "Bürgervereine", "Psychosoziale und soziale Probleme", "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "418" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Deutsche Gesellschaft für das hochbegabte Kind e.V., Regionalverein Sachsen und Sachsen-Anhalt e.V." .
 
@@ -767,19 +766,18 @@ ld:Verein
     rdfs:label "Elterninitiative für mutistische Kinder" .
 
 <http://leipzig-data.de/Data/Verein/EMMD>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Tobaben_JoernHeinrich> ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Schillerstrasse.5> ;
     a ld:Verein ;
     rdfs:comment "Am 18. März 2014 fusionierten die Wirtschaftsinitiative für Mitteldeutschland und die Metropolregion Mitteldeutschland zur „Europäischen Metropolregion Mitteldeutschland e.V.“ Die Wirtschaftsinitiative für Mitteldeutschland als Unternehmensnetzwerk und die Metropolregion Mitteldeutschland als Städtebündnis wollen durch die Verschmelzung die Region gemeinsam voranbringen. ... Der neue „Europäische Metropolregion Mitteldeutschland e.V.“ wird die bestehende Vereinsstruktur der Wirtschaftsinitiative für Mitteldeutschland e.V. nutzen. Ihm gehören 54 Unternehmen, drei Industrie- und Handelskammern sowie die Städte Leipzig, Halle/Saale, Dessau-Roßlau, Jena, Gera, Chemnitz und Zwickau an.  <br/> Quelle: http://www.region-halle.de/de/metropolregion/wirtschaftsinitiative-f%C3%BCr-mitteldeutschland-stellt-sich-neu-auf.html" ;
-    rdfs:label "Europäischen Metropolregion Mitteldeutschland e.V." .
+    rdfs:label "Europäischen Metropolregion Mitteldeutschland e.V." ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Tobaben_JoernHeinrich> .
 
 <http://leipzig-data.de/Data/Verein/ENEDAS>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.33> ;
     ld:hasCategories "Bildung und Freizeit", "Stadtgeschichte und Heimatpflege", "Umwelt und Stadtgrün" ;
     ld:hasOrtsteil ldot:Zentrum-West ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "639", "678" ;
-    ld:hasTag ldtag:MINT-Broschuere ;
+    ld:hasTag ldtag:MINT-Broschuere, ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "ENvironmental EDucation And Science (ENEDAS) e.V." .
 
@@ -806,8 +804,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/ElternAnsNetz>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Yorckstrasse.39> ;
     ld:hasCategories "Bildung und Freizeit", "Jugendsozialarbeit", "Kinder, Jugend und Familie", "Kinder- und Jugendschutz", "Medien", "Prävention", "Sucht/Abhängigkeit" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "618" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Eltern ans Netz e.V." .
 
@@ -876,8 +874,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/FK.OperLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.81> ;
     ld:hasCategories "Kulturvereine", "Musik" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "592" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Förderkreis der Oper Leipzig e.V." .
 
@@ -1063,10 +1061,10 @@ ld:Verein
 
 <http://leipzig-data.de/Data/Verein/Foerderverein.WildparkLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.161> ;
-    ld:hasTag ldtag:MINT-Broschuere ;
     ld:hasCategories "Umwelt und Stadtgrün" ;
     ld:hasOrtsteil ldot:Connewitz ;
     ld:hasStadtId "282" ;
+    ld:hasTag ldtag:MINT-Broschuere ;
     a ld:Verein ;
     rdfs:label "Verein der Freunde und Förderer des Wildparks Leipzig e.V." .
 
@@ -1139,18 +1137,18 @@ ld:Verein
     rdfs:label "FürWort Verein für Mitteldeutsche Literatur e.V." .
 
 <http://leipzig-data.de/Data/Verein/GAZ>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Reschke_Volker> ;
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
     a ld:Verein ;
     rdfs:label "Grün-Alternatives Zentrum Leipzig e.V." ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Reschke_Volker> ;
     foaf:mbox "gaz-leipzig@t-online.de" .
 
 <http://leipzig-data.de/Data/Verein/GEDOK>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gerichtsweg.28> ;
     ld:hasCategories "Bildende Kunst", "Frauenvereine", "Kulturvereine", "Musik" ;
     ld:hasOrtsteil ldot:Zentrum-Ost ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "473", "533" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "GEDOK. Gruppe Leipzig/Sachsen e.V." .
 
@@ -1158,8 +1156,7 @@ ld:Verein
     ld:contactPerson <http://leipzig-data.de/Data/Person/Wieland_Sabine> ;
     a ld:Verein ;
     rdfs:label "Gesellschaft für Informatik, Regionalgruppe Leipzig" ;
-    foaf:homepage <http://rg-leipzig.gi.de> ;
-    foaf:name "Gesellschaft für Informatik, Regionalgruppe Leipzig" .
+    foaf:homepage <http://rg-leipzig.gi.de> .
 
 <http://leipzig-data.de/Data/Verein/GartenvereinStahmeln>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.StahmelnerHoehe.2> ;
@@ -1293,8 +1290,8 @@ ld:Verein
     ld:hasOrtsteil ldot:Zentrum ;
     ld:hasStadtId "650" ;
     a ld:Verein ;
-    rdfs:label "HOPES Leipzig" ; 
-    rdfs:comment "Hilfe und Orientierung für psychisch erkrankte Studierende in Leipzig. Studentische Selbsthilfegruppe." .
+    rdfs:comment "Hilfe und Orientierung für psychisch erkrankte Studierende in Leipzig. Studentische Selbsthilfegruppe." ;
+    rdfs:label "HOPES Leipzig" .
 
 <http://leipzig-data.de/Data/Verein/Halle5>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Windscheidstrasse.51> ;
@@ -1350,8 +1347,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/HilfeFuerAuslaendischeStudierendeInLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goethestrasse.6> ;
     ld:hasCategories "Interkulturelle Vereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "696" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Hilfe für ausländische Studierende in Leipzig e.V." .
 
@@ -1408,10 +1405,10 @@ ld:Verein
     rdfs:label "IMSE - Interessengemeinschaft Multiple Sklerose Ekrankter und ihrer Freunde e.V." .
 
 <http://leipzig-data.de/Data/Verein/ISEI>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Heckel_Ralf> ;
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.WurznerStrasse.4> ;
     a ld:Verein ;
     rdfs:label "International Space Education Institute e.V." ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Heckel_Ralf> ;
     foaf:homepage <http://www.spaceeducation.de/> ;
     foaf:phone "341-6813986", "341-6813989" .
 
@@ -1426,8 +1423,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/IV.HoergeschaedigteKinder>
     ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.AmGeleinholz.8> ;
     ld:hasCategories "Behindertenvereine", "Behinderungen", "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "265" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Interessenvertretung hörgeschädigter Kinder e.V." .
 
@@ -1445,8 +1442,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/InitiativeBildungInZukunft>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.DoelitzerStrasse.5> ;
     ld:hasCategories "Bildung und Freizeit", "Kinder, Jugend und Familie", "Kinder- und Jugendkultur", "Kinder- und Jugendschutz" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "685" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Initiative Bildung in Zukunft e.V." .
 
@@ -1467,11 +1464,11 @@ ld:Verein
     rdfs:label "Initiative 'Leipziger Netzwerk der Ess-Klasse'" .
 
 <http://leipzig-data.de/Data/Verein/Inspirata>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Koenig_Wolfgang> ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
     ld:hasAddressAddendum "Eingang G (3. Etage)" ;
     a ld:Verein ;
     rdfs:label "Inspirata e.V." ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Koenig_Wolfgang> ;
     foaf:homepage <http://www.inspirata.de> ;
     foaf:mbox "kontakt@inspirata.de" ;
     foaf:phone "0341-1259757" .
@@ -1565,8 +1562,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/JazzclubLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.10> ;
     ld:hasCategories "Kulturvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "347" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "jazzclub leipzig e.V." .
 
@@ -1688,8 +1685,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/KidsUndRolli>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.16> ;
     ld:hasCategories "Behindertenvereine", "Kinder, Jugend und Familie" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "662" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Kids&Rolli e.V." .
 
@@ -1895,21 +1892,20 @@ ld:Verein
     ld:Auszeichnungen "2005 Teubnerpreis", "2008 Mathe erleben im Wissenschaftssommer" ;
     ld:Kurzinformation "Die Leipziger Schülergesellschaft für Mathematik (LSGM) ist ein Zusammenschluss engagierter Einzelpersonen zur Förderung mathematischer Nachwuchstalente. Wir geben Schülerinnen und Schülern der Klassen 5 bis 12, denen Mathematik Spaß bereitet, die Möglichkeit, mit Gleichgesinnten und unter Anleitung erfahrener Fachleute auf Entdeckungsreise in die Gefilden der \"Mutter aller Wissenschaften\" zu gehen und ihre mathematischen Kenntnisse zu vertiefen." ;
     ld:Leistungsangebot "Präsenz- und Korrespondenzzirkel, Wochenendseminare und Winterschulen, jährlich ein Mathecamp in den Sommerferien, Stadtrallyes und eine \"Aufgabe des Monats\"" ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Graebe_HansGert>, <http://leipzig-data.de/Data/Person/Schueler_Axel> ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
-    ld:hasAnschrift "c/o Math. Institut, Universität Leipzig, PF 100920, 04109 Leipzig" ;
     ld:hasTag ldtag:MINT, ldtag:Mathematik ;
-    ld:hasTelefon "0341-9732248" ;
     a ld:Verein ;
-    rdfs:comment "Mitglied im LJBW, Partner des SMK und der SBA-L im Bereich Förderung von MINT-Talenten" ;
+    rdfs:comment "Mitglied im LJBW, Partner des SMK und der SBA-L im Bereich Förderung von MINT-Talenten", "Postanschrift: c/o Math. Institut, Universität Leipzig, PF 100920, 04109 Leipzig" ;
     rdfs:label "Leipziger Schülergesellschaft für Mathematik e.V." ;
-    foaf:homepage <http://www.lsgm.de> .
+    org:hasMember <http://leipzig-data.de/Data/Person/Graebe_HansGert>, <http://leipzig-data.de/Data/Person/Schueler_Axel> ;
+    foaf:homepage <http://www.lsgm.de> ;
+    foaf:phone "0341-9732248" .
 
 <http://leipzig-data.de/Data/Verein/LaLecheLigaDeutschland>
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Spindelweg.5> ;
     ld:hasCategories "Frauenvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "518" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "La Leche Liga Deutschland e.V. Stillgruppen in Leipzig und Umgebung" .
 
@@ -1996,8 +1992,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/LeipzigerJahresausstellung>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Petersstrasse.39> ;
     ld:hasCategories "Bildende Kunst", "Kulturvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "543" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Leipziger Jahresausstellung e.V." .
 
@@ -2104,9 +2100,9 @@ ld:Verein
     foaf:homepage <http://kuebelonline.de> .
 
 <http://leipzig-data.de/Data/Verein/MNU>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Schmidt_Rosemarie> ;
     a ld:Verein ;
     rdfs:label "Deutscher Verein zur Förderung des mathematischen und naturwissenschaftlichen Unterrichts e.V. (MNU) / Geschäftsstelle Landesverband Sachsen" ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Schmidt_Rosemarie> ;
     foaf:homepage <http://www.mnu.de> .
 
 <http://leipzig-data.de/Data/Verein/MONAliesA>
@@ -2119,16 +2115,11 @@ ld:Verein
     rdfs:comment "Info SJR 2014-03-04: Verein insolvent, wird aufgelöst" ;
     rdfs:label "MONAliesA e.V." .
 
-<http://leipzig-data.de/Data/Verein/MR.Mitteldeutschland>
-    rdf:seeAlso <http://leipzig-data.de/Data/Verein/EMMD> ;
-    a ld:Verein ;
-    rdfs:label "Metropolregion Mitteldeutschland" .
-
 <http://leipzig-data.de/Data/Verein/MSU>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gutenbergplatz.1> ;
     ld:hasCategories "Seniorenvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "263" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "MSU e.V." .
 
@@ -2231,8 +2222,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/MusikProjektSachsen>
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Erikenweg.1> ;
     ld:hasCategories "Kulturvereine", "Musik" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "351" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "MusikProjektSachsen e.V." .
 
@@ -2247,8 +2238,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/NABU.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Zollikoferstrasse.21> ;
     ld:hasCategories "Umwelt und Stadtgrün" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "302" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "NABU Regionalverband Leipzig e.V." ;
     foaf:homepage <http://www.nabu-leipzig.de> ;
@@ -2281,8 +2272,8 @@ ld:Verein
 
 <http://leipzig-data.de/Data/Verein/NarcoticsAnonymous>
     ld:hasCategories "Selbsthilfegruppen", "Sucht/Abhängigkeit" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "673" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Narcotics Anonymous" .
 
@@ -2335,10 +2326,10 @@ ld:Verein
     rdfs:label "NonProfitPromotion e.V." .
 
 <http://leipzig-data.de/Data/Verein/NuKLA>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Maruhn_Olaf>, <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
     ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Otto-Adam-Strasse.14> ;
     a ld:Verein, org:Organization ;
     rdfs:label "Naturschutz und Kunst Leipziger Auwald (NuKLA) e.V." ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Maruhn_Olaf>, <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
     foaf:homepage <http://www.nukla.de> ;
     foaf:mbox "stoiber@nukla.de" ;
     foaf:phone "0178-6662454", "0341-3503421" .
@@ -2352,7 +2343,6 @@ ld:Verein
     rdfs:label "OSTPOL e.V." .
 
 <http://leipzig-data.de/Data/Verein/Oekoloewe>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Quester_Roland> ;
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
     ld:hasCategories "Bürgervereine", "Umwelt und Stadtgrün" ;
     ld:hasOrtsteil ldot:Connewitz ;
@@ -2360,6 +2350,7 @@ ld:Verein
     ld:hasSupplierNumber "053" ;
     a ld:Verein ;
     rdfs:label "Ökolöwe Umweltbund Leipzig e.V." ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Quester_Roland> ;
     foaf:phone "0341-3065-179" .
 
 <http://leipzig-data.de/Data/Verein/OekumenischesWohnprojektQuelle>
@@ -2501,17 +2492,17 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/RAA.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Sternwartenstrasse.4> ;
     ld:hasCategories "Interkulturelle Vereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "312" ;
     ld:hasSupplierNumber "175", "351" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "RAA Leipzig e.V. Verein für Interkulturelle Arbeit, Jugendhilfe und Schule e.V." .
 
 <http://leipzig-data.de/Data/Verein/Rabutz.TOeP>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Messerschmidt_Elk> ;
     ld:hasAddress <http://leipzig-data.de/Data/04509.Rabutz.BageritzerWeg.1> ;
     a ld:Verein ;
-    rdfs:label "Förderverein „Technisch-Ökologisches Projektzentrum Rabutz“ e.V." .
+    rdfs:label "Förderverein „Technisch-Ökologisches Projektzentrum Rabutz“ e.V." ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Messerschmidt_Elk> .
 
 <http://leipzig-data.de/Data/Verein/RadioBlau>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.62> ;
@@ -2570,8 +2561,8 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04420.Markranstaedt.ZwenkauerStrasse.98> ;
     ld:hasSupplierNumber "144" ;
     a ld:Verein ;
-    foaf:homepage <https://richtungswechsel.de.tl> ; 
-    rdfs:label "Richtungswechsel e.V." .
+    rdfs:label "Richtungswechsel e.V." ;
+    foaf:homepage <https://richtungswechsel.de.tl> .
 
 <http://leipzig-data.de/Data/Verein/RobertundClaraSchumannVereinLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.18> ;
@@ -2584,8 +2575,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/RosaArchivLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.16> ;
     ld:hasCategories "Kulturvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "613" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Rosa Archiv Leipzig" .
 
@@ -2634,8 +2625,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/SchattenUndLicht>
     ld:hasAddress <http://leipzig-data.de/Data/86465.Weiden.ObereWeinbergstrasse.3> ;
     ld:hasCategories "Frauenvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "494" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "SCHATTEN UND LICHT. Krise nach der Geburt e.V." .
 
@@ -2674,31 +2665,31 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/SelbstbestimmtLeben>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.AnderMilchinsel.2> ;
     ld:hasCategories "Neurologische Krankheiten", "Psychosoziale und soziale Probleme", "Selbsthilfegruppen", "Seniorenvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "627" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Selbstbestimmt Leben Leipzig und Umgebung e.V." .
 
 <http://leipzig-data.de/Data/Verein/SelbsthilfeSchizophrenie>
     ld:hasAddress <http://leipzig-data.de/Data/06749.Bitterfeld.Niemegkerstrasse.20> ;
     ld:hasCategories "Neurologische Krankheiten", "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "693" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Selbsthilfe Schizophrenie" .
 
 <http://leipzig-data.de/Data/Verein/SelbsthilfegruppeAdipositas>
     ld:hasAddress <http://leipzig-data.de/Data/04838.Eilenburg.LeipzigerStrasse.4> ;
     ld:hasCategories "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "581" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Selbsthilfegruppe Adipositas Stammtisch Sachsen / Leipzig" .
 
 <http://leipzig-data.de/Data/Verein/SelbsthilfegruppeAkneInversa>
     ld:hasCategories "Behindertenvereine", "Behinderungen", "Organische Krankheiten", "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "307" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Selbsthilfegruppe Akne inversa" .
 
@@ -2744,8 +2735,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/SelbsthilfegruppeFuerMenschenMitSchilddruesenerkrankungenLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/45147.Essen.Gemarkenstrasse.133> ;
     ld:hasCategories "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "593" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Selbsthilfegruppe für Menschen mit Schilddrüsenerkrankungen Leipzig" .
 
@@ -2838,8 +2829,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/SerHumanos>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Engertstrasse.23> ;
     ld:hasCategories "Interkulturelle Vereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "340" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "ser humanos e.V." .
 
@@ -2880,11 +2871,11 @@ ld:Verein
     rdfs:label "Sportjugend Leipzig" .
 
 <http://leipzig-data.de/Data/Verein/Sportmobil>
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Holteistrasse.26> ; 
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Holteistrasse.26> ;
     ld:hasSupplierNumber "255" ;
-    foaf:homepage <http://www.sportmobilspringburg.de/> ; 
     a ld:Verein ;
-    rdfs:label "Sportmobil, Springburg e.V." .
+    rdfs:label "Sportmobil, Springburg e.V." ;
+    foaf:homepage <http://www.sportmobilspringburg.de/> .
 
 <http://leipzig-data.de/Data/Verein/Sportverein.Aktiv>
     ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Dieskaustrasse.216> ;
@@ -2932,7 +2923,7 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/StartUpClubLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Petersstrasse.15> ;
     a ld:Verein ;
-    foaf:name "Start-Up Club Leipzig e.V." .
+    rdfs:label "Start-Up Club Leipzig e.V." .
 
 <http://leipzig-data.de/Data/Verein/StiftungFederkiel>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
@@ -3011,11 +3002,11 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/TschechologischSlovakoklar>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Karl-Ferlemann-Strasse.16> ;
     ld:hasCategories "Interkulturelle Vereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "701" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
-    foaf:homepage <http://tschechologisch-slovakoklar.de/> ; 
-    rdfs:label "Tschechologisch? Slovakoklar!" .
+    rdfs:label "Tschechologisch? Slovakoklar!" ;
+    foaf:homepage <http://tschechologisch-slovakoklar.de/> .
 
 <http://leipzig-data.de/Data/Verein/Tuepfelhausen>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Spittastrasse.3> ;
@@ -3026,10 +3017,10 @@ ld:Verein
     rdfs:label "Tüpfelhausen - Das Familienportal e.V." .
 
 <http://leipzig-data.de/Data/Verein/UIZ.Foerderverein>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Koerner_Annette> ;
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
     a ld:Verein ;
     rdfs:label "Förderverein Umweltinformationszentrum Stadt Leipzig UIZ e.V." ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Koerner_Annette> ;
     foaf:homepage <http://www.uiz-foerderverein.de> ;
     foaf:mbox "fvumweltinformationszentrum@web.de" ;
     foaf:phone "0341-1236830", "0341-1236835" .
@@ -3060,8 +3051,8 @@ ld:Verein
 
 <http://leipzig-data.de/Data/Verein/UnternehmerinnenStammtischLeipzig>
     ld:hasCategories "Frauenvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "506" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Unternehmerinnen-Stammtisch Leipzig" ;
     foaf:homepage <http://unternehmerinnenstammtisch-leipzig.de> .
@@ -3080,10 +3071,10 @@ ld:Verein
     rdfs:label "Urban Souls" .
 
 <http://leipzig-data.de/Data/Verein/VDE.LeipzigHalle>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Raue_Manfred> ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Friedrich-Ebert-Strasse.26> ;
     a ld:Verein ;
     rdfs:label "VDE-BV Leipzig/Halle" ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Raue_Manfred> ;
     foaf:homepage <file:///home/graebe/git/LD/RDFData/www.VDE-Leipzig-Halle.de> ;
     foaf:mbox "manfred.raue@vde-mitglied.de" ;
     foaf:phone "0341-1207496" .
@@ -3098,8 +3089,8 @@ ld:Verein
 
 <http://leipzig-data.de/Data/Verein/VaeteraufbruchFuerKinderg>
     ld:hasCategories "Kinder, Jugend und Familie", "Kinder- und Jugendschutz", "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "405" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Väteraufbruch für Kinder, Kreisgruppe Leipzig e.V." .
 
@@ -3135,21 +3126,21 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Verband Jahrfeier Völkerschlacht b. Leipzig 1813 e.V." .
 
+<http://leipzig-data.de/Data/Verein/Verein.FFJ>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Windmuehlenstrasse.41> ;
+    ld:hasCategories "Frauenvereine", "Jugendsozialarbeit", "Kinder, Jugend und Familie", "Prävention", "Psychische Krankheiten", "Psychosoziale und soziale Probleme", "Selbsthilfe", "Selbsthilfegruppen", "Sucht/Abhängigkeit", "Suchthilfe" ;
+    ld:hasOrtsteil ldot:Zentrum-Sued, ldot:Zentrum-Suedost ;
+    ld:hasStadtId "319", "509" ;
+    ld:hasSupplierNumber "168" ;
+    a ld:Verein ;
+    rdfs:label "Verein für Frauen, Familie und Jugend" .
+
 <http://leipzig-data.de/Data/Verein/VereinDerInDerDDRGeschiedenenFrauen>
     ld:hasCategories "Frauenvereine" ;
     ld:hasOrtsteil ldot:Connewitz ;
     ld:hasStadtId "548" ;
     a ld:Verein ;
     rdfs:label "Verein der in der DDR geschiedenen Frauen e.V." .
-
-<http://leipzig-data.de/Data/Verein/Verein.FFJ>
-    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Windmuehlenstrasse.41> ;
-    ld:hasCategories "Frauenvereine", "Jugendsozialarbeit", "Kinder, Jugend und Familie", "Prävention", "Psychische Krankheiten", "Psychosoziale und soziale Probleme", "Selbsthilfe", "Selbsthilfegruppen", "Sucht/Abhängigkeit", "Suchthilfe" ;
-    ld:hasOrtsteil ldot:Zentrum-Sued, ldot:Zentrum-Suedost ;
-    ld:hasStadtId "319", "509" ;
-    a ld:Verein ;
-    ld:hasSupplierNumber "168" ;
-    rdfs:label "Verein für Frauen, Familie und Jugend" .
 
 <http://leipzig-data.de/Data/Verein/VereinFuerVedischeKultur>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Stoeckelstrasse.60> ;
@@ -3170,8 +3161,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/VereinLeipzigThessaloniki>
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.AnderVogelweide.91> ;
     ld:hasCategories "Bürgervereine", "Interkulturelle Vereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "681" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Städtepartnerschaftsverein Leipzig-Thessaloniki e.V." .
 
@@ -3194,16 +3185,16 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/VereinZurBeruflichenFoerderungVonFrauenInSachsen>
     ld:hasAddress <http://leipzig-data.de/Data/04463.Grosspoesna.StoermthalerWeg.2> ;
     ld:hasCategories "Frauenvereine" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "507" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Verein zur beruflichen Förderung von Frauen in Sachsen e.V." .
 
 <http://leipzig-data.de/Data/Verein/VereinZurSozialenRehabilitationVonAbhaengigkeitskranken>
     ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.ChemnitzerStrasse.50> ;
     ld:hasCategories "Stationäre Hilfen", "Suchthilfe" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "277" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Verein zur sozialen Rehabilitation von Abhängigkeitskranken (VRA) e.V." .
 
@@ -3237,8 +3228,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/VolksbundDeutscheKriegsgraeberfuersorge>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.1C> ;
     ld:hasCategories "Umwelt und Stadtgrün" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "296" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "Stadtverband Leipzig des Volksbundes Deutsche Kriegsgräberfürsorge e.V." .
 
@@ -3270,8 +3261,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/WEGE>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.75> ;
     ld:hasCategories "Behindertenvereine", "Selbsthilfegruppen" ;
-    ld:hasTag ldtag:Ueberregional ;
     ld:hasStadtId "270" ;
+    ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
     rdfs:label "WEGE e.V. - Verein Angehöriger und Freunde psychisch Kranker" .
 
@@ -3374,9 +3365,9 @@ ld:Verein
     ld:hasOrtsteil ldot:Zentrum-Nordwest ;
     ld:hasStadtId "516" ;
     a ld:Verein ;
-    foaf:homepage <http://www.zonta-leipzig.de> ;
-    rdfs:comment "Letzte Einträge auf der Webseite von 2012" ; 
-    rdfs:label "Zonta Club Leipzig" .
+    rdfs:comment "Letzte Einträge auf der Webseite von 2012" ;
+    rdfs:label "Zonta Club Leipzig" ;
+    foaf:homepage <http://www.zonta-leipzig.de> .
 
 <http://leipzig-data.de/Data/Verein/ZontaLeipzigElster>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomasiusstrasse.21> ;
@@ -3384,8 +3375,8 @@ ld:Verein
     ld:hasOrtsteil ldot:Zentrum ;
     ld:hasStadtId "517" ;
     a ld:Verein ;
-    foaf:homepage <http://www.zonta-leipzig-elster.de> ; 
-    rdfs:label "Zonta Leipzig Elster e.V." .
+    rdfs:label "Zonta Leipzig Elster e.V." ;
+    foaf:homepage <http://www.zonta-leipzig-elster.de> .
 
 <http://leipzig-data.de/Data/Verein/ZuHause>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.9> ;
