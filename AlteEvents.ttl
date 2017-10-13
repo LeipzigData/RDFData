@@ -2,12 +2,13 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ld: <http://leipzig-data.de/Data/Model/> .
-@prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
-@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
 <http://leipzig-data.de/Data/AlteEvents/>
     cc:attributionName "The Leipzig Open Data Project" ;
@@ -30,56 +31,18 @@
     ical:sentBy <http://leipzig-data.de/Data/Projekt/APILeipzig.Events> ;
     ical:summary "Tag des kreativen Hofes" .
 
-<http://leipzig-data.de/Data/Event/APILeipzig.313>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.313>, <http://leipzig-data.de/Data/APIId/Event.314> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    a ld:Event ;
-    rdfs:label "WebMontag - Multicopter und Drohnen im Alltag - Vom Nerdspielzeug zum Alltagsgegenstand." ;
-    ical:description "Kreatives Leipzig lädt am 25.07.2016 zum WebMontag. <br/> <br/> Der nächste WebMontag des Kreativen Leipzig wird präsentiert von der Rechtsanwaltskanzlei Spirit Legal LLP (www.spiritlegal.com) und befasst sich mit dem Thema \"Multicopter/ Drohnen\". <br/> <br/> Jeden Tag werden hunderte Multicopter verkauft und füllen bei schönen Wetter den Himmel über der Stadt. Doch was ist erlaubt? Was ist verboten? Und wie funktioniert das mit dem Fliegen überhaupt? <br/> <br/> Spirit Legal LLP hat sich schon früh tief in die juristischen Belange beim Umgang mit Multicoptern eingearbeitet und ist Spezialist bei der Bewertung von Rechtsfragen rund um die Nutzung von Multicoptern. <br/> <br/> Darüber hinaus freuen wir uns Frank Lochau von ProCopter (http://www.procopter.de) an diesem Abend begrüßen zu können. Er hat das Hobby zum Beruf gemacht und fliegt professionell Multicopter für Firmen und Veranstaltungen. <br/> <br/> Und da bei Fliegen mit Multicoptern immer wieder öffentlicher Raum eine Rolle spielt, haben wir auch die Stadt Leipzig eingeladen. Abteilungsleiter Thomas Schulze der <br/> Straßenverkehrsbehörde/Verkehrsmanagement wird uns ebenfalls an diesem Abend mit seinem Wissen zu Verfügung stehen. <br/> <br/> <strong>Datum:</strong> 25.06.2016 <br/> <strong>Beginn:</strong> 18:00 Uhr <br/> <strong>Ort:</strong> Basislager Coworking Leipzig, Peterssteinweg 14, 04107 Leipzig <br/> <br/> <strong>Ablauf:</strong> <br/> ab 18 Uhr - Ankommen <br/> 18:30 Uhr - Begrüßung <br/> 18:40 - 19:00 Uhr - SpiritLegal: \"Multicopter - Was darf ich, was darf ich nicht\". <br/> 19:10 - 19:30 Uhr - ProCopter: \"Mit Multicoptern Geld verdienen.\" <br/> 19:40 - 20:00 Uhr - Stadt Leipzig: \"Multicopter im öffentlichen Raum.\" <br/> <br/> " ;
-    ical:dtend "2016-06-25T21:00:00+02:00"^^xsd:dateTime ;
-    ical:dtstart "2016-07-25T18:00:00+02:00"^^xsd:dateTime ;
-    ical:location ldo:BasislagerCoworkingLeipzig ;
-    ical:organizer ldp:Wagner_Thomas ;
-    ical:sentBy <http://leipzig-data.de/Data/Projekt/APILeipzig.Events> ;
-    ical:summary "WebMontag - Multicopter und Drohnen im Alltag - Vom Nerdspielzeug zum Alltagsgegenstand." .
-
 <http://leipzig-data.de/Data/Event/APILeipzig.318>
     ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.318> ;
     ld:hasTag ldtag:KreativesLeipzig ;
     a ld:Event ;
     rdfs:label "Info@kreativwirtschaft - Kommunale Fördermöglichkeiten" ;
     ical:description "Die Kultur- und Kreativwirtschaft ist sehr divers. Bildende Künstler haben zuweilen andere Bedürfnisse als ein Programmierer oder ein Möbeldesigner. Auch, wenn es um Finanzierungsmöglichkeiten geht. Es ist nicht immer einfach für sein Projekt oder sein Unternehmen die passenden Födermittel zu finden. Dann kommen Fragen auf: Wer ist der richtige Ansprechpartner für Ausstellungs-, Theater oder soziokulturelle Projekte, an wen kann ich mich wenden, wenn es bei den Investitionen hakt und wer kann bei der unternehmerischen Weiterentwicklung helfen? <br/> Über diese und weitere Fragen soll die Infoveranstaltung Anfang März Licht ins Dunkel bringen. Drei Ämter der Stadt Leipzig stellen ihre Fördermaßnahmen vor, die für alle Kultur- und Kreativschaffenden interessant sein können. <br/> <br/> Die Teilnahme ist kostenfrei. Um Anmeldung wird über das Anmeldetool gebeten. <br/> <br/> Ort der Veranstaltung: HALLE 14 - Zentrum für zeitgenössische Kunst <br/> <br/> Programm am 2. März 2017 <br/> 18:00 Uhr Ankommen <br/> 18:15 Uhr Begrüßung durch Kreatives Leipzig e.V. &amp; Amt für <br/> Wirtschaftsförderung <br/> 1. Präsentation zum Mittelstandsförderprogramm der Stadt Leipzig <br/> (Elisabeth Hauck – Amt für Wirtschaftsförderung) <br/> 2. Präsentation zur Kulturförderung der Stadt Leipzig <br/> (Antje Brodhun - Kulturamt) <br/> 3. Präsentation zur KU-Beihilfe EFRE im Leipziger Westen <br/> (Achim Lohse – Amt für Wirtschaftsförderung) <br/> 4. Verfügungsfonds des Leipziger Westens <br/> (Stefan Geiss – Amt für Stadterneuerung und <br/> Wohnungsbauförderung) <br/> 19:30 Uhr individuelle Fragerunde <br/> 20:15 Uhr Schluss" ;
-    ical:dtend "2017-03-02T20:30:42+02:00"^^xsd:dateTime ;
-    ical:dtstart "2017-03-02T18:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-03-02T20:30:42+01:00"^^xsd:dateTime ;
+    ical:dtstart "2017-03-02T18:00:00+01:00"^^xsd:dateTime ;
     ical:location <http://leipzig-data.de/Data/APIId/Venue.143> ;
     ical:organizer <http://leipzig-data.de/Data/Verein/KreativesLeipzig> ;
     ical:sentBy <http://leipzig-data.de/Data/Projekt/APILeipzig.Events> ;
     ical:summary "Info@kreativwirtschaft - Kommunale Fördermöglichkeiten" .
-
-<http://leipzig-data.de/Data/Event/APILeipzig.319>
-    ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.319> ;
-    ld:hasTag ldtag:KreativesLeipzig ;
-    a ld:Event ;
-    rdfs:label "Info@kreativwirtschaft - Kommunale Fördermöglichkeiten" ;
-    ical:description "Die Kultur- und Kreativwirtschaft ist sehr divers. Bildende Künstler haben zuweilen andere Bedürfnisse als ein Programmierer oder ein Möbeldesigner. Auch, wenn es um Finanzierungsmöglichkeiten geht. Es ist nicht immer einfach für sein Projekt oder sein Unternehmen die passenden Födermittel zu finden. Dann kommen Fragen auf: Wer ist der richtige Ansprechpartner für Ausstellungs-, Theater oder soziokulturelle Projekte, an wen kann ich mich wenden, wenn es bei den Investitionen hakt und wer kann bei der unternehmerischen Weiterentwicklung helfen? <br/> Über diese und weitere Fragen soll die Infoveranstaltung Anfang März Licht ins Dunkel bringen. Drei Ämter der Stadt Leipzig stellen ihre Fördermaßnahmen vor, die für alle Kultur- und Kreativschaffenden interessant sein können. <br/> <br/> Die Teilnahme ist kostenfrei. Um Anmeldung wird über das Anmeldetool gebeten. <br/> <br/> Ort der Veranstaltung: HALLE 14 - Zentrum für zeitgenössische Kunst <br/> <br/> Programm am 2. März 2017 <br/> 18:00 Uhr Ankommen <br/> 18:15 Uhr Begrüßung durch Kreatives Leipzig e.V. & Amt für <br/> Wirtschaftsförderung <br/> 1. Präsentation zum Mittelstandsförderprogramm der Stadt Leipzig <br/> (Elisabeth Hauck – Amt für Wirtschaftsförderung) <br/> 2. Präsentation zur Kulturförderung der Stadt Leipzig <br/> (Antje Brodhun - Kulturamt) <br/> 3. Präsentation zur KU-Beihilfe EFRE im Leipziger Westen <br/> (Achim Lohse – Amt für Wirtschaftsförderung) <br/> 4. Verfügungsfonds des Leipziger Westens <br/> (Stefan Geiss – Amt für Stadterneuerung und <br/> Wohnungsbauförderung) <br/> 19:30 Uhr individuelle Fragerunde <br/> 20:15 Uhr Schluss" ;
-    ical:dtend "2017-03-02T00:00:00+02:00"^^xsd:dateTime ;
-    ical:dtstart "2017-03-02T18:00:00+02:00"^^xsd:dateTime ;
-    ical:location ldo:Halle14 ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/KreativesLeipzig> ;
-    ical:sentBy <http://leipzig-data.de/Data/Projekt/APILeipzig.Events> ;
-    ical:summary "Info@kreativwirtschaft - Kommunale Fördermöglichkeiten" .
-
-<http://leipzig-data.de/Data/Event/ASG.2016-10-20>
-    ld:hasTag ldtag:ASG, ldtag:MINT ;
-    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
-    a ld:Event ;
-    rdfs:label "Hundert Jahre allgemeine Relativitätstheorie" ;
-    ical:description "Hundert Jahre allgemeine Relativitätstheorie. Mit Dr. rer. nat. Karl-Peter Dostal, Leipzig." ;
-    ical:dtstart "2016-10-20T17:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
-    ical:summary "Hundert Jahre allgemeine Relativitätstheorie. Mit Dr. rer. nat. Karl-Peter Dostal, Leipzig." ;
-    ical:url <http://asg.ignt.de/Einladung_16_10_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
 <http://leipzig-data.de/Data/Event/ASG.2016-11-24>
     ld:hasTag ldtag:ASG, ldtag:MINT ;
@@ -177,10 +140,42 @@
     ical:summary "Das geheime Uranprojekt in Deutschland vor 78 Jahren und der Beitrag der \"Leipziger Physik\". Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_17_04_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
-<http://leipzig-data.de/Data/Event/DTS.2016-09-12>
+<http://leipzig-data.de/Data/Event/DTS.2017-08-14>
+    ld:contactPerson ldp:Schroth_Johannes ;
     ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
     a ld:Event ;
-    rdfs:label "Aus der Geschichte lernen?" ;
-    ical:dtstart "2016-09-12T19:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> .
+    rdfs:label "Wege zu einer neuen Gesellschaft. Revolution oder Transformation." ;
+    ical:description "Als Thema wurde ausgewählt: Revolution oder Transformation, Unterthema einer kleinen Reihe, die wir Wege zur neuen Gesellschaft nennen wollen. " ;
+    ical:dtstart "2017-08-14T19:00:00+02:00"^^xsd:dateTime ;
+    ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ical:summary "Attac DenkTankStelle: Wege zu einer neuen Gesellschaft. Revolution oder Transformation." ;
+    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-08-14> .
+
+<http://leipzig-data.de/Data/Event/DTS.2017-09-11>
+    ld:contactPerson ldp:Schroth_Johannes ;
+    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+    a ld:Event ;
+    rdfs:label "Wege zu einer neuen Gesellschaft. Bedingungsloses Grundeinkommen." ;
+    ical:description "Als Thema wurde in der kleinen Reihe >Wege zur neuen Gesellschaft< das bedingungslose Grundeinkommen ausgewählt. Inzwischen von allen gut durchgekaut, wird es schwer werden, etwas Neues herauszuschmecken. Vielleicht gelingt es, indem wir unsere ganz persönliche Sicht dazu zur Diskussion stellen. Schön wär’s, wenn einer, eine sich darauf einstellt, den ersten Pfahl zu schlagen. " ;
+    ical:dtstart "2017-09-11T19:00:00+02:00"^^xsd:dateTime ;
+    ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ical:summary "Attac DenkTankStelle: Wege zu einer neuen Gesellschaft. Bedingungsloses Grundeinkommen." ;
+    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-09-11> .
+
+<http://leipzig-data.de/Data/Event/Inspirata.9935>
+    ld:hasTag ldtag:Inspirata, ldtag:MINT ;
+    a ld:Event ;
+    rdfs:label "INSPIRATA beim „Messtival“ auf der Alten Messe – 09.09.2017" ;
+    ical:description "<p>Im September 2017 feiert die Alte Messe Leipzig:</p> <p><strong>MESSTIVAL = Musik + Streetfood + Show</strong></p> <p>Am 9. September wird von 15 bis 22 Uhr die Straße des 18. Oktober in Leipzig ein sensationelles Event erleben:<br /> Bands der Alten Messe Leipzig, die „Firebirds-Show“ des Theater Titanick, Automeile, Kinderflohmarkt, Kinderfahrschule, Fahrsimulator und vieles mehr …</p> <p>Bands, die auf der Alten Messe ihre Proberäume haben, spielen auf 2 Bühnen Rock&Pop, Alternativ-Rock, deutsche Coversongs oder Indierock.<br /> Drei Shows des Theater Titanick zeigen Feuereffekte und Explosionen, groteske Flugmaschinen und Flugversuche.</p> <p>Bei Streetfood kann man sich auf eine kulinarische Weltreise begeben: ob Fleischliebhaber, Flexianer oder Veganer, über 35 Stände mit internationaler Küche versprechen faire Preise, ein ganzes Wochenende lang.</p> <p>Quelle und weitere Informationen unter www.messtival.de und www.facebook.com/MesstivalLeipzig …</p> <hr /> <p>Der INSPIRATA e.V. als Anlieger der Straße des 18. Oktober sowie Mitglied der „IG Alte Messe“ beteiligt sich gern mit einem Stand am großen Event.</p> <p>In jedem Fall wird auch unsere Mitmach-Ausstellung von 12 bis 18 Uhr für Familien und Einzelbesucher geöffnet sein (Gruppen nach Voranmeldung).</p> <p>Wir freuen uns auf viele Besucher. Lasst euch inspirieren!</p> <p> </p> " ;
+    ical:dtend "2017-09-09T22:00:00+02:00"^^xsd:dateTime ;
+    ical:dtstamp "2017-06-28T12:58:58+02:00"^^xsd:dateTime ;
+    ical:dtstart "2017-09-09T15:00:00+02:00"^^xsd:dateTime ;
+    ical:location ldo:Inspirata ;
+    ical:organizer ldo:Inspirata ;
+    ical:summary "Im September 2017 feiert die Alte Messe Leipzig: MESSTIVAL = Musik + Streetfood + Show Am 9. September wird von 15 bis 22 Uhr die Straße des 18. Oktober in Leipzig ein sensationelles Event erleben: Bands der Alten Messe Leipzig, die „Firebirds-Show“ des Theater Titanick, Automeile, Kinderflohmarkt, Kinderfahrschule, Fahrsimulator und vieles mehr … " ;
+    ical:url <https://www.inspirata.de/?p=9935> .
 
