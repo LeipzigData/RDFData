@@ -10,18 +10,40 @@
 @prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
-<http://leipzig-data.de/Data/Event/DTS.2017-10-09>
+<http://leipzig-data.de/Data/Event/ASG.2017-10-19>
+    ld:hasTag ldtag:ASG, ldtag:MINT ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+    a ld:Event ;
+    rdfs:label "The Ocean Cleanup - What is behind technically." ;
+    ical:dtstart "2017-10-19T17:00:00+02:00"^^xsd:dateTime ;
+    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ical:summary "The Ocean Cleanup - What is behind technically. Mit PhD Norbert Fraunholcz, Lead Processing Engineer, The Ocean Cleanup, Delft/Niederlande." ;
+    ical:url <http://asg.ignt.de/Einladung_17_10_.pdf>, <http://asg.ignt.de/Seminar.htm> .
+
+<http://leipzig-data.de/Data/Event/ASG.2017-11-16>
+    ld:hasTag ldtag:ASG, ldtag:MINT ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+    a ld:Event ;
+    rdfs:label "Die Atombombe - vor 100 Jahren noch Science Fiction, vor 70 Jahren grausame Wirklichkeit" ;
+    ical:dtstart "2017-11-16T17:00:00+01:00"^^xsd:dateTime ;
+    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ical:summary "Die Atombombe - vor 100 Jahren noch Science Fiction, vor 70 Jahren grausame Wirklichkeit. Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
+    ical:url <http://asg.ignt.de/Einladung_17_11_.pdf>, <http://asg.ignt.de/Seminar.htm> .
+
+<http://leipzig-data.de/Data/Event/DTS.2017-11-13>
     ld:contactPerson ldp:Schroth_Johannes ;
     ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
     ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
     a ld:Event ;
-    rdfs:label "Kultur macht Menschen" ;
-    ical:description "Kultur macht Menschen – das ist eine kühne Behauptung, fallen doch da jedem sofort Beispiele an Barbarei ein, die aber scheinbar auch gar nichts mit Kultur und Menschlichkeit zu tun haben können. Weil gerade vom 76. Jahrestag von Babij Jar zu hören und zu sehen war, das als Beispiel genannt. Und trotzdem, was würde aus diesem blutigen schreienden Etwas, wenn ihm nach seiner Geburt im Laufe der Jahrzehnte nicht mehr als 6000 Jahre bewusste Menschheitserfahrung versucht würde aufzubürden. Mal mit weniger, mal mit mehr Erfolg und nicht überall und nicht jedem. Unter Kultur ist also der gesamte Überbau zu verstehen, um den marxistischen Begriff zu verwenden. Wir werden also u.a. bei der Rolle und den dialektischen Beziehungen von Sein und Bewusstsein landen und uns fragen, ob die Prioritäten noch die gleichen sein können wie bei dem in Stein gemeißelten Satz: Das Sein prägt das Bewusstsein." ;
-    ical:dtstart "2017-10-09T19:00:00+02:00"^^xsd:dateTime ;
+    rdfs:label "Kultur macht Menschen (noch einmal)" ;
+    ical:description "Liebe Freundinnen und Freunde, nach der munteren Diskussion vom letzten Mal zum Thema: >Kultur macht Menschen<, und weil wir kein Ende fanden, wurde eine Fortsetzung im November vereinbart. " ;
+    ical:dtstart "2017-11-13T19:00:00+01:00"^^xsd:dateTime ;
     ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
     ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
     ical:summary "Attac DenkTankStelle: Kultur macht Menschen" ;
-    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-10-09> .
+    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-11-13> .
 
 <http://leipzig-data.de/Data/Event/Inspirata.10079>
     ld:hasTag ldtag:Inspirata, ldtag:MINT ;
