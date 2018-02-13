@@ -1,0 +1,2464 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix nl: <http://nachhaltiges-leipzig.de/Data/Model#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+
+
+
+<http://nachhaltiges-leipzig.de/Data/Akteure/> a owl:Ontology ;
+    rdfs:comment "Dump aus der Datenbank";
+    rdfs:label "Nachhaltiges Leipzig - Akteure" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A2> a foaf:Person  ;
+   nl:hasID "2" ;
+   dct:updated "2015-02-10T09:30:30" ;
+   foaf:firstName "Sabine" ;
+   foaf:lastName "Dr. Heymann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.72> ;
+   foaf:mbox "mail@leipzig-heymann.de" ;
+   foaf:phone "0341-4924024" ;
+   foaf:phone "0172-7935986" ;
+   org:memberOf "Wasser-Stadt-Leipzig e.V." ;
+   foaf:homepage <http://www.wasser-stadt-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorstandsvorsitzende" ;
+   nl:orgLogo "Vereinslogo.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A3> a foaf:Person  ;
+   nl:hasID "3" ;
+   dct:updated "2017-05-04T12:08:15" ;
+   foaf:firstName "Ralf" ;
+   foaf:lastName "Elsässer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04178.Leipzig.Pestalozzistrasse.70> ;
+   foaf:mbox "post@civixx.de" ;
+   foaf:phone "034144259900" ;
+   foaf:phone "01633978289" ;
+   org:memberOf "Büro der Leipziger Agenda 21" ;
+   foaf:homepage <http://www.leipzigeragenda21.de> ;
+   nl:orgType "initiative" ;
+   nl:orgLogo "logo_agenda.jpg" ;
+   nl:hasDistrict "Böhlitz-Ehrenberg" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A4> a foaf:Person  ;
+   nl:hasID "4" ;
+   dct:updated "2016-08-02T13:39:01" ;
+   foaf:firstName "Roland" ;
+   foaf:lastName "Quester" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+   foaf:mbox "info@umweltbibliothek-leipzig.de" ;
+   foaf:phone "3065180" ;
+   org:memberOf "Umweltbibliothek Leipzig" ;
+   foaf:homepage <http://www.umweltbibliothek-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Leiter" ;
+   nl:orgLogo "knuffel-logo-neu_blau_grosse-schrift.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A5> a foaf:Person  ;
+   nl:hasID "5" ;
+   dct:updated "2017-02-06T18:52:09" ;
+   foaf:firstName "Matthias" ;
+   foaf:lastName "Schirmer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.49> ;
+   foaf:mbox "schirmer@civixx.de" ;
+   foaf:phone "034135137913" ;
+   org:memberOf "Zukunftsakademie Leipzig e.V." ;
+   foaf:homepage <http://www.zukunftsakademie-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Unterstützung bei der Geschäftsführung" ;
+   nl:orgLogo "logo_zak_.jpg" ;
+   nl:hasDistrict "Neustadt-Neuschönefeld" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A6> a foaf:Person  ;
+   nl:hasID "6" ;
+   dct:updated "2015-01-26T15:49:34" ;
+   foaf:firstName "Johann" ;
+   foaf:lastName "Simowitsch" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.XX> ;
+   foaf:mbox "johann.simowitsch@leipzig.de" ;
+   foaf:phone "03413089751" ;
+   org:memberOf "Johann Simowitsch" ;
+   nl:orgType "other" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A8> a foaf:Person  ;
+   nl:hasID "8" ;
+   dct:updated "2016-09-29T13:09:27" ;
+   foaf:firstName "Maria" ;
+   foaf:lastName "Hunger" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
+   foaf:mbox "maria.hunger+zak-db@aboutsource.net" ;
+   foaf:phone "0341-94693825" ;
+   org:memberOf "about source UG" ;
+   foaf:homepage <http://www.aboutsource.net> ;
+   nl:orgType "corporation" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A10> a foaf:Person  ;
+   nl:hasID "10" ;
+   dct:updated "2016-12-30T13:00:59" ;
+   foaf:firstName "Wolfgang E. A. " ;
+   foaf:lastName "Stoiber" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04157.Leipzig.Otto-Adam-Strasse.14> ;
+   foaf:mbox "stoiber@nukla.de" ;
+   foaf:phone "01786662454" ;
+   org:memberOf "Naturschutz und Kunst Leipziger Auwald e. V. " ;
+   foaf:homepage <http://www.nukla.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorsitzender" ;
+   nl:orgLogo "Logo_Nukla.jpg" ;
+   nl:hasDistrict "Gohlis-Mitte" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A11> a foaf:Person  ;
+   nl:hasID "11" ;
+   dct:updated "2017-01-10T15:52:38" ;
+   foaf:firstName "Annette" ;
+   foaf:lastName "Körner" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
+   foaf:mbox "fvumweltinformationszentrum@web.de" ;
+   foaf:phone "03411236830" ;
+   org:memberOf "Förderverein \"Umweltinformationszentrum Leipzig - UiZ\" e.V." ;
+   foaf:homepage <http://www.umwelt-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Geschäftsführung" ;
+   nl:orgLogo "UiZ_Fv_Logo_Jpeg.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A12> a foaf:Person  ;
+   nl:hasID "12" ;
+   dct:updated "2017-01-12T08:52:23" ;
+   foaf:firstName "Torsten" ;
+   foaf:lastName "Lange" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
+   foaf:mbox "schuelerlabor@ufz.de" ;
+   foaf:phone "03412351845" ;
+   org:memberOf "Helmholtz-Zentrum für Umweltforschung GmbH - UFZ" ;
+   foaf:homepage <http://www.ufz-schuelerlabor.de> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Leiter UFZ-Schülerlabor" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A13> a foaf:Person  ;
+   nl:hasID "13" ;
+   dct:updated "2016-03-11T06:15:03" ;
+   foaf:firstName "Hermann" ;
+   foaf:lastName "Kügler" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.12> ;
+   foaf:mbox "orientierung.leipzig@jesuiten.org" ;
+   foaf:phone "03412125704" ;
+   org:memberOf "Kontaktstelle Orientierung" ;
+   foaf:homepage <http://www.orientierung-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Leiter" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A14> a foaf:Person  ;
+   nl:hasID "14" ;
+   dct:updated "2016-11-25T06:15:03" ;
+   foaf:firstName "Nico" ;
+   foaf:lastName "Singer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+   foaf:mbox "oeffentlichkeitsarbeit@oekoloewe.de" ;
+   foaf:phone "0341-3065-185" ;
+   org:memberOf "Ökolöwe - Umweltbund Leipzig e.V." ;
+   foaf:homepage <http://www.oekoloewe.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:orgLogo "OEL_LogoHKS42N_klein.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A15> a foaf:Person  ;
+   nl:hasID "15" ;
+   dct:updated "2017-07-19T07:56:45" ;
+   foaf:firstName "Franka" ;
+   foaf:lastName "Seidel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
+   foaf:mbox "auwaldstation@t-online.de" ;
+   foaf:phone "03414621895" ;
+   org:memberOf "Auwaldstation" ;
+   foaf:homepage <http://www.auwaldstation.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Leiterin" ;
+   nl:orgLogo "logogruen.jpg" ;
+   nl:hasDistrict "Lützschena-Stahmeln" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A16> a foaf:Person  ;
+   nl:hasID "16" ;
+   dct:updated "2015-07-24T05:15:33" ;
+   foaf:firstName "Katrin" ;
+   foaf:lastName "Reschke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
+   foaf:mbox "GAZ-Leipzig@t-online.de" ;
+   foaf:phone "03413389353" ;
+   org:memberOf "Grün-Alternatives Zentrum Leipzig e.V." ;
+   foaf:homepage <http://www.doelitzer-wassermuehle.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Projektleiterin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A18> a foaf:Person  ;
+   nl:hasID "18" ;
+   dct:updated "2016-10-10T05:57:02" ;
+   foaf:firstName "Julius" ;
+   foaf:lastName "Schröder" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04178.Leipzig.Ludwig-Hupfeld-Strasse.16> ;
+   foaf:mbox "schroeder@sedruck.de" ;
+   foaf:phone "03414425090" ;
+   org:memberOf "sedruck KG" ;
+   foaf:homepage <https://www.sedruck.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "sedruck.de - Online Copyshop für Druck und Buchbindung" ;
+   nl:orgLogo "sedruck-Logo-Online-Copyshop.jpg" ;
+   nl:hasDistrict "Böhlitz-Ehrenberg" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A19> a foaf:Person  ;
+   nl:hasID "19" ;
+   dct:updated "2017-01-13T12:58:27" ;
+   foaf:firstName "Rudolf" ;
+   foaf:lastName "Pohl" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
+   foaf:mbox "rudolf.pohl@leipzig.de" ;
+   foaf:phone "03411233516" ;
+   org:memberOf "Stadt Leipzig" ;
+   nl:orgType "other" ;
+   nl:orgPosition "Dezernat Umwelt, Ordnung Sport" ;
+   nl:orgLogo "Wa-m-4c-Dez_III.JPG" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A21> a foaf:Person  ;
+   nl:hasID "21" ;
+   dct:updated "2017-01-06T06:15:04" ;
+   foaf:firstName "Leonie" ;
+   foaf:lastName "Fremgen" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.12> ;
+   foaf:mbox "info@oikos-leipzig.org" ;
+   foaf:phone "01622950053" ;
+   org:memberOf "oikos Leipzig e.V." ;
+   foaf:homepage <http://leipzig.oikos-international.org/> ;
+   nl:orgType "club" ;
+   nl:orgLogo "Logo_ohne-ia.PNG" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A22> a foaf:Person  ;
+   nl:hasID "22" ;
+   dct:updated "2016-06-03T05:15:04" ;
+   foaf:firstName "Lutz" ;
+   foaf:lastName "Lange" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04347.Leipzig.Braunstrasse.9> ;
+   foaf:mbox "info@verbundnetz-der-waerme.de" ;
+   foaf:phone "034206-754-61" ;
+   org:memberOf "Verbundnetz der Wärme" ;
+   foaf:homepage <http://www.verbundnetz-der-waerme.de> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Projektleitung" ;
+   nl:orgLogo "vnw_logo_2c.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A23> a foaf:Person  ;
+   nl:hasID "23" ;
+   dct:updated "2017-05-31T14:47:15" ;
+   foaf:firstName "Rainer" ;
+   foaf:lastName "Kühn" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.18A> ;
+   foaf:mbox "lindentaler@gmx.de" ;
+   foaf:phone "0341-26340031" ;
+   org:memberOf "Der Lindentaler" ;
+   foaf:homepage <http://www.lindentaler.org> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Gründer" ;
+   nl:orgLogo "Lindentaler300.jpeg" ;
+   nl:hasDistrict "Stadt Leipzig – gesamte Stadt" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A24> a foaf:Person  ;
+   nl:hasID "24" ;
+   dct:updated "2017-01-10T18:16:37" ;
+   foaf:firstName "Matthias" ;
+   foaf:lastName "Höppner" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Erich-Koehn-Strasse.63B> ;
+   foaf:mbox "dialog@rad3.de" ;
+   foaf:phone "+493413928739" ;
+   org:memberOf "rad3.de" ;
+   foaf:homepage <http://rad3.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Gründer & Prokurist" ;
+   nl:orgLogo "rad3-logoj-l.png" ;
+   nl:hasDistrict "Lindenau" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A25> a foaf:Person  ;
+   nl:hasID "25" ;
+   dct:updated "2015-02-10T08:42:56" ;
+   foaf:firstName "Sebastian" ;
+   foaf:lastName "Fried" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.118> ;
+   foaf:mbox "sebastian.fried@leipzig.de" ;
+   foaf:phone "03411236146" ;
+   org:memberOf "Stadt Leipzig, Amt für Stadtgrün und Gewässer" ;
+   foaf:homepage <http://www.leipzig.de/de/buerger/freizeit/leipzig/> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Baumbestandsentwicklung / Aktion baumstarke Stadt" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A26> a foaf:Person  ;
+   nl:hasID "26" ;
+   dct:updated "2017-05-03T07:29:30" ;
+   foaf:firstName "Juliana " ;
+   foaf:lastName "Klengel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.18> ;
+   foaf:mbox "info@adfc-leipzig.de" ;
+   foaf:phone "0341-22540313" ;
+   org:memberOf "ADFC Leipzig" ;
+   foaf:homepage <http://www.adfc-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Koordinatorin" ;
+   nl:orgLogo "ADFC_logo_RGB.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A27> a foaf:Person  ;
+   nl:hasID "27" ;
+   dct:updated "2017-01-17T12:47:13" ;
+   foaf:firstName "Susanne" ;
+   foaf:lastName "Brehm" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
+   foaf:mbox "s.brehm@knoe.org" ;
+   foaf:phone "0341-39281686" ;
+   org:memberOf "Konzeptwerk Neue Ökonomie" ;
+   foaf:homepage <http://www.konzeptwerk-neue-oekonomie.org> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Bildungsreferentin" ;
+   nl:orgLogo "Logo_KNO__.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A28> a foaf:Person  ;
+   nl:hasID "28" ;
+   dct:updated "2015-10-25T06:15:25" ;
+   foaf:firstName "Torsten" ;
+   foaf:lastName "Krause" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStreet.75> ;
+   foaf:mbox "oeffentlichkeitsarbeit@wege-ev.de" ;
+   foaf:phone "0341-24689093" ;
+   foaf:phone "0341-9128317" ;
+   org:memberOf "WEGE e.V. - für Angehörige und Freunde psychisch Kranker" ;
+   foaf:homepage <http://www.wege-ev.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Öffentlichkeits- und Projektarbeit" ;
+   nl:orgLogo "Logo_Wegecmyk.jpg" ;
+   nl:hasDistrict "Lindenau" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A29> a foaf:Person  ;
+   nl:hasID "29" ;
+   dct:updated "2016-11-01T12:38:03" ;
+   foaf:firstName "Christian" ;
+   foaf:lastName "Gundlach" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Rietschelstrasse.2> ;
+   foaf:mbox "info@leipziger-kinderbuero.de" ;
+   foaf:phone "0341-3375666" ;
+   org:memberOf "Leipziger Kinderbüro des Deutschen Kinderschutzbundes" ;
+   foaf:homepage <http://www.leipziger-kinderbuero.de/> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Projektmitarbeiter" ;
+   nl:orgLogo "Logo_rund_trans.png" ;
+   nl:hasDistrict "Lindenau" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A30> a foaf:Person  ;
+   nl:hasID "30" ;
+   dct:updated "2016-06-06T05:15:03" ;
+   foaf:firstName "Gudula" ;
+   foaf:lastName "Kienemund" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Haertelstrasse.27> ;
+   foaf:mbox "gk@ideenquartier.org" ;
+   foaf:phone "+49(0)341-86729050" ;
+   org:memberOf "Leipziger KulturPaten" ;
+   foaf:homepage <http://www.leipzigerkulturpaten.de> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Geschäftsführerin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A32> a foaf:Person  ;
+   nl:hasID "32" ;
+   dct:updated "2015-05-15T05:15:33" ;
+   foaf:firstName "Anne" ;
+   foaf:lastName "Neumann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.68> ;
+   foaf:mbox "info@lebenlernenleipzig.de" ;
+   foaf:phone "015781870122" ;
+   org:memberOf "leben.lernen.leipzig" ;
+   foaf:homepage <http://www.lebenlernenleipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vereinsmitglied" ;
+   nl:orgLogo "logolelele.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A33> a foaf:Person  ;
+   nl:hasID "33" ;
+   dct:updated "2016-06-20T05:15:03" ;
+   foaf:firstName "Christian" ;
+   foaf:lastName "Dr. Räsack" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Schnorrstrasse.3B> ;
+   foaf:mbox "WeltOffenEvau@gmx.de" ;
+   foaf:phone "0341-3040617" ;
+   org:memberOf "Welt­Of­fen e.V." ;
+   nl:orgType "club" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A34> a foaf:Person  ;
+   nl:hasID "34" ;
+   dct:updated "2015-03-18T09:59:12" ;
+   foaf:firstName "Sabine" ;
+   foaf:lastName "Bolte" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04347.Leipzig.Ossietzkystrasse.37> ;
+   foaf:mbox "bildungsberatung@leipzig.de" ;
+   foaf:phone "03411234779" ;
+   org:memberOf "Sabine Bolte" ;
+   nl:orgType "other" ;
+   nl:orgLogo "110103_Logo_Bildungsberatung.jpg" ;
+   nl:hasDistrict "Schönefeld-Ost" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A35> a foaf:Person  ;
+   nl:hasID "35" ;
+   dct:updated "2015-12-14T06:15:34" ;
+   foaf:firstName "Volkmar" ;
+   foaf:lastName "Kreiß´" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.154> ;
+   foaf:mbox "volkmarkreiss@gmail.com" ;
+   foaf:phone "03414248474" ;
+   org:memberOf "Initiative Grundeinkommen Leipzig" ;
+   foaf:homepage <http://bge-initiative-leipzig.blogspot.de> ;
+   nl:orgType "initiative" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A36> a foaf:Person  ;
+   nl:hasID "36" ;
+   dct:updated "2014-12-19T06:15:27" ;
+   foaf:firstName "Sebastian" ;
+   foaf:lastName "Koch" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.DelitzscherStrasse.3> ;
+   foaf:mbox "info@eg-leipzig.de" ;
+   foaf:phone "01603365593" ;
+   org:memberOf "Energiegenossenschaft Leipzig EGL eG" ;
+   foaf:homepage <http://www.energiegenossenschaft-leipzig.de/> ;
+   nl:orgType "collective" ;
+   nl:orgPosition "Vorstand" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A37> a foaf:Person  ;
+   nl:hasID "37" ;
+   dct:updated "2014-12-27T06:15:13" ;
+   foaf:firstName "Marcus" ;
+   foaf:lastName "Zschornack" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.15> ;
+   foaf:mbox "presse@caritas-leipzig.de" ;
+   foaf:phone "034196361-30" ;
+   org:memberOf "Caritasverband Leipzig e. V." ;
+   foaf:homepage <http://www.caritas-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Fachbereichsleiter Hilfe in besonderen Lebenslagen" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A38> a foaf:Person  ;
+   nl:hasID "38" ;
+   dct:updated "2016-01-12T06:15:30" ;
+   foaf:firstName "Steffen" ;
+   foaf:lastName "Balmer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.93> ;
+   foaf:mbox "info@westbesuch.com" ;
+   foaf:phone "015787800654" ;
+   org:memberOf "Westbesuch e.V." ;
+   foaf:homepage <http://www.westbesuch.com> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorstand" ;
+   nl:orgLogo "westbesuch_e-V.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A39> a foaf:Person  ;
+   nl:hasID "39" ;
+   dct:updated "2015-01-16T06:15:21" ;
+   foaf:firstName "Andreas " ;
+   foaf:lastName "Schuster" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Gerichtsweg.28> ;
+   foaf:mbox "u.wermelt@piepenbrock.de" ;
+   foaf:phone "03414131-22" ;
+   org:memberOf "Piepenbrock Sicherheit GmbH + Co. KG " ;
+   foaf:homepage <http://www.piepenbrock.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Kundenbetreuer" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A40> a foaf:Person  ;
+   nl:hasID "40" ;
+   dct:updated "2016-01-17T06:15:02" ;
+   foaf:firstName "Helmut" ;
+   foaf:lastName "Wolman" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
+   foaf:mbox "Helmut@bildungsagenten.com" ;
+   foaf:phone "015734448245" ;
+   foaf:phone "03067969040" ;
+   org:memberOf "Ideenwerkstatt Bildungsagenten" ;
+   foaf:homepage <http://www.konzeptwerk-neue-oekonomie.org> ;
+   nl:orgType "educational" ;
+   nl:orgPosition "Initiator" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A41> a foaf:Person  ;
+   nl:hasID "41" ;
+   dct:updated "2015-02-09T09:59:48" ;
+   foaf:firstName "Kerstin" ;
+   foaf:lastName "Weißgerber" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04329.Leipzig.SommerfelderWeg.94> ;
+   foaf:mbox "kontakt@aurel-marketing.de" ;
+   foaf:phone "0341-2520421" ;
+   org:memberOf "AUREL Marketing" ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaberin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A42> a foaf:Person  ;
+   nl:hasID "42" ;
+   dct:updated "2017-03-24T06:15:03" ;
+   foaf:firstName "Johannes" ;
+   foaf:lastName "Timaeus" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.NeustaedterStrasse.20> ;
+   foaf:mbox "t.johannes@arcor.de" ;
+   foaf:phone "01781815797" ;
+   org:memberOf "Querbeet" ;
+   foaf:homepage <http://www.querbeet-leipzig.de> ;
+   nl:orgType "initiative" ;
+   nl:orgLogo "Querbeet_Logo.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A43> a foaf:Person  ;
+   nl:hasID "43" ;
+   dct:updated "2016-04-05T05:15:04" ;
+   foaf:firstName "Johanna" ;
+   foaf:lastName "Gundermann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.10> ;
+   foaf:mbox "buero@rockzipfel-leipzig.de" ;
+   foaf:phone "03412482740" ;
+   org:memberOf "Rockzipfel Eltern-Kind-Büro" ;
+   foaf:homepage <http://www.rockzipfel-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Projektleitung" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A45> a foaf:Person  ;
+   nl:hasID "45" ;
+   dct:updated "2015-04-16T05:15:37" ;
+   foaf:firstName "Silvia Maria" ;
+   foaf:lastName "Richter" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04129.Leipzig.Hartzstrasse.2> ;
+   foaf:mbox "smrichter@vlw-eg.de" ;
+   foaf:phone "03419184127" ;
+   org:memberOf "Vereinigte Leipziger Wohnungsgenossenschaft eG" ;
+   foaf:homepage <http://www.vlw-eg.de/> ;
+   nl:orgType "collective" ;
+   nl:orgPosition "Stadtteil- und Sozialmanagerin" ;
+   nl:orgLogo "VLW-Logo_Neu.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A46> a foaf:Person  ;
+   nl:hasID "46" ;
+   dct:updated "2015-04-26T05:15:12" ;
+   foaf:firstName "Daniel " ;
+   foaf:lastName "Reißmann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
+   foaf:mbox "reissmann@energiemetropole-leipzig.de" ;
+   foaf:phone "0341-121-3317" ;
+   org:memberOf "Netzwerk Energie & Umwelt e. V." ;
+   foaf:homepage <http://www.energiemetropole-leipzig.de> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Geschäftsstellenleiter" ;
+   nl:orgLogo "NEUeV_Logo_Final_RGB.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A47> a foaf:Person  ;
+   nl:hasID "47" ;
+   dct:updated "2015-09-27T05:15:38" ;
+   foaf:firstName "Jörg" ;
+   foaf:lastName "Asshoff" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Reiskestrasse.2> ;
+   foaf:mbox "ja@fundamentale.de" ;
+   foaf:phone "4934186722056" ;
+   foaf:phone "4934186722056" ;
+   org:memberOf "Fundamentale - Die junge Akademie" ;
+   foaf:homepage <http://www.fundamentale.de> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Leiter" ;
+   nl:orgLogo "Fundamentale_basislogo_farb.jpg" ;
+   nl:hasDistrict "Reudnitz-Thonberg" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A48> a foaf:Person  ;
+   nl:hasID "48" ;
+   dct:updated "2017-04-03T17:04:10" ;
+   foaf:firstName "Matias" ;
+   foaf:lastName "Langer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04316.Leipzig.Karl-Friedrich-Strasse.1> ;
+   foaf:mbox "email@seidentraum.eu" ;
+   foaf:phone "03413314052" ;
+   org:memberOf "Dr.. Matias Langer" ;
+   foaf:homepage <http://www.seidentraum.eu> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaber" ;
+   nl:orgLogo "logo3_quer1100.png" ;
+   nl:hasDistrict "Mölkau" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A49> a foaf:Person  ;
+   nl:hasID "49" ;
+   dct:updated "2016-05-10T05:15:03" ;
+   foaf:firstName "Florian" ;
+   foaf:lastName "Müller" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04178.Leipzig.Stefan-Zweig-Strasse.21> ;
+   foaf:mbox "fm@projektup.org" ;
+   foaf:phone "0341-44928504" ;
+   foaf:phone "0176-23563972" ;
+   org:memberOf "projektUP!" ;
+   foaf:homepage <http://www.projektup.org> ;
+   nl:orgType "freelancer" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:orgLogo "logo-pUP.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A50> a foaf:Person  ;
+   nl:hasID "50" ;
+   dct:updated "2017-03-17T09:56:53" ;
+   foaf:firstName "Martin" ;
+   foaf:lastName "Finke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
+   foaf:mbox "info@einewelt-leipzig.de" ;
+   foaf:phone "+493413010143" ;
+   org:memberOf "Eine Welt Laden" ;
+   foaf:homepage <http://einewelt-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgLogo "logo_kurz.jpg" ;
+   nl:hasDistrict "Connewitz" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A51> a foaf:Person  ;
+   nl:hasID "51" ;
+   dct:updated "2017-05-10T14:23:42" ;
+   foaf:firstName "Dominik" ;
+   foaf:lastName "Renner" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
+   foaf:mbox "info@annalinde-leipzig.de" ;
+   foaf:phone "015221655436" ;
+   org:memberOf "ANNALINDE gGmbH" ;
+   foaf:homepage <http://www.annalinde-leipzig.de> ;
+   nl:orgType "educational" ;
+   nl:orgLogo "annalindeKopie.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A52> a foaf:Person  ;
+   nl:hasID "52" ;
+   dct:updated "2017-09-04T10:06:14" ;
+   foaf:firstName "Nadja" ;
+   foaf:lastName "Müller" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/01099.Dresden.Louisenstrasse.93> ;
+   foaf:mbox "award@sukuma.net" ;
+   foaf:phone "0351-7928767" ;
+   org:memberOf "Sukuma arts e.V." ;
+   foaf:homepage <http://www.sukuma-award.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Projektkoordinatorin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A53> a foaf:Person  ;
+   nl:hasID "53" ;
+   dct:updated "2015-10-14T05:15:43" ;
+   foaf:firstName "Steffen" ;
+   foaf:lastName "Henke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04158.Leipzig.Rosestrasse.11> ;
+   foaf:mbox "info@lust-auf-neues-geld-leipzig.de" ;
+   foaf:phone "034123159818" ;
+   org:memberOf "Lust auf neues Geld" ;
+   foaf:homepage <http://www.lust-auf-neues-geld.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:orgLogo "EntwPlakat_Seite_12.jpg" ;
+   nl:hasDistrict "Lindenthal" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A54> a foaf:Person  ;
+   nl:hasID "54" ;
+   dct:updated "2015-08-01T05:16:10" ;
+   foaf:firstName "Heike" ;
+   foaf:lastName "König" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04451.Borsdorf.LeipzigerStrasse.6> ;
+   foaf:mbox "geschaeftsstelle@gruenerring-leipzig.de" ;
+   foaf:phone "03429120412" ;
+   foaf:phone "01622807860" ;
+   org:memberOf "Grüner Ring Leipzig" ;
+   foaf:homepage <http://www.gruenerring-leipzig.de> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Leiterin der Geschäftsstelle" ;
+   nl:orgLogo "LogoGRL_4c_KLEIN.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A55> a foaf:Person  ;
+   nl:hasID "55" ;
+   dct:updated "2015-08-03T05:15:35" ;
+   foaf:firstName "Lutz" ;
+   foaf:lastName "Förster" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04159.Leipzig.Toskastrasse.36> ;
+   foaf:mbox "info@lipsia-e-motion.com" ;
+   foaf:phone "0341-9012193" ;
+   foaf:phone "0179-2933671" ;
+   org:memberOf "Lipsia-e-motion" ;
+   foaf:homepage <http://www.Lipsia-e-motion.com> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:orgLogo "lipsia_e_motion.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A56> a foaf:Person  ;
+   nl:hasID "56" ;
+   dct:updated "2017-08-26T08:24:01" ;
+   foaf:firstName "Christian" ;
+   foaf:lastName "Rabe" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.BeuchaerStrasse.7> ;
+   foaf:mbox "ch@wvg-rabe.de" ;
+   foaf:phone "0341-6992117" ;
+   org:memberOf "WVG Rabe" ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Gesellschafter" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A57> a foaf:Person  ;
+   nl:hasID "57" ;
+   dct:updated "2016-09-15T21:36:24" ;
+   foaf:firstName "Thomas" ;
+   foaf:lastName "Kujawa" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.21-23> ;
+   foaf:mbox "info@familienbuero-leipzig.de" ;
+   foaf:phone "+4934135540810" ;
+   org:memberOf "Familienbüro Leipzig" ;
+   foaf:homepage <http://www.familienbuero-leipzig.de> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Mitinitiator" ;
+   nl:orgLogo "familienbuero_Facebookklein.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A58> a foaf:Person  ;
+   nl:hasID "58" ;
+   dct:updated "2016-09-28T05:15:04" ;
+   foaf:firstName "Kirsten" ;
+   foaf:lastName "Elborg" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.12> ;
+   foaf:mbox "kirstenelborg@yahoo.de" ;
+   foaf:phone "0163-9897864" ;
+   org:memberOf "Transition Town Leipzig" ;
+   foaf:homepage <http://www.transitiontown-leipzig.de/> ;
+   nl:orgType "initiative" ;
+   nl:orgLogo "trans_logo_ai_2.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A59> a foaf:Person  ;
+   nl:hasID "59" ;
+   dct:updated "2015-09-27T05:15:41" ;
+   foaf:firstName "Kirsten" ;
+   foaf:lastName "Elborg" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.12> ;
+   foaf:mbox "k.elborg@permakultur-institut.de" ;
+   foaf:phone "0163-9897864" ;
+   org:memberOf "Permakultur Forum" ;
+   foaf:homepage <http://www.transitiontown-leipzig.de/?page_id=456> ;
+   nl:orgType "initiative" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A60> a foaf:Person  ;
+   nl:hasID "60" ;
+   dct:updated "2017-02-05T13:56:02" ;
+   foaf:firstName "René" ;
+   foaf:lastName "Sievert" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04157.Leipzig.Corinthstrasse.14> ;
+   foaf:mbox "info@nabu-leipzig.de" ;
+   foaf:phone "03416884477" ;
+   org:memberOf "NABU-Regionalverband Leipzig" ;
+   foaf:homepage <http://www.NABU-Leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorsitzender" ;
+   nl:orgLogo "NABU-RV-Ico.jpg" ;
+   nl:hasDistrict "Gohlis-Mitte" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A61> a foaf:Person  ;
+   nl:hasID "61" ;
+   dct:updated "2017-02-24T19:03:15" ;
+   foaf:firstName "Karsten" ;
+   foaf:lastName "Wolf" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Alfred-Frank-Strasse.15> ;
+   foaf:mbox "zumkarsten@gmx.de" ;
+   foaf:phone "01778506951" ;
+   foaf:phone "03412232817" ;
+   org:memberOf "Radbar \"Velocibar\"" ;
+   foaf:homepage <http://www.velocibar.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Barchef" ;
+   nl:orgLogo "flyerklein.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A62> a foaf:Person  ;
+   nl:hasID "62" ;
+   dct:updated "2016-10-01T07:29:37" ;
+   foaf:firstName "Stiftung \"Ecken wecken\"" ;
+   foaf:lastName "Thorsten Mehnert" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.MarkranstaedterStrasse.29B> ;
+   foaf:mbox "info@buergerbahnhof-plagwitz.de" ;
+   foaf:phone "0341-123456789" ;
+   org:memberOf "Initiative Bürgerbahnhof Plagwitz (IBBP)" ;
+   foaf:homepage <http://www.buergerbahnhof-plagwitz.de> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Koordinator" ;
+   nl:orgLogo "Logo_IBBP.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A63> a foaf:Person  ;
+   nl:hasID "63" ;
+   dct:updated "2016-12-01T18:00:30" ;
+   foaf:firstName "Juliana" ;
+   foaf:lastName "Klengel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.27> ;
+   foaf:mbox "analui@posteo.de" ;
+   foaf:phone "01577-1598241" ;
+   org:memberOf "Kollektiv Lastenrad Leipzig" ;
+   foaf:homepage <https://kolara.wordpress.com/> ;
+   nl:orgType "educational" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A64> a foaf:Person  ;
+   nl:hasID "64" ;
+   dct:updated "2017-09-06T05:15:03" ;
+   foaf:firstName "Christin" ;
+   foaf:lastName "Bauer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.7> ;
+   foaf:mbox "buero@kunzstoffe.de" ;
+   foaf:phone "01634846916" ;
+   org:memberOf "kunZstoffe – urbane Ideenwerkstatt e.V." ;
+   foaf:homepage <http://www.kunzstoffe.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vereinsmitglied" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A66> a foaf:Person  ;
+   nl:hasID "66" ;
+   dct:updated "2016-10-17T05:15:04" ;
+   foaf:firstName "Sandra" ;
+   foaf:lastName "Grimm" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Hildegardstrasse.49> ;
+   foaf:mbox "sandra@stadtpflanzer.de" ;
+   foaf:phone "01777886010" ;
+   org:memberOf "Stadtpflanzer e. V." ;
+   foaf:homepage <http://www.stadtpflanzer.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorstandvorsitzende" ;
+   nl:orgLogo "sp_logo_kompakt_web.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A67> a foaf:Person  ;
+   nl:hasID "67" ;
+   dct:updated "2016-10-03T19:16:37" ;
+   foaf:firstName "Marius" ;
+   foaf:lastName "Brauer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Bernhardstrasse.11> ;
+   foaf:mbox "info@querbeet-leipzig.de" ;
+   foaf:phone "00000000000" ;
+   org:memberOf "Querbeet" ;
+   foaf:homepage <http://www.querbeet-leipzig.de> ;
+   nl:orgType "initiative" ;
+   nl:orgLogo "QB-pink.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A68> a foaf:Person  ;
+   nl:hasID "68" ;
+   dct:updated "2017-07-30T05:15:03" ;
+   foaf:firstName "Katja" ;
+   foaf:lastName "Haberkorn" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.Cichoriusstrasse.2> ;
+   foaf:mbox "kontakt@zackig-auf-kurs.de" ;
+   foaf:phone "0341-58150057" ;
+   org:memberOf "zackig auf kurs - die offene Nähwerkstatt für Upcycling" ;
+   foaf:homepage <http://www.zackig-auf-kurs.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Unternehmerin" ;
+   nl:orgLogo "Logo_Kupfer_klein.jpg" ;
+   nl:hasDistrict "Anger-Crottendorf" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A69> a foaf:Person  ;
+   nl:hasID "69" ;
+   dct:updated "2017-02-15T15:31:13" ;
+   foaf:firstName "Nico" ;
+   foaf:lastName "Singer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+   foaf:mbox "loewenmaul@oekoloewe.de" ;
+   foaf:phone "03413065185" ;
+   org:memberOf "Ökolöwe - Umweltbund Leipzig e.V." ;
+   foaf:homepage <http://ökolöwe.de/> ;
+   nl:orgType "club" ;
+   nl:orgLogo "10455645_10152510222382855_8280575674489317855_n.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A70> a foaf:Person  ;
+   nl:hasID "70" ;
+   dct:updated "2015-10-23T05:15:41" ;
+   foaf:firstName "Rafaela" ;
+   foaf:lastName "Müller" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.12> ;
+   foaf:mbox "rafaela.mueller@posteo.de" ;
+   foaf:phone "017631184974" ;
+   org:memberOf "Klimagerechtigkeit Leipzig" ;
+   foaf:homepage <http://klimagerechtigkeit.blogsport.de/> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Mitglied" ;
+   nl:orgLogo "eisb_r_vs.jpg" ;
+   nl:hasDistrict "Lindenau" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A71> a foaf:Person  ;
+   nl:hasID "71" ;
+   dct:updated "2015-10-02T05:15:44" ;
+   foaf:firstName "Thomas" ;
+   foaf:lastName "Efer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
+   foaf:mbox "info@dsble.de" ;
+   foaf:phone "+49-3212-1394300" ;
+   org:memberOf "Das Schwarze Brett" ;
+   foaf:homepage <http://www.dsble.de/> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Support-Mitarbeiter" ;
+   nl:orgLogo "dsb.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A72> a foaf:Person  ;
+   nl:hasID "72" ;
+   dct:updated "2015-10-02T05:15:45" ;
+   foaf:firstName "Tino" ;
+   foaf:lastName "Neufert" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.27> ;
+   foaf:mbox "info@nachbarschaftsgaerten.de" ;
+   foaf:phone "0341000000" ;
+   org:memberOf "Nachbarschaftsgärten e.V." ;
+   foaf:homepage <http://www.nachbarschaftsgaerten.de/> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorstandstand" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A73> a foaf:Person  ;
+   nl:hasID "73" ;
+   dct:updated "2017-07-03T08:09:21" ;
+   foaf:firstName "Martin " ;
+   foaf:lastName "Hilbrecht" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+   foaf:mbox "presse@bund-leipzig.de" ;
+   foaf:phone "03413065395" ;
+   org:memberOf "BUND Leipzig" ;
+   foaf:homepage <http://www.bund-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorsitzender" ;
+   nl:orgLogo "BUNDlogo_2012_4c_o.T__Gro__.jpg" ;
+   nl:hasDistrict "Connewitz" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A74> a foaf:Person  ;
+   nl:hasID "74" ;
+   dct:updated "2017-01-13T06:15:04" ;
+   foaf:firstName "Kristin" ;
+   foaf:lastName "Häuser" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.112> ;
+   foaf:mbox "wollzirkel@posteo.de" ;
+   foaf:phone "034164063810" ;
+   org:memberOf "WOLLZIRKEL" ;
+   foaf:homepage <http://wollzirkel.blogspot.de/> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaberin" ;
+   nl:orgLogo "headerwollzirkel.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A75> a foaf:Person  ;
+   nl:hasID "75" ;
+   dct:updated "2015-10-17T05:16:02" ;
+   foaf:firstName "Konstantin" ;
+   foaf:lastName "Tsakalidis" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.64> ;
+   foaf:mbox "mail@tanz-zentrale.de" ;
+   foaf:phone "4915229563862" ;
+   foaf:phone "4915229563862" ;
+   org:memberOf "Tanz zentrale" ;
+   foaf:homepage <http://www.tanz-zentrale.de> ;
+   nl:orgType "freelancer" ;
+   nl:orgPosition "Leitung" ;
+   nl:orgLogo "logo14.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A76> a foaf:Person  ;
+   nl:hasID "76" ;
+   dct:updated "2016-10-20T05:15:03" ;
+   foaf:firstName "Daisy" ;
+   foaf:lastName "Kratz" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Helmholtzstrasse.XX> ;
+   foaf:mbox "mail@ackerwinde.net" ;
+   foaf:phone "0341-60463906" ;
+   org:memberOf "Ackerwinde Gemüsegarten" ;
+   foaf:homepage <http://www.ackerwinde.net> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaberin, Bio-Landwirtin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A77> a foaf:Person  ;
+   nl:hasID "77" ;
+   dct:updated "2017-01-03T09:42:35" ;
+   foaf:firstName "Richard" ;
+   foaf:lastName "Hagedorn" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04288.Leipzig.GrosspoesnaerStrasse.71> ;
+   foaf:mbox "Richard.Hagedorn@erntemich.de" ;
+   foaf:phone "01773273278" ;
+   org:memberOf "ernte-mich" ;
+   foaf:homepage <http://www.erntemich.de> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:orgLogo "150303_Logo_quer.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A78> a foaf:Person  ;
+   nl:hasID "78" ;
+   dct:updated "2017-07-27T08:07:37" ;
+   foaf:firstName "Maria" ;
+   foaf:lastName "Vitzthum" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04157.Leipzig.Michael-Kazmierczak-Strasse.25> ;
+   foaf:mbox "info@lebendige-luppe.de" ;
+   foaf:phone "034186967550" ;
+   org:memberOf "Projekt \"Lebendige Luppe\"" ;
+   foaf:homepage <http://www.Lebendige-Luppe.de> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Presse- und Öffentlichkeitsarbeit" ;
+   nl:orgLogo "ll-logo.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A79> a foaf:Person  ;
+   nl:hasID "79" ;
+   dct:updated "2015-11-12T06:15:41" ;
+   foaf:firstName "Manja" ;
+   foaf:lastName "Mühl" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Haertelstrasse.4> ;
+   foaf:mbox "manja.muehl@eduventis.org" ;
+   foaf:phone "034126562279" ;
+   org:memberOf "EDUVENTIS-Bildung erleben e.V." ;
+   foaf:homepage <http://www.eduventis.org> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Projektkoordination" ;
+   nl:orgLogo "EDUVENTIS_LOGO.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A80> a foaf:Person  ;
+   nl:hasID "80" ;
+   dct:updated "2016-03-30T05:15:04" ;
+   foaf:firstName "Theresa" ;
+   foaf:lastName "Doss" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04347.Leipzig.Stannebeinplatz.13> ;
+   foaf:mbox "projektraum.leipzig@gmail.com" ;
+   foaf:phone "4917672949640" ;
+   foaf:phone "4917672949640" ;
+   org:memberOf "Projektwohnung \"krudebude\"" ;
+   foaf:homepage <https://www.facebook.com/pages/Projektwohnung-krudebude/617099368382416?fref=ts> ;
+   nl:orgType "initiative" ;
+   nl:orgLogo "krudebude.jpg" ;
+   nl:hasDistrict "Schönefeld-Ost" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A81> a foaf:Person  ;
+   nl:hasID "81" ;
+   dct:updated "2017-02-09T07:55:23" ;
+   foaf:firstName "Ekkehard" ;
+   foaf:lastName "Trümper" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04356.Leipzig.Messe-Allee.1> ;
+   foaf:mbox "E.Truemper@leipziger-messe.de" ;
+   foaf:phone "03416788210" ;
+   org:memberOf "Leipziger Messe GmbH" ;
+   foaf:homepage <http://www.leipziger-messe.de> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Projektdirektor" ;
+   nl:orgLogo "LM_Logo_color_dt_1.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A83> a foaf:Person  ;
+   nl:hasID "83" ;
+   dct:updated "2016-01-17T06:15:02" ;
+   foaf:firstName "Jan" ;
+   foaf:lastName "Barnick" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.39> ;
+   foaf:mbox "kontakt@lehmolandia.de" ;
+   foaf:phone "015737651644" ;
+   org:memberOf "Lehmolandia Lehmatelier" ;
+   foaf:homepage <http://www.lehmolandia.de> ;
+   nl:orgType "freelancer" ;
+   nl:orgPosition "Inhaber" ;
+   nl:orgLogo "LEHMO_LOGO_2014_ornament.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A84> a foaf:Person  ;
+   nl:hasID "84" ;
+   dct:updated "2016-03-22T06:15:04" ;
+   foaf:firstName "Johannes" ;
+   foaf:lastName "Timaeus" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.Cichoriusstrasse.17> ;
+   foaf:mbox "johannes.timaeus@posteo.de" ;
+   foaf:phone "01781815797" ;
+   org:memberOf "Johannes Timaeus" ;
+   foaf:homepage <http://kochkultur-leipzig.de> ;
+   nl:orgType "initiative" ;
+   nl:orgLogo "Bildschirmfoto_2014-12-17_um_4.27.31_PM.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A85> a foaf:Person  ;
+   nl:hasID "85" ;
+   dct:updated "2016-01-17T06:15:02" ;
+   foaf:firstName "Batzen-" ;
+   foaf:lastName "Tauschring" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.ZumKleingartenpark.41> ;
+   foaf:mbox "peggy77@gmx.net" ;
+   foaf:phone "0341000" ;
+   org:memberOf "Batzen-Tauschring Leipzig e.V." ;
+   foaf:homepage <http://www.batzen.de> ;
+   nl:orgType "club" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A86> a foaf:Person  ;
+   nl:hasID "86" ;
+   dct:updated "2017-01-14T07:27:58" ;
+   foaf:firstName "Georg" ;
+   foaf:lastName "Dehn" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04129.Leipzig.Theresienstrasse.35> ;
+   foaf:mbox "redaktion@araki.de" ;
+   foaf:phone "03413919966" ;
+   foaf:phone "015735792998" ;
+   org:memberOf "Araki Verlag" ;
+   foaf:homepage <https://araki.de/> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:orgLogo "ARAKI_beGEISTert.JPG" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A87> a foaf:Person  ;
+   nl:hasID "87" ;
+   dct:updated "2017-06-01T13:24:58" ;
+   foaf:firstName "Birgit" ;
+   foaf:lastName "Höppner-Böhme" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Dorotheenplatz.2> ;
+   foaf:mbox "info@fwal.de" ;
+   foaf:phone "0341-1494728" ;
+   org:memberOf "Freiwilligen-Agentur Leipzig e. V." ;
+   foaf:homepage <http://www.freiwilligen-agentur-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Geschäftsführerin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A88> a foaf:Person  ;
+   nl:hasID "88" ;
+   dct:updated "2016-02-04T06:15:03" ;
+   foaf:firstName "Gregor" ;
+   foaf:lastName "Assfalg" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.5> ;
+   foaf:mbox "gregor.assfalg@wisamar.de" ;
+   foaf:phone "0341999559" ;
+   org:memberOf "Wisamar Bildungsgesellschaft" ;
+   foaf:homepage <http://www.wisamar.de> ;
+   nl:orgType "educational" ;
+   nl:orgPosition "Projektkoordinator" ;
+   nl:orgLogo "LLP_Logo_neu.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A89> a foaf:Person  ;
+   nl:hasID "89" ;
+   dct:updated "2017-03-05T10:50:06" ;
+   foaf:firstName "Ingo" ;
+   foaf:lastName "Winkler" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Lotterstrasse.1> ;
+   foaf:mbox "info@ratskeller-leipzig.de" ;
+   foaf:phone "0341-1234567" ;
+   org:memberOf "Ratskeller der Stadt Leipzig GmbH" ;
+   foaf:homepage <http://www.ratskeller-leipzig.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Geschäftsführender Gesellschafter" ;
+   nl:orgLogo "Ratskeller_Logo300-dpi-gro_.jpg" ;
+   nl:hasDistrict "Zentrum (Innenstadt)" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A90> a foaf:Person  ;
+   nl:hasID "90" ;
+   dct:updated "2017-02-10T08:36:24" ;
+   foaf:firstName "Michael" ;
+   foaf:lastName "Haedicke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04279.Leipzig.Johannes-R.-Becher-Strasse.12> ;
+   foaf:mbox "info@haediflor.de" ;
+   foaf:phone "0341-3304411" ;
+   org:memberOf "Haedi-Flor Meisterbetrieb" ;
+   foaf:homepage <http://www.haediflor.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaber" ;
+   nl:orgLogo "Logo_HF_Blume.jpg" ;
+   nl:hasDistrict "Lößnig" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A91> a foaf:Person  ;
+   nl:hasID "91" ;
+   dct:updated "2017-03-29T07:15:46" ;
+   foaf:firstName "Anica" ;
+   foaf:lastName "Deckert" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.6> ;
+   foaf:mbox "leipzig@contigo.de" ;
+   foaf:phone "0341-23102973" ;
+   org:memberOf "CONTIGO Fairtrade Shop" ;
+   foaf:homepage <http://leipzig.contigo.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Filialleitung" ;
+   nl:orgLogo "Logo_CONTIGOC_hoch.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A92> a foaf:Person  ;
+   nl:hasID "92" ;
+   dct:updated "2016-02-03T06:15:03" ;
+   foaf:firstName "Noriko" ;
+   foaf:lastName "Minkus" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.113B> ;
+   foaf:mbox "mail@djh-leipzig.de" ;
+   foaf:phone "034192722261" ;
+   org:memberOf "Das Japanische Haus e.V." ;
+   foaf:homepage <http://www.djh-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorstand" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A93> a foaf:Person  ;
+   nl:hasID "93" ;
+   dct:updated "2016-02-07T06:15:03" ;
+   foaf:firstName "Andre'" ;
+   foaf:lastName "Przybilla" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04129.Leipzig.BitterfelderStrasse.5> ;
+   foaf:mbox "info@makerspace-leipzig.de" ;
+   foaf:phone "03413552040" ;
+   org:memberOf "Makerspace Leipzig" ;
+   foaf:homepage <http://www.Makerspace-Leipzig.de> ;
+   nl:orgType "other" ;
+   nl:orgLogo "Logo_petrol.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A94> a foaf:Person  ;
+   nl:hasID "94" ;
+   dct:updated "2017-01-17T20:38:58" ;
+   foaf:firstName "Christiane" ;
+   foaf:lastName "Pfundt" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.20> ;
+   foaf:mbox "c.pfundt@gruenschnabel-shop.de" ;
+   foaf:phone "0341-9808022" ;
+   org:memberOf "GRÜNSCHNABEL" ;
+   foaf:homepage <http://www.gruenschnabel-shop.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaberin" ;
+   nl:orgLogo "Logo_gruenschnabel.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A95> a foaf:Person  ;
+   nl:hasID "95" ;
+   dct:updated "2016-04-26T05:15:03" ;
+   foaf:firstName "Kornelius" ;
+   foaf:lastName "Unckell" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04275.Leipzig.Kurt-Eisner-Strasse.66> ;
+   foaf:mbox "mail@alte-schlosserei.de" ;
+   foaf:phone "03413069996" ;
+   org:memberOf "Alte Schlosserei" ;
+   foaf:homepage <http://www.alte-schlosserei.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A96> a foaf:Person  ;
+   nl:hasID "96" ;
+   dct:updated "2016-10-12T10:57:22" ;
+   foaf:firstName "Jennifer" ;
+   foaf:lastName "Pauli" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.WeissenfelserStrasse.65H> ;
+   foaf:mbox "leipzig@socialimpactlab.eu" ;
+   foaf:phone "034149566660" ;
+   org:memberOf "Social Impact Lab" ;
+   foaf:homepage <http://leipzig.socialimpactlab.eu> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Hosting" ;
+   nl:hasDistrict "Plagwitz" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A97> a foaf:Person  ;
+   nl:hasID "97" ;
+   dct:updated "2017-02-10T09:15:30" ;
+   foaf:firstName "Maik" ;
+   foaf:lastName "Haupt" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
+   foaf:mbox "mhaupt@zoo-leipzig.de" ;
+   foaf:phone "03415933364" ;
+   org:memberOf "Zoo Leipzig GmbH" ;
+   foaf:homepage <http://www.zoo-leipzig.de> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Teamleiter Zooshop Bereich Marketing" ;
+   nl:orgLogo "Zoo_NadS_Leipzig_4c.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A98> a foaf:Person  ;
+   nl:hasID "98" ;
+   dct:updated "2017-02-06T13:00:23" ;
+   foaf:firstName "Janette " ;
+   foaf:lastName "Lemke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.92> ;
+   foaf:mbox "kontakt@gfk-leipzig.de" ;
+   foaf:phone "017660898823" ;
+   foaf:phone "016096243014" ;
+   org:memberOf "Netzwerk Gewaltfreie Kommunikation Leipzig e.V." ;
+   foaf:homepage <http://www.gfk-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgLogo "gfk-leipzig-logo.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A99> a foaf:Person  ;
+   nl:hasID "99" ;
+   dct:updated "2016-02-15T06:15:03" ;
+   foaf:firstName "Astrid" ;
+   foaf:lastName "Kleitke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/10179.Berlin.AmKoellnischenPark.1> ;
+   foaf:mbox "akleitke@oxfam.de" ;
+   foaf:phone "030-45306910" ;
+   org:memberOf "Oxfam Deutschland Shops gGmbH" ;
+   foaf:homepage <http://www.oxfam-shops.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Shop-Referentin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A100> a foaf:Person  ;
+   nl:hasID "100" ;
+   dct:updated "2016-11-01T10:07:52" ;
+   foaf:firstName "Angelika" ;
+   foaf:lastName "Kell" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Dorotheenplatz.2> ;
+   foaf:mbox "post@buergerfuerleipzig.de" ;
+   foaf:phone "9601530" ;
+   org:memberOf "Stiftung Bürger für Leipzig" ;
+   foaf:homepage <http://www.buergerfuerleipzig.de> ;
+   nl:orgType "foundation" ;
+   nl:orgPosition "Geschäftsführerin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A101> a foaf:Person  ;
+   nl:hasID "101" ;
+   dct:updated "2016-02-26T06:15:03" ;
+   foaf:firstName "Rolf " ;
+   foaf:lastName "Schumann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+   foaf:mbox "info@hddl.de" ;
+   foaf:phone "0341-3065100" ;
+   org:memberOf "Haus der Demokratie Leipzig e.v." ;
+   foaf:homepage <http://www.hddl.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:orgLogo "hddl-logo.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A102> a foaf:Person  ;
+   nl:hasID "102" ;
+   dct:updated "2017-02-03T19:26:07" ;
+   foaf:firstName "Detlef " ;
+   foaf:lastName "Knaack" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04356.Leipzig.SeehausenerAllee.2> ;
+   foaf:mbox "detlef.knaack@fairgourmet.de" ;
+   foaf:phone "03416787000" ;
+   org:memberOf "fairgourmet GmbH" ;
+   foaf:homepage <http://www.fairgourmet.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Geschäftsführender Direktor" ;
+   nl:orgLogo "FAIRGOUR_rgb.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A103> a foaf:Person  ;
+   nl:hasID "103" ;
+   dct:updated "2017-03-23T06:15:03" ;
+   foaf:firstName "Phillipp" ;
+   foaf:lastName "Jahnich" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.Troendlinring.8> ;
+   foaf:mbox "Philipp.Jahnich@luxurycollection.com" ;
+   foaf:phone "+49(0)3411404901" ;
+   org:memberOf "Hotel Fürstenhof" ;
+   foaf:homepage <http://www.hotelfuerstenhofleipzig.com/> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Marketing & PR Coordinator" ;
+   nl:orgLogo "FUE_Square_GER_300dpi_2300x2300.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A104> a foaf:Person  ;
+   nl:hasID "104" ;
+   dct:updated "2017-05-15T17:40:15" ;
+   foaf:firstName "Johanna" ;
+   foaf:lastName "Pahl" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.DresdnerStrasse.59> ;
+   foaf:mbox "johannapahl@googlemail.com" ;
+   foaf:phone "0341-3067174" ;
+   org:memberOf "Dresdner59" ;
+   foaf:homepage <http://www.dresdner59.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Projektkoordination" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A105> a foaf:Person  ;
+   nl:hasID "105" ;
+   dct:updated "2016-05-03T05:15:03" ;
+   foaf:firstName "Nadine" ;
+   foaf:lastName "McNeil" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.19> ;
+   foaf:mbox "autodidaktenleipzig@riseup.net" ;
+   foaf:phone "0157-56355331" ;
+   org:memberOf "Autodidaktische Initiative e.V." ;
+   foaf:homepage <http://adi-leipzig.net> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Mitglied" ;
+   nl:orgLogo "LOGO_2c_t_rkisaufwei_.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A106> a foaf:Person  ;
+   nl:hasID "106" ;
+   dct:updated "2017-04-29T05:15:03" ;
+   foaf:firstName "Cyrill" ;
+   foaf:lastName "Rasch" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
+   foaf:mbox "umweltschutz@leipzig.de" ;
+   foaf:phone "+493411233409" ;
+   org:memberOf "Amt für Umweltschutz der Stadt Leipzig" ;
+   nl:orgType "other" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A108> a foaf:Person  ;
+   nl:hasID "108" ;
+   dct:updated "2017-07-03T14:05:25" ;
+   foaf:firstName "Martin" ;
+   foaf:lastName "Finke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Stockartstrasse.11> ;
+   foaf:mbox "info@fairtrade-leipzig.de" ;
+   foaf:phone "03413010143" ;
+   org:memberOf "Fairer Einkaufsführer - Discounter" ;
+   nl:orgType "other" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A109> a foaf:Person  ;
+   nl:hasID "109" ;
+   dct:updated "2016-08-15T05:15:03" ;
+   foaf:firstName "Sarah" ;
+   foaf:lastName "Nagel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Stockartstrasse.11> ;
+   foaf:mbox "sarah.nagel@rossmann.de" ;
+   foaf:phone "03413010143" ;
+   org:memberOf "Rossmann" ;
+   nl:orgType "corporation" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A110> a foaf:Person  ;
+   nl:hasID "110" ;
+   dct:updated "2017-03-17T13:12:18" ;
+   foaf:firstName "Martin" ;
+   foaf:lastName "Finke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Stockartstrasse.11> ;
+   foaf:mbox "einkaufsfuehrer.restaurant.cafe@einewelt-leipzig.de" ;
+   foaf:phone "03413010143" ;
+   org:memberOf "Fairer Einkaufsführer - Restaurant/Cafe" ;
+   nl:orgType "other" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A111> a foaf:Person  ;
+   nl:hasID "111" ;
+   dct:updated "2017-03-17T13:09:53" ;
+   foaf:firstName "Martin" ;
+   foaf:lastName "Finke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Stockartstrasse.111> ;
+   foaf:mbox "einkaufsfuehrer.baeckerei.cafe@einewelt-leipzig.de" ;
+   foaf:phone "03413010143" ;
+   org:memberOf "Fairer Einkaufsführer - Bäckerei/Cafe" ;
+   nl:orgType "other" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A112> a foaf:Person  ;
+   nl:hasID "112" ;
+   dct:updated "2017-03-15T20:07:45" ;
+   foaf:firstName "Sandra" ;
+   foaf:lastName "Wolf" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/06188.Landsberg.DroyssigerStrasse.9> ;
+   foaf:mbox "info@nelly-morelly.de" ;
+   foaf:phone "0174-9270597" ;
+   org:memberOf "Nelly Morelly" ;
+   foaf:homepage <http://www.nelly-morelly.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaberin" ;
+   nl:orgLogo "Gruen.de.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A113> a foaf:Person  ;
+   nl:hasID "113" ;
+   dct:updated "2016-04-18T05:15:04" ;
+   foaf:firstName "Kerstin" ;
+   foaf:lastName "Andruschow" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.14> ;
+   foaf:mbox "bibliothek.plagwitz@leipzig.de" ;
+   foaf:phone "0341-4804375" ;
+   org:memberOf "Stadtteilbibliothek Plagwitz" ;
+   foaf:homepage <http://www.leipzig.de/stadtbib> ;
+   nl:orgType "educational" ;
+   nl:orgPosition "Dipl.-Bibliothekarin, verantwortlich für Öffentlichkeitsarbeit" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A114> a foaf:Person  ;
+   nl:hasID "114" ;
+   dct:updated "2017-04-19T16:39:26" ;
+   foaf:firstName "Markus" ;
+   foaf:lastName "Kollotzek" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04155.Leipzig.Marbachstrasse.2A> ;
+   foaf:mbox "markus.kollotzek@greennetproject.org" ;
+   foaf:phone "0160-2574782" ;
+   org:memberOf "Freie Kommunikation und Nachhaltiger Lebensstil e.V." ;
+   foaf:homepage <https://greennetproject.org/de/content/downloads> ;
+   nl:orgType "club" ;
+   nl:orgLogo "stylish_g.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A115> a foaf:Person  ;
+   nl:hasID "115" ;
+   dct:updated "2017-06-07T07:51:33" ;
+   foaf:firstName "Franko" ;
+   foaf:lastName "Lehmann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.9> ;
+   foaf:mbox "info@roeskant.com" ;
+   foaf:phone "0341-58069091" ;
+   org:memberOf "röskant DIE MANUFAKTUR" ;
+   foaf:homepage <http://www.roeskant.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:orgLogo "image.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A116> a foaf:Person  ;
+   nl:hasID "116" ;
+   dct:updated "2017-04-27T14:24:33" ;
+   foaf:firstName "Ronny" ;
+   foaf:lastName "Vogel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.Martinstrasse.6> ;
+   foaf:mbox "kuchenhimmel.brotfein@gmail.com" ;
+   foaf:phone "01637813245" ;
+   org:memberOf "Kuchenhimmel & Brotfein" ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaber" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A117> a foaf:Person  ;
+   nl:hasID "117" ;
+   dct:updated "2016-05-13T05:15:04" ;
+   foaf:firstName "Christiane" ;
+   foaf:lastName "Völkel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04159.Leipzig.Stammerstrasse.40> ;
+   foaf:mbox "service@st-benno.de" ;
+   foaf:phone "0341-467770" ;
+   org:memberOf "St. Benno Verlag " ;
+   foaf:homepage <http://www.vivat.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Geschäftsführerin" ;
+   nl:orgLogo "logo_vivat.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A118> a foaf:Person  ;
+   nl:hasID "118" ;
+   dct:updated "2017-06-06T17:16:30" ;
+   foaf:firstName "Claudia" ;
+   foaf:lastName "Friedrich" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.112> ;
+   foaf:mbox "kontakt@heldenküche.net" ;
+   foaf:phone "0176-61264172" ;
+   org:memberOf "heldenküche" ;
+   foaf:homepage <http://www.heldenküche.net> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Gründerin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A120> a foaf:Person  ;
+   nl:hasID "120" ;
+   dct:updated "2016-05-18T05:15:03" ;
+   foaf:firstName "Jens" ;
+   foaf:lastName "Klein" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Kochstrasse.132> ;
+   foaf:mbox "jens@cafe-chavalo.de" ;
+   foaf:phone "0175-9490562" ;
+   org:memberOf "Café Chavalo" ;
+   foaf:homepage <http://www.cafe-chavalo.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaber" ;
+   nl:orgLogo "Cafe-Chavalo_Logo_1500px.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A122> a foaf:Person  ;
+   nl:hasID "122" ;
+   dct:updated "2016-05-21T05:15:03" ;
+   foaf:firstName "Vanessa" ;
+   foaf:lastName "Rothe de Henriquez" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Hildegardstrasse.49> ;
+   foaf:mbox "vanessarothe@gmx.de" ;
+   foaf:phone "0172-5749712" ;
+   org:memberOf "Veganes Catering \"La Tortita\"" ;
+   foaf:homepage <http://www.la-tortita.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaberin" ;
+   nl:orgLogo "LaTortitaLogo_nurSchriftzugLinie.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A123> a foaf:Person  ;
+   nl:hasID "123" ;
+   dct:updated "2016-06-03T05:15:04" ;
+   foaf:firstName "Mathias" ;
+   foaf:lastName "Haase" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04687.Trebsen/Mulde.GrimmaerLandstrasse.2> ;
+   foaf:mbox "der_lindwurm@t-online.de" ;
+   foaf:phone "034383041325" ;
+   org:memberOf "Der Lindwurm Handelsgesellschaft mbH" ;
+   foaf:homepage <http://www.derlindwurm.com> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Bürofachkraft" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A124> a foaf:Person  ;
+   nl:hasID "124" ;
+   dct:updated "2016-06-05T05:15:04" ;
+   foaf:firstName "Food" ;
+   foaf:lastName "Coop" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.WurznerStrasse.2> ;
+   foaf:mbox "info@lost-food.de" ;
+   foaf:phone "12345" ;
+   org:memberOf "LOst Food" ;
+   foaf:homepage <http://lost-food.de> ;
+   nl:orgType "initiative" ;
+   nl:hasDistrict "Anger-Crottendorf" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A125> a foaf:Person  ;
+   nl:hasID "125" ;
+   dct:updated "2017-06-10T22:03:21" ;
+   foaf:firstName "Christina" ;
+   foaf:lastName "Naumann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.MerseburgerStrasse.7> ;
+   foaf:mbox "info@kunstundkatze.de" ;
+   foaf:phone "0178-7178789" ;
+   org:memberOf "Kunst und Katze" ;
+   foaf:homepage <http://www.kunstundkatze.de> ;
+   nl:orgType "corporation" ;
+   nl:orgLogo "Katzenlogo-schleife.jpg" ;
+   nl:hasDistrict "Plagwitz" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A126> a foaf:Person  ;
+   nl:hasID "126" ;
+   dct:updated "2017-07-26T06:14:08" ;
+   foaf:firstName "Petra" ;
+   foaf:lastName "Seelbach" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.85> ;
+   foaf:mbox "petra.seelbach@konsum-leipzig.de" ;
+   foaf:phone "03414984284" ;
+   org:memberOf "Konsum Leipzig eG" ;
+   foaf:homepage <http://www.konsum-leipzig.de> ;
+   nl:orgType "collective" ;
+   nl:orgPosition "MA Einkauf" ;
+   nl:orgLogo "konsum_leipz_rgb.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A127> a foaf:Person  ;
+   nl:hasID "127" ;
+   dct:updated "2017-05-03T21:01:18" ;
+   foaf:firstName "Stefanie" ;
+   foaf:lastName "Hauffe" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Plautstrasse.80> ;
+   foaf:mbox "info@hands-on-technology.org" ;
+   foaf:phone "03412461583" ;
+   org:memberOf "HANDS on TECHNOLOGY e.V." ;
+   foaf:homepage <http://www.hands-on-technology.org> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Geschäftsführung" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A128> a foaf:Person  ;
+   nl:hasID "128" ;
+   dct:updated "2016-07-09T05:15:04" ;
+   foaf:firstName "Karsten" ;
+   foaf:lastName "Reichmann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.36> ;
+   foaf:mbox "karsten_reichmann@dibomedia.de" ;
+   foaf:phone "0341-9613033" ;
+   org:memberOf "Mrs. Hippie" ;
+   foaf:homepage <http://www.mrs.hippie.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaber" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A129> a foaf:Person  ;
+   nl:hasID "129" ;
+   dct:updated "2017-05-26T11:27:09" ;
+   foaf:firstName "Anja" ;
+   foaf:lastName "Büchting" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.LangeStrasse.15> ;
+   foaf:mbox "info@alltagsinstitut.de" ;
+   foaf:phone "017681092584" ;
+   org:memberOf "Anja Büchting" ;
+   foaf:homepage <http://www.alltagsinstitut.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Leiterin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A130> a foaf:Person  ;
+   nl:hasID "130" ;
+   dct:updated "2016-07-18T05:15:03" ;
+   foaf:firstName "Martin" ;
+   foaf:lastName "Finke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.XX> ;
+   foaf:mbox "Superaemerkte@einewelt-Leipzig.de" ;
+   foaf:phone "03413010143" ;
+   org:memberOf "Einkaufsführer - Supermärkte  " ;
+   nl:orgType "other" ;
+   nl:orgPosition "Eine Welt e.V. Leipzig" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A131> a foaf:Person  ;
+   nl:hasID "131" ;
+   dct:updated "2017-08-07T07:58:27" ;
+   foaf:firstName "Martin" ;
+   foaf:lastName "Finke" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.XX> ;
+   foaf:mbox "supermaerkte@einewelt-leipzig.de" ;
+   foaf:phone "03413010143" ;
+   org:memberOf "Einkaufsführer - Supermarkt" ;
+   nl:orgType "other" ;
+   nl:orgPosition "Eine Welt e.V. Leipzig" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A133> a foaf:Person  ;
+   nl:hasID "133" ;
+   dct:updated "2016-08-21T05:15:04" ;
+   foaf:firstName "Verena " ;
+   foaf:lastName "Hahmann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.AmHallischenTor.1> ;
+   foaf:mbox "verena.hahmann@marriott.com" ;
+   foaf:phone "04319653109" ;
+   org:memberOf "Creme BRÜHLé" ;
+   foaf:homepage <http://www.restaurant-creme-bruehle.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Sales Executive" ;
+   nl:orgLogo "LEIDT_CB-Logo-OK_subline_CMYK.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A134> a foaf:Person  ;
+   nl:hasID "134" ;
+   dct:updated "2016-08-26T05:15:04" ;
+   foaf:firstName "Rehability" ;
+   foaf:lastName "Reha-Fachhandel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.AlterAmtshof.2> ;
+   foaf:mbox "presse@rehability.de" ;
+   foaf:phone "0622170540" ;
+   org:memberOf "Rehability" ;
+   foaf:homepage <http://www.rehability.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Presse und Öffentlichkeitsarbeit" ;
+   nl:orgLogo "rehability-2012-os-300DPI-CMYK.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A135> a foaf:Person  ;
+   nl:hasID "135" ;
+   dct:updated "2016-10-03T08:05:13" ;
+   foaf:firstName "Olga" ;
+   foaf:lastName "Kassner" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Helmholtzstrasse.27> ;
+   foaf:mbox "info@little-kiwi.de" ;
+   foaf:phone "03414811978" ;
+   org:memberOf "little kiwi" ;
+   foaf:homepage <http://www.little-kiwi.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaberin" ;
+   nl:orgLogo "logo_littlekiwi.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A136> a foaf:Person  ;
+   nl:hasID "136" ;
+   dct:updated "2016-11-18T12:54:02" ;
+   foaf:firstName "Kati" ;
+   foaf:lastName "Magyar" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.112> ;
+   foaf:mbox "post@katimagyar.de" ;
+   foaf:phone "034112570465" ;
+   org:memberOf "Kati Magyar" ;
+   foaf:homepage <http://www.katimagyar.de> ;
+   nl:orgType "freelancer" ;
+   nl:orgLogo "F_rs_Netz.jpg" ;
+   nl:hasDistrict "Leutzsch" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A137> a foaf:Person  ;
+   nl:hasID "137" ;
+   dct:updated "2016-12-19T13:05:29" ;
+   foaf:firstName "Ina" ;
+   foaf:lastName "Hötzel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.102> ;
+   foaf:mbox "info@freigeist-leipzig.de" ;
+   foaf:phone "0341-2338177" ;
+   org:memberOf "freigeist-Bibliothek im Shakunda" ;
+   foaf:homepage <http://www.freigeist-leipzig.de> ;
+   nl:orgType "other" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A138> a foaf:Person  ;
+   nl:hasID "138" ;
+   dct:updated "2016-12-19T13:18:33" ;
+   foaf:firstName "Michael" ;
+   foaf:lastName "Heuer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Priessnitzstrasse.32> ;
+   foaf:mbox "pulita@gmx.info" ;
+   foaf:phone "015123329702" ;
+   org:memberOf "Pulita2016" ;
+   foaf:homepage <http://stores.ebay.de/pulita2016?_trksid=p2047675.l2563> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Geschäftsführer" ;
+   nl:orgLogo "Logo_Final_3.jpg" ;
+   nl:hasDistrict "Leutzsch" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A139> a foaf:Person  ;
+   nl:hasID "139" ;
+   dct:updated "2017-06-15T06:29:17" ;
+   foaf:firstName "Steffen" ;
+   foaf:lastName "Peschel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.ZschocherscheStrasse.2A> ;
+   foaf:mbox "steffen.peschel@konzeptfreun.de" ;
+   foaf:phone "015788484285" ;
+   org:memberOf "NextLeipzig" ;
+   foaf:homepage <http://www.nextleipzig.de> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Mitglied der Initiative" ;
+   nl:orgLogo "logo-nextleipzig.png" ;
+   nl:hasDistrict "Lindenau" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A141> a foaf:Person  ;
+   nl:hasID "141" ;
+   dct:updated "2017-01-10T08:06:51" ;
+   foaf:firstName "Urte" ;
+   foaf:lastName "Grauwinkel" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.85> ;
+   foaf:mbox "urte.grauwinkel@web.de" ;
+   foaf:phone "0341-3081269" ;
+   org:memberOf "Food Assembly Leipzig" ;
+   foaf:homepage <http://www.foodassembly.de> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Gastgeberin Food Assembly Leipzig-Westwerk" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A142> a foaf:Person  ;
+   nl:hasID "142" ;
+   dct:updated "2017-02-17T06:15:03" ;
+   foaf:firstName "Dorothee" ;
+   foaf:lastName "Schäfer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/28203.Bremen.Kreftingstrasse.7> ;
+   foaf:mbox "dorothee.schaefer@schaeferbreuss.org" ;
+   foaf:phone "+4915779585508" ;
+   org:memberOf "Schäfer & Breuss GbR" ;
+   foaf:homepage <http://www.schaeferbreuss.org> ;
+   nl:orgType "other" ;
+   nl:orgLogo "Logo.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A143> a foaf:Person  ;
+   nl:hasID "143" ;
+   dct:updated "2017-03-15T06:15:03" ;
+   foaf:firstName "Siiri" ;
+   foaf:lastName "Stumpe" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.4> ;
+   foaf:mbox "fitundvital1@freenet.de" ;
+   foaf:phone "0341-33730866" ;
+   org:memberOf "Yellowbrasil" ;
+   foaf:homepage <http://www.yellowbrasil.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaberin" ;
+   nl:orgLogo "Logo_dunkelgruen.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A144> a foaf:Person  ;
+   nl:hasID "144" ;
+   dct:updated "2017-03-29T05:15:03" ;
+   foaf:firstName "Jana " ;
+   foaf:lastName "Rehwagen" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.49> ;
+   foaf:mbox "kontakt@leila-leipzig.de" ;
+   foaf:phone "01626675500" ;
+   org:memberOf "Leila e.V. iG" ;
+   foaf:homepage <http://www.leila-leipzig.de> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Gründungsmitglied" ;
+   nl:orgLogo "leila_pic2.png" ;
+   nl:hasDistrict "Plagwitz" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A145> a foaf:Person  ;
+   nl:hasID "145" ;
+   dct:updated "2017-03-08T07:07:59" ;
+   foaf:firstName "Kai" ;
+   foaf:lastName "Kuhnhenn" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
+   foaf:mbox "K.Kuhnhenn@knoe.org" ;
+   foaf:phone "0341-39281686" ;
+   org:memberOf "Konzeptwerk Neue Ökonomie" ;
+   foaf:homepage <http://www.knoe.org> ;
+   nl:orgType "club" ;
+   nl:orgLogo "Logo_KNO__.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A146> a foaf:Person  ;
+   nl:hasID "146" ;
+   dct:updated "2017-03-26T11:14:05" ;
+   foaf:firstName "Rahel" ;
+   foaf:lastName "Wehemeyer-Blum" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04356.Leipzig.GoebschelwitzerStrasse.1> ;
+   foaf:mbox "rahwehbl@aikq.de" ;
+   foaf:phone "0341-3513835" ;
+   org:memberOf "ÖDP Sachsen" ;
+   foaf:homepage <http://www.oedp-sachsen.de> ;
+   nl:orgType "other" ;
+   nl:orgPosition "Beisitzerin des Landesvorstandes" ;
+   nl:orgLogo "_dp_Logo.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A147> a foaf:Person  ;
+   nl:hasID "147" ;
+   dct:updated "2017-08-08T05:15:03" ;
+   foaf:firstName "Stefan" ;
+   foaf:lastName "Heller" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.88> ;
+   foaf:mbox "info@echtunverpackt.de" ;
+   foaf:phone "01797563762" ;
+   org:memberOf "EchtUnverpackt" ;
+   foaf:homepage <http://www.EchtUnverpackt.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaber" ;
+   nl:orgLogo "Logo.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A148> a foaf:Person  ;
+   nl:hasID "148" ;
+   dct:updated "2017-08-16T05:15:03" ;
+   foaf:firstName "Mike" ;
+   foaf:lastName "Strauß" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.Theresienstrasse.2A> ;
+   foaf:mbox "info@dlrg-leipzig.de" ;
+   foaf:phone "0341-2008188" ;
+   org:memberOf "DLRG Bezirk Leipzig e.V." ;
+   foaf:homepage <http://bez-leipzig.dlrg.de/> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Technischer Leiter Einsatz" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A149> a foaf:Person  ;
+   nl:hasID "149" ;
+   dct:updated "2017-08-09T06:09:25" ;
+   foaf:firstName "Ralf " ;
+   foaf:lastName "Herrmann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.161> ;
+   foaf:mbox "info@wildparkverein-leipzig.de" ;
+   foaf:phone "034126496004" ;
+   org:memberOf "Verein der Freunde und Förderer des Wildparks Leipzige.V." ;
+   foaf:homepage <http://www.wildparkverein-leipzig.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Stellvertreteener Vorsitzender" ;
+   nl:orgLogo "logo_18.03.2015.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A150> a foaf:Person  ;
+   nl:hasID "150" ;
+   dct:updated "2017-08-20T07:41:35" ;
+   foaf:firstName "Simon" ;
+   foaf:lastName "Jakob" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Mariannenstrasse.107> ;
+   foaf:mbox "leipzig.lg@sci-d.de" ;
+   foaf:phone "015739263765" ;
+   org:memberOf "SCI Leipzig" ;
+   foaf:homepage <http://sci-d.de/lokalgruppe-leipzig> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Koordination" ;
+   nl:orgLogo "Logo_LG_Leipzig.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A151> a foaf:Person  ;
+   nl:hasID "151" ;
+   dct:updated "2016-12-19T13:08:32" ;
+   foaf:firstName "Jürgen" ;
+   foaf:lastName "Weidemann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04435.Schkeuditz.Ringelblumenweg.10> ;
+   foaf:mbox "leipzigrikscha@gmail.com" ;
+   foaf:phone "0177-2672145" ;
+   org:memberOf "Batzentauschring e.V." ;
+   foaf:homepage <http://www.batzen.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorstandsmitglied" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A152> a foaf:Person  ;
+   nl:hasID "152" ;
+   dct:updated "2016-12-19T13:08:43" ;
+   foaf:firstName "Sylke" ;
+   foaf:lastName "Nissen" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Beethovenstrasse.15> ;
+   foaf:mbox "nissen@uni-leipzig.de" ;
+   foaf:phone "03419735665" ;
+   org:memberOf "Sylke Nissen" ;
+   nl:orgType "educational" ;
+   nl:orgPosition "Professorin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A153> a foaf:Person  ;
+   nl:hasID "153" ;
+   dct:updated "2017-01-23T11:47:22" ;
+   foaf:firstName "Peter" ;
+   foaf:lastName "Hartmann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.ZschocherscheStrasse.2A> ;
+   foaf:mbox "phartmann6@t-online.de" ;
+   foaf:phone "01634607183" ;
+   org:memberOf "Nextleipzig" ;
+   foaf:homepage <http://www.nextleipzig.de/> ;
+   nl:orgType "initiative" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A154> a foaf:Person  ;
+   nl:hasID "154" ;
+   dct:updated "2017-05-16T18:59:07" ;
+   foaf:firstName "Carina " ;
+   foaf:lastName "Flores de Looß" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Rathenaustrasse.42> ;
+   foaf:mbox "carina.flores@diehellenkoepfe.de" ;
+   foaf:phone "01749760689" ;
+   foaf:phone "015756424859" ;
+   org:memberOf "Carina Flores de Looß" ;
+   foaf:homepage <http://diehellenkoepfe.de> ;
+   nl:orgType "freelancer" ;
+   nl:orgPosition "Projektleitung / Öffentlichkeitsarbeit" ;
+   nl:orgLogo "logo_final_3.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A155> a foaf:Person  ;
+   nl:hasID "155" ;
+   dct:updated "2017-01-31T14:14:24" ;
+   foaf:firstName "Christel" ;
+   foaf:lastName "Wust" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Taeubchenweg.77A> ;
+   foaf:mbox "biotempel@posteo.de" ;
+   foaf:phone "0341-24765472" ;
+   org:memberOf "Bio Tempel" ;
+   foaf:homepage <https://www.facebook.com/BioTempelLeipzig/> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaberin" ;
+   nl:orgLogo "IMG_3124.PNG" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A156> a foaf:Person  ;
+   nl:hasID "156" ;
+   dct:updated "2017-04-19T13:58:13" ;
+   foaf:firstName "Franziska" ;
+   foaf:lastName "Losse" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/10117.Berlin.Reinhardtstrasse.18> ;
+   foaf:mbox "franziska.losse@posteo.de" ;
+   foaf:phone "0157-75209633" ;
+   org:memberOf "WWF Jugend" ;
+   foaf:homepage <https://www.wwf-jugend.de/> ;
+   nl:orgType "foundation" ;
+   nl:orgPosition "Ehrenamtlich Engagierte" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A157> a foaf:Person  ;
+   nl:hasID "157" ;
+   dct:updated "2017-04-19T13:58:18" ;
+   foaf:firstName "André" ;
+   foaf:lastName "Wüste" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+   foaf:mbox "a.wueste@eg-leipzig.de" ;
+   foaf:phone "01603365593" ;
+   foaf:phone "015159223227" ;
+   org:memberOf "Energiegenossenschaft Leipzig eG" ;
+   foaf:homepage <http://www.energiegenossenschaft-leipzig.de/> ;
+   nl:orgType "collective" ;
+   nl:orgPosition "Vorstandsmitglied" ;
+   nl:orgLogo "EGL_LogoGr_n_vector_2.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A159> a foaf:Person  ;
+   nl:hasID "159" ;
+   dct:updated "2017-04-25T11:33:45" ;
+   foaf:firstName "Uwe" ;
+   foaf:lastName "Koch" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Erdmannstrasse.16> ;
+   foaf:mbox "andreaskoch030@gmail.com" ;
+   foaf:phone "01743160863" ;
+   org:memberOf "kidscode e.V." ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorstand" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A160> a foaf:Person  ;
+   nl:hasID "160" ;
+   dct:updated "2017-05-30T11:23:50" ;
+   foaf:firstName "Bettina" ;
+   foaf:lastName "Grallert" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04158.Leipzig.DelitzscherLandstrasse.38> ;
+   foaf:mbox "info@phyllodrom.de" ;
+   foaf:phone "03415257757" ;
+   org:memberOf "Phyllodrom e.V." ;
+   foaf:homepage <http://phyllodrom.de/> ;
+   nl:orgType "club" ;
+   nl:orgLogo "Phyllodrom_Logo_im_wei_en_Kreis.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A162> a foaf:Person  ;
+   nl:hasID "162" ;
+   dct:updated "2017-04-27T14:42:42" ;
+   foaf:firstName "Jürgen" ;
+   foaf:lastName "Jost" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.22> ;
+   foaf:mbox "josefineotte95@gmail.com" ;
+   foaf:phone "+49(0)341-9959-50" ;
+   org:memberOf "Max Planck Institut für Mathematik " ;
+   foaf:homepage <https://www.mis.mpg.de/de/start.html> ;
+   nl:orgType "corporation" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A163> a foaf:Person  ;
+   nl:hasID "163" ;
+   dct:updated "2017-04-27T14:42:46" ;
+   foaf:firstName "Dr. Konstanze" ;
+   foaf:lastName "Schellenberger" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.97> ;
+   foaf:mbox "r.moreno95@web.de" ;
+   foaf:phone "+49341870860" ;
+   org:memberOf "VDI - GaraGe gGmbH" ;
+   foaf:homepage <http://www.g-a-r-a-g-e.com/> ;
+   nl:orgType "educational" ;
+   nl:orgPosition "Projektleiterin, Wissenschaftliche Mitarbeiterin, Dozentin" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A164> a foaf:Person  ;
+   nl:hasID "164" ;
+   dct:updated "2017-05-02T09:31:43" ;
+   foaf:firstName "Enedas" ;
+   foaf:lastName "Verein" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.33> ;
+   foaf:mbox "info@enedas.de" ;
+   foaf:phone "015771822192" ;
+   org:memberOf "ENEDAS e.V." ;
+   foaf:homepage <http://www.enedas.de/> ;
+   nl:orgType "club" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A165> a foaf:Person  ;
+   nl:hasID "165" ;
+   dct:updated "2017-05-10T14:18:42" ;
+   foaf:firstName "Thorsten " ;
+   foaf:lastName "Hinz " ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04463.Grosspoesna.Hauptstrasse.19> ;
+   foaf:mbox "info@bergbau-technik-park.de" ;
+   foaf:phone "034297-140127" ;
+   org:memberOf "Bergbau-Technik-Park e.V." ;
+   foaf:homepage <http://www.bergbau-technik-park.de/park/> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Parkleiter" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A166> a foaf:Person  ;
+   nl:hasID "166" ;
+   dct:updated "2017-05-10T14:18:47" ;
+   foaf:firstName "Karin " ;
+   foaf:lastName "Hörning" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.14> ;
+   foaf:mbox "kontakt@muehlstrasse.de" ;
+   foaf:phone "0341-9903600" ;
+   org:memberOf "MÜHLSTRASSE 14 e. V." ;
+   foaf:homepage <http://www.muehlstrasse.de/> ;
+   nl:orgType "club" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A167> a foaf:Person  ;
+   nl:hasID "167" ;
+   dct:updated "2017-05-10T14:18:51" ;
+   foaf:firstName "Mara" ;
+   foaf:lastName "Kayser" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/01067.Dresden.Weisseritzstrasse.3> ;
+   foaf:mbox "info@arche-nova.org" ;
+   foaf:phone "035148198421" ;
+   org:memberOf "arche noVa - Initiative für Menschen in Not e.V." ;
+   foaf:homepage <https://arche-nova.org/de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Fachstelle Globales Lernen" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A168> a foaf:Person  ;
+   nl:hasID "168" ;
+   dct:updated "2017-05-30T08:05:52" ;
+   foaf:firstName "Ronny" ;
+   foaf:lastName "Schmidt" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19> ;
+   foaf:mbox "vorstand@geowerkstatt.com" ;
+   foaf:phone "0179-4590873" ;
+   org:memberOf "GeoWerkstatt Leipzig e.V." ;
+   foaf:homepage <http://www.geowerkstatt.com> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorstandsmitglied" ;
+   nl:orgLogo "Logo_Geowerkstatt.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A170> a foaf:Person  ;
+   nl:hasID "170" ;
+   dct:updated "2017-06-23T10:26:54" ;
+   foaf:firstName "Johannes" ;
+   foaf:lastName "Hohaus" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Ludwigstrasse.79> ;
+   foaf:mbox "info@parcours-bildung.org" ;
+   foaf:phone "034126580091" ;
+   org:memberOf "Bildungsverein Parcours e.V." ;
+   foaf:homepage <http://parcours-bildung.org> ;
+   nl:orgType "club" ;
+   nl:orgPosition "Vorsitzender" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A171> a foaf:Person  ;
+   nl:hasID "171" ;
+   dct:updated "2017-07-24T08:18:20" ;
+   foaf:firstName "Heike" ;
+   foaf:lastName "Schüürmann" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04463.Grosspoesna.StoermthalerWeg.2> ;
+   foaf:mbox "botanischer-garten-oberholz@gmx.de" ;
+   foaf:phone "03429741249" ;
+   org:memberOf "Botanischer Garten für Arznei- und Gewürzpflanzen Großpösna-Oberholz" ;
+   foaf:homepage <http://www.botanischer-garten-oberholz.de> ;
+   nl:orgType "club" ;
+   nl:orgPosition "organisatorische Gartenleitung" ;
+   nl:orgLogo "Logo_Rosenbogen_1.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A172> a foaf:Person  ;
+   nl:hasID "172" ;
+   dct:updated "2017-08-23T10:47:06" ;
+   foaf:firstName "Janellsa Giel" ;
+   foaf:lastName "Ludwig" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04155.Leipzig.Georg-Schumann-Strasse.78> ;
+   foaf:mbox "office@jeepney-cafe.de" ;
+   foaf:phone "+49(341)69866680" ;
+   org:memberOf "Jeepney Café" ;
+   foaf:homepage <http://jeepney-cafe.de> ;
+   nl:orgType "corporation" ;
+   nl:orgPosition "Inhaber" ;
+   nl:orgLogo "jeepney-cafe-logo.png" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isReviewed "1" ;
+   nl:isTradeOrganization "1" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A173> a foaf:Person  ;
+   nl:hasID "173" ;
+   dct:updated "2017-08-22T19:22:29" ;
+   foaf:firstName "Kurt" ;
+   foaf:lastName "Hinkefuß" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Wiebelstrasse.8> ;
+   foaf:mbox "kauerte@gmx.net" ;
+   foaf:phone "01631736473" ;
+   org:memberOf "Kurt Hinkefuß" ;
+   foaf:homepage <http://konsumglobal-leipzig.de/> ;
+   nl:orgType "initiative" ;
+   nl:orgPosition "Mitverantwortlicher" ;
+   nl:hasDistrict "anderer Ort" . 
+
+<http://nachhaltiges-leipzig.de/Data/Akteur/A174> a foaf:Person  ;
+   nl:hasID "174" ;
+   dct:updated "2017-09-05T09:30:54" ;
+   foaf:firstName "Philipp-Daniel" ;
+   foaf:lastName "Fischer" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/45307.Essen.Eckenbergstrasse.16A> ;
+   foaf:mbox "cr-food@aldi-nord.de" ;
+   foaf:phone "02018593438" ;
+   org:memberOf "ALDI Einkauf GmbH & Co. oHG" ;
+   nl:orgType "other" ;
+   nl:orgLogo "AN_LOGO_2015_100_4C.jpg" ;
+   nl:hasDistrict "anderer Ort" ;
+   nl:isTradeOrganization "1" . 
+
