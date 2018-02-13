@@ -1,4 +1,3 @@
-
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -7,10 +6,8 @@
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix nl: <http://nachhaltiges-leipzig.de/Data/Model#> .
 @prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> . 
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
-
-
 
 <http://nachhaltiges-leipzig.de/Data/Akteure/> a owl:Ontology ;
     rdfs:comment "Dump aus der Datenbank";
@@ -86,10 +83,11 @@
    dct:updated "2015-01-26T15:49:34" ;
    foaf:firstName "Johann" ;
    foaf:lastName "Simowitsch" ;
-   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.XX> ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.21> ;
    foaf:mbox "johann.simowitsch@leipzig.de" ;
    foaf:phone "03413089751" ;
-   org:memberOf "Johann Simowitsch" ;
+   foaf:homepage <http://simowitsch-leipzig.de> ; 
+   org:memberOf "Johann Simowitsch" ; 
    nl:orgType "other" ;
    nl:hasDistrict "anderer Ort" ;
    nl:isReviewed "1" . 
@@ -1065,7 +1063,6 @@
    dct:updated "2016-10-20T05:15:03" ;
    foaf:firstName "Daisy" ;
    foaf:lastName "Kratz" ;
-   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Helmholtzstrasse.XX> ;
    foaf:mbox "mail@ackerwinde.net" ;
    foaf:phone "0341-60463906" ;
    org:memberOf "Ackerwinde Gemüsegarten" ;
@@ -1851,10 +1848,10 @@
    dct:updated "2016-07-18T05:15:03" ;
    foaf:firstName "Martin" ;
    foaf:lastName "Finke" ;
-   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.XX> ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
    foaf:mbox "Superaemerkte@einewelt-Leipzig.de" ;
    foaf:phone "03413010143" ;
-   org:memberOf "Einkaufsführer - Supermärkte  " ;
+   org:memberOf "Einkaufsführer - Supermärkte" ;
    nl:orgType "other" ;
    nl:orgPosition "Eine Welt e.V. Leipzig" ;
    nl:hasDistrict "anderer Ort" ;
@@ -1866,7 +1863,7 @@
    dct:updated "2017-08-07T07:58:27" ;
    foaf:firstName "Martin" ;
    foaf:lastName "Finke" ;
-   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.XX> ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
    foaf:mbox "supermaerkte@einewelt-leipzig.de" ;
    foaf:phone "03413010143" ;
    org:memberOf "Einkaufsführer - Supermarkt" ;

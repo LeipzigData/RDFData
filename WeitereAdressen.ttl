@@ -4,6 +4,21 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<http://leipzig-data.de/Data/WeitereAdressen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Weitere Adressen" .
+
+ld:Adresse
+    a owl:Class ;
+    rdfs:label "Weitere Adresse" .
 
 <http://leipzig-data.de/Data/01067.Dresden.BremerStrasse.10D>
     ld:hasCity "Dresden" ;
@@ -19,14 +34,32 @@
     ld:hasPostCode "01067" ;
     ld:hasStreet "Messering" ;
     a ld:Adresse ;
-    rdfs:label "01067 Dresden, Messering 6" .
+    rdfs:label "Dresden, Messering 6" .
+
+<http://leipzig-data.de/Data/01067.Dresden.Weisseritzstrasse.3>
+    ld:hasCity "Dresden" ;
+    ld:hasHouseNumber "3" ;
+    ld:hasPostCode "01067" ;
+    ld:hasStreet "Weißeritzstraße" ;
+    gsp:asWKT "Point(13.7267 51.0589)" ;
+    a ld:Adresse ;
+    rdfs:label "Dresden, Weißeritzstraße 3" .
+
+<http://leipzig-data.de/Data/01099.Dresden.Louisenstrasse.93>
+    ld:hasCity "Dresden" ;
+    ld:hasHouseNumber "93" ;
+    ld:hasPostCode "01099" ;
+    ld:hasStreet "Louisenstraße" ;
+    gsp:asWKT "Point(13.7589 51.0652)" ;
+    a ld:Adresse ;
+    rdfs:label "Dresden, Louisenstraße 93" .
 
 <http://leipzig-data.de/Data/01277.Dresden.TolkewitzerStrasse.32>
     ld:hasCity "Dresden" ;
     ld:hasHouseNumber "32" ;
     ld:hasPostCode "01277" ;
     a ld:Adresse ;
-    rdfs:label "01277 Dresden, Tolkewitzer Straße 32" .
+    rdfs:label "Dresden, Tolkewitzer Straße 32" .
 
 <http://leipzig-data.de/Data/01587.Riesa.Haupstrasse.70>
     ld:hasCity "Riesa" ;
@@ -34,7 +67,16 @@
     ld:hasPostCode "01587" ;
     ld:hasStreet "Haupstraße" ;
     a ld:Adresse ;
-    rdfs:label "01587 Riesa, Hauptstraße 70" .
+    rdfs:label "Riesa, Hauptstraße 70" .
+
+<http://leipzig-data.de/Data/01728.Bannewitz.GolberoderStrasse.4>
+    ld:hasCity "Bannewitz" ;
+    ld:hasHouseNumber "4" ;
+    ld:hasPostCode "01728" ;
+    ld:hasStreet "Golberoder Straße" ;
+    gsp:asWKT "Point(13.7628 50.9889)" ;
+    a ld:Adresse ;
+    rdfs:label "Bannewitz, Golberoder Straße 4" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.AmFestanger.8>
     ld:hasCity "Markkleeberg" ;
@@ -42,7 +84,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Am Festanger" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Am Festanger 8" .
+    rdfs:label "Markkleeberg, Am Festanger 8" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.AmPoseidon.4>
     ld:hasCity "Markkleeberg" ;
@@ -50,7 +92,16 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Am Poseidon" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Am Poseidon 4" .
+    rdfs:label "Markkleeberg, Am Poseidon 4" .
+
+<http://leipzig-data.de/Data/04416.Markkleeberg.Arndtstrasse.2>
+    ld:hasCity "Markkleeberg" ;
+    ld:hasHouseNumber "2" ;
+    ld:hasPostCode "04416" ;
+    ld:hasStreet "Arndtstraße" ;
+    gsp:asWKT "Point(12.3979 51.277)" ;
+    a ld:Adresse ;
+    rdfs:label "Markkleeberg, Arndtstraße 2" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.August-Bebel-Strasse.35>
     ld:hasCity "Markkleeberg" ;
@@ -58,7 +109,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "August-Bebel-Straße" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, August-Bebel-Straße 35" .
+    rdfs:label "Markkleeberg, August-Bebel-Straße 35" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.Erikenweg.1>
     ld:hasCity "Markkleeberg" ;
@@ -66,7 +117,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Erikenweg" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Erikenweg 1" .
+    rdfs:label "Markkleeberg, Erikenweg 1" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.Friedrich-Ebert-Strasse.26>
     ld:hasCity "Markkleeberg" ;
@@ -74,7 +125,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Friedrich-Ebert-Straße" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Friedrich-Ebert-Straße 26" .
+    rdfs:label "Markkleeberg, Friedrich-Ebert-Straße 26" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.Hafenstrasse.23>
     ld:hasCity "Markkleeberg" ;
@@ -90,7 +141,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Hautpstraße" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Hautpstraße 315" .
+    rdfs:label "Markkleeberg, Hautpstraße 315" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.Kirchstrasse.42>
     ld:hasCity "Markkleeberg" ;
@@ -98,7 +149,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Kirchstraße" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Kirchstraße 42" .
+    rdfs:label "Markkleeberg, Kirchstraße 42" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.KoburgerStrasse.33>
     ld:hasCity "Markkleeberg" ;
@@ -107,16 +158,16 @@
     ld:hasStreet "Koburger Straße" ;
     gsp:asWKT "Point(12.3689780910342 51.28913165)" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Koburger Straße 33" .
+    rdfs:label "Markkleeberg, Koburger Straße 33" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.KoburgerStrasse.62>
     ld:hasCity "Markkleeberg" ;
     ld:hasHouseNumber "62" ;
     ld:hasPostCode "04416" ;
     ld:hasStreet "Koburger Straße" ;
-    gsp:asWKT "Point(12.3614356029419 51.282534)" ;
+    gsp:asWKT "Point(12.3614356029419 51.282534)", "Point(12.3624 51.2824)" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Koburger Straße 62" .
+    rdfs:label "Markkleeberg, Koburger Straße 62" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.Moenchereistrasse.2>
     ld:hasCity "Markkleeberg" ;
@@ -124,7 +175,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Mönchereistraße" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Mönchereistraße 2" .
+    rdfs:label "Markkleeberg, Mönchereistraße 2" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.RaschwitzerStrasse.11>
     ld:hasCity "Markkleeberg" ;
@@ -132,7 +183,16 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Raschwitzer Straße" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Raschwitzer Straße 11" .
+    rdfs:label "Markkleeberg, Raschwitzer Straße 11" .
+
+<http://leipzig-data.de/Data/04416.Markkleeberg.Rathausstrasse.33>
+    ld:hasCity "Markkleeberg" ;
+    ld:hasHouseNumber "33" ;
+    ld:hasPostCode "04416" ;
+    ld:hasStreet "Rathausstraße" ;
+    gsp:asWKT "Point(12.3699 51.2789)" ;
+    a ld:Adresse ;
+    rdfs:label "Markkleeberg, Rathausstraße 33" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.Riquetstrasse.8>
     ld:hasCity "Markkleeberg" ;
@@ -140,7 +200,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Riquetstraße" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Riquetstraße 8" .
+    rdfs:label "Markkleeberg, Riquetstraße 8" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.Spindelweg.5>
     ld:hasCity "Markkleeberg" ;
@@ -148,7 +208,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Spindelweg" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Spindelweg 5" .
+    rdfs:label "Markkleeberg, Spindelweg 5" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.Werner-Rummelt-Strasse.1>
     ld:hasCity "Markkleeberg" ;
@@ -156,7 +216,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Werner-Rummelt-Straẞe" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Werner-Rummelt-Straẞe 1" .
+    rdfs:label "Markkleeberg, Werner-Rummelt-Straẞe 1" .
 
 <http://leipzig-data.de/Data/04416.Markkleeberg.Wildwasserkehre.1>
     ld:hasCity "Markkleeberg" ;
@@ -164,7 +224,7 @@
     ld:hasPostCode "04416" ;
     ld:hasStreet "Wildwasserkehre" ;
     a ld:Adresse ;
-    rdfs:label "04416 Markkleeberg, Wildwasserkehre 1" .
+    rdfs:label "Markkleeberg, Wildwasserkehre 1" .
 
 <http://leipzig-data.de/Data/04420.Markranstaedt.AmAltenBahnhof.21a>
     ld:hasCity "Markranstädt" ;
@@ -172,7 +232,7 @@
     ld:hasPostCode "04420" ;
     ld:hasStreet "Am Alten Bahnhof" ;
     a ld:Adresse ;
-    rdfs:label "04420 Markranstädt, Am Alten Bahnhof 21 a" .
+    rdfs:label "Markranstädt, Am Alten Bahnhof 21 a" .
 
 <http://leipzig-data.de/Data/04420.Markranstaedt.Markt.11>
     ld:hasCity "Markranstädt" ;
@@ -180,7 +240,7 @@
     ld:hasPostCode "04420" ;
     ld:hasStreet "Markt" ;
     a ld:Adresse ;
-    rdfs:label "04420 Markranstädt, Markt 11" .
+    rdfs:label "Markranstädt, Markt 11" .
 
 <http://leipzig-data.de/Data/04420.Markranstaedt.ZwenkauerStrasse.98>
     ld:hasCity "Markranstädt" ;
@@ -188,7 +248,7 @@
     ld:hasPostCode "04420" ;
     ld:hasStreet "Zwenkauer Straße" ;
     a ld:Adresse ;
-    rdfs:label "04420 Markranstädt, Zwenkauer Straße 98" .
+    rdfs:label "Markranstädt, Zwenkauer Straße 98" .
 
 <http://leipzig-data.de/Data/04425.Taucha.Schlossstrasse.13>
     ld:hasCity "Taucha" ;
@@ -196,7 +256,7 @@
     ld:hasPostCode "04425" ;
     ld:hasStreet "Schloßstrasse" ;
     a ld:Adresse ;
-    rdfs:label "04425 Taucha, Schloßstrasse 13" .
+    rdfs:label "Taucha, Schloßstrasse 13" .
 
 <http://leipzig-data.de/Data/04435.Schkeuditz.AmFlughafenbahnhof.1>
     ld:hasCity "Schkeuditz" ;
@@ -204,7 +264,7 @@
     ld:hasPostCode "04435" ;
     ld:hasStreet "Am Flughafenbahnhof" ;
     a ld:Adresse ;
-    rdfs:label "04435 Schkeuditz, Am Flughafenbahnhof 1" .
+    rdfs:label "Schkeuditz, Am Flughafenbahnhof 1" .
 
 <http://leipzig-data.de/Data/04435.Schkeuditz.Bergbreite.1>
     ld:hasCity "Schkeuditz" ;
@@ -212,7 +272,16 @@
     ld:hasPostCode "04435" ;
     ld:hasStreet "Bergbreite" ;
     a ld:Adresse ;
-    rdfs:label "04435 Schkeuditz, Bergbreite 1" .
+    rdfs:label "Schkeuditz, Bergbreite 1" .
+
+<http://leipzig-data.de/Data/04435.Schkeuditz.Birkenweg.1>
+    ld:hasCity "Schkeuditz" ;
+    ld:hasHouseNumber "1" ;
+    ld:hasPostCode "04435" ;
+    ld:hasStreet "Birkenweg" ;
+    gsp:asWKT "Point(12.3026 51.4206)" ;
+    a ld:Adresse ;
+    rdfs:label "Schkeuditz, Birkenweg 1" .
 
 <http://leipzig-data.de/Data/04435.Schkeuditz.Markt.2>
     ld:hasCity "Schkeuditz" ;
@@ -220,15 +289,70 @@
     ld:hasPostCode "04435" ;
     ld:hasStreet "Markt" ;
     a ld:Adresse ;
-    rdfs:label "04435 Schkeuditz, Markt 2" .
+    rdfs:label "Schkeuditz, Markt 2" .
+
+<http://leipzig-data.de/Data/04435.Schkeuditz.Rathausplatz.1>
+    ld:hasCity "Schkeuditz" ;
+    ld:hasHouseNumber "1" ;
+    ld:hasPostCode "04435" ;
+    ld:hasStreet "Rathausplatz" ;
+    gsp:asWKT "Point(12.2224 51.3964)" ;
+    a ld:Adresse ;
+    rdfs:label "Schkeuditz, Rathausplatz 1" .
+
+<http://leipzig-data.de/Data/04435.Schkeuditz.Ringelblumenweg.10>
+    ld:hasCity "Schkeuditz" ;
+    ld:hasHouseNumber "10" ;
+    ld:hasPostCode "04435" ;
+    ld:hasStreet "Ringelblumenweg" ;
+    gsp:asWKT "Point(12.2018 51.3704)" ;
+    a ld:Adresse ;
+    rdfs:label "Schkeuditz, Ringelblumenweg 10" .
+
+<http://leipzig-data.de/Data/04435.Schkeuditz.Terminalring.13>
+    ld:hasCity "Schkeuditz" ;
+    ld:hasHouseNumber "13" ;
+    ld:hasPostCode "04435" ;
+    ld:hasStreet "Terminalring" ;
+    gsp:asWKT "Point(12.221 51.4204)" ;
+    a ld:Adresse ;
+    rdfs:label "Schkeuditz, Terminalring 13" .
+
+<http://leipzig-data.de/Data/04442.Zwenkau.Georg-Schwarz-Strasse.10>
+    ld:hasCity "Zwenkau" ;
+    ld:hasHouseNumber "10" ;
+    ld:hasPostCode "04442" ;
+    ld:hasStreet "Georg-Schwarz-Straße" ;
+    gsp:asWKT "Point(12.3267 51.2288)" ;
+    a ld:Adresse ;
+    rdfs:label "Zwenkau, Georg-Schwarz-Straße 10" .
+
+<http://leipzig-data.de/Data/04442.Zwenkau.LeipzigerStrasse.6>
+    ld:hasCity "Zwenkau" ;
+    ld:hasHouseNumber "6" ;
+    ld:hasPostCode "04442" ;
+    ld:hasStreet "Leipziger Straße" ;
+    gsp:asWKT "Point(12.3266 51.2173)" ;
+    a ld:Adresse ;
+    rdfs:label "Zwenkau, Leipziger Straße 6" .
 
 <http://leipzig-data.de/Data/04451.Borsdorf.LeipzigerStrasse.6>
     ld:hasCity "Borsdorf" ;
     ld:hasHouseNumber "6" ;
     ld:hasPostCode "04451" ;
     ld:hasStreet "Leipziger Straße" ;
+    gsp:asWKT "Point(12.5318 51.3455)" ;
     a ld:Adresse ;
-    rdfs:label "04451 Borsdorf, Leipziger Straße 6" .
+    rdfs:label "Borsdorf, Leipziger Straße 6" .
+
+<http://leipzig-data.de/Data/04451.Borsdorf.Lindenweg.12>
+    ld:hasCity "Borsdorf" ;
+    ld:hasHouseNumber "12" ;
+    ld:hasPostCode "04451" ;
+    ld:hasStreet "Lindenweg" ;
+    gsp:asWKT "Point(12.5145 51.3517)" ;
+    a ld:Adresse ;
+    rdfs:label "Borsdorf, Lindenweg 12" .
 
 <http://leipzig-data.de/Data/04451.Borsdorf.Steinweg.3>
     ld:hasCity "Borsdorf" ;
@@ -236,15 +360,16 @@
     ld:hasPostCode "04451" ;
     ld:hasStreet "Steinweg" ;
     a ld:Adresse ;
-    rdfs:label "04451 Borsdorf, Steinweg 3" .
+    rdfs:label "Borsdorf, Steinweg 3" .
 
 <http://leipzig-data.de/Data/04463.Grosspoesna.Hauptstrasse.19>
     ld:hasCity "Großpösna" ;
     ld:hasHouseNumber "19" ;
     ld:hasPostCode "04463" ;
     ld:hasStreet "Hauptstraße" ;
+    gsp:asWKT "Point(12.5032 51.2706)" ;
     a ld:Adresse ;
-    rdfs:label "04463 Großpösna, Hauptstraße 19" .
+    rdfs:label "Großpösna, Hauptstraße 19" .
 
 <http://leipzig-data.de/Data/04463.Grosspoesna.Rittergutshof.7>
     ld:hasCity "Großpösna" ;
@@ -252,15 +377,52 @@
     ld:hasPostCode "04463" ;
     ld:hasStreet "Rittergutshof" ;
     a ld:Adresse ;
-    rdfs:label "04463 Großpösna, Rittergutshof 7" .
+    rdfs:label "Großpösna, Rittergutshof 7" .
 
 <http://leipzig-data.de/Data/04463.Grosspoesna.StoermthalerWeg.2>
     ld:hasCity "Großpösna" ;
     ld:hasHouseNumber "2" ;
     ld:hasPostCode "04463" ;
     ld:hasStreet "Störmthaler Weg" ;
+    gsp:asWKT "Point(12.5003 51.2605)" ;
     a ld:Adresse ;
-    rdfs:label "04463 Großpösna, Störmthaler Weg 2" .
+    rdfs:label "Großpösna, Störmthaler Weg 2" .
+
+<http://leipzig-data.de/Data/04509.Delitzsch.BeerendorferStrasse.49>
+    ld:hasCity "Delitzsch" ;
+    ld:hasHouseNumber "49" ;
+    ld:hasPostCode "04509" ;
+    ld:hasStreet "Beerendorfer Straße" ;
+    gsp:asWKT "Point(12.3572 51.5255)" ;
+    a ld:Adresse ;
+    rdfs:label "Delitzsch, Beerendorfer Straße 49" .
+
+<http://leipzig-data.de/Data/04509.Delitzsch.EilenburgerStrasse.30>
+    ld:hasCity "Delitzsch" ;
+    ld:hasHouseNumber "30" ;
+    ld:hasPostCode "04509" ;
+    ld:hasStreet "Eilenburger Straße" ;
+    gsp:asWKT "Point(12.3388 51.5236)" ;
+    a ld:Adresse ;
+    rdfs:label "Delitzsch, Eilenburger Straße 30" .
+
+<http://leipzig-data.de/Data/04509.Delitzsch.HallescheStrasse.55>
+    ld:hasCity "Delitzsch" ;
+    ld:hasHouseNumber "55" ;
+    ld:hasPostCode "04509" ;
+    ld:hasStreet "Hallesche Straße" ;
+    gsp:asWKT "Point(12.3248 51.5211)" ;
+    a ld:Adresse ;
+    rdfs:label "Delitzsch, Hallesche Straße 55" .
+
+<http://leipzig-data.de/Data/04509.Loebnitz.Zschernweg.4>
+    ld:hasCity "Löbnitz" ;
+    ld:hasHouseNumber "4" ;
+    ld:hasPostCode "04509" ;
+    ld:hasStreet "Zschernweg" ;
+    gsp:asWKT "Point(12.4612 51.5907)" ;
+    a ld:Adresse ;
+    rdfs:label "Löbnitz, Zschernweg 4" .
 
 <http://leipzig-data.de/Data/04509.Rabutz.BageritzerWeg.1>
     ld:hasCity "Rabutz" ;
@@ -268,7 +430,25 @@
     ld:hasPostCode "04509" ;
     ld:hasStreet "Bageritzer Weg" ;
     a ld:Adresse ;
-    rdfs:label "04509 Rabutz, Bageritzer Weg 1" .
+    rdfs:label "Rabutz, Bageritzer Weg 1" .
+
+<http://leipzig-data.de/Data/04509.Zwochau.LeipzigerStrasse.35B>
+    ld:hasCity "Zwochau" ;
+    ld:hasHouseNumber "35B" ;
+    ld:hasPostCode "04509" ;
+    ld:hasStreet "Leipziger Straße" ;
+    gsp:asWKT "Point(12.2709 51.4643)" ;
+    a ld:Adresse ;
+    rdfs:label "Zwochau, Leipziger Straße 35B" .
+
+<http://leipzig-data.de/Data/04519.Rackwitz.Lindenstrasse.8>
+    ld:hasCity "Rackwitz" ;
+    ld:hasHouseNumber "8" ;
+    ld:hasPostCode "04519" ;
+    ld:hasStreet "Lindenstraße" ;
+    gsp:asWKT "Point(12.3603 51.4809)" ;
+    a ld:Adresse ;
+    rdfs:label "Rackwitz, Lindenstraße 8" .
 
 <http://leipzig-data.de/Data/04564.Boehlen.RoethaerStrasse.44>
     ld:hasCity "Böhlen" ;
@@ -276,7 +456,7 @@
     ld:hasPostCode "04564" ;
     ld:hasStreet "Röthaer Straße" ;
     a ld:Adresse ;
-    rdfs:label "04564 Böhlen, Röthaer Straße 44" .
+    rdfs:label "Böhlen, Röthaer Straße 44" .
 
 <http://leipzig-data.de/Data/04668.Grimma.Klosterstrasse.1>
     ld:hasCity "Grimma" ;
@@ -284,7 +464,25 @@
     ld:hasPostCode "04668" ;
     ld:hasStreet "Klosterstraße" ;
     a ld:Adresse ;
-    rdfs:label "04668 Grimma, Klosterstraße 1" .
+    rdfs:label "Grimma, Klosterstraße 1" .
+
+<http://leipzig-data.de/Data/04683.Naunhof.Lutherstrasse.10>
+    ld:hasCity "Naunhof" ;
+    ld:hasHouseNumber "10" ;
+    ld:hasPostCode "04683" ;
+    ld:hasStreet "Lutherstraße" ;
+    gsp:asWKT "Point(12.594 51.28)" ;
+    a ld:Adresse ;
+    rdfs:label "Naunhof, Lutherstraße 10" .
+
+<http://leipzig-data.de/Data/04687.Trebsen.GrimmaerLandstrasse.2>
+    ld:hasCity "Trebsen" ;
+    ld:hasHouseNumber "2" ;
+    ld:hasPostCode "04687" ;
+    ld:hasStreet "Grimmaer Landstraße" ;
+    gsp:asWKT "Point(12.6949 51.2923)" ;
+    a ld:Adresse ;
+    rdfs:label "Trebsen, Grimmaer Landstraße 2" .
 
 <http://leipzig-data.de/Data/04838.Eilenburg.LeipzigerStrasse.4>
     ld:hasCity "Eilenburg" ;
@@ -292,7 +490,7 @@
     ld:hasPostCode "04838" ;
     ld:hasStreet "Leipziger Straße" ;
     a ld:Adresse ;
-    rdfs:label "04838 Eilenburg, Leipziger Straße 4" .
+    rdfs:label "Eilenburg, Leipziger Straße 4" .
 
 <http://leipzig-data.de/Data/04838.Jesewitz.ZschettgauerStrasse.3>
     ld:hasCity "Jesewitz" ;
@@ -300,7 +498,7 @@
     ld:hasPostCode "04838" ;
     ld:hasStreet "Zschettgauer Straße" ;
     a ld:Adresse ;
-    rdfs:label "04838 Jesewitz, Zschettgauer Straße 3" .
+    rdfs:label "Jesewitz, Zschettgauer Straße 3" .
 
 <http://leipzig-data.de/Data/04849.BadDueben.Bluecherstrasse.69>
     ld:hasCity "Bad Düben" ;
@@ -308,7 +506,34 @@
     ld:hasPostCode "04849" ;
     ld:hasStreet "Blücherstraße" ;
     a ld:Adresse ;
-    rdfs:label "04849 Bad Düben, Blücherstraße 69" .
+    rdfs:label "Bad Düben, Blücherstraße 69" .
+
+<http://leipzig-data.de/Data/06184.Kabelsketal.AmMarkt.8>
+    ld:hasCity "Kabelsketal" ;
+    ld:hasHouseNumber "8" ;
+    ld:hasPostCode "06184" ;
+    ld:hasStreet "Am Markt" ;
+    gsp:asWKT "Point(12.1543 51.4145)" ;
+    a ld:Adresse ;
+    rdfs:label "Kabelsketal, Am Markt 8" .
+
+<http://leipzig-data.de/Data/06188.Landsberg.DroyssigerStrasse.9>
+    ld:hasCity "Landsberg" ;
+    ld:hasHouseNumber "9" ;
+    ld:hasPostCode "06188" ;
+    ld:hasStreet "Droyßiger Straße" ;
+    gsp:asWKT "Point(12.1052 51.4976)" ;
+    a ld:Adresse ;
+    rdfs:label "Landsberg, Droyßiger Straße 9" .
+
+<http://leipzig-data.de/Data/06217.Merseburg.Gotthardstrasse.5>
+    ld:hasCity "Merseburg" ;
+    ld:hasHouseNumber "5" ;
+    ld:hasPostCode "06217" ;
+    ld:hasStreet "Gotthardstraße" ;
+    gsp:asWKT "Point(11.9974 51.3551)" ;
+    a ld:Adresse ;
+    rdfs:label "Merseburg (Saale), Gotthardstraße 5" .
 
 <http://leipzig-data.de/Data/06749.Bitterfeld.NiemegkerStrasse.20>
     ld:hasCity "Bitterfeld" ;
@@ -316,7 +541,16 @@
     ld:hasPostCode "06749" ;
     ld:hasStreet "Niemegker Straße" ;
     a ld:Adresse ;
-    rdfs:label "06749 Bitterfeld, Niemegker Straße 20" .
+    rdfs:label "Bitterfeld, Niemegker Straße 20" .
+
+<http://leipzig-data.de/Data/06791.Graefenhainichen.Campingplatz.1>
+    ld:hasCity "Gräfenhainichen" ;
+    ld:hasHouseNumber "1" ;
+    ld:hasPostCode "06791" ;
+    ld:hasStreet "Campingplatz" ;
+    gsp:asWKT "Point(12.3571 51.7418)" ;
+    a ld:Adresse ;
+    rdfs:label "Gräfenhainichen, Campingplatz 1" .
 
 <http://leipzig-data.de/Data/09111.Chemnitz.AnnabergerStrasse.24>
     ld:hasCity "Chemnitz" ;
@@ -324,7 +558,34 @@
     ld:hasPostCode "09111" ;
     ld:hasStreet "Annaberger Straße" ;
     a ld:Adresse ;
-    rdfs:label "09111 Chemnitz, Annaberger Straße 24" .
+    rdfs:label "Chemnitz, Annaberger Straße 24" .
+
+<http://leipzig-data.de/Data/10117.Berlin.Reinhardtstrasse.18>
+    ld:hasCity "Berlin" ;
+    ld:hasHouseNumber "18" ;
+    ld:hasPostCode "10117" ;
+    ld:hasStreet "Reinhardtstraße" ;
+    gsp:asWKT "Point(13.3848 52.5235)" ;
+    a ld:Adresse ;
+    rdfs:label "Berlin, Reinhardtstraße 18" .
+
+<http://leipzig-data.de/Data/10179.Berlin.AmKoellnischenPark.1>
+    ld:hasCity "Berlin" ;
+    ld:hasHouseNumber "1" ;
+    ld:hasPostCode "10179" ;
+    ld:hasStreet "Am Köllnischen Park" ;
+    gsp:asWKT "Point(13.4154 52.5119)" ;
+    a ld:Adresse ;
+    rdfs:label "Berlin, Am Köllnischen Park 1" .
+
+<http://leipzig-data.de/Data/28203.Bremen.Kreftingstrasse.7>
+    ld:hasCity "Bremen" ;
+    ld:hasHouseNumber "7" ;
+    ld:hasPostCode "28203" ;
+    ld:hasStreet "Kreftingstraße" ;
+    gsp:asWKT "Point(8.82159 53.0738)" ;
+    a ld:Adresse ;
+    rdfs:label "Bremen, Kreftingstraße 7" .
 
 <http://leipzig-data.de/Data/45147.Essen.Gemarkenstrasse.133>
     ld:hasCity "Essen" ;
@@ -332,7 +593,16 @@
     ld:hasPostCode "45147" ;
     ld:hasStreet "Gemarkenstraße" ;
     a ld:Adresse ;
-    rdfs:label "45147 Essen, Gemarkenstraße 133" .
+    rdfs:label "Essen, Gemarkenstraße 133" .
+
+<http://leipzig-data.de/Data/45307.Essen.Eckenbergstrasse.16A>
+    ld:hasCity "Essen" ;
+    ld:hasHouseNumber "16A" ;
+    ld:hasPostCode "45307" ;
+    ld:hasStreet "Eckenbergstraße" ;
+    gsp:asWKT "Point(7.07098 51.4633)" ;
+    a ld:Adresse ;
+    rdfs:label "Essen, Eckenbergstraße 16A" .
 
 <http://leipzig-data.de/Data/48268.Greven.Muensterstrasse.105>
     ld:hasCity "Greven" ;
@@ -340,7 +610,7 @@
     ld:hasPostCode "48268" ;
     ld:hasStreet "Münsterstraße" ;
     a ld:Adresse ;
-    rdfs:label "48268 Greven, Münsterstraße 105" .
+    rdfs:label "Greven, Münsterstraße 105" .
 
 <http://leipzig-data.de/Data/60389.Frankfurt.Valentin-Senger-Strasse.5>
     ld:hasCity "Frankfurt am Main" ;
@@ -348,7 +618,7 @@
     ld:hasPostCode "60389" ;
     ld:hasStreet "Valentin-Senger-Straße" ;
     a ld:Adresse ;
-    rdfs:label "60389 Frankfurt am Main, Valentin-Senger-Straße 5" .
+    rdfs:label "Frankfurt am Main, Valentin-Senger-Straße 5" .
 
 <http://leipzig-data.de/Data/86465.Weiden.ObereWeinbergstrasse.3>
     ld:hasCity "Weiden" ;
@@ -356,16 +626,5 @@
     ld:hasPostCode "86465" ;
     ld:hasStreet "Obere Weinbergstraße" ;
     a ld:Adresse ;
-    rdfs:label "86465 Weiden, Obere Weinbergstraße 3" .
-
-ld:Adresse
-    a owl:Class ;
-    rdfs:label "Weitere Adresse" .
-
-<http://leipzig-data.de/Data/WeitereAdressen/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Weitere Adressen" .
+    rdfs:label "Weiden, Obere Weinbergstraße 3" .
 
