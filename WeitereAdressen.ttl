@@ -2,9 +2,16 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+
+<http://leipzig-data.de/Data/01067.Dresden.BremerStrasse.10D>
+    ld:hasCity "Dresden" ;
+    ld:hasHouseNumber "10D" ;
+    ld:hasPostCode "01067" ;
+    ld:hasStreet "Bremer Straße" ;
+    a ld:Adresse ;
+    rdfs:label "01067 Dresden, Bremer Straße 10d" .
 
 <http://leipzig-data.de/Data/01067.Dresden.Messering.6>
     ld:hasCity "Dresden" ;
@@ -98,6 +105,7 @@
     ld:hasHouseNumber "33" ;
     ld:hasPostCode "04416" ;
     ld:hasStreet "Koburger Straße" ;
+    gsp:asWKT "Point(12.3689780910342 51.28913165)" ;
     a ld:Adresse ;
     rdfs:label "04416 Markkleeberg, Koburger Straße 33" .
 
@@ -106,6 +114,7 @@
     ld:hasHouseNumber "62" ;
     ld:hasPostCode "04416" ;
     ld:hasStreet "Koburger Straße" ;
+    gsp:asWKT "Point(12.3614356029419 51.282534)" ;
     a ld:Adresse ;
     rdfs:label "04416 Markkleeberg, Koburger Straße 62" .
 
@@ -359,13 +368,4 @@ ld:Adresse
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:label "Weitere Adressen" .
-
-
-<http://leipzig-data.de/Data/01067.Dresden.BremerStrasse.10D> 
-    ld:hasCity "Dresden" ;
-    ld:hasHouseNumber "10D" ;
-    ld:hasPostCode "01067" ;
-    ld:hasStreet "Bremer Straße" ;
-    a ld:Adresse ;
-    rdfs:label "01067 Dresden, Bremer Straße 10d" .
 
