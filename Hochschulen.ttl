@@ -7,58 +7,6 @@
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 
-<http://leipzig-data.de/Data/BA-Leipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.113> ;
-    foaf:phone "0341 42743-404" ;
-    a org:Organization ;
-    rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" ;
-    foaf:homepage <http://www.ba-leipzig.de> .
-
-<http://leipzig-data.de/Data/HTWK>
-    ld:Kurzinformation "Die Hochschule für Technik, Wirtschaft und Kultur Leipzig wurde 1992 als Hochschule der angewandten Wissenschaften gegründet. Sie setzt damit eine lange Tradition der ingenieurtechnischen Bildungseinrichtungen und der Lehrstätten für Bibliothekare, Buchhändler und Museologen in Leipzig fort. Mit etwa 7000 Studierenden gehört sie zu den größten Fachhochschulen Deutschlands." ;
-    ld:Leistungsangebot "Ferienhochschule", "Girls' Day", "Projekttage", "Schülerpraktika" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Karl-Liebknecht-Strasse.132> ;
-    ld:hasTag ldtag:Forschung, ldtag:MINT ;
-    foaf:phone "0341-30766156" ;
-    a org:Organization ;
-    rdfs:label "Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK)" ;
-    foaf:homepage <http://www.htwk-leipzig.de> .
-
-<http://leipzig-data.de/Data/HTWK/EIT>
-    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Waechterstrasse.13> ;
-    ld:hasTag ldtag:Forschung, ldtag:MINT ;
-    a ld:Fakultaet ;
-    rdfs:label "HTWK, Fakultät Elektrotechnik und Informationstechnik" ;
-    org:unitOf <http://leipzig-data.de/Data/HTWK> .
-
-<http://leipzig-data.de/Data/HTWK/MET>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Karl-Liebknecht-Strasse.134> ;
-    foaf:phone "0341-30764202" ;
-    ld:hasTag ldtag:Forschung, ldtag:MINT ;
-    foaf:phone "0341-30764221" ;
-    a ld:Fakultaet ;
-    rdfs:comment "Kontakt: HTWK Leipzig, Fakultät Maschinen- und Energietechnik, Frau A. Sommer, PF 301166, 04251 Leipzig" ;
-    rdfs:label "HTWK, Fakultät Maschinen- und Energietechnik" ;
-    org:unitOf <http://leipzig-data.de/Data/HTWK> ;
-    foaf:homepage <http://fbme.htwk-leipzig.de> .
-
-<http://leipzig-data.de/Data/HfTL>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.43> ;
-    a org:Organization ;
-    rdfs:label "Hochschule für Telekommunikation Leipzig" ;
-    foaf:homepage <http://www.hft-leipzig.de> .
-
-<http://leipzig-data.de/Data/Hochschule.AKAD>
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gutenbergplatz.1> ;
-    a org:Organization ;
-    rdfs:label "AKAD Hochschule Leipzig" .
-
-<http://leipzig-data.de/Data/Hochschule.FOM>
-    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
-    foaf:homepage <http://www.fom.de> ;
-    a org:Organization ;
-    rdfs:label "FOM Hochschule Leipzig" .
-
 <http://leipzig-data.de/Data/Hochschulen/>
     cc:attributionName "The Leipzig Open Data Project" ;
     cc:attributionURL <http://leipzig-data.de> ;
@@ -81,6 +29,59 @@ ld:Klinik
 ld:ZentraleEinrichtung
     rdfs:label "Zentrale Einrichtung" ;
     rdfs:subClassOf org:OrganizationalUnit .
+
+<http://leipzig-data.de/Data/BA-Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.113> ;
+    a org:Organization ;
+    rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" ;
+    foaf:homepage <http://www.ba-leipzig.de> ;
+    foaf:phone "0341 42743-404" .
+
+<http://leipzig-data.de/Data/HTWK>
+    ld:Kurzinformation "Die Hochschule für Technik, Wirtschaft und Kultur Leipzig wurde 1992 als Hochschule der angewandten Wissenschaften gegründet. Sie setzt damit eine lange Tradition der ingenieurtechnischen Bildungseinrichtungen und der Lehrstätten für Bibliothekare, Buchhändler und Museologen in Leipzig fort. Mit etwa 7000 Studierenden gehört sie zu den größten Fachhochschulen Deutschlands." ;
+    ld:Leistungsangebot "Ferienhochschule", "Girls' Day", "Projekttage", "Schülerpraktika" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Karl-Liebknecht-Strasse.132> ;
+    ld:hasTag ldtag:Forschung, ldtag:MINT ;
+    a org:Organization ;
+    rdfs:label "Hochschule für Technik, Wirtschaft und Kultur Leipzig (HTWK)" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.74> ;
+    foaf:homepage <http://www.htwk-leipzig.de> ;
+    foaf:phone "0341-30766156" .
+
+<http://leipzig-data.de/Data/HTWK/EIT>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Waechterstrasse.13> ;
+    ld:hasTag ldtag:Forschung, ldtag:MINT ;
+    a ld:Fakultaet ;
+    rdfs:label "HTWK, Fakultät Elektrotechnik und Informationstechnik" ;
+    org:unitOf <http://leipzig-data.de/Data/HTWK> .
+
+<http://leipzig-data.de/Data/HTWK/MET>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Karl-Liebknecht-Strasse.134> ;
+    ld:hasTag ldtag:Forschung, ldtag:MINT ;
+    a ld:Fakultaet ;
+    rdfs:comment "Kontakt: HTWK Leipzig, Fakultät Maschinen- und Energietechnik, Frau A. Sommer, PF 301166, 04251 Leipzig" ;
+    rdfs:label "HTWK, Fakultät Maschinen- und Energietechnik" ;
+    org:unitOf <http://leipzig-data.de/Data/HTWK> ;
+    foaf:homepage <http://fbme.htwk-leipzig.de> ;
+    foaf:phone "0341-30764202", "0341-30764221" .
+
+<http://leipzig-data.de/Data/HfTL>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.43> ;
+    a org:Organization ;
+    rdfs:label "Hochschule für Telekommunikation Leipzig" ;
+    foaf:homepage <http://www.hft-leipzig.de> .
+
+<http://leipzig-data.de/Data/Hochschule.AKAD>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gutenbergplatz.1> ;
+    a org:Organization ;
+    rdfs:label "AKAD Hochschule Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.69> .
+
+<http://leipzig-data.de/Data/Hochschule.FOM>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
+    a org:Organization ;
+    rdfs:label "FOM Hochschule Leipzig" ;
+    foaf:homepage <http://www.fom.de> .
 
 <http://leipzig-data.de/Data/UniLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.26> ;

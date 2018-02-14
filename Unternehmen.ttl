@@ -9,6 +9,34 @@
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 
+<http://leipzig-data.de/Data/Unternehmen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Unternehmen in der Stadt Leipzig" .
+
+ld:Autohaus
+    a owl:Class ;
+    rdfs:label "Autohaus" ;
+    rdfs:subClassOf ld:Unternehmen .
+
+ld:Bootsverleih
+    a owl:Class ;
+    rdfs:label "Bootsverleih" ;
+    rdfs:subClassOf ld:Unternehmen .
+
+ld:Unternehmen
+    a owl:Class ;
+    rdfs:label "Unternehmen" ;
+    rdfs:subClassOf org:Organization .
+
+<http://leipzig-data.de/Data/Firma/AWO.Akademie>
+    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Ludwig-Hupfeld-Strasse.16> ;
+    a ld:Unternehmen ;
+    rdfs:label "AWO SPI Soziale Stadt und Land Entwicklungsgesellschaft mbH" ;
+    foaf:homepage <http://www.awoakademie.de/> .
+
 <http://leipzig-data.de/Data/Firma/ArvatoSystems>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.7> ;
     a ld:Unternehmen, org:Organization ;
@@ -52,6 +80,12 @@
     rdfs:label "BSE Engineering" ;
     foaf:homepage <http://www.bse-leipzig.de/> .
 
+<http://leipzig-data.de/Data/Firma/BZGL>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> ;
+    a ld:Unternehmen ;
+    rdfs:label "Bildungszentrum für Gesundheitsberufe Leipzig GmbH" ;
+    foaf:homepage <http://bildungszentrum-leipzig.de> .
+
 <http://leipzig-data.de/Data/Firma/Baumsr>
     a ld:Unternehmen ;
     rdfs:label "Bau msr GmbH" ;
@@ -84,6 +118,24 @@
     foaf:mbox "info@dbfz.de" ;
     foaf:phone "0341-2434-112" .
 
+<http://leipzig-data.de/Data/Firma/DEB.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.85> ;
+    a ld:Unternehmen ;
+    rdfs:label "DEB in Sachsen, gemeinnützige Schulträger-GmbH" ;
+    foaf:homepage <http://www.deb.de/standorte/deb-leipzig/> .
+
+<http://leipzig-data.de/Data/Firma/DPFA>
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15> ;
+    a ld:Unternehmen ;
+    rdfs:label "Deutsche Private Finanzakademie (DPFA) GmbH Sachsen" ;
+    foaf:homepage <https://www.dpfa.de/standorte/region-leipzig/leipzig/unsere-angebote/> .
+
+<http://leipzig-data.de/Data/Firma/DRK.BildungswerkSachsen>
+    ld:hasAddress <http://leipzig-data.de/Data/01067.Dresden.BremerStrasse.10D> ;
+    a ld:Unternehmen ;
+    rdfs:label "Deutsches Rotes Kreuz, Bildungswerk Sachsen gemeinnützige GmbH" ;
+    foaf:homepage <http://drk-bildungswerk-sachsen.de> .
+
 <http://leipzig-data.de/Data/Firma/DasBoot>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.72>, <http://leipzig-data.de/Data/04275.Leipzig.Arndtstrasse.66> ;
     ld:hasCategories "Sozialpsychiatrische Hilfen, Komplementäre Versorgung" ;
@@ -91,6 +143,12 @@
     a ld:Unternehmen ;
     rdfs:label "DAS BOOT gGmbH. Sozialpsychiatrisches Zentrum" ;
     foaf:homepage <http://www.das-boot-ggmbh.de> .
+
+<http://leipzig-data.de/Data/Firma/Designschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Bauhofstrasse.3> ;
+    a ld:Unternehmen ;
+    rdfs:label "Designschule 1.0 GmbH" ;
+    foaf:homepage <http://www.designschule.de> .
 
 <http://leipzig-data.de/Data/Firma/Drechslertechnik>
     a ld:Unternehmen ;
@@ -101,6 +159,12 @@
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.17> ;
     a ld:Unternehmen ;
     rdfs:label "Druck und Werte GmbH" .
+
+<http://leipzig-data.de/Data/Firma/EBG.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hohmannstrasse.7> ;
+    a ld:Unternehmen ;
+    rdfs:label "Europäisches Bildungswerk für Beruf und Gesellschaft gGmbH, Standort Leipzig" ;
+    foaf:homepage <http://www.ebg.de/de/standorte/sachsen/leipzig-schulen.html> .
 
 <http://leipzig-data.de/Data/Firma/EGZSchulungBeratung>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.SaarlaenderStrasse.17> ;
@@ -131,10 +195,22 @@
     a ld:Unternehmen, org:Organization ;
     rdfs:label "Enterasys Networks Germany GmbH, Niederlassung Leipzig" .
 
+<http://leipzig-data.de/Data/Firma/EuroAkademie.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.23> ;
+    a ld:Unternehmen ;
+    rdfs:label "Euro Akademie gGmbh, Standort Leipzig" ;
+    foaf:homepage <https://www.euroakademie.de/de/standorte/leipzig.html> .
+
 <http://leipzig-data.de/Data/Firma/Fa_Dietmar_Becker>
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Hafenstrasse.23> ;
     a ld:Unternehmen, org:Organization ;
     rdfs:label "Fa. Dietmar Becker" .
+
+<http://leipzig-data.de/Data/Firma/GBS>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Mahlmannstrasse.1> ;
+    a ld:Unternehmen ;
+    rdfs:label "GBS - gGmbH für technische und kaufmännische berufsbildende Schulen Leipzig" ;
+    foaf:homepage <https://www.gbsleipzig.de> .
 
 <http://leipzig-data.de/Data/Firma/GCI>
     ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Marienbrunnenstrasse.4> ;
@@ -152,6 +228,7 @@
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.19> ;
     a ld:Unternehmen, org:Organization ;
     rdfs:label "Caravan GbR" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.80> ;
     foaf:homepage <http://www.jointhecaravan.de/> .
 
 <http://leipzig-data.de/Data/Firma/GerhardRoeslGmbH>
@@ -164,6 +241,12 @@
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.9> ;
     a ld:Unternehmen, org:Organization ;
     rdfs:label "GET AG" .
+
+<http://leipzig-data.de/Data/Firma/Heimerer.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hohmannstrasse.7B> ;
+    a ld:Unternehmen ;
+    rdfs:label "Heimerer GmbH, Standort Leipzig" ;
+    foaf:homepage <https://www.heimerer.de/standorte/leipzig.html> .
 
 <http://leipzig-data.de/Data/Firma/Humanitas>
     a ld:Unternehmen ;
@@ -212,18 +295,18 @@
     rdfs:label "Lecos GmbH" ;
     foaf:homepage <http://www.lecos-gmbh.de> .
 
+<http://leipzig-data.de/Data/Firma/Lehmbau.Bildung>
+    ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Anton-Zickmantel-Strasse.41> ;
+    a ld:Unternehmen ;
+    rdfs:label "Leipziger Gesellschaft für Bildung und Arbeit mbH" ;
+    foaf:homepage <http://lehmbaugruppe.de> .
+
 <http://leipzig-data.de/Data/Firma/Lehmbau.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.93> ;
     ld:hasSupplierNumber "038" ;
-    foaf:homepage <http://lehmbaugruppe.de> ;
     a ld:Unternehmen ;
-    rdfs:label "Augsburger Lehmbaugesellschaft Leipzig gGmbH" .
-
-<http://leipzig-data.de/Data/Firma/Lehmbau.Bildung>
-    ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Anton-Zickmantel-Strasse.41> ;
-    foaf:homepage <http://lehmbaugruppe.de> ;
-    a ld:Unternehmen ;
-    rdfs:label "Leipziger Gesellschaft für Bildung und Arbeit mbH" .
+    rdfs:label "Augsburger Lehmbaugesellschaft Leipzig gGmbH" ;
+    foaf:homepage <http://lehmbaugruppe.de> .
 
 <http://leipzig-data.de/Data/Firma/LeipzigSchoolOfDesign>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Dieskaustrasse.26> ;
@@ -233,7 +316,8 @@
 <http://leipzig-data.de/Data/Firma/MuconaMedia>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bruehl.52> ;
     a ld:Unternehmen, org:Organization ;
-    rdfs:label "Mucona Media GbR" .
+    rdfs:label "Mucona Media GbR" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.125> .
 
 <http://leipzig-data.de/Data/Firma/Nextbike>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomasiusstrasse.16> ;
@@ -366,6 +450,12 @@
     a ld:Unternehmen ;
     rdfs:label "Vivo Sens Medical" .
 
+<http://leipzig-data.de/Data/Firma/WBS.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bruehl.67> ;
+    a ld:Unternehmen ;
+    rdfs:label "WBS Training AG, Standort Leipzig" ;
+    foaf:homepage <https://www.wbstraining.de/weiterbildung-leipzig/> .
+
 <http://leipzig-data.de/Data/Firma/WRL>
     a ld:Unternehmen ;
     rdfs:comment "Gründung als Modellprojekt der interkommunalen Zusammenarbeit in Sachsen auf Basis des Ratsbeschlusses RB V-1366/12. Details im ERIS" ;
@@ -391,6 +481,11 @@
     ld:hasStadtId "653" ;
     a ld:Unternehmen ;
     rdfs:label "Gemeinnützige Zuhause GmbH" .
+
+<http://leipzig-data.de/Data/Firma/ZweiradEckhard>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Kurt-Schumacher-Strasse.4> ;
+    a ld:Unternehmen ;
+    rdfs:label "Zweirad Eckhardt" .
 
 <http://leipzig-data.de/Data/Firma/apiOmat>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.4> ;
@@ -439,97 +534,3 @@
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Angerstrasse.40>, <http://leipzig-data.de/Data/04177.Leipzig.Demmeringstrasse.57> ;
     a ld:Unternehmen ;
     rdfs:label "studiodelta GmbH & CO. KG" .
-
-ld:Autohaus
-    a owl:Class ;
-    rdfs:label "Autohaus" ;
-    rdfs:subClassOf ld:Unternehmen .
-
-ld:Bootsverleih
-    a owl:Class ;
-    rdfs:label "Bootsverleih" ;
-    rdfs:subClassOf ld:Unternehmen .
-
-ld:Unternehmen
-    a owl:Class ;
-    rdfs:label "Unternehmen" ;
-    rdfs:subClassOf org:Organization .
-
-<http://leipzig-data.de/Data/Unternehmen/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Unternehmen in der Stadt Leipzig" .
-
-<http://leipzig-data.de/Data/Firma/AWO.Akademie>
-    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Ludwig-Hupfeld-Strasse.16> ;
-    a ld:Unternehmen ;
-    foaf:homepage <http://www.awoakademie.de/> ; 
-    rdfs:label "AWO SPI Soziale Stadt und Land Entwicklungsgesellschaft mbH" .
-
-<http://leipzig-data.de/Data/Firma/DRK.BildungswerkSachsen>
-    ld:hasAddress <http://leipzig-data.de/Data/01067.Dresden.BremerStrasse.10D> ;
-    a ld:Unternehmen ;
-    foaf:homepage <http://drk-bildungswerk-sachsen.de> ; 
-    rdfs:label "Deutsches Rotes Kreuz, Bildungswerk Sachsen gemeinnützige GmbH" .
-
-
-<http://leipzig-data.de/Data/Firma/BZGL>
-    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> ;
-    a ld:Unternehmen ;
-    foaf:homepage <http://bildungszentrum-leipzig.de> ; 
-    rdfs:label "Bildungszentrum für Gesundheitsberufe Leipzig GmbH" .
-
-<http://leipzig-data.de/Data/Firma/DPFA>
-    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15> ;
-    a ld:Unternehmen ;
-    foaf:homepage <https://www.dpfa.de/standorte/region-leipzig/leipzig/unsere-angebote/> ; 
-    rdfs:label "Deutsche Private Finanzakademie (DPFA) GmbH Sachsen" .
-
-<http://leipzig-data.de/Data/Firma/Designschule>
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Bauhofstrasse.3> ;
-    a ld:Unternehmen ;
-    foaf:homepage <http://www.designschule.de> ; 
-    rdfs:label "Designschule 1.0 GmbH" .
-
-<http://leipzig-data.de/Data/Firma/DEB.Leipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.85> ;
-    a ld:Unternehmen ; 
-    foaf:homepage <http://www.deb.de/standorte/deb-leipzig/> ; 
-    rdfs:label "DEB in Sachsen, gemeinnützige Schulträger-GmbH" .
-
-<http://leipzig-data.de/Data/Firma/EuroAkademie.Leipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.23> ;
-    a ld:Unternehmen ; 
-    foaf:homepage <https://www.euroakademie.de/de/standorte/leipzig.html> ; 
-    rdfs:label "Euro Akademie gGmbh, Standort Leipzig" .
-
-<http://leipzig-data.de/Data/Firma/EBG.Leipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hohmannstrasse.7> ;
-    a ld:Unternehmen ; 
-    foaf:homepage <http://www.ebg.de/de/standorte/sachsen/leipzig-schulen.html> ; 
-    rdfs:label "Europäisches Bildungswerk für Beruf und Gesellschaft gGmbH, Standort Leipzig" .
-
-<http://leipzig-data.de/Data/Firma/GBS>
-    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Mahlmannstrasse.1> ;
-    a ld:Unternehmen ; 
-    foaf:homepage <https://www.gbsleipzig.de> ; 
-    rdfs:label "GBS - gGmbH für technische und kaufmännische berufsbildende Schulen Leipzig" .
-
-<http://leipzig-data.de/Data/Firma/Heimerer.Leipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hohmannstrasse.7B> ;
-    a ld:Unternehmen ; 
-    foaf:homepage <https://www.heimerer.de/standorte/leipzig.html> ; 
-    rdfs:label "Heimerer GmbH, Standort Leipzig" .
-
-<http://leipzig-data.de/Data/Firma/WBS.Leipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bruehl.67> ;
-    a ld:Unternehmen ; 
-    foaf:homepage <https://www.wbstraining.de/weiterbildung-leipzig/> ; 
-    rdfs:label "WBS Training AG, Standort Leipzig" .
-
-<http://leipzig-data.de/Data/Firma/ZweiradEckhard>
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Kurt-Schumacher-Strasse.4> ;
-    a ld:Unternehmen ;
-    rdfs:label "Zweirad Eckhardt" .

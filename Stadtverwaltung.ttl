@@ -9,6 +9,14 @@
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 
+<http://leipzig-data.de/Data/Stadtverwaltung/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:comment "Ämter der Stadt Leipzig wurden im Rahmen des Projekts \"Interaktiver Haushaltsrechner für Leipzig 2015\" extrahiert" ;
+    rdfs:label "Stadtverwaltung Leipzig" .
+
 <http://leipzig-data.de/Data/StadtLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
     a org:Organization ;
@@ -34,9 +42,9 @@
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig/Gesundheitsamt> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/AGM>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.65> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt für Gebäudemanagement" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.65> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/ASD.Gruenau>
@@ -46,81 +54,81 @@
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig/Gesundheitsamt> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/ASW>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.64> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt für Stadterneuerung und Wohnungsbauförderung" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.64> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt2>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.2> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 2" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.2> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt27>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.27> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 27" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.27> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt801>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.801> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 801" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.801> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt921>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.921> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 921" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.921> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt922>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.922> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 922" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.922> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt923>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.923> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 923" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.923> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt924>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.924> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 924" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.924> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt925>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.925> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 925" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.925> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt926>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.926> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 926" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.926> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt927>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.927> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 927" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.927> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Amt98>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.98> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt 98" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.98> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/BauordnungDenkmalpflege>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.63> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt für Bauordnung und Denkmalpflege" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.63> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/BeratungsstelleSchirmerstrasse>
@@ -133,67 +141,67 @@
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Beschaeftigungspolitik>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.81> ;
     a org:OrganizationalUnit ;
     rdfs:label "Referat für Beschäftigungspolitik" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.81> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken>
     ld:contactPerson <http://leipzig-data.de/Data/Person/Ackermann_Arne> ;
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.45> ;
     a org:OrganizationalUnit ;
     rdfs:label "Leipziger Städtische Bibliotheken" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.45> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> ;
     foaf:homepage <http://www.leipzig.de> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Branddirektion>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.37> ;
     a org:OrganizationalUnit ;
     rdfs:label "Branddirektion" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.37> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/GB-OBM>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.01.1> ;
     a org:OrganizationalUnit ;
     rdfs:label "Geschäftsbereich des Oberbürgermeisters und des Stadtrats" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.01.1> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/GeoinformationBodenordnung>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.62> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt für Geoinformation und Bodenordnung" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.62> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Gesamtpersonalrat>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.13> ;
     a org:OrganizationalUnit ;
     rdfs:label "Gesamtpersonalrat" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.13> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Gesundheitsamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.53> ;
     a org:OrganizationalUnit ;
     rdfs:label "Gesundheitsamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.53> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Hauptamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.10> ;
     a org:OrganizationalUnit ;
     rdfs:label "Hauptamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.10> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.51> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt für Jugend, Familie und Bildung" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.51> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> ;
     foaf:homepage <http://www.leipzig.de> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Kommunalwirtschaft>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.01.2> ;
     a org:OrganizationalUnit ;
     rdfs:label "Geschäftsbereich des Oberbürgermeisters - Kommunalwirtschaft" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.01.2> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Kommunikation>
@@ -203,33 +211,33 @@
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Kulturamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.41> ;
     a org:OrganizationalUnit ;
     rdfs:label "Kulturamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.41> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Lebensmittelaufsicht>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.56> ;
     a org:OrganizationalUnit ;
     rdfs:label "Veterinär- und Lebensmittelaufsichtsamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.56> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Liegenschaftsamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.23> ;
     a org:OrganizationalUnit ;
     rdfs:label "Liegenschaftsamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.23> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Marktamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.72> ;
     a org:OrganizationalUnit ;
     rdfs:label "Marktamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.72> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/MuseumBildendeKuenste>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.43> ;
     a org:OrganizationalUnit ;
     rdfs:label "Museum für bildende Künste" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.43> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/NetzwerkEnergieUmwelt>
@@ -238,51 +246,51 @@
     foaf:homepage <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Ordnungsamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.32> ;
     a org:OrganizationalUnit ;
     rdfs:label "Ordnungsamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.32> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Personalamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.11> ;
     a org:OrganizationalUnit ;
     rdfs:label "Personalamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.11> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Personalrat>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.19> ;
     a org:OrganizationalUnit ;
     rdfs:label "Personalrat Stadtverwaltung" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.19> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Rechnungspruefungsamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.14> ;
     a org:OrganizationalUnit ;
     rdfs:label "Rechnungsprüfungsamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.14> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Rechtsamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.30> ;
     a org:OrganizationalUnit ;
     rdfs:label "Rechtsamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.30> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/ReferatGleichstellung>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.17> ;
     a org:OrganizationalUnit ;
     rdfs:label "Referat für Gleichstellung von Frau und Mann" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.17> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/ReferatMigration>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.18> ;
     a org:OrganizationalUnit ;
     rdfs:label "Referat für Migration und Integration" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.18> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/ReferatSenioren>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.57> ;
     a org:OrganizationalUnit ;
     rdfs:label "Referat für Senioren und Menschen mit Behinderungen" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.57> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/SchulBiologiezentrum>
@@ -294,45 +302,45 @@
     foaf:homepage <http://www.schulbiologiezentrum-leipzig.de> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Sozialamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.50> ;
     a org:OrganizationalUnit ;
     rdfs:label "Sozialamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.50> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Sportamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.52> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt für Sport" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.52> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Stadtkaemmerei>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.20> ;
     a org:OrganizationalUnit ;
     rdfs:label "Stadtkämmerei" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.20> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Stadtkasse>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.21> ;
     a org:OrganizationalUnit ;
     rdfs:label "Stadtkasse" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.21> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Stadtplanungsamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.61> ;
     a org:OrganizationalUnit ;
     rdfs:label "Stadtplanungsamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.61> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Standesamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.34> ;
     a org:OrganizationalUnit ;
     rdfs:label "Standesamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.34> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/StatistikWahlen>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.12> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt für Statistik und Wahlen" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.12> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/StrassensozialarbeitTeamAnnaO>
@@ -345,21 +353,21 @@
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Tiefbauamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.66> ;
     a org:OrganizationalUnit ;
     rdfs:label "Verkehrs- und Tiefbauamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.66> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Umweltamt>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.67> ;
     a org:OrganizationalUnit ;
     rdfs:label "Umweltamt" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.67> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Umweltschutz>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.36> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt für Umweltschutz" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.36> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/VKKJ>
@@ -369,23 +377,15 @@
     foaf:homepage <http://www.vkkj.de/> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Volkshochschule>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.42> ;
     a org:OrganizationalUnit ;
     rdfs:label "Volkshochschule" ;
+    owl:sameAs <http://leipzig-data.de/Data/StadtId/Amt.42> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> .
 
 <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung>
-    ld:hasStadtRef <http://leipzig-data.de/Data/StadtId/Amt.80> ;
     a org:OrganizationalUnit ;
     rdfs:label "Amt für Wirtschaftsförderung" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.37>, <http://leipzig-data.de/Data/StadtId/Amt.80> ;
     org:unitOf <http://leipzig-data.de/Data/StadtLeipzig> ;
     foaf:phone "0341-1235826" .
-
-<http://leipzig-data.de/Data/Stadtverwaltung/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:comment "Ämter der Stadt Leipzig wurden im Rahmen des Projekts \"Interaktiver Haushaltsrechner für Leipzig 2015\" extrahiert" ;
-    rdfs:label "Stadtverwaltung Leipzig" .
 

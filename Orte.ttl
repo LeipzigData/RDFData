@@ -8,6 +8,13 @@
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
 
+<http://leipzig-data.de/Data/Orte/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Orte" .
+
 ld:Hotel
     a owl:Class ;
     rdfs:label "Hotel" .
@@ -33,7 +40,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/ALEX>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Naschmarkt.3> ;
     a ld:Ort ;
-    rdfs:label "ALEX" .
+    rdfs:label "ALEX" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.104> .
 
 <http://leipzig-data.de/Data/Ort/AO_Hostel>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.BrandenburgerStrasse.2> ;
@@ -53,13 +61,13 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/AZ-Schkeuditz>
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Schilling_Peter> ;
     ld:hasAddress <http://leipzig-data.de/Data/04435.Schkeuditz.Bergbreite.1> ;
-    foaf:mbox "info@sternwarte-schkeuditz.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "034204-62616" ;
-    foaf:homepage <http://sternwarte-schkeuditz.de> ;
     a ld:Ort ;
-    rdfs:label "Astronomisches Zentrum Schkeuditz" .
+    rdfs:label "Astronomisches Zentrum Schkeuditz" ;
+    foaf:homepage <http://sternwarte-schkeuditz.de> ;
+    foaf:mbox "info@sternwarte-schkeuditz.de" ;
+    foaf:phone "034204-62616" .
 
 <http://leipzig-data.de/Data/Ort/Absturz>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.36> ;
@@ -68,10 +76,10 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Academixer>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Kupfergasse.2> ;
-    foaf:phone "0431-9602000" ;
-    foaf:homepage <http://www.academixer.com/> ;
     a ld:Kabarett, ld:Ort ;
-    rdfs:label "Academixer" .
+    rdfs:label "Academixer" ;
+    foaf:homepage <http://www.academixer.com/> ;
+    foaf:phone "0431-9602000" .
 
 <http://leipzig-data.de/Data/Ort/AegyptischesMuseum>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goethestrasse.2> ;
@@ -80,9 +88,9 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Agra-Veranstaltungsgelaende>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.BornaischeStrasse.210> ;
-    foaf:homepage <https://www.agra-veranstaltungsgelaende-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "agra Veranstaltungsgelände Leipzig" .
+    rdfs:label "agra Veranstaltungsgelände Leipzig" ;
+    foaf:homepage <https://www.agra-veranstaltungsgelaende-leipzig.de> .
 
 <http://leipzig-data.de/Data/Ort/AlRahman_Moschee>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Roscherstrasse.33> ;
@@ -91,20 +99,20 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/AlpenmaxLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrosseFleischergasse.12> ;
-    foaf:phone "341-2248605" ;
-    foaf:homepage <http://www.alpenmax-leipzig.de/drp/> ;
     a ld:Club, ld:Ort ;
-    rdfs:label "Alpenmax Leipzig" .
+    rdfs:label "Alpenmax Leipzig" ;
+    foaf:homepage <http://www.alpenmax-leipzig.de/drp/> ;
+    foaf:phone "341-2248605" .
 
 <http://leipzig-data.de/Data/Ort/AlteHandelsboerse>
     ld:contactPerson "FIXME: Kathleen Belger" ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Naschmarkt.2> ;
-    foaf:mbox "alteboerse-leipzig@leipzig.de" ;
-    foaf:phone "341-2617766" ;
-    foaf:homepage <http://www.stadtgeschichtliches-museum-leipzig.de/site_deutsch/alteboerse/index.php> ;
     a ld:Ort ;
     rdfs:comment "Die Alte Handelsbörse ist Leipzigs ältestes Versammlungsgebäude der Kaufmannschaft und eines der ältesten Barockbauwerke der Stadt." ;
-    rdfs:label "Alte Handesbörse" .
+    rdfs:label "Alte Handesbörse" ;
+    foaf:homepage <http://www.stadtgeschichtliches-museum-leipzig.de/site_deutsch/alteboerse/index.php> ;
+    foaf:mbox "alteboerse-leipzig@leipzig.de" ;
+    foaf:phone "341-2617766" .
 
 <http://leipzig-data.de/Data/Ort/AlteNikolaiSchule>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaikirchhof.2> ;
@@ -114,7 +122,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/AlteSchlosserei>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kurt-Eisner-Strasse.66> ;
     a ld:Ort ;
-    rdfs:label "Alte Schlosserei" .
+    rdfs:label "Alte Schlosserei" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.76> .
 
 <http://leipzig-data.de/Data/Ort/Alte_Damenhandschuhfabrik>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.20> ;
@@ -131,15 +140,14 @@ ld:Ort
     ld:Kosten "teilweise" ;
     ld:Zielgruppe "Kinder-und Jugendliche, Senioren" ;
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Renftstrasse.1> ;
-    foaf:mbox "info@anker-Leipzig.de" ;
-    foaf:phone "0341-9123910" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Anker> ;
-    foaf:phone "0341-9128327" ;
-    foaf:homepage <http://www.anker-Leipzig> ;
     a ld:Ort ;
     rdfs:comment "Im Angebot: Schauspiel, Theater, Kreativwerkstatt, Mediencenter, Modellbau, Fotolabor, Kinderfeste, offener Treff, Jugendclub, Ferienangebote, Jugendgesprächsrunde" ;
-    rdfs:label "Der Anker" .
+    rdfs:label "Der Anker" ;
+    foaf:homepage <http://www.anker-Leipzig> ;
+    foaf:mbox "info@anker-Leipzig.de" ;
+    foaf:phone "0341-9123910", "0341-9128327" .
 
 <http://leipzig-data.de/Data/Ort/Antikenmuseum>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaikirchhof.2> ;
@@ -158,38 +166,39 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/ArenaLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.AmSportforum.2> ;
-    foaf:mbox "i.rackwitz@sportforum-leipzig.com", "office@arena-leipzig.com" ;
-    foaf:phone "341-2341111" ;
-    foaf:phone "0341-2341-0", "341-2341122" ;
-    foaf:homepage <http://www.sportforum-leipzig.com/> ;
     a ld:ConcertHall, ld:Ort ;
     rdfs:comment "Träger: ZSL Betreibergesellschaft mbH" ;
-    rdfs:label "Arena Leipzig", "Red Bull Arena" .
+    rdfs:label "Arena Leipzig", "Red Bull Arena" ;
+    foaf:homepage <http://www.sportforum-leipzig.com/> ;
+    foaf:mbox "i.rackwitz@sportforum-leipzig.com", "office@arena-leipzig.com" ;
+    foaf:phone "0341-2341-0", "341-2341111", "341-2341122" .
 
 <http://leipzig-data.de/Data/Ort/AtelierCorwinVonKuhwede>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.57> ;
     a ld:Ort ;
-    rdfs:label "Atelier Corwin von Kuhwede" .
+    rdfs:label "Atelier Corwin von Kuhwede" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.119> .
 
 <http://leipzig-data.de/Data/Ort/AtelierMatthiasMeyer>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Stieglitzstrasse.20> ;
     a ld:Ort ;
-    rdfs:label "Atelier Matthias Meyer" .
+    rdfs:label "Atelier Matthias Meyer" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.106> .
 
 <http://leipzig-data.de/Data/Ort/AtelierNiggemeyer>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.EisenacherStrasse.72> ;
     a ld:Ort ;
-    rdfs:label "Atelier Joachim R. Niggemeyer" .
+    rdfs:label "Atelier Joachim R. Niggemeyer" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.88> .
 
 <http://leipzig-data.de/Data/Ort/AuerbachsKeller>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.2> ;
-    foaf:mbox "info@auerbachs-keller-leipzig.de" ;
-    foaf:phone "341-21610-11" ;
-    foaf:phone "341-21610-0" ;
-    foaf:homepage <http://www.auerbachs-keller-leipzig.de/> ;
     a ld:Ort, ld:Restaurant ;
     rdfs:comment "Historisches Restaurant im Herzen der Leipziger Altstadt" ;
-    rdfs:label "Auerbachs Keller" .
+    rdfs:label "Auerbachs Keller" ;
+    foaf:homepage <http://www.auerbachs-keller-leipzig.de/> ;
+    foaf:mbox "info@auerbachs-keller-leipzig.de" ;
+    foaf:phone "341-21610-0", "341-21610-11" .
 
 <http://leipzig-data.de/Data/Ort/Auwaldstation>
     ld:Finanzierung "Am 19.12.2011 wird ein Zuwendungsvertrag unterzeichnet, der dem Verein auf der Basis eines Stadtratsbeschlusses eine jährliche Unterstützung von 35.000 Euro zusichert." ;
@@ -199,44 +208,42 @@ ld:Ort
     ld:Zielstellung "Nach dem Prinzip „Lernen mit Herz, Hand und Verstand“ werden fachliche Inhalte mit Bezug zur Natur vermittelt. „Bewegend“ die Natur erleben bietet einen optimalen Ausgleich zum Schulalltag, fördert den Gemeinschaftssinn, Kreativität sowie Phantasie." ;
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Seidel_Franka> ;
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
-    foaf:mbox "auwaldstation@t-online.de" ;
-    foaf:phone "0341-2537753" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Auwaldstation> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-4621895" ;
-    foaf:homepage <http://www.auwaldstation.de> ;
     a ld:Ort ;
-    rdfs:label "Auwaldstation Leipzig" .
+    rdfs:label "Auwaldstation Leipzig" ;
+    foaf:homepage <http://www.auwaldstation.de> ;
+    foaf:mbox "auwaldstation@t-online.de" ;
+    foaf:phone "0341-2537753", "0341-4621895" .
 
 <http://leipzig-data.de/Data/Ort/BA-Leipzig>
     ld:Kurzinformation "Die Staatliche Studienakademie Leipzig verknüpft mit ihrem Dualen Studium Theorie und Praxis. In 6 Semestern werden solide Fachkenntnisse und betriebspraktische Handlungskompetenz vermittelt. Jedes Semester besteht aus einem Halbsemester in der Studienakademie (Theorie) und einem Halbsemester im Unternehmen (Praxis). Die Staatliche Studienakademie Leipzig verbindet moderne Studieninhalte mit Praxisnähe und dem berufsbefähigenden Abschluss als Bachelor of Arts bzw. Bacherlor of Science. Die Vermittlungsquoten der Absolventen sind stetig auf hohem Niveau. Insgesamt nehmen durchschnittlich 95% der Absolventen ihre Tätigkeit in der Praxis auf.<br>Die Vorteile auf einen Blick: <ul><li> praxisintegriert und wissenschaftsgeleitet</li> <li>Vergütung durch den Praxispartner</li> <li>hohe Übernahme- und Vermittlungsrate</li> <li>keine bzw. sehr geringe Einarbeitungszeiten für Absolventen</li> </ul>" ;
     ld:Oeffnungszeiten "Mo bis Do 7:30-17:00 Uhr; Fr 7:30-15:00 Uhr" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Schulze_Susanne> ;
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.113> ;
-    foaf:mbox "susanne.schulze@ba-leipzig.de" ;
-    foaf:phone "0341-42743-331" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/BA-Leipzig> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-42743-404" ;
-    foaf:homepage <http://www.ba-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" .
+    rdfs:label "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" ;
+    foaf:homepage <http://www.ba-leipzig.de> ;
+    foaf:mbox "susanne.schulze@ba-leipzig.de" ;
+    foaf:phone "0341-42743-331", "0341-42743-404" .
 
 <http://leipzig-data.de/Data/Ort/BAFF>
     ld:Art "offener Kinder- und Jugendtreff" ;
     ld:Zielgruppe "Kinder und Jugendliche" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Pauli_Stev> ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.AmElsterwehr.4> ;
-    foaf:mbox "baffnet@gmx.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Buergerverein/Bachviertel> ;
-    foaf:phone "0341-9832814" ;
-    foaf:homepage <http://www.baffnet.de> ;
     a ld:Ort ;
     rdfs:comment "offener Kinder- und Jugendtreff" ;
-    rdfs:label "BAFF - Jugendtreff Bachviertel" .
+    rdfs:label "BAFF - Jugendtreff Bachviertel" ;
+    foaf:homepage <http://www.baffnet.de> ;
+    foaf:mbox "baffnet@gmx.de" ;
+    foaf:phone "0341-9832814" .
 
 <http://leipzig-data.de/Data/Ort/BDZ.Abwasser>
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.AnderLuppe.2> ;
@@ -277,12 +284,14 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/BasislagerCoworkingLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.14> ;
     a ld:Ort ;
-    rdfs:label "Basislager Coworking Leipzig" .
+    rdfs:label "Basislager Coworking Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.115>, <http://leipzig-data.de/Data/APIId/Venue.139> .
 
 <http://leipzig-data.de/Data/Ort/BayerischerBahnhof>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.BayrischerPlatz.1> ;
     a ld:Ort ;
-    rdfs:label "Gasthaus und Gosebrauerei Bayerischer Bahnhof" .
+    rdfs:label "Gasthaus und Gosebrauerei Bayerischer Bahnhof" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.81> .
 
 <http://leipzig-data.de/Data/Ort/BergbauTechnikPark>
     ld:hasAddress <http://leipzig-data.de/Data/04463.Grosspoesna.Hauptstrasse.19> ;
@@ -291,166 +300,155 @@ ld:Ort
     rdfs:label "Bergbau-Technik-Park e.V." .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Boehlitz-Ehrenberg>
-    foaf:phone "0341-49577833" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-4957780" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Böhlitz-Ehrenberg" .
+    rdfs:label "Bibliothek Böhlitz-Ehrenberg" ;
+    foaf:phone "0341-4957780", "0341-49577833" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Fahrbibliothek>
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0177-2507271", "0341-9420110" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Fahrbibliothek" .
+    rdfs:label "Bibliothek Fahrbibliothek" ;
+    foaf:phone "0177-2507271", "0341-9420110" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Gohlis>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Georg-Schumann-Strasse.105> ;
-    foaf:phone "0341-9102160" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-9013764" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Gohlis" .
+    rdfs:label "Bibliothek Gohlis" ;
+    foaf:phone "0341-9013764", "0341-9102160" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Mitte>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.15> ;
-    foaf:phone "0341-4111018" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-4111018" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Grünau-Mitte" .
+    rdfs:label "Bibliothek Grünau-Mitte" ;
+    foaf:phone "0341-4111018" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Nord>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.PlovdiverStrasse.40> ;
-    foaf:phone "0341-4110031" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-4110031" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Grünau-Nord" .
+    rdfs:label "Bibliothek Grünau-Nord" ;
+    foaf:phone "0341-4110031" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Sued>
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.AnderKotsche.11> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-9420115" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Grünau-Sued" .
+    rdfs:label "Bibliothek Grünau-Sued" ;
+    foaf:phone "0341-9420115" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Holzhausen>
     ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.Arthur-Polenz-Strasse.12> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "034297-45645" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Holzhausen" .
+    rdfs:label "Bibliothek Holzhausen" ;
+    foaf:phone "034297-45645" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Luetzschena-Stahmeln>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.AmBrunnen.4> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-123-5574" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Lützschena-Stahmeln" .
+    rdfs:label "Bibliothek Lützschena-Stahmeln" ;
+    foaf:phone "0341-123-5574" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Mockau>
     ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.EssenerStrasse.102> ;
-    foaf:phone "0341-6021303" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-6021303" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Mockau" .
+    rdfs:label "Bibliothek Mockau" ;
+    foaf:phone "0341-6021303" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Paunsdorf>
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Platanenstrasse.37> ;
-    foaf:phone "0341-2515534" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-2515534" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Paunsdorf" .
+    rdfs:label "Bibliothek Paunsdorf" ;
+    foaf:phone "0341-2515534" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Plagwitz>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.14> ;
-    foaf:phone "0341-4804375" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-4804375" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Plagwitz" .
+    rdfs:label "Bibliothek Plagwitz" ;
+    foaf:phone "0341-4804375" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Reudnitz>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.DresdnerStrasse.80> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-9901121" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Reudnitz" .
+    rdfs:label "Bibliothek Reudnitz" ;
+    foaf:phone "0341-9901121" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Schoenefeld>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Shukowstrasse.56> ;
-    foaf:phone "0341-2311392" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-2311392" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Schönefeld" .
+    rdfs:label "Bibliothek Schönefeld" ;
+    foaf:phone "0341-2311392" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Stadtbibliothek>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Wilhelm-Leuschner-Platz.10> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-123-5343" ;
     a ld:Ort ;
-    rdfs:label "Stadtbibliothek" .
+    rdfs:label "Stadtbibliothek" ;
+    foaf:phone "0341-123-5343" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Suedvorstadt>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Steinstrasse.42> ;
-    foaf:phone "0341-3015473" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-3015473" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Südvorstadt" .
+    rdfs:label "Bibliothek Südvorstadt" ;
+    foaf:phone "0341-3015473" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Volkmarsdorf>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.TorgauerPlatz.3> ;
-    foaf:phone "0341-6802021" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-6802019" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Volkmarsdorf" .
+    rdfs:label "Bibliothek Volkmarsdorf" ;
+    foaf:phone "0341-6802019", "0341-6802021" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Wiederitzsch>
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.ZurSchule.10> ;
-    foaf:phone "0341-5212443" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    foaf:phone "0341-5212439" ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Wiederitzsch" .
+    rdfs:label "Bibliothek Wiederitzsch" ;
+    foaf:phone "0341-5212439", "0341-5212443" .
 
 <http://leipzig-data.de/Data/Ort/BillHart>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Wolfgang-Heinze-Strasse.15> ;
@@ -459,9 +457,9 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/BioCity>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.5A> ;
-    foaf:homepage <http://bio-city-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "BioCity Leipzig" .
+    rdfs:label "BioCity Leipzig" ;
+    foaf:homepage <http://bio-city-leipzig.de> .
 
 <http://leipzig-data.de/Data/Ort/BootsanlegerRennbahnWeg>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Rennbahnweg.2A> ;
@@ -520,9 +518,9 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/BrunoPlacheStadion>
     ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.ConnewitzerStrasse.21> ;
-    foaf:homepage <http://www.bruno-plache-stadion.de/> ;
     a ld:Ort, ld:Stadium ;
-    rdfs:label "Bruno-Plache-Stadion" .
+    rdfs:label "Bruno-Plache-Stadion" ;
+    foaf:homepage <http://www.bruno-plache-stadion.de/> .
 
 <http://leipzig-data.de/Data/Ort/BundesamtNaturschutz>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Karl-Liebknecht-Strasse.143> ;
@@ -536,33 +534,34 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/CCL>
     ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.Messe-Allee.1> ;
-    foaf:homepage <http://www.ccl-leipzig.de/> ;
     a ld:Ort ;
-    rdfs:label "Congress Center Leipzig" .
+    rdfs:label "Congress Center Leipzig" ;
+    foaf:homepage <http://www.ccl-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Ort/CCLS>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Oelhafenstrasse.7> ;
-    foaf:mbox "ccls@luetzschena-stahmeln.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-4619814" ;
-    foaf:homepage <http://www.ccls-online.de> ;
     a ld:Ort ;
-    rdfs:label "Computerclub Lützschena-Stahmeln" .
+    rdfs:label "Computerclub Lützschena-Stahmeln" ;
+    foaf:homepage <http://www.ccls-online.de> ;
+    foaf:mbox "ccls@luetzschena-stahmeln.de" ;
+    foaf:phone "0341-4619814" .
 
 <http://leipzig-data.de/Data/Ort/Cafe.Grundmann>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.August-Bebel-Strasse.2> ;
-    foaf:homepage <http://www.cafe-grundmann.de> ;
     a ld:Cafe, ld:Ort ;
-    rdfs:label "Café Grundmann" .
+    rdfs:label "Café Grundmann" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.65> ;
+    foaf:homepage <http://www.cafe-grundmann.de> .
 
 <http://leipzig-data.de/Data/Ort/Cafe.Kaputt>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.102> ;
-    foaf:mbox "cafekaputt@lebenlernenleipzig.de" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/LebenLernenLeipzig> ;
-    foaf:homepage <http://reparieren-in-leipzig.de/>, <http://www.facebook.com/cafekaputt> ;
     a ld:Cafe, ld:Ort ;
-    rdfs:label "Café kaputt" .
+    rdfs:label "Café kaputt" ;
+    foaf:homepage <http://reparieren-in-leipzig.de/>, <http://www.facebook.com/cafekaputt> ;
+    foaf:mbox "cafekaputt@lebenlernenleipzig.de" .
 
 <http://leipzig-data.de/Data/Ort/Cafe.Pascucci>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomasgasse.2> ;
@@ -572,22 +571,28 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Cafe.Waldi>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.10> ;
-    foaf:mbox "cafewaldi@googlemail.com" ;
-    foaf:phone "0341-3373219" ;
-    foaf:phone "0341-4625667" ;
-    foaf:homepage <http://www.cafewaldi.de/> ;
     a ld:Cafe, ld:Ort ;
-    rdfs:label "Café Waldi" .
+    rdfs:label "Café Waldi" ;
+    foaf:homepage <http://www.cafewaldi.de/> ;
+    foaf:mbox "cafewaldi@googlemail.com" ;
+    foaf:phone "0341-3373219", "0341-4625667" .
+
+<http://leipzig-data.de/Data/Ort/Caffe.Pascucci>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.16> .
 
 <http://leipzig-data.de/Data/Ort/Caravan>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.19> ;
     a ld:Ort ;
-    rdfs:label "Caravan" .
+    rdfs:label "Caravan" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.111>, <http://leipzig-data.de/Data/APIId/Venue.112> .
 
 <http://leipzig-data.de/Data/Ort/Caravan.Projektladen>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.ZschocherscheStrasse.2A> ;
     a ld:Ort ;
     rdfs:label "Caravan Projektladen \"Sinn&amp;Sein\"" .
+
+<http://leipzig-data.de/Data/Ort/CaravanProjektladenSinnUndSein>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.137> .
 
 <http://leipzig-data.de/Data/Ort/Caritas.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.15> ;
@@ -596,30 +601,33 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/CentralKabarett>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Markt.9> ;
-    foaf:phone "341-52903052" ;
-    foaf:homepage <http://www.centralkabarett.de/> ;
     a ld:Kabarett, ld:Ort ;
-    rdfs:label "Leipziger Central Kabarett" .
+    rdfs:label "Leipziger Central Kabarett" ;
+    foaf:homepage <http://www.centralkabarett.de/> ;
+    foaf:phone "341-52903052" .
 
 <http://leipzig-data.de/Data/Ort/CentralPalastStoetteritz>
     ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.LangeReihe.6> ;
-    foaf:homepage <http://enk-location.de/centralpalast> ;
     a ld:Ort, ld:Theater ;
-    rdfs:label "Centralpalast Stötteritz" .
+    rdfs:label "Centralpalast Stötteritz" ;
+    foaf:homepage <http://enk-location.de/centralpalast> .
 
 <http://leipzig-data.de/Data/Ort/CentraltheaterLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bosestrasse.1> ;
-    foaf:homepage <http://www.centraltheater-leipzig.de> ;
     a ld:Ort, ld:Theater ;
-    rdfs:label "Centraltheater Leipzig", "Schauspiel Leipzig" .
+    rdfs:label "Centraltheater Leipzig", "Schauspiel Leipzig" ;
+    foaf:homepage <http://www.centraltheater-leipzig.de> .
+
+<http://leipzig-data.de/Data/Ort/Chemnitz.weltecho>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.75> .
 
 <http://leipzig-data.de/Data/Ort/CineStar>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Petersstrasse.44> ;
-    foaf:phone "341-3366300" ;
-    foaf:homepage <http://www.cinestar.de/de/kino/leipzig-cinestar/> ;
     a ld:Cinema, ld:Ort ;
     rdfs:comment "Theaterleiter: Rainer Weber" ;
-    rdfs:label "Cinestar" .
+    rdfs:label "Cinestar" ;
+    foaf:homepage <http://www.cinestar.de/de/kino/leipzig-cinestar/> ;
+    foaf:phone "341-3366300" .
 
 <http://leipzig-data.de/Data/Ort/Cineding>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.83> ;
@@ -629,7 +637,11 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Cinemabstruso>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Siemeringstrasse.20> ;
     a ld:Ort ;
-    rdfs:label "Cinemabstruso - unabhängige Filmgruppe Leipzig" .
+    rdfs:label "Cinemabstruso - unabhängige Filmgruppe Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.39>, <http://leipzig-data.de/Data/APIId/Venue.59>, <http://leipzig-data.de/Data/APIId/Venue.73> .
+
+<http://leipzig-data.de/Data/Ort/Cinemabstruso.Office>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.25> .
 
 <http://leipzig-data.de/Data/Ort/City-HochhausLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.9> ;
@@ -638,19 +650,19 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/CityTagungLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bruehl.54> ;
-    foaf:homepage <http://www.city-tagung-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "City Tagung Leipzig" .
+    rdfs:label "City Tagung Leipzig" ;
+    foaf:homepage <http://www.city-tagung-leipzig.de> .
 
 <http://leipzig-data.de/Data/Ort/Columbus.Umweltgarten>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Marschnerstrasse.22> ;
-    foaf:mbox "kontakt@natur-leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Umwelt ;
-    foaf:phone "0341-1491735" ;
-    foaf:homepage <http://www.natur-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Columbus - Umweltgarten" .
+    rdfs:label "Columbus - Umweltgarten" ;
+    foaf:homepage <http://www.natur-leipzig.de> ;
+    foaf:mbox "kontakt@natur-leipzig.de" ;
+    foaf:phone "0341-1491735" .
 
 <http://leipzig-data.de/Data/Ort/ComputerSpielSchule>
     ld:Art "Computerpool und Betreuung und Anleitung durch geschulte Pädagogen (innerhalb von Öffnungszeiten)" ;
@@ -664,15 +676,15 @@ ld:Ort
     ld:Zielstellung "Kompetenter Umgang von Kindern, Jugendlichen, Eltern und Pädagogen mit der Computerspiel- und Unterhaltungskultur" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Warkus_Hartmut> ;
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.2> ;
-    foaf:mbox "info@computerspielschule.org", "philipp@computerspielschule.org" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Medienpaedagogik> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-9735887", "0341-9735892" ;
-    foaf:homepage <http://www.computerspielschule.org> ;
     a ld:Ort ;
     rdfs:comment "Am 21. Juni 2011 fand die feierliche Wiedereröffnung der ComputerSpielSchule Leipzig statt. In ihren neuen Räumlichkeiten im Friedrich-Schiller-Gymnasium heißt es ab sofort wieder: Miteinander spielen! Gemeinsam entdecken! Voneinander lernen!" ;
-    rdfs:label "ComputerSpielSchule Leipzig" .
+    rdfs:label "ComputerSpielSchule Leipzig" ;
+    foaf:homepage <http://www.computerspielschule.org> ;
+    foaf:mbox "info@computerspielschule.org", "philipp@computerspielschule.org" ;
+    foaf:phone "0341-9735887", "0341-9735892" .
 
 <http://leipzig-data.de/Data/Ort/CongressCenterLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.Messe-Allee.1> ;
@@ -682,36 +694,39 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/ContemporaryUrban>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Kolonnadenstrasse.9> ;
     a ld:Ort ;
-    rdfs:label "cu - contemporary urban" .
+    rdfs:label "cu - contemporary urban" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.102>, <http://leipzig-data.de/Data/APIId/Venue.103> .
 
 <http://leipzig-data.de/Data/Ort/CreativApotheke>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Antonienstrasse.41> ;
-    foaf:mbox "creativapotheke-leipzig@email.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-4243735" ;
     a ld:Ort ;
-    rdfs:label "Creativ Apotheke" .
+    rdfs:label "Creativ Apotheke" ;
+    foaf:mbox "creativapotheke-leipzig@email.de" ;
+    foaf:phone "0341-4243735" .
 
 <http://leipzig-data.de/Data/Ort/Culturtraeger>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Kohlgartenstrasse.24> ;
     a ld:Ort ;
-    rdfs:label "Culturtraeger" .
+    rdfs:label "Culturtraeger" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.74> .
 
 <http://leipzig-data.de/Data/Ort/D21_Kunstraum>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Demmeringstrasse.21> ;
     a ld:Ort ;
-    rdfs:label "D21 Kunstraum Leipzig" .
+    rdfs:label "D21 Kunstraum Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.92> .
 
 <http://leipzig-data.de/Data/Ort/DNB.DBSM>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.1> ;
-    foaf:mbox "dbsm@d-nb.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/DeutscheNationalbibliothek> ;
     ld:hasTag ldtag:Museum ;
-    foaf:phone "0341-2271324" ;
-    foaf:homepage <http://www.d-nb.de> ;
     a ld:Ort ;
-    rdfs:label "Deutsches Buch- und Schriftmuseum der Deutschen Nationalbibliothek" .
+    rdfs:label "Deutsches Buch- und Schriftmuseum der Deutschen Nationalbibliothek" ;
+    foaf:homepage <http://www.d-nb.de> ;
+    foaf:mbox "dbsm@d-nb.de" ;
+    foaf:phone "0341-2271324" .
 
 <http://leipzig-data.de/Data/Ort/DW.Garskestrasse>
     ld:Hintergrund "Schulsozialarbeit wird seit 1996 durch die Diakonie Leipzig an der 90. Grundschule angeboten. Damit war Schulsozialarbeit an einer Grundschule erstmals in Leipzig vertreten. Am Förderzentrum für Erziehungshilfe wird Schulsozialarbeit seit 1998 angeboten und gehört damit zu einem der langjährigen Kooperationspartnern der Schulen." ;
@@ -720,47 +735,47 @@ ld:Ort
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/KE/DiakonischesWerk> ;
     ld:hasTag ldtag:MehrAlsChillen ;
-    foaf:homepage <http://www.diakonie-leipzig.de/kinder-jugend-evangelische-jugendhilfe.html> ;
     a ld:Ort ;
-    rdfs:label "Förderzentrum der Diakonie Leipzig" .
+    rdfs:label "Förderzentrum der Diakonie Leipzig" ;
+    foaf:homepage <http://www.diakonie-leipzig.de/kinder-jugend-evangelische-jugendhilfe.html> .
 
 <http://leipzig-data.de/Data/Ort/Darkflower>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.12> ;
-    foaf:mbox "marko@darkflower.de" ;
-    foaf:phone "34298-48577" ;
-    foaf:phone "163-6330011" ;
-    foaf:homepage <http://www.darkflower.de/> ;
     a ld:Club, ld:Ort ;
     rdfs:comment "Alternative Club", "Geschäftsführer: Marko Meyer", "Steuernummer: 231/248/10728", "zurSzene: Schwarzes Leipzig" ;
-    rdfs:label "Darkflower" .
+    rdfs:label "Darkflower" ;
+    foaf:homepage <http://www.darkflower.de/> ;
+    foaf:mbox "marko@darkflower.de" ;
+    foaf:phone "163-6330011", "34298-48577" .
 
 <http://leipzig-data.de/Data/Ort/DeutschesFotomuseum>
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.RaschwitzerStrasse.11> ;
-    foaf:homepage <http://www.fotomuseum.eu/> ;
     a ld:Ort ;
-    rdfs:label "Deutsches Fotomuseum" .
+    rdfs:label "Deutsches Fotomuseum" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.97> ;
+    foaf:homepage <http://www.fotomuseum.eu/> .
 
 <http://leipzig-data.de/Data/Ort/DieBrueckeLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Zollikoferstrasse.21> ;
-    foaf:mbox "hugo.gevers@gmail.com" ;
-    foaf:phone "0341-2467685" ;
-    foaf:homepage <http://www.die-bruecke-leipzig.de/> ;
     a ld:Ort, ld:YouthCenter ;
-    rdfs:label "Die Brücke Begegnungshaus" .
+    rdfs:label "Die Brücke Begegnungshaus" ;
+    foaf:homepage <http://www.die-bruecke-leipzig.de/> ;
+    foaf:mbox "hugo.gevers@gmail.com" ;
+    foaf:phone "0341-2467685" .
 
 <http://leipzig-data.de/Data/Ort/DieSCHAUPLATZ>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.BerlinerStrasse.69> ;
-    foaf:mbox "schauplatz@gtb-leipzig.de" ;
-    foaf:phone "0341/90998019" ;
-    foaf:phone "0341-9099800" ;
-    foaf:homepage <http://www.produktionsschuleleipzig.de/> ;
     a ld:Ort ;
-    rdfs:label "Die SCHAUPLATZ" .
+    rdfs:label "Die SCHAUPLATZ" ;
+    foaf:homepage <http://www.produktionsschuleleipzig.de/> ;
+    foaf:mbox "schauplatz@gtb-leipzig.de" ;
+    foaf:phone "0341-9099800", "0341/90998019" .
 
 <http://leipzig-data.de/Data/Ort/Distillery>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kurt-Eisner-Strasse.108> ;
     a ld:Ort ;
-    rdfs:label "Distillery" .
+    rdfs:label "Distillery" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.18> .
 
 <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle>
     ld:Art "außerschulische und Lehrplan begleitende Angebote zu den Themen „WASSER und ENERGIE erleben“" ;
@@ -772,15 +787,17 @@ ld:Ort
     ld:Zielstellung "Erlebnisorientierte Form der Umweltpädagogik, experimentelles Erkunden und praktische Beispiele für ressourcenschonenden Umgang mit Wasser und Energie" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Reschke_Katrin> ;
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Reschke_Volker> ;
-    foaf:phone "0341-33399734" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/GAZ> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-3389352" ;
-    foaf:homepage <http://www.doelitzer-wassermuehle.de/> ;
     a ld:Ort ;
     rdfs:comment "Auslastung Mai-Juni 100%, August - April ca. 80%" ;
-    rdfs:label "Dölitzer Wassermühle" .
+    rdfs:label "Dölitzer Wassermühle" ;
+    foaf:homepage <http://www.doelitzer-wassermuehle.de/> ;
+    foaf:phone "0341-33399734", "0341-3389352" .
+
+<http://leipzig-data.de/Data/Ort/DruckWerte>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.118> .
 
 <http://leipzig-data.de/Data/Ort/Duke>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Riemannstrasse.3> ;
@@ -789,12 +806,12 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/EineWelt.Arbeitsstelle>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Paul-List-Strasse.19> ;
-    foaf:mbox "juliane@einewelt-leipzig.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-3010143" ;
-    foaf:homepage <http://www.einewelt-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Eine Welt e.V. - Arbeitsstelle" .
+    rdfs:label "Eine Welt e.V. - Arbeitsstelle" ;
+    foaf:homepage <http://www.einewelt-leipzig.de> ;
+    foaf:mbox "juliane@einewelt-leipzig.de" ;
+    foaf:phone "0341-3010143" .
 
 <http://leipzig-data.de/Data/Ort/ErfinderKinder>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Spittastrasse.16> ;
@@ -803,54 +820,58 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Esse74>
     ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Rosenowstrasse.24> ;
-    foaf:mbox "esse74@arcor.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-6015823" ;
     a ld:Ort ;
-    rdfs:label "EssE 74 Internationaler Bund e.V., Verbund Lpz." .
+    rdfs:label "EssE 74 Internationaler Bund e.V., Verbund Lpz." ;
+    foaf:mbox "esse74@arcor.de" ;
+    foaf:phone "0341-6015823" .
 
 <http://leipzig-data.de/Data/Ort/EssentialExistenceGallery>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.93> ;
     a ld:Ort ;
     rdfs:comment "center for new media and interactiv art <br/> [open space]" ;
-    rdfs:label "essential existence gallery" .
+    rdfs:label "essential existence gallery" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.11> .
+
+<http://leipzig-data.de/Data/Ort/FOM>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.77> .
 
 <http://leipzig-data.de/Data/Ort/FZ.Arena>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.8> ;
-    foaf:mbox "arena-leipzig@froebel-gruppe.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/FroebelGruppe> ;
-    foaf:phone "0341-4299745" ;
-    foaf:homepage <http://www.Froebel-gruppe.de> ;
     a ld:Ort ;
-    rdfs:label "JZ ARENA" .
+    rdfs:label "JZ ARENA" ;
+    foaf:homepage <http://www.Froebel-gruppe.de> ;
+    foaf:mbox "arena-leipzig@froebel-gruppe.de" ;
+    foaf:phone "0341-4299745" .
 
 <http://leipzig-data.de/Data/Ort/FZ.Kanal28>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.AmKanal.28> ;
-    foaf:mbox "S.Scherbaum@wabe-leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/WABE> ;
-    foaf:phone "0341-4972415" ;
-    foaf:homepage <http://www.wabe-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "JZ am Kanal 28" .
+    rdfs:label "JZ am Kanal 28" ;
+    foaf:homepage <http://www.wabe-leipzig.de> ;
+    foaf:mbox "S.Scherbaum@wabe-leipzig.de" ;
+    foaf:phone "0341-4972415" .
 
 <http://leipzig-data.de/Data/Ort/FZ.Lichtblick>
     ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.Hauptstrasse.34> ;
-    foaf:mbox "familienzentrum-lichtblick@web.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-3542848" ;
-    foaf:homepage <http://www.familienzentrum-lichtblick.de> ;
     a ld:Ort ;
-    rdfs:label "Lichtblick e.V. - Familienzentrum Markkleeberg" .
+    rdfs:label "Lichtblick e.V. - Familienzentrum Markkleeberg" ;
+    foaf:homepage <http://www.familienzentrum-lichtblick.de> ;
+    foaf:mbox "familienzentrum-lichtblick@web.de" ;
+    foaf:phone "0341-3542848" .
 
 <http://leipzig-data.de/Data/Ort/FZ.Oskar>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Gabelsbergerstrasse.30> ;
-    foaf:mbox "JKZ_OSKAR@t-online.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-6865680" ;
     a ld:Ort ;
-    rdfs:label "JKZ O.S.K.A.R" .
+    rdfs:label "JKZ O.S.K.A.R" ;
+    foaf:mbox "JKZ_OSKAR@t-online.de" ;
+    foaf:phone "0341-6865680" .
 
 <http://leipzig-data.de/Data/Ort/FZ.Paradise>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Kurt-Tucholsky-Strasse.10> ;
@@ -867,10 +888,10 @@ ld:Ort
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
     ld:hasTag ldtag:MehrAlsChillen ;
-    foaf:phone "0341-4115002" ;
-    foaf:homepage <http://www.fril.de/voelle/> ;
     a ld:Ort ;
-    rdfs:label "FZ Völkerfreundschaft" .
+    rdfs:label "FZ Völkerfreundschaft" ;
+    foaf:homepage <http://www.fril.de/voelle/> ;
+    foaf:phone "0341-4115002" .
 
 <http://leipzig-data.de/Data/Ort/FahrradladenSattelfest>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Kolonnadenstrasse.18> ;
@@ -883,34 +904,34 @@ ld:Ort
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Caritas.Leipzig> ;
     ld:hasTag ldtag:MehrAlsChillen ;
-    foaf:homepage <http://www.caritas-leipzig.de/> ;
     a ld:Ort ;
-    rdfs:label "Caritas Kinder-, Jugend- und Familienzentrum Grünau" .
+    rdfs:label "Caritas Kinder-, Jugend- und Familienzentrum Grünau" ;
+    foaf:homepage <http://www.caritas-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Ort/Fauser>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.100> ;
     a ld:Ort ;
-    rdfs:label "Fauser" .
+    rdfs:label "Fauser" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.114> .
 
 <http://leipzig-data.de/Data/Ort/FeinkostLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.36> ;
     ld:hasBlog "http://feinkostblog.wordpress.com/" ;
-    foaf:mbox "feinkostbuero@yahoo.de" ;
-    foaf:phone "0341-9627757" ;
-    foaf:phone "0341-9627755" ;
-    foaf:homepage <http://www.feinkostgenossenschaft.de/> ;
     a ld:Ort ;
-    rdfs:label "Feinkost", "Kunst- und Gewerbegenossenschaft Feinkost eG" .
+    rdfs:label "Feinkost", "Kunst- und Gewerbegenossenschaft Feinkost eG" ;
+    foaf:homepage <http://www.feinkostgenossenschaft.de/> ;
+    foaf:mbox "feinkostbuero@yahoo.de" ;
+    foaf:phone "0341-9627755", "0341-9627757" .
 
 <http://leipzig-data.de/Data/Ort/FilmschuleLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.6> ;
-    foaf:mbox "Filmschuleleipzig@web.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/FilmschuleLeipzig> ;
-    foaf:phone "0341-2119158" ;
-    foaf:homepage <http://www.filmschule-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Filmschule Leipzig" .
+    rdfs:label "Filmschule Leipzig" ;
+    foaf:homepage <http://www.filmschule-leipzig.de> ;
+    foaf:mbox "Filmschuleleipzig@web.de" ;
+    foaf:phone "0341-2119158" .
 
 <http://leipzig-data.de/Data/Ort/Flowerpower>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Riemannstrasse.42> ;
@@ -925,17 +946,18 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/FotoschuleLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Waldstrasse.35> ;
     a ld:Ort ;
-    rdfs:label "Fotoschule Leipzig (Studio Golden Eyes)" .
+    rdfs:label "Fotoschule Leipzig (Studio Golden Eyes)" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.42> .
 
 <http://leipzig-data.de/Data/Ort/Frauenkultur>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Windscheidstrasse.51> ;
-    foaf:mbox "hallo@frauenkultur.leipzig.w4w.net" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Frauenkultur> ;
-    foaf:phone "0341-2130030" ;
-    foaf:homepage <http://www.frauenkultur-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Frauenkultur" .
+    rdfs:label "Frauenkultur" ;
+    foaf:homepage <http://www.frauenkultur-leipzig.de> ;
+    foaf:mbox "hallo@frauenkultur.leipzig.w4w.net" ;
+    foaf:phone "0341-2130030" .
 
 <http://leipzig-data.de/Data/Ort/Fraunhofer.MOEZ>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Neumarkt.9> ;
@@ -954,15 +976,14 @@ ld:Ort
     ld:Zielstellung "Spaß am Forschen und Entdecken bei Kindern von 4 bis 10 Jahren fördern und Ihnen dabei spielerisch die Welt erklären und Zugang zu naturwissenschaftlichen Themen bieten." ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Nagler_Petra> ;
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.AmRussischenGarten.2> ;
-    foaf:mbox "petra.nagler@fruehes-forschen.de" ;
-    foaf:phone "0341-6879080" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/FFS> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-6879080" ;
-    foaf:homepage <http://www.fruehes-forschen-sachsen.de> ;
     a ld:Ort ;
-    rdfs:label "Frühes Forschen Sachsen" .
+    rdfs:label "Frühes Forschen Sachsen" ;
+    foaf:homepage <http://www.fruehes-forschen-sachsen.de> ;
+    foaf:mbox "petra.nagler@fruehes-forschen.de" ;
+    foaf:phone "0341-6879080" .
 
 <http://leipzig-data.de/Data/Ort/Galerie.Koenitz>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Dittrichring.16> ;
@@ -984,15 +1005,15 @@ ld:Ort
     ld:Zielstellung "Kinder und Jugendliche für Wirtschaft und Technik begeistern, interdisziplinäre Herangehensweise" ;
     ld:engagedPerson <http://leipzig-data.de/Data/Person/TraegerNestler_Angelika> ;
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.97> ;
-    foaf:mbox "kontakt@g-a-r-a-g-e.com" ;
-    foaf:phone "0341-8708610" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Garage> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-870860" ;
-    foaf:homepage <http://www.g-a-r-a-g-e.com> ;
     a ld:Ort ;
-    rdfs:label "GaraGe - Technologiezentrum für Jugendliche" .
+    rdfs:label "GaraGe - Technologiezentrum für Jugendliche" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.51> ;
+    foaf:homepage <http://www.g-a-r-a-g-e.com> ;
+    foaf:mbox "kontakt@g-a-r-a-g-e.com" ;
+    foaf:phone "0341-870860", "0341-8708610" .
 
 <http://leipzig-data.de/Data/Ort/GeoWerkstatt>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19> ;
@@ -1002,20 +1023,21 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/GewandhausLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.8> ;
-    foaf:phone "0341-1270-280" ;
-    foaf:homepage <http://www.gewandhaus.de/> ;
     a ld:ConcertHall, ld:Ort ;
-    rdfs:label "Gewandhaus Leipzig" .
+    rdfs:label "Gewandhaus Leipzig" ;
+    foaf:homepage <http://www.gewandhaus.de/> ;
+    foaf:phone "0341-1270-280" .
 
 <http://leipzig-data.de/Data/Ort/GfZK>
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Friedrich_Alexandra>, <http://leipzig-data.de/Data/Person/Seik_Lena> ;
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Tauchnitz-Strasse.11> ;
-    foaf:mbox "foryou@gfzk.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-1408118" ;
-    foaf:homepage <http://www.gfzk.de> ;
     a ld:Ort ;
-    rdfs:label "Galerie für Zeitgenössische Kunst" .
+    rdfs:label "Galerie für Zeitgenössische Kunst" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.66> ;
+    foaf:homepage <http://www.gfzk.de> ;
+    foaf:mbox "foryou@gfzk.de" ;
+    foaf:phone "0341-1408118" .
 
 <http://leipzig-data.de/Data/Ort/GohliserSchloesschen>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Menckestrasse.23> ;
@@ -1034,10 +1056,13 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/HGBLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Waechterstrasse.11> ;
-    foaf:phone "341-21350" ;
-    foaf:homepage <http://www.hgb-leipzig.de/> ;
     a ld:Academy, ld:Ort ;
-    rdfs:label "Academy of Visual Arts Leipzig", "Hochschule für Grafik und Buchkunst" .
+    rdfs:label "Academy of Visual Arts Leipzig", "Hochschule für Grafik und Buchkunst" ;
+    foaf:homepage <http://www.hgb-leipzig.de/> ;
+    foaf:phone "341-21350" .
+
+<http://leipzig-data.de/Data/Ort/HTWK>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.24> .
 
 <http://leipzig-data.de/Data/Ort/HWK.BTZ>
     ld:hasAddress <http://leipzig-data.de/Data/04451.Borsdorf.Steinweg.3> ;
@@ -1064,31 +1089,34 @@ ld:Ort
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/HWK-Leipzig> ;
     ld:hasTag ldtag:MINT ;
-    foaf:homepage <http://www.haus-der-kleinen-forscher.de> ;
     a ld:Ort ;
     rdfs:comment "dauerhafte Fortsetzung geplant" ;
-    rdfs:label "Haus der kleinen Forscher" .
+    rdfs:label "Haus der kleinen Forscher" ;
+    foaf:homepage <http://www.haus-der-kleinen-forscher.de> .
 
 <http://leipzig-data.de/Data/Ort/Halle14>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
     ld:hasStatus "aktiv" ;
-    foaf:homepage <http://www.halle14.org> ;
     a ld:Ort ;
-    rdfs:label "Halle 14 - Zentrum für zeitgenössische Kunst" .
+    rdfs:label "Halle 14 - Zentrum für zeitgenössische Kunst" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.93> ;
+    foaf:homepage <http://www.halle14.org> .
 
 <http://leipzig-data.de/Data/Ort/Halle5>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Windscheidstrasse.51> ;
-    foaf:mbox "verein@halle5.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-3055860", "0341-3055866" ;
-    foaf:homepage <http://www.halle5.de> ;
     a ld:Ort ;
-    rdfs:label "Kinder- u. Jugendzentrum Halle 5 e.V." .
+    rdfs:label "Kinder- u. Jugendzentrum Halle 5 e.V." ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.96> ;
+    foaf:homepage <http://www.halle5.de> ;
+    foaf:mbox "verein@halle5.de" ;
+    foaf:phone "0341-3055860", "0341-3055866" .
 
 <http://leipzig-data.de/Data/Ort/Handelshochschule>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Jahnallee.59> ;
     a ld:Ort ;
-    rdfs:label "Handelshochschule" .
+    rdfs:label "Handelshochschule" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.34> .
 
 <http://leipzig-data.de/Data/Ort/Handwerkspassage>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Klostergasse.16> ;
@@ -1102,11 +1130,11 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Hauptfeuerwache>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goerdelerring.7> ;
-    foaf:mbox "joachim.petrasch@leipzig.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-1239512" ;
     a ld:Ort ;
-    rdfs:label "Hauptfeuerwache" .
+    rdfs:label "Hauptfeuerwache" ;
+    foaf:mbox "joachim.petrasch@leipzig.de" ;
+    foaf:phone "0341-1239512" .
 
 <http://leipzig-data.de/Data/Ort/HausAuensee>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Gustav-Esche-Strasse.4> ;
@@ -1115,52 +1143,54 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/HausSteinstrasse>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Steinstrasse.18> ;
-    foaf:mbox "michael.rausch@haus-steinstrasse.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/HausSteinstrasse> ;
-    foaf:phone "0341-3913219" ;
-    foaf:homepage <http://www.haus-steinstrasse.de> ;
     a ld:Ort ;
-    rdfs:label "Haus Steinstraße" .
+    rdfs:label "Haus Steinstraße" ;
+    foaf:homepage <http://www.haus-steinstrasse.de> ;
+    foaf:mbox "michael.rausch@haus-steinstrasse.de" ;
+    foaf:phone "0341-3913219" .
 
 <http://leipzig-data.de/Data/Ort/HdD>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
     a ld:Ort ;
-    rdfs:label "Haus der Demokratie" .
+    rdfs:label "Haus der Demokratie" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.39>, <http://leipzig-data.de/Data/APIId/Venue.40> .
 
 <http://leipzig-data.de/Data/Ort/HdG>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.6> ;
-    foaf:mbox "klein@hdg.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-2220126" ;
-    foaf:homepage <http://www.hdg.de> ;
     a ld:Ort ;
-    rdfs:label "Zeitgeschichtliches Forum Leipzig" .
+    rdfs:label "Zeitgeschichtliches Forum Leipzig" ;
+    foaf:homepage <http://www.hdg.de> ;
+    foaf:mbox "klein@hdg.de" ;
+    foaf:phone "0341-2220126" .
 
 <http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau>
     ld:Kurzinformation "Skate- und Jugendzentrum" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Bielig_Sven> ;
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.63> ;
-    foaf:mbox "info@heizhaus-leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/UrbanSouls> ;
     ld:hasTag ldtag:MehrAlsChillen ;
-    foaf:phone "341-46369100" ;
-    foaf:homepage <http://www.heizhaus-leipzig.de/> ;
     a ld:Ort, ld:YouthCenter ;
-    rdfs:label "Heizhaus Leipzig" .
+    rdfs:label "Heizhaus Leipzig" ;
+    foaf:homepage <http://www.heizhaus-leipzig.de/> ;
+    foaf:mbox "info@heizhaus-leipzig.de" ;
+    foaf:phone "341-46369100" .
 
 <http://leipzig-data.de/Data/Ort/Helheim>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.WeissenfelserStrasse.32> ;
-    foaf:phone "341-8706376" ;
     a ld:Bar, ld:Club, ld:Ort ;
     rdfs:comment "zurSzene: Metal" ;
-    rdfs:label "Helheim" .
+    rdfs:label "Helheim" ;
+    foaf:phone "341-8706376" .
 
 <http://leipzig-data.de/Data/Ort/HierUndJetzt>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.91> ;
     a ld:Ort ;
-    rdfs:label "Projektraum Hier und Jetzt im Tapetenwerk (Haus K)" .
+    rdfs:label "Projektraum Hier und Jetzt im Tapetenwerk (Haus K)" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.121>, <http://leipzig-data.de/Data/APIId/Venue.131> .
 
 <http://leipzig-data.de/Data/Ort/HoefeAmBruehl>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bruehl.1> ;
@@ -1170,12 +1200,14 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/HofFelgentreff>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Mittelstrasse.13> ;
     a ld:Ort ;
-    rdfs:label "Hof Felgentreff" .
+    rdfs:label "Hof Felgentreff" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.130> .
 
 <http://leipzig-data.de/Data/Ort/HornsErben>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Arndtstrasse.33> ;
     a ld:Ort ;
-    rdfs:label "Horns Erben" .
+    rdfs:label "Horns Erben" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.89> .
 
 <http://leipzig-data.de/Data/Ort/Hotel.Pologne>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.16> ;
@@ -1187,6 +1219,9 @@ ld:Ort
     a ld:Hotel, ld:Ort ;
     rdfs:label "RAMADA Hotel Leipzig" .
 
+<http://leipzig-data.de/Data/Ort/IHK>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.86> .
+
 <http://leipzig-data.de/Data/Ort/ISEI>
     ld:Kurzinformation "Verein zur Förderung von Berufs- und Studienorientierung für MINT- und STEM-Disziplinen in Verbindung mit praktischen Anwendungen aus dem Handwerk, sowie der Luft- und Raumfahrt. Interessenten können ein Betriebsparktikum im Verein und dessen angeschlossenen Unternehmen an konkreten Projekten absolvieren. Mitglieder und Interessenten mit besonderen Leistungen können an internationalen Wettbewerben teilnehmen, um die eigenen Bewerbungschancen für Studium und Beruf durch Skills und Referenzen zu verbessern." ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Heckel_Ralf> ;
@@ -1194,27 +1229,27 @@ ld:Ort
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/ISEI> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0172-7949375" ;
-    foaf:homepage <http://www.spaceeducation.de> ;
     a ld:Ort ;
-    rdfs:label "International Space Education Institute", "International Space Education Institute (ISEI)" .
+    rdfs:label "International Space Education Institute", "International Space Education Institute (ISEI)" ;
+    foaf:homepage <http://www.spaceeducation.de> ;
+    foaf:phone "0172-7949375" .
 
 <http://leipzig-data.de/Data/Ort/Igelschutzzentrum>
     ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Hornstrasse.9> ;
-    foaf:mbox "info@igelschutzzentrum.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Umwelt ;
-    foaf:phone "0341-4247662" ;
-    foaf:homepage <http://www.igelschutzzentrum.de> ;
     a ld:Ort ;
-    rdfs:label "Igelschutzzentrum" .
+    rdfs:label "Igelschutzzentrum" ;
+    foaf:homepage <http://www.igelschutzzentrum.de> ;
+    foaf:mbox "info@igelschutzzentrum.de" ;
+    foaf:phone "0341-4247662" .
 
 <http://leipzig-data.de/Data/Ort/IlsesErika>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-    foaf:phone "341-3065111" ;
-    foaf:homepage <http://www.ilseserika.de/> ;
     a ld:Bar, ld:Ort ;
-    rdfs:label "Ilses Erika" .
+    rdfs:label "Ilses Erika" ;
+    foaf:homepage <http://www.ilseserika.de/> ;
+    foaf:phone "341-3065111" .
 
 <http://leipzig-data.de/Data/Ort/Inspirata>
     ld:Auszeichnungen "2011 als Idee für die Bildungsrepublik (Initiative Deutschland – Land der Ideen unter Schirmherrschaft von Bundesbildungsministerin Prof. Dr. A. Schavan)", "Familienfreundlichkeitspreis 2010", "Leipziger Agenda-Preis 2011" ;
@@ -1229,26 +1264,27 @@ ld:Ort
     ld:contactPerson <http://leipzig-data.de/Data/Person/Petzschler_Ines> ;
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Klimesch_Holger>, <http://leipzig-data.de/Data/Person/Koenig_Wolfgang>, <http://leipzig-data.de/Data/Person/Petzschler_Ines> ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
-    foaf:mbox "kontakt@inspirata.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Inspirata> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-1259757" ;
-    foaf:homepage <http://www.inspirata.de> ;
     a ld:Ort ;
     rdfs:comment "Unterstützung durch Partner (Uni Leipzig, MPI MIS, SBA, HTWK Leipzig, Stadtverwaltung) und Sponsoren" ;
-    rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" .
+    rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" ;
+    foaf:homepage <http://www.inspirata.de> ;
+    foaf:mbox "kontakt@inspirata.de" ;
+    foaf:phone "0341-1259757" .
 
 <http://leipzig-data.de/Data/Ort/InterCityHotelLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Troendlinring.2> ;
     a ld:Hotel, ld:Ort ;
-    rdfs:label "InterCityHotel Leipzig" .
+    rdfs:label "InterCityHotel Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.142> .
 
 <http://leipzig-data.de/Data/Ort/KE-Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.5> ;
-    foaf:homepage <http://www.ke-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Kirchliche Erwerbsloseninitiative Leipzig" .
+    rdfs:label "Kirchliche Erwerbsloseninitiative Leipzig" ;
+    foaf:homepage <http://www.ke-leipzig.de> .
 
 <http://leipzig-data.de/Data/Ort/KJND.Gruenau>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Ringstrasse.4> ;
@@ -1258,40 +1294,41 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/KJZ.DieInsel>
     ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Buttergasse.9> ;
-    foaf:mbox "die-insel@kv-leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/KinderVereinigung.Leipzig> ;
-    foaf:phone "0341-4290217" ;
-    foaf:homepage <http://www.kv-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Kinder- und Jugendzentrum Die Insel" .
+    rdfs:label "Kinder- und Jugendzentrum Die Insel" ;
+    foaf:homepage <http://www.kv-leipzig.de> ;
+    foaf:mbox "die-insel@kv-leipzig.de" ;
+    foaf:phone "0341-4290217" .
 
 <http://leipzig-data.de/Data/Ort/KJZ.Probstheida>
     ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Franzosenallee.23> ;
-    foaf:mbox "KJFZZ@web.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-8614266" ;
     a ld:Ort ;
-    rdfs:label "Kinder- und Jugendfreizeitzentrum Probstheida" .
+    rdfs:label "Kinder- und Jugendfreizeitzentrum Probstheida" ;
+    foaf:mbox "KJFZZ@web.de" ;
+    foaf:phone "0341-8614266" .
 
 <http://leipzig-data.de/Data/Ort/Kabarett.LeipzigerBrettl>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Odermannstrasse.12> ;
-    foaf:phone "341-9613547" ;
-    foaf:homepage <http://www.leipzigerbrettl.de/> ;
     a ld:Kabarett, ld:Ort ;
-    rdfs:label "Kabarett Leipziger Brettl" .
+    rdfs:label "Kabarett Leipziger Brettl" ;
+    foaf:homepage <http://www.leipzigerbrettl.de/> ;
+    foaf:phone "341-9613547" .
 
 <http://leipzig-data.de/Data/Ort/Kaberett.Sanftwut>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.2> ;
-    foaf:phone "341-9612346" ;
-    foaf:homepage <http://www.kabarett-theater-sanftwut.de/> ;
     a ld:Kabarett, ld:Ort ;
-    rdfs:label "Kabarett Sanftwut" .
+    rdfs:label "Kabarett Sanftwut" ;
+    foaf:homepage <http://www.kabarett-theater-sanftwut.de/> ;
+    foaf:phone "341-9612346" .
 
 <http://leipzig-data.de/Data/Ort/Kaiserbad>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.93> ;
     a ld:Ort ;
-    rdfs:label "Kaiserbad, Westwerk" .
+    rdfs:label "Kaiserbad, Westwerk" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.127> .
 
 <http://leipzig-data.de/Data/Ort/Kameramuseum>
     ld:hasAddress <http://leipzig-data.de/Data/04316.Leipzig.Gottschalkstrasse.9> ;
@@ -1300,36 +1337,37 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/KanuparkMarkkleeberg>
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Wildwasserkehre.1> ;
-    foaf:homepage <http://www.kanupark-markkleeberg.com/> ;
     a ld:Ort ;
-    rdfs:label "Kanupark Markkleeberg" .
+    rdfs:label "Kanupark Markkleeberg" ;
+    foaf:homepage <http://www.kanupark-markkleeberg.com/> .
 
 <http://leipzig-data.de/Data/Ort/KaosLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Wasserstrasse.18> ;
-    foaf:mbox "info@kaos-leipzig.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-4803841" ;
-    foaf:homepage <http://www.kaos-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "KV Kulturwerkstatt KAOS" .
+    rdfs:label "KV Kulturwerkstatt KAOS" ;
+    foaf:homepage <http://www.kaos-leipzig.de> ;
+    foaf:mbox "info@kaos-leipzig.de" ;
+    foaf:phone "0341-4803841" .
 
 <http://leipzig-data.de/Data/Ort/Kapitaldruck>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rossplatz.11> ;
     a ld:Ort ;
     rdfs:comment "Buchladen mit Cafe" ;
-    rdfs:label "Kapitaldruck" .
+    rdfs:label "Kapitaldruck" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.19> .
 
 <http://leipzig-data.de/Data/Ort/KiJu.Gruenau>
     ld:Kurzinformation "Schwerpunkte der Arbeit: offene Kinder- und Jugendarbeit, erlebnispädagogische Projekte, Medienarbeit, Jugendbildung, Nachwuchsförderung und Ferienangebote." ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Roeser_Sascha> ;
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.HeilbronnerStrasse.16> ;
-    foaf:mbox "info-kijuleipzig@gmx.de", "kijuleipzig@gmx.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/KiJu.Gruenau> ;
-    foaf:phone "0341-4113196" ;
-    foaf:homepage <http://www.kijuleipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Kinder- u. Jugendtreff Grünau" .
+    rdfs:label "Kinder- u. Jugendtreff Grünau" ;
+    foaf:homepage <http://www.kijuleipzig.de> ;
+    foaf:mbox "info-kijuleipzig@gmx.de", "kijuleipzig@gmx.de" ;
+    foaf:phone "0341-4113196" .
 
 <http://leipzig-data.de/Data/Ort/Kickers_In>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.81> ;
@@ -1338,20 +1376,20 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/KinderBueroLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Rietschelstrasse.2> ;
-    foaf:mbox "lehwald@leipziger-kinderbuero.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-3375666" ;
-    foaf:homepage <http://www.leipziger-kinderbuero.de> ;
     a ld:Ort ;
-    rdfs:label "Leipziger Kinderbüro" .
+    rdfs:label "Leipziger Kinderbüro" ;
+    foaf:homepage <http://www.leipziger-kinderbuero.de> ;
+    foaf:mbox "lehwald@leipziger-kinderbuero.de" ;
+    foaf:phone "0341-3375666" .
 
 <http://leipzig-data.de/Data/Ort/KinderExperimentierKabinett>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.1> ;
-    foaf:mbox "fraenzle@debitel.net" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-2334582" ;
     a ld:Ort ;
-    rdfs:label "Kinder-Experimentier-Kabinett" .
+    rdfs:label "Kinder-Experimentier-Kabinett" ;
+    foaf:mbox "fraenzle@debitel.net" ;
+    foaf:phone "0341-2334582" .
 
 <http://leipzig-data.de/Data/Ort/Kirche.StMartin>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Kolpingweg.1> ;
@@ -1360,13 +1398,13 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Kirsche>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Schulzeweg.11> ;
-    foaf:mbox "kontakt@kinderhilfe-leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Kinderhilfe.Leipzig> ;
-    foaf:phone "0341-4211740" ;
-    foaf:homepage <http://www.kinderhilfe-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "OFT Kirsche" .
+    rdfs:label "OFT Kirsche" ;
+    foaf:homepage <http://www.kinderhilfe-leipzig.de> ;
+    foaf:mbox "kontakt@kinderhilfe-leipzig.de" ;
+    foaf:phone "0341-4211740" .
 
 <http://leipzig-data.de/Data/Ort/Kita.AmKirschberg>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AmKirschberg.39> ;
@@ -1383,15 +1421,14 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Kita.Forscherinsel>
     ld:Auszeichungen "2012 Haus der kleinen Forscher, LVZ 21.02.2012" ;
     ld:hasAddress <http://leipzig-data.de/Data/04420.Markranstaedt.AmAltenBahnhof.21a> ;
-    foaf:mbox "awo-kita-forscherinsel@web.de" ;
-    foaf:phone "034205-411382" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/AWO.LeipzigerLand> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "034205-411383" ;
-    foaf:homepage <http://kita-forscherinsel.npage.de>, <http://www.awo-leipzigerland.de/html/kita__forscherinsel__markranst.html> ;
     a ld:Ort ;
-    rdfs:label "Kita Forscherinsel Seebenisch" .
+    rdfs:label "Kita Forscherinsel Seebenisch" ;
+    foaf:homepage <http://kita-forscherinsel.npage.de>, <http://www.awo-leipzigerland.de/html/kita__forscherinsel__markranst.html> ;
+    foaf:mbox "awo-kita-forscherinsel@web.de" ;
+    foaf:phone "034205-411382", "034205-411383" .
 
 <http://leipzig-data.de/Data/Ort/Kita.Haeschengrube>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Breisgaustrasse.21A> ;
@@ -1433,7 +1470,8 @@ ld:Ort
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Muenzgasse.12> ;
     a ld:Ort ;
     rdfs:comment "Eine kleine Kneipe in unserer Straße" ;
-    rdfs:label "Kleine Träumerei" .
+    rdfs:label "Kleine Träumerei" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.10> .
 
 <http://leipzig-data.de/Data/Ort/KletterhalleNoLimit>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.DessauerStrasse.2> ;
@@ -1455,13 +1493,16 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "Königshauspassage" .
 
+<http://leipzig-data.de/Data/Ort/Kollaborat>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.20> .
+
 <http://leipzig-data.de/Data/Ort/KommHaus>
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SellinerStrasse.17> ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-9419132" ;
-    foaf:homepage <http://www.komm-haus.de> ;
     a ld:Ort ;
-    rdfs:label "KOMM-Haus Grünau" .
+    rdfs:label "KOMM-Haus Grünau" ;
+    foaf:homepage <http://www.komm-haus.de> ;
+    foaf:phone "0341-9419132" .
 
 <http://leipzig-data.de/Data/Ort/KongresshalleAmZoo>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.31> ;
@@ -1470,13 +1511,13 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Kreativzentrum.Gruenau>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.17> ;
-    foaf:mbox "Kreativzentrum@t-online.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Kreativzentrum.Gruenau> ;
-    foaf:phone "0341-4225393" ;
-    foaf:homepage <http://www.Kreativzentrum-Gruenau.de> ;
     a ld:Ort ;
-    rdfs:label "Kreativzentrum Grünau" .
+    rdfs:label "Kreativzentrum Grünau" ;
+    foaf:homepage <http://www.Kreativzentrum-Gruenau.de> ;
+    foaf:mbox "Kreativzentrum@t-online.de" ;
+    foaf:phone "0341-4225393" .
 
 <http://leipzig-data.de/Data/Ort/Kregeline>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> ;
@@ -1496,15 +1537,16 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/KrystallpalastVariete>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Magazingasse.4> ;
-    foaf:homepage <http://www.krystallpalast.de/> ;
     a ld:Ort, ld:Theater ;
-    rdfs:label "Krystallpalast Varieté" .
+    rdfs:label "Krystallpalast Varieté" ;
+    foaf:homepage <http://www.krystallpalast.de/> .
 
 <http://leipzig-data.de/Data/Ort/Kubus>
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
     ld:hasSupplier <http://leipzig-data.de/Data/UFZ> ;
     a ld:Ort ;
-    rdfs:label "Leipziger KUBUS (Helmholtz-Zentrum für Umweltforschung GmbH - UFZ)" .
+    rdfs:label "Leipziger KUBUS (Helmholtz-Zentrum für Umweltforschung GmbH - UFZ)" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.108> .
 
 <http://leipzig-data.de/Data/Ort/KuehnisFahrradhaus>
     ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Dieskaustrasse.459> ;
@@ -1514,7 +1556,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Kuenstlerhaus>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Kuhturmstrasse.6> ;
     a ld:Ort ;
-    rdfs:label "Künstlerhaus" .
+    rdfs:label "Künstlerhaus" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.120> .
 
 <http://leipzig-data.de/Data/Ort/KulturhausStoetteritz>
     ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.LangeReihe.6> ;
@@ -1529,21 +1572,28 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/LOFFT>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LindenauerMarkt.21> ;
     a ld:Ort ;
-    rdfs:label "LOFFT" .
+    rdfs:label "LOFFT" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.28> .
+
+<http://leipzig-data.de/Data/Ort/LeipzigOnRails>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.24> .
+
+<http://leipzig-data.de/Data/Ort/LeipzigSchoolOfDesign>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.41>, <http://leipzig-data.de/Data/APIId/Venue.61> .
 
 <http://leipzig-data.de/Data/Ort/LeipzigerFunzel>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.6> ;
-    foaf:phone "341-2117604" ;
-    foaf:homepage <http://www.leipziger-funzel.de/> ;
     a ld:Kabarett, ld:Ort ;
-    rdfs:label "Kabarett Leipziger Funzel" .
+    rdfs:label "Kabarett Leipziger Funzel" ;
+    foaf:homepage <http://www.leipziger-funzel.de/> ;
+    foaf:phone "341-2117604" .
 
 <http://leipzig-data.de/Data/Ort/LeipzigerPfeffermuehle>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
-    foaf:phone "341-9603196" ;
-    foaf:homepage <http://www.kabarett-leipziger-pfeffermuehle.de/> ;
     a ld:Kabarett, ld:Ort ;
-    rdfs:label "Kabarett Leipziger Pfeffermühle" .
+    rdfs:label "Kabarett Leipziger Pfeffermühle" ;
+    foaf:homepage <http://www.kabarett-leipziger-pfeffermuehle.de/> ;
+    foaf:phone "341-9603196" .
 
 <http://leipzig-data.de/Data/Ort/LiebfrauenLeipzigLindenau>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.110> ;
@@ -1558,7 +1608,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Lumalenscape>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.KoburgerStrasse.13> ;
     a ld:Ort ;
-    rdfs:label "Lumalenscape" .
+    rdfs:label "Lumalenscape" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.133> .
 
 <http://leipzig-data.de/Data/Ort/LuruKino>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
@@ -1567,18 +1618,24 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/MDR>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kantstrasse.71> ;
-    foaf:homepage <http://www.mdr.de> ;
     a ld:Ort ;
-    rdfs:label "MDR" .
+    rdfs:label "MDR" ;
+    foaf:homepage <http://www.mdr.de> .
 
 <http://leipzig-data.de/Data/Ort/MGH.LeipzigMitte>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Hinrichsenstrasse.14> ;
-    foaf:mbox "irg-projekt@gmx.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-2255745" ;
-    foaf:homepage <http://www.mehrgenerationenhaueser.de/Leipzig-mitte> ;
     a ld:Ort ;
-    rdfs:label "Mehrgenerationenhaus Leipzig Mitte" .
+    rdfs:label "Mehrgenerationenhaus Leipzig Mitte" ;
+    foaf:homepage <http://www.mehrgenerationenhaueser.de/Leipzig-mitte> ;
+    foaf:mbox "irg-projekt@gmx.de" ;
+    foaf:phone "0341-2255745" .
+
+<http://leipzig-data.de/Data/Ort/MIO>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Leipzig.Beethovenstrasse.21> ;
+    a ld:Ort, ld:Restaurant ;
+    rdfs:label "Restaurant MIO" ;
+    foaf:homepage <https://www.mio-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Ort/MJA.Leipzig>
     ld:Kurzinformation "Beratung. Unterstützung. Begleitung. Vermittlung. Information." ;
@@ -1586,9 +1643,9 @@ ld:Ort
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/MJA.Leipzig> ;
     ld:hasTag ldtag:MehrAlsChillen ;
-    foaf:homepage <http://kuebelonline.de/> ;
     a ld:Ort ;
-    rdfs:label "Mobile Jugendarbeit Leipzig" .
+    rdfs:label "Mobile Jugendarbeit Leipzig" ;
+    foaf:homepage <http://kuebelonline.de/> .
 
 <http://leipzig-data.de/Data/Ort/MPI-MIS>
     ld:Art "Vorträge, Schülerprojekte" ;
@@ -1599,20 +1656,20 @@ ld:Ort
     ld:Zielgruppe "Klassenstufe 9-12 Gymnasium" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Gregor_Jana> ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.22> ;
-    foaf:mbox "jgregor@mis.mpg.de" ;
-    foaf:phone "0341-9959658" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/MPI-MIS> ;
     ld:hasTag ldtag:Biologie, ldtag:Chemie, ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften, ldtag:Physik ;
-    foaf:phone "0341-9959650" ;
-    foaf:homepage <http://www.mis.mpg.de> ;
     a ld:Ort ;
-    rdfs:label "Max-Planck-Institut für Mathematik in den Naturwissenschaften" .
+    rdfs:label "Max-Planck-Institut für Mathematik in den Naturwissenschaften" ;
+    foaf:homepage <http://www.mis.mpg.de> ;
+    foaf:mbox "jgregor@mis.mpg.de" ;
+    foaf:phone "0341-9959650", "0341-9959658" .
 
 <http://leipzig-data.de/Data/Ort/MPI.EVA>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.6> ;
     a ld:Ort ;
-    rdfs:label "Max-Planck-Institut für evolutionäre Anthropologie" .
+    rdfs:label "Max-Planck-Institut für evolutionäre Anthropologie" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.62> .
 
 <http://leipzig-data.de/Data/Ort/MaedlerVilla>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Hans-Driesch-Strasse.2> ;
@@ -1628,7 +1685,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/MandalaSpieleck>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.147> ;
     a ld:Ort ;
-    rdfs:label "Mandala Spieleck" .
+    rdfs:label "Mandala Spieleck" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.79> .
 
 <http://leipzig-data.de/Data/Ort/Marktgalerie>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Markt.11> ;
@@ -1648,16 +1706,17 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/MediaCityLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.AltenburgerStrasse.13> ;
     a ld:Ort ;
-    rdfs:label "media city leipzig" .
+    rdfs:label "media city leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.35> .
 
 <http://leipzig-data.de/Data/Ort/Medienwerkstatt>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lessingstrasse.7> ;
-    foaf:mbox "kontakt@medienwerkstatt-leipzig.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-35520430" ;
-    foaf:homepage <http://www.medienwerkstatt-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Medienwerkstatt Leipzig" .
+    rdfs:label "Medienwerkstatt Leipzig" ;
+    foaf:homepage <http://www.medienwerkstatt-leipzig.de> ;
+    foaf:mbox "kontakt@medienwerkstatt-leipzig.de" ;
+    foaf:phone "0341-35520430" .
 
 <http://leipzig-data.de/Data/Ort/Mendelssohnhaus>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Goldschmidtstrasse.12> ;
@@ -1671,23 +1730,24 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/ModernMusicSchool>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Windmuehlenstrasse.26> ;
-    foaf:mbox "i.biedermann@modernmusicschool.com" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-2603459" ;
-    foaf:homepage <http://www.modernmusicschool.com> ;
     a ld:Ort ;
-    rdfs:label "Modern Music School" .
+    rdfs:label "Modern Music School" ;
+    foaf:homepage <http://www.modernmusicschool.com> ;
+    foaf:mbox "i.biedermann@modernmusicschool.com" ;
+    foaf:phone "0341-2603459" .
 
 <http://leipzig-data.de/Data/Ort/MonophonStudioLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.85> ;
     a ld:Ort ;
-    rdfs:label "MonophonStudio Leipzig" .
+    rdfs:label "MonophonStudio Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.128> .
 
 <http://leipzig-data.de/Data/Ort/Moritzbastei>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Universitaetsstrasse.9> ;
-    foaf:homepage <http://www.moritzbastei.de/> ;
     a ld:Ort ;
-    rdfs:label "Moritzbastei" .
+    rdfs:label "Moritzbastei" ;
+    foaf:homepage <http://www.moritzbastei.de/> .
 
 <http://leipzig-data.de/Data/Ort/Muehlstrasse.Begegnungsstaette>
     ld:Arbeitsformen "Projekte, Workshops, Kurse, Veranstaltungen" ;
@@ -1696,14 +1756,13 @@ ld:Ort
     ld:Zielgruppe "Kinder, Jugendliche, Familien, Senioren" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Hoernig_Karin> ;
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.14> ;
-    foaf:mbox "kontakt@muehlstrasse.de" ;
-    foaf:phone "0341-9903602" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Muehlstrasse> ;
-    foaf:phone "0341-9903600" ;
-    foaf:homepage <http://www.muehlstrasse.de> ;
     a ld:Ort ;
-    rdfs:label "Begegnungsstätte Mühlstraße" .
+    rdfs:label "Begegnungsstätte Mühlstraße" ;
+    foaf:homepage <http://www.muehlstrasse.de> ;
+    foaf:mbox "kontakt@muehlstrasse.de" ;
+    foaf:phone "0341-9903600", "0341-9903602" .
 
 <http://leipzig-data.de/Data/Ort/Muetterzentrum.Gruenau>
     ld:Kurzinformation "Wir haben einen offenen Treff mit Spiel- und Kommunikationsraum, welchen wir als Zentrum eines sozialen, generationsübergreifenden Netzwerkes mit großfamilienähnlichen Strukturen im Stadtteil sehen. Dieses Kernangebot wird durch vielfältige Angebote, z.B. im Bereich der Familienbildung, der Gesundheitsförderung und der Kultur ergänzt. " ;
@@ -1711,39 +1770,40 @@ ld:Ort
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Muetterzentrum> ;
     ld:hasTag ldtag:MehrAlsChillen ;
-    foaf:homepage <http://www.m\u00FCtterzentrum-leipzig.de/> ;
     a ld:Ort ;
-    rdfs:label "Müzel Familienzentrum Grünau" .
+    rdfs:label "Müzel Familienzentrum Grünau" ;
+    foaf:homepage <http://www.mütterzentrum-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Ort/Museum.BildendeKuenste>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.10> ;
-    foaf:mbox "mdbk@leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Museum ;
-    foaf:phone "0341-21699914" ;
-    foaf:homepage <http://www.mdbk.de> ;
     a ld:Ort ;
-    rdfs:label "Bildermuseum", "Museum der bildenden Künste" .
+    rdfs:label "Bildermuseum", "Museum der bildenden Künste" ;
+    foaf:homepage <http://www.mdbk.de> ;
+    foaf:mbox "mdbk@leipzig.de" ;
+    foaf:phone "0341-21699914" .
 
 <http://leipzig-data.de/Data/Ort/Museum.Druckkunst>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Nonnenstrasse.38> ;
-    foaf:mbox "info@druckkunst-museum.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Museum ;
-    foaf:phone "0341-231620" ;
-    foaf:homepage <http://www.druckkunst-museum.de> ;
     a ld:Ort ;
-    rdfs:label "Museum für Druckkunst" .
+    rdfs:label "Museum für Druckkunst" ;
+    foaf:homepage <http://www.druckkunst-museum.de> ;
+    foaf:mbox "info@druckkunst-museum.de" ;
+    foaf:phone "0341-231620" .
 
 <http://leipzig-data.de/Data/Ort/Museum.Grassi>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisplatz.5> ;
-    foaf:mbox "grassimuseum@leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Museum ;
-    foaf:phone "0341-2229114" ;
-    foaf:homepage <http://www.grassimuseum.de> ;
     a ld:Ort ;
-    rdfs:label "GRASSI Museum für angewandte Kunst" .
+    rdfs:label "GRASSI Museum für angewandte Kunst" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.76>, <http://leipzig-data.de/Data/APIId/Host.79>, <http://leipzig-data.de/Data/APIId/Venue.134> ;
+    foaf:homepage <http://www.grassimuseum.de> ;
+    foaf:mbox "grassimuseum@leipzig.de" ;
+    foaf:phone "0341-2229114" .
 
 <http://leipzig-data.de/Data/Ort/Museum.ImTrafohaus>
     ld:Kurzinformation "Elektrotechnik zum Anfassen. Über tausend Exponate dokumentieren in unserem kleinen Museum die Geschichte der Elektromaschinen. Eine umfangreiche Sammlung elektrotechnischer Geräte aus den Bereichen Industrie, Handwerk, Haushalt und Landwirtschaft zeigt Ihnen die rasante Entwicklung in den vergangenen 150 Jahren. Viele Exponate können wir in Betrieb nehmen und manches können Sie selbst ausprobieren. <br/> Wie vibriert mein Handy? Wie funktioniert ein Rasierapparat? Wie verstellen sich die Autoscheinwerfer? Wir zeigen es Ihnen! Erleben Sie interessante und kuriose Experimente mit Spannung, Strom und Widerstand." ;
@@ -1758,27 +1818,27 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Museum.Lipsikus>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Boettchergaesschen.3> ;
-    foaf:mbox "elke.schaar@leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Museum ;
-    foaf:phone "0341-9651340" ;
-    foaf:homepage <http://www.stadtgeschichtliches-museum-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Kinder- und Jugendmuseum LIPSIKUS" .
+    rdfs:label "Kinder- und Jugendmuseum LIPSIKUS" ;
+    foaf:homepage <http://www.stadtgeschichtliches-museum-leipzig.de> ;
+    foaf:mbox "elke.schaar@leipzig.de" ;
+    foaf:phone "0341-9651340" .
 
 <http://leipzig-data.de/Data/Ort/Musikinstrumentenmuseum>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisplatz.5> ;
-    foaf:mbox "musik.museum@uni-leipzig.de" ;
-    foaf:phone "0341-9730759" ;
-    foaf:phone "0341-9730750" ;
-    foaf:homepage <http://mfm.uni-leipzig.de> ;
     a ld:Museum, ld:Ort ;
-    rdfs:label "Museum für Musikinstrumente der Universität Leipzig" .
+    rdfs:label "Museum für Musikinstrumente der Universität Leipzig" ;
+    foaf:homepage <http://mfm.uni-leipzig.de> ;
+    foaf:mbox "musik.museum@uni-leipzig.de" ;
+    foaf:phone "0341-9730750", "0341-9730759" .
 
 <http://leipzig-data.de/Data/Ort/Musikpavillon>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Anton-Bruckner-Allee.11> ;
     a ld:Ort ;
-    rdfs:label "Musikpavillon Leipzig", "Musikpavillon im Clara-Zetkin-Park" .
+    rdfs:label "Musikpavillon Leipzig", "Musikpavillon im Clara-Zetkin-Park" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.78> .
 
 <http://leipzig-data.de/Data/Ort/NN>
     a ld:Ort ;
@@ -1793,98 +1853,103 @@ ld:Ort
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Lortzingstrasse.3> ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Museum ;
-    foaf:phone "0341-982210" ;
-    foaf:homepage <http://www.leipzig.de/naturkundemuseum> ;
     a ld:Ort ;
-    rdfs:label "Naturkundemuseum" .
+    rdfs:label "Naturkundemuseum" ;
+    foaf:homepage <http://www.leipzig.de/naturkundemuseum> ;
+    foaf:phone "0341-982210" .
 
 <http://leipzig-data.de/Data/Ort/NeueMesse>
     ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.Messe-Allee.1> ;
-    foaf:homepage <http://www.leipziger-messe.de/> ;
     a ld:Ort ;
-    rdfs:label "Neue Messe Leipzig" .
+    rdfs:label "Neue Messe Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.100>, <http://leipzig-data.de/Data/APIId/Venue.101> ;
+    foaf:homepage <http://www.leipziger-messe.de/> .
 
 <http://leipzig-data.de/Data/Ort/NeuesSchauspielLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.29> ;
     a ld:Ort ;
-    rdfs:label "Neues Schauspiel Leipzig" .
+    rdfs:label "Neues Schauspiel Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.68> .
 
 <http://leipzig-data.de/Data/Ort/Nikolaikirche>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaikirchhof.3> ;
-    foaf:mbox "pfarramt@nikolaikirche-leipzig.de" ;
-    foaf:phone "341-1245380-29" ;
-    foaf:phone "341-1245380" ;
-    foaf:homepage <http://www.nikolaikirche-leipzig.de/> ;
     a ld:Church, ld:Ort ;
     rdfs:comment "Evangelisch-Lutherisch" ;
-    rdfs:label "Nikolaikirche" .
+    rdfs:label "Nikolaikirche" ;
+    foaf:homepage <http://www.nikolaikirche-leipzig.de/> ;
+    foaf:mbox "pfarramt@nikolaikirche-leipzig.de" ;
+    foaf:phone "341-1245380", "341-1245380-29" .
 
 <http://leipzig-data.de/Data/Ort/Nikolaikirchhof>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaikirchhof.2> ;
     a ld:Ort ;
     rdfs:label "Nikolaikirchhof" .
 
+<http://leipzig-data.de/Data/Ort/NochBesserLeben>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.38> .
+
 <http://leipzig-data.de/Data/Ort/NoelsBallroom>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kurt-Eisner-Strasse.43> ;
     a ld:Ort ;
-    rdfs:label "Noels Ballroom" .
+    rdfs:label "Noels Ballroom" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.113> .
 
 <http://leipzig-data.de/Data/Ort/OFT.Bagger>
     ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.KlingenthalerStrasse.14> ;
-    foaf:mbox "oft-bagger@web.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-9211130" ;
     a ld:Ort ;
-    rdfs:label "OFT Am Bagger" .
+    rdfs:label "OFT Am Bagger" ;
+    foaf:mbox "oft-bagger@web.de" ;
+    foaf:phone "0341-9211130" .
 
 <http://leipzig-data.de/Data/Ort/OFT.Crazy>
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.ZumWaeldchen.6> ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-2511424" ;
     a ld:Ort ;
-    rdfs:label "OFT Crazy" .
+    rdfs:label "OFT Crazy" ;
+    foaf:phone "0341-2511424" .
 
 <http://leipzig-data.de/Data/Ort/OFT.Muehlholz>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Prinz-Eugen-Strasse.34> ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-3013004" ;
-    foaf:homepage <http://www.oft-muehlholz.de> ;
     a ld:Ort ;
-    rdfs:label "OFT Am Mühlholz" .
+    rdfs:label "OFT Am Mühlholz" ;
+    foaf:homepage <http://www.oft-muehlholz.de> ;
+    foaf:phone "0341-3013004" .
 
 <http://leipzig-data.de/Data/Ort/OFT.Rabet>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.54> ;
-    foaf:mbox "oft-rabet@web.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-6995598" ;
-    foaf:homepage <http://www.oft-rabet.de> ;
     a ld:Ort ;
-    rdfs:label "OFT Rabet" .
+    rdfs:label "OFT Rabet" ;
+    foaf:homepage <http://www.oft-rabet.de> ;
+    foaf:mbox "oft-rabet@web.de" ;
+    foaf:phone "0341-6995598" .
 
 <http://leipzig-data.de/Data/Ort/OFT.Sellershausen>
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.PuechauerStrasse.4> ;
-    foaf:mbox "club-sellerhausen@gmx.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig> ;
-    foaf:phone "0341-2301023" ;
     a ld:Ort ;
-    rdfs:label "OFT Club Sellerhausen" .
+    rdfs:label "OFT Club Sellerhausen" ;
+    foaf:mbox "club-sellerhausen@gmx.de" ;
+    foaf:phone "0341-2301023" .
 
 <http://leipzig-data.de/Data/Ort/OFT.TanteHedwig>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Hedwigstrasse.7> ;
-    foaf:mbox "Tante-Hedwig.leipzig@internationaler-bund.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig> ;
-    foaf:phone "0341-688-46-96" ;
     a ld:Ort ;
-    rdfs:label "OFT Tante Hedwig" .
+    rdfs:label "OFT Tante Hedwig" ;
+    foaf:mbox "Tante-Hedwig.leipzig@internationaler-bund.de" ;
+    foaf:phone "0341-688-46-96" .
 
 <http://leipzig-data.de/Data/Ort/OFT.Zirkel>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.LangeStrasse.25> ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-6881746" ;
     a ld:Ort ;
-    rdfs:label "OFT Zirkel" .
+    rdfs:label "OFT Zirkel" ;
+    foaf:phone "0341-6881746" .
 
 <http://leipzig-data.de/Data/Ort/OekobadLindenthal>
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.AmFreibad.3> ;
@@ -1905,13 +1970,13 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Oekoschule.Agrapark>
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.AmFestanger.8> ;
-    foaf:mbox "ökoschule-markkleeberg@gmx.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Umwelt ;
-    foaf:phone "0341-3504766" ;
-    foaf:homepage <http://www.kultur-und-umweltzentrum.de> ;
     a ld:Ort ;
-    rdfs:label "agra-Park Ökoschule" .
+    rdfs:label "agra-Park Ökoschule" ;
+    foaf:homepage <http://www.kultur-und-umweltzentrum.de> ;
+    foaf:mbox "ökoschule-markkleeberg@gmx.de" ;
+    foaf:phone "0341-3504766" .
 
 <http://leipzig-data.de/Data/Ort/Oekoschule.Markkleeberg>
     ld:Art "Ökoschule und grünes Klassenzimmer, Unterricht im Grünen, Projekttage, Schulfeste, Klassenfeste und Kindergeburtstage" ;
@@ -1923,20 +1988,20 @@ ld:Ort
     ld:Zielstellung "aktive Auseinandersetzung mit der Natur und \"Unterricht im Grünen\" oder verschiedebe Projekttage" ;
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Schwarze_Wolfgang> ;
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Kirchstrasse.42> ;
-    foaf:mbox "oekoschule-markkleeberg@gmx.de" ;
-    foaf:phone "0341-3381143" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/KUZ> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-3381142" ;
-    foaf:homepage <http://www.kultur-und-umweltzentrum.de> ;
     a ld:Ort ;
-    rdfs:label "Ökoschule Markkleeberg" .
+    rdfs:label "Ökoschule Markkleeberg" ;
+    foaf:homepage <http://www.kultur-und-umweltzentrum.de> ;
+    foaf:mbox "oekoschule-markkleeberg@gmx.de" ;
+    foaf:phone "0341-3381142", "0341-3381143" .
 
 <http://leipzig-data.de/Data/Ort/PILOT>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bosestrasse.1> ;
     a ld:Ort ;
-    rdfs:label "PILOT" .
+    rdfs:label "PILOT" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.58> .
 
 <http://leipzig-data.de/Data/Ort/PanometerLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Richard-Lehmann-Strasse.114> ;
@@ -1946,26 +2011,24 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/PanoramaTower>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.9> ;
     ld:hasAddressAddendum "29. Etage des City-Hochhauses" ;
-    foaf:phone "0341-7100589" ;
-    foaf:phone "0341-7100590" ;
-    foaf:homepage <http://www.panorama-leipzig.de/> ;
     a ld:Ort, ld:Restaurant ;
-    rdfs:label "Panorama Tower" .
+    rdfs:label "Panorama Tower" ;
+    foaf:homepage <http://www.panorama-leipzig.de/> ;
+    foaf:phone "0341-7100589", "0341-7100590" .
 
 <http://leipzig-data.de/Data/Ort/PassageKinos>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.19A> ;
-    foaf:mbox "info@passage-kinos.de" ;
-    foaf:phone "341.2173870" ;
-    foaf:phone "341-2173862" ;
-    foaf:homepage <http://www.passage-kinos.de/> ;
     a ld:Cinema, ld:Ort ;
-    rdfs:label "Passage Kinos" .
+    rdfs:label "Passage Kinos" ;
+    foaf:homepage <http://www.passage-kinos.de/> ;
+    foaf:mbox "info@passage-kinos.de" ;
+    foaf:phone "341-2173862", "341.2173870" .
 
 <http://leipzig-data.de/Data/Ort/PaulGerhardtKirche>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Selneckerstrasse.7> ;
-    foaf:homepage <http://www.kirche-leipzig.de/connewitz-loessnig/paulgerhardtkirche.htm> ;
     a ld:Ort ;
-    rdfs:label "Paul-Gerhardt-Kirche" .
+    rdfs:label "Paul-Gerhardt-Kirche" ;
+    foaf:homepage <http://www.kirche-leipzig.de/connewitz-loessnig/paulgerhardtkirche.htm> .
 
 <http://leipzig-data.de/Data/Ort/Petersbogen>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Petersstrasse.36> ;
@@ -1984,13 +2047,16 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Phyllodrom>
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.DelitzscherLandstrasse.38> ;
-    foaf:mbox "info@Phyllodrom.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Umwelt ;
-    foaf:phone "0341-5257757" ;
-    foaf:homepage <http://wwww.Phyllodrom.de> ;
     a ld:Ort ;
-    rdfs:label "Phyllodrom e.V. - Museum und Institut für Regenwaldökologie" .
+    rdfs:label "Phyllodrom e.V. - Museum und Institut für Regenwaldökologie" ;
+    foaf:homepage <http://wwww.Phyllodrom.de> ;
+    foaf:mbox "info@Phyllodrom.de" ;
+    foaf:phone "0341-5257757" .
+
+<http://leipzig-data.de/Data/Ort/Plan-B>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.117>, <http://leipzig-data.de/Data/APIId/Venue.12> .
 
 <http://leipzig-data.de/Data/Ort/PlanB>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Haertelstrasse.21> ;
@@ -2000,20 +2066,19 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Plaussig.NaturSchutzStation>
     ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.PlaussigerDorfstrasse.23> ;
-    foaf:mbox "auwaldstation@t-online.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/ZV_Parthenaue> ;
-    foaf:phone "034298-68665" ;
     a ld:Ort ;
-    rdfs:label "Naturschutzstation Plaußig" .
+    rdfs:label "Naturschutzstation Plaußig" ;
+    foaf:mbox "auwaldstation@t-online.de" ;
+    foaf:phone "034298-68665" .
 
 <http://leipzig-data.de/Data/Ort/PolnischesInstitut>
     ld:contactPerson <http://leipzig-data.de/Data/Person/Karwen_Bernd> ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Markt.10> ;
-    foaf:phone "0341-7026127" ;
-    foaf:phone "0341-7026113" ;
     a ld:Ort ;
-    rdfs:label "Polnisches Institut Berlin – Filiale Leipzig" .
+    rdfs:label "Polnisches Institut Berlin – Filiale Leipzig" ;
+    foaf:phone "0341-7026113", "0341-7026127" .
 
 <http://leipzig-data.de/Data/Ort/Postbank.Egelstrasse>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Egelstrasse.3> ;
@@ -2028,7 +2093,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Prellbock>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Nonnenstrasse.42> ;
     a ld:Ort ;
-    rdfs:label "Prellbock" .
+    rdfs:label "Prellbock" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.141> .
 
 <http://leipzig-data.de/Data/Ort/QM.Gruenau>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.21> ;
@@ -2040,15 +2106,14 @@ ld:Ort
     ld:Zielstellung "Junge Leute erfahren hier, dass Themen wie Technik und Ökologie durchaus auch Spaß machen können." ;
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Messerschmidt_Elk> ;
     ld:hasAddress <http://leipzig-data.de/Data/04509.Rabutz.BageritzerWeg.1> ;
-    foaf:mbox "info@rennstall-rabutz.de" ;
-    foaf:phone "034207-73597" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Rabutz.TOeP> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "034207-73595" ;
-    foaf:homepage <http://www.rennstall-rabutz.de> ;
     a ld:Ort ;
-    rdfs:label "Technisch ökologisches Jugendprojektzentrum Rabutz" .
+    rdfs:label "Technisch ökologisches Jugendprojektzentrum Rabutz" ;
+    foaf:homepage <http://www.rennstall-rabutz.de> ;
+    foaf:mbox "info@rennstall-rabutz.de" ;
+    foaf:phone "034207-73595", "034207-73597" .
 
 <http://leipzig-data.de/Data/Ort/Rathausturm>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
@@ -2058,31 +2123,33 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/RaumstationCoworkingLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.91> ;
     a ld:Ort ;
-    rdfs:label "Raumstation Coworking Leipzig im Tapetenwerk" .
+    rdfs:label "Raumstation Coworking Leipzig im Tapetenwerk" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.132> .
 
 <http://leipzig-data.de/Data/Ort/Regenwaldzentrum>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.SchleussigerWeg.1> ;
-    foaf:mbox "regenwaldzentrum@nabu-sachsen.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/NABU.Leipzig> ;
     ld:hasTag ldtag:Umwelt ;
-    foaf:phone "0341-3014025" ;
-    foaf:homepage <http://www.nabu-sachsen.de> ;
     a ld:Ort ;
-    rdfs:label "Regenwaldzentrum" .
+    rdfs:label "Regenwaldzentrum" ;
+    foaf:homepage <http://www.nabu-sachsen.de> ;
+    foaf:mbox "regenwaldzentrum@nabu-sachsen.de" ;
+    foaf:phone "0341-3014025" .
 
 <http://leipzig-data.de/Data/Ort/ReginaPalast>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.DresdnerStrasse.56> ;
-    foaf:mbox "info@bofimax.de" ;
-    foaf:phone "0341-6492111" ;
-    foaf:homepage <http://www.bofimax.de/NET/main_reginaleipzig.html> ;
     a ld:Cinema, ld:Ort ;
-    rdfs:label "Regina Capitol GmbH", "Regina Leipzig", "Regina Palast" .
+    rdfs:label "Regina Capitol GmbH", "Regina Leipzig", "Regina Palast" ;
+    foaf:homepage <http://www.bofimax.de/NET/main_reginaleipzig.html> ;
+    foaf:mbox "info@bofimax.de" ;
+    foaf:phone "0341-6492111" .
 
 <http://leipzig-data.de/Data/Ort/Riquet>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Salzgaesschen.6> ;
     a ld:Ort ;
-    rdfs:label "Riquet" .
+    rdfs:label "Riquet" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.31> .
 
 <http://leipzig-data.de/Data/Ort/RittergutMoeckern>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Bucksdorffstrasse.43> ;
@@ -2091,10 +2158,10 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/RussischeGedaechtniskirche>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Philipp-Rosenthal-Strasse.51A> ;
-    foaf:phone "341-8781453" ;
-    foaf:homepage <http://www.russische-kirche-l.de/> ;
     a ld:Church, ld:Ort ;
-    rdfs:label "Russische Gedächtniskirche" .
+    rdfs:label "Russische Gedächtniskirche" ;
+    foaf:homepage <http://www.russische-kirche-l.de/> ;
+    foaf:phone "341-8781453" .
 
 <http://leipzig-data.de/Data/Ort/SWL.EuZ>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
@@ -2104,29 +2171,31 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/SWL.GuD-Anlage>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.EutritzscherStrasse.14> ;
     a ld:Ort ;
-    rdfs:label "Stadtwerke Leipzig (GuD-Anlage)" .
+    rdfs:label "Stadtwerke Leipzig (GuD-Anlage)" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.36> .
 
 <http://leipzig-data.de/Data/Ort/SansvoixModernArt>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.BrandenburgerStrasse.2> ;
     a ld:Ort ;
-    rdfs:label "Sansvoix modern art / K3 Lounge" .
+    rdfs:label "Sansvoix modern art / K3 Lounge" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.87> .
 
 <http://leipzig-data.de/Data/Ort/SchaubuehneLindenfels>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.50> ;
-    foaf:mbox "service@schaubuehne.com" ;
-    foaf:phone "0341-484620" ;
-    foaf:homepage <http://www.schaubuehne.com/> ;
     a ld:Cafe, ld:Cinema, ld:Ort ;
-    rdfs:label "Schaubühne Lindenfels" .
+    rdfs:label "Schaubühne Lindenfels" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.63> ;
+    foaf:homepage <http://www.schaubuehne.com/> ;
+    foaf:mbox "service@schaubuehne.com" ;
+    foaf:phone "0341-484620" .
 
 <http://leipzig-data.de/Data/Ort/SchauburgLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Antonienstrasse.21> ;
-    foaf:mbox "info@schauburg-leipzig.de" ;
-    foaf:phone "0341-477-37-24" ;
-    foaf:phone "0341-424-46-41" ;
-    foaf:homepage <http://www.kino-am-adler.de/> ;
     a ld:Cinema, ld:Ort ;
-    rdfs:label "Kino am Adler", "Schauburg Leipzig" .
+    rdfs:label "Kino am Adler", "Schauburg Leipzig" ;
+    foaf:homepage <http://www.kino-am-adler.de/> ;
+    foaf:mbox "info@schauburg-leipzig.de" ;
+    foaf:phone "0341-424-46-41", "0341-477-37-24" .
 
 <http://leipzig-data.de/Data/Ort/Schillerhaus>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Menckestrasse.42> ;
@@ -2135,14 +2204,17 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Schloss.Luetzschena>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.9E> ;
-    foaf:homepage <http://www.schloss-luetzschena.de> ;
     a ld:Ort ;
-    rdfs:label "Schloss Lützschena" .
+    rdfs:label "Schloss Lützschena" ;
+    foaf:homepage <http://www.schloss-luetzschena.de> .
 
 <http://leipzig-data.de/Data/Ort/Schloss.Schoenefeld>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Zeumerstrasse.1> ;
     a ld:Ort ;
     rdfs:label "Schloss Schönefeld" .
+
+<http://leipzig-data.de/Data/Ort/SchlossSchoenefeld>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.71> .
 
 <http://leipzig-data.de/Data/Ort/ScholaOecologica>
     ld:hasAddress <http://leipzig-data.de/Data/04463.Grosspoesna.Rittergutshof.7> ;
@@ -2152,7 +2224,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/SchoolOfMedia>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Poetenweg.28> ;
     a ld:Ort ;
-    rdfs:label "Leipzig School of Media" .
+    rdfs:label "Leipzig School of Media" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.27>, <http://leipzig-data.de/Data/APIId/Venue.37> .
 
 <http://leipzig-data.de/Data/Ort/Schreberbad>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Schreberstrasse.15> ;
@@ -2176,18 +2249,16 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/SchulmuseumLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Goerdelerring.20> ;
-    foaf:phone "0341-2155843" ;
-    foaf:phone "0341-2130568" ;
-    foaf:homepage <http://www.schulmuseum-leipzig.de/> ;
     a ld:Museum, ld:Ort ;
-    rdfs:label "Schulmuseum Leipzig" .
+    rdfs:label "Schulmuseum Leipzig" ;
+    foaf:homepage <http://www.schulmuseum-leipzig.de/> ;
+    foaf:phone "0341-2130568", "0341-2155843" .
 
 <http://leipzig-data.de/Data/Ort/Schulungszentrum.Mommsenstrasse>
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Mommsenstrasse.4> ;
-    foaf:phone "0341-4943921" ;
-    foaf:phone "0341-494390" ;
     a ld:Ort ;
-    rdfs:label "Drechslertechnik GmbH - Schulungszentrum Mommsenstraße" .
+    rdfs:label "Drechslertechnik GmbH - Schulungszentrum Mommsenstraße" ;
+    foaf:phone "0341-494390", "0341-4943921" .
 
 <http://leipzig-data.de/Data/Ort/Schwimmhalle.Mitte>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Kirschbergstrasse.84> ;
@@ -2221,10 +2292,10 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Sixtina>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.11> ;
-    foaf:phone "0175-1464694" ;
-    foaf:homepage <http://www.sixtina.de/> ;
     a ld:Bar, ld:Ort ;
-    rdfs:label "Absintherie Sixtina" .
+    rdfs:label "Absintherie Sixtina" ;
+    foaf:homepage <http://www.sixtina.de/> ;
+    foaf:phone "0175-1464694" .
 
 <http://leipzig-data.de/Data/Ort/SleepyLionHostel>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Jacobstrasse.8> ;
@@ -2234,7 +2305,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/SocialImpactLabLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.WeissenfelserStrasse.65H> ;
     a ld:Ort ;
-    rdfs:label "Social Impact Lab Leipzig" .
+    rdfs:label "Social Impact Lab Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.140> .
 
 <http://leipzig-data.de/Data/Ort/Sommerbad.Kleinzschorcher>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Kuechenholzallee.75> ;
@@ -2258,12 +2330,12 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/SpinnereiLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
-    foaf:mbox "mail@spinnerei.de" ;
-    foaf:phone "0341-4980375" ;
-    foaf:phone "0341-4980200" ;
-    foaf:homepage <http://www.spinnerei.de/> ;
     a ld:Ort ;
-    rdfs:label "Leipziger Baumwollspinnerei", "Spinnerei" .
+    rdfs:label "Leipziger Baumwollspinnerei", "Spinnerei" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.99> ;
+    foaf:homepage <http://www.spinnerei.de/> ;
+    foaf:mbox "mail@spinnerei.de" ;
+    foaf:phone "0341-4980200", "0341-4980375" .
 
 <http://leipzig-data.de/Data/Ort/Spizz>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Markt.9> ;
@@ -2278,7 +2350,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/SportforumLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.AmSportforum.3> ;
     a ld:Ort ;
-    rdfs:label "Sportforum Leipzig" .
+    rdfs:label "Sportforum Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.53>, <http://leipzig-data.de/Data/APIId/Venue.54> .
 
 <http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
@@ -2317,6 +2390,9 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "Stadtteilladen Leipziger Westen" .
 
+<http://leipzig-data.de/Data/Ort/StadtteilladenLeipzigerWesten>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.124> .
+
 <http://leipzig-data.de/Data/Ort/Stadtweit>
     a ld:Ort ;
     rdfs:label "Stadtweites Ereignis" .
@@ -2334,10 +2410,13 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/StarlightBowling>
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.Diezmannstrasse.5> ;
-    foaf:phone "0341-4155555" ;
-    foaf:homepage <http://www.starlight-bowling.de/> ;
     a ld:Ort ;
-    rdfs:label "Starlight-Bowling" .
+    rdfs:label "Starlight-Bowling" ;
+    foaf:homepage <http://www.starlight-bowling.de/> ;
+    foaf:phone "0341-4155555" .
+
+<http://leipzig-data.de/Data/Ort/Start-Up_Club_Leipzig>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.68> .
 
 <http://leipzig-data.de/Data/Ort/StasimuseumRundeEcke>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Dittrichring.24> ;
@@ -2346,10 +2425,10 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Staubsauger>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.95> ;
-    foaf:phone "0341-4626865" ;
-    foaf:homepage <http://www.staub-sauger.de/> ;
     a ld:Club, ld:Ort ;
-    rdfs:label "Staubsauger" .
+    rdfs:label "Staubsauger" ;
+    foaf:homepage <http://www.staub-sauger.de/> ;
+    foaf:phone "0341-4626865" .
 
 <http://leipzig-data.de/Data/Ort/Steigenberger.Handelshof>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Salzgaesschen.6> ;
@@ -2359,7 +2438,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Stelzenhaus>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.WeissenfelserStrasse.65H> ;
     a ld:Ort ;
-    rdfs:label "Stelzenhaus" .
+    rdfs:label "Stelzenhaus" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.136> .
 
 <http://leipzig-data.de/Data/Ort/StenzlersHof>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Peterskirchhof.1> ;
@@ -2373,9 +2453,9 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/SuedfriedhofLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Friedhofsweg.3> ;
-    foaf:phone "341-1235700" ;
     a ld:Cemetery, ld:Ort ;
-    rdfs:label "Südfriedhof Leipzig" .
+    rdfs:label "Südfriedhof Leipzig" ;
+    foaf:phone "341-1235700" .
 
 <http://leipzig-data.de/Data/Ort/Sweat>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.17> ;
@@ -2405,48 +2485,47 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Tapetenwerk>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.91> ;
     a ld:Ort ;
-    rdfs:label "Tapetenwerk" .
+    rdfs:label "Tapetenwerk" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.107> .
 
 <http://leipzig-data.de/Data/Ort/Telegraph>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Dittrichring.18> ;
-    foaf:homepage <http://www.cafe-telegraph.de> ;
     a ld:Ort ;
-    rdfs:label "Café und Restaurant Telegraph" .
+    rdfs:label "Café und Restaurant Telegraph" ;
+    foaf:homepage <http://www.cafe-telegraph.de> .
 
 <http://leipzig-data.de/Data/Ort/TheaterDerJungenWelt>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LindenauerMarkt.21> ;
-    foaf:phone "341-4866016" ;
-    foaf:homepage <http://www.theaterderjungenweltleipzig.de/> ;
     a ld:Ort, ld:Theater ;
-    rdfs:label "Theater der Jungen Welt" .
+    rdfs:label "Theater der Jungen Welt" ;
+    foaf:homepage <http://www.theaterderjungenweltleipzig.de/> ;
+    foaf:phone "341-4866016" .
 
 <http://leipzig-data.de/Data/Ort/Theatrium>
     ld:Hintergrund "Seit 1995 bieten wir in Leipzig-Grünau Theaterprojekte für Kinder und Jugendliche an. Ab 1996 wurde dafür die ehemalige Gaststätte \"Atrium\" in der Miltitzer Allee 52 von der Stadt Leipzig zur Verfügung gestellt und von den Vereinsgründern zum Theater \"Theatrium\" umgebaut. Nach jahrelanger Suche nach einem neuen, geeigneteren Domizil für unsere Theaterprojekte konnte, Dank der tatkräftigen Unterstützung durch die Stadt Leipzig und die Akteure des Stadtbezirks, im November 2010 das \"Neue Theatrium\" in der Alten Salzstraße 59 eröffnet werden und bietet nun beste Bedingungen, sowohl für die Arbeit in unseren Projekten, als auch für unsere Besucher. " ;
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.59> ;
-    foaf:mbox "theatrium@gmx.de" ;
-    foaf:phone "0341-9406064" ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:MehrAlsChillen ;
-    foaf:phone "0341-9413640", "341-9413640" ;
-    foaf:homepage <http://www.theatrium-leipzig.de/>, "http://www.theatrium-leipzig.de" ;
     a ld:Ort ;
-    rdfs:label "Theatrium" .
+    rdfs:label "Theatrium" ;
+    foaf:homepage <http://www.theatrium-leipzig.de/>, "http://www.theatrium-leipzig.de" ;
+    foaf:mbox "theatrium@gmx.de" ;
+    foaf:phone "0341-9406064", "0341-9413640", "341-9413640" .
 
 <http://leipzig-data.de/Data/Ort/Thomaskirche>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomaskirchhof.18> ;
-    foaf:mbox "info@thomaskirche.org" ;
-    foaf:phone "341-22224-105" ;
-    foaf:phone "341-2222440" ;
-    foaf:homepage <http://www.thomaskirche.org/> ;
     a ld:Church, ld:Ort ;
     rdfs:comment "Bachgrab", "Evangelisch-Lutherisch" ;
-    rdfs:label "Thomaskirche" .
+    rdfs:label "Thomaskirche" ;
+    foaf:homepage <http://www.thomaskirche.org/> ;
+    foaf:mbox "info@thomaskirche.org" ;
+    foaf:phone "341-22224-105", "341-2222440" .
 
 <http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig>
     ld:Kurzinformation "<p>Die Transition-Town-Bewegung, der weltweit über 300 Städte angehören, setzt diese Ideen um und eröffnet neue Perspektiven. „Leipzig im Wandel“ kann durch uns Teil dieser sich rasch ausbreitenden Bewegung werden. Wir können dafür sorgen, dass so viele Produkte und Dienstleistungen wie möglich lokal erzeugt, erarbeitet und verbraucht werden: beim Einkauf, beim Essen, beim Urlaub, beim Bezug von Energie. Das macht uns unabhängiger vom Erdöl und auch von vielen negativen Auswirkungen auf den Finanzmärkten, den Veränderungen auf dem Arbeitsmarkt und der Verschlechterung unserer Umweltqualität Visionen, Träume, Fantasie, Kreativität, Technik, Musik, Wissen … helfen uns auf dem Weg zu einem nachhaltigen Leipzig.</p>" ;
-    foaf:homepage <http://www.transitiontown-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Transition Town Leipzig" .
+    rdfs:label "Transition Town Leipzig" ;
+    foaf:homepage <http://www.transitiontown-leipzig.de> .
 
 <http://leipzig-data.de/Data/Ort/TwentyOne>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Gottschedstrasse.2> ;
@@ -2473,36 +2552,35 @@ ld:Ort
     ld:behindertengerecht "Ein behindertengerechter Zugang ist vorhanden, dabei ist zu beachten: Im Labor gelten besondere Sicherheitsregeln, die vorab mit dem verantwortlichen Lehrer besprochen werden müssen." ;
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Lange_Torsten> ;
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
-    foaf:mbox "schuelerlabor@ufz.de" ;
-    foaf:phone "0341-235-1830" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/UFZ> ;
     ld:hasTag ldtag:Biologie, ldtag:Chemie, ldtag:MINT, ldtag:Physik ;
-    foaf:phone "0341-235-1845" ;
     a ld:Ort ;
     rdfs:comment "Teilnehmer ca. 50% weiblich (Schätzwert)" ;
     rdfs:label "UFZ Schülerlabor" ;
-    foaf:homepage <http://www.ufz-schuelerlabor.de> .
+    foaf:homepage <http://www.ufz-schuelerlabor.de> ;
+    foaf:mbox "schuelerlabor@ufz.de" ;
+    foaf:phone "0341-235-1830", "0341-235-1845" .
 
 <http://leipzig-data.de/Data/Ort/UIZ>
     ld:Art "Angebote in den Bereichen Ökologie, Umwelt- und Naturschutz" ;
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
-    foaf:mbox "UIZ@leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Umweltamt>, <http://leipzig-data.de/Data/Verein/UIZ.Foerderverein> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-1236711" ;
     a ld:Ort ;
-    rdfs:label "Umweltinformationszentrum" .
+    rdfs:label "Umweltinformationszentrum" ;
+    foaf:mbox "UIZ@leipzig.de" ;
+    foaf:phone "0341-1236711" .
 
 <http://leipzig-data.de/Data/Ort/UTConnewitz>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Wolfgang-Heinze-Strasse.12A> ;
-    foaf:phone "341-4626782" ;
-    foaf:phone "341-4626776" ;
-    foaf:homepage <http://www.utconnewitz.de/> ;
     a ld:Cinema, ld:Ort ;
     rdfs:comment "Träger: UT Connewitz e.V." ;
-    rdfs:label "UT Connewitz" .
+    rdfs:label "UT Connewitz" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.98> ;
+    foaf:homepage <http://www.utconnewitz.de/> ;
+    foaf:phone "341-4626776", "341-4626782" .
 
 <http://leipzig-data.de/Data/Ort/Umspannwerk>
     ld:Art "Technikmuseum" ;
@@ -2515,13 +2593,13 @@ ld:Ort
     ld:Zielgruppe "Oberstufe, Berufsschüler" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Haenisch_Wolfgang>, <http://leipzig-data.de/Data/Person/Raue_Manfred> ;
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Moenchereistrasse.2> ;
-    foaf:mbox "vde-leipzig-halle@vde-online.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/VDE.LeipzigHalle> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-35022265" ;
     a ld:Ort ;
-    rdfs:label "Elektrotechnische Sammlung am Umspannwerk Markkleeberg" .
+    rdfs:label "Elektrotechnische Sammlung am Umspannwerk Markkleeberg" ;
+    foaf:mbox "vde-leipzig-halle@vde-online.de" ;
+    foaf:phone "0341-35022265" .
 
 <http://leipzig-data.de/Data/Ort/Umweltbibliothek>
     ld:Art "Umweltbibliothek" ;
@@ -2533,15 +2611,15 @@ ld:Ort
     ld:Zielstellung "Über Umweltschutz informieren, qualifizierte Umweltinformationen erschließen und allgemein zugänglich machen" ;
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Quester_Roland> ;
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-    foaf:mbox "info@umweltbibliothek-leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Oekoloewe> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-3065-181, 0341-3065-180" ;
-    foaf:homepage <http://www.umweltbibliothek-leipzig.de>, "http://www.umweltbildung-leipzig.de" ;
     a ld:Ort ;
     rdfs:comment "Die Umweltbibliothek Leipzig als unbeschränkt öffentlich zugängliche Spezialbibliothek versteht sich als ein zentraler Informationsdienstleister im Bereich Umweltschutz in der Stadt Leipzig und ihrem Umland. Sie bietet Studierenden, Lernenden, Lehrenden, im Umweltschutz Tätigen in Vereinen, Behörden und Planungsbüros sowie Privatpersonen Sach- und Fachmedien entsprechend ihrer Bedürfnisse zur Ausleihe, sowie Zugang zu elektronischen Informationen und die Vermittlung von Umweltberatungs- und Umweltbildungsangeboten. Sie bietet ihre Medien mittels Fernleihe auch im Regierungsbezirk Leipzig, dem Land Sachsen und der ganzen Bundesrepublik an. Die Umweltbibliothek kooperiert mit lokalen und besonders relevanten überregionalen Informationsanbietern und -verbreitern wie Behörden, Vereinen, Forschungseinrichtungen, Stadt- und Hochschulbibliotheken, um deren Informationen zur (regionalen) Umweltsituation und Umweltschutzmaßnahmen konzentriert zu sammeln, zu erschließen und anzubieten und um als qualifizierte Ergänzung zu deren Angeboten zu fungieren. Die Umweltbibliothek wurde 2005 als offizielles Projekt der UN-Weltdekade \"Bildung für nachhaltige Entwicklung\" ausgezeichnet." ;
-    rdfs:label "Umweltbibliothek Leipzig" .
+    rdfs:label "Umweltbibliothek Leipzig" ;
+    foaf:homepage <http://www.umweltbibliothek-leipzig.de>, "http://www.umweltbildung-leipzig.de" ;
+    foaf:mbox "info@umweltbibliothek-leipzig.de" ;
+    foaf:phone "0341-3065-181, 0341-3065-180" .
 
 <http://leipzig-data.de/Data/Ort/UniLeipzig.Albertina>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Beethovenstrasse.6> ;
@@ -2551,12 +2629,14 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/UniLeipzig.Augustusplatz>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
     a ld:Ort ;
-    rdfs:label "Unikomplex Augustusplatz" .
+    rdfs:label "Unikomplex Augustusplatz" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.57>, <http://leipzig-data.de/Data/APIId/Venue.60>, <http://leipzig-data.de/Data/APIId/Venue.70> .
 
 <http://leipzig-data.de/Data/Ort/UniLeipzig.CampusJahnallee>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Jahnallee.59> ;
     a ld:Ort ;
-    rdfs:label "Campus Jahnallee der Universität Leipzig" .
+    rdfs:label "Campus Jahnallee der Universität Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.56> .
 
 <http://leipzig-data.de/Data/Ort/UniLeipzig.ExPhysik>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Linnestrasse.5> ;
@@ -2567,9 +2647,9 @@ ld:Ort
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:Hochschule, ldtag:MINT ;
-    foaf:homepage <http://www.fmi.uni-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Universität Leipzig, Fakultät Mathematik/Informatik" .
+    rdfs:label "Universität Leipzig, Fakultät Mathematik/Informatik" ;
+    foaf:homepage <http://www.fmi.uni-leipzig.de> .
 
 <http://leipzig-data.de/Data/Ort/UniLeipzig.GWZ>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Beethovenstrasse.15> ;
@@ -2610,24 +2690,26 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/UniLeipzig.WiFa>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.12> ;
     a ld:Ort ;
-    rdfs:label "Universität Leipzig, Wirtschaftswissenschaftliche Fakultät" .
+    rdfs:label "Universität Leipzig, Wirtschaftswissenschaftliche Fakultät" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.91> .
 
 <http://leipzig-data.de/Data/Ort/Unikatum>
     ld:contactPerson <http://leipzig-data.de/Data/Person/Haensel_Annegret> ;
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.26> ;
-    foaf:mbox "info@kindermuseum-unikatum.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Unikatum> ;
     ld:hasTag ldtag:MINT ;
-    foaf:phone "0341-3061986" ;
-    foaf:homepage <http://www.kindermuseum-unikatum.de> ;
     a ld:Ort ;
-    rdfs:label "Unikatum Kindermuseum" .
+    rdfs:label "Unikatum Kindermuseum" ;
+    foaf:homepage <http://www.kindermuseum-unikatum.de> ;
+    foaf:mbox "info@kindermuseum-unikatum.de" ;
+    foaf:phone "0341-3061986" .
 
 <http://leipzig-data.de/Data/Ort/UptownCafe>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Riemannstrasse.44> ;
     a ld:Ort ;
-    rdfs:label "Uptown Coffee Bar" .
+    rdfs:label "Uptown Coffee Bar" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.105> .
 
 <http://leipzig-data.de/Data/Ort/VictorsResidenz>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Georgiring.13> ;
@@ -2636,13 +2718,14 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Villa>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lessingstrasse.7> ;
-    foaf:mbox "jugendarbeit@villa-leipzig.de" ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Villa> ;
-    foaf:phone "0341-3552040" ;
-    foaf:homepage <http://www.villa-Leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" .
+    rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.64> ;
+    foaf:homepage <http://www.villa-Leipzig.de> ;
+    foaf:mbox "jugendarbeit@villa-leipzig.de" ;
+    foaf:phone "0341-3552040" .
 
 <http://leipzig-data.de/Data/Ort/VillaHasenholz>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Gustav-Esche-Strasse.1> ;
@@ -2652,13 +2735,14 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/VillaIda>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Poetenweg.28> ;
     a ld:Ort ;
-    rdfs:label "Mediencampus Villa Ida" .
+    rdfs:label "Mediencampus Villa Ida" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.67> .
 
 <http://leipzig-data.de/Data/Ort/Voelkerschlachtdenkmal>
     ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Strassedes18Oktober.100> ;
-    foaf:phone "0341-2416870" ;
     a ld:Museum, ld:Ort ;
-    rdfs:label "Völkerschlachtdenkmal" .
+    rdfs:label "Völkerschlachtdenkmal" ;
+    foaf:phone "0341-2416870" .
 
 <http://leipzig-data.de/Data/Ort/Vogelschutzlehrstaette>
     ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Kaerrnerweg.12A> ;
@@ -2669,16 +2753,17 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Volkshaus>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.32> ;
     a ld:Ort ;
-    rdfs:label "Volkshaus" .
+    rdfs:label "Volkshaus" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.52> .
 
 <http://leipzig-data.de/Data/Ort/Volkshochschule>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Loehrstrasse.3> ;
-    foaf:mbox "vhs@leipzig.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-1236000" ;
-    foaf:homepage <http://www.vhs-leipzig.de> ;
     a ld:Ort ;
-    rdfs:label "Volkshochschule" .
+    rdfs:label "Volkshochschule" ;
+    foaf:homepage <http://www.vhs-leipzig.de> ;
+    foaf:mbox "vhs@leipzig.de" ;
+    foaf:phone "0341-1236000" .
 
 <http://leipzig-data.de/Data/Ort/WaermehalleSued>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Eichendorffstrasse.7> ;
@@ -2688,7 +2773,8 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Wamslergarten>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.99> ;
     a ld:Ort ;
-    rdfs:label "Wamslergarten im Westwerk" .
+    rdfs:label "Wamslergarten im Westwerk" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.41> .
 
 <http://leipzig-data.de/Data/Ort/WebersHof>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.1> ;
@@ -2697,12 +2783,12 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Werk-2>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Kochstrasse.132> ;
-    foaf:mbox "info@werk-2.de" ;
     ld:hasStatus "aktiv" ;
-    foaf:phone "0341-3080140" ;
-    foaf:homepage <http://www.werk-2.de> ;
     a ld:Ort ;
-    rdfs:label "Werk II - Kulturfabrik e. V." .
+    rdfs:label "Werk II - Kulturfabrik e. V." ;
+    foaf:homepage <http://www.werk-2.de> ;
+    foaf:mbox "info@werk-2.de" ;
+    foaf:phone "0341-3080140" .
 
 <http://leipzig-data.de/Data/Ort/Westwerk>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.93> ;
@@ -2716,9 +2802,9 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/WildparkLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.KoburgerStrasse.12A> ;
-    foaf:phone "341-309410" ;
     a ld:Ort, ld:Zoo ;
-    rdfs:label "Wildpark der Stadt Leipzig" .
+    rdfs:label "Wildpark der Stadt Leipzig" ;
+    foaf:phone "341-309410" .
 
 <http://leipzig-data.de/Data/Ort/ZAW.Bogislawstrasse>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Bogislawstrasse.20> ;
@@ -2730,24 +2816,26 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "Zaubergarten Leipzig" .
 
+<http://leipzig-data.de/Data/Ort/ZentrumZeitgenoessischeFotografie>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.48> .
+
 <http://leipzig-data.de/Data/Ort/ZfI>
     ld:Kosten "teilweise" ;
     ld:Zielgruppe "Kinder, Jugendliche, Erwachsene, Senioren" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Mueller_Doris> ;
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Demmeringstrasse.115> ;
-    foaf:mbox "doris.mueller@zfi-leipzig.de" ;
-    foaf:phone "0341-4773703" ;
     ld:hasStatus "Schließt zum Jahresende 2013" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/ZentrumFuerIntegration> ;
-    foaf:phone "0341-4804311" ;
     a ld:Ort ;
-    rdfs:label "Zentrum für Integration" .
+    rdfs:label "Zentrum für Integration" ;
+    foaf:mbox "doris.mueller@zfi-leipzig.de" ;
+    foaf:phone "0341-4773703", "0341-4804311" .
 
 <http://leipzig-data.de/Data/Ort/ZooLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
-    foaf:homepage <http://www.zoo-leipzig.de> ;
     a ld:Ort, ld:Zoo ;
-    rdfs:label "Zoo Leipzig" .
+    rdfs:label "Zoo Leipzig" ;
+    foaf:homepage <http://www.zoo-leipzig.de> .
 
 <http://leipzig-data.de/Data/Ort/Zooschaufenster>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Zoellnerweg.6> ;
@@ -2757,28 +2845,26 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/detektor.fm>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.69> ;
     a ld:Ort ;
-    rdfs:label "detektor.fm" .
+    rdfs:label "detektor.fm" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.122> .
+
+<http://leipzig-data.de/Data/Ort/i-fabrik>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.82> .
+
+<http://leipzig-data.de/Data/Ort/ipoque>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.29> .
 
 <http://leipzig-data.de/Data/Ort/nato>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.46> ;
-    foaf:mbox "info@nato-leipzig.de" ;
-    foaf:phone "0341-3014399" ;
-    foaf:phone "341-3014397", "341-3014398" ;
-    foaf:homepage <http://www.nato-leipzig.de/> ;
     a ld:Ort ;
-    rdfs:label "naTo Leipzig" .
+    rdfs:label "naTo Leipzig" ;
+    foaf:homepage <http://www.nato-leipzig.de/> ;
+    foaf:mbox "info@nato-leipzig.de" ;
+    foaf:phone "0341-3014399", "341-3014397", "341-3014398" .
 
-<http://leipzig-data.de/Data/Orte/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Orte" .
+<http://leipzig-data.de/Data/Ort/studiodelta>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.27> .
 
-
-<http://leipzig-data.de/Data/Ort/MIO>
-    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Leipzig.Beethovenstrasse.21> ;
-    foaf:homepage <https://www.mio-leipzig.de/> ;
-    a ld:Ort, ld:Restaurant ;
-    rdfs:label "Restaurant MIO" .
+<http://leipzig-data.de/Data/Ort/sublab>
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.30> .
 

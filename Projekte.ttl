@@ -8,6 +8,13 @@
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
+<http://leipzig-data.de/Data/Projekte/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Projekte" .
+
 ld:Projekt
     a owl:Class ;
     rdfs:label "Projekt" .
@@ -116,7 +123,7 @@ ld:Projekt
     rdfs:label "Leipziger Agenda 21" .
 
 <http://leipzig-data.de/Data/Projekt/MINT-Netzwerk>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Graebe_HansGert>, <http://leipzig-data.de/Data/Person/Wieland_Sabine> ;
+    ld:engagedPerson <http://leipzig-data.de/Data/Person/Graebe_HansGert>, <http://leipzig-data.de/Data/Person/Radomski_Sabine> ;
     a ld:Projekt ;
     rdfs:label "MINT Netzwerk Leipzig" ;
     foaf:homepage <http://mint-leipzig.de/> .
@@ -211,6 +218,7 @@ ld:Projekt
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
     a ld:Projekt ;
     rdfs:label "Startup Weekend Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.55> ;
     foaf:homepage <http://leipzig.startupweekend.org/> .
 
 <http://leipzig-data.de/Data/Projekt/UFZ.KinderUmweltBus>
@@ -257,11 +265,4 @@ ld:Projekt
     rdfs:label "Kinder-Uni an der Uni Leipzig" ;
     foaf:homepage <http://www.uni-leipzig.de/kinderuni>, <https://www.facebook.com/kuni.leipzig> ;
     foaf:mbox "kinderuni@uni-leipzig.de" .
-
-<http://leipzig-data.de/Data/Projekte/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Projekte" .
 

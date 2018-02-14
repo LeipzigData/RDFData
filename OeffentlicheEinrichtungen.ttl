@@ -8,6 +8,13 @@
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 
+<http://leipzig-data.de/Data/OeffentlicheEinrichtungen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Parteien, Stiftungen, Öffentliche Einrichtungen" .
+
 <http://leipzig-data.de/Data/CDU/FrauenUnion>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.2> ;
     ld:hasCategories "Frauenvereine" ;
@@ -19,8 +26,8 @@
 <http://leipzig-data.de/Data/DGB/Jugend>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.30> ;
     a org:Organization ;
-    foaf:homepage <http://leipzig-nordsachsen.dgb.de/uber-uns/jugend> ;
-    rdfs:label "DGB-Jugend Leipzig" .
+    rdfs:label "DGB-Jugend Leipzig" ;
+    foaf:homepage <http://leipzig-nordsachsen.dgb.de/uber-uns/jugend> .
 
 <http://leipzig-data.de/Data/DGB/NetzwerkFrau>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.30> ;
@@ -77,13 +84,6 @@
     rdfs:comment "Die interdisziplinäre Zusammenarbeit von Mathematik und Naturwissenschaften bildet den Kernpunkt der Arbeit des 1996 gegründeten Max-Planck-Instituts. Die Wissenschaftler beschäftigten sich mit einem breiten Spektrum an Fragestellungen der reinen und angewandten Mathematik und stellen sich den mathematischen Herausforderungen, die durch theoretische Fragestellungen in den Natur- und Ingenieurwissenschaften entstehen. Ziel ist es, mathematische Denkweisen und Methoden in neuartiger Weise in verschiedene Anwendungsbereiche in den Naturwissenschaften zu integrieren." ;
     rdfs:label "MPI für Mathematik in den Naturwissenschaften" ;
     foaf:homepage <http://www.mis.mpg.de> .
-
-<http://leipzig-data.de/Data/OeffentlicheEinrichtungen/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Parteien, Stiftungen, Öffentliche Einrichtungen" .
 
 <http://leipzig-data.de/Data/SPD/AGSozialdemokratischerFrauenLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.19> ;
@@ -160,6 +160,7 @@
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Burgstrasse.25> ;
     a org:Organization ;
     rdfs:label "Friedrich-Ebert-Stiftung Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.54> ;
     foaf:homepage <http://www.fes.de/Leipzig> .
 
 <http://leipzig-data.de/Data/Stiftung/RLSachsen>
