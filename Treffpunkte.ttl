@@ -5,99 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
-
-ld:Treffpunkt
-    a owl:Class ;
-    rdfs:comment "Ein Treffpunkt ist ein Ort in der Stadt Leipzig, dem keine Adresse zugeordnet werden kann." ;
-    rdfs:label "Treffpunkt" .
-
-<http://leipzig-data.de/Data/Treffpunkt/Alter_Johannisfriedhof>
-    geosparql:asWKT "Point(12.3904753 51.3367518)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Alter Johannisfriedhof" ;
-    geo:lat 51.3367518 ;
-    geo:long 12.3904753 .
-
-<http://leipzig-data.de/Data/Treffpunkt/Augustusplatz>
-    geosparql:asWKT "Point(12.3807993 51.3391581)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Augustusplatz" ;
-    geo:lat 51.3391581 ;
-    geo:long 12.3807993 .
-
-<http://leipzig-data.de/Data/Treffpunkt/Bahnhof.Taucha>
-    geosparql:asWKT "Point(12.486244 51.379081)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Bahnhof Taucha" ;
-    geo:lat 51.379081 ;
-    geo:long 12.486244 .
-
-<http://leipzig-data.de/Data/Treffpunkt/Clara-Park>
-    geosparql:asWKT "Point(12.36154 51.3322044)" ;
-    a ld:GreenSpace, ld:Treffpunkt ;
-    rdfs:comment "Lage: Ferdinand-Lassalle-/Friedrich-Ebert-/Karl-Tauchnitz-Straße" ;
-    rdfs:label "Clara-Park" ;
-    geo:lat 51.3322044 ;
-    geo:long 12.36154 ;
-    foaf:homepage <http://www.leipzig.de/de/buerger/freizeit/leipzig/parks/clara/allg/> .
-
-<http://leipzig-data.de/Data/Treffpunkt/Hst.Rennbahn>
-    geosparql:asWKT "Point(12.360814 51.321093)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Schleußiger Weg, Bushaltestelle Rennbahn" ;
-    geo:lat 51.321093 ;
-    geo:long 12.360814 .
-
-<http://leipzig-data.de/Data/Treffpunkt/KoburgerBruecke>
-    geosparql:asWKT "Point(12.373905 51.302905)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Haltestelle Koburger Brücke" ;
-    geo:lat 51.302905 ;
-    geo:long 12.373905 .
-
-<http://leipzig-data.de/Data/Treffpunkt/LandauerBruecke>
-    geosparql:asWKT "Point(12.339967 51.350240)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Elsterbecken, Landauer Brücke, Hans-Driesch-Straße" ;
-    geo:lat 51.350240 ;
-    geo:long 12.339967 .
-
-<http://leipzig-data.de/Data/Treffpunkt/Markt>
-    geosparql:asWKT "Point(12.3753358279286 51.3403673487936)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Markt" ;
-    geo:lat 51.3403673487936 ;
-    geo:long 12.3753358279286 .
-
-<http://leipzig-data.de/Data/Treffpunkt/Rosental.Rosentalturm>
-    geosparql:asWKT "Point(12.3621288 51.3472531)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Rosental, Rosentalturm" ;
-    geo:lat 51.3472531 ;
-    geo:long 12.3621288 .
-
-<http://leipzig-data.de/Data/Treffpunkt/Rosental.Sued>
-    geosparql:asWKT "Point(12.368344 51.346976)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Rosentalgasse, Ecke Emil-Fuchs-Straße" ;
-    geo:lat 51.346976 ;
-    geo:long 12.368344 .
-
-<http://leipzig-data.de/Data/Treffpunkt/Rosental.Zoellnerweg>
-    geosparql:asWKT "Point(12.3621288 51.3472531)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Rosental, Zöllnerweg" ;
-    geo:lat 51.3472531 ;
-    geo:long 12.3621288 .
-
-<http://leipzig-data.de/Data/Treffpunkt/Teichstrasse>
-    geosparql:asWKT "Point(12.368072 51.306138)" ;
-    a ld:Treffpunkt ;
-    rdfs:label "Teichstraße" ;
-    geo:lat 51.306138 ;
-    geo:long 12.368072 .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
 
 <http://leipzig-data.de/Data/Treffpunkte/>
     cc:attributionName "The Leipzig Open Data Project" ;
@@ -106,3 +14,84 @@ ld:Treffpunkt
     a owl:Ontology ;
     rdfs:label "Treffpunkte" .
 
+ld:Treffpunkt
+    a owl:Class ;
+    rdfs:comment "Ein Treffpunkt ist ein Ort in der Stadt Leipzig, dem keine Adresse zugeordnet werden kann." ;
+    rdfs:label "Treffpunkt" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Alter_Johannisfriedhof>
+    gsp:asWKT "Point(12.3904753 51.3367518)" ;
+    a ld:Treffpunkt ;
+    rdfs:label "Alter Johannisfriedhof" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Augustusplatz>
+    gsp:asWKT "Point(12.3807993 51.3391581)" ;
+    a ld:Treffpunkt ;
+    rdfs:label "Augustusplatz" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Bahnhof.Taucha>
+    gsp:asWKT "Point(12.486244 51.379081)" ;
+    a ld:Treffpunkt ;
+    rdfs:label "Bahnhof Taucha" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Clara-Park>
+    gsp:asWKT "Point(12.36154 51.3322044)" ;
+    a ld:GreenSpace, ld:Treffpunkt ;
+    rdfs:comment "Lage: Ferdinand-Lassalle-/Friedrich-Ebert-/Karl-Tauchnitz-Straße" ;
+    rdfs:label "Clara-Park" ;
+    foaf:homepage <http://www.leipzig.de/de/buerger/freizeit/leipzig/parks/clara/allg/> .
+
+<http://leipzig-data.de/Data/Treffpunkt/Hst.Rennbahn>
+    gsp:asWKT "Point(12.360814 51.321093)" ;
+    a ld:Treffpunkt, ld:Haltestelle ;
+    rdfs:label "Schleußiger Weg, Bushaltestelle Rennbahn" .
+
+<http://leipzig-data.de/Data/Treffpunkt/KoburgerBruecke>
+    gsp:asWKT "Point(12.373905 51.302905)" ;
+    a ld:Treffpunkt, ld:Haltestelle ;
+    rdfs:label "Haltestelle Koburger Brücke" .
+
+<http://leipzig-data.de/Data/Treffpunkt/LandauerBruecke>
+    gsp:asWKT "Point(12.339967 51.350240)" ;
+    a ld:Treffpunkt ;
+    rdfs:comment "Elsterbecken, Brücke über die Hans-Driesch-Straße" ;
+    rdfs:label "Landauer Brücke" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Markt>
+    gsp:asWKT "Point(12.3753358279286 51.3403673487936)" ;
+    a ld:Treffpunkt ;
+    rdfs:label "Markt" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Rosental.Rosentalturm>
+    gsp:asWKT "Point(12.3621288 51.3472531)" ;
+    a ld:Treffpunkt ;
+    rdfs:label "Rosental, Rosentalturm" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Rosental.Sued>
+    gsp:asWKT "Point(12.368344 51.346976)" ;
+    a ld:Treffpunkt ;
+    rdfs:label "Rosentalgasse, Ecke Emil-Fuchs-Straße" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Rosental.Zoellnerweg>
+    gsp:asWKT "Point(12.3621288 51.3472531)" ;
+    a ld:Treffpunkt ;
+    rdfs:label "Rosental, Zöllnerweg"  .
+
+<http://leipzig-data.de/Data/Treffpunkt/Teichstrasse>
+    gsp:asWKT "Point(12.368072 51.306138)" ;
+    a ld:Treffpunkt ;
+    rdfs:label "Teichstraße" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Bruckner-Bassin>
+    gsp:asWKT "Point(12.36154 51.3322044)" ;
+    a ld:GreenSpace, ld:Treffpunkt ;
+    rdfs:comment "Lage: Ferdinand-Lassalle-/Friedrich-Ebert-/Karl-Tauchnitz-Straße" ;
+    rdfs:label "Bruckner Bassin im Clara-Zetkin-Park" ;
+    ld:istErreichbar "SB 2,8,9,14 Bus 89 bis Karl-Tauchnitz-Straße/Neues Rathaus" ; 
+    foaf:homepage <http://www.leipzig.de/de/buerger/freizeit/leipzig/parks/clara/allg/> .
+
+<http://leipzig-data.de/Data/Treffpunkt/Robert-Koch-Park>
+    gsp:asWKT "Point(12.3001565 51.3178283)" ;
+    a ld:Treffpunkt ; foaf:homepage <http://www.leipzig-lexikon.de/GARTPARK/robkoch.htm> ; 
+    rdfs:label "Robert Koch Park" ;
+rdfs:comment "Robert Koch Park, bei der Villa Robert Koch, Grünau, Zugang über Schönauer Straße" .

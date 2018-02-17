@@ -1,0 +1,667 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix nl: <http://nachhaltiges-leipzig.de/Data/Model#> .
+
+<http://leipzig-data.de/Data/Zukunftspass/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Erste Datenversion für den Zukunftspass der Zukunftsakademie" .
+
+<http://leipzig-data.de/Data/Ort/Auwaldstation>
+    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Auwaldstation> ;
+    nl:Ferienpass "gelistet" ;
+    a ld:Ort ;
+    ld:istErreichbar "SB 11 bis Lützschena, dann ca. 10 min. Fußweg" ;
+    rdfs:label "Auwaldstation Leipzig" ;
+    foaf:homepage <http://www.auwaldstation.de> ;
+    foaf:mbox "auwaldstation@t-online.de" ;
+    foaf:phone "0341-2537753", "0341-4621895" .
+
+<http://leipzig-data.de/Data/Verein/Auwaldstation>
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A15> .
+
+<http://leipzig-data.de/Data/Ort/ComputerSpielSchule>
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.2> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Medienpaedagogik> ;
+    nl:Ferienpass "gelistet" ;
+    a ld:Ort ;
+    rdfs:comment "Am 21. Juni 2011 fand die feierliche Wiedereröffnung der ComputerSpielSchule Leipzig statt. In ihren neuen Räumlichkeiten im Friedrich-Schiller-Gymnasium heißt es ab sofort wieder: Miteinander spielen! Gemeinsam entdecken! Voneinander lernen!" ;
+    rdfs:comment "nicht bei Nachhaltiges Leipzig" ; 
+    rdfs:label "ComputerSpielSchule Leipzig" ;
+    foaf:phone "0341-2425976" ;
+    foaf:mbox "info@computerspielschule.org" ; 
+    foaf:homepage <http://www.computerspielschule-leipzig.de> .
+    
+<http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle>
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/GAZ> ;
+    nl:Ferienpass "gelistet" ;
+    a ld:Ort ;
+    ld:istErreichbar "SB 11 bis Leinestraße, dann 5 min Fußweg in Helenenstraße" ;
+    rdfs:label "Dölitzer Wassermühle" ;
+    rdfs:comment "nicht bei Nachhaltiges Leipzig" ; 
+    foaf:homepage <http://www.doelitzer-wassermuehle.de/> ;
+    foaf:mbox "GAZ-Leipzig@t-online.de" ;
+    foaf:phone "0341-33399734", "0341-3389352" .
+
+<http://leipzig-data.de/Data/Ort/Garage>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.97> ;
+    ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Firma/Garage> ;
+    nl:Ferienpass "gelistet" ;
+    a ld:Ort ;
+    ld:istErreichbar "SB 14 bis Gießerstraße, Bus 60, S-Bahn bis Bhf. Plagwitz" ;
+    rdfs:label "VDI-GaraGe - Technologiezentrum für Jugendliche" ;
+    foaf:homepage <http://www.g-a-r-a-g-e.com> ;
+    foaf:mbox "kontakt@g-a-r-a-g-e.com" ;
+    foaf:phone "0341-8708610", "0341-8708640" .
+
+<http://leipzig-data.de/Data/Firma/Garage>
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A163> .
+
+<http://leipzig-data.de/Data/Ort/Inspirata>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Inspirata> ;
+    a ld:Ort ;
+    nl:Ferienpass "gelistet" ;
+    rdfs:comment "nicht bei Nachhaltiges Leipzig" ; 
+    ld:istErreichbar "SB 2,16 bis Deutsche Nationalbibliothek oder An den Tierkliniken" ;
+    rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" ;
+    foaf:homepage <http://www.inspirata.de> ;
+    foaf:mbox "kontakt@inspirata.de" ;
+    foaf:phone "0341-1259757", "0341-35572923" .
+
+<http://leipzig-data.de/Data/Projekt/KonsumGlobal>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Wiebelstrasse.8> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/WeltOffen> ;
+    nl:Ferienpass "nicht gelistet" ;
+    a ld:Projekt ;
+    rdfs:label "KonsumGlobal Leipzig" ;
+    foaf:homepage <http://konsumglobal-leipzig.de/> ;
+    foaf:phone "0163-1736473" .
+
+<http://leipzig-data.de/Data/Verein/WeltOffen>
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A173> .
+
+<http://leipzig-data.de/Data/Verein/AnglerverbandLeipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.EngelsdorferStrasse.377> ;
+    a ld:Verein ;
+    nl:Ferienpass "gelistet" ;
+    rdfs:label "Anglerverband Leipzig e.V." ;
+    foaf:homepage <http://www.anglerverband-leipzig.de> ;
+    foaf:mbox "birgitholzmann@anglerverband-leipzig.de" ;
+    foaf:phone "0341-6523570" .
+    
+<http://leipzig-data.de/Data/Verein/EineWelt>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
+    nl:Ferienpass "nicht gelistet" ;
+    a ld:Verein ;
+    rdfs:label "Eine Welt e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A50> ;
+    foaf:homepage <http://www.einewelt-sachsen.de> ;
+    foaf:mbox "miguel.ruiz@einewelt-sachsen.de" ;
+    foaf:phone "0341-9940683" .
+
+<http://leipzig-data.de/Data/Verein/Kunzstoffe>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.7> ;
+    nl:Ferienpass "nicht gelistet" ;
+    a ld:Verein ;
+    rdfs:label "kunZstoffe – urbane Ideenwerkstatt e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A64> ;
+    foaf:homepage <http://www.kunzstoffe.de> ;
+    foaf:mbox "buero@kunzstoffe.de" ;
+    foaf:phone "01634846916" .
+
+<http://leipzig-data.de/Data/Verein/LeipzigerKinderbuero>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Johannisallee.20> ;
+    nl:Ferienpass "gelistet" ;
+    a ld:Verein ;
+    ld:istErreichbar "erreichbar: SB 12,15 und Bus 60 bis Ostplatz" ;
+    rdfs:label "Leipziger Kinderbüro e.V., Deutscher Kinderschutzbund Leipzig" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A29> ;
+    foaf:homepage <http://www.leipziger-kinderbüro.de> ;
+    foaf:mbox "kinderbuero@dksb-leipzig.de" ;
+    foaf:phone "0341-7025712" .
+
+<http://leipzig-data.de/Data/Verein/Oekoloewe>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+    nl:Ferienpass "gelistet" ;
+    a ld:Verein ;
+    ld:istErreichbar "erreichbar: SB 11 Hildebrandstraße" ;
+    rdfs:label "Ökolöwe – Umweltbund Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A14> ;
+    foaf:mbox "umweltbildung@oekoloewe.de" ;
+    foaf:phone "0341-3504766" .
+
+<http://leipzig-data.de/Data/Verein/OrangUtansinNot>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.6> ;
+    nl:Ferienpass "nicht gelistet" ;
+    a ld:Verein ;
+    rdfs:comment "Orang-Utans in Not e.V. wurde im Jahr 2007 von Wissenschaftlern des Max-Planck-Instituts für evolutionäre Anthropologie in Leipzig gegründet." ;
+    rdfs:label "Orang Utans in Not e.V." ;
+    foaf:homepage <https://www.orang-utans-in-not.org> ;
+    foaf:phone "0341-3550315" .
+
+<http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
+    nl:Ferienpass "gelistet" ;
+    a ld:Verein ;
+    ld:istErreichbar "erreichbar: SB, Busse und S-Bahn bis Hauptbahnhof" ;
+    rdfs:label "Verbraucherzentrale Sachsen e.V." ;
+    foaf:homepage <http://www.verbraucherzentrale-sachsen.de> ;
+    foaf:mbox "bzl@vzs.de" ;
+    foaf:phone "0341-2610450" .
+
+# -- Events ---
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.1a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Mehrtagesveranstaltung", "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "7-12" ;
+    ld:Kosten "mit Material: 55 € mit/70 € ohne FP" ; 
+    rdfs:label "Auwald-Wildnis-Camp - 3-tägige Ferienfreizeit" ;
+    ical:description "Auf geht’s! Packt euren Rucksack - wir gehen auf Abenteuerstreifzug durch die Natur, lernen Orientierung mit Karte und Kompass, lesen Tierspuren, üben uns in Wildnisfertigkeiten und machen Lagerfeuer; mit der Naturpädagogin Ursula von Bogen."; 
+    ical:dtstart "2017-07-18T9:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-20T19:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.1b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Mehrtagesveranstaltung", "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "7-12" ;
+    ld:Kosten "mit Material: 55 € mit/70 € ohne FP" ; 
+    rdfs:label "Auwald-Wildnis-Camp - 3-tägige Ferienfreizeit" ;
+    ical:description "Auf geht’s! Packt euren Rucksack - wir gehen auf Abenteuerstreifzug durch die Natur, lernen Orientierung mit Karte und Kompass, lesen Tierspuren, üben uns in Wildnisfertigkeiten und machen Lagerfeuer; mit der Naturpädagogin Ursula von Bogen."; 
+    ical:dtstart "2017-07-25T9:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-27T19:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.2>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Mehrtagesveranstaltung", "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "6-11" ;
+    ld:Kosten "mit Material: 10 € mit/16 € ohne FP" ; 
+    rdfs:label "Papier schöpfen und kreativ verarbeiten" ;
+    ical:description "In diesem Kurs über zwei Tage schöpfen wir zunächst unser eigenes Papier, das wir am zweiten Tag dann kreativ zu Collagen, Glückwunschkarten etc. verarbeiten. In Zusammenarbeit mit „Die Hellen Köpfe“. 27.06 und 28.06. jeweils 14 - 16 Uhr."; 
+    ical:dtstart "2017-06-27T14:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-28T16:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>,
+    <http://leipzig-data.de/Data/Verein/DieHellenKoepfe>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.3>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Mehrtagesveranstaltung", "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "7-" ;
+    ld:Kosten "3 € mit/6 € ohne FP" ; 
+    rdfs:label "Faszination Wasser" ;
+    ical:description "Wo kommt das Wasser her und wo geht es hin. Wer lebt dort. Wir untersuchen die Wasserwelt und führen spannende Experimente durch. 04.07. und 11.07. jeweils 10 - 13 Uhr" ; 
+    ical:dtstart "2017-07-04T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-11T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.4>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Mehrtagesveranstaltung", "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "8-" ;
+    ld:Kosten "3 € mit/6 € ohne FP" ; 
+    rdfs:label "Klimadetektive" ;
+    ical:description "In diesem Kurs über zwei Tage schöpfen wir zunächst unser eigenes Papier, das wir am zweiten Tag dann kreativ zu Collagen, Glückwunschkarten etc. verarbeiten. (so steht es im Ferienpass). 05.07. und 12.07. jeweils 10 - 13 Uhr"; 
+    ical:dtstart "2017-07-05T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-12T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.5a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "8-" ;
+    ld:Kosten "mit Material: 10 € mit/13 € ohne FP" ; 
+    rdfs:label "Naturwerkstatt" ;
+    ical:description "Ausprobieren handwerklicher Fertigkeiten wie Schnitzen, mit Holz bauen, flechten, Feuer machen... sowie Aktionen und Spiele in der Natur; als Kurs möglich – jeden Tag ein anderes Thema; mit Heike Bürger"; 
+    ical:dtstart "2017-08-01T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-08-01T15:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.5b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "8-" ;
+    ld:Kosten "mit Material: 10 € mit/13 € ohne FP" ; 
+    rdfs:label "Naturwerkstatt" ;
+    ical:description "Ausprobieren handwerklicher Fertigkeiten wie Schnitzen, mit Holz bauen, flechten, Feuer machen... sowie Aktionen und Spiele in der Natur; als Kurs möglich – jeden Tag ein anderes Thema; mit Heike Bürger"; 
+    ical:dtstart "2017-08-02T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-08-02T15:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.5c>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "8-" ;
+    ld:Kosten "mit Material: 10 € mit/13 € ohne FP" ; 
+    rdfs:label "Naturwerkstatt" ;
+    ical:description "Ausprobieren handwerklicher Fertigkeiten wie Schnitzen, mit Holz bauen, flechten, Feuer machen... sowie Aktionen und Spiele in der Natur; als Kurs möglich – jeden Tag ein anderes Thema; mit Heike Bürger"; 
+    ical:dtstart "2017-08-03T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-08-03T15:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.6a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "7-" ;
+    ld:Kosten "mit Material: 3 € mit/6 € ohne FP" ; 
+    rdfs:label "Leckereien aus der Natur" ;
+    ical:description "Auf einer Exkursion lernen wir essbare und heilende Wildkräuter kennen und bereiten anschließend eine kleine Speise daraus zu."; 
+    ical:dtstart "2017-06-29T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-29T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.6b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "7-" ;
+    ld:Kosten "mit Material: 3 € mit/6 € ohne FP" ; 
+    rdfs:label "Leckereien aus der Natur" ;
+    ical:description "Auf einer Exkursion lernen wir essbare und heilende Wildkräuter kennen und bereiten anschließend eine kleine Speise daraus zu."; 
+    ical:dtstart "2017-07-06T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-06T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.6c>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "7-" ;
+    ld:Kosten "mit Material: 3 € mit/6 € ohne FP" ; 
+    rdfs:label "Leckereien aus der Natur" ;
+    ical:description "Auf einer Exkursion lernen wir essbare und heilende Wildkräuter kennen und bereiten anschließend eine kleine Speise daraus zu."; 
+    ical:dtstart "2017-07-13T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-13T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>  .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.7>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "10-13" ;
+    ld:Kosten "kostenlos" ; 
+    rdfs:label "Gewässererforschung mit dem Umweltmobil der Lanu" ;
+    ical:description "Wir untersuchen die Weiße Elster und Luppe chemisch und biologisch, wir mikroskopieren und machen Experimente."; 
+    ical:dtstart "2017-07-18T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-18T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Auwaldstation> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation>,
+    <http://leipzig-data.de/Data/Verein/LANU> .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.8a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "12-16" ;
+    ld:Kosten "kostenlos" ; 
+    rdfs:label "Klima-Rallye durch die Innenstadt" ;
+    ical:description "Mit iPads und der App KLIMA°Trax navigiert Ihr Euch zu 12 Stationen, wo Ihr Aufgaben löst, um im Spiel die Welt vor einer Klimakatastrophe zu retten. Geräte werden bereitgestellt."; 
+    ical:dtstart "2017-07-21T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-21T11:30:00+02:00"^^xsd:dateTime ;
+    ld:hatTreffpunkt <http://leipzig-data.de/Data/Ort/Stadtbuero> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation> .
+
+<http://leipzig-data.de/Data/Event/FP17/Auwaldstation.8b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "12-16" ;
+    ld:Kosten "kostenlos" ; 
+    rdfs:label "Klima-Rallye durch die Innenstadt" ;
+    ical:description "Mit iPads und der App KLIMA°Trax navigiert Ihr Euch zu 12 Stationen, wo Ihr Aufgaben löst, um im Spiel die Welt vor einer Klimakatastrophe zu retten. Geräte werden bereitgestellt."; 
+    ical:dtstart "2017-07-28T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-28T11:30:00+02:00"^^xsd:dateTime ;
+    ld:hatTreffpunkt <http://leipzig-data.de/Data/Ort/Stadtbuero> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Auwaldstation> .
+
+<http://leipzig-data.de/Data/Event/FP17/ComputerSpielSchule.1>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Altersgruppe "für alle" ;
+    ld:Kosten "kostenlos" ; 
+    rdfs:label "Kreativ mit Tablet und Computerspielen" ;
+    ical:description "Mit kostenlosen Apps und Spielen wollen wir die kreativen Möglichkeiten von Tablets und Computerspielen entdecken.  Gestaltet z.B. einen eigenen Avatar oder Comic. Bringt gern einen USB Stick mit."; 
+    ical:dtstart "2017-06-27T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-27T14:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Bibliothek.Plagwitz> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Ort/ComputerSpielSchule> .
+
+<http://leipzig-data.de/Data/Event/FP17/DoelitzerWassermuehle.1>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Nur für Gruppen" ;
+    nl:Altersgruppe "für alle" ;
+    ld:Kosten "2,50 € mit/4 € o. FP" ; 
+    rdfs:label "Märchenwanderung" ;
+    ical:description "Es war einmal... Märchenhafte Entdeckungsreise mit Schatzkarte im Goethepark. Bitte bringt Euer Märchenbuch mit, um Märchen zu erraten und am Ende vielleicht einen Schatz zu finden..."; 
+    ical:dtstart "2017-06-26T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-26T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/GAZ> .
+
+<http://leipzig-data.de/Data/Event/FP17/DoelitzerWassermuehle.2a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Nur für Gruppen" ;
+    nl:Altersgruppe "für alle" ;
+    ld:Kosten "5 € mit/3 € o. FP" ; 
+    rdfs:label "Malen mit Pflanzenfarben" ;
+    ical:description "Welche Farben stammen aus der Natur und was kann man daraus machen? Wir werden gemeinsam Farbtinkturen aus unterschiedlichen Pflanzen und Erden herstellen und danach kleine Aquarelle und Bilder malen."; 
+    ical:dtstart "2017-06-27T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-27T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/GAZ> .
+
+<http://leipzig-data.de/Data/Event/FP17/DoelitzerWassermuehle.2b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Nur für Gruppen" ;
+    nl:Altersgruppe "für alle" ;
+    ld:Kosten "5 € mit/3 € o. FP" ; 
+    rdfs:label "Malen mit Pflanzenfarben" ;
+    ical:description "Welche Farben stammen aus der Natur und was kann man daraus machen? Wir werden gemeinsam Farbtinkturen aus unterschiedlichen Pflanzen und Erden herstellen und danach kleine Aquarelle und Bilder malen."; 
+    ical:dtstart "2017-06-29T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-29T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/GAZ> .
+
+<http://leipzig-data.de/Data/Event/FP17/DoelitzerWassermuehle.2c>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Nur für Gruppen" ;
+    nl:Altersgruppe "für alle" ;
+    ld:Kosten "5 € mit/3 € o. FP" ; 
+    rdfs:label "Malen mit Pflanzenfarben" ;
+    ical:description "Welche Farben stammen aus der Natur und was kann man daraus machen? Wir werden gemeinsam Farbtinkturen aus unterschiedlichen Pflanzen und Erden herstellen und danach kleine Aquarelle und Bilder malen."; 
+    ical:dtstart "2017-06-30T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-30T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/GAZ> .
+
+<http://leipzig-data.de/Data/Event/FP17/VDI-Garage.1a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ;
+    nl:Altersgruppe "12-" ;
+    ld:Kosten "3,60 € mit/5 € ohne FP" ; 
+    rdfs:label "Technische Kommunikation" ;
+    ical:description "Plane und zeichne Deinen Traum vom Wohnen mit Sweet home 3D und lerne dabei die Grundlagen der technischen Kommunikation kennen!"; 
+    ical:dtstart "2017-06-26T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-26T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Garage> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Firma/Garage> .
+
+<http://leipzig-data.de/Data/Event/FP17/VDI-Garage.1b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ;
+    nl:Altersgruppe "12-" ;
+    ld:Kosten "3,60 € mit/5 € ohne FP" ; 
+    rdfs:label "Technische Kommunikation" ;
+    ical:description "Plane und zeichne Deinen Traum vom Wohnen mit Sweet home 3D und lerne dabei die Grundlagen der technischen Kommunikation kennen!"; 
+    ical:dtstart "2017-06-28T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-28T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Garage> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Firma/Garage> .
+
+<http://leipzig-data.de/Data/Event/FP17/VDI-Garage.1c>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ;
+    nl:Altersgruppe "12-" ;
+    ld:Kosten "3,60 € mit/5 € ohne FP" ; 
+    rdfs:label "Technische Kommunikation" ;
+    ical:description "Plane und zeichne Deinen Traum vom Wohnen mit Sweet home 3D und lerne dabei die Grundlagen der technischen Kommunikation kennen!"; 
+    ical:dtstart "2017-06-30T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-30T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Garage> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Firma/Garage> .
+
+<http://leipzig-data.de/Data/Event/FP17/VDI-Garage.2a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ;
+    nl:Altersgruppe "12-" ;
+    ld:Kosten "2,60 € mit/4 € ohne FP" ; 
+    rdfs:label "Operation Computer" ;
+    ical:description "Wie sieht ein Computer von innen aus? Wir zerlegen ihn wie ein Chirurg und setzen ihn wieder zusammen. Wird er wieder funktionieren?"; 
+    ical:dtstart "2017-06-26T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-26T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Garage> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Firma/Garage> .
+
+<http://leipzig-data.de/Data/Event/FP17/VDI-Garage.2b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ;
+    nl:Altersgruppe "12-" ;
+    ld:Kosten "2,60 € mit/4 € ohne FP" ; 
+    rdfs:label "Operation Computer" ;
+    ical:description "Wie sieht ein Computer von innen aus? Wir zerlegen ihn wie ein Chirurg und setzen ihn wieder zusammen. Wird er wieder funktionieren?"; 
+    ical:dtstart "2017-06-28T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-28T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Garage> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Firma/Garage> .
+
+<http://leipzig-data.de/Data/Event/FP17/VDI-Garage.2c>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ;
+    nl:Altersgruppe "12-" ;
+    ld:Kosten "2,60 € mit/4 € ohne FP" ; 
+    rdfs:label "Operation Computer" ;
+    ical:description "Wie sieht ein Computer von innen aus? Wir zerlegen ihn wie ein Chirurg und setzen ihn wieder zusammen. Wird er wieder funktionieren?"; 
+    ical:dtstart "2017-06-30T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-30T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Garage> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Firma/Garage> .
+
+<http://leipzig-data.de/Data/Event/FP17/Inspirata.1a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Reguläre Öffnungszeiten" ;
+    nl:Altersgruppe "für alle" ;
+    ld:Kosten "kostenlos mit FP/3,50 € ohne FP" ; 
+    rdfs:label "Erleben - Staunen - Experimentieren..." ;
+    ical:description "Über 150 naturwissenschaftliche Mitmach-Exponate laden zum Experimentieren und Knobeln ein. Hier könnt ihr Bälle schweben lassen, Kugelwettrennen veranstalten u.v.a.! Öffnungszeiten: Di und Do 10 - 17 Uhr, Sa 12 - 18 Uhr"; 
+    ical:dtstart "2017-06-27T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-08-05T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Inspirata> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Inspirata> .
+
+<http://leipzig-data.de/Data/Event/FP17/Inspirata.1b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Öffnungszeiten für Gruppen", "Anmeldung erforderlich";
+    nl:Altersgruppe "für alle" ;
+    ld:Kosten "kostenlos mit FP/3,50 € ohne FP" ; 
+    rdfs:label "Erleben - Staunen - Experimentieren..." ;
+    ical:description "Über 150 naturwissenschaftliche Mitmach-Exponate laden zum Experimentieren und Knobeln ein. Hier könnt ihr Bälle schweben lassen, Kugelwettrennen veranstalten u.v.a.! Öffnungszeiten für Gruppen nach Voranmeldung: Mo - Fr 8:30 / 10:30 / 12:30 / 14:30 Uhr"; 
+    ical:dtstart "2017-06-27T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-08-05T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Inspirata> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Inspirata> .
+
+<http://leipzig-data.de/Data/Event/FP17/AnglerverbandLeipzig.1b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich";
+    nl:Altersgruppe "6-16" ;
+    ld:Kosten "kostenlos" ; 
+    rdfs:label "Angeln von A-Z" ;
+    ical:description "Angeln von A-Z"; 
+    ical:dtstart "2017-07-19T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-19T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatTreffpunkt <http://leipzig-data.de/Data/Treffpunkt/Bruckner-Bassin>;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/AnglerverbandLeipzig> .
+
+<http://leipzig-data.de/Data/Event/FP17/AnglerverbandLeipzig.1c>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich";
+    nl:Altersgruppe "6-16" ;
+    ld:Kosten "kostenlos" ; 
+    rdfs:label "Angeln von A-Z" ;
+    ical:description "Angeln von A-Z"; 
+    ical:dtstart "2017-07-26T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-26T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatTreffpunkt <http://leipzig-data.de/Data/Treffpunkt/Bruckner-Bassin>;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/AnglerverbandLeipzig> .
+
+<http://leipzig-data.de/Data/Event/FP17/AnglerverbandLeipzig.1a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich";
+    nl:Altersgruppe "6-16" ;
+    ld:Kosten "kostenlos" ; 
+    rdfs:label "Angeln von A-Z" ;
+    ical:description "Angeln von A-Z"; 
+    ical:dtstart "2017-07-12T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-12T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatTreffpunkt <http://leipzig-data.de/Data/Treffpunkt/Bruckner-Bassin>;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/AnglerverbandLeipzig> .
+
+<http://leipzig-data.de/Data/Event/FP17/StadtinderStadt.1>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich";
+    nl:Altersgruppe "6-12" ;
+    ld:Kosten "Mit Leipzigpass kostenlos, 2 € mit und 5 € ohne FP, inklusive kostenlose Versorgung mit Getränken sowie Obst und Gemüse, Mittagessen für 3,00 €, für Leipzigpassinhaber gibt es eine Vergünstigung." ; 
+    rdfs:label "\"Stadt in der Stadt\" - Kinder - Ferien - Abenteuer" ;
+    ical:summary "Ein Ferienspiel der Vereine und Einrichtungen: Haus Steinstraße, Anker, Mühlstraße, Geyserhaus, Ariowitschhaus, Werk 2, Halle 5, KAOS, Leipziger Kinderbüro, Bernd-Blindow-Schulen Leipzig, Behindertenverband Leipzig." ; 
+    ical:description "Ihr habt schon immer davon geträumt, eine eigene Stadt zu bauen? Vielleicht eine Stadt am Fluss oder großen Strom?  Und wolltet ihr schon immer einmal Bürgermeister, Theaterdirektor oder Redakteur bei einer Zeitung in solch einer Stadt sein? Dann erfüllt euch doch einfach euren Traum und kommt zu uns. Dieses Jahr steht Stadt in der Stadt unter dem Motto „Strom“. Ihr könnt – wenn ihr wollt – alles, was euch dazu einfällt, bauen und basteln. Ihr könnt sägen, schrauben, faulenzen oder rumtoben. Theater, Radio, Krankenhaus, Disko und vieles mehr – ihr entscheidet, was gebaut wird und wie. Lasst eurer Fantasie freien Lauf und setzt eure Ideen um! Samstag, 08. Juli - großes Familienfest mit Häuserversteigerung bzw. Verkauf. Hier sind eure Eltern gefragt. Wer hier nicht dabei ist, der hat wirklich etwas verpasst. Gruppenanmeldung über Haus Steinstraße (0341 303288 24) oder anais.kramer@haus-steinstrasse.de"; 
+    ical:dtstart "2017-07-12T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-12T13:00:00+02:00"^^xsd:dateTime ;
+    ld:hatTreffpunkt <http://leipzig-data.de/Data/Treffpunkt/Robert-Koch-Park>;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/HausSteinstrasse>,
+    <http://leipzig-data.de/Data/Verein/Anker>, <http://leipzig-data.de/Data/Verein/Muehlstrasse>,
+    <http://leipzig-data.de/Data/Verein/GeyserHaus>, <http://leipzig-data.de/Data/Verein/AriowitschHaus>,
+    <http://leipzig-data.de/Data/Verein/Werk2>, <http://leipzig-data.de/Data/Verein/Halle5>,
+    <http://leipzig-data.de/Data/Verein/KulturwerkstattKAOS>,
+    <http://leipzig-data.de/Data/Verein/LeipzigerKinderbuero>,
+    <http://leipzig-data.de/Data/Schule/Bernd-Blindow-Schule>,
+    <http://leipzig-data.de/Data/Verein/BehindertenverbandLeipzig> .
+
+<http://leipzig-data.de/Data/Event/FP17/VerAnkert.1>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Mehrtagesveranstaltung", "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "10-14" ;
+    ld:Kosten "mit Material: 10 € mit / 15 € ohne FP" ; 
+    rdfs:label "VerANKERt in Möckern" ;
+    ical:description "Wir drehen einen Film! In und um den ANKER, über den Stadtteil Möckern und über das Leben im Leipziger Norden!  Von der Planung, über den Dreh bis zum Schnitt erstellen wir den kompletten Film gemeinsam. Dabei entdecken wir die Schätze der Perlenkette in den Stadtteilen Möckern, Gohlis, Wahren. Das Angebot findet im ANKER statt, voraussichtlich werden wiram Donnerstag und Freitag zum Schneiden des Films in die Medienwerkstatt (Villa Leipzig, Lessingstraße 7) gehen, um danach den Abschluss im ANKER zu feiern! 10.07.-13.07. jeweils 10-16 Uhr, 14.07. 10-18 Uhr" ; 
+    ical:dtstart "2017-07-10T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-14T18:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Anker> ;
+    ld:hatVeranstalter  <http://leipzig-data.de/Data/Verein/Anker>,
+    <http://leipzig-data.de/Data/Verein/LeipzigerKinderbuero> .
+
+<http://leipzig-data.de/Data/Event/FP17/Oekoloewe.1a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "6-12" ;
+    ld:Kosten "mit Material: 3 € mit/4 € ohne FP" ; 
+    rdfs:label "Aufruhr im Gemüsebeet. Wir erkunden einen Biogarten." ;
+    ical:description "Aufruhr im Gemüsebeet. Wir erkunden einen Biogarten."; 
+    ical:dtstart "2017-06-27T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-27T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/StadtgartenConnewitz> ;
+    ld:hatVeranstalter  <http://leipzig-data.de/Data/Verein/Oekoloewe> .
+
+<http://leipzig-data.de/Data/Event/FP17/Oekoloewe.1b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "6-12" ;
+    ld:Kosten "mit Material: 3 € mit/4 € ohne FP" ; 
+    rdfs:label "Aufruhr im Gemüsebeet. Wir erkunden einen Biogarten." ;
+    ical:description "Aufruhr im Gemüsebeet. Wir erkunden einen Biogarten."; 
+    ical:dtstart "2017-06-29T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-06-29T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/StadtgartenConnewitz> ;
+    ld:hatVeranstalter  <http://leipzig-data.de/Data/Verein/Oekoloewe> .
+
+<http://leipzig-data.de/Data/Event/FP17/Oekoloewe.2a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "6-12" ;
+    ld:Kosten "mit Material: 3 € mit/4 € ohne FP" ; 
+    rdfs:label "Gutes aus der Hofküche" ;
+    ical:description "Butter und Milchshakes selbst geschüttelt."; 
+    ical:dtstart "2017-07-04T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-04T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
+    ld:hatVeranstalter  <http://leipzig-data.de/Data/Verein/Oekoloewe> .
+
+<http://leipzig-data.de/Data/Event/FP17/Oekoloewe.2b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich" ; 
+    nl:Altersgruppe "6-12" ;
+    ld:Kosten "mit Material: 3 € mit/4 € ohne FP" ; 
+    rdfs:label "Gutes aus der Hofküche" ;
+    ical:description "Butter und Milchshakes selbst geschüttelt."; 
+    ical:dtstart "2017-07-31T10:00:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-31T12:00:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
+    ld:hatVeranstalter  <http://leipzig-data.de/Data/Verein/Oekoloewe> .
+
+<http://leipzig-data.de/Data/Event/FP17/Verbraucherzentrale.1a>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich", "Nur für Gruppen" ; 
+    nl:Altersgruppe "6-11" ;
+    ld:Kosten "kostenlos" ; 
+    rdfs:label "Die Welt der Lebensmittel mit Krümel und Klecksi" ;
+    ical:description "Mit spielerischen Aktionen, selbst durchgeführten Experimenten erleben die Kids die Vielfalt des Essens und Trinkens. Sie erfahren mit allen Sinnen, dass Obst und Gemüse sowie Milchprodukte gut schmecken."; 
+    ical:dtstart "2017-07-04T09:45:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-04T11:45:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/VerbraucherzentraleSachsen>  ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen> .
+
+<http://leipzig-data.de/Data/Event/FP17/Verbraucherzentrale.1b>
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Ferienpass.S17> ;
+    a ld:Event ;
+    nl:Tags "Anmeldung erforderlich", "Nur für Gruppen" ; 
+    nl:Altersgruppe "6-11" ;
+    ld:Kosten "kostenlos" ; 
+    rdfs:label "Die Welt der Lebensmittel mit Krümel und Klecksi" ;
+    ical:description "Mit spielerischen Aktionen, selbst durchgeführten Experimenten erleben die Kids die Vielfalt des Essens und Trinkens. Sie erfahren mit allen Sinnen, dass Obst und Gemüse sowie Milchprodukte gut schmecken."; 
+    ical:dtstart "2017-07-06T09:45:00+02:00"^^xsd:dateTime ;
+    ical:dtend "2017-07-06T11:45:00+02:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/VerbraucherzentraleSachsen>  ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen> .

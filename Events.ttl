@@ -7,7 +7,6 @@
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
-@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
 <http://leipzig-data.de/Data/Events/>
@@ -29,8 +28,8 @@ ld:Event
     a ld:Event ;
     rdfs:label "Political Correctness" ;
     ical:dtstart "2017-12-11T19:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
     ical:summary "Attac DenkTankStelle: Kultur macht Menschen" ;
     ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-12-11> .
 
@@ -41,8 +40,8 @@ ld:Event
     a ld:Event ;
     rdfs:label "Neoliberale Strategien zur Herrschaftssicherung" ;
     ical:dtstart "2018-01-08T19:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
     ical:summary "Attac DenkTankStelle: Kultur macht Menschen" ;
     ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2018-01-08> .
 
@@ -53,8 +52,8 @@ ld:Event
     a ld:Event ;
     rdfs:label "Neoliberale Strategien zur Herrschaftssicherung" ;
     ical:dtstart "2018-02-12T19:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/MIO> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/MIO> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
     ical:summary "Attac DenkTankStelle: Kultur macht Menschen" ;
     ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2018-02-12> .
 
@@ -64,8 +63,8 @@ ld:Event
     a ld:Event ;
     rdfs:label "Apollo 8: Der große Sprung für die Menschheit" ;
     ical:dtstart "2017-12-14T17:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Apollo 8: Der große Sprung für die Menschheit. Weihnachten im Weltraum. Mit Attila Mattukat, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_17_12_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -75,8 +74,8 @@ ld:Event
     a ld:Event ;
     rdfs:label "Abfallwirtschaft in Togo: ein Besuch in Lomé und Sokodé im August 2017" ;
     ical:dtstart "2018-01-18T17:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Abfallwirtschaft in Togo: ein Besuch in Lomé und Sokodé im August 2017. Mit Dr. rer. pol. Dipl.-Ing. Karl-Michael Meiss, ASG." ;
     ical:url <http://asg.ignt.de/Einladung_18_01_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -86,8 +85,8 @@ ld:Event
     a ld:Event ;
     rdfs:label "Die Atombombe - sieben Etappen von einer Utopie zum Sündenfall der Physik" ;
     ical:dtstart "2018-02-15T17:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Die Atombombe - sieben Etappen von einer Utopie zum Sündenfall der Physik. Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_18_01_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -96,8 +95,8 @@ rdfs:label "6. Leipziger Mineralien- und Familientag in der INSPIRATA – 14.04.
 ical:dtstart "2018-04-14T12:00:00+02:00"^^xsd:dateTime ;  # fix this 
 ical:dtend "2018-04-14T18:00:00+02:00"^^xsd:dateTime ;  # fix this 
 ld:hasTag ldtag:MINT, ldtag:Inspirata ;
-ical:organizer <http://leipzig-data.de/Data/Ort/Inspirata> ; 
-ical:location <http://leipzig-data.de/Data/Ort/Inspirata> ; 
+ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Inspirata> ; 
+ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Inspirata> ; 
 ical:url <https://www.inspirata.de/?p=10176> ; 
 ical:summary "Am Samstag, dem 14. April 2018, von 12:00 bis 18:00 Uhr in der INSPIRATA in Leipzig an der Alten Messe, Deutscher Platz 4, Eingang G (in der Durchfahrt) veranstaltet die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig mit Unterstützung der Fachgruppe für Geologie, Mineralogie &#38; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den 6. Leipziger Mineralien- und Familientag" ;
 ical:dtstamp "2017-11-30T22:45:33+01:00"^^xsd:dateTime ;

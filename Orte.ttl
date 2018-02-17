@@ -141,11 +141,12 @@ ld:Ort
     ld:Zielgruppe "Kinder-und Jugendliche, Senioren" ;
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Renftstrasse.1> ;
     ld:hasStatus "aktiv" ;
+    ld:istErreichbar "SB 10,11; Bus 80,90 bis Slevogtstr." ; 
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Anker> ;
     a ld:Ort ;
     rdfs:comment "Im Angebot: Schauspiel, Theater, Kreativwerkstatt, Mediencenter, Modellbau, Fotolabor, Kinderfeste, offener Treff, Jugendclub, Ferienangebote, Jugendgesprächsrunde" ;
     rdfs:label "Der Anker" ;
-    foaf:homepage <http://www.anker-Leipzig> ;
+    foaf:homepage <http://www.anker-Leipzig.de> ;
     foaf:mbox "info@anker-Leipzig.de" ;
     foaf:phone "0341-9123910", "0341-9128327" .
 
@@ -213,6 +214,7 @@ ld:Ort
     ld:hasTag ldtag:MINT ;
     a ld:Ort ;
     rdfs:label "Auwaldstation Leipzig" ;
+    ld:istErreichbar "SB 11 bis Lützschena, dann ca. 10 min. Fußweg" ;
     foaf:homepage <http://www.auwaldstation.de> ;
     foaf:mbox "auwaldstation@t-online.de" ;
     foaf:phone "0341-2537753", "0341-4621895" .
@@ -393,7 +395,8 @@ ld:Ort
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
     a ld:Ort ;
-    rdfs:label "Bibliothek Plagwitz" ;
+    ld:istErreichbar "SB 3,4,7,8,15 bis Felsenkeller bzw. Angerbrücke" ;
+    rdfs:label "Bibliothek Plagwitz \"Georg Maurer\"" ;
     foaf:phone "0341-4804375" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Reudnitz>
@@ -674,16 +677,15 @@ ld:Ort
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Eltern, Pädagogen, Kinder, Jugendliche" ;
     ld:Zielstellung "Kompetenter Umgang von Kindern, Jugendlichen, Eltern und Pädagogen mit der Computerspiel- und Unterhaltungskultur" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Warkus_Hartmut> ;
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.2> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Medienpaedagogik> ;
     ld:hasTag ldtag:MINT ;
     a ld:Ort ;
-    rdfs:comment "Am 21. Juni 2011 fand die feierliche Wiedereröffnung der ComputerSpielSchule Leipzig statt. In ihren neuen Räumlichkeiten im Friedrich-Schiller-Gymnasium heißt es ab sofort wieder: Miteinander spielen! Gemeinsam entdecken! Voneinander lernen!" ;
+    rdfs:comment "Seit der Gründung im Jahr 2008 hat sich die ComputerSpielSchule Leipzig zu einer festen Institution entwickelt, die ganzjährig ein Ort der Beratung und Begegnung im Rahmen digitaler Spiele ist. <br/> Um diese Ziele zu realisieren, umfasst unser Team neben den InitiatorInnen, KoordinatorInnen und festen MitarbeiterInnen auch SchülerInnen, PraktikantInnen und StudentInnen. Dabei werden wir unter anderem von MedienpädagogInnen, LehrerInnen und InformatikerInnen unterstützt und können uns so bei Veranstaltungen, Workshops und zu den Öffnungszeiten der ComputerSpielSchule, stets auf ein kompetentes und motiviertes Team verlassen. <br/> Am 21. Juni 2011 fand die feierliche Wiedereröffnung der ComputerSpielSchule Leipzig statt. In ihren neuen Räumlichkeiten im Friedrich-Schiller-Gymnasium heißt es ab sofort wieder: Miteinander spielen! Gemeinsam entdecken! Voneinander lernen!" ;
     rdfs:label "ComputerSpielSchule Leipzig" ;
-    foaf:homepage <http://www.computerspielschule.org> ;
-    foaf:mbox "info@computerspielschule.org", "philipp@computerspielschule.org" ;
+    foaf:homepage <http://www.computerspielschule-leipzig.de> ;
+    foaf:mbox "info@computerspielschule-leipzig.de" ;
     foaf:phone "0341-9735887", "0341-9735892" .
 
 <http://leipzig-data.de/Data/Ort/CongressCenterLeipzig>
@@ -788,11 +790,14 @@ ld:Ort
     ld:contactPerson <http://leipzig-data.de/Data/Person/Reschke_Katrin> ;
     ld:engagedPerson <http://leipzig-data.de/Data/Person/Reschke_Volker> ;
     ld:hasStatus "aktiv" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/GAZ> ;
     ld:hasTag ldtag:MINT ;
     a ld:Ort ;
+    ld:istErreichbar "SB 11 bis Leinestraße, dann 5 min Fußweg in Helenenstraße" ;
     rdfs:comment "Auslastung Mai-Juni 100%, August - April ca. 80%" ;
     rdfs:label "Dölitzer Wassermühle" ;
+    foaf:mbox "GAZ-Leipzig@t-online.de" ; 
     foaf:homepage <http://www.doelitzer-wassermuehle.de/> ;
     foaf:phone "0341-33399734", "0341-3389352" .
 
@@ -1009,6 +1014,7 @@ ld:Ort
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Garage> ;
     ld:hasTag ldtag:MINT ;
     a ld:Ort ;
+    ld:istErreichbar "SB 14 bis Gießerstraße, Bus 60, S-Bahn bis Bhf. Plagwitz" ;
     rdfs:label "GaraGe - Technologiezentrum für Jugendliche" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.51> ;
     foaf:homepage <http://www.g-a-r-a-g-e.com> ;
@@ -1262,7 +1268,6 @@ ld:Ort
     ld:Zielgruppe "Schulklassen aller Schulformen und Alter (ab Grundschule), aber auch regelmäßig offen für jedermann" ;
     ld:Zielstellung "Spielerische Kontakte mit Mathe und Physik für Kinder und Jugendliche und Interessierte aller Altersklassen unter Anleitung durch eingewiesene Lehramtsstudenten, Erarbeitung und Einrichtung von Workshops und anderen Unterrichtsangeboten zur Unterstützung des Lehramtsstudiums" ;
     ld:contactPerson <http://leipzig-data.de/Data/Person/Petzschler_Ines> ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Klimesch_Holger>, <http://leipzig-data.de/Data/Person/Koenig_Wolfgang>, <http://leipzig-data.de/Data/Person/Petzschler_Ines> ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Inspirata> ;
@@ -1272,7 +1277,7 @@ ld:Ort
     rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" ;
     foaf:homepage <http://www.inspirata.de> ;
     foaf:mbox "kontakt@inspirata.de" ;
-    foaf:phone "0341-1259757" .
+    foaf:phone "0341-1259757", "0341-35572923" .
 
 <http://leipzig-data.de/Data/Ort/InterCityHotelLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Troendlinring.2> ;
@@ -2372,6 +2377,7 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/StadtgartenConnewitz>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.KohrenerStrasse.3> ;
     a ld:Ort ;
+    ld:istErreichbar "SB 11 Hildebrandstraße" ; 
     rdfs:label "Stadtgarten Connewitz des Ökolöwe - Umweltbund Leipzig e. V." .
 
 <http://leipzig-data.de/Data/Ort/StadtgeschichtlichesMuseum>
@@ -2868,3 +2874,15 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/sublab>
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.30> .
 
+<http://leipzig-data.de/Data/Ort/VerbraucherzentraleSachsen> a ld:Ort ;
+   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
+foaf:mbox "bzl@vzs.de" ;
+foaf:phone "0341-2610450" ;
+rdfs:label "Verbraucherzentrale Sachsen" ;
+ld:istErreichbar "SB, Busse und S-Bahn bis Hauptbahnhof" ; 
+foaf:homepage <http://www.verbraucherzentrale-sachsen.de> .
+
+<http://leipzig-data.de/Data/Ort/Stadtbuero> a ld:Ort ;
+   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.2> ;
+rdfs:label "Stadtbüro" ;
+foaf:homepage <https://www.leipzig.de/buergerservice-und-verwaltung/buergerbeteiligung-und-einflussnahme/stadtbuero/> .

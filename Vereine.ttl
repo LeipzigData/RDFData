@@ -150,6 +150,9 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.EngelsdorferStrasse.377> ;
     ld:hasTag ldtag:MINT-Broschuere ;
     a ld:Verein ;
+    foaf:phone "0341-6523570" ;
+    foaf:homepage <http://www.anglerverband-leipzig.de> ; 
+    foaf:mbox "birgitholzmann@anglerverband-leipzig.de" ; 
     rdfs:label "Anglerverband Leipzig e.V." .
 
 <http://leipzig-data.de/Data/Verein/Anker>
@@ -246,6 +249,7 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
     a ld:Verein ;
     rdfs:label "Auwaldstation Leipzig" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A15> ; 
     org:hasMember <http://leipzig-data.de/Data/Person/Baesler_Detlef>, <http://leipzig-data.de/Data/Person/Seidel_Franka> .
 
 <http://leipzig-data.de/Data/Verein/BGL.Nachbarschaftshilfeverein>
@@ -797,6 +801,7 @@ ld:Verein
     ld:hasOrtsteil ldot:Connewitz ;
     ld:hasStadtId "333" ;
     ld:hasSupplierNumber "016" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A50> ;
     a ld:Verein ;
     rdfs:label "Eine Welt e.V." ;
     foaf:homepage <http://www.einewelt-sachsen.de> ;
@@ -2005,13 +2010,15 @@ ld:Verein
     rdfs:label "Leipziger Jahresausstellung e.V." .
 
 <http://leipzig-data.de/Data/Verein/LeipzigerKinderbuero>
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Rietschelstrasse.2> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Johannisallee.20> ;
     ld:hasCategories "Bildung und Freizeit", "Kinder, Jugend und Familie" ;
-    ld:hasOrtsteil ldot:Altlindenau ;
     ld:hasStadtId "550" ;
     ld:hasSupplierNumber "230" ;
+    foaf:homepage <http://www.leipziger-kinderbuero.de> ;
+    foaf:mbox "kinderbuero@dksb-leipzig.de" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A29> ;
     a ld:Verein ;
-    rdfs:label "Leipziger Kinderbüro e.V. - Fachstelle für Partizipation und Demokratielernen" .
+    rdfs:label "Leipziger Kinderbüro e.V., Deutscher Kinderschutzbund Leipzig" .
 
 <http://leipzig-data.de/Data/Verein/LeipzigerKinderstiftung>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.August-Bebel-Strasse.11> ;
@@ -2356,10 +2363,11 @@ ld:Verein
     ld:hasOrtsteil ldot:Connewitz ;
     ld:hasStadtId "300" ;
     ld:hasSupplierNumber "053" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A14> ;
     a ld:Verein ;
-    rdfs:label "Ökolöwe Umweltbund Leipzig e.V." ;
-    org:hasMember <http://leipzig-data.de/Data/Person/Quester_Roland> ;
-    foaf:phone "0341-3065-179" .
+    foaf:mbox "umweltbildung@oekoloewe.de" ;
+    rdfs:label "Ökolöwe – Umweltbund Leipzig e.V." ;
+    foaf:phone "0341-3065179", "0341-3504766" .
 
 <http://leipzig-data.de/Data/Verein/OekumenischesWohnprojektQuelle>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.7> ;
@@ -3431,3 +3439,40 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "sublab e.V." .
 
+
+<http://leipzig-data.de/Data/Verein/Kunzstoffe>
+a ld:Verein ;
+   ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.7> ;
+   foaf:mbox "buero@kunzstoffe.de" ;
+   foaf:phone "0163-4846916" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A64> ;
+   rdfs:label "kunZstoffe – urbane Ideenwerkstatt e.V." ;
+   foaf:homepage <http://www.kunzstoffe.de> .
+
+<http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen> a ld:Verein ;
+   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
+foaf:mbox "bzl@vzs.de" ;
+foaf:phone "0341-2610450" ;
+rdfs:label "Verbraucherzentrale Sachsen e.V." ;
+foaf:homepage <http://www.verbraucherzentrale-sachsen.de> .
+
+<http://leipzig-data.de/Data/Verein/OrangUtansinNot> a ld:Verein ;
+   ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.6> ;
+foaf:phone "0341-3550315" ;
+rdfs:comment "Orang-Utans in Not e.V. wurde im Jahr 2007 von Wissenschaftlern des Max-Planck-Instituts für evolutionäre Anthropologie in Leipzig gegründet." ;
+rdfs:label "Orang Utans in Not e.V." ;
+foaf:homepage <https://www.orang-utans-in-not.org> .
+
+<http://leipzig-data.de/Data/Verein/WeltOffen> a ld:Verein ;
+rdfs:label "WeltOffen e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Strassedes17Juni.11> ;
+foaf:phone "0341-68698188" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A173> ; 
+foaf:mbox "kontakt@weltoffen-leipzig.de" .
+
+<http://leipzig-data.de/Data/Verein/DieHellenKoepfe> 
+    a ld:Verein ;
+    rdfs:label "Die hellen Köpfe e.V." ;
+ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Rathenaustrasse.42> ;
+foaf:homepage <http://www.diehellenkoepfe.de/> ; 
+foaf:mbox "info@diehellenkoepfe.de" .

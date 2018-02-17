@@ -7,7 +7,6 @@
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldo: <http://leipzig-data.de/Data/Ort/> .
 @prefix ldp: <http://leipzig-data.de/Data/Person/> .
-@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
 <http://leipzig-data.de/Data/AlteEvents/>
@@ -26,8 +25,8 @@
     ical:description "Die Kultur- und Kreativwirtschaft ist sehr divers. Bildende Künstler haben zuweilen andere Bedürfnisse als ein Programmierer oder ein Möbeldesigner. Auch, wenn es um Finanzierungsmöglichkeiten geht. Es ist nicht immer einfach für sein Projekt oder sein Unternehmen die passenden Födermittel zu finden. Dann kommen Fragen auf: Wer ist der richtige Ansprechpartner für Ausstellungs-, Theater oder soziokulturelle Projekte, an wen kann ich mich wenden, wenn es bei den Investitionen hakt und wer kann bei der unternehmerischen Weiterentwicklung helfen? <br/> Über diese und weitere Fragen soll die Infoveranstaltung Anfang März Licht ins Dunkel bringen. Drei Ämter der Stadt Leipzig stellen ihre Fördermaßnahmen vor, die für alle Kultur- und Kreativschaffenden interessant sein können. <br/> <br/> Die Teilnahme ist kostenfrei. Um Anmeldung wird über das Anmeldetool gebeten. <br/> <br/> Ort der Veranstaltung: HALLE 14 - Zentrum für zeitgenössische Kunst <br/> <br/> Programm am 2. März 2017 <br/> 18:00 Uhr Ankommen <br/> 18:15 Uhr Begrüßung durch Kreatives Leipzig e.V. &amp; Amt für <br/> Wirtschaftsförderung <br/> 1. Präsentation zum Mittelstandsförderprogramm der Stadt Leipzig <br/> (Elisabeth Hauck – Amt für Wirtschaftsförderung) <br/> 2. Präsentation zur Kulturförderung der Stadt Leipzig <br/> (Antje Brodhun - Kulturamt) <br/> 3. Präsentation zur KU-Beihilfe EFRE im Leipziger Westen <br/> (Achim Lohse – Amt für Wirtschaftsförderung) <br/> 4. Verfügungsfonds des Leipziger Westens <br/> (Stefan Geiss – Amt für Stadterneuerung und <br/> Wohnungsbauförderung) <br/> 19:30 Uhr individuelle Fragerunde <br/> 20:15 Uhr Schluss" ;
     ical:dtend "2017-03-02T20:30:42+01:00"^^xsd:dateTime ;
     ical:dtstart "2017-03-02T18:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/Halle14> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/KreativesLeipzig> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Halle14> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/KreativesLeipzig> ;
     ical:sentBy <http://leipzig-data.de/Data/Projekt/APILeipzig.Events> ;
     ical:summary "Info@kreativwirtschaft - Kommunale Fördermöglichkeiten" .
 
@@ -38,8 +37,8 @@
     rdfs:label "Der Nobelpreis für Physik 2016." ;
     ical:description "Der Nobelpreis für Physik 2016. Mit Dr. rer. nat. Bernd Lippold, Leipzig." ;
     ical:dtstart "2017-02-16T17:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Der Nobelpreis für Physik 2016. Mit Dr. rer. nat. Bernd Lippold, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_17_02_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -50,8 +49,8 @@
     rdfs:label "Ionisierende Strahlung – die unsichtbare Botschaft aus dem Inneren radioaktiver Atome. Eine Zeitreise über 5 Jahrzehnte von der Entdeckung der X-Strahlen bis zur Entdeckung der Kernspaltung." ;
     ical:description "Ionisierende Strahlung – die unsichtbare Botschaft aus dem Inneren radioaktiver Atome. Eine Zeitreise über 5 Jahrzehnte von der Entdeckung der X-Strahlen bis zur Entdeckung der Kernspaltung. Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
     ical:dtstart "2017-03-16T17:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Ionisierende Strahlung – die unsichtbare Botschaft aus dem Inneren radioaktiver Atome. Eine Zeitreise über 5 Jahrzehnte von der Entdeckung der X-Strahlen bis zur Entdeckung der Kernspaltung. Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_17_03_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -62,8 +61,8 @@
     rdfs:label "Klimawandel, physikalische und chemisch-biologische Rückkopplungen (und wie man sie unterscheidet), biogeochemische Sekundäreffekte und eine neue Messmethode aus Zittau." ;
     ical:description "Klimawandel, physikalische und chemisch-biologische Rückkopplungen (und wie man sie unterscheidet), biogeochemische Sekundäreffekte und eine neue Messmethode aus Zittau. Mit Priv.-Doz. Dr. rer. nat. habil. Stefan Fränzle, TU Dresden, FH Zittau." ;
     ical:dtstart "2017-04-20T17:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Klimawandel, physikalische und chemisch-biologische Rückkopplungen (und wie man sie unterscheidet), biogeochemische Sekundäreffekte und eine neue Messmethode aus Zittau. Mit Priv.-Doz. Dr. rer. nat. habil. Stefan Fränzle, TU Dresden, FH Zittau." ;
     ical:url <http://asg.ignt.de/Einladung_17_04_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -74,8 +73,8 @@
     rdfs:label "Martin Luther zwischen Naturbeobachtung, Naturerklärung, Naturwissenschaft." ;
     ical:description "Martin Luther zwischen Naturbeobachtung, Naturerklärung, Naturwissenschaft. Mit Dr. theol. Sieghard Mühlmann, Leipzig." ;
     ical:dtstart "2017-05-11T17:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Martin Luther zwischen Naturbeobachtung, Naturerklärung, Naturwissenschaft. Mit Dr. theol. Sieghard Mühlmann, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_17_05_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -86,8 +85,8 @@
     rdfs:label "Das geheime Uranprojekt in Deutschland vor 78 Jahren und der Beitrag der \"Leipziger Physik\"." ;
     ical:description "Ionisierende Strahlung - die \"unsichtbare\" Botschaft aus dem Inneren radioaktiver Atome. Der Start des geheimen Uranprojekts in Deutschland vor 78 Jahren, sein Verlauf und seine Ergebnisse aus heutiger Sicht. Der Beitrag der \"Leipziger Physik\". Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
     ical:dtstart "2017-06-22T17:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Das geheime Uranprojekt in Deutschland vor 78 Jahren und der Beitrag der \"Leipziger Physik\". Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_17_06_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -99,8 +98,8 @@
     rdfs:label "Wege zu einer neuen Gesellschaft. Revolution oder Transformation." ;
     ical:description "Als Thema wurde ausgewählt: Revolution oder Transformation, Unterthema einer kleinen Reihe, die wir Wege zur neuen Gesellschaft nennen wollen. " ;
     ical:dtstart "2017-08-14T19:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
     ical:summary "Attac DenkTankStelle: Wege zu einer neuen Gesellschaft. Revolution oder Transformation." ;
     ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-08-14> .
 
@@ -112,8 +111,8 @@
     rdfs:label "Wege zu einer neuen Gesellschaft. Bedingungsloses Grundeinkommen." ;
     ical:description "Als Thema wurde in der kleinen Reihe >Wege zur neuen Gesellschaft< das bedingungslose Grundeinkommen ausgewählt. Inzwischen von allen gut durchgekaut, wird es schwer werden, etwas Neues herauszuschmecken. Vielleicht gelingt es, indem wir unsere ganz persönliche Sicht dazu zur Diskussion stellen. Schön wär’s, wenn einer, eine sich darauf einstellt, den ersten Pfahl zu schlagen. " ;
     ical:dtstart "2017-09-11T19:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
     ical:summary "Attac DenkTankStelle: Wege zu einer neuen Gesellschaft. Bedingungsloses Grundeinkommen." ;
     ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-09-11> .
 
@@ -125,8 +124,8 @@
     rdfs:label "Kultur macht Menschen" ;
     ical:description "Kultur macht Menschen – das ist eine kühne Behauptung, fallen doch da jedem sofort Beispiele an Barbarei ein, die aber scheinbar auch gar nichts mit Kultur und Menschlichkeit zu tun haben können. Weil gerade vom 76. Jahrestag von Babij Jar zu hören und zu sehen war, das als Beispiel genannt. Und trotzdem, was würde aus diesem blutigen schreienden Etwas, wenn ihm nach seiner Geburt im Laufe der Jahrzehnte nicht mehr als 6000 Jahre bewusste Menschheitserfahrung versucht würde aufzubürden. Mal mit weniger, mal mit mehr Erfolg und nicht überall und nicht jedem. Unter Kultur ist also der gesamte Überbau zu verstehen, um den marxistischen Begriff zu verwenden. Wir werden also u.a. bei der Rolle und den dialektischen Beziehungen von Sein und Bewusstsein landen und uns fragen, ob die Prioritäten noch die gleichen sein können wie bei dem in Stein gemeißelten Satz: Das Sein prägt das Bewusstsein." ;
     ical:dtstart "2017-10-09T19:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
     ical:summary "Attac DenkTankStelle: Kultur macht Menschen" ;
     ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-10-09> .
 
@@ -138,8 +137,8 @@
     ical:dtend "2017-09-09T22:00:00+02:00"^^xsd:dateTime ;
     ical:dtstamp "2017-06-28T12:58:58+02:00"^^xsd:dateTime ;
     ical:dtstart "2017-09-09T15:00:00+02:00"^^xsd:dateTime ;
-    ical:location ldo:Inspirata ;
-    ical:organizer ldo:Inspirata ;
+    ld:hatVeranstaltungsort ldo:Inspirata ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Inspirata> ;
     ical:summary "Im September 2017 feiert die Alte Messe Leipzig: MESSTIVAL = Musik + Streetfood + Show Am 9. September wird von 15 bis 22 Uhr die Straße des 18. Oktober in Leipzig ein sensationelles Event erleben: Bands der Alten Messe Leipzig, die „Firebirds-Show“ des Theater Titanick, Automeile, Kinderflohmarkt, Kinderfahrschule, Fahrsimulator und vieles mehr … " ;
     ical:url <https://www.inspirata.de/?p=9935> .
 
@@ -149,8 +148,8 @@
     a ld:Event ;
     rdfs:label "The Ocean Cleanup - What is behind technically." ;
     ical:dtstart "2017-10-19T17:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "The Ocean Cleanup - What is behind technically. Mit PhD Norbert Fraunholcz, Lead Processing Engineer, The Ocean Cleanup, Delft/Niederlande." ;
     ical:url <http://asg.ignt.de/Einladung_17_10_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -160,8 +159,8 @@
     a ld:Event ;
     rdfs:label "Die Atombombe - vor 100 Jahren noch Science Fiction, vor 70 Jahren grausame Wirklichkeit" ;
     ical:dtstart "2017-11-16T17:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Die Atombombe - vor 100 Jahren noch Science Fiction, vor 70 Jahren grausame Wirklichkeit. Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_17_11_.pdf>, <http://asg.ignt.de/Seminar.htm> .
 
@@ -173,8 +172,8 @@
     rdfs:label "Kultur macht Menschen (noch einmal)" ;
     ical:description "Liebe Freundinnen und Freunde, nach der munteren Diskussion vom letzten Mal zum Thema: >Kultur macht Menschen<, und weil wir kein Ende fanden, wurde eine Fortsetzung im November vereinbart. " ;
     ical:dtstart "2017-11-13T19:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
     ical:summary "Attac DenkTankStelle: Kultur macht Menschen" ;
     ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-11-13> .
 
@@ -186,8 +185,8 @@
     ical:dtend "2017-10-28T22:00:00+02:00"^^xsd:dateTime ;
     ical:dtstamp "2017-09-29T13:52:44+02:00"^^xsd:dateTime ;
     ical:dtstart "2017-10-28T12:00:00+02:00"^^xsd:dateTime ;
-    ical:location ldo:Inspirata ;
-    ical:organizer ldo:Inspirata ;
+    ld:hatVeranstaltungsort ldo:Inspirata ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Inspirata> ;
     ical:summary "Anlässlich von … verlängern wir unsere Samstags-Öffnungszeit am 28. Oktober 2017 in die dunklen Abend- und Nachtstunden: Von 12 bis 22 Uhr kann man sich in unserer dann passend vergeisterten Mitmach-Ausstellung gruseln! Zusätzlich können sich unsere Besucher an diesem Samstag über besondere Experimente in unheimlicher Umgebung freuen, kleine Halloween-Geschenke aus Papier basteln und spannende Gespensterschichten  mit einem Vorleser hören." ;
     ical:url <https://www.inspirata.de/?p=10079> .
 
@@ -199,8 +198,8 @@
     ical:dtend "2017-10-30T21:00:00+02:00"^^xsd:dateTime ;
     ical:dtstamp "2017-09-29T13:52:44+02:00"^^xsd:dateTime ;
     ical:dtstart "2017-10-30T17:00:00+02:00"^^xsd:dateTime ;
-    ical:location ldo:Inspirata ;
-    ical:organizer ldo:Inspirata ;
+    ld:hatVeranstaltungsort ldo:Inspirata ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Inspirata> ;
     ical:summary "Und weil die INSPIRATA einmal so toll vergruselt ist und am 30.10. vielerorts &#8222;Brückentag&#8220; ist, gibt es am Montag, dem 30. Oktober 2017, noch eine Halloween-Öffnungszeit von 17 bis 21 Uhr!" ;
     ical:url <https://www.inspirata.de/?p=10079> .
 
@@ -212,8 +211,8 @@
     ical:dtend "2017-10-18T16:00:00+02:00"^^xsd:dateTime ;
     ical:dtstamp "2017-03-31T11:53:00+02:00"^^xsd:dateTime ;
     ical:dtstart "2017-10-18T9:00:00+02:00"^^xsd:dateTime ;
-    ical:location ldo:Inspirata ;
-    ical:organizer ldo:Inspirata ;
+    ld:hatVeranstaltungsort ldo:Inspirata ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Inspirata> ;
     ical:summary "Fortbildung der INSPIRATA in Kooperation mit dem Sächsischen Staatsministerium für Kultus “Digitale Werkzeuge im Analysisunterricht” Wer? Lehrerinnen und Lehrer, Studierende sowie Referendarinnen und Referendare mit dem Fach Mathematik Wo? INSPIRATA – 04103 Leipzig, Deutscher Platz 4 (Eingang G, 3. Etage) Wann? Mittwoch, 18. Oktober 2017, von 9:00 bis 16:00 Uhr" ;
     ical:url <http://www.inspirata.de/?p=9719> .
 
@@ -224,8 +223,8 @@
     ical:description "<p><strong>Unter dem Motto &#8222;ZUKUNFT GESTALTEN LERNEN&#8220;</strong><br /> lädt der ZukunftsAkademie Leipzig e.V.<br /> <strong>Leipziger Schulen</strong> und <strong>externe Bildungsanbieter</strong><br /> für Donnerstag, den 19. Oktober 2017, ab 14 Uhr<br /> in die Stadtbibliothek an den Wilhelm-Leuschner-Platz ein.</p> <p>Dort werden sich viele Bildungsanbieter aus den Bereichen <strong>MINT</strong> (Mathematik/ Informatik/ Naturwissenschaft/ Technik) und <strong>BNE</strong> (Bildung für nachhaltige Entwicklung) präsentieren.<br /> Nach einem inspirierenden Kurzinput zu diesen Themen <strong>können Lehrkräfte aus Oberschulen und Gymnasien die Angebote direkt vor Ort und ihre Anbieter persönlich kennen lernen</strong> und Kooperationen vereinbaren. Die Angebote der Initiativen und Projekte sollen als <strong>Ergänzungen für den Profilunterricht, für Projekttage, GTA (Ganztagsangebote) u.ä.</strong> dienen.<br /> Einladungen mit ausführlichen Informationen zur Veranstaltung gingen vom ZukunftsAkademie e.V. per Post an Leipziger Schulen sowie per E-Mail an registrierte Lehrkräfte.</p> <p>Die Projektbörse wird in Kooperation mit der SBAL, dem ZLS der Uni Leipzig, der Stadt Leipzig sowie der Leipziger Agenda 21 organisiert.</p> <p>(Quelle: www.zukunftsakademie-leipzig.de/ziele/projektboerse)</p> <p>Auch unser INSPIRATA e.V. wird auf dieser Projektbörse seine aktuellen Angebote für Schulen vorstellen. Wir freuen uns auf persönliche Gespräche mit interessierten Lehrerinnen und Lehrern, Horterzieherinnen und Horterziehern.</p> <p>Lassen Sie sich inspirieren!</p> " ;
     ical:dtstamp "2017-06-30T17:27:05+02:00"^^xsd:dateTime ;
     ical:dtstart "2017-10-19T14:00:00+02:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/Bibliothek.Stadtbibliothek> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/Zukunftsakademie> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Bibliothek.Stadtbibliothek> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Zukunftsakademie> ;
     ical:summary "Unter dem Motto &#8222;ZUKUNFT GESTALTEN LERNEN&#8220; lädt der ZukunftsAkademie Leipzig e.V. Leipziger Schulen und externe Bildungsanbieter für Donnerstag, den 19. Oktober 2017, ab 14 Uhr in die Stadtbibliothek an den Wilhelm-Leuschner-Platz ein. Dort werden sich viele Bildungsanbieter aus den Bereichen MINT (Mathematik/ Informatik/ Naturwissenschaft/ Technik) und BNE (Bildung für nachhaltige Entwicklung) präsentieren. " ;
     ical:url <https://www.inspirata.de/?p=9946> .
 
@@ -235,7 +234,7 @@
     a ld:Event ;
     rdfs:label "Die Atombombe - vor 100 Jahren noch Science Fiction, vor 70 Jahren grausame Wirklichkeit" ;
     ical:dtstart "2017-11-16T17:00:00+01:00"^^xsd:dateTime ;
-    ical:location <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
-    ical:organizer <http://leipzig-data.de/Data/Verein/ASG> ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Die Atombombe - vor 100 Jahren noch Science Fiction, vor 70 Jahren grausame Wirklichkeit. Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_17_11_.pdf>, <http://asg.ignt.de/Seminar.htm> .
