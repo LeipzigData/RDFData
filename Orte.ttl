@@ -301,7 +301,7 @@ ld:Ort
     ld:hasAddress <http://leipzig-data.de/Data/04463.Grosspoesna.Hauptstrasse.19> ;
     ld:hasTag ldtag:MINT-Broschuere ;
     a ld:Ort ;
-    rdfs:label "Bergbau-Technik-Park e.V." .
+    rdfs:label "Bergbau-Technik-Park" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Boehlitz-Ehrenberg>
     ld:hasStatus "aktiv" ;
@@ -1631,7 +1631,7 @@ ld:Ort
     rdfs:label "Mobile Jugendarbeit Leipzig" ;
     foaf:homepage <http://kuebelonline.de/> .
 
-<http://leipzig-data.de/Data/Ort/MPI-MIS>
+<http://leipzig-data.de/Data/Ort/MPI.MIS>
     ld:Art "Vorträge, Schülerprojekte" ;
     ld:Hintergrund "Das MPI ist auf diesem Gebiet schon viele Jahre aktiv und hat diese Angebote dauerhaft eingerichtet." ;
     ld:Kosten "in der Regel keine" ;
@@ -1641,7 +1641,7 @@ ld:Ort
     ld:contactPerson ldp:Gregor_Jana ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.22> ;
     ld:hasStatus "aktiv" ;
-    ld:hasSupplier <http://leipzig-data.de/Data/MPI-MIS> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/MPI.MIS> ;
     ld:hasTag ldtag:Biologie, ldtag:Chemie, ldtag:MINT, ldtag:Mathematik, ldtag:Naturwissenschaften, ldtag:Physik ;
     a ld:Ort ;
     rdfs:label "Max-Planck-Institut für Mathematik in den Naturwissenschaften" ;
@@ -1845,6 +1845,7 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/NeueMesse>
     ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.Messe-Allee.1> ;
     a ld:Ort ;
+    ld:Supplier <http://leipzig-data.de/Data/Firma/LeipzigerMesse> ; 
     rdfs:label "Neue Messe Leipzig" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.100>, <http://leipzig-data.de/Data/APIId/Venue.101> ;
     foaf:homepage <http://www.leipziger-messe.de/> .
@@ -1936,18 +1937,6 @@ ld:Ort
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.AmFreibad.3> ;
     a ld:Ort ;
     rdfs:label "Ökobad Lindenthal" .
-
-<http://leipzig-data.de/Data/Ort/Oekoloewe>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-    ld:hasTag ldtag:MINT-Broschuere ;
-    a ld:Ort ;
-    rdfs:label "Ökolöwe - Umweltbund Leipzig e.V." .
-
-<http://leipzig-data.de/Data/Ort/OekoloeweNaturnah>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.KohrenerStrasse.3> ;
-    ld:hasTag ldtag:MINT-Broschuere ;
-    a ld:Ort ;
-    rdfs:label "Ökolöwe - Umweltbund Leipzig e.V. Leipzig naturnah" .
 
 <http://leipzig-data.de/Data/Ort/Oekoschule.Markkleeberg>
     ld:Art "Ökoschule und grünes Klassenzimmer, Unterricht im Grünen, Projekttage, Schulfeste, Klassenfeste und Kindergeburtstage" ;
@@ -2838,3 +2827,124 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "sublab e.V." ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.30> .
+
+<http://leipzig-data.de/Data/Ort/Umweltbibliothek> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A4> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+   foaf:mbox "info@umweltbibliothek-leipzig.de" ;
+   foaf:phone "0341-3065180" ;
+   rdfs:label "Umweltbibliothek Leipzig" ;
+   foaf:homepage <http://www.umweltbibliothek-leipzig.de> . 
+
+<http://leipzig-data.de/Data/Ort/UFZ.Schuelerlabor> a ld:Ort ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A12> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
+   foaf:mbox "schuelerlabor@ufz.de" ;
+   foaf:phone "03412351845" ;
+   rdfs:label "Helmholtz-Zentrum für Umweltforschung GmbH - UFZ" ;
+   foaf:homepage <http://www.ufz-schuelerlabor.de> . 
+
+<http://leipzig-data.de/Data/Ort/Querbeet.NeustaedterStrasse> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A42> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.NeustaedterStrasse.20> ;
+   ld:hasSupplier <http://leipzig-data.de/Data/Verein/Querbeet> ;
+   rdfs:label "Querbeet, Garten Neustädter Straße" ;
+   foaf:homepage <http://www.querbeet-leipzig.de> . 
+
+<http://leipzig-data.de/Data/Ort/Rockzipfel> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A43> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.10> ;
+   foaf:mbox "buero@rockzipfel-leipzig.de" ;
+   foaf:phone "0341-2482740" ;
+   ld:hasSupplier <http://leipzig-data.de/Data/Verein/Zipfel> ;
+   rdfs:label "Rockzipfel Eltern-Kind-Büro" ;
+   foaf:homepage <http://www.rockzipfel-leipzig.de> . 
+
+<http://leipzig-data.de/Data/Ort/EineWelt.Laden> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A50> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
+   foaf:mbox "info@einewelt-leipzig.de" ;
+   foaf:phone "+493413010143" ;
+   ld:hasSupplier <http://leipzig-data.de/Data/Verein/EineWelt> ;
+   rdfs:label "Eine Welt Laden" ;
+   foaf:homepage <http://einewelt-leipzig.de> . 
+
+<http://leipzig-data.de/Data/Ort/Querbeet.Bernhardstrasse> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A67> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Bernhardstrasse.11> ;
+   foaf:mbox "info@querbeet-leipzig.de" ;
+   rdfs:label "Querbeet, Garten Bernhardstraße" ;
+   foaf:homepage <http://www.querbeet-leipzig.de> . 
+
+<http://leipzig-data.de/Data/Ort/Ratskeller> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A89> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lotterstrasse.1> ;
+   foaf:mbox "info@ratskeller-leipzig.de" ;
+   foaf:phone "0341-1234567" ;
+   ld:hasSupplier <http://leipzig-data.de/Data/Untermehmen/Ratskeller> ; 
+   rdfs:label "Ratskeller der Stadt Leipzig" ;
+   foaf:homepage <http://www.ratskeller-leipzig.de> . 
+
+<http://leipzig-data.de/Data/Ort/AlteSchlosserei> a ld:Ort ; 
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A95> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kurt-Eisner-Strasse.66> ;
+   foaf:mbox "mail@alte-schlosserei.de" ;
+   foaf:phone "0341-3069996" ;
+   rdfs:label "Alte Schlosserei" ;
+   foaf:homepage <http://www.alte-schlosserei.de> . 
+
+<http://leipzig-data.de/Data/Ort/HotelFuerstenhof> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A103> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Troendlinring.8> ;
+   foaf:mbox "Philipp.Jahnich@luxurycollection.com" ;
+   foaf:phone "0341-1404901" ;
+   rdfs:label "Hotel Fürstenhof" ;
+   foaf:homepage <http://www.hotelfuerstenhofleipzig.com/> . 
+
+<http://leipzig-data.de/Data/Ort/Dresdner59> a ld:Ort ; 
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A104> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.DresdnerStrasse.59> ;
+   foaf:mbox "johannapahl@googlemail.com" ;
+   foaf:phone "0341-3067174" ;
+   rdfs:label "Dresdner 59" ;
+   foaf:homepage <http://www.dresdner59.de> . 
+
+<http://leipzig-data.de/Data/Ort/Bibliothek.Plagwitz> a ld:Ort ; 
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A113> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.14> ;
+   foaf:mbox "bibliothek.plagwitz@leipzig.de" ;
+   foaf:phone "0341-4804375" ;
+   rdfs:label "Stadtteilbibliothek Plagwitz" ;
+   foaf:homepage <http://www.leipzig.de/stadtbib> . 
+
+<http://leipzig-data.de/Data/Ort/CafeChavalo> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A120> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Kochstrasse.132> ;
+   foaf:mbox "jens@cafe-chavalo.de" ;
+   foaf:phone "0175-9490562" ;
+   rdfs:label "Café Chavalo" ;
+   foaf:homepage <http://www.cafe-chavalo.de> . 
+
+<http://leipzig-data.de/Data/Ort/CremeBRUeHLe> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A133> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.AmHallischenTor.1> ;
+   foaf:mbox "verena.hahmann@marriott.com" ;
+   foaf:phone "04319653109" ;
+   rdfs:label "Creme BRÜHLé" ;
+   foaf:homepage <http://www.restaurant-creme-bruehle.de> . 
+
+<http://leipzig-data.de/Data/Ort/BotanischerGartenGrosspoesna>
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A171> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04463.Grosspoesna.StoermthalerWeg.2> ;
+   foaf:mbox "botanischer-garten-oberholz@gmx.de" ;
+   foaf:phone "03429741249" ;
+   rdfs:label "Botanischer Garten Großpösna-Oberholz" ;
+   foaf:homepage <http://www.botanischer-garten-oberholz.de> . 
+
+<http://leipzig-data.de/Data/Ort/JeepneyCafe> a ld:Ort  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A172> ;
+   ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Georg-Schumann-Strasse.78> ;
+   foaf:mbox "office@jeepney-cafe.de" ;
+   foaf:phone "0341-69866680" ;
+   rdfs:label "Jeepney Café" ;
+   foaf:homepage <http://jeepney-cafe.de> . 
