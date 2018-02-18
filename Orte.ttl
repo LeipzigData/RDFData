@@ -5,6 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
 
@@ -17,7 +18,8 @@
 
 ld:Hotel
     a owl:Class ;
-    rdfs:label "Hotel" .
+    rdfs:label "Hotel" ;
+    rdfs:subClassOf ld:Ort .
 
 ld:Ort
     a owl:Class ;
@@ -59,7 +61,7 @@ ld:Ort
     foaf:homepage <http://www.adventhaus-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Ort/AZ-Schkeuditz>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Schilling_Peter> ;
+    ld:engagedPerson ldp:Schilling_Peter ;
     ld:hasAddress <http://leipzig-data.de/Data/04435.Schkeuditz.Bergbreite.1> ;
     ld:hasStatus "aktiv" ;
     ld:hasTag ldtag:MINT ;
@@ -141,8 +143,8 @@ ld:Ort
     ld:Zielgruppe "Kinder-und Jugendliche, Senioren" ;
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Renftstrasse.1> ;
     ld:hasStatus "aktiv" ;
-    ld:istErreichbar "SB 10,11; Bus 80,90 bis Slevogtstr." ; 
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Anker> ;
+    ld:istErreichbar "SB 10,11; Bus 80,90 bis Slevogtstr." ;
     a ld:Ort ;
     rdfs:comment "Im Angebot: Schauspiel, Theater, Kreativwerkstatt, Mediencenter, Modellbau, Fotolabor, Kinderfeste, offener Treff, Jugendclub, Ferienangebote, Jugendgesprächsrunde" ;
     rdfs:label "Der Anker" ;
@@ -207,14 +209,14 @@ ld:Ort
     ld:Leistungsangebot "Angebot thematischer Naturexkursionen an den Wochenenden", "Beratung zu praktischem Natur- und Umweltschutz, Bestimmung von Tier- und Pflanzenarten", "Bereitstellung von Material zu Themen im Bereich Natur und Umwelt", "Fortbildung für Erzieher und Lehrer", "Gestaltung und Durchführung von Naturerlebnisprogrammen für Bildungs- und Betreuungseinrichtungen", "Vermittlung fachlicher Inhalte in Kombination mit Abenteuer, Entdecken und Experimentieren" ;
     ld:Oeffnungszeiten "Mo bis Fr 9:00-16:00 Uhr", "Wochenende und Feiertage 12:00-18:00 Uhr" ;
     ld:Zielstellung "Nach dem Prinzip „Lernen mit Herz, Hand und Verstand“ werden fachliche Inhalte mit Bezug zur Natur vermittelt. „Bewegend“ die Natur erleben bietet einen optimalen Ausgleich zum Schulalltag, fördert den Gemeinschaftssinn, Kreativität sowie Phantasie." ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Seidel_Franka> ;
+    ld:engagedPerson ldp:Seidel_Franka ;
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Auwaldstation> ;
     ld:hasTag ldtag:MINT ;
+    ld:istErreichbar "SB 11 bis Lützschena, dann ca. 10 min. Fußweg" ;
     a ld:Ort ;
     rdfs:label "Auwaldstation Leipzig" ;
-    ld:istErreichbar "SB 11 bis Lützschena, dann ca. 10 min. Fußweg" ;
     foaf:homepage <http://www.auwaldstation.de> ;
     foaf:mbox "auwaldstation@t-online.de" ;
     foaf:phone "0341-2537753", "0341-4621895" .
@@ -222,7 +224,7 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/BA-Leipzig>
     ld:Kurzinformation "Die Staatliche Studienakademie Leipzig verknüpft mit ihrem Dualen Studium Theorie und Praxis. In 6 Semestern werden solide Fachkenntnisse und betriebspraktische Handlungskompetenz vermittelt. Jedes Semester besteht aus einem Halbsemester in der Studienakademie (Theorie) und einem Halbsemester im Unternehmen (Praxis). Die Staatliche Studienakademie Leipzig verbindet moderne Studieninhalte mit Praxisnähe und dem berufsbefähigenden Abschluss als Bachelor of Arts bzw. Bacherlor of Science. Die Vermittlungsquoten der Absolventen sind stetig auf hohem Niveau. Insgesamt nehmen durchschnittlich 95% der Absolventen ihre Tätigkeit in der Praxis auf.<br>Die Vorteile auf einen Blick: <ul><li> praxisintegriert und wissenschaftsgeleitet</li> <li>Vergütung durch den Praxispartner</li> <li>hohe Übernahme- und Vermittlungsrate</li> <li>keine bzw. sehr geringe Einarbeitungszeiten für Absolventen</li> </ul>" ;
     ld:Oeffnungszeiten "Mo bis Do 7:30-17:00 Uhr; Fr 7:30-15:00 Uhr" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Schulze_Susanne> ;
+    ld:contactPerson ldp:Schulze_Susanne ;
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.113> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/BA-Leipzig> ;
@@ -236,7 +238,7 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/BAFF>
     ld:Art "offener Kinder- und Jugendtreff" ;
     ld:Zielgruppe "Kinder und Jugendliche" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Pauli_Stev> ;
+    ld:contactPerson ldp:Pauli_Stev ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.AmElsterwehr.4> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Buergerverein/Bachviertel> ;
@@ -394,8 +396,8 @@ ld:Ort
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    a ld:Ort ;
     ld:istErreichbar "SB 3,4,7,8,15 bis Felsenkeller bzw. Angerbrücke" ;
+    a ld:Ort ;
     rdfs:label "Bibliothek Plagwitz \"Georg Maurer\"" ;
     foaf:phone "0341-4804375" .
 
@@ -570,7 +572,8 @@ ld:Ort
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomasgasse.2> ;
     a ld:Cafe, ld:Ort ;
     rdfs:comment "Cafe im Zentrum Leipzigs" ;
-    rdfs:label "Caffe Pascucci Marktgalerie Leipzig" .
+    rdfs:label "Café Pascucci Marktgalerie Leipzig" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.16> .
 
 <http://leipzig-data.de/Data/Ort/Cafe.Waldi>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.10> ;
@@ -579,9 +582,6 @@ ld:Ort
     foaf:homepage <http://www.cafewaldi.de/> ;
     foaf:mbox "cafewaldi@googlemail.com" ;
     foaf:phone "0341-3373219", "0341-4625667" .
-
-<http://leipzig-data.de/Data/Ort/Caffe.Pascucci>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.16> .
 
 <http://leipzig-data.de/Data/Ort/Caravan>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.19> ;
@@ -592,9 +592,7 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Caravan.Projektladen>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.ZschocherscheStrasse.2A> ;
     a ld:Ort ;
-    rdfs:label "Caravan Projektladen \"Sinn&amp;Sein\"" .
-
-<http://leipzig-data.de/Data/Ort/CaravanProjektladenSinnUndSein>
+    rdfs:label "Caravan Projektladen \"Sinn&amp;Sein\"" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.137> .
 
 <http://leipzig-data.de/Data/Ort/Caritas.Leipzig>
@@ -621,9 +619,6 @@ ld:Ort
     rdfs:label "Centraltheater Leipzig", "Schauspiel Leipzig" ;
     foaf:homepage <http://www.centraltheater-leipzig.de> .
 
-<http://leipzig-data.de/Data/Ort/Chemnitz.weltecho>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.75> .
-
 <http://leipzig-data.de/Data/Ort/CineStar>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Petersstrasse.44> ;
     a ld:Cinema, ld:Ort ;
@@ -641,10 +636,7 @@ ld:Ort
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Siemeringstrasse.20> ;
     a ld:Ort ;
     rdfs:label "Cinemabstruso - unabhängige Filmgruppe Leipzig" ;
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.39>, <http://leipzig-data.de/Data/APIId/Venue.59>, <http://leipzig-data.de/Data/APIId/Venue.73> .
-
-<http://leipzig-data.de/Data/Ort/Cinemabstruso.Office>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.25> .
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.39>, <http://leipzig-data.de/Data/APIId/Venue.25>, <http://leipzig-data.de/Data/APIId/Venue.59>, <http://leipzig-data.de/Data/APIId/Venue.73> .
 
 <http://leipzig-data.de/Data/Ort/City-HochhausLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.9> ;
@@ -732,7 +724,7 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/DW.Garskestrasse>
     ld:Hintergrund "Schulsozialarbeit wird seit 1996 durch die Diakonie Leipzig an der 90. Grundschule angeboten. Damit war Schulsozialarbeit an einer Grundschule erstmals in Leipzig vertreten. Am Förderzentrum für Erziehungshilfe wird Schulsozialarbeit seit 1998 angeboten und gehört damit zu einem der langjährigen Kooperationspartnern der Schulen." ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Retznick_Laura> ;
+    ld:contactPerson ldp:Retznick_Laura ;
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.19> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/KE/DiakonischesWerk> ;
@@ -787,22 +779,27 @@ ld:Ort
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Kindergartenkinder, Grundschüler, Mittelschüler" ;
     ld:Zielstellung "Erlebnisorientierte Form der Umweltpädagogik, experimentelles Erkunden und praktische Beispiele für ressourcenschonenden Umgang mit Wasser und Energie" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Reschke_Katrin> ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Reschke_Volker> ;
-    ld:hasStatus "aktiv" ;
+    ld:contactPerson ldp:Reschke_Katrin ;
+    ld:engagedPerson ldp:Reschke_Volker ;
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
+    ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/GAZ> ;
     ld:hasTag ldtag:MINT ;
-    a ld:Ort ;
     ld:istErreichbar "SB 11 bis Leinestraße, dann 5 min Fußweg in Helenenstraße" ;
+    a ld:Ort ;
     rdfs:comment "Auslastung Mai-Juni 100%, August - April ca. 80%" ;
     rdfs:label "Dölitzer Wassermühle" ;
-    foaf:mbox "GAZ-Leipzig@t-online.de" ; 
     foaf:homepage <http://www.doelitzer-wassermuehle.de/> ;
+    foaf:mbox "GAZ-Leipzig@t-online.de" ;
     foaf:phone "0341-33399734", "0341-3389352" .
 
-<http://leipzig-data.de/Data/Ort/DruckWerte>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.118> .
+<http://leipzig-data.de/Data/Ort/Dresdner59>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.DresdnerStrasse.59> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/KE/Dreifaltigkeitskirchgemeinde> ;
+    a ld:Ort ;
+    rdfs:comment "Stadtteilprojekt der Dreifaltigkeits-Kirchgemeinde" ;
+    rdfs:label "Dresdner 59" ;
+    foaf:homepage <http://www.dresdner59.de/> .
 
 <http://leipzig-data.de/Data/Ort/Duke>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Riemannstrasse.3> ;
@@ -837,9 +834,6 @@ ld:Ort
     rdfs:comment "center for new media and interactiv art <br/> [open space]" ;
     rdfs:label "essential existence gallery" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.11> .
-
-<http://leipzig-data.de/Data/Ort/FOM>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.77> .
 
 <http://leipzig-data.de/Data/Ort/FZ.Arena>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.8> ;
@@ -979,7 +973,7 @@ ld:Ort
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Kinder im Alter zwischen 4 und 10 Jahren" ;
     ld:Zielstellung "Spaß am Forschen und Entdecken bei Kindern von 4 bis 10 Jahren fördern und Ihnen dabei spielerisch die Welt erklären und Zugang zu naturwissenschaftlichen Themen bieten." ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Nagler_Petra> ;
+    ld:contactPerson ldp:Nagler_Petra ;
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.AmRussischenGarten.2> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/FFS> ;
@@ -1008,13 +1002,13 @@ ld:Ort
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Kinder und Jugendliche im Alter zwischen 5 und 25 Jahren" ;
     ld:Zielstellung "Kinder und Jugendliche für Wirtschaft und Technik begeistern, interdisziplinäre Herangehensweise" ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/TraegerNestler_Angelika> ;
+    ld:engagedPerson ldp:TraegerNestler_Angelika ;
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.97> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Garage> ;
     ld:hasTag ldtag:MINT ;
-    a ld:Ort ;
     ld:istErreichbar "SB 14 bis Gießerstraße, Bus 60, S-Bahn bis Bhf. Plagwitz" ;
+    a ld:Ort ;
     rdfs:label "GaraGe - Technologiezentrum für Jugendliche" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.51> ;
     foaf:homepage <http://www.g-a-r-a-g-e.com> ;
@@ -1035,7 +1029,7 @@ ld:Ort
     foaf:phone "0341-1270-280" .
 
 <http://leipzig-data.de/Data/Ort/GfZK>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Friedrich_Alexandra>, <http://leipzig-data.de/Data/Person/Seik_Lena> ;
+    ld:engagedPerson ldp:Friedrich_Alexandra, ldp:Seik_Lena ;
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Tauchnitz-Strasse.11> ;
     ld:hasStatus "aktiv" ;
     a ld:Ort ;
@@ -1067,9 +1061,6 @@ ld:Ort
     foaf:homepage <http://www.hgb-leipzig.de/> ;
     foaf:phone "341-21350" .
 
-<http://leipzig-data.de/Data/Ort/HTWK>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.24> .
-
 <http://leipzig-data.de/Data/Ort/HWK.BTZ>
     ld:hasAddress <http://leipzig-data.de/Data/04451.Borsdorf.Steinweg.3> ;
     ld:hasSupplier <http://leipzig-data.de/Data/HWK-Leipzig> ;
@@ -1090,7 +1081,7 @@ ld:Ort
     ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
     ld:Zielgruppe "Erzieherinnen aus Kita und Hort" ;
     ld:Zielstellung "Fundierte Förderung von angewandter Naturwissenschaft in Kitas, eigenständiges Suchen und Antworten und Erläuterungen für die beobachteten Phänomene, gemeinsames experimentieren in Gruppen, Fördern der kindlichen Feinmotorik beim Experimentieren, verbalisieren von Beobachtungen und Schlussfolgerungen" ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Maennig_Uwe> ;
+    ld:engagedPerson ldp:Maennig_Uwe ;
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.Steinweg.3> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/HWK-Leipzig> ;
@@ -1174,7 +1165,7 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/Heizhaus.Gruenau>
     ld:Kurzinformation "Skate- und Jugendzentrum" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Bielig_Sven> ;
+    ld:contactPerson ldp:Bielig_Sven ;
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.63> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/UrbanSouls> ;
@@ -1225,12 +1216,9 @@ ld:Ort
     a ld:Hotel, ld:Ort ;
     rdfs:label "RAMADA Hotel Leipzig" .
 
-<http://leipzig-data.de/Data/Ort/IHK>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.86> .
-
 <http://leipzig-data.de/Data/Ort/ISEI>
     ld:Kurzinformation "Verein zur Förderung von Berufs- und Studienorientierung für MINT- und STEM-Disziplinen in Verbindung mit praktischen Anwendungen aus dem Handwerk, sowie der Luft- und Raumfahrt. Interessenten können ein Betriebsparktikum im Verein und dessen angeschlossenen Unternehmen an konkreten Projekten absolvieren. Mitglieder und Interessenten mit besonderen Leistungen können an internationalen Wettbewerben teilnehmen, um die eigenen Bewerbungschancen für Studium und Beruf durch Skills und Referenzen zu verbessern." ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Heckel_Ralf> ;
+    ld:contactPerson ldp:Heckel_Ralf ;
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.WurznerStrasse.4> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/ISEI> ;
@@ -1267,7 +1255,7 @@ ld:Ort
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Schulklassen aller Schulformen und Alter (ab Grundschule), aber auch regelmäßig offen für jedermann" ;
     ld:Zielstellung "Spielerische Kontakte mit Mathe und Physik für Kinder und Jugendliche und Interessierte aller Altersklassen unter Anleitung durch eingewiesene Lehramtsstudenten, Erarbeitung und Einrichtung von Workshops und anderen Unterrichtsangeboten zur Unterstützung des Lehramtsstudiums" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Petzschler_Ines> ;
+    ld:contactPerson ldp:Petzschler_Ines ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Inspirata> ;
@@ -1364,7 +1352,7 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/KiJu.Gruenau>
     ld:Kurzinformation "Schwerpunkte der Arbeit: offene Kinder- und Jugendarbeit, erlebnispädagogische Projekte, Medienarbeit, Jugendbildung, Nachwuchsförderung und Ferienangebote." ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Roeser_Sascha> ;
+    ld:contactPerson ldp:Roeser_Sascha ;
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.HeilbronnerStrasse.16> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/KiJu.Gruenau> ;
@@ -1498,9 +1486,6 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "Königshauspassage" .
 
-<http://leipzig-data.de/Data/Ort/Kollaborat>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.20> .
-
 <http://leipzig-data.de/Data/Ort/KommHaus>
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SellinerStrasse.17> ;
     ld:hasStatus "aktiv" ;
@@ -1580,12 +1565,6 @@ ld:Ort
     rdfs:label "LOFFT" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.28> .
 
-<http://leipzig-data.de/Data/Ort/LeipzigOnRails>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.24> .
-
-<http://leipzig-data.de/Data/Ort/LeipzigSchoolOfDesign>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.41>, <http://leipzig-data.de/Data/APIId/Venue.61> .
-
 <http://leipzig-data.de/Data/Ort/LeipzigerFunzel>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.6> ;
     a ld:Kabarett, ld:Ort ;
@@ -1659,7 +1638,7 @@ ld:Ort
     ld:Kurzinformation "Leistungsangebot für Schulen und Schulklassen: Vorträge für Schülerinnen und Schüler an Gymnasien. Die Wissenschaftlerinnen und Wissenschaftler des Instituts geben dabei Einblicke in aktuelle mathematische und naturwissenschaftliche Forschungsthemen. Die Vorträge finden wahlweise am Institut oder an den Schulen statt.<br/> <br/> Weiterhin können Schülerprojekttage und Schülerpraktika nach individueller Absprache durchgeführt werden." ;
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Klassenstufe 9-12 Gymnasium" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Gregor_Jana> ;
+    ld:contactPerson ldp:Gregor_Jana ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.22> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/MPI-MIS> ;
@@ -1759,7 +1738,7 @@ ld:Ort
     ld:Art "soziokulturelles Zentrum" ;
     ld:Kosten "teilweise" ;
     ld:Zielgruppe "Kinder, Jugendliche, Familien, Senioren" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Hoernig_Karin> ;
+    ld:contactPerson ldp:Hoernig_Karin ;
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.14> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Muehlstrasse> ;
@@ -1890,9 +1869,6 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "Nikolaikirchhof" .
 
-<http://leipzig-data.de/Data/Ort/NochBesserLeben>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.38> .
-
 <http://leipzig-data.de/Data/Ort/NoelsBallroom>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kurt-Eisner-Strasse.43> ;
     a ld:Ort ;
@@ -1973,16 +1949,6 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "Ökolöwe - Umweltbund Leipzig e.V. Leipzig naturnah" .
 
-<http://leipzig-data.de/Data/Ort/Oekoschule.Agrapark>
-    ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.AmFestanger.8> ;
-    ld:hasStatus "aktiv" ;
-    ld:hasTag ldtag:Umwelt ;
-    a ld:Ort ;
-    rdfs:label "agra-Park Ökoschule" ;
-    foaf:homepage <http://www.kultur-und-umweltzentrum.de> ;
-    foaf:mbox "ökoschule-markkleeberg@gmx.de" ;
-    foaf:phone "0341-3504766" .
-
 <http://leipzig-data.de/Data/Ort/Oekoschule.Markkleeberg>
     ld:Art "Ökoschule und grünes Klassenzimmer, Unterricht im Grünen, Projekttage, Schulfeste, Klassenfeste und Kindergeburtstage" ;
     ld:Finanzierung "SMUL, Jugendamt Landkreis Leipzig, Stadt Markkleeberg" ;
@@ -1991,16 +1957,16 @@ ld:Ort
     ld:Teilnahmebedingungen "Anmeldung erforderlich" ;
     ld:Zielgruppe "für alle Altersklassen, Schultypen, Berufsschüler und Familien" ;
     ld:Zielstellung "aktive Auseinandersetzung mit der Natur und \"Unterricht im Grünen\" oder verschiedebe Projekttage" ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Schwarze_Wolfgang> ;
-    ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Kirchstrasse.42> ;
+    ld:engagedPerson ldp:Schwarze_Wolfgang ;
+    ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.AmFestanger.8>, <http://leipzig-data.de/Data/04416.Markkleeberg.Kirchstrasse.42> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/KUZ> ;
-    ld:hasTag ldtag:MINT ;
+    ld:hasTag ldtag:MINT, ldtag:Umwelt ;
     a ld:Ort ;
     rdfs:label "Ökoschule Markkleeberg" ;
     foaf:homepage <http://www.kultur-und-umweltzentrum.de> ;
     foaf:mbox "oekoschule-markkleeberg@gmx.de" ;
-    foaf:phone "0341-3381142", "0341-3381143" .
+    foaf:phone "0341-3381142", "0341-3381143", "0341-3504766" .
 
 <http://leipzig-data.de/Data/Ort/PILOT>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bosestrasse.1> ;
@@ -2053,6 +2019,7 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Phyllodrom>
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.DelitzscherLandstrasse.38> ;
     ld:hasStatus "aktiv" ;
+    ld:hasSupplier <http://leipzig-data.de/Verein/Phyllodrom> ;
     ld:hasTag ldtag:Umwelt ;
     a ld:Ort ;
     rdfs:label "Phyllodrom e.V. - Museum und Institut für Regenwaldökologie" ;
@@ -2061,13 +2028,11 @@ ld:Ort
     foaf:phone "0341-5257757" .
 
 <http://leipzig-data.de/Data/Ort/Plan-B>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.117>, <http://leipzig-data.de/Data/APIId/Venue.12> .
-
-<http://leipzig-data.de/Data/Ort/PlanB>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Haertelstrasse.21> ;
     a ld:Ort ;
     rdfs:comment "Konzerte, Kino und Theater eine nette stylische Bar." ;
-    rdfs:label "Plan B - Kulturkaffee" .
+    rdfs:label "Plan B - Kulturkaffee" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.117>, <http://leipzig-data.de/Data/APIId/Venue.12> .
 
 <http://leipzig-data.de/Data/Ort/Plaussig.NaturSchutzStation>
     ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.PlaussigerDorfstrasse.23> ;
@@ -2079,7 +2044,7 @@ ld:Ort
     foaf:phone "034298-68665" .
 
 <http://leipzig-data.de/Data/Ort/PolnischesInstitut>
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Karwen_Bernd> ;
+    ld:contactPerson ldp:Karwen_Bernd ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Markt.10> ;
     a ld:Ort ;
     rdfs:label "Polnisches Institut Berlin – Filiale Leipzig" ;
@@ -2109,7 +2074,7 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Rabutz.TOeP>
     ld:Art "Projektzentrum mit Angeboten zu Ökologie, Elektromobilität, Verkehrserziehung" ;
     ld:Zielstellung "Junge Leute erfahren hier, dass Themen wie Technik und Ökologie durchaus auch Spaß machen können." ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Messerschmidt_Elk> ;
+    ld:engagedPerson ldp:Messerschmidt_Elk ;
     ld:hasAddress <http://leipzig-data.de/Data/04509.Rabutz.BageritzerWeg.1> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Rabutz.TOeP> ;
@@ -2179,6 +2144,13 @@ ld:Ort
     rdfs:label "Stadtwerke Leipzig (GuD-Anlage)" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.36> .
 
+<http://leipzig-data.de/Data/Ort/SagArt.Kunstsalon>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Kuhturmstrasse.4> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/SagArt> ;
+    a ld:Ort ;
+    rdfs:label "Kunstsalon des SagArt e.V." ;
+    foaf:homepage <http://www.sagart.de/> .
+
 <http://leipzig-data.de/Data/Ort/SansvoixModernArt>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.BrandenburgerStrasse.2> ;
     a ld:Ort ;
@@ -2216,9 +2188,7 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Schloss.Schoenefeld>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Zeumerstrasse.1> ;
     a ld:Ort ;
-    rdfs:label "Schloss Schönefeld" .
-
-<http://leipzig-data.de/Data/Ort/SchlossSchoenefeld>
+    rdfs:label "Schloss Schönefeld" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.71> .
 
 <http://leipzig-data.de/Data/Ort/ScholaOecologica>
@@ -2368,16 +2338,17 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "Technisches Rathaus" .
 
-<http://leipzig-data.de/Data/Ort/StadtNameLand>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-    ld:hasTag ldtag:MINT-Broschuere ;
+<http://leipzig-data.de/Data/Ort/Stadtbuero>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.2> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig> ;
     a ld:Ort ;
-    rdfs:label "Stadt.Name.Land" .
+    rdfs:label "Stadtbüro" ;
+    foaf:homepage <https://www.leipzig.de/buergerservice-und-verwaltung/buergerbeteiligung-und-einflussnahme/stadtbuero/> .
 
 <http://leipzig-data.de/Data/Ort/StadtgartenConnewitz>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.KohrenerStrasse.3> ;
+    ld:istErreichbar "SB 11 Hildebrandstraße" ;
     a ld:Ort ;
-    ld:istErreichbar "SB 11 Hildebrandstraße" ; 
     rdfs:label "Stadtgarten Connewitz des Ökolöwe - Umweltbund Leipzig e. V." .
 
 <http://leipzig-data.de/Data/Ort/StadtgeschichtlichesMuseum>
@@ -2394,9 +2365,7 @@ ld:Ort
 <http://leipzig-data.de/Data/Ort/Stadtteilladen.LeipzigerWesten>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.54> ;
     a ld:Ort ;
-    rdfs:label "Stadtteilladen Leipziger Westen" .
-
-<http://leipzig-data.de/Data/Ort/StadtteilladenLeipzigerWesten>
+    rdfs:label "Stadtteilladen Leipziger Westen" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.124> .
 
 <http://leipzig-data.de/Data/Ort/Stadtweit>
@@ -2420,9 +2389,6 @@ ld:Ort
     rdfs:label "Starlight-Bowling" ;
     foaf:homepage <http://www.starlight-bowling.de/> ;
     foaf:phone "0341-4155555" .
-
-<http://leipzig-data.de/Data/Ort/Start-Up_Club_Leipzig>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.68> .
 
 <http://leipzig-data.de/Data/Ort/StasimuseumRundeEcke>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Dittrichring.24> ;
@@ -2527,12 +2493,6 @@ ld:Ort
     foaf:mbox "info@thomaskirche.org" ;
     foaf:phone "341-22224-105", "341-2222440" .
 
-<http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig>
-    ld:Kurzinformation "<p>Die Transition-Town-Bewegung, der weltweit über 300 Städte angehören, setzt diese Ideen um und eröffnet neue Perspektiven. „Leipzig im Wandel“ kann durch uns Teil dieser sich rasch ausbreitenden Bewegung werden. Wir können dafür sorgen, dass so viele Produkte und Dienstleistungen wie möglich lokal erzeugt, erarbeitet und verbraucht werden: beim Einkauf, beim Essen, beim Urlaub, beim Bezug von Energie. Das macht uns unabhängiger vom Erdöl und auch von vielen negativen Auswirkungen auf den Finanzmärkten, den Veränderungen auf dem Arbeitsmarkt und der Verschlechterung unserer Umweltqualität Visionen, Träume, Fantasie, Kreativität, Technik, Musik, Wissen … helfen uns auf dem Weg zu einem nachhaltigen Leipzig.</p>" ;
-    a ld:Ort ;
-    rdfs:label "Transition Town Leipzig" ;
-    foaf:homepage <http://www.transitiontown-leipzig.de> .
-
 <http://leipzig-data.de/Data/Ort/TwentyOne>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Gottschedstrasse.2> ;
     a ld:Ort ;
@@ -2556,7 +2516,7 @@ ld:Ort
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Lehrer und Referendare für Fortbildungen", "Schülerinnen und Schüler ab Klassenstufe 10 der gymnasialen Oberstufe" ;
     ld:behindertengerecht "Ein behindertengerechter Zugang ist vorhanden, dabei ist zu beachten: Im Labor gelten besondere Sicherheitsregeln, die vorab mit dem verantwortlichen Lehrer besprochen werden müssen." ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Lange_Torsten> ;
+    ld:engagedPerson ldp:Lange_Torsten ;
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/UFZ> ;
@@ -2597,7 +2557,7 @@ ld:Ort
     ld:Oeffnungszeiten "Jeden letzten Dienstag im Monat von 14 bis 16 Uhr. Außerhalb dieser Zeiten ist die Besichtigung mit Voranmeldung möglich." ;
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Oberstufe, Berufsschüler" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Haenisch_Wolfgang>, <http://leipzig-data.de/Data/Person/Raue_Manfred> ;
+    ld:contactPerson ldp:Haenisch_Wolfgang, ldp:Raue_Manfred ;
     ld:hasAddress <http://leipzig-data.de/Data/04416.Markkleeberg.Moenchereistrasse.2> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/VDE.LeipzigHalle> ;
@@ -2615,7 +2575,7 @@ ld:Ort
     ld:Teilnahmebedingungen "nein" ;
     ld:Zielgruppe "u.a. Schüler und Studenten (z.B. für Haus-, Studien-, Diplom-, Doktorarbeiten), Planer, Behördenmitarbeiter, Privatpersonen, Pädagogen" ;
     ld:Zielstellung "Über Umweltschutz informieren, qualifizierte Umweltinformationen erschließen und allgemein zugänglich machen" ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Quester_Roland> ;
+    ld:engagedPerson ldp:Quester_Roland ;
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Oekoloewe> ;
@@ -2700,7 +2660,7 @@ ld:Ort
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.91> .
 
 <http://leipzig-data.de/Data/Ort/Unikatum>
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Haensel_Annegret> ;
+    ld:contactPerson ldp:Haensel_Annegret ;
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.26> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Unikatum> ;
@@ -2716,6 +2676,16 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "Uptown Coffee Bar" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.105> .
+
+<http://leipzig-data.de/Data/Ort/VerbraucherzentraleSachsen>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen> ;
+    ld:istErreichbar "SB, Busse und S-Bahn bis Hauptbahnhof" ;
+    a ld:Ort ;
+    rdfs:label "Verbraucherzentrale Sachsen" ;
+    foaf:homepage <http://www.verbraucherzentrale-sachsen.de> ;
+    foaf:mbox "bzl@vzs.de" ;
+    foaf:phone "0341-2610450" .
 
 <http://leipzig-data.de/Data/Ort/VictorsResidenz>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Georgiring.13> ;
@@ -2751,10 +2721,12 @@ ld:Ort
     foaf:phone "0341-2416870" .
 
 <http://leipzig-data.de/Data/Ort/Vogelschutzlehrstaette>
-    ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Kaerrnerweg.12A> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Kaerrnerweg.12A>, <http://leipzig-data.de/Data/04299.Leipzig.Kaerrnerweg.14> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Kleingaertner.Leipzig> ;
     ld:hasTag ldtag:MINT-Broschuere ;
     a ld:Ort ;
-    rdfs:label "Vogelschutzlehrstätte Stadtverband Leipzig der Kleingärtner e.V. (Träger)" .
+    rdfs:label "Vogelschutzlehrstätte \"Am Kärrnerweg\"", "Vogelschutzlehrstätte Stadtverband Leipzig der Kleingärtner e.V. (Träger)" ;
+    foaf:homepage <http://vogelschutz-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Ort/Volkshaus>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.32> ;
@@ -2822,13 +2794,10 @@ ld:Ort
     a ld:Ort ;
     rdfs:label "Zaubergarten Leipzig" .
 
-<http://leipzig-data.de/Data/Ort/ZentrumZeitgenoessischeFotografie>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.48> .
-
 <http://leipzig-data.de/Data/Ort/ZfI>
     ld:Kosten "teilweise" ;
     ld:Zielgruppe "Kinder, Jugendliche, Erwachsene, Senioren" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Mueller_Doris> ;
+    ld:contactPerson ldp:Mueller_Doris ;
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Demmeringstrasse.115> ;
     ld:hasStatus "Schließt zum Jahresende 2013" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/ZentrumFuerIntegration> ;
@@ -2854,12 +2823,6 @@ ld:Ort
     rdfs:label "detektor.fm" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.122> .
 
-<http://leipzig-data.de/Data/Ort/i-fabrik>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.82> .
-
-<http://leipzig-data.de/Data/Ort/ipoque>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.29> .
-
 <http://leipzig-data.de/Data/Ort/nato>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.46> ;
     a ld:Ort ;
@@ -2868,21 +2831,10 @@ ld:Ort
     foaf:mbox "info@nato-leipzig.de" ;
     foaf:phone "0341-3014399", "341-3014397", "341-3014398" .
 
-<http://leipzig-data.de/Data/Ort/studiodelta>
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.27> .
-
 <http://leipzig-data.de/Data/Ort/sublab>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.93> ;
+    ld:hasAddressAddendum "Tor B, 3. OG" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/sublab> ;
+    a ld:Ort ;
+    rdfs:label "sublab e.V." ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.30> .
-
-<http://leipzig-data.de/Data/Ort/VerbraucherzentraleSachsen> a ld:Ort ;
-   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
-foaf:mbox "bzl@vzs.de" ;
-foaf:phone "0341-2610450" ;
-rdfs:label "Verbraucherzentrale Sachsen" ;
-ld:istErreichbar "SB, Busse und S-Bahn bis Hauptbahnhof" ; 
-foaf:homepage <http://www.verbraucherzentrale-sachsen.de> .
-
-<http://leipzig-data.de/Data/Ort/Stadtbuero> a ld:Ort ;
-   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.2> ;
-rdfs:label "Stadtbüro" ;
-foaf:homepage <https://www.leipzig.de/buergerservice-und-verwaltung/buergerbeteiligung-und-einflussnahme/stadtbuero/> .

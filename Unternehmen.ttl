@@ -6,6 +6,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 
@@ -31,6 +32,12 @@ ld:Unternehmen
     rdfs:label "Unternehmen" ;
     rdfs:subClassOf org:Organization .
 
+<http://leipzig-data.de/Data/Firma/ANNALINDE>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
+    a ld:Unternehmen ;
+    rdfs:label "ANNALINDE gGmbH" ;
+    foaf:homepage <http://annalinde-leipzig.de/> .
+
 <http://leipzig-data.de/Data/Firma/AWO.Akademie>
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Ludwig-Hupfeld-Strasse.16> ;
     a ld:Unternehmen ;
@@ -45,7 +52,7 @@ ld:Unternehmen
 <http://leipzig-data.de/Data/Firma/Aurel.Marketing>
     a ld:Unternehmen ;
     rdfs:label "Aurel Marketing" ;
-    org:hasMember <http://leipzig-data.de/Data/Person/Weissgerber_Kerstin> ;
+    org:hasMember ldp:Weissgerber_Kerstin ;
     foaf:homepage <http://www.aurel-marketing.de> .
 
 <http://leipzig-data.de/Data/Firma/Autohaus_Auto_Saxe>
@@ -106,7 +113,7 @@ ld:Unternehmen
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.August-Bebel-Strasse.44> ;
     a ld:Unternehmen ;
     rdfs:label "BI Business Intelligence GmbH" ;
-    org:hasMember <http://leipzig-data.de/Data/Person/Albert_Katrin> ;
+    org:hasMember ldp:Albert_Katrin ;
     foaf:homepage <http://www.bi-web.de> ;
     foaf:phone "0341-303383-30" .
 
@@ -158,7 +165,8 @@ ld:Unternehmen
 <http://leipzig-data.de/Data/Firma/DruckUndWerte>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.17> ;
     a ld:Unternehmen ;
-    rdfs:label "Druck und Werte GmbH" .
+    rdfs:label "Druck und Werte GmbH" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.118> .
 
 <http://leipzig-data.de/Data/Firma/EBG.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hohmannstrasse.7> ;
@@ -181,10 +189,10 @@ ld:Unternehmen
 <http://leipzig-data.de/Data/Firma/EnergieUmweltLindner>
     a ld:Unternehmen ;
     rdfs:label "Planungsbüro für Energie und Umwelt" ;
-    org:hasMember <http://leipzig-data.de/Data/Person/Lindner_Lothar> .
+    org:hasMember ldp:Lindner_Lothar .
 
 <http://leipzig-data.de/Data/Firma/Energieforen.Leipzig>
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Haenel_Andreas> ;
+    ld:contactPerson ldp:Haenel_Andreas ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Querstrasse.16> ;
     a ld:Unternehmen ;
     rdfs:label "Energieforen Leipzig GmbH" ;
@@ -221,9 +229,9 @@ ld:Unternehmen
 <http://leipzig-data.de/Data/Firma/Garage>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.97> ;
     ld:hasSupplierNumber "320" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A163> ; 
     a ld:Unternehmen ;
-    rdfs:label "GaraGe gGmbH" .
+    rdfs:label "GaraGe gGmbH" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A163> .
 
 <http://leipzig-data.de/Data/Firma/GbR_Caravan>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.19> ;
@@ -248,6 +256,12 @@ ld:Unternehmen
     a ld:Unternehmen ;
     rdfs:label "Heimerer GmbH, Standort Leipzig" ;
     foaf:homepage <https://www.heimerer.de/standorte/leipzig.html> .
+
+<http://leipzig-data.de/Data/Firma/Heldenkueche>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.10> ;
+    a ld:Unternehmen ;
+    rdfs:label "Heldenküche, Claudia Friedrich" ;
+    foaf:homepage <http://www.heldenkueche.net/> .
 
 <http://leipzig-data.de/Data/Firma/Humanitas>
     a ld:Unternehmen ;
@@ -283,7 +297,8 @@ ld:Unternehmen
     ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Ferdinand-Jost-Strasse.31> ;
     a ld:Unternehmen ;
     rdfs:comment "Kollaborat ist ein kreativer und zuverlässiger Designpartner für Unternehmen, Organisationen und Privatpersonen mit den Schwerpunkten Corporate Design und Editorial Design" ;
-    rdfs:label "Kollaborat GbR" .
+    rdfs:label "Kollaborat GbR" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.20> .
 
 <http://leipzig-data.de/Data/Firma/LeISA>
     ld:hasSupplierNumber "324" ;
@@ -309,10 +324,17 @@ ld:Unternehmen
     rdfs:label "Augsburger Lehmbaugesellschaft Leipzig gGmbH" ;
     foaf:homepage <http://lehmbaugruppe.de> .
 
+<http://leipzig-data.de/Data/Firma/LeipzigDetails>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Reichsstrasse.2> ;
+    a ld:Unternehmen ;
+    rdfs:label "Leipzig Details Schaaf, Schnoy und Kollegen GbR" ;
+    foaf:homepage <http://www.leipzigdetails.de/> .
+
 <http://leipzig-data.de/Data/Firma/LeipzigSchoolOfDesign>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Dieskaustrasse.26> ;
     a ld:Unternehmen ;
-    rdfs:label "LSOD Leipzig School of Design GmbH" .
+    rdfs:label "LSOD Leipzig School of Design GmbH" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.41>, <http://leipzig-data.de/Data/APIId/Venue.61> .
 
 <http://leipzig-data.de/Data/Firma/MuconaMedia>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Bruehl.52> ;
@@ -329,6 +351,7 @@ ld:Unternehmen
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.MerseburgerStrasse.25> ;
     a ld:Unternehmen ;
     rdfs:label "Noch Besser Leben" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.38> ;
     foaf:homepage <https://www.nochbesserleben.com> .
 
 <http://leipzig-data.de/Data/Firma/Outlaw>
@@ -437,7 +460,7 @@ ld:Unternehmen
     ld:hasStadtId "645" ;
     a ld:Unternehmen ;
     rdfs:label "Unikatum Kindermuseum gGmbH" ;
-    org:hasMember <http://leipzig-data.de/Data/Person/Haensel_Annegret> ;
+    org:hasMember ldp:Haensel_Annegret ;
     foaf:mbox "info@kindermuseum-unikatum.de" ;
     foaf:phone "0341-3061986" .
 
@@ -518,12 +541,14 @@ ld:Unternehmen
 <http://leipzig-data.de/Data/Firma/i-fabrik>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Humboldtstrasse.15> ;
     a ld:Unternehmen ;
-    rdfs:label "i-fabrik GmbH" .
+    rdfs:label "i-fabrik GmbH" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.82> .
 
 <http://leipzig-data.de/Data/Firma/ipoque>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.9> ;
     a ld:Unternehmen ;
-    rdfs:label "R&S Cybersecurity ipoque GmbH" .
+    rdfs:label "R&S Cybersecurity ipoque GmbH" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.29> .
 
 <http://leipzig-data.de/Data/Firma/saxess>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Grassistrasse.12> ;
@@ -534,4 +559,5 @@ ld:Unternehmen
 <http://leipzig-data.de/Data/Firma/studiodelta>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Angerstrasse.40>, <http://leipzig-data.de/Data/04177.Leipzig.Demmeringstrasse.57> ;
     a ld:Unternehmen ;
-    rdfs:label "studiodelta GmbH & CO. KG" .
+    rdfs:label "studiodelta GmbH & CO. KG" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.27> .

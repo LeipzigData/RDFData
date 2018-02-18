@@ -6,6 +6,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
 <http://leipzig-data.de/Data/Projekte/>
@@ -33,21 +34,19 @@ ld:Projekt
     foaf:name "API Leipzig Eventkalender" .
 
 <http://leipzig-data.de/Data/Projekt/ASG.Schuelerakademie>
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/ASG> ;
     a ld:Projekt ;
     rdfs:label "Schülerakademie der ASG" .
 
 <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar>
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/ASG> ;
     a ld:Projekt ;
     rdfs:label "Sommerfeldseminar der ASG" .
 
 <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle>
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
     a ld:Projekt ;
     rdfs:label "Attac Denktankstelle" .
-
-<http://leipzig-data.de/Data/Projekt/Clusterteam.ErneuerbareEnergien>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Huebner_Elke>, <http://leipzig-data.de/Data/Person/Lindner_Lothar> ;
-    a ld:Projekt ;
-    rdfs:label "Clusterteam Erneuerbare Energien" .
 
 <http://leipzig-data.de/Data/Projekt/CodeForLeipzig>
     a ld:Projekt ;
@@ -55,9 +54,15 @@ ld:Projekt
     foaf:homepage <http://codefor.de/leipzig/> .
 
 <http://leipzig-data.de/Data/Projekt/FBL.Vorbereitungsgruppe>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Brier_Leonhard>, <http://leipzig-data.de/Data/Person/Keppler_Ralph>, <http://leipzig-data.de/Data/Person/Tischer_Beate> ;
+    ld:engagedPerson ldp:Brier_Leonhard, ldp:Keppler_Ralph, ldp:Tischer_Beate ;
     a ld:Projekt ;
     rdfs:label "Vorbereitungsgruppe FBL" .
+
+<http://leipzig-data.de/Data/Projekt/Ferienpass.S17>
+    ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
+    a ld:Projekt ;
+    rdfs:label "Ferienpass Leipzig, Sommerferien 2017" ;
+    foaf:homepage <https://www.leipzig.de/freizeit-kultur-und-tourismus/ferienangebote/ferienpass/> .
 
 <http://leipzig-data.de/Data/Projekt/FreeYourMind>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Johannisallee.20> ;
@@ -92,23 +97,29 @@ ld:Projekt
     rdfs:label "Internationaler Bund. Jugendhilfeverbund Systemische Mädchenwohngruppe mit integriertem Inobhutnahmeangebot" .
 
 <http://leipzig-data.de/Data/Projekt/InitiativeSchleussig>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Hoenemann_Tobias> ;
+    ld:engagedPerson ldp:Hoenemann_Tobias ;
     a ld:Projekt ;
     rdfs:label "Initiative Schleußig" .
 
+<http://leipzig-data.de/Data/Projekt/KonsumGlobal>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Wiebelstrasse.8> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/WeltOffen> ;
+    a ld:Projekt ;
+    rdfs:label "KonsumGlobal Leipzig" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A173> ;
+    foaf:homepage <http://konsumglobal-leipzig.de/> ;
+    foaf:phone "0163-1736473" .
+
 <http://leipzig-data.de/Data/Projekt/LD>
+    ld:engagedPerson ldp:Graebe_HansGert ;
     a ld:Projekt ;
     rdfs:label "Leipzig Open Data Initiative" ;
     foaf:homepage <http://www.leipzig-data.de> .
 
-<http://leipzig-data.de/Data/Projekt/LD.Seminar>
-    a ld:Projekt ;
-    rdfs:label "Leipzig Open Data Seminar" ;
-    foaf:homepage <http://www.leipzig-data.de/ld-seminar/> .
-
 <http://leipzig-data.de/Data/Projekt/LeipzigOnRails>
     a ld:Projekt ;
-    rdfs:label "Leipzig on Rails. Leipziger Ruby/Rails User Group" .
+    rdfs:label "Leipzig on Rails. Leipziger Ruby/Rails User Group" ;
+    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.24> .
 
 <http://leipzig-data.de/Data/Projekt/LeipzigWeiterDenken>
     ld:relatedBundle <http://leipzig-data.de/Data/StadtLeipzig> ;
@@ -117,13 +128,13 @@ ld:Projekt
     foaf:homepage <http://leipzig.de/weiterdenken> .
 
 <http://leipzig-data.de/Data/Projekt/LeipzigerAgenda21>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Elsaesser_Ralf> ;
+    ld:engagedPerson ldp:Elsaesser_Ralf ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Civixx> ;
     a ld:Projekt ;
     rdfs:label "Leipziger Agenda 21" .
 
 <http://leipzig-data.de/Data/Projekt/MINT-Netzwerk>
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Graebe_HansGert>, <http://leipzig-data.de/Data/Person/Radomski_Sabine> ;
+    ld:engagedPerson ldp:Graebe_HansGert, ldp:Radomski_Sabine ;
     a ld:Projekt ;
     rdfs:label "MINT Netzwerk Leipzig" ;
     foaf:homepage <http://mint-leipzig.de/> .
@@ -137,15 +148,6 @@ ld:Projekt
     a ld:Projekt ;
     rdfs:label "Familientreff der Begegnungsstätte MÜHLSTRASSE e.V." .
 
-<http://leipzig-data.de/Data/Projekt/Muehlstrasse.Stadtteilzentrum>
-    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.14> ;
-    ld:hasCategories "Kulturvereine", "Sozio- und Stadtteilkultur" ;
-    ld:hasOrtsteil ldot:Reudnitz-Thonberg ;
-    ld:hasStadtId "370" ;
-    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Muehlstrasse> ;
-    a ld:Projekt ;
-    rdfs:label "MÜHLSTRASSE 14 e.V. Soziokulturelles Stadtteilzentrum" .
-
 <http://leipzig-data.de/Data/Projekt/NABU.Parthenfroesche>
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/NABU.Leipzig> ;
     ld:hasSupplierNumber "227" ;
@@ -154,7 +156,7 @@ ld:Projekt
 
 <http://leipzig-data.de/Data/Projekt/NEU.Cluster-Lindner>
     ld:Kurzinformation "Die Themen im Bereich der erneuerbaren Energien und der Energieeffizienz sind sehr vielfältig, zudem sind die Schwerpunktproblematiken der Branche einem ständigen Wandel unterlegen. Im Clusterteam für erneuerbare Energien und Energieeffizienz diskutieren daher regelmäßig interessierte Akteure aus Leipzig und Umgebung Probleme, Projekte und Veranstaltungen im Bereich der erneuerbaren Energien. Unter den Teilnehmern finden sich vor allem Vertreter von Klein- und mittelständischen Unternehmen, aber auch Privatpersonen und Vertreter der Wissenschaft und Forschung. Nehmen Sie also bei einem der zahlreichen Treffen des Clusterteams im Forsthaus Raschwitz teil. Anmelden können Sie sich beim Clusterteamleiter Lothar Lindner." ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Lindner_Lothar> ;
+    ld:contactPerson ldp:Huebner_Elke, ldp:Lindner_Lothar ;
     ld:relatedBundle <http://leipzig-data.de/Data/Agent/NEU.Events> ;
     a ld:Projekt ;
     rdfs:label "Workshopreihe des Clusterteams 'Erneuerbare Energien und Energieeffizienz'" .
@@ -167,27 +169,28 @@ ld:Projekt
     foaf:homepage <http://www.metastream-netzwerk.de/fachgespraechsreihe.html> .
 
 <http://leipzig-data.de/Data/Projekt/NEU.Events>
-    ld:relatedTo <http://leipzig-data.de/Data/Ort/NetzwerkEnergieUmwelt> ;
+    ld:relatedTo <http://leipzig-data.de/Data/StadtLeipzig/NetzwerkEnergieUmwelt> ;
     a ld:Projekt ;
     rdfs:label "Eventkalender des Netzwerks \"Energie und Umwelt\"" ;
-    foaf:homepage <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> ;
-    foaf:name "Eventkalender des Netzwerks \"Energie und Umwelt\"" .
+    foaf:homepage <http://www.energiemetropole-leipzig.de/index.php/netzwerk-energie-umwelt.html> .
 
 <http://leipzig-data.de/Data/Projekt/NuKLA.AULA2030>
     ld:Kurzinformation "Veranstaltungsreihe von NuKLA zum Leipziger Auenökosystem an der Volkshochschule Leipzig" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
+    ld:contactPerson ldp:Stoiber_WolfgangEA ;
     ld:relatedBundle <http://leipzig-data.de/Data/Verein/NuKLA> ;
     a ld:Projekt ;
     rdfs:label "AULA-Projekt 2030" .
 
 <http://leipzig-data.de/Data/Projekt/NuKLA.KartoffelKonzert>
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
+    ld:contactPerson ldp:Stoiber_WolfgangEA ;
     ld:relatedBundle <http://leipzig-data.de/Data/Verein/NuKLA> ;
     a ld:Projekt ;
     rdfs:label "Klassische Kartoffelkonzerte zu Gunsten des Leipziger Auwalds" ;
     foaf:homepage <http://www.klassischekartoffelkonzerte.de> .
 
 <http://leipzig-data.de/Data/Projekt/NuKLA.VHS-Reihe>
+    ld:contactPerson ldp:Stoiber_WolfgangEA ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Verein/NuKLA> ;
     a ld:Projekt ;
     rdfs:label "Veranstaltungsreihe von VHS und NuKLA e.V. zum Leipziger Auenökosystem" .
 
@@ -199,11 +202,16 @@ ld:Projekt
     foaf:homepage <http://pas.physgeo.uni-leipzig.de>, <https://www.facebook.com/Physik.am.Samstag.Leipzig> .
 
 <http://leipzig-data.de/Data/Projekt/PeakOil>
-    ld:Hintergrund "Projekt wird vom BMBF mit 35.000 Euro gefördert. Laufzeit bis 30.09.2013 (LVZ, 22.01.2013)" ;
-    ld:contactPerson <http://leipzig-data.de/Data/Person/Kramer_Anais> ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/NetzwerkEnergieUmwelt>, <http://leipzig-data.de/Data/Ort/TransitionTown.Leipzig>, <http://leipzig-data.de/Data/Ort/Zukunftsakademie> ;
+    ld:Hintergrund "Projekt wurde vom BMBF mit 35.000 Euro gefördert. Laufzeit bis 30.09.2013 (LVZ, 22.01.2013)" ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Projekt/TransitionTown.Leipzig>, <http://leipzig-data.de/Data/StadtLeipzig/NetzwerkEnergieUmwelt>, <http://leipzig-data.de/Data/Verein/Zukunftsakademie> ;
     a ld:Projekt ;
     rdfs:label "Projekt Peak Oil" .
+
+<http://leipzig-data.de/Data/Projekt/Roberta>
+    ld:hasSupplier <http://leipzig-data.de/Data/HTWK> ;
+    a ld:Projekt ;
+    rdfs:label "Roberta in Leipzig" ;
+    foaf:homepage <http://leipzig-netz.de/index.php5/MINT.Roberta> .
 
 <http://leipzig-data.de/Data/Projekt/SZLSuchtzentrum.WohnprojektDomizil>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Queckstrasse.2> ;
@@ -214,12 +222,27 @@ ld:Projekt
     a ld:Projekt ;
     rdfs:label "SZL Suchtzentrum gGmbH, Wohnprojekt 'Domizil'" .
 
+<http://leipzig-data.de/Data/Projekt/StadtNameLand>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Reichsstrasse.2> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Firma/LeipzigDetails> ;
+    ld:hasTag ldtag:MINT-Broschuere ;
+    a ld:Projekt ;
+    rdfs:label "Stadt.Name.Land" ;
+    foaf:homepage <http://www.stadtnameland.de> ;
+    foaf:mbox "post@stadtnameland.de" .
+
 <http://leipzig-data.de/Data/Projekt/StartupWeekend>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
     a ld:Projekt ;
     rdfs:label "Startup Weekend Leipzig" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.55> ;
     foaf:homepage <http://leipzig.startupweekend.org/> .
+
+<http://leipzig-data.de/Data/Projekt/TransitionTown.Leipzig>
+    ld:Kurzinformation "<p>Die Transition-Town-Bewegung, der weltweit über 300 Städte angehören, setzt diese Ideen um und eröffnet neue Perspektiven. „Leipzig im Wandel“ kann durch uns Teil dieser sich rasch ausbreitenden Bewegung werden. Wir können dafür sorgen, dass so viele Produkte und Dienstleistungen wie möglich lokal erzeugt, erarbeitet und verbraucht werden: beim Einkauf, beim Essen, beim Urlaub, beim Bezug von Energie. Das macht uns unabhängiger vom Erdöl und auch von vielen negativen Auswirkungen auf den Finanzmärkten, den Veränderungen auf dem Arbeitsmarkt und der Verschlechterung unserer Umweltqualität Visionen, Träume, Fantasie, Kreativität, Technik, Musik, Wissen … helfen uns auf dem Weg zu einem nachhaltigen Leipzig.</p>" ;
+    a ld:Projekt ;
+    rdfs:label "Transition Town Leipzig" ;
+    foaf:homepage <http://www.transitiontown-leipzig.de> .
 
 <http://leipzig-data.de/Data/Projekt/UFZ.KinderUmweltBus>
     ld:Kosten "Bei ganzen Projekttagen fällt ggf. ein Personalkostenzuschuss an." ;
@@ -239,13 +262,13 @@ ld:Projekt
 
 <http://leipzig-data.de/Data/Projekt/Umweltstammtisch>
     ld:Kurzinformation "Die vier an FOKUS Umwelt beteiligten Institutionen greifen seit 2006 in gemeinsamen Veranstaltungen aktuelle Umweltthemen auf, um sie mit und in der interessierten Öffentlichkeit zu diskutieren. Sie möchten Denkanstöße geben und neue Sichtweisen erschließen, aber auch die Vernetzung der Akteure im Umweltbereich in der Region Leipzig befördern. <br/> Mit dem Umweltstammtisch hat FOKUS Umwelt ein bekanntes Veranstaltungsformat wiederbelebt. Zwei- bis dreimal im Jahr soll der Stammtisch den Austausch zwischen mit Umweltthemen befassten Behördenvertretern, Wissenschaftlern, Planern, Umweltschützern und Unternehmensmitarbeitern der Region Leipzig fördern.<br/> Einstieg und Hauptteil der jeweiligen Veranstaltung bilden Vorträge oder Podiumsgespräche, um aktuelle, spannende oder kontroverse Themen und Sichtweisen in diesen Kreis einzubringen. Sie sollen auch den Blick auf die Region, die Disziplinen und die eigenen Denkmuster erweitern helfen. Danach besteht bei einen Imbiss und Getränken – danke an die Firma Sodexo – die Möglichkeit zum individuellen Austausch und zur Netzwerkarbeit. Sie können dazu gerne eigene Poster und Info-Materialien zur Auslage mitbringen. Wir freuen uns auf Ihre lebhafte Beteiligung!" ;
-    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UFZ>, <http://leipzig-data.de/Data/Ort/UIZ>, <http://leipzig-data.de/Data/Ort/Umweltbibliothek>, <http://leipzig-data.de/Data/Verein/LANU> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/Ort/UIZ>, <http://leipzig-data.de/Data/Ort/Umweltbibliothek>, <http://leipzig-data.de/Data/UFZ>, <http://leipzig-data.de/Data/Verein/LANU> ;
     a ld:Projekt ;
     rdfs:label "Umweltstammtisch" .
 
 <http://leipzig-data.de/Data/Projekt/UniLeipzig.Energiewende-13>
     ld:Kurzinformation "Die Ringvorlesung „Kraftakt Energiewende – Chancen und Risiken der Transformation“ findet im Wintersemester 2013/14, zwischen 19 Uhr und 21 Uhr im Hörsaal 2 der Universität Leipzig (Hörsaalgebäude Campus Augustusplatz, Universitätsstraße, 04109 Leipzig) statt und wird vom Institut für Infrastruktur und Ressourcenmanagement der Universität Leipzig in Kooperation mit dem AEL e.V. und dem DRIEE e.V. organisiert." ;
-    ld:relatedBundle <http://leipzig-data.de/Data/UniLeipzig/IIR>, <http://leipzig-data.de/Data/Verein/AEL>, <http://leipzig-data.de/Data/Verein/DRIEE> ;
+    ld:relatedBundle <http://leipzig-data.de/Data/UniLeipzig/IIRM>, <http://leipzig-data.de/Data/Verein/AEL>, <http://leipzig-data.de/Data/Verein/DRIEE> ;
     a ld:Projekt ;
     rdfs:label "Ringvorlesung an der Universität Leipzig: „Kraftakt Energiewende – Chancen und Risiken der Transformation“" .
 
@@ -257,7 +280,7 @@ ld:Projekt
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Kinder im Alter zwischen 8 und 11 Jahren" ;
     ld:Zielstellung "KUNI setzt sich mit typischen Themen und Fragestellungen auseinander, die Kinder im frühen und mittleren Schulalter beschäftigen. " ;
-    ld:engagedPerson <http://leipzig-data.de/Data/Person/Gutschale_Anke>, <http://leipzig-data.de/Data/Person/Pohl_Anja>, <http://leipzig-data.de/Data/Person/Schoeneberg_Torsten> ;
+    ld:engagedPerson ldp:Gutschale_Anke, ldp:Pohl_Anja, ldp:Schoeneberg_Torsten ;
     ld:hasStatus "Seit Sept/Okt 2011 in Regie der Medizinischen Fakultät" ;
     ld:hasTag ldtag:Jugendbildung ;
     ld:relatedBundle <http://leipzig-data.de/Data/UniLeipzig> ;
@@ -265,17 +288,3 @@ ld:Projekt
     rdfs:label "Kinder-Uni an der Uni Leipzig" ;
     foaf:homepage <http://www.uni-leipzig.de/kinderuni>, <https://www.facebook.com/kuni.leipzig> ;
     foaf:mbox "kinderuni@uni-leipzig.de" .
-
-<http://leipzig-data.de/Data/Projekt/KonsumGlobal> a ld:Projekt ;
-owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A173> ; 
-   ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Wiebelstrasse.8> ;
-foaf:phone "0163-1736473" ;
-ld:hasSupplier <http://leipzig-data.de/Data/Verein/WeltOffen> ;
-rdfs:label "KonsumGlobal Leipzig" ;
-foaf:homepage <http://konsumglobal-leipzig.de/> .
-
-
-<http://leipzig-data.de/Data/Projekt/Ferienpass.S17> a ld:Projekt ;
-rdfs:label "Ferienpass Leipzig, Sommerferien 2017" ;
-ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Jugendamt> ;
-foaf:homepage <https://www.leipzig.de/freizeit-kultur-und-tourismus/ferienangebote/ferienpass/> .
