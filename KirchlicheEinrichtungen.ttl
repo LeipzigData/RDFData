@@ -8,6 +8,13 @@
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 
+<http://leipzig-data.de/Data/KirchlicheEinrichtungen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Kirchliche Einrichtungen" .
+
 <http://leipzig-data.de/Data/KE/AdventGemeindeLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.8> ;
     a org:Organization ;
@@ -21,7 +28,7 @@
 <http://leipzig-data.de/Data/KE/BistumDresdenMeissen/EheFamilienberatung>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Loehrstrasse.14> ;
     ld:hasCategories "Kinder, Jugend und Familie, Frauenvereine" ;
-    ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Nord> ;
+    ld:hasOrtsteil ldot:Zentrum-Nord ;
     ld:hasStadtId "458" ;
     a org:Organization ;
     rdfs:label "Ehe-, Familien- und Lebensberatung im Bistum Dresden-Meißen Beratungsstelle Leipzig" .
@@ -29,7 +36,7 @@
 <http://leipzig-data.de/Data/KE/Burgarbeit>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Hermannstrasse.8> ;
     ld:hasCategories "Kinder, Jugend und Familie, Wohnprojekte" ;
-    ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Connewitz> ;
+    ld:hasOrtsteil ldot:Connewitz ;
     ld:hasStadtId "679" ;
     a ld:Verein ;
     rdfs:label "'Burgarbeit' christliches Sozialwerk und Lebenshilfe e.V." .
@@ -38,6 +45,14 @@
     ld:hasSupplierNumber "079" ;
     a org:Organization ;
     rdfs:label "Dekanatsjugendseelsorge" .
+
+<http://leipzig-data.de/Data/KE/Diakonie.AmThonberg>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Eichlerstrasse.2> ;
+    ld:hasCategories "Behindertenvereine" ;
+    ld:hasOrtsteil ldot:Reudnitz-Thonberg ;
+    ld:hasStadtId "241" ;
+    a ld:Unternehmen ;
+    rdfs:label "Diakonische Leipziger gGmbH - Diakonie am Thonberg" .
 
 <http://leipzig-data.de/Data/KE/Diakonie.Blickwechsel>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.EisenacherStrasse.44> ;
@@ -54,15 +69,7 @@
     ld:hasStadtId "177", "455", "456" ;
     a ld:Verein ;
     rdfs:label "Diakonisches Werk - Innere Mission Leipzig e.V." ;
-    foaf:homepage <http://www.diakonie-leipzig.de>.
-
-<http://leipzig-data.de/Data/KE/Diakonie.AmThonberg>
-    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Eichlerstrasse.2> ;
-    ld:hasCategories "Behindertenvereine" ;
-    ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Reudnitz-Thonberg> ;
-    ld:hasStadtId "241" ;
-    a ld:Unternehmen ;
-    rdfs:label "Diakonische Leipziger gGmbH - Diakonie am Thonberg" .
+    foaf:homepage <http://www.diakonie-leipzig.de> .
 
 <http://leipzig-data.de/Data/KE/Dreifaltigkeitskirchgemeinde>
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.SellerhaeuserStrasse.7> ;
@@ -93,7 +100,7 @@
 <http://leipzig-data.de/Data/KE/EvangelischLutherischesMissionswerkLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Paul-List-Strasse.19> ;
     ld:hasCategories "Interkulturelle Vereine, Kinder, Jugend und Familie" ;
-    ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum-Sued> ;
+    ld:hasOrtsteil ldot:Zentrum-Sued ;
     ld:hasStadtId "248" ;
     a ld:Verein ;
     rdfs:label "Evangelisch-Lutherisches Missionswerk Leipzig e.V." .
@@ -108,7 +115,7 @@
 <http://leipzig-data.de/Data/KE/HeiligeAlexandra>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.DresdnerStrasse.82> ;
     ld:hasCategories "Kulturvereine, Interkulturelle Vereine, Kulturvereine, Kinder- und Jugendkultur, Musik, Sozio- und Stadtteilkultur" ;
-    ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Reudnitz-Thonberg> ;
+    ld:hasOrtsteil ldot:Reudnitz-Thonberg ;
     ld:hasStadtId "423" ;
     a org:Organization ;
     rdfs:label "Deutsch-Russisches Hilfswerk zur Heiligen Alexandra" .
@@ -123,42 +130,51 @@
     a org:Organization ;
     rdfs:label "Deutsch-Russisches Hilfswerk zur Heiligen Alexandra" .
 
+<http://leipzig-data.de/Data/KE/JohanniterAkademie.Leipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Witzgallstrasse.20> ;
+    a org:Organization ;
+    rdfs:label "Bildungsinstitut Mitteldeutschland der Johanniter-Akademie" ;
+    foaf:homepage <http://www.johanniter.de/index.php?id=11217> .
+
 <http://leipzig-data.de/Data/KE/KirchlicheErwerbsloseninitiative>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.5> ;
     ld:hasCategories "Frauenvereine" ;
-    ld:hasOrtsteil <http://leipzig-data.de/Data/Ortsteil/Zentrum> ;
+    ld:hasOrtsteil ldot:Zentrum ;
     ld:hasStadtId "604" ;
     a org:Organization ;
-    rdfs:label "KEL - Kirchliche Erwerbsloseninitiative Leipzig in Trägerschaft des Ev.-Luth. Kirchenbezirkes Leipzig" .
+    rdfs:label "KEL - Kirchliche Erwerbsloseninitiative Leipzig" .
 
 <http://leipzig-data.de/Data/KE/Orientierung>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.12> ;
     ld:hasStadtId "491" ;
     a org:Organization ;
-    rdfs:label "„Orientierung“ – Kontaktstelle der katholischen Kirche in Leipzig" .
+    rdfs:label "„Orientierung“ – Kontaktstelle der katholischen Kirche in Leipzig" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.13> ;
+    foaf:homepage <http://www.orientierung-leipzig.de> ;
+    foaf:mbox "orientierung.leipzig@jesuiten.org" ;
+    foaf:phone "0341-2125704" .
+
+<http://leipzig-data.de/Data/KE/PaulGerhardtKirche>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Selneckerstrasse.7> ;
+    a org:Organization ;
+    rdfs:label "Paul-Gerhardt-Kirche" ;
+    foaf:homepage <http://www.kirche-leipzig.de/connewitz-loessnig/paulgerhardtkirche.htm> .
+
+<http://leipzig-data.de/Data/KE/Peterskirche>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.5> ;
+    a org:Organization ;
+    rdfs:label "Peterskirche" .
 
 <http://leipzig-data.de/Data/KE/StMartin>
     a org:Organization ;
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Kolpingweg.1> ;
     rdfs:label "Katholische Pfarrei St. Martin" .
 
-<http://leipzig-data.de/Data/KirchlicheEinrichtungen/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Kirchliche Einrichtungen" .
-
-
-<http://leipzig-data.de/Data/KE/JohanniterAkademie.Leipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Witzgallstrasse.20> ;
-    a org:Organization ; 
-    foaf:homepage <http://www.johanniter.de/index.php?id=11217> ; 
-    rdfs:label "Bildungsinstitut Mitteldeutschland der Johanniter-Akademie" .
-
-<http://leipzig-data.de/Data/KE/Orientierung> a org:Organization  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A13> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.12> ;
-   foaf:mbox "orientierung.leipzig@jesuiten.org" ;
-   foaf:phone "0341-2125704" ;
-   rdfs:label "Kontaktstelle Orientierung" ;
-   foaf:homepage <http://www.orientierung-leipzig.de> . 
+<http://leipzig-data.de/Data/KE/Thomaskirche>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomaskirchhof.18> ;
+    a org:Organization ;
+    rdfs:comment "Bachgrab", "Evangelisch-Lutherisch" ;
+    rdfs:label "Thomaskirche" ;
+    foaf:homepage <http://www.thomaskirche.org/> ;
+    foaf:mbox "info@thomaskirche.org" ;
+    foaf:phone "0341-2222440" .

@@ -23,12 +23,16 @@ ld:Verein
     rdfs:subClassOf org:Organization .
 
 <http://leipzig-data.de/Data/Verein/ADFC>
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gruenewaldstrasse.19> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gruenewaldstrasse.19>, <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.18> ;
     ld:hasCategories "Umwelt und Stadtgrün" ;
     ld:hasOrtsteil ldot:Zentrum-Ost ;
     ld:hasStadtId "631", "632", "633" ;
     a ld:Verein ;
-    rdfs:label "Allgemeiner Deutscher Fahrrad-Club (ADFC)" .
+    rdfs:label "ADFC Leipzig", "Allgemeiner Deutscher Fahrrad-Club (ADFC)" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.26> ;
+    foaf:homepage <http://www.adfc-leipzig.de> ;
+    foaf:mbox "info@adfc-leipzig.de" ;
+    foaf:phone "0341-22540313" .
 
 <http://leipzig-data.de/Data/Verein/ADSSelbsthilfegruppe>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.NeueLeipzigerStrasse.39> ;
@@ -117,6 +121,8 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/AlzheimerAngehoerigenInitiativeLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Hoeltystrasse.30> ;
     ld:hasCategories "Behindertenvereine", "Neurologische Krankheiten", "Selbsthilfegruppen" ;
+    ld:hasCategories "Neurologische Krankheiten", "Prävention", "Selbsthilfe", "Selbsthilfegruppen" ;
+    ld:hasStadtId "579" ;
     ld:hasStadtId "580" ;
     ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
@@ -135,14 +141,6 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Amöba – Verein für Umweltbildung e.V." ;
     foaf:homepage <https://amoeba-umweltbildung.de/public/> .
-
-<http://leipzig-data.de/Data/Verein/AngehoerigenSelbsthilfegruppeAlzheimerDemenz>
-    ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Hoeltystrasse.30> ;
-    ld:hasCategories "Neurologische Krankheiten", "Prävention", "Selbsthilfe", "Selbsthilfegruppen" ;
-    ld:hasStadtId "579" ;
-    ld:hasTag ldtag:Ueberregional ;
-    a ld:Verein ;
-    rdfs:label "Angehörigen-Selbsthilfegruppe Alzheimer/Demenz" .
 
 <http://leipzig-data.de/Data/Verein/AnglerverbandLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.EngelsdorferStrasse.377> ;
@@ -193,7 +191,7 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Arbeit und Leben Sachsen" .
 
-<http://leipzig-data.de/Data/Verein/ArbeitskreisIntegriertesWohnen>
+<http://leipzig-data.de/Data/Verein/IntegriertesWohnen>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kurt-Eisner-Strasse.41> ;
     ld:hasCategories "Seniorenvereine", "Wohnprojekte" ;
     ld:hasOrtsteil ldot:Suedvorstadt ;
@@ -201,7 +199,7 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Arbeitskreis Integriertes Wohnen" .
 
-<http://leipzig-data.de/Data/Verein/ArbeitskreisMaedchenLeipzig>
+<http://leipzig-data.de/Data/Verein/MaedchenLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
     ld:hasCategories "Frauenvereine", "Kinder, Jugend und Familie" ;
     ld:hasOrtsteil ldot:Connewitz ;
@@ -209,7 +207,7 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Arbeitskreis Mädchen Leipzig" .
 
-<http://leipzig-data.de/Data/Verein/ArbeitskreisVergleichendeMythologie>
+<http://leipzig-data.de/Data/Verein/VergleichendeMythologie>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gerichtsweg.28> ;
     ld:hasCategories "Kinder- und Jugendkultur", "Kulturvereine", "Literatur" ;
     ld:hasOrtsteil ldot:Zentrum-Ost ;
@@ -243,12 +241,24 @@ ld:Verein
     rdfs:label "Attac Leipzig" ;
     foaf:homepage <http://www.attac-leipzig.de> .
 
+<http://leipzig-data.de/Data/Verein/AutodidaktischeInitiative>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.19> ;
+    a ld:Verein ;
+    rdfs:label "Autodidaktische Initiative e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.105> ;
+    foaf:homepage <http://adi-leipzig.net> ;
+    foaf:mbox "autodidaktenleipzig@riseup.net" ;
+    foaf:phone "0157-56355331" .
+
 <http://leipzig-data.de/Data/Verein/Auwaldstation>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
     a ld:Verein ;
-    rdfs:label "Auwaldstation Leipzig" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A15> ;
-    org:hasMember <http://leipzig-data.de/Data/Person/Baesler_Detlef>, <http://leipzig-data.de/Data/Person/Seidel_Franka> .
+    rdfs:label "Auwaldstation" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.15> ;
+    org:hasMember <http://leipzig-data.de/Data/Person/Seidel_Franka> ;
+    foaf:homepage <http://www.auwaldstation.de> ;
+    foaf:mbox "auwaldstation@t-online.de" ;
+    foaf:phone "0341-4621895" .
 
 <http://leipzig-data.de/Data/Verein/BGL.Nachbarschaftshilfeverein>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Querstrasse.22> ;
@@ -272,9 +282,10 @@ ld:Verein
     ld:hasOrtsteil ldot:Connewitz ;
     ld:hasStadtId "690" ;
     a ld:Verein ;
-    rdfs:label "BUND Regionalgruppe Leipzig" ;
+    rdfs:label "BUND Leipzig", "BUND Regionalgruppe Leipzig" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.73> ;
     foaf:homepage <http://www.bund-leipzig.de> ;
-    foaf:mbox "bund.leipzig@gmx.de" ;
+    foaf:mbox "bund.leipzig@gmx.de", "presse@bund-leipzig.de" ;
     foaf:phone "0341-3065395" .
 
 <http://leipzig-data.de/Data/Verein/BaHuElferrat>
@@ -285,26 +296,25 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Ba-Hu Elferrat e.V." .
 
-<http://leipzig-data.de/Data/Verein/BandcommunityLeipzig>
+<http://leipzig-data.de/Data/Verein/Bandcommunity>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.SaarlaenderStrasse.17> ;
     ld:hasCategories "Kulturvereine", "Musik" ;
     ld:hasOrtsteil ldot:Lindenau ;
     ld:hasStadtId "355" ;
     a ld:Verein ;
-    rdfs:label "Bandcommunity Leipzig e.V." .
-
-<http://leipzig-data.de/Data/Verein/BandhausBandcommunity>
-    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.SaarlaenderStrasse.17> ;
-    a ld:Verein ;
-    rdfs:label "Bandhaus Bandcommunity e.V." .
+    rdfs:label "Bandhaus Bandcommunity Leipzig e.V." .
 
 <http://leipzig-data.de/Data/Verein/BatzenTauschringLeipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.ZumKleingartenpark.41> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.ZumKleingartenpark.41>, <http://leipzig-data.de/Data/04435.Schkeuditz.Ringelblumenweg.10> ;
     ld:hasCategories "Bürgervereine" ;
     ld:hasOrtsteil ldot:Sellerhausen-Stuenz ;
     ld:hasStadtId "570" ;
     a ld:Verein ;
-    rdfs:label "Batzen-Tauschring Leipzig e.V." .
+    rdfs:label "Batzentauschring e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.151>, <http://nachhaltiges-leipzig.de/Data/Akteur.85> ;
+    foaf:homepage <http://www.batzen.de> ;
+    foaf:mbox "leipzigrikscha@gmail.com", "peggy77@gmx.net" ;
+    foaf:phone "0177-2672145" .
 
 <http://leipzig-data.de/Data/Verein/BauhuetteOst>
     a ld:Verein ;
@@ -323,7 +333,11 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/BergbauTechnikPark>
     ld:hasAddress <http://leipzig-data.de/Data/04463.Grosspoesna.Hauptstrasse.19> ;
     a ld:Verein ;
-    rdfs:label "Bergbau-Technik-Park e.V." .
+    rdfs:label "Bergbau-Technik-Park e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.165> ;
+    foaf:homepage <http://www.bergbau-technik-park.de/park/> ;
+    foaf:mbox "info@bergbau-technik-park.de" ;
+    foaf:phone "034297-140127" .
 
 <http://leipzig-data.de/Data/Verein/BismarckturmVerein>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.AmBrunnen.4> ;
@@ -378,6 +392,15 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Freundeskreis Buchkinder Leipzig" .
 
+<http://leipzig-data.de/Data/Verein/BuergerfuerLeipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Dorotheenplatz.2> ;
+    a ld:Verein ;
+    rdfs:label "Stiftung Bürger für Leipzig" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.100> ;
+    foaf:homepage <http://www.buergerfuerleipzig.de> ;
+    foaf:mbox "post@buergerfuerleipzig.de" ;
+    foaf:phone "0341-9601530" .
+
 <http://leipzig-data.de/Data/Verein/BuergerkomiteeLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Dittrichring.24> ;
     ld:hasCategories "Kulturvereine", "Stadtgeschichte und Heimatpflege" ;
@@ -394,7 +417,7 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Bund Bildender Künstler Leipzig e.V." .
 
-<http://leipzig-data.de/Data/Verein/BundesverbandDerFrauenImBuissnesUndManagement.RegionalGruppeLeipzig>
+<http://leipzig-data.de/Data/Verein/FrauenImBuissnes.RegionalgruppeLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.Lindenallee.8> ;
     ld:hasCategories "Frauenvereine" ;
     ld:hasOrtsteil ldot:Wiederitzsch ;
@@ -402,7 +425,7 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Bundesverband der Frauen im Buissnes und Management. Regionalgruppe Leipzig" .
 
-<http://leipzig-data.de/Data/Verein/BundesverbandPoliomyelitis>
+<http://leipzig-data.de/Data/Verein/Poliomyelitis.RegionalgruppeLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Lipsiusstrasse.27> ;
     ld:hasCategories "Behinderungen", "Selbsthilfegruppen" ;
     ld:hasOrtsteil ldot:Reudnitz-Thonberg ;
@@ -410,7 +433,7 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Bundesverband Poliomyelitis e.V. Regionalgruppe Leipzig" .
 
-<http://leipzig-data.de/Data/Verein/BundesverbandSekretariatBueromanagement.RegionalgruppeLeipzig>
+<http://leipzig-data.de/Data/Verein/SekretariatBueromanagement.RegionalgruppeLeipzig>
     ld:hasCategories "Frauenvereine" ;
     ld:hasOrtsteil ldot:Zentrum ;
     ld:hasStadtId "441" ;
@@ -490,11 +513,14 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/Caritas.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisplatz.2>, <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.15>, <http://leipzig-data.de/Data/04207.Leipzig.Liliensteinstrasse.1> ;
     ld:hasCategories "Frauenvereine", "Kinder, Jugend und Familie", "Kulturvereine", "Seniorenvereine", "Sozialpsychiatrische Hilfen" ;
-    ld:hasOrtsteil ldot:Lausen-Gruenau, ldot:Zentrum, ldot:Zentrum-West ;
     ld:hasStadtId "173", "322", "443", "444", "447", "448" ;
     ld:hasSupplierNumber "135" ;
     a ld:Verein ;
-    rdfs:label "Caritasverband Leipzig e.V." .
+    rdfs:label "Caritasverband Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.37> ;
+    foaf:homepage <http://www.caritas-leipzig.de> ;
+    foaf:mbox "presse@caritas-leipzig.de" ;
+    foaf:phone "0341-9636130" .
 
 <http://leipzig-data.de/Data/Verein/CineMuro>
     a ld:Verein, org:Organization ;
@@ -599,13 +625,14 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Deutscher Kinderschutzbund Ortsverband Leipzig e.V." .
 
-<http://leipzig-data.de/Data/Verein/DKSB.Suchtpraevention>
-    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Schenkendorfstrasse.30> ;
-    ld:hasCategories "Prävention", "Suchthilfe" ;
-    ld:hasOrtsteil ldot:Suedvorstadt ;
-    ld:hasStadtId "320" ;
+<http://leipzig-data.de/Data/Verein/DLRG.BezirkLeipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Theresienstrasse.2A> ;
     a ld:Verein ;
-    rdfs:label "Fachstelle für Suchtprävention im Direktionssbezirk Leipzig. Träger: Deutscher Kinderschutzbund OV Leipzig e.V." .
+    rdfs:label "DLRG Bezirk Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.148> ;
+    foaf:homepage <http://bez-leipzig.dlrg.de/> ;
+    foaf:mbox "info@dlrg-leipzig.de" ;
+    foaf:phone "0341-2008188" .
 
 <http://leipzig-data.de/Data/Verein/DPV.RegionalgruppeLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Weidmannweg.16> ;
@@ -626,14 +653,6 @@ ld:Verein
     foaf:homepage <http://www.drk-akademischer-kv-leipzig.de> ;
     foaf:mbox "drk-akt@t-online.de" ;
     foaf:phone "0341-4799464" .
-
-<http://leipzig-data.de/Data/Verein/DRK.BeratungsstelleFuerSchwangereUndFamilien>
-    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Brandvorwerkstrasse.36A> ;
-    ld:hasCategories "Frauenvereine" ;
-    ld:hasOrtsteil ldot:Suedvorstadt ;
-    ld:hasStadtId "454" ;
-    a ld:Verein ;
-    rdfs:label "Deutsches Rotes Kreuz. Beratungsstelle für Schwangere und Familien" .
 
 <http://leipzig-data.de/Data/Verein/DRK.KreisverbandLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Brandvorwerkstrasse.36A> ;
@@ -656,6 +675,15 @@ ld:Verein
     ld:hasStadtId "449" ;
     a ld:Verein ;
     rdfs:label "Deutsche Vereinigung Morbus Bechterew. Landesverband Sachsen e.V." .
+
+<http://leipzig-data.de/Data/Verein/DasJapanischeHaus>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.113B> ;
+    a ld:Verein ;
+    rdfs:label "Das Japanische Haus e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.92> ;
+    foaf:homepage <http://www.djh-leipzig.de> ;
+    foaf:mbox "mail@djh-leipzig.de" ;
+    foaf:phone "034192722261" .
 
 <http://leipzig-data.de/Data/Verein/DasWeiseHaus>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.BornaischeStrasse.193> ;
@@ -764,16 +792,10 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Rathenaustrasse.42> ;
     a ld:Verein ;
     rdfs:label "Die hellen Köpfe e.V." ;
-    foaf:homepage <http://www.diehellenkoepfe.de/> ;
-    foaf:mbox "info@diehellenkoepfe.de" .
-
-<http://leipzig-data.de/Data/Verein/DonumVitae>
-    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.41> ;
-    ld:hasCategories "Frauenvereine" ;
-    ld:hasOrtsteil ldot:Lindenau ;
-    ld:hasStadtId "457" ;
-    a ld:Verein ;
-    rdfs:label "„donum vitae“ e.V. Schwangerenberatungsstelle" .
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.154> ;
+    foaf:homepage <http://diehellenkoepfe.de>, <http://www.diehellenkoepfe.de/> ;
+    foaf:mbox "carina.flores@diehellenkoepfe.de", "info@diehellenkoepfe.de" ;
+    foaf:phone "0157-56424859", "0174-9760689" .
 
 <http://leipzig-data.de/Data/Verein/Durchblick>
     ld:Kurzinformation "Der Durchblick e.V. ist eine von ca. 40 Psychiatriebetroffenen gegründete Interessen-gemeinschaft. Seine Entstehung ist der einzigartigen sozialpsychiatrischen Landschaft Leipzigs zu verdanken. Bereits Anfang der 80er Jahre gab es mehrere informelle Zusammenschlüsse von Psychiatrieerfahrenen. Während der Wendezeit wurde die Basisgruppe \"Psychiatriebetroffene\" beim Neuen Forum gegründet, die sich mit dem Mißbrauch und den Defiziten in der psychiatrischen Versorgung auseinandersetzte. Dieses Engagement wurde von dem 1990 gegründeten Verein \"Durchblick e.V.\" aufgegriffen und fortgeführt. (Quelle: Vereinsseite)" ;
@@ -786,6 +808,15 @@ ld:Verein
     foaf:homepage <http://www.durchblick-ev.de> ;
     foaf:mbox "verein@durchblick-ev.de" ;
     foaf:phone "0341-1406140" .
+
+<http://leipzig-data.de/Data/Verein/EDUVENTIS>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Haertelstrasse.4> ;
+    a ld:Verein ;
+    rdfs:label "EDUVENTIS-Bildung erleben e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.79> ;
+    foaf:homepage <http://www.eduventis.org> ;
+    foaf:mbox "manja.muehl@eduventis.org" ;
+    foaf:phone "0341-26562279" .
 
 <http://leipzig-data.de/Data/Verein/EI.HilfeFuerBehinderte>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.9> ;
@@ -817,7 +848,11 @@ ld:Verein
     ld:hasStadtId "639", "678" ;
     ld:hasTag ldtag:MINT-Broschuere, ldtag:Ueberregional ;
     a ld:Verein ;
-    rdfs:label "ENvironmental EDucation And Science (ENEDAS) e.V." .
+    rdfs:label "ENEDAS e.V.", "ENvironmental EDucation And Science (ENEDAS) e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.164> ;
+    foaf:homepage <http://www.enedas.de/> ;
+    foaf:mbox "info@enedas.de" ;
+    foaf:phone "0157-71822192" .
 
 <http://leipzig-data.de/Data/Verein/EineWelt>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
@@ -827,7 +862,7 @@ ld:Verein
     ld:hasSupplierNumber "016" ;
     a ld:Verein ;
     rdfs:label "Eine Welt e.V." ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A50> ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.50> ;
     foaf:homepage <http://www.einewelt-sachsen.de> ;
     foaf:mbox "miguel.ruiz@einewelt-sachsen.de" ;
     foaf:phone "0341-9940683" .
@@ -1106,7 +1141,11 @@ ld:Verein
     ld:hasStadtId "282" ;
     ld:hasTag ldtag:MINT-Broschuere ;
     a ld:Verein ;
-    rdfs:label "Verein der Freunde und Förderer des Wildparks Leipzig e.V." .
+    rdfs:label "Verein der Freunde und Förderer des Wildparks Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.149> ;
+    foaf:homepage <http://www.wildparkverein-leipzig.de> ;
+    foaf:mbox "info@wildparkverein-leipzig.de" ;
+    foaf:phone "034126496004" .
 
 <http://leipzig-data.de/Data/Verein/ForumFuerKulturKunstMedien>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.59> ;
@@ -1157,7 +1196,21 @@ ld:Verein
     ld:hasOrtsteil ldot:Zentrum ;
     ld:hasStadtId "147" ;
     a ld:Verein ;
-    rdfs:label "Freiwilligen-Agentur Leipzig e.V." .
+    rdfs:label "Freiwilligen-Agentur Leipzig e. V.", "Freiwilligen-Agentur Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.87> ;
+    foaf:homepage <http://www.freiwilligen-agentur-leipzig.de> ;
+    foaf:mbox "info@fwal.de" ;
+    foaf:phone "0341-1494728" .
+
+<http://leipzig-data.de/Data/Verein/Frekonale>
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Marbachstrasse.2A> ;
+    a ld:Verein ;
+    rdfs:comment "Jahnatalstraße 4a, 01594 Riesa OT Jahnishausen" ;
+    rdfs:label "Freie Kommunikation und Nachhaltiger Lebensstil e.V. „frekonale“" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.114> ;
+    foaf:homepage <https://greennetproject.org> ;
+    foaf:mbox "markus.kollotzek@greennetproject.org" ;
+    foaf:phone "0160-2574782" .
 
 <http://leipzig-data.de/Data/Verein/FroebelGruppe>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.4> ;
@@ -1180,8 +1233,11 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
     a ld:Verein ;
     rdfs:label "Grün-Alternatives Zentrum Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.16> ;
     org:hasMember <http://leipzig-data.de/Data/Person/Reschke_Volker> ;
-    foaf:mbox "gaz-leipzig@t-online.de" .
+    foaf:homepage <http://www.doelitzer-wassermuehle.de> ;
+    foaf:mbox "GAZ-Leipzig@t-online.de", "gaz-leipzig@t-online.de" ;
+    foaf:phone "0341-3389353" .
 
 <http://leipzig-data.de/Data/Verein/GEDOK>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gerichtsweg.28> ;
@@ -1192,7 +1248,7 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "GEDOK. Gruppe Leipzig/Sachsen e.V." .
 
-<http://leipzig-data.de/Data/Verein/GI.RG-Leipzig>
+<http://leipzig-data.de/Data/Verein/GI.RegionalgruppeLeipzig>
     ld:contactPerson <http://leipzig-data.de/Data/Person/Radomski_Sabine> ;
     a ld:Verein ;
     rdfs:label "Gesellschaft für Informatik, Regionalgruppe Leipzig" ;
@@ -1215,12 +1271,16 @@ ld:Verein
     rdfs:label "geist:reicht" .
 
 <http://leipzig-data.de/Data/Verein/GeoWerkstattLeipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19A> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19>, <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19A> ;
     ld:hasCategories "Umwelt und Stadtgrün" ;
     ld:hasOrtsteil ldot:Zentrum-Suedost ;
     ld:hasStadtId "526" ;
     a ld:Verein ;
-    rdfs:label "GeoWerkstatt Leipzig e.V." .
+    rdfs:label "GeoWerkstatt Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.168> ;
+    foaf:homepage <http://www.geowerkstatt.com> ;
+    foaf:mbox "vorstand@geowerkstatt.com" ;
+    foaf:phone "0179-4590873" .
 
 <http://leipzig-data.de/Data/Verein/GeographischeGesellschaft>
     ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Schongauerstrasse.9> ;
@@ -1346,7 +1406,11 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Plautstrasse.80> ;
     ld:hasTag ldtag:MINT-Broschuere ;
     a ld:Verein ;
-    rdfs:label "HANDS on TECHNOLOGY e.V." .
+    rdfs:label "HANDS on TECHNOLOGY e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.127> ;
+    foaf:homepage <http://www.hands-on-technology.org> ;
+    foaf:mbox "info@hands-on-technology.org" ;
+    foaf:phone "0341-2461583" .
 
 <http://leipzig-data.de/Data/Verein/HausDerDemokratieLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
@@ -1354,7 +1418,11 @@ ld:Verein
     ld:hasOrtsteil ldot:Connewitz ;
     ld:hasStadtId "537" ;
     a ld:Verein ;
-    rdfs:label "Haus der Demokratie Leipzig e.V." .
+    rdfs:label "Haus der Demokratie Leipzig e.V.", "Haus der Demokratie Leipzig e.v." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.101> ;
+    foaf:homepage <http://www.hddl.de> ;
+    foaf:mbox "info@hddl.de" ;
+    foaf:phone "0341-3065100" .
 
 <http://leipzig-data.de/Data/Verein/HausSteinstrasse>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Steinstrasse.18> ;
@@ -1771,10 +1839,14 @@ ld:Verein
     rdfs:label "Kindernest e.V. Verein der Pflege- und Adoptiveltern Leipzig und Umgebung" .
 
 <http://leipzig-data.de/Data/Verein/Kinderschutzbund>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Rietschelstrasse.2> ;
     ld:hasSupplierNumber "146" ;
     a ld:Verein ;
-    rdfs:label "Deutscher Kinderschutzbund" ;
-    foaf:mbox "eb@dksb-leipzig.de", "kjt@dksb-leipzig.de" .
+    rdfs:label "Deutscher Kinderschutzbund", "Leipziger Kinderbüro des Deutschen Kinderschutzbundes" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.29> ;
+    foaf:homepage <http://www.leipziger-kinderbuero.de/> ;
+    foaf:mbox "eb@dksb-leipzig.de", "info@leipziger-kinderbuero.de", "kjt@dksb-leipzig.de" ;
+    foaf:phone "0341-3375666" .
 
 <http://leipzig-data.de/Data/Verein/Kindervereinigung.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
@@ -1845,8 +1917,11 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/KonzeptwerkNeueOekonomie>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
     a ld:Verein ;
-    rdfs:label "Konzeptwerk Neue Ökonomie e.V." ;
-    foaf:homepage <https://www.konzeptwerk-neue-oekonomie.org/> .
+    rdfs:label "Konzeptwerk Neue Ökonomie", "Konzeptwerk Neue Ökonomie e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.145>, <http://nachhaltiges-leipzig.de/Data/Akteur.27> ;
+    foaf:homepage <http://www.knoe.org>, <http://www.konzeptwerk-neue-oekonomie.org>, <https://www.konzeptwerk-neue-oekonomie.org/> ;
+    foaf:mbox "K.Kuhnhenn@knoe.org", "s.brehm@knoe.org" ;
+    foaf:phone "0341-39281686" .
 
 <http://leipzig-data.de/Data/Verein/KreativesLeipzig>
     a ld:Verein ;
@@ -1920,7 +1995,7 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.7> ;
     a ld:Verein ;
     rdfs:label "kunZstoffe – urbane Ideenwerkstatt e.V." ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A64> ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.64> ;
     foaf:homepage <http://www.kunzstoffe.de> ;
     foaf:mbox "buero@kunzstoffe.de" ;
     foaf:phone "0163-4846916" .
@@ -1971,10 +2046,13 @@ ld:Verein
     rdfs:label "Landesfilmdienst Sachsen" .
 
 <http://leipzig-data.de/Data/Verein/LebenLernenLeipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.102> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.102>, <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.68> ;
     a ld:Verein ;
     rdfs:label "Leben.Lernen.Leipzig e.V." ;
-    foaf:homepage <http://lebenlernenleipzig.de>, <http://www.facebook.com/LebenLernenLeipzig> .
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.32> ;
+    foaf:homepage <http://lebenlernenleipzig.de>, <http://www.facebook.com/LebenLernenLeipzig>, <http://www.lebenlernenleipzig.de> ;
+    foaf:mbox "info@lebenlernenleipzig.de" ;
+    foaf:phone "0157-81870122" .
 
 <http://leipzig-data.de/Data/Verein/LebendigesKongo>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Ossietzkystrasse.24> ;
@@ -1991,6 +2069,15 @@ ld:Verein
     ld:hasStadtId "222" ;
     a ld:Verein ;
     rdfs:label "Lebenshilfe für Menschen mit geistiger Behinderung Leipzig e.V." .
+
+<http://leipzig-data.de/Data/Verein/Leila>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.49> ;
+    a ld:Verein ;
+    rdfs:label "Leila e.V. iG" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.144> ;
+    foaf:homepage <http://www.leila-leipzig.de> ;
+    foaf:mbox "kontakt@leila-leipzig.de" ;
+    foaf:phone "0162-6675500" .
 
 <http://leipzig-data.de/Data/Verein/LeipzigCourage>
     ld:hasSupplierNumber "316" ;
@@ -2060,7 +2147,7 @@ ld:Verein
     ld:hasSupplierNumber "230" ;
     a ld:Verein ;
     rdfs:label "Leipziger Kinderbüro e.V., Deutscher Kinderschutzbund Leipzig" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A29> ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.29> ;
     foaf:homepage <http://www.leipziger-kinderbuero.de> ;
     foaf:mbox "kinderbuero@dksb-leipzig.de" .
 
@@ -2254,8 +2341,9 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.14> ;
     ld:hasSupplierNumber "050" ;
     a ld:Verein ;
-    rdfs:label "Begegnungsstätte Mühlstraße e.V." ;
-    foaf:homepage <http://www.muehlstrasse.de> ;
+    rdfs:label "Begegnungsstätte Mühlstraße e.V.", "MÜHLSTRASSE 14 e. V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.166> ;
+    foaf:homepage <http://www.muehlstrasse.de>, <http://www.muehlstrasse.de/> ;
     foaf:mbox "kontakt@muehlstrasse.de" ;
     foaf:phone "0341-9903600", "0341-9903602" .
 
@@ -2295,15 +2383,16 @@ ld:Verein
     rdfs:label "Musikviertel e.V." .
 
 <http://leipzig-data.de/Data/Verein/NABU.Leipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Zollikoferstrasse.21> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Corinthstrasse.14>, <http://leipzig-data.de/Data/04315.Leipzig.Zollikoferstrasse.21> ;
     ld:hasCategories "Umwelt und Stadtgrün" ;
     ld:hasStadtId "302" ;
     ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
-    rdfs:label "NABU Regionalverband Leipzig e.V." ;
-    foaf:homepage <http://www.nabu-leipzig.de> ;
-    foaf:mbox "kv.leipzig@nabu-sachsen.de" ;
-    foaf:phone "0341-6884477" .
+    rdfs:label "NABU Regionalverband Leipzig e.V.", "NABU-Regionalverband Leipzig" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.60> ;
+    foaf:homepage <http://www.NABU-Leipzig.de>, <http://www.nabu-leipzig.de> ;
+    foaf:mbox "info@nabu-leipzig.de", "kv.leipzig@nabu-sachsen.de" ;
+    foaf:phone "0341-6884477", "03416884477" .
 
 <http://leipzig-data.de/Data/Verein/NABU.Sachsen>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.LoebauerStrasse.68> ;
@@ -2319,7 +2408,10 @@ ld:Verein
     ld:hasOrtsteil ldot:Lindenau ;
     ld:hasStadtId "610" ;
     a ld:Verein ;
-    rdfs:label "Nachbarschaftsgarten e.V." .
+    rdfs:label "Nachbarschaftsgarten e.V.", "Nachbarschaftsgärten e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.72> ;
+    foaf:homepage <http://www.nachbarschaftsgaerten.de/> ;
+    foaf:mbox "info@nachbarschaftsgaerten.de" .
 
 <http://leipzig-data.de/Data/Verein/NachbarschaftszentrumDieTuer>
     ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Gottschallstrasse.11> ;
@@ -2365,6 +2457,15 @@ ld:Verein
     rdfs:label "Netzwerk für Demokratie und Courage e.V." ;
     foaf:homepage <https://www.netzwerk-courage.de/> .
 
+<http://leipzig-data.de/Data/Verein/NetzwerkGewaltfreieKommunikation>
+    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.92> ;
+    a ld:Verein ;
+    rdfs:label "Netzwerk Gewaltfreie Kommunikation Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.98> ;
+    foaf:homepage <http://www.gfk-leipzig.de> ;
+    foaf:mbox "kontakt@gfk-leipzig.de" ;
+    foaf:phone "0160-96243014", "0176-60898823" .
+
 <http://leipzig-data.de/Data/Verein/NetzwerkIntegrationMigrantenInLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.15> ;
     ld:hasCategories "Interkulturelle Vereine" ;
@@ -2401,11 +2502,12 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/NuKLA>
     ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Otto-Adam-Strasse.14> ;
     a ld:Verein, org:Organization ;
-    rdfs:label "Naturschutz und Kunst Leipziger Auwald (NuKLA) e.V." ;
+    rdfs:label "Naturschutz und Kunst Leipziger Auwald (NuKLA) e.V.", "Naturschutz und Kunst Leipziger Auwald e. V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.10> ;
     org:hasMember <http://leipzig-data.de/Data/Person/Maruhn_Olaf>, <http://leipzig-data.de/Data/Person/Stoiber_WolfgangEA> ;
     foaf:homepage <http://www.nukla.de> ;
     foaf:mbox "stoiber@nukla.de" ;
-    foaf:phone "0178-6662454", "0341-3503421" .
+    foaf:phone "0178-6662454", "01786662454", "0341-3503421" .
 
 <http://leipzig-data.de/Data/Verein/OSTPOL>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Shakespearestrasse.5> ;
@@ -2415,6 +2517,15 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "OSTPOL e.V." .
 
+<http://leipzig-data.de/Data/Verein/OeDPSachsen>
+    ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.GoebschelwitzerStrasse.1> ;
+    a ld:Verein ;
+    rdfs:label "ÖDP Sachsen" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.146> ;
+    foaf:homepage <http://www.oedp-sachsen.de> ;
+    foaf:mbox "rahwehbl@aikq.de" ;
+    foaf:phone "0341-3513835" .
+
 <http://leipzig-data.de/Data/Verein/Oekoloewe>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
     ld:hasCategories "Bürgervereine", "Umwelt und Stadtgrün" ;
@@ -2422,10 +2533,11 @@ ld:Verein
     ld:hasStadtId "300" ;
     ld:hasSupplierNumber "053" ;
     a ld:Verein ;
-    rdfs:label "Ökolöwe – Umweltbund Leipzig e.V." ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A14> ;
-    foaf:mbox "umweltbildung@oekoloewe.de" ;
-    foaf:phone "0341-3065179", "0341-3504766" .
+    rdfs:label "Ökolöwe - Umweltbund Leipzig e.V.", "Ökolöwe – Umweltbund Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.14>, <http://nachhaltiges-leipzig.de/Data/Akteur.69> ;
+    foaf:homepage <http://www.oekoloewe.de>, <http://ökolöwe.de/> ;
+    foaf:mbox "loewenmaul@oekoloewe.de", "oeffentlichkeitsarbeit@oekoloewe.de", "umweltbildung@oekoloewe.de" ;
+    foaf:phone "0341-3065-185", "0341-3065179", "0341-3065185", "0341-3504766" .
 
 <http://leipzig-data.de/Data/Verein/OekumenischesWohnprojektQuelle>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.7> ;
@@ -2436,8 +2548,13 @@ ld:Verein
     rdfs:label "Ökumenisches Wohnprojekt Quelle e.V." .
 
 <http://leipzig-data.de/Data/Verein/Oikos>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.12> ;
     a ld:Verein ;
-    rdfs:label "Studierendeninitiative „oikos“" .
+    rdfs:label "Studierendeninitiative „oikos“", "oikos Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.21> ;
+    foaf:homepage <http://leipzig.oikos-international.org/> ;
+    foaf:mbox "info@oikos-leipzig.org" ;
+    foaf:phone "0162-2950053" .
 
 <http://leipzig-data.de/Data/Verein/OrangUtansinNot>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.6> ;
@@ -2492,6 +2609,15 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Pandechaion - Herberge e.V." .
 
+<http://leipzig-data.de/Data/Verein/Parcours>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Ludwigstrasse.79> ;
+    a ld:Verein ;
+    rdfs:label "Bildungsverein Parcours e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.170> ;
+    foaf:homepage <http://parcours-bildung.org> ;
+    foaf:mbox "info@parcours-bildung.org" ;
+    foaf:phone "0341-26580091" .
+
 <http://leipzig-data.de/Data/Verein/ParkeisenbahnAuensee>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Gustav-Esche-Strasse.8> ;
     ld:hasCategories "Umwelt und Stadtgrün" ;
@@ -2530,8 +2656,9 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.DelitzscherLandstrasse.38> ;
     a ld:Verein ;
     rdfs:label "Phyllodrom e.V." ;
-    foaf:homepage <http://wwww.Phyllodrom.de> ;
-    foaf:mbox "info@Phyllodrom.de" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.160> ;
+    foaf:homepage <http://phyllodrom.de/>, <http://wwww.Phyllodrom.de> ;
+    foaf:mbox "info@Phyllodrom.de", "info@phyllodrom.de" ;
     foaf:phone "0341-5257757" .
 
 <http://leipzig-data.de/Data/Verein/Pikanta>
@@ -2578,6 +2705,15 @@ ld:Verein
     ld:hasStadtId "658" ;
     a ld:Verein ;
     rdfs:label "Psychotraumazentrum Leipzig e.V." .
+
+<http://leipzig-data.de/Data/Verein/Querbeet>
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Paul-Heyse-Strasse.2> ;
+    a ld:Verein ;
+    rdfs:label "Querbeet Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.42> ;
+    foaf:homepage <http://www.querbeet-leipzig.de> ;
+    foaf:mbox "t.johannes@arcor.de" ;
+    foaf:phone "0178-1815797" .
 
 <http://leipzig-data.de/Data/Verein/RAA.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Sternwartenstrasse.4> ;
@@ -2679,10 +2815,13 @@ ld:Verein
     rdfs:label "SAIDA International e.V." .
 
 <http://leipzig-data.de/Data/Verein/SCI.Leipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/53115.Bonn.Bluecherstrasse.14> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Mariannenstrasse.107>, <http://leipzig-data.de/Data/53115.Bonn.Bluecherstrasse.14> ;
     a ld:Verein ;
-    rdfs:label "SCI – Service Civil International, Lokalgruppe Leipzig" ;
-    foaf:homepage <https://www.sci-d.de/lokalgruppe-leipzig> .
+    rdfs:label "SCI Leipzig", "SCI – Service Civil International, Lokalgruppe Leipzig" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.150> ;
+    foaf:homepage <http://sci-d.de/lokalgruppe-leipzig>, <https://www.sci-d.de/lokalgruppe-leipzig> ;
+    foaf:mbox "leipzig.lg@sci-d.de" ;
+    foaf:phone "015739263765" .
 
 <http://leipzig-data.de/Data/Verein/SJD.Falken>
     ld:hasSupplierNumber "293" ;
@@ -3017,6 +3156,15 @@ ld:Verein
     foaf:mbox "sjr@stadtjugendring-leipzig.de" ;
     foaf:phone "0152-34260674", "0341-6889334", "0341-6894859" .
 
+<http://leipzig-data.de/Data/Verein/Stadtpflanzer>
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Hildegardstrasse.49> ;
+    a ld:Verein ;
+    rdfs:label "Stadtpflanzer e. V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.66> ;
+    foaf:homepage <http://www.stadtpflanzer.de> ;
+    foaf:mbox "sandra@stadtpflanzer.de" ;
+    foaf:phone "0177-7886010" .
+
 <http://leipzig-data.de/Data/Verein/Stadtsportbund>
     ld:hasSupplierNumber "205" ;
     a ld:Verein ;
@@ -3027,14 +3175,6 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Start-Up Club Leipzig e.V." ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.68> .
-
-<http://leipzig-data.de/Data/Verein/StiftungFederkiel>
-    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
-    ld:hasCategories "Bildende Kunst", "Kinder- und Jugendkultur", "Kulturvereine" ;
-    ld:hasOrtsteil ldot:Neulindenau ;
-    ld:hasStadtId "367" ;
-    a ld:Verein ;
-    rdfs:label "Stiftung Federkiel für zeitgenössische Kunst und Kultur" .
 
 <http://leipzig-data.de/Data/Verein/StillforumLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Biedermannstrasse.84> ;
@@ -3056,6 +3196,15 @@ ld:Verein
     ld:hasStadtId "629" ;
     a ld:Verein ;
     rdfs:label "Studentische Eltern Leipzig e.V." .
+
+<http://leipzig-data.de/Data/Verein/SukumaArts>
+    ld:hasAddress <http://leipzig-data.de/Data/01099.Dresden.Louisenstrasse.93> ;
+    a ld:Verein ;
+    rdfs:label "Sukuma arts e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.52> ;
+    foaf:homepage <http://www.sukuma-award.de> ;
+    foaf:mbox "award@sukuma.net" ;
+    foaf:phone "0351-7928767" .
 
 <http://leipzig-data.de/Data/Verein/TaijutsukentandoLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.HeilbronnerStrasse.15> ;
@@ -3122,11 +3271,12 @@ ld:Verein
 <http://leipzig-data.de/Data/Verein/UIZ.Foerderverein>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
     a ld:Verein ;
-    rdfs:label "Förderverein Umweltinformationszentrum Stadt Leipzig UIZ e.V." ;
+    rdfs:label "Förderverein \"Umweltinformationszentrum Leipzig - UiZ\" e.V.", "Förderverein Umweltinformationszentrum Stadt Leipzig UIZ e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.11> ;
     org:hasMember <http://leipzig-data.de/Data/Person/Koerner_Annette> ;
-    foaf:homepage <http://www.uiz-foerderverein.de> ;
+    foaf:homepage <http://www.uiz-foerderverein.de>, <http://www.umwelt-leipzig.de> ;
     foaf:mbox "fvumweltinformationszentrum@web.de" ;
-    foaf:phone "0341-1236830", "0341-1236835" .
+    foaf:phone "0341-1236830", "0341-1236835", "03411236830" .
 
 <http://leipzig-data.de/Data/Verein/UmweltinstitutLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
@@ -3387,7 +3537,11 @@ ld:Verein
     ld:hasStadtId "270" ;
     ld:hasTag ldtag:Ueberregional ;
     a ld:Verein ;
-    rdfs:label "WEGE e.V. - Verein Angehöriger und Freunde psychisch Kranker" .
+    rdfs:label "WEGE e.V. - Verein Angehöriger und Freunde psychisch Kranker", "WEGE e.V. - für Angehörige und Freunde psychisch Kranker" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.28> ;
+    foaf:homepage <http://www.wege-ev.de> ;
+    foaf:mbox "oeffentlichkeitsarbeit@wege-ev.de" ;
+    foaf:phone "0341-24689093", "0341-9128317" .
 
 <http://leipzig-data.de/Data/Verein/WI.Mitteldeutschland>
     rdf:seeAlso <http://leipzig-data.de/Data/Verein/EMMD> ;
@@ -3400,15 +3554,19 @@ ld:Verein
     ld:hasOrtsteil ldot:Plagwitz ;
     ld:hasStadtId "534" ;
     a ld:Verein ;
-    rdfs:label "Wasser-Stadt-Leipzig e.V." .
+    rdfs:label "Wasser-Stadt-Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.2> ;
+    foaf:homepage <http://www.wasser-stadt-leipzig.de> ;
+    foaf:mbox "mail@leipzig-heymann.de" ;
+    foaf:phone "0172-7935986", "0341-4924024" .
 
 <http://leipzig-data.de/Data/Verein/WeltOffen>
-    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Strassedes17Juni.11> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Strassedes17Juni.11>, <http://leipzig-data.de/Data/04229.Leipzig.Schnorrstrasse.3B> ;
     a ld:Verein ;
     rdfs:label "WeltOffen e.V." ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A173> ;
-    foaf:mbox "kontakt@weltoffen-leipzig.de" ;
-    foaf:phone "0341-68698188" .
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.173>, <http://nachhaltiges-leipzig.de/Data/Akteur.33> ;
+    foaf:mbox "WeltOffenEvau@gmx.de", "kontakt@weltoffen-leipzig.de" ;
+    foaf:phone "0341-3040617", "0341-68698188" .
 
 <http://leipzig-data.de/Data/Verein/Werk2>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Kochstrasse.132> ;
@@ -3425,7 +3583,11 @@ ld:Verein
     ld:hasOrtsteil ldot:Plagwitz ;
     ld:hasStadtId "531" ;
     a ld:Verein ;
-    rdfs:label "Westbesuch e.V." .
+    rdfs:label "Westbesuch e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.38> ;
+    foaf:homepage <http://www.westbesuch.com> ;
+    foaf:mbox "info@westbesuch.com" ;
+    foaf:phone "0157-87800654" .
 
 <http://leipzig-data.de/Data/Verein/WirFuerSchoenefeld>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.AbtnaundorferStrasse.60> ;
@@ -3483,6 +3645,13 @@ ld:Verein
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.48> ;
     foaf:homepage <http://www.f-stop-leipzig.de> .
 
+<http://leipzig-data.de/Data/Verein/Zipfel>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.10> ;
+    a org:Organization ;
+    rdfs:label "Zipfel e.V." ;
+    foaf:mbox "buero@rockzipfel-leipzig.de" ;
+    foaf:phone "0341-2482740" .
+
 <http://leipzig-data.de/Data/Verein/Zollschuppen>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Zollschuppenstrasse.11> ;
     ld:hasCategories "Kulturvereine", "Sozio- und Stadtteilkultur" ;
@@ -3522,8 +3691,11 @@ ld:Verein
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.49> ;
     a ld:Verein ;
     rdfs:comment "ZAK – ZukunftsAkademie Leipzig e.V., c/o InfoCenter Eisenbahnstraße, Eisenbahnstraße 49, 04315 Leipzig" ;
-    rdfs:label "ZAK - Zukunftsakademie Leipzig e.V." ;
-    foaf:homepage <http://www.zukunftsakademie-leipzig.de/> .
+    rdfs:label "ZAK - Zukunftsakademie Leipzig e.V.", "Zukunftsakademie Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.5> ;
+    foaf:homepage <http://www.zukunftsakademie-leipzig.de>, <http://www.zukunftsakademie-leipzig.de/> ;
+    foaf:mbox "schirmer@civixx.de" ;
+    foaf:phone "034135137913" .
 
 <http://leipzig-data.de/Data/Verein/Zukunftsnetz>
     ld:hasSupplierNumber "365" ;
@@ -3543,418 +3715,25 @@ ld:Verein
     a ld:Verein ;
     rdfs:label "Zwergenland e.V." .
 
+<http://leipzig-data.de/Data/Verein/archenoVa>
+    ld:hasAddress <http://leipzig-data.de/Data/01067.Dresden.Weisseritzstrasse.3> ;
+    a ld:Verein ;
+    rdfs:label "arche noVa - Initiative für Menschen in Not e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.167> ;
+    foaf:homepage <https://arche-nova.org/de> ;
+    foaf:mbox "info@arche-nova.org" ;
+    foaf:phone "0351-48198421" .
+
+<http://leipzig-data.de/Data/Verein/kidscode>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erdmannstrasse.16> ;
+    a ld:Verein ;
+    rdfs:label "kidscode e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.159> ;
+    foaf:mbox "andreaskoch030@gmail.com" ;
+    foaf:phone "0174-3160863" .
+
 <http://leipzig-data.de/Data/Verein/sublab>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.93> ;
     ld:hasAddressAddendum "Tor B, 3. OG" ;
     a ld:Verein ;
     rdfs:label "sublab e.V." .
-
-<http://leipzig-data.de/Data/Verein/WasserStadtLeipzig> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A2> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.72> ;
-   foaf:mbox "mail@leipzig-heymann.de" ;
-   foaf:phone "0341-4924024" ;
-   foaf:phone "0172-7935986" ;
-   rdfs:label "Wasser-Stadt-Leipzig e.V." ;
-   foaf:homepage <http://www.wasser-stadt-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/Zukunftsakademie> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A5> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.49> ;
-   foaf:mbox "schirmer@civixx.de" ;
-   foaf:phone "034135137913" ;
-   rdfs:label "Zukunftsakademie Leipzig e.V." ;
-   foaf:homepage <http://www.zukunftsakademie-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/NuKLA> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A10> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Otto-Adam-Strasse.14> ;
-   foaf:mbox "stoiber@nukla.de" ;
-   foaf:phone "01786662454" ;
-   rdfs:label "Naturschutz und Kunst Leipziger Auwald e. V." ;
-   foaf:homepage <http://www.nukla.de> . 
-
-<http://leipzig-data.de/Data/Verein/UIZ.Foerderverein> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A11> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
-   foaf:mbox "fvumweltinformationszentrum@web.de" ;
-   foaf:phone "03411236830" ;
-   rdfs:label "Förderverein \"Umweltinformationszentrum Leipzig - UiZ\" e.V." ;
-   foaf:homepage <http://www.umwelt-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/Oekoloewe> a ld:Verein ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A14> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "oeffentlichkeitsarbeit@oekoloewe.de" ;
-   foaf:phone "0341-3065-185" ;
-   rdfs:label "Ökolöwe - Umweltbund Leipzig e.V." ;
-   foaf:homepage <http://www.oekoloewe.de> . 
-
-<http://leipzig-data.de/Data/Verein/Auwaldstation> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A15> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
-   foaf:mbox "auwaldstation@t-online.de" ;
-   foaf:phone "0341-4621895" ;
-   rdfs:label "Auwaldstation" ;
-   foaf:homepage <http://www.auwaldstation.de> . 
-
-<http://leipzig-data.de/Data/Verein/GAZ> a ld:Verein ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A16> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
-   foaf:mbox "GAZ-Leipzig@t-online.de" ;
-   foaf:phone "0341-3389353" ;
-   rdfs:label "Grün-Alternatives Zentrum Leipzig e.V." ;
-   foaf:homepage <http://www.doelitzer-wassermuehle.de> . 
-
-<http://leipzig-data.de/Data/Verein/Oikos> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A21> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.12> ;
-   foaf:mbox "info@oikos-leipzig.org" ;
-   foaf:phone "0162-2950053" ;
-   rdfs:label "oikos Leipzig e.V." ;
-   foaf:homepage <http://leipzig.oikos-international.org/> . 
-
-<http://leipzig-data.de/Data/Verein/ADFC> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A26> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.18> ;
-   foaf:mbox "info@adfc-leipzig.de" ;
-   foaf:phone "0341-22540313" ;
-   rdfs:label "ADFC Leipzig" ;
-   foaf:homepage <http://www.adfc-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/KonzeptwerkNeueOekonomie> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A27> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
-   foaf:mbox "s.brehm@knoe.org" ;
-   foaf:phone "0341-39281686" ;
-   rdfs:label "Konzeptwerk Neue Ökonomie" ;
-   foaf:homepage <http://www.konzeptwerk-neue-oekonomie.org> . 
-
-<http://leipzig-data.de/Data/Verein/WEGE> a ld:Verein ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A28> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.75> ;
-   foaf:mbox "oeffentlichkeitsarbeit@wege-ev.de" ;
-   foaf:phone "0341-24689093" ;
-   foaf:phone "0341-9128317" ;
-   rdfs:label "WEGE e.V. - für Angehörige und Freunde psychisch Kranker" ;
-   foaf:homepage <http://www.wege-ev.de> . 
-
-<http://leipzig-data.de/Data/Verein/Kinderschutzbund> a ld:Verein ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A29> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Rietschelstrasse.2> ;
-   foaf:mbox "info@leipziger-kinderbuero.de" ;
-   foaf:phone "0341-3375666" ;
-   rdfs:label "Leipziger Kinderbüro des Deutschen Kinderschutzbundes" ;
-   foaf:homepage <http://www.leipziger-kinderbuero.de/> . 
-
-<http://leipzig-data.de/Data/Verein/LebenLernenLeipzig> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A32> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.68> ;
-   foaf:mbox "info@lebenlernenleipzig.de" ;
-   foaf:phone "0157-81870122" ;
-   foaf:homepage <http://www.lebenlernenleipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/WeltOffen> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A33> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Schnorrstrasse.3B> ;
-   foaf:mbox "WeltOffenEvau@gmx.de" ;
-   foaf:phone "0341-3040617" . 
-
-<http://leipzig-data.de/Data/Verein/Caritas.Leipzig> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A37> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.15> ;
-   foaf:mbox "presse@caritas-leipzig.de" ;
-   foaf:phone "0341-9636130" ;
-   rdfs:label "Caritasverband Leipzig e. V." ;
-   foaf:homepage <http://www.caritas-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/Westbesuch> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A38> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.93> ;
-   foaf:mbox "info@westbesuch.com" ;
-   foaf:phone "0157-87800654" ;
-   rdfs:label "Westbesuch e.V." ;
-   foaf:homepage <http://www.westbesuch.com> . 
-
-<http://leipzig-data.de/Data/Verein/Querbeet> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A42> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Paul-Heyse-Strasse.2> ;
-   foaf:mbox "t.johannes@arcor.de" ;
-   foaf:phone "0178-1815797" ;
-   rdfs:label "Querbeet Leipzig e.V." ;
-   foaf:homepage <http://www.querbeet-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/Zipfel> a org:Organization  ;
-   ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.10> ;
-   foaf:mbox "buero@rockzipfel-leipzig.de" ;
-   foaf:phone "0341-2482740" ;
-   rdfs:label "Zipfel e.V."  . 
-
-<http://leipzig-data.de/Data/Verein/SukumaArts> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A52> ;
-   ld:hasAddress <http://leipzig-data.de/Data/01099.Dresden.Louisenstrasse.93> ;
-   foaf:mbox "award@sukuma.net" ;
-   foaf:phone "0351-7928767" ;
-   rdfs:label "Sukuma arts e.V." ;
-   foaf:homepage <http://www.sukuma-award.de> . 
-
-<http://leipzig-data.de/Data/Verein/NABU.Leipzig> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A60> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Corinthstrasse.14> ;
-   foaf:mbox "info@nabu-leipzig.de" ;
-   foaf:phone "03416884477" ;
-   rdfs:label "NABU-Regionalverband Leipzig" ;
-   foaf:homepage <http://www.NABU-Leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/StiftungEckenWecken> a ld:Verein  ;
-   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.MarkranstaedterStrasse.29B> ;
-   foaf:phone "0341-2419274" ;
-   rdfs:label "Stiftung \"Ecken wecken\"" ;
-   foaf:homepage <http://stiftung-ecken-wecken.de> . 
-
-<http://leipzig-data.de/Data/Verein/Kunzstoffe> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A64> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.7> ;
-   foaf:mbox "buero@kunzstoffe.de" ;
-   foaf:phone "0163-4846916" ;
-   rdfs:label "kunZstoffe – urbane Ideenwerkstatt e.V." ;
-   foaf:homepage <http://www.kunzstoffe.de> . 
-
-<http://leipzig-data.de/Data/Verein/Stadtpflanzer> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A66> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Hildegardstrasse.49> ;
-   foaf:mbox "sandra@stadtpflanzer.de" ;
-   foaf:phone "0177-7886010" ;
-   rdfs:label "Stadtpflanzer e. V." ;
-   foaf:homepage <http://www.stadtpflanzer.de> . 
-
-<http://leipzig-data.de/Data/Verein/Oekoloewe> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A69> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "loewenmaul@oekoloewe.de" ;
-   foaf:phone "0341-3065185" ;
-   rdfs:label "Ökolöwe - Umweltbund Leipzig e.V." ;
-   foaf:homepage <http://ökolöwe.de/> . 
-
-<http://leipzig-data.de/Data/Verein/Nachbarschaftsgarten> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A72> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.27> ;
-   foaf:mbox "info@nachbarschaftsgaerten.de" ;
-   rdfs:label "Nachbarschaftsgärten e.V." ;
-   foaf:homepage <http://www.nachbarschaftsgaerten.de/> . 
-
-<http://leipzig-data.de/Data/Verein/BUND.RegionalgruppeLeipzig> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A73> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "presse@bund-leipzig.de" ;
-   foaf:phone "0341-3065395" ;
-   rdfs:label "BUND Leipzig" ;
-   foaf:homepage <http://www.bund-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/EDUVENTIS> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A79> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Haertelstrasse.4> ;
-   foaf:mbox "manja.muehl@eduventis.org" ;
-   foaf:phone "0341-26562279" ;
-   rdfs:label "EDUVENTIS-Bildung erleben e.V." ;
-   foaf:homepage <http://www.eduventis.org> . 
-
-<http://leipzig-data.de/Data/Verein/BatzenTauschringLeipzig> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A85> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.ZumKleingartenpark.41> ;
-   foaf:mbox "peggy77@gmx.net" ;
-   rdfs:label "Batzen-Tauschring Leipzig e.V." ;
-   foaf:homepage <http://www.batzen.de> . 
-
-<http://leipzig-data.de/Data/Verein/FreiwilligenAgenturLeipzig> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A87> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Dorotheenplatz.2> ;
-   foaf:mbox "info@fwal.de" ;
-   foaf:phone "0341-1494728" ;
-   rdfs:label "Freiwilligen-Agentur Leipzig e. V." ;
-   foaf:homepage <http://www.freiwilligen-agentur-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/DasJapanischeHaus> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A92> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.113B> ;
-   foaf:mbox "mail@djh-leipzig.de" ;
-   foaf:phone "034192722261" ;
-   rdfs:label "Das Japanische Haus e.V." ;
-   foaf:homepage <http://www.djh-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/NetzwerkGewaltfreieKommunikation> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A98> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.92> ;
-   foaf:mbox "kontakt@gfk-leipzig.de" ;
-   foaf:phone "0176-60898823" ;
-   foaf:phone "0160-96243014" ;
-   rdfs:label "Netzwerk Gewaltfreie Kommunikation Leipzig e.V." ;
-   foaf:homepage <http://www.gfk-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/BuergerfuerLeipzig> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A100> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Dorotheenplatz.2> ;
-   foaf:mbox "post@buergerfuerleipzig.de" ;
-   foaf:phone "0341-9601530" ;
-   rdfs:label "Stiftung Bürger für Leipzig" ;
-   foaf:homepage <http://www.buergerfuerleipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/HausDerDemokratieLeipzig> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A101> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "info@hddl.de" ;
-   foaf:phone "0341-3065100" ;
-   rdfs:label "Haus der Demokratie Leipzig e.v." ;
-   foaf:homepage <http://www.hddl.de> . 
-
-<http://leipzig-data.de/Data/Verein/AutodidaktischeInitiative> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A105> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.19> ;
-   foaf:mbox "autodidaktenleipzig@riseup.net" ;
-   foaf:phone "0157-56355331" ;
-   rdfs:label "Autodidaktische Initiative e.V." ;
-   foaf:homepage <http://adi-leipzig.net> . 
-
-<http://leipzig-data.de/Data/Verein/Frekonale> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A114> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Marbachstrasse.2A> ;
-   foaf:mbox "markus.kollotzek@greennetproject.org" ;
-   foaf:phone "0160-2574782" ;
-   rdfs:comment "Jahnatalstraße 4a, 01594 Riesa OT Jahnishausen" ; 
-   rdfs:label "Freie Kommunikation und Nachhaltiger Lebensstil e.V. „frekonale“" ;
-   foaf:homepage <https://greennetproject.org> . 
-
-<http://leipzig-data.de/Data/Verein/HandsOnTechnology> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A127> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Plautstrasse.80> ;
-   foaf:mbox "info@hands-on-technology.org" ;
-   foaf:phone "0341-2461583" ;
-   rdfs:label "HANDS on TECHNOLOGY e.V." ;
-   foaf:homepage <http://www.hands-on-technology.org> . 
-
-<http://leipzig-data.de/Data/Verein/Leila> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A144> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.49> ;
-   foaf:mbox "kontakt@leila-leipzig.de" ;
-   foaf:phone "0162-6675500" ;
-   rdfs:label "Leila e.V. iG" ;
-   foaf:homepage <http://www.leila-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/KonzeptwerkNeueOekonomie>
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A145> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
-   foaf:mbox "K.Kuhnhenn@knoe.org" ;
-   foaf:phone "0341-39281686" ;
-   rdfs:label "Konzeptwerk Neue Ökonomie" ;
-   foaf:homepage <http://www.knoe.org> . 
-
-<http://leipzig-data.de/Data/Verein/OeDPSachsen> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A146> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.GoebschelwitzerStrasse.1> ;
-   foaf:mbox "rahwehbl@aikq.de" ;
-   foaf:phone "0341-3513835" ;
-   rdfs:label "ÖDP Sachsen" ;
-   foaf:homepage <http://www.oedp-sachsen.de> . 
-
-<http://leipzig-data.de/Data/Verein/DLRGBezirkLeipzig> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A148> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Theresienstrasse.2A> ;
-   foaf:mbox "info@dlrg-leipzig.de" ;
-   foaf:phone "0341-2008188" ;
-   rdfs:label "DLRG Bezirk Leipzig e.V." ;
-   foaf:homepage <http://bez-leipzig.dlrg.de/> . 
-
-<http://leipzig-data.de/Data/Verein/Foerderverein.WildparkLeipzig>
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A149> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.161> ;
-   foaf:mbox "info@wildparkverein-leipzig.de" ;
-   foaf:phone "034126496004" ;
-   rdfs:label "Verein der Freunde und Förderer des Wildparks Leipzige.V." ;
-   foaf:homepage <http://www.wildparkverein-leipzig.de> . 
-
-<http://leipzig-data.de/Data/Verein/SCI.Leipzig>
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A150> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Mariannenstrasse.107> ;
-   foaf:mbox "leipzig.lg@sci-d.de" ;
-   foaf:phone "015739263765" ;
-   rdfs:label "SCI Leipzig" ;
-   foaf:homepage <http://sci-d.de/lokalgruppe-leipzig> . 
-
-<http://leipzig-data.de/Data/Verein/BatzenTauschringLeipzig>
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A151> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04435.Schkeuditz.Ringelblumenweg.10> ;
-   foaf:mbox "leipzigrikscha@gmail.com" ;
-   foaf:phone "0177-2672145" ;
-   rdfs:label "Batzentauschring e.V." ;
-   foaf:homepage <http://www.batzen.de> . 
-
-<http://leipzig-data.de/Data/Verein/DieHellenKoepfe> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A154> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Rathenaustrasse.42> ;
-   foaf:mbox "carina.flores@diehellenkoepfe.de" ;
-   foaf:phone "0174-9760689" ;
-   foaf:phone "0157-56424859" ;
-   foaf:homepage <http://diehellenkoepfe.de> . 
-
-<http://leipzig-data.de/Data/Verein/kidscode> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A159> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erdmannstrasse.16> ;
-   foaf:mbox "andreaskoch030@gmail.com" ;
-   foaf:phone "0174-3160863" ;
-   rdfs:label "kidscode e.V." . 
-
-<http://leipzig-data.de/Data/Verein/Phyllodrom> a ld:Verein ; 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A160> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.DelitzscherLandstrasse.38> ;
-   foaf:mbox "info@phyllodrom.de" ;
-   foaf:phone "0341-5257757" ;
-   rdfs:label "Phyllodrom e.V." ;
-   foaf:homepage <http://phyllodrom.de/> . 
-
-<http://leipzig-data.de/Data/Verein/ENEDAS> 
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A164> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.33> ;
-   foaf:mbox "info@enedas.de" ;
-   foaf:phone "0157-71822192" ;
-   rdfs:label "ENEDAS e.V." ;
-   foaf:homepage <http://www.enedas.de/> . 
-
-<http://leipzig-data.de/Data/Verein/BergbauTechnikPark>
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A165> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04463.Grosspoesna.Hauptstrasse.19> ;
-   foaf:mbox "info@bergbau-technik-park.de" ;
-   foaf:phone "034297-140127" ;
-   rdfs:label "Bergbau-Technik-Park e.V." ;
-   foaf:homepage <http://www.bergbau-technik-park.de/park/> . 
-
-<http://leipzig-data.de/Data/Verein/Muehlstrasse>
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A166> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.14> ;
-   foaf:mbox "kontakt@muehlstrasse.de" ;
-   foaf:phone "0341-9903600" ;
-   rdfs:label "MÜHLSTRASSE 14 e. V." ;
-   foaf:homepage <http://www.muehlstrasse.de/> . 
-
-<http://leipzig-data.de/Data/Verein/archenoVa> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A167> ;
-   ld:hasAddress <http://leipzig-data.de/Data/01067.Dresden.Weisseritzstrasse.3> ;
-   foaf:mbox "info@arche-nova.org" ;
-   foaf:phone "0351-48198421" ;
-   rdfs:label "arche noVa - Initiative für Menschen in Not e.V." ;
-   foaf:homepage <https://arche-nova.org/de> . 
-
-<http://leipzig-data.de/Data/Verein/GeoWerkstattLeipzig>
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A168> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19> ;
-   foaf:mbox "vorstand@geowerkstatt.com" ;
-   foaf:phone "0179-4590873" ;
-   rdfs:label "GeoWerkstatt Leipzig e.V." ;
-   foaf:homepage <http://www.geowerkstatt.com> . 
-
-<http://leipzig-data.de/Data/Verein/Parcours> a ld:Verein  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A170> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Ludwigstrasse.79> ;
-   foaf:mbox "info@parcours-bildung.org" ;
-   foaf:phone "0341-26580091" ;
-   rdfs:label "Bildungsverein Parcours e.V." ;
-   foaf:homepage <http://parcours-bildung.org> . 

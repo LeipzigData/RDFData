@@ -60,10 +60,13 @@
 
 <http://leipzig-data.de/Data/GruenerRingLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04451.Borsdorf.LeipzigerStrasse.6> ;
-    ld:hasTag ldtag:MINT-Broschuere ;
     a org:Organization ;
     rdfs:label "Grüner Ring Leipzig" ;
-    foaf:homepage <http://gruenerring-leipzig.de> .
+    ld:hasTag ldtag:MINT-Broschuere ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.54> ;
+    foaf:homepage <http://www.gruenerring-leipzig.de> ;
+    foaf:mbox "geschaeftsstelle@gruenerring-leipzig.de" ;
+    foaf:phone "0162-2807860", "03429-120412" .
 
 <http://leipzig-data.de/Data/HWK-Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DresdnerStrasse.11> ;
@@ -84,7 +87,9 @@
     a org:Organization ;
     rdfs:comment "Die interdisziplinäre Zusammenarbeit von Mathematik und Naturwissenschaften bildet den Kernpunkt der Arbeit des 1996 gegründeten Max-Planck-Instituts. Die Wissenschaftler beschäftigten sich mit einem breiten Spektrum an Fragestellungen der reinen und angewandten Mathematik und stellen sich den mathematischen Herausforderungen, die durch theoretische Fragestellungen in den Natur- und Ingenieurwissenschaften entstehen. Ziel ist es, mathematische Denkweisen und Methoden in neuartiger Weise in verschiedene Anwendungsbereiche in den Naturwissenschaften zu integrieren." ;
     rdfs:label "MPI für Mathematik in den Naturwissenschaften" ;
-    foaf:homepage <http://www.mis.mpg.de> .
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.162> ;
+    foaf:homepage <http://www.mis.mpg.de> ;
+    foaf:phone "0341-995950" .
 
 <http://leipzig-data.de/Data/SPD/AGSozialdemokratischerFrauenLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.19> ;
@@ -156,6 +161,12 @@
     rdfs:label "Stadtelternrat" ;
     foaf:homepage <http://stadtelternratleipzig.de/> .
 
+<http://leipzig-data.de/Data/Stiftung/EckenWecken> a org:Organization  ;
+   ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.MarkranstaedterStrasse.29B> ;
+   foaf:phone "0341-2419274" ;
+   rdfs:label "Stiftung \"Ecken wecken\"" ;
+   foaf:homepage <http://stiftung-ecken-wecken.de> . 
+
 <http://leipzig-data.de/Data/Stiftung/FES.Leipzig>
     ld:Kurzinformation "<p>Mit jährlich über einhundert Veranstaltungen leistet das Büro einen Beitrag zur politischen Bildungsarbeit in Leipzig und der Region. Als erster ostdeutscher Standort der Friedrich-Ebert-Stiftung hat es bereits Anfang 1990 seine Arbeit aufgenommen. Unsere Tagungen und Seminare, Podiumsdiskussionen, Gesprächskreise und Ausstellungen thematisieren wichtige Fragestellungen aus Politik und Gesellschaft und zielen damit auf die Förderung von Demokratie. </p> <p>Wir wollen die komplizierten Abläufe politischer Entscheidungsprozesse aufzeigen, darauf einwirkende Interessen verdeutlichen und die Menschen zum politischen Handeln und engagierten Mitwirken ermutigen und zusammenbringen.</p>" ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Burgstrasse.25> ;
@@ -163,6 +174,13 @@
     rdfs:label "Friedrich-Ebert-Stiftung Leipzig" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.54> ;
     foaf:homepage <http://www.fes.de/Leipzig> .
+
+<http://leipzig-data.de/Data/Stiftung/Federkiel>
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Spinnereistrasse.7> ;
+    ld:hasCategories "Bildende Kunst", "Kinder- und Jugendkultur", "Kulturvereine" ;
+    ld:hasStadtId "367" ;
+    a org:Organization ;
+    rdfs:label "Stiftung Federkiel für zeitgenössische Kunst und Kultur" .
 
 <http://leipzig-data.de/Data/Stiftung/RLSachsen>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Harkortstrasse.10> ;
@@ -201,19 +219,3 @@
     rdfs:label "Zweckverband Parthenaue" ;
     foaf:homepage <http://www.zv-parthenaue.de> .
 
-<http://leipzig-data.de/Data/GruenerRing> a org:Organization  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A54> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04451.Borsdorf.LeipzigerStrasse.6> ;
-   foaf:mbox "geschaeftsstelle@gruenerring-leipzig.de" ;
-   foaf:phone "03429-120412" ;
-   foaf:phone "0162-2807860" ;
-   rdfs:label "Grüner Ring Leipzig" ;
-   foaf:homepage <http://www.gruenerring-leipzig.de> . 
-
-<http://leipzig-data.de/Data/MPI.MIS>
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A162> ;
-   ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.22> ;
-   foaf:mbox "josefineotte95@gmail.com" ;
-   foaf:phone "0341-995950" ;
-   rdfs:label "Max Planck Institut für Mathematik" ;
-   foaf:homepage <https://www.mis.mpg.de/de/start.html> . 

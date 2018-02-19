@@ -15,10 +15,6 @@
     a owl:Ontology ;
     rdfs:label "Personen" .
 
-foaf:Person
-    a owl:Class ;
-    rdfs:label "Person" .
-
 ldp:Ackermann_Arne
     a foaf:Person ;
     foaf:name "Arne Ackermann" .
@@ -81,15 +77,12 @@ ldp:Boehr_Annett
     org:memberOf <http://leipzig-data.de/Data/Verein/RAA.Leipzig> ;
     foaf:name "Annett Böhr" .
 
-ldp:Boran_Roland
+ldp:Bolte_Sabine
     a foaf:Person ;
-    rdfs:comment "Projektleiter ASG-Schülerakademie" ;
-    foaf:name "Dr. Roland Boran" .
-
-ldp:Both_Jana
-    a foaf:Person ;
-    rdfs:comment "Organisierte bis 2009 die Kinderuni. Inzwischen aus Leipzig weggezogen." ;
-    foaf:name "Jana Both" .
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.34> ;
+    foaf:mbox "bildungsberatung@leipzig.de" ;
+    foaf:name "Sabine Bolte" ;
+    foaf:phone "0341-1234779" .
 
 ldp:BrendAmour_Nicola
     a foaf:Person ;
@@ -136,11 +129,6 @@ ldp:Duschinger_Robert
     rdfs:comment "stellv. Vorsitzender des Stadtelternrats (2013 gewählt)" ;
     foaf:name "Robert Duschinger" .
 
-ldp:Eisenberg_Wolfgang
-    a foaf:Person ;
-    foaf:name "Wolfgang Eisenberg" ;
-    foaf:title "Dr." .
-
 ldp:Elsaesser_Ralf
     a foaf:Person ;
     foaf:name "Ralf Elsässer" .
@@ -184,14 +172,6 @@ ldp:Fritzsche_Nicole
     a foaf:Person ;
     org:memberOf <http://leipzig-data.de/Data/Verein/KinderVereinigung.Leipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     foaf:name "Nicole Fritzsche" .
-
-ldp:Fueting_Manfred
-    a foaf:Person ;
-    foaf:name "Manfred Füting" ;
-    foaf:title "Prof. Dr." .
-
-ldp:Fuhrmann_Sabine
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.82> .
 
 ldp:Geffken_Michael
     ld:relatedTo <http://leipzig-data.de/Data/Ort/SchoolOfMedia> ;
@@ -333,10 +313,6 @@ ldp:Herrmann_Anne
     a foaf:Person ;
     foaf:name "Anne Herrmann" .
 
-ldp:Hintze_Steffen
-    a foaf:Person ;
-    foaf:name "Steffen Hintze" .
-
 ldp:Hoenemann_Tobias
     a foaf:Person ;
     foaf:name "Tobias Hönemann" .
@@ -383,19 +359,9 @@ ldp:Johannes_Uta
     org:memberOf <http://leipzig-data.de/Data/StadtLeipzig/Wirtschaftsfoerderung> ;
     foaf:name "Uta Johannes" .
 
-ldp:Kaerger_Joerg
-    a foaf:Person ;
-    foaf:name "Jörg Kärger" ;
-    foaf:title "Prof. Dr." .
-
 ldp:Karwen_Bernd
     a foaf:Person ;
     foaf:name "Bernd Karwen" .
-
-ldp:Keck_Lisa
-    a foaf:Person ;
-    rdfs:comment "Geschäftsstellenleiterin des Netzwerks \"Energie und Umwelt\" e.V." ;
-    foaf:name "Lisa Keck" .
 
 ldp:Keppler_Ralph
     a foaf:Person ;
@@ -415,10 +381,6 @@ ldp:Kleshch_Irina
     a foaf:Person ;
     org:memberOf <http://leipzig-data.de/Data/Firma/evermind> ;
     foaf:name "Irina Kleshch" .
-
-ldp:Klimesch_Holger
-    a foaf:Person ;
-    foaf:name "Holger Klimesch" .
 
 ldp:Knospe_Uta
     a foaf:Person ;
@@ -521,10 +483,6 @@ ldp:Meier_Katja
     org:memberOf <http://leipzig-data.de/Data/Verein/IB.VerbundLeipzig>, <http://leipzig-data.de/Data/Verein/Stadtjugendring> ;
     foaf:name "Katja Meier" .
 
-ldp:Meiler_Monika
-    a foaf:Person ;
-    foaf:name "Dr. Monika Meiler" .
-
 ldp:Meiss_KarlMichael
     a foaf:Person ;
     foaf:name "Karl-Michael Meiß" ;
@@ -586,6 +544,11 @@ ldp:Niggemeyer_Joachim
     foaf:homepage <http://www.niggemeyer-art.de> ;
     foaf:name "Joachim R. Niggemeyer" .
 
+ldp:Nissen_Sylke
+    a foaf:Person ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.152> ;
+    foaf:name "Sylke Nissen" .
+
 ldp:Nuernberger_Tabea
     a foaf:Person ;
     org:memberOf <http://leipzig-data.de/Data/Verein/CVJM.Leipzig> ;
@@ -617,7 +580,7 @@ ldp:Petzschler_Uwe
     a foaf:Person ;
     foaf:name "Uwe Petzschler" .
 
-ldp:PhuongThaoDinhVan
+ldp:PhuongThao_DinhVan
     a foaf:Person ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.49> ;
     org:memberOf <http://leipzig-data.de/Data/IHK-Leipzig> ;
@@ -648,10 +611,6 @@ ldp:Pretsch_Irina
     org:memberOf <http://leipzig-data.de/Data/Firma/BBW> ;
     foaf:name "Irina Pretsch" .
 
-ldp:Quapp_Wolfgang
-    a foaf:Person ;
-    foaf:name "Dr. Wolfgang Quapp" .
-
 ldp:Quester_Roland
     a foaf:Person ;
     rdfs:comment "Leiter Umweltbibliothek" ;
@@ -664,6 +623,11 @@ ldp:Quiring_Lars
 ldp:Rademacher_HansBert
     a foaf:Person ;
     foaf:name "Prof. Dr. Hans-Bert Rademacher" .
+
+ldp:Radomski_Sabine
+    a foaf:Person ;
+    org:headOf <http://leipzig-data.de/Data/Verein/GI.RG-Leipzig>, <http://leipzig-data.de/Data/Verein/Zukunftsakademie> ;
+    foaf:name "Profn. Dr. Sabine Radomski" .
 
 ldp:Raschke_Roman
     a foaf:Person ;
@@ -742,10 +706,6 @@ ldp:Schirmer_Matthias
     a foaf:Person ;
     foaf:name "Matthias Schirmer" .
 
-ldp:Schlupp_Peter
-    a foaf:Person ;
-    foaf:name "Peter Schlupp" .
-
 ldp:Schmidt_David
     a foaf:Person ;
     rdfs:comment "Reality (Tanzagentur EU i.G.e.V.)" ;
@@ -821,6 +781,13 @@ ldp:Senn_Britta
     a foaf:Person ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.51> ;
     foaf:name "Britta Senn" .
+
+ldp:Simowitsch_Johann
+    a foaf:Person ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.6> ;
+    foaf:mbox "johann.simowitsch@leipzig.de" ;
+    foaf:name "Johann Simowitsch" ;
+    foaf:phone "0341-3089751" .
 
 ldp:Stadler_Peter
     a foaf:Person ;
@@ -905,11 +872,6 @@ ldp:Vetterlein_Guenter
     a foaf:Person ;
     foaf:name "Günter Vetterlein" .
 
-ldp:Wagner_Thomas
-    a foaf:Person ;
-    owl:sameAs <http://leipzig-data.de/Data/APIId/Host.30>, <http://leipzig-data.de/Data/APIId/Host.31>, <http://leipzig-data.de/Data/APIId/Host.32>, <http://leipzig-data.de/Data/APIId/Host.33>, <http://leipzig-data.de/Data/APIId/Host.34> ;
-    foaf:name "Thomas Wagner" .
-
 ldp:Waldmann_Johannes
     a foaf:Person ;
     rdfs:comment "Professor für Informatik an der HTKW Leipzig" ;
@@ -920,11 +882,6 @@ ldp:Walter_Roland
     a foaf:Person ;
     foaf:name "Roland Walter" ;
     foaf:title "Dipl.-Päd." .
-
-ldp:Warkus_Hartmut
-    a foaf:Person ;
-    rdfs:comment "2012 verstorben", "Geschäftsführer der ComputerSpielSchule" ;
-    foaf:name "Prof. Dr. Hartmut Warkus" .
 
 ldp:Weise_Joerg
     a foaf:Person ;
@@ -937,12 +894,6 @@ ldp:Weissgerber_Kerstin
     rdfs:comment "Aurel Marketing" ;
     foaf:homepage <http://www.aurel-marketing.de> ;
     foaf:name "Kerstin Weißgerber" .
-
-ldp:Radomski_Sabine
-    a foaf:Person ;
-    org:headOf <http://leipzig-data.de/Data/Verein/GI.RG-Leipzig>, 
-<http://leipzig-data.de/Data/Verein/Zukunftsakademie> ; 
-    foaf:name "Profn. Dr. Sabine Radomski" .
 
 ldp:Will_Judith
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.63> ;
@@ -991,18 +942,3 @@ ldp:vonNessler_Georg
     a foaf:Person ;
     foaf:name "Georg von Nessler" .
 
-<http://leipzig-data.de/Data/Person/Simowitsch_Johann> a foaf:Person  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A6> ;
-   foaf:mbox "johann.simowitsch@leipzig.de" ;
-   foaf:phone "0341-3089751" ;
-   foaf:name "Johann Simowitsch" . 
-
-<http://leipzig-data.de/Data/Person/Bolte_Sabine> a foaf:Person  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A34> ;
-   foaf:mbox "bildungsberatung@leipzig.de" ;
-   foaf:phone "0341-1234779" ;
-   foaf:name "Sabine Bolte" . 
-
-<http://leipzig-data.de/Data/Person/Nissen_Sylke> a foaf:Person  ;
-   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur/A152> ;
-   foaf:name "Sylke Nissen" . 

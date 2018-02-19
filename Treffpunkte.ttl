@@ -19,7 +19,7 @@ ld:Treffpunkt
     rdfs:comment "Ein Treffpunkt ist ein Ort in der Stadt Leipzig, dem keine Adresse zugeordnet werden kann." ;
     rdfs:label "Treffpunkt" .
 
-<http://leipzig-data.de/Data/Treffpunkt/Alter_Johannisfriedhof>
+<http://leipzig-data.de/Data/Treffpunkt/Alter-Johannisfriedhof>
     gsp:asWKT "Point(12.3904753 51.3367518)" ;
     a ld:Treffpunkt ;
     rdfs:label "Alter Johannisfriedhof" .
@@ -34,6 +34,14 @@ ld:Treffpunkt
     a ld:Treffpunkt ;
     rdfs:label "Bahnhof Taucha" .
 
+<http://leipzig-data.de/Data/Treffpunkt/Bruckner-Bassin>
+    ld:istErreichbar "SB 2,8,9,14 Bus 89 bis Karl-Tauchnitz-Straße/Neues Rathaus" ;
+    gsp:asWKT "Point(12.36154 51.3322044)" ;
+    a ld:GreenSpace, ld:Treffpunkt ;
+    rdfs:comment "Lage: Ferdinand-Lassalle-/Friedrich-Ebert-/Karl-Tauchnitz-Straße" ;
+    rdfs:label "Bruckner Bassin im Clara-Zetkin-Park" ;
+    foaf:homepage <http://www.leipzig.de/de/buerger/freizeit/leipzig/parks/clara/allg/> .
+
 <http://leipzig-data.de/Data/Treffpunkt/Clara-Park>
     gsp:asWKT "Point(12.36154 51.3322044)" ;
     a ld:GreenSpace, ld:Treffpunkt ;
@@ -43,12 +51,12 @@ ld:Treffpunkt
 
 <http://leipzig-data.de/Data/Treffpunkt/Hst.Rennbahn>
     gsp:asWKT "Point(12.360814 51.321093)" ;
-    a ld:Treffpunkt, ld:Haltestelle ;
+    a ld:Haltestelle, ld:Treffpunkt ;
     rdfs:label "Schleußiger Weg, Bushaltestelle Rennbahn" .
 
-<http://leipzig-data.de/Data/Treffpunkt/KoburgerBruecke>
+<http://leipzig-data.de/Data/Treffpunkt/Hst.KoburgerBruecke>
     gsp:asWKT "Point(12.373905 51.302905)" ;
-    a ld:Treffpunkt, ld:Haltestelle ;
+    a ld:Haltestelle, ld:Treffpunkt ;
     rdfs:label "Haltestelle Koburger Brücke" .
 
 <http://leipzig-data.de/Data/Treffpunkt/LandauerBruecke>
@@ -61,6 +69,13 @@ ld:Treffpunkt
     gsp:asWKT "Point(12.3753358279286 51.3403673487936)" ;
     a ld:Treffpunkt ;
     rdfs:label "Markt" .
+
+<http://leipzig-data.de/Data/Treffpunkt/Robert-Koch-Park>
+    gsp:asWKT "Point(12.3001565 51.3178283)" ;
+    a ld:Treffpunkt ;
+    rdfs:comment "Robert Koch Park, bei der Villa Robert Koch, Grünau, Zugang über Schönauer Straße" ;
+    rdfs:label "Robert Koch Park" ;
+    foaf:homepage <http://www.leipzig-lexikon.de/GARTPARK/robkoch.htm> .
 
 <http://leipzig-data.de/Data/Treffpunkt/Rosental.Rosentalturm>
     gsp:asWKT "Point(12.3621288 51.3472531)" ;
@@ -75,23 +90,10 @@ ld:Treffpunkt
 <http://leipzig-data.de/Data/Treffpunkt/Rosental.Zoellnerweg>
     gsp:asWKT "Point(12.3621288 51.3472531)" ;
     a ld:Treffpunkt ;
-    rdfs:label "Rosental, Zöllnerweg"  .
+    rdfs:label "Rosental, Zöllnerweg" .
 
 <http://leipzig-data.de/Data/Treffpunkt/Teichstrasse>
     gsp:asWKT "Point(12.368072 51.306138)" ;
     a ld:Treffpunkt ;
     rdfs:label "Teichstraße" .
 
-<http://leipzig-data.de/Data/Treffpunkt/Bruckner-Bassin>
-    gsp:asWKT "Point(12.36154 51.3322044)" ;
-    a ld:GreenSpace, ld:Treffpunkt ;
-    rdfs:comment "Lage: Ferdinand-Lassalle-/Friedrich-Ebert-/Karl-Tauchnitz-Straße" ;
-    rdfs:label "Bruckner Bassin im Clara-Zetkin-Park" ;
-    ld:istErreichbar "SB 2,8,9,14 Bus 89 bis Karl-Tauchnitz-Straße/Neues Rathaus" ; 
-    foaf:homepage <http://www.leipzig.de/de/buerger/freizeit/leipzig/parks/clara/allg/> .
-
-<http://leipzig-data.de/Data/Treffpunkt/Robert-Koch-Park>
-    gsp:asWKT "Point(12.3001565 51.3178283)" ;
-    a ld:Treffpunkt ; foaf:homepage <http://www.leipzig-lexikon.de/GARTPARK/robkoch.htm> ; 
-    rdfs:label "Robert Koch Park" ;
-rdfs:comment "Robert Koch Park, bei der Villa Robert Koch, Grünau, Zugang über Schönauer Straße" .
