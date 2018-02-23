@@ -6,6 +6,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
@@ -74,6 +75,7 @@
     ld:hasOrtsteil ldot:Zentrum, ldot:Zentrum-Nord ;
     ld:hasStadtId "177", "455", "456" ;
     a ld:Verein ;
+    ld:contactPerson ldp:Retznick_Laura ; 
     rdfs:label "Diakonisches Werk - Innere Mission Leipzig e.V." ;
     foaf:homepage <http://www.diakonie-leipzig.de> .
 
@@ -91,6 +93,7 @@
 <http://leipzig-data.de/Data/KE/EvLuthJugend>
     ld:hasSupplierNumber "083" ;
     a org:Organization ;
+    ld:contactPerson ldp:Heinrich_Torsten ; 
     rdfs:label "Evangelisch-lutherische Jugend" .
 
 <http://leipzig-data.de/Data/KE/EvLuthKirchenbezirkLeipzig>
@@ -107,9 +110,10 @@
 <http://leipzig-data.de/Data/KE/EvRefKirche>
     ld:hasSupplierNumber "124" ;
     a org:Organization ;
+    ld:contactPerson ldp:Wolfram_Franziska ;
     rdfs:label "Evangelisch-reformierte Kirche zu Leipzig" .
 
-<http://leipzig-data.de/Data/KE/EvangelischLutherischesMissionswerkLeipzig>
+<http://leipzig-data.de/Data/KE/EvMissionswerkLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Paul-List-Strasse.19> ;
     ld:hasCategories "Interkulturelle Vereine, Kinder, Jugend und Familie" ;
     ld:hasOrtsteil ldot:Zentrum-Sued ;
@@ -166,28 +170,3 @@
     foaf:mbox "orientierung.leipzig@jesuiten.org" ;
     foaf:phone "0341-2125704" .
 <http://leipzig-data.de/Data/KE/Orientierung> <http://purl.org/dc/terms/modified> "2016-03-11" .
-
-<http://leipzig-data.de/Data/KE/PaulGerhardtKirche>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Selneckerstrasse.7> ;
-    a org:Organization ;
-    rdfs:label "Paul-Gerhardt-Kirche" ;
-    foaf:homepage <http://www.kirche-leipzig.de/connewitz-loessnig/paulgerhardtkirche.htm> .
-
-<http://leipzig-data.de/Data/KE/Peterskirche>
-    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.5> ;
-    a org:Organization ;
-    rdfs:label "Peterskirche" .
-
-<http://leipzig-data.de/Data/KE/StMartin>
-    a org:Organization ;
-    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Kolpingweg.1> ;
-    rdfs:label "Katholische Pfarrei St. Martin" .
-
-<http://leipzig-data.de/Data/KE/Thomaskirche>
-    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomaskirchhof.18> ;
-    a org:Organization ;
-    rdfs:comment "Bachgrab", "Evangelisch-Lutherisch" ;
-    rdfs:label "Thomaskirche" ;
-    foaf:homepage <http://www.thomaskirche.org/> ;
-    foaf:mbox "info@thomaskirche.org" ;
-    foaf:phone "0341-2222440" .

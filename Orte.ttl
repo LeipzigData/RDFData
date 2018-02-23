@@ -16,6 +16,11 @@ ld:Hotel
     rdfs:label "Hotel" ;
     rdfs:subClassOf ld:Ort .
 
+ld:Kirche
+    a owl:Class ;
+    rdfs:label "Kirche" ;
+    rdfs:subClassOf ld:Ort .
+
 ld:Ort
     a owl:Class ;
     rdfs:label "Ort" .
@@ -1095,7 +1100,7 @@ ldo:GewandhausLeipzig
     foaf:phone "0341-1270-280" .
 
 ldo:GfZK
-    ld:engagedPerson ldp:Friedrich_Alexandra, ldp:Seik_Lena ;
+    ld:engagedPerson ldp:Friedrich_Alexandra, ldp:Seik_Lena, ldp:Schulze_Tristan ;
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Tauchnitz-Strasse.11> ;
     ld:hasStatus "aktiv" ;
     dct:modified "2018-02-22" ;
@@ -1197,6 +1202,7 @@ ldo:HausSteinstrasse
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/HausSteinstrasse> ;
     a ld:Ort ;
+    ld:contactPerson ldp:Bernard_Ulrike, ldp:Gleichmann_Tina; 
     rdfs:label "Haus Steinstraße" ;
     foaf:homepage <http://www.haus-steinstrasse.de> ;
     foaf:mbox "michael.rausch@haus-steinstrasse.de" ;
@@ -1743,6 +1749,7 @@ ldo:Maedlerpassage
 ldo:MandalaSpieleck
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.147> ;
     a ld:Ort ;
+    ld:contactPerson ldp:Bergmann_Thommy ; 
     rdfs:label "Mandala Spieleck" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.79> .
 
@@ -2293,6 +2300,7 @@ ldo:ScholaOecologica
 ldo:SchoolOfMedia
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Poetenweg.28> ;
     a ld:Ort ;
+    ld:contactPerson ldp:Geffken_Michael ; 
     rdfs:label "Leipzig School of Media" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.27>, <http://leipzig-data.de/Data/APIId/Venue.37> .
 
@@ -2453,6 +2461,7 @@ ldo:SportforumLeipzig
 <http://leipzig-data.de/Data/Ort/Stadtteilladen.Gruenau>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.19> ;
     a ld:Ort ;
+    ld:contactPerson ldp:Diebler_Peggy ;
     rdfs:comment "Neue Zweigstelle zur Bildungsberatung öffnet im März 2013 (Quelle: Newsletter LvO 02/2013)" ;
     rdfs:label "Stadtteilladen Grünau" .
 
@@ -2799,6 +2808,7 @@ ldo:Villa
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Villa> ;
     a ld:Ort ;
+    ld:contactPerson ldp:Reiner_Oliver ; 
     rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.64> ;
     foaf:homepage <http://www.villa-Leipzig.de> ;
@@ -2961,3 +2971,28 @@ ldo:sublab
     rdfs:label "Universität Leipzig, Schülerforschungszentrum almalab" ;
     ld:contactPerson ldp:Katz_Elke, ldp:Funke_Florian ; 
     foaf:homepage <http://www.physgeo.uni-leipzig.de/schueler/> .
+
+<http://leipzig-data.de/Data/Ort/PaulGerhardtKirche>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Selneckerstrasse.7> ;
+    a ld:Ort, ld:Kirche ;
+    rdfs:label "Paul-Gerhardt-Kirche" ;
+    foaf:homepage <http://www.kirche-leipzig.de/connewitz-loessnig/paulgerhardtkirche.htm> .
+
+<http://leipzig-data.de/Data/Ort/Peterskirche>
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.5> ;
+    a ld:Ort, ld:Kirche ;
+    rdfs:label "Peterskirche" .
+
+<http://leipzig-data.de/Data/Ort/StMartin>
+    a ld:Ort, ld:Kirche ;
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Kolpingweg.1> ;
+    rdfs:label "Katholische Pfarrei St. Martin" .
+
+<http://leipzig-data.de/Data/Ort/Thomaskirche>
+    a ld:Ort, ld:Kirche ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomaskirchhof.18> ;
+    rdfs:comment "Bachgrab", "Evangelisch-Lutherisch" ;
+    rdfs:label "Thomaskirche" ;
+    foaf:homepage <http://www.thomaskirche.org/> ;
+    foaf:mbox "info@thomaskirche.org" ;
+    foaf:phone "0341-2222440" .
