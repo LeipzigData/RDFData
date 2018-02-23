@@ -249,6 +249,7 @@ ld:Projekt
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Wiebelstrasse.8> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/WeltOffen> ;
     a ld:Projekt ;
+    ld:contactPerson ldp:Pruss_Marcel ;
     rdfs:label "KonsumGlobal Leipzig" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.173> ;
     foaf:homepage <http://konsumglobal-leipzig.de/> ;
@@ -417,7 +418,9 @@ ld:Projekt
 <http://leipzig-data.de/Data/Projekt/Roberta>
     ld:hasSupplier <http://leipzig-data.de/Data/HTWK> ;
     a ld:Projekt ;
+    ld:contactPerson ldp:Graebe_Anett, ldp:Schwarz_Sibylle ;
     rdfs:label "Roberta in Leipzig" ;
+    foaf:mbox "roberta@imn.htwk-leipzig.de" ;
     foaf:homepage <http://leipzig-netz.de/index.php5/MINT.Roberta> .
 
 <http://leipzig-data.de/Data/Projekt/SZLSuchtzentrum.WohnprojektDomizil>
@@ -609,3 +612,20 @@ ld:Projekt
     rdfs:label "erleb-bar" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.197> ;
     foaf:homepage <http://www.erleb-bar.de/kategorien/projekte> .
+
+<http://leipzig-data.de/Data/Projekte/Annalinde.Akademie>
+    a ld:Projekt ;
+    ld:contactPerson ldp:Pomm_Sebastian, ldp:Obracaj_Jan ;
+    rdfs:label "Annalinde Akademie" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Firma/Annalinde> ; 
+    foaf:homepage <http://www.annalinde-leipzig.de/projects/akademie> ;
+    foaf:mbox "bildung@annalinde-leipzig.de" ;
+    foaf:phone "0152-21655436" .
+
+<http://leipzig-data.de/Data/Projekte/ArcheNova.GlobalesLernen>
+    a ld:Projekt ;
+    ld:contactPerson ldp:Kayser_Mara, ldp:Keydel_Ronny ;
+    rdfs:label "Arche nova, Fachstelle für globales Lernen" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/ArcheNova> ; 
+    foaf:homepage <http://www.arche-nova.org/de/bildung> ;
+    foaf:mbox "globales.lernen@arche-nova.org" .

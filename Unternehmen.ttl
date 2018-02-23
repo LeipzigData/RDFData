@@ -11,44 +11,14 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
-<http://leipzig-data.de/Data/Unternehmen/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Unternehmen in der Stadt Leipzig" .
-
-ld:Autohaus
-    a owl:Class ;
-    rdfs:label "Autohaus" ;
-    rdfs:subClassOf ld:Unternehmen .
-
-ld:Bootsverleih
-    a owl:Class ;
-    rdfs:label "Bootsverleih" ;
-    rdfs:subClassOf ld:Unternehmen .
-
-ld:Unternehmen
-    a owl:Class ;
-    rdfs:label "Unternehmen" ;
-    rdfs:subClassOf org:Organization .
-
 <http://leipzig-data.de/Data/Firma/ALDIEinkauf>
     ld:hasAddress <http://leipzig-data.de/Data/45307.Essen.Eckenbergstrasse.16A> ;
+    dct:modified "2017-09-05" ;
     a ld:Unternehmen ;
     rdfs:label "ALDI Einkauf GmbH & Co. oHG" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.174> ;
     foaf:mbox "cr-food@aldi-nord.de" ;
     foaf:phone "02018593438" .
-
-<http://leipzig-data.de/Data/Firma/ANNALINDE>
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
-    a ld:Unternehmen ;
-    rdfs:label "ANNALINDE gGmbH" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.51> ;
-    foaf:homepage <http://annalinde-leipzig.de/>, <http://www.annalinde-leipzig.de> ;
-    foaf:mbox "info@annalinde-leipzig.de" ;
-    foaf:phone "0152-21655436" .
 
 <http://leipzig-data.de/Data/Firma/AWO.Akademie>
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Ludwig-Hupfeld-Strasse.16> ;
@@ -58,6 +28,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Alltagsinstitut>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Paul-Heyse-Strasse.48> ;
+    dct:modified "2017-05-26" ;
     a ld:Unternehmen ;
     rdfs:label "Institut für Alltags- und Gebrauchskunst" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.129> ;
@@ -65,8 +36,19 @@ ld:Unternehmen
     foaf:mbox "info@alltagsinstitut.de" ;
     foaf:phone "0176-81092584" .
 
+<http://leipzig-data.de/Data/Firma/Annalinde>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
+    dct:modified "2017-05-10" ;
+    a ld:Unternehmen ;
+    rdfs:label "ANNALINDE gGmbH" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.51> ;
+    foaf:homepage <http://www.annalinde-leipzig.de> ;
+    foaf:mbox "info@annalinde-leipzig.de" ;
+    foaf:phone "0152-21655436" .
+
 <http://leipzig-data.de/Data/Firma/ArakiVerlag>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Theresienstrasse.35> ;
+    dct:modified "2017-01-14" ;
     a ld:Unternehmen ;
     rdfs:label "Araki Verlag" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.86> ;
@@ -81,6 +63,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Aurel.Marketing>
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.SommerfelderWeg.94> ;
+    dct:modified "2015-02-09" ;
     a ld:Unternehmen ;
     rdfs:label "AUREL Marketing", "Aurel Marketing" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.41> ;
@@ -108,6 +91,13 @@ ld:Unternehmen
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Georg-Schumann-Strasse.148> ;
     a ld:Unternehmen ;
     rdfs:label "BFW - Berufsförderungswerk Leipzig" .
+
+<http://leipzig-data.de/Data/Firma/BIPKreativitaetszentrum>
+    ld:contactPerson ldp:Mehlhorn_Gerlinde ;
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.CzermaksGarten.11> ;
+    a ld:Unternehmen ;
+    rdfs:label "BIP Kreativitätszentrum gGmbH" ;
+    foaf:homepage <http://www.bipschulen.de> .
 
 <http://leipzig-data.de/Data/Firma/BMW-Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.BMW-Allee.1> ;
@@ -137,6 +127,14 @@ ld:Unternehmen
     a ld:Unternehmen ;
     rdfs:label "Bio-Net Leipzig" .
 
+<http://leipzig-data.de/Data/Firma/Bluetenreich>
+    ld:hasAddress <http://leipzig-data.de/Data/04808.Lossatal.Martin-Luther-Strasse.37> ;
+    dct:modified "2018-02-22" ;
+    a ld:Unternehmen ;
+    rdfs:label "Blütenreich" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.208> ;
+    foaf:homepage <https://bluetenreich.jimdo.com> .
+
 <http://leipzig-data.de/Data/Firma/Bootsverleih.Kanal28>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.AmKanal.28> ;
     a ld:Bootsverleih, ld:Unternehmen, org:Organization ;
@@ -153,6 +151,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/CONTIGO>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.6> ;
+    dct:modified "2017-03-29" ;
     a ld:Unternehmen ;
     rdfs:label "CONTIGO Fairtrade Shop" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.91> ;
@@ -193,6 +192,13 @@ ld:Unternehmen
     rdfs:label "Deutsches Rotes Kreuz, Bildungswerk Sachsen gemeinnützige GmbH" ;
     foaf:homepage <http://drk-bildungswerk-sachsen.de> .
 
+<http://leipzig-data.de/Data/Firma/DanielaNeumann>
+    dct:modified "2018-02-22" ;
+    a ld:Unternehmen ;
+    rdfs:label "Park- und Stadtführerin Daniela Neumann" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.193> ;
+    foaf:homepage <https://www.facebook.com/EntdecktinLeipzig/> .
+
 <http://leipzig-data.de/Data/Firma/DasBoot>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.72>, <http://leipzig-data.de/Data/04275.Leipzig.Arndtstrasse.66> ;
     ld:hasCategories "Sozialpsychiatrische Hilfen, Komplementäre Versorgung" ;
@@ -203,6 +209,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/DasSchwarzeBrett>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.14> ;
+    dct:modified "2015-10-02" ;
     a ld:Unternehmen ;
     rdfs:label "Das Schwarze Brett UG - kostenlose Kleinanzeigen für Studenten" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.71> ;
@@ -212,6 +219,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/DerLindwurm>
     ld:hasAddress <http://leipzig-data.de/Data/04687.Trebsen.GrimmaerLandstrasse.2> ;
+    dct:modified "2016-06-03" ;
     a ld:Unternehmen ;
     rdfs:label "Der Lindwurm Handelsgesellschaft mbH" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.123> ;
@@ -273,6 +281,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/EnergiegenossenschaftLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.DelitzscherStrasse.3>, <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
+    dct:modified "2017-04-19" ;
     a ld:Unternehmen ;
     rdfs:label "Energiegenossenschaft Leipzig eG" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.157>, <http://nachhaltiges-leipzig.de/Data/Akteur.36> ;
@@ -299,6 +308,14 @@ ld:Unternehmen
     foaf:mbox "info@familienbuero-leipzig.de" ;
     foaf:phone "0341-35540812" .
 
+<http://leipzig-data.de/Data/Firma/FanoeMode>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.7> ;
+    dct:modified "2018-02-22" ;
+    a ld:Unternehmen ;
+    rdfs:label "Fanö-Mode" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.178> ;
+    foaf:homepage <https://www.fanoe-mode.de/> .
+
 <http://leipzig-data.de/Data/Firma/GBS>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Mahlmannstrasse.1> ;
     a ld:Unternehmen ;
@@ -314,6 +331,7 @@ ld:Unternehmen
 <http://leipzig-data.de/Data/Firma/Garage>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.97> ;
     ld:hasSupplierNumber "320" ;
+    dct:modified "2017-04-27" ;
     a ld:Unternehmen ;
     rdfs:label "VDI-GaraGe gGmbH" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.163> ;
@@ -334,6 +352,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Gruenschnabel>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.20> ;
+    dct:modified "2017-01-17" ;
     a ld:Unternehmen ;
     rdfs:label "Grünschnabel" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.94> ;
@@ -343,6 +362,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Haedi-Flor>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Johannes-R-Becher-Strasse.12> ;
+    dct:modified "2017-02-10" ;
     a ld:Unternehmen ;
     rdfs:label "Haedi-Flor Meisterbetrieb" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.90> ;
@@ -358,6 +378,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Heldenkueche>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.112>, <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.10> ;
+    dct:modified "2017-06-06" ;
     a ld:Unternehmen ;
     rdfs:label "Heldenküche, Claudia Friedrich" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.118> ;
@@ -397,6 +418,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/KatiMagyar>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.112> ;
+    dct:modified "2016-11-18" ;
     a ld:Unternehmen ;
     rdfs:label "Heilpraktikerin Kati Magyar" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.136> ;
@@ -413,6 +435,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/KonsumLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.85> ;
+    dct:modified "2017-07-26" ;
     a ld:Unternehmen ;
     rdfs:label "Konsum Leipzig eG" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.126> ;
@@ -422,6 +445,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/KuchenhimmelundBrotfein>
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Martinstrasse.6> ;
+    dct:modified "2017-04-27" ;
     a ld:Unternehmen ;
     rdfs:label "Kuchenhimmel & Brotfein" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.116> ;
@@ -430,6 +454,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/KulturPaten>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Haertelstrasse.27> ;
+    dct:modified "2016-06-06" ;
     a ld:Unternehmen ;
     rdfs:label "Leipziger KulturPaten gUG" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.30> ;
@@ -439,6 +464,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/KunstundKatze>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.MerseburgerStrasse.7> ;
+    dct:modified "2017-06-10" ;
     a ld:Unternehmen ;
     rdfs:label "Kunst und Katze" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.125> ;
@@ -448,6 +474,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/LOstFood>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.WurznerStrasse.2> ;
+    dct:modified "2016-06-05" ;
     a ld:Unternehmen ;
     rdfs:label "LOst Food" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.124> ;
@@ -457,6 +484,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/LaTortita>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Hildegardstrasse.49> ;
+    dct:modified "2016-05-21" ;
     a ld:Unternehmen ;
     rdfs:label "Veganes Catering \"La Tortita\"" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.122> ;
@@ -490,6 +518,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Lehmolandia>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Angerstrasse.20> ;
+    dct:modified "2016-01-17" ;
     a ld:Unternehmen ;
     rdfs:label "Lehmolandia Lehmatelier" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.83> ;
@@ -499,8 +528,10 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/LeipzigDetails>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Reichsstrasse.2> ;
+    dct:modified "2018-02-22" ;
     a ld:Unternehmen ;
     rdfs:label "Leipzig Details Schaaf, Schnoy und Kollegen GbR" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.199> ;
     foaf:homepage <http://www.leipzigdetails.de/> .
 
 <http://leipzig-data.de/Data/Firma/LeipzigSchoolOfDesign>
@@ -511,6 +542,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/LeipzigerMesse>
     ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.Messe-Allee.1> ;
+    dct:modified "2017-02-09" ;
     a ld:Unternehmen ;
     rdfs:label "Leipziger Messe GmbH" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.81> ;
@@ -520,6 +552,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Lipsia-e-motion>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Toskastrasse.36> ;
+    dct:modified "2015-08-03" ;
     a ld:Unternehmen ;
     rdfs:label "Lipsia-e-motion" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.55> ;
@@ -529,6 +562,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/LittleKiwi>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Helmholtzstrasse.27> ;
+    dct:modified "2016-10-03" ;
     a ld:Unternehmen ;
     rdfs:label "little kiwi" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.135> ;
@@ -536,8 +570,16 @@ ld:Unternehmen
     foaf:mbox "info@little-kiwi.de" ;
     foaf:phone "0341-4811978" .
 
+<http://leipzig-data.de/Data/Firma/Luxaa>
+    ld:hasAddress <http://leipzig-data.de/Data/06198.Salzatal.Wacholderweg.6> ;
+    dct:modified "2018-02-22" ;
+    a ld:Unternehmen ;
+    rdfs:label "Luxaa® | Tywear – Textile Solutions UG" ;
+    foaf:homepage <https://www.luxaa.de> .
+
 <http://leipzig-data.de/Data/Firma/Mrs.Hippie>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.36> ;
+    dct:modified "2016-07-09" ;
     a ld:Unternehmen ;
     rdfs:label "Mrs. Hippie" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.128> ;
@@ -551,8 +593,17 @@ ld:Unternehmen
     rdfs:label "Mucona Media GbR" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.125> .
 
+<http://leipzig-data.de/Data/Firma/NaturundWildnisschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Ecksteinstrasse.54> ;
+    dct:modified "2018-02-22" ;
+    a ld:Unternehmen ;
+    rdfs:label "Natur- und Wildnisschule Leipzig GbR" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.186> ;
+    foaf:homepage <https://www.natur-wildnisschule-leipzig.de> .
+
 <http://leipzig-data.de/Data/Firma/NellyMorelly>
     ld:hasAddress <http://leipzig-data.de/Data/06188.Landsberg.DroyssigerStrasse.9> ;
+    dct:modified "2017-03-15" ;
     a ld:Unternehmen ;
     rdfs:label "Nelly Morelly" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.112> ;
@@ -562,6 +613,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/NeuesGeld>
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.Rosestrasse.11> ;
+    dct:modified "2015-10-14" ;
     a ld:Unternehmen ;
     rdfs:label "Neues Geld gGmbH" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.53> ;
@@ -581,6 +633,14 @@ ld:Unternehmen
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.38> ;
     foaf:homepage <https://www.nochbesserleben.com> .
 
+<http://leipzig-data.de/Data/Firma/OelmuehleLeipzig>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.10> ;
+    dct:modified "2018-02-22" ;
+    a ld:Unternehmen ;
+    rdfs:label "Ölmühle Leipzig" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.216> ;
+    foaf:homepage <http://leipspeis.de> .
+
 <http://leipzig-data.de/Data/Firma/Outlaw>
     ld:hasAddress <http://leipzig-data.de/Data/48268.Greven.Muensterstrasse.105> ;
     a ld:Unternehmen ;
@@ -589,6 +649,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/OxfamDeutschland>
     ld:hasAddress <http://leipzig-data.de/Data/10179.Berlin.AmKoellnischenPark.1> ;
+    dct:modified "2016-02-15" ;
     a ld:Unternehmen ;
     rdfs:label "Oxfam Deutschland Shops gGmbH" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.99> ;
@@ -603,6 +664,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/PiepenbrockSicherheit>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Gerichtsweg.28> ;
+    dct:modified "2015-01-16" ;
     a ld:Unternehmen ;
     rdfs:label "Piepenbrock Sicherheit GmbH + Co. KG" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.39> ;
@@ -619,6 +681,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Pulita2016>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Priessnitzstrasse.32> ;
+    dct:modified "2016-12-19" ;
     a ld:Unternehmen ;
     rdfs:label "Pulita2016" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.138> ;
@@ -626,8 +689,15 @@ ld:Unternehmen
     foaf:mbox "pulita@gmx.info" ;
     foaf:phone "0151-23329702" .
 
+<http://leipzig-data.de/Data/Firma/RahnDittrich>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Salomonstrasse.10> ;
+    a ld:Unternehmen ;
+    rdfs:label "Dr. P. Rahn und Partner, Gemeinnützige Schulgesellschaft mbH" ;
+    foaf:homepage <http://www.rahndittrich.de> .
+
 <http://leipzig-data.de/Data/Firma/Rehability>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.AlterAmtshof.2> ;
+    dct:modified "2016-08-26" ;
     a ld:Unternehmen ;
     rdfs:label "Rehability" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.134> ;
@@ -637,6 +707,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Rossmann>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Stockartstrasse.11> ;
+    dct:modified "2016-08-15" ;
     a ld:Unternehmen ;
     rdfs:label "Rossmann" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.109> ;
@@ -667,6 +738,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/SchaeferundBreuss>
     ld:hasAddress <http://leipzig-data.de/Data/28203.Bremen.Kreftingstrasse.7> ;
+    dct:modified "2017-02-17" ;
     a ld:Unternehmen ;
     rdfs:label "Schäfer & Breuss GbR" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.142> ;
@@ -684,12 +756,20 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Seidentraum>
     ld:hasAddress <http://leipzig-data.de/Data/04316.Leipzig.Karl-Friedrich-Strasse.1> ;
+    dct:modified "2017-04-03" ;
     a ld:Unternehmen ;
     rdfs:label "Dr. Matias Langer - Seidentraum" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.48> ;
     foaf:homepage <http://www.seidentraum.eu> ;
     foaf:mbox "email@seidentraum.eu" ;
     foaf:phone "03413314052" .
+
+<http://leipzig-data.de/Data/Firma/SlowFood>
+    ld:contactPerson ldp:Winter_Catherine ;
+    dct:modified "2018-02-22" ;
+    a ld:Unternehmen ;
+    rdfs:label "Slow Food Deutschland. Convivium Leipzig-Halle" ;
+    foaf:homepage <https://www.slowfood.de> .
 
 <http://leipzig-data.de/Data/Firma/Softwareforen.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Querstrasse.16> ;
@@ -698,6 +778,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/St.BennoVerlag>
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Stammerstrasse.40> ;
+    dct:modified "2016-05-13" ;
     a ld:Unternehmen ;
     rdfs:label "St. Benno Verlag" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.117> ;
@@ -723,8 +804,15 @@ ld:Unternehmen
     rdfs:label "Studio Bosco" ;
     foaf:homepage <http://www.studiobosco.de/> .
 
+<http://leipzig-data.de/Data/Firma/TUEVRheinland>
+    ld:hasAddress <http://leipzig-data.de/Data/51105.Koeln.AmGrauenStein.27> ;
+    a ld:Unternehmen ;
+    rdfs:label "TÜV Rheinland AG" ;
+    foaf:homepage <https://www.tuv.com> .
+
 <http://leipzig-data.de/Data/Firma/Tanzzentrale>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.64> ;
+    dct:modified "2015-10-17" ;
     a ld:Unternehmen ;
     rdfs:label "Tanz-Zentrale Leipzig" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.75> ;
@@ -768,6 +856,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/VLW>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hartzstrasse.2> ;
+    dct:modified "2015-04-16" ;
     a ld:Unternehmen ;
     rdfs:label "Vereinigte Leipziger Wohnungsgenossenschaft eG" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.45> ;
@@ -782,6 +871,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Velocibar>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Alfred-Frank-Strasse.15> ;
+    dct:modified "2017-02-24" ;
     a ld:Unternehmen ;
     rdfs:comment "Webseite E-Shop ohne Impressum" ;
     rdfs:label "Radbar \"Velocibar\"" ;
@@ -808,6 +898,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/WVG-Rabe>
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.BeuchaerStrasse.7> ;
+    dct:modified "2017-08-26" ;
     a ld:Unternehmen ;
     rdfs:label "Wohnungsvermietungsgesellschaft H. & W. Rabe" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.56> ;
@@ -820,8 +911,17 @@ ld:Unternehmen
     rdfs:label "Webdata Solutions" ;
     foaf:homepage <http://webdata-solutions.com/> .
 
+<http://leipzig-data.de/Data/Firma/WildeLeipziger>
+    ld:hasAddress <http://leipzig-data.de/Data/04769.Muegeln.Sonnenblick.2A> ;
+    dct:modified "2018-02-22" ;
+    a ld:Unternehmen ;
+    rdfs:label "Wilde Leipziger" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.204> ;
+    foaf:homepage <http://www.wilde-leipziger.eu> .
+
 <http://leipzig-data.de/Data/Firma/Wisamar>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.5> ;
+    dct:modified "2016-02-04" ;
     a ld:Unternehmen ;
     rdfs:label "Wisamar Bildungsgesellschaft" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.88> ;
@@ -831,6 +931,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/Yellowbrasil>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.4> ;
+    dct:modified "2017-03-15" ;
     a ld:Unternehmen ;
     rdfs:label "Yellowbrasil" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.143> ;
@@ -840,6 +941,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/ZackigaufKurs>
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Cichoriusstrasse.2> ;
+    dct:modified "2017-07-30" ;
     a ld:Unternehmen ;
     rdfs:comment "E-Shop ohne Impressum" ;
     rdfs:label "zackig auf kurs - die offene Nähwerkstatt für Upcycling" ;
@@ -848,11 +950,20 @@ ld:Unternehmen
     foaf:mbox "kontakt@zackig-auf-kurs.de" ;
     foaf:phone "0341-58150057" .
 
+<http://leipzig-data.de/Data/Firma/ZentrumfuerFermentation>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Luppenstrasse.9> ;
+    dct:modified "2018-02-22" ;
+    a ld:Unternehmen ;
+    rdfs:label "Zentrum für Fermentation GbR" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.202> ;
+    foaf:homepage <https://zff-leipzig.de/> .
+
 <http://leipzig-data.de/Data/Firma/ZooLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
+    dct:modified "2017-02-10", "2018-02-22" ;
     a ld:Unternehmen ;
     rdfs:label "Zoo Leipzig", "Zoo Leipzig GmbH" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.97> ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.214>, <http://nachhaltiges-leipzig.de/Data/Akteur.97> ;
     foaf:homepage <http://www.zoo-leipzig.de> ;
     foaf:mbox "mhaupt@zoo-leipzig.de" ;
     foaf:phone "0341-5933385", "03415933364" .
@@ -872,6 +983,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/aboutsource>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
+    dct:modified "2016-09-29" ;
     a ld:Unternehmen ;
     rdfs:label "about source UG" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.8> ;
@@ -901,6 +1013,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/ernte-mich>
     ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.GrosspoesnaerStrasse.71> ;
+    dct:modified "2017-01-03" ;
     a ld:Unternehmen ;
     rdfs:label "ernte-mich" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.77> ;
@@ -916,6 +1029,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/fairgourmet>
     ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.SeehausenerAllee.2> ;
+    dct:modified "2017-02-03" ;
     a ld:Unternehmen ;
     rdfs:label "fairgourmet GmbH" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.102> ;
@@ -937,6 +1051,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/projektUP>
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Stefan-Zweig-Strasse.21> ;
+    dct:modified "2016-05-10" ;
     a ld:Unternehmen ;
     rdfs:label "projektUP!" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.49> ;
@@ -946,6 +1061,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/rad3.de>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Erich-Koehn-Strasse.63B> ;
+    dct:modified "2017-01-10" ;
     a ld:Unternehmen ;
     rdfs:label "rad3.de UG" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.24> ;
@@ -955,6 +1071,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/roeskant>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.9> ;
+    dct:modified "2017-06-07" ;
     a ld:Unternehmen ;
     rdfs:label "röskant DIE MANUFAKTUR" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.115> ;
@@ -970,6 +1087,7 @@ ld:Unternehmen
 
 <http://leipzig-data.de/Data/Firma/sedruck>
     ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Ludwig-Hupfeld-Strasse.16> ;
+    dct:modified "2016-10-10" ;
     a ld:Unternehmen ;
     rdfs:label "sedruck KG" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.18> ;
@@ -982,151 +1100,26 @@ ld:Unternehmen
     a ld:Unternehmen ;
     rdfs:label "studiodelta GmbH & CO. KG" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.27> .
-<http://leipzig-data.de/Data/Firma/aboutsource> <http://purl.org/dc/terms/modified> "2016-09-29" .
-<http://leipzig-data.de/Data/Firma/ALDIEinkauf> <http://purl.org/dc/terms/modified> "2017-09-05" .
-<http://leipzig-data.de/Data/Firma/Alltagsinstitut> <http://purl.org/dc/terms/modified> "2017-05-26" .
-<http://leipzig-data.de/Data/Firma/ANNALINDE> <http://purl.org/dc/terms/modified> "2017-05-10" .
-<http://leipzig-data.de/Data/Firma/ArakiVerlag> <http://purl.org/dc/terms/modified> "2017-01-14" .
-<http://leipzig-data.de/Data/Firma/Aurel.Marketing> <http://purl.org/dc/terms/modified> "2015-02-09" .
-<http://leipzig-data.de/Data/Firma/CONTIGO> <http://purl.org/dc/terms/modified> "2017-03-29" .
-<http://leipzig-data.de/Data/Firma/DasSchwarzeBrett> <http://purl.org/dc/terms/modified> "2015-10-02" .
-<http://leipzig-data.de/Data/Firma/DerLindwurm> <http://purl.org/dc/terms/modified> "2016-06-03" .
-<http://leipzig-data.de/Data/Firma/EnergiegenossenschaftLeipzig> <http://purl.org/dc/terms/modified> "2017-04-19" .
-<http://leipzig-data.de/Data/Firma/ernte-mich> <http://purl.org/dc/terms/modified> "2017-01-03" .
-<http://leipzig-data.de/Data/Firma/fairgourmet> <http://purl.org/dc/terms/modified> "2017-02-03" .
-<http://leipzig-data.de/Data/Firma/Garage> <http://purl.org/dc/terms/modified> "2017-04-27" .
-<http://leipzig-data.de/Data/Firma/Gruenschnabel> <http://purl.org/dc/terms/modified> "2017-01-17" .
-<http://leipzig-data.de/Data/Firma/Haedi-Flor> <http://purl.org/dc/terms/modified> "2017-02-10" .
-<http://leipzig-data.de/Data/Firma/Heldenkueche> <http://purl.org/dc/terms/modified> "2017-06-06" .
-<http://leipzig-data.de/Data/Firma/KatiMagyar> <http://purl.org/dc/terms/modified> "2016-11-18" .
-<http://leipzig-data.de/Data/Firma/KonsumLeipzig> <http://purl.org/dc/terms/modified> "2017-07-26" .
-<http://leipzig-data.de/Data/Firma/KuchenhimmelundBrotfein> <http://purl.org/dc/terms/modified> "2017-04-27" .
-<http://leipzig-data.de/Data/Firma/KulturPaten> <http://purl.org/dc/terms/modified> "2016-06-06" .
-<http://leipzig-data.de/Data/Firma/KunstundKatze> <http://purl.org/dc/terms/modified> "2017-06-10" .
-<http://leipzig-data.de/Data/Firma/LaTortita> <http://purl.org/dc/terms/modified> "2016-05-21" .
-<http://leipzig-data.de/Data/Firma/Lehmolandia> <http://purl.org/dc/terms/modified> "2016-01-17" .
-<http://leipzig-data.de/Data/Firma/LeipzigerMesse> <http://purl.org/dc/terms/modified> "2017-02-09" .
-<http://leipzig-data.de/Data/Firma/Lipsia-e-motion> <http://purl.org/dc/terms/modified> "2015-08-03" .
-<http://leipzig-data.de/Data/Firma/LittleKiwi> <http://purl.org/dc/terms/modified> "2016-10-03" .
-<http://leipzig-data.de/Data/Firma/LOstFood> <http://purl.org/dc/terms/modified> "2016-06-05" .
-<http://leipzig-data.de/Data/Firma/Mrs.Hippie> <http://purl.org/dc/terms/modified> "2016-07-09" .
-<http://leipzig-data.de/Data/Firma/NellyMorelly> <http://purl.org/dc/terms/modified> "2017-03-15" .
-<http://leipzig-data.de/Data/Firma/NeuesGeld> <http://purl.org/dc/terms/modified> "2015-10-14" .
-<http://leipzig-data.de/Data/Firma/OxfamDeutschland> <http://purl.org/dc/terms/modified> "2016-02-15" .
-<http://leipzig-data.de/Data/Firma/PiepenbrockSicherheit> <http://purl.org/dc/terms/modified> "2015-01-16" .
-<http://leipzig-data.de/Data/Firma/projektUP> <http://purl.org/dc/terms/modified> "2016-05-10" .
-<http://leipzig-data.de/Data/Firma/Pulita2016> <http://purl.org/dc/terms/modified> "2016-12-19" .
-<http://leipzig-data.de/Data/Firma/rad3.de> <http://purl.org/dc/terms/modified> "2017-01-10" .
-<http://leipzig-data.de/Data/Firma/Rehability> <http://purl.org/dc/terms/modified> "2016-08-26" .
-<http://leipzig-data.de/Data/Firma/roeskant> <http://purl.org/dc/terms/modified> "2017-06-07" .
-<http://leipzig-data.de/Data/Firma/Rossmann> <http://purl.org/dc/terms/modified> "2016-08-15" .
-<http://leipzig-data.de/Data/Firma/SchaeferundBreuss> <http://purl.org/dc/terms/modified> "2017-02-17" .
-<http://leipzig-data.de/Data/Firma/sedruck> <http://purl.org/dc/terms/modified> "2016-10-10" .
-<http://leipzig-data.de/Data/Firma/Seidentraum> <http://purl.org/dc/terms/modified> "2017-04-03" .
-<http://leipzig-data.de/Data/Firma/St.BennoVerlag> <http://purl.org/dc/terms/modified> "2016-05-13" .
-<http://leipzig-data.de/Data/Firma/Tanzzentrale> <http://purl.org/dc/terms/modified> "2015-10-17" .
-<http://leipzig-data.de/Data/Firma/Velocibar> <http://purl.org/dc/terms/modified> "2017-02-24" .
-<http://leipzig-data.de/Data/Firma/VLW> <http://purl.org/dc/terms/modified> "2015-04-16" .
-<http://leipzig-data.de/Data/Firma/Wisamar> <http://purl.org/dc/terms/modified> "2016-02-04" .
-<http://leipzig-data.de/Data/Firma/WVG-Rabe> <http://purl.org/dc/terms/modified> "2017-08-26" .
-<http://leipzig-data.de/Data/Firma/Yellowbrasil> <http://purl.org/dc/terms/modified> "2017-03-15" .
-<http://leipzig-data.de/Data/Firma/ZackigaufKurs> <http://purl.org/dc/terms/modified> "2017-07-30" .
-<http://leipzig-data.de/Data/Firma/ZooLeipzig> <http://purl.org/dc/terms/modified> "2017-02-10" .
 
+ld:Autohaus
+    a owl:Class ;
+    rdfs:label "Autohaus" ;
+    rdfs:subClassOf ld:Unternehmen .
 
-<http://leipzig-data.de/Data/Firma/Bluetenreich>
-    ld:hasAddress <http://leipzig-data.de/Data/04808.Lossatal.Martin-Luther-Strasse.37> ;
-    dct:modified "2018-02-22" ;
-    a ld:Unternehmen ;
-    rdfs:label "Blütenreich" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.208> ;
-    foaf:homepage <https://bluetenreich.jimdo.com> .
+ld:Bootsverleih
+    a owl:Class ;
+    rdfs:label "Bootsverleih" ;
+    rdfs:subClassOf ld:Unternehmen .
 
-<http://leipzig-data.de/Data/Firma/DanielaNeumann>
-    dct:modified "2018-02-22" ;
-    a ld:Unternehmen ;
-    rdfs:label "Park- und Stadtführerin Daniela Neumann" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.193> ;
-    foaf:homepage <https://www.facebook.com/EntdecktinLeipzig/> .
+ld:Unternehmen
+    a owl:Class ;
+    rdfs:label "Unternehmen" ;
+    rdfs:subClassOf org:Organization .
 
-<http://leipzig-data.de/Data/Firma/FanoeMode>
-    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.7> ;
-    dct:modified "2018-02-22" ;
-    a ld:Unternehmen ;
-    rdfs:label "Fanö-Mode" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.178> ;
-    foaf:homepage <https://www.fanoe-mode.de/> .
+<http://leipzig-data.de/Data/Unternehmen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Unternehmen in der Stadt Leipzig" .
 
-<http://leipzig-data.de/Data/Firma/LeipzigDetails>
-    dct:modified "2018-02-22" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.199> .
-
-<http://leipzig-data.de/Data/Firma/Luxaa>
-    ld:hasAddress <http://leipzig-data.de/Data/06198.Salzatal.Wacholderweg.6> ;
-    dct:modified "2018-02-22" ;
-    a ld:Unternehmen ;
-    rdfs:label "Luxaa® | Tywear – Textile Solutions UG" ;
-    foaf:homepage <https://www.luxaa.de> .
-
-<http://leipzig-data.de/Data/Firma/NaturundWildnisschule>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Ecksteinstrasse.54> ;
-    dct:modified "2018-02-22" ;
-    a ld:Unternehmen ;
-    rdfs:label "Natur- und Wildnisschule Leipzig GbR" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.186> ;
-    foaf:homepage <https://www.natur-wildnisschule-leipzig.de> .
-
-<http://leipzig-data.de/Data/Firma/OelmuehleLeipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.10> ;
-    dct:modified "2018-02-22" ;
-    a ld:Unternehmen ;
-    rdfs:label "Ölmühle Leipzig" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.216> ;
-    foaf:homepage <http://leipspeis.de> .
-
-<http://leipzig-data.de/Data/Firma/SlowFood>
-    ld:contactPerson ldp:Winter_Catherine ;
-    dct:modified "2018-02-22" ;
-    a ld:Unternehmen ;
-    rdfs:label "Slow Food Deutschland. Convivium Leipzig-Halle" ;
-    foaf:homepage <https://www.slowfood.de> .
-
-<http://leipzig-data.de/Data/Firma/WildeLeipziger>
-    ld:hasAddress <http://leipzig-data.de/Data/04769.Muegeln.Sonnenblick.2A> ;
-    dct:modified "2018-02-22" ;
-    a ld:Unternehmen ;
-    rdfs:label "Wilde Leipziger" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.204> ;
-    foaf:homepage <http://www.wilde-leipziger.eu> .
-
-<http://leipzig-data.de/Data/Firma/ZentrumfuerFermentation>
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Luppenstrasse.9> ;
-    dct:modified "2018-02-22" ;
-    a ld:Unternehmen ;
-    rdfs:label "Zentrum für Fermentation GbR" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.202> ;
-    foaf:homepage <https://zff-leipzig.de/> .
-
-<http://leipzig-data.de/Data/Firma/ZooLeipzig>
-    dct:modified "2018-02-22" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.214> .
-
-
-<http://leipzig-data.de/Data/Firma/BIPKreativitaetszentrum>
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.CzermaksGarten.11> ;
-    a ld:Unternehmen ;
-    ld:contactPerson ldp:Mehlhorn_Gerlinde ; 
-    rdfs:label "BIP Kreativitätszentrum gGmbH" ;
-    foaf:homepage <http://www.bipschulen.de> .
-
-<http://leipzig-data.de/Data/Firma/TUEVRheinland>
-    ld:hasAddress <http://leipzig-data.de/Data/51105.Koeln.AmGrauenStein.27> ;
-    a ld:Unternehmen ;
-    rdfs:label "TÜV Rheinland AG" ;
-    foaf:homepage <https://www.tuv.com> .
-
-<http://leipzig-data.de/Data/Firma/RahnDittrich>
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Salomonstrasse.10> ;
-    a ld:Unternehmen ;
-    rdfs:label "Dr. P. Rahn und Partner, Gemeinnützige Schulgesellschaft mbH" ;
-    foaf:homepage <http://www.rahndittrich.de> .
