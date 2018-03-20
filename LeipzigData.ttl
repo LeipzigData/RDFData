@@ -1,0 +1,160 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<http://leipzig-data.de/Data/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a dcat:Catalog ;
+    dct:title "Der Leipzig Data Datenkatalog"@de .
+
+<http://leipzig-data.de/Data/AdministrativeGliederung/>
+    a dcat:Dataset ;
+    dct:title "Stadtbezirke und Ortsteile" .
+
+<http://leipzig-data.de/Data/Adressen/>
+    a dcat:Dataset ;
+    dct:title "Adressen und Geokoordinaten in der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/AlteEvents/>
+    a dcat:Dataset ;
+    rdfs:comment "Alte Events zu Referenzzwecken; werden nach einem Jahr gelöscht" ;
+    dct:title "Alte Events" .
+
+<http://leipzig-data.de/Data/Buergervereine/>
+    a dcat:Dataset ;
+    dct:title "Bürgervereine" .
+
+<http://leipzig-data.de/Data/EEG_Stammdaten_2012/>
+    dct:creator "Praktikumsgruppe Energiewendeprojekt 2013" ;
+    a dcat:Dataset ;
+    dct:title "Energiewende Stammdaten 2012 aus der Region Leipzig"@de  .
+
+<http://leipzig-data.de/Data/EnergiewendeVokabular/>
+    dct:contributor "Lars Eidam" ;
+    dct:creator "Praktikumsgruppe Energiewendeprojekt 2013" ;
+    a dcat:Dataset ;
+    rdfs:comment "Diese Ontologie enthält alle notwendigen Beschreibungen für die Modellierung und Abbildung von Energieanlagen." ;
+    dct:title "Energiewende Projekt Vokabular"@de ;
+    owl:versionInfo "0.1.1.0003" .
+
+<http://leipzig-data.de/Data/Events/>
+    a dcat:Dataset ;
+    dct:title "Events" .
+
+<http://leipzig-data.de/Data/Hochschulen/>
+    a dcat:Dataset ;
+    dct:title "Leipziger Hochschulen und Unterstrukturen" .
+
+<http://leipzig-data.de/Data/Jugendstadtplan/>
+    a dcat:Dataset ;
+    rdfs:comment "HGG 2018-01: Adjustierte Version" ;
+    dct:title "LeipzigData - Jugendstadtplan" .
+
+<http://leipzig-data.de/Data/KirchlicheEinrichtungen/>
+    a dcat:Dataset ;
+    dct:title "Kirchliche Einrichtungen" .
+
+<http://leipzig-data.de/Data/MINTBroschuere2014/>
+    a dcat:Dataset ;
+    rdfs:comment "Erweiterte Version der Beschreibung von MINT-Orten aus der MINT-Broschüre 2014 des Projekts „Lernen vor Ort“ der Stadt Leipzig" ;
+    dct:title "MINT-Broschüre 2014" .
+
+<http://leipzig-data.de/Data/OeffentlicheEinrichtungen/>
+    a dcat:Dataset ;
+    dct:title "Parteien, Stiftungen, Öffentliche Einrichtungen" .
+
+<http://leipzig-data.de/Data/Orte/>
+    a dcat:Dataset ;
+    dct:title "Orte" .
+
+<http://leipzig-data.de/Data/Personen/>
+    a dcat:Dataset ;
+    dct:title "Personen" .
+
+<http://leipzig-data.de/Data/PolizeidirektionLeipzig/>
+    a dcat:Dataset ;
+    rdfs:comment "Quelle: LVZ, 16.08.2014" ;
+    dct:title "Polizeidirektion Leipzig in der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Projekte/>
+    a dcat:Dataset ;
+    dct:title "Projekte" .
+
+<http://leipzig-data.de/Data/Schulen/>
+    dct:source "Seiten der Stadt Leipzig" ;
+    a dcat:Dataset ;
+    rdfs:comment "2014-07-20: Abgleich mit den Stadtseiten.", "2016-12-07: berufliche Schulen und Förderschulen nachgetragen.", "2017-09-12: Abgleich mit jedeschule.de.", "2018-02 Abgleich mit Veröffentlichung in der LVZ" ;
+    dct:title "Schulen der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Seniorenbueros/>
+    a dcat:Dataset ;
+    rdfs:comment "Quelle: LVZ, 22.08.2014" ;
+    dct:title "Seniorenbüros der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Stadtverwaltung/>
+    a dcat:Dataset ;
+    rdfs:comment "Ämter der Stadt Leipzig wurden im Rahmen des Projekts \"Interaktiver Haushaltsrechner für Leipzig 2015\" extrahiert" ;
+    dct:title "Stadtverwaltung Leipzig" .
+
+<http://leipzig-data.de/Data/Strassenverzeichnis/>
+    dct:source <https://www.leipzig.de/buergerservice-und-verwaltung/unsere-stadt/gebietsgliederung-und-strassennamen/strassennamen/> ;
+    a dcat:Dataset ;
+    rdfs:comment "Aktualisiert mit Straßenverzeichnis vom 01.01.2018", "Eine erste Version wurde aus dem Datenbestand von API Leipzig extrahiert" ;
+    dct:title "Straßenverzeichnis Leipzig" .
+
+<http://leipzig-data.de/Data/Tags/>
+    a dcat:Dataset ;
+    dct:title "Tags" .
+
+<http://leipzig-data.de/Data/Treffpunkte/>
+    a dcat:Dataset ;
+    dct:title "Treffpunkte" .
+
+<http://leipzig-data.de/Data/Unternehmen/>
+    a dcat:Dataset ;
+    dct:title "Unternehmen in der Stadt Leipzig" .
+
+<http://leipzig-data.de/Data/Vereine/>
+    a dcat:Dataset ;
+    rdfs:comment "Enthält Daten, die aus der Vereinsdatenbank von leipzig.de (Stand 2013) extrahiert wurden" ;
+    dct:title "Vereine" .
+
+<http://leipzig-data.de/Data/WeitereAdressen/>
+    a dcat:Dataset ;
+    dct:title "Weitere Adressen" .
+
+<http://leipzig-data.de/Data/Zukunftspass/>
+    a dcat:Dataset ;
+    dct:title "Erste Datenversion für den Zukunftspass der Zukunftsakademie" .
+
+<http://leipziger-ecken.de/Data/Adressen/>
+    a dcat:Dataset ;
+    rdfs:comment "Dump aus der Datenbank" ;
+    dct:title "Leipziger Ecken - Adressen" .
+
+<http://leipziger-ecken.de/Data/Akteure/>
+    a dcat:Dataset ;
+    rdfs:comment "Dump aus der Datenbank" ;
+    dct:title "Leipziger Ecken - Akteure" .
+
+<http://nachhaltiges-leipzig.de/Data/Adressen/>
+    a dcat:Dataset ;
+    rdfs:comment "Dump aus der Datenbank" ;
+    dct:title "Nachhaltiges Leipzig - Adressen" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteure/>
+    a dcat:Dataset ;
+    rdfs:comment "Dump aus der Datenbank" ;
+    dct:title "Nachhaltiges Leipzig - Akteure" .
+
+<http://nachhaltiges-leipzig.de/Data/Changes/>
+    a dcat:Dataset ;
+    rdfs:comment "Changes zur Datenbank" ;
+    dct:title "Nachhaltiges Leipzig - Changes" .
+
