@@ -91,8 +91,9 @@
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Inspirata> ;
     nl:Ferienpass "gelistet" ;
-    nl:Teilnahme "bisher keine Antwort" ;
+    nl:Teilnahme "ja, TN am 27.3. noch unklar" ;
     a ld:Ort, nl:Partner ;
+    nl:Veranstaltung "Unsere regulären Öffnungszeiten dienstags und donnerstags" ;
     rdfs:comment "erreichbar: SB 2,16 bis Deutsche Nationalbibliothek oder An den Tierkliniken" ;
     rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" ;
     foaf:homepage <http://www.inspirata.de> ;
@@ -216,3 +217,41 @@
     foaf:homepage <http://www.verbraucherzentrale-sachsen.de> ;
     foaf:mbox "bzl@vzs.de" ;
     foaf:phone "0341-2610450" .
+
+<http://leipzig-data.de/Data/Ort/ErfinderKinder>
+    ld:contact "Petra Vock" ; 
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Spittastrasse.16> ;
+    nl:Ferienpass "nicht gelistet" ;
+    nl:Teilnahme "ja, TN am 27.3. eventuell ein wenig später!" ;
+    nl:Veranstaltung "Weltenforscher - Techniktüftler" ; 
+    a ld:Ort, nl:Partner ;
+    rdfs:label "ErfinderKinder" .
+    
+<http://leipzig-data.de/Data/Firma/Alltagsinstitut>
+    ld:contact "Anja Büchting" ; 
+    ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Paul-Heyse-Strasse.48>,
+    <http://leipzig-data.de/Data/04103.Leipzig.Kreuzstrasse.19> ;
+    nl:Ferienpass "gelistet" ;
+    a ld:Unternehmen, nl:Partner ;
+    rdfs:label "Institut für Alltags- und Gebrauchskunst" ;
+    nl:Veranstaltung "bereits bestehende wöchtentliche Kurse zum Thema praktische nachhaltige Umweltbildung", "Weiterverabreitung von Alltagsmaterialien", "mind. 3 Ferienpassangebote", "Achtsamkeitstraining mit Alltagsmaterialien" ; 
+    nl:Abschlussveranstaltung "Die abschließende Auszeichnung nach den Sommerferien ließe sich z.B. integrieren im Alltagsinstiut, Kreuzstrasse 19. www.alltagsinstitut.de." ; 
+    nl:Teilnahme "ja, TN am 27.3. nicht möglich, keine Kinderbetreuung" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.129> ;
+    foaf:homepage <http://www.alltagsinstitut.de> ;
+    foaf:mbox "info@alltagsinstitut.de" ;
+    foaf:phone "0176-81092584" .
+
+<http://leipzig-data.de/Data/Verein/GeoWerkstattLeipzig>
+    ld:hasAddress  <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19A> ;
+    a ld:Verein, nl:Partner ;
+    nl:Ferienpass "nicht gelistet" ;
+    nl:Teilnahme "ja, TN am 27.3. " ;
+    nl:Veranstaltung "Konkrete Veranstaltungen können wir noch nicht benennen. In Frage käme u.a. ein Workshop zu nachhaltiger Mobilität (ca. 9.-11. Klasse) oder Umweltbildungsangebote z.B. im Auewald. Für ein Konzept fehlen uns allerdings noch weitere Informationen (Gruppengrößen, Alter, Umfang des Angebots, räumliche Voraussetzungen, Bewerbung des Angebots und Anmeldung der Teilnehmenden etc.)." ; 
+    ld:contact "Frank Feuerbach" ;
+    rdfs:label "GeoWerkstatt Leipzig e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.168> ;
+    foaf:homepage <http://www.geowerkstatt.com> ;
+    foaf:mbox "vorstand@geowerkstatt.com" ;
+    foaf:phone "0179-4590873" .
+
