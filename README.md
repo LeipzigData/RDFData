@@ -1,3 +1,1 @@
-Publicly available Data of the Leipzig Data Project
-
-http://leipzig-data.de 
+Publicly available Data of the [Leipzig Data Project](http://leipzig-data.de)
