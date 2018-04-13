@@ -1,0 +1,235 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix : <http://leipzig-data.de/Data/MINT-Katalog/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://leipzig-data.de/Data/MINT-Katalog/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a dcat:Catalog ;
+    rdfs:comment "Der Katalog wurde im Zusammenhang mit den Bemühungen von MINT Mitteldeutschland erstellt, sich einen Überblick über Datensammlungen zu verschaffen, in denen (u.a.) MINT-Angebote aus der Region Mitteldeutschland beschrieben werden. "; 
+    dct:description "Der Meta-Katalog listet bekannte MINT-Portale auf"@de ;
+    dct:title "Der MINT-Kataloge Meta-Katalog"@de .
+
+:dataset-001
+    a dcat:DataSet ;
+    dct:title "Initiative \"Komm mach MINT\"" ; 
+    dcat:landingPage <http://www.komm-mach-mint.de/MINT-Projekte> ;
+    dct:description """Ziel der Initiative ist das Potential von Frauen für naturwissenschaftlich-technische Berufe zu nutzen, im einzelnen:
+- ein realistisches Bild der ingenieur- und naturwissenschaftlichen Berufe zu vermitteln und die Chancen für Frauen in diesen Feldern aufzuzeigen,
+- junge Frauen für naturwissenschaftlich-technische Studiengänge zu begeistern,
+- Hochschulabsolventinnen für Karrieren in technischen Unternehmen und Forschungseinrichtungen zu gewinnen.""" .
+
+:dataset-002
+    a dcat:DataSet ;
+    dct:title "Informationen zu Leipziger MINT-Orten" ; 
+    dct:description """Gesamtübersicht über die Bildungsangebote in den Bereichen Mathematik, Informatik, Naturwissenschaften und Technik (MINT) sowie Umweltbildung in Leipzig.""" ;
+    foaf:homepage <http://leipzig-data.de/MINT-Orte> ; 
+    dcat:distribution :dataset-002-rdf-14, :dataset-002-pdf-12, :dataset-002-pdf-14, :dataset-002-pdf-16 .
+
+:dataset-002-rdf-14
+    a dcat:Distribution ;
+    dct:title "Informationen zu Leipziger MINT-Orten, Auflage 2014" ; 
+    dcat:mediaType "text/rdf" ;
+    dcat:downloadURL <http://leipzig-data.de/RDFData/MINTBroschuere2014.ttl> ;
+    dcat:byteSize "187027"^^xsd:decimal .
+
+:dataset-002-pdf-12
+    a dcat:Distribution ;
+    dct:title "Informationen zu Leipziger MINT-Orten, Auflage 2012" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://leipzig-netz.de/MINT/Broschueren/MINT-Broschuere-2012.pdf> ;
+    dcat:byteSize "3286270"^^xsd:decimal .
+
+:dataset-002-pdf-14
+    a dcat:Distribution ;
+    dct:title "Informationen zu Leipziger MINT-Orten, Auflage 2014" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://leipzig-netz.de/MINT/Broschueren/MINT-Broschuere-2014.pdf> ;
+    dcat:byteSize "1287624"^^xsd:decimal .
+
+:dataset-002-pdf-16
+    a dcat:Distribution ;
+    dct:title "Informationen zu Leipziger MINT-Orten, Auflage 2014" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://leipzig-netz.de/MINT/Broschueren/MINT-Broschuere-2016.pdf> ;
+    dcat:byteSize "1691299"^^xsd:decimal .
+
+:dataset-003
+    a dcat:DataSet ;
+    dct:title "Jahresbericht des Sächsischen Landeskomitees zur Förderung mathematisch-naturwissenschaftlich begabter und interessierter Schüler" ; 
+    dcat:landingPage <http://lsgm.uni-leipzig.de/tiki-index.php?page=SLK> ;
+    dct:description """Der Jahresbericht 2016/17 enthält Wettbewerbsinformationen zu Organisation und Ergebnissen sowie einen Ausblick ins Schuljahr 2017/18 mit Terminen und Ansprechpartnern hin. Eine umfassende und beeindruckende Bilanz aktueller MINT-Aktivitäten in Sachsen auf 64 Seiten.""" ;
+    dcat:distribution :dataset-003-04, :dataset-003-07, :dataset-003-08, :dataset-003-09, :dataset-003-10, :dataset-003-11, :dataset-003-12, :dataset-003-13, :dataset-003-14, :dataset-003-15, :dataset-003-16, :dataset-003-17 .
+
+:dataset-003-04
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2003/04" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2003_04.pdf> ;
+    dcat:byteSize "249518"^^xsd:decimal .
+
+:dataset-003-07
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2006/07" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2006_07.pdf> ;
+    dcat:byteSize "630211"^^xsd:decimal .
+
+:dataset-003-08
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2007/08" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2007_08.pdf> ;
+    dcat:byteSize "173728"^^xsd:decimal .
+
+:dataset-003-09
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2008/09" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2008_09.pdf> ;
+    dcat:byteSize "1225036"^^xsd:decimal .
+
+:dataset-003-10
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2009/10" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2009_10.pdf> ;
+    dcat:byteSize "236068"^^xsd:decimal .
+
+:dataset-003-11
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2010/11" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2010_11.pdf> ;
+    dcat:byteSize "204449"^^xsd:decimal .
+
+:dataset-003-12
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2011/12" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2011_12.pdf> ;
+    dcat:byteSize "1400317"^^xsd:decimal .
+
+:dataset-003-13
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2012/13" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2013.pdf> ;
+    dcat:byteSize "298694"^^xsd:decimal .
+
+:dataset-003-14
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2013/14" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2014.pdf> ;
+    dcat:byteSize "225677"^^xsd:decimal .
+
+:dataset-003-15
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2014/15" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2015.pdf> ;
+    dcat:byteSize "463948"^^xsd:decimal .
+
+:dataset-003-16
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2015/16" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2015_16.pdf> ;
+    dcat:byteSize "1380847"^^xsd:decimal .
+
+:dataset-003-17
+    a dcat:Distribution ;
+    dct:title "SLK-Jahresbericht 2016/17" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://lsgm.uni-leipzig.de/Andere/SLK/SLK_Jahresbericht_2016_17.pdf> ;
+    dcat:byteSize "2033202"^^xsd:decimal .
+
+:dataset-004
+    a dcat:DataSet ;
+    dct:title "Lehrplanbezogene Umweltbildungsangebote in Leipzig" ; 
+    dct:description """Planungshilfe für Projekt- und fächerverbindenden Unterricht. Herausgegeben vom Dezernat Jugend, Soziales, Gesundheit und Schule Amt für Jugend, Familie und Bildung der Stadt Leipzig 2012""" ;
+    dcat:distribution :dataset-004-pdf .
+
+:dataset-004-pdf
+    a dcat:Distribution ;
+    dct:title "Lehrplanbezogene Umweltbildungsangebote in Leipzig, Auflage 2012" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <http://leipzig-netz.de/MINT/Broschueren/Lehrplanbezogene_Umweltbildung.pdf> ;
+    dcat:byteSize "632458"^^xsd:decimal .
+
+:dataset-005
+    a dcat:DataSet ;
+    dct:title "Deutschland-Katalog der Maker-Garagen" ; 
+    dcat:landingPage <https://www.mintzukunftschaffen.de/maker-garage.html> ;
+    dct:description """Der CLUB MAKER-Garage
+Die neue Initiative von »MINT Zukunft schaffen« bildet ein bundesweites Netzwerk für alle Einrichtungen, die nach dem Prinzip des »self-invented learning by doing« arbeiten. Der »CLUB MAKER-Garage« und die bundesweite »Vereinigung der Freunde und Förderer CLUB MAKER-Garage« werden anlässlich des Besuchs von Bundeskanzlerin Dr. Angela Merkel in der MAKER-Garage Buch am Erlbach am 4. September 2015 gemeinsam mit den Partnern der Vereinigung gegründet und offiziell vorgestellt. """ .
+
+:dataset-006
+    a dcat:DataSet ;
+    dct:title "Deutschland-Katalog der MINT-freundlichen Schulen" ; 
+    dcat:landingPage <https://www.mintzukunftschaffen.de/mint-freundliche-schulen.html> ;
+    dct:description """Die MINT-freundlichen Schulen
+Seit 2011 ehren unsere bundesweiten Partner – u.a. wie die Wissensfabrik, große Stiftungen, VDE, GI– in Abstimmung oder gemeinsam mit Landesarbeitgebervereinigungen und den Bildungswerken der Wirtschaft Schulen, die einen nachhaltigen MINT-Schwerpunkt setzen, nach einem bundesweit einheitlichen Kriterienkatalog. Das Signet »MINT- freundliche Schule« ist eine Ehrung für Schulen im »MINT-Breitensport«. In diesem Jahr wurde die Marke von 1.000 Schulen überschritten. Zehn Prozent aller weiterführenden Schulen – 1.600 Schulen – wollen wir erreichen. Schirmherrin ist die Kultusministerkonferenz KMK. """ .
+
+:dataset-006-01
+    a dcat:Distribution ;
+    dct:title "MINT-Navigator | Die Datenbank für alle MINT-freundlichen Schulen" ;
+    dcat:accessURL <https://www.mintzukunftschaffen.de/473.html>  .
+
+:dataset-007
+    a dcat:DataSet ;
+    dct:title "MINT Navigator von mintzukunftschaffen.de" ; 
+    dcat:landingPage <http://www.mintzukunftschaffen.de/mintnavigator> ;
+    dct:description """Im MINT-Navigator können Sie z.B. nach MINT-Initiativen, MINT-Projekten, Unterrichtsmaterial zu MINT suchen.
+Geben Sie einfach Ihren Suchbegriff, z.B. „Unterricht“, genau wie bei Google ein. Der Unterschied zu Google ist, dass unsere Ergebnisse bereits qualitativ gefiltert sind. Sie finden einen für Sie passenden Eintrag schnell - Sie müssen also nicht mehr hunderttausend Ergebnisse durchsuchen.
+Sie können auch in unserem Bereich "Ergebnisse von mintzukunftschaffen.de" nach ausgewählten Empfehlungen suchen, zum Beispiel zum Thema Informatik oder Biologie oder Angeboten für Mädchen.
+""" .
+
+:dataset-008
+    a dcat:DataSet ;
+    dct:title "MINT-Atlas 3 – 10 für Deutschland" ; 
+    dcat:landingPage <http://www.znl-mintatlas3-10.de/Bundesland/Sachsen/sachsen.html> ;
+    dct:description """Der "MINT-Atlas 3-10 für Deutschland" wurde im Auftrag des Bundesministeriums für Bildung und Forschung (BMBF) vom ZNL TransferZentrum für Neurowissenschaften und Lernen erstellt und präsentiert allen an MINT (Mathematik - Informatik - Naturwissenschaften - Technik) Interessierten in einer Datenbank Projekte und Angebote aus diesen Fachbereichen. Die Arbeit des ZNL am "MINT-Atlas 3-10" endete am 29. Februar 2012. Bei Fragen zu den Projekten finden sich in den jeweiligen Projektbeschreibungen die entsprechenden Ansprechpartner. """ .
+
+:dataset-009
+    a dcat:DataSet ;
+    dct:title "think ING. MINT-Atlas" ; 
+    dcat:landingPage <https://www.think-ing.de/paedagogen/mint-erleben/mint-atlas> ;
+    dct:description """Im think ING. MINT-Atlas sind alle Standorte von Technikmuseen, Kinderunis, Schülerlaboren und familienfreundlichen Hochschulen zusammengefasst. """ .
+
+:dataset-010
+    a dcat:DataSet ;
+    dct:title "Junior-Ingenieur-Akademien" ; 
+    dcat:landingPage <https://www.telekom-stiftung.de/projekte/junior-ingenieur-akademie> ;
+    dct:description """Die Junior-Ingenieur-Akademie ist als Wahlpflichtfach
+    mit zweijähriger Laufzeit fest im Lehrplan der Schulen verankert. Sie
+    basieren immer auf der Kooperation von Schulen mit Hochschulen,
+    wissenschaftlichen Einrichtungen und Un- ternehmen, die den Schülerinnen
+    und Schülern die Möglichkeit geben, die im Unterricht erworbenen Kenntnisse
+    praktisch anzuwenden.  Partner können zum Beispiel Unternehmen aus der
+    Region, Stadtwerke, Forschungszentren, Universitäten oder Fachhochschulen
+    sein. Das Angebot eigne sich hervorragend zur Nachwuchsförderung – mit
+    dieser Begründung zeichneten die Initiative Sachen machen! des Vereins
+    Deutscher Ingenieure (VDI) und die Initiative Zukunft durch Innovation.NRW
+    das Projekt aus. """ .
+
+:dataset-010-01
+    a dcat:Distribution ;
+    dct:title "Junior-Ingenieur-Akademien. Standorte" ; 
+    dcat:mediaType "text/pdf" ;
+    dcat:downloadURL <https://www.telekom-stiftung.de/sites/default/files/jia_plakate_2017_1904_final.pdf> ;
+    dcat:byteSize "2660499"^^xsd:decimal .
+
+:dataset-010-02
+    a dcat:Distribution ;
+    dct:title "Junior-Ingenieur-Akademien, Interaktive Karte" ; 
+    dcat:accessURL <https://www.telekom-stiftung.de/dts-karten/karte02/> .
