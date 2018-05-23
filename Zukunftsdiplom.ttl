@@ -91,6 +91,11 @@
     a nl:Modul ;
     rdfs:label "Fair Trade" .
 
+<http://leipzig-data.de/Data/Modul.14>
+    ld:Lernziele "Eine mathematische Tour durch die Leipziger Innenstadt mit Schätzen, Rechnen und Knobeln. Ganz nebenbei vermitteln die Aufgaben auch Interessantes und Wissenswertes rund um Leipzigs Kultur und Geschichte. " ;
+    a nl:Modul ;
+    rdfs:label "Mathematik im Alltag" .
+
 <http://leipzig-data.de/Data/Modul.2>
     ld:Lernziele "Die Teilnehmer lernen, welche Bedeutung Prozesse im Regenwald für uns haben" ;
     a nl:Modul ;
@@ -624,18 +629,21 @@ Unsere einheimischen Fische kennenlernen
 Wissensrallye, Wissenstest""" ;
     foaf:homepage <http://www.anglerverband-leipzig.de> .
 
-<http://leipzig-data.de/Data/Veranstaltung.31>
-    ld:Altersgruppe "nicht genannt" ;
-    ld:Kosten "nicht genannt" ;
-    ld:Veranstalter <http://leipzig-data.de/Data/UFZ> ;
+<http://leipzig-data.de/Data/Veranstaltung.32>
+    ld:Altersgruppe "1. bis 12. Klasse" ;
+    ld:Kosten "3 Euro" ;
+    ld:Veranstalter <http://leipzig-data.de/Data/Verein/LSGM> ;
     ld:Veranstaltungsmodus "zu ergänzen" ;
-    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/UFZ.Schuelerlabor> ;
+    ld:Veranstaltungsort  <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
     ld:zumModul <http://leipzig-data.de/Data/Modul.5> ;
     a nl:Event ;
-    rdfs:comment "Veranstaltungsort nicht benannt" ;
-    rdfs:label "Thema \"Mikroplastik\"" ;
-    ical:description "zu ergänzen" ;
-    foaf:homepage <http://www.ufz-schuelerlabor.de> .
+    rdfs:label "Mathematische Stadtrallye der Leipziger Schülergesellschaft für Mathematik" ;
+    ical:description """Eine mathematische Rallye durch Leipzig
+Ihren Auftakt hatte die Stadtrallye zum Wissenschaftssommer 2008. Seitdem gilt es regelmäßig für Schülerinnen und Schüler die Leipziger Innenstadt zu erkunden und dabei Mathematik vor der Haustür zu entdecken.
+Die Schüler lösen verschiedene praktische Aufgaben zum Schätzen, Messen, Knobeln, Rechnen und Vergleichen, schärfen ihren mathematischen Blick und lernen die mathematischen Dimensionen Leipzigs kennen.
+Die Stadtrallye richtet sich an alle Schüler(gruppen), die im Rahmen einer Exkursion die Leipziger Innenstadt aus einer ungewohnten Perspektive wahrnehmen wollen.
+Unser Angebot ist für Schüler aller Altersstufen geeignet. Wir haben anspruchsvolle Aufgaben für jüngere und ältere Klassen im Angebot – von Klasse 1 bis zu Klasse 12. """ ;
+    foaf:homepage  <http://www.lsgm.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.4>
     ld:Altersgruppe "7-10 Jahre" ;
@@ -904,6 +912,16 @@ Wissensrallye, Wissenstest""" ;
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
     rdfs:label "Dritte Datenversion für das Zukunftsdiplom der Zukunftsakademie" .
+
+<http://leipzig-data.de/Data/Verein/LSGM>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
+    a ld:Verein ;
+    nl:Ferienpass "nicht gelistet" ;
+    ld:contact "Suse Kley <susekley@gmx.de>" ;
+    rdfs:comment "Postanschrift: c/o Math. Institut, Universität Leipzig, PF 100920, 04109 Leipzig" ;
+    rdfs:label "Leipziger Schülergesellschaft für Mathematik e.V." ;
+    foaf:homepage <http://www.lsgm.de> ;
+    foaf:phone "0341-9732248" .
 
 <http://leipzig-data.de/Verein/Phyllodrom>
     ld:contact "Bettina Grallert <bettina.grallert@gmx.de>" ;
