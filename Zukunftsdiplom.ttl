@@ -14,7 +14,7 @@
     cc:attributionURL <http://leipzig-data.de> ;
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
-    rdfs:label "Dritte Datenversion für das Zukunftsdiplom der Zukunftsakademie" .
+    rdfs:label "Datenversion für das Zukunftsdiplom der Zukunftsakademie" .
 
 <http://leipzig-data.de/Data/Firma/Alltagsinstitut>
     ld:contact "Anja Büchting" ;
@@ -25,20 +25,6 @@
     foaf:homepage <http://www.alltagsinstitut.de> ;
     foaf:mbox "info@alltagsinstitut.de" ;
     foaf:phone "0176-81092584" .
-
-<http://leipzig-data.de/Data/Ort/Annalinde>
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
-    a ld:Ort ;
-    ld:erreichbar "SB 8, 15 bis Henriettenstraße" ; 
-    rdfs:label "Annalinde" ;
-    foaf:homepage <http://www.annalinde-leipzig.de> .
-
-<http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten>
-    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.RoeckenerStrasse.38> ;
-    a ld:Ort ;
-    ld:erreichbar "SB 14 bis Bahnhof Plagwitz" ; 
-    rdfs:label "Annalinde Obstgarten im Bürgerbahnhof Plagwitz" ;
-    foaf:homepage <http://www.annalinde-leipzig.de> .
 
 <http://leipzig-data.de/Data/Firma/Annalinde>
     ld:contact "Alice Wichtmann, a.wichtmann@annalinde-leipzig.de" ;
@@ -117,6 +103,20 @@
     a nl:Modul ;
     rdfs:label "Nachhaltig Wirtschaften" .
 
+<http://leipzig-data.de/Data/Ort/Annalinde>
+    ld:erreichbar "SB 8, 15 bis Henriettenstraße" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
+    a ld:Ort ;
+    rdfs:label "Annalinde" ;
+    foaf:homepage <http://www.annalinde-leipzig.de> .
+
+<http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten>
+    ld:erreichbar "SB 14 bis Bahnhof Plagwitz" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.RoeckenerStrasse.38> ;
+    a ld:Ort ;
+    rdfs:label "Annalinde Obstgarten im Bürgerbahnhof Plagwitz" ;
+    foaf:homepage <http://www.annalinde-leipzig.de> .
+
 <http://leipzig-data.de/Data/Ort/Auwaldstation>
     ld:erreichbar "SB 11 bis Lützschena, dann ca. 10 min. Fußweg" ;
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
@@ -149,6 +149,14 @@
     rdfs:label "Dölitzer Wassermühle" ;
     foaf:homepage <http://www.doelitzer-wassermuehle.de/> .
 
+<http://leipzig-data.de/Data/Ort/EineWelt.Laden>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/EineWelt> ;
+    a ld:Ort ;
+    rdfs:label "Eine Welt Laden" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.50> ;
+    foaf:homepage <http://einewelt-leipzig.de> .
+
 <http://leipzig-data.de/Data/Ort/Garage>
     ld:erreichbar "SB 14 bis Gießerstraße, Bus 60, S-Bahn bis Bhf. Plagwitz" ;
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.97> ;
@@ -163,6 +171,17 @@
     a ld:Ort ;
     rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" ;
     foaf:homepage <http://www.inspirata.de> .
+
+<http://leipzig-data.de/Data/Ort/Ladenprojekt.Krimzkrams>
+    ld:erreichbar "SB 7, Bus 130/131 bis Georg-Schwarz-Straße/Merseburger Straße" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.7> ;
+    a ld:Ort ;
+    rdfs:label "Ladenprojekt „krimzkrams“" .
+
+<http://leipzig-data.de/Data/Ort/LeipzigerFischwelt>
+    ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.EngelsdorferStrasse.377> ;
+    a ld:Ort ;
+    rdfs:label "Bildungs- und Informationszentrum „Leipziger Fischwelt“" .
 
 <http://leipzig-data.de/Data/Ort/Phyllodrom>
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.DelitzscherLandstrasse.38> ;
@@ -189,8 +208,8 @@
     foaf:homepage <http://www.leipziggruen.de/de/2015_RobertKoch.asp> .
 
 <http://leipzig-data.de/Data/Ort/Stadtgarten.Connewitz>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.KohrenerStrasse.3> ;
     ld:erreichbar "SB 11 Hildebrandstraße" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.KohrenerStrasse.3> ;
     a ld:Ort ;
     rdfs:label "Stadtgarten Connewitz des Ökolöwe - Umweltbund Leipzig e. V." .
 
@@ -211,6 +230,19 @@
     foaf:homepage <http://www.ufz-schuelerlabor.de> ;
     foaf:mbox "schuelerlabor@ufz.de" ;
     foaf:phone "0341-235-1830", "0341-2351845" .
+
+<http://leipzig-data.de/Data/Ort/UniLeipzig.Leibniz>
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
+    a ld:Ort ;
+    rdfs:label "Leibnizdenkmal Uni-Innenhof Augustusplatz" .
+
+<http://leipzig-data.de/Data/Ort/VerbraucherzentraleSachsen>
+    ld:erreichbar "SB, Busse und S-Bahn bis Hauptbahnhof" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen> ;
+    a ld:Ort ;
+    rdfs:label "Verbraucherzentrale Sachsen" ;
+    foaf:homepage <http://www.verbraucherzentrale-sachsen.de> .
 
 <http://leipzig-data.de/Data/Ort/VillaHasenholz>
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Gustav-Esche-Strasse.1> ;
@@ -382,11 +414,11 @@
 
 <http://leipzig-data.de/Data/Veranstaltung.07>
     ld:Altersgruppe "6-12 Jahre" ;
-    ld:Anmerkung "Anmeldung erwünscht, Max. 22 Personen. Für Gruppen geeignet." ; 
+    ld:Anmerkung "Anmeldung erwünscht, Max. 22 Personen. Für Gruppen geeignet." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.3>, <http://leipzig-data.de/Data/Themenbereich.4> ;
     ld:Kosten "3,00 Euro mit FP / 4,00 Euro ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/Oekoloewe> ;
-    ld:Veranstaltungsmodus "Mi. 04.07., 10:00 – 12:00 Uhr" ; 
+    ld:Veranstaltungsmodus "Mi. 04.07., 10:00 – 12:00 Uhr" ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
     a nl:Event ;
     rdfs:label "Gutes aus der Hofküche" ;
@@ -394,11 +426,11 @@
 
 <http://leipzig-data.de/Data/Veranstaltung.08>
     ld:Altersgruppe "6-12 Jahre" ;
-    ld:Anmerkung "Anmeldung erwünscht, Max. 22 Personen. Für Gruppen geeignet." ; 
+    ld:Anmerkung "Anmeldung erwünscht, Max. 22 Personen. Für Gruppen geeignet." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.3>, <http://leipzig-data.de/Data/Themenbereich.4> ;
     ld:Kosten "3,00 Euro mit FP / 4,00 Euro ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/Oekoloewe> ;
-    ld:Veranstaltungsmodus "Mi. 11.07., 10:00 – 12:00 Uhr" ; 
+    ld:Veranstaltungsmodus "Mi. 11.07., 10:00 – 12:00 Uhr" ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Stadtgarten.Connewitz> ;
     a nl:Event ;
     rdfs:label "Aufruhr im Gemüsebeet" ;
@@ -408,13 +440,13 @@
     ld:Altersgruppe "6-12 Jahre" ;
     ld:Anmerkung "Anmeldung erwünscht, Max. 22 Personen. Für Gruppen geeignet." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.3>, <http://leipzig-data.de/Data/Themenbereich.4> ;
-    ld:Kosten "nicht angegeben" ;
+    ld:Kosten "3,00 Euro mit FP / 4,00 Euro ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/Oekoloewe> ;
-    ld:Veranstaltungsmodus "Mi. 18.07., 10:00 – 12:00 Uhr" ; 
+    ld:Veranstaltungsmodus "Mi. 18.07., 10:00 – 12:00 Uhr" ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
     a nl:Event ;
     rdfs:label "Vom Korn zum Brot" ;
-    ical:description "Wir werden Bio-Brötchen selber backen" .
+    ical:description "Wir werden Bio-Brötchen selber backen." .
 
 <http://leipzig-data.de/Data/Veranstaltung.10>
     ld:Altersgruppe "bis 12 Jahre" ;
@@ -423,8 +455,6 @@
     ld:Kosten "mit Material 2 Euro pro Schüler" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/OrangUtansinNot> ;
     ld:Veranstaltungsmodus "Ferienprogramm von Orang-Utans in Not e.V., jeweils ca. 3h in einem daran interessierten Hort." ;
-    a nl:Event ;
-    rdfs:label "Affenstarker Ferienspaß mit Orang-Utans" ;
     ld:langerText """Die großen Menschenaffen sind unsere nächsten Verwandten. Spielerisch lernen die Kinder, wo und
 wie Orang-Utan, Schimpanse und Co. leben und wodurch sie sich von den anderen Affen
 unterscheiden. Nach einem kleinen Affen-Snack basteln wir Orang-Utan-Masken und testen unsere
@@ -434,6 +464,8 @@ Anmerkung: Ich teile die Kinder in vier Gruppen (= 4 Menschenaffenarten) und bau
 auf, indem die Kinder Dinge erraten müssen oder ich die Zeit stoppe und das schnellste Team einen
 Punkt bekommt. Am Ende erhält jedes Kind einen Stundenplan und einen Button. Das Siegerteam
 bekommt zusätzlich etwas zum Naschen.""" ;
+    a nl:Event ;
+    rdfs:label "Affenstarker Ferienspaß mit Orang-Utans" ;
     ical:description "Die großen Menschenaffen sind unsere nächsten Verwandten. Spielerisch lernen die Kinder, wo und wie Orang-Utan, Schimpanse und Co. leben und wodurch sie sich von den anderen Affen unterscheiden. Nach einem kleinen Affen-Snack basteln wir Orang-Utan-Masken und testen unsere kognitiven Fähigkeiten, indem wir Studien aus der Verhaltensforschung ausprobieren. " ;
     foaf:homepage <https://www.orang-utans-in-not.org> .
 
@@ -441,11 +473,12 @@ bekommt zusätzlich etwas zum Naschen.""" ;
     ld:Altersgruppe "bis 12 Jahre" ;
     ld:Anmerkung "Nur für Hortgruppen, 12 bis max. 24 Kinder. Wir kommen zu Ihnen. Vereinbarung erforderlich.  NICHT für Kinder mit Nuss-Allergie geeignet!" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.2>, <http://leipzig-data.de/Data/Themenbereich.6> ;
-    ld:Kosten "mit Material: 2 €/Schüler/Projekttag" ;
+    ld:Kosten "mit Material: 2 Euro pro Schüler" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/OrangUtansinNot> ;
     ld:Veranstaltungsmodus "Ferienprogramm von Orang-Utans in Not e.V., jeweils ca. 3h in einem daran interessierten Hort." ;
     a nl:Event ;
     rdfs:label "Regenwald zum Frühstück?!" ;
+    ical:description "In unserem Alltag verwenden wir viele Produkte, deren Inhaltsstoffe aus dem Regenwald stammen. Orang-Utans in Not e.V. nimmt mit den Kindern deren Lieblingsbrotaufstrich unter die Lupe. Am Beispiel von Palmöl wird ein Bewusstsein für den Zusammenhang zwischen unserem Kaufverhalten und dem Regenwald geschaffen. Die Kinder agieren als Schokocreme-Tester und dürfen eine eigene Schokocreme herstellen. Wer ein kleines Gefäß mitbringt, darf eine Kostprobe mit nach Hause nehmen. " ;
     ical:langerText """In unserem Alltag verwenden wir viele Produkte, deren Inhaltsstoffe aus dem Regenwald stammen.
 Orang-Utans in Not e.V. nimmt mit den Kindern deren Lieblingsbrotaufstrich unter die Lupe. Am
 Beispiel von Palmöl wird ein Bewusstsein für den Zusammenhang zwischen unserem Kaufverhalten
@@ -458,11 +491,11 @@ Anschließend dürfen die Kinder Verpackungen sortieren (Palmöl ja/nein). Ich z
 zum Schluss kreieren wir unseren eigenen Aufstrich (hier können wir auch 2 verschiedene Rezepte
 testen). Wer möchte, kann sich eine Kostprobe mit nach Hause nehmen, bzw. der Hort behält den
 Aufstrich.""" ;
-    ical:description "In unserem Alltag verwenden wir viele Produkte, deren Inhaltsstoffe aus dem Regenwald stammen. Orang-Utans in Not e.V. nimmt mit den Kindern deren Lieblingsbrotaufstrich unter die Lupe. Am Beispiel von Palmöl wird ein Bewusstsein für den Zusammenhang zwischen unserem Kaufverhalten und dem Regenwald geschaffen. Die Kinder agieren als Schokocreme-Tester und dürfen eine eigene Schokocreme herstellen. Wer ein kleines Gefäß mitbringt, darf eine Kostprobe mit nach Hause nehmen. " ;
     foaf:homepage <https://www.orang-utans-in-not.org> .
 
 <http://leipzig-data.de/Data/Veranstaltung.12>
     ld:Altersgruppe "nicht bekannt" ;
+    ld:Anmerkung "Anmeldung erforderlich" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.3> ;
     ld:Kosten "Ferienwoche 158 Euro, einzelne Tage 42 Euro, Mittagessen 3,70 Euro/Tag" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/ErfinderKinder> ;
@@ -475,6 +508,7 @@ Aufstrich.""" ;
 
 <http://leipzig-data.de/Data/Veranstaltung.13>
     ld:Altersgruppe "nicht bekannt" ;
+    ld:Anmerkung "Anmeldung erforderlich" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.3> ;
     ld:Kosten "Ferienwoche 158 Euro, einzelne Tage 42 Euro, Mittagessen 3,70 Euro/Tag" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/ErfinderKinder> ;
@@ -487,6 +521,7 @@ Aufstrich.""" ;
 
 <http://leipzig-data.de/Data/Veranstaltung.14>
     ld:Altersgruppe "nicht bekannt" ;
+    ld:Anmerkung "Anmeldung erforderlich" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.3> ;
     ld:Kosten "Ferienwoche 158 Euro, einzelne Tage 42 Euro, Mittagessen 3,70 Euro/Tag" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/ErfinderKinder> ;
@@ -499,7 +534,7 @@ Aufstrich.""" ;
 
 <http://leipzig-data.de/Data/Veranstaltung.15>
     ld:Altersgruppe "ab 10 Jahre" ;
-    ld:Anmerkung "Max. 8 Teilnehmer, Anmeldungen bitte unter buero@kunzstofe.de oder 0163-4846916" ; 
+    ld:Anmerkung "Max. 8 Teilnehmer, Anmeldungen bitte unter buero@kunzstofe.de oder 0163-4846916" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.6>, <http://leipzig-data.de/Data/Themenbereich.1> ;
     ld:Kosten "6 Euro mit Ferienpass, 8 Euro ohne Ferienpass" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/Kunzstoffe> ;
@@ -508,10 +543,11 @@ Aufstrich.""" ;
     a nl:Event ;
     rdfs:label "UPCYCLING! Mach was Cooles aus Müll!" ;
     ical:description "Gebrauchte Plastiktüten kommen in die Tonne? Ist nur noch ne olle Tüte?? Falsch gedacht! Und uncool! Mach dir doch lieber ein Outdoor-Sitzkissen daraus, was kein anderer hat. Gestalte mit uns aus Müll kreative Unikate, die auch noch die Umwelt schonen." ;
-    foaf:homepage <http://www.kunzstoffe.de>  .
+    foaf:homepage <http://www.kunzstoffe.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.16>
     ld:Altersgruppe "nicht bekannt" ;
+    ld:Anmerkung "Anmeldung erforderlich" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.3> ;
     ld:Kosten "nicht bekannt" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/ErfinderKinder> ;
@@ -548,7 +584,7 @@ Aufstrich.""" ;
 
 <http://leipzig-data.de/Data/Veranstaltung.17c>
     ld:Altersgruppe "für alle" ;
-    ld:Anmerkung "NICHT für Nuss-Allergiker!" ;   
+    ld:Anmerkung "NICHT für Nuss-Allergiker!" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.2>, <http://leipzig-data.de/Data/Themenbereich.6> ;
     ld:Kosten "2,50 Euro mit FP / 2,50 Euro ohne FP (mit Material)" ;
     ld:Veranstalter <http://leipzig-data.de/Verein/Phyllodrom> ;
@@ -561,7 +597,7 @@ Aufstrich.""" ;
 
 <http://leipzig-data.de/Data/Veranstaltung.17d>
     ld:Altersgruppe "für alle" ;
-    ld:Anmerkung "Nur für Gruppen. Anmeldung erforderlich." ;   
+    ld:Anmerkung "Nur für Gruppen. Anmeldung erforderlich." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.2>, <http://leipzig-data.de/Data/Themenbereich.6> ;
     ld:Kosten "3,00 Euro mit FP / 4,50 Euro ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Verein/Phyllodrom> ;
@@ -574,49 +610,46 @@ Aufstrich.""" ;
 
 <http://leipzig-data.de/Data/Veranstaltung.18>
     ld:Altersgruppe "nicht bekannt" ;
+    ld:Anmerkung "Veranstaltungsort nicht bekannt" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.3> ;
     ld:Kosten "nicht bekannt" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/Alltagsinstitut> ;
     ld:Veranstaltungsmodus "Wöchentliche Kurse zum Thema praktische nachhaltige Umweltbildung" ;
     a nl:Event ;
-    ld:Anmerkung "Veranstaltungsort nicht bekannt" ;
     rdfs:label "Weiterverarbeitung von Alltagsmaterialien" ;
     foaf:homepage <http://www.alltagsinstitut.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.19>
     ld:Altersgruppe "nicht bekannt" ;
+    ld:Anmerkung "Veranstaltungsort nicht bekannt" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.3> ;
     ld:Kosten "nicht bekannt" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/Alltagsinstitut> ;
     ld:Veranstaltungsmodus "Wöchentliche Kurse zum Thema praktische nachhaltige Umweltbildung" ;
     a nl:Event ;
-    ld:Anmerkung "Veranstaltungsort nicht bekannt" ;
     rdfs:label "Achtsamkeitstraining mit Alltagsmaterialien" ;
     foaf:homepage <http://www.alltagsinstitut.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.20>
     ld:Altersgruppe "9.-11. Klasse" ;
+    ld:Anmerkung "Veranstaltungsort nicht bekannt" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.2> ;
     ld:Kosten "nicht bekannt" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/GeoWerkstattLeipzig> ;
     ld:Veranstaltungsmodus "nicht bekannt" ;
     a nl:Event ;
-    ld:Anmerkung "Veranstaltungsort nicht bekannt" ;
     rdfs:label "Workshop zu nachhaltiger Mobilität" ;
     ical:description "Workshop zu nachhaltiger Mobilität (ca. 9.-11. Klasse) oder Umweltbildungsangebote z.B. im Auwald. " ;
     foaf:homepage <http://www.geowerkstatt.com> .
 
 <http://leipzig-data.de/Data/Veranstaltung.21>
     ld:Altersgruppe "Technikfans zwischen 12 und 16 Jahren" ;
-    ld:Anmerkung "Anmeldung bis zum 30.05. an drelk@rennstall-rabutz.de. erforderlich. " ; 
+    ld:Anmerkung "Anmeldung bis zum 30.05. an drelk@rennstall-rabutz.de. erforderlich. " ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.3> ;
     ld:Kosten "120,00 Euro" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/Rabutz.TOeP> ;
     ld:Veranstaltungsmodus "Feriencamp, 2.7. bis 6.7.2018, Beginn am 02.07. 09:00 Uhr in Rabutz" ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Rabutz.TOeP> ;
-    a nl:Event ;
-    rdfs:label "Sommercamp für junge Technikfans zwischen 12 und 16 Jahren im TÖP Rabutz" ;
-    ical:description "Sommercamp im Technisch ökologische Jugendprojektzentrum Rabutz. <br/> Im Mittelpunkt steht in diesem Jahr unsere Gartenbahn (Spurweite 143 mm). Die Anlage verfügt über 100 m Gleis, 5 Weichen und 4 Bahnhöfe. Die Bahn fährt durch 2 Tunnel und bekommt alle Energie von eigenen Solaranlagen. <br/>Wir werden in diesem Jahr die Anlage für die computergesteuerten Triebfahrzeuge (1 V36 und 1 RegioShuttle) fertigstellen und dann testen. Jede Gruppe wird unter Anleitung eines erfahrenen Clubmitgliedes für einen Bahnhof das Stellwerk, die Infrarotsignalgeber und die Weichen in Betrieb nehmen.  Du erlebst dabei, welchen Spaß es macht, ausgehend von einer realen Aufgabe eine Lösung auszudenken und dann zu bauen. <br/>Natürlich kommen die Fahrten mit unseren E-Flitzern auch nicht zu kurz. Auch die Flitzer bekommen ihre Energie auch nur von der Sonne." ; 
     ld:langerText """Auch in diesem Jahr führt das Technisch ökologische Jugendprojektzentrum Rabutz wieder ein Sommercamp durch und Du kannst dabei sein.
 Im Mittelpunkt steht in diesem Jahr unsere Gartenbahn (Spurweite 143mm).
 Die Anlage verfügt über 100m Gleis, 5 Weichen und 4 Bahnhöfe. Die Bahn fährt durch 2 Tunnel und bekommt alle Energie von eigenen Solaranlagen.
@@ -636,6 +669,9 @@ Am Freitag den 06.07. bereiten wir nach dem Mittagessen das Abschlussfest vor, z
 	Das Abschlussfest beginnt 15:00 Uhr im Garten vor dem Solarcafé. Nach dem Essen solltet Ihr dann Euren Eltern das vorführen, woran Ihr mitgearbeitet habt.
 Das Ganze kostet Euch 120,00 € . 
 Bitte meldet Euch bis zum 30.05. bei uns an. Bitte sendet eure Anmeldung an drelk@rennstall-rabutz.de. """ ;
+    a nl:Event ;
+    rdfs:label "Sommercamp für junge Technikfans zwischen 12 und 16 Jahren im TÖP Rabutz" ;
+    ical:description "Sommercamp im Technisch ökologische Jugendprojektzentrum Rabutz. <br/> Im Mittelpunkt steht in diesem Jahr unsere Gartenbahn (Spurweite 143 mm). Die Anlage verfügt über 100 m Gleis, 5 Weichen und 4 Bahnhöfe. Die Bahn fährt durch 2 Tunnel und bekommt alle Energie von eigenen Solaranlagen. <br/>Wir werden in diesem Jahr die Anlage für die computergesteuerten Triebfahrzeuge (1 V36 und 1 RegioShuttle) fertigstellen und dann testen. Jede Gruppe wird unter Anleitung eines erfahrenen Clubmitgliedes für einen Bahnhof das Stellwerk, die Infrarotsignalgeber und die Weichen in Betrieb nehmen.  Du erlebst dabei, welchen Spaß es macht, ausgehend von einer realen Aufgabe eine Lösung auszudenken und dann zu bauen. <br/>Natürlich kommen die Fahrten mit unseren E-Flitzern auch nicht zu kurz. Auch die Flitzer bekommen ihre Energie auch nur von der Sonne." ;
     foaf:homepage <http://www.rennstall-rabutz.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.22>
@@ -644,8 +680,8 @@ Bitte meldet Euch bis zum 30.05. bei uns an. Bitte sendet eure Anmeldung an drel
     ld:Einordnung <http://leipzig-data.de/Data/Modul.3>, <http://leipzig-data.de/Data/Themenbereich.4> ;
     ld:Kosten "nicht bekannt" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/Heldenkueche> ;
-    ld:Veranstaltungort <http://leipzig-data.de/Data/Ort/Robert-Koch-Park> ;
     ld:Veranstaltungsmodus "12.07.2018, 10-13 Uhr" ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Robert-Koch-Park> ;
     a nl:Event ;
     rdfs:label "Bunte Schnittchen mit Fantasie" ;
     ical:description "Werdet Teil des Teams im kleinen Restaurant bei dem Ferienprogramm \"Stadt in der Stadt\". Wir schnippeln, schwatzen, zeichnen und bereiten alles für die Buffeteröffnung um 12 Uhr vor. Frisch gebackene Bäckerbrote, cremiger Frischkäse, knackiges Gemüse und duftende Kräuter schmücken unseren Tisch. - Das wird unsere Gäste begeistern. Die heldenküche freut sich auf einen ganz besonderen Ferientag mit euch." ;
@@ -657,12 +693,12 @@ Bitte meldet Euch bis zum 30.05. bei uns an. Bitte sendet eure Anmeldung an drel
     ld:Einordnung <http://leipzig-data.de/Data/Modul.6>, <http://leipzig-data.de/Data/Themenbereich.1> ;
     ld:Kosten "Spendenbasis" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/LebenLernenLeipzig> ;
-    ld:Veranstaltungort <http://leipzig-data.de/Data/Ort/Cafe.Kaputt> ;
     ld:Veranstaltungsmodus """außer an Feiertagen
 immer Dienstags 18-20 Uhr - Heimwerk-Sprechstunde: Alles Mechanische, alles aus Holz, Plastik, Keramik, etc.
 immer Dienstags 16-18 Uhr und Mittwochs 15-19.30 Uhr - Technik-Sprechstunde: Alles mit Stecker
 immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
 """ ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Cafe.Kaputt> ;
     a nl:Event ;
     rdfs:label "Reparatur eines Alltagsgegenstandes im Café kaputt" ;
     ical:description "Du kommst zu einer unserer wöchentlichen, offenen Reparatursprechstunden zum Thema Heimwerken, Technik oder Textil und reparierst dort - unter Anleitung unserer Reparaturexpert*innen - einen Alltagsgegenstand von Dir. Mit der Reparatur lernst Du Deine Dinge besser kennen, eignest Dir handwerkliche Fähigkeiten an und leistest außerdem noch einen kleinen Beitrag gegen die Wegwerfgesellschaft und für einen nachhaltigeren Lebensstil. " ;
@@ -670,12 +706,12 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
 
 <http://leipzig-data.de/Data/Veranstaltung.24>
     ld:Altersgruppe "9-15 Jahre" ;
-    ld:Anmerkung "Mitzubringen: Kleidung, die auch ein bisschen schmutzig werden darf." ; 
+    ld:Anmerkung "Mitzubringen: Kleidung, die auch ein bisschen schmutzig werden darf." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.6>, <http://leipzig-data.de/Data/Themenbereich.4> ;
     ld:Kosten "10 Euro pro Person" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/Annalinde> ;
-    ld:Veranstaltungort <http://leipzig-data.de/Data/Ort/Annalinde> ;
-    ld:Veranstaltungsmodus "28.08. und 29.08. jeweils 09:00-11:30 Uhr "; 
+    ld:Veranstaltungsmodus "28.08. und 29.08. jeweils 09:00-11:30 Uhr " ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Annalinde> ;
     a nl:Event ;
     rdfs:label "Ab auf den Acker" ;
     ical:description "Schon mal ein Gewächshaus im Gewächshaus gesehen? Was ist eine Bienenbeute? 28 verschiedene Tomatensorten? Ein Kompost der 60°C heiß wird? Warum ist der Baum weiß angestrichen? <br/> Anhand verschiedener Stationen wird in diesem Workshop praxisnahes Wissen über die Prinzipen des Ökolandbaus vermittelt und anschaulich erklärt, wie biologischer Anbau von Obst und Gemüse mitten in der Stadt funktionieren kann. " ;
@@ -687,8 +723,8 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:Einordnung <http://leipzig-data.de/Data/Modul.1>, <http://leipzig-data.de/Data/Themenbereich.4> ;
     ld:Kosten "4 Euro pro Person" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/Annalinde> ;
-    ld:Veranstaltungort <http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten> ;
     ld:Veranstaltungsmodus "25.08., 10:00-13:00 Uhr" ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten> ;
     a nl:Event ;
     rdfs:label "Workshop „Ökologische Bienenhaltung“" ;
     ical:description "Sirid und Jörg von der Demeter-Imkerei „KirschenGarten“ geben einen Einblick in die wesensgemäße Bienenhaltung in Stadt und Land. Direkt an den Beuten lernen wir gemeinsam mehr über die Bienen und können Honig kosten." ;
@@ -712,7 +748,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:Kosten "2,00 Euro mit FP / 3,00 Euro ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/EineWelt> ;
     ld:Veranstaltungsmodus "03.-06.07. und 09.-12.07., täglich 10:00 – 12:00 Uhr" ;
-    ld:Veranstaltungsort <http://leipzig-data.de/Data/Verein/EineWelt> ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/EineWelt.Laden> ;
     a nl:Event ;
     rdfs:label "Schokoladenwerkstatt" ;
     ical:description "Anbau von Kakao, Situation der Kakaobauernfamilien, Schokolade selbst herstellen" ;
@@ -725,7 +761,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:Kosten "keine" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen> ;
     ld:Veranstaltungsmodus "Mi. 11.07. und Do. 02.08., jeweils 10:30 – 12:00 Uhr" ;
-    ld:Veranstaltungsort <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/VerbraucherzentraleSachsen> ;
     a nl:Event ;
     rdfs:label "Was kostet das Leben?" ;
     ical:description "Nachhaltiger Umgang mit dem ersten Geld - Welche monatlichen Kosten fallen für den eigenen Haushalt an und was ist bei Verträgen und Versicherungen zu beachten." ;
@@ -738,7 +774,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:Kosten "0 Euro mit FP / 2,00 Euro ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen> ;
     ld:Veranstaltungsmodus "Do 05.07. und Do 12.07., jeweils 10:30 – 12:00 Uhr" ;
-    ld:Veranstaltungsort <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/VerbraucherzentraleSachsen> ;
     a nl:Event ;
     rdfs:label "Ess-Kult-Tour" ;
     ical:description "Spuren suchen, Umweltfolgen bilanzieren, Zutaten checken, Chefkoch sein – an interaktiven Stationen lernt ihr eurer Einkaufs- und Essverhalten zu reflektieren." ;
@@ -746,7 +782,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
 
 <http://leipzig-data.de/Data/Veranstaltung.30>
     ld:Altersgruppe "8 bis 14 Jahre" ;
-    ld:Anmerkung "Führungen von Gruppen nur nach Voranmeldung." ; 
+    ld:Anmerkung "Führungen von Gruppen nur nach Voranmeldung." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.1>, <http://leipzig-data.de/Data/Themenbereich.6> ;
     ld:Kosten "kostenfrei" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/AnglerverbandLeipzig> ;
@@ -759,21 +795,21 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
 
 <http://leipzig-data.de/Data/Veranstaltung.32>
     ld:Altersgruppe "1. bis 12. Klasse" ;
-    ld:Anmerkung "Nur für Gruppen etwa gleich alter Teilnehmer. Voranmeldung erforderlich." ; 
+    ld:Anmerkung "Nur für Gruppen etwa gleich alter Teilnehmer. Voranmeldung erforderlich." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.3> ;
     ld:Kosten "3 Euro" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/LSGM> ;
     ld:Veranstaltungsmodus "Nach Voranmeldung, mo-fr 9/11/13 Uhr." ;
-    ld:Veranstaltungsort <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Leibniz> ;
     a nl:Event ;
     rdfs:label "Mathematische Stadtrallye der Leipziger Schülergesellschaft für Mathematik" ;
     ical:description "Auf unserer mathematischen Rallye durch Leipzig lösen die Teilnehmer verschiedene praktische Aufgaben zum Schätzen, Messen, Knobeln, Rechnen und Vergleichen, schärfen ihren mathematischen Blick und lernen die mathematischen Dimensionen der Leipziger Innenstadt kennen. <br/> Unser Angebot ist für Schüler aller Altersstufen geeignet. Wir haben anspruchsvolle Aufgaben für jüngere und ältere Klassenstufen im Angebot. " ;
     foaf:homepage <http://www.lsgm.de> .
 
 <http://leipzig-data.de/Data/Verein/AnglerverbandLeipzig>
+    ld:contact "Michael Dorn, M.Dorn@anglerverband-leipzig.de" ;
     ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.EngelsdorferStrasse.377> ;
     a ld:Verein, nl:Partner ;
-    ld:contact "Michael Dorn, M.Dorn@anglerverband-leipzig.de" ; 
     rdfs:label "Anglerverband Leipzig e.V." ;
     foaf:homepage <http://www.anglerverband-leipzig.de> ;
     foaf:mbox "birgitholzmann@anglerverband-leipzig.de" ;
@@ -839,17 +875,6 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     foaf:homepage <http://www.inspirata.de> ;
     foaf:mbox "kontakt@inspirata.de" ;
     foaf:phone "0341-1259757", "0341-35572923" .
-
-<http://leipzig-data.de/Data/Ort/Ladenprojekt.Krimzkrams>
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.7> ;
-    a ld:Ort ;
-    rdfs:label "Ladenprojekt „krimzkrams“" ;
-    ld:erreichbar "SB 7, Bus 130/131 bis Georg-Schwarz-Straße/Merseburger Straße" .
-
-<http://leipzig-data.de/Data/Ort/LeipzigerFischwelt>
-    ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.EngelsdorferStrasse.377>;
-    a ld:Ort ;
-    rdfs:label "Bildungs- und Informationszentrum „Leipziger Fischwelt“"  .
 
 <http://leipzig-data.de/Data/Verein/Kunzstoffe>
     ld:contact "Antje und Marlene" ;
