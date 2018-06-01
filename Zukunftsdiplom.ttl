@@ -26,6 +26,20 @@
     foaf:mbox "info@alltagsinstitut.de" ;
     foaf:phone "0176-81092584" .
 
+<http://leipzig-data.de/Data/Ort/Annalinde>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
+    a ld:Ort ;
+    ld:erreichbar "SB 8, 15 bis Henriettenstraße" ; 
+    rdfs:label "Annalinde" ;
+    foaf:homepage <http://www.annalinde-leipzig.de> .
+
+<http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.RoeckenerStrasse.38> ;
+    a ld:Ort ;
+    ld:erreichbar "SB 14 bis Bahnhof Plagwitz" ; 
+    rdfs:label "Annalinde Obstgarten im Bürgerbahnhof Plagwitz" ;
+    foaf:homepage <http://www.annalinde-leipzig.de> .
+
 <http://leipzig-data.de/Data/Firma/Annalinde>
     ld:contact "Alice Wichtmann, a.wichtmann@annalinde-leipzig.de" ;
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
@@ -112,7 +126,7 @@
     foaf:homepage <http://www.auwaldstation.de> .
 
 <http://leipzig-data.de/Data/Ort/Cafe.Kaputt>
-    ld:erreichbar "Tram 7, Haltestelle Georg-Schwarz-Stzraße/Mersebuger Straße" ;
+    ld:erreichbar "SB 7 bis Georg-Schwarz-Stzraße/Mersebuger Straße" ;
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.102> ;
     ld:hasAddressAddendum "Hinterhaus, Unser Tor zum Hof befindet sich schräg gegenüber der Tankstelle" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/LebenLernenLeipzig> ;
@@ -367,39 +381,40 @@
     ical:url <http://www.wildparkverein-leipzig.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.07>
-    ld:Altersgruppe "nicht angegeben" ;
+    ld:Altersgruppe "6-12 Jahre" ;
+    ld:Anmerkung "Anmeldung erwünscht, Max. 22 Personen. Für Gruppen geeignet." ; 
     ld:Einordnung <http://leipzig-data.de/Data/Modul.3>, <http://leipzig-data.de/Data/Themenbereich.4> ;
-    ld:Kosten "nicht angegeben" ;
+    ld:Kosten "3,00 Euro mit FP / 4,00 Euro ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/Oekoloewe> ;
-    ld:Veranstaltungsmodus "nicht angegeben" ;
+    ld:Veranstaltungsmodus "Mi. 04.07., 10:00 – 12:00 Uhr" ; 
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
     a nl:Event ;
     rdfs:label "Gutes aus der Hofküche" ;
-    ical:description "zu ergänzen" ;
-    ical:url <http://www.doelitzer-wassermuehle.de/> .
+    ical:description "Wir lernen, wie man Butter und Milchshakes selbst herstellt." .
 
 <http://leipzig-data.de/Data/Veranstaltung.08>
-    ld:Altersgruppe "nicht angegeben" ;
+    ld:Altersgruppe "6-12 Jahre" ;
+    ld:Anmerkung "Anmeldung erwünscht, Max. 22 Personen. Für Gruppen geeignet." ; 
     ld:Einordnung <http://leipzig-data.de/Data/Modul.3>, <http://leipzig-data.de/Data/Themenbereich.4> ;
-    ld:Kosten "nicht angegeben" ;
+    ld:Kosten "3,00 Euro mit FP / 4,00 Euro ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/Oekoloewe> ;
-    ld:Veranstaltungsmodus "nicht angegeben" ;
+    ld:Veranstaltungsmodus "Mi. 11.07., 10:00 – 12:00 Uhr" ; 
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Stadtgarten.Connewitz> ;
     a nl:Event ;
-    rdfs:label "Aufruhr im Gemüsebeet. Wir erkunden einen Biogarten" ;
-    ical:description "zu ergänzen" .
+    rdfs:label "Aufruhr im Gemüsebeet" ;
+    ical:description "Wir erkunden einen Biogarten." .
 
 <http://leipzig-data.de/Data/Veranstaltung.09>
-    ld:Altersgruppe "nicht angegeben" ;
+    ld:Altersgruppe "6-12 Jahre" ;
+    ld:Anmerkung "Anmeldung erwünscht, Max. 22 Personen. Für Gruppen geeignet." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.3>, <http://leipzig-data.de/Data/Themenbereich.4> ;
     ld:Kosten "nicht angegeben" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/Oekoloewe> ;
-    ld:Veranstaltungsmodus "nicht angegeben" ;
+    ld:Veranstaltungsmodus "Mi. 18.07., 10:00 – 12:00 Uhr" ; 
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
     a nl:Event ;
-    rdfs:label "Vom Korn zum Brot: Bio-Brötchen selber backen" ;
-    ical:description "zu ergänzen" ;
-    ical:url <http://www.doelitzer-wassermuehle.de/> .
+    rdfs:label "Vom Korn zum Brot" ;
+    ical:description "Wir werden Bio-Brötchen selber backen" .
 
 <http://leipzig-data.de/Data/Veranstaltung.10>
     ld:Altersgruppe "bis 12 Jahre" ;
@@ -654,12 +669,13 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     foaf:homepage <http://reparieren-in-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Veranstaltung.24>
-    ld:Altersgruppe "nicht spezifiziert" ;
+    ld:Altersgruppe "9-15 Jahre" ;
+    ld:Anmerkung "Mitzubringen: Kleidung, die auch ein bisschen schmutzig werden darf." ; 
     ld:Einordnung <http://leipzig-data.de/Data/Modul.6>, <http://leipzig-data.de/Data/Themenbereich.4> ;
-    ld:Kosten "4 Euro pro Person" ;
+    ld:Kosten "10 Euro pro Person" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/Annalinde> ;
-    ld:Veranstaltungort <http://leipzig-data.de/Data/Firma/Annalinde> ;
-    ld:Veranstaltungsmodus "In der letzten Augustwoche mit 1-2 Terminen" ;
+    ld:Veranstaltungort <http://leipzig-data.de/Data/Ort/Annalinde> ;
+    ld:Veranstaltungsmodus "28.08. und 29.08. jeweils 09:00-11:30 Uhr "; 
     a nl:Event ;
     rdfs:label "Ab auf den Acker" ;
     ical:description "Schon mal ein Gewächshaus im Gewächshaus gesehen? Was ist eine Bienenbeute? 28 verschiedene Tomatensorten? Ein Kompost der 60°C heiß wird? Warum ist der Baum weiß angestrichen? <br/> Anhand verschiedener Stationen wird in diesem Workshop praxisnahes Wissen über die Prinzipen des Ökolandbaus vermittelt und anschaulich erklärt, wie biologischer Anbau von Obst und Gemüse mitten in der Stadt funktionieren kann. " ;
@@ -671,11 +687,11 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:Einordnung <http://leipzig-data.de/Data/Modul.1>, <http://leipzig-data.de/Data/Themenbereich.4> ;
     ld:Kosten "4 Euro pro Person" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/Annalinde> ;
-    ld:Veranstaltungort <http://leipzig-data.de/Data/Firma/Annalinde> ;
-    ld:Veranstaltungsmodus "25. August 2018" ;
+    ld:Veranstaltungort <http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten> ;
+    ld:Veranstaltungsmodus "25.08., 10:00-13:00 Uhr" ;
     a nl:Event ;
     rdfs:label "Workshop „Ökologische Bienenhaltung“" ;
-    ical:description "Workshop „Ökologische Bienenhaltung“" ;
+    ical:description "Sirid und Jörg von der Demeter-Imkerei „KirschenGarten“ geben einen Einblick in die wesensgemäße Bienenhaltung in Stadt und Land. Direkt an den Beuten lernen wir gemeinsam mehr über die Bienen und können Honig kosten." ;
     foaf:homepage <https://annalinde-leipzig.de/wordpress_relaunch/events/oekologische-bienenhaltung-2/> .
 
 <http://leipzig-data.de/Data/Veranstaltung.26>
@@ -828,7 +844,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.7> ;
     a ld:Ort ;
     rdfs:label "Ladenprojekt „krimzkrams“" ;
-    ld:erreichbar "Straßenbahn 7, Bus 130/131 bis Georg-Schwarz-Straße/Merseburger Straße" .
+    ld:erreichbar "SB 7, Bus 130/131 bis Georg-Schwarz-Straße/Merseburger Straße" .
 
 <http://leipzig-data.de/Data/Ort/LeipzigerFischwelt>
     ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.EngelsdorferStrasse.377>;
