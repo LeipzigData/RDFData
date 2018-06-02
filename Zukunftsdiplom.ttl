@@ -132,7 +132,7 @@
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/LebenLernenLeipzig> ;
     a ld:Ort ;
     rdfs:label "Café kaputt" ;
-    foaf:homepage <http://reparieren-in-leipzig.de/>, <http://www.facebook.com/cafekaputt> .
+    foaf:homepage <http://reparieren-in-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Ort/ComputerSpielSchule>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.2> ;
@@ -215,10 +215,6 @@
 
 <http://leipzig-data.de/Data/Ort/UFZ.Schuelerlabor>
     ld:Kosten "5,00 Euro pro Schüler" ;
-    ld:Kurzinformation "Chemisch-biologische Experimente, auch Mathematik, Geologie, Hydrologie, Biotechnologie, Drogenprävention", "Das UFZ-Schülerlabor ist eine Einrichtung, die Schülern der Klassenstufen 10 bis 13 die Chance bietet, in einem authentischen Umfeld in die Rolle von Wissenschaftlern zu schlüpfen und deren Alltag zu erleben. Die Experimente im Schülerlabor sind aktuellen Forschungsprojekten des UFZ entliehen. Alle Schülerversuche lassen sich gut in den Unterricht integrieren, da sie in Anlehnung an den aktuellen Lehrplan ausgewählt worden sind." ;
-    ld:Oeffnungszeiten "Versuche im Schülerlabor sind nur im Klassenverband als Schulveranstaltung ab Klassenstufe 10 möglich. Eine vorherige Terminabsprache ist notwendig." ;
-    ld:Teilnahmebedingungen "keine" ;
-    ld:Zielgruppe "Lehrer und Referendare für Fortbildungen", "Schülerinnen und Schüler ab Klassenstufe 10 der gymnasialen Oberstufe" ;
     ld:behindertengerecht "Ein behindertengerechter Zugang ist vorhanden, dabei ist zu beachten: Im Labor gelten besondere Sicherheitsregeln, die vorab mit dem verantwortlichen Lehrer besprochen werden müssen." ;
     ld:contact "Torsten Lange" ;
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
@@ -793,6 +789,18 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ical:description "<ul><li>Ökologische Fischproduktion in den Teichen</li><li>Fisch als gesundes Lebensmittel</li><li>Einblick in den Lebensraum unserer Gewässer</li><li>Unsere einheimischen Fische kennenlernen</li><li>Wissensrallye, Wissenstest</li></ul>" ;
     foaf:homepage <http://www.anglerverband-leipzig.de> .
 
+<http://leipzig-data.de/Data/Veranstaltung.31>
+    ld:Altersgruppe "nicht bekannt" ;
+    ld:Einordnung <http://leipzig-data.de/Data/Modul.5>, <http://leipzig-data.de/Data/Themenbereich.6> ;
+    ld:Kosten "nicht bekannt" ;
+    ld:Veranstalter <http://leipzig-data.de/Data/Ort/UFZ.Schuelerlabor> ;
+    ld:Veranstaltungsmodus "nicht bekannt" ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/UFZ.Schuelerlabor> ;
+    a nl:Event ;
+    rdfs:label "Experimente zum Thema Mikroplastik im UFZ-Schülerlabor" ;
+    ical:description "fehlt" ;
+    foaf:homepage <http://www.ufz-schuelerlabor.de> .
+
 <http://leipzig-data.de/Data/Veranstaltung.32>
     ld:Altersgruppe "1. bis 12. Klasse" ;
     ld:Anmerkung "Nur für Gruppen etwa gleich alter Teilnehmer. Voranmeldung erforderlich." ;
@@ -851,6 +859,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
     a ld:Verein, nl:Partner ;
     rdfs:label "Dölitzer Wassermühle" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.201> ;
     foaf:homepage <http://www.doelitzer-wassermuehle.de/> ;
     foaf:mbox "GAZ-Leipzig@t-online.de" ;
     foaf:phone "0341-33399734", "0341-3389352" .
@@ -890,7 +899,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:contact "Suse Kley <susekley@gmx.de>" ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
     nl:Ferienpass "nicht gelistet" ;
-    a ld:Verein ;
+    a ld:Verein, nl:Partner ;
     rdfs:comment "Postanschrift: c/o Math. Institut, Universität Leipzig, PF 100920, 04109 Leipzig" ;
     rdfs:label "Leipziger Schülergesellschaft für Mathematik e.V." ;
     foaf:homepage <http://www.lsgm.de> ;
@@ -909,7 +918,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:contact "Susann Pruchnik" ;
     ld:erreichbar "SB 12,15 und Bus 60 bis Ostplatz" ;
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Johannisallee.20> ;
-    nl:Teilnahme "am Prozess interessiert", "bisher keine Antwort" ;
+    nl:Teilnahme "am Prozess interessiert" ;
     a ld:Verein, nl:Partner ;
     rdfs:label "Leipziger Kinderbüro e.V., Deutscher Kinderschutzbund Leipzig" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.29> ;
@@ -921,7 +930,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:contact "Judith Hoffmeier" ;
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.2> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Medienpaedagogik> ;
-    nl:Teilnahme "Für das Zukunftsdiplom kann ich leider noch keine verbindlichen Aussagen treffen. Da die ComputerSpielSchule ja im Moment keine Räumlichkeiten zur Verfügung stehen und auch die personelle bzw. finanzielle Lage im Moment etwas schwierig ist, müssten wir eine endgültige Entscheidung dazu noch ein wenig verschieben. Wir werden das Thema aber innerhalb des Vereins noch einmal besprechen und die Möglichkeiten erschließen, die wir anbieten könnten. ", "bisher keine Antwort" ;
+    nl:Teilnahme "Für das Zukunftsdiplom kann ich leider noch keine verbindlichen Aussagen treffen. Da die ComputerSpielSchule ja im Moment keine Räumlichkeiten zur Verfügung stehen und auch die personelle bzw. finanzielle Lage im Moment etwas schwierig ist, müssten wir eine endgültige Entscheidung dazu noch ein wenig verschieben. Wir werden das Thema aber innerhalb des Vereins noch einmal besprechen und die Möglichkeiten erschließen, die wir anbieten könnten. " ;
     a ld:Verein, nl:Partner ;
     rdfs:label "ComputerSpielSchule Leipzig" ;
     foaf:homepage <http://www.computerspielschule-leipzig.de> ;
@@ -942,17 +951,15 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     a ld:Verein, nl:Partner ;
     rdfs:comment "Orang-Utans in Not e.V. wurde im Jahr 2007 von Wissenschaftlern des Max-Planck-Instituts für evolutionäre Anthropologie in Leipzig gegründet." ;
     rdfs:label "Orang Utans in Not e.V." ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.51> ;
     foaf:homepage <https://www.orang-utans-in-not.org> ;
     foaf:mbox "kontakt@ouin.de" ;
     foaf:phone "0341-3550315" .
 
 <http://leipzig-data.de/Data/Verein/Rabutz.TOeP>
-    ld:Besonderheiten "Europaen Kid’s Tropy 2005 - zertifiziert als Europäisches Jugendkompetenzzentrum für erneuerbare Energien" ;
-    ld:Kurzinformation "Das TÖP Rabutz arbeitet seit 1996 daran, mit Schüler/-innen Technik zu entwickeln, die sehr umweltverträglich ist. Alle Fahrzeuge haben E-Antrieb und werden von einer selbst entwickelten Solaranlage mit Energie versorgt. Das Abwasser aus dem Solarcafé und den Toiletten wird vollbiologisch gereinigt und im Kreislauf als Brauchwasser wieder genutzt. Alle diese Anlagen werden von den Schüler/-innen betreut und überwacht." ;
     ld:contact "Dr. Elk Messerschmidt" ;
     ld:hasAddress <http://leipzig-data.de/Data/04509.Rabutz.BageritzerWeg.1> ;
     nl:Ferienpass "nicht gelistet" ;
-    nl:Teilnahme "Ja." ;
     a ld:Verein, nl:Partner ;
     rdfs:label "Förderverein „Technisch-Ökologisches Projektzentrum Rabutz“ e.V." ;
     org:hasMember <http://leipzig-data.de/Data/Person/Messerschmidt_Elk> ;
@@ -961,7 +968,6 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
 
 <http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen>
     ld:contact "Claudia Lasarczik" ;
-    ld:erreichbar "SB, Busse bis Hauptbahnhof, S-Bahn bis Markt" ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
     a ld:Verein, nl:Partner ;
     rdfs:label "Verbraucherzentrale Sachsen e.V." ;
@@ -973,7 +979,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     ld:contact "Nicole Wöllner" ;
     ld:hasAddress <http://leipzig-data.de/Data/04463.Grosspoesna.AmWestufer.3> ;
     nl:Ferienpass "nicht gelistet" ;
-    nl:Teilnahme "bisher keine Antwort", "leider kann ich am 27.3. nicht. Aber mitmachen würde ich schon gern. Vielleicht können wir nach der Veranstaltung kurz telefonieren." ;
+    nl:Teilnahme "Leider kann ich am 27.3. nicht. Aber mitmachen würde ich schon gern. Vielleicht können wir nach der Veranstaltung kurz telefonieren." ;
     a nl:Partner, org:Organization ;
     rdfs:label "ZAW – Zweckverband Abfallwirtschaft Westsachsen" ;
     foaf:homepage <http://www.zaw-sachsen.de/> ;
@@ -985,6 +991,7 @@ immer Donnerstags 16-18 Uhr - Textil-Sprechstunde: Alles aus Stoff
     nl:Ferienpass "nicht gelistet" ;
     a ld:Verein, nl:Partner ;
     rdfs:label "Phyllodrom e.V. - Museum und Institut für Regenwaldökologie" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.69> ;
     foaf:homepage <http://wwww.Phyllodrom.de> ;
     foaf:mbox "info@Phyllodrom.de" ;
     foaf:phone "0341-5257757" .
