@@ -34,16 +34,6 @@
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Alltagsinstitut> ;
     foaf:homepage <http://www.alltagsinstitut.de> .
 
-<http://leipzig-data.de/Data/Firma/Annalinde>
-    ld:contact "Alice Wichtmann, a.wichtmann@annalinde-leipzig.de" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
-    a ld:Unternehmen, nl:Partner ;
-    rdfs:label "ANNALINDE gGmbH" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.51> ;
-    foaf:homepage <http://www.annalinde-leipzig.de> ;
-    foaf:mbox "info@annalinde-leipzig.de" ;
-    foaf:phone "0152-21655436", "0341-94089038" .
-
 <http://leipzig-data.de/Data/Firma/ErfinderKinder>
     ld:contact "Petra Vock, Doreen Daffeh" ;
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Spittastrasse.16> ;
@@ -95,20 +85,6 @@
     ld:Lernziele "Die Teilnehmer lernen verschiedene Aspekte nachhaltigen Wirtschaftens kennen." ;
     a nl:Modul ;
     rdfs:label "Nachhaltig Wirtschaften" .
-
-<http://leipzig-data.de/Data/Ort/Annalinde>
-    ld:erreichbar "SB 8, 15 bis Henriettenstraße" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
-    a ld:Ort ;
-    rdfs:label "Annalinde" ;
-    foaf:homepage <http://www.annalinde-leipzig.de> .
-
-<http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten>
-    ld:erreichbar "SB 14 bis Bahnhof Plagwitz" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.RoeckenerStrasse.38> ;
-    a ld:Ort ;
-    rdfs:label "Annalinde Obstgarten im Bürgerbahnhof Plagwitz" ;
-    foaf:homepage <http://www.annalinde-leipzig.de> .
 
 <http://leipzig-data.de/Data/Ort/Cafe.Kaputt>
     ld:erreichbar "SB 7 bis Georg-Schwarz-Straße/Mersebuger Straße" ;
@@ -173,7 +149,7 @@
     foaf:homepage <http://wwww.Phyllodrom.de> .
 
 <http://leipzig-data.de/Data/Ort/Robert-Koch-Park>
-    ld:erreichbar "Tram 1/2 bis Schönauer/Ratzelstraße, Bus 65 bis Ringstraße, S-Bahn bis Grünauer Allee" ;
+    ld:erreichbar "Tram 1, 2 bis Schönauer/Ratzelstraße, Bus 65 bis Ringstraße, S-Bahn bis Grünauer Allee" ;
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.113> ;
     a ld:Ort ;
     rdfs:label "Robert-Koch-Park, Eingang Schönauer Straße" ;
@@ -187,6 +163,7 @@
     foaf:homepage <http://www.oekoloewe.de>  .
 
 <http://leipzig-data.de/Data/Ort/UniLeipzig.Leibniz>
+    ld:erreichbar "Tram bis Augustusplatz" ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
     a ld:Ort ;
     rdfs:label "Leibnizdenkmal Uni-Innenhof Augustusplatz" .
@@ -206,12 +183,6 @@
     a ld:Ort ;
     rdfs:label "Villa Hasenholz" ;
     foaf:homepage <http://www.villahasenholz.de> .
-
-<http://leipzig-data.de/Data/Ort/WildparkLeipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.KoburgerStrasse.12A> ;
-    ld:hasSupplier <http://leipzig-data.de/Data/Verein/Foerderverein.WildparkLeipzig> ;
-    a ld:Ort ;
-    rdfs:label "Wildpark der Stadt Leipzig" .
 
 <http://leipzig-data.de/Data/Ort/ZooLeipzig>
     ld:erreichbar "Tram 12 bis Zoo" ;
@@ -313,19 +284,6 @@
     ical:summary "Schnitzeljagd zu unseren Energie-Exponaten – beantworte unsere Fragen für dein Diplom, indem du Möglichkeiten für nachhaltige Energiegewinnung und -nutzung erkundest! " ;
     ical:description "Schnitzeljagd zu unseren Energie-Exponaten – beantworte unsere Fragen für dein Diplom, indem du Möglichkeiten für nachhaltige Energiegewinnung und -nutzung erkundest!" ;
     ical:url <http://www.inspirata.de> .
-
-<http://leipzig-data.de/Data/Veranstaltung.06>
-    ld:Altersgruppe "nicht angegeben" ;
-    ld:Einordnung <http://leipzig-data.de/Data/Modul.4> ;
-    ld:Kosten "nicht angegeben" ;
-    ld:Veranstalter <http://leipzig-data.de/Data/Verein/Foerderverein.WildparkLeipzig> ;
-    ld:Veranstaltungsmodus "nicht angegeben" ;
-    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/WildparkLeipzig> ;
-    a nl:Event ;
-    rdfs:label "Tierische Neubürger. Tiere anderer Kontinente in unseren Wäldern" ;
-    ical:summary "zu ergänzen. Treffpunkt nicht angegeben." ; 
-    ical:description "zu ergänzen" ;
-    ical:url <http://www.wildparkverein-leipzig.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.07>
     ld:Altersgruppe "6-12 Jahre" ;
@@ -498,25 +456,12 @@
     ld:Kosten "35 Euro pro Monat incl. Material" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/Alltagsinstitut> ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Alltagsinstitut> ;
-    ld:Veranstaltungsmodus "Fr 15 – 16 Uhr (7-11 Jahre), wöchentlich; Fr 16.30 – 17.30 Uhr (12-16 Jahre), wöchentlich" ;
+    ld:Veranstaltungsmodus "Kurs mit mehreren Terminen: Fr 15 – 16 Uhr (7-11 Jahre), wöchentlich; Fr 16.30 – 17.30 Uhr (12-16 Jahre), wöchentlich" ;
     a nl:Event ;
     rdfs:label "Die Dinge des Alltags" ;
     ical:summary "Wie stellt man Nützliches und Brauchbares aus Alltagsmaterialien her? Wir probieren den nachhaltigen und bewussten Umgang mit Gegenständen des Alltags praktisch aus und hinterfragen das eigene Konsumverhalten." ;
     ical:description "Wie stellt man Nützliches und Brauchbares aus Alltagsmaterialien her? Wir probieren den nachhaltigen und bewussten Umgang mit Gegenständen des Alltags praktisch aus und hinterfragen  das eigene Konsumverhalten. Dabei schauen wir auch draußen nach möglichen Materiallagern und organisieren Ausstellungen." ;
     foaf:homepage <http://www.alltagsinstitut.de> .
-
-<http://leipzig-data.de/Data/Veranstaltung.20>
-    ld:Altersgruppe "9.-11. Klasse" ;
-    ld:Anmerkung "Veranstaltungsort nicht bekannt" ;
-    ld:Einordnung <http://leipzig-data.de/Data/Modul.5> ;
-    ld:Kosten "nicht bekannt" ;
-    ld:Veranstalter <http://leipzig-data.de/Data/Verein/GeoWerkstattLeipzig> ;
-    ld:Veranstaltungsmodus "nicht bekannt" ;
-    a nl:Event ;
-    rdfs:label "Workshop zu nachhaltiger Mobilität" ;
-    ical:summary "" ; 
-    ical:description "Workshop zu nachhaltiger Mobilität (ca. 9.-11. Klasse) oder Umweltbildungsangebote z.B. im Auwald. " ;
-    foaf:homepage <http://www.geowerkstatt.com> .
 
 <http://leipzig-data.de/Data/Veranstaltung.21>
     ld:Altersgruppe "6-12 Jahre" ;
@@ -561,34 +506,6 @@ Do 16-18 Uhr Textil-Sprechstunde: alles aus Stoff
     ical:summary "Du kommst zu unserer Reparatursprechstunde zum Thema Heimwerken, Technik oder Textil und reparierst dort einen Alltagsgegenstand von Dir. Mit der Reparatur eignest du Dir handwerkliche Fähigkeiten an und leistest einen Beitrag gegen die Wegwerfgesellschaft. " ; 
     ical:description "Du kommst zu einer unserer wöchentlichen, offenen Reparatursprechstunden zum Thema Heimwerken, Technik oder Textil und reparierst dort - unter Anleitung unserer Reparaturexpert*innen - einen Alltagsgegenstand von Dir. Mit der Reparatur lernst Du Deine Dinge besser kennen, eignest Dir handwerkliche Fähigkeiten an und leistest außerdem noch einen kleinen Beitrag gegen die Wegwerfgesellschaft und für einen nachhaltigeren Lebensstil. " ;
     foaf:homepage <http://reparieren-in-leipzig.de/> .
-
-<http://leipzig-data.de/Data/Veranstaltung.24>
-    ld:Altersgruppe "9-15 Jahre" ;
-    ld:Anmerkung "Veranstaltung nach den Ferien und damit außerhalb des Zukunftsdiploms. Mitzubringen: Kleidung, die auch ein bisschen schmutzig werden darf." ;
-    ld:Einordnung <http://leipzig-data.de/Data/Modul.6> ;
-    ld:Kosten "10 Euro pro Person" ;
-    ld:Veranstalter <http://leipzig-data.de/Data/Firma/Annalinde> ;
-    ld:Veranstaltungsmodus "28.08. und 29.08. jeweils 09:00-11:30 Uhr " ;
-    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Annalinde> ;
-    a nl:Event ;
-    rdfs:label "Ab auf den Acker" ;
-    ical:summary "Ein Gewächshaus im Gewächshaus? Wer braucht 28 Tomatensorten? Ein heißer Kompost? - Kommt einfach mal vorbei! Auf unseren Flächen könnt ihr in die urbane Landwirtschaft reinschnuppern, euch durchkosten und mitmachen." ; 
-    ical:description "Schon mal ein Gewächshaus im Gewächshaus gesehen? Was ist eine Bienenbeute? 28 verschiedene Tomatensorten? Ein Kompost der 60°C heiß wird? Warum ist der Baum weiß angestrichen? <br/> Anhand verschiedener Stationen wird in diesem Workshop praxisnahes Wissen über die Prinzipen des Ökolandbaus vermittelt und anschaulich erklärt, wie biologischer Anbau von Obst und Gemüse mitten in der Stadt funktionieren kann. " ;
-    foaf:homepage <http://www.annalinde-leipzig.de> .
-
-<http://leipzig-data.de/Data/Veranstaltung.25>
-    ld:Altersgruppe "Erwachsene ggf. in Begleitung älterer Kinder" ;
-    ld:Anmerkung "Veranstaltung außerhalb des Zeitraums des Zukunftsdiploms. Schutzkleidung ist vorhanden. Bitte Anmeldung bis zum 22.08. unter akademie@annalinde-leipzig.de." ;
-    ld:Einordnung <http://leipzig-data.de/Data/Modul.4> ;
-    ld:Kosten "20 Euro pro Person" ;
-    ld:Veranstalter <http://leipzig-data.de/Data/Firma/Annalinde> ;
-    ld:Veranstaltungsmodus "25.08., 10:00-13:00 Uhr" ;
-    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten> ;
-    a nl:Event ;
-    rdfs:label "Workshop „Ökologische Bienenhaltung“" ;
-    ical:summary "Sirid und Jörg von der Demeter-Imkerei „KirschenGarten“ geben einen Einblick in die wesensgemäße Bienenhaltung in Stadt und Land. Direkt an den Beuten lernen wir gemeinsam mehr über die Bienen und können Honig kosten." ;
-    ical:description "Sirid und Jörg von der Demeter-Imkerei „KirschenGarten“ geben einen Einblick in die wesensgemäße Bienenhaltung in Stadt und Land. Direkt an den Beuten lernen wir gemeinsam mehr über die Bienen und können Honig kosten." ;
-    foaf:homepage <https://annalinde-leipzig.de/wordpress_relaunch/events/oekologische-bienenhaltung-2/> .
 
 <http://leipzig-data.de/Data/Veranstaltung.26>
     ld:Altersgruppe "Ohne Altersbegrenzung" ;
@@ -647,7 +564,7 @@ Do 16-18 Uhr Textil-Sprechstunde: alles aus Stoff
 
 <http://leipzig-data.de/Data/Veranstaltung.30>
     ld:Altersgruppe "8 bis 14 Jahre" ;
-    ld:Anmerkung "Führungen von Gruppen nur nach Voranmeldung." ;
+    ld:Anmerkung "Gruppen nur nach Voranmeldung." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.4> ;
     ld:Kosten "kostenfrei" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/AnglerverbandLeipzig> ;
@@ -663,7 +580,7 @@ Do 16-18 Uhr Textil-Sprechstunde: alles aus Stoff
     ld:Altersgruppe "1. bis 12. Klasse" ;
     ld:Anmerkung "Nur für Gruppen etwa gleich alter Teilnehmer. Voranmeldung erforderlich." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5> ;
-    ld:Kosten "3 Euro pro Teilnehmer" ;
+    ld:Kosten "3 Euro" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/LSGM> ;
     ld:Veranstaltungsmodus "Nach Voranmeldung, mo-fr 9/11/13 Uhr." ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Leibniz> ;
@@ -693,16 +610,6 @@ Do 16-18 Uhr Textil-Sprechstunde: alles aus Stoff
     foaf:mbox "info@einewelt-leipzig.de" ;
     foaf:phone "0341-3010143" .
 
-<http://leipzig-data.de/Data/Verein/Foerderverein.WildparkLeipzig>
-    ld:contact "Ralf Herrmann" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.161> ;
-    a ld:Verein, nl:Partner ;
-    rdfs:label "Verein der Freunde und Förderer des Wildparks Leipzig e.V." ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.149> ;
-    foaf:homepage <http://www.wildparkverein-leipzig.de> ;
-    foaf:mbox "info@wildparkverein-leipzig.de" ;
-    foaf:phone "034126496004" .
-
 <http://leipzig-data.de/Data/Verein/GAZ>
     ld:contact "Katrin Reschke", "Urte Grauwinkel, urte.grauwinkel@web.de" ;
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
@@ -712,18 +619,6 @@ Do 16-18 Uhr Textil-Sprechstunde: alles aus Stoff
     foaf:homepage <http://www.doelitzer-wassermuehle.de/> ;
     foaf:mbox "GAZ-Leipzig@t-online.de" ;
     foaf:phone "0341-33399734", "0341-3389352" .
-
-<http://leipzig-data.de/Data/Verein/GeoWerkstattLeipzig>
-    ld:contact "Frank Feuerbach", "Katja Gehrmann" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19A> ;
-    nl:Ferienpass "nicht gelistet" ;
-    nl:Teilnahme "ja, TN am 27.3. " ;
-    a ld:Verein, nl:Partner ;
-    rdfs:label "GeoWerkstatt Leipzig e.V." ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.168> ;
-    foaf:homepage <http://www.geowerkstatt.com> ;
-    foaf:mbox "vorstand@geowerkstatt.com" ;
-    foaf:phone "0179-4590873" .
 
 <http://leipzig-data.de/Data/Verein/Inspirata>
     ld:contact "Angela Richter, Tino Meißner" ;
