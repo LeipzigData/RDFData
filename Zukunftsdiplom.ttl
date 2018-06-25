@@ -61,30 +61,35 @@
     foaf:homepage <http://www.zoo-leipzig.de> ;
     foaf:phone "0341-5933385", "03415933364" .
 
+<http://leipzig-data.de/Data/Modul.1>
+    ld:Lernziele "Das Projekt \"Stadt in der Stadt\" als themenübergreifendes Veranstaltungsformat." ;
+    a nl:Modul ;
+    rdfs:label "Übergreifend" .
+
 <http://leipzig-data.de/Data/Modul.2>
     ld:Lernziele "Die Teilnehmer lernen, welche Wirkung globale Prozesse auf unseren Alltag haben." ;
     a nl:Modul ;
-    rdfs:label "Globale Nachhaltigkeit" .
+    rdfs:label "Modul 2: Globale Nachhaltigkeit" .
 
 <http://leipzig-data.de/Data/Modul.3>
     ld:Lernziele "Die Teilnehmer lernen verschiedene Aspekte nachhaltiger und gesunder Ernährung kennen." ;
     a nl:Modul ;
-    rdfs:label "Nachhaltige Ernährung" .
+    rdfs:label "Modul 3: Nachhaltige Ernährung" .
 
 <http://leipzig-data.de/Data/Modul.4>
     ld:Lernziele "Die Teilnehmer lernen mehr von der uns umgebenden Natur." ;
     a nl:Modul ;
-    rdfs:label "Von der Natur lernen" .
+    rdfs:label "Modul 1: Natur entdecken, von der Natur lernen" .
 
 <http://leipzig-data.de/Data/Modul.5>
     ld:Lernziele "Die Teilnehmer lernen an praktischen Übungen den Zusammenhang zwischen Nachhaltigkeit und Technik zu be<i>greifen</i>." ;
     a nl:Modul ;
-    rdfs:label "Nachhaltigkeit und Technik" .
+    rdfs:label "Modul 4: Nachhaltigkeit und Technik" .
 
 <http://leipzig-data.de/Data/Modul.6>
     ld:Lernziele "Die Teilnehmer lernen verschiedene Aspekte nachhaltigen Wirtschaftens kennen." ;
     a nl:Modul ;
-    rdfs:label "Nachhaltig Wirtschaften" .
+    rdfs:label "Modul 5: Nachhaltig Wirtschaften" .
 
 <http://leipzig-data.de/Data/Ort/Cafe.Kaputt>
     ld:erreichbar "SB 7 bis Georg-Schwarz-Straße/Mersebuger Straße" ;
@@ -140,6 +145,10 @@
     rdfs:label "Bildungs- und Informationszentrum „Leipziger Fischwelt“" ;
     foaf:homepage <http://anglerverband-leipzig.de> .
 
+<http://leipzig-data.de/Data/Ort/NN> 
+    a ld:Ort ;
+    rdfs:label "In Ihrer Einrichtung" .
+
 <http://leipzig-data.de/Data/Ort/Phyllodrom>
     ld:erreichbar "Tram 16 bis Dachauer Straße" ;
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.DelitzscherLandstrasse.38> ;
@@ -150,7 +159,7 @@
 
 <http://leipzig-data.de/Data/Ort/Robert-Koch-Park>
     ld:erreichbar "Tram 1, 2 bis Schönauer/Ratzelstraße, Bus 65 bis Ringstraße, S-Bahn bis Grünauer Allee" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.113> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.Nikolai-Rumjanzew-Strasse.100> ;
     a ld:Ort ;
     rdfs:label "Robert-Koch-Park, Eingang Schönauer Straße" ;
     foaf:homepage <http://www.leipziggruen.de/de/2015_RobertKoch.asp> .
@@ -202,32 +211,39 @@
     foaf:homepage <http://konsumglobal-leipzig.de/> ;
     foaf:phone "0163-1736473" .
 
+<http://leipzig-data.de/Data/Projekt/StadtInDerStadt>
+    ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.Nikolai-Rumjanzew-Strasse.100> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Verein/HausSteinstrasse> ;
+    a ld:Projekt, nl:Partner ;
+    rdfs:label "Kinderferienspiel \"Stadt in der Stadt 2018\"" ;
+    foaf:homepage <https://www.leipzig.de/freizeit-kultur-und-tourismus/veranstaltungen-und-termine/eventsingle/calendar/2018/07/02/event/tx_cal_phpicalendar/kinderferienspiel-stadt-in-der-stadt-2018/>  .
+
 <http://leipzig-data.de/Data/Veranstaltung.01>
     ld:Altersgruppe "Kinder und Erwachsene" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.4> ;
-    ld:Kosten "kostenfrei mit FP / zzgl. Zoo-Eintritt ohne FP" ;
+    ld:Kosten "kostenfrei mit FP, zzgl. Zoo-Eintritt ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/ZooLeipzig> ;
     ld:Veranstaltungsmodus "21. und 22.07.2018" ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/ZooLeipzig> ;
     a nl:Event ;
     rdfs:label "Kleine Insekten mit großer Bedeutung – Entdeckertage Bienen im Zoo" ;
-    ical:summary "Bienen sind für die Natur sehr wichtig. Im Zoo können kleine und große Gäste die Faszination und Bedeutung der facettenreichen Tierart erleben. Ihr könnt Bienenhotels bauen oder selbst Honig schleudern. " ;
+    ical:summary "Die Faszination und Bedeutung der facettenreichen Tierart erleben, Bienenhotels bauen und mehr. " ;
     ical:description "Ihre geringe Größe und ihre hohe Bedeutung für das Leben auf der Welt stehen in keinem Zusammenhang: Bienen sind für das funktionierende Ökosystem von enormer Bedeutung. Deshalb widmen sich die Entdeckertage Bienen am 21. und 22. Juli  im Zoo Leipzig ganz den bedrohten Insekten, deren Lebensräume durch Monokulturen und Verdichtung kontinuierlich schwinden. <br/> Der Zoo lädt seine Besucher ein, mehr über die Bienen zu erfahren, Bienenhotels zu bauen und sogar selbst Honig zu schleudern. Kleine und große Gäste werden die Faszination und Bedeutung der facettenreichen Tierart erleben." ;
-    ical:url <http://www.zoo-leipzig.de/kalender-uebersicht/veranstaltungsinfo/entdeckertage-bienen/2018/07/21/> .
+    ical:url <http://www.zoo-leipzig.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.02>
     ld:Altersgruppe "Kinder von 8 bis 12 Jahren" ;
     ld:Anmerkung "Maximal 8 TN pro Tour, Anmeldung im Safari-Büro erforderlich, Tel. 0341 5933 385, E-Mail: safaribuero@zoo-leipzig.de, Leichte Kleidung und Mitnahme eines Getränks empfohlen. Treff: Aussichtsterrasse im Gondwanaland (über dem Restaurant Patakan)" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.4> ;
-    ld:Kosten "5 Euro mit FP-Abschnitt / zzgl. Zoo-Eintritt ohne FP" ;
+    ld:Kosten "5 Euro mit FP-Abschnitt, zzgl. Zoo-Eintritt ohne FP" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/ZooLeipzig> ;
     ld:Veranstaltungsmodus "in den Ferien jeden Montag und Mittwoch 15 - 17 Uhr" ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/ZooLeipzig> ;
     a nl:Event ;
-    rdfs:label "Regenwaldpass" ;
+    rdfs:label "Entdeckertour Regenwaldpass in der Tropenerlebniswelt Gondwanaland" ;
     ical:summary "Mit einem Zoolotsen könnt ihr die Tropenerlebniswelt Gondwanaland spielerisch entdecken und dabei knifflige Fragen beantworten. Der Regenwaldkoffer ist immer dabei." ;
     ical:description "Die Teilnehmer erkunden gemeinsam mit einem geschulten Zoolotsen die Tropenerlebniswelt Gondwanaland. Mit dabei ist der Regenwaldkoffer, der die nötige Ausstattung für das spielerische Entdecken und die Beantwortung kniffliger Fragen enthält. Am Ende erhält jeder seinen Regenwaldpass zum Mitnehmen, in dem die Entdeckungen dokumentiert wurden. <br/> Die Tour wurde speziell für Kinder von 8 bis 12 Jahren entwickelt, hält aber auch für ältere allerlei spannende Entdeckungen bereit. " ;
-    ical:url <https://www.zoo-leipzig.de/kalender-uebersicht/veranstaltungsinfo/entdeckertour-regenwaldpass-1/2018/05/26/> .
+    ical:url <https://www.zoo-leipzig.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.03>
     ld:Altersgruppe "für alle" ;
@@ -241,7 +257,7 @@
     rdfs:label "Sommerferientouren mit den Zoolotsen" ;
     ical:summary "kostenfreie Entdeckertouren" ;
     ical:description "kostenfreie Entdeckertouren" ;
-    ical:url <https://www.zoo-leipzig.de/aktuelles/neues-aus-dem-zoo-leipzig/karneval-der-tiere-gondwanaland-party-und-entdeckertage-sommer-im-zoo-563/> .
+    ical:url <https://www.zoo-leipzig.de> .
 
 <http://leipzig-data.de/Data/Veranstaltung.04>
     ld:Altersgruppe "7-10 Jahre" ;
@@ -253,7 +269,7 @@
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
     a nl:Event ;
     rdfs:label "Bunt, so bunt. Farben aus der Natur" ;
-    ical:summary "Wir stellen selbst Farben aus verschiedenen Pflanzen her: reiben, mörsern, schneiden, mischen. Es entstehen tolle Farben, mit denen jede/r ein Aquarell malen kann. " ;
+    ical:summary "Wir stellen selbst Farben aus verschiedenen Pflanzen her. " ;
     ical:description "Wir stellen selbst Farben aus verschiedenen Pflanzen her: reiben, mörsern, schneiden, mischen. Es entstehen tolle Farben, mit denen jeder sein Aquarell malen kann. " ;
     ical:url <http://www.doelitzer-wassermuehle.de/> .
 
@@ -281,7 +297,7 @@
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Inspirata> ;
     a nl:Event ;
     rdfs:label "Energiefragen sind Zukunftsfragen" ;
-    ical:summary "Schnitzeljagd zu unseren Energie-Exponaten – beantworte unsere Fragen für dein Diplom, indem du Möglichkeiten für nachhaltige Energiegewinnung und -nutzung erkundest! " ;
+    ical:summary "Schnitzeljagd zu unseren Energie-Exponaten. " ;
     ical:description "Schnitzeljagd zu unseren Energie-Exponaten – beantworte unsere Fragen für dein Diplom, indem du Möglichkeiten für nachhaltige Energiegewinnung und -nutzung erkundest!" ;
     ical:url <http://www.inspirata.de> .
 
@@ -295,7 +311,7 @@
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/DoelitzerWassermuehle> ;
     a nl:Event ;
     rdfs:label "Gutes aus der Hofküche" ;
-    ical:summary "Wir lernen, wie man Butter und Milchshakes selbst herstellt. " ;
+    ical:summary "Butter und Milchshakes selbst herstellen. " ;
     ical:description "Wir lernen, wie man Butter und Milchshakes selbst herstellt."  ;
     ical:url <http://www.oekoloewe.de> .
 
@@ -330,10 +346,11 @@
 <http://leipzig-data.de/Data/Veranstaltung.10>
     ld:Altersgruppe "bis 12 Jahre" ;
     ld:Anmerkung "Nur für Hortgruppen, 12 bis max. 24 Kinder. Wir kommen zu Ihnen. Vereinbarung erforderlich. " ;
-    ld:Einordnung <http://leipzig-data.de/Data/Modul.4> ;
+    ld:Einordnung <http://leipzig-data.de/Data/Modul.2> ;
     ld:Kosten "mit Material 2 Euro pro Kind" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/OrangUtansinNot> ;
     ld:Veranstaltungsmodus "Ferienprogramm von Orang-Utans in Not e.V., jeweils ca. 3h in einem daran interessierten Hort." ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/NN> ;
     a nl:Event ;
     rdfs:label "Affenstarker Ferienspaß mit Orang-Utans" ;
     ical:summary "Wo und wie leben Orang-Utan, Schimpanse und Co.? Nach einem kleinen Affen-Snack basteln wir Orang-Utan-Masken und probieren Studien aus der Verhaltensforschung aus. " ;
@@ -347,6 +364,7 @@
     ld:Kosten "mit Material: 2 Euro pro Schüler" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/OrangUtansinNot> ;
     ld:Veranstaltungsmodus "Ferienprogramm von Orang-Utans in Not e.V., jeweils ca. 3h in einem daran interessierten Hort." ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/NN> ;
     a nl:Event ;
     rdfs:label "Regenwald zum Frühstück?!" ;
     ical:summary "Was hat unser Frühstück mit dem Regenwald zu tun? Wir sind Schokocreme-Tester und stellen selbst eigene Schokocreme her. Wer ein kleines Gefäß mitbringt, kann eine Kostprobe mit nach Hause nehmen." ;
@@ -354,7 +372,7 @@
     foaf:homepage <https://www.orang-utans-in-not.org> .
 
 <http://leipzig-data.de/Data/Veranstaltung.12>
-    ld:Altersgruppe "nicht bekannt" ;
+    ld:Altersgruppe "6-12 Jahre" ;
     ld:Anmerkung "Anmeldung erforderlich" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5> ;
     ld:Kosten "Ferienwoche 158 Euro, einzelne Tage 42 Euro, Mittagessen 3,70 Euro/Tag" ;
@@ -368,7 +386,7 @@
     foaf:homepage <http://erfinderkinder.net/sommerferien-weltenforscher-unterwegs/> .
 
 <http://leipzig-data.de/Data/Veranstaltung.13>
-    ld:Altersgruppe "nicht bekannt" ;
+    ld:Altersgruppe "6-12 Jahre" ;
     ld:Anmerkung "Anmeldung erforderlich" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5> ;
     ld:Kosten "Ferienwoche 158 Euro, einzelne Tage 42 Euro, Mittagessen 3,70 Euro/Tag" ;
@@ -382,7 +400,7 @@
     foaf:homepage <http://erfinderkinder.net/sommerferien-weltenforscher-unterwegs/> .
 
 <http://leipzig-data.de/Data/Veranstaltung.14>
-    ld:Altersgruppe "nicht bekannt" ;
+    ld:Altersgruppe "6-12 Jahre" ;
     ld:Anmerkung "Anmeldung erforderlich" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5> ;
     ld:Kosten "Ferienwoche 158 Euro, einzelne Tage 42 Euro, Mittagessen 3,70 Euro/Tag" ;
@@ -405,7 +423,7 @@
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Ladenprojekt.Krimzkrams> ;
     a nl:Event ;
     rdfs:label "UPCYCLING! Mach was Cooles aus Müll!" ;
-    ical:summary "Gebrauchte Plastiktüten kommen in die Tonne? Ist nur noch ne olle Tüte? Falsch gedacht! Und uncool! Mach dir daraus lieber ein individuelles Outdoor-Sitzkissen. Gestalte kreative Unikate aus Müll, die auch die Umwelt schonen. " ; 
+    ical:summary "Ein individuelles Outdoor-Sitzkissen aus gebrauchten Plastiktüten. Kreative Unikate gestalten. " ; 
     ical:description "Gebrauchte Plastiktüten kommen in die Tonne? Ist nur noch ne olle Tüte?? Falsch gedacht! Und uncool! Mach dir doch lieber ein Outdoor-Sitzkissen daraus, was kein anderer hat. Gestalte mit uns aus Müll kreative Unikate, die auch noch die Umwelt schonen." ;
     foaf:homepage <http://www.kunzstoffe.de/ueber-uns/materialsammlung-krimzkrams/> .
 
@@ -465,6 +483,7 @@
 
 <http://leipzig-data.de/Data/Veranstaltung.21>
     ld:Altersgruppe "6-12 Jahre" ;
+    ld:Einordnung <http://leipzig-data.de/Data/Modul.1> ;
     ld:Anmerkung "Anmeldung für Gruppen erforderlich: http://haus-steinstrasse.de/projekte-gesamt/stadt-in-der-stadt/anmeldung/" ;
     ld:Kosten " 2 € mit FP | 5 € ohne FP | mit Leipzig-Pass kostenfrei" ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Robert-Koch-Park> ;
@@ -479,7 +498,7 @@
     ld:Altersgruppe "6-12 Jahre" ;
     ld:Anmerkung "Die Veranstaltung ist Teil des Ferienprogramms \"Stadt in der Stadt\". Anmeldung erforderlich: http://haus-steinstrasse.de/projekte-gesamt/stadt-in-der-stadt/anmeldung/" ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.3> ;
-    ld:Kosten "2 € mit FP | 5 € ohne FP | mit Leipzig-Pass kostenfrei" ;
+    ld:Kosten "2 Euro mit FP | 5 Euro ohne FP | mit Leipzig-Pass kostenfrei" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Firma/Heldenkueche> ;
     ld:Veranstaltungsmodus "12.07.2018, 10-13 Uhr" ;
     ld:Veranstaltungsort <http://leipzig-data.de/Data/Ort/Robert-Koch-Park> ;
@@ -514,6 +533,7 @@ Do 16-18 Uhr Textil-Sprechstunde: alles aus Stoff
     ld:Kosten "keine" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Projekt/KonsumGlobal> ;
     ld:Veranstaltungsmodus "10. Juli 2018, 16-18 Uhr" ;
+    ld:Veranstaltungsort <http://leipzig-data.de/Data/Treffpunkt/Richard-Wagner-Platz> ;
     a nl:Event ;
     rdfs:label "Positiv-Stadtrundgang: „Öko-faire Kleidung in Leipzig“" ;
     ical:summary "Der Rundgang führt zu Läden und Geschäften, die nachhaltige und fair gehandelte Kleidung anbieten. Auf dem Weg durch die City werden verschiedene Wirtschaftsmodelle wie auch globale Zusammenhänge erklärt." ; 
@@ -578,7 +598,7 @@ Do 16-18 Uhr Textil-Sprechstunde: alles aus Stoff
 
 <http://leipzig-data.de/Data/Veranstaltung.32>
     ld:Altersgruppe "1. bis 12. Klasse" ;
-    ld:Anmerkung "Nur für Gruppen etwa gleich alter Teilnehmer. Voranmeldung erforderlich." ;
+    ld:Anmerkung "Nur für Gruppen. Voranmeldung erforderlich." ;
     ld:Einordnung <http://leipzig-data.de/Data/Modul.5> ;
     ld:Kosten "3 Euro" ;
     ld:Veranstalter <http://leipzig-data.de/Data/Verein/LSGM> ;
@@ -619,6 +639,13 @@ Do 16-18 Uhr Textil-Sprechstunde: alles aus Stoff
     foaf:homepage <http://www.doelitzer-wassermuehle.de/> ;
     foaf:mbox "GAZ-Leipzig@t-online.de" ;
     foaf:phone "0341-33399734", "0341-3389352" .
+
+<http://leipzig-data.de/Data/Verein/HausSteinstrasse>
+    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Steinstrasse.18> ;
+    a ld:Verein, nl:Partner ;
+    rdfs:label "Haus Steinstraße e.V." ;
+    foaf:homepage <http://www.haus-steinstrasse.de> ;
+    foaf:phone "0341-3913219" .
 
 <http://leipzig-data.de/Data/Verein/Inspirata>
     ld:contact "Angela Richter, Tino Meißner" ;
@@ -698,3 +725,6 @@ Do 16-18 Uhr Textil-Sprechstunde: alles aus Stoff
     foaf:mbox "info@Phyllodrom.de" ;
     foaf:phone "0341-5257757" .
 
+<http://leipzig-data.de/Data/Treffpunkt/Richard-Wagner-Platz>
+    a ld:Treffpunkt ;
+    rdfs:label "Richard-Wagner-Platz" .
