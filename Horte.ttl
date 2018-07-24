@@ -2,11 +2,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix cc: <http://creativecommons.org/ns#> .
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix cc: <http://creativecommons.org/ns#> .
 
 <http://leipzig-data.de/Data/Horte/>
     cc:attributionName "The Leipzig Open Data Project" ;
@@ -15,767 +15,465 @@
     dct:source "Seiten der Stadt Leipzig" ;
     a owl:Ontology ;
     rdfs:comment 
-    "2018-06-22: Erste Extraktion durch Scrapen der Seite https://www.leipzig.de/jugend-familie-und-soziales/kinderbetreuung/horte/ und Umwandlung von csv in rdf. csv-Extraktion durch Tobias Mann. Es fehlen noch die statements zu rdf:type." ;
+    "2018-06-22: Erste Extraktion durch Scrapen der Seite https://www.leipzig.de/jugend-familie-und-soziales/kinderbetreuung/horte/ und Umwandlung von csv in rdf. csv-Extraktion durch Tobias Mann. RDF-Umwandlung Hans-Gert Gräbe. Es fehlt noch die Validierung der Adressen. " ;
     rdfs:label "Horte der Stadt Leipzig" .
 
-<http://leipzig-data.de/Data/Hort/H1001>
-	rdfs:label "Blauer Elefant Integrationseinrichtung";
-	ld:hasAddress "Tarostraße 17/19, 04103, Leipzig";
-	ld:Leiter "Frau Girke, Frau Gehlert (zur Zeit in Elternzeit)";
-	foaf:mbox "relefant@dksb-leipzig.de";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 9939850".
-
-<http://leipzig-data.de/Data/Hort/H1002>
-	rdfs:label "Gerne Groß Integrationseinrichtung";
-	ld:hasAddress "Arthur-Nagel-Straße 1, 04249, Leipzig";
-	ld:Leiter "Frau Hoferichter";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4243517".
-
-<http://leipzig-data.de/Data/Hort/H1003>
-	rdfs:label "Kleine Waldgeister Integrationseinrichtung";
-	ld:hasAddress "Waldkerbelstraße 2, 04329, Leipzig";
-	ld:Leiter "Frau Wege";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 2511117".
-
-<http://leipzig-data.de/Data/Hort/H1004>
-	rdfs:label "Lützschenaer Sternchen Kombinierte Tageseinrichtung";
-	ld:hasAddress "Freirodaer Weg 2, 04159, Leipzig";
-	ld:Leiter "Herr Klingner";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4618276".
-
-<http://leipzig-data.de/Data/Hort/H1005>
-	rdfs:label "Rappelkiste Integrationseinrichtung";
-	ld:hasAddress "Zweinaundorfer Straße 167, 04316, Leipzig";
-	ld:Leiter "Frau Bottin";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 6512036".
-
-<http://leipzig-data.de/Data/Hort/H1006>
-	rdfs:label "Raxli-Faxli Integrationseinrichtung";
-	ld:hasAddress "Königsteinstraße 70 B, 04207, Leipzig";
-	ld:Leiter "Frau Thalwitzer";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 9420150".
-
-<http://leipzig-data.de/Data/Hort/H1007>
-	rdfs:label "Sonnenhügel Kombinierte Tageseinrichtung";
-	ld:hasAddress "Am Hohlweg 2, 04159, Leipzig";
-	ld:Leiter "Frau Schneeweiß";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4612016".
-
-<http://leipzig-data.de/Data/Hort/H1008>
-	rdfs:label "Spatzennest Kombinierte Tageseinrichtung";
-	ld:hasAddress "An der Teichmühle 2, 04178, Leipzig";
-	ld:Leiter "Frau Kauka";
-	foaf:mbox "teichmuehle@kitas-leipzig.de";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 9411060".
-
-<http://leipzig-data.de/Data/Hort/H1009>
-	rdfs:label "Villa Kunterbunt Hort";
-	ld:hasAddress "Seehausener Allee 15, 04356, Leipzig";
-	ld:Leiter "Frau Scheibler";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 5217159".
-
-<http://leipzig-data.de/Data/Hort/H1010>
-	rdfs:label "Alte Salzstraße Hort";
-	ld:hasAddress "Alte Salzstraße 65, 04209, Leipzig";
-	ld:Leiter "Frau Schirlitz";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4240166".
-
-<http://leipzig-data.de/Data/Hort/H1011>
-	rdfs:label "Alte Salzstraße Hort";
-	ld:hasAddress "Alte Salzstraße 67, 04209, Leipzig";
-	ld:Leiter "n/a";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 3013343".
-
-<http://leipzig-data.de/Data/Hort/H1012>
-	rdfs:label "An der Schule Kombinierte Tageseinrichtung";
-	ld:hasAddress "An der Schule 1, 04158, Leipzig";
-	ld:Leiter "Frau Hummitzsch";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4619147".
-
-<http://leipzig-data.de/Data/Hort/H1013>
-	rdfs:label "Betreuungsangebot Förderzentrum für Erziehungshilfe, Schulteil A";
-	ld:hasAddress "Garskestraße 21, 04205, Leipzig";
-	ld:Leiter "Frau Häßler";
-	foaf:mbox "bta-erziehungshilfe-fz@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Häßler";
-	foaf:phone "0341 22570-3818".
-
-<http://leipzig-data.de/Data/Hort/H1014>
-	rdfs:label "Betreuungsangebot Förderzentrum für Erziehungshilfe, Schulteil B";
-	ld:hasAddress "Garskestraße 19, 04205, Leipzig";
-	ld:Leiter "Frau Häßler";
-	foaf:mbox "bta-erziehungshilfe-fz@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Häßler";
-	foaf:phone "0341 3088-8945".
-
-<http://leipzig-data.de/Data/Hort/H1015>
-	rdfs:label "Betreuungsangebot Schule zur Lernförderung \"Adolph Diesterweg\"";
-	ld:hasAddress "Portitzer Straße 1, 04318, Leipzig";
-	ld:Leiter "Frau Kirschen";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "Frau Kirschen";
-	foaf:phone "0341 65224924".
-
-<http://leipzig-data.de/Data/Hort/H1016>
-	rdfs:label "Betreuungsangebot Schule zur Lernförderung \"Ernst Zinna\"";
-	ld:hasAddress "Wincklerstraße 3/5, 04279, Leipzig";
-	ld:Leiter "Frau Havel";
-	foaf:mbox "bta-zinna-fs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Havel";
-	foaf:phone "0341 33386717".
-
-<http://leipzig-data.de/Data/Hort/H1017>
-	rdfs:label "Betreuungsangebot Schule zur Lernförderung \"Fritz Gietzelt\"";
-	ld:hasAddress "Kantatenweg 40, 04229, Leipzig";
-	ld:Leiter "Frau Gebhardt";
-	foaf:mbox "bta-gietzelt-fs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Gebhardt";
-	foaf:phone "0341 2528-7916".
-
-<http://leipzig-data.de/Data/Hort/H1018>
-	rdfs:label "Betreuungsangebot Schule zur Lernförderung \"Johann-Heinrich-Pestalozzi\"";
-	ld:hasAddress "Hannoversche Straße 2, 04157, Leipzig";
-	ld:Leiter "Frau Rost";
-	foaf:mbox "bta-pestalozzi-fs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Rost";
-	foaf:phone "0341 1493-4917".
-
-<http://leipzig-data.de/Data/Hort/H1019>
-	rdfs:label "Betreuungsangebot Schule zur Lernförderung Grünau";
-	ld:hasAddress "Andromedaweg 25, 04205, Leipzig";
-	ld:Leiter "Frau Biedermann-Hohnstein";
-	foaf:mbox "bta-gruenau-fs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Biedermann-Hohnstein";
-	foaf:phone "0341 4205188-19".
-
-<http://leipzig-data.de/Data/Hort/H1020>
-	rdfs:label "forum thomanum Hort";
-	ld:hasAddress "Schreberstraße 5, 04109, Leipzig";
-	ld:Leiter "Frau Fröhlich";
-	foaf:mbox "hort@forum-thomanum.de";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 97434421".
-
-<http://leipzig-data.de/Data/Hort/H1021>
-	rdfs:label "Friedrich-Fröbel-Schule Hort";
-	ld:hasAddress "Mannheimer Straße 128c, 04209, Leipzig";
-	ld:Leiter "Frau Lange";
-	foaf:mbox "hort-froebel-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Lange";
-	foaf:phone "0341 420518920".
-
-<http://leipzig-data.de/Data/Hort/H1022>
-	rdfs:label "Garskestraße Integrationseinrichtung";
-	ld:hasAddress "Garskestraße 17, 04205, Leipzig";
-	ld:Leiter "Herr Barthel";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4121132".
-
-<http://leipzig-data.de/Data/Hort/H1023>
-	rdfs:label "Georg-Große-Straße Kombinierte Tageseinrichtung";
-	ld:hasAddress "Georg-Große-Straße 1a, 04319, Leipzig";
-	ld:Leiter "Frau Feist";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 6516558".
-
-<http://leipzig-data.de/Data/Hort/H1024>
-	rdfs:label "Grüne Gasse Hort";
-	ld:hasAddress "Grüne Gasse 21b, 04318, Leipzig";
-	ld:Leiter "Frau Rödiger-Fliegel";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 6992291".
-
-<http://leipzig-data.de/Data/Hort/H1025>
-	rdfs:label "Heinrich-Heine-Straße Hort";
-	ld:hasAddress "Heinrich-Heine-Straße 64, 04178, Leipzig";
-	ld:Leiter "Herr Starke";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4418877".
-
-<http://leipzig-data.de/Data/Hort/H1026>
-	rdfs:label "Hort an der 100. Schule";
-	ld:hasAddress "Miltitzer Allee 1, 04207, Leipzig";
-	ld:Leiter "Frau Davila-Martinez";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "Frau Davila-Martinez";
-	foaf:phone "0341 9444715".
-
-<http://leipzig-data.de/Data/Hort/H1027>
-	rdfs:label "Hort an der 120. Schule";
-	ld:hasAddress "Martin-Herrmann-Straße 1, 04249, Leipzig";
-	ld:Leiter "Herr Göhler";
-	foaf:mbox "hort-120.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Herr Göhler";
-	foaf:phone "0341 41571726".
-
-<http://leipzig-data.de/Data/Hort/H1028>
-	rdfs:label "Hort an der 157. Schule";
-	ld:hasAddress "Hans-Driesch-Straße 41, 04179, Leipzig";
-	ld:Leiter "Frau Günther";
-	foaf:mbox "hort-157.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Günther";
-	foaf:phone "0341 45360415".
-
-<http://leipzig-data.de/Data/Hort/H1029>
-	rdfs:label "Hort an der 172. Schule";
-	ld:hasAddress "Prießnitzstraße 19, 04179, Leipzig";
-	ld:Leiter "Frau Rumeid (amtierend)";
-	foaf:mbox "hort-172.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Rumeid (amtierend)";
-	foaf:phone "0341 45341915".
-
-<http://leipzig-data.de/Data/Hort/H1030>
-	rdfs:label "Hort an der 24. Schule";
-	ld:hasAddress "Döllingstraße 25, 04328, Leipzig";
-	ld:Leiter "Frau Sanli";
-	foaf:mbox "hort-24.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Sanli";
-	foaf:phone "0341 14936920".
-
-<http://leipzig-data.de/Data/Hort/H1031>
-	rdfs:label "Hort an der 31. Schule";
-	ld:hasAddress "Franzosenallee 21, 04289, Leipzig";
-	ld:Leiter "Frau Albrecht";
-	foaf:mbox "hort-31.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Albrecht";
-	foaf:phone "0341 8691314".
-
-<http://leipzig-data.de/Data/Hort/H1032>
-	rdfs:label "Hort an der 33. Schule";
-	ld:hasAddress "Anhalter Straße 1, 04129, Leipzig";
-	ld:Leiter "Frau Wadewitz";
-	foaf:mbox "hort-33.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Wadewitz";
-	foaf:phone "0341 909865920".
-
-<http://leipzig-data.de/Data/Hort/H1033>
-	rdfs:label "Hort an der 39. Schule";
-	ld:hasAddress "Gustav-Kühn-Straße 1, 04159, Leipzig";
-	ld:Leiter "Frau Lorbeer";
-	foaf:mbox "hort-39.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Lorbeer";
-	foaf:phone "0341 909865820".
-
-<http://leipzig-data.de/Data/Hort/H1034>
-	rdfs:label "Hort an der 46. Schule";
-	ld:hasAddress "Saalfelder Straße 29, 04179, Leipzig";
-	ld:Leiter "Frau Scholz";
-	foaf:mbox "hort-46.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Scholz";
-	foaf:phone "0341 478427620/-21".
-
-<http://leipzig-data.de/Data/Hort/H1035>
-	rdfs:label "Hort an der 60. Schule";
-	ld:hasAddress "Schönbergstraße 2/4, 04249, Leipzig";
-	ld:Leiter "Herr Niesch";
-	foaf:mbox "Hort-60.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Herr Niesch";
-	foaf:phone "0341 23049732".
-
-<http://leipzig-data.de/Data/Hort/H1036>
-	rdfs:label "Hort an der 66. Schule";
-	ld:hasAddress "Rosenowstraße 56, 04357, Leipzig";
-	ld:Leiter "Frau Springsguth";
-	foaf:mbox "hort-66.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Springsguth";
-	foaf:phone "0341 600377921".
-
-<http://leipzig-data.de/Data/Hort/H1037>
-	rdfs:label "Hort an der 74. Schule";
-	ld:hasAddress "Stünzer Straße 16, 04318, Leipzig";
-	ld:Leiter "Frau Salbert";
-	foaf:mbox "hort-74.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Salbert";
-	foaf:phone "0341 6493020".
-
-<http://leipzig-data.de/Data/Hort/H1038>
-	rdfs:label "Hort an der 77. Schule";
-	ld:hasAddress "Riebeckstraße 50, 04317, Leipzig";
-	ld:Leiter "Frau Stockmann";
-	foaf:mbox "hort-77.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Stockmann";
-	foaf:phone "0341 23089815".
-
-<http://leipzig-data.de/Data/Hort/H1039>
-	rdfs:label "Hort an der 78. Schule";
-	ld:hasAddress "Binzer Straße 14, 04207, Leipzig";
-	ld:Leiter "Frau Kaminski";
-	foaf:mbox "hort-78.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Kaminski";
-	foaf:phone "0341 94546815".
-
-<http://leipzig-data.de/Data/Hort/H1040>
-	rdfs:label "Hort an der 8. Schule";
-	ld:hasAddress "Wincklerstraße 3/5, 04279, Leipzig";
-	ld:Leiter "Frau Lindner";
-	foaf:mbox "hort-8.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Lindner";
-	foaf:phone "0341 33399816".
-
-<http://leipzig-data.de/Data/Hort/H1041>
-	rdfs:label "Hort an der 85. Schule";
-	ld:hasAddress "Stuttgarter Allee 3, 04209, Leipzig";
-	ld:Leiter "Frau Syfus";
-	foaf:mbox "hort-85.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Syfus";
-	foaf:phone "0341 12454820".
-
-<http://leipzig-data.de/Data/Hort/H1042>
-	rdfs:label "Hort an der 9. Schule";
-	ld:hasAddress "Gersterstraße 74, 04279, Leipzig";
-	ld:Leiter "Herr Auerwald";
-	foaf:mbox "hort-9.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Herr Auerwald";
-	foaf:phone "0341 333873420/30".
-
-<http://leipzig-data.de/Data/Hort/H1043>
-	rdfs:label "Hort an der 91. Schule";
-	ld:hasAddress "Uranusstraße 1, 04205, Leipzig";
-	ld:Leiter "Frau Rohde";
-	foaf:mbox "hort-91.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Rohde";
-	foaf:phone "0341 41297814".
-
-<http://leipzig-data.de/Data/Hort/H1044>
-	rdfs:label "Hort an der Adam-Friedrich-Oeser Schule";
-	ld:hasAddress "Geibelstraße 74, 04129, Leipzig";
-	ld:Leiter "Frau Winter-Haupt";
-	foaf:mbox "hort-oeser-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Winter-Haupt";
-	foaf:phone "0341 91962920".
-
-<http://leipzig-data.de/Data/Hort/H1045>
-	rdfs:label "Hort an der Anna-Magdalena-Bach Schule";
-	ld:hasAddress "Manetstraße 8, 04109, Leipzig";
-	ld:Leiter "Frau Müller";
-	foaf:mbox "hort-a.m.bach-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Müller";
-	foaf:phone "0341 14062727".
-
-<http://leipzig-data.de/Data/Hort/H1046>
-	rdfs:label "Hort an der Astrid-Lindgren-Schule";
-	ld:hasAddress "Volksgartenstraße 16, 04347, Leipzig";
-	ld:Leiter "Frau Olschok";
-	foaf:mbox "hort-lindgren-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Olschok";
-	foaf:phone "0341 23405825".
-
-<http://leipzig-data.de/Data/Hort/H1047>
-	rdfs:label "Hort an der August-Bebel-Schule";
-	ld:hasAddress "Husemannstraße 2, 04315, Leipzig";
-	ld:Leiter "Herr Riedel";
-	foaf:mbox "hort-bebel-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Herr Riedel";
-	foaf:phone "0341 68706334".
-
-<http://leipzig-data.de/Data/Hort/H1048>
-	rdfs:label "Hort an der Brüder-Grimm-Schule";
-	ld:hasAddress "Goldsternstraße 23, 04329, Leipzig";
-	ld:Leiter "Frau Mackscheidt";
-	foaf:mbox "hort-grimm-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Mackscheidt";
-	foaf:phone "0341 252798821".
-
-<http://leipzig-data.de/Data/Hort/H1049>
-	rdfs:label "Hort an der Carl-von-Linné-Schule";
-	ld:hasAddress "Delitzscher Straße 110, 04129, Leipzig";
-	ld:Leiter "Frau Heßler";
-	foaf:mbox "hort-linne-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Heßler";
-	foaf:phone "0341 9047722".
-
-<http://leipzig-data.de/Data/Hort/H1050>
-	rdfs:label "Hort an der Christoph-Arnold-Schule";
-	ld:hasAddress "Gaswerksweg 1, 04319, Leipzig";
-	ld:Leiter "Frau Kulemann";
-	foaf:mbox "hort-arnold-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Kulemann";
-	foaf:phone "0341 65220820".
-
-<http://leipzig-data.de/Data/Hort/H1051>
-	rdfs:label "Hort an der Clara-Wieck-Schule";
-	ld:hasAddress "Stöckelstraße 45, 04347, Leipzig";
-	ld:Leiter "Frau Alex";
-	foaf:mbox "hort-wieck-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Alex";
-	foaf:phone "0341 24586023".
-
-<http://leipzig-data.de/Data/Hort/H1052>
-	rdfs:label "Hort an der Erich-Kästner-Schule";
-	ld:hasAddress "Erfurter Straße 9, 04155, Leipzig";
-	ld:Leiter "Frau Droemert";
-	foaf:mbox "hort-e.kaestner-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Droemert";
-	foaf:phone "0341 586145019".
-
-<http://leipzig-data.de/Data/Hort/H1053>
-	rdfs:label "Hort an der Ernst-Pinkert-Schule";
-	ld:hasAddress "Martinstraße 7, 04318, Leipzig";
-	ld:Leiter "Frau Thier";
-	foaf:mbox "hort-pinkert-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Thier";
-	foaf:phone "0341 6494245".
-
-<http://leipzig-data.de/Data/Hort/H1054>
-	rdfs:label "Hort an der Franz-Mehring-Schule";
-	ld:hasAddress "Gletschersteinstraße 9, 04299, Leipzig";
-	ld:Leiter "Frau Janek";
-	foaf:mbox "hort-mehring-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Janek";
-	foaf:phone "0341 86049920".
-
-<http://leipzig-data.de/Data/Hort/H1055>
-	rdfs:label "Hort an der Geschwister-Scholl-Schule";
-	ld:hasAddress "Elsbethstraße 1, 04155, Leipzig";
-	ld:Leiter "Frau Würzberger";
-	foaf:mbox "hort-scholl-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Würzberger";
-	foaf:phone "0341 14959920".
-
-<http://leipzig-data.de/Data/Hort/H1056>
-	rdfs:label "Hort an der Grundschule Holzhausen";
-	ld:hasAddress "Stötteritzer Landstraße 21, 04288, Leipzig";
-	ld:Leiter "Herr Kammertöns";
-	foaf:mbox "hort-holzhausen-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Herr Kammertöns";
-	foaf:phone "034297 73320".
-
-<http://leipzig-data.de/Data/Hort/H1057>
-	rdfs:label "Hort an der Grundschule Liebertwolkwitz";
-	ld:hasAddress "Am Angerteich 2, 04288, Leipzig";
-	ld:Leiter "Frau Richter";
-	foaf:mbox "hort-liebertwolkwitz-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Richter";
-	foaf:phone "034297 142532".
-
-<http://leipzig-data.de/Data/Hort/H1058>
-	rdfs:label "Hort an der H.-Mann-Schule";
-	ld:hasAddress "Schwarzenbergweg 4, 04289, Leipzig";
-	ld:Leiter "Frau Griebsch";
-	foaf:mbox "hort-mann-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Griebsch";
-	foaf:phone "0341 8629387".
-
-<http://leipzig-data.de/Data/Hort/H1059>
-	rdfs:label "Hort an der Hans-Christian-Andersen-Schule";
-	ld:hasAddress "Louis-Fürnberg-Straße 2, 04318, Leipzig";
-	ld:Leiter "Frau Tauche";
-	foaf:mbox "hort-andersen-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Tauche";
-	foaf:phone "0341 234187030".
-
-<http://leipzig-data.de/Data/Hort/H1060>
-	rdfs:label "Hort an der Hans-Kroch-Schule";
-	ld:hasAddress "Jörgen-Schmidtchen-Weg 8, 04157, Leipzig";
-	ld:Leiter "Frau Stichel";
-	foaf:mbox "hort-kroch-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Stichel";
-	foaf:phone "0341 9102473-26".
-
-<http://leipzig-data.de/Data/Hort/H1061>
-	rdfs:label "Hort an der Joachim-Ringelnatz-Schule";
-	ld:hasAddress "Grünauer Allee 35, 04209, Leipzig";
-	ld:Leiter "Frau Granzow";
-	foaf:mbox "hort-ringelnatz-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Granzow";
-	foaf:phone "0341 41292919 oder 0341 41292918".
-
-<http://leipzig-data.de/Data/Hort/H1062>
-	rdfs:label "Hort an der Karl-Liebknecht-Schule";
-	ld:hasAddress "Heinrich-Mann-Straße 1, 04157, Leipzig";
-	ld:Leiter "Frau Mann";
-	foaf:mbox "hort-liebknecht-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Mann";
-	foaf:phone "0341 90987919".
-
-<http://leipzig-data.de/Data/Hort/H1063>
-	rdfs:label "Hort an der Kurt-Masur-Schule";
-	ld:hasAddress "Scharnhorststraße 24, 04275, Leipzig";
-	ld:Leiter "Frau Stary Stellvertreterin Frau Haußig";
-	foaf:mbox "hort-masur-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Stary";
-	foaf:phone "0341 225707820".
-
-<http://leipzig-data.de/Data/Hort/H1064>
-	rdfs:label "Hort an der Lessingschule";
-	ld:hasAddress "Lessingstraße 27, 04109, Leipzig";
-	ld:Leiter "Frau Herzfeld";
-	foaf:mbox "hort-lessing-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Herzfeld";
-	foaf:phone "0341 308688920".
-
-<http://leipzig-data.de/Data/Hort/H1065>
-	rdfs:label "Hort an der Marienbrunner Schule";
-	ld:hasAddress "An der Märchenwiese 49, 04277, Leipzig";
-	ld:Leiter "Frau Karthäuser";
-	foaf:mbox "hort-marienbrunner-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Karthäuser";
-	foaf:phone "0341 86920518".
-
-<http://leipzig-data.de/Data/Hort/H1066>
-	rdfs:label "Hort an der Pablo-Neruda-Schule";
-	ld:hasAddress "Tarostraße 6, 04103, Leipzig";
-	ld:Leiter "Frau Unger";
-	foaf:mbox "hort-neruda-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Unger";
-	foaf:phone "0341 12458935".
-
-<http://leipzig-data.de/Data/Hort/H1067>
-	rdfs:label "Hort an der Paul-Robeson-Schule";
-	ld:hasAddress "Jungmannstraße 5, 04159, Leipzig";
-	ld:Leiter "Frau Jentzsch";
-	foaf:mbox "hort-robeson-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Jentzsch";
-	foaf:phone "0341 68701723".
-
-<http://leipzig-data.de/Data/Hort/H1068>
-	rdfs:label "Hort an der Schule 5";
-	ld:hasAddress "Eitingonstraße 5, 04105, Leipzig";
-	ld:Leiter "Herr Witt";
-	foaf:mbox "hort-5.gs@horte-leipzig.de";
-	ld:Ansprechpartner "Herr Witt";
-	foaf:phone "0341 350587825".
-
-<http://leipzig-data.de/Data/Hort/H1069>
-	rdfs:label "Hort an der Schule am Adler";
-	ld:hasAddress "Antonienstraße 24, 04229, Leipzig";
-	ld:Leiter "Frau Klein";
-	foaf:mbox "hort-adler-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Klein";
-	foaf:phone "0341 429912718".
-
-<http://leipzig-data.de/Data/Hort/H1070>
-	rdfs:label "Hort an der Schule am Auwald";
-	ld:hasAddress "Rödelstraße 6, 04229, Leipzig";
-	ld:Leiter "Frau Huppert";
-	foaf:mbox "hort-auwald-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Huppert";
-	foaf:phone "0341 253479020".
-
-<http://leipzig-data.de/Data/Hort/H1071>
-	rdfs:label "Hort an der Schule am Floßplatz";
-	ld:hasAddress "Hohe Straße 45, 04107, Leipzig";
-	ld:Leiter "Frau Pechan";
-	foaf:mbox "hort-flossplatz-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Pechan";
-	foaf:phone "0341 91046026".
-
-<http://leipzig-data.de/Data/Hort/H1072>
-	rdfs:label "Hort an der Schule am Rabet";
-	ld:hasAddress "Eisenbahnstraße 50, 04315, Leipzig";
-	ld:Leiter "Frau Schlecht";
-	foaf:mbox "hort-rabet-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Schlecht";
-	foaf:phone "0341 6992268-16".
-
-<http://leipzig-data.de/Data/Hort/H1073>
-	rdfs:label "Hort an der Schule Portitz";
-	ld:hasAddress "Göbschelwitzer Weg 1, 04349, Leipzig";
-	ld:Leiter "Frau Schlegel";
-	foaf:mbox "hort-portitz-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Schlegel";
-	foaf:phone "0341 92167922".
-
-<http://leipzig-data.de/Data/Hort/H1074>
-	rdfs:label "Hort an der Theodor-Körner-Schule";
-	ld:hasAddress "Schlehenweg 32, 04329, Leipzig";
-	ld:Leiter "Frau Otto";
-	foaf:mbox "hort-koerner-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Otto";
-	foaf:phone "0341 12459920".
-
-<http://leipzig-data.de/Data/Hort/H1075>
-	rdfs:label "Hort an der W.-Wander Schule";
-	ld:hasAddress "Schulze-Delitzsch-Straße 23, 04315, Leipzig";
-	ld:Leiter "Frau Dardouri";
-	foaf:mbox "hort-wander-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Dardouri";
-	foaf:phone "0341 60016520".
-
-<http://leipzig-data.de/Data/Hort/H1076>
-	rdfs:label "Hort an der Wilhelm-Busch-Schule";
-	ld:hasAddress "Heinrichstraße 43/45, 04317, Leipzig";
-	ld:Leiter "Frau Göpner";
-	foaf:mbox "hort-busch-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Göpner";
-	foaf:phone "0341 6493319".
-
-<http://leipzig-data.de/Data/Hort/H1077>
-	rdfs:label "Hort an der Wilhelm-Hauff-Schule";
-	ld:hasAddress "Diderotstraße 37, 04159, Leipzig";
-	ld:Leiter "Frau Böhm";
-	foaf:mbox "hort-hauff-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Böhm";
-	foaf:phone "0341 90834434".
-
-<http://leipzig-data.de/Data/Hort/H1078>
-	rdfs:label "Hort Berthastraße";
-	ld:hasAddress "Berthastraße 15, 04357, Leipzig";
-	ld:Leiter "Frau Schumann / Frau Richter";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4229891".
-
-<http://leipzig-data.de/Data/Hort/H1079>
-	rdfs:label "Hort der Erich-Zeigner-Schule";
-	ld:hasAddress "Erich-Zeigner-Allee 24, 04229, Leipzig";
-	ld:Leiter "Frau Petersohn";
-	foaf:mbox "hort-zeigner-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Petersohn";
-	foaf:phone "0341 870593938".
-
-<http://leipzig-data.de/Data/Hort/H1080>
-	rdfs:label "Hort der Fanny-Hensel-Schule";
-	ld:hasAddress "Weißenfelser Straße 13, 04229, Leipzig";
-	ld:Leiter "Frau Winter";
-	foaf:mbox "hort-hensel-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Winter";
-	foaf:phone "0341 337560413".
-
-<http://leipzig-data.de/Data/Hort/H1081>
-	rdfs:label "Hort der Freien Aktiven Schule";
-	ld:hasAddress "Eisenacher Straße 40, 04155, Leipzig";
-	ld:Leiter "n/a";
-	foaf:mbox "kontakt@aktive-schule-leipzig.de";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 24066555".
-
-<http://leipzig-data.de/Data/Hort/H1082>
-	rdfs:label "Hort der Grundschule \"Clara Schumann\"";
-	ld:hasAddress "Inselstraße 18, 04203, Leipzig";
-	ld:Leiter "Frau Koch";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 3939613".
-
-<http://leipzig-data.de/Data/Hort/H1083>
-	rdfs:label "Hort der Karl-Schubert-Schule Leipzig";
-	ld:hasAddress "Raschwitzer Straße 4, 04279, Leipzig";
-	ld:Leiter "Herr Zabel";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 20016940".
-
-<http://leipzig-data.de/Data/Hort/H1084>
-	rdfs:label "Hort der Nachbarschaftsschule";
-	ld:hasAddress "Odermannstraße 4/6, 04177, Leipzig";
-	ld:Leiter "Frau Jarchow";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4772223".
-
-<http://leipzig-data.de/Data/Hort/H1085>
-	rdfs:label "Hort der Schule Connewitz";
-	ld:hasAddress "Zwenkauer Straße 35, 04277, Leipzig";
-	ld:Leiter "Frau Kietzmann";
-	foaf:mbox "hort-connewitz-gs@horte-leipzig.de";
-	ld:Ansprechpartner "Frau Kietzmann";
-	foaf:phone "0341 2257655-20".
-
-<http://leipzig-data.de/Data/Hort/H1086>
-	rdfs:label "Hort Schule Rückmarsdorf";
-	ld:hasAddress "An der Friedenseiche 4, 04178, Leipzig";
-	ld:Leiter "Frau Urban";
-	foaf:mbox "GS-Rueckmarsdorf@t-online.de";
-	ld:Ansprechpartner "Frau Urban";
-	foaf:phone "0152 22989163".
-
-<http://leipzig-data.de/Data/Hort/H1087>
-	rdfs:label "Kantor-Andrä-Straße Integrationseinrichtung";
-	ld:hasAddress "Kantor-Andrä-Straße 16, 04178, Leipzig";
-	ld:Leiter "Frau Kalinski";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4414043".
-
-<http://leipzig-data.de/Data/Hort/H1088>
-	rdfs:label "KiTa der Leipzig International School \"Early Childhood Centre\"";
-	ld:hasAddress "Karl-Heine-Straße 95, 04229, Leipzig";
-	ld:Leiter "Frau Heinrich";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "Frau Heinrich";
-	foaf:phone "0341 337558200".
-
-<http://leipzig-data.de/Data/Hort/H1089>
-	rdfs:label "Kita und Hort der freien Grundschule \"Regenbogen\" Kombinierte Tageseinrichtung";
-	ld:hasAddress "Raschwitzer Straße 15, 04279, Leipzig";
-	ld:Leiter "Frau Schneider";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 3363610".
-
-<http://leipzig-data.de/Data/Hort/H1090>
-	rdfs:label "Kohlgartenweg Kombinierte Tageseinrichtung";
-	ld:hasAddress "Kohlgartenweg 3, 04318, Leipzig";
-	ld:Leiter "Herr Herfort";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 6994793".
-
-<http://leipzig-data.de/Data/Hort/H1091>
-	rdfs:label "Leipziger Straße Hort";
-	ld:hasAddress "Leipziger Straße 200, 04178, Leipzig";
-	ld:Leiter "Frau Polland";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4410476".
-
-<http://leipzig-data.de/Data/Hort/H1092>
-	rdfs:label "Puschstraße Hort";
-	ld:hasAddress "Puschstraße 9, 04103, Leipzig";
-	ld:Leiter "Frau Holtz";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "n/a".
-
-<http://leipzig-data.de/Data/Hort/H1093>
-	rdfs:label "Schletterstraße Hort";
-	ld:hasAddress "Schletterstraße 7, 04107, Leipzig";
-	ld:Leiter "Frau Köhler";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 9948950".
-
-<http://leipzig-data.de/Data/Hort/H1094>
-	rdfs:label "Schönauer Ring Integrationseinrichtung";
-	ld:hasAddress "Schönauer Ring 23b, 04205, Leipzig";
-	ld:Leiter "Frau Javane";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 4125033".
-
-<http://leipzig-data.de/Data/Hort/H1095>
-	rdfs:label "Torgauer Straße Hort";
-	ld:hasAddress "Torgauer Straße 114, 04347, Leipzig";
-	ld:Leiter "Frau Wolff";
-	foaf:mbox "n/a";
-	ld:Ansprechpartner "n/a";
-	foaf:phone "0341 2522748".
+
+<http://leipzig-data.de/Data/Hort/31.Schule>
+	 rdfs:label "Hort an der 31. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Franzosenallee.21>;
+	 foaf:mbox "hort-31.gs@horte-leipzig.de";
+	 foaf:phone "0341-8691314".
+
+<http://leipzig-data.de/Data/Hort/Clara-Wieck-Schule>
+	 rdfs:label "Hort an der Clara-Wieck-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Stoeckelstrasse.45>;
+	 foaf:mbox "hort-wieck-gs@horte-leipzig.de";
+	 foaf:phone "0341-24586023".
+
+<http://leipzig-data.de/Data/Hort/9.Schule>
+	 rdfs:label "Hort an der 9. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Gersterstrasse.74>;
+	 foaf:mbox "hort-9.gs@horte-leipzig.de";
+	 foaf:phone "0341-333873420-30".
+
+<http://leipzig-data.de/Data/Hort/SchuleLernfoerderungGruenau>
+	 rdfs:label "Betreuungsangebot an der Schule zur Lernförderung Grünau";
+	 ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Andromedaweg.25>;
+	 foaf:mbox "bta-gruenau-fs@horte-leipzig.de";
+	 foaf:phone "0341-4205188-19".
+
+<http://leipzig-data.de/Data/Hort/Wilhelm-Hauff-Schule>
+	 rdfs:label "Hort an der Wilhelm-Hauff-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Diderotstrasse.37>;
+	 foaf:mbox "hort-hauff-gs@horte-leipzig.de";
+	 foaf:phone "0341-90834434".
+
+<http://leipzig-data.de/Data/Hort/Wilhelm-WanderSchule>
+	 rdfs:label "Hort an der Wilhelm-Wander Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Schulze-Delitzsch-Strasse.23>;
+	 foaf:mbox "hort-wander-gs@horte-leipzig.de";
+	 foaf:phone "0341-60016520".
+
+<http://leipzig-data.de/Data/Hort/100.Schule>
+	 rdfs:label "Hort an der 100. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.MiltitzerAllee.1>;
+	 foaf:phone "0341-9444715".
+
+<http://leipzig-data.de/Data/Hort/Erich-Kaestner-Schule>
+	 rdfs:label "Hort an der Erich-Kästner-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.ErfurterStrasse.9>;
+	 foaf:mbox "hort-e.kaestner-gs@horte-leipzig.de";
+	 foaf:phone "0341-586145019".
+
+<http://leipzig-data.de/Data/Hort/forumthomanum>
+	 rdfs:label "forum thomanum Hort";
+	 ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Schreberstrasse.5>;
+	 foaf:mbox "hort@forum-thomanum.de";
+	 foaf:phone "0341-97434421".
+
+<http://leipzig-data.de/Data/Hort/SchuleLernfoerderungFritzGietzelt>
+	 rdfs:label "Betreuungsangebot an der Schule zur Lernförderung \"Fritz Gietzelt\"";
+	 ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Kantatenweg.40>;
+	 foaf:mbox "bta-gietzelt-fs@horte-leipzig.de";
+	 foaf:phone "0341-2528-7916".
+
+<http://leipzig-data.de/Data/Hort/120.Schule>
+	 rdfs:label "Hort an der 120. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Martin-Herrmann-Strasse.1>;
+	 foaf:mbox "hort-120.gs@horte-leipzig.de";
+	 foaf:phone "0341-41571726".
+
+<http://leipzig-data.de/Data/Hort/Wilhelm-Busch-Schule>
+	 rdfs:label "Hort an der Wilhelm-Busch-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse43/.45>;
+	 foaf:mbox "hort-busch-gs@horte-leipzig.de";
+	 foaf:phone "0341-6493319".
+
+<http://leipzig-data.de/Data/Hort/Joachim-Ringelnatz-Schule>
+	 rdfs:label "Hort an der Joachim-Ringelnatz-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.GruenauerAllee.35>;
+	 foaf:mbox "hort-ringelnatz-gs@horte-leipzig.de";
+	 foaf:phone "0341-41292919-oder-0341-41292918".
+
+<http://leipzig-data.de/Data/Hort/Heinrich-Mann-Schule>
+	 rdfs:label "Hort an der Heinrich-Mann-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Schwarzenbergweg.4>;
+	 foaf:mbox "hort-mann-gs@horte-leipzig.de";
+	 foaf:phone "0341-8629387".
+
+<http://leipzig-data.de/Data/Hort/157.Schule>
+	 rdfs:label "Hort an der 157. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Hans-Driesch-Strasse.41>;
+	 foaf:mbox "hort-157.gs@horte-leipzig.de";
+	 foaf:phone "0341-45360415".
+
+<http://leipzig-data.de/Data/Hort/FoerderzentrumfuerErziehungshilfe>
+	 rdfs:label "Betreuungsangebot am Förderzentrum für Erziehungshilfe";
+	 ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse19/.21>;
+	 foaf:mbox "bta-erziehungshilfe-fz@horte-leipzig.de";
+	 foaf:phone "0341-22570-3818".
+
+<http://leipzig-data.de/Data/Hort/SchulezurLernfoerderungErnstZinna>
+	 rdfs:label "Betreuungsangebot an der Schule zur Lernförderung \"Ernst Zinna\"";
+	 ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Wincklerstrasse3/.5>;
+	 foaf:mbox "bta-zinna-fs@horte-leipzig.de";
+	 foaf:phone "0341-33386717".
+
+<http://leipzig-data.de/Data/Hort/Lessingschule>
+	 rdfs:label "Hort an der Lessingschule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lessingstrasse.27>;
+	 foaf:mbox "hort-lessing-gs@horte-leipzig.de";
+	 foaf:phone "0341-308688920".
+
+<http://leipzig-data.de/Data/Hort/Carl-von-Linne-Schule>
+	 rdfs:label "Hort an der Carl-von-Linné-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.DelitzscherStrasse.110>;
+	 foaf:mbox "hort-linne-gs@horte-leipzig.de";
+	 foaf:phone "0341-9047722".
+
+<http://leipzig-data.de/Data/Hort/Puschstrasse>
+	 rdfs:label "Hort in der Puschstraße";
+	 ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Puschstrasse.9>.
+
+<http://leipzig-data.de/Data/Hort/AnderSchule>
+	 rdfs:label "An der Schule Kombinierte Tageseinrichtung";
+	 ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.AnderSchule.1>;
+	 foaf:phone "0341-4619147".
+
+<http://leipzig-data.de/Data/Hort/SchuleamAuwald>
+	 rdfs:label "Hort an der Schule am Auwald";
+	 ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Roedelstrasse.6>;
+	 foaf:mbox "hort-auwald-gs@horte-leipzig.de";
+	 foaf:phone "0341-253479020".
+
+<http://leipzig-data.de/Data/Hort/Franz-Mehring-Schule>
+	 rdfs:label "Hort an der Franz-Mehring-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04299.Leipzig.Gletschersteinstrasse.9>;
+	 foaf:mbox "hort-mehring-gs@horte-leipzig.de";
+	 foaf:phone "0341-86049920".
+
+<http://leipzig-data.de/Data/Hort/Nachbarschaftsschule>
+	 rdfs:label "Hort der Nachbarschaftsschule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Odermannstrasse4/.6>;
+	 foaf:phone "0341-4772223".
+
+<http://leipzig-data.de/Data/Hort/Paul-Robeson-Schule>
+	 rdfs:label "Hort an der Paul-Robeson-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Jungmannstrasse.5>;
+	 foaf:mbox "hort-robeson-gs@horte-leipzig.de";
+	 foaf:phone "0341-68701723".
+
+<http://leipzig-data.de/Data/Hort/78.Schule>
+	 rdfs:label "Hort an der 78. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.BinzerStrasse.14>;
+	 foaf:mbox "hort-78.gs@horte-leipzig.de";
+	 foaf:phone "0341-94546815".
+
+<http://leipzig-data.de/Data/Hort/GrundschuleHolzhausen>
+	 rdfs:label "Hort an der Grundschule Holzhausen";
+	 ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.StoetteritzerLandstrasse.21>;
+	 foaf:mbox "hort-holzhausen-gs@horte-leipzig.de";
+	 foaf:phone "034297-73320".
+
+<http://leipzig-data.de/Data/Hort/MarienbrunnerSchule>
+	 rdfs:label "Hort an der Marienbrunner Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.AnderMaerchenwiese.49>;
+	 foaf:mbox "hort-marienbrunner-gs@horte-leipzig.de";
+	 foaf:phone "0341-86920518".
+
+<http://leipzig-data.de/Data/Hort/SchuleConnewitz>
+	 rdfs:label "Hort der Schule Connewitz";
+	 ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.ZwenkauerStrasse.35>;
+	 foaf:mbox "hort-connewitz-gs@horte-leipzig.de";
+	 foaf:phone "0341-2257655-20".
+
+<http://leipzig-data.de/Data/Hort/SchulezurLernfoerderungAdolphDiesterweg>
+	 rdfs:label "Betreuungsangebot an der Schule zur Lernförderung \"Adolph Diesterweg\"";
+	 ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.PortitzerStrasse.1>;
+	 foaf:phone "0341-65224924".
+
+<http://leipzig-data.de/Data/Hort/SchuleamAdler>
+	 rdfs:label "Hort an der Schule am Adler";
+	 ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Antonienstrasse.24>;
+	 foaf:mbox "hort-adler-gs@horte-leipzig.de";
+	 foaf:phone "0341-429912718".
+
+<http://leipzig-data.de/Data/Hort/GrundschuleClaraSchumann>
+	 rdfs:label "Hort der Grundschule \"Clara Schumann\"";
+	 ld:hasAddress <http://leipzig-data.de/Data/04203.Leipzig.Inselstrasse.18>;
+	 foaf:phone "0341-3939613".
+
+<http://leipzig-data.de/Data/Hort/Schletterstrasse>
+	 rdfs:label "Hort in der Schletterstraße";
+	 ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.7>;
+	 foaf:phone "0341-9948950".
+
+<http://leipzig-data.de/Data/Hort/Christoph-Arnold-Schule>
+	 rdfs:label "Hort an der Christoph-Arnold-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.Gaswerksweg.1>;
+	 foaf:mbox "hort-arnold-gs@horte-leipzig.de";
+	 foaf:phone "0341-65220820".
+
+<http://leipzig-data.de/Data/Hort/Friedrich-Froebel-Schule>
+	 rdfs:label "Friedrich-Fröbel-Schule Hort";
+	 ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.MannheimerStrasse128c.>;
+	 foaf:mbox "hort-froebel-gs@horte-leipzig.de";
+	 foaf:phone "0341-420518920".
+
+<http://leipzig-data.de/Data/Hort/8.Schule>
+	 rdfs:label "Hort an der 8. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Wincklerstrasse3/.5>;
+	 foaf:mbox "hort-8.gs@horte-leipzig.de";
+	 foaf:phone "0341-33399816".
+
+<http://leipzig-data.de/Data/Hort/39.Schule>
+	 rdfs:label "Hort an der 39. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Gustav-Kuehn-Strasse.1>;
+	 foaf:mbox "hort-39.gs@horte-leipzig.de";
+	 foaf:phone "0341-909865820".
+
+<http://leipzig-data.de/Data/Hort/Brueder-Grimm-Schule>
+	 rdfs:label "Hort an der Brüder-Grimm-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Goldsternstrasse.23>;
+	 foaf:mbox "hort-grimm-gs@horte-leipzig.de";
+	 foaf:phone "0341-252798821".
+
+<http://leipzig-data.de/Data/Hort/Karl-Liebknecht-Schule>
+	 rdfs:label "Hort an der Karl-Liebknecht-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Heinrich-Mann-Strasse.1>;
+	 foaf:mbox "hort-liebknecht-gs@horte-leipzig.de";
+	 foaf:phone "0341-90987919".
+
+<http://leipzig-data.de/Data/Hort/Anna-Magdalena-Bach-Schule>
+	 rdfs:label "Hort an der Anna-Magdalena-Bach-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Manetstrasse.8>;
+	 foaf:mbox "hort-a.m.bach-gs@horte-leipzig.de";
+	 foaf:phone "0341-14062727".
+
+<http://leipzig-data.de/Data/Hort/60.Schule>
+	 rdfs:label "Hort an der 60. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.Schoenbergstrasse2/.4>;
+	 foaf:mbox "Hort-60.gs@horte-leipzig.de";
+	 foaf:phone "0341-23049732".
+
+<http://leipzig-data.de/Data/Hort/Astrid-Lindgren-Schule>
+	 rdfs:label "Hort an der Astrid-Lindgren-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Volksgartenstrasse.16>;
+	 foaf:mbox "hort-lindgren-gs@horte-leipzig.de";
+	 foaf:phone "0341-23405825".
+
+<http://leipzig-data.de/Data/Hort/Theodor-Koerner-Schule>
+	 rdfs:label "Hort an der Theodor-Körner-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Schlehenweg.32>;
+	 foaf:mbox "hort-koerner-gs@horte-leipzig.de";
+	 foaf:phone "0341-12459920".
+
+<http://leipzig-data.de/Data/Hort/SchuleamFlossplatz>
+	 rdfs:label "Hort an der Schule am Floßplatz";
+	 ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.45>;
+	 foaf:mbox "hort-flossplatz-gs@horte-leipzig.de";
+	 foaf:phone "0341-91046026".
+
+<http://leipzig-data.de/Data/Hort/Erich-Zeigner-Schule>
+	 rdfs:label "Hort der Erich-Zeigner-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.24>;
+	 foaf:mbox "hort-zeigner-gs@horte-leipzig.de";
+	 foaf:phone "0341-870593938".
+
+<http://leipzig-data.de/Data/Hort/LeipzigerStrasse>
+	 rdfs:label "Hort in der Leipziger Straße";
+	 ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.LeipzigerStrasse.200>;
+	 foaf:phone "0341-4410476".
+
+<http://leipzig-data.de/Data/Hort/GrundschuleLiebertwolkwitz>
+	 rdfs:label "Hort an der Grundschule Liebertwolkwitz";
+	 ld:hasAddress <http://leipzig-data.de/Data/04288.Leipzig.AmAngerteich.2>;
+	 foaf:mbox "hort-liebertwolkwitz-gs@horte-leipzig.de";
+	 foaf:phone "034297-142532".
+
+<http://leipzig-data.de/Data/Hort/August-Bebel-Schule>
+	 rdfs:label "Hort an der August-Bebel-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Husemannstrasse.2>;
+	 foaf:mbox "hort-bebel-gs@horte-leipzig.de";
+	 foaf:phone "0341-68706334".
+
+<http://leipzig-data.de/Data/Hort/GrueneGasse>
+	 rdfs:label "Hort in der Grünen Gasse";
+	 ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.GrueneGasse21b.>;
+	 foaf:phone "0341-6992291".
+
+<http://leipzig-data.de/Data/Hort/91.Schule>
+	 rdfs:label "Hort an der 91. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Uranusstrasse.1>;
+	 foaf:mbox "hort-91.gs@horte-leipzig.de";
+	 foaf:phone "0341-41297814".
+
+<http://leipzig-data.de/Data/Hort/SchulezurLernfoerderungPestalozzi>
+	 rdfs:label "Betreuungsangebot an der Schule zur Lernförderung \"Johann-Heinrich-Pestalozzi\"";
+	 ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.HannoverscheStrasse.2>;
+	 foaf:mbox "bta-pestalozzi-fs@horte-leipzig.de";
+	 foaf:phone "0341-1493-4917".
+
+<http://leipzig-data.de/Data/Hort/172.Schule>
+	 rdfs:label "Hort an der 172. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Priessnitzstrasse.19>;
+	 foaf:mbox "hort-172.gs@horte-leipzig.de";
+	 foaf:phone "0341-45341915".
+
+<http://leipzig-data.de/Data/Hort/74.Schule>
+	 rdfs:label "Hort an der 74. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.StuenzerStrasse.16>;
+	 foaf:mbox "hort-74.gs@horte-leipzig.de";
+	 foaf:phone "0341-6493020".
+
+<http://leipzig-data.de/Data/Hort/24.Schule>
+	 rdfs:label "Hort an der 24. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Doellingstrasse.25>;
+	 foaf:mbox "hort-24.gs@horte-leipzig.de";
+	 foaf:phone "0341-14936920".
+
+<http://leipzig-data.de/Data/Hort/VillaKunterbunt>
+	 rdfs:label "Villa Kunterbunt Hort";
+	 ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.SeehausenerAllee.15>;
+	 foaf:phone "0341-5217159".
+
+<http://leipzig-data.de/Data/Hort/AlteSalzstrasse>
+	 rdfs:label "Alte Salzstraße Hort";
+	 ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse65/.67>;
+	 foaf:phone "0341-4240166".
+
+<http://leipzig-data.de/Data/Hort/SchuleamRabet>
+	 rdfs:label "Hort an der Schule am Rabet";
+	 ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.50>;
+	 foaf:mbox "hort-rabet-gs@horte-leipzig.de";
+	 foaf:phone "0341-6992268-16".
+
+<http://leipzig-data.de/Data/Hort/SchulePortitz>
+	 rdfs:label "Hort an der Schule Portitz";
+	 ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.GoebschelwitzerWeg.1>;
+	 foaf:mbox "hort-portitz-gs@horte-leipzig.de";
+	 foaf:phone "0341-92167922".
+
+<http://leipzig-data.de/Data/Hort/GrundschuleRegenbogen>
+	 rdfs:label "Kita und Hort der freien Grundschule \"Regenbogen\"";
+	 ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15>;
+	 foaf:phone "0341-3363610".
+
+<http://leipzig-data.de/Data/Hort/46.Schule>
+	 rdfs:label "Hort an der 46. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.SaalfelderStrasse.29>;
+	 foaf:mbox "hort-46.gs@horte-leipzig.de";
+	 foaf:phone "0341-478427620-21".
+
+<http://leipzig-data.de/Data/Hort/Berthastrasse>
+	 rdfs:label "Hort Berthastraße";
+	 ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Berthastrasse.15>;
+	 foaf:phone "0341-4229891".
+
+<http://leipzig-data.de/Data/Hort/66.Schule>
+	 rdfs:label "Hort an der 66. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Rosenowstrasse.56>;
+	 foaf:mbox "hort-66.gs@horte-leipzig.de";
+	 foaf:phone "0341-600377921".
+
+<http://leipzig-data.de/Data/Hort/Heinrich-Heine-Strasse>
+	 rdfs:label "Hort in der Heinrich-Heine-Straße ";
+	 ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Heinrich-Heine-Strasse.64>;
+	 foaf:phone "0341-4418877".
+
+<http://leipzig-data.de/Data/Hort/Kurt-Masur-Schule>
+	 rdfs:label "Hort an der Kurt-Masur-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Scharnhorststrasse.24>;
+	 foaf:mbox "hort-masur-gs@horte-leipzig.de";
+	 foaf:phone "0341-225707820".
+
+<http://leipzig-data.de/Data/Hort/Hans-Kroch-Schule>
+	 rdfs:label "Hort an der Hans-Kroch-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Joergen-Schmidtchen-Weg.8>;
+	 foaf:mbox "hort-kroch-gs@horte-leipzig.de";
+	 foaf:phone "0341-9102473-26".
+
+<http://leipzig-data.de/Data/Hort/77.Schule>
+	 rdfs:label "Hort an der 77. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Riebeckstrasse.50>;
+	 foaf:mbox "hort-77.gs@horte-leipzig.de";
+	 foaf:phone "0341-23089815".
+
+<http://leipzig-data.de/Data/Hort/85.Schule>
+	 rdfs:label "Hort an der 85. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.3>;
+	 foaf:mbox "hort-85.gs@horte-leipzig.de";
+	 foaf:phone "0341-12454820".
+
+<http://leipzig-data.de/Data/Hort/Hans-Christian-Andersen-Schule>
+	 rdfs:label "Hort an der Hans-Christian-Andersen-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Louis-Fuernberg-Strasse.2>;
+	 foaf:mbox "hort-andersen-gs@horte-leipzig.de";
+	 foaf:phone "0341-234187030".
+
+<http://leipzig-data.de/Data/Hort/Ernst-Pinkert-Schule>
+	 rdfs:label "Hort an der Ernst-Pinkert-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martinstrasse.7>;
+	 foaf:mbox "hort-pinkert-gs@horte-leipzig.de";
+	 foaf:phone "0341-6494245".
+
+<http://leipzig-data.de/Data/Hort/Pablo-Neruda-Schule>
+	 rdfs:label "Hort an der Pablo-Neruda-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Tarostrasse.6>;
+	 foaf:mbox "hort-neruda-gs@horte-leipzig.de";
+	 foaf:phone "0341-12458935".
+
+<http://leipzig-data.de/Data/Hort/SchuleRueckmarsdorf>
+	 rdfs:label "Hort der Schule Rückmarsdorf";
+	 ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.AnderFriedenseiche.4>;
+	 foaf:mbox "GS-Rueckmarsdorf@t-online.de";
+	 foaf:phone "0152-22989163".
+
+<http://leipzig-data.de/Data/Hort/33.Schule>
+	 rdfs:label "Hort an der 33. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.AnhalterStrasse.1>;
+	 foaf:mbox "hort-33.gs@horte-leipzig.de";
+	 foaf:phone "0341-909865920".
+
+<http://leipzig-data.de/Data/Hort/Fanny-Hensel-Schule>
+	 rdfs:label "Hort der Fanny-Hensel-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.WeissenfelserStrasse.13>;
+	 foaf:mbox "hort-hensel-gs@horte-leipzig.de";
+	 foaf:phone "0341-337560413".
+
+<http://leipzig-data.de/Data/Hort/Adam-Friedrich-Oeser-Schule>
+	 rdfs:label "Hort an der Adam-Friedrich-Oeser-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Geibelstrasse.74>;
+	 foaf:mbox "hort-oeser-gs@horte-leipzig.de";
+	 foaf:phone "0341-91962920".
+
+<http://leipzig-data.de/Data/Hort/5.Schule>
+	 rdfs:label "Hort an der 5. Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Eitingonstrasse.5>;
+	 foaf:mbox "hort-5.gs@horte-leipzig.de";
+	 foaf:phone "0341-350587825".
+
+<http://leipzig-data.de/Data/Hort/TorgauerStrasse>
+	 rdfs:label "Hort in der Torgauer Straße";
+	 ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TorgauerStrasse.114>;
+	 foaf:phone "0341-2522748".
+
+<http://leipzig-data.de/Data/Hort/Geschwister-Scholl-Schule>
+	 rdfs:label "Hort an der Geschwister-Scholl-Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.1>;
+	 foaf:mbox "hort-scholl-gs@horte-leipzig.de";
+	 foaf:phone "0341-14959920".
+
+<http://leipzig-data.de/Data/Hort/Karl-Schubert-SchuleLeipzig>
+	 rdfs:label "Hort der Karl-Schubert-Schule Leipzig";
+	 ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.4>;
+	 foaf:phone "0341-20016940".
+
+<http://leipzig-data.de/Data/Hort/FreieAktiveSchule>
+	 rdfs:label "Hort der Freien Aktiven Schule";
+	 ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.EisenacherStrasse.40>;
+	 foaf:mbox "kontakt@aktive-schule-leipzig.de";
+	 foaf:phone "0341-24066555".
 
 
