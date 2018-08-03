@@ -13,7 +13,7 @@
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "Seiten der Stadt Leipzig" ;
     a owl:Ontology ;
-    rdfs:comment "2014-07-20: Abgleich mit den Stadtseiten.", "2016-12-07: berufliche Schulen und Förderschulen nachgetragen.", "2017-09-12: Abgleich mit jedeschule.de.", "2018-02 Abgleich mit Veröffentlichung in der LVZ", "2018-08-03, HGG: URIs im Zuge eines weiteren Abgleichs mit Stadtquellen noch einmal gründlich durchgepflügt", "LVZ 26.5.2018, 28.6.2018: Bauvorhaben 4-zügige Oberschule am Barnet-Licht-Platz als modulares Raumsystem bis 2019/20, Anmietung Torgauer Straße 114 sowie Eutritzscher Straße 17-19 und Umbau zu Schulräumen (Beschluss dazu wurde im Rat am 27.06.2018 vertagt, da unwirtschaftlich), Neubau einer 5-zügigen Oberschule sowie eines 5-zügigen Gymnasiums im Leipziger Norden (Standorte noch offen), Ausbau des Schraderhauses Täubchenweg 26 zur Oberschule, Reaktivierung des Gebäudes Hainbuchenstraße als Oberschule." ;
+    rdfs:comment "2014-07-20: Abgleich mit den Stadtseiten.", "2016-12-07: berufliche Schulen und Förderschulen nachgetragen.", "2017-09-12: Abgleich mit jedeschule.de.", "2018-02 Abgleich mit Veröffentlichung in der LVZ", "2018-08-03, HGG: URIs im Zuge eines weiteren Abgleichs mit Stadtquellen noch einmal gründlich durchgepflügt", "LVZ 26.5.2018, 28.6.2018: Bauvorhaben 4-zügige Oberschule am Barnet-Licht-Platz als modulares Raumsystem bis 2019/20, Anmietung Torgauer Straße 114 sowie Eutritzscher Straße 17-19 und Umbau zu Schulräumen (Beschluss dazu wurde im Rat am 27.06.2018 vertagt, da unwirtschaftlich), Neubau einer 5-zügigen Oberschule sowie eines 5-zügigen Gymnasiums im Leipziger Norden (Standorte noch offen), Ausbau des Schraderhauses Täubchenweg 26 zur Oberschule, Reaktivierung des Gebäudes Hainbuchenstraße als Oberschule.", "2018-08-03: Abgleich mit neueren Daten der Stadt Leipzig zu Grund- und Berufsschulen" ;
     rdfs:label "Schulen der Stadt Leipzig" .
 
 ld:Berufsfachschule
@@ -281,7 +281,9 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-spi-soziale-stadt-und-land-entwicklungsgesellschaft-mbh> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/AWO.Akademie> ;
     a ld:Berufsfachschule, ld:Berufsschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "AWO Akademie Mitteldeutschland" .
+    rdfs:label "AWO Akademie Mitteldeutschland" ;
+    foaf:homepage <http://www.awoakademie.de> ;
+    foaf:mbox "infoawoakademie@spi-ost.de" .
 
 <http://leipzig-data.de/Data/Schule/Adam-Friedrich-Oeser-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Geibelstrasse.74> ;
@@ -301,7 +303,9 @@ ld:Schule
     ld:hasSchulId "SN-4451761-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-akademie-fuer-kreativitaetspaedagogik-leipzig> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Akademie für Kreativitätspädagogik Leipzig" .
+    rdfs:label "Akademie für Kreativitätspädagogik Leipzig" ;
+    foaf:homepage <http://www.krea-akademie.de/> ;
+    foaf:mbox "info@krea-akademie.de" .
 
 <http://leipzig-data.de/Data/Schule/AktiveSchuleLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.EisenacherStrasse.40> ;
@@ -359,7 +363,9 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.AmkleinenFeld.3> ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/arwed-rossbach-schule-berufliches-schulzentrum-der-stadt-leipzig> ;
     a ld:Berufsschule, ld:Schule ;
-    rdfs:label "Arwed-Rossbach-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+    rdfs:label "Arwed-Rossbach-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
+    foaf:homepage <http://www.arwed-rossbach-schule.de> ;
+    foaf:mbox "info@arwed-rossbach-schule.de" .
 
 <http://leipzig-data.de/Data/Schule/Astrid-Lindgren-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Volksgartenstrasse.16> ;
@@ -381,7 +387,7 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Puschstrasse.9> ;
     ld:hasSchulId "SN-4412680-0" ;
     a ld:FreierTraeger, ld:Grundschule, ld:Schule ;
-    rdfs:label "AHF Grundschule", "August-Hermann-Francke Grundschule" ;
+    rdfs:label "August-Hermann-Francke Grundschule" ;
     foaf:homepage <http://www.ahfgrundschule.de/schule.html> ;
     foaf:mbox "info@ahfgrundschule.de" .
 
@@ -390,7 +396,9 @@ ld:Schule
     ld:hasSchulId "SN-4450615-0", "SN-4451522-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bildungsakademie-dresden> ;
     a ld:Berufsfachschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Bildungsakademie Dresden, Schulteil Leipzig" .
+    rdfs:label "Bildungsakademie Dresden, Schulteil Leipzig" ;
+    foaf:homepage <http://bildungsakademie-sachsen.de/schulteile/leipzig> ;
+    foaf:mbox "info@bildungsakademie-dresden.de." .
 
 <http://leipzig-data.de/Data/Schule/BIP-Schule.GS>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TorgauerStrasse.114> ;
@@ -413,12 +421,22 @@ ld:Schule
     rdfs:label "BIP-Kreativitätsgymnasium Leipzig" ;
     foaf:homepage <http://www.bipschulen.de> .
 
+<http://leipzig-data.de/Data/Schule/BSW-Fachschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Gutenbergstrasse.10> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Firma/BSW> ;
+    a ld:Fachschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Bildungswerk der Sächsischen Wirtschaft gGmbH" ;
+    foaf:homepage <http://www.fachschule-technik-leipzig.de/> ;
+    foaf:mbox "fs-leipzig@bsw-mail.de" .
+
 <http://leipzig-data.de/Data/Schule/BSZ-Robert-Blum>
     ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Rosenowstrasse.60> ;
     ld:hasSchulId "SN-4450011-0", "SN-4450011-1" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/berufliches-schulzentrum-12-robert-blum-der-stadt-leipzig> ;
     a ld:Berufsschule, ld:Schule ;
-    rdfs:label "Berufliches Schulzentrum 12 \"Robert Blum\" der Stadt Leipzig" .
+    rdfs:label "Berufliches Schulzentrum 12 \"Robert Blum\" der Stadt Leipzig" ;
+    foaf:homepage <http://www.bsz12leipzig.de/> ;
+    foaf:mbox "Bsz12.leipzig@t-online.de" .
 
 <http://leipzig-data.de/Data/Schule/BSZ.LeipzigerLand>
     ld:hasAddress <http://leipzig-data.de/Data/04564.Boehlen.RoethaerStrasse.44> ;
@@ -430,14 +448,18 @@ ld:Schule
     ld:hasSchulId "SN-4450151-0", "SN-4450151-1", "SN-4450151-2" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/berufliches-schulzentrum-1-der-stadt-leipzig> ;
     a ld:Berufsschule, ld:Schule ;
-    rdfs:label "Berufliches Schulzentrum 1 der Stadt Leipzig" .
+    rdfs:label "Berufliches Schulzentrum 1 der Stadt Leipzig" ;
+    foaf:homepage <http://www.bsz1leipzig.de/> ;
+    foaf:mbox "info@bsz1leipzig.de" .
 
 <http://leipzig-data.de/Data/Schule/BSZ7>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.AnderQuerbreite.8> ;
     ld:hasSchulId "SN-4450128-0", "SN-4450128-1", "SN-4450128-2" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/berufliches-schulzentrum-7-der-stadt-leipzig> ;
     a ld:Berufsschule, ld:Schule ;
-    rdfs:label "Berufliches Schulzentrum 7 der Stadt Leipzig" .
+    rdfs:label "Berufliches Schulzentrum 7 der Stadt Leipzig" ;
+    foaf:homepage <http://www.bsz7-leipzig.de/> ;
+    foaf:mbox "schulleitung@bsz7-leipzig.de" .
 
 <http://leipzig-data.de/Data/Schule/BZGL.Berufsschule>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> ;
@@ -445,35 +467,45 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bildungszentrum-fuer-gesundheitsberufe-leipzig-gmbh> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/BZGL> ;
     a ld:Berufsfachschule, ld:Berufsschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Bildungszentrum für Gesundheitsberufe Leipzig" .
+    rdfs:label "Bildungszentrum für Gesundheitsberufe Leipzig" ;
+    foaf:homepage <http://www.bildungszentrum-leipzig.de> ;
+    foaf:mbox "bildungszentrum-leipzig@t-online.de" .
 
 <http://leipzig-data.de/Data/Schule/Bernd-Blindow-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Comeniusstrasse.17> ;
     ld:hasSchulId "SN-4450581-0", "SN-4451506-0", "SN-4451812-0", "SN-4451837-0", "SN-4451845-0", "SN-4451852-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-bernd-blindow-schulen-leipzig> ;
     a ld:Berufsfachschule, ld:Berufsschule, ld:Fachoberschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Bernd-Blindow-Schulen Leipzig" .
+    rdfs:label "Bernd-Blindow-Schulen Leipzig" ;
+    foaf:homepage <http://blindow.de/leipzig-bbs> ;
+    foaf:mbox "leipzig@blindow.de" .
 
 <http://leipzig-data.de/Data/Schule/Berufsbildungswerk-Hoer-Sprachgeschaedigte>
     ld:hasAddress <http://leipzig-data.de/Data/04249.Leipzig.KnautnaundorferStrasse.4> ;
     ld:hasSchulId "SN-4450029-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-berufsbildungswerk-leipzig-fuer-hoer-und-sprachgeschaedigte> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Berufsbildungswerk Leipzig für Hör- und Sprachgeschädigte" .
+    rdfs:label "Berufsbildungswerk Leipzig für Hör- und Sprachgeschädigte" ;
+    foaf:homepage <http://www.bbw-leipzig.de/> ;
+    foaf:mbox "info@bbw-leipzig.de" .
 
 <http://leipzig-data.de/Data/Schule/Berufsschule-St.ElisabethKrankenhaus>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Biedermannstrasse.84> ;
     ld:hasSchulId "SN-4450391-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-st-elisabeth-krankenhaus-leipzig> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "St. Elisabeth Krankenhaus Leipzig" .
+    rdfs:label "St. Elisabeth Krankenhaus Leipzig" ;
+    foaf:homepage <http://www.ek-leipzig.de/> ;
+    foaf:mbox "ausbildung@ek-leipzig.de" .
 
 <http://leipzig-data.de/Data/Schule/Berufsschule-St.GeorgKlinikum>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.DelitzscherStrasse.141> ;
     ld:hasSchulId "SN-4450342-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-st-georg-klinikum> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "St. Georg Klinikum" .
+    rdfs:label "Medizinische Berufsfachschule am Klinikum St. Georg gGmbH" ;
+    foaf:homepage <http://www.sanktgeorg.de> ;
+    foaf:mbox "info@sanktgeorg.de" .
 
 <http://leipzig-data.de/Data/Schule/Brueder-Grimm-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Goldsternstrasse.23> ;
@@ -530,7 +562,9 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-deutsches-erwachsenen-bildungswerk> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/DEB.Leipzig> ;
     a ld:Berufsfachschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Deutsches Erwachsenen Bildungswerk" .
+    rdfs:label "Deutsches Erwachsenen Bildungswerk" ;
+    foaf:homepage <http://www.deb.de/standorte/uebersicht/deb-leipzig> ;
+    foaf:mbox "leipzig@deb-gruppe.org" .
 
 <http://leipzig-data.de/Data/Schule/DPFA-Regenbogen-GrundschuleLeipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.RaschwitzerStrasse.15> ;
@@ -546,7 +580,9 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-deutsche-private-finanzakademie-dpfa-gmbh-sachsen> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/DPFA> ;
     a ld:Berufsfachschule, ld:Berufsschule, ld:Fachoberschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "DPFA Bildungszentrum Leipzig" .
+    rdfs:label "DPFA Bildungszentrum Leipzig" ;
+    foaf:homepage <http://www.dpfa.de> ;
+    foaf:mbox "leipzig@dpfa.de" .
 
 <http://leipzig-data.de/Data/Schule/DRK.BWS.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.26A> ;
@@ -555,22 +591,27 @@ ld:Schule
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/DRK.BildungswerkSachsen> ;
     a ld:Berufsfachschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
     rdfs:label "DRK Bildungswerk Sachsen, Standort Leipzig" ;
-    foaf:homepage <http://drk-bildungswerk-sachsen.de/ueber-uns/standort-leipzig.html> .
+    foaf:homepage <http://drk-bildungswerk-sachsen.de/ueber-uns/standort-leipzig.html>, <http://www.drk-bildungswerk-sachsen.de/ueber-uns/standort-leipzig> ;
+    foaf:mbox "leipzig@drk-bildungswerk-sachsen.de" .
 
 <http://leipzig-data.de/Data/Schule/DesignschuleLeipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Bauhofstrasse.3> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Nordstrasse.3> ;
     ld:hasSchulId "SN-4452287-0", "SN-4452439-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-designschule-10-und-designschule-20-gmbh> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Designschule> ;
     a ld:Ergaenzungsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Designschule Leipzig" .
+    rdfs:label "Designschule Leipzig" ;
+    foaf:homepage <http://www.designschule.de/> ;
+    foaf:mbox "info@designschule.de" .
 
 <http://leipzig-data.de/Data/Schule/Diakonissenkrankenhaus-Berufsschule>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.49> ;
     ld:hasSchulId "SN-4450409-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-ev-diakonissenkrankenhaus-leipzig> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Ev. Diakonissenkrankenhaus Leipzig" .
+    rdfs:label "Ev. Diakonissenkrankenhaus Leipzig" ;
+    foaf:homepage <http://www.diako-leipzig.de/> ;
+    foaf:mbox "friederike.baumgaertel@diako-leipzig.de" .
 
 <http://leipzig-data.de/Data/Schule/Dr-Georg-Sacke-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Morawitzstrasse.2> ;
@@ -584,13 +625,15 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-europaeisches-bildungswerk-fuer-beruf-und-gesellschaft-ev> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/EBG.Leipzig> ;
     a ld:Berufsfachschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Europäisches Bildungswerk für Beruf und Gesellschaft, Standort Leipzig" .
+    rdfs:label "Europäisches Bildungswerk für Beruf und Gesellschaft, Standort Leipzig" ;
+    foaf:homepage <http://www.ebg.de/> ;
+    foaf:mbox "fs-leipzig@ebg.de" .
 
 <http://leipzig-data.de/Data/Schule/Erich-Kaestner-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.ErfurterStrasse.9> ;
     ld:hasSchulId "SN-4411997-0" ;
     a ld:Grundschule, ld:Schule ;
-    rdfs:label "Erich Kästner-Schule", "Erich-Kästner-Schule" ;
+    rdfs:label "Erich-Kästner-Schule" ;
     foaf:homepage <http://www.kaestnerschule.de> ;
     foaf:mbox "kaestnerschule@t-online.de" .
 
@@ -622,7 +665,9 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-euro-schulen-ggmbh> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/EuroAkademie.Leipzig> ;
     a ld:Berufsfachschule, ld:Berufsschule, ld:Ergaenzungsschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Euro Akademie, Standort Leipzig" .
+    rdfs:label "Euro Akademie, Standort Leipzig" ;
+    foaf:homepage <http://www.euroakademie.de/leipzig> ;
+    foaf:mbox "leipzig@euroakademie.de" .
 
 <http://leipzig-data.de/Data/Schule/EvangelischesSchulzentrum>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Latein", "Russisch", "Spanisch" ;
@@ -674,7 +719,7 @@ ld:Schule
     dct:modified "2018-02-23" ;
     a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
     rdfs:comment "Freie Alternativschule, keine Zensuren, Ganztagsschule, 1990 als Alternativschule gegründet" ;
-    rdfs:label "Freie Schule Leipzig", "Freie Schule Leipzig e.V." ;
+    rdfs:label "Freie Schule Leipzig" ;
     foaf:homepage <http://www.freie-schule-leipzig.de> ;
     foaf:mbox "kontakt@freie-schule-leipzig.de" .
 
@@ -687,7 +732,7 @@ ld:Schule
     dct:modified "2018-02-23" ;
     a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
     rdfs:comment "Gesamtschule" ;
-    rdfs:label "Freie Waldorfschule Leipzig", "Waldorfschule Leipzig" ;
+    rdfs:label "Freie Waldorfschule Leipzig" ;
     foaf:homepage <http://www.waldorfschule-leipzig.de> ;
     foaf:mbox "kontakt@waldorfschule-leipzig.de" .
 
@@ -743,14 +788,16 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-gbs-gemeinnuetzige-gmbh-fuer-techn-und-kaufmaennische-berufsbildende> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/GBS> ;
     a ld:Berufsfachschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "GBS Fachschule für Technik und Wirtschaft in Leipzig" .
+    rdfs:label "GBS Fachschule für Technik und Wirtschaft in Leipzig" ;
+    foaf:homepage <http://www.gbsleipzig.de/> ;
+    foaf:mbox "info@gbsleipzig.de" .
 
 <http://leipzig-data.de/Data/Schule/GS-AmAdler>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Antonienstrasse.24> ;
     ld:hasSchulId "SN-4411849-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/schule-am-adler-grundschule-der-stadt-leipzig> ;
     a ld:Grundschule, ld:Schule ;
-    rdfs:label "Grundschule am Adler", "Schule am Adler" ;
+    rdfs:label "Grundschule am Adler" ;
     foaf:homepage <http://www.grundschule-am-adler.de> ;
     foaf:mbox "Gs-am-adler@t-online.de" .
 
@@ -859,16 +906,16 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04316.Leipzig.Schulstrasse.6> ;
     ld:hasSchulId "SN-4410502-0" ;
     a ld:Grundschule ;
-    rdfs:label "Grundschule Mölkau", "Schule Mölkau" ;
+    rdfs:label "Grundschule Mölkau" ;
     foaf:homepage <http://cms.sn.schule.de/gsmoelkau> ;
     foaf:mbox "gsmoelkau@t-online.de" .
 
 <http://leipzig-data.de/Data/Schule/GS-Portitz>
-    ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.GoebschelwitzerWeg.1>, <http://leipzig-data.de/Data/04349.Leipzig.Lidicestrasse.12> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04349.Leipzig.GoebschelwitzerWeg.1> ;
     dct:modified "2018-02-23" ;
     a ld:Grundschule, ld:Schule ;
-    rdfs:label "Grundschule Portitz", "Schule Portitz" ;
-    foaf:homepage <http://www.grundschule-portitz.de>, <http://www.mittelschule-portitz.de> ;
+    rdfs:label "Grundschule Portitz" ;
+    foaf:homepage <http://www.grundschule-portitz.de> ;
     foaf:mbox "Gsportitz@t-online.de" .
 
 <http://leipzig-data.de/Data/Schule/GS-Rueckmarsdorf>
@@ -899,7 +946,7 @@ ld:Schule
     ld:hasSchulId "SN-4430310-0" ;
     a ld:Grundschule, ld:Schule ;
     rdfs:comment "Gemeinsames Gebäude für Grund- und Oberschule" ;
-    rdfs:label "Grundschule Wiederitzsch", "Schule Wiederitzsch" ;
+    rdfs:label "Grundschule Wiederitzsch" ;
     foaf:homepage <http://www.grundschule-wiederitzsch.de> ;
     foaf:mbox "grundschule-wiederitzsch@t-online.de" .
 
@@ -966,7 +1013,9 @@ ld:Schule
     ld:hasSchulId "SN-4450110-0", "SN-4450110-1", "SN-4450110-2" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/gutenbergschule-berufliches-schulzentrum-der-stadt-leipzig> ;
     a ld:Berufsschule, ld:Schule ;
-    rdfs:label "Gutenbergschule - Berufliches Schulzentrum der Stadt Leipzig" .
+    rdfs:label "Gutenbergschule - Berufliches Schulzentrum der Stadt Leipzig" ;
+    foaf:homepage <http://www.gutenbergschule-leipzig.de/> ;
+    foaf:mbox "Gutenbergschule-leipzig@t-online.de" .
 
 <http://leipzig-data.de/Data/Schule/Gymnasium-Engelsdorf>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
@@ -1012,7 +1061,9 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-berufsbildungsinstitut-und-sozialpflegeschulen-heimerer-gmbh> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Heimerer.Leipzig> ;
     a ld:Berufsfachschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Berufsbildungsinstitut und Sozialpflegeschulen Heimerer GmbH" .
+    rdfs:label "Berufsbildungsinstitut und Sozialpflegeschulen Heimerer GmbH" ;
+    foaf:homepage <http://www.heimerer-schulen.de/orte/leipzig/> ;
+    foaf:mbox "leipzig@heimerer.de" .
 
 <http://leipzig-data.de/Data/Schule/Heinrich-Mann-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04289.Leipzig.Schwarzenbergweg.4> ;
@@ -1036,13 +1087,17 @@ ld:Schule
     ld:hasSchulId "SN-4450235-0", "SN-4450235-1", "SN-4450235-2", "SN-4450235-3" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/henriette-goldschmidt-schule-berufliches-schulzentrum-der-stadt-leipzig> ;
     a ld:Berufsschule, ld:Schule ;
-    rdfs:label "Henriette-Goldschmidt-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+    rdfs:label "Henriette-Goldschmidt-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
+    foaf:homepage <http://www.goldschmidtschule-leipzig.de/> ;
+    foaf:mbox "sekretariat@goldschmidtschule-leipzig.de" .
 
 <http://leipzig-data.de/Data/Schule/Humana-Berufsschule>
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Comeniusstrasse.17> ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-humana-ggmbh-leipzig> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "HUMANA gGmbH Leipzig" .
+    rdfs:label "HUMANA gGmbH Leipzig" ;
+    foaf:homepage <http://blindow.de/leipzig-bbs> ;
+    foaf:mbox "leipzig@blindow.de" .
 
 <http://leipzig-data.de/Data/Schule/Humboldt-Gymnasium>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
@@ -1060,7 +1115,9 @@ ld:Schule
     ld:hasSchulId "SN-4451324-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-ib-gesellschaft-fuer-interdisziplinaere-studien-mbh> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "IB Gesellschaft für interdisziplinäre Studien mbH" .
+    rdfs:label "IB Gesellschaft für interdisziplinäre Studien mbH" ;
+    foaf:homepage <http://www.med-akademie.de> ;
+    foaf:mbox "leipzig@ib-med-akademie.de" .
 
 <http://leipzig-data.de/Data/Schule/Immanuel-Kant-Gymnasium>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
@@ -1108,7 +1165,9 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-johanniter-unfall-hilfe-ev> ;
     ld:hasSupplier <http://leipzig-data.de/Data/KE/JohanniterAkademie.Leipzig> ;
     a ld:Berufsfachschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Bildungsinstitut Mitteldeutschland der Johanniter-Akademie" .
+    rdfs:label "Bildungsinstitut Mitteldeutschland der Johanniter-Akademie" ;
+    foaf:homepage <http://www.bildungsinstitut-mitteldeutschland.de> ;
+    foaf:mbox "Bildungsinstitiut-mitteldeutschland@johanniter.de" .
 
 <http://leipzig-data.de/Data/Schule/Kaethe-Kollwitz-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Karl-Vogel-Strasse.17> ;
@@ -1122,7 +1181,9 @@ ld:Schule
     ld:hasSchulId "SN-4450177-0", "SN-4450177-1", "SN-4450177-2", "SN-4450177-3", "SN-4450177-4" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/karl-heine-schule-berufliches-schulzentrum-der-stadt-leipzig> ;
     a ld:Berufsschule, ld:Schule ;
-    rdfs:label "Karl-Heine-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+    rdfs:label "Karl-Heine-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
+    foaf:homepage <http://www.bszkhs-leipzig.de/> ;
+    foaf:mbox "khs@bszkhs-leipzig.de" .
 
 <http://leipzig-data.de/Data/Schule/Karl-Liebknecht-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Heinrich-Mann-Strasse.1> ;
@@ -1143,7 +1204,9 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.45> ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-kulturhafen-am-riverboat> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Kulturhafen am Riverboat" .
+    rdfs:label "Kulturhafen am Riverboat" ;
+    foaf:homepage <http://www.musifa.de> ;
+    foaf:mbox "info@musifa.de" .
 
 <http://leipzig-data.de/Data/Schule/Kurt-Biedermann-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Garskestrasse.19> ;
@@ -1153,7 +1216,7 @@ ld:Schule
     rdfs:label "Kurt-Biedermann-Schule - Förderzentrum für Erziehungshilfe der Stadt Leipzig" .
 
 <http://leipzig-data.de/Data/Schule/Kurt-Masur-Schule>
-    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Bernhard-Goering-Strasse.107>, <http://leipzig-data.de/Data/04275.Leipzig.Scharnhorststrasse.24> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Scharnhorststrasse.24> ;
     a ld:Grundschule, ld:Schule ;
     rdfs:label "Kurt-Masur-Schule" ;
     foaf:homepage <http://www.drittegrundschule.de> ;
@@ -1173,7 +1236,8 @@ ld:Schule
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Lehmbau.Leipzig> ;
     a ld:Berufsfachschule, ld:Ergaenzungsschule, ld:Fachoberschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
     rdfs:label "Berufsschulen der Augsburger Lehmbaugesellschaft Leipzig" ;
-    foaf:homepage <http://berufsschule.lehmbaugruppe.de> .
+    foaf:homepage <http://berufsschule.lehmbaugruppe.de>, <http://www.lehmbaugruppe.de/slg/index.php> ;
+    foaf:mbox "info@lehmbaugruppe.de" .
 
 <http://leipzig-data.de/Data/Schule/Leibniz-Gymnasium>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch", "Spanisch" ;
@@ -1190,7 +1254,9 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04328.Leipzig.Theodor-Heuss-Strasse.30> ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-leibnizeum-aus-und-weiterbildung-dr-groebke> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Leibnizeum Aus- und Weiterbildung Dr. Gröbke" .
+    rdfs:label "Leibnizeum Aus- und Weiterbildung Dr. Gröbke" ;
+    foaf:homepage <http://www.leibnizeum.de> ;
+    foaf:mbox "leibnizeum@gmail.de" .
 
 <http://leipzig-data.de/Data/Schule/LeipzigInternationalSchool>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
@@ -1435,7 +1501,7 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Jungmannstrasse.5> ;
     ld:hasSchulId "SN-4412219-0" ;
     a ld:Grundschule, ld:Schule ;
-    rdfs:label "Paul-Robeson-Grundschule", "Paul-Robeson-Schule" ;
+    rdfs:label "Paul-Robeson-Grundschule" ;
     foaf:homepage <http://www.sn.schule.de/~robeson-gs-l> ;
     foaf:mbox "Paul-robeson-gs-leipzig@web.de" .
 
@@ -1476,6 +1542,14 @@ ld:Schule
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
     rdfs:label "Rahn Berufsschule" .
 
+<http://leipzig-data.de/Data/Schule/Rahn-FreieFachoberschule>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.20> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Firma/RahnDittrich> ;
+    a ld:Fachoberschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Rahn Education - Freie Fachoberschule Leipzig" ;
+    foaf:homepage <https://rahn.education/freie-fachoberschule-leipzig.html> ;
+    foaf:mbox "fachoberschule-lpz@rahn.education" .
+
 <http://leipzig-data.de/Data/Schule/Rahn-Schule>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Kochstrasse.28A> ;
@@ -1503,7 +1577,9 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.SchoenauerStrasse.160> ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/ruth-pfau-schule-berufliches-schulzentrum-der-stadt-leipzig> ;
     a ld:Berufsschule, ld:Schule ;
-    rdfs:label "Ruth-Pfau-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+    rdfs:label "Ruth-Pfau-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
+    foaf:homepage <http://www.ruth-pfau-schule.de/> ;
+    foaf:mbox "info@ruth-pfau-schule.de" .
 
 <http://leipzig-data.de/Data/Schule/Schule-Rosenweg>
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Rosenweg.59> ;
@@ -1546,7 +1622,9 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/susanna-eger-schule-berufliches-schulzentrum-der-stadt-leipzig> ;
     a ld:Berufsschule, ld:Schule ;
     rdfs:comment "Fair-Trade-Schule" ;
-    rdfs:label "Susanna-Eger-Schule - Berufliches Schulzentrum der Stadt Leipzig" .
+    rdfs:label "Susanna-Eger-Schule - Berufliches Schulzentrum der Stadt Leipzig" ;
+    foaf:homepage <http://www.susanna-eger-schule.de/> ;
+    foaf:mbox "sekretariat@susanna-eger-schule.de" .
 
 <http://leipzig-data.de/Data/Schule/TUEV-OS>
     ld:angeboteneFremdsprachen "Englisch", "Spanisch" ;
@@ -1562,7 +1640,9 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Franz-Flemming-Strasse.16> ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-theater-fabrik-sachsen-gmbh> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Theater-Fabrik-Sachsen GmbH" .
+    rdfs:label "Theater-Fabrik-Sachsen GmbH" ;
+    foaf:homepage <http://www.schauspielschule.info> ;
+    foaf:mbox "info@schauspielschule.info" .
 
 <http://leipzig-data.de/Data/Schule/Theodor-Koerner-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Schlehenweg.32> ;
@@ -1588,14 +1668,18 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Richterstrasse.9> ;
     ld:hasSchulId "SN-4451381-0", "SN-4452470-0", "SN-4452496-0", "SN-4452504-0", "SN-4452512-0", "SN-4452702-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-universitaetsklinikum-leipzig-aoer> ;
-    a ld:Berufsfachschule, ld:Ergaenzungsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "Berufsfachsculen des Universitätsklinikum Leipzig AöR" .
+    a ld:Berufsfachschule, ld:Berufsschule, ld:Ergaenzungsschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "Berufsfachschulen des Universitätsklinikum Leipzig AöR" ;
+    foaf:homepage <http://mbfs.uniklinikum-leipzig.de/> ;
+    foaf:mbox "mbfs@medizin.uni-leipzig.de" .
 
 <http://leipzig-data.de/Data/Schule/Universum-Berufsbildungs-Akademie>
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Angerstrasse.40> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Angerstrasse.42E> ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-universum-private-berufsbildungs-akademie> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "UNIVERSUM - Private Berufsbildungs-Akademie" .
+    rdfs:label "UNIVERSUM - Private Berufsbildungs-Akademie" ;
+    foaf:homepage <http://universum-akademie.de> ;
+    foaf:mbox "info@universum-akademie.de" .
 
 <http://leipzig-data.de/Data/Schule/VMKB.Berufsschule>
     ld:hasSchulId "SN-4451399-0", "SN-4452353-0", "SN-4452801-0", "SN-4452843-0" ;
@@ -1609,8 +1693,10 @@ ld:Schule
     ld:hasSchulId "SN-4451969-0", "SN-4452744-0", "SN-4452819-0" ;
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-wbs-training-schulen-ggmbh> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/WBS.Leipzig> ;
-    a ld:Berufsfachschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
-    rdfs:label "WBS Training Schulen, Standort Leipzig" .
+    a ld:Berufsfachschule, ld:Berufsschule, ld:Fachschule, ld:FreierTraeger, ld:Schule ;
+    rdfs:label "WBS Training Schulen, Standort Leipzig" ;
+    foaf:homepage <http://www.wbs-schulen.de> ;
+    foaf:mbox "info@wbstraining.de" .
 
 <http://leipzig-data.de/Data/Schule/Werner-Heisenberg-Gymnasium>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
@@ -1641,7 +1727,7 @@ ld:Schule
     foaf:mbox "Wilhelm-busch-schule-leipzig@t-online.de" .
 
 <http://leipzig-data.de/Data/Schule/Wilhelm-Hauff-Schule>
-    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.DiderotStrasse.37>, <http://leipzig-data.de/Data/04159.Leipzig.Diderotstrasse.37> ;
+    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Diderotstrasse.37> ;
     a ld:Grundschule, ld:Schule ;
     rdfs:label "Wilhelm-Hauff-Schule" ;
     foaf:homepage <http://cms.sn.schule.de/hauffgs> ;
@@ -1687,3 +1773,4 @@ ld:Schule
     ld:hasStadtURL <http://www.leipzig.de/detailansicht-adresse/freier-traeger-beruflich-cit-ggmbh> ;
     a ld:Berufsschule, ld:FreierTraeger, ld:Schule ;
     rdfs:label "ciT gGmbH" .
+
