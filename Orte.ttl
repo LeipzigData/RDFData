@@ -11,6 +11,13 @@
 @prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
+<http://leipzig-data.de/Data/Orte/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Orte" .
+
 ld:Hotel
     a owl:Class ;
     rdfs:label "Hotel" ;
@@ -27,11 +34,11 @@ ld:Ort
 
 <http://leipzig-data.de/Data/Ort/4rooms>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Taeubchenweg.26> ;
-    a ld:Ort ; 
-    foaf:homepage <http://fourooms.net/> ; 
-    rdfs:comment "Im Jahre 2005 machten sich 4 Studenten mit Hilfe vieler Unterstützer auf, im Leipziger Osten ihr eigenes Wohnzimmer einzurichten. Etwas Kneipe, etwas Club, etwas Zocker-Höhle und ein wenig HipHop und die 4rooms waren erdacht, erbaut und fertig angemalt.", "Kultkneipe 4rooms in Leipzig-Reudnitz muss schließen. Für die Reudnitzer ist es ein Schock: Die Szenekneipe 4rooms im Täubchenweg macht nach zwölf Jahren im Kiez dicht. Freiwillig geht der Club nicht. Ein neuer Investor habe das Haus gekauft und schmeiße das 4rooms raus, so der Betreiber. Quelle: <http://www.lvz.de/Leipzig/Lokales/Kultkneipe-4rooms-in-Leipzig-Reudnitz-muss-schliessen> (April 2018)";	 
-    dct:modified "2018-05-04" ; 
-    rdfs:label "4rooms" .
+    dct:modified "2018-05-04" ;
+    a ld:Ort ;
+    rdfs:comment "Im Jahre 2005 machten sich 4 Studenten mit Hilfe vieler Unterstützer auf, im Leipziger Osten ihr eigenes Wohnzimmer einzurichten. Etwas Kneipe, etwas Club, etwas Zocker-Höhle und ein wenig HipHop und die 4rooms waren erdacht, erbaut und fertig angemalt.", "Kultkneipe 4rooms in Leipzig-Reudnitz muss schließen. Für die Reudnitzer ist es ein Schock: Die Szenekneipe 4rooms im Täubchenweg macht nach zwölf Jahren im Kiez dicht. Freiwillig geht der Club nicht. Ein neuer Investor habe das Haus gekauft und schmeiße das 4rooms raus, so der Betreiber. Quelle: <http://www.lvz.de/Leipzig/Lokales/Kultkneipe-4rooms-in-Leipzig-Reudnitz-muss-schliessen> (April 2018)" ;
+    rdfs:label "4rooms" ;
+    foaf:homepage <http://fourooms.net/> .
 
 ldo:AIDSBeratungsstelle
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Gustav-Mahler-Strasse.3> ;
@@ -110,6 +117,13 @@ ldo:AlRahman-Moschee
     a ld:Ort ;
     rdfs:label "Al-Rahman Moschee" .
 
+ldo:Almalab
+    ld:contactPerson ldp:Funke_Florian, ldp:Katz_Elke ;
+    ld:hasSupplier <http://leipzig-data.de/Data/UniLeipzig/Physik> ;
+    a ld:Ort ;
+    rdfs:label "Universität Leipzig, Schülerforschungszentrum almalab" ;
+    foaf:homepage <http://www.physgeo.uni-leipzig.de/schueler/> .
+
 ldo:AlpenmaxLeipzig
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.GrosseFleischergasse.12> ;
     a ld:Club, ld:Ort ;
@@ -166,6 +180,20 @@ ldo:Anker
     foaf:mbox "info@anker-Leipzig.de" ;
     foaf:phone "0341-9123910", "0341-9128327" .
 
+ldo:Annalinde
+    ld:erreichbar "SB 8, 15 bis Henriettenstraße" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
+    a ld:Ort ;
+    rdfs:label "Annalinde" ;
+    foaf:homepage <http://www.annalinde-leipzig.de> .
+
+<http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten>
+    ld:erreichbar "SB 14 bis Bahnhof Plagwitz" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.RoeckenerStrasse.38> ;
+    a ld:Ort ;
+    rdfs:label "Annalinde Obstgarten im Bürgerbahnhof Plagwitz" ;
+    foaf:homepage <http://www.annalinde-leipzig.de> .
+
 ldo:Antikenmuseum
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaikirchhof.2> ;
     a ld:Ort ;
@@ -216,6 +244,15 @@ ldo:AuerbachsKeller
     foaf:homepage <http://www.auerbachs-keller-leipzig.de/> ;
     foaf:mbox "info@auerbachs-keller-leipzig.de" ;
     foaf:phone "341-21610-0", "341-21610-11" .
+
+ldo:AutismusambulanzLeipzig
+    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Schenkendorfstrasse.10> ;
+    ld:hasOrtsteil ldot:Suedvorstadt ;
+    ld:hasStadtId "327" ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Firma/BBW> ;
+    a ld:Ort ;
+    rdfs:comment "LVZ 3.7.2018: Trägerschaft übernimmt BBW vom Sozialwerk gGmbH " ;
+    rdfs:label "Autismusambulanz Leipzig" .
 
 ldo:Auwaldstation
     ld:Finanzierung "Am 19.12.2011 wird ein Zuwendungsvertrag unterzeichnet, der dem Verein auf der Basis eines Stadtratsbeschlusses eine jährliche Unterstützung von 35.000 Euro zusichert." ;
@@ -347,10 +384,10 @@ ldo:BergbauTechnikPark
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
+    dct:modified "2018-04-05" ;
     a ld:Ort ;
-    rdfs:comment "Stadtrat beschließt am 18.4.2018 Ausbau zu einem Bildungs- und Bürgerzentrum Grünau" ; 
+    rdfs:comment "Stadtrat beschließt am 18.4.2018 Ausbau zu einem Bildungs- und Bürgerzentrum Grünau" ;
     rdfs:label "Bibliothek Grünau-Mitte" ;
-    dct:modified "2018-04-05" ; 
     foaf:phone "0341-4111018" .
 
 <http://leipzig-data.de/Data/Ort/Bibliothek.Gruenau-Nord>
@@ -486,6 +523,22 @@ ldo:BioCity
     rdfs:label "BioCity Leipzig" ;
     foaf:homepage <http://bio-city-leipzig.de> .
 
+<http://leipzig-data.de/Data/Ort/Biodidaktik.Schuelerlabor>
+    ld:contactPerson ldp:Holzheu_Marco ;
+    ld:hasSupplier <http://leipzig-data.de/Data/UniLeipzig/BioFak> ;
+    a ld:Ort ;
+    rdfs:label "Universität Leipzig, Naturwissenschaftliches SchülerInnen Labor" ;
+    foaf:homepage <http://www.biphaps.uni-leipzig.de/biodidaktik/schuelerlabor.html> .
+
+ldo:BohemianKids
+    ld:hasAddress <http://leipzig-data.de/Data/04019.Leipzig.Universitaetsstrasse.18> ;
+    dct:modified "2018-08-10" ;
+    a ld:Cafe, ld:Ort ;
+    rdfs:label "Bohemian Kids Cafe/Bar" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.239> ;
+    foaf:homepage <https://www.facebook.com/BohemianKidsCafe/> ;
+    foaf:mbox "bohemiankids.cafe@gmail.com" .
+
 <http://leipzig-data.de/Data/Ort/Bootsanleger.RennbahnWeg>
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Rennbahnweg.2A> ;
     a ld:Ort ;
@@ -600,8 +653,10 @@ ldo:CCLS
 <http://leipzig-data.de/Data/Ort/Cafe.Kaputt>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.102> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/LebenLernenLeipzig> ;
+    dct:modified "2018-08-10" ;
     a ld:Cafe, ld:Ort ;
     rdfs:label "Café kaputt" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.241> ;
     foaf:homepage <http://reparieren-in-leipzig.de/>, <http://www.facebook.com/cafekaputt> ;
     foaf:mbox "cafekaputt@lebenlernenleipzig.de" .
 
@@ -894,9 +949,9 @@ ldo:Duke
 ldo:ErfinderKinder
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Spittastrasse.16> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/ErfinderKinder> ;
-    foaf:homepage <http://erfinderkinder.net/> ;
     a ld:Ort ;
-    rdfs:label "ErfinderKinder" .
+    rdfs:label "ErfinderKinder" ;
+    foaf:homepage <http://erfinderkinder.net/> .
 
 ldo:Esse74
     ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Rosenowstrasse.24> ;
@@ -1107,7 +1162,7 @@ ldo:GewandhausLeipzig
     foaf:phone "0341-1270-280" .
 
 ldo:GfZK
-    ld:engagedPerson ldp:Friedrich_Alexandra, ldp:Seik_Lena, ldp:Schulze_Tristan ;
+    ld:engagedPerson ldp:Friedrich_Alexandra, ldp:Schulze_Tristan, ldp:Seik_Lena ;
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Tauchnitz-Strasse.11> ;
     ld:hasStatus "aktiv" ;
     dct:modified "2018-02-22" ;
@@ -1205,11 +1260,11 @@ ldo:HausAuensee
     rdfs:label "Haus Auensee" .
 
 ldo:HausSteinstrasse
+    ld:contactPerson ldp:Bernard_Ulrike, ldp:Gleichmann_Tina ;
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Steinstrasse.18> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/HausSteinstrasse> ;
     a ld:Ort ;
-    ld:contactPerson ldp:Bernard_Ulrike, ldp:Gleichmann_Tina; 
     rdfs:label "Haus Steinstraße" ;
     foaf:homepage <http://www.haus-steinstrasse.de> ;
     foaf:mbox "michael.rausch@haus-steinstrasse.de" ;
@@ -1753,10 +1808,19 @@ ldo:Maedlerpassage
     a ld:Ort ;
     rdfs:label "Mädlerpassage" .
 
+ldo:MagistralenmanagementGeorgSchumannStrasse
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Georg-Schumann-Strasse.126> ;
+    dct:modified "2018-08-10" ;
+    a ld:Ort ;
+    rdfs:label "Magistralenmanagement Georg-Schumann-Straße" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.220> ;
+    foaf:homepage <http://www.schumann-magistrale.de> ;
+    foaf:mbox "presse@schumann-magistrale.de" .
+
 ldo:MandalaSpieleck
+    ld:contactPerson ldp:Bergmann_Thommy ;
     ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.147> ;
     a ld:Ort ;
-    ld:contactPerson ldp:Bergmann_Thommy ; 
     rdfs:label "Mandala Spieleck" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.79> .
 
@@ -2073,6 +2137,12 @@ ldo:PassageKinos
     foaf:mbox "info@passage-kinos.de" ;
     foaf:phone "341-2173862", "341.2173870" .
 
+ldo:PaulGerhardtKirche
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Selneckerstrasse.7> ;
+    a ld:Kirche, ld:Ort ;
+    rdfs:label "Paul-Gerhardt-Kirche" ;
+    foaf:homepage <http://www.kirche-leipzig.de/connewitz-loessnig/paulgerhardtkirche.htm> .
+
 ldo:Petersbogen
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Petersstrasse.36> ;
     a ld:Ort ;
@@ -2082,6 +2152,11 @@ ldo:Petershof
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Petersstrasse.20> ;
     a ld:Ort ;
     rdfs:label "Petershof" .
+
+ldo:Peterskirche
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.5> ;
+    a ld:Kirche, ld:Ort ;
+    rdfs:label "Peterskirche" .
 
 ldo:Phyllodrom
     ld:contactPerson ldp:Hofmann_Thomas ;
@@ -2223,6 +2298,14 @@ ldo:RittergutMoeckern
     a ld:Ort ;
     rdfs:label "Rittergut Möckern" .
 
+ldo:Robert-Koch-Park
+    ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.Nikolai-Rumjanzew-Strasse.100> ;
+    dct:modified "2018-06-25" ;
+    a ld:Ort ;
+    rdfs:comment "Robert Koch Park, bei der Villa Robert Koch, Grünau, Zugang über Schönauer Straße" ;
+    rdfs:label "Robert-Koch-Park" ;
+    foaf:homepage <http://www.leipzig-lexikon.de/GARTPARK/robkoch.htm>, <http://www.leipziggruen.de/de/2015_RobertKoch.asp> .
+
 ldo:Rockzipfel
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.10> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Zipfel> ;
@@ -2233,14 +2316,6 @@ ldo:Rockzipfel
     foaf:homepage <http://www.rockzipfel-leipzig.de> ;
     foaf:mbox "buero@rockzipfel-leipzig.de" ;
     foaf:phone "0341-2482740" .
-
-<http://leipzig-data.de/Data/Ort/Robert-Koch-Park>
-    ld:hasAddress  <http://leipzig-data.de/Data/04207.Leipzig.Nikolai-Rumjanzew-Strasse.100> ;
-    dct:modified "2018-06-25" ;
-    a ld:Ort ;
-    rdfs:comment "Robert Koch Park, bei der Villa Robert Koch, Grünau, Zugang über Schönauer Straße" ;
-    foaf:homepage <http://www.leipzig-lexikon.de/GARTPARK/robkoch.htm>, <http://www.leipziggruen.de/de/2015_RobertKoch.asp> ; 
-    rdfs:label "Robert-Koch-Park" .
 
 ldo:RussischeGedaechtniskirche
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Philipp-Rosenthal-Strasse.51A> ;
@@ -2313,17 +2388,17 @@ ldo:ScholaOecologica
     rdfs:label "Schola Oecologica" .
 
 ldo:SchoolOfMedia
+    ld:contactPerson ldp:Geffken_Michael ;
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Poetenweg.28> ;
     a ld:Ort ;
-    ld:contactPerson ldp:Geffken_Michael ; 
     rdfs:label "Leipzig School of Media" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.27>, <http://leipzig-data.de/Data/APIId/Venue.37> .
 
-<http://leipzig-data.de/Data/Ort/Schraderhaus>
+ldo:Schraderhaus
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Taeubchenweg.26> ;
-    a ld:Ort ; 
-    rdfs:comment "Amtsblatt 5.5.2018: Stadt hat diese ehemalige Druckerei für 10 Mio Euro gekauft und will das Haus in den nächsten fünf Jahren zu einer Oberschule umbauen. Dazu wurde u.a. der Kneipe 4rooms im Erdgeschoss gekündigt.  Gegenüber befindet sich die 125. Schule und die Wilhelm-Busch-Schule. Das Areal soll zu einem Bildungscampus mit gemeinschaftlich genutzten Freiflächen weiterentwickelt werden.";	 
-    dct:modified "2018-05-04" ; 
+    dct:modified "2018-05-04" ;
+    a ld:Ort ;
+    rdfs:comment "Amtsblatt 5.5.2018: Stadt hat diese ehemalige Druckerei für 10 Mio Euro gekauft und will das Haus in den nächsten fünf Jahren zu einer Oberschule umbauen. Dazu wurde u.a. der Kneipe 4rooms im Erdgeschoss gekündigt.  Gegenüber befindet sich die 125. Schule und die Wilhelm-Busch-Schule. Das Areal soll zu einem Bildungscampus mit gemeinschaftlich genutzten Freiflächen weiterentwickelt werden." ;
     rdfs:label "Schraderhaus" .
 
 ldo:Schreberbad
@@ -2452,6 +2527,11 @@ ldo:SportforumLeipzig
     rdfs:label "Sportforum Leipzig" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.53>, <http://leipzig-data.de/Data/APIId/Venue.54> .
 
+ldo:StMartin
+    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Kolpingweg.1> ;
+    a ld:Kirche, ld:Ort ;
+    rdfs:label "Katholische Pfarrei St. Martin" .
+
 <http://leipzig-data.de/Data/Ort/StadtLeipzig.NeuesRathaus>
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
     a ld:Ort ;
@@ -2481,9 +2561,9 @@ ldo:SportforumLeipzig
     rdfs:label "Stadtgeschichtliches Museum" .
 
 <http://leipzig-data.de/Data/Ort/Stadtteilladen.Gruenau>
+    ld:contactPerson ldp:Diebler_Peggy ;
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.StuttgarterAllee.19> ;
     a ld:Ort ;
-    ld:contactPerson ldp:Diebler_Peggy ;
     rdfs:comment "Neue Zweigstelle zur Bildungsberatung öffnet im März 2013 (Quelle: Newsletter LvO 02/2013)" ;
     rdfs:label "Stadtteilladen Grünau" .
 
@@ -2617,6 +2697,15 @@ ldo:Theatrium
     foaf:homepage <http://www.theatrium-leipzig.de/>, "http://www.theatrium-leipzig.de" ;
     foaf:mbox "theatrium@gmx.de" ;
     foaf:phone "0341-9406064", "0341-9413640" .
+
+ldo:Thomaskirche
+    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomaskirchhof.18> ;
+    a ld:Kirche, ld:Ort ;
+    rdfs:comment "Bachgrab", "Evangelisch-Lutherisch" ;
+    rdfs:label "Thomaskirche" ;
+    foaf:homepage <http://www.thomaskirche.org/> ;
+    foaf:mbox "info@thomaskirche.org" ;
+    foaf:phone "0341-2222440" .
 
 ldo:TwentyOne
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Gottschedstrasse.2> ;
@@ -2826,11 +2915,11 @@ ldo:VictorsResidenz
     rdfs:label "Victor's Residenz-Hotel Leipzig" .
 
 ldo:Villa
+    ld:contactPerson ldp:Reiner_Oliver ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Lessingstrasse.7> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Villa> ;
     a ld:Ort ;
-    ld:contactPerson ldp:Reiner_Oliver ; 
     rdfs:label "Soziokulturelles Zentrum \"Die Villa\"" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.64> ;
     foaf:homepage <http://www.villa-Leipzig.de> ;
@@ -2839,8 +2928,8 @@ ldo:Villa
 
 ldo:VillaHasenholz
     ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Gustav-Esche-Strasse.1> ;
-    a ld:Ort ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/ErfinderKinder> ;
+    a ld:Ort ;
     rdfs:label "Villa Hasenholz" .
 
 ldo:VillaIda
@@ -2973,73 +3062,3 @@ ldo:sublab
     a ld:Ort ;
     rdfs:label "sublab e.V." ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.30> .
-
-<http://leipzig-data.de/Data/Orte/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Orte" .
-
-<http://leipzig-data.de/Data/Ort/Biodidaktik.Schuelerlabor>
-    ld:hasSupplier <http://leipzig-data.de/Data/UniLeipzig/BioFak> ;
-    a ld:Ort ;
-    rdfs:label "Universität Leipzig, Naturwissenschaftliches SchülerInnen Labor" ;
-    ld:contactPerson ldp:Holzheu_Marco ; 
-    foaf:homepage <http://www.biphaps.uni-leipzig.de/biodidaktik/schuelerlabor.html> .
-
-<http://leipzig-data.de/Data/Ort/Almalab>
-    ld:hasSupplier <http://leipzig-data.de/Data/UniLeipzig/Physik> ;
-    a ld:Ort ;
-    rdfs:label "Universität Leipzig, Schülerforschungszentrum almalab" ;
-    ld:contactPerson ldp:Katz_Elke, ldp:Funke_Florian ; 
-    foaf:homepage <http://www.physgeo.uni-leipzig.de/schueler/> .
-
-<http://leipzig-data.de/Data/Ort/PaulGerhardtKirche>
-    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Selneckerstrasse.7> ;
-    a ld:Ort, ld:Kirche ;
-    rdfs:label "Paul-Gerhardt-Kirche" ;
-    foaf:homepage <http://www.kirche-leipzig.de/connewitz-loessnig/paulgerhardtkirche.htm> .
-
-<http://leipzig-data.de/Data/Ort/Peterskirche>
-    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.5> ;
-    a ld:Ort, ld:Kirche ;
-    rdfs:label "Peterskirche" .
-
-<http://leipzig-data.de/Data/Ort/StMartin>
-    a ld:Ort, ld:Kirche ;
-    ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.Kolpingweg.1> ;
-    rdfs:label "Katholische Pfarrei St. Martin" .
-
-<http://leipzig-data.de/Data/Ort/Thomaskirche>
-    a ld:Ort, ld:Kirche ;
-    ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Thomaskirchhof.18> ;
-    rdfs:comment "Bachgrab", "Evangelisch-Lutherisch" ;
-    rdfs:label "Thomaskirche" ;
-    foaf:homepage <http://www.thomaskirche.org/> ;
-    foaf:mbox "info@thomaskirche.org" ;
-    foaf:phone "0341-2222440" .
-
-<http://leipzig-data.de/Data/Ort/Annalinde>
-    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
-    a ld:Ort ;
-    ld:erreichbar "SB 8, 15 bis Henriettenstraße" ; 
-    rdfs:label "Annalinde" ;
-    foaf:homepage <http://www.annalinde-leipzig.de> .
-
-<http://leipzig-data.de/Data/Ort/Annalinde.Obstgarten>
-    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.RoeckenerStrasse.38> ;
-    a ld:Ort ;
-    ld:erreichbar "SB 14 bis Bahnhof Plagwitz" ; 
-    rdfs:label "Annalinde Obstgarten im Bürgerbahnhof Plagwitz" ;
-    foaf:homepage <http://www.annalinde-leipzig.de> .
-
-
-<http://leipzig-data.de/Data/Ort/AutismusambulanzLeipzig>
-    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Schenkendorfstrasse.10> ;
-    ld:hasOrtsteil ldot:Suedvorstadt ;
-    ld:hasSupplier <http://leipzig-data.de/Data/Firma/BBW> ; 
-    rdfs:comment "LVZ 3.7.2018: Trägerschaft übernimmt BBW vom Sozialwerk gGmbH " ; 
-    ld:hasStadtId "327" ;
-    a ld:Ort ;
-    rdfs:label "Autismusambulanz Leipzig" .

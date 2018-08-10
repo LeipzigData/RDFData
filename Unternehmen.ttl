@@ -11,6 +11,28 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
+<http://leipzig-data.de/Data/Unternehmen/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Unternehmen in der Stadt Leipzig" .
+
+ld:Autohaus
+    a owl:Class ;
+    rdfs:label "Autohaus" ;
+    rdfs:subClassOf ld:Unternehmen .
+
+ld:Bootsverleih
+    a owl:Class ;
+    rdfs:label "Bootsverleih" ;
+    rdfs:subClassOf ld:Unternehmen .
+
+ld:Unternehmen
+    a owl:Class ;
+    rdfs:label "Unternehmen" ;
+    rdfs:subClassOf org:Organization .
+
 <http://leipzig-data.de/Data/Firma/ALDIEinkauf>
     ld:hasAddress <http://leipzig-data.de/Data/45307.Essen.Eckenbergstrasse.16A> ;
     dct:modified "2017-09-05" ;
@@ -40,10 +62,10 @@
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
     dct:modified "2018-03-24" ;
     a ld:Unternehmen ;
+    rdfs:comment "Amtsgericht Leipzig: HRB 30077", "Gefördert von Anstiftung und Ertomis. Ausgezeichnetes Projekt der UN-Dekade Biologische Vielfalt.", "Geschäfts- und Spendenkonto: GLS Bank, IBAN DE 56 4306 0967 1158 2448 00, BIC GENODEM1GLS", "Geschäftsführer: Dominik Renner", "USt-Id-Nr: DE292903859" ;
     rdfs:label "ANNALINDE gGmbH" ;
     owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.51> ;
     foaf:homepage <http://www.annalinde-leipzig.de> ;
-    rdfs:comment "Geschäftsführer: Dominik Renner", "Amtsgericht Leipzig: HRB 30077", "USt-Id-Nr: DE292903859", "Geschäfts- und Spendenkonto: GLS Bank, IBAN DE 56 4306 0967 1158 2448 00, BIC GENODEM1GLS", "Gefördert von Anstiftung und Ertomis. Ausgezeichnetes Projekt der UN-Dekade Biologische Vielfalt.";
     foaf:mbox "info@annalinde-leipzig.de" ;
     foaf:phone "0152-21655436", "0341-94089038" .
 
@@ -112,10 +134,10 @@
     rdfs:label "BSE Engineering" ;
     foaf:homepage <http://www.bse-leipzig.de/> .
 
-<http://leipzig-data.de/Data/Schule/BSW>
+<http://leipzig-data.de/Data/Firma/BSW>
+    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Gutenbergstrasse.10> ;
     a ld:Unternehmen, org:Organization ;
-    rdfs:label "Bildungswerk der Sächsischen Wirtschaft gGmbH";
-    ld:hasAddress <http://leipzig-data.de/Data/04178.Leipzig.Gutenbergstrasse.10> .
+    rdfs:label "Bildungswerk der Sächsischen Wirtschaft gGmbH" .
 
 <http://leipzig-data.de/Data/Firma/BZGL>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.StoetteritzerStrasse.28> ;
@@ -132,6 +154,15 @@
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.5> ;
     a ld:Unternehmen ;
     rdfs:label "Bio-Net Leipzig" .
+
+<http://leipzig-data.de/Data/Firma/Biomare>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Simildenstrasse.20> ;
+    dct:modified "2018-08-10" ;
+    a ld:Unternehmen ;
+    rdfs:label "Biomare II GmbH" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.196> ;
+    foaf:homepage <http://www.bio-mare.com> ;
+    foaf:mbox "ngrohall@bio-mare.com" .
 
 <http://leipzig-data.de/Data/Firma/Bluetenreich>
     ld:hasAddress <http://leipzig-data.de/Data/04808.Lossatal.Martin-Luther-Strasse.37> ;
@@ -171,6 +202,15 @@
     rdfs:label "Caravan GbR" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Host.80> ;
     foaf:homepage <http://www.jointhecaravan.de/> .
+
+<http://leipzig-data.de/Data/Firma/Codeit>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.DemmeringStrasse.49> ;
+    dct:modified "2018-08-10" ;
+    a ld:Unternehmen ;
+    rdfs:label "Code it! GbR" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.233> ;
+    foaf:homepage <https://code-it-studio.de/> ;
+    foaf:mbox "andreas.koch@code-it-studio.de" .
 
 <http://leipzig-data.de/Data/Firma/DBFZ>
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.TorgauerStrasse.116> ;
@@ -269,6 +309,15 @@
     a ld:Verein ;
     rdfs:label "Existenzgründerzentrum EGZ Schulungs- und Beratungsgesellschaft mbH" .
 
+<http://leipzig-data.de/Data/Firma/Ecofacture>
+    ld:hasAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.118> ;
+    dct:modified "2018-08-10" ;
+    a ld:Unternehmen ;
+    rdfs:label "Ecofacture - Ökologische Siebdruck Workshops" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.229> ;
+    foaf:homepage <http://www.ecofacture.de> ;
+    foaf:mbox "Info@ecofacture.de" .
+
 <http://leipzig-data.de/Data/Firma/Enerelektronik>
     a ld:Unternehmen ;
     rdfs:label "Enerelektronik GmbH" .
@@ -300,11 +349,11 @@
     a ld:Unternehmen, org:Organization ;
     rdfs:label "Enterasys Networks Germany GmbH, Niederlassung Leipzig" .
 
-<http://leipzig-data.de/Data/Firma/ErfinderKinder> 
+<http://leipzig-data.de/Data/Firma/ErfinderKinder>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Spittastrasse.16> ;
-    foaf:homepage <http://erfinderkinder.net/> ;
     a ld:Unternehmen, org:Organization ;
-    rdfs:label "ErfinderKinder - Petra Vock" .
+    rdfs:label "ErfinderKinder - Petra Vock" ;
+    foaf:homepage <http://erfinderkinder.net/> .
 
 <http://leipzig-data.de/Data/Firma/EuroAkademie.Leipzig>
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Rosa-Luxemburg-Strasse.23> ;
@@ -351,6 +400,12 @@
     foaf:mbox "r.moreno95@web.de" ;
     foaf:phone "0341-870860" .
 
+<http://leipzig-data.de/Data/Firma/GartenLandschaftsbauAndreasRichter>
+    ld:hasAddress <http://leipzig-data.de/Data/04316.Leipzig.Apelsteinweg.12> ;
+    dct:modified "2018-08-10" ;
+    a ld:Unternehmen ;
+    rdfs:label "Garten- und Landschaftsbau Andreas Richter" .
+
 <http://leipzig-data.de/Data/Firma/GerhardRoesl>
     ld:hasAddress <http://leipzig-data.de/Data/04838.Jesewitz.ZschettgauerStrasse.3> ;
     ld:hasTag ldtag:MINT-Broschuere ;
@@ -390,12 +445,12 @@
 
 <http://leipzig-data.de/Data/Firma/Heldenkueche>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.10> ;
-    dct:modified "2018-03-24" ;
+    dct:modified "2018-08-10" ;
     a ld:Unternehmen ;
     rdfs:label "Heldenküche, Claudia Friedrich" ;
-    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.118> ;
-    foaf:homepage <http://www.heldenküche.net> ;
-    foaf:mbox "kontakt@heldenkueche.net" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.118>, <http://nachhaltiges-leipzig.de/Data/Akteur.221> ;
+    foaf:homepage <http://www.heldenkueche.net>, <http://www.heldenküche.net> ;
+    foaf:mbox "kontakt@heldenkueche.net", "kontakt@heldenküche.net" ;
     foaf:phone "0176-61264172" .
 
 <http://leipzig-data.de/Data/Firma/Humanitas>
@@ -505,9 +560,9 @@
     foaf:phone "0172-5749712" .
 
 <http://leipzig-data.de/Data/Firma/LeISA>
+    ld:contactPerson ldp:Reiner_Oliver ;
     ld:hasSupplierNumber "324" ;
     a ld:Unternehmen ;
-    ld:contactPerson ldp:Reiner_Oliver ; 
     rdfs:label "LeISA gGmbH" .
 
 <http://leipzig-data.de/Data/Firma/Lecos>
@@ -583,6 +638,15 @@
     foaf:mbox "info@little-kiwi.de" ;
     foaf:phone "0341-4811978" .
 
+<http://leipzig-data.de/Data/Firma/LuiseNeugebauerSchmuck>
+    ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.79> ;
+    dct:modified "2018-08-10" ;
+    a ld:Unternehmen ;
+    rdfs:label "Luise Neugebauer Schmuck" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.183> ;
+    foaf:homepage <http://www.luiseneugebauer.de> ;
+    foaf:mbox "mail@luiseneugebauer.de" .
+
 <http://leipzig-data.de/Data/Firma/Luxaa>
     ld:hasAddress <http://leipzig-data.de/Data/06198.Salzatal.Wacholderweg.6> ;
     dct:modified "2018-02-22" ;
@@ -605,6 +669,23 @@
     a ld:Unternehmen, org:Organization ;
     rdfs:label "Mucona Media GbR" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.125> .
+
+<http://leipzig-data.de/Data/Firma/Naturcontext>
+    ld:contactPerson ldp:Franke_Heike ;
+    ld:hasAddress <http://leipzig-data.de/Data/04425.Taucha.AndenHoefen.13> ;
+    a ld:Unternehmen ;
+    rdfs:comment "Naturcontext - im Dialog mit der Natur. Seit über 15 Jahren ist Naturcontext im Kontext Natur tätig. Naturcontext konzipiert und realisiert Ausstellungen, bietet Umweltbildung in vielen Farben, Formen und Facetten an und Naturcontext schafft Erlebnisse, die in Erinnerung bleiben. Naturcontext weckt Faszination, sensibilisibilisiert und setzt Impulse für eine zukunftsfähige Gestaltung des eigenen Lebens! " ;
+    rdfs:label "Naturcontext" ;
+    foaf:homepage <http://umweltbildung-sachsen.de/de/umweltbildner/profil/naturcontext.html> .
+
+<http://leipzig-data.de/Data/Firma/NaturdrogerieSturm>
+    ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.GohliserStrasse.6> ;
+    dct:modified "2018-08-10" ;
+    a ld:Unternehmen ;
+    rdfs:label "Naturdrogerie Sturm" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.234> ;
+    foaf:homepage <http://www.naturdrogerie-sturm.de> ;
+    foaf:mbox "info@naturdrogerie-sturm.de" .
 
 <http://leipzig-data.de/Data/Firma/NaturundWildnisschule>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Ecksteinstrasse.54> ;
@@ -813,9 +894,12 @@
 
 <http://leipzig-data.de/Data/Firma/StudioBosco>
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.29> ;
+    dct:modified "2018-08-10" ;
     a ld:Unternehmen ;
     rdfs:label "Studio Bosco" ;
-    foaf:homepage <http://www.studiobosco.de/> .
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.191> ;
+    foaf:homepage <http://www.studiobosco.de/> ;
+    foaf:mbox "fabian@studiobosco.de" .
 
 <http://leipzig-data.de/Data/Firma/TUEVRheinland>
     ld:hasAddress <http://leipzig-data.de/Data/51105.Koeln.AmGrauenStein.27> ;
@@ -857,15 +941,24 @@
     foaf:homepage <http://www.ungestalt.de> .
 
 <http://leipzig-data.de/Data/Firma/Unikatum>
+    ld:contactPerson ldp:Haensel_Annegret ;
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.26> ;
     ld:hasCategories "Kinder, Jugend und Familie, Bildung und Freizeit, Bildende Kunst, Kinder- und Jugendkultur, Museum, Sozio- und Stadtteilkultur" ;
     ld:hasOrtsteil ldot:Plagwitz ;
     ld:hasStadtId "645" ;
     a ld:Unternehmen ;
     rdfs:label "Unikatum Kindermuseum gGmbH" ;
-    ld:contactPerson ldp:Haensel_Annegret ;
     foaf:mbox "info@kindermuseum-unikatum.de" ;
     foaf:phone "0341-3061986" .
+
+<http://leipzig-data.de/Data/Firma/VITERASolutions>
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.Kickerlingsberg.8> ;
+    dct:modified "2018-08-10" ;
+    a ld:Unternehmen ;
+    rdfs:label "VITERA Solutions GmbH" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.237> ;
+    foaf:homepage <http://www.vitera.org> ;
+    foaf:mbox "grothe@vitera.org" .
 
 <http://leipzig-data.de/Data/Firma/VLW>
     ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.Hartzstrasse.2> ;
@@ -1114,33 +1207,11 @@
     rdfs:label "studiodelta GmbH & CO. KG" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.27> .
 
-<http://leipzig-data.de/Data/Firma/Naturcontext>
-    ld:hasAddress <http://leipzig-data.de/Data/04425.Taucha.AndenHoefen.13> ;
+<http://leipzig-data.de/Data/Firma/theshopsheloves>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Aurelienstrasse.62> ;
+    dct:modified "2018-08-10" ;
     a ld:Unternehmen ;
-    ld:contactPerson ldp:Franke_Heike ; 
-    rdfs:comment "Naturcontext - im Dialog mit der Natur. Seit über 15 Jahren ist Naturcontext im Kontext Natur tätig. Naturcontext konzipiert und realisiert Ausstellungen, bietet Umweltbildung in vielen Farben, Formen und Facetten an und Naturcontext schafft Erlebnisse, die in Erinnerung bleiben. Naturcontext weckt Faszination, sensibilisibilisiert und setzt Impulse für eine zukunftsfähige Gestaltung des eigenen Lebens! " ;
-    foaf:homepage <http://umweltbildung-sachsen.de/de/umweltbildner/profil/naturcontext.html> ; 
-    rdfs:label "Naturcontext"  .
-
-ld:Autohaus
-    a owl:Class ;
-    rdfs:label "Autohaus" ;
-    rdfs:subClassOf ld:Unternehmen .
-
-ld:Bootsverleih
-    a owl:Class ;
-    rdfs:label "Bootsverleih" ;
-    rdfs:subClassOf ld:Unternehmen .
-
-ld:Unternehmen
-    a owl:Class ;
-    rdfs:label "Unternehmen" ;
-    rdfs:subClassOf org:Organization .
-
-<http://leipzig-data.de/Data/Unternehmen/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Unternehmen in der Stadt Leipzig" .
-
+    rdfs:label "the shop she loves" ;
+    owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.228> ;
+    foaf:homepage <http://www.theshopsheloves.de> ;
+    foaf:mbox "hallo@theshopsheloves.de" .
