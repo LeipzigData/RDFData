@@ -18,6 +18,11 @@
     a owl:Ontology ;
     rdfs:label "Orte" .
 
+ld:Freibad
+    a owl:Class ;
+    rdfs:label "Freibad" ;
+    rdfs:subClassOf ld:Ort .
+
 ld:Hotel
     a owl:Class ;
     rdfs:label "Hotel" ;
@@ -1509,6 +1514,11 @@ ldo:KickersIn
     a ld:Ort ;
     rdfs:label "Kicker's In" .
 
+<http://leipzig-data.de/Data/Ort/Kinderbecken.Robbe>
+    ld:hasAddress <http://leipzig-data.de/Data/04157.Leipzig.Kleiststrasse.54> ;
+    a ld:Ort, ld:Freibad ;
+    rdfs:label "Kinderbecken Robbe" .
+
 ldo:KinderExperimentierKabinett
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.1> ;
     ld:hasStatus "aktiv" ;
@@ -2086,9 +2096,9 @@ ldo:NoelsBallroom
     rdfs:label "OFT Zirkel" ;
     foaf:phone "0341-6881746" .
 
-ldo:OekobadLindenthal
+<http://leipzig-data.de/Data/Ort/Oekobad.Lindenthal>
     ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.AmFreibad.3> ;
-    a ld:Ort ;
+    a ld:Ort, ld:Freibad ;
     rdfs:label "Ökobad Lindenthal" .
 
 <http://leipzig-data.de/Data/Ort/Oekoschule.Markkleeberg>
@@ -2403,7 +2413,7 @@ ldo:Schraderhaus
 
 ldo:Schreberbad
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Schreberstrasse.15> ;
-    a ld:Ort ;
+    a ld:Ort, ld:Freibad ;
     rdfs:label "Schreberbad" .
 
 <http://leipzig-data.de/Data/Ort/SchulBiologieZentrum.Freiluftschule>
@@ -2482,14 +2492,19 @@ ldo:SocialImpactLabLeipzig
     rdfs:label "Social Impact Lab Leipzig" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.140> .
 
-<http://leipzig-data.de/Data/Ort/Sommerbad.Kleinzschorcher>
+<http://leipzig-data.de/Data/Ort/Sommerbad.Kleinzschocher>
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Kuechenholzallee.75> ;
-    a ld:Ort ;
-    rdfs:label "Sommerbad Kleinzschorcher" .
+    a ld:Ort, ld:Freibad ;
+    rdfs:label "Sommerbad Kleinzschocher" .
+
+<http://leipzig-data.de/Data/Ort/Sommerbad.Schoenefeld>
+    ld:hasAddress <http://leipzig-data.de/Data/04357.Leipzig.Volbedingstrasse.39> ;
+    a ld:Ort, ld:Freibad ;
+    rdfs:label "Sommerbad Schönefeld" .
 
 <http://leipzig-data.de/Data/Ort/Sommerbad.Suedost>
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Oststrasse.73> ;
-    a ld:Ort ;
+    a ld:Ort, ld:Freibad ;
     rdfs:label "Sommerbad Südost" .
 
 ldo:SpecksHof
