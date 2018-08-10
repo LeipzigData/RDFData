@@ -12,2095 +12,2579 @@
 
 
 
-<http://nachhaltiges-leipzig.de/Data/Akteure/> a owl:Ontology ;
+<http://nachhaltiges-leipzig.de/Data/NL-Akteure/> a owl:Ontology ;
     rdfs:comment "Dump aus der Datenbank";
-    dct:created "2018-08-04" ; 
-    rdfs:label "Nachhaltiges Leipzig - Akteure" .
+    dct:created "2018-08-05" ; 
+    rdfs:label "Nachhaltiges Leipzig - Akteure zum Abgleich mit leipzig-data.de" .
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.235> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/PuckettNewmanAssociates> a nl:Akteur  ;
+   nl:hasFullAddress "Nihil consectetur dolorum deserunt sint in, 61333 Maxime amet repudiandae eligendi voluptatibus tempor adipisci illum mollit facilis quia perspiciatis" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/61333.Maximeametrepudiandaeeligendivoluptatibustemporadipisciillummollitfacilisquiaperspiciatis.Nihilconsecteturdolorumdeseruntsintin.XX> ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.242> ;
+   rdfs:label "Puckett Newman Associates" ;
+   foaf:mbox "cheryldewald2425@gmail.com" ;
+   foaf:homepage <http://www.weweh.ws> ;
+   a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
+   gsp:asWKT "Point(10.4515 51.1657)" ;
+   dct:modified "2018-08-10" . 
+
+<http://leipzig-data.de/Data/Akteur/Cafekaputt> a nl:Akteur  ;
+   nl:hasFullAddress "Merseburger Str. 102, 04177 Leipzig" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.102> ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.241> ;
+   rdfs:label "Café kaputt" ;
+   foaf:mbox "cafekaputt@lebenlernenleipzig.de" ;
+   foaf:homepage <http://www.reparieren-in-leipig.de> ;
+   a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
+   gsp:asWKT "Point(12.326 51.3382)" ;
+   dct:modified "2018-08-10" . 
+
+<http://leipzig-data.de/Data/Akteur/Marco> a nl:Akteur  ;
+   nl:hasFullAddress "Friedrich-List-Platz 1, 04103 Leipzig" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Friedrich-List-Platz.1> ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.240> ;
+   rdfs:label "Marco" ;
+   foaf:mbox "mschnell@fairmeals.com" ;
+   foaf:homepage <http://www.fairmeals.de> ;
+   a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
+   gsp:asWKT "Point(12.3919 51.3457)" ;
+   dct:modified "2018-08-10" . 
+
+<http://leipzig-data.de/Data/Akteur/BohemianKidsCafe/Bar> a nl:Akteur  ;
+   nl:hasFullAddress "Universitätsstraße 18, Gewerbe 2, 04019 Leipzig" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04019.Leipzig.Universitaetsstrasse18,Gewerbe.2> ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.239> ;
+   rdfs:label "Bohemian Kids Cafe/Bar" ;
+   foaf:mbox "bohemiankids.cafe@gmail.com" ;
+   foaf:homepage <https://www.facebook.com/BohemianKidsCafe/> ;
+   a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
+   gsp:asWKT "Point(12.3776 51.3377)" ;
+   dct:modified "2018-08-10" . 
+
+<http://leipzig-data.de/Data/Akteur/GeoparkPorphyrland.SteinreichinSachsen> a nl:Akteur  ;
+   nl:hasFullAddress "Leipziger Straße 17 a, 04668 Grimma" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04668.Grimma.LeipzigerStrasse17.A> ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.238> ;
+   rdfs:label "Geopark Porphyrland. Steinreich in Sachsen e.V." ;
+   foaf:mbox "info@geopark-porphyrland.de" ;
+   foaf:homepage <https://www.geopark-porphyrland.de> ;
+   a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
+   gsp:asWKT "Point(12.7216 51.2335)" ;
+   dct:modified "2018-08-10" . 
+
+<http://leipzig-data.de/Data/Akteur/VITERASolutions> a nl:Akteur  ;
+   nl:hasFullAddress "Kickerlingsberg 8, 04105 Leipzig" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.Kickerlingsberg.8> ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.237> ;
+   rdfs:label "VITERA Solutions GmbH" ;
+   foaf:mbox "grothe@vitera.org" ;
+   foaf:homepage <http://www.vitera.org> ;
+   a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
+   gsp:asWKT "Point(12.3717 51.3519)" ;
+   dct:modified "2018-08-10" . 
+
+<http://leipzig-data.de/Data/Akteur/NaturschuleDeutschland> a nl:Akteur  ;
+   nl:hasFullAddress "Geiststr. 2, 37073 Göttingen" ;
+   ld:proposedAddress <http://leipzig-data.de/Data/37073.Goettingen.Geiststrasse.2> ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.236> ;
+   rdfs:label "Naturschule Deutschland e.V." ;
+   foaf:mbox "schnieders@naturschule.de" ;
+   foaf:homepage <http://www.naturschule.de> ;
+   a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
+   gsp:asWKT "Point(9.92868 51.5346)" ;
+   dct:modified "2018-08-10" . 
+
+<http://leipzig-data.de/Data/Akteur/GlobalESD> a nl:Akteur  ;
    nl:hasFullAddress "Blücherstr. 37, 04159 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04159.Leipzig.Bluecherstrasse.37> ;
-   foaf:mbox "susan@globalesd.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.235> ;
    rdfs:label "Global ESD" ;
+   foaf:mbox "susan@globalesd.org" ;
    foaf:homepage <http://www.globalesd.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3397 51.37)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.234> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/NaturdrogerieSturm> a nl:Akteur  ;
    nl:hasFullAddress "Gohliser Straße 6, 04155 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04155.Leipzig.GohliserStrasse.6> ;
-   foaf:mbox "info@naturdrogerie-sturm.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.234> ;
    rdfs:label "Naturdrogerie Sturm" ;
+   foaf:mbox "info@naturdrogerie-sturm.de" ;
    foaf:homepage <http://www.naturdrogerie-sturm.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3677 51.3583)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.233> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Codeit> a nl:Akteur  ;
    nl:hasFullAddress "Demmering Str. 49, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.DemmeringStrasse.49> ;
-   foaf:mbox "andreas.koch@code-it-studio.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.233> ;
    rdfs:label "Code it!" ;
+   foaf:mbox "andreas.koch@code-it-studio.de" ;
    foaf:homepage <https://code-it-studio.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3278 51.3363)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.232> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KonsumGlobalLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Straße des 17. Juni 11, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Strassedes17Juni.11> ;
-   foaf:mbox "info@KonsumGlobal-Leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.232> ;
    rdfs:label "KonsumGlobalLeipzig" ;
+   foaf:mbox "info@KonsumGlobal-Leipzig.de" ;
    foaf:homepage <http://www.KonsumGlobal-Leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3721 51.3326)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.231> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/StefanHaertel> a nl:Akteur  ;
    nl:hasFullAddress "Kreuzstraße 1C, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Kreuzstrasse.1C> ;
-   foaf:mbox "haertel@appplant.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.231> ;
    rdfs:label "Stefan Härtel" ;
+   foaf:mbox "haertel@appplant.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3899 51.3413)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.230> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/AnnettAntoniaGraeske> a nl:Akteur  ;
    nl:hasFullAddress "Bahrener Straße 12, 04668 Grimma" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04668.Grimma.BahrenerStrasse.12> ;
-   foaf:mbox "info@fitinart.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.230> ;
    rdfs:label "Annett Antonia Graeske" ;
+   foaf:mbox "info@fitinart.com" ;
    foaf:homepage <http://www.offene-gartenpforte-muldental.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.7401 51.2534)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.229> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Ecofacture> a nl:Akteur  ;
    nl:hasFullAddress "Georg-Schwarz-Straße 118, 04179 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.118> ;
-   foaf:mbox "Info@ecofacture.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.229> ;
    rdfs:label "Ecofacture" ;
+   foaf:mbox "Info@ecofacture.de" ;
    foaf:homepage <http://www.ecofacture.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3166 51.3466)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.228> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/theshopsheloves> a nl:Akteur  ;
    nl:hasFullAddress "Aurelienstraße 62, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Aurelienstrasse.62> ;
-   foaf:mbox "hallo@theshopsheloves.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.228> ;
    rdfs:label "the shop she loves" ;
+   foaf:mbox "hallo@theshopsheloves.de" ;
    foaf:homepage <http://www.theshopsheloves.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3269 51.3316)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.227> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BunteGaertenLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Pommernstraße 10, 04318 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.Pommernstrasse.10> ;
-   foaf:mbox "kontakt@bunte-gaerten.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.227> ;
    rdfs:label "Bunte Gärten Leipzig e. V." ;
+   foaf:mbox "kontakt@bunte-gaerten.org" ;
    foaf:homepage <http://bunte-gaerten.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4285 51.3293)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.226> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/RamonaStrohwald> a nl:Akteur  ;
    nl:hasFullAddress "Riemannstraße 28, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Riemannstrasse.28> ;
-   foaf:mbox "ramona.strohwald@web.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.226> ;
    rdfs:label "Ramona Strohwald" ;
+   foaf:mbox "ramona.strohwald@web.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
    gsp:asWKT "Point(12.3763 51.3311)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.224> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Ackerdemia> a nl:Akteur  ;
    nl:hasFullAddress "Erdmannstraße 8, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Erdmannstrasse.8> ;
-   foaf:mbox "j.wockenfuss@ackerdemia.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.224> ;
    rdfs:label "Ackerdemia e.V." ;
+   foaf:mbox "j.wockenfuss@ackerdemia.de" ;
    foaf:homepage <http://www.gemueseackerdemie.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3463 51.3315)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.223> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ANNALINDEAkademie> a nl:Akteur  ;
    nl:hasFullAddress "Lützner Straße 108, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
-   foaf:mbox "akademie@annalinde-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.223> ;
    rdfs:label "ANNALINDE Akademie" ;
+   foaf:mbox "akademie@annalinde-leipzig.de" ;
    foaf:homepage <http://annalinde-leipzig.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3252 51.3342)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.222> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/DelitzscherLand> a nl:Akteur  ;
    nl:hasFullAddress "Richard-Wagner-Straße 7A, 04509 Delitzsch" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04509.Delitzsch.Richard-Wagner-Strasse.7A> ;
-   foaf:mbox "julia.hanuschke@delitzscherland.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.222> ;
    rdfs:label "Delitzscher Land e.V" ;
+   foaf:mbox "julia.hanuschke@delitzscherland.de" ;
    foaf:homepage <http://www.delitzscherland.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3329 51.5172)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.221> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/heldenkueche> a nl:Akteur  ;
    nl:hasFullAddress "Naumburger Straße 10, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.10> ;
-   foaf:mbox "kontakt@heldenkueche.net" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.221> ;
    rdfs:label "heldenküche" ;
+   foaf:mbox "kontakt@heldenkueche.net" ;
    foaf:homepage <http://www.heldenkueche.net> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3334 51.3263)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.220> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/MagistralenmanagementGeorgSchumannStrasse> a nl:Akteur  ;
    nl:hasFullAddress "Georg-Schumann-Straße 126, 04155 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04155.Leipzig.Georg-Schumann-Strasse.126> ;
-   foaf:mbox "presse@schumann-magistrale.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.220> ;
    rdfs:label "Magistralenmanagement Georg-Schumann-Straße" ;
+   foaf:mbox "presse@schumann-magistrale.de" ;
    foaf:homepage <http://www.schumann-magistrale.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3575 51.3645)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.219> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/SolidarischeFeldwirtschaft> a nl:Akteur  ;
    nl:hasFullAddress "Ecksteinstraße 29, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Ecksteinstrasse.29> ;
-   foaf:mbox "kontakt@solidarischefeldwirtschaft.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.219> ;
    rdfs:label "Solidarische Feldwirtschaft" ;
+   foaf:mbox "kontakt@solidarischefeldwirtschaft.de" ;
    foaf:homepage <http://www.solidarischefeldwirtschaft.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3793 51.3052)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.218> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/mobileapfelquetsche> a nl:Akteur  ;
    nl:hasFullAddress "Apelsteinweg 12, 04316 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04316.Leipzig.Apelsteinweg.12> ;
-   foaf:mbox "info@mobile-apfelquetsche.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.218> ;
    rdfs:label "mobile- apfelquetsche" ;
+   foaf:mbox "info@mobile-apfelquetsche.de" ;
    foaf:homepage <http://www.mobile-apfelquetsche.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.4753 51.3219)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.217> a nl:Akteur  ;
-   foaf:mbox "rebecca.heinze@markkleeberg.de" ;
+<http://leipzig-data.de/Data/Akteur/agraPark> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.217> ;
    rdfs:label "agra-Park" ;
+   foaf:mbox "rebecca.heinze@markkleeberg.de" ;
    foaf:homepage <http://www.agra-park.info> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.216> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/OelmuehleLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Naumburger Straße 10, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.10> ;
-   foaf:mbox "info@leipspeis.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.216> ;
    rdfs:label "Ölmühle Leipzig" ;
+   foaf:mbox "info@leipspeis.de" ;
    foaf:homepage <http://www.leipspeis.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3334 51.3263)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.215> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/CammerspieleLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Kochstraße 132, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Kochstrasse.132> ;
-   foaf:mbox "awe@cammerspiele.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.215> ;
    rdfs:label "Cammerspiele Leipzig" ;
+   foaf:mbox "awe@cammerspiele.de" ;
    foaf:homepage <http://www.cammerspiele.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3713 51.3101)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.214> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ZooLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Pfaffendorfer Straße 29, 04105 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
-   foaf:mbox "safaribuero@zoo-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.214> ;
    rdfs:label "Zoo Leipzig GmbH" ;
+   foaf:mbox "safaribuero@zoo-leipzig.de" ;
    foaf:homepage <http://www.zoo-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3713 51.3495)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.213> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GRUeNELIGAKohrenerLand> a nl:Akteur  ;
    nl:hasFullAddress "Rüdigsdorf 29, 04655 Kohren-Sahlis" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04655.Kohren-Sahlis.Ruedigsdorf.29> ;
-   foaf:mbox "kohrenerland@grueneliga.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.213> ;
    rdfs:label "GRÜNE LIGA Kohrener Land" ;
+   foaf:mbox "kohrenerland@grueneliga.de" ;
    foaf:homepage <http://www.apfelkola.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.5994 51.0091)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.212> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GaleriefuerZeitgenoessischeKunst> a nl:Akteur  ;
    nl:hasFullAddress "Karl-Tauchnitz-Straße 9-11, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Tauchnitz-Strasse.9> ;
-   foaf:mbox "trainee@gfzk.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.212> ;
    rdfs:label "Galerie für Zeitgenössische Kunst" ;
+   foaf:mbox "trainee@gfzk.de" ;
    foaf:homepage <http://www.gfzk.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.366 51.3341)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.211> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GRASSIMuseumfuerAngewandteKunst> a nl:Akteur  ;
    nl:hasFullAddress "Johannisplatz 5, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisplatz.5> ;
-   foaf:mbox "ulrike.pilz@leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.211> ;
    rdfs:label "GRASSI Museum für Angewandte Kunst" ;
+   foaf:mbox "ulrike.pilz@leipzig.de" ;
    foaf:homepage <http://www.grassimuseum.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.3878 51.3369)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.210> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/QuerbeetLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Neustädter Straße 20, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.NeustaedterStrasse.20> ;
-   foaf:mbox "qb.info@posteo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.210> ;
    rdfs:label "Querbeet Leipzig e.V." ;
+   foaf:mbox "qb.info@posteo.de" ;
    foaf:homepage <http://www.querbeet-leipzig.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4004 51.3462)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.209> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/NotenspurLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Ritterstraße 12, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Ritterstrasse.12> ;
-   foaf:mbox "mail@notenspur-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.209> ;
    rdfs:label "Notenspur Leipzig e.V." ;
+   foaf:mbox "mail@notenspur-leipzig.de" ;
    foaf:homepage <http://www.notenspur-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3795 51.3405)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.208> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Bluetenreich> a nl:Akteur  ;
    nl:hasFullAddress "Martin-Luther-Straße 37, 04808 Lossatal" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04808.Lossatal.Martin-Luther-Strasse.37> ;
-   foaf:mbox "bluetenreich@gmx.net" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.208> ;
    rdfs:label "Blütenreich" ;
+   foaf:mbox "bluetenreich@gmx.net" ;
    foaf:homepage <https://bluetenreich.jimdo.com/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.861 51.4269)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.207> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Cafe.Restaurant.Symbiose> a nl:Akteur  ;
    nl:hasFullAddress "Karl-Liebknecht-Straße 112, 04275 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.112> ;
-   foaf:mbox "kontakt@symbiose-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.207> ;
    rdfs:label "Cafe. Restaurant. Symbiose" ;
+   foaf:mbox "kontakt@symbiose-leipzig.de" ;
    foaf:homepage <http://www.symbiose-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3731 51.3165)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.206> a nl:Akteur  ;
-   foaf:mbox "angraeske@gmail.com" ;
+<http://leipzig-data.de/Data/Akteur/Graeske> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.206> ;
    rdfs:label "Graeske" ;
+   foaf:mbox "angraeske@gmail.com" ;
    foaf:homepage <http://www.offene-gartenpforte-muldental.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.205> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/StadtDelitzsch> a nl:Akteur  ;
    nl:hasFullAddress "Markt 3, 04509 Delitzsch" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04509.Delitzsch.Markt.3> ;
-   foaf:mbox "nadine.fuchs@delitzsch.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.205> ;
    rdfs:label "Stadt Delitzsch" ;
+   foaf:mbox "nadine.fuchs@delitzsch.de" ;
    foaf:homepage <http://www.delitzsch.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3329 51.5221)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.204> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/WildeLeipziger> a nl:Akteur  ;
    nl:hasFullAddress "Linnéstraße 1, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Linnestrasse.1> ;
-   foaf:mbox "mail@wilde-leipziger.eu" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.204> ;
    rdfs:label "Wilde Leipziger" ;
+   foaf:mbox "mail@wilde-leipziger.eu" ;
    foaf:homepage <http://www.wilde-leipziger.eu> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3926 51.3292)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.203> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Hoerspielsommer> a nl:Akteur  ;
    nl:hasFullAddress "Angerstraße 40-42, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Angerstrasse.40> ;
-   foaf:mbox "kommunikation@hoerspielsommer.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.203> ;
    rdfs:label "Hörspielsommer e.V." ;
+   foaf:mbox "kommunikation@hoerspielsommer.de" ;
    foaf:homepage <https://hoerspielsommer.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.337 51.3409)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.202> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ZentrumfuerFermentation> a nl:Akteur  ;
    nl:hasFullAddress "Luppenstraße 9, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Luppenstrasse.9> ;
-   foaf:mbox "zff@posteo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.202> ;
    rdfs:label "Zentrum für Fermentation" ;
+   foaf:mbox "zff@posteo.de" ;
    foaf:homepage <http://www.zff-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3413 51.3375)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.201> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GohliserVereinzurFoerderungenKunstundKultur> a nl:Akteur  ;
    nl:hasFullAddress "Lützowstraße 19, 04157 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04157.Leipzig.Luetzowstrasse.19> ;
-   foaf:mbox "mail@kuk-gohlis.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.201> ;
    rdfs:label "Gohliser Verein zur Förderungen Kunst und Kultur e.V." ;
+   foaf:mbox "mail@kuk-gohlis.de" ;
    foaf:homepage <http://www.kuk-gohlis.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3738 51.3638)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.200> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/StadtverbandLeipzigderKleingaertner> a nl:Akteur  ;
    nl:hasFullAddress "Zschochersche Straße 62, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.62> ;
-   foaf:mbox "l.kurth@leipziger-kleingaertner.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.200> ;
    rdfs:label "Stadtverband Leipzig der Kleingärtner e.V." ;
+   foaf:mbox "l.kurth@leipziger-kleingaertner.de" ;
    foaf:homepage <http://stadtverband-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3351 51.3268)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.199> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/MichaelSchaaf> a nl:Akteur  ;
    nl:hasFullAddress "Reichsstraße 2, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Reichsstrasse.2> ;
-   foaf:mbox "post@leipzigdetails.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.199> ;
    rdfs:label "Michael Schaaf" ;
+   foaf:mbox "post@leipzigdetails.de" ;
    foaf:homepage <http://www.leipzigdetails.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3769 51.3401)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.198> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Dt.Kleingaertnermuseum> a nl:Akteur  ;
    nl:hasFullAddress "Aachener Straße 7, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.AachenerStrasse.7> ;
-   foaf:mbox "paetzelt.kleingaertnermuseum@t-online.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.198> ;
    rdfs:label "Dt. Kleingärtnermuseum" ;
+   foaf:mbox "paetzelt.kleingaertnermuseum@t-online.de" ;
    foaf:homepage <http://www.kleingarten-museum.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3569 51.3394)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.197> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/erlebbar> a nl:Akteur  ;
    nl:hasFullAddress "Giebnerstraße 18, 04279 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04279.Leipzig.Giebnerstrasse.18> ;
-   foaf:mbox "sebastian@erleb-bar.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.197> ;
    rdfs:label "erleb-bar" ;
+   foaf:mbox "sebastian@erleb-bar.de" ;
    foaf:homepage <http://www.erleb-bar.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.392 51.2924)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.196> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BiomareII> a nl:Akteur  ;
    nl:hasFullAddress "Simildenstraße 20, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Simildenstrasse.20> ;
-   foaf:mbox "ngrohall@bio-mare.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.196> ;
    rdfs:label "Biomare II GmbH" ;
+   foaf:mbox "ngrohall@bio-mare.com" ;
    foaf:homepage <http://www.bio-mare.com> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3715 51.3084)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.195> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/DirkScheffler> a nl:Akteur  ;
    nl:hasFullAddress "Kreuzstraße 12, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Kreuzstrasse.12> ;
-   foaf:mbox "scheffler@e-fect.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.195> ;
    rdfs:label "Dirk Scheffler" ;
+   foaf:mbox "scheffler@e-fect.de" ;
    foaf:homepage <http://www.e-fect.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#collective> ;
    gsp:asWKT "Point(12.3912 51.341)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.194> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/StadtverbandLeipzigderkleingaertner> a nl:Akteur  ;
    nl:hasFullAddress "Zschochersche Straße 62, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.62> ;
-   foaf:mbox "r.mueller@leipziger-kleingaertner.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.194> ;
    rdfs:label "Stadtverband Leipzig der kleingärtner e.V." ;
+   foaf:mbox "r.mueller@leipziger-kleingaertner.de" ;
    foaf:homepage <http://www.stadtverband-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3351 51.3268)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.193> a nl:Akteur  ;
-   foaf:mbox "frauneumann@gmx.net" ;
+<http://leipzig-data.de/Data/Akteur/ParkundStadtfuehrerinDanielaNeumann> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.193> ;
    rdfs:label "Park- und Stadtführerin Daniela Neumann" ;
+   foaf:mbox "frauneumann@gmx.net" ;
    foaf:homepage <https://www.facebook.com/EntdecktinLeipzig> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.192> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/WinterCatherine> a nl:Akteur  ;
    nl:hasFullAddress "Am Eichwinkel 31, 04279 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04279.Leipzig.AmEichwinkel.31> ;
-   foaf:mbox "leipzig-halle@slowfood.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.192> ;
    rdfs:label "Winter Catherine" ;
+   foaf:mbox "leipzig-halle@slowfood.de" ;
    foaf:homepage <http://www.slowfood.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4005 51.2834)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.191> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Fabian> a nl:Akteur  ;
    nl:hasFullAddress "Lützner Straße 29, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.29> ;
-   foaf:mbox "fabian@studiobosco.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.191> ;
    rdfs:label "Fabian" ;
+   foaf:mbox "fabian@studiobosco.de" ;
    foaf:homepage <https://www.studiobosco.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
    gsp:asWKT "Point(12.3341 51.3358)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.190> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/AnjaHuemmer> a nl:Akteur  ;
    nl:hasFullAddress "Herderstraße 5, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Herderstrasse.5> ;
-   foaf:mbox "natur.nah@gmx.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.190> ;
    rdfs:label "Anja Hümmer" ;
+   foaf:mbox "natur.nah@gmx.de" ;
    foaf:homepage <http://www.naturnah.co> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
    gsp:asWKT "Point(12.3741 51.3078)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.189> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Hofmann> a nl:Akteur  ;
    nl:hasFullAddress "Eisenbahnstraße 157, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.157> ;
-   foaf:mbox "gaerten@buelowviertel.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.189> ;
    rdfs:label "Hofmann" ;
+   foaf:mbox "gaerten@buelowviertel.de" ;
    foaf:homepage <http://buelowviertel.de/projekte/foerderverein-buelowgaerten-e-v/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4208 51.3449)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.188> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BotanischerGartenderUniversitaetLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Linnéstraße 1, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Linnestrasse.1> ;
-   foaf:mbox "verein-bg@uni-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.188> ;
    rdfs:label "Botanischer Garten der Universität Leipzig" ;
+   foaf:mbox "verein-bg@uni-leipzig.de" ;
    foaf:homepage <http://www.bota.uni-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.3926 51.3292)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.187> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BuergervereinSellerhausenStuenz> a nl:Akteur  ;
    nl:hasFullAddress "George-Bähr-Straße 11, 04328 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04328.Leipzig.George-Baehr-Strasse.11> ;
-   foaf:mbox "info@bv-sellerhausen.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.187> ;
    rdfs:label "Bürgerverein Sellerhausen-Stünz" ;
+   foaf:mbox "info@bv-sellerhausen.de" ;
    foaf:homepage <http://www.bv-sellerhausen.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4425 51.3476)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.186> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/NaturundWildnisschuleLeipzigGbR> a nl:Akteur  ;
    nl:hasFullAddress "Ecksteinstraße 54, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Ecksteinstrasse.54> ;
-   foaf:mbox "info@natur-wildnisschule-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.186> ;
    rdfs:label "Natur- und Wildnisschule Leipzig GbR" ;
+   foaf:mbox "info@natur-wildnisschule-leipzig.de" ;
    foaf:homepage <http://www.natur-wildnisschule-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.385 51.3065)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.185> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/StadtLeipzigUmweltinformationszentrum> a nl:Akteur  ;
    nl:hasFullAddress "Prager Straße 136, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
-   foaf:mbox "uiz@leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.185> ;
    rdfs:label "Stadt Leipzig Umweltinformationszentrum" ;
+   foaf:mbox "uiz@leipzig.de" ;
    foaf:homepage <http://www.leipzig.de/uiz> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.4016 51.3244)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.184> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GartenfreundeSued> a nl:Akteur  ;
    nl:hasFullAddress "Richard-Lehmann-Straße 108, 04275 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04275.Leipzig.Richard-Lehmann-Strasse.108> ;
-   foaf:mbox "info@gartenfreundesued.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.184> ;
    rdfs:label "Gartenfreunde Süd e. V." ;
+   foaf:mbox "info@gartenfreundesued.de" ;
    foaf:homepage <http://www.gartenfreundesued.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3847 51.3137)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.183> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/LuiseNeugebauerSchmuck> a nl:Akteur  ;
    nl:hasFullAddress "Karl-Liebknecht-Straße 79, 04275 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.79> ;
-   foaf:mbox "mail@luiseneugebauer.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.183> ;
    rdfs:label "Luise Neugebauer Schmuck" ;
+   foaf:mbox "mail@luiseneugebauer.de" ;
    foaf:homepage <http://www.luiseneugebauer.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
    gsp:asWKT "Point(12.3739 51.3233)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.182> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/MatthiasSchmidt> a nl:Akteur  ;
    nl:hasFullAddress "Arndtstraße 63, 04275 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04275.Leipzig.Arndtstrasse.63> ;
-   foaf:mbox "matthias@gold-schmied.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.182> ;
    rdfs:label "Matthias Schmidt" ;
+   foaf:mbox "matthias@gold-schmied.com" ;
    foaf:homepage <http://www.gold-schmied.com> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3799 51.3232)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.181> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/OrangUtansinNot> a nl:Akteur  ;
    nl:hasFullAddress "Deutscher Platz 6, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.6> ;
-   foaf:mbox "kontakt@ouin.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.181> ;
    rdfs:label "Orang-Utans in Not" ;
+   foaf:mbox "kontakt@ouin.de" ;
    foaf:homepage <http://www.orang-utans-in-not.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3949 51.321)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.179> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/DGGLSachsen> a nl:Akteur  ;
    nl:hasFullAddress "Gabelsbergerstraße 1A, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Gabelsbergerstrasse.1A> ;
-   foaf:mbox "berninger@culturtraeger.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.179> ;
    rdfs:label "DGGL Sachsen" ;
+   foaf:mbox "berninger@culturtraeger.de" ;
    foaf:homepage <http://www.dggl.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3959 51.3397)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.178> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/FanoeMode> a nl:Akteur  ;
    nl:hasFullAddress "Könneritzstraße 63, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.63> ;
-   foaf:mbox "kusa@fanoe-mode.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.178> ;
    rdfs:label "Fanö-Mode" ;
+   foaf:mbox "kusa@fanoe-mode.de" ;
    foaf:homepage <http://www.fanoe-mode.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3431 51.3223)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.177> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/LUXAA> a nl:Akteur  ;
    nl:hasFullAddress "Könneritzstraße 68, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.68> ;
-   foaf:mbox "anne.friebel@luxaa.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.177> ;
    rdfs:label "LUXAA" ;
+   foaf:mbox "anne.friebel@luxaa.de" ;
    foaf:homepage <http://www.luxaa.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3425 51.3221)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.176> a nl:Akteur  ;
-   foaf:mbox "wildwechsel@vierfaehrten.de" ;
+<http://leipzig-data.de/Data/Akteur/VierFaehrtenWegeindenwildenWald> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.176> ;
    rdfs:label "Vier Fährten - Wege in den wilden Wald" ;
+   foaf:mbox "wildwechsel@vierfaehrten.de" ;
    foaf:homepage <http://www.vierfaehrten.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.175> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/SabrinaBollmann> a nl:Akteur  ;
    nl:hasFullAddress "Lützner Straße 68, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.68> ;
-   foaf:mbox "sabrina.bollmann@teilnehmer.bfw-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.175> ;
    rdfs:label "Sabrina Bollmann" ;
+   foaf:mbox "sabrina.bollmann@teilnehmer.bfw-leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3307 51.336)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.174> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ALDIEinkaufundamp;Co.oHG> a nl:Akteur  ;
    nl:hasFullAddress "Eckenbergstraße 16A, 45307 Essen" ;
    ld:proposedAddress <http://leipzig-data.de/Data/45307.Essen.Eckenbergstrasse.16A> ;
-   foaf:mbox "cr-food@aldi-nord.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.174> ;
    rdfs:label "ALDI Einkauf GmbH &amp; Co. oHG" ;
+   foaf:mbox "cr-food@aldi-nord.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(7.07098 51.4633)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.173> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KurtHinkefuss> a nl:Akteur  ;
    nl:hasFullAddress "Wiebelstraße 8, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Wiebelstrasse.8> ;
-   foaf:mbox "kauerte@gmx.net" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.173> ;
    rdfs:label "Kurt Hinkefuß" ;
+   foaf:mbox "kauerte@gmx.net" ;
    foaf:homepage <http://konsumglobal-leipzig.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.4089 51.3398)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.172> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/JeepneyCafe> a nl:Akteur  ;
    nl:hasFullAddress "Georg-Schumann-Straße 78, 04155 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04155.Leipzig.Georg-Schumann-Strasse.78> ;
-   foaf:mbox "office@jeepney-cafe.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.172> ;
    rdfs:label "Jeepney Café" ;
+   foaf:mbox "office@jeepney-cafe.de" ;
    foaf:homepage <http://jeepney-cafe.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.365 51.3628)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.171> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BotanischerGartenfuerArzneiundGewuerzpflanzenGrosspoesnaOberholz> a nl:Akteur  ;
    nl:hasFullAddress "Störmthaler Weg 2, 04463 Großpösna" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04463.Grosspoesna.StoermthalerWeg.2> ;
-   foaf:mbox "botanischer-garten-oberholz@gmx.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.171> ;
    rdfs:label "Botanischer Garten für Arznei- und Gewürzpflanzen Großpösna-Oberholz" ;
+   foaf:mbox "botanischer-garten-oberholz@gmx.de" ;
    foaf:homepage <http://www.botanischer-garten-oberholz.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.5003 51.2605)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.170> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BildungsvereinParcours> a nl:Akteur  ;
    nl:hasFullAddress "Ludwigstraße 79, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Ludwigstrasse.79> ;
-   foaf:mbox "info@parcours-bildung.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.170> ;
    rdfs:label "Bildungsverein Parcours e.V." ;
+   foaf:mbox "info@parcours-bildung.org" ;
    foaf:homepage <http://parcours-bildung.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4058 51.3464)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.168> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GeoWerkstattLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Johannisallee 19, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisallee.19> ;
-   foaf:mbox "vorstand@geowerkstatt.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.168> ;
    rdfs:label "GeoWerkstatt Leipzig e.V." ;
+   foaf:mbox "vorstand@geowerkstatt.com" ;
    foaf:homepage <http://www.geowerkstatt.com> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3947 51.3319)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.167> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/archenoVaInitiativefuerMenscheninNot> a nl:Akteur  ;
    nl:hasFullAddress "Weißeritzstraße 3, 01067 Dresden" ;
    ld:proposedAddress <http://leipzig-data.de/Data/01067.Dresden.Weisseritzstrasse.3> ;
-   foaf:mbox "info@arche-nova.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.167> ;
    rdfs:label "arche noVa - Initiative für Menschen in Not e.V." ;
+   foaf:mbox "info@arche-nova.org" ;
    foaf:homepage <https://arche-nova.org/de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(13.7267 51.0589)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.166> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/MUeHLSTRASSE14> a nl:Akteur  ;
    nl:hasFullAddress "Mühlstraße 14, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Muehlstrasse.14> ;
-   foaf:mbox "kontakt@muehlstrasse.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.166> ;
    rdfs:label "MÜHLSTRASSE 14 e. V." ;
+   foaf:mbox "kontakt@muehlstrasse.de" ;
    foaf:homepage <http://www.muehlstrasse.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4008 51.3301)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.165> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BergbauTechnikPark> a nl:Akteur  ;
    nl:hasFullAddress "Hauptstraße 19, 04463 Großpösna" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04463.Grosspoesna.Hauptstrasse.19> ;
-   foaf:mbox "info@bergbau-technik-park.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.165> ;
    rdfs:label "Bergbau-Technik-Park e.V." ;
+   foaf:mbox "info@bergbau-technik-park.de" ;
    foaf:homepage <http://www.bergbau-technik-park.de/park/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.5032 51.2706)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.164> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ENEDAS> a nl:Akteur  ;
    nl:hasFullAddress "Elsterstraße 33, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.33> ;
-   foaf:mbox "info@enedas.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.164> ;
    rdfs:label "ENEDAS e.V." ;
+   foaf:mbox "info@enedas.de" ;
    foaf:homepage <http://www.enedas.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3638 51.3402)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.163> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/VDIGaraGeg> a nl:Akteur  ;
    nl:hasFullAddress "Karl-Heine-Straße 97, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.97> ;
-   foaf:mbox "r.moreno95@web.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.163> ;
    rdfs:label "VDI - GaraGe gGmbH" ;
+   foaf:mbox "r.moreno95@web.de" ;
    foaf:homepage <http://www.g-a-r-a-g-e.com/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.3292 51.3299)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.162> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/MaxPlanckInstitutfuerMathematik> a nl:Akteur  ;
    nl:hasFullAddress "Inselstraße 22, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Inselstrasse.22> ;
-   foaf:mbox "josefineotte95@gmail.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.162> ;
    rdfs:label "Max Planck Institut für Mathematik" ;
+   foaf:mbox "josefineotte95@gmail.com" ;
    foaf:homepage <https://www.mis.mpg.de/de/start.html> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3909 51.3413)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.160> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Phyllodrom> a nl:Akteur  ;
    nl:hasFullAddress "Delitzscher Landstraße 38, 04158 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04158.Leipzig.DelitzscherLandstrasse.38> ;
-   foaf:mbox "info@phyllodrom.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.160> ;
    rdfs:label "Phyllodrom e.V." ;
+   foaf:mbox "info@phyllodrom.de" ;
    foaf:homepage <http://phyllodrom.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.377 51.3917)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.159> a nl:Akteur  ;
-   foaf:mbox "andreaskoch030@gmail.com" ;
+<http://leipzig-data.de/Data/Akteur/kidscode> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.159> ;
    rdfs:label "kidscode e.V." ;
+   foaf:mbox "andreaskoch030@gmail.com" ;
    foaf:homepage <https://kidscode.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.157> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/EnergiegenossenschaftLeipzigeG> a nl:Akteur  ;
    nl:hasFullAddress "Bernhard-Göring-Straße 152, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "a.wueste@eg-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.157> ;
    rdfs:label "Energiegenossenschaft Leipzig eG" ;
+   foaf:mbox "a.wueste@eg-leipzig.de" ;
    foaf:homepage <http://www.energiegenossenschaft-leipzig.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#collective> ;
    gsp:asWKT "Point(12.3762 51.311)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.156> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/WWFJugend> a nl:Akteur  ;
    nl:hasFullAddress "Reinhardtstraße 18, 10117 Berlin" ;
    ld:proposedAddress <http://leipzig-data.de/Data/10117.Berlin.Reinhardtstrasse.18> ;
-   foaf:mbox "franziska.losse@posteo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.156> ;
    rdfs:label "WWF Jugend" ;
+   foaf:mbox "franziska.losse@posteo.de" ;
    foaf:homepage <https://www.wwf-jugend.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#foundation> ;
    gsp:asWKT "Point(13.3848 52.5235)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.155> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BioTempel> a nl:Akteur  ;
    nl:hasFullAddress "Täubchenweg 77A, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Taeubchenweg.77A> ;
-   foaf:mbox "biotempel@posteo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.155> ;
    rdfs:label "Bio Tempel" ;
+   foaf:mbox "biotempel@posteo.de" ;
    foaf:homepage <https://www.facebook.com/BioTempelLeipzig/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.4054 51.3361)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.154> a nl:Akteur  ;
-   foaf:mbox "carina.flores@diehellenkoepfe.de" ;
+<http://leipzig-data.de/Data/Akteur/CarinaFloresdeLooss> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.154> ;
    rdfs:label "Carina Flores de Looß" ;
+   foaf:mbox "carina.flores@diehellenkoepfe.de" ;
    foaf:homepage <http://diehellenkoepfe.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.153> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Nextleipzig> a nl:Akteur  ;
    nl:hasFullAddress "Zschochersche Straße 2A, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.ZschocherscheStrasse.2A> ;
-   foaf:mbox "phartmann6@t-online.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.153> ;
    rdfs:label "Nextleipzig" ;
+   foaf:mbox "phartmann6@t-online.de" ;
    foaf:homepage <http://www.nextleipzig.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3396 51.336)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.152> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/SylkeNissen> a nl:Akteur  ;
    nl:hasFullAddress "Beethovenstraße 15, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Beethovenstrasse.15> ;
-   foaf:mbox "nissen@uni-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.152> ;
    rdfs:label "Sylke Nissen" ;
+   foaf:mbox "nissen@uni-leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.3683 51.3322)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.151> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Batzentauschring> a nl:Akteur  ;
    nl:hasFullAddress "Ringelblumenweg 10, 04435 Schkeuditz" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04435.Schkeuditz.Ringelblumenweg.10> ;
-   foaf:mbox "leipzigrikscha@gmail.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.151> ;
    rdfs:label "Batzentauschring e.V." ;
+   foaf:mbox "leipzigrikscha@gmail.com" ;
    foaf:homepage <http://www.batzen.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.2018 51.3704)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.150> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/SCILeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Mariannenstraße 107, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Mariannenstrasse.107> ;
-   foaf:mbox "leipzig.lg@sci-d.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.150> ;
    rdfs:label "SCI Leipzig" ;
+   foaf:mbox "leipzig.lg@sci-d.de" ;
    foaf:homepage <http://sci-d.de/lokalgruppe-leipzig> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4122 51.3467)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.149> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/VereinderFreundeundFoerdererdesWildparksLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Bernhard-Göring-Straße 161, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.161> ;
-   foaf:mbox "info@wildparkverein-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.149> ;
    rdfs:label "Verein der Freunde und Förderer des Wildparks Leipzige.V." ;
+   foaf:mbox "info@wildparkverein-leipzig.de" ;
    foaf:homepage <http://www.wildparkverein-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3766 51.309)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.148> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/DLRGBezirkLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Theresienstraße 2A, 04105 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.Theresienstrasse.2A> ;
-   foaf:mbox "info@dlrg-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.148> ;
    rdfs:label "DLRG Bezirk Leipzig e.V." ;
+   foaf:mbox "info@dlrg-leipzig.de" ;
    foaf:homepage <http://bez-leipzig.dlrg.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3804 51.3594)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.147> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/EchtUnverpackt> a nl:Akteur  ;
    nl:hasFullAddress "Könneritzstraße 88, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Koenneritzstrasse.88> ;
-   foaf:mbox "info@echtunverpackt.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.147> ;
    rdfs:label "EchtUnverpackt" ;
+   foaf:mbox "info@echtunverpackt.de" ;
    foaf:homepage <http://www.EchtUnverpackt.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3417 51.3206)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.146> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/OeDPSachsen> a nl:Akteur  ;
    nl:hasFullAddress "Göbschelwitzer Straße 1, 04356 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04356.Leipzig.GoebschelwitzerStrasse.1> ;
-   foaf:mbox "rahwehbl@aikq.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.146> ;
    rdfs:label "ÖDP Sachsen" ;
+   foaf:mbox "rahwehbl@aikq.de" ;
    foaf:homepage <http://www.oedp-sachsen.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.4185 51.4064)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.145> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KonzeptwerkNeueOekonomie> a nl:Akteur  ;
    nl:hasFullAddress "Klingenstraße 22, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
-   foaf:mbox "K.Kuhnhenn@knoe.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.145> ;
    rdfs:label "Konzeptwerk Neue Ökonomie" ;
+   foaf:mbox "K.Kuhnhenn@knoe.org" ;
    foaf:homepage <http://www.knoe.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3244 51.323)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.144> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/LeilaiG> a nl:Akteur  ;
    nl:hasFullAddress "Naumburger Straße 49, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.NaumburgerStrasse.49> ;
-   foaf:mbox "kontakt@leila-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.144> ;
    rdfs:label "Leila e.V. iG" ;
+   foaf:mbox "kontakt@leila-leipzig.de" ;
    foaf:homepage <http://www.leila-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3255 51.3267)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.143> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Yellowbrasil> a nl:Akteur  ;
    nl:hasFullAddress "Pfaffendorfer Straße 4, 04105 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.4> ;
-   foaf:mbox "fitundvital1@freenet.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.143> ;
    rdfs:label "Yellowbrasil" ;
+   foaf:mbox "fitundvital1@freenet.de" ;
    foaf:homepage <http://www.yellowbrasil.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3718 51.3455)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.142> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Schaeferundamp;BreussGbR> a nl:Akteur  ;
    nl:hasFullAddress "Kreftingstraße 7, 28203 Bremen" ;
    ld:proposedAddress <http://leipzig-data.de/Data/28203.Bremen.Kreftingstrasse.7> ;
-   foaf:mbox "dorothee.schaefer@schaeferbreuss.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.142> ;
    rdfs:label "Schäfer &amp; Breuss GbR" ;
+   foaf:mbox "dorothee.schaefer@schaeferbreuss.org" ;
    foaf:homepage <http://www.schaeferbreuss.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(8.82159 53.0738)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.141> a nl:Akteur  ;
-   foaf:mbox "urte.grauwinkel@web.de" ;
+<http://leipzig-data.de/Data/Akteur/Marktschwaermer> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.141> ;
    rdfs:label "Marktschwärmer" ;
+   foaf:mbox "urte.grauwinkel@web.de" ;
    foaf:homepage <http://www.foodassembly.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.139> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/NextLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Zschochersche Straße 2A, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.ZschocherscheStrasse.2A> ;
-   foaf:mbox "steffen.peschel@konzeptfreun.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.139> ;
    rdfs:label "NextLeipzig" ;
+   foaf:mbox "steffen.peschel@konzeptfreun.de" ;
    foaf:homepage <http://www.nextleipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3396 51.336)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.138> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Pulita2016> a nl:Akteur  ;
    nl:hasFullAddress "Prießnitzstraße 32, 04179 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Priessnitzstrasse.32> ;
-   foaf:mbox "pulita@gmx.info" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.138> ;
    rdfs:label "Pulita2016" ;
+   foaf:mbox "pulita@gmx.info" ;
    foaf:homepage <http://stores.ebay.de/pulita2016?_trksid=p2047675.l2563> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3199 51.3441)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.137> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/freigeistBibliothekimShakunda> a nl:Akteur  ;
    nl:hasFullAddress "Karl-Liebknecht-Straße 102, 04275 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04275.Leipzig.Karl-Liebknecht-Strasse.102> ;
-   foaf:mbox "info@freigeist-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.137> ;
    rdfs:label "freigeist-Bibliothek im Shakunda" ;
+   foaf:mbox "info@freigeist-leipzig.de" ;
    foaf:homepage <http://www.freigeist-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3731 51.3175)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.136> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KatiMagyar> a nl:Akteur  ;
    nl:hasFullAddress "Georg-Schwarz-Straße 112, 04179 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.112> ;
-   foaf:mbox "post@katimagyar.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.136> ;
    rdfs:label "Kati Magyar" ;
+   foaf:mbox "post@katimagyar.de" ;
    foaf:homepage <http://www.katimagyar.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
    gsp:asWKT "Point(12.3173 51.3462)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.135> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/littlekiwi> a nl:Akteur  ;
    nl:hasFullAddress "Helmholtzstraße 27, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Helmholtzstrasse.27> ;
-   foaf:mbox "info@little-kiwi.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.135> ;
    rdfs:label "little kiwi" ;
+   foaf:mbox "info@little-kiwi.de" ;
    foaf:homepage <http://www.little-kiwi.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3306 51.3316)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.134> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Rehability> a nl:Akteur  ;
    nl:hasFullAddress "Alter Amtshof 2, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.AlterAmtshof.2> ;
-   foaf:mbox "presse@rehability.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.134> ;
    rdfs:label "Rehability" ;
+   foaf:mbox "presse@rehability.de" ;
    foaf:homepage <http://www.rehability.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3697 51.3374)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.133> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/CremeBRUeHLe> a nl:Akteur  ;
    nl:hasFullAddress "Am Hallischen Tor 1, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.AmHallischenTor.1> ;
-   foaf:mbox "verena.hahmann@marriott.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.133> ;
    rdfs:label "Creme BRÜHLé" ;
+   foaf:mbox "verena.hahmann@marriott.com" ;
    foaf:homepage <http://www.restaurant-creme-bruehle.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3771 51.3434)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.131> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/EinkaufsfuehrerSupermarkt> a nl:Akteur  ;
    nl:hasFullAddress "Bornaische Straße, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
-   foaf:mbox "supermaerkte@einewelt-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.131> ;
    rdfs:label "Einkaufsführer - Supermarkt" ;
+   foaf:mbox "supermaerkte@einewelt-leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3816 51.305)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.130> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/EinkaufsfuehrerSupermaerkte> a nl:Akteur  ;
    nl:hasFullAddress "Bornaische Straße, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
-   foaf:mbox "Superaemerkte@einewelt-Leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.130> ;
    rdfs:label "Einkaufsführer - Supermärkte" ;
+   foaf:mbox "Superaemerkte@einewelt-Leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3816 51.305)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.129> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/AnjaBuechting> a nl:Akteur  ;
    nl:hasFullAddress "Lange Straße 15, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.LangeStrasse.15> ;
-   foaf:mbox "info@alltagsinstitut.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.129> ;
    rdfs:label "Anja Büchting" ;
+   foaf:mbox "info@alltagsinstitut.de" ;
    foaf:homepage <http://www.alltagsinstitut.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3936 51.3405)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.128> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Mrs.Hippie> a nl:Akteur  ;
    nl:hasFullAddress "Karl-Liebknecht-Straße 36, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.36> ;
-   foaf:mbox "karsten_reichmann@dibomedia.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.128> ;
    rdfs:label "Mrs. Hippie" ;
+   foaf:mbox "karsten_reichmann@dibomedia.de" ;
    foaf:homepage <http://www.mrs.hippie.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3734 51.3262)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.127> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/HANDSonTECHNOLOGY> a nl:Akteur  ;
    nl:hasFullAddress "Plautstraße 80, 04179 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Plautstrasse.80> ;
-   foaf:mbox "info@hands-on-technology.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.127> ;
    rdfs:label "HANDS on TECHNOLOGY e.V." ;
+   foaf:mbox "info@hands-on-technology.org" ;
    foaf:homepage <http://www.hands-on-technology.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.2987 51.3352)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.126> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KonsumLeipzigeG> a nl:Akteur  ;
    nl:hasFullAddress "Industriestraße 85, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.85> ;
-   foaf:mbox "petra.seelbach@konsum-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.126> ;
    rdfs:label "Konsum Leipzig eG" ;
+   foaf:mbox "petra.seelbach@konsum-leipzig.de" ;
    foaf:homepage <http://www.konsum-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#collective> ;
    gsp:asWKT "Point(12.3299 51.328)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.125> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KunstundKatze> a nl:Akteur  ;
    nl:hasFullAddress "Merseburger Straße 7, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.MerseburgerStrasse.7> ;
-   foaf:mbox "info@kunstundkatze.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.125> ;
    rdfs:label "Kunst und Katze" ;
+   foaf:mbox "info@kunstundkatze.de" ;
    foaf:homepage <http://www.kunstundkatze.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3343 51.3295)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.124> a nl:Akteur  ;
-   foaf:mbox "info@lost-food.de" ;
+<http://leipzig-data.de/Data/Akteur/LOstFood> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.124> ;
    rdfs:label "LOst Food" ;
+   foaf:mbox "info@lost-food.de" ;
    foaf:homepage <http://lost-food.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.123> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/DerLindwurmHandelsgesellschaftmbH> a nl:Akteur  ;
    nl:hasFullAddress "Grimmaer Landstraße 2, 04687 Trebsen/Mulde" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04687.Trebsen/Mulde.GrimmaerLandstrasse.2> ;
-   foaf:mbox "der_lindwurm@t-online.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.123> ;
    rdfs:label "Der Lindwurm Handelsgesellschaft mbH" ;
+   foaf:mbox "der_lindwurm@t-online.de" ;
    foaf:homepage <http://www.derlindwurm.com> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.6949 51.2923)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.122> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/VeganesCateringundquot;LaTortitaundquot;> a nl:Akteur  ;
    nl:hasFullAddress "Hildegardstraße 49, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Hildegardstrasse.49> ;
-   foaf:mbox "vanessarothe@gmx.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.122> ;
    rdfs:label "Veganes Catering &quot;La Tortita&quot;" ;
+   foaf:mbox "vanessarothe@gmx.de" ;
    foaf:homepage <http://www.la-tortita.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.4072 51.3458)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.120> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/CafeChavalo> a nl:Akteur  ;
    nl:hasFullAddress "Kochstraße 132, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Kochstrasse.132> ;
-   foaf:mbox "jens@cafe-chavalo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.120> ;
    rdfs:label "Café Chavalo" ;
+   foaf:mbox "jens@cafe-chavalo.de" ;
    foaf:homepage <http://www.cafe-chavalo.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3716 51.3101)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.118> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/heldenkueche> a nl:Akteur  ;
    nl:hasFullAddress "Georg-Schwarz-Straße 112, 04179 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.112> ;
-   foaf:mbox "kontakt@heldenküche.net" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.118> ;
    rdfs:label "heldenküche" ;
+   foaf:mbox "kontakt@heldenküche.net" ;
    foaf:homepage <http://www.heldenküche.net> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3173 51.3462)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.117> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/St.BennoVerlag> a nl:Akteur  ;
    nl:hasFullAddress "Stammerstraße 40, 04159 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04159.Leipzig.Stammerstrasse.40> ;
-   foaf:mbox "service@st-benno.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.117> ;
    rdfs:label "St. Benno Verlag" ;
+   foaf:mbox "service@st-benno.de" ;
    foaf:homepage <http://www.vivat.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3211 51.3774)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.116> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Kuchenhimmelundamp;Brotfein> a nl:Akteur  ;
    nl:hasFullAddress "Martinstraße 6, 04318 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.Martinstrasse.6> ;
-   foaf:mbox "kuchenhimmel.brotfein@gmail.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.116> ;
    rdfs:label "Kuchenhimmel &amp; Brotfein" ;
+   foaf:mbox "kuchenhimmel.brotfein@gmail.com" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.4124 51.3342)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.115> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/roeskantDIEMANUFAKTUR> a nl:Akteur  ;
    nl:hasFullAddress "Hohe Straße 9, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.HoheStrasse.9> ;
-   foaf:mbox "info@roeskant.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.115> ;
    rdfs:label "röskant DIE MANUFAKTUR" ;
+   foaf:mbox "info@roeskant.com" ;
    foaf:homepage <http://www.roeskant.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.379 51.3287)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.114> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/FreieKommunikationundNachhaltigerLebensstil> a nl:Akteur  ;
    nl:hasFullAddress "Jahnatalstraße 4, 01594 Riesa" ;
    ld:proposedAddress <http://leipzig-data.de/Data/01594.Riesa.Jahnatalstrasse.4> ;
-   foaf:mbox "markus.kollotzek@greennetproject.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.114> ;
    rdfs:label "Freie Kommunikation und Nachhaltiger Lebensstil e.V." ;
+   foaf:mbox "markus.kollotzek@greennetproject.org" ;
    foaf:homepage <https://greennetproject.org/de/content/downloads> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(13.2854 51.2737)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.113> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/StadtteilbibliothekPlagwitz> a nl:Akteur  ;
    nl:hasFullAddress "Zschochersche Straße 14, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.14> ;
-   foaf:mbox "bibliothek.plagwitz@leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.113> ;
    rdfs:label "Stadtteilbibliothek Plagwitz" ;
+   foaf:mbox "bibliothek.plagwitz@leipzig.de" ;
    foaf:homepage <http://www.leipzig.de/stadtbib> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.3392 51.3338)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.112> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/NellyMorelly> a nl:Akteur  ;
    nl:hasFullAddress "Droyßiger Straße 9, 06188 Landsberg" ;
    ld:proposedAddress <http://leipzig-data.de/Data/06188.Landsberg.DroyssigerStrasse.9> ;
-   foaf:mbox "info@nelly-morelly.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.112> ;
    rdfs:label "Nelly Morelly" ;
+   foaf:mbox "info@nelly-morelly.de" ;
    foaf:homepage <http://www.nelly-morelly.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.1052 51.4976)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.111> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/FairerEinkaufsfuehrerBaeckerei/Cafe> a nl:Akteur  ;
    nl:hasFullAddress "Stockartstraße 111, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Stockartstrasse.11> ;
-   foaf:mbox "einkaufsfuehrer.baeckerei.cafe@einewelt-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.111> ;
    rdfs:label "Fairer Einkaufsführer - Bäckerei/Cafe" ;
+   foaf:mbox "einkaufsfuehrer.baeckerei.cafe@einewelt-leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3797 51.3093)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.110> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/FairerEinkaufsfuehrerRestaurant/Cafe> a nl:Akteur  ;
    nl:hasFullAddress "Stockartstraße 11, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Stockartstrasse.11> ;
-   foaf:mbox "einkaufsfuehrer.restaurant.cafe@einewelt-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.110> ;
    rdfs:label "Fairer Einkaufsführer - Restaurant/Cafe" ;
+   foaf:mbox "einkaufsfuehrer.restaurant.cafe@einewelt-leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3771 51.3079)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.109> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Rossmann> a nl:Akteur  ;
    nl:hasFullAddress "Stockartstraße 11, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Stockartstrasse.11> ;
-   foaf:mbox "sarah.nagel@rossmann.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.109> ;
    rdfs:label "Rossmann" ;
+   foaf:mbox "sarah.nagel@rossmann.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3771 51.308)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.108> a nl:Akteur  ;
-   foaf:mbox "info@fairtrade-leipzig.de" ;
+<http://leipzig-data.de/Data/Akteur/FairerEinkaufsfuehrerDiscounter> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.108> ;
    rdfs:label "Fairer Einkaufsführer - Discounter" ;
+   foaf:mbox "info@fairtrade-leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.106> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/AmtfuerUmweltschutzderStadtLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Prager Straße 136, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
-   foaf:mbox "umweltschutz@leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.106> ;
    rdfs:label "Amt für Umweltschutz der Stadt Leipzig" ;
+   foaf:mbox "umweltschutz@leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.4013 51.3243)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.105> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/AutodidaktischeInitiative> a nl:Akteur  ;
    nl:hasFullAddress "Georg-Schwarz-Straße 19, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.19> ;
-   foaf:mbox "autodidaktenleipzig@riseup.net" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.105> ;
    rdfs:label "Autodidaktische Initiative e.V." ;
+   foaf:mbox "autodidaktenleipzig@riseup.net" ;
    foaf:homepage <http://adi-leipzig.net> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3265 51.3392)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.104> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Dresdner59> a nl:Akteur  ;
    nl:hasFullAddress "Dresdner Straße 59, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.DresdnerStrasse.59> ;
-   foaf:mbox "stadtteilprojekt@dresdner59.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.104> ;
    rdfs:label "Dresdner59" ;
+   foaf:mbox "stadtteilprojekt@dresdner59.de" ;
    foaf:homepage <http://www.dresdner59.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.403 51.339)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.103> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/HotelFuerstenhof> a nl:Akteur  ;
    nl:hasFullAddress "Tröndlinring 8, 04105 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.Troendlinring.8> ;
-   foaf:mbox "Philipp.Jahnich@luxurycollection.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.103> ;
    rdfs:label "Hotel Fürstenhof" ;
+   foaf:mbox "Philipp.Jahnich@luxurycollection.com" ;
    foaf:homepage <http://www.hotelfuerstenhofleipzig.com/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.373 51.3447)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.102> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/fairgourmet> a nl:Akteur  ;
    nl:hasFullAddress "Seehausener Allee 2, 04356 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04356.Leipzig.SeehausenerAllee.2> ;
-   foaf:mbox "detlef.knaack@fairgourmet.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.102> ;
    rdfs:label "fairgourmet GmbH" ;
+   foaf:mbox "detlef.knaack@fairgourmet.de" ;
    foaf:homepage <http://www.fairgourmet.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.4004 51.3978)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.101> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/HausderDemokratieLeipzige.v.> a nl:Akteur  ;
    nl:hasFullAddress "Bernhard-Göring-Straße 152, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "info@hddl.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.101> ;
    rdfs:label "Haus der Demokratie Leipzig e.v." ;
+   foaf:mbox "info@hddl.de" ;
    foaf:homepage <http://www.hddl.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3763 51.311)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.100> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/StiftungBuergerfuerLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Dorotheenplatz 2-4, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Dorotheenplatz.2> ;
-   foaf:mbox "post@buergerfuerleipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.100> ;
    rdfs:label "Stiftung Bürger für Leipzig" ;
+   foaf:mbox "post@buergerfuerleipzig.de" ;
    foaf:homepage <http://www.buergerfuerleipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#foundation> ;
    gsp:asWKT "Point(12.3686 51.3383)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.99> a nl:Akteur  ;
-   foaf:mbox "akleitke@oxfam.de" ;
+<http://leipzig-data.de/Data/Akteur/OxfamDeutschlandShopsg> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.99> ;
    rdfs:label "Oxfam Deutschland Shops gGmbH" ;
+   foaf:mbox "akleitke@oxfam.de" ;
    foaf:homepage <http://www.oxfam-shops.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.98> a nl:Akteur  ;
-   foaf:mbox "kontakt@gfk-leipzig.de" ;
+<http://leipzig-data.de/Data/Akteur/NetzwerkGewaltfreieKommunikationLeipzig> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.98> ;
    rdfs:label "Netzwerk Gewaltfreie Kommunikation Leipzig e.V." ;
+   foaf:mbox "kontakt@gfk-leipzig.de" ;
    foaf:homepage <http://www.gfk-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.97> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ZooLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Pfaffendorfer Straße 29, 04105 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
-   foaf:mbox "mhaupt@zoo-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.97> ;
    rdfs:label "Zoo Leipzig GmbH" ;
+   foaf:mbox "mhaupt@zoo-leipzig.de" ;
    foaf:homepage <http://www.zoo-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.369 51.3517)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.96> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/SocialImpactLab> a nl:Akteur  ;
    nl:hasFullAddress "Weißenfelser Straße 65H, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.WeissenfelserStrasse.65H> ;
-   foaf:mbox "leipzig@socialimpactlab.eu" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.96> ;
    rdfs:label "Social Impact Lab" ;
+   foaf:mbox "leipzig@socialimpactlab.eu" ;
    foaf:homepage <http://leipzig.socialimpactlab.eu> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3306 51.3292)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.95> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/AlteSchlosserei> a nl:Akteur  ;
    nl:hasFullAddress "Kurt-Eisner-Straße 66, 04275 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04275.Leipzig.Kurt-Eisner-Strasse.66> ;
-   foaf:mbox "mail@alte-schlosserei.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.95> ;
    rdfs:label "Alte Schlosserei" ;
+   foaf:mbox "mail@alte-schlosserei.de" ;
    foaf:homepage <http://www.alte-schlosserei.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3745 51.3201)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.94> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GRUeNSCHNABEL> a nl:Akteur  ;
    nl:hasFullAddress "Nikolaistraße 20, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.20> ;
-   foaf:mbox "c.pfundt@gruenschnabel-shop.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.94> ;
    rdfs:label "GRÜNSCHNABEL" ;
+   foaf:mbox "c.pfundt@gruenschnabel-shop.de" ;
    foaf:homepage <http://www.gruenschnabel-shop.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3783 51.3418)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.93> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/MakerspaceLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Bitterfelder Straße 5, 04129 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04129.Leipzig.BitterfelderStrasse.5> ;
-   foaf:mbox "info@makerspace-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.93> ;
    rdfs:label "Makerspace Leipzig" ;
+   foaf:mbox "info@makerspace-leipzig.de" ;
    foaf:homepage <http://www.Makerspace-Leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.39 51.3568)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.92> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/DasJapanischeHaus> a nl:Akteur  ;
    nl:hasFullAddress "Eisenbahnstraße 113B, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.113B> ;
-   foaf:mbox "mail@djh-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.92> ;
    rdfs:label "Das Japanische Haus e.V." ;
+   foaf:mbox "mail@djh-leipzig.de" ;
    foaf:homepage <http://www.djh-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4123 51.3453)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.91> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/CONTIGOFairtradeShop> a nl:Akteur  ;
    nl:hasFullAddress "Nikolaistraße 6, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Nikolaistrasse.6> ;
-   foaf:mbox "leipzig@contigo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.91> ;
    rdfs:label "CONTIGO Fairtrade Shop" ;
+   foaf:mbox "leipzig@contigo.de" ;
    foaf:homepage <http://leipzig.contigo.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3783 51.3411)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.90> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/HaediFlorMeisterbetrieb> a nl:Akteur  ;
    nl:hasFullAddress "Johannes-R.-Becher-Straße 12, 04279 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04279.Leipzig.Johannes-R-Becher-Strasse.12> ;
-   foaf:mbox "info@haediflor.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.90> ;
    rdfs:label "Haedi-Flor Meisterbetrieb" ;
+   foaf:mbox "info@haediflor.de" ;
    foaf:homepage <http://www.haediflor.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3986 51.3009)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.89> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/RatskellerderStadtLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Lotterstraße 1, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Lotterstrasse.1> ;
-   foaf:mbox "info@ratskeller-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.89> ;
    rdfs:label "Ratskeller der Stadt Leipzig GmbH" ;
+   foaf:mbox "info@ratskeller-leipzig.de" ;
    foaf:homepage <http://www.ratskeller-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3725 51.3367)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.88> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/WisamarBildungsgesellschaft> a nl:Akteur  ;
    nl:hasFullAddress "Heinrichstraße 5, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Heinrichstrasse.5> ;
-   foaf:mbox "gregor.assfalg@wisamar.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.88> ;
    rdfs:label "Wisamar Bildungsgesellschaft" ;
+   foaf:mbox "gregor.assfalg@wisamar.de" ;
    foaf:homepage <http://www.wisamar.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.4018 51.3384)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.87> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/FreiwilligenAgenturLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Dorotheenplatz 2, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Dorotheenplatz.2> ;
-   foaf:mbox "info@fwal.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.87> ;
    rdfs:label "Freiwilligen-Agentur Leipzig e. V." ;
+   foaf:mbox "info@fwal.de" ;
    foaf:homepage <http://www.freiwilligen-agentur-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3686 51.3383)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.86> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ArakiVerlag> a nl:Akteur  ;
    nl:hasFullAddress "Theresienstraße 35, 04129 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04129.Leipzig.Theresienstrasse.35> ;
-   foaf:mbox "redaktion@araki.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.86> ;
    rdfs:label "Araki Verlag" ;
+   foaf:mbox "redaktion@araki.de" ;
    foaf:homepage <https://araki.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3868 51.3609)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.85> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BatzenTauschringLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Zum Kleingartenpark 41, 04318 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.ZumKleingartenpark.41> ;
-   foaf:mbox "peggy77@gmx.net" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.85> ;
    rdfs:label "Batzen-Tauschring Leipzig e.V." ;
+   foaf:mbox "peggy77@gmx.net" ;
    foaf:homepage <http://www.batzen.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4254 51.3433)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.84> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/JohannesTimaeus> a nl:Akteur  ;
    nl:hasFullAddress "Cichoriusstraße 17, 04318 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.Cichoriusstrasse.17> ;
-   foaf:mbox "johannes.timaeus@posteo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.84> ;
    rdfs:label "Johannes Timaeus" ;
+   foaf:mbox "johannes.timaeus@posteo.de" ;
    foaf:homepage <http://kochkultur-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.4088 51.3337)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.83> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/LehmolandiaLehmatelier> a nl:Akteur  ;
    nl:hasFullAddress "Merseburger Straße 39, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.39> ;
-   foaf:mbox "kontakt@lehmolandia.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.83> ;
    rdfs:label "Lehmolandia Lehmatelier" ;
+   foaf:mbox "kontakt@lehmolandia.de" ;
    foaf:homepage <http://www.lehmolandia.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
    gsp:asWKT "Point(12.3325 51.3323)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.81> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/LeipzigerMesse> a nl:Akteur  ;
    nl:hasFullAddress "Messe-Allee 1, 04356 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04356.Leipzig.Messe-Allee.1> ;
-   foaf:mbox "E.Truemper@leipziger-messe.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.81> ;
    rdfs:label "Leipziger Messe GmbH" ;
+   foaf:mbox "E.Truemper@leipziger-messe.de" ;
    foaf:homepage <http://www.leipziger-messe.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3992 51.3957)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.80> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Projektwohnungundquot;krudebudeundquot;> a nl:Akteur  ;
    nl:hasFullAddress "Stannebeinplatz 13, 04347 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04347.Leipzig.Stannebeinplatz.13> ;
-   foaf:mbox "projektraum.leipzig@gmail.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.80> ;
    rdfs:label "Projektwohnung &quot;krudebude&quot;" ;
+   foaf:mbox "projektraum.leipzig@gmail.com" ;
    foaf:homepage <https://www.facebook.com/pages/Projektwohnung-krudebude/617099368382416?fref=ts> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.406 51.351)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.79> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/EDUVENTISBildungerleben> a nl:Akteur  ;
    nl:hasFullAddress "Härtelstraße 4, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Haertelstrasse.4> ;
-   foaf:mbox "manja.muehl@eduventis.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.79> ;
    rdfs:label "EDUVENTIS-Bildung erleben e.V." ;
+   foaf:mbox "manja.muehl@eduventis.org" ;
    foaf:homepage <http://www.eduventis.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3767 51.3329)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.78> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Projektundquot;LebendigeLuppeundquot;> a nl:Akteur  ;
    nl:hasFullAddress "Michael-Kazmierczak-Straße 25, 04157 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04157.Leipzig.Michael-Kazmierczak-Strasse.25> ;
-   foaf:mbox "info@lebendige-luppe.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.78> ;
    rdfs:label "Projekt &quot;Lebendige Luppe&quot;" ;
+   foaf:mbox "info@lebendige-luppe.de" ;
    foaf:homepage <http://www.Lebendige-Luppe.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3736 51.368)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.77> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/erntemich> a nl:Akteur  ;
    nl:hasFullAddress "Großpösnaer Straße 71, 04288 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04288.Leipzig.GrosspoesnaerStrasse.71> ;
-   foaf:mbox "Richard.Hagedorn@erntemich.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.77> ;
    rdfs:label "ernte-mich" ;
+   foaf:mbox "Richard.Hagedorn@erntemich.de" ;
    foaf:homepage <http://www.erntemich.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.4799 51.2773)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.76> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/AckerwindeGemuesegarten> a nl:Akteur  ;
    nl:hasFullAddress "Helmholtzstraße, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Helmholtzstrasse.XX> ;
-   foaf:mbox "mail@ackerwinde.net" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.76> ;
    rdfs:label "Ackerwinde Gemüsegarten" ;
+   foaf:mbox "mail@ackerwinde.net" ;
    foaf:homepage <http://www.ackerwinde.net> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3298 51.3325)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.75> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Tanzzentrale> a nl:Akteur  ;
    nl:hasFullAddress "Erich-Zeigner-Allee 64, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Erich-Zeigner-Allee.64> ;
-   foaf:mbox "mail@tanz-zentrale.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.75> ;
    rdfs:label "Tanz zentrale" ;
+   foaf:mbox "mail@tanz-zentrale.de" ;
    foaf:homepage <http://www.tanz-zentrale.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
    gsp:asWKT "Point(12.3362 51.324)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.74> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/WOLLZIRKEL> a nl:Akteur  ;
    nl:hasFullAddress "Georg-Schwarz-Straße 112, 04179 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04179.Leipzig.Georg-Schwarz-Strasse.112> ;
-   foaf:mbox "wollzirkel@posteo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.74> ;
    rdfs:label "WOLLZIRKEL" ;
+   foaf:mbox "wollzirkel@posteo.de" ;
    foaf:homepage <http://wollzirkel.blogspot.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3173 51.3462)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.73> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BUNDLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Bernhard-Göring-Straße 152, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "presse@bund-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.73> ;
    rdfs:label "BUND Leipzig" ;
+   foaf:mbox "presse@bund-leipzig.de" ;
    foaf:homepage <http://www.bund-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3762 51.311)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.72> a nl:Akteur  ;
-   foaf:mbox "info@nachbarschaftsgaerten.de" ;
+<http://leipzig-data.de/Data/Akteur/Nachbarschaftsgaerten> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.72> ;
    rdfs:label "Nachbarschaftsgärten e.V." ;
+   foaf:mbox "info@nachbarschaftsgaerten.de" ;
    foaf:homepage <http://www.nachbarschaftsgaerten.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.71> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/DasSchwarzeBrett> a nl:Akteur  ;
    nl:hasFullAddress "Augustusplatz 10, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Augustusplatz.10> ;
-   foaf:mbox "info@dsble.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.71> ;
    rdfs:label "Das Schwarze Brett" ;
+   foaf:mbox "info@dsble.de" ;
    foaf:homepage <http://www.dsble.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3791 51.3384)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.70> a nl:Akteur  ;
-   foaf:mbox "rafaela.mueller@posteo.de" ;
+<http://leipzig-data.de/Data/Akteur/KlimagerechtigkeitLeipzig> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.70> ;
    rdfs:label "Klimagerechtigkeit Leipzig" ;
+   foaf:mbox "rafaela.mueller@posteo.de" ;
    foaf:homepage <http://klimagerechtigkeit.blogsport.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.69> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/OekoloeweUmweltbundLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Bernhard-Göring-Straße 152, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "info@oekoloewe.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.69> ;
    rdfs:label "Ökolöwe - Umweltbund Leipzig e.V." ;
+   foaf:mbox "info@oekoloewe.de" ;
    foaf:homepage <https://ökolöwe.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3762 51.311)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.68> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/zackigaufkursdieoffeneNaehwerkstattfuerUpcycling> a nl:Akteur  ;
    nl:hasFullAddress "Cichoriusstraße 2, 04318 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.Cichoriusstrasse.2> ;
-   foaf:mbox "kontakt@zackig-auf-kurs.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.68> ;
    rdfs:label "zackig auf kurs - die offene Nähwerkstatt für Upcycling" ;
+   foaf:mbox "kontakt@zackig-auf-kurs.de" ;
    foaf:homepage <http://www.zackig-auf-kurs.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.4085 51.3354)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.67> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Querbeet> a nl:Akteur  ;
    nl:hasFullAddress "Bernhardstraße 11, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Bernhardstrasse.11> ;
-   foaf:mbox "info@querbeet-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.67> ;
    rdfs:label "Querbeet" ;
+   foaf:mbox "info@querbeet-leipzig.de" ;
    foaf:homepage <http://www.querbeet-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.409 51.3387)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.66> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Stadtpflanzer> a nl:Akteur  ;
    nl:hasFullAddress "Hildegardstraße 49, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Hildegardstrasse.49> ;
-   foaf:mbox "sandra@stadtpflanzer.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.66> ;
    rdfs:label "Stadtpflanzer e. V." ;
+   foaf:mbox "sandra@stadtpflanzer.de" ;
    foaf:homepage <http://www.stadtpflanzer.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4072 51.3458)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.64> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/kunZstoffe–urbaneIdeenwerkstatt> a nl:Akteur  ;
    nl:hasFullAddress "Georg-Schwarz-Straße 7, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.7> ;
-   foaf:mbox "buero@kunzstoffe.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.64> ;
    rdfs:label "kunZstoffe – urbane Ideenwerkstatt e.V." ;
+   foaf:mbox "buero@kunzstoffe.de" ;
    foaf:homepage <http://www.kunzstoffe.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3271 51.3384)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.63> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KollektivLastenradLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Josephstraße 27, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.27> ;
-   foaf:mbox "analui@posteo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.63> ;
    rdfs:label "Kollektiv Lastenrad Leipzig" ;
+   foaf:mbox "analui@posteo.de" ;
    foaf:homepage <https://kolara.wordpress.com/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.3342 51.3337)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.62> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Stiftungundquot;Eckenweckenundquot;> a nl:Akteur  ;
    nl:hasFullAddress "Markranstädter Straße 29B, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.MarkranstaedterStrasse.29B> ;
-   foaf:mbox "info@stiftung-ecken-wecken.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.62> ;
    rdfs:label "Stiftung &quot;Ecken wecken&quot;" ;
+   foaf:mbox "info@stiftung-ecken-wecken.de" ;
    foaf:homepage <https://stiftung-ecken-wecken.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#foundation> ;
    gsp:asWKT "Point(12.3261 51.3251)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.61> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Radbarundquot;Velocibarundquot;> a nl:Akteur  ;
    nl:hasFullAddress "Alfred-Frank-Straße 15, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Alfred-Frank-Strasse.15> ;
-   foaf:mbox "zumkarsten@gmx.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.61> ;
    rdfs:label "Radbar &quot;Velocibar&quot;" ;
+   foaf:mbox "zumkarsten@gmx.de" ;
    foaf:homepage <http://www.velocibar.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3426 51.3262)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.60> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/NABURegionalverbandLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Corinthstraße 14, 04157 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04157.Leipzig.Corinthstrasse.14> ;
-   foaf:mbox "info@nabu-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.60> ;
    rdfs:label "NABU-Regionalverband Leipzig" ;
+   foaf:mbox "info@nabu-leipzig.de" ;
    foaf:homepage <http://www.NABU-Leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3717 51.3682)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.59> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/PermakulturForum> a nl:Akteur  ;
    nl:hasFullAddress "Josephstraße 12, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.12> ;
-   foaf:mbox "k.elborg@permakultur-institut.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.59> ;
    rdfs:label "Permakultur Forum" ;
+   foaf:mbox "k.elborg@permakultur-institut.de" ;
    foaf:homepage <http://www.transitiontown-leipzig.de/?page_id=456> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3332 51.3352)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.58> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/TransitionTownLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Josephstraße 12, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Josephstrasse.12> ;
-   foaf:mbox "kirstenelborg@yahoo.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.58> ;
    rdfs:label "Transition Town Leipzig" ;
+   foaf:mbox "kirstenelborg@yahoo.de" ;
    foaf:homepage <http://www.transitiontown-leipzig.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3332 51.3352)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.57> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/FamilienbueroLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Katharinenstraße 21-23, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.21> ;
-   foaf:mbox "info@familienbuero-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.57> ;
    rdfs:label "Familienbüro Leipzig" ;
+   foaf:mbox "info@familienbuero-leipzig.de" ;
    foaf:homepage <http://www.familienbuero-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3749 51.3428)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.56> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/WVGRabe> a nl:Akteur  ;
    nl:hasFullAddress "Beuchaer Straße 7, 04318 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.BeuchaerStrasse.7> ;
-   foaf:mbox "ch@wvg-rabe.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.56> ;
    rdfs:label "WVG Rabe" ;
+   foaf:mbox "ch@wvg-rabe.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.4095 51.3361)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.55> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Lipsiaemotion> a nl:Akteur  ;
    nl:hasFullAddress "Toskastraße 36, 04159 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04159.Leipzig.Toskastrasse.36> ;
-   foaf:mbox "info@lipsia-e-motion.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.55> ;
    rdfs:label "Lipsia-e-motion" ;
+   foaf:mbox "info@lipsia-e-motion.com" ;
    foaf:homepage <http://www.Lipsia-e-motion.com> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3306 51.3699)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.54> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GruenerRingLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Leipziger Straße 6, 04451 Borsdorf" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04451.Borsdorf.LeipzigerStrasse.6> ;
-   foaf:mbox "geschaeftsstelle@gruenerring-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.54> ;
    rdfs:label "Grüner Ring Leipzig" ;
+   foaf:mbox "geschaeftsstelle@gruenerring-leipzig.de" ;
    foaf:homepage <http://www.gruenerring-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.5318 51.3455)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.53> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/LustaufneuesGeld> a nl:Akteur  ;
    nl:hasFullAddress "Rosestraße 11, 04158 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04158.Leipzig.Rosestrasse.11> ;
-   foaf:mbox "info@lust-auf-neues-geld-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.53> ;
    rdfs:label "Lust auf neues Geld" ;
+   foaf:mbox "info@lust-auf-neues-geld-leipzig.de" ;
    foaf:homepage <http://www.lust-auf-neues-geld.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3206 51.3897)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.52> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Sukumaarts> a nl:Akteur  ;
    nl:hasFullAddress "Louisenstraße 93, 01099 Dresden" ;
    ld:proposedAddress <http://leipzig-data.de/Data/01099.Dresden.Louisenstrasse.93> ;
-   foaf:mbox "award@sukuma.net" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.52> ;
    rdfs:label "Sukuma arts e.V." ;
+   foaf:mbox "award@sukuma.net" ;
    foaf:homepage <http://www.sukuma-award.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(13.7589 51.0652)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.51> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ANNALINDEg> a nl:Akteur  ;
    nl:hasFullAddress "Lützner Straße 108, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
-   foaf:mbox "info@annalinde-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.51> ;
    rdfs:label "ANNALINDE gGmbH" ;
+   foaf:mbox "info@annalinde-leipzig.de" ;
    foaf:homepage <http://www.annalinde-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.3252 51.3342)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.50> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/EineWeltLaden> a nl:Akteur  ;
    nl:hasFullAddress "Bornaische Straße 18, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
-   foaf:mbox "info@einewelt-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.50> ;
    rdfs:label "Eine Welt Laden" ;
+   foaf:mbox "info@einewelt-leipzig.de" ;
    foaf:homepage <http://einewelt-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3755 51.3088)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.49> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/projektUP> a nl:Akteur  ;
    nl:hasFullAddress "Stefan-Zweig-Straße 21, 04178 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04178.Leipzig.Stefan-Zweig-Strasse.21> ;
-   foaf:mbox "fm@projektup.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.49> ;
    rdfs:label "projektUP!" ;
+   foaf:mbox "fm@projektup.org" ;
    foaf:homepage <http://www.projektup.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#freelancer> ;
    gsp:asWKT "Point(12.2948 51.3543)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.48> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Dr..MatiasLanger> a nl:Akteur  ;
    nl:hasFullAddress "Karl-Friedrich-Straße 1, 04316 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04316.Leipzig.Karl-Friedrich-Strasse.1> ;
-   foaf:mbox "email@seidentraum.eu" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.48> ;
    rdfs:label "Dr.. Matias Langer" ;
+   foaf:mbox "email@seidentraum.eu" ;
    foaf:homepage <http://www.seidentraum.eu> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.4542 51.3237)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.47> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/FundamentaleDiejungeAkademie> a nl:Akteur  ;
    nl:hasFullAddress "Reiskestraße 2, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Reiskestrasse.2> ;
-   foaf:mbox "ja@fundamentale.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.47> ;
    rdfs:label "Fundamentale - Die junge Akademie" ;
+   foaf:mbox "ja@fundamentale.de" ;
    foaf:homepage <http://www.fundamentale.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.406 51.3298)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.46> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/NetzwerkEnergieundamp;Umwelt> a nl:Akteur  ;
    nl:hasFullAddress "Martin-Luther-Ring 4, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
-   foaf:mbox "reissmann@energiemetropole-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.46> ;
    rdfs:label "Netzwerk Energie &amp; Umwelt e. V." ;
+   foaf:mbox "reissmann@energiemetropole-leipzig.de" ;
    foaf:homepage <http://www.energiemetropole-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3713 51.335)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.45> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/VereinigteLeipzigerWohnungsgenossenschafteG> a nl:Akteur  ;
    nl:hasFullAddress "Hartzstraße 2, 04129 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04129.Leipzig.Hartzstrasse.2> ;
-   foaf:mbox "smrichter@vlw-eg.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.45> ;
    rdfs:label "Vereinigte Leipziger Wohnungsgenossenschaft eG" ;
+   foaf:mbox "smrichter@vlw-eg.de" ;
    foaf:homepage <http://www.vlw-eg.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#collective> ;
    gsp:asWKT "Point(12.3948 51.3595)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.43> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/RockzipfelElternKindBuero> a nl:Akteur  ;
    nl:hasFullAddress "Georg-Schwarz-Straße 10, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Georg-Schwarz-Strasse.10> ;
-   foaf:mbox "buero@rockzipfel-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.43> ;
    rdfs:label "Rockzipfel Eltern-Kind-Büro" ;
+   foaf:mbox "buero@rockzipfel-leipzig.de" ;
    foaf:homepage <http://www.rockzipfel-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3275 51.3386)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.42> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Querbeet> a nl:Akteur  ;
    nl:hasFullAddress "Neustädter Straße 20, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.NeustaedterStrasse.20> ;
-   foaf:mbox "t.johannes@arcor.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.42> ;
    rdfs:label "Querbeet" ;
+   foaf:mbox "t.johannes@arcor.de" ;
    foaf:homepage <http://www.querbeet-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.4004 51.3462)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.41> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/AURELMarketing> a nl:Akteur  ;
    nl:hasFullAddress "Sommerfelder Weg 94, 04329 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04329.Leipzig.SommerfelderWeg.94> ;
-   foaf:mbox "kontakt@aurel-marketing.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.41> ;
    rdfs:label "AUREL Marketing" ;
+   foaf:mbox "kontakt@aurel-marketing.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.4799 51.3468)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.40> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/IdeenwerkstattBildungsagenten> a nl:Akteur  ;
    nl:hasFullAddress "Klingenstraße 22, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
-   foaf:mbox "Helmut@bildungsagenten.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.40> ;
    rdfs:label "Ideenwerkstatt Bildungsagenten" ;
+   foaf:mbox "Helmut@bildungsagenten.com" ;
    foaf:homepage <http://www.konzeptwerk-neue-oekonomie.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#educational> ;
    gsp:asWKT "Point(12.3244 51.323)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.39> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/PiepenbrockSicherheit+Co.KG> a nl:Akteur  ;
    nl:hasFullAddress "Gerichtsweg 28, 04103 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Gerichtsweg.28> ;
-   foaf:mbox "u.wermelt@piepenbrock.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.39> ;
    rdfs:label "Piepenbrock Sicherheit GmbH + Co. KG" ;
+   foaf:mbox "u.wermelt@piepenbrock.de" ;
    foaf:homepage <http://www.piepenbrock.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3924 51.3344)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.38> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Westbesuch> a nl:Akteur  ;
    nl:hasFullAddress "Karl-Heine-Straße 93, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.93> ;
-   foaf:mbox "info@westbesuch.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.38> ;
    rdfs:label "Westbesuch e.V." ;
+   foaf:mbox "info@westbesuch.com" ;
    foaf:homepage <http://www.westbesuch.com> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.331 51.3305)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.37> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/CaritasverbandLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Elsterstraße 15, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Elsterstrasse.15> ;
-   foaf:mbox "presse@caritas-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.37> ;
    rdfs:label "Caritasverband Leipzig e. V." ;
+   foaf:mbox "presse@caritas-leipzig.de" ;
    foaf:homepage <http://www.caritas-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3662 51.3392)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.36> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/EnergiegenossenschaftLeipzigEGLeG> a nl:Akteur  ;
    nl:hasFullAddress "Delitzscher Straße 3, 04105 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04105.Leipzig.DelitzscherStrasse.3> ;
-   foaf:mbox "info@eg-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.36> ;
    rdfs:label "Energiegenossenschaft Leipzig EGL eG" ;
+   foaf:mbox "info@eg-leipzig.de" ;
    foaf:homepage <http://www.energiegenossenschaft-leipzig.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#collective> ;
    gsp:asWKT "Point(12.3772 51.3576)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.35> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/InitiativeGrundeinkommenLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Bernhard-Göring-Straße 154, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.154> ;
-   foaf:mbox "volkmarkreiss@gmail.com" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.35> ;
    rdfs:label "Initiative Grundeinkommen Leipzig" ;
+   foaf:mbox "volkmarkreiss@gmail.com" ;
    foaf:homepage <http://bge-initiative-leipzig.blogspot.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3763 51.3101)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.34> a nl:Akteur  ;
-   foaf:mbox "bildungsberatung@leipzig.de" ;
+<http://leipzig-data.de/Data/Akteur/SabineBolte> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.34> ;
    rdfs:label "Sabine Bolte" ;
+   foaf:mbox "bildungsberatung@leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.33> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KonsumGlobalLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Straße des 17. Juni 11, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Strassedes17Juni.11> ;
-   foaf:mbox "WeltOffenEvau@gmx.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.33> ;
    rdfs:label "KonsumGlobal Leipzig" ;
+   foaf:mbox "WeltOffenEvau@gmx.de" ;
    foaf:homepage <http://www.KonsumGlobal-Leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3721 51.3326)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.32> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/leben.lernen.leipzig> a nl:Akteur  ;
    nl:hasFullAddress "Zschochersche Straße 68, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.ZschocherscheStrasse.68> ;
-   foaf:mbox "info@lebenlernenleipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.32> ;
    rdfs:label "leben.lernen.leipzig" ;
+   foaf:mbox "info@lebenlernenleipzig.de" ;
    foaf:homepage <http://www.lebenlernenleipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3348 51.3264)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.30> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/LeipzigerKulturPaten> a nl:Akteur  ;
    nl:hasFullAddress "Härtelstraße 27, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Haertelstrasse.27> ;
-   foaf:mbox "gk@ideenquartier.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.30> ;
    rdfs:label "Leipziger KulturPaten" ;
+   foaf:mbox "gk@ideenquartier.org" ;
    foaf:homepage <http://www.leipzigerkulturpaten.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3739 51.3328)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.29> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/LeipzigerKinderbuerodesDeutschenKinderschutzbundes> a nl:Akteur  ;
    nl:hasFullAddress "Johannisallee 20, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.Johannisallee.20> ;
-   foaf:mbox "kinderbuero@dksb-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.29> ;
    rdfs:label "Leipziger Kinderbüro des Deutschen Kinderschutzbundes" ;
+   foaf:mbox "kinderbuero@dksb-leipzig.de" ;
    foaf:homepage <http://www.leipziger-kinderbuero.de/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3951 51.3326)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.28> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/WEGEfuerAngehoerigeundFreundepsychischKranker> a nl:Akteur  ;
    nl:hasFullAddress "Luetzner Street 75, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.75> ;
-   foaf:mbox "oeffentlichkeitsarbeit@wege-ev.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.28> ;
    rdfs:label "WEGE e.V. - für Angehörige und Freunde psychisch Kranker" ;
+   foaf:mbox "oeffentlichkeitsarbeit@wege-ev.de" ;
    foaf:homepage <http://www.wege-ev.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3267 51.3346)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.27> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KonzeptwerkNeueOekonomie> a nl:Akteur  ;
    nl:hasFullAddress "Klingenstraße 22, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Klingenstrasse.22> ;
-   foaf:mbox "s.brehm@knoe.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.27> ;
    rdfs:label "Konzeptwerk Neue Ökonomie" ;
+   foaf:mbox "s.brehm@knoe.org" ;
    foaf:homepage <http://www.konzeptwerk-neue-oekonomie.org> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3243 51.323)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.26> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ADFCLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Peterssteinweg 18, 04107 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04107.Leipzig.Peterssteinweg.18> ;
-   foaf:mbox "info@adfc-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.26> ;
    rdfs:label "ADFC Leipzig" ;
+   foaf:mbox "info@adfc-leipzig.de" ;
    foaf:homepage <http://www.adfc-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3735 51.3318)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.25> a nl:Akteur  ;
-   foaf:mbox "sebastian.fried@leipzig.de" ;
+<http://leipzig-data.de/Data/Akteur/StadtLeipzig,AmtfuerStadtgruenundGewaesser> a nl:Akteur  ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.25> ;
    rdfs:label "Stadt Leipzig, Amt für Stadtgrün und Gewässer" ;
+   foaf:mbox "sebastian.fried@leipzig.de" ;
    foaf:homepage <http://www.leipzig.de/de/buerger/freizeit/leipzig/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.24> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/rad3.de> a nl:Akteur  ;
    nl:hasFullAddress "Erich-Köhn-Straße 63B, 04177 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04177.Leipzig.Erich-Koehn-Strasse.63B> ;
-   foaf:mbox "dialog@rad3.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.24> ;
    rdfs:label "rad3.de" ;
+   foaf:mbox "dialog@rad3.de" ;
    foaf:homepage <http://rad3.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3274 51.3391)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.23> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GemeinsamWandeln> a nl:Akteur  ;
    nl:hasFullAddress "Gustav-Freytag-Straße 18A, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Gustav-Freytag-Strasse.18A> ;
-   foaf:mbox "lindentaler@gmx.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.23> ;
    rdfs:label "Gemeinsam Wandeln" ;
+   foaf:mbox "lindentaler@gmx.de" ;
    foaf:homepage <http://www.transitiontown-leipzig.de/blog/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.3696 51.3124)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.22> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/VerbundnetzderWaerme> a nl:Akteur  ;
    nl:hasFullAddress "Braunstraße 9, 04347 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04347.Leipzig.Braunstrasse.9> ;
-   foaf:mbox "info@verbundnetz-der-waerme.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.22> ;
    rdfs:label "Verbundnetz der Wärme" ;
+   foaf:mbox "info@verbundnetz-der-waerme.de" ;
    foaf:homepage <http://www.verbundnetz-der-waerme.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.4309 51.3632)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.21> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/oikosLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Grimmaische Straße 6-16, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.GrimmaischeStrasse.6> ;
-   foaf:mbox "info@oikos-leipzig.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.21> ;
    rdfs:label "oikos Leipzig e.V." ;
+   foaf:mbox "info@oikos-leipzig.org" ;
    foaf:homepage <http://leipzig.oikos-international.org/> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3796 51.3393)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.19> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/StadtLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Martin-Luther-Ring 4, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Martin-Luther-Ring.4> ;
-   foaf:mbox "rudolf.pohl@leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.19> ;
    rdfs:label "Stadt Leipzig" ;
+   foaf:mbox "rudolf.pohl@leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.3713 51.335)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.18> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/sedruckKG> a nl:Akteur  ;
    nl:hasFullAddress "Ludwig-Hupfeld-Straße 16, 04178 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04178.Leipzig.Ludwig-Hupfeld-Strasse.16> ;
-   foaf:mbox "schroeder@sedruck.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.18> ;
    rdfs:label "sedruck KG" ;
+   foaf:mbox "schroeder@sedruck.de" ;
    foaf:homepage <https://www.sedruck.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#corporation> ;
    gsp:asWKT "Point(12.3009 51.3482)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.16> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/GruenAlternativesZentrumLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Vollhardtstraße 16, 04279 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
-   foaf:mbox "GAZ-Leipzig@t-online.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.16> ;
    rdfs:label "Grün-Alternatives Zentrum Leipzig e.V." ;
+   foaf:mbox "GAZ-Leipzig@t-online.de" ;
    foaf:homepage <http://www.doelitzer-wassermuehle.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3882 51.2891)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.15> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Auwaldstation> a nl:Akteur  ;
    nl:hasFullAddress "Schloßweg 11, 04159 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
-   foaf:mbox "auwaldstation@t-online.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.15> ;
    rdfs:label "Auwaldstation" ;
+   foaf:mbox "auwaldstation@t-online.de" ;
    foaf:homepage <http://www.auwaldstation.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.2805 51.3772)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.14> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/OekoloeweUmweltbundLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Bernhard-Göring-Straße 152, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "oeffentlichkeitsarbeit@oekoloewe.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.14> ;
    rdfs:label "Ökolöwe - Umweltbund Leipzig e.V." ;
+   foaf:mbox "oeffentlichkeitsarbeit@oekoloewe.de" ;
    foaf:homepage <http://www.oekoloewe.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3762 51.311)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.13> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/KontaktstelleOrientierung> a nl:Akteur  ;
    nl:hasFullAddress "Hainstraße 12, 04109 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04109.Leipzig.Hainstrasse.12> ;
-   foaf:mbox "orientierung.leipzig@jesuiten.org" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.13> ;
    rdfs:label "Kontaktstelle Orientierung" ;
+   foaf:mbox "orientierung.leipzig@jesuiten.org" ;
    foaf:homepage <http://www.orientierung-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3736 51.3423)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.12> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/HelmholtzZentrumfuerUmweltforschungUFZ> a nl:Akteur  ;
    nl:hasFullAddress "Permoserstraße 15, 04318 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
-   foaf:mbox "schuelerlabor@ufz.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.12> ;
    rdfs:label "Helmholtz-Zentrum für Umweltforschung GmbH - UFZ" ;
+   foaf:mbox "schuelerlabor@ufz.de" ;
    foaf:homepage <http://www.ufz-schuelerlabor.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.4321 51.3517)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.11> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/Foerdervereinundquot;UmweltinformationszentrumLeipzigUiZundquot;> a nl:Akteur  ;
    nl:hasFullAddress "Prager Straße 136, 04317 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
-   foaf:mbox "fvumweltinformationszentrum@web.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.11> ;
    rdfs:label "Förderverein &quot;Umweltinformationszentrum Leipzig - UiZ&quot; e.V." ;
+   foaf:mbox "fvumweltinformationszentrum@web.de" ;
    foaf:homepage <http://www.umwelt-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4016 51.3244)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.10> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/NaturschutzundKunstLeipzigerAuwald> a nl:Akteur  ;
    nl:hasFullAddress "Otto-Adam-Straße 14, 04157 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04157.Leipzig.Otto-Adam-Strasse.14> ;
-   foaf:mbox "stoiber@nukla.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.10> ;
    rdfs:label "Naturschutz und Kunst Leipziger Auwald e. V." ;
+   foaf:mbox "stoiber@nukla.de" ;
    foaf:homepage <http://www.nukla.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3751 51.3705)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.6> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/JohannSimowitsch> a nl:Akteur  ;
    nl:hasFullAddress "Karl-Heine-Straße, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.XX> ;
-   foaf:mbox "johann.simowitsch@leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.6> ;
    rdfs:label "Johann Simowitsch" ;
+   foaf:mbox "johann.simowitsch@leipzig.de" ;
    a <http://nachhaltiges-leipzig.de/Data/Model#other> ;
    gsp:asWKT "Point(12.335 51.3317)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.5> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/ZukunftsakademieLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Eisenbahnstraße 49, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.49> ;
-   foaf:mbox "schirmer@civixx.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.5> ;
    rdfs:label "Zukunftsakademie Leipzig e.V." ;
+   foaf:mbox "schirmer@civixx.de" ;
    foaf:homepage <http://www.zukunftsakademie-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.4024 51.3459)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.4> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/UmweltbibliothekLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Bernhard-Göring-Straße 152, 04277 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-   foaf:mbox "info@umweltbibliothek-leipzig.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.4> ;
    rdfs:label "Umweltbibliothek Leipzig" ;
+   foaf:mbox "info@umweltbibliothek-leipzig.de" ;
    foaf:homepage <http://www.umweltbibliothek-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3763 51.311)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.3> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/BueroderLeipzigerAgenda21> a nl:Akteur  ;
    nl:hasFullAddress "Eisenbahnstraße 66, 04315 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04315.Leipzig.Eisenbahnstrasse.66> ;
-   foaf:mbox "post@civixx.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.3> ;
    rdfs:label "Büro der Leipziger Agenda 21" ;
+   foaf:mbox "post@civixx.de" ;
    foaf:homepage <http://www.leipzigeragenda21.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#initiative> ;
    gsp:asWKT "Point(12.4038 51.3455)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.2> a nl:Akteur  ;
+<http://leipzig-data.de/Data/Akteur/WasserStadtLeipzig> a nl:Akteur  ;
    nl:hasFullAddress "Industriestraße 72, 04229 Leipzig" ;
    ld:proposedAddress <http://leipzig-data.de/Data/04229.Leipzig.Industriestrasse.72> ;
-   foaf:mbox "mail@leipzig-heymann.de" ;
+   owl:sameAs <http://nachhaltiges-leipzig.de/Data/Akteur.2> ;
    rdfs:label "Wasser-Stadt-Leipzig e.V." ;
+   foaf:mbox "mail@leipzig-heymann.de" ;
    foaf:homepage <http://www.wasser-stadt-leipzig.de> ;
    a <http://nachhaltiges-leipzig.de/Data/Model#club> ;
    gsp:asWKT "Point(12.3335 51.328)" ;
-   dct:modified "2018-08-04" . 
+   dct:modified "2018-08-10" . 
 
+@prefix ns0:	<http://leipzig-data.de/Data/Model/> .
+@prefix ns1:	<http://leipzig-data.de/Data/> .
+ns1:NL	ns0:hasExistingLinks	<http://nachhaltiges-leipzig.de/Data/Akteur.91> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.186> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.86> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.88> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.184> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.55> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.189> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.56> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.190> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.187> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.51> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.53> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.188> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.71> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.75> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.61> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.68> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.28> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.29> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.26> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.27> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.37> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.38> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.32> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.33> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.166> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.167> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.164> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.165> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.2> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.21> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.168> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.170> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.150> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.151> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.149> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.15> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.16> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.160> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.154> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.159> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.127> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.14> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.11> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.114> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.146> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.148> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.144> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.145> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.219> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.13> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.87> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.92> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.79> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.85> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.98> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.60> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.64> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.5> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.52> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.72> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.73> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.66> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.69> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.113> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.12> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.103> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.104> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.171> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.172> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.120> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.133> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.162> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.54> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.155> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.156> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.147> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.153> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.23> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.3> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.173> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.22> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.111> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.130> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.108> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.110> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.139> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.141> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.131> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.137> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.6> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.152> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.34> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.43> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.50> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.4> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.42> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.95> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.67> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.89> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.181> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.25> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.46> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.106> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.19> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.76> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.78> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.70> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.74> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.93> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.96> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.80> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.84> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.47> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.57> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.35> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.40> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.62> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.63> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.58> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.59> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.36> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.178> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.39> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.179> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.24> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.176> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.30> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.177> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.48> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.49> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.41> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.45> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.142> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.143> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.136> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.138> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.174> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.18> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.157> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.163> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.125> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.126> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.123> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.124> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.134> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.135> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.128> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.129> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.112> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.115> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.102> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.109> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.212> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.118> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.122> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.210> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.116> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.211> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.117> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.216> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.217> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.214> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.215> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.101> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.204> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.105> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.10> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.202> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.100> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.203> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.99> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.208> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.209> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.94> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.97> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.207> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.197> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.192> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.193> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.81> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.200> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.83> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.201> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.77> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.198> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.8> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.199> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.90> ,
+		<http://nachhaltiges-leipzig.de/Data/Akteur.185> .
