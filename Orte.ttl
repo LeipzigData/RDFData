@@ -48,7 +48,6 @@ ld:Ort
 ldo:AIDSBeratungsstelle
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Gustav-Mahler-Strasse.3> ;
     ld:hasCategories "Frauenvereine" ;
-    ld:hasOrtsteil ldot:Zentrum-West ;
     ld:hasStadtId "437" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Gesundheitsamt> ;
     a ld:Ort ;
@@ -68,7 +67,6 @@ ldo:AO_Hostel
 <http://leipzig-data.de/Data/Ort/AW.Uebernachtungshaus>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Scharnhorststrasse.27> ;
     ld:hasCategories "Frauenvereine" ;
-    ld:hasOrtsteil ldot:Suedvorstadt ;
     ld:hasStadtId "425" ;
     ld:hasSupplier <http://leipzig-data.de/Data/KE/AdventGemeindeLeipzig> ;
     a ld:Ort ;
@@ -177,7 +175,7 @@ ldo:Anker
     ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Renftstrasse.1> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Anker> ;
-    ld:istErreichbar "SB 10,11; Bus 80,90 bis Slevogtstr." ;
+    ld:erreichbar "SB 10,11; Bus 80,90 bis Slevogtstr." ;
     a ld:Ort ;
     rdfs:comment "Im Angebot: Schauspiel, Theater, Kreativwerkstatt, Mediencenter, Modellbau, Fotolabor, Kinderfeste, offener Treff, Jugendclub, Ferienangebote, Jugendgesprächsrunde" ;
     rdfs:label "Der Anker" ;
@@ -252,7 +250,6 @@ ldo:AuerbachsKeller
 
 ldo:AutismusambulanzLeipzig
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Schenkendorfstrasse.10> ;
-    ld:hasOrtsteil ldot:Suedvorstadt ;
     ld:hasStadtId "327" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/BBW> ;
     a ld:Ort ;
@@ -270,7 +267,7 @@ ldo:Auwaldstation
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Auwaldstation> ;
     ld:hasTag ldtag:MINT ;
-    ld:istErreichbar "SB 11 bis Lützschena, dann ca. 10 min. Fußweg" ;
+    ld:erreichbar "SB 11 bis Lützschena, dann ca. 10 min. Fußweg" ;
     a ld:Ort ;
     rdfs:label "Auwaldstation Leipzig" ;
     foaf:homepage <http://www.auwaldstation.de> ;
@@ -454,7 +451,7 @@ ldo:BergbauTechnikPark
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/StadtLeipzig/Bibliotheken> ;
     ld:hasTag ldtag:Bibliothek ;
-    ld:istErreichbar "SB 3,4,7,8,15 bis Felsenkeller bzw. Angerbrücke" ;
+    ld:erreichbar "SB 3,4,7,8,15 bis Felsenkeller bzw. Angerbrücke" ;
     dct:modified "2016-04-18" ;
     a ld:Ort ;
     rdfs:label "Bibliothek Plagwitz \"Georg Maurer\"", "Stadtteilbibliothek Plagwitz" ;
@@ -810,7 +807,6 @@ ldo:D21Kunstraum
 <http://leipzig-data.de/Data/Ort/DKSB.Suchtpraevention>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Schenkendorfstrasse.30> ;
     ld:hasCategories "Prävention", "Suchthilfe" ;
-    ld:hasOrtsteil ldot:Suedvorstadt ;
     ld:hasStadtId "320" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/DKSB.OrtsverbandLeipzig> ;
     a ld:Ort ;
@@ -830,7 +826,6 @@ ldo:D21Kunstraum
 <http://leipzig-data.de/Data/Ort/DRK.BeratungsstelleFuerSchwangereUndFamilien>
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Brandvorwerkstrasse.36A> ;
     ld:hasCategories "Frauenvereine" ;
-    ld:hasOrtsteil ldot:Suedvorstadt ;
     ld:hasStadtId "454" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/DRK.KreisverbandLeipzig> ;
     a ld:Ort ;
@@ -898,7 +893,7 @@ ldo:DoelitzerWassermuehle
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/GAZ> ;
     ld:hasTag ldtag:MINT ;
-    ld:istErreichbar "SB 11 bis Leinestraße, dann 5 min Fußweg in Helenenstraße" ;
+    ld:erreichbar "SB 11 bis Leinestraße, dann 5 min Fußweg in Helenenstraße" ;
     a ld:Ort ;
     rdfs:comment "Auslastung Mai-Juni 100%, August - April ca. 80%" ;
     rdfs:label "Dölitzer Wassermühle" ;
@@ -909,7 +904,6 @@ ldo:DoelitzerWassermuehle
 ldo:DonumVitae
     ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.Karl-Heine-Strasse.41> ;
     ld:hasCategories "Frauenvereine" ;
-    ld:hasOrtsteil ldot:Lindenau ;
     ld:hasStadtId "457" ;
     a ld:Ort ;
     rdfs:label "„donum vitae“ e.V. Schwangerenberatungsstelle" .
@@ -1053,10 +1047,9 @@ ldo:Fauser
 
 ldo:FeinkostLeipzig
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Karl-Liebknecht-Strasse.36> ;
-    ld:hasBlog "http://feinkostblog.wordpress.com/" ;
     a ld:Ort ;
     rdfs:label "Feinkost", "Kunst- und Gewerbegenossenschaft Feinkost eG" ;
-    foaf:homepage <http://www.feinkostgenossenschaft.de/> ;
+    foaf:homepage <http://www.feinkostgenossenschaft.de/>, <http://feinkostblog.wordpress.com/>;
     foaf:mbox "feinkostbuero@yahoo.de" ;
     foaf:phone "0341-9627755", "0341-9627757" .
 
@@ -1145,7 +1138,7 @@ ldo:Garage
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/Garage> ;
     ld:hasTag ldtag:MINT ;
-    ld:istErreichbar "SB 14 bis Gießerstraße, Bus 60, S-Bahn bis Bhf. Plagwitz" ;
+    ld:erreichbar "SB 14 bis Gießerstraße, Bus 60, S-Bahn bis Bhf. Plagwitz" ;
     a ld:Ort ;
     rdfs:label "GaraGe - Technologiezentrum für Jugendliche" ;
     owl:sameAs <http://leipzig-data.de/Data/APIId/Venue.51> ;
@@ -1550,7 +1543,7 @@ ldo:Kirsche
     rdfs:label "Integrationskindergarten „Am Kulkwitzer See“" .
 
 <http://leipzig-data.de/Data/Ort/Kita.Forscherinsel>
-    ld:Auszeichungen "2012 Haus der kleinen Forscher, LVZ 21.02.2012" ;
+    ld:Auszeichnungen "2012 Haus der kleinen Forscher, LVZ 21.02.2012" ;
     ld:hasAddress <http://leipzig-data.de/Data/04420.Markranstaedt.AmAltenBahnhof.21a> ;
     ld:hasStatus "aktiv" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/AWO.LeipzigerLand> ;
@@ -2006,7 +1999,7 @@ ldo:Naturkundemuseum
     foaf:phone "0341-982210" .
 
 ldo:NeueMesse
-    ld:Supplier <http://leipzig-data.de/Data/Firma/LeipzigerMesse> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Firma/LeipzigerMesse> ;
     ld:hasAddress <http://leipzig-data.de/Data/04356.Leipzig.Messe-Allee.1> ;
     a ld:Ort ;
     rdfs:label "Neue Messe Leipzig" ;
@@ -2566,7 +2559,7 @@ ldo:StMartin
 
 <http://leipzig-data.de/Data/Ort/Stadtgarten.Connewitz>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.KohrenerStrasse.3> ;
-    ld:istErreichbar "SB 11 Hildebrandstraße" ;
+    ld:erreichbar "SB 11 Hildebrandstraße" ;
     a ld:Ort ;
     rdfs:label "Stadtgarten Connewitz des Ökolöwe - Umweltbund Leipzig e. V." .
 
@@ -2744,7 +2737,7 @@ ldo:UFZ
     ld:Oeffnungszeiten "Versuche im Schülerlabor sind nur im Klassenverband als Schulveranstaltung ab Klassenstufe 10 möglich. Eine vorherige Terminabsprache ist notwendig." ;
     ld:Teilnahmebedingungen "keine" ;
     ld:Zielgruppe "Lehrer und Referendare für Fortbildungen", "Schülerinnen und Schüler ab Klassenstufe 10 der gymnasialen Oberstufe" ;
-    ld:behindertengerecht "Ein behindertengerechter Zugang ist vorhanden, dabei ist zu beachten: Im Labor gelten besondere Sicherheitsregeln, die vorab mit dem verantwortlichen Lehrer besprochen werden müssen." ;
+    rdfs:comment "Ein behindertengerechter Zugang ist vorhanden, dabei ist zu beachten: Im Labor gelten besondere Sicherheitsregeln, die vorab mit dem verantwortlichen Lehrer besprochen werden müssen." ;
     ld:engagedPerson ldp:Lange_Torsten ;
     ld:hasAddress <http://leipzig-data.de/Data/04318.Leipzig.Permoserstrasse.15> ;
     ld:hasStatus "aktiv" ;
@@ -2917,7 +2910,7 @@ ldo:UptownCafe
 ldo:VerbraucherzentraleSachsen
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Katharinenstrasse.17> ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/VerbraucherzentraleSachsen> ;
-    ld:istErreichbar "SB, Busse und S-Bahn bis Hauptbahnhof" ;
+    ld:erreichbar "SB, Busse und S-Bahn bis Hauptbahnhof" ;
     a ld:Ort ;
     rdfs:label "Verbraucherzentrale Sachsen" ;
     foaf:homepage <http://www.verbraucherzentrale-sachsen.de> ;
