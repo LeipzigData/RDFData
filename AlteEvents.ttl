@@ -17,6 +17,10 @@
     rdfs:comment "Alte Events zu Referenzzwecken; werden nach einem Jahr gelöscht" ;
     rdfs:label "Alte Events" .
 
+ld:Event
+    a owl:Class ;
+    rdfs:label "Event" .
+
 <http://leipzig-data.de/Data/Event/APILeipzig.318>
     ld:hasAPIRef <http://leipzig-data.de/Data/APIId/Event.318> ;
     ld:hasTag ldtag:KreativesLeipzig ;
@@ -238,3 +242,84 @@
     ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
     ical:summary "Die Atombombe - vor 100 Jahren noch Science Fiction, vor 70 Jahren grausame Wirklichkeit. Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
     ical:url <http://asg.ignt.de/Einladung_17_11_.pdf>, <http://asg.ignt.de/Seminar.htm> .
+
+<http://leipzig-data.de/Data/Event/DTS.2017-12-11>
+    ld:contactPerson ldp:Schroth_Johannes ;
+    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+    a ld:Event ;
+    rdfs:label "Political Correctness" ;
+    ical:dtstart "2017-12-11T19:00:00+01:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ical:summary "Attac DenkTankStelle: Kultur macht Menschen" ;
+    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2017-12-11> .
+
+<http://leipzig-data.de/Data/Event/DTS.2018-01-08>
+    ld:contactPerson ldp:Schroth_Johannes ;
+    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+    a ld:Event ;
+    rdfs:label "Neoliberale Strategien zur Herrschaftssicherung" ;
+    ical:dtstart "2018-01-08T19:00:00+01:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Cafe.Grundmann> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ical:summary "Attac DenkTankStelle: Kultur macht Menschen" ;
+    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2018-01-08> .
+
+<http://leipzig-data.de/Data/Event/DTS.2018-02-12>
+    ld:contactPerson ldp:Schroth_Johannes ;
+    ld:hasTag ldtag:DenkTankStelle, ldtag:ZukunftsDiskurs ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/Attac.DenkTankStelle> ;
+    a ld:Event ;
+    rdfs:label "Neoliberale Strategien zur Herrschaftssicherung" ;
+    ical:dtstart "2018-02-12T19:00:00+01:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/MIO> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Attac.Leipzig> ;
+    ical:summary "Attac DenkTankStelle: Kultur macht Menschen" ;
+    ical:url <http://leipzig-netz.de/index.php5/Attac.DenkTankStelle.2018-02-12> .
+
+<http://leipzig-data.de/Data/Event/ASG.2017-12-14>
+    ld:hasTag ldtag:ASG, ldtag:MINT ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+    a ld:Event ;
+    rdfs:label "Apollo 8: Der große Sprung für die Menschheit" ;
+    ical:dtstart "2017-12-14T17:00:00+01:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
+    ical:summary "Apollo 8: Der große Sprung für die Menschheit. Weihnachten im Weltraum. Mit Attila Mattukat, Leipzig." ;
+    ical:url <http://asg.ignt.de/Einladung_17_12_.pdf>, <http://asg.ignt.de/Seminar.htm> .
+
+<http://leipzig-data.de/Data/Event/ASG.2018-01-18>
+    ld:hasTag ldtag:ASG, ldtag:MINT ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+    a ld:Event ;
+    rdfs:label "Abfallwirtschaft in Togo: ein Besuch in Lomé und Sokodé im August 2017" ;
+    ical:dtstart "2018-01-18T17:00:00+01:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
+    ical:summary "Abfallwirtschaft in Togo: ein Besuch in Lomé und Sokodé im August 2017. Mit Dr. rer. pol. Dipl.-Ing. Karl-Michael Meiss, ASG." ;
+    ical:url <http://asg.ignt.de/Einladung_18_01_.pdf>, <http://asg.ignt.de/Seminar.htm> .
+
+<http://leipzig-data.de/Data/Event/ASG.2018-02-15>
+    ld:hasTag ldtag:ASG, ldtag:MINT ;
+    ld:zurReihe <http://leipzig-data.de/Data/Projekt/ASG.SommerfeldSeminar> ;
+    a ld:Event ;
+    rdfs:label "Die Atombombe - sieben Etappen von einer Utopie zum Sündenfall der Physik" ;
+    ical:dtstart "2018-02-15T17:00:00+01:00"^^xsd:dateTime ;
+    ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/UniLeipzig.Ritterstrasse> ;
+    ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/ASG> ;
+    ical:summary "Die Atombombe - sieben Etappen von einer Utopie zum Sündenfall der Physik. Mit Dr. rer. nat. Dietmar Lehmann, Leipzig." ;
+    ical:url <http://asg.ignt.de/Einladung_18_01_.pdf>, <http://asg.ignt.de/Seminar.htm> .
+
+<http://leipzig-data.de/Data/Event/Inspirata.10176> a ld:Event;
+rdfs:label "6. Leipziger Mineralien- und Familientag in der INSPIRATA – 14.04.2018" ; 
+ical:dtstart "2018-04-14T12:00:00+02:00"^^xsd:dateTime ;  # fix this 
+ical:dtend "2018-04-14T18:00:00+02:00"^^xsd:dateTime ;  # fix this 
+ld:hasTag ldtag:MINT, ldtag:Inspirata ;
+ld:hatVeranstalter <http://leipzig-data.de/Data/Verein/Inspirata> ; 
+ld:hatVeranstaltungsort <http://leipzig-data.de/Data/Ort/Inspirata> ; 
+ical:url <https://www.inspirata.de/?p=10176> ; 
+ical:summary "Am Samstag, dem 14. April 2018, von 12:00 bis 18:00 Uhr in der INSPIRATA in Leipzig an der Alten Messe, Deutscher Platz 4, Eingang G (in der Durchfahrt) veranstaltet die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig mit Unterstützung der Fachgruppe für Geologie, Mineralogie &#38; Paläontologie und in Zusammenarbeit mit dem Team der INSPIRATA den 6. Leipziger Mineralien- und Familientag" ;
+ical:dtstamp "2017-11-30T22:45:33+01:00"^^xsd:dateTime ;
+ical:description "<p>Am Samstag, dem 14. April 2018, von 12:00 bis 18:00 Uhr in der INSPIRATA<br /> in Leipzig an der Alten Messe, Deutscher Platz 4, Eingang G (in der Durchfahrt)</p> <p>veranstaltet die Jugendgruppe für Mineralogie des Naturkundemuseum Leipzig<br /> mit Unterstützung der Fachgruppe für Geologie, Mineralogie &amp; Paläontologie und<br /> in Zusammenarbeit mit dem Team der INSPIRATA den</p> <p><strong>6. Leipziger Mineralientag für die ganze Familie in der INSPIRATA!</strong></p> <p>Es gibt wieder viele tolle Sonderaktionen:</p> <ul> <li><strong>Mineralien-/ Fossilien-Börse/-Verkauf</strong><br /> durch Mitglieder der Fachgruppe und der Jugendgruppe</li> <li><strong>Basteln von (geometrischen) Kristallformen</strong> unter INSPIRATA-Anleitung</li> <li><strong>Kuchenbasar</strong> der &#8222;Leipziger Steinbeißer&#8220;/ Jugendgruppe für Mineralogie</li> <li>Vorstellung der &#8222;Leipziger Steinbeißer&#8220;/ Jugendgruppe für Mineralogie im<br /> Naturkundemuseum Leipzig</li> <li>Informationen über das Naturkundemuseum Leipzig / NKML</li> <li>Informationen über den INSPIRATA e.V. durch das Team der INSPIRATA<br /> einschließlich Übersicht über die in der INSPIRATA nutzbaren Angebote</li> <li><strong>INSPIRATA-Mitmach-Ausstellung mit über 150 naturwissen-<br /> schaftlichen </strong><strong>Exponaten, Experimenten, Knobelspielen u.v.a.</strong></li> <li><em>weitere Sonderaktionen werden später verraten &#8230;</em></li> </ul> <p>Der Eintritt zur Ausstellung und zu den Sonder-Angeboten kostet<br /> pro Kind/Schüler/in (jünger als 18 Jahre) 3,50 €,<br /> pro Erwachsenem 5,00 € (ermäßigt 3,50 €),<br /> pro Familienkarte 15,00 € (für 2 Erw. mit bis zu 3 eigenen Kindern/Enkeln unter 18 Jahren).</p> <p><em>Weitere Informationen folgen &#8230;</em><strong><br /> </strong></p>  <hr /> <p>Informationen zur Jugendgruppe für Mineralogie im Naturkundemuseum Leipzig findet man unter:</p> <ul> <li>www.foerderverein-naturkundemuseum-leipzig.de &#8211; Fachgruppen &amp; Vereine</li> <li>leipzig-netz.de/index.php5/Naturkundemuseum &#8211; Junge Mineralogen</li> </ul> " .
