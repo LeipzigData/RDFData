@@ -176,15 +176,9 @@ Die neue Initiative von »MINT Zukunft schaffen« bildet ein bundesweites Netzwe
 :dataset-006
     a dcat:Dataset ;
     dct:title "Deutschland-Katalog der MINT-freundlichen Schulen" ; 
-    dcat:landingPage <https://www.mintzukunftschaffen.de/mint-freundliche-schulen.html> ;
+    dcat:landingPage <https://mintzukunftschaffen.de/mint-freundliche-schule-2/> ;
     dct:description """Die MINT-freundlichen Schulen
-Seit 2011 ehren unsere bundesweiten Partner – u.a. wie die Wissensfabrik, große Stiftungen, VDE, GI– in Abstimmung oder gemeinsam mit Landesarbeitgebervereinigungen und den Bildungswerken der Wirtschaft Schulen, die einen nachhaltigen MINT-Schwerpunkt setzen, nach einem bundesweit einheitlichen Kriterienkatalog. Das Signet »MINT- freundliche Schule« ist eine Ehrung für Schulen im »MINT-Breitensport«. In diesem Jahr wurde die Marke von 1.000 Schulen überschritten. Zehn Prozent aller weiterführenden Schulen – 1.600 Schulen – wollen wir erreichen. Schirmherrin ist die Kultusministerkonferenz KMK. """ ; 
-    dcat:distribution :dataset-006-01 .
-
-:dataset-006-01
-    a dcat:Distribution ;
-    dct:title "MINT-Navigator | Die Datenbank für alle MINT-freundlichen Schulen" ;
-    dcat:accessURL <https://www.mintzukunftschaffen.de/473.html>  .
+Seit 2011 ehren unsere bundesweiten Partner – u.a. wie die Wissensfabrik, große Stiftungen, VDE, GI – in Abstimmung oder gemeinsam mit Landesarbeitgebervereinigungen und den Bildungswerken der Wirtschaft Schulen, die einen nachhaltigen MINT-Schwerpunkt setzen, nach einem bundesweit einheitlichen Kriterienkatalog. Das Signet »MINT-freundliche Schule« ist eine Ehrung für Schulen im »MINT-Breitensport«. In diesem Jahr wurde die Marke von 1.000 Schulen überschritten. Zehn Prozent aller weiterführenden Schulen – 1.600 Schulen – wollen wir erreichen. Schirmherrin ist die Kultusministerkonferenz KMK. """ .
 
 :dataset-007
     a dcat:Dataset ;
@@ -193,12 +187,14 @@ Seit 2011 ehren unsere bundesweiten Partner – u.a. wie die Wissensfabrik, gro�
     dct:description """Im MINT-Navigator können Sie z.B. nach MINT-Initiativen, MINT-Projekten, Unterrichtsmaterial zu MINT suchen.
 Geben Sie einfach Ihren Suchbegriff, z.B. „Unterricht“, genau wie bei Google ein. Der Unterschied zu Google ist, dass unsere Ergebnisse bereits qualitativ gefiltert sind. Sie finden einen für Sie passenden Eintrag schnell - Sie müssen also nicht mehr hunderttausend Ergebnisse durchsuchen.
 Sie können auch in unserem Bereich "Ergebnisse von mintzukunftschaffen.de" nach ausgewählten Empfehlungen suchen, zum Beispiel zum Thema Informatik oder Biologie oder Angeboten für Mädchen.
-""" .
+"""; 
+    rdfs:comment "Beim Relaunch der Webseiten 2018 wurde der MINT-Navigator vom Netz genommen." .
 
 :dataset-008
     a dcat:Dataset ;
     dct:title "MINT-Atlas 3 – 10 für Deutschland" ; 
     dcat:landingPage <http://www.znl-mintatlas3-10.de/Bundesland/Sachsen/sachsen.html> ;
+    rdfs:comment "Das Projekt wird seit 2012 nicht weitergeführt." ; 
     dct:description """Der "MINT-Atlas 3-10 für Deutschland" wurde im Auftrag des Bundesministeriums für Bildung und Forschung (BMBF) vom ZNL TransferZentrum für Neurowissenschaften und Lernen erstellt und präsentiert allen an MINT (Mathematik - Informatik - Naturwissenschaften - Technik) Interessierten in einer Datenbank Projekte und Angebote aus diesen Fachbereichen. Die Arbeit des ZNL am "MINT-Atlas 3-10" endete am 29. Februar 2012. Bei Fragen zu den Projekten finden sich in den jeweiligen Projektbeschreibungen die entsprechenden Ansprechpartner. """ .
 
 :dataset-009
@@ -328,3 +324,11 @@ Sie können auch in unserem Bereich "Ergebnisse von mintzukunftschaffen.de" nach
     dct:title "Übersicht über die 16 Sächsischen Schülerlabore" ; 
     dcat:mediaType "text/html" ;
     dcat:downloadURL <http://www.schuelerlabore-sachsen.de/public/schuelerlabore> .
+
+:dataset-014
+    a dcat:Dataset ;
+    dct:title "Begabungslotse" ; 
+    dcat:landingPage <https://www.begabungslotse.de/angebote> ;
+    dct:description """Das Portal bietet aktuelle News und SPECIALs rund um die Potenzialförderung und bündelt bundesweite Anbieter und Angebote im Bereich Talententwicklung und Begabungsförderung. Videos, Podcasts, Downloads und Bildergalerien veranschaulichen die Inhalte, orange hinterlegte Wörter und Pfeile verweisen auf Links zu weiterführenden Informationen.
+
+Bei allen Inhalten im Begabungslotsen steht die Qualitätssicherung an erster Stelle: Eigens entwickelte Qualitätskriterien gewährleisten die Qualität der eingestellten Angebote und Anbieter."""  .
