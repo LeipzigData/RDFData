@@ -15,12 +15,17 @@
     cc:attributionURL <http://leipzig-data.de> ;
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     a owl:Ontology ;
-    rdfs:label "Datenversion für das Zukunftsdiplom der Zukunftsakademie" .
+    rdfs:label "Datenversion für das Zukunftsdiplom 2019 der Zukunftsakademie" .
 
-<http://leipzig-data.de/Data/Modul.1>
+<http://leipzig-data.de/Data/Modul.0>
     ld:Lernziele "Das Projekt \"Stadt in der Stadt\" als themenübergreifendes Veranstaltungsformat." ;
     a nl:Modul ;
     rdfs:label "Übergreifend" .
+
+<http://leipzig-data.de/Data/Modul.1>
+    ld:Lernziele "Die Teilnehmer lernen mehr von der uns umgebenden Natur." ;
+    a nl:Modul ;
+    rdfs:label "Modul 1: Natur entdecken, von der Natur lernen" .
 
 <http://leipzig-data.de/Data/Modul.2>
     ld:Lernziele "Die Teilnehmer lernen, welche Wirkung globale Prozesse auf unseren Alltag haben." ;
@@ -33,71 +38,353 @@
     rdfs:label "Modul 3: Nachhaltige Ernährung" .
 
 <http://leipzig-data.de/Data/Modul.4>
-    ld:Lernziele "Die Teilnehmer lernen mehr von der uns umgebenden Natur." ;
-    a nl:Modul ;
-    rdfs:label "Modul 1: Natur entdecken, von der Natur lernen" .
-
-<http://leipzig-data.de/Data/Modul.5>
     ld:Lernziele "Die Teilnehmer lernen an praktischen Übungen den Zusammenhang zwischen Nachhaltigkeit und Technik zu be<i>greifen</i>." ;
     a nl:Modul ;
     rdfs:label "Modul 4: Nachhaltigkeit und Technik" .
 
-<http://leipzig-data.de/Data/Modul.6>
+<http://leipzig-data.de/Data/Modul.5>
     ld:Lernziele "Die Teilnehmer lernen verschiedene Aspekte nachhaltigen Wirtschaftens kennen." ;
     a nl:Modul ;
     rdfs:label "Modul 5: Nachhaltig Wirtschaften" .
 
 <http://leipzig-data.de/Data/Firma/CorEdu>
-    ld:contact "Hella Franke" ;
+    nl:contact "Hella Franke" ;
     a nl:Partner ;
+    rdfs:comment """
+Ich würde sehr gern zur Vereinssitzung am 06.03. kommen, u.a. weil ich seit Anfang des Jahres in dem BBNE-Projekt \"Zukunftstalent\" für CorEdu UG arbeite. Es ist aktuell noch alles im Aufbau, aber wir werden sicher Anlass zur Kooperation haben.
+Ich häng Dir unten eine Kurzskizze an, und freue mich auf das Wiedersehen Anfang März.
+
+Herzliche Grüße
+Hella
+""" ;
     rdfs:label "CorEdu UG" .
 
-<http://leipzig-data.de/Data/Verein/Inspirata>
-    ld:contact "Angela Richter, Tino Meißner" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
+<http://leipzig-data.de/Data/UIL>
+    nl:contact "Wolf" ;
     a nl:Partner ;
+    rdfs:comment """
+Nicht bei Leipzig-Data, nicht in der Nachhaltigkeitsdatenbank, kein Angebot.
+
+Von: 	wolf@uil.de
+
+Lieber Matthias,
+
+leider haben wir am 06. selber eine Veranstaltung in Dresden zu moderieren (Altmedikamentenentsorgung in Sachsen). Euch aber viel Erfolg und viele Teilnehmer
+
+Schönen Wochenstart
+""" ;
+    rdfs:label "Umweltinstitut Leipzig" .
+
+<http://leipzig-data.de/Data/Verein/Inspirata>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.4> ;
+    nl:contact "Angela Richter, Tino Meißner" ;
+    a nl:Partner ;
+    rdfs:comment """
+Ich geh jetzt mal 2 Wochen in Urlaub, u. Sie wissen ja, wie bisher die Personal-Situation bei uns im Büro ist … ich muss heut noch einiges abarbeiten u. meld mich dann Anfang März zu Ihrer Mail …
+
+Ich könnte mir vorstellen, dass wir gern wieder bei Zukunftsdiplom u. Projektbörse mitmachen würden, müssen dann „nur“ nach Realisierungsmöglichkeiten sehen …
+
+Frdl.Grüße!
+
+A.Richter """ ;
     rdfs:label "Inspirata – Zentrum für mathematisch-naturwissenschaftliche Bildung" ;
     foaf:homepage <http://www.inspirata.de> ;
     foaf:mbox "kontakt@inspirata.de" ;
     foaf:phone "0341-1259757", "0341-35572923" .
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.181> a nl:Akteur ;
-   nl:hasFullAddress "Deutscher Platz 6, 04103 Leipzig" ;
-   ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.6> ;
-   rdfs:label "Orang-Utans in Not" ;
-   ld:contact "Ingeborg Lambert und Marlen Kücklich" ;
-   nl:hasLink <http://daten.nachhaltiges-leipzig.de/api/v1/users/181.json> ;
-   foaf:homepage <http://www.orang-utans-in-not.org> ;
-   owl:sameAs <http://leipzig-data.de/Data/Verein/OrangUtansinNot>; 
-   gsp:asWKT "Point(12.3949 51.321)" ;
-   foaf:mbox "umweltbildung@ouin.de" ;
-   foaf:phone "0341-3550761" .
-   
-<http://nachhaltiges-leipzig.de/Data/Akteur.214> a nl:Akteur ;
-    ld:contact "Maxi Beyer, Mitarbeiterin Besucherservice, 0341-5933-387, mbeyer@zoo-leipzig.de" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
-    rdfs:label "Zoo Leipzig GmbH" ;
-    owl:sameAs <http://leipzig-data.de/Data/Firma/ZooLeipzig>, <http://nachhaltiges-leipzig.de/Data/Akteur.97> ;
-    nl:hasLink <http://daten.nachhaltiges-leipzig.de/api/v1/users/214.json> ;
-    foaf:homepage <http://www.zoo-leipzig.de> ;
-    foaf:phone "0341-5933385", "03415933364" .
-    
-<http://nachhaltiges-leipzig.de/Data/Akteur.16> a nl:Akteur ;
-    ld:contact "Katrin Reschke" ;
+<http://nachhaltiges-leipzig.de/Data/Akteur.15>
+    ld:hasAddress <http://leipzig-data.de/Data/04159.Leipzig.Schlossweg.11> ;
+    nl:contact "Sebastian Günther" ;
+    nl:hasFullAddress "Schloßweg 11, 04159 Leipzig" ;
+    a nl:Partner ;
+    rdfs:comment """ 
+Wir wollen uns gern am Zukunftsdiplom in diesem Jahr beteiligen und bei unseren Angeboten auch auf die der anderen Partner hinweisen, damit die Kinder möglichst vieles davon wahrnehmen.
+
+Folgende Angebote/Veranstaltungen kommen dafür in Frage: 
+- siehe Anhang
+
+Wir sind: Auwaldstation Leipzig
+Ansprechpartner ist: Sebastian Günther
+Tel.: 0341/4621895
+E-Mail: auwaldstation@t-online.de
+
+Zum Abstimmungstermin am Mittwoch, 6.3., 18-20 Uhr, kann ich leider terminbedingt nicht teilnehmen. Ich bitte jedoch um Rückmeldung bzgl. Eckpunkte zur Umsetzung. """ ;
+    rdfs:label "Auwaldstation" ;
+    foaf:homepage <http://www.auwaldstation.de> ;
+    foaf:mbox "auwaldstation@t-online.de" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.16>
     ld:hasAddress <http://leipzig-data.de/Data/04279.Leipzig.Vollhardtstrasse.16> ;
+    nl:contact "Katrin Reschke" ;
+    nl:hasLink <http://daten.nachhaltiges-leipzig.de/api/v1/users/16.json> ;
+    a nl:Partner ;
+    rdfs:comment "wenn nichts dazwischen kommt (krank sein z.B.) bin ich am 6.3. dabei." ;
     rdfs:label "Dölitzer Wassermühle" ;
     owl:sameAs <http://leipzig-data.de/Data/Verein/GAZ> ;
-    nl:hasLink <http://daten.nachhaltiges-leipzig.de/api/v1/users/16.json> ;
     foaf:homepage <http://www.doelitzer-wassermuehle.de/> ;
     foaf:mbox "GAZ-Leipzig@t-online.de" ;
     foaf:phone "0341-33399734", "0341-3389352" .
 
-<http://nachhaltiges-leipzig.de/Data/Akteur.14> a nl:Akteur ;
-    ld:contact "Felix Riedel" ;
+<http://nachhaltiges-leipzig.de/Data/Akteur.173>
+    ld:contact "Kurt Hinkefuß" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Wiebelstrasse.8> ;
+    nl:hasFullAddress "Wiebelstraße 8, 04315 Leipzig" ;
+    a nl:Partner ;
+    rdfs:cooment """ 
+Letztes Jahr beim Positiv-Stadtrundgang kam leider kein einziges Kind. Da unsere offenen regelmäßigen Programme vielleicht auch nur bedingt für diese Zielgruppe geeignet ist, diese Auflistung vielleicht unter Vorbehalt... naja am Dienstag kannst Du Dir ja selbst einen Eindruck machen. Die VA können aber gern im Programm aufgenommen werden. Da der Andrang eher überschaubar bleibt, kann man auch gezielt auf Kinder eingehen.
+
+Folgende Angebote/Veranstaltungen kommen dafür in Frage:
+
+Klima-Rucksack: CO2 in Leipzig und der Welt
+
+Neues Rathaus (Haupteingang), 16 Uhr
+MI 22.05.  SA 08.06.  DO 04.07.  DI 18.09.  DI 01.10.  MI
+
+
+Positiv-Stadtrundgang: “Öko-faire Kleidung in Leipzig”
+
+Richard-Wagner-Platz, 16 Uhr
+Sa 11.05.  Sa 15.06.  Sa 21.09.  So 29.09.
+
+Wir sind KonsumGlobal Leipzig
+Ansprechpartner ist Kurt Hinkefuß
+Tel. 01631736473
+E-Mail info@konsumglobal-leipzig.de
+
+""" ;
+    rdfs:label "Konsum Global" ;
+    foaf:homepage <http://konsumglobal-leipzig.de/> ;
+    foaf:mbox "kauerte@gmx.net" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.181>
+    ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.DeutscherPlatz.6> ;
+    nl:contact "Ingeborg Lambert und Marlen Kücklich" ;
+    nl:hasFullAddress "Deutscher Platz 6, 04103 Leipzig" ;
+    nl:hasLink <http://daten.nachhaltiges-leipzig.de/api/v1/users/181.json> ;
+    a nl:Partner ;
+    rdfs:comment """
+wir wollen uns gerne am Zukunftsdiplom in diesem Jahr beteiligen und bei unseren Angeboten auch auf die der anderen Partner hinweisen, damit die Kinder möglichst vieles davon wahrnehmen.
+
+Folgende Angebote/Veranstaltungen kommen dafür in Frage:
+- Thema Regenwald und dessen Bedrohung in Kooperation mit dem Phyllodrom (muss noch angefragt werden)
+- Thema Menschenaffen im Zoo Leipzig (muss noch im Pongoland angefragt werden)
+
+Wir sind Orang-Utans in Not e.V.
+Ansprechpartner sind Ingeborg Lambert und Marlen Kücklich
+Tel. 0341-3550-761
+E-Mail umweltbildung@ouin.de
+
+Zum Abstimmungstermin am Mittwoch, 6.3., 18-20 Uhr, sind wir eventuell dabei und bitten um Benachrichtigung zum Ort.
+""" ;
+    rdfs:label "Orang-Utans in Not" ;
+    owl:sameAs <http://leipzig-data.de/Data/Verein/OrangUtansinNot> ;
+    foaf:homepage <http://www.orang-utans-in-not.org> ;
+    foaf:mbox "umweltbildung@ouin.de" ;
+    foaf:phone "0341-3550761" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.185>
+    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.PragerStrasse.136> ;
+    nl:contact "Julia Zimmerhäkel" ;
+    a nl:Partner ;
+    rdfs:comment "Vielen Dank für die Rückmeldung und Einladung zum Vereinstreffen am 6.3. Ich würde gerne teilnehmen, da wir aktuell ein Angebot zum Thema Klimaschutz aufnehmen wollen, das sicherlich gut in die Projektkampagne passt. " ;
+    rdfs:label "Stadt Leipzig Umweltinformationszentrum" ;
+    foaf:homepage <http://www.leipzig.de/uiz> ;
+    foaf:mbox "uiz@leipzig.de" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.211>
+    ld:proposedAddress <http://leipzig-data.de/Data/04103.Leipzig.Johannisplatz.5> ;
+    nl:contact "Sabine Wohlfarth, sabine.wohlfarth@skd.museum" ;
+    nl:hasFullAddress "Johannisplatz 5-11, 04103 Leipzig" ;
+    a nl:Partner ;
+    rdfs:comment """
+Wir wollen uns gern am Zukunftsdiplom in diesem Jahr beteiligen und bei unseren Angeboten auch auf die der anderen Partner hinweisen, damit die Kinder möglichst vieles davon wahrnehmen.
+
+Folgende Angebote/Veranstaltungen kommen dafür in Frage: Geplanter Workshop in den Sommerferien zum Thema Regenwald Südamerika und/oder Führung Museo Global (gerade in der Konzeption für das kommende Quartal – Themen des Globalen Lernens im Museum unter Aspekten der Nachhaltigkeit)
+
+Wir sind GRASSI Museum für Völkerkunde zu Leipzig (/Abteilung Bildung und Vermittlung)
+
+Ansprechpartner ist Sabine Wohlfarth
+Tel. 0341 9731913
+E-Mail sabine.wohlfarth@skd.museum
+
+Zum Abstimmungstermin am Mittwoch, 6.3., 18-20 Uhr, sind wir dabei und bitten um Benachrichtigung zum Ort.
+
+""" ;
+    rdfs:label "GRASSI Museum für Angewandte Kunst" ;
+    foaf:homepage <http://www.grassimuseum.de> ;
+    foaf:mbox "ulrike.pilz@leipzig.de" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.214>
+    ld:hasAddress <http://leipzig-data.de/Data/04105.Leipzig.PfaffendorferStrasse.29> ;
+    nl:contact "Maxi Beyer, Mitarbeiterin Besucherservice, 0341-5933-387, mbeyer@zoo-leipzig.de" ;
+    nl:hasLink <http://daten.nachhaltiges-leipzig.de/api/v1/users/214.json> ;
+    a nl:Partner ;
+    rdfs:label "Zoo Leipzig GmbH" ;
+    owl:sameAs <http://leipzig-data.de/Data/Firma/ZooLeipzig>, <http://nachhaltiges-leipzig.de/Data/Akteur.97> ;
+    foaf:homepage <http://www.zoo-leipzig.de> ;
+    foaf:phone "0341-5933385", "03415933364" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.241>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.MerseburgerStrasse.102> ;
+    nl:contact "Lisa Kuhley" ;
+    nl:hasLink <http://daten.nachhaltiges-leipzig.de/api/v1/users/241.json> ;
+    a nl:Partner ;
+    rdfs:comment """Wenn Ihr es für sinnvoll haltet, nachdem letztes Jahr niemand zu uns kam, wollen wir uns trotzdem gern am Zukunftsdiplom in diesem Jahr beteiligen und bei unseren Angeboten auch auf die der anderen Partner hinweisen, damit die Kinder möglichst vieles davon wahrnehmen.
+
+Folgende Angebote/Veranstaltungen kommen dafür in Frage:
+
+Café kaputt Reparatursprechstunden
+
+Technik (alles mit Stecker)
+Di 16-18 Uhr
+Mi 15-19.30 Uhr  
+
+Heimwerken (mechanisches, Holz, Keramik, etc.)
+Di 18-20 Uhr
+Textil und Schuhe
+
+Do 16-18 Uhr
+
+Zum Abstimmungstermin am Mittwoch, 6.3., 18-20 Uhr können wir leider nicht kommen, schickt uns aber gern alle nötigen Infos zu oder ruf an. 
+""" ;
+    rdfs:label "Café kaputt" ;
+    foaf:homepage <http://www.reparieren-in-leipig.de> ;
+    foaf:mbox "cafekaputt@lebenlernenleipzig.de" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.50>
+    ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.BornaischeStrasse.18> ;
+    nl:contact "Juliane Markov, juliane@einewelt-leipzig.de" ;
+    a nl:Partner ;
+    rdfs:cooment "Martin hat leider an den Terminen andere Verpflichtungen und ich bin vom 5.-8.3. zu Projekttagen an einer berufsschule in Dresden. Daher können wir leider weder am 6. noch am 8. März dabei sein." ;
+    rdfs:label "Eine Welt Laden" ;
+    foaf:homepage <http://einewelt-leipzig.de> ;
+    foaf:mbox "info@einewelt-leipzig.de" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.51>
+    ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.LuetznerStrasse.108> ;
+    nl:contact "Sebastian Pomm, s.pomm@annalinde-leipzig.de" ;
+    nl:hasFullAddress "Lützner Straße 108, 04177 Leipzig" ;
+    a nl:Partner ;
+    rdfs:label "ANNALINDE gGmbH" ;
+    foaf:homepage <http://www.annalinde-leipzig.de> ;
+    foaf:mbox "info@annalinde-leipzig.de" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.62>
+    ld:hasAddress <http://leipzig-data.de/Data/04229.Leipzig.MarkranstaedterStrasse.29B> ;
+    nl:contact "Thorsten Mehnert" ;
+    nl:hasFullAddress "Markranstädter Straße 29B, 04229 Leipzig" ;
+    a nl:Partner ;
+    rdfs:comment "6.3. sieht bei mir nicht gut aus, aber Du kannst mir dennoch mal Einladung/Details schicken, vllt. krieg ich's ja doch noch hin." ;
+    rdfs:label "Stiftung \"Ecken wecken\"" ;
+    foaf:homepage <https://stiftung-ecken-wecken.de> ;
+    foaf:mbox "info@stiftung-ecken-wecken.de" .
+
+<http://nachhaltiges-leipzig.de/Data/Akteur.73>
     ld:hasAddress <http://leipzig-data.de/Data/04277.Leipzig.Bernhard-Goering-Strasse.152> ;
-    rdfs:label "Ökolöwe – Umweltbund Leipzig e.V." ;
-    owl:sameAs <http://leipzig-data.de/Data/Verein/Oekoloewe> ;
-    nl:hasLink <http://daten.nachhaltiges-leipzig.de/api/v1/users/14.json> ;
-    foaf:homepage <http://www.oekoloewe.de> ;
-    foaf:mbox "umweltbildung@oekoloewe.de" ;
-    foaf:phone "0341-3504766" .
+    nl:contact "Julia Becher, 0341-3065395, umweltpaedagogik@bund-leipzig.de" ;
+    a nl:Partner ;
+    rdfs:comment "gerne komme ich zu dem Treffen am 6.03, allerdings weiß ich noch nicht, inwieweit wir uns am Zukunftsdiplom beteiligen können. Ich bin selbst erst seit 3 Wochen beim BUND und habe nicht über alles einen Überblick." ;
+    rdfs:label "BUND Leipzig" ;
+    foaf:homepage <http://www.bund-leipzig.de> ;
+    foaf:mbox "presse@bund-leipzig.de" .
+
+<http://nachhaltiges-leipzig.de/Data/BA-Leipzig>
+    nl:contact "Susanne Schulze" ;
+    a nl:Partner ;
+    rdfs:comment """
+Aktuell nicht in der Nachhaltigkeitsdatenbank 
+
+lieben Dank für Ihr Mail.
+Leider kann ich am 06.03.2019 nicht dabei sein, da habe ich schon einen Abendtermin.
+
+Freue mich aber über ein Protokoll/ Details.
+
+Beste Grüße,
+sonnige Tage,
+Susanne Schulze
+M.Sc. Wissenschaftsmarketing
+Diplom-Betriebswirt (BA) """ .
+
+<http://nachhaltiges-leipzig.de/Data/HausSteinstrasse>
+    nl:contact "Ulrike Bernard, Christian Helbig <christian.helbig@haus-steinstrasse.de>" ;
+    a nl:Partner ;
+    rdfs:comment """
+Aktuell nicht in der Nachhaltigkeitsdatenbank 
+
+Hallo Herr Schirmer,
+
+wir wollen uns gern am Zukunftsdiplom in diesem Jahr beteiligen und bei unseren Angeboten auch auf die der anderen Partner hinweisen, damit die Kinder möglichst vieles davon wahrnehmen.
+
+Folgende Angebote/Veranstaltungen kommen dafür in Frage:
+Veranstaltung: \"Stadt in der Stadt\" 2019
+Zeitraum: 8.7.-19.7.2019
+Ort: Robert-Koch-Park / Grünau
+Öffnungszeiten: täglich 10-16 Uhr (am 13./14.7. geschlossen)
+Familienfest: 20.7.2019
+
+Wir sind der Haus Steinstraße e.V.
+Ansprechpartner: ist Ulrike Bernard (Geschäftsführung) / Christian Helbig (Projektleitung)
+Tel.: 0341 / 303 288 24
+E-Mail: christian.helbig@haus-steinstrasse.de
+
+Zum Abstimmungstermin am Mittwoch, 6.3., 18-20 Uhr, sind wir dabei und bitten um Benachrichtigung zum Ort.
+
+Viele Grüße,
+Christian Helbig
+
+""" .
+
+<http://nachhaltiges-leipzig.de/Data/UFU>
+    nl:contact "Heiner Giersch" ;
+    a nl:Partner ;
+    rdfs:comment """
+Aktuell weder bei Leipzig-Data noch in der Nachhaltigkeitsdatenbank 
+
+Die Ausschreibung „Clips4Change“ habe ich an unsere Halbe-Halbe-Projektschulen weitergeleitet und hoffe, dass sich ein paar Gruppen beteiligen.
+
+Zur Abstimmung zum Zukunftsdiplom werde ich nicht kommen können. Wir können das Zukunftsdiplom gern in den Schulen kommunizieren.
+
+Halbe-Halbe ist sicher auch für andere Schulen interessant – allerdings besteht nur noch für das kommende Schuljahr die Möglichkeit neu in das Projekt einzusteigen. Falls Sie eine Möglichkeit sehen, Informationen an andere Schulen weiterzugeben, kann ich Ihnen noch Informationen zukommen lassen. Vielleicht passt es ja so auch in den Rahmen für dieses Schuljahr mit hinein.
+
+Mit freundlichen Grüßen,
+Heiner Giersch
+
+Projektleiter Energieeffizienz und Energiewende
+M.A. Umwelt & Bildung, Dipl.-Geograph
+UfU - Unabhängiges Institut für Umweltfragen e.V.
+Independent Institute for Environmental Issues """ .
+
+<http://nachhaltiges-leipzig.de/Data/Verbraucherzentrale>
+    nl:contact "Claudia Lasarczik" ;
+    a nl:Akteur ;
+    rdfs:comment """
+Aktuell nicht in der Nachhaltigkeitsdatenbank 
+
+Ihre Einladung zum 6.3. kommt sehr kurzfristig, sodass ich leider absagen muss. Leider konnte ich Ihre vorbereitete E-Mail zum Zukunftsdiplom nicht lesen. Vielleicht sehen wir uns ja zur Nachhaltigkeitstagung am 8.3. in Leipzig, wo wir uns inhaltlich kurz abstimmen können. Oder wir telefonieren Mitte März.
+
+Viele Grüße
+Claudia Lasarczik
+Dipl. Oecotrophologin (FH), Fachberaterin für Ernährung und Lebensmittel
+Tel.: 0341-6962937
+Fax: 0341-2610482
+clasarczik@vzs.de
+""" .
+
+<http://nachhaltiges-leipzig.de/Data/ZAW>
+    nl:contact "	Nicole Wöllner <Woellner@zaw-sachsen.de>" ;
+    a nl:Partner ;
+    rdfs:comment """
+Aktuell nicht in der Nachhaltigkeitsdatenbank 
+
+Wir wollen uns gern am Zukunftsdiplom in diesem Jahr beteiligen und bei unseren Angeboten auch auf die der anderen Partner hinweisen, damit die Kinder möglichst vieles davon wahrnehmen.
+
+Folgende Angebote/Veranstaltungen kommen dafür in Frage: Hallo Matthias, ich habe noch gar keine richtige Vorstellung davon, was ihr macht und wie ich mich beteiligen kann. Ich komm einfach dazu, wenn das ok ist.
+
+Wir sind Zweckverband Abfallwirtschaft Westsachsen
+Ansprechpartner ist Nicole Wöllner
+Tel. 034299 705 24
+E-Mail woellner@zaw-sachsen.de
+
+Zum Abstimmungstermin am Mittwoch, 6.3., 18-20 Uhr, sind wir dabei 
+""" .
+
