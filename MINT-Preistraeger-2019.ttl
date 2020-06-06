@@ -1,0 +1,718 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://leipzig-data.de/Data/MFS-Preistraeger/> .
+
+<http://leipzig-data.de/Data/MINT-Preistraeger-2019/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:comment "Extrahiert aus <https://www.mitmachfonds-sachsen.de/preistraeger2019/>"; 
+    dct:title "Preisträger von \"Zukunft MINT\" in der Region Mitteldeutschland des Mitmach-Fonds Sachsen 2019"@de .
+
+:2019_101 a ld:MMT-Preistraeger2019;
+	foaf:name "Vincent Schulze";
+	rdfs:label "(Er)Wachsen unter freiem Himmel";
+	ld:inRegion "Leipzig" .
+
+:2019_102 a ld:MMT-Preistraeger2019;
+	foaf:name "Katharina Gärlich";
+	foaf:organization "Kita Hildegardstift";
+	rdfs:label "Abenteuer Mathematik";
+	ld:inRegion "Leipzig" .
+
+:2019_103 a ld:MMT-Preistraeger2019;
+	foaf:name "Christoph Weber";
+	rdfs:label "Aufbau eines Erlebnisbauernhofs";
+	ld:inRegion "Elsnig" .
+
+:2019_104 a ld:MMT-Preistraeger2019;
+	foaf:name "Dr. Sandra Stürze";
+	foaf:organization "Kita Villa am Auensee";
+	rdfs:label "Bienenkunde für die Zukunft";
+	ld:inRegion "Leipzig" .
+
+:2019_105 a ld:MMT-Preistraeger2019;
+	foaf:name "Jörg Dietrich";
+	rdfs:label "Das interaktive Straßenporträt";
+	ld:inRegion "Leipzig" .
+
+:2019_106 a ld:MMT-Preistraeger2019;
+	foaf:name "Maria Geißler";
+	foaf:organization "Bürgerverein Waldstraßenviertel e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/das-waldstrassenviertel-leipzig-per-app-erkunden>;
+	rdfs:label "Das Waldstraßenviertel Leipzig per App erkunden";
+	ld:inRegion "Leipzig" .
+
+:2019_107 a ld:MMT-Preistraeger2019;
+	foaf:name "Dana Meyer-Hinz";
+	foaf:organization "Friedrich-Fröbel-Schule";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/das-waldstrassenviertel-leipzig-per-app-erkunden>;
+	rdfs:label "Die Energie und Technik Forscher";
+	ld:inRegion "Leipzig" .
+
+:2019_108 a ld:MMT-Preistraeger2019;
+	foaf:name "Lutz Decker";
+	foaf:organization "MUSIFA Leipzig – Musikschule, Tanzschule, Musikakademie";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-lernen-bei-musifa-instrumente-kennen/>;
+	rdfs:label "Die Welt der Musikinstrumente";
+	ld:inRegion "Leipzig" .
+
+:2019_109 a ld:MMT-Preistraeger2019;
+	foaf:name "Matthias Kretschmer";
+	foaf:organization "Joblinge gemeinnützige Aktiengesellschaft";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-lernen-bei-musifa-instrumente-kennen/>;
+	rdfs:label "Digital-Woche Joblinge Leipzig";
+	ld:inRegion "Leipzig" .
+
+:2019_110 a ld:MMT-Preistraeger2019;
+	foaf:name "Antje Fiedler";
+	foaf:organization "Ruth-Pfau-Schule Leipzig";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-lernen-bei-musifa-instrumente-kennen/>;
+	rdfs:label "Digitales Lernen  – Analyse von Lern-Apps";
+	ld:inRegion "Leipzig" .
+
+:2019_111 a ld:MMT-Preistraeger2019;
+	foaf:name "Eucaris Guillen";
+	foaf:organization "Initiative Aktives Gestalten e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-lernen-bei-musifa-instrumente-kennen/>;
+	rdfs:label "Digitalisierung von Workshops für Schulklassen";
+	ld:inRegion "Leipzig" .
+
+:2019_112 a ld:MMT-Preistraeger2019;
+	foaf:name "Yvonne Böhm";
+	foaf:organization "Eduventis – Bildung erleben e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/herausforderungen-von-bildung-und-erziehung>;
+	rdfs:label "Elternabend – Kompetenzen für die Zukunft";
+	ld:inRegion "Leipzig" .
+
+:2019_113 a ld:MMT-Preistraeger2019;
+	foaf:name "Matthias Jung";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/herausforderungen-von-bildung-und-erziehung>;
+	rdfs:label "Energiewende – mit Bildung und Technik";
+	ld:inRegion "Leipzig" .
+
+:2019_114 a ld:MMT-Preistraeger2019;
+	foaf:name "Martin von Wolffersdorff";
+	foaf:organization "Elternrat Montessori-Kindertagesstätte Villa Kunterbunt";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/herausforderungen-von-bildung-und-erziehung>;
+	rdfs:label "Entdecken, Träumen und Lernen – Wie Bücher Kinder verbinden";
+	ld:inRegion "Leipzig" .
+
+:2019_115 a ld:MMT-Preistraeger2019;
+	foaf:name "Stefan Helbig";
+	foaf:organization "Sportverein Merkwitz";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/herausforderungen-von-bildung-und-erziehung>;
+	rdfs:label "Experimente mit Wasser und Sand";
+	ld:inRegion "Oschatz" .
+
+:2019_116 a ld:MMT-Preistraeger2019;
+	foaf:name "Ina Roßberg";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/herausforderungen-von-bildung-und-erziehung>;
+	rdfs:label "Erweiterung der Lern-SAX-Plattform";
+	ld:inRegion "Leipzig" .
+
+:2019_117 a ld:MMT-Preistraeger2019;
+	foaf:name "Martin Graichen";
+	foaf:organization "Naturförderungsgesellschaft Ökologische Station Borna-Birkenhain e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/herausforderungen-von-bildung-und-erziehung>;
+	rdfs:label "Essbare Landschaften – Naturerlebnis Streuobstwiese";
+	ld:inRegion "Borna" .
+
+:2019_118 a ld:MMT-Preistraeger2019;
+	foaf:name "Claudia Sander";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/herausforderungen-von-bildung-und-erziehung>;
+	rdfs:label "Gemeinsames spielerisches Erarbeiten von Grundkenntnissen der Programmierung";
+	ld:inRegion "Leipzig" .
+
+:2019_119 a ld:MMT-Preistraeger2019;
+	foaf:name "Susanne Neudert";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/herausforderungen-von-bildung-und-erziehung>;
+	rdfs:label "Gesunde Ernährung und Bewegung in Schulen und Kindergärten spielerisch Erlernen (Konzept erstellen)";
+	ld:inRegion "Leipzig" .
+
+:2019_120 a ld:MMT-Preistraeger2019;
+	foaf:name "Lutz Decker";
+	foaf:organization "MUSIFA Leipzig – Musikschule, Tanzschule, Musikakademie";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-machen-eigenes-hoerspiel-bei-musifa-leipzig/>;
+	rdfs:label "Hollywood is calling – Wir machen ein Hörspiel";
+	ld:inRegion "Leipzig" .
+
+:2019_121 a ld:MMT-Preistraeger2019;
+	foaf:name "Julian Dorn";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-machen-eigenes-hoerspiel-bei-musifa-leipzig/>;
+	rdfs:label "Informatikunterricht mit Leuchtturm-Projekten in Leipzig nachhaltig verbessern.";
+	ld:inRegion "Leipzig" .
+
+:2019_122 a ld:MMT-Preistraeger2019;
+	foaf:name "Claudia Penseler";
+	foaf:organization "Frühe Hilfe für entwicklungsgestörte und behinderte Kinder e. V. – KITA Meininger Ring";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-machen-eigenes-hoerspiel-bei-musifa-leipzig/>;
+	rdfs:label "Insel der Entdecker";
+	ld:inRegion "Leipzig" .
+
+:2019_123 a ld:MMT-Preistraeger2019;
+	foaf:name "Eucaris Guillen";
+	foaf:organization "Initiative Aktives Gestalten e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-machen-eigenes-hoerspiel-bei-musifa-leipzig/>;
+	rdfs:label "Interkulturelles Lernen mit Schulen im Landkreis Leipzig und Nordsachsen";
+	ld:inRegion "Leipzig" .
+
+:2019_124 a ld:MMT-Preistraeger2019;
+	foaf:name "Laura Neubert";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-machen-eigenes-hoerspiel-bei-musifa-leipzig/>;
+	rdfs:label "Kinder und Jugendliche für zukünftige Agrartechnik sensibilisieren";
+	ld:inRegion "Leipzig" .
+
+:2019_125 a ld:MMT-Preistraeger2019;
+	foaf:name "Tobias Nicolaus";
+	foaf:organization "Evang. luth. Kirchgemeinde Grimma";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-machen-eigenes-hoerspiel-bei-musifa-leipzig/>;
+	rdfs:label "Kinderkantate “Plisch und Plum”";
+	ld:inRegion "Grimma" .
+
+:2019_126 a ld:MMT-Preistraeger2019;
+	foaf:name "Volker Wönckhaus";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/das-kindersportzentrum-springmaeuschen-in-leipzig-plant-eine-kinderkochschule/>;
+	rdfs:label "Kinderkochschule – Nachnutzung ausgedienter Container";
+	ld:inRegion "Leipzig" .
+
+:2019_127 a ld:MMT-Preistraeger2019;
+	foaf:name "Ellen Häußler";
+	foaf:organization "Verein CULTUS+ Freie Schule Eilenburg e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/ein-geschenk-fuer-kleine-forscher>;
+	rdfs:label "Kleine Forscher brauchen Forschungsmittel";
+	ld:inRegion "Eilenburg" .
+
+:2019_128 a ld:MMT-Preistraeger2019;
+	foaf:name "Katrin Winter";
+	foaf:organization "Kintertagesstätte – Haus der Zukunft";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/ein-geschenk-fuer-kleine-forscher>;
+	rdfs:label "Kreativität durch Bauen";
+	ld:inRegion "Neukieritzsch" .
+
+:2019_129 a ld:MMT-Preistraeger2019;
+	foaf:name "Paul Magirius";
+	foaf:organization "Rock You Life! Leipzig e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/ein-geschenk-fuer-kleine-forscher>;
+	rdfs:label "LeipzigRockt!";
+	ld:inRegion "Leipzig" .
+
+:2019_130 a ld:MMT-Preistraeger2019;
+	foaf:name "Melanie Heyde";
+	foaf:organization "RAA Leipzig – Verein für Interkulturelle Arbeit, Jugendhilfe und Schule e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/eine-fahrt-fuer-maedchen-im-rahmen-der-schulsozialarbeit>;
+	rdfs:label "Mädchenfahrt im Rahmen der Schulsozialarbeit";
+	ld:inRegion "Leipzig" .
+
+:2019_131 a ld:MMT-Preistraeger2019;
+	foaf:name "Andrea Naumann";
+	foaf:organization "Villa Kindertraum Markkleeberg";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/eine-fahrt-fuer-maedchen-im-rahmen-der-schulsozialarbeit>;
+	rdfs:label "Mediengestützte Kita";
+	ld:inRegion "Markkleeberg" .
+
+:2019_132 a ld:MMT-Preistraeger2019;
+	foaf:name "Katja Genenz";
+	foaf:organization "Lessingschule – Grundschule der Stadt Leipzig";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/eine-fahrt-fuer-maedchen-im-rahmen-der-schulsozialarbeit>;
+	rdfs:label "Mobil im Netz – mit Netz mobil: Grundschüler auf Leipzigsafari mit dem Tablet";
+	ld:inRegion "Leipzig" .
+
+:2019_133 a ld:MMT-Preistraeger2019;
+	foaf:name "Susan Störel";
+	foaf:organization "Sportoberschule Leipzig";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/eine-fahrt-fuer-maedchen-im-rahmen-der-schulsozialarbeit>;
+	rdfs:label "Musizieren mit Musik Apps im Musikunterricht";
+	ld:inRegion "Leipzig" .
+
+:2019_134 a ld:MMT-Preistraeger2019;
+	foaf:name "Johannes Höneke";
+	foaf:organization "Rolandstädter Blasmusik Belgern e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/2019/10/18/neuer-einheitlicher-look-fuer-blasmusikanten-aus-nordsachsen/>;
+	rdfs:label "Nachwuchsgewinnung durch bessere Infrastruktur im Verein";
+	ld:inRegion "Belgern" .
+
+:2019_135 a ld:MMT-Preistraeger2019;
+	foaf:name "Melanie Heyde";
+	foaf:organization "Naturerleben – Leipzig";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/naturcamp-auf-der-wieselburg/>;
+	rdfs:label "Naturcamp auf der Wieselburg";
+	ld:inRegion "Leipzig" .
+
+:2019_136 a ld:MMT-Preistraeger2019;
+	foaf:name "Stephanie Schütze";
+	foaf:organization "Charly und Django e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/naturcamp-auf-der-wieselburg/>;
+	rdfs:label "NaturKinder in der Stadt!";
+	ld:inRegion "Leipzig" .
+
+:2019_137 a ld:MMT-Preistraeger2019;
+	foaf:name "Marie-Luise Hüttner";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/naturcamp-auf-der-wieselburg/>;
+	rdfs:label "Ökosystemdienstleistungen von Bergbaufolgelandschaften in und um Leipzig";
+	ld:inRegion "Leipzig" .
+
+:2019_138 a ld:MMT-Preistraeger2019;
+	foaf:name "Susann Neubert";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/naturcamp-auf-der-wieselburg/>;
+	rdfs:label "Pianora";
+	ld:inRegion "Leipzig" .
+
+:2019_139 a ld:MMT-Preistraeger2019;
+	foaf:name "Julia Cissewski";
+	foaf:organization "Orang-Utans in Not e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/globaler-handel-regionale-auswirkungen/>;
+	rdfs:label "Pilotprojekt zum nachhaltigen Strukturwandel im Konsumbereich und Energiesektor";
+	ld:inRegion "Leipzig" .
+
+:2019_140 a ld:MMT-Preistraeger2019;
+	foaf:name "Johannes Niesmann";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/globaler-handel-regionale-auswirkungen/>;
+	rdfs:label "Restauration eines historischen Mühlenraumes mit Mühlstein";
+	ld:inRegion "Schkeuditz" .
+
+:2019_141 a ld:MMT-Preistraeger2019;
+	foaf:name "Silke Große";
+	foaf:organization "Kita Rosentalzwerge";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/globaler-handel-regionale-auswirkungen/>;
+	rdfs:label "Rosentalzwerg-Oase";
+	ld:inRegion "Leipzig" .
+
+:2019_142 a ld:MMT-Preistraeger2019;
+	foaf:name "Lutz Decker";
+	foaf:organization "MUSIFA Leipzig – Musikschule, Musikakademie, Tanzschule";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/musifa-leipzig-bringt-kinder-zur-musik/>;
+	rdfs:label "School of Rock – Wir machen eine Band";
+	ld:inRegion "Leipzig" .
+
+:2019_143 a ld:MMT-Preistraeger2019;
+	foaf:name "Tina Rehm";
+	foaf:organization "Stadtleben e.V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/musifa-leipzig-bringt-kinder-zur-musik/>;
+	rdfs:label "Generationsgärten";
+	ld:inRegion "Leipzig" .
+
+:2019_144 a ld:MMT-Preistraeger2019;
+	foaf:name "Yvonne Böhm";
+	foaf:organization "Eduventis – Bildung erleben e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/2019/07/01/street-level-breakdance-wettbewerb-aus-sachsen>;
+	rdfs:label "Street Level – Breakdance";
+	ld:inRegion "Leipzig" .
+
+:2019_145 a ld:MMT-Preistraeger2019;
+	foaf:name "Ronny Schmidt";
+	foaf:organization "GeoWerkstatt Leipzig e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/2019/07/01/street-level-breakdance-wettbewerb-aus-sachsen>;
+	rdfs:label "Südraum-Medienkiste";
+	ld:inRegion "Leipzig" .
+
+:2019_146 a ld:MMT-Preistraeger2019;
+	foaf:name "Anja Patricia";
+	foaf:organization "Sommer-Hort der Geschwister-Scholl-Grundschule";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/2019/07/01/street-level-breakdance-wettbewerb-aus-sachsen>;
+	rdfs:label "Technische Ruheoase";
+	ld:inRegion "Leipzig" .
+
+:2019_147 a ld:MMT-Preistraeger2019;
+	foaf:name "Dagmar Schreiber";
+	foaf:organization "Werner-Heisenberg-Schule, Gymnasium der Stadt Leipzig";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/2019/07/01/street-level-breakdance-wettbewerb-aus-sachsen>;
+	rdfs:label "Veranstaltungen zum Thema: Mit Medienkompetenz bewusst ins World Wide Web";
+	ld:inRegion "Leipzig" .
+
+:2019_148 a ld:MMT-Preistraeger2019;
+	foaf:name "Olivia Schmidt";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/2019/07/01/street-level-breakdance-wettbewerb-aus-sachsen>;
+	rdfs:label "Vielfalt in Bewegung";
+	ld:inRegion "Lobstädt" .
+
+:2019_149 a ld:MMT-Preistraeger2019;
+	foaf:name "Annett Spitzner";
+	foaf:organization "Kita und Känguru";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/2019/07/01/street-level-breakdance-wettbewerb-aus-sachsen>;
+	rdfs:label "Zahlenland 1-11";
+	ld:inRegion "Leipzig" .
+
+:2019_150 a ld:MMT-Preistraeger2019;
+	foaf:name "Antje Beneken";
+	foaf:organization "Naturcamp Dresden";
+	foaf:homepage <https://www.youtube.com/watch?v=0h7ohbjBNSM>;
+	rdfs:label "Aktionstage mit dem Spurenmobil";
+	ld:inRegion "Leipziger Umland" .
+
+:2019_151 a ld:MMT-Preistraeger2019;
+	foaf:name "Eva Grumeth";
+	foaf:homepage <https://www.youtube.com/watch?v=wwJe5Vh1PZc>;
+	rdfs:label "Art To Go Kids";
+	ld:inRegion "Leipzig" .
+
+:2019_152 a ld:MMT-Preistraeger2019;
+	foaf:name "Juliane Kowalke";
+	foaf:homepage <https://www.youtube.com/watch?v=wwJe5Vh1PZc>;
+	rdfs:label "Beats, Rhymes and Life";
+	ld:inRegion "Leipzig" .
+
+:2019_153 a ld:MMT-Preistraeger2019;
+	foaf:name "Ina Roßberg";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Calliope mini Computer für Grundschüler";
+	ld:inRegion "Leipzig" .
+
+:2019_154 a ld:MMT-Preistraeger2019;
+	foaf:name "Anita Schulze";
+	foaf:organization "Kindertagesstätte Crealino";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Crealino’s Entdeckerwelt – Eine Kita erforscht die Welt";
+	ld:inRegion "Leipzig" .
+
+:2019_155 a ld:MMT-Preistraeger2019;
+	foaf:name "Marion Quitz";
+	foaf:homepage <https://youtu.be/4_UWd_RzyoM>;
+	rdfs:label "Das musikalische Zahlenrad";
+	ld:inRegion "Leipzig" .
+
+:2019_156 a ld:MMT-Preistraeger2019;
+	foaf:name "Julia Tichel";
+	foaf:organization "Schwarzbachhof";
+	foaf:homepage <https://youtu.be/4_UWd_RzyoM>;
+	rdfs:label "Die Bodendetektive auf dem Bauernhof";
+	ld:inRegion "Doberschütz OT Sprotta" .
+
+:2019_157 a ld:MMT-Preistraeger2019;
+	foaf:name "Daniela Schall";
+	foaf:organization "Kindergarten Sonnenstrahl";
+	foaf:homepage <https://youtu.be/4_UWd_RzyoM>;
+	rdfs:label "Ein naturnaher Garten bei uns im Kindergarten Sonnenstrahl – Teil 1 Planung";
+	ld:inRegion "Leipzig" .
+
+:2019_158 a ld:MMT-Preistraeger2019;
+	foaf:name "Anett Buddrus";
+	foaf:organization "spielend erleben";
+	foaf:homepage <https://youtu.be/4_UWd_RzyoM>;
+	rdfs:label "Erfinder-Werkstatt";
+	ld:inRegion "Beucha" .
+
+:2019_159 a ld:MMT-Preistraeger2019;
+	foaf:name "Sabine Fischer-Heese";
+	foaf:organization "KOCHEN macht Schule";
+	foaf:homepage <https://youtu.be/4_UWd_RzyoM>;
+	rdfs:label "Ernährungsbildung";
+	ld:inRegion "Leipzig" .
+
+:2019_160 a ld:MMT-Preistraeger2019;
+	foaf:name "Ðaniela Salzmann";
+	foaf:organization "Förderverein des Evangelischen Kindergartens Schilfkörbchen in Groitzsch e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kindergarten-groitzsch-bekommt-einen-wasserspielplatz/>;
+	rdfs:label "Errichtung eines Wasserspielplatzes";
+	ld:inRegion "Groitzsch" .
+
+:2019_161 a ld:MMT-Preistraeger2019;
+	foaf:name "Franz Walther";
+	foaf:organization "Friedrich-Schiller-Schule";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kindergarten-groitzsch-bekommt-einen-wasserspielplatz/>;
+	rdfs:label "Ideen-Werkstatt";
+	ld:inRegion "Leipzig" .
+
+:2019_162 a ld:MMT-Preistraeger2019;
+	foaf:name "Annett Erdmann";
+	foaf:organization "Grüne Welle - Umweltverein e. V. Ökologische Station Naundorf";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/im-dorf-daheim-mit-dem-umweltverein-gruene-welle>;
+	rdfs:label "Im Dorf daheim – Lernen für alle Generationen";
+	ld:inRegion "Naundorf" .
+
+:2019_163 a ld:MMT-Preistraeger2019;
+	foaf:name "Jens Richter";
+	foaf:organization "Prima Tandems gemeinnützige GmbH";
+	foaf:homepage <https://youtu.be/ikbroS3BPvk>;
+	rdfs:label "Impulsgeber für Hilfsbereite";
+	ld:inRegion "Leipziger Umland" .
+
+:2019_164 a ld:MMT-Preistraeger2019;
+	foaf:name "Dave Tarassow";
+	foaf:organization "Industriekultur Leipzig e. V.";
+	foaf:homepage <https://youtu.be/ikbroS3BPvk>;
+	rdfs:label "IndustryRallye";
+	ld:inRegion "Leipzig" .
+
+:2019_165 a ld:MMT-Preistraeger2019;
+	foaf:name "Petra Dautz";
+	foaf:organization "Soziokulturelles Zentrum Mittendrin";
+	foaf:homepage <https://youtu.be/ikbroS3BPvk>;
+	rdfs:label "Kinderbaustelle – Architekten, Baumeister &amp; Co";
+	ld:inRegion "Delitzsch" .
+
+:2019_166 a ld:MMT-Preistraeger2019;
+	foaf:name "Katharina Dörr";
+	foaf:organization "KlingKinds EFG Klinga";
+	foaf:homepage <https://www.youtube.com/watch?v=OEn6-3flboM>;
+	rdfs:label "KlingTalents – musikalische Nachwuchstalente entdecken und fördern";
+	ld:inRegion "Parthenstein" .
+
+:2019_167 a ld:MMT-Preistraeger2019;
+	foaf:name "Gerd Neudert";
+	foaf:organization "Cluster IT Mitteldeutschland e. V.";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Konzept Wissensmanagement für Open Educational Resources";
+	ld:inRegion "Leipzig" .
+
+:2019_168 a ld:MMT-Preistraeger2019;
+	foaf:name "Dr. Frank Feuerbach";
+	foaf:organization "ITKE e.V. – Institut für Territoriale und Kommunale Entwicklung e. V.";
+	foaf:homepage <https://www.youtube.com/watch?v=1gWpNgsX3y8>;
+	rdfs:label "Kunst schafft Klima";
+	ld:inRegion "Leipzig" .
+
+:2019_169 a ld:MMT-Preistraeger2019;
+	foaf:name "Mira Sommer";
+	foaf:homepage <https://www.youtube.com/watch?v=1gWpNgsX3y8>;
+	rdfs:label "Magische Orte in Leipzig – Fantasy Werbefilm";
+	ld:inRegion "Leipzig" .
+
+:2019_170 a ld:MMT-Preistraeger2019;
+	foaf:name "Anja Kohlbach";
+	foaf:organization "Soziokulturelles Zentrum E-Werk Oschatz";
+	foaf:homepage <https://www.youtube.com/watch?v=1gWpNgsX3y8>;
+	rdfs:label "Makerspace für Jugendliche zwischen 10 und 20 Jahren";
+	ld:inRegion "Oschatz" .
+
+:2019_171 a ld:MMT-Preistraeger2019;
+	foaf:name "Christine Girke";
+	foaf:organization "Kita Elsternest DKSB Leipzig e. V.";
+	foaf:homepage <https://www.youtube.com/watch?v=1gWpNgsX3y8>;
+	rdfs:label "Mini-Journalisten auf Tour";
+	ld:inRegion "Leipzig" .
+
+:2019_172 a ld:MMT-Preistraeger2019;
+	foaf:name "Angelika Kell";
+	foaf:organization "Stiftung Bürger für Leipzig";
+	foaf:homepage <https://www.youtube.com/watch?v=1gWpNgsX3y8>;
+	rdfs:label "MINT für Mädchen in der Wunderfinder-Werkstatt";
+	ld:inRegion "Leipzig" .
+
+:2019_173 a ld:MMT-Preistraeger2019;
+	foaf:name "Christine Prautzsch";
+	foaf:homepage <https://www.youtube.com/watch?v=1gWpNgsX3y8>;
+	rdfs:label "Mit den Bienen lernen und Natur erleben";
+	ld:inRegion "Zschepplin" .
+
+:2019_174 a ld:MMT-Preistraeger2019;
+	foaf:name "Katrin Sattler";
+	foaf:organization "Pavillon der Hoffnung in Leipzig e. V.";
+	foaf:homepage <https://www.youtube.com/watch?v=RptqWnZNEIs>;
+	rdfs:label "Musikunterrricht für alle";
+	ld:inRegion "Leipzig" .
+
+:2019_175 a ld:MMT-Preistraeger2019;
+	foaf:name "Franziska Fischer";
+	foaf:organization "St. Martin Caritas Hilfeverbund Eilenburg";
+	foaf:homepage <https://www.youtube.com/watch?v=RptqWnZNEIs>;
+	rdfs:label "Nachhaltige Nachbarschaft";
+	ld:inRegion "Eilenburg" .
+
+:2019_176 a ld:MMT-Preistraeger2019;
+	foaf:name "Oliver Reiner";
+	foaf:organization "VILLA gGmbH";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/aktiv-werden-in-den-ferien-maker-days-for-kids/>;
+	rdfs:label "Pop-Up-Aktionen zu den Maker Days for Kids 2019";
+	ld:inRegion "Leipzig" .
+
+:2019_177 a ld:MMT-Preistraeger2019;
+	foaf:name "Elvira Preßler";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Roboter-Theater";
+	ld:inRegion "Leipzig" .
+
+:2019_178 a ld:MMT-Preistraeger2019;
+	foaf:name "Peter Leisebein";
+	foaf:organization "Wanderfische ohne Grenzen NASF Deutschland e. V.";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Schulungsmaterial – Wunderfische Wanderfische";
+	ld:inRegion "Leipzig" .
+
+:2019_179 a ld:MMT-Preistraeger2019;
+	foaf:name "Hella Franke";
+	foaf:organization "CorEdu gemeinnützige UG haftungsbeschränkt";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Strooom – Fahrradgenerator-Workshop";
+	ld:inRegion "Leipzig" .
+
+:2019_180 a ld:MMT-Preistraeger2019;
+	foaf:name "Anja Lestin";
+	foaf:organization "Schule mit dem Förderschwerpunkt Lernen Elstertrebnitz";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Tablet-Tour in und um Elstertrebnitz";
+	ld:inRegion "Elstertrebnitz" .
+
+:2019_181 a ld:MMT-Preistraeger2019;
+	foaf:name "Marco Stegemann";
+	foaf:organization "Stadt-Umland-Landschaftspflegeverband";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Technische Ausstattung einer umweltpädagogischen PR-Agentur";
+	ld:inRegion "Leipzig" .
+
+:2019_182 a ld:MMT-Preistraeger2019;
+	foaf:name "Antje Steinhardt";
+	foaf:organization "Kindervereinigung Leipzig e. V. – Freizeitzentrum Borna";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Unser bunter Garten im Freizeitzentrum";
+	ld:inRegion "Borna" .
+
+:2019_183 a ld:MMT-Preistraeger2019;
+	foaf:name "Marlen Riedel";
+	foaf:organization "Kulturkino Zwenkau e. V.";
+	foaf:homepage <https://www.youtube.com/watch?v=Kor4R8uVP9U>;
+	rdfs:label "Verlorene Orte";
+	ld:inRegion "Leipzig" .
+
+:2019_184 a ld:MMT-Preistraeger2019;
+	foaf:name "Sylke Wagner";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/drei-jungs-auf-erfolgskurs-die-loewenzahn-legoisten/>;
+	rdfs:label "World Robot Olympiad – Löwenzahn-Legoisten";
+	ld:inRegion "Großpösna" .
+
+:2019_185 a ld:MMT-Preistraeger2019;
+	foaf:name "Anke Schneider";
+	foaf:organization "All-on-Sea Youngsters e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/drei-jungs-auf-erfolgskurs-die-loewenzahn-legoisten/>;
+	rdfs:label "Abenteuer- und Naturlehrspielplatz zum Thema Wind und Wasser";
+	ld:inRegion "Rackwitz" .
+
+:2019_186 a ld:MMT-Preistraeger2019;
+	foaf:name "Yvonne Böhm";
+	foaf:organization "Hero Society Impact gGmbH";
+	foaf:homepage <https://youtu.be/--szKiChOXo>;
+	rdfs:label "Cycle up – wie aus Müll Neues entsteht";
+	ld:inRegion "Leipzig" .
+
+:2019_187 a ld:MMT-Preistraeger2019;
+	foaf:name "Philipp Streit";
+	foaf:organization "Ralf Rangnick Stiftung SdbR";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/erste-digitalwerkstatt-wurde-in-leipzig-feierlich-eroeffnet>;
+	rdfs:label "Eine Digitalwerkstatt für Leipzig";
+	ld:inRegion "Leipzig" .
+
+:2019_188 a ld:MMT-Preistraeger2019;
+	foaf:name "Stefanie Sieber";
+	foaf:organization "HANDS on TECHNOLOGY e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/first-lego-league-klassenprojekt>;
+	rdfs:label "Forschungs- und Roboterwettbewerb FIRST LEGO League als Klassenprojekt";
+	ld:inRegion "Leipzig" .
+
+:2019_189 a ld:MMT-Preistraeger2019;
+	foaf:name "Andreas Reuter";
+	foaf:organization "Musik- und Kunstschule “Ottmar Gerster”";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/first-lego-league-klassenprojekt>;
+	rdfs:label "Gemeinsam nachhaltig Singen";
+	ld:inRegion "Borna" .
+
+:2019_190 a ld:MMT-Preistraeger2019;
+	foaf:name "Rainer Kühn";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/first-lego-league-klassenprojekt>;
+	rdfs:label "Integratives naturpädagogisches, landwirtschaftliches und handwerkliches Bildungsprojekt";
+	ld:inRegion "Leipziger Umland" .
+
+:2019_191 a ld:MMT-Preistraeger2019;
+	foaf:name "Ronny Schmidt";
+	foaf:organization "GeoWerkstatt Leipzig e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/first-lego-league-klassenprojekt>;
+	rdfs:label "Junior-Ranger im Neuseenland";
+	ld:inRegion "Leipzig" .
+
+:2019_192 a ld:MMT-Preistraeger2019;
+	foaf:name "Franziska Mascheck";
+	foaf:organization "KulturGut Linda e. V.";
+	foaf:homepage <https://www.youtube.com/watch?v=ScY30RdpQes>;
+	rdfs:label "KoLa Film- und Medienwerkstatt";
+	ld:inRegion "Frohburg OT Linda" .
+
+:2019_193 a ld:MMT-Preistraeger2019;
+	foaf:name "Oliver Reiner";
+	foaf:organization "VILLA gGmbH";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/aktiv-werden-in-den-ferien-maker-days-for-kids/>;
+	rdfs:label "Maker Days for Kids in Leipzig 2019";
+	ld:inRegion "Leipzig" .
+
+:2019_194 a ld:MMT-Preistraeger2019;
+	foaf:name "Marina Nöbel";
+	foaf:organization "Momelino e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/2019/12/18/eine-vogelschar-erklaert-kindern-den-umgang-mit-geld>;
+	rdfs:label "MINTFinK – Medienworkshop";
+	ld:inRegion "Leipzig" .
+
+:2019_195 a ld:MMT-Preistraeger2019;
+	foaf:name "Martin Graichen";
+	foaf:organization "NFG Ökologische Station Borna-Birkenhain e.V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/2019/12/18/eine-vogelschar-erklaert-kindern-den-umgang-mit-geld>;
+	rdfs:label "Natur- und Umweltscheune auf dem Museumshof Wyhra";
+	ld:inRegion "Borna" .
+
+:2019_196 a ld:MMT-Preistraeger2019;
+	foaf:name "Dr. Frank Beutner";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/natur-und-umweltzirkus-leipziger-suedraum/>;
+	rdfs:label "Natur-und Umweltzirkus";
+	ld:inRegion "Dreiskau-Muckern" .
+
+:2019_197 a ld:MMT-Preistraeger2019;
+	foaf:name "Caroline Jonigkeit";
+	foaf:organization "Querbeet Leipzig e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/schulgarten-in-grundschulen/>;
+	rdfs:label "Raus in den Schulgarten – Reaktivierung von Schulgärten im Leipziger Osten";
+	ld:inRegion "Leipzig" .
+
+:2019_198 a ld:MMT-Preistraeger2019;
+	foaf:name "Alina Goncharenko";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-werden-zu-autoren-und-illustratoren/>;
+	rdfs:label "Schreib Dein Buch";
+	ld:inRegion "Leipzig" .
+
+:2019_199 a ld:MMT-Preistraeger2019;
+	foaf:name "Thorsten Hinz";
+	foaf:organization "Bergbau-Technik-Park e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/kinder-werden-zu-autoren-und-illustratoren/>;
+	rdfs:label "Zurück in die Zukunft – Regenerative Energie";
+	ld:inRegion "Großpösna" .
+
+:2019_200 a ld:MMT-Preistraeger2019;
+	foaf:name "Dr. Angelika Träger-Nestler";
+	foaf:organization "VDI – GaraGe gemeinnützige GmbH";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/smart-city-leipzig-in-der-denkstatt-entsteht-die-zukunftsstadt/>;
+	rdfs:label "Experimentier- und Denkstatt für die Zukunftsstadt Leipzig – Ein Projekt von Jugendlichen";
+	ld:inRegion "Leipzig" .
+
+:2019_201 a ld:MMT-Preistraeger2019;
+	foaf:name "Erik Pomplitz";
+	foaf:organization "manufactur e. V.";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/publikumspreis/publikumspreis-mitteldeutschland-2019/projekt-heimisches-holz-tief-ton>;
+	rdfs:label "Heimisches Holz zum Klangkörper Tief-Ton";
+	ld:inRegion "Leipzig-Lindenau" .
+
+:2019_202 a ld:MMT-Preistraeger2019;
+	foaf:name "Gisbert Helbing";
+	foaf:organization "Evangelisches Schulzentrum Bad Düben";
+	foaf:homepage <https://www.mitmachfonds-sachsen.de/publikumspreis/publikumspreis-mitteldeutschland-2019/projekt-heimisches-holz-tief-ton>;
+	rdfs:label "Juniorakademie/Schüleruniversität am Evangelischen Schulzentrum";
+	ld:inRegion "Bad Düben" .
+
+:2019_203 a ld:MMT-Preistraeger2019;
+	foaf:name "Tino Meißner";
+	foaf:organization "INSPIRATA e. V.";
+	foaf:homepage <https://www.youtube.com/watch?v=ahe-0Q19wco>;
+	rdfs:label "Mitmach-Ausstellung Energie";
+	ld:inRegion "Leipzig" .
+
+:2019_204 a ld:MMT-Preistraeger2019;
+	foaf:name "Felix Wenzel";
+	foaf:organization "Förderverein für Jugendkultur und Zwischenmenschlichkeit e. V.";
+	foaf:homepage <https://www.youtube.com/watch?v=ahe-0Q19wco>;
+	rdfs:label "Offene Werkstatt im Dorf der Jugend";
+	ld:inRegion "Grimma" .
+
+
+
