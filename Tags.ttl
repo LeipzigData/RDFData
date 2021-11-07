@@ -6,6 +6,13 @@
 @prefix ld: <http://leipzig-data.de/Data/Model/> .
 @prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
 
+<http://leipzig-data.de/Data/Tags/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:label "Tags" .
+
 ld:Tag
     a owl:Class ;
     rdfs:comment "Genormtes Schlagwort zur Klassifizierung" ;
@@ -59,6 +66,11 @@ ldtag:DenkTankStelle
     a ld:Tag ;
     rdfs:label "Attac-Denktankstelle" .
 
+<http://leipzig-data.de/Data/Tag/Digitale-Schule>
+    a ld:Tag ;
+    rdfs:comment "Siehe https://mintzukunftschaffen.de/digitale-schule-2/" ;
+    rdfs:label "Digitale Schule" .
+
 ldtag:EinBehiGe
     a ld:Tag ;
     rdfs:label "Eingeschränkt Behindertengerecht" .
@@ -66,6 +78,11 @@ ldtag:EinBehiGe
 ldtag:Energie
     a ld:Tag ;
     rdfs:label "Energiethema" .
+
+<http://leipzig-data.de/Data/Tag/Fairtrade-Schule>
+    a ld:Tag ;
+    rdfs:comment "Siehe https://www.fairtrade-schools.de/aktuelles" ;
+    rdfs:label "Fairtrade Schule" .
 
 ldtag:Forschung
     a ld:Tag ;
@@ -78,6 +95,26 @@ ldtag:Freizeit
 ldtag:GTA
     a ld:Tag ;
     rdfs:label "Als Ganztagsangebot möglich" .
+
+<http://leipzig-data.de/Data/Tag/HalbeHalbe.2017>
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.HalbeHalbe.Projekt" ;
+    rdfs:label "Teilnahme am Halbe-Halbe-Projekt im Schuljahr 2017/18" .
+
+<http://leipzig-data.de/Data/Tag/HalbeHalbe.2018>
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.HalbeHalbe.Projekt" ;
+    rdfs:label "Teilnahme am Halbe-Halbe-Projekt im Schuljahr 2018/19" .
+
+<http://leipzig-data.de/Data/Tag/HalbeHalbe.2019>
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.HalbeHalbe.Projekt" ;
+    rdfs:label "Teilnahme am Halbe-Halbe-Projekt im Schuljahr 2019/20" .
+
+<http://leipzig-data.de/Data/Tag/HalbeHalbe.2020>
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.HalbeHalbe.Projekt" ;
+    rdfs:label "Teilnahme am Halbe-Halbe-Projekt im Schuljahr 2020/21" .
 
 ldtag:Hochschule
     a ld:Tag ;
@@ -139,18 +176,33 @@ ldtag:MINT-Broschuere
 
 ldtag:MINT-EC-Schule
     a ld:Tag ;
-    rdfs:comment "Siehe http://leipzig-netz.de/index.php5/MINT.Schulen" ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.Schulen" ;
     rdfs:label "MINT-EC Schule" .
 
 <http://leipzig-data.de/Data/Tag/MINT-Schule.2012>
     a ld:Tag ;
-    rdfs:comment "Siehe http://leipzig-netz.de/index.php5/MINT.Schulen" ;
-    rdfs:label "MINT-Schule 2012", "MINT-freundliche Schule 2012" .
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.Schulen" ;
+    rdfs:label "MINT-freundliche Schule 2012" .
 
 <http://leipzig-data.de/Data/Tag/MINT-Schule.2015>
     a ld:Tag ;
-    rdfs:comment "Siehe http://leipzig-netz.de/index.php5/MINT.Schulen" ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.Schulen" ;
     rdfs:label "MINT-freundliche Schule 2015" .
+
+<http://leipzig-data.de/Data/Tag/MINT-Schule.2018>
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.Schulen" ;
+    rdfs:label "MINT-freundliche Schule 2018" .
+
+<http://leipzig-data.de/Data/Tag/MINT-Schule.2019>
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.Schulen" ;
+    rdfs:label "MINT-freundliche Schule 2019" .
+
+<http://leipzig-data.de/Data/Tag/MINT-Schule.2020>
+    a ld:Tag ;
+    rdfs:comment "Siehe http://leipzig-netz.de/index.php/MINT.Schulen" ;
+    rdfs:label "MINT-freundliche Schule 2020" .
 
 ldtag:Marx
     a ld:Tag ;
@@ -212,11 +264,3 @@ ldtag:ZAK
 ldtag:ZukunftsDiskurs
     a ld:Tag ;
     rdfs:label "Zukunfts-Diskurs" .
-
-<http://leipzig-data.de/Data/Tags/>
-    cc:attributionName "The Leipzig Open Data Project" ;
-    cc:attributionURL <http://leipzig-data.de> ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    a owl:Ontology ;
-    rdfs:label "Tags" .
-
