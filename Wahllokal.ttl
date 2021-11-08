@@ -1,0 +1,689 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldot: <http://leipzig-data.de/Data/Ortsteil/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<> a owl:Ontology .
+
+ld:Wahllokal a owl:Class ;
+	rdfs:label "Wahllokal in Leipzig" .
+
+ld:WahllokalStadtratswahl2014 rdfs:subClassOf ld:Wahllokal ;
+               rdfs:label "Wahllokal für Stadtratswahl 2014" .
+
+<http://leipzig-data.de/Data/Wahllokal/Katharinenstraße.2>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Stadtbüro"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0019> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/KielerStraße.72B>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal F.-A.-Brockhaus-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1360>, <http://leipzig-data.de/Data/Wahlbezirk/1341>, <http://leipzig-data.de/Data/Wahlbezirk/1359> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/CzermaksGarten.8>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Leipzig Kolleg"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0109>, <http://leipzig-data.de/Data/Wahlbezirk/0129> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Lidicestraße.12>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Portitz (Oberschule)"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1401>, <http://leipzig-data.de/Data/Wahlbezirk/1410>, <http://leipzig-data.de/Data/Wahlbezirk/1421>, <http://leipzig-data.de/Data/Wahlbezirk/1439> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Glockenstraße.6>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Georg-Schumann-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0200>, <http://leipzig-data.de/Data/Wahlbezirk/0211>, <http://leipzig-data.de/Data/Wahlbezirk/0212> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/GöbschelwitzerWeg.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Portitz (Grundschule)"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1500>, <http://leipzig-data.de/Data/Wahlbezirk/1510> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Tarostraße.6>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Pablo-Neruda-Schule (Neubau)"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0220>, <http://leipzig-data.de/Data/Wahlbezirk/0230>, <http://leipzig-data.de/Data/Wahlbezirk/0241> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/PlaußigerDorfstraße.21>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Gasthof Plaußig"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1520> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Eisenbahnstraße.50>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule am Rabet"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2009>, <http://leipzig-data.de/Data/Wahlbezirk/2020> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/HoheStraße.45>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule am Floßplatz"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0301>, <http://leipzig-data.de/Data/Wahlbezirk/0310>, <http://leipzig-data.de/Data/Wahlbezirk/0320> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Husemannstraße.2>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal August-Bebel-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2039>, <http://leipzig-data.de/Data/Wahlbezirk/2059>, <http://leipzig-data.de/Data/Wahlbezirk/2069> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Schletterstraße.7>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Ev. Schulzentrum, Schulhaus 2"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0338>, <http://leipzig-data.de/Data/Wahlbezirk/0339>, <http://leipzig-data.de/Data/Wahlbezirk/0341>, <http://leipzig-data.de/Data/Wahlbezirk/0359> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Konradstraße.67>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 16. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2109>, <http://leipzig-data.de/Data/Wahlbezirk/2139>, <http://leipzig-data.de/Data/Wahlbezirk/2141>, <http://leipzig-data.de/Data/Wahlbezirk/2149> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Hillerstraße.7>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Thomasschule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0400>, <http://leipzig-data.de/Data/Wahlbezirk/0419> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Friedrich-Dittes-Straße.23>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 74. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2201>, <http://leipzig-data.de/Data/Wahlbezirk/2231> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Lessingstraße.27>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Lessingschule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0421>, <http://leipzig-data.de/Data/Wahlbezirk/0521>, <http://leipzig-data.de/Data/Wahlbezirk/0549> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Martinstraße.7>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Ernst-Pinkert-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2219>, <http://leipzig-data.de/Data/Wahlbezirk/2221>, <http://leipzig-data.de/Data/Wahlbezirk/2249> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Manetstraße.8>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Anna-Magdalena-Bach-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0429>, <http://leipzig-data.de/Data/Wahlbezirk/0449> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Max-Planck-Straße.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Sportoberschule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0501>, <http://leipzig-data.de/Data/Wahlbezirk/0519>, <http://leipzig-data.de/Data/Wahlbezirk/0530> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Louis-Fürnberg-Str..2>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Hans-Christian-Andersen-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2309>, <http://leipzig-data.de/Data/Wahlbezirk/2311> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Döllingstraße.25>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 24. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2321>, <http://leipzig-data.de/Data/Wahlbezirk/2471> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/PortitzerStraße.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Adolph-Diesterweg-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2330>, <http://leipzig-data.de/Data/Wahlbezirk/2340> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Nordplatz.13>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Leibnizschule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0601>, <http://leipzig-data.de/Data/Wahlbezirk/0619>, <http://leipzig-data.de/Data/Wahlbezirk/0621> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Nordplatz.4>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Michaelis-Friedens-Gemeinde Leipzig"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/0609> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Goldsternstraße.23>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Brüder-Grimm-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2401>, <http://leipzig-data.de/Data/Wahlbezirk/2402>, <http://leipzig-data.de/Data/Wahlbezirk/2410>, <http://leipzig-data.de/Data/Wahlbezirk/2420> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/LöbauerStraße.21>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Christliches Sozialwerk"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1009>, <http://leipzig-data.de/Data/Wahlbezirk/1029> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/ZumWäldchen.4>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Paunsdorf"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2439>, <http://leipzig-data.de/Data/Wahlbezirk/2459>, <http://leipzig-data.de/Data/Wahlbezirk/2489> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Stöckelstraße.45>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 21. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1030>, <http://leipzig-data.de/Data/Wahlbezirk/1059>, <http://leipzig-data.de/Data/Wahlbezirk/1061>, <http://leipzig-data.de/Data/Wahlbezirk/1079> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Dachsstraße.5>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Gustav-Hertz-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2509>, <http://leipzig-data.de/Data/Wahlbezirk/2511>, <http://leipzig-data.de/Data/Wahlbezirk/2512> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Volksgartenstraße.16>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Astrid-Lindgren-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1109>, <http://leipzig-data.de/Data/Wahlbezirk/1129> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Bästleinstraße.14>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 20. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1119>, <http://leipzig-data.de/Data/Wahlbezirk/1159>, <http://leipzig-data.de/Data/Wahlbezirk/1169> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/EngelsdorferStraße.88>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal ehem. Bürgeramt Mölkau"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2601> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Schulzeweg.11>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Kinder- und Jugendtreff "Kirsche""@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1149> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Schulstraße.6>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Mölkau"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2609>, <http://leipzig-data.de/Data/Wahlbezirk/2629> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/ZweinaundorferStraße.210>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Gasthof Zweinaundorf"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2619> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Berthastraße.15>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Freie Waldorfschule Leipzig"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1209>, <http://leipzig-data.de/Data/Wahlbezirk/1211>, <http://leipzig-data.de/Data/Wahlbezirk/1220> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Gaswerksweg.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Christoph-Arnold-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2701>, <http://leipzig-data.de/Data/Wahlbezirk/2729> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Arthur-Winkler-Straße.6>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Gymnasium Engelsdorf"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2709>, <http://leipzig-data.de/Data/Wahlbezirk/2731> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/RiesaerStraße.177>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Förderschule Engelsdorf"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2711>, <http://leipzig-data.de/Data/Wahlbezirk/2712> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Rosenowstraße.56>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 66. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/1301>, <http://leipzig-data.de/Data/Wahlbezirk/1319>, <http://leipzig-data.de/Data/Wahlbezirk/1321>, <http://leipzig-data.de/Data/Wahlbezirk/1339> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/BrandiserStraße.20>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Vereinshaus Baalsdorf"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2809> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/AlthenerAnger.26>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Hilbert Fuhrbetrieb und Baustoff OHG"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2900> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Dorfstraße.18>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Freiwillige Feuerwehr Kleinpösna"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/2919> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Heinrichstraße.43>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Wilhelm-Busch-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3001>, <http://leipzig-data.de/Data/Wahlbezirk/3009>, <http://leipzig-data.de/Data/Wahlbezirk/3019>, <http://leipzig-data.de/Data/Wahlbezirk/3021> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/ZwenkauerStraße.35>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Connewitz"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4131>, <http://leipzig-data.de/Data/Wahlbezirk/4132>, <http://leipzig-data.de/Data/Wahlbezirk/4141>, <http://leipzig-data.de/Data/Wahlbezirk/4149>, <http://leipzig-data.de/Data/Wahlbezirk/4159> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Möbiusstraße.8>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Humboldt-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3039>, <http://leipzig-data.de/Data/Wahlbezirk/3049>, <http://leipzig-data.de/Data/Wahlbezirk/3059>, <http://leipzig-data.de/Data/Wahlbezirk/3060>, <http://leipzig-data.de/Data/Wahlbezirk/3071> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/AnderMärchenwiese.3>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Albert-Schweitzer-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4201>, <http://leipzig-data.de/Data/Wahlbezirk/4209> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/AnderMärchenwiese.49>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Marienbrunner Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4210>, <http://leipzig-data.de/Data/Wahlbezirk/4221> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/StötteritzerStraße.26>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Martin-Andersen-Nexö-Heim"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3089> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Willi-Bredel-Straße.13>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Wilhelm-Ostwald-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4309>, <http://leipzig-data.de/Data/Wahlbezirk/4329>, <http://leipzig-data.de/Data/Wahlbezirk/4330>, <http://leipzig-data.de/Data/Wahlbezirk/4349>, <http://leipzig-data.de/Data/Wahlbezirk/4369> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Oberdorfstraße.15>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Gutshof Stötteritz"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3101> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Schönbachstraße.17>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Neue Nikolaischule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3119>, <http://leipzig-data.de/Data/Wahlbezirk/3140>, <http://leipzig-data.de/Data/Wahlbezirk/3168> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/SommerfelderStraße.20>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Evangelisches Studienhaus"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3129>, <http://leipzig-data.de/Data/Wahlbezirk/3130> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Friederikenstraße.60>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Technisches Bildungszentrum"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4359>, <http://leipzig-data.de/Data/Wahlbezirk/4401> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Gletschersteinstraße.9>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Franz-Mehring-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3151>, <http://leipzig-data.de/Data/Wahlbezirk/3161>, <http://leipzig-data.de/Data/Wahlbezirk/3169> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Wincklerstraße.5>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 8. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4402>, <http://leipzig-data.de/Data/Wahlbezirk/4410> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Könneritzstraße.47>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Leipzig International School"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5007>, <http://leipzig-data.de/Data/Wahlbezirk/5008>, <http://leipzig-data.de/Data/Wahlbezirk/5019> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Crednerstraße.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Berufliches Schulzentrum 1"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3209>, <http://leipzig-data.de/Data/Wahlbezirk/3219> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Mattheuerbogen.6>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Seniorenheim "Am Sonnenpark""@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3211> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Stieglitzstraße.42>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Bethanienkirche"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5009> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Lene-Voigt-Straße.2>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Alter, Leben und Gesundheit - Café"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3229> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Rödelstraße.6>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule am Auwald"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5029>, <http://leipzig-data.de/Data/Wahlbezirk/5039>, <http://leipzig-data.de/Data/Wahlbezirk/5048>, <http://leipzig-data.de/Data/Wahlbezirk/5049> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Schwarzenbergweg.4>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Heinrich-Mann-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3301>, <http://leipzig-data.de/Data/Wahlbezirk/3319> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/AmAngerteich.2>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Geschwister-Scholl-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3409>, <http://leipzig-data.de/Data/Wahlbezirk/3419>, <http://leipzig-data.de/Data/Wahlbezirk/3439> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Erich-Zeigner-Allee.24>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Erich-Zeigner-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5109>, <http://leipzig-data.de/Data/Wahlbezirk/5119>, <http://leipzig-data.de/Data/Wahlbezirk/5121>, <http://leipzig-data.de/Data/Wahlbezirk/5122> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/StötteritzerLandstr..31>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal ehem. Gemeindeamt Holzhausen"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3509> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/StötteritzerLandstraße.21>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Holzhausen"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3519> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/ZuckelhausenerRing.17>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Berggut Holzhausen"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3521> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/ZschocherscheStr..69>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Commundo Tagungshotel Leipzig"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5129> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Russenstraße.135>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Kindertagesstätte "Fuchsbau""@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/3529> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Antonienstraße.24>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule am Adler"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5139>, <http://leipzig-data.de/Data/Wahlbezirk/5140>, <http://leipzig-data.de/Data/Wahlbezirk/5211> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Scharnhorststraße.15>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Immanuel-Kant-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4001>, <http://leipzig-data.de/Data/Wahlbezirk/4009>, <http://leipzig-data.de/Data/Wahlbezirk/4029>, <http://leipzig-data.de/Data/Wahlbezirk/4051> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/GrünauerAllee.35>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Joachim-Ringelnatz-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5209>, <http://leipzig-data.de/Data/Wahlbezirk/6159>, <http://leipzig-data.de/Data/Wahlbezirk/6169> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Braustraße.2>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Landesdirektion Sachsen"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4011> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Kohlenstraße.28>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal FZG Bildungszentrum Gastgewerbe"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4019>, <http://leipzig-data.de/Data/Wahlbezirk/4031> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Dieskaustraße.76>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Johannes-Kepler-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5219>, <http://leipzig-data.de/Data/Wahlbezirk/5249>, <http://leipzig-data.de/Data/Wahlbezirk/5259> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Herrmann-Meyer-Straße.38>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Galerie Cafe H-M"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5221> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Steinstraße.42>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Stadtbezirksbibliothek Süd"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4039> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Steinstraße.18>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Haus Steinstraße"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4040>, <http://leipzig-data.de/Data/Wahlbezirk/4079> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Martin-Herrmann-Straße.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 120. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5301>, <http://leipzig-data.de/Data/Wahlbezirk/5319> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/StuttgarterAllee.3>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 85. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5309>, <http://leipzig-data.de/Data/Wahlbezirk/6309>, <http://leipzig-data.de/Data/Wahlbezirk/6311> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Bernhard-Göring-Straße.107>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 3. Schule (Interim)"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4069>, <http://leipzig-data.de/Data/Wahlbezirk/4089>, <http://leipzig-data.de/Data/Wahlbezirk/4098>, <http://leipzig-data.de/Data/Wahlbezirk/4099> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Dieskaustraße.213>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 56. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5311>, <http://leipzig-data.de/Data/Wahlbezirk/5329>, <http://leipzig-data.de/Data/Wahlbezirk/5339> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Seumestraße.93>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 60. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5401>, <http://leipzig-data.de/Data/Wahlbezirk/5409> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Arno-Nitzsche-Straße.7>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Apollonia-von-Wiedebach-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4101>, <http://leipzig-data.de/Data/Wahlbezirk/4109>, <http://leipzig-data.de/Data/Wahlbezirk/4111>, <http://leipzig-data.de/Data/Wahlbezirk/4129> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/KnautnaundorferStraße.4>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Berufsbildungswerk Leipzig"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5411>, <http://leipzig-data.de/Data/Wahlbezirk/5412>, <http://leipzig-data.de/Data/Wahlbezirk/5520> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Bernhard-Göring-Straße.152>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Haus der Demokratie"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/4121> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/SchkorlopperStraße.34>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Landgasthof Knautnaundorf"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/5509> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Garskestraße.21>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 90. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6009>, <http://leipzig-data.de/Data/Wahlbezirk/6029>, <http://leipzig-data.de/Data/Wahlbezirk/6039> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Pestalozzistraße.39>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Heinrich-Pestalozzi-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7402>, <http://leipzig-data.de/Data/Wahlbezirk/7429>, <http://leipzig-data.de/Data/Wahlbezirk/7401> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Heinrich-Heine-Straße.64>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Böhlitz-Ehrenberg"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7419>, <http://leipzig-data.de/Data/Wahlbezirk/7421> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/AlteSalzstraße.61>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Maria-Montessori-Schulzentrum"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6109>, <http://leipzig-data.de/Data/Wahlbezirk/6129>, <http://leipzig-data.de/Data/Wahlbezirk/6149> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/LeipzigerStraße.210>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Gundorf"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7439> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/LeipzigerStr..81>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Soziokulturelles Zentrum „Große Eiche“"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7441> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/MiltitzerStraße.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal ehem. Gemeindeamt Burghausen"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7501> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/EhrenbergerStraße.5A>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Ortsteilzentrum Rückmarsdorf"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7510> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/MannheimerStraße.128C>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Friedrich-Fröbel-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6209>, <http://leipzig-data.de/Data/Wahlbezirk/6219> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/AnderFriedenseiche.4>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Rückmarsdorf"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7529> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Diderotstr..35>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Werner-Heisenberg-Schule (Außenstelle)"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/8009>, <http://leipzig-data.de/Data/Wahlbezirk/8029>, <http://leipzig-data.de/Data/Wahlbezirk/8039>, <http://leipzig-data.de/Data/Wahlbezirk/8059> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/StuttgarterAllee.5>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 84. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6239>, <http://leipzig-data.de/Data/Wahlbezirk/6259>, <http://leipzig-data.de/Data/Wahlbezirk/6279>, <http://leipzig-data.de/Data/Wahlbezirk/6312> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Renftstraße.3>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Werner-Heisenberg-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/8011>, <http://leipzig-data.de/Data/Wahlbezirk/8049>, <http://leipzig-data.de/Data/Wahlbezirk/8069>, <http://leipzig-data.de/Data/Wahlbezirk/8071> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/StuttgarterAllee.9>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Freizeittreff Völkerfreundschaft"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6249>, <http://leipzig-data.de/Data/Wahlbezirk/6269> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Jungmannstraße.5>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Paul-Robeson-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/8101>, <http://leipzig-data.de/Data/Wahlbezirk/8102>, <http://leipzig-data.de/Data/Wahlbezirk/8321> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/SellinerStraße.17>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal KOMM-Haus"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6409>, <http://leipzig-data.de/Data/Wahlbezirk/6459> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/BinzerStraße.14>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 78. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6419>, <http://leipzig-data.de/Data/Wahlbezirk/6439> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Georg-Schumann-Straße.336>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Konvent Sankt Albert"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/8111>, <http://leipzig-data.de/Data/Wahlbezirk/8119>, <http://leipzig-data.de/Data/Wahlbezirk/8121> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/MiltitzerAllee.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 100. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6469>, <http://leipzig-data.de/Data/Wahlbezirk/6489>, <http://leipzig-data.de/Data/Wahlbezirk/6491> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/StahmelnerHöhe.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Stahmeln"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/8200> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/AmBildersaal.4>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Hort Lützschena"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/8219> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/FreirodaerWeg.2B>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Kinderhaus "Lützschenaer Sternchen""@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/8229> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/MiltitzerWeg.2>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Max-Klinger-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6509>, <http://leipzig-data.de/Data/Wahlbezirk/6539> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Erich-Thiele-Straße.2>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Bürgeramt, Außenstelle Lindenthal"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/8309> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Uranusstraße.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 91. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6519>, <http://leipzig-data.de/Data/Wahlbezirk/6549>, <http://leipzig-data.de/Data/Wahlbezirk/6559> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Gartenwinkel.30>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Alfred-Kästner-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/8311>, <http://leipzig-data.de/Data/Wahlbezirk/8312>, <http://leipzig-data.de/Data/Wahlbezirk/8313> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/GroßmiltitzerStraße.4>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Miltitz"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/6601>, <http://leipzig-data.de/Data/Wahlbezirk/6602> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/BreitenfelderStraße.19>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 68. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9009>, <http://leipzig-data.de/Data/Wahlbezirk/9049>, <http://leipzig-data.de/Data/Wahlbezirk/9059>, <http://leipzig-data.de/Data/Wahlbezirk/9070> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Elsbethstraße.2>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Friedrich-Schiller-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9021>, <http://leipzig-data.de/Data/Wahlbezirk/9039> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Helmholtzstraße.6>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Helmholtzschule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7001>, <http://leipzig-data.de/Data/Wahlbezirk/7019>, <http://leipzig-data.de/Data/Wahlbezirk/7029> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/ErfurterStraße.9>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Erich-Kästner-Schule (Neubau)"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9029>, <http://leipzig-data.de/Data/Wahlbezirk/9069>, <http://leipzig-data.de/Data/Wahlbezirk/9081> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Uhlandstraße.28>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Käthe-Kollwitz-Schule (Nebenstelle)"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7109>, <http://leipzig-data.de/Data/Wahlbezirk/7119>, <http://leipzig-data.de/Data/Wahlbezirk/7121>, <http://leipzig-data.de/Data/Wahlbezirk/7131> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Demmeringstraße.31>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Nachbarschaftsschule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7140>, <http://leipzig-data.de/Data/Wahlbezirk/7159>, <http://leipzig-data.de/Data/Wahlbezirk/7161> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Hans-Oster-Str..16>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Versöhnungsgemeinde Leipzig-Gohlis"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9100>, <http://leipzig-data.de/Data/Wahlbezirk/9111>, <http://leipzig-data.de/Data/Wahlbezirk/9129> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/SaalfelderStraße.29>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 46. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7200>, <http://leipzig-data.de/Data/Wahlbezirk/7219>, <http://leipzig-data.de/Data/Wahlbezirk/7239> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Heinrich-Mann-Straße.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Karl-Liebknecht-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9139>, <http://leipzig-data.de/Data/Wahlbezirk/9221>, <http://leipzig-data.de/Data/Wahlbezirk/9229>, <http://leipzig-data.de/Data/Wahlbezirk/9231> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Virchowstraße.4>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 35. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9149>, <http://leipzig-data.de/Data/Wahlbezirk/9151>, <http://leipzig-data.de/Data/Wahlbezirk/9168>, <http://leipzig-data.de/Data/Wahlbezirk/9169>, <http://leipzig-data.de/Data/Wahlbezirk/9171> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Georg-Schwarz-Str..113>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Helmholtzschule (Außenstelle)"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7309>, <http://leipzig-data.de/Data/Wahlbezirk/7319>, <http://leipzig-data.de/Data/Wahlbezirk/7329>, <http://leipzig-data.de/Data/Wahlbezirk/7341> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Jörgen-Schmidtchen-Weg.8>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Hans-Kroch-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9209>, <http://leipzig-data.de/Data/Wahlbezirk/9211> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/Georg-Schwarz-Straße.140>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Rathaus Leutzsch"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/7359> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/AnderHauptstraße.40A>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Kindertagesstätte Hohenheida"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9419> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/ZurSchule.11>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Wiederitzsch"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9509>, <http://leipzig-data.de/Data/Wahlbezirk/9511>, <http://leipzig-data.de/Data/Wahlbezirk/9519>, <http://leipzig-data.de/Data/Wahlbezirk/9520>, <http://leipzig-data.de/Data/Wahlbezirk/9531> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/DelitzscherStraße.110>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Carl-von-Linné-Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9309>, <http://leipzig-data.de/Data/Wahlbezirk/9329> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/AnhalterStraße.1>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal 33. Schule"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9339>, <http://leipzig-data.de/Data/Wahlbezirk/9349>, <http://leipzig-data.de/Data/Wahlbezirk/9359>, <http://leipzig-data.de/Data/Wahlbezirk/9369> ; 
+	ld:isBarrierefrei true^^xsd:boolean  .
+
+<http://leipzig-data.de/Data/Wahllokal/SeehausenerAllee.17>  a ld:WahllokalStadtratswahl2014 ; 
+	rdfs:label "Wahllokal Schule Seehausen"@de ; 
+	ld:containsWahlbezirk <http://leipzig-data.de/Data/Wahlbezirk/9400> ; 
+	ld:isBarrierefrei false^^xsd:boolean  .
+
+
+
+<> rdfs:label "Wahllokale Leipzig" .
+
+<> rdfs:comment "Extrahiert aus Straßenverzeichnis Kommunalwahle 2014" ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+   cc:attributionURL <http://codefor.de/leipzig/> ;
+   cc:attributionName "OK Lab Leipzig" .
