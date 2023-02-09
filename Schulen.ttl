@@ -13,7 +13,7 @@
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "Seiten der Stadt Leipzig" ;
     a owl:Ontology ;
-    rdfs:comment "2014-07-20 graebe: Abgleich mit den Stadtseiten.", "2016-12-07 graebe: berufliche Schulen und Förderschulen nachgetragen.", "2017-09-12 graebe: Abgleich mit jedeschule.de.", "2018-02, 2019-03-01: Abgleich mit Veröffentlichung in der LVZ", "2018-08-03 graebe: URIs im Zuge eines weiteren Abgleichs mit Stadtquellen noch einmal gründlich durchgepflügt", "2018-08-03 graebe: Abgleich mit neueren Daten der Stadt Leipzig zu Grund- und Berufsschulen", "2019-03-01 graebe: foaf:mbox entfernt", "2020-01-31 graebe: Abgleich Gymnasien, Oberschulen mit LVZ", "2021-10-05 graebe: Abgleich Grundschulen und Gymnasien mit Stadtseite", "2022-06-04 graebe: Neue LaSuB-Schulkürzel ergänzt", "LVZ 26.5.2018, 28.6.2018: Bauvorhaben 4-zügige Oberschule am Barnet-Licht-Platz als modulares Raumsystem bis 2019/20, Anmietung Torgauer Straße 114 sowie Eutritzscher Straße 17-19 und Umbau zu Schulräumen (Beschluss dazu wurde im Rat am 27.06.2018 vertagt, da unwirtschaftlich), Neubau einer 5-zügigen Oberschule sowie eines 5-zügigen Gymnasiums im Leipziger Norden (Standorte noch offen), Reaktivierung des Gebäudes Hainbuchenstraße als Oberschule." ;
+    rdfs:comment "2014-07-20, 2018-08-03, 2021-10-05 graebe: Abgleich mit Stadtseiten.", "2016-12-07 graebe: berufliche Schulen und Förderschulen nachgetragen.", "2017-09-12 graebe: Abgleich mit jedeschule.de.", "2018-02, 2019-03-01, 2020-01-03, 2023-02-09: Abgleich mit Veröffentlichung in der LVZ", "2018-08-03 graebe: URIs im Zuge eines weiteren Abgleichs mit Stadtquellen noch einmal gründlich durchgepflügt", "2019-03-01 graebe: foaf:mbox entfernt", "2022-06-04 graebe: Neue LaSuB-Schulkürzel ergänzt" ;
     rdfs:label "Schulen der Stadt Leipzig" .
 
 ld:Berufsfachschule
@@ -319,13 +319,13 @@ ld:Schule
     foaf:homepage <http://www.amb-grundschule-leipzig.de> .
 
 <http://leipzig-data.de/Data/Schule/Anton-Philipp-Reclam-Gymnasium>
-    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Spanisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Spanisch", "Latein" ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Tarostrasse.4> ;
     ld:hasSchulId "SN-4440400-0" ;
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2017>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2018>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2019>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2019> ;
-    ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
+    ld:hatProfile "naturwissenschaftlich", "sprachlich", "vertieft sprachlich" ;
     ld:hatSchulkuerzel "S 08", "oagy-leipzig-reclam" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "3 Klassen mit vorgezogener zweiter Fremdsprache Französisch. Dafür ist eine Aufnahmeprüfung zu absolvieren. Teil des deutsch-französischen Bildungszentrums" ;
     rdfs:label "Anton-Philipp-Reclam-Gymnasium" ;
@@ -688,7 +688,7 @@ ld:Schule
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020> ;
     ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 01", "oagy-leipzig-brockh" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:label "Friedrich-Arnold-Brockhaus-Gymnasium" ;
     foaf:homepage <http://www.brockhaus-gymnasium.de> .
@@ -704,9 +704,9 @@ ld:Schule
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Elsbethstrasse.2> ;
     ld:hasSchulId "SN-4440269-0" ;
-    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich" ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "künstlerisch" ;
     ld:hatSchulkuerzel "S 22", "oagy-leipzig-schill" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:label "Friedrich-Schiller-Gymnasium" ;
     foaf:homepage <http://www.fschillerg.de> .
@@ -872,8 +872,8 @@ ld:Schule
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Latein", "Spanisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04207.Leipzig.MannheimerStrasse.128B> ;
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020> ;
-    ld:hatProfile "Gesundheitsförderung", "Spanisch als dritte Fremdsprache" ;
-    dct:modified "2022-02-10" ;
+    ld:hatProfile "Gesundheitsb ildung", "Spanisch als dritte Fremdsprache" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:label "Georg-Christoph-Lichtenberg-Gymnasium" ;
     foaf:homepage <http://www.lichtenberg-leipzig.de/> .
@@ -882,9 +882,9 @@ ld:Schule
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Glockenstrasse.6> ;
     ld:hasSchulId "SN-4431110-0" ;
-    dct:modified "2020-02-05" ;
+    dct:modified "2023-02-09" ;
     a ld:Oberschule, ld:Schule ;
-    rdfs:comment "LVZ 26.5.2018: Im Rahmen des geplanten Investitionsprogramms der Stadt wird die Schule saniert und erweitert.", "Teil des deutsch-französischen Bildungszentrums zusammen mit Reclam-Gymnasium" ;
+    rdfs:comment "Teil des deutsch-französischen Bildungszentrums zusammen mit Reclam-Gymnasium" ;
     rdfs:label "Georg-Schumann-Oberschule" ;
     foaf:homepage <http://www.georg-schumann-schule.de> .
 
@@ -893,11 +893,11 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Telemannstrasse.9> ;
     ld:hatProfile "MIT-Schule", "künstlerisch-medial", "sportlich" ;
     ld:hatSchulkuerzel "oagy-leipzig-taro" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Betrieb seit August 2017, zunächst Gymnasium an der Telemannstraße, ab 1.8.2018 Gerda-Taro-Schule, ab 2020/21 im Schulversuch MIT-Zweig" ;
     rdfs:label "Gerda-Taro-Gymnasium" ;
-    foaf:homepage <http://cms.sachsen.schule/gymltele> .
+    foaf:homepage <http://www.taroschule.de> .
 
 <http://leipzig-data.de/Data/Schule/Geschwister-Scholl-Oberschule-Liebertwolkwitz>
     ld:angeboteneFremdsprachen "Englisch", "Französisch" ;
@@ -917,9 +917,9 @@ ld:Schule
 <http://leipzig-data.de/Data/Schule/Goethe-Gymnasium>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch", "Spanisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04347.Leipzig.Gorkistrasse.25> ;
-    ld:hatProfile "gesellschaftswissenschaftlich" ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "sprachlich" ;
     ld:hatSchulkuerzel "oagy-leipzig-goethe" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:label "Goethe-Gymnasium" ;
     foaf:homepage <http://www.goethegym-leipzig.de> .
@@ -929,9 +929,9 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04329.Leipzig.Dachsstrasse.5> ;
     ld:hasSchulId "SN-4440236-0" ;
     ld:hasTag <http://leipzig-data.de/Data/Tag/Fairtrade-Schule>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2015>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2019> ;
-    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich" ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "angewandte Naturwissenschaften", "interkulturelle Begegnungen" ;
     ld:hatSchulkuerzel "S 04", "oagy-leipzig-hertz" ;
-    dct:modified "2022-02-10" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "6 Leitlinien: demokratisch, vernetzt, digital-medial, kulturell-bewegt, sozial-verantwortungsbewusst, ökologisch-nachhaltig", "Interkulturelle Begegnungen mit Russland" ;
     rdfs:label "Gustav-Hertz-Gymnasium" ;
@@ -946,29 +946,32 @@ ld:Schule
     foaf:homepage <http://www.gutenbergschule-leipzig.de/> .
 
 <http://leipzig-data.de/Data/Schule/Gymnasium-Engelsdorf>
-    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch", "Spanisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04319.Leipzig.Arthur-Winkler-Strasse.6> ;
     ld:hasSchulId "SN-4440129-0" ;
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2018>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2019>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2015> ;
     ld:hatProfile "3. Fremdsprache", "Mein Leben - heute und morgen" ;
     ld:hatSchulkuerzel "S 05", "oagy-leipzig-engels" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:label "Gymnasium Engelsdorf" ;
     foaf:homepage <http://www.gymnasiumengelsdorf.de> .
 
 <http://leipzig-data.de/Data/Schule/Gymnasium-Ihmelsstrasse>
     ld:angeboteneFremdsprachen "Englisch" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Moebiusstrasse.8> ;
-    dct:modified "2022-02-10" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04315.Leipzig.Kroenerstrasse.3> ;
+    dct:modified "2023-02-09" ;
+    ld:hatProfile "werden  gemeinsam entwickelt" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "2022 Außenstelle des Humboldt-Gymnasiums. Haus Ihmelsstraße soll 2023/24 fertig werden. Ab August 2022 Unterricht im Gebäude der OS Ihmelsstraße." ;
-    rdfs:label "Gymnasium Ihmelsstraße" .
+    rdfs:label "Gymnasium Ihmelsstraße";
+    foaf:homepage <http://www.quartiersschule-ihmelsstrasse.de> .
 
 <http://leipzig-data.de/Data/Schule/Gymnasium-Messe-Allee>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Latein", "Spanisch" ;
-    ld:hasAddress <http://leipzig-data.de/Data/04129.Leipzig.AnhalterStrasse.1> ;
-    dct:modified "2022-02-10" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04158.Leipzig.Messe-Allee.21> ;
+    ld:hatProfile "MAG-Profil" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Eigenständig ab Schuljahr 2021/22. Ab 08/2022 zieht die Schule in das neue Schulgebäude der Oberschule Wiederitzsch an der Messe-Allee. Zum Schuljahr 2024/25 soll das neue Schulgebäude für das Gymnasium in Wiederitzsch zur Verfügung stehen. " ;
     rdfs:label "Gynmasium an der Messe-Allee" ;
@@ -977,7 +980,8 @@ ld:Schule
 <http://leipzig-data.de/Data/Schule/Gymnasium-Prager-Spitze>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Italienisch", "Spanisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Barnet-Licht-Platz.1> ;
-    dct:modified "2022-02-10" ;
+    ld:hatProfile "sportlich", "künstlerisch-musisch", "gesellschaftswissenschaftlich" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Schulbetrieb 2021/22 in OS am Barnet-Licht-Platz. Schulneubau an der Prager Spitze inklusive zweier Dreifeld-Sporthallen soll 2023/24 fertig werden. " ;
     rdfs:label "Gynmasium an der Prager Spitze" ;
@@ -989,17 +993,18 @@ ld:Schule
     ld:hasTag <http://leipzig-data.de/Data/Tag/Fairtrade-Schule>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2018>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2019>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020> ;
     ld:hatProfile "Musik als Weltsprache", "Nachhaltigkeit", "Sport und Gesundheit" ;
     ld:hatSchulkuerzel "oagy-leipzig-palme" ;
-    dct:modified "2022-02-10" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:label "Gymnasium am Palmengarten" ;
     foaf:homepage <http://www.schule-am-palmengarten.de> .
 
 <http://leipzig-data.de/Data/Schule/Gynmasium-Schraderhaus>
-    ld:angeboteneFremdsprachen "Englisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein" ;
     ld:hasAddress <http://leipzig-data.de/Data/04317.Leipzig.Taeubchenweg.26> ;
-    dct:modified "2022-02-10" ;
+    dct:modified "2023-02-09" ;
+    ld:hatProfile "noch zu entwickeln" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:comment "Das Schraderhaus, Täubchenweg 26, soll zusammen mit der 125. Schule und die Wilhelm-Busch-Schule zu einem Bildungscampus mit gemeinschaftlich genutzten Freiflächen weiterentwickelt werden." ;
+    rdfs:comment "Das Schraderhaus, Täubchenweg 26, soll zusammen mit der 125. Schule und die Wilhelm-Busch-Schule zu einem Bildungscampus mit gemeinschaftlich genutzten Freiflächen weiterentwickelt werden. Fertigstellung des Gebäudes im Schuljahr 2024/25. Start mit Schuljahresbeginn 2023/24 als Außenstelle des Ostwald-Gynmasiums in der Willi-Bredel-Straße 15." ;
     rdfs:label "Gynmasium Schraderhaus" .
 
 <http://leipzig-data.de/Data/Schule/Hans-Christian-Andersen-Schule>
@@ -1068,7 +1073,7 @@ ld:Schule
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2019>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020> ;
     ld:hatProfile "gesellschaftwissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 06", "oagy-leipzig-humbol" ;
-    dct:modified "2022-02-10" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:label "Humboldt-Gymnasium" ;
     foaf:homepage <http://www.humboldt-leipzig.de> .
@@ -1082,13 +1087,13 @@ ld:Schule
     foaf:homepage <http://www.med-akademie.de> .
 
 <http://leipzig-data.de/Data/Schule/Immanuel-Kant-Gymnasium>
-    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch", "Spanisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04275.Leipzig.Scharnhorststrasse.15> ;
     ld:hasSchulId "SN-4440384-0" ;
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2017>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2018>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2019>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020>, <http://leipzig-data.de/Data/Tag/JIA>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2012>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2015>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2019> ;
     ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich", "sportlich" ;
     ld:hatSchulkuerzel "S 11", "oagy-leipzig-kant" ;
-    dct:modified "2022-02-10" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "JIA-Verbund seit 2012" ;
     rdfs:label "Immanuel-Kant-Gymnasium" ;
@@ -1114,9 +1119,8 @@ ld:Schule
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2019>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020>, <http://leipzig-data.de/Data/Tag/UNESCO-Schule> ;
     ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sportlich" ;
     ld:hatSchulkuerzel "S 14", "oagy-leipzig-kepler" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
-    rdfs:comment "LVZ 26.5.2018: Im Rahmen des geplanten Investitionsprogramms der Stadt bekommt die Schule einen Erweiterungsbau mit 12 Unterrichtsräumen." ;
     rdfs:label "Johannes-Kepler-Gymnasium" ;
     foaf:homepage <http://jkg-leipzig.de> .
 
@@ -1203,7 +1207,7 @@ ld:Schule
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020> ;
     ld:hatProfile "naturwissenschaftlich", "sprachlich" ;
     ld:hatSchulkuerzel "S 20", "oagy-leipzig-leib" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:label "Leibniz-Gymnasium" ;
     foaf:homepage <http://www.leibniz-gymnasium-leipzig.de> .
@@ -1278,7 +1282,7 @@ ld:Schule
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2019>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020>, <http://leipzig-data.de/Data/Tag/Klimaschule-Schule> ;
     ld:hatProfile "schulspezifisches Profil Nachhaltigkeit", "sprachlich" ;
     ld:hatSchulkuerzel "S 10", "oagy-leipzig-peters" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:label "Louise-Otto-Peters-Gymnasium" ;
     foaf:homepage <http://cms.sachsen.schule/gymlops> .
@@ -1309,9 +1313,9 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.MiltitzerWeg.4> ;
     ld:hasSchulId "SN-4440335-0" ;
     ld:hasTag <http://leipzig-data.de/Data/Tag/Digitale-Schule>, <http://leipzig-data.de/Data/Tag/JIA>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2015>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2018>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2021> ;
-    ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich", "JIA" ;
     ld:hatSchulkuerzel "S 16", "oagy-leipzig-kling" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Ausbau zum Schulzentrum Grünau mit benachbarten Oberschule sowie Förderschule bis 2023", "Digitale Schule 2017 und 2020", "JIA seit 2015" ;
     rdfs:label "Max-Klinger-Gymnasium" ;
@@ -1345,10 +1349,10 @@ ld:Schule
     ld:hasTag <http://leipzig-data.de/Data/Tag/JIA> ;
     ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 07", "oagy-leipzig-nikol" ;
-    dct:modified "2022-02-10" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "JIA-Verbund seit 2012", "LVZ 26.5.2018: Ausbau des Dachgeschosses geplant" ;
-    rdfs:label "Neues Nikolai-Gymnasium" ;
+    rdfs:label "Gymnasium Neue Nikolaischule" ;
     foaf:homepage <http://www.neuenikolaischule.de> .
 
 <http://leipzig-data.de/Data/Schule/OS-AmAdler>
@@ -1523,13 +1527,13 @@ ld:Schule
     foaf:homepage <http://www.rahndittrich.de> .
 
 <http://leipzig-data.de/Data/Schule/Robert-Schumann-Gymnasium>
-    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Spanisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04177.Leipzig.Demmeringstrasse.84> ;
     ld:hasSchulId "SN-4440244-0" ;
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020> ;
     ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 18", "oagy-leipzig-schuma" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Fundierte Instrumental- oder Gesangsausbildung in Zusammenarbeit mit der Musikschule" ;
     rdfs:label "Robert-Schumann-Gymnasium" ;
@@ -1611,9 +1615,9 @@ ld:Schule
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Russisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04109.Leipzig.Marschnerstrasse.30> ;
     ld:hasSchulId "SN-4050035-0" ;
-    ld:hatProfile "sportlich" ;
+    ld:hatProfile "vertieft sportlich" ;
     ld:hatSchulkuerzel "LS 1", "oagy-leipzig-sport" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Schule mit vertieftem sportlichen Profil in Landesträgerschaft" ;
     rdfs:label "Landesgymnasium für Sport Leipzig" ;
@@ -1668,7 +1672,7 @@ ld:Schule
     ld:hasSchulId "SN-4440368-0" ;
     ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "vertieft musisch" ;
     ld:hatSchulkuerzel "S 12", "oagy-leipzig-thomas" ;
-    dct:modified "2022-02-20" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Schule mit vertieftem musischen Profil, dafür ist eine Aufnahmeprüfung zu abslovieren. Teil des Bildungscampus Forum Thomanum. " ;
     rdfs:label "Thomas-Gymnasium" ;
@@ -1712,7 +1716,7 @@ ld:Schule
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2019>, <http://leipzig-data.de/Data/Tag/HalbeHalbe.2020>, <http://leipzig-data.de/Data/Tag/JIA>, <http://leipzig-data.de/Data/Tag/MINT-Schule.2015> ;
     ld:hatProfile "gesellschaftswissenschaftlich", "künstlerisch", "naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 23", "oagy-leipzig-heisen" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "JIA-Verbund seit 2012" ;
     rdfs:label "Werner-Heisenberg-Gymnasium" ;
@@ -1747,7 +1751,7 @@ ld:Schule
     ld:hasTag <http://leipzig-data.de/Data/Tag/HalbeHalbe.2018>, <http://leipzig-data.de/Data/Tag/MINT-EC-Schule> ;
     ld:hatProfile "mathematisch-naturwissenschaftlich" ;
     ld:hatSchulkuerzel "S 09", "oagy-leipzig-ostwal" ;
-    dct:modified "2020-01-31" ;
+    dct:modified "2023-02-09" ;
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Schule mit vertieftem mathematisch-naturwissenschaftlichen Profil. Eignungsprüfung zu absolvieren." ;
     rdfs:label "Wilhelm-Ostwald-Gymnasium" ;
