@@ -13,7 +13,7 @@
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "Seiten der Stadt Leipzig" ;
     a owl:Ontology ;
-    rdfs:comment "2014-07-20, 2018-08-03, 2021-10-05 graebe: Abgleich mit Stadtseiten.", "2016-12-07 graebe: berufliche Schulen und Förderschulen nachgetragen.", "2017-09-12 graebe: Abgleich mit jedeschule.de.", "2018-02, 2019-03-01, 2020-01-03, 2023-02-09: Abgleich mit Veröffentlichung in der LVZ", "2018-08-03 graebe: URIs im Zuge eines weiteren Abgleichs mit Stadtquellen noch einmal gründlich durchgepflügt", "2019-03-01 graebe: foaf:mbox entfernt", "2022-06-04 graebe: Neue LaSuB-Schulkürzel ergänzt" ;
+    rdfs:comment "2014-07, 2018-08, 2021-10 graebe: Abgleich mit Stadtseiten.", "2016-12-07 graebe: berufliche Schulen und Förderschulen nachgetragen.", "2017-09-12 graebe: Abgleich mit jedeschule.de.", "2018-02, 2019-03, 2020-01, 2023-02: Abgleich mit Veröffentlichung in der LVZ", "2018-08-03 graebe: URIs im Zuge eines weiteren Abgleichs mit Stadtquellen noch einmal gründlich durchgepflügt", "2019-03-01 graebe: foaf:mbox entfernt", "2022-06-04 graebe: Neue LaSuB-Schulkürzel ergänzt" ;
     rdfs:label "Schulen der Stadt Leipzig" .
 
 ld:Berufsfachschule
@@ -393,7 +393,7 @@ ld:Schule
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/BIPKreativitaetszentrum> ;
     ld:hatProfile "künstlerisch-ästhetisch", "mathematisch-naturwissenschaftlich" ;
     ld:hatSchulkuerzel "FT 3", "fagy-leipzig-BIP" ;
-    dct:modified "2020-02-05" ;
+    dct:modified "2023-02-10" ;
     a ld:FreierTraeger, ld:Gymnasium, ld:Schule ;
     rdfs:label "BIP-Kreativitätsgymnasium Leipzig" ;
     foaf:homepage <http://www.bipschulen.de> .
@@ -624,9 +624,9 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Schletterstrasse.7> ;
     ld:hasSchulId "SN-4410056-0", "SN-4440558-0" ;
     ld:hasSupplier <http://leipzig-data.de/Data/KE/EvLuthKirchenbezirkLeipzig> ;
-    ld:hatProfile "musisch-künstlerisch", "naturwissenschaftlich", "sozial-diakonisch", "sprachlich" ;
+    ld:hatProfile "musisch-künstlerisch", "naturwissenschaftlich", "sprachlich" ;
     ld:hatSchulkuerzel "FT 1", "fagy-leipzig-ESZL" ;
-    dct:modified "2020-02-05" ;
+    dct:modified "2023-02-10" ;
     a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
     rdfs:comment "In kirchlicher Trägerschaft. Religionsunterricht, Andachten und Gottesdienste gehören zum Schulalltag." ;
     rdfs:label "Evangelisches Schulzentrum" ;
@@ -651,7 +651,7 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04155.Leipzig.Luetzowstrasse.8> ;
     ld:hasSchulId "SN-4420501-0" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/GemeinschaftlichesLernen> ;
-    dct:modified "2020-02-05" ;
+    dct:modified "2023-02-10" ;
     a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
     rdfs:comment "Ganztagsschule, Klasse 5-10" ;
     rdfs:label "Freie Oberschule Gohlis" ;
@@ -663,7 +663,7 @@ ld:Schule
     ld:hasSchulId "SN-4412649-0", "SN-4412649-1" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/FreieSchuleLeipzig> ;
     ld:hatProfile "künstlerisch-kreativ", "naturwissenschaftlich-technisch", "sprachlich" ;
-    dct:modified "2020-02-05" ;
+    dct:modified "2023-02-10" ;
     a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
     rdfs:comment "Freie Alternativschule von Klasse 1 bis 10, 1990 als Alternativschule gegründet" ;
     rdfs:label "Freie Schule Leipzig" ;
@@ -675,7 +675,7 @@ ld:Schule
     ld:hasSchulId "SN-4410031-0", "SN-4410031-1", "SN-4410031-2" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/Waldorfschulgemeinschaft> ;
     ld:hatSchulkuerzel "FT 2", "fasz-leipzig-WALDO" ;
-    dct:modified "2020-02-05" ;
+    dct:modified "2023-02-10" ;
     a ld:FreierTraeger, ld:Grundschule, ld:Oberschule, ld:Schule ;
     rdfs:comment "Gesamtschule nach Waldorf-Pädagogik. Abitur nach 13 Jahren möglich. Profil: musisch-künstlerisch-handwerklich" ;
     rdfs:label "Waldorfschule Leipzig" ;
@@ -913,6 +913,16 @@ ld:Schule
     a ld:Grundschule, ld:Schule ;
     rdfs:label "Geschwister-Scholl-Schule" ;
     foaf:homepage <http://geschwister-scholl-grundschule.jimdo.com> .
+
+<http://leipzig-data.de/Data/Schule/Goerdeler-OS>
+    ld:angeboteneFremdsprachen "Englisch", "Spanisch" ;
+    ld:hasAddress <http://leipzig-data.de/Data/04107.Leipzig.Paul-Gruner-Strasse.59> ;
+    ld:hasSupplier <http://leipzig-data.de/Data/Firma/SemperBildungswerk> ;
+    dct:modified "2023-02-10" ;
+    a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
+    rdfs:comment "Ganztagsschule" ;
+    rdfs:label "Carl-Friedrich-Goerdeler-Oberschule" ;
+    foaf:homepage <https://www.semper-schulen.de/allgemeinbildende-schulen/carl-friedrich-goerdeler-oberschule-leipzig> .
 
 <http://leipzig-data.de/Data/Schule/Goethe-Gymnasium>
     ld:angeboteneFremdsprachen "Englisch", "Französisch", "Latein", "Russisch", "Spanisch" ;
@@ -1225,7 +1235,7 @@ ld:Schule
     ld:hasSchulId "SN-4410023-0", "SN-4410023-1", "SN-4410023-2" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Verein/LeipzigInternationalSchool> ;
     ld:hatSchulkuerzel "FT 4", "fzeg-leipzig-ibd-LIS" ;
-    dct:modified "2020-02-05" ;
+    dct:modified "2023-02-10" ;
     a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
     rdfs:comment "Internationale Gesamtschule (vom Kindergarten bis zur Klasse 12) mit britischem Lehrplan, Ganztagsschule, Englich ist Unterrichtssprache" ;
     rdfs:label "Leipzig International School" ;
@@ -1298,7 +1308,7 @@ ld:Schule
     a ld:Gymnasium, ld:Schule ;
     rdfs:comment "Teil des Campus Graphisches Viertel" ;
     rdfs:label "Musikalisch-Sportliches Gymnasium Leipzig" ;
-    foaf:homepage <http://www.rahndittrich.de/gymnasium-lpz> .
+    foaf:homepage <http://www.rahn.education> .
 
 <http://leipzig-data.de/Data/Schule/Martin-Schule>
     ld:hasAddress <http://leipzig-data.de/Data/04205.Leipzig.Neptunweg.31> ;
@@ -1326,7 +1336,7 @@ ld:Schule
     ld:hasAddress <http://leipzig-data.de/Data/04209.Leipzig.AlteSalzstrasse.61> ;
     ld:hasSchulId "SN-4412540-0", "SN-4431441-0", "SN-4440590-0" ;
     ld:hasSupplier <http://leipzig-data.de/Data/KE/BistumDresdenMeissen/Ordinariat> ;
-    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sprachlich" ;
+    ld:hatProfile "gesellschaftswissenschaftlich", "naturwissenschaftlich", "sprachlich", "musisch-künstlerisch", "sportlich" ;
     ld:hatSchulkuerzel "FT 6", "fagy-leipzig-BIDM" ;
     dct:modified "2020-02-05" ;
     a ld:FreierTraeger, ld:Grundschule, ld:Gymnasium, ld:Oberschule, ld:Schule ;
@@ -1511,19 +1521,19 @@ ld:Schule
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/RahnDittrich> ;
     dct:modified "2020-02-05" ;
     a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
-    rdfs:comment "Standort zum Schuljahr 2019/20 eröffnet." ;
-    rdfs:label "Rahn-Oberschule Kochstraße" ;
+    rdfs:comment "Standort zum Schuljahr 2019/20 eröffnet. Schwerpunkte: inklusive Beschulung, offene Lernformen" ;
+    rdfs:label "Rahn Education Freie Oberschule Kochstraße" ;
     foaf:homepage <http://www.rahndittrich.de> .
 
 <http://leipzig-data.de/Data/Schule/Rahn-Schule-Salomonstrasse>
-    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch" ;
+    ld:angeboteneFremdsprachen "Englisch", "Französisch", "Spanisch", "Italienisch" ;
     ld:hasAddress <http://leipzig-data.de/Data/04103.Leipzig.Salomonstrasse.10> ;
     ld:hasSchulId "SN-4431456-0" ;
     ld:hasSupplier <http://leipzig-data.de/Data/Firma/RahnDittrich> ;
-    dct:modified "2020-02-05" ;
+    dct:modified "2023-02-10" ;
     a ld:FreierTraeger, ld:Oberschule, ld:Schule ;
-    rdfs:comment "Teil des Campus Graphisches Viertel" ;
-    rdfs:label "Rahn-Oberschule Salomonstraße" ;
+    rdfs:comment "Teil des Campus Graphisches Viertel. Schwerpunkte Tanz als Unterrichtsfach, Berufsorientierung, Inklusion, iPad-Klassen" ;
+    rdfs:label "Rahn Education Freie Oberschule Salomonstraße" ;
     foaf:homepage <http://www.rahndittrich.de> .
 
 <http://leipzig-data.de/Data/Schule/Robert-Schumann-Gymnasium>
