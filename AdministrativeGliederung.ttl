@@ -9,6 +9,7 @@
     cc:attributionName "The Leipzig Open Data Project" ;
     cc:attributionURL <http://leipzig-data.de> ;
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    rdfs:comment "graebe 2023-02-13: Wahlkreise in eigene RDF-Datei ausgelagert"; 
     a owl:Ontology ;
     rdfs:label "Stadtbezirke und Ortsteile" .
 
@@ -19,10 +20,6 @@ ld:Ortsteil
 ld:Stadtbezirk
     a owl:Class ;
     rdfs:label "Stadtbezirk der Stadt Leipzig" .
-
-ld:Wahlkreis2014
-    a owl:Class ;
-    rdfs:label "Wahlkreis-Einteilung der Stadt Leipzig zur Stadtratswahl 2013" .
 
 ldot:Althen-Kleinpoesna
     a ld:Ortsteil ;
@@ -388,56 +385,6 @@ ldot:Zentrum-West
     ld:containsOrtsteil ldot:Gruenau-Mitte, ldot:Gruenau-Nord, ldot:Gruenau-Ost, ldot:Gruenau-Siedlung, ldot:Lausen-Gruenau, ldot:Miltitz, ldot:Schoenau ;
     a ld:Stadtbezirk ;
     rdfs:label "Stadtbezirk West" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/0>
-    ld:containsOrtsteil ldot:Marienbrunn, ldot:Zentrum, ldot:Zentrum-Nord, ldot:Zentrum-Nordwest, ldot:Zentrum-Ost, ldot:Zentrum-Sued, ldot:Zentrum-Suedost, ldot:Zentrum-West ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 0" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/1>
-    ld:containsOrtsteil ldot:Heiterblick, ldot:Neustadt-Neuschoenefeld, ldot:Plaussig-Portitz, ldot:Schoenefeld-Abtnaundorf, ldot:Schoenefeld-Ost, ldot:Thekla, ldot:Volkmarsdorf ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 1" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/2>
-    ld:containsOrtsteil ldot:Althen-Kleinpoesna, ldot:Anger-Crottendorf, ldot:Baalsdorf, ldot:Engelsdorf, ldot:Moelkau, ldot:Paunsdorf, ldot:Sellerhausen-Stuenz ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 2" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/3>
-    ld:containsOrtsteil ldot:Holzhausen, ldot:Liebertwolkwitz, ldot:Meusdorf, ldot:Probstheida, ldot:Reudnitz-Thonberg, ldot:Stoetteritz ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 3" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/4>
-    ld:containsOrtsteil ldot:Connewitz, ldot:Doelitz-Doesen, ldot:Loessnig, ldot:Suedvorstadt ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 4" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/5>
-    ld:containsOrtsteil ldot:Grosszschocher, ldot:Gruenau-Siedlung, ldot:Hartmannsdorf-Knautnaundorf, ldot:Kleinzschocher, ldot:Knautkleeberg-Knauthain, ldot:Plagwitz, ldot:Schleussig ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 5" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/6>
-    ld:containsOrtsteil ldot:Gruenau-Mitte, ldot:Gruenau-Nord, ldot:Gruenau-Ost, ldot:Lausen-Gruenau, ldot:Schoenau ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 6" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/7>
-    ld:containsOrtsteil ldot:Altlindenau, ldot:Boehlitz-Ehrenberg, ldot:Burghausen-Rueckmarsdorf, ldot:Leutzsch, ldot:Lindenau, ldot:Miltitz, ldot:Neulindenau ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 7" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/8>
-    ld:containsOrtsteil ldot:Gohlis-Nord, ldot:Gohlis-Sued, ldot:Lindenthal, ldot:Luetzschena-Stahmeln, ldot:Moeckern, ldot:Wahren ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 8" .
-
-<http://leipzig-data.de/Data/Wahlkreis2014/9>
-    ld:containsOrtsteil ldot:Eutritzsch, ldot:Gohlis-Mitte, ldot:Mockau-Nord, ldot:Mockau-Sued, ldot:Seehausen, ldot:Wiederitzsch ;
-    a ld:Wahlkreis2014 ;
-    rdfs:label "Wahlkreis 9" .
 
 ld:PlanungsRaum
     a owl:Class ;
